@@ -1,6 +1,11 @@
 sepal-doc
 =========
 
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
+    :alt: License: MIT
+ 
+
 This folder gather all the documentation material of the sepal platform: `<https://sepal.io>`_
 
 Note
