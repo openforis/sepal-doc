@@ -17,17 +17,21 @@ Build documentation locally
 ---------------------------
 
 firs pull the repository to your local machine 
-```
-git clone https://github.com/openforis/sepal-doc.git
+.. code-block::
+    
+    $ git clone https://github.com/openforis/sepal-doc.git
 
 Then install the python librairies related to doc compilation:
-```
-pip install -r sepal-doc/requirements.txt
+
+.. code-block::
+
+    $ pip install -r sepal-doc/requirements.txt
 
 now move to the `sepal-doc/docs` folder and run 
-```
-make html
-```
+
+.. code-block::
+
+    $ make html
 
 The documentation files will be build in the `sepal-doc/build` folder. double click on the index.html file and you should be seeing the landing page in your favorite browser.
 
