@@ -1,0 +1,5 @@
+:orphan:
+
+SEPAL team documentation
+========================
+
