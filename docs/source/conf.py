@@ -63,3 +63,9 @@ html_context = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# -- Copy the modules documentation ------------------------------------------
+
+from urllib.request import urlretrieve
+
+urlretrieve ("https://raw.githubusercontent.com/12rambau/sepal_ui_template/master/doc/en.rst", "modules/dwn/sepal_ui_template.rst")

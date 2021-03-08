@@ -1,3 +1,5 @@
+.. image:: docs/source/img/sepal_header.png
+
 sepal-doc
 =========
 
