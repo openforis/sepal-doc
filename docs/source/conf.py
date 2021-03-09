@@ -69,3 +69,4 @@ html_static_path = ['_static']
 from urllib.request import urlretrieve
 
 urlretrieve ("https://raw.githubusercontent.com/12rambau/sepal_ui_template/master/doc/en.rst", "modules/dwn/sepal_ui_template.rst")
+urlretrieve ("https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst", "modules/dwn/sepal_pysmm.rst")
