@@ -47,6 +47,7 @@ exclude_patterns = []
 html_theme = 'pydata_sphinx_theme'
 html_logo = os.path.abspath('img/sepal.png') 
 html_favicon = os.path.abspath('img/favicon.ico')
+html_last_updated_fmt = ''
 html_theme_options = {
     "github_url": "https://github.com/openforis/sepal",
     "use_edit_page_button": True,
