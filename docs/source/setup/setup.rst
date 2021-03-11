@@ -5,6 +5,7 @@ local
 -----
 
 .. youtube:: Lv0HwPDQx50
+    :align: center
 
 The first step to create a SEPAL environment is to set up the language you want to use. 
 

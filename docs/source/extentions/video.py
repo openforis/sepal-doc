@@ -20,7 +20,7 @@ from docutils.parsers.rst import Directive, directives
 
 def align(argument):
     """Conversion function for the "align" option."""
-    return directives.choice(argument, ('left', 'center', 'right'))
+    return directives.choice(argument, ('start', 'center', 'end'))
 
 
 class IframeVideo(Directive):
@@ -49,33 +49,36 @@ class IframeVideo(Directive):
 
 class Youtube(IframeVideo):
     html = '''
-    <iframe 
-        src="http://www.youtube.com/embed/%(video_id)s"
-        width="%(width)u" 
-        height="%(height)u" 
-        frameborder="0"
-        webkitAllowFullScreen 
-        mozallowfullscreen 
-        allowfullscreen
-        class="align-%(align)s"
-    >
-    </iframe>
+    <div class="d-flex justify-content-%(align)s">
+        <iframe 
+            src="http://www.youtube.com/embed/%(video_id)s"
+            width="%(width)u" 
+            height="%(height)u" 
+            frameborder="0"
+            webkitAllowFullScreen 
+            mozallowfullscreen 
+            allowfullscreen
+        >
+        </iframe>
+    </div>
     '''
 
 
 class Vimeo(IframeVideo):
     html = '''
-    <iframe 
-        src="http://player.vimeo.com/video/%(video_id)s"
-        width="%(width)u" 
-        height="%(height)u" 
-        frameborder="0"
-        webkitAllowFullScreen 
-        mozallowfullscreen 
-        allowFullScreen
-        class="align-%(align)s"
-    >
-    </iframe>
+    <div class="d-flex justify-content-%(align)s">
+        <iframe 
+            src="http://player.vimeo.com/video/%(video_id)s"
+            width="%(width)u" 
+            height="%(height)u" 
+            frameborder="0"
+            webkitAllowFullScreen 
+            mozallowfullscreen 
+            allowFullScreen
+            class="align-%(align)s"
+        >
+        </iframe>
+    </div>
     '''
 
 
