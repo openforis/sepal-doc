@@ -1,7 +1,7 @@
 GuidosToolbox Workbench – GWB
 =============================
 
-Contact: `Peter Vogt <mailto:peter.vogt@ec.europa.eu>`_ , January 2021
+Contact: `peter.vogt@ec.europa.eu <mailto:peter.vogt@ec.europa.eu>`_ , January 2021
   
 This document provides instructions for installation and usage of the image analysis program **GWB** (GuidosToolbox Workbench) on the `FAO <https://sepal.io/>`_ SEPAL platform. **GWB** is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers.
 
@@ -22,7 +22,7 @@ Download the package: :code:`wb_<version>_amd64.deb` to a local directory. From 
 
 .. code-block:: console
 
-    $ apt install <full path to the downloaded gwb\_<version>\_amd64.deb>
+    $ apt install <full path to the downloaded gwb_<version>_amd64.deb>
 
 The provision of a Debian package should facilitate the installation and future maintenance of the **GWB** package on SEPAL.
 
