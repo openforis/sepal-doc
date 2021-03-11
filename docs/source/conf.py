@@ -68,6 +68,11 @@ html_static_path = ['_static']
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
+import json 
 
-urlretrieve ("https://raw.githubusercontent.com/12rambau/sepal_ui_template/master/doc/en.rst", "modules/dwn/sepal_ui_template.rst")
-urlretrieve ("https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst", "modules/dwn/sepal_pysmm.rst")
+with open('data/modules/en.json') as json_file:
+    module_doc = json.load(json_file)
+
+for name in module_doc:
+    urlretrieve (module_doc[name], f"modules/dwn/{name}.rst")
+

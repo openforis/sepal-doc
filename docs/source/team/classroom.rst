@@ -23,7 +23,7 @@ English
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/general/en.csv
+    :file: ../data/general/en.csv
     :widths: auto
     :align: center
 
@@ -32,7 +32,7 @@ French
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/general/fr.csv
+    :file: ../data/general/fr.csv
     :widths: auto
     :align: center
 
@@ -41,7 +41,7 @@ Spanish
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/general/es.csv
+    :file: ../data/general/es.csv
     :widths: auto
     :align: center
 
@@ -53,7 +53,7 @@ English
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/project/en.csv
+    :file: ../data/project/en.csv
     :widths: auto
     :align: center
 
@@ -62,7 +62,7 @@ French
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/project/fr.csv
+    :file: ../data/project/fr.csv
     :widths: auto
     :align: center
 
@@ -71,7 +71,7 @@ Spanish
 
 .. csv-table::
     :header-rows: 1
-    :file: ../csv/project/es.csv
+    :file: ../data/project/es.csv
     :widths: auto
     :align: center
 
