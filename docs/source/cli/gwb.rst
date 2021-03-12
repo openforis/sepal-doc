@@ -1,30 +1,8 @@
 GuidosToolbox Workbench – GWB
 =============================
 
-Contact: `peter.vogt@ec.europa.eu <mailto:peter.vogt@ec.europa.eu>`_ , January 2021
-  
-This document provides instructions for installation and usage of the image analysis program **GWB** (GuidosToolbox Workbench) on the `FAO <https://sepal.io/>`_ SEPAL platform. **GWB** is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers.
+This document provides usage instructions for the image analysis program **GWB** (GuidosToolbox Workbench) on the `FAO <https://sepal.io/>`_ SEPAL platform. **GWB** is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. More information is available at the **GWB** `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_. 
 
-Standalone installers or :code:`rpm/deb-packages` can be downloaded from the official **GWB** `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_. To **ensure package integrity**, compare the :code:`md5sum` against the official **GWB** :code:`md5sum` `list <https://ies-ows.jrc.ec.europa.eu/gtb/GWB/GWB_md5sums.txt>`_.
-
-**GWB** can be used to conduct various image object analysis schemes on your raster data. **GWB** is completely self-contained and fully functional in its own directory. The following two sections describe the installation of **GWB** on SEPAL and usage of the individual image analysis module.
-
-Installation
-------------
-
-.. warning:: 
-
-    This step of the documentation is intended for the platform maintainers as a user you can skip it and jump directly to :ref:`section-3`.
-
-
-**GWB** can be installed and made available to all system users, via a Debian package, which is configured to pull in all required packages: :code:`bc`, :code:`sed`, :code:`xdg-utils`, :code:`bash`, :code:`gdal-bin`, :code:`x11-xserver-utils`, :code:`xvfb`, :code:`libgomp1`.
-Download the package: :code:`wb_<version>_amd64.deb` to a local directory. From a root-terminal enter the command: 
-
-.. code-block:: console
-
-    $ apt install <full path to the downloaded gwb_<version>_amd64.deb>
-
-The provision of a Debian package should facilitate the installation and future maintenance of the **GWB** package on SEPAL.
 
 Initial setup
 -------------
@@ -33,18 +11,18 @@ As regular user, please first copy the **GWB** setup into your :code:`$HOME` acc
 
 .. code-block:: console
 
-    $ cp -fr /opt/**GWB**/*put ~/
+    $ cp -fr /opt/GWB/*put ~/
 
-You will now find the new directories input and output in your :code:`$HOME` account.
+You will now find the new directories :code:`input` and :code:`output` in your :code:`$HOME` account.
 
 -   :code:`input`: This directory contains module-specific parameter files, some sample (geo)tif images and a readme file.
 -   :code:`output`: This directory is empty.
 
-**GWB** is designed to apply the module-specific parameter file to all tif images placed in the directory :code:`input`. The module-specific results will be written into the directory :code:`output`.
+**GWB** is designed to apply the module-specific settings of the respective parameter file to all tif images placed in the directory :code:`input`. The module-specific results will be written into the directory :code:`output`.
 
 .. note::
-
-    The directory :code:`input` has a subdirectory backup having backup copies of all parameter files. This subdirectory may also be used to store images that should be excluded from processing.
+-    Please also run the above cp-command to update your **GWB**-setup files with potentially modified files provided by a newer version of **GWB**.  
+-    The directory :code:`input` has a subdirectory :code:`backup` having backup copies of all parameter files. This subdirectory may also be used to temporarily store images that should be excluded from processing.
 
 Example of the **GWB** setup in the user account :code:`/home/prambaud`.
 
@@ -73,12 +51,11 @@ Example of the **GWB** setup in the user account :code:`/home/prambaud`.
     - a set of backup parameter files is included here
     - temporarily store images here that you want to exclude from processing    
 
-.. _section-3:
 
 Usage Instructions Overview
 ---------------------------
 
-To get an overview of all **GWB** analysis tools enter the command: :code:`GWB`
+To get an overview of all **GWB** modules enter the command: :code:`GWB`
 
 .. code-block:: console
 
@@ -197,7 +174,7 @@ Available Commands
 
 .. danger:: 
 
-    To use your own parameter in the processes, change the value after the :code:`*******` in each input file. Don't change the rest of the file and don't remove a single line. 
+    Please enter your own settings by amending the module-specific parameters after the :code:`*******` in the respective input/<module>-parameters.txt file. Don't change anything else in the parameter file or the module execution will crash. If in doubt, consult the respective backup/<module>-parameters.txt file.
 
 GWB_ACC
 ^^^^^^^
@@ -212,6 +189,8 @@ Single band geotiff in data format byte:
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
+-   3 byte: special background 1 (optional)
+-   4 byte: special background 2 (optional)
 
 Processing parameter options are stored in the file :code:`input/acc-parameters.txt`. 
 
@@ -410,12 +389,15 @@ Example statistics (hypsometric curve) and spatial result of input image :code:`
 .. image:: ../img/cli/gwb/example_dist.tif
     :width: 49%
 
+(Pierrick: please replace the above example_dist.tif with example_dist_viewport.tif 
+
 Remarks
 """""""
 
 -   The result provides additional statistics in txt and csv format.
--   Spatially explicit distance per-pixel values in Figure 4 bottom right are shown in a pseudo-elevation color map. Positive values are associated with land (forest: yellow, orange, red, green), negative values with sea (non-forest: cyan to dark blue) and a value of zero corresponds to the coast line (forest– non-forest boundary).
--   Per pixel distance values can be summarized with the Hypsometric curve (bottom left).
+-   Spatially explicit distance per-pixel values are shown in a pseudo-elevation color map. Positive values are associated with land (forest: yellow, orange, red, green), negative values with sea (non-forest: cyan to dark blue) and a value of zero corresponds to the coast line (forest– non-forest boundary).
+-   Actual per-pixel distance values are provided in a dedicated image (not shown here)
+-   Per-pixel distance values can be summarized with the Hypsometric curve (see above).
 
 **Euclidean Distance** maps of forest patches have been used to map and summarize forest fragmentation, see for example `Kozak et al <https://doi.org/10.3390/su10051472>`_.
 
@@ -424,7 +406,7 @@ Remarks
 GWB_FAD
 ^^^^^^^
 
-This module will conduct the **fragmentation** analysis at **five fixed observation scales**. Because forest fragmentation is scale-dependent, fragmentation is reported at five observation scales, which allows different observers to make their own choice about scales and threshold of concern. The change of fragmentation across different observation scales provides additional interesting information. Fragmentation is measured by determining the **F**orest **A**rea **D**ensity (**FAD**) within a shifting, local neighborhood. It can be measured at pixel or patch level. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Fragmentation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_ product sheet.
+This module will conduct the **fragmentation** analysis at **five fixed observation scales**. Because forest fragmentation is scale-dependent, fragmentation is reported at five observation scales, which allows different observers to make their own choice about scales and threshold of concern. The change of fragmentation across different observation scales provides additional interesting information. Fragmentation is measured by determining the Forest Area Density (**FAD**) within a shifting, local neighborhood. It can be measured at pixel or patch level. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Fragmentation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_ product sheet.
 
 Requirement
 """""""""""
@@ -855,7 +837,7 @@ Example statistics of the input image :code:`example.tif` and explanatory sketch
 Remarks
 """""""
 
--   MSPA is very versatile and can be applied to any binary map, scale and thematic layer. Please consult the MSPA Guide, the Morphology product sheet and/or the MSPA website for further information.
+-   MSPA is very versatile and can be applied to any binary map, scale and thematic layer. Please consult the `MSPA Guide <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/MSPA_Guide.pdf>`_, the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ and/or the  `MSPA website <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_    for further information.
 -   The simplified version, GWB_SPA provides fewer classes. GWB_SPA may be useful to get started and may be sufficient to address many assessments.
 
 MSPA is a purely geometric analysis scheme, which can be applied to any type of raster image. It has been used in more than 100 peer-reviewed publications to map and summarize the spatial pattern, fragmentation and connectivity of forest and other land cover patches, including the detection of structural and functional connecting pathways, analyzing urban greenspace, landscape restoration up to classifying zooplankton species.
@@ -863,7 +845,7 @@ MSPA is a purely geometric analysis scheme, which can be applied to any type of 
 GWB_P223
 ^^^^^^^^
 
-This module will conduct the **density** (P2), **contagion** (P22) or **FG-Adjacency** (P23) analysis of foreground objects at a user-selected observation scale (`Riitters et al. (2000) <https://www.srs.fs.usda.gov/pubs/ja/ja_riitters006.pdf>`_). The result are spatially explicit maps and tabular summary statistics. The classification is determined by measurements of forest amount (P2) and connectivity (P22) within the neighborhood that is centered on a subject forest pixel. P2 is the probability that a pixel in the neighborhood is forest, and P22 is the probability that a pixel next to a forest pixel is also forest.
+This module will conduct the **Density** (P2), **Contagion** (P22) or **Adjacency** (P23) analysis of foreground (**FG**) objects at a user-selected observation scale (`Riitters et al. (2000) <https://www.srs.fs.usda.gov/pubs/ja/ja_riitters006.pdf>`_). The result are spatially explicit maps and tabular summary statistics. The classification is determined by measurements of forest amount (P2) and connectivity (P22) within the neighborhood that is centered on a subject forest pixel. P2 is the probability that a pixel in the neighborhood is forest, and P22 is the probability that a pixel next to a forest pixel is also forest.
 
 Requirement
 """""""""""
@@ -875,7 +857,7 @@ Single band geotiff in data format byte:
 -   2 byte: foreground (forest)
 -   3 byte: specific background (for P23)
 
-Processing parameter options are stored in the file :code:`input/p222-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/p223-parameters.txt`. 
 
 .. code-block:: text
 
@@ -966,7 +948,7 @@ Example statistics and spatial result of the input image :code:`example.tif` for
 Remarks
 """""""
 
--   Density or Contagion are scale-dependent.
+-   Density, Contagion or Adjacency are scale-dependent (specified by the size of the moving window).
 -   This moving window approach (originally called Pf/Pff) forms the base for other derived analysis schemes, such as :code:`GWB_LM`/:code:`GWB_FAD`/:code:`GWB_FRAG`.
 
 Both, Density and Contagion add a first spatial information content on top of the primary information of forest, forest amount. Information on forest Density and Contagion is an integral part of many national forest inventories and forest resource assessments. However, the derived products Fragmentation and Landscape Mosaic may be easier to communicate.
@@ -1417,6 +1399,7 @@ Requirements
 Single band geotiff in data format Byte: 
 
 -   0 byte: missing (optional)
+-   1 byte: background
 -   2 byte: foreground (forest)
 
 .. warning:: 
