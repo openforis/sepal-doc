@@ -18,6 +18,13 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
             <a href="#review" title="Reviewed Pull Requests">👀</a> 
             <a href="#test" title="Tests">⚠️</a>
          </td>
+         <td align="center">
+            <a href="https://www.researchgate.net/profile/Peter-Vogt-4">
+            <img src="https://avatars.githubusercontent.com/u/68806384?s=400&v=4" width="70px;" alt="vogtpet"/><br />
+            <sub><b>Peter Vogt</b></sub>
+            </a><br />
+            <a href="#documentation" title="Documentation">📖</a> 
+         </td>
       </tr>
    </table>
    </br>
