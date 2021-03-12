@@ -389,8 +389,6 @@ Example statistics (hypsometric curve) and spatial result of input image :code:`
 .. image:: ../img/cli/gwb/example_dist.tif
     :width: 49%
 
-(Pierrick: please replace the above example_dist.tif with example_dist_viewport.tif 
-
 Remarks
 """""""
 
