@@ -504,6 +504,7 @@ Remarks
 """""""
 
 -   The result provides additional statistics in txt and csv format.
+-   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB. 
 -   The result provides fragmentation images at each of the 5 fixed observation scales.
 -   Options to report per-pixel or per-patch and number of fragmentation classes (6, 5, 2).
 
@@ -632,6 +633,7 @@ Remarks
 """""""
 
 -   The result provides additional statistics in txt and csv format.
+-   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB.
 -   The result provides one fragmentation image for each custom observation scale. In the example above, the user selected 3 observation scales with local neighborhood of 7x7, 11x11 and 17x17 pixels).
 -   Options to report per-pixel or per-patch and number of fragmentation classes (6, 5, 2).
 
@@ -722,7 +724,7 @@ Example statistics (heatmap) and spatial result of custom-scale analysis of the 
 
 Remarks
 """""""
-
+-   The IDL-specific sav-file contains all information to conduct LM change analysis in GTB.
 -   LM is not restricted to **Ag**, **Nat**, **Dev** but can be applied to any 3 types of dominant land cover.
 -   The result provides the LM analysis for a single custom observation scale. In the example above, and assuming a pixel resolution of 30 meter, an observation scale of 23x23 pixels corresponds to a local neighborhood (analysis scale) of ~ 50 hectare.
 -   The heatmap facilitates assessments of temporal changes and compare different sites.
