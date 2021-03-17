@@ -2,7 +2,7 @@
 
 .. figure:: img/404-compass.png
     :align: center
-    :height: 200
+    :width: 200
 
 404
 ===
