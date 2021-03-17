@@ -1,11 +1,11 @@
 :orphan:
 
-.. figure:: img/404-compass.png
-    :align: center
-    :width: 200
+404 not found
+=============
 
-404
-===
+.. image:: img/404-compass.png
+    :align: left
+    :width: 40%
 
 UH OH! You're lost.
 -------------------
