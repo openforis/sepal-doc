@@ -6,6 +6,10 @@ sepal-doc
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
     :target: https://opensource.org/licenses/MIT
     :alt: License: MIT
+
+.. image:: https://readthedocs.org/projects/sepal-doc/badge/?version=latest
+    :target: https://sepal-doc.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
  
 
 This folder gather all the documentation material of the sepal platform: `<https://sepal.io>`_
