@@ -21,8 +21,9 @@ You will now find the new directories :code:`input` and :code:`output` in your :
 **GWB** is designed to apply the module-specific settings of the respective parameter file to all tif images placed in the directory :code:`input`. The module-specific results will be written into the directory :code:`output`.
 
 .. note::
--    Please also run the above cp-command to update your **GWB**-setup files with potentially modified files provided by a newer version of **GWB**.  
--    The directory :code:`input` has a subdirectory :code:`backup` having backup copies of all parameter files. This subdirectory may also be used to temporarily store images that should be excluded from processing.
+
+    -   Please also run the above cp-command to update your **GWB**-setup files with potentially modified files provided by a newer version of **GWB**.  
+    -   The directory :code:`input` has a subdirectory :code:`backup` having backup copies of all parameter files. This subdirectory may also be used to temporarily store images that should be excluded from processing.
 
 Example of the **GWB** setup in the user account :code:`/home/prambaud`.
 
@@ -781,7 +782,7 @@ Example
 
 The results are stored in the directory :code:`output`, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.
 
-:code:`GWB_MSPA`command and listing of results in the directory output:
+:code:`GWB_MSPA` command and listing of results in the directory output:
 
 .. code-block:: console
 
