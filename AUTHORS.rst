@@ -12,11 +12,9 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
             <a href="#code" title="Code">💻</a> 
             <a href="#ideas" title="Ideas, Planning, & Feedback">🤔</a> 
             <a href="#question" title="Answering Questions">💬</a> 
-            <a href="#issue" title="Bug reports">🐛</a> 
             <a href="#documentation" title="Documentation">📖</a> 
             <a href="#maintenance" title="Maintenance">🚧</a> 
             <a href="#review" title="Reviewed Pull Requests">👀</a> 
-            <a href="#test" title="Tests">⚠️</a>
          </td>
          <td align="center">
             <a href="https://www.researchgate.net/profile/Peter-Vogt-4">
@@ -24,6 +22,13 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
             <sub><b>Peter Vogt</b></sub>
             </a><br />
             <a href="#documentation" title="Documentation">📖</a> 
+         </td>
+         <td align="center">
+            <a href="https://www.linkedin.com/in/daniel-wiell-030b331/">
+            <img src="https://avatars.githubusercontent.com/u/149204?s=400&v=4" width="70px;" alt="cdanielw"/><br />
+            <sub><b>Daniel Wiell</b></sub>
+            </a><br />
+            <a href="#Infrastructure" title="Infrastructure">🚇</a> 
          </td>
       </tr>
    </table>
