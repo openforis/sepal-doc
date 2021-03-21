@@ -2,6 +2,7 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
 
 .. raw:: html
 
+   <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
    <table>
       <tr>
          <td align="center">
@@ -33,6 +34,7 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
       </tr>
    </table>
    </br>
+   <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
 This project follows the `all-contributors <https://allcontributors.org>`_ specification.
