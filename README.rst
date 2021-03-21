@@ -10,6 +10,14 @@ sepal-doc
 .. image:: https://readthedocs.org/projects/sepal-doc/badge/?version=latest
     :target: https://sepal-doc.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+    
+.. raw:: html
+
+    <a href="https://github.com/openforis/sepal-doc/blob/master/AUTHORS.rst">
+        <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+        <img src="https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square" alt="All contributors">
+        <!-- ALL-CONTRIBUTORS-BADGE:END --> 
+    </a>
  
 
 This folder gather all the documentation material of the sepal platform: `<https://sepal.io>`_
