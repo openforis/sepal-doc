@@ -53,5 +53,5 @@ Contribute
 ----------
 
 If you want to contribute you can fork the project in you own repository and then use it. 
-Please follow the `contributing guidelines <https://github.com/openforis/sepal-doc/blob/master/CONTRIBUTE.rst>`_ if you consider working with us. 
+Please follow the `contributing guidelines <https://github.com/openforis/sepal-doc/blob/master/CONTRIBUTING.md>`_ if you consider working with us. 
 Meet our `contributor <https://github.com/openforis/sepal-doc/blob/master/AUTHORS.rst>`_. 
