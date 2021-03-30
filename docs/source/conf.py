@@ -30,6 +30,7 @@ author = 'Pierrick Rambaud'
 # ones.
 extensions = [
     'sphinx.ext.napoleon',
+    'sphinx.ext.graphviz',
     'notfound.extension',
     '_extentions.video'
 ]
