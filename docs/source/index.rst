@@ -11,7 +11,7 @@ Welcome to SEPAL's documentation!
    Cookbook<cookbook/index>
    Modules<modules/index>
    CLI<cli/index>
-   Team<team/index>
+    <team/index>
 
 
 SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. 
