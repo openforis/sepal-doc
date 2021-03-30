@@ -6,5 +6,5 @@ Getting started with SEPAL
     :hidden:
     
     register
-    setup
+    presentation
     filezilla
