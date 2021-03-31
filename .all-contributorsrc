@@ -1,14 +1,31 @@
 {
-	"files": ["AUTHORS.rst"],
-	"imageSize": 100,
-	"contributorsPerLine": 7,
-	"contributorsSortAlphabetically": false,
-	"badgeTemplate": "<img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square\" alt=\"All contributors\">",
-	"contributorTemplate": "<a href = \"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
-	"skipCi": "true",
-	"contributors": [],
-   	"projectName": "sepal-doc",
-   	"projectOwner": "openforis",
-   	"repoType": "github",
-   	"repoHost": "https://github.com"
+  "files": [
+    "AUTHORS.rst"
+  ],
+  "imageSize": 100,
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "badgeTemplate": "<img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square\" alt=\"All contributors\">",
+  "contributorTemplate": "<a href = \"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "12rambau",
+      "name": "Rambaud Pierrick",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12596392?v=4",
+      "profile": "https://12rambau.github.io/web-resume/",
+      "contributions": [
+        "code",
+        "ideas",
+        "question",
+        "doc",
+        "maintenance",
+        "review"
+      ]
+    }
+  ],
+  "projectName": "sepal-doc",
+  "projectOwner": "openforis",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
