@@ -8,7 +8,7 @@
 	"skipCi": "true",
 	"contributors": [
 		{
-       		"login": "12rambau",
+			"login": "12rambau",
        		"name": "Pierrick Rambaud",
        		"avatar_url": "https://avatars3.githubusercontent.com/u/12596392?v=4",
 			"profile": "https://www.linkedin.com/in/pierrickrambaud/",
@@ -20,7 +20,7 @@
 				"maintenance",
 				"review"
        		]
-     	}
+     	},
 		{
        		"login": "vogtpet",
        		"name": "Peter Vogt",
@@ -29,7 +29,7 @@
       		"contributions": [
          		"documentation"
        		]
-     	}
+     	},
 		{
        		"login": "cdanielw",
        		"name": "Daniel Wiell",
