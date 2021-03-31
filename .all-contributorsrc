@@ -6,5 +6,42 @@
 	"badgeTemplate": "<img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square\" alt=\"All contributors\">",
 	"contributorTemplate": "<a href = \"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
 	"skipCi": "true",
-	"contributors": []
+	"contributors": [
+		{
+       		"login": "12rambau",
+       		"name": "Pierrick Rambaud",
+       		"avatar_url": "https://avatars3.githubusercontent.com/u/12596392?v=4",
+			"profile": "https://www.linkedin.com/in/pierrickrambaud/",
+      		"contributions": [
+         		"code",
+         		"ideas",
+         		"question",
+				"documentation",
+				"maintenance",
+				"review"
+       		]
+     	}
+		{
+       		"login": "vogtpet",
+       		"name": "Peter Vogt",
+       		"avatar_url": "https://avatars.githubusercontent.com/u/68806384?s=400&v=4",
+			"profile": "https://www.researchgate.net/profile/Peter-Vogt-4",
+      		"contributions": [
+         		"documentation"
+       		]
+     	}
+		{
+       		"login": "cdanielw",
+       		"name": "Daniel Wiell",
+       		"avatar_url": "https://avatars.githubusercontent.com/u/149204?s=400&v=4",
+			"profile": "https://www.linkedin.com/in/daniel-wiell-030b331/",
+      		"contributions": [
+         		"infra"
+       		]
+     	}
+	],
+   	"projectName": "sepal-doc",
+   	"projectOwner": "openforis",
+   	"repoType": "github",
+   	"repoHost": "https://github.com"
 }
