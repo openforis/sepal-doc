@@ -5,7 +5,6 @@ SEPAL can be used in multiple way to conduct your analysis. Ths tutorials will g
 
 .. toctree::
     :maxdepth: 1
-    :numbered:
     :hidden:
  
     area_estimation
