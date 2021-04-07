@@ -73,11 +73,18 @@ html_static_path = ['_static']
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
+from pathlib import Path
 import json 
 
-with open('data/modules/en.json') as json_file:
+module_dir = Path(__file__).expanduser().parent.joinpath('data', 'modules')
+dwn_dir = Path(__file__).expanduser().parent.joinpath('modules', 'dwn')
+
+with module_dir.joinpath('en.json').open() as json_file:
     module_doc = json.load(json_file)
 
 for name in module_doc:
-    urlretrieve (module_doc[name], f"modules/dwn/{name}.rst")
+    urlretrieve (module_doc[name], dwn_dir.joinpath(f'{name}.rst'))
+    
+    # prompt for the readthedoc build
+    print(f"{name} documentation have been copied to the dwn folder")
 
