@@ -12,3 +12,4 @@ SEPAL modules
     dwn/sepal_pysmm
     dwn/sepal_ui_template
     dwn/zonal-analysis
+    dwn/gwb
