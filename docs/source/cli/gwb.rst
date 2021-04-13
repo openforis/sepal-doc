@@ -1,7 +1,11 @@
 GuidosToolbox Workbench – GWB
 =============================
 
-This document provides usage instructions for the image analysis program **GWB** (GuidosToolbox Workbench) on the `FAO <https://sepal.io/>`_ SEPAL platform. **GWB** is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. More information is available at the **GWB** `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_. 
+The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. 
+
+This document provides usage instructions for the cmd-line implemetation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
+
+
 
 
 Initial setup
@@ -15,10 +19,16 @@ As regular user, please first copy the **GWB** setup into your :code:`$HOME` acc
 
 You will now find the new directories :code:`input` and :code:`output` in your :code:`$HOME` account.
 
--   :code:`input`: This directory contains module-specific parameter files, some sample (geo)tif images and a readme file.
+-   :code:`input`: This directory contains module-specific parameter files, two sample geotif images and a readme file.
 -   :code:`output`: This directory is empty.
 
-**GWB** is designed to apply the module-specific settings of the respective parameter file to all tif images placed in the directory :code:`input`. The module-specific results will be written into the directory :code:`output`.
+All GWB modules require categorical raster input maps in data type unsigned byte (8bit), with discrete integer values within [0, 255] byte. The two sample images in the directory :code:`input` are:
+
+-   :code:`example.tif`: 0 byte - Missing, 1 byte - Background, 2 byte - Foreground
+-   :code:`clc3class.tif`: 1 byte - Agriculture, 2 byte - Natural, 3 byte - Developed
+
+
+**GWB** is designed to apply the module-specific settings of the respective parameter file to all tif-images placed in the directory :code:`input`. The module-specific results will be written into the directory :code:`output`.
 
 .. note::
 
@@ -160,8 +170,8 @@ It is also possible to use the "help" option: :code:`GWB_ACC --help`
 Additional, general remarks:
 
 -   The directory :code:`output` must be empty before running a new analysis. Please watch out for hidden files/folders in this directory, which may be the result of an interrupted execution. The safest way to empty the directory is to delete it and recreate a new directory :code:`output`.
--   **GWB** will automatically process all geotiff images (single band and of datatype byte) from the directory :code:`input`. Images of different format or that are not compatible with the selected analysis module will be skipped. Details on each image processing result can be found in the log-file in the directory :code:`output`.
--   **GWB** is written in the IDL language. It includes all required IDL libraries and the source code of each module can be found in :code:`/opt/GWB/tools/source/`.
+-   **GWB** will automatically process all suitable geotiff images (single band and of datatype byte) from the directory :code:`input`. Images of different format or that are not compatible with the selected analysis module requirements will be skipped. Details on each image processing result can be found in the log-file in the directory :code:`output`.
+-   **GWB** is written in the  the `IDL language <https://www.l3harrisgeospatial.com/Software-Technology/IDL>`_. It includes all required IDL libraries and the source code of each module, stored in the folder: :code:`/opt/GWB/tools/source/`.
 -   To list your current version of **GWB**, or to check for potential new **GWB** versions, please run the command: 
 
     .. code-block:: console
@@ -175,12 +185,12 @@ Available Commands
 
 .. danger:: 
 
-    Please enter your own settings by amending the module-specific parameters after the :code:`*******` in the respective input/<module>-parameters.txt file. Don't change anything else in the parameter file or the module execution will crash. If in doubt, consult the respective backup/<module>-parameters.txt file.
+    Please enter your own settings by amending the module-specific parameters within the section marked with :code:`*******` in the respective input/<module>-parameters.txt file. Don't change anything else in the parameter file, don't delete or add lines or the module execution will crash. If in doubt, consult the respective input/backup/<module>-parameters.txt file.
 
 GWB_ACC
 ^^^^^^^
 
-This module will conduct the **Accounting** analysis. Accounting will label and calculate the area of all foreground objects (coded with 2 byte). The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Accounting <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Accounting.pdf>`_ product sheet.
+This module will conduct the **Accounting** analysis. Accounting will label and calculate the area of all foreground objects. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Accounting <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Accounting.pdf>`_ product sheet.
 
 Requirements
 """"""""""""
@@ -231,7 +241,7 @@ Example
 The results are stored in the directory :code:`output`, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.
 
 
-:code:`GWB_ACC` Command and listing of results in the directory output:
+:code:`GWB_ACC` Command and listing of results in the directory :code:`output`:
 
 .. code-block:: console
 
@@ -257,7 +267,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     output/example_acc:
     example_acc.csv  example_acc.tif  example_acc.txt
 
-example statistics and graphical result of input image clc3class.tif:
+example statistics and graphical result of input image :code:`example.tif`:
 
 .. code-block:: text
 
@@ -314,7 +324,7 @@ Accounting has been used to map and summarize forest patch size classes in the `
 GWB_DIST
 ^^^^^^^^
 
-This module will conduct the **Euclidean Distance** analysis. Each pixel will show the shortest distance to the foreground (coded with 2 byte) boundary. Pixels inside a foreground object have a positive distance value while background pixels have a negative distance value. The result are spatially explicit maps and tabular summary statistics.
+This module will conduct the **Euclidean Distance** analysis. Each pixel will show the shortest distance to the foreground boundary. Pixels inside a foreground object have a positive distance value while background pixels have a negative distance value. The result are spatially explicit maps and tabular summary statistics.
 Details on the methodology and input/output options can be found in the `Distance <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Distance-Euclidean.pdf>`_ product sheet.
 
 Requirements
@@ -506,8 +516,8 @@ Remarks
 
 -   The result provides additional statistics in txt and csv format.
 -   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB. 
--   The result provides fragmentation images at each of the 5 fixed observation scales.
--   Options to report per-pixel or per-patch and number of fragmentation classes (6, 5, 2).
+-   In addition to the above multi-scale image, the result provides fragmentation images at each of the 5 fixed observation scales.
+-   Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).
 
 Fragmentation has been used to map and summarize the degree of forest fragmentation by Riitters et al. (`2002 <https://doi.org/10.1007/s10021-002-0209-2>`_, `2012 <https://doi.org/10.1038/srep00653>`_) as well as the US Forest Inventory and Analysis (`FIA <https://www.fia.fs.fed.us/>`_) reports since 2003.
 
@@ -635,8 +645,8 @@ Remarks
 
 -   The result provides additional statistics in txt and csv format.
 -   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB.
--   The result provides one fragmentation image for each custom observation scale. In the example above, the user selected 3 observation scales with local neighborhood of 7x7, 11x11 and 17x17 pixels).
--   Options to report per-pixel or per-patch and number of fragmentation classes (6, 5, 2).
+-   The result provides one fragmentation image for each custom observation scale. In the example above, the user selected 1 observation scale with local neighborhood of 23x23 pixels.
+-   Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).
 
 Fragmentation has been used to map and summarize the degree of forest fragmentation in the `FAO SOFO2020 <https://foresteurope.org/publications/>`_ report and the Forest Europe `State of Europe’s Forest 2020 <https://foresteurope.org/publications/>`_ report with additional technical details in the respective JRC Technical Reports for `FAO <https://doi.org/10.2760/145325>`_ and `FE <https://doi.org/10.2760/991401>`_.
 
@@ -727,15 +737,15 @@ Remarks
 """""""
 -   The IDL-specific sav-file contains all information to conduct LM change analysis in GTB.
 -   LM is not restricted to **Ag**, **Nat**, **Dev** but can be applied to any 3 types of dominant land cover.
--   The result provides the LM analysis for a single custom observation scale. In the example above, and assuming a pixel resolution of 30 meter, an observation scale of 23x23 pixels corresponds to a local neighborhood (analysis scale) of ~ 50 hectare.
--   The heatmap facilitates assessments of temporal changes and compare different sites.
+-   The result provides the LM analysis for a single custom observation scale. In the example above, and assuming a pixel resolution of 100 meter, an observation scale of 23x23 pixels corresponds to a local neighborhood (analysis scale) of 2300x2300 meters ~ 50 hectare.
+-   The heatmap facilitates assessments of temporal changes and/or comparison between different sites.
 
-The Landscape Mosaic has been used to map and summarize the degree of landscape heterogeneity in many occasions (see references in the `Landscape Mosaic <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf>`_) product sheet, including the `RPA <https://www.srs.fs.usda.gov/pubs/37766>`_, `Embrapa <https://urldefense.com/v3/__https:/www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1126895/1/Livro-Doc-345-1815-final-3.pdf__;!!DOxrgLBm!QdlMk1JDuaLmRLWA6JeqizIFwET3sAHqnWlLDX8vQnfpu9edG2iAIws94-RV3jkaakScfw$>`_, and `MAES <https://doi.org/10.2760/757183>`_ reports.
+The Landscape Mosaic has been used to map and summarize the degree of landscape heterogeneity in many occasions (see references in the `Landscape Mosaic <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf>`_ product sheet), including the `RPA <https://www.srs.fs.usda.gov/pubs/37766>`_, `Embrapa <https://urldefense.com/v3/__https:/www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1126895/1/Livro-Doc-345-1815-final-3.pdf__;!!DOxrgLBm!QdlMk1JDuaLmRLWA6JeqizIFwET3sAHqnWlLDX8vQnfpu9edG2iAIws94-RV3jkaakScfw$>`_, and `MAES <https://doi.org/10.2760/757183>`_ reports.
 
 GWB_MSPA
 ^^^^^^^^
 
-This module will conduct the **Morphological Spatial Pattern Analysis**. MSPA analyses shape and connectivity and conducts a segmentation of foreground patches in up to 25 feature classes. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Morphology <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ product sheet.
+This module will conduct the **Morphological Spatial Pattern Analysis**. `MSPA <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ analyses shape and connectivity and conducts a segmentation of foreground (i.e. forest) patches in up to 25 feature classes. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Morphology <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ product sheet.
 
 Requirements
 """"""""""""
@@ -856,7 +866,7 @@ Single band geotiff in data format byte:
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
--   3 byte: specific background (for P23)
+-   3 byte: specific background (for P23 only)
 
 Processing parameter options are stored in the file :code:`input/p223-parameters.txt`. 
 
@@ -1040,7 +1050,7 @@ Remarks
 -   Parcellation is a normalized summary index in [0, 100] %.
 -   :code:`GWB_PARC` provides a tabular summary only.
 
-Parcellation, or the degree of dissection, may be useful to provide a quick tabular summary for each land cover class and the entire image. Together with the degree of division, it may be used to make a statement of the dissection of a particular land cover class. Because Parcellation is a normalized index, measuring Parcellation can be used to quantify temporal changes over a given site as well as directly compare the degree of parcellation of different sites. Being able to quantify changes in percent may also be useful to investigate if a given landscape planning measure had in fact a tangible influence on a specific land cover type or not.
+Parcellation, or the degree of dissection, may be useful to provide a quick tabular summary for each land cover class and the entire image. Together with the degree of division, it may be used to make a statement on the dissection of a particular land cover class. Because Parcellation is a normalized index, measuring Parcellation can be used to quantify temporal changes over a given site as well as directly compare the degree of parcellation of different sites. Being able to quantify changes in percent may also be useful to investigate if a given landscape planning measure had in fact a tangible influence on a specific land cover type or not.
 
 GWB_REC
 ^^^^^^^
@@ -1383,7 +1393,7 @@ Remarks
     
         $ gdalinfo -hist <path2image>
 
-Recoding may be useful to quickly setup a forest mask from a land cover map by reassigning specific land cover classes to forest. Please note that many **GWB** modules require a (pseudo) binary forest mask of data type Byte with the assignment:
+Recoding may be useful to quickly setup a forest mask from a land cover map by reassigning specific land cover classes to forest. Please note that most **GWB** modules require a (pseudo) binary forest mask of data type Byte with the assignment:
 
 -   0 byte: missing data (optional)
 -   1 byte: Background
@@ -1596,4 +1606,4 @@ Remarks
 -   The full version, GWB_MSPA provides many more features and classes.
 -   Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to detect connecting pathways. 
 
-:code:`GWB_SPA` is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient for many application fields. Advanced analysis, including the detection of connecting pathways require using the full version :code:`GWB_MSPA`.
+:code:`GWB_SPA` is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient in many application fields. Advanced analysis, including the detection of connecting pathways require using the full version :code:`GWB_MSPA`.
