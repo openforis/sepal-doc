@@ -104,11 +104,3 @@ In partnership with
 .. image:: img/logos/worldBank.png
     :target: https://www.worldbank.org/en/home
     :height: 90
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
