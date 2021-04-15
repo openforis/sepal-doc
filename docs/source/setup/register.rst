@@ -1,7 +1,7 @@
 Register to SEPAL
 =================
 
-To get the full potential of the SEPAL plateform you need to register to several services. They will all be presented here, the registration to SEPAL is the only compulsory one.
+To get the full potential of the SEPAL platform you need to register to several services. They will all be presented here, the registration to SEPAL is the only compulsory one.
 
 .. tip::
 
@@ -18,7 +18,7 @@ Sign Up to SEPAL
    :alt: Sepal splash page.
    :align: center
 
-You can request an account by visiting `sepal.io <sepal.io>`_ and clicking :code:`Sign Up`. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
+You can request an account by visiting `sepal.io <sepal.io>`_ and clicking :code:`Sign Up`. This will take you to a Google Doc sign-up form to fill out. You will be set up with an account within a day or so.
 
 .. image:: ../img/setup/register/request_sepal.png
    :alt: Request access to sepal.io
@@ -39,7 +39,7 @@ Sign up to GEE
 
     This step is not compulsory if you don't want to export your data. SEPAL can run computation on its own Google Earth Engine account on your behalf.
 
-Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up here: http://mail.google.com/mail/signup. 
+Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL. You will need to have a Google email in order to sign up. If you don't have one already, you can set one up here: http://mail.google.com/mail/sign-up. 
 
 To request a GEE account, please visit https://earthengine.google.com/new_signup/.
 
@@ -55,7 +55,7 @@ Once you have a Google Earth Engine account, you can access GEE here: https://co
 
 .. warning::
 
-    If you experience trouble white listing your gmail adress to GEE please let the SEPAL team know, we may be able to help you
+    If you experience trouble white listing your gmail address to GEE please let the SEPAL team know, we may be able to help you
 
 Sign Up to CEO
 --------------
@@ -69,7 +69,7 @@ In your browser window, navigate to https://collect.earth/. CEO supports Google 
 Click :code:`Login/Register` on the upper right.
 
 .. image:: ../img/setup/register/ceo_landing.png
-   :alt: ceo landing page
+   :alt: CEO landing page
    :align: center
 
 To set up a new account, click on :code:`Register a new account` and follow the instructions. When you have an account, login with your **email** and **password**.
@@ -85,7 +85,7 @@ Sign up for Planet Lab data
 
     If you don't want to download Planet imagery (up to 5m of resolution you can skip this registration
 
-Through Norway’s International Climate & Forests Initiative (NICFI), anyone can now access Planet’s high-resolution, analysis-ready mosaics of the world’s tropics in order to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity, and facilitate sustainable development.
+Through Norway's International Climate & Forests Initiative (NICFI), anyone can now access Planet's high-resolution, analysis-ready mosaics of the world's tropics in order to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity, and facilitate sustainable development.
 
 To set up a new account follow this link https://www.planet.com/nicfi/.
 

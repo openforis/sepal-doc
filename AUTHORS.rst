@@ -14,7 +14,7 @@ Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/d
  <!-- markdownlint-disable -->
  <table>
   <tr>
-   <td align="center"><a href = "https://12rambau.github.io/web-resume/"><img src="https://avatars.githubusercontent.com/u/12596392?v=4" width="100px;" alt=""/><br /><sub><b>Rambaud Pierrick</b></sub></a></td>
+   <td align="center"><a href = "https://12rambau.GitHub.io/web-resume/"><img src="https://avatars.githubusercontent.com/u/12596392?v=4" width="100px;" alt=""/><br /><sub><b>Rambaud Pierrick</b></sub></a></td>
   </tr>
  </table>
 

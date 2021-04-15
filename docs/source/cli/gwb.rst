@@ -3,7 +3,7 @@ GuidosToolbox Workbench – GWB
 
 The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. 
 
-This document provides usage instructions for the cmd-line implemetation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
+This document provides usage instructions for the cmd-line implementation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
 
 
 
@@ -19,7 +19,7 @@ As regular user, please first copy the **GWB** setup into your :code:`$HOME` acc
 
 You will now find the new directories :code:`input` and :code:`output` in your :code:`$HOME` account.
 
--   :code:`input`: This directory contains module-specific parameter files, two sample geotif images and a readme file.
+-   :code:`input`: This directory contains module-specific parameter files, two sample geotif images and a README file.
 -   :code:`output`: This directory is empty.
 
 All GWB modules require categorical raster input maps in data type unsigned byte (8bit), with discrete integer values within [0, 255] byte. The two sample images in the directory :code:`input` are:
@@ -319,7 +319,7 @@ example statistics and graphical result of input image :code:`example.tif`:
     :width: 50%
     :align: center
 
-Accounting has been used to map and summarize forest patch size classes in the `FAO SOFO2020 <http://www.fao.org/publications/sofo/en/>`_ report and the Forest Europe `State of Europe’s Forest 2020 <https://foresteurope.org/publications/>`_ report with additional technical details in the respective JRC Technical Reports for `FAO <https://doi.org/10.2760/145325>`_ and `FE <https://doi.org/10.2760/991401>`_.
+Accounting has been used to map and summarize forest patch size classes in the `FAO SOFO2020 <http://www.fao.org/publications/sofo/en/>`_ report and the Forest Europe `State of Europe's Forest 2020 <https://foresteurope.org/publications/>`_ report with additional technical details in the respective JRC Technical Reports for `FAO <https://doi.org/10.2760/145325>`_ and `FE <https://doi.org/10.2760/991401>`_.
 
 GWB_DIST
 ^^^^^^^^
@@ -503,7 +503,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     example_fad_7.tif       example_fad_barplot.png  example_fad_mscale.sav  
     example_fad_mscale.txt
 
-Example statistics and spatial result of a multiscale per-pixel analysis of the input image :code:`example.tif`:
+Example statistics and spatial result of a multi-scale per-pixel analysis of the input image :code:`example.tif`:
 
 .. image:: ../img/cli/gwb/example_fad_barplot.png
     :width: 49%
@@ -648,7 +648,7 @@ Remarks
 -   The result provides one fragmentation image for each custom observation scale. In the example above, the user selected 1 observation scale with local neighborhood of 23x23 pixels.
 -   Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).
 
-Fragmentation has been used to map and summarize the degree of forest fragmentation in the `FAO SOFO2020 <https://foresteurope.org/publications/>`_ report and the Forest Europe `State of Europe’s Forest 2020 <https://foresteurope.org/publications/>`_ report with additional technical details in the respective JRC Technical Reports for `FAO <https://doi.org/10.2760/145325>`_ and `FE <https://doi.org/10.2760/991401>`_.
+Fragmentation has been used to map and summarize the degree of forest fragmentation in the `FAO SOFO2020 <https://foresteurope.org/publications/>`_ report and the Forest Europe `State of Europe's Forest 2020 <https://foresteurope.org/publications/>`_ report with additional technical details in the respective JRC Technical Reports for `FAO <https://doi.org/10.2760/145325>`_ and `FE <https://doi.org/10.2760/991401>`_.
 
 GWB_LM
 ^^^^^^
@@ -1607,3 +1607,9 @@ Remarks
 -   Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to detect connecting pathways. 
 
 :code:`GWB_SPA` is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient in many application fields. Advanced analysis, including the detection of connecting pathways require using the full version :code:`GWB_MSPA`.
+
+.. spelling::
+
+    cp
+    sav
+    clc

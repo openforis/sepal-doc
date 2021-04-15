@@ -1,7 +1,7 @@
 Introduction to SEPAL
 =====================
 
-In this page, you will be introduced to the SEPAL interface. You will learn how to access SEPAL’s features to facilitate the remote sensing exercises in the rest of the documetnation.
+In this page, you will be introduced to the SEPAL interface. You will learn how to access SEPAL's features to facilitate the remote sensing exercises in the rest of the documentation.
 
 .. note::
 
@@ -15,7 +15,7 @@ In this page, you will be introduced to the SEPAL interface. You will learn how 
     **prerequites**
 
     -   Internet access
-    -   SEPAL account (see ‘Getting Started’)
+    -   SEPAL account (see ‘Getting Started')
             
 
 Access SEPAL
@@ -30,7 +30,7 @@ Type in your **Username** and **Password** and click **Login**.
    :align: center
 
 .. tip::
-   When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
+   When working in SEPAL, do not click your browser's back button. This will go back to the previous web-page. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
 Setup the local
 ---------------
@@ -46,13 +46,13 @@ The first step to create a SEPAL environment is to set up the language you want 
 
 Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these language in sepal come back to the launch page. (disconnect yourself if necessary). On this page click on :code:`Launch`.
 
-Once y'ouve clicked, you will access the login page. At the top-right side of this panel, click on the btn corresponding to your language : 
+Once you've clicked, you will access the login page. At the top-right side of this panel, click on the button corresponding to your language : 
 
 - fr: Français
 - en: English
 - es: español
 
-The SEPAL launch page should reload itself and the language you selected will be used by the plateform for all its tools. 
+The SEPAL launch page should reload itself and the language you selected will be used by the platform for all its tools. 
 
 SEPAL Interface
 ---------------
@@ -75,7 +75,7 @@ There are four main navigation tabs in the dock on the left side of the screen.
 
 At the lower left is the red :code:`Tasks` tab. Clicking on this brings up a list of currently running tasks.
 
-**Account Information** can be found in the bottom right of the webpage by clicking the button that shows your username. This opens an overlay that displays important user account information.
+**Account Information** can be found in the bottom right of the web-page by clicking the button that shows your username. This opens an overlay that displays important user account information.
 
 You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent. 
 
@@ -128,7 +128,7 @@ For example, click the :code:`downloads` folder to expand it. This will display 
 
 Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
--   The left button will show hidden files (files and folder names starting with ‘.’).
+-   The left button will show hidden files (files and folder names starting with ‘.').
 -   The second button will download selected data to your local computer.
 -   The third button will delete the selected folder or file.
 -   The last button will clear your selection.
@@ -148,7 +148,7 @@ To increase the size of your instance, follow the following steps:
 
 -   First examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.
 -   Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost effective.
--   Next to the “Select (t1):” text, type in ‘t2’ or your chosen instance type.
+-   Next to the “Select (t1):” text, type in ‘t2' or your chosen instance type.
 -   Press Enter on your keyboard.
 -   Wait for the new instance to start. This will take several minutes.
 

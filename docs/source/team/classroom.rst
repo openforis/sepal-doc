@@ -35,7 +35,7 @@ If you need material for a webinar you can either directly reuse one of the gene
 
 .. tip::
 
-    If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everythingbut the content will resides in a communal account. 
+    If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account. 
 
 When creating basic content, you can re-use posts from classes were you are teaching as shown in the following image:
 
@@ -54,18 +54,18 @@ When creating basic content, you can re-use posts from classes were you are teac
 Use the general content
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To use the general content in your classrooms you need to add the general content folder to your drive. The command has disappeared in 2018 from Google drive. Now Goolge only offer the opportunity to create shortcut to other drives which is not sufficient in our case. As there were too many complains the reintegrated the feature.
+To use the general content in your classrooms you need to add the general content folder to your drive. The command has disappeared in 2018 from Google drive. Now Google only offer the opportunity to create shortcut to other drives which is not sufficient in our case. As there were too many complains the reintegrated the feature.
 
 In your drive got to the “share with me" section and click on the “General Class Content” folder.
 
 .. note::
 
-    If the content has not been shared wih you ask for it to any of your colleague
+    If the content has not been shared with you ask for it to any of your colleague
 
 .. image:: ../img/team/classroom/shared-with-me.png
 
 
-Then presse :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive. 
+Then press :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive. 
 
 .. image:: ../img/team/classroom/pop-up.png
 
@@ -73,31 +73,31 @@ In a classroom to reuse a file from this folder, edit the classroom content:
 
 .. image:: ../img/team/classroom/edit.png
 
-Then add a file from Gdrive (to make sure that you’re reusing an already existing file):
+Then add a file from Gdrive (to make sure that you're reusing an already existing file):
 
 .. image:: ../img/team/classroom/add-file.png
 
 .. note::
 
-    The file you’re using is made for general purpose and it’s not supposed to be adapted to the specific needs of your formation. If the modification you’re making are improving the quality of the presentation it’s perfect but if you adapt it to your formation specific need, you should consider copy it to you drive.
+    The file you're using is made for general purpose and it's not supposed to be adapted to the specific needs of your formation. If the modification you're making are improving the quality of the presentation it's perfect but if you adapt it to your formation specific need, you should consider copy it to you drive.
 
 .. danger:: 
 
     All the team members have the right to edit this file, mistakes will impact all of us and all the already existing classrooms that use this file.
 
-List of avaliable Classes
+List of available Classes
 -------------------------
 
 .. tip:: 
 
-    If you have not been aded to one of this class and you need to use it's content send an email to `sepal.classroom@gmail.com <mailto:sepal.classroom@gmail.com>`_ and you'll be add as a teacher
+    If you have not been added to one of this class and you need to use it's content send an email to `sepal.classroom@gmail.com <mailto:sepal.classroom@gmail.com>`_ and you'll be add as a teacher
 
 General classroom
 ^^^^^^^^^^^^^^^^^
 
 .. warning::
 
-    If you need or want to create a new classroom follow the steps described in the usage section. Add the language at the beggining of your class name to help the maintainers of the google account to order things. instead of "SEPAL Intro", you'll set "EN - SEPAL Intro".
+    If you need or want to create a new classroom follow the steps described in the usage section. Add the language at the beginning of your class name to help the maintainers of the google account to order things. instead of "SEPAL Intro", you'll set "EN - SEPAL Intro".
 
 .. tip::
 

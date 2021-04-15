@@ -4,11 +4,11 @@ Exchange files with SEPAL
 built-in tools 
 --------------
 
-To exchange files with SEPAL you can use the build-in tools of the platform. that does not require any instalation. 
+To exchange files with SEPAL you can use the build-in tools of the platform. that does not require any installation. 
 
 .. note:: 
 
-    Remeber that these tools are limited and that big upload or download will require to use an FTP solution. 
+    Remember that these tools are limited and that big upload or download will require to use an FTP solution. 
 
 Jupyter Notebook 
 ^^^^^^^^^^^^^^^^
@@ -22,15 +22,15 @@ When clicking on a file, use the :code:`download` button to download it to your 
 
 .. warning::
 
-    The download button is only availabel when you click on 1 single file. You can't download a full folder at once.
+    The download button is only available when you click on 1 single file. You can't download a full folder at once.
 
-.. image:: ../img/setup/filezilla/jupyter-notebook-dashboard.png
+.. image:: ../img/setup/FileZilla/jupyter-notebook-dashboard.png
 
 
-JupyterLab
+Jupyterlab
 ^^^^^^^^^^
 
-In the SEPAL application dashboard, open a new JupyterLab app. 
+In the SEPAL application dashboard, open a new Jupyterlab app. 
 
 From there, The file browser and File menu enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
 
@@ -39,14 +39,14 @@ Files can be uploaded to the current directory of the file browser by dragging a
 .. youtube:: 1bd2QHqQSH4
     :align: center
 
-Any file in JupyterLab can be downloaded by right-clicking its name in the file browser and selecting :code:`Download` from the context menu:
+Any file in Jupyterlab can be downloaded by right-clicking its name in the file browser and selecting :code:`Download` from the context menu:
 
 .. youtube:: Wl7Ozl6rMcc
     :align: center
 
 .. seealso:: 
 
-    More information about the Jupyterlab inerfacein the JupyterLab `documentation <https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`_.
+    More information about the Jupyterlab interface in the Jupyterlab `documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`_.
 
 Rstudio
 ^^^^^^^
@@ -55,9 +55,9 @@ In the SEPAL application dashboard, open a new Jupyter Notebook app.
 
 From there The file menu (in red on the bellow image) enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming and copying.
 
-.. image:: ../img/setup/filezilla/rstudio_dashboard.png
+.. image:: ../img/setup/FileZilla/rstudio_dashboard.png
 
-Using the :code:ìupload button at the top left of the red rectangle, you will be able to upload files from your local computer.
+Using the :code:`upload` button at the top left of the red rectangle, you will be able to upload files from your local computer.
 
 SEPAL file explorer
 ^^^^^^^^^^^^^^^^^^^
@@ -66,7 +66,7 @@ In the SEPAL file explorer, you will be able to work with files and directories 
 
 after clicking on a single file, use the :code:`download` button to download the file to your local folder.
 
-.. image:: ../img/setup/filezilla/sepal_file_manager.png
+.. image:: ../img/setup/FileZilla/sepal_file_manager.png
 
 .. warning::
 
@@ -75,9 +75,9 @@ after clicking on a single file, use the :code:`download` button to download the
 FTP solution 
 ------------
 
-SEPAL content can also be accessed via SSH File Transfer Protocole (FTP). any FTP solution might work but in this section we will present it using FIleZilla. Adaptation to your favorite FTP solution should be straight forward. 
+SEPAL content can also be accessed via SSH File Transfer Protocol (FTP). any FTP solution might work but in this section we will present it using FileZilla. Adaptation to your favorite FTP solution should be straight forward. 
 
-FIleZilla
+FileZilla
 ^^^^^^^^^
 
 If you don't have any FTP solution installed on your local machine AND if you don't know what is a FTP solution no worries, this documentation page is here to help you. 
@@ -90,7 +90,7 @@ FileZilla®, is a free FTP solution. The FileZilla Client not only supports FTP,
 
 .. tip:: 
 
-    The software can be downloaded from `here <https://filezilla-project.org/download.php?type=client>`_
+    The software can be downloaded from `here <https://FileZilla-project.org/download.php?type=client>`_
 
 Now that the presentation are done, let's move on to the usage
 
@@ -112,7 +112,7 @@ In the site manager pop-up click on the :code:`New Site` button. Use the screens
 
     for :code:`user` and :code:`password`; use the credential you use to connect to the platform
 
-.. image:: ../img/setup/filezilla/register_new_site.png
+.. image:: ../img/setup/FileZilla/register_new_site.png
 
 Click on :code:`Connect` and your SEPAL drive will appear in the right panel. In parallel, in the left panel, you'll find the files and folders of your computer.
 
@@ -128,7 +128,7 @@ Below the toolbar (1) and quick connect bar (2), the message log (3) displays tr
 
 .. seealso::
 
-    To get more information about the usage of filezilla, you'll find all the information you need in their `wiki page <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>`_. 
+    To get more information about the usage of FileZilla, you'll find all the information you need in their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`_. 
 
 
 

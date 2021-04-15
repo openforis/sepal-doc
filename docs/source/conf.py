@@ -13,13 +13,14 @@
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'sepal'
-copyright = f"2020-{datetime.now().year}, the sepal development team"
+project = 'SEPAL'
+copyright = f"2020-{datetime.now().year}, the SEPAL development team"
 author = 'Pierrick Rambaud'
 
 
@@ -31,8 +32,18 @@ author = 'Pierrick Rambaud'
 extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.graphviz',
+    'sphinxcontrib.spelling',
     'notfound.extension',
     '_extentions.video'
+]
+
+# spelling options
+spelling_lang='en_US'
+spelling_show_suggestions=True
+spelling_exclude_patterns=['modules/dwn/*.rst']
+spelling_filters = ['_filters.Names']
+spelling_word_list_filename=[
+    str(Path(__file__).expanduser().parent.joinpath('data', 'spelling', 'en_US.txt'))
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -73,7 +84,6 @@ html_static_path = ['_static']
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
-from pathlib import Path
 import json 
 
 module_dir = Path(__file__).expanduser().parent.joinpath('data', 'modules')
