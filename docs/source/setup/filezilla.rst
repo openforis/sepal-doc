@@ -55,7 +55,7 @@ In the SEPAL application dashboard, open a new Jupyter Notebook app.
 
 From there The file menu (in red on the bellow image) enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming and copying.
 
-.. image:: ../img/setup/filezilla/filezilla_panel.png
+.. image:: ../img/setup/filezilla/rstudio_dashboard.png
 
 Using the :code:ìupload button at the top left of the red rectangle, you will be able to upload files from your local computer.
 

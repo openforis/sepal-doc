@@ -9,6 +9,11 @@ If you don't find what you need please let us know using the `Github issue track
 
 We will be happy to receive contribution from people that use this documentation, so if you find a typo, don't hesitate to use the :code:`edit this page` button on the right side of every documentation page to help us improve the way we present the platform!
 
+.. figure:: ../img/setup/index/planet_classification.png
+    :alt: Uganda planet classifications
+
+    example of a classification of Uganda based on PlanetLab© data based on the classification tool of SEPAL
+
 Table of content 
 ----------------
 
@@ -17,4 +22,5 @@ Table of content
     
     register
     presentation
+    gee
     filezilla
