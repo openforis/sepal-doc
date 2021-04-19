@@ -1091,7 +1091,7 @@ Create mask for :code:`landsat_t1_6bands.tif`:
         1
         #1 1 = 0 2 ?
 
-Create mask for landsat t2:
+Create mask for landsat_t2:
 
 .. code-block:: console
 
@@ -1909,652 +1909,1066 @@ After generating :code:`training.txt` run the command line for calculating your 
     PointsToSquares.py training.txt Points2Squares_training.kml 20 1 2 3
 
 IMAGE MANIPULATION
-7.23 multifillerThermal.bash
+^^^^^^^^^^^^^^^^^^
+
+multifillerThermal.bash
+"""""""""""""""""""""""
+
 NAME
 ####
+
 multifillerThermal.bash - is a script which utilizes several Landsat scenes to build a multi-temporal image composite using the warmest pixel -method.
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
 ########
-multifillerThermal.bash
-multifillerThermal.bash <anchor><filler1><filler2>... <filler n>
+
+.. code-block:: console
+
+    multifillerThermal.bash <anchor><filler1><filler2>... <filler n>
+
 DESCRIPTION
 ###########
+
 The aim is to have one good image so called anchor with as few problematic areas as possible and then another which is from same season (as close a date as possible) and has clouds in different locations so called filler.
+
 EXAMPLE
 #######
-- For this exercise following tools are used: multifillerThermal.bash - Open your working directory using
+
+For this exercise following tools are used: :code:`multifillerThermal.bash`
+
+Open your working directory using
+
 .. code-block:: console
     
     cd ~
-- Then run
-multifillerThermal .bash anchor. tif filler . tif
-User Manual 71
+
+Then run:
+
+.. code-block:: console 
+
+    multifillerThermal.bash anchor.tif filler.tif
             
-7.24 oft-calc NAME
-####
-oft-calc - is a raster image calculator. OFGT VERSION
-1.25.4
-SYNOPSIS
-######## oft-calc
-oft-calc <input><output>
-oft-calc <input><output>[-um maskfile] [-inv] [-of format] [-Z/M/Q/C/L/X/M] oft-calc <input><output>[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/ CInt16/CInt32/CFloat32/CFloat64]
-DESCRIPTION
-###########
-oft-calc based on an input raster file, oft-calc creates an output raster file as result of a simple calculation between the original bands. The bands used for the calculation must be all stacked in the input raster file.
-After defining the first line, following parameters will be asked: 1. Number of output bands
-2. Input postfix equations
-Band 1: The equation for output band 1 has to be specified. The input bands are referred to with #. The implemented operators between input bands include:
-+ addition
-− subtraction
-/ division
-∗ multiplication
-= equals to
-< less than
-> larger than
-! not equal to
-? if clause
-M maximum of two values m minimum of two values
-User Manual 72
-       
- B bit level operator
-e natural logarithm
-c pixel column coordinate
- r pixel row coordinate
-ˆ power
-e natural logarithm
-x base−e exponential function
-  OPTION
-Parameters:
--inv the notation of the equations has changed in version 2.0. In
-case you want to use the old notations, please use the -inv option. -of format. Any GDAL output format can be specified. If not speci-
-fied, output format will be tif.
--ot output data type. If not specified, output data type will be the
-same as input data type. -[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64] - output data type
--[Z/M/Q/C/L/X/M] - try to speed up the processing by reading n
-lines at the time.
-Z=2000 M=1000 Q=500 L=50 X=10
--um mask. If a raster file is provided as a mask, only pixels with
-value different than 0 in the mask will be used for the calculation.
-NOTE
-The notation of the equations has changed in version 2.0. In case you want to use the old notations, please use the -inv option.
-EXAMPLE
-#######
-For this exercise following tools are used: oft-calc
-1. EXAMPLES: OPERATORS 1. Addition
-Simple band addition: band1 + band2
-User Manual 73
-   oft−calc in image out image //hit return after defining this line
- 
- 2 //this number defines the number of bands your out image will have; hit return again
-#1 #2 + //type your clause and hit return . Now out image should be in process !
-2. Division band1 / band2
-#1 #2 /
-3. Equals to
-if pixel value of band1 equals 0 then set it to 0, otherwise to 1
-oft−calc in image out image
-1 // if(?) band1 = 0 (#1 0 =) then 0 otherwise 1 (1 0) #1 0 = 1 0 ?
-4. Boolean
-You can also use boolean larger than operator to determine if #1 >#2
-oft−calc in image out image
-2
-#1 #2 >
-5. The usage of the IF clause
-if band1 ¿ 50, output=1 else output=0. This also creates also a simple mask containing 1 for pixels of interest and 0 for background
-oft−calc in image out image
-1
-#1 50 > 0 1 ? //if(’’?’’) band1 > 50 (’’#1 50 >’’) then 1
-oft−calc in image out image
-1
-#1#2+2=01? //if(’’?’’) band1+band2 (’’#1#2+’’)
-User Manual 74
-      oft−calc in image out image 2
-                   otherwise 0 (’’0 1’’) if band1 + band2 = 2, output=1
- e l s e output=0
-      = 2 (’’2 =’’) then 1 otherwise 0 (’’0 1’’) if band1 > 50
- or band2 > 50 , output=1 e l s e output=0
-   
-   oft−calc in image out image
-1
-#1 50 > #2 50 > 0 1 ? 1 ? //if band1 > 50 (’’#1 50 >’’)
-then 1 (’’1 ?’’) otherwise if band2 > 50 (’’#2 50 >’’) then 1 otherwise 0 (’’0 1 ?’’)
-2. EXAMPLES ON APPLICATIONS
-1. NDVI
-Calculate the NDVI for your Landsat image (band3 = Red band, band4 = NIR Band)
-#4 #3 − #4 #3 + / //(b4−b3) / (b4+b3)
-Note that the band4 in the input layerstack image should be the NIR band and the band 3, the Red band. Note also that the output data type should be specified as Float32 in order to have output values from -1 to 1
-oft-ndvi.bash also creates a NDVI image using (NIR-VIS) / (NIR + VIS) .
-2. NBR - Normalised Burn Ratio
-NBR highlights areas that have burned using Landsat TM. Calculate the NBR for your Landsat image:
-oft−calc in image out image
-1
-#4 #7 − #4 #7 + / //(b4−b7) / (b4+b7)
-3. dNBR
-In addition, the differnence NBR (dNBR) technique is a form of Change Detection which is used to index the severity of a fire
-Calculate the differenced (or delta) dNBR for NBR prefire - NBR postfire:
-Note: as you can’t have two separate input files, one for
-User Manual 75
-     oft−calc −ot Float32 in image out image
- 1
-          
-NBR prefire and a second for NBR postfire, you need to com- bine the two output bands into one file before applying the equation (band 1 (#1) containing information on NBR prefire and band 2 (#2) containing info on NBR postfire):
-oft−calc in image out image
-1
-#1 #2 − //band 1 (#1) contains info on NBR prefire and
-band 2 (#2) contains NBR postfire
-4. Average of bands
-Compute an average of bands 1,2 and 3 of an image:
-#1 #2 + #3 + 3 / // band1 + band 2 (#1 #2 +) + band3 (#3 +) divided by 3 (3 /)
-5. Build a mask from LEDAPS QA layer
-Bit level operators: does the first bit of band 2 equals to 1?
-         oft−calc in image out image
- 1
-      1 #2 B
-to build a mask from LEDAPS QA layer:
-which becomes
-     1 #1 B 0 2 #1 B 4 #1 B + 8 #1 B + 9 #1 B + 12 #1 B + < 2 1 ?
- 1?
-     1 #1 B : if bit one of band 1 equals to 1 0 : constant
- 2 #1B 4 #1B
-+
-8 #1B
-+
-9 #1B
-+
-12 #1 B
-+
-<
-User Manual
-:ifbit2ofband1equalsto1 :ifbit4ofband1equalsto1 : sum up the previous two terms :ifbit8ofband1equalsto1 : sum up previous two terms :ifbit9ofband1equalsto1 : sum up previous two terms
-: if bit 12 of band 1 equals to 1
-: sum up previous two terms
-: if previous term is smaller than
-    76
+oft-calc
+""""""""
 
- 2 : output 2 ( if clause false ) 1 : output 1 (if clause true) ?:if
- 1 : output 1 (if clause true) ?:if
-  Now, what happens in practice, is the following:
-6. Creating a mask file
-Create a simple mask containing 1 for pixels of interest and 0 for background:
-The equation in words: if your pixel value equals 0 then set it to 0, otherwise to 1
-oft−calc in image out image
-1 //note that here we want to define our mask called
-out image to consist of 1 band #1 0 = 1 0 ?
-7. Including a mask file
-2
-#1 #2 +
-   1) Check bit 1 and record 0 if its is false and 1 if it is true
-2) Check bits 2,4,8,9 and 12 and return their sum
-3) if output of 2) is larger than zero (second line above)
-return 1 else return 2
- 4) if output of 1) is 1 return 1 else return output of 3)
-           oft−calc −um in mask in image out image //here the option
- −um defining the mask file is added to the command
-    User Manual 77
-
-7.25 oft-chdet.bash NAME
-####
-oft-chdet.bash - automated change detection. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-chdet.bash
-oft-chdet.bash <input1><input2><output><nodata value>[threshold]
-- <input1>- Input raster 1 (with extension).
-- <input2>- Input raster 2 (with extension).
-- <output>- A raster consisting of binary values (0 or 1) indicating
-pixels of likely change between the two dates. Values of 1 indicate
-change. Values of 0 indicate no-change.
-- <nodata value>- Value indicating no-data within the image.
-- [threshold] - Default 0.99. Specifies the threshold value of the cumu-
-lative frequency distribution (of the resulting Chi-square layer...see Reference below) above which pixels are identified as changed. Higher threshold values indicate more stringent limits for detecting changes and, thus, produce less changed area than lower thresholds. Threshold values must be specified as a proportion using 0.XX no- tation.
-DESCRIPTION
-###########
-This tool performs automated change detection between 2 input images. The script uses the Iteratively Re-weighted Multivariate Alteration Detection (MAD) algorithm (Canty and Nielsen, 2008). Input imagery must have the same format, extent, resolution, num- ber of bands and type of data.
-User Manual 78
- 
-REFERENCE
-M. J. Canty and A. A. Nielsen (2008), Automatic radiometric nor- malization of multitemporal satellite imagery with the iteratively re-weighted MAD transformation RSE 112(3), 1025-1036.
-EXAMPLE
-#######
-To automatically find changes between a landsat image from year 2000 and 2005 using a threshold of 0.85:
-EXERCISE
-- For this exercise following tools are used: oft-chdet.bash
-- Identify changed areas between year 2000 and 2012 using Landsat
-imagery using :code:`landsat_t1.tif` and landsat t2.tif 1. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-2. Unpack the data
-3. Now we run oft-chdet.bash to do the automated change detection using the input Landsat data
-Output includes the following:
-A file beginning with imad-[name of outfile].tif. This file contains the raw results of the IMAD process, one for each input band and the chi-squared layer (see Reference).
-The specified output file:
-This file contains 1’s and 0’s; 1’s indicate areas of change and 0’s indicate areas of no change.
-User Manual 79
-   oft−chdet.bash landsat00. tif landsat05. tif change00 05. tif 0
- 0.85
-          oft−chdet.bash landsat_t1.tif landsat t2.tif change 0012.tif 0 0.85
-   
-7.26 oft-clip.pl
 NAME
 ####
-oft-clip.pl - subsets an input image using the extent, pixels size and projection of a reference image.
+
+oft-calc - is a raster image calculator.
+
 OFGT VERSION
 ############
-1.25.4
-SYNOPSIS
-######## oft-clip.pl
-oft-clip.pl <reference><input><output>
-DESCRIPTION
-###########
-oft-clip.pl The straight forward tool oft-clip.pl subsets an input image using the extension, pixel size and projection of the reference image.
-EXERCISE
--For this exercise following tools are used: oft-clip.pl
-1. Use for this exercise the MODIS imagery vcf-2010.tif and the Landsat imagery clip :code:`landsat_t1.tif`
-2. Open your working directory using
-.. code-block:: console
-    
-    cd ~/OFGT−Data
-3. Reproject, clip and resample the MODIS image (resolution 230 m, lat/long) to the projection, extent and pixel size of the Landsat tile (resolution 30m, UTM 35)
-4. Visualize the results in QGIS
-qgis images/landsat t1 . tif results/vcf−clip . tif
-User Manual 80
-        oft−clip . pl images/landsat . tif images/vcf −2010. tif results/vcf− clip.tif
-        
-7.27 oft-combine-images.bash NAME
-####
-oft-combine-images.bash - combines 2 images into one. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-combine-images.bash
-oft-combine-images.bash <-a first image><-b second image><-m first image mask><-s second mask>
--a First image = Better image, whose area is used whenever possible -b Second image = Image to be used elsewhere
--m First image mask = 0/1 mask indicating bad areas on first image
-with 0
--s Second mask = 0/1 mask indicating bad areas on second image
-with 0
-DESCRIPTION
-###########
-- Can be used to merge same-day Landsat images (adjacent) or two gapfill results (stack)
-- Takes as input the images and their masks
-- Masks for same-day can be prepared with oft-trim-mask.bash and
-for gapfill with oft-prepare-images-for-gapfill.bash
-- All ok areas are taken from image 1, and image 2 is used elsewhere - Also produces a mask that indicates ok areas of the resulting
-combined image with 1
-- All material needs to be in same projection - Works with 6 or 7 band images
-EXERCISE
-- For this exercise following tools are used: oft-combine-images.bash, gdal translate, trim
-User Manual 81
- 
-- Open your working directory using
-.. code-block:: console
-    
-    cd ~/OFGT−Data
-- In a first step we need to adjust the nr of bands of :code:`landsat_t1.tif`
-(7 bands) to the nr of bands of our second image (6 bands):
-- Then we need to prepare our mask files for each landsat image using oft-trim
-Now we can run oft-combine-images.bash. The output is automati-
-cally processed, in this case it is called stack landsat t1 6bands landsat t2.tif
-        gdal translate landsat t1 . tif landsat t1 6bands . tif −b 1 −b 2 −b 3−b 4−b 5−b 6
-     oft−trim−mask.bash landsat t2.tif
- oft−trim−mask.bash landsat_t1.tif
-     oft−combine−images . bash −a landsat t1 6bands . t i f −b landsat t2
- . tif −m landsat t1 mask . tif −s landsat t2 mask . tif
-   User Manual 82
 
-7.28 oft-gapfill NAME
-####
-oft-gapfill - regression based gap and cloud filler. OFGT VERSION
-############
 1.25.4
+
 SYNOPSIS
-######## oft-gapfill
-oft-gapfill <-um maskfile><input><output>
-oft-gapfill <-um maskfile><input><output>[-la nbrLargeAreaWin- dows] [-nolocal] [-smooth] [-pm] [-da] [-sd sampling density] [-ws WindowSize]
+######## 
+
+.. code-block:: console
+
+    oft-calc <input><output>[-um maskfile] [-inv] [-of format] [-Z/M/Q/C/L/X/M] oft-calc <input><output>[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/ CInt16/CInt32/CFloat32/CFloat64]
+
 DESCRIPTION
 ###########
-oft-gapfill fills the gaps in an input image using locally built regres- sion models. The models can be built
-1. separately for every gap pixel using a local model built using its adjacent pixels or
-2. for a given number of Large Area subsets or 3. using both of these methods
-- In the case 2), the option -la followed by the number of requested Large Area (LA) subsets in X direction should be given. The total number of LA subsets is the square of the given parameter. If the user wants to use only Large Area models, the option -nolocal should be used.
-- Maskfile, inputfile and outputfile are all required inputs. They may be in any of the formats understood by GDAL.
-- The input image is a stack of the Anchor image and the Filler image. The output values for Anchor are computed using Filler and the model. The input image bands should be organized as follows:
-User Manual 83
+
+:code:`oft-calc` based on an input raster file, oft-calc creates an output raster file as result of a simple calculation between the original bands. The bands used for the calculation must be all stacked in the input raster file.
+
+After defining the first line, following parameters will be asked: 
+
+1.  Number of output bands
+2.  Input postfix equations
+
+Band 1: The equation for output band 1 has to be specified. The input bands are referred to with :code:`#`. The implemented operators between input bands include:
+
+-   :code:`+` addition
+-   :code:`−` subtraction
+-   :code:`/` division
+-   :code:`∗` multiplication
+-   :code:`=` equals to
+-   :code:`<` less than
+-   :code:`>` larger than
+-   :code:`!` not equal to
+-   :code:`?` if clause
+-   :code:`M` maximum of two values m minimum of two values
+-   :code:`m` minimum of two values
+-   :code:`B` bit level operator
+-   :code:`e` natural logarithm
+-   :code:`c` pixel column coordinate
+-   :code:`r` pixel row coordinate
+-   :code:`ˆ` power
+-   :code:`e` natural logarithm
+-   :code:`x` base−e exponential function
+
+
+OPTION
+######
+
+Parameters:
+
+-   :code:`-inv` the notation of the equations has changed in version 2.0. In case you want to use the old notations, please use the :code:`-inv` option. 
+-   :code:`-of` format. Any GDAL output format can be specified. If not specified, output format will be tif.
+-   :code:`-ot` output data type. If not specified, output data type will be the same as input data type. -[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64] - output data type
+-   [Z/M/Q/C/L/X/M] - try to speed up the processing by reading **n** lines at the time (Z=2000 M=1000 Q=500 L=50 X=10)
+-   :code:`-um` mask. If a raster file is provided as a mask, only pixels with value different than 0 in the mask will be used for the calculation.
+
+.. note::
+
+    The notation of the equations has changed in version 2.0. In case you want to use the old notations, please use the :code:`-inv` option.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-calc`
+
+OPERATORS
++++++++++
+
+1.  Addition
+    Simple band addition: band1 + band2
+
+    .. code-block::
+        
+        oft−calc in_image out_image //hit return after defining this line
+        2  //this number defines the number of bands your out_image will have; hit return again
+        #1 #2 + //type your clause and hit return . Now out_image should be in process !
+
+2.  Division band1 / band2
+
+    .. code-block:: 
+
+        oft-calc in_image out_image
+        2
+        #1 #2 /
+
+3.  Equals to
+    If pixel value of band1 equals 0 then set it to 0, otherwise to 1
+
+    .. code-block:: 
+    
+        oft−calc in_image out_image
+        1 // if(?) band1 = 0 (#1 0 =) then 0 otherwise 1 (1 0) 
+        #1 0 = 1 0 ?
+
+4.  Boolean
+    You can also use boolean "larger than" operator to determine if #1 >#2
+    
+    .. code-block:: 
+    
+        oft−calc in_image out_image
+        2
+        #1 #2 >
+
+5.  The usage of the IF clause
+    if band1 ¿ 50, output=1 else output=0. This also creates a simple mask containing 1 for pixels of interest and 0 for background
+
+    .. code-block:: 
+    
+        oft−calc in_image out_image
+        1
+        #1 50 > 0 1 ? //if(’’?’’) band1 > 50 (’’#1 50 >’’) then 1
+        // otherwise 0 (’’0 1’’) if band1 + band2 = 2, output=1 else output=0
+
+    .. code-block::
+    
+        oft−calc in_image out_image
+        1
+        #1 #2+2=01? //if(’’?’’) band1+band2 (’’#1#2+’’)
+        // = 2 (’’2 =’’) then 1 otherwise 0 (’’0 1’’) if band1 > 50 or band2 > 50 , output=1 else output=0
+
+    .. code-block:: 
+   
+        oft−calc in_image out_image
+        1
+        #1 50 > #2 50 > 0 1 ? 1 ? //if band1 > 50 (’’#1 50 >’’)
+        // then 1 (’’1 ?’’) otherwise if band2 > 50 (’’#2 50 >’’) 
+        // then 1 otherwise 0 (’’0 1 ?’’)
+
+APPLICATIONS
+++++++++++++
+
+1.  NDVI
+    Calculate the NDVI for your Landsat image (band3 = Red band, band4 = NIR Band)
+
+    .. code-block:: 
+
+        oft−calc −ot Float32 in_image out_image
+        1
+        #4 #3 − #4 #3 + / //(b4−b3) / (b4+b3)
+
+    .. note::
+    
+        the band4 in the input layerstack image should be the NIR band and the band 3, the Red band. Note also that the output data type should be specified as Float32 in order to have output values from -1 to 1. :code:`oft-ndvi.bash` also creates a NDVI image using (NIR-VIS) / (NIR + VIS).
+
+2.  NBR - Normalised Burn Ratio
+    NBR highlights areas that have burned using Landsat TM. Calculate the NBR for your Landsat image:
+
+    .. code-block:: 
+    
+        oft−calc in_image out_image
+        1
+        #4 #7 − #4 #7 + / //(b4−b7) / (b4+b7)
+
+3.  dNBR
+    In addition, the differnence NBR (dNBR) technique is a form of Change Detection which is used to index the severity of a fire
+    Calculate the differenced (or delta) dNBR for NBR prefire - NBR postfire:
+    
+    .. note::
+    
+        as you can’t have two separate input files, one for NBR prefire and a second for NBR postfire, you need to combine the two output bands into one file before applying the equation (band 1 (#1) containing information on NBR prefire and band 2 (#2) containing info on NBR postfire):
+
+    .. code-block::
+    
+        oft−calc in_image out_image
+        1
+        #1 #2 − //band 1 (#1) contains info on NBR prefire and
+        // band 2 (#2) contains NBR postfire
+
+4.  Average of bands
+    Compute an average of bands 1,2 and 3 of an image:
+    
+    .. code-block::
+
+        oft−calc in_image out_image
+        1
+        #1 #2 + #3 + 3 / // band1 + band 2 (#1 #2 +) + band3 (#3 +) divided by 3 (3 /)
+
+5.  Build a mask from LEDAPS QA layer
+    Bit level operators: does the first bit of band 2 equals to 1?
+    
+    .. code-block::
+    
+        oft−calc in_image out_image
+        1
+        1 #2 B
+
+    to build a mask from LEDAPS QA layer:
+    
+    .. code-block::
+
+         1 #1 B 0 2 #1 B 4 #1 B + 8 #1 B + 9 #1 B + 12 #1 B + < 2 1 ? 1?
+
+    which becomes
+    
+    .. code-block::
+
+        1 #1 B // if bit one of band 1 equals to 1 
+        0 // constant
+        2 #1B // if bit 2 of band1 equals to 1
+        4 #1B // if bit 4 of band1 equals to 1
+        + // sum up the previous two terms
+        8 #1 B // if bit 8 of band1 equals to 1
+        + // sum up the previous two terms
+        12 #1 B // if bit 12 of band1 equals to 1
+        + // sum up the previous two terms
+        < // if previous term is smaller than
+        2 // output 2 (id clause false)
+        1 // output 1 (if clause true)
+        ? // if 
+        1 // output 1 (if clause true)
+        ? // if
+
+    Now, what happens in practice, is the following:
+
+    1)  Check bit 1 and record 0 if its is false and 1 if it is true
+    2)  Check bits 2,4,8,9 and 12 and return their sum
+    3)  if output of 2) is larger than zero (second line above) return 1 else return 2
+    4)  if output of 1) is 1 return 1 else return output of 3)
+
+6.  Creating a mask file
+    Create a simple mask containing 1 for pixels of interest and 0 for background:
+    The equation in words: if your pixel value equals 0 then set it to 0, otherwise to 1
+
+    .. code-block::
+    
+        oft−calc in_image out_image
+        1 //note that here we want to define our mask called out_image to consist of 1 band 
+        #1 0 = 1 0 ?
+
+7.  Including a mask file
+
+    .. code-block:: 
+
+        oft−calc −um in mask in_image out_image //here the option
+            // −um defining the mask file is added to the command
+        2
+        #1 #2 +
+
+oft-chdet.bash
+""""""""""""""
+
+NAME
+####
+
+oft-chdet.bash - automated change detection. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-chdet.bash <input1><input2><output><nodata value>[threshold]
+
+-   <input1> Input raster 1 (with extension).
+-   <input2> Input raster 2 (with extension).
+-   <output> A raster consisting of binary values (0 or 1) indicating pixels of likely change between the two dates. Values of 1 indicate change. Values of 0 indicate no-change.
+-   <nodata value> Value indicating no-data within the image.
+-   [threshold] Default 0.99. Specifies the threshold value of the cumulative frequency distribution (of the resulting Chi-square layer...see Reference below) above which pixels are identified as changed. Higher threshold values indicate more stringent limits for detecting changes and, thus, produce less changed area than lower thresholds. Threshold values must be specified as a proportion using 0.XX notation.
+
+DESCRIPTION
+###########
+
+This tool performs automated change detection between 2 input images. The script uses the Iteratively Re-weighted Multivariate Alteration Detection (MAD) algorithm (Canty and Nielsen, 2008). Input imagery must have the same format, extent, resolution, number of bands and type of data.
+
+REFERENCE
+#########
+
+M. J. Canty and A. A. Nielsen (2008), Automatic radiometric nor- malization of multitemporal satellite imagery with the iteratively re-weighted MAD transformation RSE 112(3), 1025-1036.
+
+EXAMPLE
+#######
+
+To automatically find changes between a landsat image from year 2000 and 2005 using a threshold of 0.85:
+
+.. code-block:: console
+
+    oft−chdet.bash landsat00.tif landsat05.tif change00_05.tif 0 0.85
+
+For this exercise following tools are used: :code:`oft-chdet.bash`
+Identify changed areas between year 2000 and 2012 using Landsat imagery using :code:`landsat_t1.tif` and :code:`landsat_t2.tif`.
+
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Unpack the data. Now we run :code:`oft-chdet.bash` to do the automated change detection using the input Landsat data:
+
+.. code-block:: console
+
+    oft−chdet.bash landsat_t1.tif landsat_t2.tif change_0012.tif 0 0.85
+
+Output includes the following:
+
+-   A file beginning with imad-[name of outfile].tif. This file contains the raw results of the IMAD process, one for each input band and the chi-squared layer (see Reference).
+-   The specified output file: This file contains 1’s and 0’s; 1’s indicate areas of change and 0’s indicate areas of no change.
+   
+oft-clip.pl
+"""""""""""
+
+NAME
+####
+
+oft-clip.pl - subsets an input image using the extent, pixels size and projection of a reference image.
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console 
+
+    oft-clip.pl <reference><input><output>
+
+DESCRIPTION
+###########
+
+The straight forward tool :code:`oft-clip.pl` subsets an input image using the extension, pixel size and projection of the reference image.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-clip.pl`
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Reproject, clip and resample the MODIS image (resolution 230 m, lat/long) to the projection, extent and pixel size of the Landsat tile (resolution 30m, UTM 35)
+
+.. code-block:: console
+
+    oft−clip.pl images/landsat.tif images/vcf−2010.tif results/vcf−clip.tif
+
+
+Visualize the results in QGIS
+
+.. code-block:: console
+    qgis images/landsat_t1.tif results/vcf−clip.tif
+        
+oft-combine-images.bash
+"""""""""""""""""""""""
+
+NAME
+####
+
+oft-combine-images.bash - combines 2 images into one. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-combine-images.bash <-a first image><-b second image><-m first image mask><-s second mask>
+
+-   :code:`-a` First image = Better image, whose area is used whenever possible 
+-   :code:`-b` Second image = Image to be used elsewhere
+-   :code:`-m` First image mask = 0/1 mask indicating bad areas on first image with 0
+-   :code:`-s` Second mask = 0/1 mask indicating bad areas on second image with 0
+
+DESCRIPTION
+###########
+
+-   Can be used to merge same-day Landsat images (adjacent) or two gapfill results (stack)
+-   Takes as input the images and their masks
+-   Masks for same-day can be prepared with :code:`oft-trim-mask.bash` and for gapfill with :code:`oft-prepare-images-for-gapfill.bash`
+-   All ok areas are taken from image 1, and image 2 is used elsewhere - Also produces a mask that indicates ok areas of the resulting combined image with 1
+-   All material needs to be in same projection - Works with 6 or 7 band images
+
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-combine-images.bash`, :code:`gdal_translate`, :code:`trim`
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+In a first step we need to adjust the nr of bands of :code:`landsat_t1.tif`
+(7 bands) to the nr of bands of our second image (6 bands):
+
+.. code-block:: console
+
+    gdal translate landsat_t1.tif landsat_t1_6bands.tif −b 1 −b 2 −b 3−b 4−b 5−b 6
+
+Then we need to prepare our mask files for each landsat image using :code:`oft-trim`:
+
+.. code-block:: console
+
+    oft−trim−mask.bash landsat_t1.tif
+    oft−trim−mask.bash landsat_t2.tif
+
+Now we can run :code:`oft-combine-images.bash`. The output is automatically processed, in this case it is called stack :code:`landsat_t1_6bands_landsat_t2.tif`
+
+.. code-block:: console
+
+    oft−combine−images.bash −a landsat_t1_6bands.tif −b landsat_t2.tif −m landsat_t1_mask.tif −s landsat_t2_mask.tif
+
+oft-gapfill
+"""""""""""
+
+NAME
+####
+
+oft-gapfill - regression based gap and cloud filler. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: 
+    oft-gapfill <-um maskfile><input><output>[-la nbrLargeAreaWin- dows] [-nolocal] [-smooth] [-pm] [-da] [-sd sampling density] [-ws WindowSize]
+
+DESCRIPTION
+###########
+
+:code:`oft-gapfill` fills the gaps in an input image using locally built regression models. The models can be built:
+
+1.  separately for every gap pixel using a local model built using its adjacent pixels
+2.  for a given number of Large Area subsets
+3.  using both of these methods
+
+In the case 2), the option :code:`-la` followed by the number of requested Large Area (LA) subsets in X direction should be given. The total number of LA subsets is the square of the given parameter. If the user wants to use only Large Area models, the option :code:`-nolocal` should be used.
+
+Maskfile, inputfile and outputfile are all required inputs. They may be in any of the formats understood by GDAL.
+
+The input image is a stack of the Anchor image and the Filler image. The output values for Anchor are computed using Filler and the model. The input image bands should be organized as follows:
  
-• band 1 to nbr bands/2 = Anchor image
-• bands nbr bands/2 + 1 to nbr bands = Filler image
-- The mask file shows the locations of the gaps, areas which are suitable for collecting training data, and areas which should not be processed. The mask values are as follows:
+-   band 1 to nbr bands/2 = Anchor image
+-   bands nbr bands/2 + 1 to nbr bands = Filler image
+
+The mask file shows the locations of the gaps, areas which are suitable for collecting training data, and areas which should not be processed. The mask values are as follows:
+
+0.  do nothing (image margins)
+1.  fill these pixels (unusable data in anchor , good data in filler)
+2.  Collect training data for regression model (good data in both images)
+3.  Do nothing, i.e., use the original values (2 cases: good in anchor , bad in filler OR non−good in both images)
+
+
+The program performs 2 passes over the image: 
+
+1.  collect the data to build the model
+2.  fill the gaps with Large Area models.
+
 OPTIONS
-1. -la (nbrLargeAreaWindows) = number of LA windows in X direc- tion. The total number of LA windows will be the square of this parameter.
-2. -da (do4allpixels) = use to built model to predict output value for every pixel of the anchor using the built models and the values of the Filler.
-3. -sd (sampling density) = sampling density used to build the LargeArea model. Value two, for example, would force the algorithm to collect every other valid pixel within the scene to be used in building the model.
-4. -ws (WindowSize) = size of the neighbourhood from which the data for local model construction is collected
-NOTE
-The input image can be produced from 2 image stacks (for in- stance, 2 Erdas imagine composites consisting of 7 bands). The script stack2images.bash produces the composite. It can also be produced from HDF-images that are stored in folders. The script stack2images hdf.bash is for that purpose.
-User Manual 84
-   1 = fill these pixels (unusable data in anchor , good data in
- filler)
-2 = collect training data for regression model (good data in
- both images )
- 3 = do nothing, i.e., use the original values (2 cases: good in anchor , bad in filler OR non−good in both images)
-0 = do nothing (image margins)
+#######
+
+-   :code:`-la` (nbrLargeAreaWindows) = number of LA windows in X direc- tion. The total number of LA windows will be the square of this parameter.
+-   :code:`-da` (do4allpixels) = use to built model to predict output value for every pixel of the anchor using the built models and the values of the Filler.
+-   :code:`-sd` (sampling density) = sampling density used to build the LargeArea model. Value two, for example, would force the algorithm to collect every other valid pixel within the scene to be used in building the model.
+-   :code:`-ws` (WindowSize) = size of the neighbourhood from which the data for local model construction is collected
+
+.. note::
+
+    The input image can be produced from 2 image stacks (for in- stance, 2 Erdas imagine composites consisting of 7 bands). The script stack2images.bash produces the composite. It can also be produced from HDF-images that are stored in folders. The script :code:`stack2images_hdf.bash` is for that purpose.
    
 The model may be very sensitive to outliers. Therefore it is impor- tant that the mask value 2 is present only in location where both Anchor and Filler have valid data.
-IMPORTANT: The stack and the mask must have been reprojected to the same geographical window and they do must have the same number of rows and cols
+
+.. danger::
+
+    The stack and the mask must have been reprojected to the same geographical window and they do must have the same number of rows and cols
+
 EXAMPLE
 #######
-The program performs 2 passes over the image: - Pass1: collect the data to build the model
-- Pass2: fill the gaps with Large Area models.
-EXERCISE
-- For this exercise following tools are used: oft-gapfill, gdal translate, oft-stack, oft-calc
-- Open your working directory using
+
+For this exercise following tools are used: :code:`oft-gapfill`, :code:`gdal_translate`, :code:`oft-stack`, :code:`oft-calc`
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-- As oft-gapfill only allows even number of bands, first, we need to adjust the number of bands of :code:`landsat_t1.tif` (7 bands) landsat t2.tif (6 bands):
-- oft-gapfill takes as input an image stack of the anchor (landsat t2.tif ) and the filler (:code:`landsat_t1.tif` ):
-oft−stack −o stack . tif landsat t2 . tif landsat t1 6bands . tif
-- Gapfilling with mask of the scan-line using a simple mask created with oft-calc in two steps:
-Rules:
-User Manual 85
-   oft−gapfill −la 2 −nolocal −sd 5 −ws 13 −um mymask.img my14bandimage.img filled .img
-          gdal translate landsat t1 . tif landsat t1 6bands . tif −b 1 −b 2 −b
- 3−b 4−b 5−b 6
-        
-• ifband1orband6are0put1(fill)
-• ifband7orband12are0put3(donothing)
-• else put 2 (collect training data for regression models) Step 1:
-#1 0 = #6 0 = + 0 > 2 1 ? #7 0 = #12 0 = + 0 > 2 3 ?
-Step 2:
-oft−calc stack.tif tmp.tif
-Step 2:
-#1 0 = #6 0 = + 0 > 2 1 ? #7 0 = #12 0 = + 0 > 2 3 ?
-Now, use oft-gapfill to fill the areas indicated as ”1” in the mask: Output automatically processed: filled la1 sd2 simplemask.tif
-   oft−calc stack.tif tmp.tif
- Step 2:
-            oft−gapfill−la1−nolocal−pm−sd2−umsimplemask.tif stack.
- tif filled la1 sd2 simplemask . tif
-   Figure 12: Original Landsat image.
- User Manual
-86
 
- Figure 13: Landsat imager after gap fill
- User Manual
-87
+As :code:`oft-gapfill` only allows even number of bands, first, we need to adjust the number of bands of :code:`landsat_t1.tif` (7 bands) :code:`landsat_t2.tif` (6 bands):
 
-7.29 oft-ndvi.bash NAME
-####
-oft-ndvi.bash - computes ndvi images. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-ndvi.bash
-oft-ndvi.bash <input><output><R band><NIR band> <input><output><R band><NIR band>[mask]
-DESCRIPTION
-###########
-oft-ndvi.bash creates an NDVI image using (NIR-VIS) / (NIR +
-VIS).
-- Input data is an image stack. User gives the location of Red and
-NIR band (in regular Landsat TM/ETM 3 and 4) - Number of bands is not restricted
-OPTIONS
-- [mask] - include a mask image into this process by using this option
-EXAMPLE
-#######
-- For this exercise following tools are used: oft-ndvi.bash - Open your working directory using
+.. code-block:: console 
+
+    gdal translate landsat t1 . tif landsat t1 6bands . tif −b 1 −b 2 −b 3 −b 4 −b 5 −b 6
+
+:code:`oft-gapfill` takes as input an image stack of the **anchor** (:code:`landsat_t2.tif`) and the **filler** (:code:`landsat_t1.tif`):
+
 .. code-block:: console
+
+    oft−stack −o stack.tif landsat_t2.tif landsat_t1_6bands.tif
+
+Gapfilling with mask of the scan-line using a simple mask created with :code:`oft-calc` in two steps following these rules:
+
+-   if band1 or band6 are 0 put 1 (fill)
+-   if band7 or band12 are 0 put 3 (do nothing)
+-   else put 2 (collect training data for regression models) 
+
+**Step 1:**
+
+.. code-block::
+
+    oft−calc stack.tif tmp.tif
+    #1 0 = #6 0 = + 0 > 2 1 ? 
+    #7 0 = #12 0 = + 0 > 2 3 ?
+
+
+**Step 2:**
+
+.. code-block:: 
+
+    oft−calc stack.tif tmp.tif
+    #1 0 = #6 0 = + 0 > 2 1 ? 
+    #7 0 = #12 0 = + 0 > 2 3 ?
+
+Now, use :code:`oft-gapfill` to fill the areas indicated as ”1” in the mask: Output automatically processed: :code:`filled_la1_sd2_simplemask.tif`
+
+.. figure:: ../img/cli/ofgt/oft-gapfill_original.png
+    :width: 50%
     
-    cd ~
-- Run the command line for calculating the NDVI for your satellite im- age where :code:`landsat_t1.tif` is your input image and NDVI :code:`landsat_t1.tif` will be your NDVI output image. The numbers <3>and <4>refer to the band numbers for the VIS and NIR bands.
-oft−ndvi.bash landsat_t1.tif ../results/NDVI landsat_t1.tif 3 4
-User Manual 88
-           
-- LoadNDVI :code:`landsat_t1.tif` in QGIS
-- Check that all pixels of your NDVI image have the expected values
-between -1 and 1.
-- Here is an example of how the result looks like:
- Figure 14: Zoomed view of the original Landsat image.
- User Manual
-89
+    Original Landsat image.
 
- Figure 15: Zoomed view of the NDVI-result using the ’freak out’ colour map in QGIS.
- User Manual 90
+.. figure:: ../img/cli/ofgt/oft-gapfill.png
+    :width: 50%
+    
+    Landsat imager after gap fill
 
-7.30 oft-prepare-images-for-gapfill.bash
+oft-ndvi.bash
+"""""""""""""
+
 NAME
 ####
-oft-prepare-images-for-gapfill.bash - prepares images and masks for oft-gapfill
+
+oft-ndvi.bash - computes ndvi images. 
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-prepare-images-for-gapfill.bash oft-prepare-images-for-gapfill.bash <-a anchor><-f filler><-m an- chor mask><-s second mask (filler)> oft-prepare-images-for-gapfill.bash <-a anchor><-f filler><-m an- chor mask><-s second mask (filler)>[-n ndvi threshold]
--a Anchor = Better image, whose gaps are to be filled
--f Filler = Filler image
--m Anchor mask = 0/1 mask indicating bad areas on anchor image
-with 0
--s Second mask = 0/1 mask indicating bad areas on filler image
-with 0
-OPTIONS
--n ndvi threshold = If images differ a lot, NDVI can be used to select only vegetated areas for mask
-Values like 0.4 or 0.5 are useful at some location on the world, check your particular situation yourself!
+######## 
+
+.. code-block:: console
+
+    oft-ndvi.bash <input><output><R band><NIR band> <input><output><R band><NIR band>[mask]
+
 DESCRIPTION
 ###########
+
+:code:`oft-ndvi.bash` creates an NDVI image using (NIR-VIS) / (NIR + VIS).
+
+Input data is an image stack. User gives the location of Red and NIR band (in regular Landsat TM/ETM 3 and 4). The Number of bands is not restricted.
+
+OPTION
+######
+
+- :code:`[mask]` include a mask image into this process by using this option
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-ndvi.bash`
+
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Run the command line for calculating the NDVI for your satellite image where :code:`landsat_t1.tif` is your input image and NDVI :code:`landsat_t1.tif` will be your NDVI output image. The numbers :code:`3` and :code:`4` refer to the band numbers for the VIS and NIR bands.
+
+.. code-block:: console
+
+    oft−ndvi.bash landsat_t1.tif ../results/NDVI landsat_t1.tif 3 4
+
+LoadNDVI :code:`landsat_t1.tif` in QGIS and Check that all pixels of your NDVI image have the expected values between -1 and 1.
+
+Here is an example of how the result looks like:
+
+.. figure:: ../img/cli/ofgt/oft-ndvi.png
+    :width: 50%
+
+    Zoomed view of the original Landsat image.
+
+.. figure:: ../img/cli/ofgt/oft-ndvi_freak-out.png
+    :width: 50%
+
+    Zoomed view of the NDVI-result using the ’freak out’ colour map in QGIS.
+
 oft-prepare-images-for-gapfill.bash
-- Takes the anchor and filler images as input
-- Also their 0/1 masks indicating clouds and gaps are needed
-- NDVI can be used to threshold areas with low vegetation off from
-User Manual 91
- 
-the models
-- At this point, bands 3 and 4 are used for NDVI computation
-- Otherwise, nbr of bands is not fixed, but must be equal in the
-input images
-- All material needs to be in same projection
-EXAMPLE
-#######
-- For this exercise following tools are used: oft-prepare-images-for- gapfill.bash
-- Open your working directory using
-- As :code:`landsat_t1.tif` and landsat t2.tif differ in their number of bands we need to exclude band 7 from :code:`landsat_t1.tif` by carrying out following procedure:
-Let’s run oft-prepare-images-for-gapfill.bash using following input:
-Two output images mask are automatically processed: gapmask landsat t1 6bands land
-   .. code-block:: console
-    
-    cd ~
-     gdal translate landsat t1 . tif landsat t1 6bands . tif −b 1 −b 2 −b 3−b 4−b 5−b 6
-     oft−prepare−images−for−g a p f i l l . bash −a landsat t1 6bands . t i f −f
- landsat t2 . tif −m landsat t1 mask . tif −s landsat t2 mask . tif
-  and goodarea mask landsat t1 6bands landsat t2.tif
- Figure 16: gapmask landsat t1 6bands landsat t2.tif
- User Manual
-92
+"""""""""""""""""""""""""""""""""""
 
- Figure 17: goodarea mask landsat t1 6bands landsat t2.tif
- User Manual 93
-
-7.31 oft-reclass NAME
-####
-oft-reclass - is a reclassification program. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-########
-oft-reclass
-oft-reclass <inpufile>
-oft-reclass [OPTIONS] <inpufile>
-DESCRIPTION
-###########
-oft-reclass changes pixel values to alterenative values given in a text file .
-The maxval parameter is used to allocate memory for the reclassifi- cation table. If it is not given in the command line, it will be asked interactively.
-The reclassification text file should consist of records with input value (column 1) and one or more space separated output values. Thus, the structure could be:
-The program asks, how many output values the user wants to produce for each input band. With the given example reclassification file, the user could produce a 3 band RGB image from a single band input file.
-OPTIONS
-−um <maskfile>
-User Manual 94
-   1 255 255 255
- 2000
- 3 125 100 16 4 0 0 112
-      
- −oi <output image>
-−maxval <maximum pixel value in infile >
-EXAMPLE
-#######
-- For this exercise following tools are used: oft-reclass
-- For this exercise we use a single band image images/forestc.tif and a segmented image images/segments.tif which you can also create
-yourself using oft-seg.
-- Open your working directory using
-.. code-block:: console
-    
-    cd ~
-1. oft-reclass
-- First you need to create a text file called input reclass.txt that should look like this:
-- Now we run oft-reclass with Input: image/forestc.tif and text/input reclass.txt; Output: results/reclassforestc.img:
-- Then tool will ask you then for further information:
-NODATA value?: 0
-- Open QGIS and load your the original imagery image/forestc.tif (Colour map: Pseudocolour) and the result results/reclassforestc.img. Click with the Identify Features Tool over the the different classes and see how they have changed after the reclassification:
-User Manual 95
-          1 255 255 255
- 2 0 100 0
- 3 125 100 16 4 0 0 112
-5 0 225 0
- 6 225 0 0
-99 200 0 200
-     oft−reclass −oi results/reclassforestc .img txt/input reclass . txt images/forestc . tif
-     Input reclass file name?: txt/input reclass . txt Nbr of out bands per input channel?:3
-Col of input value ?: 1
- Col of output value 1: 2 Col of output value 2: 3 Col of output value 3: 4
-    
- Figure 18: Original input image forestc.tif.
- Figure 19: Reclassified output raster reclassforestc.img.
- User Manual
-96
-
-2. Second example for oft-reclass
-- Lets run oft-reclass again with a different input image: Input: landsat t1 min50.tif, input reclass.txt, input reclass.txt; Output: reclass min50.img:
-Again the tool will ask you for further information:
-NODATA value?: 0
-- Open QGIS and load your result image reclass min50.img and zoom into the top left corner. You can see that the original classes 1-6 and 99 of landsat t1 min50.tif were reclassified the way we defined it in the lookup table input reclass.txt.
-   oft−reclass −oi reclass min50 .img input reclass . txtlandsat t1 min50 . tif
-     Input reclass file name?: input reclass . txt Nbr of out bands per input channel?:3
-Col of input value ?: 1
- Col of output value 1: 2
- Col of output value 2: 3 Col of output value 3: 4
-    User Manual 97
-
- Figure 20: Zoom into the top left corner of our final result reclass min50.img.
- User Manual 98
-
-7.32 oft-shrink NAME
-####
-oft-shrink - to be combined with oft-trim.
-7.33 oft-stack NAME
-####
-oft-stack - Create a muti-band image stack. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-########
-oft-stack
-oft-stack <-o outputfile><inputfiles>
-oft-stack [-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/CInt16/CInt32/ CFloat32/CFloat64] [-um <maskfile>] <-o outputfile><inputfiles>
-−o outputfile − The name of the output file to be created ( include extension).
-inputfiles − A set of input files (include extension) , each separated by a space .
-DESCRIPTION
-###########
-oft-stack builds image stack from input files in the order of appear-
-     ance.
-- The output format of the first input file is used.
-- The images need to have exactly the same size (rows x cols)
-OPTIONS
-−ot − Optional . The output image type . By default , the first
-input image type is used .
-User Manual
-99
-    
- −um − Optional. A mask file used to restrict the extent of the processing .
-- oft-stack builds an image stack from input files in the order of appearance. By default, the output format and type of the first input file is used.
-- N.B.: The images need to have exactly the same size (rows x cols)
-EXAMPLE
-#######
-To create a 6-band stack of Landsat data from individual input rasters in .TIF format.
-the above can be written using wildcards...
-oft−stack −o landsat7band . tif landsat ∗. tif
-EXERCISE
-For this exercise following tools are used: oft-stack 1. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-2. Now we run oft-stack using two input images :code:`landsat_t1.tif` and landsat t2.tif to create the output stack image called stack.tif :
-oft−stack −o stack . tif landsat t1 . tif landsat t2 . tif
-3. Take a closer look at your output in QGIS and you will see that stack.tif has 13 bands (:code:`landsat_t1.tif` contains 7 bands and landsat t2.tif 6 bands). Or print the raster information on your screen by typing in your terminal
-gdalinfo stack . tif
-User Manual 100
-     oft−stack −o landsat7band.tif landsatb1.tif landsatb2.tif
- landsatb3 . tif landsatb4 . tif landsatb5 . tif landsatb7 . tif
-                       
-7.34 oft-trim NAME
-####
-oft-trim - erosion filter producing binary output. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-########
-oft-trim
-oft-trim -um <maskfile><inputfile><outfile>
-oft-trim [-ws WindowSize] [-origval] -um <maskfile><inputfile><outfile>
-DESCRIPTION
-###########
-oft-trim analyses the content of the spatial neighbourhood of each pixel. If all the pixels within the window are less or equal to zero, output is zero. Else, output is one.
-OPTIONS
-Parameter:
--um = maskfile
--ws = window size -origval = original value
-EXERCISE
-For this exercise following tools are used: oft-trim 1. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-2. Lets run oft-trim with the input file :code:`landsat_t1.tif` with the option -ws set to 3 to create the output file trim.tif :
-oft−trim −ws 3 landsat_t1.tif trim.tif
-User Manual 101
-           
-3. Verify in QGIS that all the values of your output image are all trimmed to 1.
- User Manual 102
-
-7.35 oft-trim-maks.bash
 NAME
 ####
-oft-trim-maks.bash - This script makes a 0/1 mask of a 6 or 7 band (Landsat) image .
+
+oft-prepare-images-for-gapfill.bash - prepares images and masks for oft-gapfill
+
 OFGT VERSION
 ############
+
 1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-prepare-images-for-gapfill.bash <-a anchor><-f filler><-m an- chor mask><-s second mask (filler)>[-n ndvi threshold]
+
+-   :code:`-a` Anchor = Better image, whose gaps are to be filled
+-   :code:`-f` Filler = Filler image
+-   :code:`-m` Anchor mask = 0/1 mask indicating bad areas on anchor image with 0
+-   :code:`-s` Second mask = 0/1 mask indicating bad areas on filler image with 0
+
+OPTIONS
+#######
+
+-   :code:`-n` ndvi threshold = If images differ a lot, NDVI can be used to select only vegetated areas for mask
+
+.. tips::
+
+    Values like 0.4 or 0.5 are useful at some location on the world, check your particular situation yourself!
+
+DESCRIPTION
+###########
+
+:code:`oft-prepare-images-for-gapfill.bash`:
+
+-   Takes the anchor and filler images as input
+-   Also their 0/1 masks indicating clouds and gaps are needed
+-   NDVI can be used to threshold areas with low vegetation off from the models
+-   At this point, bands 3 and 4 are used for NDVI computation
+-   Otherwise, nbr of bands is not fixed, but must be equal in the input images
+-   All material needs to be in same projection
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-prepare-images-for-gapfill.bash`.
+Open your working directory using:
+
+.. code-block:: console 
+
+    cd ~
+
+As :code:`landsat_t1.tif` and :code:`landsat_t2.tif` differ in their number of bands we need to exclude band 7 from :code:`landsat_t1.tif` by carrying out following procedure:
+
+.. code-block:: console
+
+    gdal translate landsat_t1.tif landsat_t1_6bands.tif −b 1 −b 2 −b 3 −b 4 −b 5 −b 6
+
+Let’s run :code:`oft-prepare-images-for-gapfill.bash` using following input:
+
+.. code-block:: console
+
+    oft−prepare−images−for−gapfill.bash −a landsat_t1_6bands.tif −f landsat_t2.tif −m landsat_t1_mask.tif −s landsat_t2_mask.tif
+
+Two output images mask are automatically processed: :code:`gapmask_landsat_t1_6bands_landsat_t2.tif` and :code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`.
+
+.. figure:: ../img/cli/ofgt/oft-gapmask.png
+    :width: 50%
+    
+    :code:`gapmask_landsat_t1_6bands_landsat_t2.tif`
+
+.. figure:: ../img/cli/ofgt/oft-goodarea.png
+    :width: 50%
+
+    :code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`
+
+oft-reclass
+"""""""""""
+
+NAME
+####
+
+oft-reclass - is a reclassification program. 
+
+OFGT VERSION
+############
+
+1.25.4
+
 SYNOPSIS
 ########
-oft-trim-maks.bash oft-trim-maks.bash <image> DESCRIPTION
-########### oft-trim-maks.bash
-- detects the margins and Landsat 7 missing scanlines, and trims the edges
-- accepts 6 or 7 band image
-- all values ¡= 0 are considered nodata
-- Note: the output of oft-trim-maks.bash can be furhter used for
-oft-combine-images.bash
-EXERCISE
-For this exercise following tools are used: oft-trim-mask.bash 1. Open your working directory using
+
+.. code-block:: console
+    
+    oft-reclass [OPTIONS] <inpufile>
+
+DESCRIPTION
+###########
+
+:code:`oft-reclass` changes pixel values to alterenative values given in a text file.
+The maxval parameter is used to allocate memory for the reclassification table. If it is not given in the command line, it will be asked interactively.
+The reclassification text file should consist of records with input value (column 1) and one or more space separated output values. Thus, the structure could be:
+
+.. code-block::
+
+    1 255 255 255
+    2 0 0 0
+    3 125 100 16 
+    4 0 0 112
+
+The program asks, how many output values the user wants to produce for each input band. With the given example reclassification file, the user could produce a 3 band RGB image from a single band input file.
+
+OPTIONS
+#######
+
+-   :code:`−um` <maskfile>
+-   :code:`−oi` <output image>
+-   :code:`−maxval` <maximum pixel value in infile>
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-reclass`
+
+For this exercise we use a single band image :code:`images/forestc.tif` and a segmented image :code:`images/segments.tif` which you can also create
+yourself using code:`oft-seg`.
+
+Open your working directory using
+
 .. code-block:: console
     
     cd ~
-2. Lets run oft-trim-mask.bash using landsat t2.tif. Automatically processed output: landsat t2 mask.tif :
-oft−trim−mask.bash landsat t2.tif
-3. Verify in QGIS your our result if the mask pixel values are 1 or 0.
-User Manual 103
-           
- Figure 21: Original image landsat t2.tif with visible gaps in QGIS
- User Manual 104
 
- Figure 22: Output landsat t2 mask.tif using the Pseudo-colour colour map in QGIS
- User Manual 105
+Example 1
++++++++++
+
+First you need to create a text file called input :code:`reclass.txt` that should look like this:
+
+.. code-block::
+
+    1 255 255 255
+    2 0 100 0
+    3 125 100 16 
+    4 0 0 112
+    5 0 225 0
+    6 225 0 0
+    99 200 0 200
+
+Now we run :code:`oft-reclass` with Input: :code:`image/forestc.tif` and :code:`text/input_reclass.txt`; Output: code:`results/reclassforestc.img`:
+
+.. code-block:: console
+
+    oft−reclass −oi results/reclassforestc.img txt/input_reclass.txt images/forestc.tif
+
+Then tool will ask you then for further information:
+
+.. code-block:: console 
+
+    Input reclass file name?: txt/input_reclass.txt 
+    Nbr of out bands per input channel?: 3
+    Col of input value ?: 1
+    Col of output value 1: 2 
+    Col of output value 2: 3 
+    Col of output value 3: 4
+    NODATA value?: 0
+
+- Open QGIS and load your the original imagery :code:`image/forestc.tif` (Colour map: **Pseudocolour**) and the result :code:`results/reclassforestc.img`. Click with the **Identify Features** Tool over the the different classes and see how they have changed after the reclassification:
+
+.. figure:: ../img/cli/ofgt/oft-reclass_original.png
+    :width: 50%
+    
+    Original input image :code:`forestc.tif`.
+
+.. figure:: ../img/cli/ofgt/oft-reclass.png
+    :width: 50%
+    
+    Reclassified output raster :code:`reclassforestc.img`.
+
+Example 2
++++++++++
+
+Lets run :code:`oft-reclass` again with a different input image: Input: :code:`landsat_t1_min50.tif`, input :code:`reclass.txt`; Output: :code:`reclass_min50.img`:
+
+.. code-block:: console
+
+    oft−reclass −oi reclass_min50.img input_reclass.txt landsat_t1_min50.tif
+
+Again the tool will ask you for further information:
+
+.. code-block:: console 
+
+    Input reclass file name?: input_reclass.txt 
+    Nbr of out bands per input channel?: 3
+    Col of input value ?: 1
+    Col of output value 1: 2
+    Col of output value 2: 3 
+    Col of output value 3: 4
+    NODATA value?: 0
+
+- Open QGIS and load your result image :code:`reclass_min50.img` and zoom into the top left corner. You can see that the original classes 1-6 and 99 of :code:`landsat_t1_min50.tif` were reclassified the way we defined it in the lookup table input :code:`reclass.txt`.
+
+.. figure:: ../img/cli/ofgt/oft-reclass_ex2.png
+    :width: 50%
+
+    Zoom into the top left corner of our final result :code:`reclass_min50.img`.
+
+oft-shrink
+""""""""""
+
+NAME
+####
+
+oft-shrink - to be combined with :code:`oft-trim`.
+
+oft-stack
+"""""""""
+
+NAME
+####
+
+oft-stack - Create a muti-band image stack. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-stack [-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/CInt16/CInt32/ CFloat32/CFloat64] [-um <maskfile>] <-o outputfile><inputfiles> 
+    
+-   :code:`−o` outputfile − The name of the output file to be created ( include extension)
+-   inputfiles − A set of input files (include extension) , each separated by a space.
+
+DESCRIPTION
+###########
+
+:code:`oft-stack` builds image stack from input files in the order of appearance.
+
+-   The output format of the first input file is used.
+-   The images need to have exactly the same size (rows x cols)
+
+:code:`oft-stack` builds an image stack from input files in the order of appearance. By default, the output format and type of the first input file is used.
+
+.. note::
+
+    The images need to have exactly the same size (rows x cols)
+
+OPTIONS
+#######
+
+-   :code:`−ot` The output image type. By default, the first input image type is used.
+-   :code:`−um` A mask file used to restrict the extent of the processing.
+
+EXAMPLE
+#######
+
+To create a 6-band stack of Landsat data from individual input rasters in .TIF format using wildcard:
+
+.. ocde-block:: console
+
+    oft−stack −o landsat7band . tif landsat ∗. tif
+
+For this exercise following tools are used: :code:`oft-stack`
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+Now we run :code:`oft-stack` using two input images :code:`landsat_t1.tif` and :code:`landsat_t2.tif` to create the output stack image called :code:`stack.tif`:
+
+.. code-block:: console
+
+    oft−stack −o stack.tif landsat_t1.tif landsat_t2.tif
+
+Take a closer look at your output in QGIS and you will see that :code:`stack.tif` has 13 bands (:code:`landsat_t1.tif` contains 7 bands and :code:`landsat_t2.tif` 6 bands). Or print the raster information on your screen by typing in your terminal:
+
+.. code-block:: console
+
+    gdalinfo stack.tif
+                       
+oft-trim
+""""""""
+
+NAME
+####
+
+oft-trim - erosion filter producing binary output. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-trim [-ws WindowSize] [-origval] -um <maskfile><inputfile><outfile>
+
+DESCRIPTION
+###########
+
+:code:`oft-trim` analyses the content of the spatial neighbourhood of each pixel. If all the pixels within the window are less or equal to zero, output is zero. Else, output is one.
+
+OPTIONS
+#######
+
+-   :code:`-um` maskfile
+-   :code:`-ws` window size 
+-   :code:`-origval` original value
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-trim`
+
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Lets run :code:`oft-trim` with the input file :code:`landsat_t1.tif` with the option :code:`-ws` set to 3 to create the output file :code:`trim.tif`:
+
+.. code-block:: console
+
+    oft−trim −ws 3 landsat_t1.tif trim.tif
+
+.. tips::
+    
+    Verify in QGIS that all the values of your output image are all trimmed to 1
+
+oft-trim-maks.bash
+""""""""""""""""""
+
+NAME
+####
+
+oft-trim-maks.bash - This script makes a 0/1 mask of a 6 or 7 band (Landsat) image.
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-trim-maks.bash oft-trim-maks.bash <image> 
+    
+DESCRIPTION
+########### 
+
+:code:`oft-trim-maks.bash`:
+
+-   detects the margins and Landsat 7 missing scanlines, and trims the edges
+-   accepts 6 or 7 band image
+-   all values ¡= 0 are considered nodata
+
+.. note::
+    
+    The output of oft-trim-maks.bash can be furhter used for :code:`oft-combine-images.bash`
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-trim-mask.bash`
+
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Lets run :code:`oft-trim-mask.bash` using :code:`landsat_t2.tif`. Automatically processed output: :code:`landsat_t2_mask.tif`:
+
+.. code-block:: console
+
+    oft−trim−mask.bash landsat_t2.tif
+
+Verify in QGIS your our result if the mask pixel values are 1 or 0.
+
+.. figure:: ../img/cli/ofgt/oft-trim-mask_original.png
+    :width: 50%
+    
+    Original image :code:`landsat_t2.tif` with visible gaps in QGIS
+
+.. figure:: ../img/cli/ofgt/oft-trim-mask.png
+    :width: 50%
+
+    Output :code:`landsat_t2_mask.tif` using the Pseudo-colour colour map in QGIS
 
 STATISTICS
 7.36 oft-ascstat.awk
@@ -3761,14 +4175,14 @@ EXAMPLE
 .. code-block:: console
     
     cd ~
-2. For this exercise we will use :code:`landsat_t1.tif` as image file and landsat t2.tif as the base image file, :code:`landuse.shp` is the input shape-
+2. For this exercise we will use :code:`landsat_t1.tif` as image file and :code:`landsat_t2.tif` as the base image file, :code:`landuse.shp` is the input shape-
 User Manual 156
       
 file of which we define landuse as the attribute to be used:
 3. The output image is automatically processed: landsat t1 mask.tif 4. Check in QGIS the values of your output-mask
 Figure 27: Output of oft-prepare-image-for-nn.bash is landsat t1 mask.tif
 User Manual 157
-   oft−prepare−image−for−nn . bash −i landsat t1 . t i f −b landsat t2 . tif −s landuse.shp −a landuse
+   oft−prepare−image−for−nn . bash −i landsat t1 . t i f −b landsat_t2 . tif −s landuse.shp −a landuse
     
 7.51 oft-unique-mask-for-nn.bash
 NAME
@@ -3802,16 +4216,16 @@ EXAMPLE
 .. code-block:: console
     
     cd ~
-2. For this exercise we will use mask.tif as mask of the base image (produced by oft-trim-mask.bash and landsat t2 mask.tif as the mask of the new image:
-oft−unique−mask−for−nn . bash −m mask . t i f −s landsat t2 mask . t i f
-          3. Two output images are automatically processed: landsat t2 mask unique mask.tif and
-landsat t2 mask accumulated mask.tif
+2. For this exercise we will use mask.tif as mask of the base image (produced by oft-trim-mask.bash and landsat_t2 mask.tif as the mask of the new image:
+oft−unique−mask−for−nn . bash −m mask . t i f −s landsat_t2 mask . t i f
+          3. Two output images are automatically processed: landsat_t2 mask unique mask.tif and
+landsat_t2 mask accumulated mask.tif
  Figure 28: Mask of base image: mask.tif
  User Manual
 159
 
- Figure 29: Mask of new image: landsat t2 mask.tif
-Figure 30: Output: landsat t2 mask unique mask.tif
+ Figure 29: Mask of new image: landsat_t2 mask.tif
+Figure 30: Output: landsat_t2 mask unique mask.tif
   User Manual
 160
 
