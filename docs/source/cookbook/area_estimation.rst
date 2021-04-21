@@ -1459,8 +1459,8 @@ Next, Sort on the ‘id' field by value, either smallest to largest or largest t
 Now we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
 
 -   Rename ‘id' to PLOTID. You can also add a new PLOTID field by creating a new column labeled PLOTID, and fill it with values 1-(number of rows).
--   Rename the ‘XCoordinate' column to ‘LAT' or ‘LATITUDE'.
--   Rename the ‘YCoordinate' column to ‘LONG' or ‘LONGITUDE'.
+-   Rename the ‘XCoordinate' column to ‘LONG' or ‘LONGITUDE'.
+-   Rename the ‘YCoordinate' column to ‘LAT' or ‘LATITUDE'.
 -   Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
 
 Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
