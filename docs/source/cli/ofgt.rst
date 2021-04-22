@@ -65,11 +65,6 @@ NAME
 
 CsvToPolygon.py - converts CSV file from GExml2csv.bash into a shapefile
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -129,11 +124,6 @@ NAME
 ####
 
 GenericCsvToPolygon.py - Program for creating polygons from text files
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS 
 ########
@@ -256,11 +246,6 @@ NAME
 
 genericGEkml2csv.bash - converts separate kml files from Google Earth into one CSV file.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -323,11 +308,6 @@ NAME
 
 GExml2csv.bash - converts xml files from Google Earth training data collection tool into one CSV file.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -368,11 +348,6 @@ NAME
 ####
 
 oft-addattr.py - adds one integer attribute in a shape file. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -469,11 +444,6 @@ NAME
 ####
 
 oft-addpct.py - adds pseudo color table to an image. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS 
 ########
@@ -576,11 +546,6 @@ NAME
 
 oft-admin-mask.bash - this script prepares a mask of administrative areas within a satellite image.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS 
 ########
 
@@ -631,11 +596,6 @@ NAME
 ####
 
 oft-bb - is a a bounding box calculator t. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -707,11 +667,6 @@ NAME
 ####
 
 oft-classvalues-compare.bash - creates comparison plots of classes based on result of previous script oft-classvalues-plot.bash.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -786,11 +741,6 @@ NAME
 ####
 
 oft-classvalues-plot.bash - creates scatterplots of pixels within train- ing classes (given in a shapefile).
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -900,11 +850,6 @@ NAME
 ####
 
 oft-combine-masks.bash - combines several masks (raster and shape- files) to one mask file
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -1033,11 +978,6 @@ NAME
 
 oft-compare-overlap.bash - This script compares overlapping areas of 2 images and produces between-band correlations.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1142,11 +1082,6 @@ NAME
 
 oft-crop.bash - crops a raster image to the extent of a certain pixel value.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1201,11 +1136,6 @@ NAME
 ####
 
 oft-cuttile.pl - Cuts image tiles on the basis of a given list of locations.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -1320,11 +1250,6 @@ NAME
 
 oft-filter - moving window filters 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1403,11 +1328,6 @@ NAME
 
 oft-gengrid.bash - generates a systematic grid over a raster image. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1481,11 +1401,6 @@ NAME
 
 oft-getcorners.bash - gets the coordinates of corners of a raster image or OGR vector layer .
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1545,11 +1460,6 @@ NAME
 
 oft-polygonize.bash - a wrapper for gdal polygonize. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1588,11 +1498,6 @@ NAME
 ####
 
 oft-sample-within-polys.bash - samples pixels within polygons and generates training data for k-nn.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -1671,11 +1576,6 @@ NAME
 
 oft-shptif.bash - Rasterizes a shapefile to the resolution of a refer- ence image
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1721,11 +1621,6 @@ NAME
 ####
 
 oft-sigshp.bash - creates a signature file of an image based on train- ing area polygons.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -1860,11 +1755,6 @@ NAME
 
 PointsToSquares.py - converts XY-locations into 100 x 100 m squares in a kml-file.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1922,11 +1812,6 @@ NAME
 
 multifillerThermal.bash - is a script which utilizes several Landsat scenes to build a multi-temporal image composite using the warmest pixel -method.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -1963,11 +1848,6 @@ NAME
 ####
 
 oft-calc - is a raster image calculator.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -2209,11 +2089,6 @@ NAME
 
 oft-chdet.bash - automated change detection. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -2274,11 +2149,6 @@ NAME
 
 oft-clip.pl - subsets an input image using the extent, pixels size and projection of a reference image.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -2321,11 +2191,6 @@ NAME
 ####
 
 oft-combine-images.bash - combines 2 images into one. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -2387,11 +2252,6 @@ NAME
 ####
 
 oft-gapfill - regression based gap and cloud filler. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -2515,11 +2375,6 @@ NAME
 
 oft-ndvi.bash - computes ndvi images. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -2577,11 +2432,6 @@ NAME
 ####
 
 oft-prepare-images-for-gapfill.bash - prepares images and masks for oft-gapfill
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -2657,11 +2507,6 @@ NAME
 ####
 
 oft-reclass - is a reclassification program. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -2796,11 +2641,6 @@ NAME
 
 oft-stack - Create a muti-band image stack. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -2868,11 +2708,6 @@ NAME
 
 oft-trim - erosion filter producing binary output. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -2920,11 +2755,6 @@ NAME
 ####
 
 oft-trim-maks.bash - This script makes a 0/1 mask of a 6 or 7 band (Landsat) image.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -2985,11 +2815,6 @@ NAME
 ####
 
 oft-ascstat.awk - computes basic statistics for a space separated text file.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -3068,11 +2893,6 @@ NAME
 ####
 
 oft-avg - computes zone/segment averages and standard deviations. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -3171,11 +2991,6 @@ NAME
 
 oft-countpix.pl - counts number of pixel with, below or above a specific value.
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -3228,11 +3043,6 @@ NAME
 ####
 
 oft-crossvalidate - computes RMSE and bias estimates for k-nn via leave-one-out cross-validation.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -3346,11 +3156,6 @@ NAME
 ####
 
 oft-extr - extracts pixel values from an image into a text file. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -3472,11 +3277,6 @@ NAME
 
 oft-his - computes image histogram by segments. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -3558,11 +3358,6 @@ NAME
 ####
 
 :code:`oft-mm` - computes minimum and maximum values for each band of the input file.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -3646,11 +3441,6 @@ NAME
 ####
 
 :code:`oft-segstat` - output segments shape and spectral statistics in a text file.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -3828,11 +3618,6 @@ NAME
 
 :code:`oft-stat` - computes segment statistics in a text file. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -3985,11 +3770,6 @@ NAME
 
 :code:`oft-cluster.bash` - clusters raster images. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -4088,11 +3868,6 @@ NAME
 ####
 
 :code:`oft-kmeans` - for kmeans clustering 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -4234,11 +4009,6 @@ NAME
 
 :code:`oft-nn` - is a nearest neighbour classifier. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ########
 
@@ -4375,11 +4145,6 @@ NAME
 
 :code:`oft-nn-training-data.bash` - Script for preparing a training data text file for :code:`oft-nn` analysis
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -4466,11 +4231,6 @@ NAME
 
 :code:`oft-normalize.bash` - Script for preparing a training data text file for :code:`oft-nn` analysis
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -4530,11 +4290,6 @@ NAME
 
 :code:`oft-prepare-image-for-nn.bash` - for preparing a Landsat image for nn-analysis with :code:`oft-nn`
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -4586,11 +4341,6 @@ NAME
 ####
 
 :code:`oft-unique-mask-for-nn.bash` - creates a unique mask for oft-nn anal- ysis.
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ########
@@ -4665,11 +4415,6 @@ NAME
 
 :code:`oft-clump` - connected component labeling. 
 
-OFGT VERSION
-############
-
-1.25.4
-
 SYNOPSIS
 ######## 
 
@@ -4726,11 +4471,6 @@ NAME
 ####
 
 :code:`oft-seg` - Image segmentation tool. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
@@ -4840,11 +4580,6 @@ NAME
 ####
 
 :code:`oft-getproj.bash` - fetches projection definition files for UTM zones. 
-
-OFGT VERSION
-############
-
-1.25.4
 
 SYNOPSIS
 ######## 
