@@ -65,10 +65,21 @@ html_logo = os.path.abspath('img/sepal.png')
 html_favicon = os.path.abspath('img/favicon.ico')
 html_last_updated_fmt = ''
 html_theme_options = {
-    "github_url": "https://github.com/openforis/sepal",
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/openforis/sepal",
+            "icon": "fab fa-github"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/UNFAO",
+            "icon": "fab fa-twitter"
+        }
+    ],
     "use_edit_page_button": True,
-    "twitter_url": "https://twitter.com/UNFAO"
 }
+
 html_context = {
     "github_user": "openforis",
     "github_repo": "sepal-doc",
