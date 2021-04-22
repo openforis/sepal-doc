@@ -95,7 +95,7 @@ The input is a text file of the following format:
 
 .. warning::
 
-    After the ”:” mark there are corner coordinates in WGS84 system.
+    After the ":" mark there are corner coordinates in WGS84 system.
     
 This input data can be output from another script, :code:`GExml2csv.bash` and originally derives from a training data collection tool created for GE.
   
@@ -228,7 +228,7 @@ This script performs conversion from a set of generic .kml format polygons creat
 The procedure is:
 
 1.  Put the kml’s into one folder
-2.  Launch :code:`genericGEkml2csv.bash` in that kml-folder. This creates a csv file ”output.csv”
+2.  Launch :code:`genericGEkml2csv.bash` in that kml-folder. This creates a csv file "output.csv"
     
     .. code-block:: console
         
@@ -287,7 +287,7 @@ EXAMPLE
 #######
 
 1.  Put all kml files into one folder
-2.  Launch :code:`genericGEkml2csv.bash` in that kml-folder. This creates a csv file ”output.csv”
+2.  Launch :code:`genericGEkml2csv.bash` in that kml-folder. This creates a csv file "output.csv"
     
     .. code-block:: console
     
@@ -664,7 +664,7 @@ Open your working directory using:
     
     cd ~
 
-Find the bounding box of the Forest tree cover file :code:`forestc.tif` with value ”33”
+Find the bounding box of the Forest tree cover file :code:`forestc.tif` with value "33"
 
 .. code-block:: console
 
@@ -931,7 +931,9 @@ The projection can be defined by the user using the [EPSG code] option.
  
 EXAMPLE
 #######
-- For this exercise following tools are used: :code:`oft-combine-masks.bash`, :code:`oft-calc`, :code:`gdal_rasterize`.
+
+For this exercise following tools are used: :code:`oft-combine-masks.bash`, :code:`oft-calc`, :code:`gdal_rasterize`.
+
 Open your working directory using:
 
 .. code-block:: console
@@ -948,7 +950,7 @@ To run :code:`oft-combine-masks.bash` we need to create some mask files. To do s
 
 Verify in QGIS if your pixel values of :code:`forestc.tif` match the polygon values of :code:`landuse.shp`.
 
-.. tips::
+.. tip::
 
     if the raster output is black, click on it’s Properties ->Style ->Colour Map and chose Pseudo Colour
 
@@ -1004,7 +1006,7 @@ In the final step we run the command :code:`oft-combine-masks.bash`.
 
 Run :code:`oft-combine-masks.bash`: Input: :code:`mask1.tif`, :code:`mask2.tif`, :code:`mask3.tif`, :code:`mask4.tif`, :code:`mask5.tif` and the additional shapefile :code:`clouds.shp` In the shapefile the values of the last column are picked up for processing; output is automatically processed: combined-masks.img
 
-.. tips::
+.. tip::
 
     copy your combined-mask.img output from the first exercise as it will be overwritten running :code:`oft-combine-masks.bash` again.
 
@@ -1250,7 +1252,7 @@ Open your working directory using:
     
     -   :code:`coordinates.txt` is a space separated text file of 3 columns: :code:`ID`, :code:`X` and :code:`Y`.
         
-        .. code-bloc:: console
+        .. code-block:: console
         
             gedit results/coordinates.txt
         
@@ -1282,7 +1284,7 @@ Open your working directory using:
             +init=epsg:32620 +proj=utm +zone=20 +datum=WGS84 +units=m + no defs +ellps=WGS84
             +init=epsg:32620 +proj=utm +zone=20 +datum=WGS84 +units=m + no defs +ellps=WGS84
                    
-    .. tips:: 
+    .. tip:: 
     
         If you do not have it, you can get the PROJ4 format of an image by using the function :code:`cs2cs`:
 
@@ -1290,7 +1292,7 @@ Open your working directory using:
 
             cs2cs −v +i n i t=epsg:32620
 
-    .. tips:: 
+    .. tip:: 
     
         If you don’t know the EPSG code of your image use gdalinfo for your imagery:
         
@@ -1376,6 +1378,7 @@ Create the standard deviation for the moving window using the default window siz
 Now we go through an example calculating the coefficient of variation (100*std/mean) using the option -f 5:
 
 .. code-block:: console
+
     oft−filter −i landsat_t1.tif −o coe_var.tif −f 5
 
 Calculation of the mean using the option -f 0:
@@ -1743,7 +1746,7 @@ DESCRIPTION
 -   The training areas and the image must be in the same projection **OR** you may give the projections in the command line as EPSG codes.
 -   If the projections are not defined (for both or one of the inputs), or the program does not recognize it, the script will warn. This is not dangerous if the files really are similarly aligned.
 -   The ID’s must fit into a 16-bit Unsigned image ( 65500).
--   The class values may be either numerical or verbal (e.g. ”bushland”)
+-   The class values may be either numerical or verbal (e.g. "bushland")
 
 Minimum parameters needed:
 
@@ -1892,7 +1895,7 @@ Open your working directory using:
 
     In this exercise we use the .txt file derived from :code:`oft-gengrid.bash` called :code:`training.txt`.
 
-.. tips::
+.. tip::
 
     Note that the projection is UTM South WGS84 zones. In our case it is UTM Zone 20S.
 
@@ -2308,6 +2311,7 @@ Reproject, clip and resample the MODIS image (resolution 230 m, lat/long) to the
 Visualize the results in QGIS
 
 .. code-block:: console
+
     qgis images/landsat_t1.tif results/vcf−clip.tif
         
 oft-combine-images.bash
@@ -2393,6 +2397,7 @@ SYNOPSIS
 ######## 
 
 .. code-block:: 
+
     oft-gapfill <-um maskfile><input><output>[-la nbrLargeAreaWin- dows] [-nolocal] [-smooth] [-pm] [-da] [-sd sampling density] [-ws WindowSize]
 
 DESCRIPTION
@@ -2490,7 +2495,7 @@ Gapfilling with mask of the scan-line using a simple mask created with :code:`of
     #1 0 = #6 0 = + 0 > 2 1 ? 
     #7 0 = #12 0 = + 0 > 2 3 ?
 
-Now, use :code:`oft-gapfill` to fill the areas indicated as ”1” in the mask: Output automatically processed: :code:`filled_la1_sd2_simplemask.tif`
+Now, use :code:`oft-gapfill` to fill the areas indicated as "1" in the mask: Output automatically processed: :code:`filled_la1_sd2_simplemask.tif`
 
 .. figure:: ../img/cli/ofgt/oft-gapfill_original.png
     :width: 50%
@@ -2595,7 +2600,7 @@ OPTIONS
 
 -   :code:`-n` ndvi threshold = If images differ a lot, NDVI can be used to select only vegetated areas for mask
 
-.. tips::
+.. tip::
 
     Values like 0.4 or 0.5 are useful at some location on the world, check your particular situation yourself!
 
@@ -2831,7 +2836,7 @@ EXAMPLE
 
 To create a 6-band stack of Landsat data from individual input rasters in .TIF format using wildcard:
 
-.. ocde-block:: console
+.. code-block:: console
 
     oft−stack −o landsat7band . tif landsat ∗. tif
 
@@ -2904,7 +2909,7 @@ Lets run :code:`oft-trim` with the input file :code:`landsat_t1.tif` with the op
 
     oft−trim −ws 3 landsat_t1.tif trim.tif
 
-.. tips::
+.. tip::
     
     Verify in QGIS that all the values of your output image are all trimmed to 1
 
@@ -3110,7 +3115,7 @@ Open your working directory using
 
 Now we run :code:`oft-avg` with input: :code:`images/landsat_t1.tif`, output: :code:`results/oftavg.tif`, mask: :code:`images/segments.tif`.
 
-The output text file will be named as the output image plus ”.txt” (in this case oftavg.tif.txt).
+The output text file will be named as the output image plus ".txt" (in this case oftavg.tif.txt).
 
 .. code-block:: console
 
@@ -3376,7 +3381,6 @@ OPTION
 .. note::
 
     Please note that the default behaviour is to extract window’s center pixel values.
-User Manual 117
  
 EXAMPLE
 #######
@@ -3429,7 +3433,7 @@ Let's use the option :code:`-mm` and :code:`-ws`:
 
     oft−extr−ws3−mm−oextrmm.txt training.txt landsatt1.tif 
     
-.. code_block:: console
+.. code-block:: console
 
     head extr mm.txt
 
@@ -3513,7 +3517,7 @@ EXAMPLE
 typical parameter setting
 +++++++++++++++++++++++++
 
-.. code:: console
+.. code-block:: console
 
     oft−his −i input.img −o histogram.txt −um mask.img −hr −maxval 255
 
@@ -3530,9 +3534,9 @@ For example, in the following output:
         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
--   :code:`1`is the mask value
+-   :code:`1` is the mask value
 -   :code:`657846` is the frequency of mask value 1
--   :code:`1`is the number of band
+-   :code:`1` is the number of band
 -   Every following value is the frequency of value :code:`x` in input image maksed with mask value :code:`1`. Here :code:`x` is in [0, 255]
 
 - An alternative output format is provided by the :code:`-compact` option:
@@ -3543,7 +3547,7 @@ For example, in the following output:
         82955 57 40937 58 14060 59 4255 60 1618 61 707 62 345 63 208 64 140 65 103 66 83 67 48 68 42 69 15
         70 17 71 13 72 6 73 3 74 2 76 3 77 1
 
--   :code:`1`is the mask value
+-   :code:`1` is the mask value
 -   :code:`657846` is the frequency of mask value 1
 -   Every following value is a consists of value-frequency pairs. That is, entry :code:`12 1` means that 1 pixel of value 12 was found within the region determined by mask value 1.
 
@@ -3626,7 +3630,7 @@ If you are only interested in the min and max values for a certain band, you can
 
 .. code-block:: console 
 
-    oft−mm images/landsat_t1.tif | grep ”Band 1”
+    oft−mm images/landsat_t1.tif | grep "Band 1"
 
 Will return 
 
@@ -3666,7 +3670,7 @@ The output: The basic usage outputs the following space separated columns:
 
 -   Segment ID
 -   Size
-−   (3+n) Segment averages pixel values for all n input image bands
+-   (3+n) Segment averages pixel values for all n input image bands
 
 OPTIONS
 #######
@@ -3928,6 +3932,7 @@ Explanation of values for each column:
 Now we run oft-stat with input: :code:`images/landsat_t1.tif`, output: :code:`results/stats_mask.txt`; optional mask: :code:`images/segments.tif`:
 
 .. code-block:: console
+
     oft−stat −i images/input.tif −o results/stats.txt −um images/segments.tif
 
 Print the first 10 lines of the output in terminal:
@@ -3971,578 +3976,927 @@ ID, number of pixels, [minimum if :code:`-mm` is chosen], [maximum if :code:`-mm
 If the input image has several bands, the parameters are given for all bands.
  
 CLASSIFICATION
-7.45 oft-cluster.bash NAME
-####
-oft-cluster.bash - clusters raster images. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-cluster.bash
-oft-cluster.bash <input.img><output.img><nbr clusters><sampling density%> oft-cluster.bash <input.img><output.img><nbr clusters>...
-...<sampling density%>[mask]
-DESCRIPTION
-###########
-oft-cluster.bash clusters input image into a given number of clusters. The clustering process is as follows:
-1) generate a systematic sample using the given sample density and covering the area of input.img. For more details, please have a look at oft-gengrid.bash
-2) extract spectral (or other) information for every point of the grid using oft-extr
-3) cluster the grid points into given number of clusters using k-means algorithm oft-kmeans
-4) classify each image pixel in one of the generated clusters using NN classification with Euclidean distance in the feature space
-The mask values are: 0 = do not classify
-User Manual 138
-  
-1 = classify
-OPTION
-Parameters:
-[mask] - use maskfile and process only areas having mask value >0
-NOTES
-If you’re using LEDAPS input, you can generate the mask using
-trim ledaps.bash EXAMPLE
-#######
-This example will create an output image (50classes10percent.img) were every pixel has been assigned a class from 0 to 50 except the pixels of value 0 in the mask image.
-EXERCISE
-- For this exercise following tools are used: oft-cluster.bash, oft- clump, gdal polygonize to compute clusters and convert them into polygons.
-- Open your working directory using
-.. code-block:: console
-    
-    cd ~
-1. oft-cluster.bash
-Let’s run oft-cluster with Input: :code:`landsat_t1.tif` ; Output: cluster50.tif for 50 classes and 10 percent
-Note: it takes some time computing, so be patient.
-oft−cluster.bash andsat t1.tif cluster50.tif 50 10
-Load the result in QGIS and see that all the pixel values are between 1 and 50 corresponding to the 50 classes we defined in the command line.
-User Manual 139
-   cluster .bash LT51650672009351JSA00 stack.img 50classes10percent . img 50 10 mask LT51650672009351JSA00 . img
-             
- Figure 23: Cluster50.tif
-2. oft-clump.bash
-Now we will run oft-clump. This tool is meant for separating uniform regions in a class image. Get detailed information under oft-clump:
-Input: cluster50.tif
-Output: clump clus50.tif
-oft−clump cluster50 . tif clump clus50 . tif
-3. oft-cluster.bash
-In the last step we want to create polygons using the Input: clump clus50.tif Output: clump clus50.shp
-User Manual 140
-        gdal polygonize .py clump clus50 . tif −f ”ESRI Shapefile” clump clus50 . shp
-   
-  Figure 24: Left: Zoom into the cluster image Cluster50.tif. Right: Corresponding zoom into the shapefile clump clus50.shp.
- User Manual 141
+^^^^^^^^^^^^^^
 
-7.46 oft-kmeans NAME
+oft-cluster.bash
+""""""""""""""""
+NAME
 ####
-oft-kmeans - for kmeans clustering OFGT VERSION
+
+:code:`oft-cluster.bash` - clusters raster images. 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-kmeans
-oft-kmeans -i <infile>-o <outfile>
-oft-kmeans -i <infile>-o <outfile>[OPTIONS]
+######## 
+
+.. code-block:: console
+
+    oft-cluster.bash <input.img><output.img><nbr clusters><sampling density%> oft-cluster.bash <input.img><output.img><nbr clusters>...<sampling density%>[mask]
+
 DESCRIPTION
 ###########
-oft-kmeans carries out unsupervised classification with k-means al-
-gorithm.
-- By default, the program asks user to input two parameters:
-1. input text file
-2. number of classes
-The input text file is a collection of signatures from the input file.
-- It contains at minimum the greyvalues of each band
-- It can be done with oft-gengrid.bash and oft-extr
-- The program uses it to establish the cluster centres and pro-
-ceeds by assigning each pixel the Class ID of the closest cluster centre. **The proximity of the cluster centres is computed using Euclidean distance in the spectral feature space.
-- If the -auto option is used, the program divides the data automati- cally and the number of clusters is not requested.
-- If the -aw option is used, the programs asks user to provide weight for each of the input bands.
-OPTIONS
-- [-ot] - { Byte/Int16/UInt16/UInt32/Int32/Float32/Float64} - [-um] - specify mask band
-User Manual 142
- 
-- [-auto] - automated division of data - [-aw] - ask weights for input bands - [-h] - print out more help
-NOTES
-For the benefit of users running scripts using the older version based on order of files instead of option -i, the program can still be used that way.
+
+:code:`oft-cluster.bash` clusters input image into a given number of clusters. The clustering process is as follows:
+
+1.  Generate a systematic sample using the given sample density and covering the area of input.img. For more details, please have a look at oft-gengrid.bash
+2.  extract spectral (or other) information for every point of the grid using oft-extr
+3.  cluster the grid points into given number of clusters using k-means algorithm oft-kmeans
+4.  classify each image pixel in one of the generated clusters using NN classification with Euclidean distance in the feature space
+
+The mask values are: 
+-   0 = do not classify
+-   1 = classify
+
+OPTION
+######
+
+Parameters:
+
+-   :code:`[mask]` - use maskfile and process only areas having mask value >0
+
+.. note::
+
+    If you’re using LEDAPS input, you can generate the mask using:
+    
+    .. code-block:: console
+    
+        trim ledaps.bash 
+        
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-kmeans, oft-gengrid.bash, oft-extr
-- Open your working directory using
+
+For this exercise following tools are used: :code:`oft-cluster.bash`, :code:`oft-clump`, :code:`gdal- polygonize` to compute clusters and convert them into polygons.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-- The exercise is divided into two step: first we prepare the input signature text file which is need for textitoft-kmeans, then we will run the classification tool itself:
-1. Creation of input signature text file
-- We want to generate a grid of points over our image :code:`landsat_t1.tif` using oft-gengrid.bash with user-defined spacing in x and y direc- tions, in this case 5000 x 5000 m distance between the points in X and Y directions. The output file gengrid.txt contains information on the created grid: ID x y
-oft−gengrid.bash landsat_t1.tif 5000 5000 gengrid.txt head gengrid . txt
-                  1 730785 −2456134 2 730785 −2451134
- 3 730785 −2446134
- 4 730785 −2441134 5 730785 −2436134
- 6 730785 −2431134 7 730785 −2426134 8 730785 −2421134
- User Manual 143
 
- 9 730785 −2416134 10 730785 −2411134
-  - To extract the values from our input image :code:`landsat_t1.tif` f for those pixels that lay on our grid we created in the previous step we run oft-extr. Output: my extr.txt
-oft−extr −o my extr . txt gengrid . txt landsat t1 . tif head my extr . txt
-             1.00 730785.00 −2456134.00 50.00 3441.00 52.00 24.00 24.00
- 51.00 65.00 128.00 29.00
-2.00 730785.00 −2451134.00 50.00 3274.00 47.00 19.00 18.00
-37.00 47.00 124.00 20.00
-3.00 730785.00 −2446134.00 50.00 3108.00 52.00 23.00 22.00
- 53.00 57.00 127.00 26.00
- 4.00 730785.00 −2441134.00 50.00 2941.00 49.00 20.00 17.00 34.00 43.00 124.00 19.00
- 5.00 730785.00 −2436134.00 50.00 2774.00 47.00 20.00 18.00 34.00 44.00 125.00 19.00
-6.00 730785.00 −2431134.00 50.00 2608.00 51.00 21.00 20.00 36.00 51.00 128.00 23.00
- 7.00 730785.00 −2426134.00 50.00 2441.00 62.00 29.00 38.00 53.00 85.00 136.00 45.00
-8.00 730785.00 −2421134.00 50.00 2274.00 48.00 21.00 18.00 34.00 45.00 126.00 19.00
- 9.00 730785.00 −2416134.00 50.00 2108.00 49.00 20.00 19.00 35.00 47.00 125.00 20.00
- 10.00 730785.00 −2411134.00 50.00 1941.00 49.00 20.00 18.00
- 35.00 45.00 125.00 18.00
-  2. Unsupervised classification - oft-kmeans
-- Now we run oft-kmeans with Input::code:`landsat_t1.tif` and Output:
-my kmeans.tif
-oft−kmeans −o my kmeans. tif −i landsat t1 . tif The program will ask you for:
-- Load your result my kmeans.tif in QGIS:
-User Manual 144
-        Input signature file name?: my extr.txt
-Number of clusters?: 25 //For this example we
- choose 25 clusters
+oft-cluster.bash
+++++++++++++++++
+
+Let’s run :code:`oft-cluster` with Input: :code:`landsat_t1.tif` ; Output: :code:`cluster50.tif` for 50 classes and 10 percent
+
+.. note::
+
+    it takes some time computing, so be patient.
+
+.. code-block:: console
+
+    oft−cluster.bash landsat_t1.tif cluster50.tif 50 10
+
+Load the result in QGIS and see that all the pixel values are between 1 and 50 corresponding to the 50 classes we defined in the command line.
+
+.. figure:: ../img/cli/ofgt/oft-cluster.png
+
+    Cluster50.tif
+
+oft-clump.bash
+++++++++++++++
+
+Now we will run :code:`oft-clump`. This tool is meant for separating uniform regions in a class image. Get detailed information under :code:`oft-clump`:
+
+-   Input: :code:`cluster50.tif`
+-   Output: :code:`clump_clus50.tif`
+
+.. code-block:: console
+
+    oft−clump cluster50.tif clump_clus50.tif
+    
+gdal_polygonize.py
+++++++++++++++++++
+
+In the last step we want to create polygons using the Input: :code:`clump_clus50.tif` Output: :code:`clump_clus50.shp`
+
+.. code-block:: console
+
+    gdal_polygonize.py clump_clus50_.tif −f "ESRI Shapefile" clump_clus50.shp
+
+.. figure:: ../img/cli/ofgt/gdal_polygonize.png
    
- Figure 25: shows the classified image my kmeans.tif with pixel values between 1 and 25.
- User Manual 145
+    Left: Zoom into the cluster image Cluster50.tif. Right: Corresponding zoom into the shapefile clump clus50.shp.
 
-7.47 oft-nn - To be tested NAME
+oft-kmeans
+"""""""""" 
+
+NAME
 ####
-oft-nn - is a nearest neighbour classifier. OFGT VERSION
+
+:code:`oft-kmeans` - for kmeans clustering 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
 ########
-oft-nn
-oft-nn <-i input image><-o output image/-or output text file> oft-nn<-i input image><-o output image/-or output text file>[OPTIONS]
+
+.. code-block:: console
+
+    oft-kmeans -i <infile>-o <outfile>[OPTIONS]
+
+DESCRIPTION
+###########
+
+:code:`oft-kmeans` carries out unsupervised classification with k-means algorithm.
+
+-   By default, the program asks user to input two parameters:
+
+    1.  input text file
+    2.  number of classes
+
+-   The input text file is a collection of signatures from the input file.
+    
+    -   It contains at minimum the greyvalues of each band
+    -   It can be done with :code:`oft-gengrid.bash` and :code:`oft-extr`
+    -   The program uses it to establish the cluster centres and proceeds by assigning each pixel the Class ID of the closest cluster centre. 
+        
+        .. note::
+            The proximity of the cluster centres is computed using Euclidean distance in the spectral feature space.
+
+-   If the :code:`-auto` option is used, the program divides the data automatically and the number of clusters is not requested.
+-   If the :code:`-aw` option is used, the programs asks user to provide weight for each of the input bands.
+
 OPTIONS
-−h = help
-−ot {Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/CInt16/
-CInt32/CFloat32/CFloat64} = define output type
-−um <maskfile> = only areas having mask value larger than 0 are
-processed
-−dem <demfile> = use given dem and vertical distance rules
-prompted by the program
-−hrules = use horizontal distance rules (prompted by the program
-) to restrict the search in horizontal direction
-−segme = use segments in the mask file . If this option is used ,
-the processing is done at the segment level. −speed = approximate k−nn , asks for speed parameter .
-Experimental .
-−or <output txtfile> = save weights for training data records
-for later calculations of large area statistics
-−aw = ask weights for the input bands
-−dw {1/2/3} = weight the nearest neighbor data with 1=equal , 2=
-inverse distance , 3=inverse distance squared (default)
-weights
-−norm = normalize the image features and the training data
-features to mean 0 and std 1 (default is no normalization). −lu <image> = use given land use image for stratification of the
-reference data.
-NOT IMPLEMENTED YET −adm <image> = use given administrative
-borders to collect weights for field plots by
-User Manual 146
-           administrative unit (e.g. county). This enables you to compute statistics for each adm. unit separately .
+#######
+
+-   :code:`[-ot]` - { Byte/Int16/UInt16/UInt32/Int32/Float32/Float64} 
+-   :code:`[-um]` - specify mask band
+-   :code:`[-auto]` - automated division of data 
+-   :code:`[-aw]` - ask weights for input bands 
+-   :code:`[-h]` - print out more help
+
+.. note::
+
+    For the benefit of users running scripts using the older version based on order of files instead of option :code:`-i`, the program can still be used that way.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-kmeans`, :code:`oft-gengrid.bash`, :code:`oft-extr`.
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+The exercise is divided into two step: first we prepare the input signature text file which is need for textitoft-kmeans, then we will run the classification tool itself:
+
+Creation of input signature text file
++++++++++++++++++++++++++++++++++++++
+
+We want to generate a grid of points over our image :code:`landsat_t1.tif` using :code:`oft-gengrid.bash` with user-defined spacing in x and y directions, in this case 5000 x 5000 m distance between the points in X and Y directions. The output file :code:`gengrid.txt` contains information on the created grid: **ID**, **x** and  **y**
+
+.. code-block:: console
+
+    oft−gengrid.bash landsat_t1.tif 5000 5000 gengrid.txt 
+    
+Lets see the results
+
+.. code-block:: console 
+
+    head gengrid.txt
+
+.. code-block::
+
+    1 730785 −2456134 
+    2 730785 −2451134
+    3 730785 −2446134
+    4 730785 −2441134 
+    5 730785 −2436134
+    6 730785 −2431134 
+    7 730785 −2426134 
+    8 730785 −2421134
+    9 730785 −2416134 
+    10 730785 −2411134
+
+To extract the values from our input image :code:`landsat_t1.tif` f for those pixels that lay on our grid we created in the previous step we run :code:`oft-extr`. Output: :code:`my_extr.txt`
+
+.. code-block:: console
+
+    oft−extr −o my_extr.txt gengrid.txt landsat_t1.tif 
+    
+.. code-block:: console
+
+    head my_extr.txt
+
+.. code-block::
+             
+    1.00 730785.00 −2456134.00 50.00 3441.00 52.00 24.00 24.00 51.00 65.00 128.00 29.00
+    2.00 730785.00 −2451134.00 50.00 3274.00 47.00 19.00 18.00 37.00 47.00 124.00 20.00
+    3.00 730785.00 −2446134.00 50.00 3108.00 52.00 23.00 22.00 53.00 57.00 127.00 26.00
+    4.00 730785.00 −2441134.00 50.00 2941.00 49.00 20.00 17.00 34.00 43.00 124.00 19.00
+    5.00 730785.00 −2436134.00 50.00 2774.00 47.00 20.00 18.00 34.00 44.00 125.00 19.00
+    6.00 730785.00 −2431134.00 50.00 2608.00 51.00 21.00 20.00 36.00 51.00 128.00 23.00
+    7.00 730785.00 −2426134.00 50.00 2441.00 62.00 29.00 38.00 53.00 85.00 136.00 45.00
+    8.00 730785.00 −2421134.00 50.00 2274.00 48.00 21.00 18.00 34.00 45.00 126.00 19.00
+    9.00 730785.00 −2416134.00 50.00 2108.00 49.00 20.00 19.00 35.00 47.00 125.00 20.00
+    10.00 730785.00 −2411134.00 50.00 1941.00 49.00 20.00 18.00 35.00 45.00 125.00 18.00
+  
+Unsupervised classification
++++++++++++++++++++++++++++
+
+Now we run :code:`oft-kmeans` with Input::code:`landsat_t1.tif` and Output: :code:`my_kmeans.tif`
+
+.. code-block:: console
+
+    oft−kmeans −o my_kmeans.tif −i landsat_t1.tif 
+    
+The program will ask you for:
+
+.. code-block:: console
+
+    Input signature file name?: my extr.txt
+    Number of clusters?: 25 //For this example we choose 25 clusters
+
+Load your result my kmeans.tif in QGIS:
+
+.. figure:: ../img/cli/ofgt/oft-kmeans.png
+
+    shows the classified image my kmeans.tif with pixel values between 1 and 25.
+
+oft-nn
+""""""
+
+.. warning::
+
+    To be tested 
+
+NAME
+####
+
+:code:`oft-nn` - is a nearest neighbour classifier. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-nn <-i input image><-o output image/-or output text file> oft-nn<-i input image><-o output image/-or output text file>[OPTIONS]
+
+OPTIONS
+#######
+
+-   :code:`−h` = help
+-   :code:`−ot` {Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/CInt16/CInt32/CFloat32/CFloat64} = define output type
+-   :code:`−um` <maskfile> = only areas having mask value larger than 0 are processed
+-   :code:`−dem` <demfile> = use given dem and vertical distance rules prompted by the program
+-   :code:`−hrules` = use horizontal distance rules (prompted by the program) to restrict the search in horizontal direction
+-   :code:`−segme` = use segments in the mask file. If this option is used, the processing is done at the segment level. 
+-   :code:`−speed` = approximate k−nn, asks for speed parameter.
+
+.. warning::
+    
+    Experimental
+
+-   :code:`−or` <output txtfile> = save weights for training data records for later calculations of large area statistics
+-   :code:`−aw` = ask weights for the input bands
+-   :code:`−dw` {1/2/3} = weight the nearest neighbor data with:
+    
+    1.  equal
+    2.  inverse distance
+    3.  inverse distance squared (default) weights
+
+-   :code:`−norm` = normalize the image features and the training data features to mean 0 and std 1 (default is no normalization). −lu <image> = use given land use image for stratification of the reference data.
+
+.. danger::
+    NOT IMPLEMENTED YET 
+    
+-   :code:`−adm` <image> = use given administrative borders to collect weights for field plots by administrative unit (e.g. county). This enables you to compute statistics for each adm. unit separately.
    
 DESCRIPTION
 ###########
-oft-nn carries out nearest neighbour estimation or classification of
-an image.
-- oft-nn classifies or estimates an output value for every image anal-
-ysis unit using given training data set and k nearest neighbour algorithm. Nearest neighbours are determined based on Euclidean distances in the feature space.
-- In a classification, the output is the class having the largest sum of weights. In estimation, the output value is computed as straight or weighted average of the k nearest neighbours.
-- You need to give at least the input image file (-i option) and the output image (-o option) OR the output text file (-or option)
-- NOTE: the program will ask for the datafile, number and location of target variables, nbr of neighbours (k) and data type (continuous or class). Other parameters are asked when needed, if you use extra options specified under OPTIONS.
-- Last columns of the training data set are used as the feature space. In other words, if the input image has four bands, last four columns of the training data set should correspond to the values for training observations.
-- In cases of -dem or -lu you need to have a corresponding column in your field data text file (prompted by the program).
-- In case of dem is used, we use absolute difference: if you want to reject observations >500 m above or below the target pixel, give 500
-- In case of -norm, the normalization parameters are computed from the field data.
-NOTE: you may also normalize your features (image and training data) BEFORE using oft-nn, Just be sure that the values come from the same distribution.
-- In case of -or the output text file contains the target variable and collected weight for each training data observation.
- User Manual
-147
 
-- If the -lu option is given, only observations from the same land use category/class will be used for estimation.
-EXERCISE
-- For this exercise following tools are used: oft-nn, oft-sigshp.bash 1. You will need for this exercise the following data: textit:code:`landsat_t1.tif` and textit:code:`landuse.shp` which was digitized manually in QGIS
-2. Create the signature file using oft-sigshp.bash
-3. Take a look at the input signature file sig landuse.txt: more txt/sig landuse . txt
-   .. code-block:: console
+:code:`oft-nn` carries out nearest neighbour estimation or classification of an image.
+
+-   :code:`oft-nn` classifies or estimates an output value for every image analysis unit using given training data set and k nearest neighbour algorithm. Nearest neighbours are determined based on Euclidean distances in the feature space.
+-   In a classification, the output is the class having the largest sum of weights. In estimation, the output value is computed as straight or weighted average of the k nearest neighbours.
+-   You need to give at least the input image file (:code:`-i` option) and the output image (:code:`-o` option) OR the output text file (:code:`-or` option)
+
+.. note::
     
-    cd ~/OFGT−Data
- oft−sigshp.bash images/landsat_t1.tif shapefiles/landuse id newcol txt/sig landuse . txt
-          14 4 54.872263 26.561314 28.113869 58.320438 75.259854 129.021898 33.874453
- 15 4 58.635842 29.131097 35.067535 50.379166 86.387111 131.054293 47.649746
- 16 4 58.217101 29.102204 34.695057 54.351035 82.787575
- 130.169673 43.795925
-17 1 54.840000 25.463590 29.768205 43.720000 80.614359
-132.413333 42.431795
-18 2 54.172608 25.085366 28.419325 48.404315 74.633208
-131.336773 37.128518
- 19 3 55.198990 26.094949 30.674747 49.970707 76.598990 131.734343 36.209091
-20 2 57.269874 26.903766 31.171548 42.291841 78.776151
- 133.120293 41.883891
-21 5 55.277745 26.597769 29.771580 56.949501 76.772754
-128.934234 36.727540
- 22 4 54.130526 24.966316 29.842105 42.627368 85.372632 134.662105 45.390526
-23 4 54.960094 26.014085 28.808685 54.773474 75.338028 129.531690 34.167840
-24 1 57.802077 27.928833 34.113622 48.773060 83.804520
- 132.198839 43.640501
- 25 3 58.298009 28.367690 33.835545 48.340315 82.241186 132.243467 45.336790
-  Explanation of columns:
-User Manual 148
-   col 1: ID of the polygon
- col 2: landuse class of the polygon
- 
- col 3−9: pixel values of band1−band7 of the Landsat imagery 4. Now run oft-nn with
-oft−nn −i images/landsat t1 . tif −o results/my knn. tif Following variables will be asked:
-5. Load your result my knn.tif in QGIS:
-You can see the polygons labelled corresponding to their landuse- class on top of our result my knn.tif, of which the pixel values vary between 1-5 (eg 1.78283) as there are 5 landuse-classes (1,2,3,4,5).
-          Input signature file name?: sig landuse . txt
- Number of k ?:5
-Nbr of output variables ?:1
-Cols of 1 output vars in sig file?
-Output var 1: 2 //Here we define col2 where the information on
-landuse−classes is stored in sig landuse . txt
- Class/Other = (0/1) ?: 1
-   User Manual 149
+    the program will ask for the datafile, number and location of target variables, nbr of neighbours (k) and data type (continuous or class). Other parameters are asked when needed, if you use extra options specified under OPTIONS.
 
- Figure 26: Result my knn.tif overlayed with :code:`landuse.shp`.
- User Manual 150
+-   Last columns of the training data set are used as the feature space. In other words, if the input image has four bands, last four columns of the training data set should correspond to the values for training observations.
+-   In cases of :code:`-dem` or :code:`-lu` you need to have a corresponding column in your field data text file (prompted by the program).
+-   In case of dem is used, we use absolute difference: if you want to reject observations >500 m above or below the target pixel, give 500
+-   In case of :code:`-norm`, the normalization parameters are computed from the field data.
 
-7.48 oft-nn-training-data.bash
+.. note::
+
+    you may also normalize your features (image and training data) BEFORE using :code:`oft-nn`, Just be sure that the values come from the same distribution.
+
+-   In case of :code:`-or` the output text file contains the target variable and collected weight for each training data observation.
+-   If the :code:`-lu` option is given, only observations from the same land use category/class will be used for estimation.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-nn`, :code:`oft-sigshp.bash`. 
+
+You will need for this exercise the following data: :code:`landsat_t1.tif` and :code:`landuse.shp` which was digitized manually in QGIS.
+
+Create the signature file using :code:`oft-sigshp.bash`:
+
+.. code-block:: console
+
+     oft−sigshp.bash images/landsat_t1.tif shapefiles/landuse id newcol txt/sig_landuse.txt
+
+Take a look at the input signature file :code:`sig_landuse.txt`: 
+
+.. code-block:: console
+
+    more txt/sig_landuse.txt
+
+.. code-block:: 
+
+    14 4 54.872263 26.561314 28.113869 58.320438 75.259854 129.021898 33.874453
+    15 4 58.635842 29.131097 35.067535 50.379166 86.387111 131.054293 47.649746
+    16 4 58.217101 29.102204 34.695057 54.351035 82.787575 130.169673 43.795925
+    17 1 54.840000 25.463590 29.768205 43.720000 80.614359 132.413333 42.431795
+    18 2 54.172608 25.085366 28.419325 48.404315 74.633208 131.336773 37.128518
+    19 3 55.198990 26.094949 30.674747 49.970707 76.598990 131.734343 36.209091
+    20 2 57.269874 26.903766 31.171548 42.291841 78.776151 133.120293 41.883891
+    21 5 55.277745 26.597769 29.771580 56.949501 76.772754 128.934234 36.727540
+    22 4 54.130526 24.966316 29.842105 42.627368 85.372632 134.662105 45.390526
+    23 4 54.960094 26.014085 28.808685 54.773474 75.338028 129.531690 34.167840
+    24 1 57.802077 27.928833 34.113622 48.773060 83.804520 132.198839 43.640501
+    25 3 58.298009 28.367690 33.835545 48.340315 82.241186 132.243467 45.336790
+  
+Explanation of columns:
+
+-   col 1: ID of the polygon
+-   col 2: landuse class of the polygon
+-   col 3−9: pixel values of band1−band7 of the Landsat imagery
+
+Now run :code:`oft-nn` with
+
+.. code-block:: console
+
+    oft−nn −i images/landsat_t1.tif −o results/my_knn.tif 
+    
+Following variables will be asked:
+
+.. code-block:: console
+
+    Input signature file name?: sig landuse . txt
+    Number of k ?:5
+    Nbr of output variables ?:1
+    Cols of 1 output vars in sig file?
+    Output var 1: 2 //Here we define col2 where the information on
+    landuse−classes is stored in sig landuse . txt
+    Class/Other = (0/1) ?: 1
+
+Load your result my :code:`knn.tif` in QGIS:
+
+You can see the polygons labelled corresponding to their landuse-class on top of our result :code:`my_knn.tif`, of which the pixel values vary between 1-5 (eg 1.78283) as there are 5 landuse-classes (1,2,3,4,5).
+
+.. figure:: ../img/cli/ofgt/oft-knn.png
+
+    Result :code:`my_knn.tif` overlayed with :code:`landuse.shp`
+
+oft-nn-training-data.bash
+"""""""""""""""""""""""""
+
 NAME
 ####
-oft-nn-training-data.bash - Script for preparing a training data text file for oft-nn analysis
+
+:code:`oft-nn-training-data.bash` - Script for preparing a training data text file for :code:`oft-nn` analysis
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-nn-training-data.bash
-oft-nn-training-data.bash <-i image.tif><-f field data.txt><-x col><- y col>
-oft-nn-training-data.bash <-i image.tif><-f field data.txt><-x col><- y col>[-m mask.tif] [-d dem] [-l lu]
--i = give the landsat image where grey values are to be picked for the field plot locations
--f = give the field data text file
--x = give the column where x-coordinate resides in the text file -y = give the column where y-coordinate resides in the text file
+######## 
+
+.. code-block:: console
+
+    oft-nn-training-data.bash <-i image.tif><-f field data.txt><-x col><- y col>[-m mask.tif] [-d dem] [-l lu]
+
+-   :code:`-i` = give the landsat image where grey values are to be picked for the field plot locations
+-   :code:`-f` = give the field data text file
+-   :code:`-x` = give the column where x-coordinate resides in the text file 
+-   :code:`-y` = give the column where y-coordinate resides in the text file
+
 OPTIONS
--m = give a mask with values 0 and 1, where 0 tells that ”this location is not to be picked if a field plot falls here”
--d = give a digital elevation model file from which the elevations at field plot locations are to be added to the training data
--lu = give a land-use, land cover etc image file from which this information is to be added to the training data
+#######
+
+-   :code:`-m` = give a mask with values 0 and 1, where 0 tells that "this location is not to be picked if a field plot falls here"
+-   :code:`-d` = give a digital elevation model file from which the elevations at field plot locations are to be added to the training data
+-   :code:`-lu` = give a land-use, land cover etc image file from which this information is to be added to the training data
+
 DESCRIPTION
 ###########
-- Picks field data in a text file based on the extent of given image - Image may contain 6 or 7 bands
-- Extracts image values based on field data locations
-User Manual 151
- 
-- If a mask is given, pixels with mask value 0 are dropped
-- At this point the materials must to be in the same projection
-- The text file is preserved as such. Image grey values are added to
-the end of each row. If lu and/or dem are given, they appear between the original field data and grey values (lu before dem in case of both)
-NOTES
-Checking of the result is obligatory!!!!
+
+-   Picks field data in a text file based on the extent of given image - Image may contain 6 or 7 bands
+-   Extracts image values based on field data locations 
+-   If a mask is given, pixels with mask value 0 are dropped
+-   At this point the materials must to be in the same projection
+-   The text file is preserved as such. Image grey values are added to the end of each row. If :code:`lu` and/or :code:`dem` are given, they appear between the original field data and grey values (:code:`lu` before :code:`dem` in case of both)
+
+.. note::
+
+    Checking of the result is obligatory!!!!
+
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-nn-training-data.bash - Open your working directory using
+
+For this exercise following tools are used: :code:`oft-nn-training-data.bash`.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-- The script oft-nn-training-data.bash extracts image values based on field data locations using input image :code:`landsat_t1.tif` and for the field data we are using training.txt.
-Let’s take a closer look at our output values for nn head values for nn
-        oft−nn−training−data.bash −i landsat_t1.tif −f training.txt −x 2 −y 3
-          1 730785 −2456134 1.00 730785.00 −2456134.00 52.00 24.00 24.00
- 51.00 65.00 128.00 29.00
- 2 730785 −2455134 2.00 730785.00 −2455134.00 59.00 27.00 34.00 47.00 82.00 132.00 46.00
- 3 730785 −2454134 3.00 730785.00 −2454134.00 57.00 28.00 33.00 50.00 82.00 131.00 44.00
-4 730785 −2453134 4.00 730785.00 −2453134.00 55.00 26.00 29.00
- 52.00 72.00 129.00 34.00
-5 730785 −2452134 5.00 730785.00 −2452134.00 60.00 28.00 35.00
-54.00 87.00 129.00 45.00
-6 730785 −2451134 6.00 730785.00 −2451134.00 47.00 19.00 18.00
-37.00 47.00 124.00 20.00
- 7 730785 −2450134 7.00 730785.00 −2450134.00 46.00 19.00 17.00
- 38.00 44.00 123.00 18.00
-8 730785 −2449134 8.00 730785.00 −2449134.00 59.00 28.00 33.00
- 60.00 84.00 129.00 43.00
-9 730785 −2448134 9.00 730785.00 −2448134.00 66.00 34.00 42.00
-57.00 98.00 130.00 56.00
- User Manual 152
 
- 10 730785 −2447134 10.00 730785.00 −2447134.00 52.00 23.00 21.00 53.00 61.00 127.00 27.00
-  - Explanation of values for each column: • Col1: pixel ID
-• Col2: x-coordinates
-• Col3: y-coordinates
-• Col4: pixel ID
-• Col5: x-coordinates
-• Col6: y-coordinates
-• Col7 - Col13: center pixel value for bands 1-7
- User Manual 153
+The script :code:`oft-nn-training-data.bash` extracts image values based on field data locations using input image :code:`landsat_t1.tif` and for the field data we are using :code:`training.txt`.
 
-7.49 oft-normalize.bash
+.. code-block:: console 
+
+    oft−nn−training−data.bash −i landsat_t1.tif −f training.txt −x 2 −y 3
+
+Let’s take a closer look at our output values for **nn**:
+
+.. code-block:: console
+
+    head values for nn
+
+.. code-block::
+
+    1 730785 −2456134 1.00 730785.00 −2456134.00 52.00 24.00 24.00 51.00 65.00 128.00 29.00
+    2 730785 −2455134 2.00 730785.00 −2455134.00 59.00 27.00 34.00 47.00 82.00 132.00 46.00
+    3 730785 −2454134 3.00 730785.00 −2454134.00 57.00 28.00 33.00 50.00 82.00 131.00 44.00
+    4 730785 −2453134 4.00 730785.00 −2453134.00 55.00 26.00 29.00 52.00 72.00 129.00 34.00
+    5 730785 −2452134 5.00 730785.00 −2452134.00 60.00 28.00 35.00 54.00 87.00 129.00 45.00
+    6 730785 −2451134 6.00 730785.00 −2451134.00 47.00 19.00 18.00 37.00 47.00 124.00 20.00
+    7 730785 −2450134 7.00 730785.00 −2450134.00 46.00 19.00 17.00 38.00 44.00 123.00 18.00
+    8 730785 −2449134 8.00 730785.00 −2449134.00 59.00 28.00 33.00 60.00 84.00 129.00 43.00
+    9 730785 −2448134 9.00 730785.00 −2448134.00 66.00 34.00 42.00 57.00 98.00 130.00 56.00
+    10 730785 −2447134 10.00 730785.00 −2447134.00 52.00 23.00 21.00 53.00 61.00 127.00 27.00
+  
+Explanation of values for each column:
+
+-   Col1: pixel ID
+-   Col2: x-coordinates
+-   Col3: y-coordinates
+-   Col4: pixel ID
+-   Col5: x-coordinates
+-   Col6: y-coordinates
+-   Col7 - Col13: center pixel value for bands 1-7
+
+oft-normalize.bash
+""""""""""""""""""
+
 NAME
 ####
-oft-normalize.bash - Script for preparing a training data text file for oft-nn analysis
+
+:code:`oft-normalize.bash` - Script for preparing a training data text file for :code:`oft-nn` analysis
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-normalize.bash
-oft-normalize.bash <-i image>
-oft-normalize.bash <-i image>[-t training data] [-f 1/2 ] [-m mask]
+######## 
+
+.. code-block:: console
+
+    oft-normalize.bash <-i image>[-t training data] [-f 1/2 ] [-m mask]
+
 OPTIONS
--i image = give the Landsat image with 6 or 7 bands to be normalized -t training data = give a text file containing ground truth and image
-bands (in last columns)
--f 1/2 = normalization will be based on the distribution present in
-the image (1) or the training data file (2)
--m mask = give a mask file showing areas to be processed with 1
-and others with 0
-DESCRIPTION
-###########
-- Image grey values in both files are converted to mean 0 and std 1 based on the selected source of distribution (image or training data file)
-- Procedure for converting each grey value on each band in the image and/or training data file is (value - average)/std
-- It is possible to
-• Normalize just the image based on it’s grey value distribution on each band
-• Normalize also the training data text file using the same distri- bution or
-User Manual 154
- 
-• Normalize both files using the grey value distribution obtained from the training data file
-EXAMPLE
 #######
-- For this exercise following tools are used: oft-normalize.bash - Open your working directory using
-.. code-block:: console
-    
-    cd ~
-- Let’s run a simple exercise using :code:`landsat_t1.tif` as the only input: oft−normalize.bash −i landsat_t1.tif
-Output: landsat t1 norm.tif and stat landsat t1.txt
-- Now we run it including the training data option values for nn:
-oft−normalize.bash −i landsat_t1.tif −f values for nn
-                User Manual 155
 
-7.50 oft-prepare-image-for-nn.bash
-NAME
-####
-oft-prepare-image-for-nn.bash - for preparing a Landsat image for nn-analysis with oft-nn
-OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-prepare-image-for-nn.bash oft-prepare-image-for-nn.bash <-i image> oft-prepare-image-for-nn.bash <-i image>[-b baseimage] [-p projec- tion] [-s shapefile] [-a attribute]
+-   :code:`-i` image = give the Landsat image with 6 or 7 bands to be normalized 
+-   :code:`-t` training data = give a text file containing ground truth and image bands (in last columns)
+-   :code:`-f` 1/2 = normalization will be based on the distribution present in the image (1) or the training data file (2)
+-   :code:`-m` mask = give a mask file showing areas to be processed with 1 and others with 0
+
 DESCRIPTION
 ###########
-Re-projects and shifts an image if needed
-Prepares a 0/1 mask of nodata in image, all values ¡= 0 are consid- ered nodata
-- Image = Landsat image with 6 or 7 bands to be prepared for oft-nn - Baseimage = Image already in correct grid, meaning pixel size
-and pixel locations - Target projection in EPSG, e.g. EPSG:32736 - Shapefile = additional mask areas to be added to the base mask, e.g. clouds - If target projection is given, also shapefile is re-projected - Attribute = name of attribute field to be used in shapefile. Field must contain 0 in regions to be masked off
+
+-   Image grey values in both files are converted to mean 0 and std 1 based on the selected source of distribution (image or training data file)
+-   Procedure for converting each grey value on each band in the image and/or training data file is (value - average)/std
+-   It is possible to
+
+    -   Normalize just the image based on it’s grey value distribution on each band
+    -   Normalize also the training data text file using the same distribution
+    -   Normalize both files using the grey value distribution obtained from the training data file
+
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-prepare-image-for- nn.bash
-2. Open your working directory using
+
+For this exercise following tools are used: :code:`oft-normalize.bash`.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-2. For this exercise we will use :code:`landsat_t1.tif` as image file and :code:`landsat_t2.tif` as the base image file, :code:`landuse.shp` is the input shape-
-User Manual 156
-      
-file of which we define landuse as the attribute to be used:
-3. The output image is automatically processed: landsat t1 mask.tif 4. Check in QGIS the values of your output-mask
-Figure 27: Output of oft-prepare-image-for-nn.bash is landsat t1 mask.tif
-User Manual 157
-   oft−prepare−image−for−nn . bash −i landsat t1 . t i f −b landsat_t2 . tif −s landuse.shp −a landuse
-    
-7.51 oft-unique-mask-for-nn.bash
+
+Let’s run a simple exercise using :code:`landsat_t1.tif` as the only input:
+
+.. code-block:: console
+
+    oft−normalize.bash −i landsat_t1.tif
+
+Automatic output: :code:`landsat_t1_norm.tif` and :code:`stat_landsat_t1.txt`
+
+Now we run it including the training data option values for nn:
+
+.. code-block:: console
+
+    oft−normalize.bash −i landsat_t1.tif −f values_for_nn
+
+oft-prepare-image-for-nn.bash
+"""""""""""""""""""""""""""""
+
 NAME
 ####
-oft-unique-mask-for-nn.bash - creates a unique mask for oft-nn anal- ysis.
+
+:code:`oft-prepare-image-for-nn.bash` - for preparing a Landsat image for nn-analysis with :code:`oft-nn`
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-unique-mask-for-nn.bash oft-unique-mask-for-nn.bash <-m mask of base image><-s mask of new image>
+######## 
+
+.. code-block:: console
+
+    oft-prepare-image-for-nn.bash oft-prepare-image-for-nn.bash <-i image> oft-prepare-image-for-nn.bash <-i image>[-b baseimage] [-p projec- tion] [-s shapefile] [-a attribute]
+
 DESCRIPTION
 ###########
-Unique means here, that same pixel is not classified from several images.
+
+Re-projects and shifts an image if needed.
+
+Prepares a 0/1 mask of nodata in image, all values ¡= 0 are considered nodata
+
+-   Image = Landsat image with 6 or 7 bands to be prepared for :code:`oft-nn`
+-   Baseimage = Image already in correct grid, meaning pixel size and pixel locations (Target projection in EPSG, e.g. EPSG:32736)
+-   Shapefile = additional mask areas to be added to the base mask, e.g. 
+-   clouds = If target projection is given, also shapefile is re-projected 
+-   Attribute = name of attribute field to be used in shapefile. Field must contain 0 in regions to be masked off
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-prepare-image-for-nn.bash`
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+For this exercise we will use :code:`landsat_t1.tif` as image file and :code:`landsat_t2.tif` as the base image file, :code:`landuse.shp` is the input shapefile of which we define :code:`landuse` as the attribute to be used:
+
+.. code-block:: console
+
+    oft−prepare−image−for−nn . bash −i landsat t1 . t i f −b landsat_t2 . tif −s landuse.shp −a landuse
+
+The output image is automatically processed: :code:`landsat_t1_mask.tif`
+Check in QGIS the values of your output-mask
+
+.. figure:: ../img/cli/ofgt/oft−prepare−image−for−nn.png
+
+    Output of :code:`oft-prepare-image-for-nn.bash` is :code:`landsat_t1_mask.tif`   
+    
+oft-unique-mask-for-nn.bash
+"""""""""""""""""""""""""""
+
+NAME
+####
+
+:code:`oft-unique-mask-for-nn.bash` - creates a unique mask for oft-nn anal- ysis.
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-unique-mask-for-nn.bash oft-unique-mask-for-nn.bash <-m mask of base image><-s mask of new image>
+
+DESCRIPTION
+###########
+
+Unique means here, that same pixel is not classified from several images. 
+
 It is needed in 2 cases:
-1. take an adjacent image into account or
-2. use the new image to fill a cloud etc. on nn-classified base image
-- As input you need a mask of the main image and a preliminary mask of the new image
-- A preliminary mask for the new image can be run with oft-trim- mask.bash
-- If you need to add clouds or water, do that before or after this unique mask script
-- The new image must be in the same projection and gridding (pixel locations)
-- In all masks, 0=do not use, 1=use
-- To take several images into account, re-run
-- Script produces also an accumulated mask, showing common ok
-areas
-User Manual 158
+
+1.  take an adjacent image into account or
+2.  use the new image to fill a cloud etc. on nn-classified base image
+
+-   As input you need a mask of the main image and a preliminary mask of the new image
+-   A preliminary mask for the new image can be run with oft-trim- mask.bash
+-   If you need to add clouds or water, do that before or after this unique mask script
+-   The new image must be in the same projection and gridding (pixel locations)
+-   In all masks, 0=do not use, 1=use
+-   To take several images into account, re-run
+-   Script produces also an accumulated mask, showing common ok areas
  
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-unique-mask-for- nn.bash
-2. Open your working directory using
+
+For this exercise following tools are used: :code:`oft-unique-mask-for-nn.bash`
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-2. For this exercise we will use mask.tif as mask of the base image (produced by oft-trim-mask.bash and landsat_t2 mask.tif as the mask of the new image:
-oft−unique−mask−for−nn . bash −m mask . t i f −s landsat_t2 mask . t i f
-          3. Two output images are automatically processed: landsat_t2 mask unique mask.tif and
-landsat_t2 mask accumulated mask.tif
- Figure 28: Mask of base image: mask.tif
- User Manual
-159
 
- Figure 29: Mask of new image: landsat_t2 mask.tif
-Figure 30: Output: landsat_t2 mask unique mask.tif
-  User Manual
-160
+For this exercise we will use :code:`mask.tif` as mask of the base image (produced by :code:`oft-trim-mask.bash` and :code:`landsat_t2_mask.tif` as the mask of the new image:
+
+.. code-block:: console
+
+    oft−unique−mask−for−nn.bash −m mask.tif −s landsat_t2 mask.tif
+
+Two output images are automatically processed: 
+-   :code:`landsat_t2_mask_unique_mask.tif`
+-   :code:`landsat_t2_mask_accumulated_mask.tif`
+
+.. figure:: ../img/cli/ofgt/oft−unique−mask−for−nn_mask.png
+
+    Mask of base image: :code:`mask.tif`
+
+Here you will get the Mask of new image: :code:`landsat_t2_mask.tif` (left) and the Output: :code:`landsat_t2_mask_unique_mask.tif` (right).
+
+.. image:: ../img/cli/ofgt/oft−unique−mask−for−nn.png
+    :width: 40%
+    :align: left
+
+    
+
+.. image:: ../img/cli/ofgt/oft−unique−mask−for−nn_unique.png
+    :width: 40%
+    :align: left
 
 SEGMENTATION
-7.52 oft-clump NAME
-####
-oft-clump - connected component labeling. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-clump
-oft-clump <-i input><-o output>
-oft-clump <-i input ><-o output>[-b band] [-um maskile] [-h help]
-DESCRIPTION
-###########
-oft-clump Add spatial coherency to existing classes by combining
-adjacent similar classified areas.
-- Oft-clump is meant for separating uniform regions in a class imag - You may obtain such a class image by using e.g. oft-cluster.bash,
-oft-kmeans or oft-nn.
-- The program looks for similar and adjacent class values in the input
-image and gives each area an own id.
-OPTION
-Parameters:
-- [-b band] - use determined band of the image
-- [- um maskfile] - use maskfile and process only areas having mask
-value >0
-- [-h help] - opens the help manual in the terminal
-NOTES
-User Manual 161
-  
-- For the benefit of users running the script using the older version, where the datafiles are based on the file order instead of options -i and -o, the program can still be used that way.
-- After clumping: pixels with identical class values, but are not spatially connected, will have different id
-EXAMPLE
-#######
-- For this exercise following tools are used: oft-clump - Open your working directory using
-.. code-block:: console
-    
-    cd ~
-- To run the oft-clump we use the Input: :code:`landsat_t1.tif`, Output: clump.tif :
-oft−clump landsat t1 . tif clump. tif
-           User Manual 162
+^^^^^^^^^^^^
 
-7.53 oft-seg NAME
-####
-oft-seg - Image segmentation tool. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-seg
-oft-seg <input><output>
-oft-seg <input><output>[OPTIONS]
-OPTIONS
-−aw = Ask input band weights .
-−automax = Use automatically computed maximum distance threshold −4n = Describes the pixel connectivity . Default is −8n.
-−automin = Use automatically computed minimum distance threshold −region = Use ”Segmentation with directed trees” −method for
-initial segmentation
-−th theshold = give a user defined threshold value for
-abovementioned i n i t i a l segmentation
-−ttest = use t−value based merging criteria
-If -4n is indicated, the neighbourhood is reduced to consider only
-top, bottom, left and right pixels.
-Additional Options upon Execution
-−Min. segment size ?: Minimum segment size in pixels .
-−Min. spec . dist . btw segs ?: Not asked if −automin is specified
-above .
-−Max. spec. dist. btw segs?: Not asked if −automax is specified
-above .
-−Use size weighting ?: 0 indicates no size weighting , 1 indicates
-use size weighting .
-DESCRIPTION
-###########
-oft-seg region merging segmentation.
-• oft-seg uses a simple iterative region merging algorithm to
-User Manual 163
-                  
-merge each segment with its spectrally nearest adjacent seg- ment. The spectral distance (D) between the segments is computed using all input bands and Euclidean distance or t- value. In the latter case the t-value is computed using the equation for equal or unequal sample sizes, unequal variances.
-• The algorithm is controlled by three parameters: minimum seg- ment size in pixels (MinSize), and minimum required (MinDist) and maximum allowed (MaxDist) spectral distances in the feature space. The conditional merging is done in two phases. First, all segments which are 1) smaller than MinSize and 2) have a neighbouring segment to which the spectral distance is <MaxDist are merged. This step is iterated until no such seg- ments exist. After that, all segments which have an adjacent segment with D <MinDist are merged with their spectrally nearest neighbour.
-• In addition, the user can choose to weight the distance compu- tation with the size (pixels) of the neighbouring segment.
-• The tool can also compute the MinDist and MaxDist thresholds automatically. To do that, use -automin and/or -automax options. Otherwise the tool will ask for user input.
-• If you do not want to use MinDist or MaxDist parameters or size weighting, reply 0 when the parameter is asked.
-• If the given MinSize is 0 and the program is being run without -region option, an image with unique labels for every pixel is produced. Otherwise using MinSize 0 will output initial
-segments produced using the other method.
-• If a mask is given, initial segments are read from the mask.
-• To do a hierarchical segmentation, the user should run the first iteration without a mask. In the subsequent iterations the
-User Manual 164
+oft-clump
+"""""""""
  
-resulting output of the previous segmentation step should be fed to the process using -um option.
-• In case the input image is large and computing resources are low, an alternative method can be used. The initial segmentation can be produced using oft-cluster.bash oft-clump and the final removal of undesired small segments with oft-seg.
-NOTE
-A further tool oft-segstat can then be used to extract segment level shape (size, bounding box, # edge pixels) and spectral statistics (averages and standard deviations) to a text file.
+NAME
+####
+
+:code:`oft-clump` - connected component labeling. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-clump <-i input ><-o output>[-b band] [-um maskile] [-h help]
+
+DESCRIPTION
+###########
+
+:code:`oft-clump` Add spatial coherency to existing classes by combining
+adjacent similar classified areas.
+
+-   :code:`oft-clump` is meant for separating uniform regions in a class imag
+-   You may obtain such a class image by using e.g. :code:`oft-cluster.bash`, :code:`oft-kmeans` or :code:`oft-nn`.
+-   The program looks for similar and adjacent class values in the input image and gives each area an own id.
+
+OPTION
+######
+
+Parameters:
+
+-   :code:`[-b band]` - use determined band of the image
+-   :code:`[- um maskfile]` - use maskfile and process only areas having mask value >0
+-   :code:`[-h help]` - opens the help manual in the terminal
+
+.. note::
+
+    For the benefit of users running the script using the older version, where the datafiles are based on the file order instead of options :code:`-i` and :code:`-o`, the program can still be used that way.
+
+- After clumping: pixels with identical class values, but are not spatially connected, will have different id
+
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-seg, gdal polygonize.py 1. Open your working directory using
+
+For this exercise following tools are used: :code:`oft-clump`.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-2. Now we run oft-seg to do the hierarchical segmentation with Input: :code:`landsat_t1.tif` ; Output: landsat t1 min50.tif
-oft−seg landsat t1 . tif landsat t1 . tif min50 . tif
-The tool will ask you now further details which we will define in this
-exercise as followed:
-3. In the next step we create a shapefile where pixels of the same value, with other words of the same segment, combined into one polygon. Input: landsat t1 min50.tif, Output: landsat t1 min50.shp
-User Manual 165
-             Please give NODATA value : 0
- Min. segment size ?: 50
-Min. spec. dist. btw segs?: 0
- Max. spec. dist. btw segs?: 0 Use size weighting ?: 0
-     gdal polygonize .py landsat t1 min50 . tif −f ”ESRI Shapefile”
- landsat t1 min50 . shp
-   
-4. Open your file landsat t1 min50.tif in QGIS and overlay it with
-landsat t1 min50.shp
-- Right click of the shapefile ->Properties ->Label ->tick display label and under Field containing label chose DN
-- Right click of the shapefile ->Properties ->Style ->Transparency eg 50%
-- Now zoom in and will see something similar to the image displayed, depending on the area you are zooming in, where each polygon refers to one segment and the displayed number is the corresponding ID.
-Note: some segments have the same ID, but they still belong to the same segment as they are connect through neighbouring corner pixels.
-5. The segmentation image landsat t1 min50.tif can be used in a further step for oft-segstat.
- User Manual 166
 
- Figure 32: The segmentation image landsat t1 min50.tif
- User Manual 167
+To run the :code:`oft-clump` we use the Input: :code:`landsat_t1.tif`, Output: :code:`clump.tif`:
+
+.. code-block:: console
+
+    oft−clump landsat_t1.tif clump.tif
+
+oft-seg
+"""""""
+
+NAME
+####
+
+:code:`oft-seg` - Image segmentation tool. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-seg <input><output>[OPTIONS]
+
+OPTIONS
+#######
+
+-   :code:`−aw` = Ask input band weights.
+-   :code:`−automax` = Use automatically computed maximum distance threshold
+-   :code:`−4n` = Describes the pixel connectivity . Default is :code:`−8n`.
+-   :code:`−automin` = Use automatically computed minimum distance threshold -
+-   :code:`−region` = Use "Segmentation with directed trees" −method for initial segmentation
+-   :code:`−th` theshold = give a user defined threshold value for abovementioned initial segmentation
+-   :code:`−ttest` = use t−value based merging criteria 
+
+.. note:: 
+
+    If :code:`-4n` is indicated, the neighbourhood is reduced to consider only top, bottom, left and right pixels.
+
+Additional Options upon Execution
+
+-   :code:`−Min. segment size ?`: Minimum segment size in pixels.
+-   :code:`Min. spec . dist . btw segs ?`: Not asked if :code:`−automin` is specified above.
+-   :code:`−Max. spec. dist. btw segs?`: Not asked if :code:`−automax` is specified above.
+-   :code:`−Use size weighting ?`: 0 indicates no size weighting , 1 indicates use size weighting.
+
+DESCRIPTION
+###########
+
+:code:`oft-seg` region merging segmentation.
+
+-   :code:`oft-seg` uses a simple iterative region merging algorithm to merge each segment with its spectrally nearest adjacent seg- ment. The spectral distance (D) between the segments is computed using all input bands and Euclidean distance or t-value. In the latter case the t-value is computed using the equation for equal or unequal sample sizes, unequal variances.
+-   The algorithm is controlled by three parameters: minimum seg- ment size in pixels (MinSize), and minimum required (MinDist) and maximum allowed (MaxDist) spectral distances in the feature space. The conditional merging is done in two phases. First, all segments which are 1) smaller than MinSize and 2) have a neighbouring segment to which the spectral distance is <MaxDist are merged. This step is iterated until no such seg- ments exist. After that, all segments which have an adjacent segment with D <MinDist are merged with their spectrally nearest neighbour.
+-   In addition, the user can choose to weight the distance compu- tation with the size (pixels) of the neighbouring segment.
+-   The tool can also compute the MinDist and MaxDist thresholds automatically. To do that, use :code:`-automin` and/or :code:`-automax` options. Otherwise the tool will ask for user input.
+-   If you do not want to use MinDist or MaxDist parameters or size weighting, reply 0 when the parameter is asked.
+-   If the given MinSize is 0 and the program is being run without :code:`-region` option, an image with unique labels for every pixel is produced. Otherwise using MinSize 0 will output initial segments produced using the other method.
+-   If a mask is given, initial segments are read from the mask.
+-   To do a hierarchical segmentation, the user should run the first iteration without a mask. In the subsequent iterations the resulting output of the previous segmentation step should be fed to the process using :code:`-um` option.
+-   In case the input image is large and computing resources are low, an alternative method can be used. The initial segmentation can be produced using :code:`oft-cluster.bash` :code:`oft-clump` and the final removal of undesired small segments with :code:`oft-seg`.
+
+.. note::
+
+    A further tool :code:`oft-segstat` can then be used to extract segment level shape (size, bounding box, # edge pixels) and spectral statistics (averages and standard deviations) to a text file.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-seg`, :code:`gdal_polygonize.py` 
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+Now we run :code:`oft-seg` to do the hierarchical segmentation with Input: :code:`landsat_t1.tif` ; Output: :code:`landsat_t1_min50.tif`.
+
+.. code-block:: console
+
+    oft−seg landsat_t1.tif landsat_t1_min50.tif
+
+The tool will ask you now further details which we will define in this exercise as followed:
+
+.. code-block:: console
+
+    Please give NODATA value : 0
+    Min. segment size ?: 50
+    Min. spec. dist. btw segs?: 0
+    Max. spec. dist. btw segs?: 0 Use size weighting ?: 0
+
+In the next step we create a shapefile where pixels of the same value, with other words of the same segment, combined into one polygon. Input: :code:`landsat_t1_min50.tif`, Output: :code:`landsat_t1_min50.shp`.
+    
+.. code-block:: console
+
+    gdal_polygonize.py landsat_t1_min50.tif −f "ESRI Shapefile" landsat_t1_min50.shp
+
+Open your file :code:`landsat_t1_min50.tif` in QGIS and overlay it with :code:`landsat_t1_min50.shp`.
+
+-   Right click of the shapefile ->Properties->Label->tick display label and under Field containing label chose DN
+-   Right click of the shapefile ->Properties->Style->Transparency eg 50%
+
+Now zoom in and will see something similar to the image displayed, depending on the area you are zooming in, where each polygon refers to one segment and the displayed number is the corresponding ID.
+
+.. note::
+
+    some segments have the same ID, but they still belong to the same segment as they are connect through neighbouring corner pixels.
+
+.. tip::
+
+    The segmentation image :code:`landsat_t1_min50.tif` can be used in a further step for :code:`oft-segstat`.
+
+.. figure:: ../img/cli/ofgt/oft-seg.png
+
+    The segmentation image :code:`landsat_t1_min50.tif`
 
 PROJECTION
-7.54 oft-getproj.bash NAME
+^^^^^^^^^^
+
+oft-getproj.bash
+"""""""""""""""" 
+NAME
 ####
-oft-getproj.bash - fetches projection definition files for UTM zones. OFGT VERSION
+
+:code:`oft-getproj.bash` - fetches projection definition files for UTM zones. 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-getproj.bash
+######## 
+
+.. code-block:: console
+
+    oft-getproj.bash
+
 DESCRIPTION
 ###########
-oft-getproj.bash fetches projection definition files for UTM zones: - Downloads OGC WKT projection definition files for user-defined
-UTM S or N zones (in WGS84) from http://spatialreference.
-org/ref/epsg/
-- Creates directory ∼/ogcwkt if does not exist, otherwise uses the existing
-- Copies the downloaded files there and can be viewed with a text editor
+
+:code:`oft-getproj.bash` fetches projection definition files for UTM zones: - Downloads OGC WKT projection definition files for user-defined UTM S or N zones (in WGS84) from `<http://spatialreference.org/ref/epsg/>`_.
+
+-   Creates directory :code:`∼/ogcwkt` if does not exist, otherwise uses the existing
+-   Copies the downloaded files there and can be viewed with a text editor
+
 EXAMPLE
 #######
-- For this exercise following tools are used: oft-getproj.bash 1. Run the oft-getproj.bash for the UTM zone 20N
-oft−getproj.bash 20N
-2. Fetching the projection definition for several zones:
-oft−getproj . bash 21N 22N 25N 31S
-3. Change your working directory to:
-cd  ̃/ ogcwkt
-User Manual 168
-                 
-4. Here you can find the downloaded projection definition file for the UTM zone 20N (WGS84 UTM 20N.ogcwkt). Open it with any text editor program, such as gedit:
-   PROJCS[”WGS 84 / UTM zone 20N”,GEOGCS[”WGS 84”,DATUM[”WGS 1984”,
- SPHEROID[”WGS 84”,6378137,298.257223563,AUTHORITY[”EPSG”,”
- 7030”]] , AUTHORITY[”EPSG”,”6326”]] ,
- PRIMEM [ ” G r e e n w i c h ” , 0 , AUTHORITY[”EPSG”,”8901”]] ,
-UNIT [ ” d e g r e e ” , 0 . 0 1 7 4 5 3 2 9 2 5 1 9 9 4 3 2 8 , AUTHORITY[”EPSG”,”9122”]] ,
- AUTHORITY[”EPSG”,”4326”]] , UNIT[”metre”,1,AUTHORITY[”EPSG”,”9001”]] , PROJECTION[”Transverse Mercator”] , PARAMETER[”latitude of origin”,0],
- PARAMETER[”central meridian”,−63], PARAMETER[”scale factor”,0.9996],
- PARAMETER[”false easting”,500000],
- PARAMETER[”false northing” ,0] , AUTHORITY[”EPSG” ,”32620”] ,
-A X I S [ ” E a s t i n g ” , EAST ] , AXIS[”Northing” ,NORTH]]
-   User Manual 169
+
+For this exercise following tools are used: :code:`oft-getproj.bash`
+
+Run the :code:`oft-getproj.bash` for the UTM zone 20N:
+
+.. code-block:: console
+
+    oft−getproj.bash 20N
+
+Fetching the projection definition for several zones:
+
+.. code-block:: console
+
+    oft−getproj.bash 21N 22N 25N 31S
+
+Change your working directory to:
+
+.. code-block:: console
+    
+    cd  ̃/ ogcwkt
+
+Here you can find the downloaded projection definition file for the UTM zone 20N (:code:`WGS84_UTM_20N.ogcwkt`). Open it with any text editor program, such as gedit:
+
+.. code-block::
+
+    PROJCS["WGS 84 / UTM zone 20N",GEOGCS["WGS 84",DATUM["WGS 1984",
+    SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","
+    7030"]] , AUTHORITY["EPSG","6326"]],
+    PRIMEM [ "Greenwich" , 0 , AUTHORITY["EPSG","8901"]],
+    UNIT [ "degree", 0.01745329251994328, AUTHORITY["EPSG","9122"]] ,
+    AUTHORITY["EPSG","4326"]] , UNIT["metre",1,AUTHORITY["EPSG","9001"]] , PROJECTION["Transverse Mercator"] , PARAMETER["latitude of origin",0],
+    PARAMETER["central meridian",−63], PARAMETER["scale factor",0.9996],
+    PARAMETER["false easting",500000],
+    PARAMETER["false northing" ,0] , AUTHORITY["EPSG" ,"32620"] ,
+    A X I S [ "Easting" , EAST ] , AXIS["Northing" ,NORTH]]
 
  
