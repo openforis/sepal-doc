@@ -13,3 +13,4 @@ SEPAL modules
     dwn/sepal_ui_template
     dwn/zonal-analysis
     dwn/gwb
+    dwn/planet_order
