@@ -49,7 +49,7 @@ Once you have a Google Earth Engine account, you can access GEE here: https://co
     If you experience trouble white listing your Google Account to GEE please let the SEPAL team know, we may be able to help you
 
 Initialize the home folder
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To use your Google earth engine account in SEPAL you need to properly set up the **home** folder. The home folder is where all your **assets** (vectors, rasters, collection, mosaics, classifications.. etc) will be exported. If this folder is missing then, SEPAL will have nowhere to point to and every export request will raise an error.
 

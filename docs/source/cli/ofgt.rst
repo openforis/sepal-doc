@@ -2971,131 +2971,173 @@ Verify in QGIS your our result if the mask pixel values are 1 or 0.
     Output :code:`landsat_t2_mask.tif` using the Pseudo-colour colour map in QGIS
 
 STATISTICS
-7.36 oft-ascstat.awk
+^^^^^^^^^^
+
+oft-ascstat.awk
+"""""""""""""""
+
 NAME
 ####
+
 oft-ascstat.awk - computes basic statistics for a space separated text file.
+
 OFGT VERSION
 ############
-1.25.4
-SYNOPSIS
-######## oft-ascstat.awk oft-ascstat.awk <input file textgreater
-DESCRIPTION
-###########
-oft-ascstat.awk computes basic statistics for a given input file or stdin.
-Please not that the data must be provided as space separated!
-EXAMPLE
-#######
-1.For this exercise following tools are used: oft-ascstat.awk 2. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-3. The script oft-ascstat.awk computes basic statistics for our space separate input file sample landuse.txt:
-head sample landuse . txt
-User Manual 106
-              10557.00 772650.00 −2404770.00 5.00 53.00 26.00 28.00 54.00
- 81.00 131.00 39.00
-94788.00 773490.00 −2431680.00 1.00 51.00 24.00 25.00 45.00
-65.00 127.00 33.00
- 
- 201536.00 774750.00 −2439390.00 1.00 54.00 25.00 27.00 50.00 71.00 130.00 35.00
-88531.00 771450.00 −2431110.00 1.00 47.00 21.00 18.00 37.00
- 48.00 126.00 21.00
-123374.00 774150.00 −2433990.00 1.00 54.00 24.00 30.00 35.00
-75.00 132.00 42.00
-97345.00 776220.00 −2431950.00 1.00 52.00 23.00 24.00 42.00
-60.00 131.00 30.00
- 199041.00 773190.00 −2439120.00 1.00 51.00 23.00 23.00 52.00
- 58.00 130.00 28.00
-144276.00 775860.00 −2435400.00 1.00 49.00 22.00 21.00 45.00
- 59.00 125.00 30.00
-180961.00 772680.00 −2437890.00 1.00 49.00 21.00 21.00 36.00
-61.00 126.00 28.00
-185386.00 772410.00 −2438190.00 1.00 49.00 21.00 18.00 43.00
- 51.00 126.00 22.00
-  Explanation of the columns: pixel id x y class band1 band2 band3 band4 band5 band6 band7
-4. Lets run oft-ascstat.awk oft−ascstat .awk sample landuse . txt
-Result is printed on screen:
-        Col Min Max Avg Std
- 1 4923 220664.0 116318.43 6345.83
- 2 736440 787020.0 771921.0 798.10
- 3 −2448000 −2403090 −2431097.6 1035.67
- 4 1.0 25.0
-5 44.00 69.0
-6 19.0 37.0
-7 16.0 48.0
-8 34.0 62.0
-2.844444 0.519269 53.455556 0.491606 24.82 0.383203 27.02 0.691350 46.74 0.711611
- 9 42.0 103.0 69.455 1.450889 10 124.0 136.0 129.43 0.252272
-  Explanation of the columns same as before: pixel id x y class band1 band2 band3 band4 band5 band6 band7
-And of course the interesting lines are line 4-11.
-User Manual 107
- 
-7.37 oft-avg NAME
-####
-oft-avg - computes zone/segment averages and standard deviations. OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-avg
-oft-avg -i <input>-o <output>-um <maskfile>
-oft-avg -i <input>-o <output>-um <maskfile>[-std]
-oft-avg -i <input>-o <output>[-ot Byte/Int16/UInt16/UInt32/Int32 /Float32/Float64] [-h help]
-DESCRIPTION
-###########
-- oft-avg computes zone/segment averages and standard deviations. - It produces two output files: an output image and a text file.
-- You need to give at least the input image file (-i option), the output
-image (-o) and the maskfile (-um).
-- In the output image, each pixel gets assigned the average/standard
-deviation for the zone/segment it belonged to.
-- The output format in the text file is: ID number pixels avgband1
-...avgbandN.
-OPTION
-Parameters:
-[-std] - The program computes and prints out also the std’s (as extra bands in the output image and extra columns in the text file) [-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64] - output data type
-[-h help]
-User Manual 108
- 
-NOTE
-For the benefit of users that are running scripts using the older version based on order of datafiles instead of options -i, -o and -um, the program can still be used that way
-EXAMPLE
-#######
-For this exercise following tools are used: oft-avg 1. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-2. Now we run oft-avg with input: images/landsat_t1.tif, output: results/oftavg.tif, mask: images/segments.tif
-The output text file will be named as the output image plus ”.txt” (in this case oftavg.tif.txt).
-3. Print the first 10 lines of the output text file in terminal:
-head results/oftavg . tif . txt
-        oft−avg −i images/landsat_t1.tif −o results/oftavg.tif −um
- images/segments . t i f
-          1 135 49.051852 20.081481 18.370370 36.785185 46.674074
- 126.059259 20.192593
- 2 54 49.351852 20.370370 18.407407 37.500000 46.555556
- 125.925926 19.870370
-3 76 48.578947 19.828947 17.710526 36.657895 43.881579
-125.907895 18.881579
-4 194 49.005155 20.077320 18.268041 37.530928 46.000000
- 125.670103 19.721649
-5 221 49.090498 20.176471 18.574661 37.542986 47.565611
-125.728507 20.339367
- 6 82 48.878049 20.304878 18.695122 37.243902 48.097561 125.597561 20.780488
-7 53 48.886792 20.056604 18.339623 37.207547 45.698113
- 125.698113 19.396226
-8 120 48.991667 20.216667 18.583333 36.908333 47.200000
-126.041667 20.283333
-9 154 48.980519 19.993506 18.389610 32.474026 45.000000
-125.987013 20.337662
- 10 150 49.540000 20.220000 18.853333 32.260000 47.233333
- 125.973333 21.433333
-   User Manual 109
 
-Explanation of values for each column:
-- Col1: ID (value for zone/segment)
-- Col2: Number of pixels
-- Col3 - col9: Average value of band1, band2, ... band7
-4. Open the output file results/oftavg.tif in QGIS. Use Identify Features that can be chosen form the top bar and click on the image. The window Identify Results should pop up and with the average value for each band for that zone/segment:
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-ascstat.awk <input file>
+
+DESCRIPTION
+###########
+
+:code:`oft-ascstat.awk` computes basic statistics for a given input file or stdin.
+
+..  warning::
+
+    Please not that the data must be provided as space separated!
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-ascstat.awk`
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+The script :code:`oft-ascstat.awk` computes basic statistics for our space separate input file :code:`sample_landuse.txt`:
+
+..code-block:: console
+
+    head sample_landuse.txt
+
+.. csv-table::
+    :delim: space
+    :header: pixel id, x, y, class, band1, band2, band3, band4, band5, band6, band7
+              
+    10557.00 772650.00 −2404770.00 5.00 53.00 26.00 28.00 54.00 81.00 131.00 39.00
+    94788.00 773490.00 −2431680.00 1.00 51.00 24.00 25.00 45.00 65.00 127.00 33.00
+    201536.00 774750.00 −2439390.00 1.00 54.00 25.00 27.00 50.00 71.00 130.00 35.00
+    8531.00 771450.00 −2431110.00 1.00 47.00 21.00 18.00 37.00 48.00 126.00 21.00
+    123374.00 774150.00 −2433990.00 1.00 54.00 24.00 30.00 35.00 75.00 132.00 42.00
+    97345.00 776220.00 −2431950.00 1.00 52.00 23.00 24.00 42.00 60.00 131.00 30.00
+    199041.00 773190.00 −2439120.00 1.00 51.00 23.00 23.00 52.00 58.00 130.00 28.00
+    144276.00 775860.00 −2435400.00 1.00 49.00 22.00 21.00 45.00 59.00 125.00 30.00
+    180961.00 772680.00 −2437890.00 1.00 49.00 21.00 21.00 36.00 61.00 126.00 28.00
+    185386.00 772410.00 −2438190.00 1.00 49.00 21.00 18.00 43.00 51.00 126.00 22.00
+
+
+Lets run :code:`oft-ascstat.awk`:
+
+.. code-block::
+
+    oft−ascstat.awk sample_landuse.txt
+
+Result is printed on screen:
+
+.. code-block:: console
+
+     Col     Min       Max         Avg        Std
+    1   4923      220664.0  116318.43   6345.83
+    2   736440    787020.0  771921.0    798.10
+    3   −2448000  −2403090  −2431097.6  1035.67
+    4   1.0       25.0      2.844444    0.519269
+    5   44.00     69.0      53.455556   0.491606
+    6   19.0      37.0      24.82       0.383203
+    7   16.0      48.0      27.02       0.691350
+    8   34.0      62.0      46.74       0.711611
+    9   42.0      103.0     69.455      1.450889 
+    10  124.0     136.0     129.43      0.252272
+ 
+oft-avg
+"""""""
+
+NAME
+####
+
+oft-avg - computes zone/segment averages and standard deviations. 
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+######## 
+
+.. code-block:: console
+
+    oft-avg -i <input>-o <output>[-ot Byte/Int16/UInt16/UInt32/Int32 /Float32/Float64] [-h help]
+
+DESCRIPTION
+###########
+
+:code:`oft-avg` computes zone/segment averages and standard deviations. 
+
+-   It produces two output files: an output image and a text file.
+-   You need to give at least the input image file (-i option), the output image (-o) and the maskfile (-um).
+-   In the output image, each pixel gets assigned the average/standard deviation for the zone/segment it belonged to.
+-   The output format in the text file is: ID number pixels avgband1...avgbandN.
+
+OPTION
+######
+
+-   :code:`[-std]` - The program computes and prints out also the std’s (as extra bands in the output image and extra columns in the text file) 
+-   :code:`[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64]` - output data type
+-   :code:`[-h help]`
+ 
+.. note::
+
+    For the benefit of users that are running scripts using the older version based on order of datafiles instead of options :code:`-i`, :code:`-o` and :code:`-um`, the program can still be used that way
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-avg`
+
+Open your working directory using
+
+.. code-block:: console
+    
+    cd ~
+
+Now we run :code:`oft-avg` with input: :code:`images/landsat_t1.tif`, output: :code:`results/oftavg.tif`, mask: :code:`images/segments.tif`.
+
+The output text file will be named as the output image plus ”.txt” (in this case oftavg.tif.txt).
+
+.. code-block:: console
+
+    oft−avg −i images/landsat_t1.tif −o results/oftavg.tif −um images/segments.tif
+
+Print the first 10 lines of the output text file in terminal:
+
+.. code-block:: console
+
+    head results/oftavg.tif.txt
+
+.. csv-table::
+    :header: ID, Nb Pixels, Avg Band1, Avg Band2, Avg Band3, Avg Band4, Avg Band5, Avg Band6, Avg Band7
+    :delim: space
+    
+    1 135 49.051852 20.081481 18.370370 36.785185 46.674074 126.059259 20.192593
+    2 54 49.351852 20.370370 18.407407 37.500000 46.555556 125.925926 19.870370
+    3 76 48.578947 19.828947 17.710526 36.657895 43.881579 125.907895 18.881579
+    4 194 49.005155 20.077320 18.268041 37.530928 46.000000 125.670103 19.721649
+    5 221 49.090498 20.176471 18.574661 37.542986 47.565611 125.728507 20.339367
+    6 82 48.878049 20.304878 18.695122 37.243902 48.097561 125.597561 20.780488
+    7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226
+    8 120 48.991667 20.216667 18.583333 36.908333 47.200000 126.041667 20.283333
+    9 154 48.980519 19.993506 18.389610 32.474026 45.000000 125.987013 20.337662
+    10 150 49.540000 20.220000 18.853333 32.260000 47.233333 125.973333 21.433333
+
+Open the output file :code:`results/oftavg.tif` in QGIS. Use Identify Features that can be chosen form the top bar and click on the image. The window Identify Results should pop up and with the average value for each band for that zone/segment:
 Band1 49
 Band2 21
 Band3 20
@@ -3103,712 +3145,830 @@ Band4 41
 Band5 50
 Band6 126
 Band7 22
-5. If you also choose to output standard deviations, the format of the output files will be as follows:
-- text file:
-• Col1: ID (value for zone/segment)
-• Col2: Number of pixels
-• Col3 - col9: Average value of band1, band2, ... band7
-• Col10 - col16: Standard deviation of band1, band2, ... band7
-- raster image file:
-• band1 - band7: average for band1, band2, ... band7
-• band8 - band14: standard deviation for band1, band2, ... band7
-User Manual 110
+
+If you also choose to output standard deviations, the columns of the output files will be as follows:
+
+-   1. ID (value for zone/segment)
+-   2. Number of pixels
+-   3-9. Average value of band1, band2, ... band7
+-   10-16. Standard deviation of band1, band2, ... band7
+
+For the raster file:
+
+-   band1 - band7: average for band1, band2, ... band7
+-   band8 - band14: standard deviation for band1, band2, ... band7
  
-7.38 oft-countpix.pl
+oft-countpix.pl
+"""""""""""""""
+
 NAME
 ####
+
 oft-countpix.pl - counts number of pixel with, below or above a specific value.
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-countpix.pl
-oft-countpix.pl <input><value>[-b/-v/-a [band]]
-<input>is a raster image
-<value>is an real number. If not precised, oft-countpix.pl gives the total number of pixels. If value is below the min or above the max of the image, a warning is given
+######## 
+
+.. code-block:: console
+
+    oft-countpix.pl <input><value>[-b/-v/-a [band]]
+
+-   input> is a raster image
+-   <value> is an real number. If not precised, oft-countpix.pl gives the total number of pixels. If value is below the min or above the max of the image, a warning is given
+
 OPTION
--v = count all pixels with value value (default) -b = count all pixels below value
--a = count all pixels above value
-[band] = number of the band. Default is Band 1
+######
+
+-   :code:`-v` count all pixels with value value (default) 
+-   :code:`-b` count all pixels below value
+-   :code:`-a` count all pixels above value
+-   :code:`[band]` number of the band. Default is Band 1
+
 DESCRIPTION
 ###########
-oft-countpix.pl counts the number of pixels within an image with (default), below or above (options) a specific value .
+
+:code:`oft-countpix.pl` counts the number of pixels within an image with (default), below or above (options) a specific value.
+
 EXAMPLE
 #######
-For this exercise following tools are used: oft-avg Open your working directory using
+
+For this exercise following tools are used: :code:`oft-avg` Open your working directory using
+
 .. code-block:: console
     
     cd ~
-User Manual 111
       
-Usage of oft-countpix.pl using the input image forestc.tif with pixel value of 33
-Usage of oft-countpix.pl using the input image :code:`landsat_t1.tif` with value 50, counting all pixels below, in band 4
-oft−countpix.pl images/landsat_t1.tif 50 −b 4
-   ft−countpix.pl images/forestc.tif 33
- oft−countpix.pl images/forestc.tif 33 −a
-        User Manual 112
+Usage of :code:`oft-countpix.pl` using the input image :code:`forestc.tif` with pixel value of 33:
 
-7.39 oft-crossvalidate
+.. code-block:: console
+
+    oft−countpix.pl images/forestc.tif 33
+    oft−countpix.pl images/forestc.tif 33 −a
+
+Usage of :code:`oft-countpix.pl` using the input image :code:`landsat_t1.tif` with value 50, counting all pixels below, in band 4:
+
+.. code-block:: console
+
+    oft−countpix.pl images/landsat_t1.tif 50 −b 4
+
+oft-crossvalidate
+"""""""""""""""""
+
 NAME
 ####
+
 oft-crossvalidate - computes RMSE and bias estimates for k-nn via leave-one-out cross-validation.
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-crossvalidate
-oft-crossvalidate <-i datafile><-k val><-v col><-bands val> oft-crossvalidate <-i datafile><-k val><-v col><-bands val>[-dw {1/2/3}] [-x col] [-y col] [-id col] [-norm] [-mindist val] [-maxdist val] [-dem col thres] [-lu col]
+########
+
+.. code-block:: console
+
+    oft-crossvalidate <-i datafile><-k val><-v col><-bands val> oft-crossvalidate <-i datafile><-k val><-v col><-bands val>[-dw {1/2/3}] [-x col] [-y col] [-id col] [-norm] [-mindist val] [-maxdist val] [-dem col thres] [-lu col]
+
 DESCRIPTION
 ###########
-oft-crossvalidate is a Program for carrying out a leave-one-out cross-
-validation using nearest neighbour estimation.
-- You need to give at least the datafile, number of neighbours (k),
-the column for your variable and nbr of bands.
-- Bands must be located after all other variables.
-- Program is terminated if the spatial neighbourhood restriction
-leaves too few (less than k) potential neighbours
-- A possible order of data is: id, variable, x-coordinate, y-coordinate,
-feature1...featureN.
-- Values must be separated with a space or tab.
-- Prints the average, RMSE and bias on screen.
-- Saves original value, estimate and difference in an output file. If id
-or x and y are given, they are printed out as well.
-- If the id is indicated in the command line, the id’s of 10 nearest
-neighbours are printed into the output file.
-User Manual 113
+
+:code:`oft-crossvalidate` is a Program for carrying out a leave-one-out cross-validation using nearest neighbour estimation.
+
+-   You need to give at least the datafile, number of neighbours (k), the column for your variable and nbr of bands.
+-   Bands must be located after all other variables.
+-   Program is terminated if the spatial neighbourhood restriction leaves too few (less than k) potential neighbours
+-   A possible order of data is: id, variable, x-coordinate, y-coordinate, feature1...featureN.
+-   Values must be separated with a space or tab.
+-   Prints the average, RMSE and bias on screen.
+-   Saves original value, estimate and difference in an output file. If id or x and y are given, they are printed out as well.
+-   If the id is indicated in the command line, the id’s of 10 nearest neighbours are printed into the output file.
  
-OPTION
-Parameters:
-- [-dw] - weight the nearest neighbour data with 1=equal (default),
-2=inverse distance, 3=squared inv. distance weights. - [-x] - column for x-coordinate
-- [-y] - column for y-coordinate
-- [-id] - column for id
-- [-norm] - normalize the image features (default is no normalization - [-mindist] - use a minimum spatial distance (e.g. 1000). Obser- vations closer than that, based on the x and y-coordinates are not
-allowed as neighbours (default is no restriction)
-- [-maxdist] - use a maximum spatial distance (e.g. 50000). Obser-
-vations outside that radius are not allowed as neighbours (default is
-no restriction)
-- [-dem] - column and threshold value (e.g. 1000) for restriction of
-neighbours in vertical direction (default is no restriction)
-- [-lu] - column used for stratification of the data. If given, separate RMSEs are computed for each class indicated in the column (default
-is no stratification)
+OPTIONS
+#######
+
+-   :code:`[-dw]` - weight the nearest neighbour data with:
+    1.  equal (default)
+    2.  inverse distance
+    3.  squared inv. distance weights. 
+-   :code:`[-x]` - column for x-coordinate
+-   :code:`[-y]` - column for y-coordinate
+-   :code:`[-id]` - column for id
+-   :code:`[-norm]` - normalize the image features (default is no normalization - [-mindist] - use a minimum spatial distance (e.g. 1000). Observations closer than that, based on the x and y-coordinates are not allowed as neighbours (default is no restriction)
+-   :code:`[-maxdist]` - use a maximum spatial distance (e.g. 50000). Observations outside that radius are not allowed as neighbours (default is no restriction)
+-   :code:`[-dem]` - column and threshold value (e.g. 1000) for restriction of neighbours in vertical direction (default is no restriction)
+-   :code:`[-lu]` - column used for stratification of the data. If given, separate RMSEs are computed for each class indicated in the column (default is no stratification)
+
 EXAMPLE
 #######
-1. Input data: download for this exercise sample landuse.txt. You might have created it already in exercise oft-sample-within- polys.bash.
-2. Open your working directory using
+
+Input data: download for this exercise :code:`sample_landuse.txt`. You might have created it already in exercise :code:`oft-sample-within-polys.bash`.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-3. The script oft-crossvalidate prints the average, RMSE and bias on screen using the input data file sample landuse.txt. Lets take a closer look at the input file (space or tab separate):
-head sample landuse . txt
-User Manual 114
-             
- 10557.00 772650.00 −2404770.00 5.00 53.00 26.00 28.00 54.00 81.00 131.00 39.00
-94788.00 773490.00 −2431680.00 1.00 51.00 24.00 25.00 45.00
- 65.00 127.00 33.00
-201536.00 774750.00 −2439390.00 1.00 54.00 25.00 27.00 50.00
-71.00 130.00 35.00
-88531.00 771450.00 −2431110.00 1.00 47.00 21.00 18.00 37.00
-48.00 126.00 21.00
- 123374.00 774150.00 −2433990.00 1.00 54.00 24.00 30.00 35.00
- 75.00 132.00 42.00
-97345.00 776220.00 −2431950.00 1.00 52.00 23.00 24.00 42.00
- 60.00 131.00 30.00
-199041.00 773190.00 −2439120.00 1.00 51.00 23.00 23.00 52.00
-58.00 130.00 28.00
-144276.00 775860.00 −2435400.00 1.00 49.00 22.00 21.00 45.00
- 59.00 125.00 30.00
-180961.00 772680.00 −2437890.00 1.00 49.00 21.00 21.00 36.00
-61.00 126.00 28.00
-185386.00 772410.00 −2438190.00 1.00 49.00 21.00 18.00 43.00
- 51.00 126.00 22.00
-  Explanation of the columns: pixel id x y class band1 band2 band3 band4 band5 band6 band7
-4. Lets run oft-crossvalidate defining our inputfile with -i in front, number of neighbours -k 10, -v defines the column of the variable we want use - only to exemplify the tool we use column 1 containing the IDs as our input data has no additional column with values,
--bands defines the number of bands, -x defines to look up the x coordinates in column 2 and -y defines to look up the y coordinates in column 3:
-Result is printed on screen:
-Further, and output file sample landuse.txt out is created:
-head sample landuse out
-User Manual 115
-   oft−crossvalidate −i sample landuse . txt −k 10 −v 1 −bands 7 −x
- 2 −y 3
-     k =10 normalize=0
-RMSE= 62255.181 Bias= 1367.027
- Avg = 116318.433
-        
-   772650.000 773490.000 774750.000 771450.000 774150.000 776220.000
-−2404770.000 −2431680.000 −2439390.000 −2431110.000 −2433990.000 −2431950.000
-10557.00
-94788.00 201536.00 88531.00 123374.00 97345.00
-103566.30 128938.00 110055.80 127395.30 102471.90 123907.80
-−93009.30 −34150.00 91480.20 −38864.30 20902.10 −26562.80
- 773190.000 775860.000 772680.000 772410.000
-−2439120.000 −2435400.000 −2437890.000 −2438190.000
-199041.00 144276.00 180961.00 185386.00
-105271.30 130783.50 127426.40 126411.20
-93769.70 13492.50 53534.60 58974.80
-  Explanation of the columns: x, y, pixel id, estimate, difference (col3 - col4).
- User Manual 116
 
-7.40 oft-extr NAME
+The script :code:`oft-crossvalidate` prints the average, RMSE and bias on screen using the input data file :code:`sample_landuse.txt`. Lets take a closer look at the input file (space or tab separate):
+
+.. code-block:: console
+
+    head sample_landuse.txt
+
+.. csv-table:: 
+    :header: pixel_id, c, y, class, band1, band2, band3, band4, band5, band6, band7
+    :delim: space
+
+    10557.00 772650.00 −2404770.00 5.00 53.00 26.00 28.00 54.00 81.00 131.00 39.00
+    94788.00 773490.00 −2431680.00 1.00 51.00 24.00 25.00 45.00 65.00 127.00 33.00
+    201536.00 774750.00 −2439390.00 1.00 54.00 25.00 27.00 50.00 71.00 130.00 35.00
+    88531.00 771450.00 −2431110.00 1.00 47.00 21.00 18.00 37.00 48.00 126.00 21.00
+    123374.00 774150.00 −2433990.00 1.00 54.00 24.00 30.00 35.00 75.00 132.00 42.00
+    97345.00 776220.00 −2431950.00 1.00 52.00 23.00 24.00 42.00 60.00 131.00 30.00
+    199041.00 773190.00 −2439120.00 1.00 51.00 23.00 23.00 52.00 58.00 130.00 28.00
+    144276.00 775860.00 −2435400.00 1.00 49.00 22.00 21.00 45.00 59.00 125.00 30.00
+    180961.00 772680.00 −2437890.00 1.00 49.00 21.00 21.00 36.00 61.00 126.00 28.00
+    185386.00 772410.00 −2438190.00 1.00 49.00 21.00 18.00 43.00 51.00 126.00 22.00
+
+Lets run :code:`oft-crossvalidate` defining our inputfile with :code:`-i` in front, number of neighbours :code:`-k` 10, :code:`-v` defines the column of the variable we want use - only to exemplify the tool we use column 1 containing the IDs as our input data has no additional column with values,
+:code:`-bands` defines the number of bands, :code:`-x` defines to look up the x coordinates in column 2 and :code:`-y` defines to look up the y coordinates in column 3:
+
+.. code-block:: console
+
+    oft−crossvalidate −i sample landuse . txt −k 10 −v 1 −bands 7 −x 2 −y 3
+
+Result is printed on screen:
+.. code-block:: console
+
+    k = 10 
+    normalize = 0
+    RMSE = 62255.181 
+    Bias = 1367.027
+    Avg = 116318.433
+
+Further, an output file :code:`sample_landuse_out.txt` is created:
+
+.. code-block:: console 
+
+    head sample_landuse_out.txt
+
+.. csv-table::
+    :header: x, y, pixel_id, estimate, difference (col3 - col4)
+    :delim: space
+
+    772650.000 −2404770.000 10557.00 103566.30 −93009.30
+    773490.000 −2431680.000 94788.00 128938.00 −34150.00
+    774750.000 −2439390.000 201536.00 110055.80 91480.20
+    771450.000 −2431110.000 88531.00 127395.30 −38864.30 
+    774150.000 −2433990.000 123374.00 102471.90 20902.10
+    776220.000 −2431950.000 97345.00 123907.80 −26562.80
+    773190.000 −2439120.000 199041.00 105271.30 93769.70
+    775860.000 −2435400.000 144276.00 130783.50 13492.50
+    772680.000 −2437890.000 180961.00 127426.40 53534.60
+    772410.000 −2438190.000 185386.00 126411.20 58974.80
+
+oft-extr
+""""""""
+
+NAME
 ####
-oft-extr - extracts pixel values from an image into a text file. OFGT VERSION
+
+oft-extr - extracts pixel values from an image into a text file. 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-extr
-oft-extr [-nomd] [-mm] [-avg] [-var] [-ws n] [-o outfile] <pointfile><img- file>-um <maskfile>
+########
+
+.. code-block:: console
+
+    oft-extr [-nomd] [-mm] [-avg] [-var] [-ws n] [-o outfile] <pointfile><img- file>-um <maskfile>
+
 DESCRIPTION
 ###########
-- oft-extr computes zone/segment averages and standard deviations. - It produces two output files: an output image and a text file.
-- You need to give at least the input image file (-i option), the output
-image (-o) and the maskfile (-um).
-- In the output image, each pixel gets assigned the average/standard
-deviation for the zone/segment it belonged to.
-- The output format in the text file is: ID number pixels avgband1
-...avgbandN.
+
+-   :code:`oft-extr` computes zone/segment averages and standard deviations. 
+-   It produces two output files: an output image and a text file.
+-   You need to give at least the input image file (:code:`-i` option), the output image (:code:`-o`) and the maskfile (:code:`-um`).
+-   In the output image, each pixel gets assigned the average/standard deviation for the zone/segment it belonged to.
+-   The output format in the text file is: ID number pixels avgband1...avgbandN.
+
 OPTION
--nomd = do not print metadata
--mm = extract min and max values
--avg = extract average values
--var = extract variances
--ws n = size (n) of extraction window (odd) -o outfile = output file name
-Please note that the default behaviour is to extract window’s center pixel values.
+######
+
+-   :code:`-nomd` do not print metadata
+-   :code:`-mm` extract min and max values
+-   :code:`-avg` extract average values
+-   :code:`-var` extract variances
+-   :code:`-ws` size (n) of extraction window (odd) 
+-   :code:`-o` outfile output file name
+
+.. note::
+
+    Please note that the default behaviour is to extract window’s center pixel values.
 User Manual 117
  
 EXAMPLE
 #######
-For this exercise following tools are used: oft-extr 1. Open your working directory using
+
+For this exercise following tools are used: :code:`oft-extr`
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-1. Let’s run oft-extr using the input image :code:`landsat_t1.tif` with the point text file training.txt. Output: extr.txt with no extra option:
-oft−extr −o extr . txt txt/training . txt images/landsat t1 . tif You will be asked
+
+Let’s run :code:`oft-extr` using the input image :code:`landsat_t1.tif` with the point text file :code:`training.txt`. Output: :code:`extr.txt` with no extra option:
+
+.. code-block:: console
+
+    oft−extr −o extr.txt txt/training.txt images/landsat_t1.tif 
+
+You will be asked:
+
+.. code-block:: console 
+
+    X−coord. column in input file?: 2 
+    Y−coord. column in input file?: 3
+
 Now we take a closer look at our result:
-head extr . txt
-             X−coord. column in input file?: 2 Y−coord. column in input file?: 3
-          1.00 730785.00 −2456134.00 50.00 3441.00 52.00
-24.00 24.00 51.00 65.00
-128.00
-3408.00 82.00
-29.00
-2.00 730785.00 −2455134.00
-59.00 27.00 34.00
-50.00 47.00
- 132.00 46.00
- 3.00 730785.00 −2454134.00 50.00 3374.00
- 57.00 28.00 33.00 50.00 82.00
- 131.00 44.00
-4.00 730785.00 −2453134.00 50.00 3341.00
-55.00 26.00 29.00 52.00 72.00 129.00 34.00
- 5.00 730785.00 −2452134.00 50.00 3308.00 60.00 28.00 35.00 54.00 87.00 129.00 45.00
- 6.00 730785.00 −2451134.00 50.00 3274.00 47.00 19.00 18.00 37.00 47.00 124.00 20.00
- 7.00 730785.00 −2450134.00 46.00 19.00 17.00 123.00 18.00
-8.00 730785.00 −2449134.00 59.00 28.00 33.00
-50.00 38.00
-50.00 60.00
-3241.00 44.00
-3208.00 84.00
- 129.00 43.00
- User Manual 118
 
- 9.00 730785.00 −2448134.00 50.00 3174.00 66.00 34.00 42.00 57.00 98.00 130.00 56.00
- 10.00 730785.00 −2447134.00 50.00 3141.00 52.00 23.00 21.00 53.00 61.00 127.00 27.00
-  Explanation of values for each column: - Col1: pixel ID
-- Col2: x-coordinates
-- Col3: y-coordinates
-- Col4: pixel col coordinate
-- Col5: pixel row coordinate
-- Col6 - Col7: center pixel value for bands 1-7
-2. Exercise using option -mm and -ws:
-oft−extr−ws3−mm−oextrmm.txt training.txt landsatt1.tif head extr mm.txt
-             1.00 730785.00 −2456134.00
-50.00 51.00
-24.00
-3441.00 52.00
-29.00
-50.00
-23.00
-24.00
-24.00
-65.00
-128.00
-46.00 64.00
- 128.00 28.00 53.00 70.00
-52.00 24.00 25.00 32.00
-50.00 3408.00 59.00
-129.00 2.00 730785.00 −2455134.00
- 27.00 34.00 46.00 56.00
-131.00 44.00
-27.00
-47.00 59.00
-33.00
-82.00 31.00
-132.00
-46.00 80.00
-39.00
- 49.00 90.00 132.00 3.00 730785.00 −2454134.00
-53.00 50.00
-50.00 58.00
-3374.00 57.00
-28.00 33.00 44.00 54.00
-130.00 41.00
-27.00
-29.00
-82.00 29.00
-131.00
-48.00 77.00
-36.00
- 52.00 82.00 131.00 44.00
- 4.00 730785.00 −2453134.00 50.00 3341.00 55.00 26.00 29.00 52.00 72.00 129.00
- 34.00 128.00
-52.00 80.00
-24.00
-27.00
-48.00 27.00
-3308.00
-68.00 32.00
-60.00
-31.00 5.00 730785.00 −2452134.00
-58.00 50.00
-54.00
-129.00
-41.00
- 28.00 35.00 54.00 87.00 129.00
- User Manual 119
+.. code-block:: console
 
- 45.00 129.00
-60.00
-56.00 90.00
-36.00
-27.00 129.00
-60.00
-31.00 51.00 76.00 30.00 37.00
-48.00
- 6.00 730785.00 −2451134.00 19.00 18.00
-50.00 37.00
-17.00 21.00
-3274.00 47.00
-20.00 45.00 124.00 18.00
-38.00 48.00
-19.00 125.00
-49.00
-47.00 20.00
-124.00
-37.00 45.00
-19.00
- 7.00 730785.00 −2450134.00 50.00 3241.00 46.00
- 18.00
-46.00
-19.00
-17.00
-19.00
-17.00
-38.00
-44.00 123.00
-37.00 40.00
- 123.00 17.00 39.00 46.00
-124.00
-49.00 20.00 18.00 21.00
-  Explanation of values for each column: - Col1: pixel ID
-- Col2: x-coordinates
-- Col3: y-coordinates
-- Col4: pixel x coordinated
-- Col5: pixel y coordinates
-- Col6 - Col12: min values for bands 1-7
-- Col13 - Col19: max values for bands 1-7
-- Col20 - Col26: center pixel values for bands 1-7
-3. Exercise using option -csv and -ws:
-   oft−extr −ws 3 −csv −o extr 3 . txt training . txt landsat t1 . tif head extr 3 . txt
-     1.000000 ,730785.000000 , −2456134.000000 ,50.000000 ,3441.000000 ,... 2.000000 ,730785.000000 , −2455134.000000 ,50.000000 ,3408.000000 ,... 3.000000 ,730785.000000 , −2454134.000000 ,50.000000 ,3374.000000 ,...
- 4.000000 ,730785.000000 , −2453134.000000 ,50.000000 ,3341.000000 ,... 5.000000 ,730785.000000 , −2452134.000000 ,50.000000 ,3308.000000 ,... 6.000000 ,730785.000000 , −2451134.000000 ,50.000000 ,3274.000000 ,.
-   User Manual 120
+    head extr.txt
 
-7.41 oft-his NAME
+.. csv-table:: 
+    :header: pixel_id, x, y, col coord, row coord, bands1, bands2, bands3, bands4, bands5, bands6, bands7
+    :delim: space
+             
+    1.00 730785.00 −2456134.00 50.00 3441.00 52.00 24.00 24.00 51.00 65.00 128.00 29.00
+    2.00 730785.00 −2455134.00 50.00 3408.00 59.00 27.00 34.00 47.00 82.00 132.00 46.00
+    3.00 730785.00 −2454134.00 50.00 3374.00 57.00 28.00 33.00 50.00 82.00 131.00 44.00
+    4.00 730785.00 −2453134.00 50.00 3341.00 55.00 26.00 29.00 52.00 72.00 129.00 34.00
+    5.00 730785.00 −2452134.00 50.00 3308.00 60.00 28.00 35.00 54.00 87.00 129.00 45.00
+    6.00 730785.00 −2451134.00 50.00 3274.00 47.00 19.00 18.00 37.00 47.00 124.00 20.00
+    7.00 730785.00 −2450134.00 50.00 3241.00 46.00 19.00 17.00 38.00 44.00 123.00 18.00
+    8.00 730785.00 −2449134.00 50.00 3208.00 59.00 28.00 33.00 60.00 84.00 129.00 43.00
+    9.00 730785.00 −2448134.00 50.00 3174.00 66.00 34.00 42.00 57.00 98.00 130.00 56.00
+    10.00 730785.00 −2447134.00 50.00 3141.00 52.00 23.00 21.00 53.00 61.00 127.00 27.00
+
+
+Let's use the option :code:`-mm` and :code:`-ws`:
+
+.. code-block:: console
+
+    oft−extr−ws3−mm−oextrmm.txt training.txt landsatt1.tif 
+    
+.. code_block:: console
+
+    head extr mm.txt
+
+.. csv-table::
+    :header: pixel_id, x, y, min1, min2, min3, min4, min5, min6, min7, max1, max2, max3, max4, max5, max6, maw7, center1, center2, center3, center4, center(, center6, center7
+    :delim: space
+    
+    1.00 730785.00 −2456134.00 50.00 3441.00 52.00 24.00 24.00 51.00 65.00 128.00 29.00 50.00 23.00 24.00 46.00 64.00 128.00 28.00 52.00 24.00 25.00 53.00 70.00 129.00 32.00
+    2.00 730785.00 −2455134.00 50.00 3408.00 59.00 27.00 34.00 47.00 82.00 132.00 46.00 56.00 27.00 33.00 46.00 80.00 131.00 44.00 59.00 31.00 39.00 49.00 90.00 132.00 53.00 
+    3.00 730785.00 −2454134.00 50.00 3374.00 57.00 28.00 33.00 50.00 82.00 131.00 44.00 54.00 27.00 29.00 48.00 77.00 130.00 41.00 58.00 29.00 36.00 52.00 82.00 131.00 44.00
+    4.00 730785.00 −2453134.00 50.00 3341.00 55.00 26.00 29.00 52.00 72.00 129.00 34.00 52.00 24.00 27.00 48.00 68.00 128.00 31.00 58.00 27.00 32.00 54.00 80.00 129.00 41.00
+    5.00 730785.00 −2452134.00 50.00 3308.00 60.00 28.00 35.00 54.00 87.00 129.00 45.00 56.00 27.00 31.00 51.00 76.00 129.00 36.00 60.00 30.00 37.00 60.00 90.00 129.00 48.00
+    6.00 730785.00 −2451134.00 50.00 3274.00 47.00 19.00 18.00 37.00 47.00 124.00 20.00 45.00 19.00 17.00 37.00 45.00 124.00 18.00 49.00 20.00 19.00 38.00 48.00 125.00 21.00
+    7.00 730785.00 −2450134.00 50.00 3241.00 46.00 19.00 17.00 38.00 44.00 123.00 18.00 46.00 19.00 17.00 37.00 40.00 123.00 17.00 49.00 20.00 18.00 39.00 46.00 124.00 21.00
+
+Using option :code:`-csv` and :code:`-ws`:
+
+.. code-block:: console
+
+   oft−extr −ws 3 −csv −o extr_3.txt training.txt landsat_t1.tif 
+   head extr_3.txt
+
+.. csv-table::
+
+    1.000000 ,730785.000000 , −2456134.000000 ,50.000000 ,3441.000000 ,... 
+    2.000000 ,730785.000000 , −2455134.000000 ,50.000000 ,3408.000000 ,... 
+    3.000000 ,730785.000000 , −2454134.000000 ,50.000000 ,3374.000000 ,...
+    4.000000 ,730785.000000 , −2453134.000000 ,50.000000 ,3341.000000 ,... 
+    5.000000 ,730785.000000 , −2452134.000000 ,50.000000 ,3308.000000 ,... 
+    6.000000 ,730785.000000 , −2451134.000000 ,50.000000 ,3274.000000 ,...
+
+oft-his
+"""""""
+NAME
 ####
-oft-his - computes image histogram by segments. OFGT VERSION
+
+oft-his - computes image histogram by segments. 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-######## oft-his
-oft-his -i <infile>-o <outfile>
-oft-his -i <infile>-o <outfile>[-um maskfile] [-hr/-compact][-maxval val]
+########
+
+.. code-block:: console
+
+    oft-his -i <infile>-o <outfile>[-um maskfile] [-hr/-compact][-maxval val]
+
 OPTIONS
-−i = specify input image file
-−o = specify output text file
-−um = specify mask file
-−hr = use human readable output format −compact = use compact output format −maxval = give maximum input value
-−h = print out more help
+#######
+
+-   :code:`−i` specify input image file
+-   :code:`−o` specify output text file
+-   :code:`−um` specify mask file
+-   :code:`−hr` use human readable output format −compact = use compact output format 
+-   :code:`−maxval` give maximum input value
+-   :code:`−h` print out more help
+
 DESCRIPTION
 ###########
-- oft-his extracts histograms for the different bands of an input image to an output text file.
-- You need to give at least the input image file -i option and the output file -o
-- Typically, you also give a mask file -um. Each mask value gets own histogram, except 0 which is treated as nodata
-- If no mask file is given, a common histogram is computed for whole image
-- Maximum input value needs to be given to allocate enough memory for the histogram table. If the maxval parameter is not given in the command line, it will be asked. For example, for a 8 Bit Landsat image, the maximum value parameter would be 255. - The output format is: mask value, frequency of mask value and number of band.
-User Manual 121
+
+:code:`oft-his` extracts histograms for the different bands of an input image to an output text file.
+
+-   You need to give at least the input image file :code:`-i` option and the output file :code:`-o`
+-   Typically, you also give a mask file :code:`-um`. Each mask value gets own histogram, except 0 which is treated as nodata
+-   If no mask file is given, a common histogram is computed for whole image
+-   Maximum input value needs to be given to allocate enough memory for the histogram table. If the :code:`maxval` parameter is not given in the command line, it will be asked. For example, for a 8 Bit Landsat image, the maximum value parameter would be 255
+-    The output format is: mask value, frequency of mask value and number of band.
        
 The rest of the columns values are frequencies for each image pixel value.
-NOTES
-For the benefit of users running scripts using the older version based on order of datafiles instead of options -i, -o and -um, the program can still be used that way.
-Example with typical parameter setting:
-The output file will contain nbr bands lines for every input mask value. The output format is: mask value, frequency of mask value and number of band; the rest of the columns values are frequencies for each image pixel values. For example, in the following output:
-   oft−his −i input.img −o histogram.txt −um mask.img −hr −maxval 255
-     1 657846 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 5 205 2166 10162
- 29145 70813 136848 145398 117541 82955 40937 14060 4255 1618 707 345 208 140 103 83 48 42 15 17 13 6 3 2 0 3 1 0 0 0 0 0 0
- 000000000000000000000000000000
- 0000000000000000000000000000000 000000000000000000000000000000 0000000000000000000000000000000 000000000000000000000000000000
-00000000000000000000
-  1. 1 = Mask value
-2. 657846 = Frequency of mask value 1
-3. 1 = Number of band
-4. 0 = frequency of value 0 in input image 5. 0 = frequency of value 1 in input image 6. 0 = frequency of value 2 in input image
-User Manual 122
- 
-7. 0 = frequency of value 3 in input image 8. .
-9. .
-10. .
-- An alternative output format is provided by the -compact option 1 657846 1 12 1 46 1 47 5 48 205 49 2166 50 10162 51 29145 52 70813 53 136848 54 145398 55 117541 56 82955 57 40937 58 14060 59 4255 60 1618 61 707 62 345 63 208 64 140 65 103 66 83 67 48 68 42 69 15 70 17 71 13 72 6 73 3 74 2 76 3 77 1
-- where first three values are
-1. 1 = Mask value
-2. 657846 = Frequency of mask value 1 3. 1 = Number of band
-- After that, the output consists of value-frequency pairs. That is, entry
-12 1 means that 1 pixel of value 12 was found within the region determined by mask value 1. Accordingly, we can see that also single pixels with values 46 was found and that the number of pixels with value 47 was five.
-- In practical applications, the output needs to be converted into more readable format and usable information. For example, one could be interested in the median Landsat DN value within the mask. When using -hr option to produce the output the median could be computed using awk and the following equation:
-Note: that here we exclude background value (0) from the compu- tation.
-User Manual 123
-   awk ’{obs point = ($2 − $4)/2} {if (NR == 1) {for(i=5 ; i< NF ; i++) {sum=sum+$i; if(sum>= obs point) {print i−4; exit}}}}
-’ his1 . txt
-   
-EXERCISE
-- For this exercise following tools are used: oft-his - Open your working directory using
-.. code-block:: console
-    
-    cd ~
-1. oft-his
-Lets run a oft-his with Input: :code:`landsat_t1.tif`, Ouptut: histogram.txt, when asked set the maximum input value to 255:
-oft−his −i landsat t1 . tif −o histogram . txt
-head histogram . txt
-Extraction of histogram.txt - output is all in one line:
-                  1 10500000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 2 1 1 4 2 3 5 2 5 8 7 5 176 1576 12371 114959 758774
-1773981 2035039 1918290 1222961 558651 332962 287434 320286 311067 217529 180595 138396 93221 57114 38722 32169 25924
- 18311 12510 9783 7020 5022 3874 3116 2294 1647 1193 848 632 408 284 185 163 134 72 73 41 16 11 8 10 4 5 7 10 4 6 2 2 0 2 1230122210101111011311012100020
- 121010
-  2. oft-his with option -hr for readability (one line per band
-2.1 Lets run a oft-his with Input: :code:`landsat_t1.tif`, Ouptut: histogram hr.txt, again, the maximum input value to 255
-oft−his −i landsat_t1.tif −o histogram−hr.txt −hr head histogram−hr . txt
-Extraction of histogram hr.txt- output is 7 lines (for each band one), which makes it more readable
-User Manual 124
-             1 10500000 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 2 1 1 4 2 3 5 2 5 8 7 5 176 1576 12371 114959 758774 1773981 2035039 1918290 1222961 558651 332962 287434 320286
-311067 217529 180595 138396 93221 57114 38722 32169 25924
- 18311 12510 9783 7020 5022 3874 3116 2294 1647 1193 848 632
- 408 284 185 163 134 72 73 41 16 11 8 10 4 5 7 10 4 6 2 2 0 2
- 
- 1230122210101111011311012100020 121010000011000010010000100010 0000000200110000101000100000010
- 000000010000000001010000000000 0100000000000000000000000001000
-000002
-1 10500000 2 0 1 1 0 3 2 0 2 3 2 3 0 3 3 2 26 646 8742 191086
- 2508329 4562947 718031 338584 429870 487321 333295 255746
- 231077 161926 99078 52656 37538 26630 15925 11265 8864 6682 4744 3055 2146 1396 847 494 320 232 190 105 60 29 16 12 6 6 2
- 330531302010100121000000011010 000010000
-  Explanation:
-- 1 = Image value - 10500000 = Frequency of image value 1 - 0 =
-Number of band - 0 = frequency of value 1 in input image - 0 = frequency of value 2 in input image - 0 = frequency of value 3 in input image - ... - 1 = frequency of value 20 in input image //1 pixel with value 20 - ... - 4 = frequency of value 32 in input image //4 pixels with value 32
-2.2 Calculation of median Landsat DN value using AWK
-For this we are using the output histogramm hr.txt from 2.1 as the input:
-The output is printed in the terminal: in our case the median DN values is 48.
-3. oft-his with option -compact
-Lets run a oft-his with Input: :code:`landsat_t1.tif`, Ouptut: histogram compact.txt, again, the maximum input value to 255
-oft−his −i landsat t1 . t i f −o histogram compact . txt −compact head histogram compact . txt
-User Manual 125
-   awk ’{obs point = ($2 − $4)/2} {if (NR == 1) {for(i=5 ; i< NF ; i++) {sum=sum+$i; if(sum>= obs point) {print i−4; exit}}}}’
- histogram hr . txt
-             
-Extraction of histogram compact.txt - output is 7 lines (for each band one), which makes it more readable
-   1 10500000 1 20 1 27 1 28 1 29 2 30 1 31 1 32 4 33 2 34 3 35 5
- 36 2 37 5 38 8 39 7 40 5 41 176 42 1576 43 12371 44 114959 45
- 758774 46 1773981 47 2035039 48 1918290 49 1222961 50 558651
-51 332962 52 287434 53 320286 54 311067 55 217529 56 180595 57 138396 58 93221 59 57114 60 38722 61 32169 62 25924 63 18311 64 12510 65 9783 66 7020 67 5022 68 3874 69 3116 70
- 2294 71 1647 72 1193 73 848 74 632 75 408 76 284 77 185 78 163 79 134 80 72 81 73 82 41 83 16 84 11 85 8 86 10 87 4 88 5 89 7 90 10 91 4 92 6 93 2 94 2 96 2 97 1 98 2 99 3 101 1 102
- 2 103 2 104 2 105 1 107 1 109 1 110 1 111 1 112 1 114 1 115
- 1 116 3 117 1 118 1 120 1 121 2 122 1 126 2 128 1 129 2 130 1 132 1 138 1 139 1 144 1 147 1 152 1 156 1 165 2 168 1 169 1
- 174 1 176 1 180 1 187 1 196 1 206 1 208 1 220 1 246 1 255 2
-1 10500000 2 1 1 2 1 4 3 5 2 7 2 8 3 9 2 10 3 12 3 13 3 14 2 15 26 16 646 17 8742 18 191086 19 2508329 20 4562947 21 718031 22 338584 23 429870 24 487321 25 333295 26 255746 27 231077
- 28 161926 29 99078 30 52656 31
-  Explanation:
-1. 1 = image value
-2. 10500000 = Frequency of image value 1 3. 1 = Number of band
-After that, the output consists of value-frequency pairs. More detailed: the pair 20 1 means that 1 pixel of value 20 was found within the region determined by image value 1. Also a single pixel with value 27 was found and the number of pixels with value 28 was again 1.
- User Manual 126
 
-7.42 oft-mm
-NAME
-####
-oft-mm - computes minimum and maximum values for each band of the input file .
-OFGT VERSION
-############
-1.25.4
-SYNOPSIS
-######## oft-mm
-oft-mm [-um maskfile] <input>
-DESCRIPTION
-###########
-For the input image, the command provides inline minimum and maximum values per band.
-OPTION
-[um maskfile] - zero values in the maskfile will be excluded in the calculation (maskfile extent must match inputfile extent)
+.. note::
+
+    For the benefit of users running scripts using the older version based on order of datafiles instead of options :code:`-i`, :code:`-o` and :code:`-um`, the program can still be used that way.
+
 EXAMPLE
 #######
-o f t −mm i n p u t . t i f
-EXERCISE
-For this exercise following tools are used: oft-mm, grep 1. Open your working directory using
-.. code-block:: console
-    
-    cd ~
-2. Now we run oft-mm with input: images/landsat_t1.tif oft−mm images/landsat−t1.tif
-3. The output will be printed in the terminal:
-User Manual 127
-                  argc 2
- Driver : GTiff/GeoTIFF Size is 3000, 3500 Corner Coordinates :
- 
- Upper Lower Upper
-Left (729285.000 , −2352885.000) Left (729285.000 , −2457885.000) Right (819285.000 , −2352885.000)
- Lower Right (819285.000 , −2457885.000) Center (774285.000 , −2405385.000)
-Done
-Band 1 min = 20.000000
-Band 1 max = 255.000000
- Band 2 min = 1.000000
- Band 2 max = 255.000000 Band 3 min = 1.000000
- Band 3 max = 208.000000 Band 4 min = 8.000000 Band 4 max = 255.000000 Band 5 min = 5.000000
- Band 5 max = 255.000000 Band 6 min = 112.000000 Band 6 max = 195.000000 Band 7 min = 1.000000
- Band 7 max = 255.000000 DoneClose
-  4. If you are only interested in the min and max values for a certain band, you can use the grep command. Example for band 1:
-oft−mm images/landsat_t1.tif |grep ”Band 1”
-        Band 1 min = 20.000000 Band 1 max = 255.000000
-   User Manual 128
 
-7.43 oft-segstat
+typical parameter setting
++++++++++++++++++++++++++
+
+.. code:: console
+
+    oft−his −i input.img −o histogram.txt −um mask.img −hr −maxval 255
+
+The output file will contain nbr bands lines for every input mask value. The output format is: mask value, frequency of mask value and number of band; the rest of the columns values are frequencies for each image pixel values. 
+
+For example, in the following output:
+
+.. code-block:: 
+
+    1 657846 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+        5 205 2166 10162 29145 70813 136848 145398 117541 82955 40937 14060 4255 1618 707 345 208 140 103 83
+        48 42 15 17 13 6 3 2 0 3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+-   :code:`1`is the mask value
+-   :code:`657846` is the frequency of mask value 1
+-   :code:`1`is the number of band
+-   Every following value is the frequency of value :code:`x` in input image maksed with mask value :code:`1`. Here :code:`x` is in [0, 255]
+
+- An alternative output format is provided by the :code:`-compact` option:
+
+.. code-block::
+
+    1 657846 1 12 1 46 1 47 5 48 205 49 2166 50 10162 51 29145 52 70813 53 136848 54 145398 55 117541 56
+        82955 57 40937 58 14060 59 4255 60 1618 61 707 62 345 63 208 64 140 65 103 66 83 67 48 68 42 69 15
+        70 17 71 13 72 6 73 3 74 2 76 3 77 1
+
+-   :code:`1`is the mask value
+-   :code:`657846` is the frequency of mask value 1
+-   Every following value is a consists of value-frequency pairs. That is, entry :code:`12 1` means that 1 pixel of value 12 was found within the region determined by mask value 1.
+
+oft-mm
+""""""
+
 NAME
 ####
-oft-segstat - output segments shape and spectral statistics in a text file.
+
+:code:`oft-mm` - computes minimum and maximum values for each band of the input file.
+
 OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
-########
-oft-segstat
-oft-segstat <maskfile><input><output>
-oft-segstat [-std] [-shape] <maskfile><input><output>
+######## 
+
+.. code-block:: console 
+
+    oft-mm [-um maskfile] <input>
+
 DESCRIPTION
 ###########
-oft-segstat Extracts segment level shape (size, bounding box, # edge pixels) and spectral (averages and standard deviations) to a text file.
-- Mask file is an image consisting of pixels with integer values. Pixels having value 0 are not processed. For all other mask values the statistics are reported separately.
-The output: The basic usage outputs the following space separated columns:
-OPTIONS
--std = adds standard deviations for all input bands in the end of each record. -shape = changes the output format to follwoing:
-User Manual 129
-   1 Segment ID
-2 Size
-3 − (3+n) Segment averages pixel values for all n input image
-bands
-     1 Segment ID
- 2 Size
- 3 # of neighbours 4 xmin
- 
- 5 xmax 6 ymin 7 ymax
- 8 # edge pixels
-9 − (9 + n) Segment averages pixel values for all n input image
-bands
-  OTHERS
-This script can also be used after oft-seg.
-EXERCISE
-For this exercise following tools are used: oft-segstat For this exer- cise we use the Landsat imagery :code:`landsat_t1.tif`, :code:`landuse.shp`. Further you need to run oft-seg in a first step to calculated the segmentation file :code:`landsat_t1.tif`.
-2. Open your working directory using
+
+For the input image, the command provides inline minimum and maximum values per band.
+
+OPTION
+######
+
+-   :code:`[um maskfile]` - zero values in the maskfile will be excluded in the calculation (maskfile extent must match inputfile extent)
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-mm`, :code:`grep`.
+
+Open your working directory using:
+
 .. code-block:: console
     
     cd ~
-1. oft-segstat
-- Now we run oft-segstat with Input: :code:`landsat_t1.tif`, landsat t1 min50.tif ; Output: segstats.txt:
-oft−segstat landsat t1 min50 . tif landsat t1 . tif segstats . txt
+
+Now we run :code:`oft-mm` with input: :code:`images/landsat_t1.tif`:
+
+..code-block:: console
+
+    oft−mm images/landsat−t1.tif
+
+The output will be printed in the terminal:
+
+.. code-block:: console
+
+    argc 2
+    Driver : GTiff/GeoTIFF Size is 3000, 3500 Corner Coordinates :
+    Upper Left (729285.000 , −2352885.000)
+    Lower Left (729285.000 , −2457885.000) 
+    Upper Right (819285.000 , −2352885.000)
+    Lower Right (819285.000 , −2457885.000) 
+    Center (774285.000 , −2405385.000)
+    Done
+    Band 1 min = 20.000000
+    Band 1 max = 255.000000
+    Band 2 min = 1.000000
+    Band 2 max = 255.000000 
+    Band 3 min = 1.000000
+    Band 3 max = 208.000000 
+    Band 4 min = 8.000000 
+    Band 4 max = 255.000000 
+    Band 5 min = 5.000000
+    Band 5 max = 255.000000 
+    Band 6 min = 112.000000 
+    Band 6 max = 195.000000 
+    Band 7 min = 1.000000
+    Band 7 max = 255.000000 
+    DoneClose
+
+If you are only interested in the min and max values for a certain band, you can use the :code:`grep` command. Example for band 1:
+
+.. code-block:: console 
+
+    oft−mm images/landsat_t1.tif | grep ”Band 1”
+
+Will return 
+
+.. code-block:: console
+
+    Band 1 min = 20.000000 
+    Band 1 max = 255.000000
+
+oft-segstat
+"""""""""""
+
+NAME
+####
+
+:code:`oft-segstat` - output segments shape and spectral statistics in a text file.
+
+OFGT VERSION
+############
+
+1.25.4
+
+SYNOPSIS
+########
+
+.. code-block:: console
+
+    oft-segstat [-std] [-shape] <maskfile><input><output>
+
+DESCRIPTION
+###########
+
+:code:`oft-segstat` Extracts segment level shape (size, bounding box, # edge pixels) and spectral (averages and standard deviations) to a text file.
+
+Maskfile is an image consisting of pixels with integer values. Pixels having value 0 are not processed. For all other mask values the statistics are reported separately.
+
+The output: The basic usage outputs the following space separated columns:
+
+-   Segment ID
+-   Size
+−   (3+n) Segment averages pixel values for all n input image bands
+
+OPTIONS
+#######
+
+-   :code:`-std` adds standard deviations for all input bands in the end of each record. 
+-   :code:`-shape` changes the output format to follwoing:
+
+    -   Segment ID
+    -   Size
+    -   # of neighbours 
+    -   xmin
+    -   xmax 
+    -   ymin 
+    -   ymax
+    -   # edge pixels
+    -   (9 + n) Segment averages pixel values for all n input image bands
+  
+.. note::
+
+    This script can also be used after oft-seg.
+
+EXAMPLE
+#######
+
+For this exercise following tools are used: :code:`oft-segstat`. For this exercise we use the Landsat imagery :code:`landsat_t1.tif`, :code:`landuse.shp`. Further you need to run :code:`oft-seg` in a first step to calculated the segmentation file :code:`landsat_t1.tif`.
+
+Open your working directory using:
+
+.. code-block:: console
+    
+    cd ~
+
+Regular use 
++++++++++++
+
+Now we run oft-segstat with Input: :code:`landsat_t1.tif`, :code:`landsat_t1_min50.tif`.
+
+.. code-block::
+
+    oft−segstat landsat_t1_min50.tif landsat_t1.tif segstats.txt
+
 The tool will ask you now to define the NoData value which we will
 set to 0:
-- Lets take a look at the first 10 lines of our result segstats.txt:
-head segstats . txt
-User Manual 130
-             Please give NODATA value : 0 //in this step you only need to type the number 0
-          49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000
-89 56 47.714286 20.053571 18.428571 37.125000 49.035714
- 125.571429 20.660714
- 26 132 49.310606 20.295455 18.651515 35.840909 46.863636 126.833333 20.257576
- 
- 220 54 51.203704 22.629630 23.666667 38.592593 58.777778 131.370370 28.685185
-231 132 56.416667 27.325758 34.606061 43.409091 82.636364
- 134.871212 45.454545
-236 55 46.200000 19.272727 16.290909 41.963636 39.927273
-124.654545 15.000000
-7 53 48.886792 20.056604 18.339623 37.207547 45.698113
-125.698113 19.396226
- 52 105 49.580952 20.866667 19.666667 38.161905 53.990476
- 126.361905 22.847619
-114 51 46.960784 19.470588 16.235294 41.294118 37.725490
- 124.764706 15.039216
-138 55 45.690909 19.272727 16.054545 40.672727 40.036364
-123.563636 14.909091
-  Explanation of the values of each column:
-- Col1: Segment ID
-- Col2: Size
-- Col3 - Coln: Segment average pixel values of band3 - bandn
-2. oft-segstat including -std
-- Lets run oft-segstat including the option of adding the stan-
-dard deviation: Input: :code:`landsat_t1.tif`, landsat t1 min50.tif ; Output: segstats std.txt:
-- Again, lets take a look at the first 10 lines of our result segstats std.txt: head segstats std . txt
-   oft−segstat −std landsat t1 min50 . tif landsat t1 . tif segstats std . txt
-          49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-89 56 47.714286 20.053571 18.428571 37.125000 49.035714 125.571429 20.660714 0.000000 0.000000 0.000000 0.000000
- 0.000000 0.000000 0.000000
- 26 132 49.310606 20.295455 18.651515 35.840909 46.863636 126.833333 20.257576 0.000000 0.000000 0.000000 0.000000
- 0.000000 0.000000 0.000000
-220 54 51.203704 22.629630 23.666667 38.592593 58.777778
-131.370370 28.685185 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
- User Manual 131
 
- 231 132 56.416667 27.325758 34.606061 43.409091 82.636364 134.871212 45.454545 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
- 236 55 46.200000 19.272727 16.290909 41.963636 39.927273 124.654545 15.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226 0.000000 0.000000 0.000000 0.000000
- 0.000000 0.000000 0.000000
- 52 105 49.580952 20.866667 19.666667 38.161905 53.990476 126.361905 22.847619 0.000000 0.000000 0.000000 0.000000
- 0.000000 0.000000 0.000000
-114 51 46.960784 19.470588 16.235294 41.294118 37.725490
-124.764706 15.039216 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
- 138 55 45.690909 19.272727 16.054545 40.672727 40.036364 123.563636 14.909091 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-  Explanation of the values of each column:
-- Col1: Segment ID
-- Col2: Size
-- Col3 - Col9: Segment average pixel values of band3 - band9 - Col10 - Col16: standard deviation value for each band
-3. oft-segstat including option -shape
-- For this exercise we want to create in a first step a mask file that is needed to define which pixels of the satellite image will be included in the calculation. In this case we exclude all pixels that were 0. Input: :code:`landsat_t1.tif`, Output: landsat t1 mask.tif :
-1
-#1 0 = 1 0 ?
-- Now we run the segmentation statistic not with the segmenta- tion file we created before using oft-seg, but using a shapefile instead: Input: :code:`landuse.shp`, landsat t1 mask.tif, :code:`landsat_t1.tif` Out- put: segstats shp.txt
-User Manual 132
-   oft−calc landsat t1 . t i f LT52 CUB00 mask . t i f // create mask same dimension same location
-      oft−segstat −shape landuse landsat t1 mask . tif landsat t1 . tif
- segstats shp . txt
-   
-- Again, lets take a look at our result segstats shp.txt: head segstats shp . txt
+.. code-block:: console 
+
+    Please give NODATA value : 0 //in this step you only need to type the number 0
+
+- Lets take a look at the first 10 lines of our result :code:`segstats.txt`:
+
+.. code-block:: console
+
+    head segstats.txt
+             
+.. code-block::
+
+    49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000
+    89 56 47.714286 20.053571 18.428571 37.125000 49.035714 125.571429 20.660714
+    26 132 49.310606 20.295455 18.651515 35.840909 46.863636 126.833333 20.257576
+    220 54 51.203704 22.629630 23.666667 38.592593 58.777778 131.370370 28.685185
+    231 132 56.416667 27.325758 34.606061 43.409091 82.636364 134.871212 45.454545
+    236 55 46.200000 19.272727 16.290909 41.963636 39.927273 124.654545 15.000000
+    7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226
+    52 105 49.580952 20.866667 19.666667 38.161905 53.990476 126.361905 22.847619
+    114 51 46.960784 19.470588 16.235294 41.294118 37.725490 124.764706 15.039216
+    138 55 45.690909 19.272727 16.054545 40.672727 40.036364 123.563636 14.909091
+
 Explanation of the values of each column:
-        1 10500000 0 0 2999 0 3499 6000 48.742120 21.032891 19.848100 41.126436 50.192329 126.019212 21.810292
-     Col1 : Segment ID
- Col2 : Size
- Col3 : #of neighbours Col4 : xmin
-Col5 : xmax
-Col6 : ymin
-Col7 : ymax
- Col8 : # edge pixels
-Col9: Segment average pixel values of band1 Col10: Segment average pixel value of band2
- Coln: Segment average pixels valued of bandn
-   User Manual 133
 
-7.44 oft-stat NAME
+-   Col1: Segment ID
+-   Col2: Size
+-   Col3 - Coln: Segment average pixel values of band3 - bandn
+
+including -std
+++++++++++++++
+
+Lets run oft-segstat including the option of adding the stan-dard deviation: Input: :code:`landsat_t1.tif`, :code:`landsat_t1_min50.tif`:
+
+.. code-block:: console
+
+    oft−segstat −std landsat_t1_min50.tif landsat_t1.tif segstats_std.txt
+
+Again, lets take a look at the first 10 lines of our result :code:`segstats_std.txt`: 
+
+.. code-block:: console
+
+    head segstats_std.txt
+
+   
+.. code-block::          
+
+    49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    89 56 47.714286 20.053571 18.428571 37.125000 49.035714 125.571429 20.660714 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    26 132 49.310606 20.295455 18.651515 35.840909 46.863636 126.833333 20.257576 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    220 54 51.203704 22.629630 23.666667 38.592593 58.777778 131.370370 28.685185 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    231 132 56.416667 27.325758 34.606061 43.409091 82.636364 134.871212 45.454545 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    236 55 46.200000 19.272727 16.290909 41.963636 39.927273 124.654545 15.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    52 105 49.580952 20.866667 19.666667 38.161905 53.990476 126.361905 22.847619 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    114 51 46.960784 19.470588 16.235294 41.294118 37.725490 124.764706 15.039216 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+    138 55 45.690909 19.272727 16.054545 40.672727 40.036364 123.563636 14.909091 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+
+Explanation of the values of each column:
+
+-   Col1: Segment ID
+-   Col2: Size
+-   Col3 - Col9: Segment average pixel values of band3 - band9 - Col10 - Col16: standard deviation value for each band
+
+including option -shape
++++++++++++++++++++++++
+
+For this exercise we want to create in a first step a mask file that is needed to define which pixels of the satellite image will be included in the calculation. In this case we exclude all pixels that were 0. Input: :code:`landsat_t1.tif`, Output: :code:`landsat_t1_mask.tif`:
+
+.. code-block:: console
+    
+    oft−calc landsat_t1.tif LT52_CUB00_mask.tif // create mask same dimension same location
+    1
+    #1 0 = 1 0 ?
+
+Now we run the segmentation statistic not with the segmentation file we created before using :code:`oft-seg`, but using a shapefile instead: 
+
+-   Input: :code:`landuse.shp`, :code:`landsat_t1_mask.tif`, :code:`landsat_t1.tif` 
+-   Output: :code:`segstats_shp.txt`
+   
+.. code-block:: console
+
+    oft−segstat −shape landuse landsat_t1_mask.tif landsat_t1.tif segstats_shp.txt
+   
+Again, lets take a look at our result :code:`segstats_shp.txt`: 
+
+.. code-block:: console
+
+    head segstats_shp.txt
+
+.. code-block::
+
+    1 10500000 0 0 2999 0 3499 6000 48.742120 21.032891 19.848100 41.126436 50.192329 126.019212 21.810292
+
+Explanation of the values of each column:
+
+-   Col1 : Segment ID
+-   Col2 : Size
+-   Col3 : #of neighbours Col4 : xmin
+-   Col5 : xmax
+-   Col6 : ymin
+-   Col7 : ymax
+-   Col8 : # edge pixels
+-   Col9: Segment average pixel values of band1 Col10: Segment average pixel value of band2
+-   Coln: Segment average pixels valued of bandn
+
+oft-stat
+""""""""
+NAME
 ####
-oft-stat - computes segment statistics in a text file. OFGT VERSION
+
+:code:`oft-stat` - computes segment statistics in a text file. 
+
+OFGT VERSION
 ############
+
 1.25.4
+
 SYNOPSIS
 ########
-oft-stat
-oft-stat -i <infile>-o <outfile>
-oft-stat -i <infile>-o <outfile>[-um maskfile] [-mm] [-noavg] [- nostd] [-h help]
+
+.. code-block:: console
+
+    oft-stat -i <infile>-o <outfile>[-um maskfile] [-mm] [-noavg] [- nostd] [-h help]
+
 DESCRIPTION
 ###########
-oft-stat extracts segment level image statistics into a text file.
-- Computes image statistics at segment level and outputs a text file. - The output format in the text file is: ID #pixels avgband1 ...avg-
-bandN stdband1 ...stdbandN
-- You need to give at least the input image file (-i option) and the
-output file (-o)
-- Normally, you give also a maskfile (-um ¡maskfile¿) which is an
-image consisting of pixels with integer values:
-- Pixels having value 0 are not processed.
-- For all other mask values the statistics are reported separately. - When the -um option is not used, statistics are a summary of all
-pixels in the image
+
+:code:`oft-stat` extracts segment level image statistics into a text file.
+
+-   Computes image statistics at segment level and outputs a text file. 
+-   The output format in the text file is: ID #pixels avgband1 ...avgbandN stdband1 ...stdbandN
+-   You need to give at least the input image file (:code:`-i` option) and the output file (:code:`-o`)
+-   Normally, you give also a maskfile (:code:`-um` maskfile) which is an image consisting of pixels with integer values:
+    
+    -   Pixels having value 0 are not processed.
+    -   For all other mask values the statistics are reported separately. 
+
+-   When the :code:`-um` option is not used, statistics are a summary of all pixels in the image
+
 OPTIONS
--noavg = program does not compute the averages
--nostd = program does not compute the std’s
--mm = program computes and prints out also minimum and maxi-
-mum
-User Manual 134
- 
--h = prints out help
+#######
+
+-   :code:`-noavg` = program does not compute the averages
+-   :code:`-nostd` = program does not compute the std’s
+-   :code:`-mm` = program computes and prints out also minimum and maximum
+-   :code:`-h` = prints out help
+
 NOTE
-For benefit of users running scripts using the older version based on order of datafiles instead of options -i, -o and -um, the program can still be used that way.
+####
+
+For benefit of users running scripts using the older version based on order of datafiles instead of options :code:`-i`, :code:`-o` and :code:`-um`, the program can still be used that way.
+
 EXAMPLE
 #######
-EXERCISE
-- For this exercise following tools are used: oft-stat - Open your working directory using
+
+For this exercise following tools are used: :code:`oft-stat`.
+
+Open your working directory using: 
+
 .. code-block:: console
     
     cd ~
-1. Now we run oft-stat with input: images/landsat-t1.tif, output: results/stats.txt :
-oft−stat −i images/landsat t1 . tif −o results/stats . txt 2. Print the output in terminal:
-less results/stats.txt
-Explanation of values for each column: - Col1: ID
-- Col2: Number of pixels
-- Col3: Average value of band1
-- Col4 - col9: Average value of band2 - band7
-- Col10 - col16: Standard deviation of band1 - band7
-3. Now we run oft-stat with input: images/landsat- 1.tif, output: results/stats mm.txt, and the option -mm to produce also minimum and maximum values:
-User Manual 135
-   oft−stat −i images/input.tif −o results/stats.txt −um images/ segments . t i f
-                    1 10500000 48.742120 21.032891 19.848100 41.126436 50.192329
- 126.019212 21.810292 3.532883 2.776924 5.170575 6.554972 13.140675 2.275625 8.220984
-   
-   oft−stat −i images/landsat_t1.tif −o results/stats mm.txt −mm 4. Print the output in terminal:
-less results/stats.txt
-Explanation of values for each column:
-- Col1: ID (in this case one as no mask file has been given) - Col2: Number of pixels
-- Col3: Minimum value of band1
-- Col4 - col9: Minimum value of band2 - band7
-- Col10 - col16: Maximum value of band1 - band7
-- Col17 - col23: Average value of band1 - band7
-- Col24 - col30: Standard deviation of band1 - band7
-5. Now we run oft-stat with input: images/landsat_t1.tif, output: results/stats mask.txt; optional mask: images/segments.tif :
-6. Print the first 10 lines of the output in terminal:
-head results/stats mask.txt
-          1 10500000 20.000000 1.000000 1.000000 8.000000 5.000000 112.000000 1.000000 255.000000 255.000000 208.000000
- 255.000000 255.000000 195.000000 255.000000 48.742120
- 21.032891 19.848100 41.126436 50.192329 126.019212 21.810292 3.532883 2.776924 5.170575 6.554972 13.140675 2.275625 8.220984
-     oft−stat −i images/landsat−t1.tif −o results/stats mask.txt −um
- images/segments . t i f
-          49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000 0.929583 0.551321 0.640224 1.054450 1.890804 0.504219 1.046382
- 89 56 47.714286 20.053571 18.428571 37.125000 49.035714 125.571429 20.660714 1.073893 0.553325 0.598700 1.280092 1.747354 0.499350 0.977507
-26 132 49.310606 20.295455 18.651515 35.840909 46.863636
- 126.833333 20.257576 0.989507 0.490188 0.552370 0.799136 1.763812 0.481199 1.088603
- 220 54 51.203704 22.629630 23.666667 38.592593 58.777778
- 131.370370 28.685185 2.870669 2.139444 4.374023 2.375333 9.681078 0.957518 6.804061
- User Manual 136
 
- 231 132 56.416667 27.325758 34.606061 43.409091 82.636364 134.871212 45.454545 1.644058 1.207459 2.153490 1.689458 4.386434 2.786021 3.416090
- 236 55 46.200000 19.272727 16.290909 41.963636 39.927273 124.654545 15.000000 1.145038 0.449467 0.533081 0.961550 0.939948 0.479899 0.769800
-7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226 1.049915 0.534037 0.586495 0.947841
- 1.169893 0.463470 0.967543
- 52 105 49.580952 20.866667 19.666667 38.161905 53.990476 126.361905 22.847619 0.988209 0.555855 0.780368 0.951960
- 2.100802 0.482856 1.089998
-114 51 46.960784 19.470588 16.235294 41.294118 37.725490
-124.764706 15.039216 0.937247 0.542326 0.789639 0.807319 1.201306 0.428403 0.847603
- 138 55 45.690909 19.272727 16.054545 40.672727 40.036364 123.563636 14.909091 1.051854 0.449467 0.890655 1.155575 1.439697 0.739460 0.866511
-  The output is basically the same as in step 4. However, now average and standard deviation are not given for the whole image, but for each zone/segment value of the mask file (exception: value 0 that is not processed).
+Now we run :code:`oft-stat` with input: :code:`images/landsat-t1.tif`, output: :code:`results/stats.txt`:
+
+.. code-block:: console
+
+    oft−stat −i images/landsat_t1.tif −o results/stats.txt 
+    
+Print the output in terminal:
+
+.. code-block:: console
+
+    less results/stats.txt
+
+.. code-block:: 
+
+    1 10500000 48.742120 21.032891 19.848100 41.126436 50.192329 126.019212 21.810292 3.532883 2.776924 
+        5.170575 6.554972 13.140675 2.275625 8.220984
+
+Explanation of values for each column: 
+-   Col1: ID
+-   Col2: Number of pixels
+-   Col3: Average value of band1
+-   Col4 - col9: Average value of band2 - band7
+-   Col10 - col16: Standard deviation of band1 - band7
+
+Now we run :code:`oft-stat` with input: :code:`images/landsat_t1.tif`, output: :code:`results/stats_mm.txt`, and the option :code:`-mm` to produce also minimum and maximum values:
+
+.. code-block::
+
+    oft−stat −i images/landsat_t1.tif −o results/stats mm.txt −mm
+
+Print the output in terminal:
+
+.. code-block:: console 
+
+    less results/stats.txt
+
+.. code-block:: 
+
+    1 10500000 20.000000 1.000000 1.000000 8.000000 5.000000 112.000000 1.000000 255.000000 255.000000
+    208.000000 255.000000 255.000000 195.000000 255.000000 48.742120 21.032891 19.848100 41.126436 50.192329
+    126.019212 21.810292 3.532883 2.776924 5.170575 6.554972 13.140675 2.275625 8.220984
+
 Explanation of values for each column:
-- Col1: ID (in this case one as no mask file has been given) - Col2: Number of pixels
-- Col3: Average value of band1
-- Col4 - col9: Average value of band2 - band7
-- Col10 - col16: Standard deviation of band1 - band7
-7. Depending on the purpose, you can now try the different options: -mm if you want to compute minimum and maximum values as
-well
--noavg if you do not want to output the average
--nostd if you do not want to compute the standard deviation.
+-   Col1: ID (in this case one as no mask file has been given) - Col2: Number of pixels
+-   Col3: Minimum value of band1
+-   Col4 - col9: Minimum value of band2 - band7
+-   Col10 - col16: Maximum value of band1 - band7
+-   Col17 - col23: Average value of band1 - band7
+-   Col24 - col30: Standard deviation of band1 - band7
+
+Now we run oft-stat with input: :code:`images/landsat_t1.tif`, output: :code:`results/stats_mask.txt`; optional mask: :code:`images/segments.tif`:
+
+.. code-block:: console
+    oft−stat −i images/input.tif −o results/stats.txt −um images/segments.tif
+
+Print the first 10 lines of the output in terminal:
+
+.. code-block:: console
+
+    head results/stats mask.txt
+
+.. code-block::
+
+    49 60 49.183333 20.366667 18.883333 36.800000 47.866667 126.500000 20.700000 0.929583 0.551321 0.640224 1.054450 1.890804 0.504219 1.046382
+    89 56 47.714286 20.053571 18.428571 37.125000 49.035714 125.571429 20.660714 1.073893 0.553325 0.598700 1.280092 1.747354 0.499350 0.977507
+    26 132 49.310606 20.295455 18.651515 35.840909 46.863636 126.833333 20.257576 0.989507 0.490188 0.552370 0.799136 1.763812 0.481199 1.088603
+    220 54 51.203704 22.629630 23.666667 38.592593 58.777778 131.370370 28.685185 2.870669 2.139444 4.374023 2.375333 9.681078 0.957518 6.804061
+    231 132 56.416667 27.325758 34.606061 43.409091 82.636364 134.871212 45.454545 1.644058 1.207459 2.153490 1.689458 4.386434 2.786021 3.416090
+    236 55 46.200000 19.272727 16.290909 41.963636 39.927273 124.654545 15.000000 1.145038 0.449467 0.533081 0.961550 0.939948 0.479899 0.769800
+    7 53 48.886792 20.056604 18.339623 37.207547 45.698113 125.698113 19.396226 1.049915 0.534037 0.586495 0.947841 1.169893 0.463470 0.967543
+    52 105 49.580952 20.866667 19.666667 38.161905 53.990476 126.361905 22.847619 0.988209 0.555855 0.780368 0.951960 2.100802 0.482856 1.089998
+    114 51 46.960784 19.470588 16.235294 41.294118 37.725490 124.764706 15.039216 0.937247 0.542326 0.789639 0.807319 1.201306 0.428403 0.847603
+    138 55 45.690909 19.272727 16.054545 40.672727 40.036364 123.563636 14.909091 1.051854 0.449467 0.890655 1.155575 1.439697 0.739460 0.866511
+  
+The output is basically the same as in step 4. However, now average and standard deviation are not given for the whole image, but for each zone/segment value of the mask file (exception: value 0 that is not processed).
+
+Explanation of values for each column:
+
+-   Col1: ID (in this case one as no mask file has been given) 
+-   Col2: Number of pixels
+-   Col3: Average value of band1
+-   Col4 - col9: Average value of band2 - band7
+-   Col10 - col16: Standard deviation of band1 - band7
+
+Depending on the purpose, you can now try the different options: 
+-   :code:`-mm` if you want to compute minimum and maximum values as well
+-   :code:`-noavg` if you do not want to output the average
+-   :code:`-nostd` if you do not want to compute the standard deviation.
+
 The output will always be in the following order:
-ID, number of pixels, [minimum if -mm is chosen], [maximum if
--mm is chosen], average, standard deviation.
+
+ID, number of pixels, [minimum if :code:`-mm` is chosen], [maximum if :code:`-mm` is chosen], average, standard deviation.
+
 If the input image has several bands, the parameters are given for all bands.
-User Manual 137
  
 CLASSIFICATION
 7.45 oft-cluster.bash NAME
