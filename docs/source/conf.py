@@ -75,6 +75,11 @@ html_theme_options = {
             "name": "Twitter",
             "url": "https://twitter.com/UNFAO",
             "icon": "fab fa-twitter"
+        },
+        {
+            "name": "GIS Stackexchange",
+            "url": "https://gis.stackexchange.com/questions/tagged/sepal",
+            "icon": "fab fa-stack-exchange"
         }
     ],
     "use_edit_page_button": True,
