@@ -80,6 +80,11 @@ html_theme_options = {
             "name": "GIS Stackexchange",
             "url": "https://gis.stackexchange.com/questions/tagged/sepal",
             "icon": "fab fa-stack-exchange"
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
+            "icon": "fab fa-youtube"
         }
     ],
     "use_edit_page_button": True,
