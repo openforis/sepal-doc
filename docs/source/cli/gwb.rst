@@ -6,8 +6,6 @@ The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu
 This document provides usage instructions for the cmd-line implementation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
 
 
-
-
 Initial setup
 -------------
 
@@ -744,6 +742,10 @@ The Landscape Mosaic has been used to map and summarize the degree of landscape 
 
 GWB_MSPA
 ^^^^^^^^
+
+.. warning::
+
+    If your are considering using the MSPA tool, keep in mind that the process is relatively complex and provide a lot of informmation (up to 25 classes). If you are only interested in fragmentation and/or less than 6 classes, please consider using :code:`GWB_FRAG` or :code:`GWB_SPA`.
 
 This module will conduct the **Morphological Spatial Pattern Analysis**. `MSPA <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ analyses shape and connectivity and conducts a segmentation of foreground (i.e. forest) patches in up to 25 feature classes. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Morphology <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ product sheet.
 
