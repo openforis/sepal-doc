@@ -7,5 +7,6 @@
     "zonal-analysis": "https://raw.githubusercontent.com/openforis/zonal-analysis/master/doc/en.rst",
     "gfc_wrapper_python": "https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/en.rst",
     "gwb": "https://raw.githubusercontent.com/12rambau/gwb/master/doc/en.rst",
-    "planet_order": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst"
+    "planet_order": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst",
+    "bfast_gpu": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst"
 }
