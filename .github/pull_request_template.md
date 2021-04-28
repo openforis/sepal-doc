@@ -1,3 +1,5 @@
+<!--- If the Pr is related to a Minor change, there is no need to fill the comment section of the PR -->
+
 **reference the related issue**
 PR should answer problem stated in the issue tracker. please open one before starting a PR
 
