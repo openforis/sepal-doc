@@ -7,4 +7,5 @@ SEPAL team documentation
     :maxdepth: 1
     :hidden:
  
+    contribute
     classroom

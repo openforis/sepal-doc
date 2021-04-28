@@ -1,7 +1,7 @@
+.. include:: disclaimer.rst
+
 Google classroom
 ================
-
-.. include:: disclaimer.rst
 
 Usage
 -----
