@@ -27,7 +27,7 @@ The work of the sepal-doc repository is to create .rst files in an ordered way. 
     To work on this project you will need the following:
 
     - basic knowledge of any lightweight markup language ( markdown, latex, etc..) that will help you understand .rst
-    - the Sphinx directives `documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_
+    - the `Sphinx directives documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_
     - a GitHub account 
     - basic understanding of terminal commands 
 
@@ -80,7 +80,7 @@ Here you'll find an example:
 graphviz
 """"""""
 
-Directive to embed graphviz code. The input code for dot is given as the content. To better understand graphviz, please refer to their `documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_.
+Directive to embed graphviz code. The input code for dot is given as the content. To better understand graphviz, please refer to the `graphviz documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_.
 
 Here you'll find an example:
 

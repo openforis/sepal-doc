@@ -858,6 +858,8 @@ Turn on the imagery for your Classification and pan and zoom around the map. Com
 
     if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-export the classification following the steps in `section 2.3`_.
 
+.. _module 3:
+
 Image change detection
 ----------------------
 
@@ -874,6 +876,8 @@ Most methods for change detection use algorithms backed by statistical methods t
 The objective of this module is to become associated with methods of detecting change for an area of interest using the SEPAL platform. This will build upon and incorporate what we have covered in the previous modules including: creating mosaics, creating training samples, and classifying imagery. This module is split into two exercises. The first addresses change detection using two dates, and the second more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. At the end of this module you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
 
 This module should take you approximately 3 hours.
+
+.. _section 3.1:
 
 Two date change detection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -962,6 +966,7 @@ Repeat the previous steps for your 2020 optical mosaic.
 
     This occurs because GEE gets overloaded. If you encounter this error, please retrieve your classification as described in `section 2.2`_.
 
+.. _section 3.1.3: 
 
 Collect change classification training data
 """""""""""""""""""""""""""""""""""""""""""
@@ -1063,6 +1068,8 @@ Finally click on the :code:`CLS` button in the bottom right. You can change your
 .. note::
 
    If any of the previous sections is unclear, review `module 1`_ or `module 2`_ for more detailed explanations of how to process mosaics, and collect training data with CEO.
+
+.. _section 3.1.4:
 
 Two date classification retrieval
 """""""""""""""""""""""""""""""""
@@ -1221,6 +1228,8 @@ From LandTrendr's documentation, here's an example output in the GUI. However, L
    :alt: The LandTrendr interface
    :align: center
 
+.. _module 4:
+
 Sample-based estimation of area and accuracy
 --------------------------------------------
 
@@ -1241,6 +1250,8 @@ There are four steps to sample-based estimation of area and accuracy. First, you
 This process will provide two important outputs. First, you will have estimates of the area for each LULC or change type. Second, you will have a table that describes the accuracy for each LUC or change type. This is often called a confusion matrix. These may be final products for your projects. However, if you decide that your map is not accurate enough, this information can be fed back into the classification or change detection algorithms to improve your model.
 
 This Module takes approximately 3 hours to complete.
+
+.. _section 4.1:
 
 Sample design and stratification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1263,10 +1274,13 @@ We will use the SEPAL SAE-Design tool. You will upload your classified map and s
     -   Classification from `module 2`_
     -   advanced users can use the classification from `module 3`_
 
+.. _section 4.1.1:
+
 Uploading files to SEPAL
 """"""""""""""""""""""""
 If your classification is not stored in SEPAL (for example, a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL's stratified random sample tool. Several option are described in this `page <../setup/FileZilla.html>`_ of the documentation.
 
+.. _section 4.1.2:
 
 Creating a stratified random sample
 """""""""""""""""""""""""""""""""""
@@ -1440,6 +1454,8 @@ To create a project via the CEO-SEPAL bridge, click on **Create CEO project**. T
 When the project has been created, you can skip down to `section 4.2`_.
 You can download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this manual. Directions can be found in the Institutional manual found here: https://collect.earth/support.
 
+.. _section 4.1.3:
+
 Creating a CEO project via CSV
 """"""""""""""""""""""""""""""
 
@@ -1576,6 +1592,8 @@ On the project review page, click publish project. Collect earth will ask you to
 
 More detailed instructions, including descriptions of many useful options, can be found in the manuals for CEO: https://collect.earth/support.
 
+.. _section 4.2:
+
 Data collection with data quality management approaches
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1601,6 +1619,8 @@ Much of this information is based on Standard Operating Procedures developed by 
     -   CEO-SEPAL project initiated in `Section 4.1`_
 
 
+.. _section 4.2.1:
+
 Specify a classification scheme
 """""""""""""""""""""""""""""""
 
@@ -1623,6 +1643,8 @@ As a reminder, our classification used to classify our Forest/Non-forest land co
         }
 
 We defined Forest as an area with over 70% tree cover. We defined Non-forest as areas with less than 70% tree cover. This captured land covers including urban areas, water, and agricultural fields.
+
+.. _section 4.2.2:
 
 Planning data collection
 """"""""""""""""""""""""
@@ -1758,6 +1780,8 @@ The coordinator should use a standardized naming structure to distribute the sam
 
 In CEO, multiple interpreters can work on the same project at the same time. This makes it very easy to collect data collaboratively. When you later download the data, each interpreter's email address will be attached to the point they collected. If you use CEO-SEPAL, you cannot collect this information at the time of writing.
 
+.. _section 4.2.3:
+
 Collecting data
 """""""""""""""
 
@@ -1828,7 +1852,7 @@ Each sample in the consolidated database notes the round of data collection. The
 
     In CEO, this is handled through the Institution's Project interface.
 
-
+.. _section 4.2.4:
 
 Quality management and archiving - Quality Assurance
 """"""""""""""""""""""""""""""""""""""""""""""""""""
@@ -1883,6 +1907,8 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
         -   Discuss these sample units and make changes to the labels based on your discussion.
 
 You must create a project using CEO to add additional questions about confidence level. If you create a project via the ceo-sepal interface, you will have only one question about land use/cover class.
+
+.. _section 4.2.5:
 
 Quality management and archiving - Quality Control
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -1998,6 +2024,8 @@ Now calculate the per-class agreement. Note that percent should be calculated by
     Non-forest (reference), Percent, Percent, Percent, Percent
     Total                 , Percent, Percent, Percent, Percent
 
+.. _section 4.3:
+
 Area and uncertainty estimation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2020,6 +2048,7 @@ Please note that you will need to upload your collected data from CEO to Sepal u
     -   Completed verification data, or reference data (`section 4.2`_)
     -   Map areas generated by your sampling design (`section 4.1`_)
 
+.. _section 4.3.1:
 
 Understanding the error matrix
 """"""""""""""""""""""""""""""
@@ -2057,6 +2086,8 @@ In this example, the user's accuracy for Forest is 94.7%; so the error of commis
 Once the error matrix is created, the area estimation becomes straightforward. Essentially, we use the frequency of these errors of omission and commission for each map class to calculate updated map areas based on our knowledge of how likely each class is to be classified as something else. We can also calculate the uncertainties for the total area of each class.
 
 At the heart of the analysis is the implementation of an unbiased area estimator. Different estimators can be implemented to assess accuracy. In the next part, you will use a stratified estimation since you have a sample stratified by the discrete map classes.
+
+.. _section 4.3.2:
 
 Preparing your CEO collected data for analysis in SEPAL
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -2100,6 +2131,8 @@ If your column for the correct map class is text, you will need to either:
    :align: center
 
 Finally Save your .csv file and upload it to SEPAL.
+
+.. _section 4.3.3:
 
 Using the stratified estimator in SEPAL
 """""""""""""""""""""""""""""""""""""""
@@ -2208,6 +2241,8 @@ In this exercise we collected validation data using a stratified sample, so the 
    :width: 450
    :align: center
 
+.. _module 5:
+
 Documentation and archiving
 ---------------------------
 
@@ -2216,6 +2251,8 @@ Documentation of your area estimate and archiving this information for future re
 We have built in documentation steps into other Modules of this Manual, however here we bring this information together. We discuss key documentation steps, including logging decision points (`section 5.1`_), Reporting (`section 5.2`_), Commenting in code (`section 5.3`_), and Version control (`section 5.4`_), as well as archiving steps (`section 5.5`_).
 
 This module should take approximately 1 hour to read. The time taken to complete this module for your specific situation will vary depending on the size and scope of your project.
+
+.. _section 5.1:
 
 Logging decision points
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -2242,6 +2279,8 @@ In the previous Modules, we have suggested that you document these types of deci
   * Data collection procedures (`section 4.2`_).
 
 You may also choose to follow your organization's Standard Operating Procedures. For example: https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing.
+
+.. _section 5.2:
 
 Reporting
 ^^^^^^^^^
@@ -2285,6 +2324,8 @@ As another example, FAO's Standard Operating Procedure requires reports include 
 -   Impossible transitions excluded from data collection
 -   The results of the assessment of interpretation quality
 -   External appraisal of interpretation quality contact information and narrative report from the appraiser
+
+.. _section 5.3:
 
 Commenting in Scripts
 ^^^^^^^^^^^^^^^^^^^^^
@@ -2377,6 +2418,8 @@ In this example above you can see that you write roughly the same number of line
 
 Finally, note that reading the actual code will always be truer than reading the comments. In the first example it poses the question: “Did the user pass in a year range that is within the valid range for the selected satellite?“ But what if you choose to include aerial imagery or UAV data sources at some point? Chances are you won't feel compelled to go back and update your comment.
 
+.. _section 5.4:
+
 Transparent coding: GitHub and saving GEE scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2445,6 +2488,8 @@ Detailed information can be found under “Development Environments: Earth Engin
 .. figure:: ../img/cookbook/area_estimation/earth_engine_code_editor.png
    :alt: Earth engine code editor
    :align: center
+
+.. _section 5.5:
 
 Data archiving and creating metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2569,10 +2614,6 @@ Now you know:
 -   How to comment code
 -   How to use version control options for your project!
 -   How to report your area estimation project
-
-.. .. line-break:: raw:: html
-
-    <br />
 
 .. spelling::
 
