@@ -384,6 +384,61 @@ Here is an example:
 Create a PR
 -----------
 
+Now that you have finished your modifications and pushed them to GitHub we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`). on this page click on the :code:`pull request` button:
+
+.. figure:: ../img/team/contribute/start_pr.png
+    :alt: pull request btn 
+
+    Start the pull request interface
+
+In the pull request interface, click on :code:`new pull request` button: 
+
+.. figure:: ../img/team/contribute/new_pr.png
+    :alt: new pull request
+
+    create a new pull request
+
+Now you need to select what is going to be pushed and where. Assuming that you have followed this entire documentation, you have not created any branch in your fork so on the left side leave :code:`openforis/sepal-doc/master` and on the right side :code:`<account>/sepal-doc/master` (1). Some extra information on the commit that will be added to master are displayed in (2). If everything is set properly (normally you don't have to change anything) then click on the :code:`create pull request` button.
+
+.. figure:: ../img/team/contribute/compare_pr.png
+    :alt: compare branches
+
+Now you enter the final step of your modifications. fill the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beggining of the documentation, you started your modifications to answer an issue from the issue tracker. It need to be referenced in your PR message at line 2 using :code:`#<issue number>`. It will help the maintainers that will review your PR understanding what you are adding to the documentation. 
+
+.. note::
+    
+    You can click on the preview button to see what your PR look like with links
+
+The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behaviour) (2). This will allow the maintainers to make modifications to your PR files (e.g. if you made a mistake in a rst directive)
+
+When everything is set, you can click on :code:`create pull request` (3). 
+
+.. figure:: ../img/team/contribute/valid_pr.png
+    :alt: valid pr 
+
+    Validate the creation of the PR
+
+Some check will be performed automatically to check if your PR can be build with readTheDoc and distribute in https://docs.sepal.io.
+
+.. figure:: ../img/team/contribute/ci_pr.png
+    :alt: ci in pr 
+
+    The continous integration will run in Github
+
+When everything is ready the maintainer will look at your PR and make the appropriate modifications (if needed), afterward the PR will be accepted and the new page will be available in the main documentation.
+
+.. tip:: 
+
+    once the PR is validate, please consider deleting your fork in order to avoid merging issues next you'll want to make modification to the repository.
+
+    .. figure:: ../img/team/contribute/delete_fork.png
+        :alt: delete fork
+
+        click here and follow the instructions ot delete your repository
+    
+    IF YOU ARE OWNER OF :code:`openforis` DO NOT DELETE THE :code:`openforis/sepal-doc` ONE
+
+
 
 
 
