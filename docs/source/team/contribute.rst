@@ -10,8 +10,60 @@ Please note we have a `code of conduct <https://github.com/openforis/sepal-doc/b
 
 We are glad to receive feedback from our user and collegues from the SEPAL team. This documentation is yours, feel free to improve it!
 
-Structure
----------
+Introduction
+------------
+
+The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe shpinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/img/`.
+
+If some of the files are misplaced there build into html pages cannot be guaranteed. Please respect the following instructions when you consider making changes to the repository. 
+
+Tools
+^^^^^
+
+The work of the sepal-doc repository is to create .rst files in an ordered way. To do that will will use at it's maximum the potential of the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ librairy (to create the build) and the `ReadTheDoc <https://readthedocs.org>`_ website (to distribute the build).
+
+.. warning::
+
+    To work on this project you will need the following:
+
+    - basic knowledge of any lightweight markup language ( markdown, latex, etc..) that will help you understand .rst
+    - the Sphinx directives `documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_
+    - a GitHub account 
+    - basic understanding of terminal commands 
+
+Guidelines
+^^^^^^^^^^
+
+There are very few guidelines to respect that are not directly specified by the .rst documentation or the template. 
+
+- In all the files you write please respect the following indentation: :code:`4 spaces`. it includes directives (option and content) AND bullet points
+- For the headings of your files use the following symbols (from heading 1 to heading 6) :code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, :code:`+`
+
+Custom
+^^^^^^
+
+Here you will find the custom directives that have been added to help us build our documentation: 
+
+videos
+""""""
+
+ReST directive for embedding Youtube and Vimeo videos.
+There are two directives added: :code:`youtube` and :code:`vimeo`. The only argument is the video id of the video to include.
+Both directives have three optional arguments: 
+- :code:`height`, 
+- :code:`width`,
+- :code:`align`
+
+Default height is **281** and default width is **500**. By default the video will be aligned on the **left** side.
+
+Here you'll find an example: 
+
+.. code-block:: rst 
+
+    .. youtube:: anwy2MPT5RE
+        :height: 315
+        :width: 560
+        :align: left
 
 
 Minor change
@@ -37,6 +89,27 @@ By clicking it you will be send to a Github editor where you can make all the mo
 .. tip::
 
     To make sure that you modification are well uderstood modify the title of the commit by filling the first field. you can use "typo", "change image" "code-block error"; in short anything that describe the modification that you've done. This name CANNOT be changed.
+
+    .. figure:: ../img/team/contribute/create_branch.png
+        :alt: create a branch 
+
+        Create a branch when correcting anything
+
+Once you're done, a PR will automatically be set for you in the openforis repository. Remove all the comments as you're not making a real PR but an adjustment, normally the title will automatically be set with the name of your commit. click on :code:`create pull request`.
+
+.. figure:: ../img/team/contribute/typo_pr.png
+    :alt: typo pr
+
+    Create an automatic PR for minor modifications
+
+.. note::
+
+    Once your PR is accepted, you will be notified. please consider deleteing your branch. 
+
+    .. figure:: ../img/team/contribute/delete_branch.png
+        :alt: delete branch 
+
+        Delete the branch once the PR is accepted by maintainers
 
 Module edit
 ^^^^^^^^^^^
@@ -383,6 +456,10 @@ Here is an example:
 
 Create a PR
 -----------
+
+.. note::
+
+    This very documentation page was requested in the `issue #19 <https://github.com/openforis/sepal-doc/issues/19>`_ and add to the main documentation through the `PR #24 <https://github.com/openforis/sepal-doc/pull/24>`_.
 
 Now that you have finished your modifications and pushed them to GitHub we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`). on this page click on the :code:`pull request` button:
 
