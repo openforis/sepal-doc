@@ -512,6 +512,11 @@ When everything is ready the maintainer will look at your PR and make the approp
         :alt: delete fork
 
         click here and follow the instructions ot delete your repository
+
+    .. figure:: ../img/team/contribute/delete_popup.png
+        :alt: delete popup
+
+        Popu to delete the fork used in the closed PR
     
     IF YOU ARE OWNER OF :code:`openforis` DO NOT DELETE THE :code:`openforis/sepal-doc` ONE
 
