@@ -34,7 +34,8 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
     'notfound.extension',
-    '_extentions.video'
+    '_extentions.video',
+    '_extentions.line_break'
 ]
 
 # spelling options

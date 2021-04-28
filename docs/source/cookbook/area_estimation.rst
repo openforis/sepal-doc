@@ -95,6 +95,8 @@ Project planning and methods documentation play a key role in any remote sensing
 
 -   Partnerships (vendors, agencies, bureaus, etc.)
 
+.. _module 1:
+
 Mosaic generation (Landsat & Sentinel 2)
 ----------------------------------------
 
@@ -377,6 +379,8 @@ You will notice the :code:`Tasks` icon is now spinning. If you click on it, you 
 .. note::
    This will take around **25 minutes** to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.
 
+.. _module 2:
+
 Image classification
 --------------------
 
@@ -398,6 +402,8 @@ At the end of this module you will have a classified land use land cover map.
     
     This section takes approximately 4 hours to complete.
 
+
+.. _section 2.1:
 
 Response design for classification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -465,6 +471,8 @@ Our classification will take place in Brazil, in an area of the Amazon rainfores
 
 More resources are available online, for example at http://www.ipcc.ch/ipccreports/tar/wg2/index.php?idp=132.
 
+.. _section 2.2:
+
 Create a mosaic for classification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -531,6 +539,8 @@ For future exercises, you may need to know how to find your Earth Engine Asset.
 .. figure:: ../img/cookbook/area_estimation/mosaic_information.png
     :alt: Your mosaic's information pane.
     :align: center
+
+.. _section 2.3:
 
 Creating a classification & training data collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -725,6 +735,8 @@ Once again when you are done collecting data for these categories, zoom out to t
 -   Did you place data points somewhat equally across the full region?
 -   Are all points clustered in the same area?
 -   It's best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
+
+.. _section 2.4:
 
 Classification using machine learning algorithms (Random Forests)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2480,7 +2492,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess RS results                 ,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),                         
 
-|br|
+.. line-break::
 
 .. csv-table::
     :header: "Creating Band Ratios, Indices and Image \Transformation for use in Classification and Change Detection Analysis",
@@ -2491,7 +2503,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess RS results,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),
 
-|br|
+.. line-break::
 
 .. csv-table::
     :header: Image Classification Scheme, 
@@ -2502,7 +2514,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess RS results, 
     Assumptions (Note: Need to archive outputs before proceeding with analysis), 
 
-|br|
+.. line-break::
 
 .. csv-table::
     :header: Collect Reference Data,
@@ -2513,7 +2525,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess RS results,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),
 
-|br|
+.. line-break::
 
 .. csv-table::
     :header: Perform Land Cover Classification or Land Cover Change Analysis,
@@ -2524,7 +2536,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess RS results,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),
 
-|br|
+.. line-break::
 
 .. csv-table::
     :header: Perform Accuracy Assessment,
@@ -2535,7 +2547,7 @@ When completing this exercise, think about the work you have completed in the 4 
     Assess results, 
     Assumptions (Note: Need to archive outputs before proceeding with analysis)
 
-|br|
+.. line-break::
 
 conclusion 
 ----------
@@ -2558,7 +2570,7 @@ Now you know:
 -   How to use version control options for your project!
 -   How to report your area estimation project
 
-.. |br| raw:: html
+.. .. line-break:: raw:: html
 
     <br />
 

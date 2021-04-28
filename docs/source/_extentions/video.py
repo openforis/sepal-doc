@@ -13,7 +13,6 @@
     :copyright: (c) 2012 by Danilo Bargen.
     :license: BSD 3-clause
 """
-from __future__ import absolute_import
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 

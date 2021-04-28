@@ -65,6 +65,33 @@ Here you'll find an example:
         :width: 560
         :align: left
 
+line-break
+""""""""""
+
+ReST directive for creating line break in your documentation when needed.
+The directive does note require any argument.
+
+Here you'll find an example:
+
+.. code-block:: rst
+
+    .. line-break::
+
+graphviz
+""""""""
+
+Directive to embed graphviz code. The input code for dot is given as the content. To better understand graphviz, please refer to their `documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_.
+
+Here you'll find an example:
+
+.. code-block:: rst 
+
+    .. graphviz::
+
+        digraph foo {
+        "bar" -> "baz";
+        }
+
 
 Minor change
 ------------
