@@ -368,7 +368,7 @@ New modules
 
 You have created a new module (shinny or python based) and you proudly asked to add it on the app dashboard of SEPAL (following the issue template). One of the requirement to have your module accepted by the sepal team is to create a documentation file. To keep the modules consistency we decided to let the documentation live in the module original repository. So to create the actual documentation page follow the instruction provided in the `sepal_ui doc <https://sepal-ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-documentation>`_. 
 
-Then you need to modify only 2 files in sepal-doc to make your documentation available.
+Then you need to modify only 1 files in sepal-doc to make your documentation available.
 
 1.  modify the :code:`sepal-doc/docs/source/data/modules/en.json` file by adding a new line with the following shape: 
 
@@ -379,20 +379,6 @@ Then you need to modify only 2 files in sepal-doc to make your documentation ava
         }
 
     This file will be pulled at each build of the documentation in the :code:`sepal-doc/docs/source/modules/dwn` folder
-
-2. add the newly created page to the index toctree: 
-
-    .. code-block:: rst
-
-        .. toctree::
-            :maxdepth: 1
-            :hidden:
- 
-            dwn/alert_module
-            dwn/clip-time-series
-            dwn/<module_name>
-
-    Use the same "module_name" as the one you set in the json file. The order of the modules doesn't mater as the toctree is alphabetically sorted.
 
 New Class on Google Classroom
 """""""""""""""""""""""""""""
