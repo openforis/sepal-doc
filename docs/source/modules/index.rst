@@ -14,3 +14,4 @@ SEPAL modules
     dwn/zonal-analysis
     dwn/gwb
     dwn/planet_order
+    dwn/bfast_gpu
