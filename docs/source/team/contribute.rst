@@ -8,19 +8,19 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_, please follow it in all your interactions with the project.
 
-We are glad to receive feedback from our user and collegues from the SEPAL team. This documentation is yours, feel free to improve it!
+We are glad to receive feedback from our user and colleagues from the SEPAL team. This documentation is yours, feel free to improve it!
 
 Introduction
 ------------
 
-The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe shpinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/img/`.
+The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe Sphinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/img/`.
 
 If some of the files are misplaced there build into html pages cannot be guaranteed. Please respect the following instructions when you consider making changes to the repository. 
 
 Tools
 ^^^^^
 
-The work of the sepal-doc repository is to create .rst files in an ordered way. To do that will will use at it's maximum the potential of the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ librairy (to create the build) and the `ReadTheDoc <https://readthedocs.org>`_ website (to distribute the build).
+The work of the sepal-doc repository is to create .rst files in an ordered way. To do that will will use at it's maximum the potential of the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library (to create the build) and the `ReadTheDoc <https://readthedocs.org>`_ website (to distribute the build).
 
 .. warning::
 
@@ -99,7 +99,7 @@ Minor change
 Page edit
 ^^^^^^^^^
 
-If you want to make modifications to an existing page of documentation because you've seen a typo, or you want to improve an explainantion the workflow is extremely simple. Click on the :code:`edit this page` button that will always be on the right side of the screen:
+If you want to make modifications to an existing page of documentation because you've seen a typo, or you want to improve an explanation the workflow is extremely simple. Click on the :code:`edit this page` button that will always be on the right side of the screen:
 
 .. figure:: ../img/team/contribute/edit_page.png
     :alt: edit page button
@@ -115,14 +115,14 @@ By clicking it you will be send to a Github editor where you can make all the mo
 
 .. tip::
 
-    To make sure that you modification are well uderstood modify the title of the commit by filling the first field. you can use "typo", "change image" "code-block error"; in short anything that describe the modification that you've done. This name CANNOT be changed.
+    To make sure that you modification are well understood modify the title of the commit by filling the first field. you can use "typo", "change image" "code-block error"; in short anything that describe the modification that you've done. This name CANNOT be changed.
 
     .. figure:: ../img/team/contribute/create_branch.png
         :alt: create a branch 
 
         Create a branch when correcting anything
 
-Once you're done, a PR will automatically be set for you in the openforis repository. Remove all the comments as you're not making a real PR but an adjustment, normally the title will automatically be set with the name of your commit. click on :code:`create pull request`.
+Once you're done, a PR will automatically be set for you in the OpenForis repository. Remove all the comments as you're not making a real PR but an adjustment, normally the title will automatically be set with the name of your commit. click on :code:`create pull request`.
 
 .. figure:: ../img/team/contribute/typo_pr.png
     :alt: typo pr
@@ -131,7 +131,7 @@ Once you're done, a PR will automatically be set for you in the openforis reposi
 
 .. note::
 
-    Once your PR is accepted, you will be notified. please consider deleteing your branch. 
+    Once your PR is accepted, you will be notified. please consider deleting your branch. 
 
     .. figure:: ../img/team/contribute/delete_branch.png
         :alt: delete branch 
@@ -141,9 +141,9 @@ Once you're done, a PR will automatically be set for you in the openforis reposi
 Module edit
 ^^^^^^^^^^^
 
-If you find a error in a **module** page, the edit button will not work as the files are dynamically retreive from each module repository. If the documentation is well written, their should be a link at the very bottom to make modification to the source file in the module repository following the same procedure mentionned above. 
+If you find a error in a **module** page, the edit button will not work as the files are dynamically retrieve from each module repository. If the documentation is well written, their should be a link at the very bottom to make modification to the source file in the module repository following the same procedure mentioned above. 
 
-Once you're done notify the maintainer of sepal-doc with an issue, they will need to rebuild the documenation manually to retreive the latest version of the file you just modified. 
+Once you're done notify the maintainer of sepal-doc with an issue, they will need to rebuild the documentation manually to retrieve the latest version of the file you just modified. 
 
 .. note:: 
 
@@ -160,21 +160,21 @@ Major changes include:
 -   new modules
 -   new class on Google classroom
 
-For these major changes, the simple GitHub edit process cannot work. You need to follow another worklfow that will allows you to modify multiple files at the same time and use the PR system to avoid publishing new pages without validation. 
+For these major changes, the simple GitHub edit process cannot work. You need to follow another workflow that will allows you to modify multiple files at the same time and use the PR system to avoid publishing new pages without validation. 
 
 In this section will will present the full process to include major changes to the documentation.
 
 Fork project
 ^^^^^^^^^^^^
 
-To work on multiple files at the same time, you cannot work directly from GitHub and you need to install a local version of the source. You don't have the rights (even the maintainer doesn't have the right) to directly push to master to avoid the publication of bad quality documetation page. The first step will then be to fork the project in your own account. To do so click on the :code:`fork` button at the top right side of the `Github page of the doc <https://github.com/openforis/sepal-doc>`_:
+To work on multiple files at the same time, you cannot work directly from GitHub and you need to install a local version of the source. You don't have the rights (even the maintainer doesn't have the right) to directly push to master to avoid the publication of bad quality documentation page. The first step will then be to fork the project in your own account. To do so click on the :code:`fork` button at the top right side of the `Github page of the doc <https://github.com/openforis/sepal-doc>`_:
 
 .. figure:: ../img/team/contribute/fork.png
     :alt: github fork
 
     The fork button on GitHub
 
-In the fork popu that will open select your the account you want to use (if you have only one account there will be 1 choice):
+In the fork popup that will open select your the account you want to use (if you have only one account there will be 1 choice):
 
 .. figure:: ../img/team/contribute/fork_select.png
     :alt: fork popup
@@ -224,7 +224,7 @@ lets check that the doc can be build without error, go to the doc folder and run
 
     we try our best to avoid warning in the master branch. If some are still displayed just ignore them the maintainers will take care of them.
 
-now a new folder :code:`build` have been created in your sepal-doc folder. double-click on :code:`sepal-doc/docs/build/html/index.html`. Your computer will open a browser page which should be the landing page of the documenation. you can then navigate wherever you fancy. the url at the top of the browser should not be starting with **https:://** but **file:///** meaning that it's a local html page. Another tip that you are displaying a local page is that there is no advertisment in the side bar. 
+now a new folder :code:`build` have been created in your sepal-doc folder. double-click on :code:`sepal-doc/docs/build/html/index.html`. Your computer will open a browser page which should be the landing page of the documentation. you can then navigate wherever you fancy. the URL at the top of the browser should not be starting with **https:://** but **file:///** meaning that it's a local html page. Another tip that you are displaying a local page is that there is no advertisement in the side bar. 
 
 .. figure:: ../img/team/contribute/local_landing.png
     :alt: local landing
@@ -241,7 +241,7 @@ We can now start to code our modifications!
 Modify the doc
 ^^^^^^^^^^^^^^
 
-Every type of modification will be treated separately as they don't imply the same structure code structures. hile doing local modifications, don't hesitate to regularly run the foloowing command in the :code:`sepal-doc/doc/` folder to check the page your modifying, it will help you see typos and directives mistakes: 
+Every type of modification will be treated separately as they don't imply the same structure code structures. While doing local modifications, don't hesitate to regularly run the following command in the :code:`sepal-doc/doc/` folder to check the page your modifying, it will help you see typos and directives mistakes: 
 
 .. code-block:: console
 
@@ -268,10 +268,10 @@ Open the :code:`sepal-doc` folder in your favorite IDE it will be easier for mod
 
 .. note::
 
-    Any textEdit software can do the trick it's just less user friendly
+    Any TextEdit software can do the trick it's just less user friendly
 
-As explained in the beggining the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ we are using to build the final doc. 
-The firs step will be to identify the section you want your page to be included. The following sections are curently available:
+As explained in the beginning the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ we are using to build the final doc. 
+The firs step will be to identify the section you want your page to be included. The following sections are currently available:
 
 -   **Getting started**: everything you need to know to use SEPAL
         
@@ -307,7 +307,7 @@ The firs step will be to identify the section you want your page to be included.
 
 Now that you have selected a section you can create a documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx and the one we presented in the first section of this page. To keep the consistency of the folders and help people that will maintain the images, the images you will use should live in the following folder: :code:`sepal-doc/docs/source/img/<section>/<page>/`. 
 
-Add now the page you've created to the :code:`toctree` directive (table of content) in the :code:`<section>/index.rst` file. You just need to add your filename without the extention respecting the indentation as follow:
+Add now the page you've created to the :code:`toctree` directive (table of content) in the :code:`<section>/index.rst` file. You just need to add your filename without the extension respecting the indentation as follow:
 
 .. code-block:: rst
 
@@ -350,7 +350,7 @@ If you think that an image is missing you can add one in a any of the page. add 
 
             <A caption>
 
--   the :code:`image` directive is easier to manipulate but have less functionnalities
+-   the :code:`image` directive is easier to manipulate but have less functionalities
 
     .. code-block:: rst 
 
@@ -437,19 +437,19 @@ Doc spell check
 
     Experimental feature, still require some work to identify all the FAO related words and avoid false positives.
 
-If you want to spell check your work you can run a specific building tool based on `sphinxcontrib-spelling <https://sphinxcontrib-spelling.readthedocs.io/en/latest/customize.html#private-dictionaries>`_. Open a terminal and move to the :code:`sepal-doc/docs/` forler. There run the following command: 
+If you want to spell check your work you can run a specific building tool based on `sphinxcontrib-spelling <https://sphinxcontrib-spelling.readthedocs.io/en/latest/customize.html#private-dictionaries>`_. Open a terminal and move to the :code:`sepal-doc/docs/` folder. There run the following command: 
 
 .. code-block::
 
     make spelling
 
-A long output of mispelled word will be displayed in your terminal. it's not really user-friendly. It's also building a spelling folder that contains all the files with mispelled words  in :code:`sepal-doc/docs/build/spelling/`. 
+A long output of misspelled word will be displayed in your terminal. it's not really user-friendly. It's also building a spelling folder that contains all the files with misspelled words  in :code:`sepal-doc/docs/build/spelling/`. 
 
 For each line you will have: 
 
 -   the file
 -   the line
--   the mispelled word
+-   the misspelled word
 -   a list of suggestion
 -   the context
 
@@ -493,13 +493,13 @@ Now you need to select what is going to be pushed and where. Assuming that you h
 .. figure:: ../img/team/contribute/compare_pr.png
     :alt: compare branches
 
-Now you enter the final step of your modifications. fill the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beggining of the documentation, you started your modifications to answer an issue from the issue tracker. It need to be referenced in your PR message at line 2 using :code:`#<issue number>`. It will help the maintainers that will review your PR understanding what you are adding to the documentation. 
+Now you enter the final step of your modifications. fill the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beginning of the documentation, you started your modifications to answer an issue from the issue tracker. It need to be referenced in your PR message at line 2 using :code:`#<issue number>`. It will help the maintainers that will review your PR understanding what you are adding to the documentation. 
 
 .. note::
     
     You can click on the preview button to see what your PR look like with links
 
-The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behaviour) (2). This will allow the maintainers to make modifications to your PR files (e.g. if you made a mistake in a rst directive)
+The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (2). This will allow the maintainers to make modifications to your PR files (e.g. if you made a mistake in a rst directive)
 
 When everything is set, you can click on :code:`create pull request` (3). 
 
@@ -508,7 +508,7 @@ When everything is set, you can click on :code:`create pull request` (3).
 
     Validate the creation of the PR
 
-Some check will be performed automatically to check if your PR can be build with readTheDoc and distribute in https://docs.sepal.io.
+Some check will be performed automatically to check if your PR can be build with ReadTheDoc and distribute in https://docs.sepal.io.
 
 .. figure:: ../img/team/contribute/ci_pr.png
     :alt: ci in pr 

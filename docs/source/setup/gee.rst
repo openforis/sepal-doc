@@ -178,7 +178,7 @@ If you need to upload a raster image use the :code:`Image` button. A popup windo
 Shape
 ^^^^^
 
-If you need to upload a shape as a :code:`ee.FeatureCollection`, click on the :code:`shape upload`Button. A popup window will open itself. In this popup select the files you want to upload from your computer: It can be any shape file in the following fomrats: :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`. Keep in mind that if you didn't compressed it, a :code:`.shp` alone is not sufficient and must come with all the other files describing the shape as in the following example: 
+If you need to upload a shape as a :code:`ee.FeatureCollection`, click on the :code:`shape upload`Button. A popup window will open itself. In this popup select the files you want to upload from your computer: It can be any shape file in the following formats: :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`. Keep in mind that if you didn't compressed it, a :code:`.shp` alone is not sufficient and must come with all the other files describing the shape as in the following example: 
 
 .. image:: ../img/setup/gee/upload_shape.png
     :alt: upload shp
