@@ -10,6 +10,19 @@ sepal-doc
 .. image:: https://readthedocs.org/projects/sepal-doc/badge/?version=latest
     :target: https://sepal-doc.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status 
+    
+.. image:: https://img.shields.io/youtube/channel/views/UCtpxScciUj0fjMmhpYsAZbA?logo=youtube 
+    :target: https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA
+    :alt: youtube
+    
+.. image:: https://img.shields.io/twitter/follow/openforis?color=%231DA1F2&logo=twitter&logoColor=%231DA1F2
+    :target: https://twitter.com/openforis
+    :alt: twitter
+    
+.. image:: https://img.shields.io/stackexchange/gis/t/sepal?label=GIS.StackExchange&logo=stackexchange
+    :target: https://gis.stackexchange.com/questions/tagged/sepal
+    :alt: gis
+    
 
 This folder gather all the documentation material of the sepal platform: `<https://sepal.io>`_
 
