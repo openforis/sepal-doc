@@ -43,9 +43,8 @@ spelling_lang='en_US'
 spelling_show_suggestions=True
 spelling_exclude_patterns=['modules/dwn/*.rst']
 spelling_filters = ['_filters.Names']
-spelling_word_list_filename=[
-    str(Path(__file__).expanduser().parent.joinpath('data', 'spelling', 'en_US.txt'))
-]
+spelling_word_list_filename=[str(Path(__file__).expanduser().parent.joinpath('data', 'spelling', 'en_US.txt'))]
+spelling_verbose = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
