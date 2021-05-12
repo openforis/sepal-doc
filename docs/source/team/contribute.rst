@@ -271,7 +271,7 @@ Open the :code:`sepal-doc` folder in your favorite IDE it will be easier for mod
     Any TextEdit software can do the trick it's just less user friendly
 
 As explained in the beginning the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ we are using to build the final doc. 
-The firs step will be to identify the section you want your page to be included. The following sections are currently available:
+The first step will be to identify the section you want your page to be included. The following sections are currently available:
 
 -   **Getting started**: everything you need to know to use SEPAL
         
