@@ -10,5 +10,6 @@
     "planet_order": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst",
     "bfast_gpu": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst",
     "alos_mosaics": "https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/en.rst",
-    "sdg_indicator": "https://raw.githubusercontent.com/12rambau/sdg_indicators_module/master/doc/en.rst"
+    "sdg_indicator": "https://raw.githubusercontent.com/12rambau/sdg_indicators_module/master/doc/en.rst",
+    "vector_file_management": "https://raw.githubusercontent.com/openforis/import_to_gee/master/doc/en.rst"
 }
