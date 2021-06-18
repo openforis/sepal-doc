@@ -12,5 +12,6 @@
     "sdg_indicator": "https://raw.githubusercontent.com/12rambau/sdg_indicators_module/master/doc/en.rst",
     "coverage_analysis": "https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/en.rst",
     "damage_proxy_map": "https://raw.githubusercontent.com/BuddyVolly/damage_proxy_maps/main/doc/en.rst",
-    "seplan": "https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/en.rst"
+    "seplan": "https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/en.rst",
+    "fcdm": "https://raw.githubusercontent.com/12rambau/fcdm/master/doc/en.rst"
 }
