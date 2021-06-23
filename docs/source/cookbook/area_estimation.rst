@@ -1197,27 +1197,19 @@ Before selecting :code:`Download Images`, we will look into the :code:`Optional 
 
 Different parameters can be changed here. These include the parameters that should be calibrated according to your area of interest and specific forest characteristics. Default values are specific to southern African forests.
 
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Parameter**              | **Role**                                                                                                                                                                                                                                                                                    |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Lee Filter                 | Applies a Lee filter to the data. This reduces inherent speckle noise in SAR imagery. Uncheck if you do not want the filter applied.                                                                                                                                                        |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Window size                | Lee filter window size. Defaults to 5 x 5 pixels.                                                                                                                                                                                                                                           |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Downsample factor          | Applies downsampling to inputs by specifying an integer factor to downsample by. Defaults to 1 - no downsampling.                                                                                                                                                                           |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Forest threshold           | A forest AGB threshold (in tonnes per hectare) to separate forest from non-forest (specific to your location). Defaults to 10 tC/ha.                                                                                                                                                        |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Area threshold             | A minimum area threshold (in hectares) to be counted as forest (e.g. a forest patch must be greater than 1 ha in size). Defaults to 0 ha.                                                                                                                                                   |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Change area threshold      | A threshold for a minimum change in forest area required to be flagged as a change. Defaults to 2 ha. This is for users who aim to produce change maps.                                                                                                                                     |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Change magnitude threshold | The minimum absolute change in biomass (in tonnes per hectare) to be flagged as a change. Defaults to 15 tC/ha.This is for users who aim to produce change maps.                                                                                                                            |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Contiguity                 | The criterion of contiguity between two spatial units. The rook criterion defines neighbors by the existence of a common edge between two spatial units. The queen criterion is somewhat more encompassing and defines neighbors as spatial units sharing a common edge or a common vertex. |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Polarisation               | Which SAR polarisation to use. Defaults to HV.                                                                                                                                                                                                                                              |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. csv-table::
+    :header: Parameter, Role
+
+    Lee filter, Applies a Lee filter to the data. This reduces inherent speckle noise in SAR imagery. Uncheck if you do not want the filter applied.
+    Window size, Lee filter window size. Defaults to 5 x 5 pixels.
+    Downsample factor, Applies downsampling to inputs by specifying an integer factor to downsample by. Defaults to 1 - no downsampling.
+    Forest threshold, A forest AGB threshold (in tonnes per hectare) to separate forest from non-forest (specific to your location). Defaults to 10 tC/ha.
+    Area threshold, A minimum area threshold (in hectares) to be counted as forest (e.g. a forest patch must be greater than 1 ha in size). Defaults to 0 ha.
+    Change area threshold, A threshold for a minimum change in forest area required to be flagged as a change. Defaults to 2 ha. This is for users who aim to produce change maps. 
+    Change magnitude threshold, The minimum absolute change in biomass (in tonnes per hectare) to be flagged as a change. Defaults to 15 tC/ha.This is for users who aim to produce change maps.
+    Contiguity, The criterion of contiguity between two spatial units. The rook criterion defines neighbors by the existence of a common edge between two spatial units. The queen criterion is somewhat more encompassing and defines neighbors as spatial units sharing a common edge or a common vertex.
+    Polarisation, Which SAR polarisation to use. Defaults to HV.
+
 
 We will leave the parameters with default values.
 
@@ -1313,41 +1305,28 @@ If you followed these exact steps, your outputs should look similar to the ones 
 
 A summary of each output is described in the table below:
 
-+--------------------+------------------------------------------------------------------+
-| **Output**         | **Description**                                                  |
-+--------------------+------------------------------------------------------------------+
-| Gamma0             | Gamma0 backscatter in decibels for the polarization specified    |
-+--------------------+------------------------------------------------------------------+
-| Biomass            | Biomass in tonnes per hectare                                    |
-+--------------------+------------------------------------------------------------------+
-| Forest/Woody cover | Binary classification of forested (1) and non-forested (0) areas |
-+--------------------+------------------------------------------------------------------+
-| Change type        | Change described in 7 different types. They are specified below  |
-+--------------------+------------------------------------------------------------------+
-| Biomass change     | Change in biomass in tonnes per hectare                          |
-+--------------------+------------------------------------------------------------------+
-| Deforestation risk | Risk of deforestation from Low (1) to High (3)                   |
-+--------------------+------------------------------------------------------------------+
+.. csv-table::
+    :header: Output, Description
 
+    Gamma0, Gamma0 backscatter in decibels for the polarization specified
+    Biomass, Biomass in tonnes per hectare
+    Forest/Woody cover, Binary classification of forested (1) and non-forested (0) areas
+    Change type, Change described in 7 different types. They are specified below
+    Biomass change, Change in biomass in tonnes per hectare
+    Deforestation risk, Risk of deforestation from Low (1) to High (3) 
+    
 There are 7 change types described in the BIOTA tool, each of which is defined as a number 0 to 6 and color-coded on the map. Change types are:
 
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| **Change class**  | **Pixel value** | **Description**                                                                                                                     |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Deforestation     | 1               | A loss of AGB from that crosses the ``forest_threshold``.                                                                           |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Degradation       | 2               | A loss of AGB in a location above the ``forest_threshold`` in both images.                                                          |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Minor Loss        | 3               | A loss of AGB that does not cross the ``change_area_threshold``, or ``change_magnitude_threshold``.                                 |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Minor Gain        | 4               | A gain of AGB that does not cross the ``change_area_threshold``, or ``change_magnitude_threshold``.                                 |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Growth            | 5               | A gain of AGB in a location above the ``forest_threshold`` in both images.                                                          |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Aforestation      | 6               | A gain of AGB that crosses the ``forest_threshold``.                                                                                |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Nonforest         | 0               | Below ``forest_threshold`` in both images.                                                                                          |
-+-------------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+.. csv-table::
+    :header: Change class, Pixel value, Description
+
+    Deforestation, 1, A loss of AGB from that crosses the ``forest_threshold``.
+    Degradation, 2, A loss of AGB in a location above the ``forest_threshold`` in both images.
+    Minor Loss, 3, A loss of AGB that does not cross the ``change_area_threshold`` or ``change_magnitude_threshold``.
+    Minor Gain, 4, A gain of AGB that does not cross the ``change_area_threshold`` or ``change_magnitude_threshold``.
+    Growth, 5,A gain of AGB in a location above the ``forest_threshold`` in both images.
+    Afforestation, 6, A gain of AGB that crosses the ``forest_threshold``.
+    Nonforest, 0, Below ``forest_threshold`` in both images.
 
 You can also use the :code:`Write Raster` option to save this map into your SEPAL account. Once you click on `Write Raster` you should see a message in green informing that your export has been completed.
 
