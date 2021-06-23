@@ -863,12 +863,6 @@ Turn on the imagery for your Classification and pan and zoom around the map. Com
 Image change detection
 ----------------------
 
-.. danger::
-
-   THIS MODULE IS UNDER CONSTRUCTION.
-
-   Recent changes to SEPAL mean that exiting new content is coming soon! Watch this space for the new Biota and Forest Cover Change tools.
-
 Image change detection allows us to understand differences in the landscape--or more correctly, in the satellite images taken of the landscape--over time. There are many questions that change detection methods can help answer, including “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”
 
 Most methods for change detection use algorithms backed by statistical methods to extract and compare information in the satellite images. To conduct change detection then, we need multiple mosaics or images, each one representing a point in time. Here, we will describe how to detect change between two dates using a simple model, however this theory can be expanded to include more dates. In addition, we'll describe time series analysis, which generally looks at longer periods of time.
@@ -1114,7 +1108,7 @@ Calculating above-ground biomass and change
 
 In this exercise, you will learn how to use the BIOmass Tool for Alos (BIOTA) to calculate above-ground biomass in dry forests and savannas, as well as change maps.
 
-The BIOTA tool is part of the Sattelite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics and it allows you to produce outputs of:
+The BIOTA tool is part of the Satellite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics and it allows you to produce outputs of:
 
 -   Calibrated Gamma0 backscatter
 -   Forest cover
@@ -1328,7 +1322,7 @@ A summary of each output is described in the table below:
 +--------------------+------------------------------------------------------------------+
 | Forest/Woody cover | Binary classification of forested (1) and non-forested (0) areas |
 +--------------------+------------------------------------------------------------------+
-| Change type        | Change describe in 7 different types. They are specified below   |
+| Change type        | Change described in 7 different types. They are specified below  |
 +--------------------+------------------------------------------------------------------+
 | Biomass change     | Change in biomass in tonnes per hectare                          |
 +--------------------+------------------------------------------------------------------+
