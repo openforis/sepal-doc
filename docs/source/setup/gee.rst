@@ -99,7 +99,7 @@ Now if you come back to your asset list (**zone 1** panel "asset") you should se
 Connection  between GEE  and SEPAL
 ----------------------------------
 
-As explain in the first section, SEPAL can work without being connected to your GEE account but you will loose numerous opportunities of interaction with our platform. In this section the connection procedure between GEE and SEPAL will be presented. 
+As explain in the first section, SEPAL can work without being connected to your GEE account but you will lose numerous opportunities of interaction with our platform. In this section the connection procedure between GEE and SEPAL will be presented. 
 
 Connection
 ^^^^^^^^^^

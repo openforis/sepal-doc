@@ -12,7 +12,7 @@ We will be happy to receive contributions from people that use this documentatio
 .. figure:: ../img/setup/index/planet_classification.png
     :alt: Uganda planet classifications
 
-    example of a classification of Uganda based on PlanetLab© data based on the classification tool of SEPAL
+    example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the classification tool in SEPAL
 
 Table of content 
 ----------------
