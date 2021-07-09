@@ -73,7 +73,7 @@ html_theme_options = {
         },
         {
             "name": "Twitter",
-            "url": "https://twitter.com/UNFAO",
+            "url": "https://twitter.com/OpenForis",
             "icon": "fab fa-twitter"
         },
         {
