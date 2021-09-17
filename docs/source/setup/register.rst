@@ -77,20 +77,3 @@ To set up a new account, click on :code:`Register a new account` and follow the 
 .. note::
 
     If you forget your password, click on :code:`Forgot your password?` and follow the instructions.
-
-Sign up for Planet Lab data
----------------------------
-
-.. note::
-
-    If you don't want to download Planet imagery (up to 5m of resolution you can skip this registration
-
-Through Norway's International Climate & Forests Initiative (NICFI), anyone can now access Planet's high-resolution, analysis-ready mosaics of the world's tropics in order to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity, and facilitate sustainable development.
-
-To set up a new account follow this link https://www.planet.com/nicfi/.
-
-.. image:: ../img/setup/register/nicfi_landing.png
-   :alt: planet nicfi landing page
-   :align: center
-
-Your Planet Explorer account will provide access to platform, API, and integration access to the tropical satellite monitoring products.
