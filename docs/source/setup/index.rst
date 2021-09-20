@@ -24,6 +24,7 @@ Table of content
     presentation
     gee
     filezilla
+    nicfi
 
 .. spelling::
 
