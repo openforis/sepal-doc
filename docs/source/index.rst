@@ -85,7 +85,7 @@ In partnership with
     :target: https://www.kfw.de/kfw.de-2.html
     :height: 60
 
-.. image:: img/logos/silvaCarbon.png
+.. image:: img/logos/SilvaCarbon.png
     :target: https://www.silvacarbon.org
     :height: 80
 
