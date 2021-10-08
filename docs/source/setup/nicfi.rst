@@ -20,13 +20,13 @@ The NICFI & Planet Basemaps for Tropical Forest Monitoring are now available in 
 
 First make sure you have a Google Earth Engine account. Follow _`this tutorial <setup/register.html#sign-up-to-gee>` to apply for a GEE account if you don’t already have one.
 
-Sign up for a NICFI Planet data access using the same email address that has access to Google Earth Engine. You can sign up for access to the NICFI data program here: `https://www.planet.com/nicfi/`_ and make sure to specify your email address that has access to GEE in the field “What is your GEE identity” 
+Sign up for a NICFI Planet data access using the same email address that has access to Google Earth Engine. You can sign up for access to the NICFI data program here: `<https://www.planet.com/nicfi/>`_ and make sure to specify your email address that has access to GEE in the field “What is your GEE identity” 
 
 .. image:: ../img/setup/register/nicfi_landing.png
    :alt: planet nicfi landing page
    :align: center
    
-.. tips::
+.. tip::
 
     If you are already a NICFI user and would like to access the Basemaps in GEE, you can apply for access using this `sign up page <https://www.planet.com/nicfi/?gee=show>`_. 
     

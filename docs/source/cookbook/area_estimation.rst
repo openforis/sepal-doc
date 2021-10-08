@@ -1240,7 +1240,7 @@ Here is a demonstration of the above steps:
 .. youtube:: d759Aqi85HE
     :height: 315
     :width: 560
-    :align: left
+    :align: center
 
 Processing the data and producing outputs
 """""""""""""""""""""""""""""""""""""""""
@@ -1280,7 +1280,7 @@ Here is a demonstration of the above steps:
 .. youtube:: OMGESeERRGo
     :height: 315
     :width: 560
-    :align: left
+    :align: start
 
 Displaying your outputs
 """""""""""""""""""""""
@@ -1345,7 +1345,7 @@ Here is a demonstration of the above steps:
 .. youtube:: my8U5TaV9IU
     :height: 315
     :width: 560
-    :align: left
+    :align: start
 
 Additional Resources
 """"""""""""""""""""
@@ -1501,21 +1501,19 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
    1. Navigate to your SEPAL **Terminal**.
    2. Type *1* to access the terminal of session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account. 
    3. Clone the deforest github repository to your SEPAL account.
-    ``` git clone https://github.com/smfm-project/deforest ``` 
+      
+      .. code-block:: console
+      
+          git clone https://github.com/smfm-project/deforest
+          
    4. Return to the SMFM notebook and repeat step 1.
-
-
 
 .. figure:: ../img/cookbook/area_estimation/smfm_clone_deforest.png
     :alt: Cloning a repository via the SEPAL terminal.
     :width: 450
     :align: center
 
-    
-
 3. Once you have successfully set up the tool, take a moment to read through the help document of the deforest tool that is output below the Jupyter notebook cell you just ran. In the next part we will explain in more detail some of the parameters.
-
-
 
 Process the time series
 """""""""""""""""""""""

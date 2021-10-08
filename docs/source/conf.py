@@ -35,7 +35,8 @@ extensions = [
     'sphinxcontrib.spelling',
     'notfound.extension',
     '_extentions.video',
-    '_extentions.line_break'
+    '_extentions.line_break',
+    '_extentions.custom_edit'
 ]
 
 # spelling options
@@ -52,7 +53,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ["**.ipynb_checkpoints"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -118,8 +119,13 @@ with module_dir.joinpath('en.json').open() as json_file:
     module_doc = json.load(json_file)
 
 for name in module_doc:
-    urlretrieve (module_doc[name], dwn_dir.joinpath(f'{name}.rst'))
+    dst = dwn_dir / f'{name}.rst'
     
+    urlretrieve (module_doc[name], dst)
+    
+    with dst.open("a") as f: 
+        f.writelines(["", f".. custom-edit:: {module_doc[name]}"])
+                      
     # prompt for the readthedoc build
     print(f"{name} documentation have been copied to the dwn folder")
 
