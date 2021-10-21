@@ -76,6 +76,10 @@ To get an overview of all **GWB** modules enter the command: :code:`GWB`
     (https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/):
     Usage of GWB implies compliance with the conditions in the EULA_GWB.pdf
     (https://ies-ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf)
+    
+    GWB_check4updates
+       Display installed and current program version
+       and test for program updates 
  
     GWB_ACC: Accounting of image objects and area classes
         Requirements: 1b-BG, 2b-FG, optional: 0b-missing, 
@@ -174,7 +178,7 @@ Additional, general remarks:
 
     .. code-block:: console
 
-        $ /opt/GWB/check4updates
+        $ GWB_check4updates
 
 -   Any distance or area measures are calculated in pixels. It is therefore crucial to use images in equal area projection. Conversion to meters/hectares require to know the pixel resolution.
 
@@ -212,25 +216,28 @@ Processing parameter options are stored in the file :code:`input/acc-parameters.
     ;; ACC: Accounting of image objects and patch area size classes
     ;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
     ;; optional: 3b-special background 1, 4b-special background 2
-    ;; Please specify entries at lines 23-26 ONLY using the following options:
+    ;; Please specify entries at lines 25-29 ONLY using the following options:
     ;;
-    ;; line 23: Foreground connectivity: 8 (default) or 4 
-    ;; line 24: spatial pixel resolution in meters: 
-    ;; line 25: up to 5 area thresholds [unit: pixels] in increasing order
+    ;; line 25: Foreground connectivity: 8 (default) or 4 
+    ;; line 26: spatial pixel resolution in meters: 
+    ;; line 27: up to 5 area thresholds [unit: pixels] in increasing order
     ;;          and separated by a single space.
-    ;; line 26: output option:   default (stats + image of viewport) OR 
-    ;;          detailed (stats + images of ID, area, viewport)
+    ;; line 28: output option:   default (stats + image of viewport) OR 
+    ;;   detailed (stats + images of ID, area, viewport; requires much more CPU/RAM!))
+    ;; line 29: big3pink: 0 (no - default) or 1 (show 3 largest objects in pink color)
     ;;
     ;; an example parameter file with default output would look like this:
     ;; 8
     ;; 25
     ;; 200 2000 20000 100000 200000
     ;; default
+    ;; 0
     ****************************************************************************
     8
     25
     200 2000 20000 100000 200000
     default
+    1
     ****************************************************************************
 
 Example
@@ -542,19 +549,19 @@ Processing parameter options are stored in the file :code:`input/frag-parameters
     ;; GTB_FRAG parameter file: 
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
-    ;; FAD = fragmentation analysis at up to 10 user-selected observation scales
+    ;; FOS = fragmentation analysis at up to 10 user-selected observation scales
     ;; 
-    ;; FAD: per-pixel density, color-coded into 6 fragmentation classes
-    ;; FAD-APP2: average per-patch density, color-coded into 2 classes
-    ;; FAD-APP5: average per-patch density, color-coded into 5 classes
+    ;; FOS5/6: per-pixel density, color-coded into 5/6 fragmentation classes
+    ;; FOS-APP2: average per-patch density, color-coded into 2 classes
+    ;; FOS-APP5: average per-patch density, color-coded into 5 classes
     ;; 
     ;; Input image requirements: 1b-background, 2b-foreground, optional: 
     ;;    0b-missing, 3b-special background, 4b-non-fragmenting background
     ;;
-    ;; FAD will provide an image per observation scale and summary statistics.
+    ;; FOS will provide an image per observation scale and summary statistics.
     ;;
     ;; Please specify entries at lines 32-36 ONLY using the following options:
-    ;; line 32: FAD  or  FAD-APP2  or  FAD-APP5
+    ;; line 32: FOS5 (default)  or  FOS6  or  FOS-APP2  or  FOS-APP5
     ;; line 33: Foreground connectivity: 8 (default) or 4 
     ;; line 34: pixel resolution [meters]
     ;; line 35: up to 10 window sizes [unit: pixels] in increasing order
@@ -562,8 +569,8 @@ Processing parameter options are stored in the file :code:`input/frag-parameters
     ;; line 36: high-precision: 1 (default) or 0
     ;;          (1-float precision, 0-rounded byte)
     ;;
-    ;; an example parameter file doing FAD-APP5 and using 8-connected foreground:
-    ;; FAD-APP5
+    ;; an example parameter file doing FOS5 and using 8-connected foreground:
+    ;; FOS5
     ;; 8
     ;; 100
     ;; 27
