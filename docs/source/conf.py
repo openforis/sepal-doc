@@ -65,6 +65,9 @@ html_theme = 'pydata_sphinx_theme'
 html_logo = os.path.abspath('img/sepal.png') 
 html_favicon = os.path.abspath('img/favicon.ico')
 html_last_updated_fmt = ''
+html_sidebars = {
+    "**": ["search-field", "sidebar-nav-bs"]
+}
 html_theme_options = {
     "icon_links": [
         {
