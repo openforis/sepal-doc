@@ -43,64 +43,80 @@ In partnership with
 
 .. image:: img/logos/jrc.png
     :target: https://ec.europa.eu/jrc/en
+    :class: ma-2
     :height: 90
 
 .. image:: img/logos/esa.png
     :target: https://www.esa.int
+    :class: ma-2
     :height: 70
 
 .. image:: img/logos/eth.png
     :target: https://ethz.ch/en.html
+    :class: ma-2
     :height: 30
 
 .. image:: img/logos/finland.png
     :target: https://um.fi/frontpage
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/germany.png
     :target: https://www.bmu.de/en/
+    :class: ma-2
     :height: 110
 
 .. image:: img/logos/gfoi.png
     :target: http://www.fao.org/gfoi/home/en/
+    :class: ma-2
     :height: 90
 
 .. image:: img/logos/google.png
     :target: https://about.google/intl/en-US/
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/jaxa.png
     :target: https://global.jaxa.jp
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/jica.png
     :target: https://www.jica.go.jp/english/index.html
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/nasa.png
     :target: https://www.nasa.gov
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/kfw.png
     :target: https://www.kfw.de/kfw.de-2.html
+    :class: ma-2
     :height: 60
 
 .. image:: img/logos/SilvaCarbon.png
     :target: https://www.silvacarbon.org
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/servir.png
     :target: https://www.servirglobal.net
+    :class: ma-2
     :height: 80
 
 .. image:: img/logos/sig.png
     :target: https://sig-gis.com
+    :class: ma-2
     :height: 100
 
 .. image:: img/logos/wageningen.png
     :target: https://www.wur.nl/en.htm
+    :class: ma-2
     :height: 110
 
 .. image:: img/logos/worldBank.png
     :target: https://www.worldbank.org/en/home
+    :class: ma-2
     :height: 90
