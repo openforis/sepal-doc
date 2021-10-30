@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
+    'sphinxcontrib.images',
     'notfound.extension',
     '_extentions.video',
     '_extentions.line_break',
