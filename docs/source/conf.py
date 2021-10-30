@@ -48,9 +48,6 @@ spelling_filters = ['_filters.Names']
 spelling_word_list_filename=[str(Path(__file__).expanduser().parent.joinpath('data', 'spelling', 'en_US.txt'))]
 spelling_verbose = False
 
-# image configuration 
-images_config = {"override_image_directive": True}
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
