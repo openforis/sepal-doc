@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
+    'sphinxcontrib.images',
     'notfound.extension',
     '_extentions.video',
     '_extentions.line_break',
@@ -46,6 +47,9 @@ spelling_exclude_patterns=['modules/dwn/*.rst']
 spelling_filters = ['_filters.Names']
 spelling_word_list_filename=[str(Path(__file__).expanduser().parent.joinpath('data', 'spelling', 'en_US.txt'))]
 spelling_verbose = False
+
+# image configuration 
+images_config = {"override_image_directive": True}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
