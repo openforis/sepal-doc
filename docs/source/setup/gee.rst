@@ -104,7 +104,7 @@ As explain in the first section, SEPAL can work without being connected to your 
 Connection
 ^^^^^^^^^^
 
-First go the landing page of SEPAL (`sepal.io <https:://sepal.io>`_) and connect yourself to your account using your credentials. 
+First go the landing page of SEPAL (`sepal.io <https://sepal.io>`_) and connect yourself to your account using your credentials. 
 
 On the following page, click on your **username** that you'll find at the bottom left side of the window. On the following image the user name is in the red rectangle (:code:`prambaud`).
 
