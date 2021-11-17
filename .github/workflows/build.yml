@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 * * *'
+  
+env:
+  RDT_URL: ${{ secrets.RDT_URL }}
+  RDT_TOKEN: ${{ secrets.RDT_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger RDT build 
+        run: curl -X POST -d "branches=master" -d "token=$RDT_TOKEN" $RDT_URL
