@@ -111,6 +111,12 @@ html_static_path = ['_static']
 # or fully qualified paths (eg. https://...)
 html_css_files = ['css/custom.css']
 
+# -- Options for images-------------------------------------------------------
+
+images_config = {
+    "download": False
+}
+
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
