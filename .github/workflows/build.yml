@@ -11,6 +11,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    stepts:
+    steps:
       - name: trigger RDT build 
         run: curl -X POST -d "branches=master" -d "token=$RDT_TOKEN" $RDT_URL
