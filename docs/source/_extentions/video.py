@@ -53,9 +53,9 @@ class Youtube(IframeVideo):
             src="https://www.youtube.com/embed/%(video_id)s"
             width="%(width)u" 
             height="%(height)u" 
+            title="YouTube video player"
             frameborder="0"
-            webkitAllowFullScreen 
-            mozallowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
         >
         </iframe>
