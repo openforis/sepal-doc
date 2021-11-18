@@ -7,7 +7,6 @@ SEPAL platform includes a variety of useful Command Line Interface utilities to 
 .. toctree::
     :maxdepth: 1
     
-    aws
     gdal
     gdrive
     gee
