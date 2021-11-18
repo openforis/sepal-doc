@@ -46,19 +46,19 @@ Start instance manually
 
 Some applications require more powerful instances than the default :code:`t1`. If the app documentation requires the user to start a specific instance type (e.g. a GPU machine :code:`g4` or :code:`g8`) please follow these steps prior to start the application. 
 
-#.   Go to the SEPAL termninal and wait for the instance selector to start
+#.  Go to the SEPAL termninal and wait for the instance selector to start
 
     .. thumbnail:: ../img/module/index/terminal.png
-        :title: the SEPAL instance selector
+       :title: the SEPAL instance selector
         
-#.   Type the instance name suggested in the documentation of your app and press :kbd:`Enter`.
+#.  Type the instance name suggested in the documentation of your app and press :kbd:`Enter`.
 
-#.   Wait for the instance to finish loading
+#.  Wait for the instance to finish loading
 
     .. thumbnail:: ../img/module/index/m4_started.png
         :title: start a m4 instance
         
-#.   Go back to the dashboard of application to launch your app. It will be automatically using the instance you opened and won't restart a :code:`t1`.
+#.  Go back to the dashboard of application to launch your app. It will be automatically using the instance you opened and won't restart a :code:`t1`.
 
 .. toctree::
     :maxdepth: 1
