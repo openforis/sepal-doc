@@ -55,7 +55,7 @@ Some applications require more powerful instances than the default :code:`t1`. I
     .. thumbnail:: ../img/module/index/terminal.png
         :title: the SEPAL instance selector
         
--   Type the instance name suggested in the documentation of your app and press :kmd:`Enter`.
+-   Type the instance name suggested in the documentation of your app and press :kbd:`Enter`.
 
 -   Wait for the instance to finish loading
 
