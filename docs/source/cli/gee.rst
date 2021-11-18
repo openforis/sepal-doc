@@ -5,20 +5,20 @@ The earthengine tool is a utility program that allows you to manage Earth Engine
 
 .. code-block:: console
 
-    earthengine
+    $ earthengine
 
 If the tool is properly installed then it will print out a short summary of available commands. To get help on a specific command, use:
 
 .. code-block:: console
 
-    earthengine command -h
+    $ earthengine command -h
 
 When you first install the Python API you will need to log in using the :code:`authenticate` command described below. 
 
 available commands 
 ------------------
 
-More information on the available command can be found on `Google API websit`<https://developers.google.com/earth-engine/guides/command_line>`__.
+More information on the available command can be found on `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__.
 
 .. code-block:: bash
 
