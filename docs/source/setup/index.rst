@@ -12,9 +12,6 @@ We will be happy to receive contributions from people that use this documentatio
 .. thumbnail:: ../img/setup/index/planet_classification.png
     :title: example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the classification tool in SEPAL
 
-Table of content 
-----------------
-
 .. toctree::
     :maxdepth: 1
     :hidden:
