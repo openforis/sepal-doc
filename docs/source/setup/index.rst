@@ -17,6 +17,7 @@ Table of content
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
     
     register
     presentation
