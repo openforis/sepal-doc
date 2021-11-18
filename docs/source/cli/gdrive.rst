@@ -1,4 +1,3 @@
-============
 Google Drive
 ============
 
@@ -6,10 +5,10 @@ Google Drive
 The `drive` CLI is a utility that allows managing the Google Drive account from the SEPAL console, to read the full documentation please refer to the Readme file directly in the GitHub repository https://github.com/odeke-em/drive. 
 
 Usage
-=====
+-----
 
-Upload SEPAL files.
--------------------
+Upload SEPAL files
+^^^^^^^^^^^^^^^^^^
 
 Start an authorization token:
 
@@ -28,7 +27,7 @@ Select a local folder and use `push` command.
 
 
 Additional commands
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
