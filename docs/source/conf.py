@@ -70,6 +70,7 @@ html_sidebars = {
     "**": ["search-field", "sidebar-nav-bs"]
 }
 html_theme_options = {
+    "show_prev_next": False,
     "icon_links": [
         {
             "name": "GitHub",
