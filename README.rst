@@ -4,7 +4,7 @@ sepal-doc
 =========
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
-    :target: https://opensource.org/licenses/MIT
+    :target: LICENSE
     :alt: License: MIT
 
 .. image:: https://readthedocs.org/projects/sepal-doc/badge/?version=latest
