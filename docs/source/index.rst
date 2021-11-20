@@ -120,3 +120,7 @@ In partnership with
     :target: https://www.worldbank.org/en/home
     :class: ma-2
     :height: 90
+
+.. |trash-icon| raw:: html
+
+    <i class="fa fa-trash"></i>

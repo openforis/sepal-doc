@@ -6,7 +6,8 @@
         "url": "https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/en.rst"
     },
     "bfast_explorer": {
-        "tag": "time-series"
+        "tag": "time-series",
+        "url": "https://raw.githubusercontent.com/12rambau/bfast-explorer/master/md/tutorial.rst"
     },
     "bfast_gpu": {
         "tag": "time-series",
