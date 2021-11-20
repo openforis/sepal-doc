@@ -32,3 +32,4 @@ i.fa-stack-exchange:hover {color: #1e5397;}
 *
 **/
 a[data-lightbox] {cursor: zoom-in;}
+a[data-lightbox] img {padding: .25em;}
