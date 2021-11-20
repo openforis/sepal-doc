@@ -138,6 +138,7 @@ index_template = template_dir/"index.rst"
 
 # data 
 module_json = source_dir/"data"/'modules'/'en.json'
+no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/data/template/no_module.rst"
 
 # flush the modules folder 
 [f.unlink() for f in module_dir.glob("*.rst")]
@@ -153,17 +154,17 @@ for name in module_list:
     
     dst = dwn_dir / f'{name}.rst'
     
-    file = module_list[name].pop("url", "")
-    if file: 
+    file = module_list[name].pop("url", no_module_url)
+    if file != no_module_url: 
         urlretrieve (file, dst)
     else:
         copy(doc_template, dst)
         txt = dst.read_text()
-        txt = txt.replace("Module_name", name)
+        txt = txt.replace("Module_name", name).replace("=", "="*len(name))
         dst.write_text(txt)
         
     with dst.open("a") as f: 
-        f.writelines(["", f".. custom-edit:: {module_list[name]}"])
+        f.writelines(["", f".. custom-edit:: {file}"])
         
     # create a tag stub file 
     tag = module_list[name].pop("tag", "other")
@@ -172,7 +173,7 @@ for name in module_list:
     if not tag_file.is_file():
         copy(tag_template, tag_file)
         txt = tag_file.read_text()
-        txt = txt.replace("module_tag", tag)
+        txt = txt.replace("module_tag", tag).replace("=", "="*len(tag))
         tag_file.write_text(txt)
         
         with module_index.open("a") as f:
