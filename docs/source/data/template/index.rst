@@ -61,10 +61,5 @@ Some applications require more powerful instances than the default :code:`t1`. I
 #.  Go back to the dashboard of application to launch your app. It will be automatically using the instance you opened and won't restart a :code:`t1`.
 
 .. toctree::
+    :hidden:
     :maxdepth: 1
-    :glob:
-
-    dwn/*
-
-
- 

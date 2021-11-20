@@ -54,7 +54,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["**.ipynb_checkpoints"]
+exclude_patterns = ["**.ipynb_checkpoints", 'data/template/*.rst']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -70,6 +70,7 @@ html_sidebars = {
     "**": ["search-field", "sidebar-nav-bs"]
 }
 html_theme_options = {
+    "show_nav_level": 2,
     "show_prev_next": False,
     "icon_links": [
         {
@@ -112,7 +113,7 @@ html_static_path = ['_static']
 # or fully qualified paths (eg. https://...)
 html_css_files = ['css/custom.css']
 
-# -- Options for images-------------------------------------------------------
+# -- Options for images -------------------------------------------------------
 
 images_config = {
     "download": False
@@ -121,22 +122,67 @@ images_config = {
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
+from shutil import copy
 import json 
 
-module_dir = Path(__file__).expanduser().parent.joinpath('data', 'modules')
-dwn_dir = Path(__file__).expanduser().parent.joinpath('modules', 'dwn')
+# dirs 
+source_dir = Path(__file__).expanduser().parent
+module_dir = source_dir/'modules'
+dwn_dir = module_dir/'dwn'
+template_dir = source_dir/"data"/"template"
 
-with module_dir.joinpath('en.json').open() as json_file:
-    module_doc = json.load(json_file)
+# templates
+tag_template = template_dir/"module_tag.rst"
+doc_template = template_dir/"no_module.rst"
+index_template = template_dir/"index.rst"
 
-for name in module_doc:
+# data 
+module_json = source_dir/"data"/'modules'/'en.json'
+
+# flush the modules folder 
+[f.unlink() for f in module_dir.glob("*.rst")]
+
+# dst files 
+module_index = module_dir/"index.rst"
+copy(index_template, module_index)
+
+with module_json.open() as json_file:
+    module_list = json.load(json_file)
+
+for name in module_list:
+    
     dst = dwn_dir / f'{name}.rst'
     
-    urlretrieve (module_doc[name], dst)
-    
+    file = module_list[name].pop("url", "")
+    if file: 
+        urlretrieve (file, dst)
+    else:
+        copy(doc_template, dst)
+        txt = dst.read_text()
+        txt = txt.replace("Module_name", name)
+        dst.write_text(txt)
+        
     with dst.open("a") as f: 
-        f.writelines(["", f".. custom-edit:: {module_doc[name]}"])
-                      
+        f.writelines(["", f".. custom-edit:: {module_list[name]}"])
+        
+    # create a tag stub file 
+    tag = module_list[name].pop("tag", "other")
+    tag_file = module_dir/f"{tag}.rst"
+    
+    if not tag_file.is_file():
+        copy(tag_template, tag_file)
+        txt = tag_file.read_text()
+        txt = txt.replace("module_tag", tag)
+        tag_file.write_text(txt)
+        
+        with module_index.open("a") as f:
+            f.write(f"\n    {tag}")
+            
+    with tag_file.open('a') as f:
+        f.write(f"\n    dwn/{name}")
+        
     # prompt for the readthedoc build
     print(f"{name} documentation have been copied to the dwn folder")
+
+
 
