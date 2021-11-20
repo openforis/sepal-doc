@@ -16,26 +16,19 @@
 *   text justification
 *
 **/
-p {
-  text-align: justify;
-}
+p {text-align: justify;}
 
 /*********************************************************************************
 *   logo coloring
 *
 **/
-i.fa-twitter:hover {
-    color: #1da1f2;
- }
+i.fa-twitter:hover {color: #1da1f2;}
+i.fa-youtube:hover {color: #ff0000;}
+i.fa-github:hover {color: #333;}
+i.fa-stack-exchange:hover {color: #1e5397;}
 
- i.fa-youtube:hover {
-    color: #ff0000;
- }
-
- i.fa-github:hover {
-    color: #333;
- }
-
- i.fa-stack-exchange:hover {
-    color: #1e5397;
- }
+/*********************************************************************************
+*   change the lightbox cursor
+*
+**/
+a[data-lightbox] {cursor: zoom-in;}
