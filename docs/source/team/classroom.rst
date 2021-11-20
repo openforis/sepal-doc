@@ -109,8 +109,6 @@ English
 .. csv-table::
     :header-rows: 1
     :file: ../data/general/en.csv
-    :widths: auto
-    :align: center
 
 French
 """"""
@@ -118,8 +116,6 @@ French
 .. csv-table::
     :header-rows: 1
     :file: ../data/general/fr.csv
-    :widths: auto
-    :align: center
 
 Spanish
 """""""
@@ -127,8 +123,13 @@ Spanish
 .. csv-table::
     :header-rows: 1
     :file: ../data/general/es.csv
-    :widths: auto
-    :align: center
+
+Portuguese
+""""""""""
+
+.. csv-table::
+    :header-rows: 1
+    :file: ../data/general/pr.csv
 
 Project classroom
 ^^^^^^^^^^^^^^^^^
@@ -139,8 +140,6 @@ English
 .. csv-table::
     :header-rows: 1
     :file: ../data/project/en.csv
-    :widths: auto
-    :align: center
 
 French
 """"""
@@ -148,8 +147,6 @@ French
 .. csv-table::
     :header-rows: 1
     :file: ../data/project/fr.csv
-    :widths: auto
-    :align: center
 
 Spanish
 """""""
@@ -157,6 +154,4 @@ Spanish
 .. csv-table::
     :header-rows: 1
     :file: ../data/project/es.csv
-    :widths: auto
-    :align: center
 
