@@ -17,14 +17,37 @@
     "gfc_wrapper_python": {
         "url": "https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/en.rst"
     },
+    "gfc_wrapper_R": {},
+    "geo_processing": {},
+    "gwl_analysis": {},
+    "plot_generator": {
+        "tag": "inventories"
+    },
+    "sar_time_series": {
+        "tag": "time-series"
+    },
     "gwb": {
         "url": "https://raw.githubusercontent.com/12rambau/gwb/master/doc/en.rst"
     },
     "planet_order": {
-        "url": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst",
+        "tag": "PlanetLab"
     },
     "bfast_gpu": {
-        "url": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst",
+        "tag": "time-series"
+    },
+    "bfast_r": {
+        "tag": "time-series"
+    },
+    "bfast_explorer": {
+        "tag": "time-series"
+    },
+    "bootstrap_sampling_simulator": {
+        "tag": "inventories"
+    },
+    "cusum": {
+        "tag": "time-series"
     },
     "alos_mosaics": {
         "url": "https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/en.rst"
@@ -36,7 +59,8 @@
         "url": "https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/en.rst"
     },
     "damage_proxy_map": {
-        "url": "https://raw.githubusercontent.com/BuddyVolly/damage_proxy_maps/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/BuddyVolly/damage_proxy_maps/main/doc/en.rst",
+        "tag": "disaster"
     },
     "seplan": {
         "url": "https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/en.rst"
@@ -45,12 +69,21 @@
         "url": "https://raw.githubusercontent.com/12rambau/fcdm/master/doc/en.rst"
     },
     "sepafe": {
-        "url": "https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/en.rst",
+        "tag": "PlanetLab"
     },
     "sae_analysis": {
         "url": "https://raw.githubusercontent.com/openforis/accuracy-assessment/master/aa_analysis/doc.rst"
     },
+    "sae_design": {},
     "sepal_mgci": {
         "url": "https://raw.githubusercontent.com/dfguerrerom/sepal_mgci/master/doc/en.rst"
-    }
+    },
+    "smfm_deforest": {
+        "tag": "SMFM"
+    },
+    "smfm_biota": {
+        "tag": "SMFM"
+    },
+    "tmf": {}
 }
