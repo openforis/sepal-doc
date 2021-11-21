@@ -14,7 +14,8 @@
         "url": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst"
     },
     "bfast_r": {
-        "tag": "time-series"
+        "tag": "time-series",
+        "url": "https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/tutorial.rst"
     },
     "bootstrap_sampling_simulator": {
         "tag": "inventories"
