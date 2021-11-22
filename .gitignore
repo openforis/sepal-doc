@@ -128,8 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# module documentation file 
+# module documentation files
 docs/source/modules/dwn/*
+docs/source/modules/*.rst
 
 # visual studio code
 .vscode/

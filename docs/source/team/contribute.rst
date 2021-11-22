@@ -60,10 +60,15 @@ Here you'll find an example:
 
 .. code-block:: rst 
 
-    .. youtube:: anwy2MPT5RE
+    .. youtube:: Ub6N8aWThw4
         :height: 315
         :width: 560
-        :align: left
+        :align: start
+
+.. youtube:: Ub6N8aWThw4
+    :height: 315
+    :width: 560
+    :align: start
 
 line-break
 """"""""""
@@ -76,6 +81,8 @@ Here you'll find an example:
 .. code-block:: rst
 
     .. line-break::
+
+.. line-break
 
 graphviz
 """"""""
@@ -92,6 +99,23 @@ Here you'll find an example:
         "bar" -> "baz";
         }
 
+
+.. graphviz::
+
+    digraph foo {
+    "bar" -> "baz";
+    }
+
+icon
+""""
+
+ReST role to include inline icons in the documenation (usualy when referencing a btn). You can find the icon you're looking for in the fontawesome library `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
+
+.. code-block:: rst 
+
+    I'm a folder icon: :icon:`fa fa-folder`
+
+I'm a folder icon: :icon:`fa fa-folder`
 
 Minor change
 ------------
