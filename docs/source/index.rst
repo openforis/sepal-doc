@@ -30,7 +30,7 @@ SEPAL is always improving. Our team members try their best to constantly update 
 
 SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway.
 
-If you want to start using Sepal, jump to the `Getting started <setup/index.html>`_ section!
+If you want to start using Sepal, jump to the `Getting started <setup/index.html>`_ section! 
 
 Thanks to
 ---------
