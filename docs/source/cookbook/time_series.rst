@@ -458,33 +458,29 @@ Once the downloading process is done, you can access the data in your SEPAL fold
             ├── ...
             └── <tile number>
 
-The data are stored in a folder using the name of the time series as it was set in the first section of this document. 
+.. danger::
 
-As the number of data is too big in spatial terms to be exported at once, the data are cut into small pieces and brought back together in a :code:`.vrt` file. 
+    Understanding how images are stored in a Time Series is only required if you want to manually use them. The SEPAL applications are bound to this tiling sytem and can digest this information for you.
 
-**Tile number** 
+The data are stored in a folder using the name of the time series as it was set in the first section of this document. SEPAL team was forced to use this folder structure as Google Earth Engine is enable to export an :code:`ee.ImageCollection`. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`stack.vrt` file. 
 
-It is the folder containing all the information of a SEPAL tile. A SEPAL tile is a spatial subset of the time series.
+The AOI provided by the user will be split in multiple SEPAL tiles. The AOI is an :code:`ee.FeatureCollection`, each feature is downloaded in a different tile. if the Tile is bigger than 2°x2° (EPSG:4326) then the feature is split again until all the tiles are smaller than the maximal 2° size. The tiles are identified by their :code:`<tile_number>`.
 
-**Chunks**
+To limit the size of the downloaded images, in each SEPAL tile, the time period is splitted in chunks of 3 month. they are identified by their :code:`<chunk-<start>_<end>`. Chunks are image folders. As a SEPAL tile is still bigger than what GEE can download at once, the images are splitted in GEE tile. This tiling system uses it's own identification system (000000xxxx-000000xxxx). In consequence chunks contain tile raster images. Each one of these images is composed of 1 band per observation date, with the value of the measure for each pixel. The bands are named with the date. 
 
-Each SEPAL tile folder contains several chunks, these chunks are a time subset of the SEPAL tile. They are defined by a :code:`start date` and an :code:`<end date>`. Each one contains the related images using the following convention: :code:`<TS name>_<tile number>_<start_date>_<end date>-<gee tiling id>.tif`` where :code:`<gee tiling id>` is the id of the image in the GEE tiling system (coordinates of the top-left corner of the Image).
+To gather all theses raster together a first agregation on time is performed. One :code:`stack.vrt` is created per GEE tile meaning that each :code:`stack.vrt`file contains all the :code:`*<gee tiling id>.tif` contained in each chunk. reconstituting the full time period on the smallest spatial unit: the gee tile. each file is stored in a folder called :code:`tile-<gee tiling id>`.
 
-**Tile**
+Finally information are gathered at the spatialy at the SEPAL tile level in the main :code:`stack.vrt` file.
 
-Each SEPAL tile folder contains several tiles. These tiles are the spatial reconstruction of the chunking process for a specific GEE tile represented by its :code:`gee tiling id>`. They are gathering all-time dates. It contains one single file :code:`stack.vrt`. 
+The last file: :code:`date.csv` gather all the observation dates in chronological order.
 
-**date.csv**
+.. note::
 
-This file gathers all the dates available in the SEPAL tile. Information is stored as 1 line per date using the following format: :code:`yyyy-mm-dd`
+    The dates contained in :code:`date.csv` can differ from one SEPAL tile to another due to data availability and pre-processing filters
 
-.. note:: 
+.. tip:: 
 
-    The dates can be different from one tile to another due to pre-processing or data availability.
-
-**stack.vrt**
-
-The final file gathers all the tile :code:`.vrt` files. 
+    The full folder with a concistent treefolder is required to read the `.vrt`
 
 Here is an example of a real TS folder:
 
