@@ -273,34 +273,34 @@ The time series will use a single observation for each pixel. This observation c
         -   aerosol attributes
         -   
     *   -   :guilabel:`pan`
-        -   [need information]
+        -   panchromatic band
         -   
     *   -   :guilabel:`cirrus`
-        -   [need information]
+        -   cirrus cloud detection
         -   
     *   -   :guilabel:`thermal`
-        -   [need information]
+        -   thermal
         -   
     *   -   :guilabel:`thermal2`
-        -   [need information]
+        -   thermal2
         -
     *   -   :guilabel:`brightness`
-        -   brightness
-        -
+        -   brightness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
+        -   :math:`0.3037 (band 1) + 0.2793 (band 2) + 0.4743 (band 3) + 0.5585 (band 4) + 0.5082 (band 5) + 0.1863 (band 7)`
     *   -   :guilabel:`greeness`
-        -   [need information]
-        -
+        -   greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
+        -   :math:`−0.2848 (band 1) − 0.2435 (band 2) − 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) − 0.1800 (band 7)`
     *   -   :guilabel:`wetness`
-        -   [need information]
-        -
+        -   wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
+        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) − 0.7112 (band 5) − 0.4572 (band 7)`
     *   -   :guilabel:`fourth`
-        -   [need information] 
+        -   fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
         -
     *   -   :guilabel:`fifth`
-        -   [need information]
+        -   fifth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
         -
     *   -   :guilabel:`sixth`
-        -   [need information]
+        -   sixth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
         -
     *   -   :guilabel:`NDVI`
         -   `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__
@@ -321,8 +321,8 @@ The time series will use a single observation for each pixel. This observation c
         -   `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__
         -    :math:`evi =G * (nir - red)/(nir + C_1 * red - C_2 * blue + L)`
     *   -   :guilabel:`EVI2`
-        -   [need information]
-        -
+        -   Two-band EVI (Enhanced vegetation index)
+        -   :math:`evi_2 = 2.5 * (nir - red) / (nir + 2.4 * red + 1)`
     *   -   :guilabel:`SAVI`
         -   `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__
         -   :math:`((nir - red) / (nir + red + L)) x (1 + L)`
@@ -330,17 +330,17 @@ The time series will use a single observation for each pixel. This observation c
         -   `Normailzed burn ratio <https://doi.org/10.2737/RMRS-GTR-164>`__
         -   :math:`nbr = (nir - swir) / (nir + swir)`
     *   -   :guilabel:`UI`
-        -   [need information]
-        -
+        -   Urban index
+        -   :math:`ui = (swir2 - nir) / (swir2 + nir)`
     *   -   :guilabel:`NDBI`
         -   `Normalized Difference Built-up Index <#>`__
         -   :math:`ndbi = (swir - nir) / (swir + nir)`
     *   -   :guilabel:`IBI`
-        -   [need information]
-        -
+        -   Index based built-up index
+        -   :math:`ibi = (ndbi - (savi + mndwi) / 2) / (ndbi + (savi + mndwi) / 2)`
     *   -   :guilabel:`BUI`
-        -   [need information]
-        -
+        -   Built-up Index
+        -   :math:`bui = (red - swir1) / (red + swir1) + (swir2 - swir1) / (swir2 + swir1)`
 
 Analysis
 --------
