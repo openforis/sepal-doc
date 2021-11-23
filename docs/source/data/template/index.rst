@@ -31,7 +31,7 @@ Once the desired application is found simply click on it to start the process. T
 
 .. warning:: 
 
-    Applications that includes a "G" in their descriptor require a connection to Google Earth Engine to run, please refer to _`<../setup/gee.html#connection-between-gee-and-sepal>` for more information.
+    Applications that includes a "G" in their descriptor require a connection to Google Earth Engine to run, please refer to `Connect GEE and SEPAL <../setup/gee.html#connection-between-gee-and-sepal>`__ for more information.
     
 .. warning::
 
