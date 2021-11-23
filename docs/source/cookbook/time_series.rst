@@ -16,8 +16,6 @@ This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <ht
 
     You won't be able to retrieve the images if your SEPAL account and GEE account are not connected. Follow `Connect SEPAL to GEE <../setup/gee.html>`__ to know more.
 
-[Animate a large time serie to show off]
-
 Start
 -----
 
