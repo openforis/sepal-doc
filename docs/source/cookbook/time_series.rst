@@ -56,7 +56,7 @@ On the bottom right corner, 4 tabs are available. They will allow you to customi
     :group: time-series-recipe
 
 AOI Selection
-^^^^^^^^^^
+^^^^^^^^^^^^^
 
 The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:
 
