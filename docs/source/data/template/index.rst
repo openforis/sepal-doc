@@ -1,6 +1,8 @@
 SEPAL modules
 =============
 
+.. custom-edit:: https://raw.githubusercontent.com/openforis/sepal-doc/docs/source/data/template/index.rst
+
 Overview
 --------
 
