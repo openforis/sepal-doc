@@ -1,5 +1,8 @@
-radar mosaic
-============
+Radar Mosaics
+=============
+
+The SEPAL recipe for radar mosaics allows to generate Analysis-Ready data from
+the Sentinel-1 C-Band SAR mission.
 
 .. warning::
 
