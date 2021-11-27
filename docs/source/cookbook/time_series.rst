@@ -37,7 +37,7 @@ The first step is to change the name of the recipe. This name will be used to na
     
 .. note::
 
-    The SEPAL team recommends using the following naming convention: :code:`foo_bar`.
+    The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<start-<end>_<measure>_<sensors>`. As an example the following is a satisfying recipe name: :code:`sgp_2012-2018_ndfi_l78`.
 
 Parameters
 ----------
