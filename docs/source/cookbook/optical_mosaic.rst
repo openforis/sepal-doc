@@ -489,6 +489,12 @@ indexes
 -   :guilabel:`IBI`: Index based built-up index
 -   :guilabel:`BUI`: Built-up Index
 
+dates
+#####
+
+-   :guilabel:`dayofyear`: the julian date (day of the year) 
+-   :guilabel:`dayfromtarget`: the distance to the target date within the season in days
+
 scale 
 """""
 
