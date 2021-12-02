@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEPAL modules &#8212; SEPAL  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="other" href="other.html" />
+    <link rel="prev" title="vizualisation" href="../cookbook/vizualisation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="other.html">
+   other
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/clip-time-series.html">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/fcdm.html">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sepal_pysmm.html">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="time-series.html">
+   time-series
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/bfast_r.html">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="PlanetLab.html">
+   PlanetLab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/sepafe.html">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dwn/smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-applications">
+   Start applications
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-instance-manually">
+   Start instance manually
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/index.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="sepal-modules">
+<h1>SEPAL modules<a class="headerlink" href="#sepal-modules" title="Permalink to this headline">¶</a></h1>
+
+    <script>
+        var div = document.getElementsByClassName("tocsection editthispage")[0];
+        var link = div.getElementsByTagName("a")[0];
+        link.href = "https://github.com/openforis/sepal-doc/edit/docs/source/data/template/index.rst";
+    </script>
+    <div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>SEPAL applications are tools provided by the SEPAL team from FAO or from other developers. These tools are based on advanced GIS libraries and complement the functionalities of the SEPAL recipes. It provides the end user access to complex workflows without requirering knowledge of digital programming. These applications are served in SEPAL with nice User Interfaces to ensure the best possible user experience.</p>
+<p>They run on various shells from pure HTML to shinny based R apps but also Jupyter powered Python kernels. This flexibility and variety of tools allows developer to bring any workflows and make them available for SEPAL users. Click on any of the module documentation to know more about its usage.</p>
+</div>
+<div class="section" id="start-applications">
+<h2>Start applications<a class="headerlink" href="#start-applications" title="Permalink to this headline">¶</a></h2>
+<p>To start a SEPAL application gor to the dashboard of application by clicking on the wrench icon on the left side of the window ((1) on the following image). This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. The top 3 app (2) are not real app but code editors:</p>
+<ul class="simple">
+<li><p>R Studio: provides access to R environment where you can run processing scripts and upload data to your SEPAL folder</p></li>
+<li><p>Juyter Notebook: an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. support Kernels in many different languages including R, Python and NodesJS.</p></li>
+<li><p>JupyterLab: JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-acc17494-221c-448d-a6ba-9029eab50a67"
+               href="../_images/dashboard1.png"
+               title="the landing page of the dashboard of application"
+               data-title="the landing page of the dashboard of application"
+               
+               ><img src="../_images/dashboard1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>To find the aplication he’s looking for, the user can navigate in the different app pages (3), use the tags (4) or use the search bar (5).</p>
+<p>Once the desired application is found simply click on it to start the process. This will as well start the smallest instance to run the SEPAL sandbox (<code class="code docutils literal notranslate"><span class="pre">t1</span></code>). Please refer to the next section to start aspecific instance manually.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Applications that includes a “G” in their descriptor require a connection to Google Earth Engine to run, please refer to <a class="reference external" href="../setup/gee.html#connection-between-gee-and-sepal">Connect GEE and SEPAL</a> for more information.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Application need to set up numerous tools and system, don’t rush and be patient it can take up to 5 min to start. If the application doesn’t start after 5 min, close the tab and start it again, it’s usually a Amazon cloud connection issue. On the other hand if one run in an bug or crash please report this issue in SEPAL or the specific app issue tracker.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Application are running on the current instance so closing it (by disconecting from SEPAL or stop the instance manually) will end up in killing the application workflow. The already performed work will be available in SEPAL folders but the user will need to restart the process to finish it.</p>
+</div>
+</div>
+<div class="section" id="start-instance-manually">
+<h2>Start instance manually<a class="headerlink" href="#start-instance-manually" title="Permalink to this headline">¶</a></h2>
+<p>Some applications require more powerful instances than the default <code class="code docutils literal notranslate"><span class="pre">t1</span></code>. If the app documentation requires the user to start a specific instance type (e.g. a GPU machine <code class="code docutils literal notranslate"><span class="pre">g4</span></code> or <code class="code docutils literal notranslate"><span class="pre">g8</span></code>) please follow these steps prior to start the application.</p>
+<ol class="arabic">
+<li><p>Go to the SEPAL termninal and wait for the instance selector to start</p>
+<a class=""
+               data-lightbox="group-9183732e-9f12-4132-9068-fc8ba0c13dc5"
+               href="../_images/terminal1.png"
+               title="the SEPAL instance selector"
+               data-title="the SEPAL instance selector"
+               
+               ><img src="../_images/terminal1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></li>
+<li><p>Type the instance name suggested in the documentation of your app and press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>Wait for the instance to finish loading</p>
+<a class=""
+               data-lightbox="group-e8f406c0-c30d-4542-bea8-e997d6fe7845"
+               href="../_images/m4_started1.png"
+               title="start a m4 instance"
+               data-title="start a m4 instance"
+               
+               ><img src="../_images/m4_started1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></li>
+<li><p>Go back to the dashboard of application to launch your app. It will be automatically using the instance you opened and won’t restart a <code class="code docutils literal notranslate"><span class="pre">t1</span></code>.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

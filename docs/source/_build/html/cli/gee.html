@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Earth Engine &#8212; SEPAL  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GuidosToolbox Workbench – GWB" href="gwb.html" />
+    <link rel="prev" title="Google Drive" href="gdrive.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../modules/index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="gdal.html">
+   Geospatial Data Abstraction Library
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gdrive.html">
+   Google Drive
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Google Earth Engine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gwb.html">
+   GuidosToolbox Workbench – GWB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ofgt.html">
+   Open Foris Geospatial Toolkit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="otb.html">
+   Orfeo Toolbox
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#available-commands">
+   available commands
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/cli/gee.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="google-earth-engine">
+<h1>Google Earth Engine<a class="headerlink" href="#google-earth-engine" title="Permalink to this headline">¶</a></h1>
+<p>The earthengine tool is a utility program that allows you to manage Earth Engine assets and tasks from the command line. It is installed automatically when you install the Python API. To check whether the tool is installed and functioning correctly, type the following on a command line:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> earthengine
+</pre></div>
+</div>
+<p>If the tool is properly installed then it will print out a short summary of available commands. To get help on a specific command, use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> earthengine <span class="nb">command</span> -h
+</pre></div>
+</div>
+<p>When you first install the Python API you will need to log in using the <code class="code docutils literal notranslate"><span class="pre">authenticate</span></code> command described below.</p>
+<div class="section" id="available-commands">
+<h2>available commands<a class="headerlink" href="#available-commands" title="Permalink to this headline">¶</a></h2>
+<p>More information on the available command can be found on <a class="reference external" href="https://developers.google.com/earth-engine/guides/command_line">Google API website</a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ authenticate          <span class="c1"># Prompts the user to authorize access to Earth Engine via OAuth2.</span>
+$ acl                   <span class="c1"># Prints or updates the access control list of the specified asset.</span>
+$ asset                 <span class="c1"># Prints or updates metadata associated with an Earth Engine asset.</span>
+$ cp                    <span class="c1"># Creates a new Earth Engine asset as a copy of another asset.</span>
+$ create                <span class="c1"># Creates assets and folders.</span>
+$ ls                    <span class="c1"># Prints the contents of a folder or collection.</span>
+$ licenses              <span class="c1"># Prints the name and license of all third party dependencies.</span>
+$ du                    <span class="c1"># Prints the size and names of all items in a given folder or collection.</span>
+$ mv                    <span class="c1"># Moves or renames an Earth Engine asset.</span>
+$ model                 <span class="c1"># TensorFlow model related commands.</span>
+$ rm                    <span class="c1"># Deletes the specified assets.</span>
+$ set_project           <span class="c1"># Sets the default user project to be used for all API calls.</span>
+$ task                  <span class="c1"># Prints information about or manages long-running tasks.</span>
+$ unset_project         <span class="c1"># UnSets the default user project to be used for all API calls.</span>
+$ upload                <span class="c1"># Uploads assets to Earth Engine.</span>
+$ upload_manifest       <span class="c1"># Uploads an image to Earth Engine using the given manifest file.</span>
+$ upload_table_manifest <span class="c1"># Uploads a table to Earth Engine using the given manifest file.</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

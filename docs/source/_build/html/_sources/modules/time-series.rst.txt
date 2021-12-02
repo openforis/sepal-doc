@@ -1,0 +1,13 @@
+time-series
+===========
+
+List of the modules gathered under the time-series tag:
+
+.. toctree::  
+    :maxdepth: 1
+    
+    dwn/bfast_explorer
+    dwn/bfast_gpu
+    dwn/bfast_r
+    dwn/cusum
+    dwn/sar_time_series

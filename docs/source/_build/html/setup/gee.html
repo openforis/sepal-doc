@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use Google Earth Engine with SEPAL &#8212; SEPAL  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exchange files with SEPAL" href="filezilla.html" />
+    <link rel="prev" title="Introduction to SEPAL" href="presentation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../modules/index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="register.html">
+   Register to SEPAL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="presentation.html">
+   Introduction to SEPAL
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Use Google Earth Engine with SEPAL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="filezilla.html">
+   Exchange files with SEPAL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nicfi.html">
+   Use NICFI - Planet Lab data
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gee-and-sepal">
+   GEE and SEPAL
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-gee-account">
+   Create a GEE account
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sign-up">
+     Sign-up
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initialize-the-home-folder">
+     Initialize the home folder
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connection-between-gee-and-sepal">
+   Connection  between GEE  and SEPAL
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#connection">
+     Connection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disconnection">
+     Disconnection
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#upload-files-to-gee">
+   Upload files to GEE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#raster">
+     Raster
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shape">
+     Shape
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table">
+     Table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-my-assets">
+     Use my assets
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/setup/gee.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="use-google-earth-engine-with-sepal">
+<h1>Use Google Earth Engine with SEPAL<a class="headerlink" href="#use-google-earth-engine-with-sepal" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="gee-and-sepal">
+<h2>GEE and SEPAL<a class="headerlink" href="#gee-and-sepal" title="Permalink to this headline">¶</a></h2>
+<p>SEPAL is a free cloud-computing platform that gives you access to multiple data resources and the possibility to process massive datasets with one single requirement: an internet connection.</p>
+<p>On one hand, SEPAL is providing AWS instances (cloud based computers on the Amazon cloud) that can be used to process data in modules or using your own scripts (in R, Python or in the terminal). On the other hand, SEPAL is closely linked to Google Earth Engine, a Google powered Earth-observation cloud-computing platform.</p>
+<p>By using the resources of Google through there JS and Python API, we are able to compute large amount of data, access the vast Google dataset catalog and easily share our results with others. Everything free of charge and without using the AWS instances.</p>
+<p>All the recipes of SEPAL are based on GEE and actually running scripts written by our team to get state-of-the-art processes without coding them in the JS code editor. In the module list, the modules tagged with the Google “G” logo are also running with the Python GEE API and don’t require you to use big instances to run complex operations.</p>
+<p>These recipes can be run using the default GEE credential of SEPAL, but you won’t be able to export your result to SEPAL nor to any Gdrive storage space. So modules can simply not run if not connected to your GEE.</p>
+<p>To cut a long story short…. to get the best of SEPAL, we highly suggest to our user to open their own Google Earth Engine account and connect it to SEPAL. In this doc, we will guide you through the full process of creating a GEE account and link it to SEPAL.</p>
+</div>
+<div class="section" id="create-a-gee-account">
+<h2>Create a GEE account<a class="headerlink" href="#create-a-gee-account" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sign-up">
+<h3>Sign-up<a class="headerlink" href="#sign-up" title="Permalink to this headline">¶</a></h3>
+<p>Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL. You will need to have a Google Account in order to sign up. If you don’t have one already, you can set one up here: <a class="reference external" href="https://accounts.google.com/servicelogin">https://accounts.google.com/servicelogin</a>.</p>
+<p>To request a GEE account, please visit <a class="reference external" href="https://earthengine.google.com/new_signup/">https://earthengine.google.com/new_signup/</a>.</p>
+<img alt="Request access to google earth engine" class="align-center" src="../_images/gee_landing.png" />
+<p>Once you have a Google Earth Engine account, you can access GEE here: <a class="reference external" href="https://code.earthengine.google.com/">https://code.earthengine.google.com/</a>.</p>
+<img alt="gee code editor" class="align-center" src="../_images/gee_code.png" />
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>On your first connection to the code editor it is strongly advised to follow the small tour proposed by the interface</p>
+<img alt="gee code editor tour" class="align-center" src="../_images/editor_tour.png" />
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you experience trouble white listing your Google Account to GEE please let the SEPAL team know, we may be able to help you</p>
+</div>
+</div>
+<div class="section" id="initialize-the-home-folder">
+<h3>Initialize the home folder<a class="headerlink" href="#initialize-the-home-folder" title="Permalink to this headline">¶</a></h3>
+<p>To use your Google earth engine account in SEPAL you need to properly set up the <strong>home</strong> folder. The home folder is where all your <strong>assets</strong> (vectors, rasters, collection, mosaics, classifications.. etc) will be exported. If this folder is missing then, SEPAL will have nowhere to point to and every export request will raise an error.</p>
+<p>First go to the GEE code editor:</p>
+<img alt="gee code editor" class="align-center" src="../_images/gee_code1.png" />
+<p>The web-page is split in 3 zones and a map:</p>
+<ol class="arabic simple">
+<li><p><strong>Zone 1</strong>: will give you access to the information of GEE account. 3 panels are available:</p>
+<ul class="simple">
+<li><p>assets: that will display all the assets in your account</p></li>
+<li><p>scripts: that will display all the scripts available with your account (shared and written)</p></li>
+<li><p>doc: the documentation of the JS GEE API that will be useful to those who actually need to code in this editor</p></li>
+</ul>
+</li>
+<li><p><strong>Zone 2</strong>: is where advanced users can code their own scripts using the GEE JS API</p></li>
+<li><p><strong>Zone 3</strong>: is here to display information about current processes. 3 panels are available:</p>
+<ul class="simple">
+<li><p>Inspector: will transform the arrow of the mouse into a pointer. Click anywhere on the map to have information about what you are displaying</p></li>
+<li><p>Tasks: display all the tasks of your account (running, finished or failed)</p></li>
+<li><p>Console: will display the console panel of the running scripts</p></li>
+</ul>
+</li>
+</ol>
+<p>Go in <strong>zone 1</strong> and select the <strong>assets</strong> panel. Click on the <code class="code docutils literal notranslate"><span class="pre">Create</span> <span class="pre">home</span> <span class="pre">folder</span></code> red button.</p>
+<img alt="gee asset creation" class="align-center" src="../_images/create_home.png" />
+<p>This will open a popup menu to select the name of this folder. This name can only be set once. It will remain the same forever and will never be changed in this account. If you’re not satisfied by the suggested name you can change it. The only limitation is not to use space or special characters.</p>
+<img alt="gee popup for home creation" class="align-center" src="../_images/home_pop_up.png" />
+<p>Now if you come back to your asset list (<strong>zone 1</strong> panel “asset”) you should see the name you provided as first folder at the root of the asset tree. in this example we used “galatheetest”:</p>
+<img alt="asset tree" src="../_images/asset_tree.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Now that you have connected and initialized your GEE account you can start the connection process between SEPAL and GEE</p>
+</div>
+</div>
+</div>
+<div class="section" id="connection-between-gee-and-sepal">
+<h2>Connection  between GEE  and SEPAL<a class="headerlink" href="#connection-between-gee-and-sepal" title="Permalink to this headline">¶</a></h2>
+<p>As explain in the first section, SEPAL can work without being connected to your GEE account but you will lose numerous opportunities of interaction with our platform. In this section the connection procedure between GEE and SEPAL will be presented.</p>
+<div class="section" id="connection">
+<h3>Connection<a class="headerlink" href="#connection" title="Permalink to this headline">¶</a></h3>
+<p>First go the landing page of SEPAL (<a class="reference external" href="https://sepal.io">sepal.io</a>) and connect yourself to your account using your credentials.</p>
+<p>On the following page, click on your <strong>username</strong> that you’ll find at the bottom left side of the window. On the following image the user name is in the red rectangle (<code class="code docutils literal notranslate"><span class="pre">prambaud</span></code>).</p>
+<img alt="sepal landing" class="align-center" src="../_images/sepal_landing.png" />
+<p>By clicking on it it will open a popup in the center of your screen. This popup is the <strong>user manager</strong>. In this interface you can modify the few information that SEPAL keep about you. On the top right side there is the Famous Google <strong>G</strong> logo. Next to it the status of the connection of your SEPAL with a user GEE account is displayed. If nothing is connected you should read “disconnected”.</p>
+<img alt="sepal disconnected" src="../_images/user_interface_disconnected.png" />
+<p>Click on <code class="code docutils literal notranslate"><span class="pre">Google</span> <span class="pre">account</span></code> at the bottom of the popup. It will open another popup. If your GEE account is disconnected you will see the following text that reminds you what functionalities are unavailable without custom GEE account.</p>
+<img alt="connection popup" src="../_images/gee_disconnected.png" />
+<p>Click on <code class="code docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">your</span> <span class="pre">Google</span> <span class="pre">account</span></code>. Google is now redirecting you to its connection page. in the given list of google account connect yourself to the one you use with GEE:</p>
+<img alt="../_images/gee_credential.png" src="../_images/gee_credential.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You can authorized everything Google will be asking you. It will authorized SEPAL to interact with your Google Drive and Asset home folder to export recipes and modules results.</p>
+</div>
+<p>After this connection process, you will be redirected to SEPAL main page. If you click again on the user interface button, the popup window will display “Connected” in green at the top right side.</p>
+<img alt="sepal and gee connected" src="../_images/user_interface_connected.png" />
+</div>
+<div class="section" id="disconnection">
+<h3>Disconnection<a class="headerlink" href="#disconnection" title="Permalink to this headline">¶</a></h3>
+<p>This operation is of course reversible so if you want to change account or simply remove the link between your SEPAL account and your GEE one you can disconnect SEPAL from the GEE service.</p>
+<p>Return to the user interface and click on <code class="code docutils literal notranslate"><span class="pre">Google</span> <span class="pre">account</span></code>. You should see the following window:</p>
+<img alt="gee connected" src="../_images/gee_connected.png" />
+<p>Simply click on the <code class="code docutils literal notranslate"><span class="pre">disconnect</span> <span class="pre">your</span> <span class="pre">Google</span> <span class="pre">account</span></code> Button and you’re done!</p>
+</div>
+</div>
+<div class="section" id="upload-files-to-gee">
+<h2>Upload files to GEE<a class="headerlink" href="#upload-files-to-gee" title="Permalink to this headline">¶</a></h2>
+<p>When you’ll be using our recipes and modules, you’ll be asked to use Google EE assets to provide rasters or vectors to the core GEE based algorithm. These assets can be public assets that someone shared with you but it can also be assets that you created yourself and you would like to use.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For vectors files SEPAL provide an interface to upload them from your computer to SEPAL and eventually to EE. This process allow you to deal with the full process directly from SEPAL without going to the GEE code interface. SEE the <a class="reference internal" href="../modules/dwn/import_to_gee.html"><span class="doc">Vector file manager</span></a> module documentation for more details</p>
+</div>
+<p>Go to the code editor page and get tot the <strong>zone 1</strong> panel “asset”:</p>
+<img alt="gee asset list" src="../_images/gee_asset_list.png" />
+<p>Click on the <code class="code docutils literal notranslate"><span class="pre">new</span></code> Button. You will have several choices that we will describe in the following sections.</p>
+<div class="section" id="raster">
+<h3>Raster<a class="headerlink" href="#raster" title="Permalink to this headline">¶</a></h3>
+<p>If you need to upload a raster image use the <code class="code docutils literal notranslate"><span class="pre">Image</span></code> button. A popup window will open itself. In this popup select the file you want to upload in your computer folders. It can be any image in the following formats: <code class="code docutils literal notranslate"><span class="pre">.tiff</span></code>, <code class="code docutils literal notranslate"><span class="pre">.tif</span></code>, <code class="code docutils literal notranslate"><span class="pre">.json</span></code>, <code class="code docutils literal notranslate"><span class="pre">.tfrecord</span></code> or <code class="code docutils literal notranslate"><span class="pre">.tfrecord.gz</span></code>. You can then change the name of your asset in the next TextField.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>By default the asset will be named after the tif base-name.</p>
+</div>
+<img alt="upload image" src="../_images/upload_image.png" />
+</div>
+<div class="section" id="shape">
+<h3>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">¶</a></h3>
+<p>If you need to upload a shape as a <code class="code docutils literal notranslate"><span class="pre">ee.FeatureCollection</span></code>, click on the <code class="code docutils literal notranslate"><span class="pre">shape</span> <span class="pre">upload`Button.</span> <span class="pre">A</span> <span class="pre">popup</span> <span class="pre">window</span> <span class="pre">will</span> <span class="pre">open</span> <span class="pre">itself.</span> <span class="pre">In</span> <span class="pre">this</span> <span class="pre">popup</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">files</span> <span class="pre">you</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">upload</span> <span class="pre">from</span> <span class="pre">your</span> <span class="pre">computer:</span> <span class="pre">It</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">any</span> <span class="pre">shape</span> <span class="pre">file</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">formats:</span> <span class="pre">:code:</span></code>.shp`, <code class="code docutils literal notranslate"><span class="pre">.zip</span></code>, <code class="code docutils literal notranslate"><span class="pre">.dbf</span></code>, <code class="code docutils literal notranslate"><span class="pre">.prj</span></code>, <code class="code docutils literal notranslate"><span class="pre">.shx</span></code>, <code class="code docutils literal notranslate"><span class="pre">.cpg</span></code>, <code class="code docutils literal notranslate"><span class="pre">.fix</span></code>, <code class="code docutils literal notranslate"><span class="pre">.qix</span></code>, <code class="code docutils literal notranslate"><span class="pre">.sbn</span></code> or <code class="code docutils literal notranslate"><span class="pre">.shp.xml</span></code>. Keep in mind that if you didn’t compressed it, a <code class="code docutils literal notranslate"><span class="pre">.shp</span></code> alone is not sufficient and must come with all the other files describing the shape as in the following example:</p>
+<img alt="upload shp" src="../_images/upload_shape.png" />
+</div>
+<div class="section" id="table">
+<h3>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h3>
+<p>If you need to upload a table as a <code class="code docutils literal notranslate"><span class="pre">ee.FeatureCollection</span></code>, click on the <code class="code docutils literal notranslate"><span class="pre">csv</span> <span class="pre">file</span> <span class="pre">upload`Button.</span> <span class="pre">A</span> <span class="pre">popup</span> <span class="pre">window</span> <span class="pre">will</span> <span class="pre">open</span> <span class="pre">itself.</span> <span class="pre">In</span> <span class="pre">this</span> <span class="pre">popup</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">files</span> <span class="pre">you</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">upload</span> <span class="pre">from</span> <span class="pre">your</span> <span class="pre">computer:</span> <span class="pre">It</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">any</span> <span class="pre">table</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">formats:</span> <span class="pre">:code:</span></code>.csv`, <code class="code docutils literal notranslate"><span class="pre">.json</span></code>.</p>
+<img alt="upload csv" src="../_images/upload_csv.png" />
+</div>
+<div class="section" id="use-my-assets">
+<h3>Use my assets<a class="headerlink" href="#use-my-assets" title="Permalink to this headline">¶</a></h3>
+<p>Once you’ve uploaded your assets, you will want to use them in SEPAL. To use them you simply need to copy paste the name of the asset in anywhere SEPAL will be asking an Asset name. but where to get it ?</p>
+<p>First go back to the <strong>zone 1</strong> panel “asset” and click on any asset in your asset list. It will open the following popup window:</p>
+<img alt="asset popup" src="../_images/asset_popup.png" />
+<p>if you click on the <code class="code docutils literal notranslate"><span class="pre">copy</span> <span class="pre">link</span></code> button you will copy the link to the clipboard and you’ll be able to paste it in SEPAL. If you want to share this asset to other people, you need to give them this link (the one you just copied to clipboard) and authorized them to use it. For this purpose, click on the <code class="code docutils literal notranslate"><span class="pre">share</span></code> button of the popup and choose between the different sharing options.</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEPAFE &#8212; SEPAL  documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="SMFM" href="../SMFM.html" />
+    <link rel="prev" title="Planet order" href="planet_order.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../other.html">
+   other
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="clip-time-series.html">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fcdm.html">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_pysmm.html">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../time-series.html">
+   time-series
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_r.html">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../PlanetLab.html">
+   PlanetLab
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#settings-panel">
+   Settings panel
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#connect-your-planet-api-key">
+     Connect your Planet API Key
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-area-of-interest-aoi">
+     Select area of interest (AOI)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-fire-alerts">
+     Get fire alerts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navigate-through-alerts">
+   Navigate through alerts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manually-load-planet-imagery">
+   Manually load planet imagery
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/dwn/sepafe.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="sepafe">
+<h1>SEPAFE<a class="headerlink" href="#sepafe" title="Permalink to this headline">¶</a></h1>
+<p>The Sepal Planet Active Fires Explorer (SEPAFE) is a module developed on the SEPAL platform based on the <a class="reference external" href="https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms">Fire Information for Resource Management System (FIRMS)</a> and using Planet Scope imagery from Planet Labs.</p>
+<p>SEPAFE aims to provide users with a quick way to get and validate fire alerts from the FIRMS program by using daily planet imagery.</p>
+<img alt="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/sepal_active_fires_home.png" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/sepal_active_fires_home.png" />
+<div class="section" id="settings-panel">
+<h2>Settings panel<a class="headerlink" href="#settings-panel" title="Permalink to this headline">¶</a></h2>
+<p>The settings panel is composed of three tabs: <code class="code docutils literal notranslate"><span class="pre">Planet</span> <span class="pre">Imagery</span></code>, <code class="code docutils literal notranslate"><span class="pre">Area</span> <span class="pre">of</span> <span class="pre">Interest</span></code> and <code class="code docutils literal notranslate"><span class="pre">Alerts</span></code>, each of them is a necessary step to get the fire alerts.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The settings panel can be open/closed by clicking on the settings <img alt="settings" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/settings_icon.png" /> button.</p>
+</div>
+<div class="section" id="connect-your-planet-api-key">
+<h3>Connect your Planet API Key<a class="headerlink" href="#connect-your-planet-api-key" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This step is optional but highly recommended. Although you can go through the next tabs and get the fire alerts from the different satellite sources, to get the most advantage of the module, you will need a Planet API Key with access to daily imagery.</p>
+</div>
+<ul class="simple">
+<li><p>Validate your Planet API Key: provide a valid API Key in the input box and click over the validation button, the module will check whether the key is valid or not and the messages of its connection will be displayed directly into the alerts widget. Once your validation is done, you can open the advanced settings expansion panel and modify its inputs.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>use the planet state bar located in the top-left corner to get useful messages related with planet imagery, such as problems with the key or number of images loaded.</p>
+</div>
+<ul class="simple">
+<li><p>Open the Advanced settings panel</p>
+<ul>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Max</span> <span class="pre">number</span> <span class="pre">of</span> <span class="pre">images</span></code>: maximum number of planet images to be displayed at once in each alert.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Search</span> <span class="pre">up</span> <span class="pre">to</span> <span class="pre">'x'</span> <span class="pre">days</span> <span class="pre">before</span></code>: the number of days before the fire alert date to look up for the best image available.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Search</span> <span class="pre">up</span> <span class="pre">to</span> <span class="pre">'x'</span> <span class="pre">days</span> <span class="pre">after</span></code>: the number of days after the fire alert date to look up for the best image available.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">Cloud</span> <span class="pre">cover</span> <span class="pre">threshold</span></code>: maximum cloud cover threshold accepted in the images (based on the planet metadata).</p></li>
+</ul>
+</li>
+</ul>
+<img alt="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/planet.gif" class="align-center" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/planet.gif" />
+</div>
+<div class="section" id="select-area-of-interest-aoi">
+<h3>Select area of interest (AOI)<a class="headerlink" href="#select-area-of-interest-aoi" title="Permalink to this headline">¶</a></h3>
+<p>The module has two options to select an area of interest to filter alerts.</p>
+<ul class="simple">
+<li><p>Draw a shape: when this option is selected, three drawing tools will be displayed in the top-left map corner, you can select a <cite>square</cite>, <cite>circle</cite>, and a <cite>polygon</cite> and draw them on the map.</p></li>
+<li><p>Select a country: type the name of the country directly into the search box or navigate through it by using the scroll bar, and select the desired country. Once the country is selected, it will be displayed in the map view.</p></li>
+</ul>
+<img alt="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/aoi.gif" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/aoi.gif" />
+</div>
+<div class="section" id="get-fire-alerts">
+<h3>Get fire alerts<a class="headerlink" href="#get-fire-alerts" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Recent: the products to be downloaded are coming from the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) for the last 24, 28 hours, and the last 7 days.</p></li>
+<li><p>Historical: for the historical products, you will be able to download alerts from 2000 until the last finished year from the MODIS satellite. Click over the historical button and filter by the dates.</p></li>
+</ul>
+<p>After clicking over the <cite>get alerts</cite> button, the module will start the download process and will clip the alerts to the given AOI. The alerts will be displayed on the map according to a color map for the alert confidence, ranging from green, orange, to red for the confidence values high, nominal and low (for VIIRS) and &gt;80, &gt;70 &lt; 80, &lt;50 for MODIS.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>depending on the sensor source and whether your alert request is recent or historical, the download/clip process could take more time. This module is intended to get a quick and fast validation of fire alerts, if you are requesting an area with more than 10,000 fire alerts, you will be asked if you want to display all the alerts on the map —which could highly affect the performance of the tool— or if you want to download them to your desktop/SEPAL environment.</p>
+</div>
+</div>
+</div>
+<div class="section" id="navigate-through-alerts">
+<h2>Navigate through alerts<a class="headerlink" href="#navigate-through-alerts" title="Permalink to this headline">¶</a></h2>
+<p>Once the alerts are being displayed on the map, you will be able to navigate through each of them by using the <code class="code docutils literal notranslate"><span class="pre">navigation</span> <span class="pre">widget</span></code>. Click <code class="code docutils literal notranslate"><span class="pre">next</span></code> and <code class="code docutils literal notranslate"><span class="pre">prev</span></code> buttons to navigate over the fire alerts, and use the <code class="code docutils literal notranslate"><span class="pre">confidence</span></code> dropdown to filter the alerts by its confidence (<a class="reference external" href="https://earthdata.nasa.gov/faq/firms-faq">What is the detection confidence?</a>).</p>
+<blockquote>
+<div><p>The confidence value was added to help users gauge the quality of individual fire pixels is included in the Level 2 fire product. The confidence field should be used with caution; it will likely vary in meaning in different parts of the world. Nevertheless, some of our end users have found such a field to be useful in excluding false-positive occurrences of fire. They are different for MODIS and VIIRS.</p>
+</div></blockquote>
+<img alt="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/alerts_navigation.gif" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/alerts_navigation.gif" />
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can activate/deactivate the firee navigation widget by clicking over the fires <img alt="fires" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/alerts_icon.png" /> button.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Planet parameters can be changed at any time, to refresh the results from the current alert click over the refresh <img alt="refresh" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/refresh_icon.png" /> icon.</p>
+</div>
+</div>
+<div class="section" id="manually-load-planet-imagery">
+<h2>Manually load planet imagery<a class="headerlink" href="#manually-load-planet-imagery" title="Permalink to this headline">¶</a></h2>
+<p>Click over any point in the map and use the refresh icon <img alt="refresh" src="https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/refresh_icon.png" /> to retrieve planet imagery using the parameters set in the step 1, the module will use the current acquisition alert date to search the images. This option is useful when you want to explore surrounding areas close to the alert point but without alerts to display.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For use this option you will require a valid planet level 2 key, otherwise you will get an error message displayed in the state bar.</p>
+</div>
+
+    <script>
+        var div = document.getElementsByClassName("tocsection editthispage")[0];
+        var link = div.getElementsByTagName("a")[0];
+        link.href = "https://github.com/dfguerrerom/planet_active_fires_explorer/edit/main/doc/en.rst";
+    </script>
+    </div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

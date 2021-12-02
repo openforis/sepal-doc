@@ -1,0 +1,10 @@
+inventories
+===========
+
+List of the modules gathered under the inventories tag:
+
+.. toctree::  
+    :maxdepth: 1
+    
+    dwn/bootstrap_sampling_simulator
+    dwn/plot_generator

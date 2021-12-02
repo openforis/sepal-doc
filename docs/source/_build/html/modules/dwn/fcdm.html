@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCDM &#8212; SEPAL  documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="geo_processing" href="geo_processing.html" />
+    <link rel="prev" title="Coverage analysis tool for optical data" href="coverage_analysis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../other.html">
+   other
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="clip-time-series.html">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_pysmm.html">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../time-series.html">
+   time-series
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_r.html">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../PlanetLab.html">
+   PlanetLab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepafe.html">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fcdm-tool">
+   FCDM Tool
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview">
+     Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-purpose">
+     General Purpose
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#citation">
+     Citation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contact">
+     Contact
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage">
+   Usage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-aoi">
+     Select AOI
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#workflow-parameters">
+     Workflow parameters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#select-time-periods">
+       Select Time periods
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sensors-parameters">
+       Sensors parameters
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#sensors">
+         Sensors
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#threshold-for-landsat-7">
+         Threshold for landsat 7
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cloud-buffer">
+         Cloud buffer
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#basemap">
+       Basemap
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#advanced-parameters">
+       Advanced parameters
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#self-referencing">
+         Self-referencing
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ddr">
+         DDR
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compute">
+       Compute
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#map">
+     Map
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-images">
+     Download images
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/dwn/fcdm.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="fcdm">
+<h1>FCDM<a class="headerlink" href="#fcdm" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>former Delta-rNBR, Version 2.4</p>
+</div>
+<div class="section" id="fcdm-tool">
+<h2>FCDM Tool<a class="headerlink" href="#fcdm-tool" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<p>The FCDM tool supports the detection of forest canopy disturbance from satellite remote sensing and can provide indication on forest degradation processes. Reporting on forest degradation is required by many tropical countries participating in the REDD+ (Reducing Emissions from Deforestation and Degradation) program.
+However, compared to deforestation, the mapping of “forest degradation” has proven to be technically much more challenging and the signal of a forest canopy
+disturbance is less prominent, as it does not result in a change of land cover.</p>
+<p>The FCDM tool has been developed at the Joint Research Centre (JRC) within the ReCaREDD Project and uses a change detection approach based on the difference (delta) of the self-referenced “Normalized Burn Ratio” index (Delta-rNBR; <a class="reference external" href="https://doi.org/10.3390/rs10040544">Langner et al. 2018</a>) to detect forest canopy change over defined periods at pixel and sub-pixel level.
+The underlying Delta-rNBR index allows the detection of forest canopy disturbance within tropical (semi-)evergreen forest canopies (“forest remaining forest”),
+resulting for instance from tree removal, felling damages or from logging trails and leading.</p>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://forobs.jrc.ec.europa.eu/iforce/images/fcdm_process.jpg"
+               title="Processing steps of the FCDM tool"
+               data-title="Processing steps of the FCDM tool"
+               
+               ><img src="https://forobs.jrc.ec.europa.eu/iforce/images/fcdm_process.jpg"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="general-purpose">
+<h3>General Purpose<a class="headerlink" href="#general-purpose" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Detection of all kind of tree canopy disturbances (natural or human induced) within evergreen and semi-evergreen forests</p></li>
+<li><p>In order to separate natural from human disturbances we recommend manual screening of the data by an experienced human interpreter</p></li>
+<li><p>Close to real time monitoring of canopy cover changes possible</p></li>
+</ul>
+</div>
+<div class="section" id="citation">
+<h3>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h3>
+<p>Publications, models and data products that make use of this tool must include proper acknowledgement, including citing datasets and the journal article as in the
+following citation:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://doi.org/10.3390/rs10040544">Langner A, Miettinen J, Kukkonen M, Vancutsem C, Simonetti D, Vieilledent G, Verhegghen A, Gallego J, Stibig H-J (2018). Towards Operational Monitoring of Forest Canopy Disturbance in Evergreen Rain Forests: A Test Case in Continental Southeast Asia. Remote Sensing. 10, 4, 544, `doi:10.3390/rs10040544</a></p></li>
+</ul>
+</div>
+<div class="section" id="contact">
+<h3>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h3>
+<p>&gt; <strong>Original algorithm</strong>
+&gt; Author:  Andreas Langner (SvBuF)
+&gt; Email:  <a class="reference external" href="mailto:andi&#46;langner&#37;&#52;&#48;gmail&#46;com">andi<span>&#46;</span>langner<span>&#64;</span>gmail<span>&#46;</span>com</a>, <a class="reference external" href="mailto:andreas-johannes&#46;langner&#37;&#52;&#48;ec&#46;europa&#46;eu">andreas-johannes<span>&#46;</span>langner<span>&#64;</span>ec<span>&#46;</span>europa<span>&#46;</span>eu</a></p>
+<p>&gt; <strong>sepal adaptation</strong>
+&gt; Author: Pierrick Rambaud (FAO)
+&gt; Email: <a class="reference external" href="mailto:Pierrick&#46;rambaud&#37;&#52;&#48;fao&#46;org">Pierrick<span>&#46;</span>rambaud<span>&#64;</span>fao<span>&#46;</span>org</a></p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="select-aoi">
+<h3>Select AOI<a class="headerlink" href="#select-aoi" title="Permalink to this headline">¶</a></h3>
+<p>The <em>delta-rNBR</em> will be calculated based on the user inputs. The first mandatory input is the Area Of Interest (AOI). In this step you’ll have the possibility to choose from a predefined list of administrative layers or use your own datasets, the available options are:</p>
+<p><strong>Predefined layers</strong></p>
+<ul class="simple">
+<li><p>Country/province</p></li>
+<li><p>Administrative level 1</p></li>
+<li><p>Administrative level 2</p></li>
+</ul>
+<p><strong>Custom layers</strong></p>
+<ul class="simple">
+<li><p>Vector file</p></li>
+<li><p>Drawn shapes on map</p></li>
+<li><p>Google Earth Engine Asset</p></li>
+</ul>
+<p>After selecting the desired area, click over the <code class="code docutils literal notranslate"><span class="pre">Select</span> <span class="pre">these</span> <span class="pre">inputs</span></code> button and the map shows up your selection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can only select one area of interest. In some cases, depending on the input data you could run out of resources in GEE.</p>
+</div>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/aoi_selector.png"
+               title="AOI selection of the Sandan province in Cambodia"
+               data-title="AOI selection of the Sandan province in Cambodia"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/aoi_selector.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="workflow-parameters">
+<h3>Workflow parameters<a class="headerlink" href="#workflow-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Click on <span class="guilabel">process</span> to display the process panel. In this section we’ll describe each parameter you can set in the app to customize your analysis.</p>
+<div class="section" id="select-time-periods">
+<h4>Select Time periods<a class="headerlink" href="#select-time-periods" title="Permalink to this headline">¶</a></h4>
+<p>The selected time periods are the periods that will be used as <strong>reference</strong> and <strong>analysis</strong> period.
+Simply click on the different <code class="code docutils literal notranslate"><span class="pre">datepicker</span></code> to select the start date end end date of this time periods.</p>
+<img alt="demo of the datepicker usage" src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/datepicker-demo.gif" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As suggested in the article, the FCDM analysis performs better with time periods smaller or equal to a year. Longer periods tend to accumulate noise. As an example the following parameters are fitting:
+-   reference period: <code class="code docutils literal notranslate"><span class="pre">2019-01-01</span> <span class="pre">2019-12-31</span></code>
+-   analysis period: <code class="code docutils literal notranslate"><span class="pre">2020-01-01</span> <span class="pre">2020-12-31</span></code></p>
+</div>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/time_period.png"
+               title="Selection of 2 time periods covering the whole years of 2020 as analysis and 2019 as reference"
+               data-title="Selection of 2 time periods covering the whole years of 2020 as analysis and 2019 as reference"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/time_period.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="sensors-parameters">
+<h4>Sensors parameters<a class="headerlink" href="#sensors-parameters" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="sensors">
+<h5>Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h5>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The sensor list is updated with the available satellites dataset for the selected time periods. User is thus forced to select the dates first.</p>
+</div>
+<p>The sensors can be selected in the dropdown menu. This list is only showing the satellites datasets that are available for the selected time period. The user needs to select at least 1.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Data from Sentinel and Landsat program cannot be mixed.</p>
+</div>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/sensor.png"
+               title="select the landsat famiy (L7 and L8) without thresholding L7 data"
+               data-title="select the landsat famiy (L7 and L8) without thresholding L7 data"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/sensor.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="threshold-for-landsat-7">
+<h5>Threshold for landsat 7<a class="headerlink" href="#threshold-for-landsat-7" title="Permalink to this headline">¶</a></h5>
+<p>Value of the threshold applied on Landsat 7 data. This is a correction parameter to remove some of the effects of SLC issue. Default set to <code class="code docutils literal notranslate"><span class="pre">0.08</span></code>.</p>
+</div>
+<div class="section" id="cloud-buffer">
+<h5>Cloud buffer<a class="headerlink" href="#cloud-buffer" title="Permalink to this headline">¶</a></h5>
+<p>Value of the cloud buffering used in the cloud masking operation of the FCDM process in meters. Default set to <code class="code docutils literal notranslate"><span class="pre">500</span></code>.</p>
+</div>
+</div>
+<div class="section" id="basemap">
+<h4>Basemap<a class="headerlink" href="#basemap" title="Permalink to this headline">¶</a></h4>
+<p>The FCDM process need to create a forest non-forest mask to produce the results. This mask is derivated from data provided by the user.
+Three default datasets can be selected:</p>
+<ul>
+<li><p>Global forest cover: This mask will be based on the <a class="reference external" href="https://earthenginepartners.appspot.com/science-2013-global-forest">global forest cover</a> product from University of Maryland. The user will also need to provide the year to use and the treecover level to diferenciate forest from the rest.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The year is automatically set to the start year of the <strong>reference</strong> period.</p>
+</div>
+</li>
+<li><p>TMF: This mask will be based on the <a class="reference external" href="https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/">Tropical Moist Forest</a> product from JRC. The user will also need to provide the year of analysis.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The year is automatically set to the start year of the <strong>reference</strong> period.</p>
+</div>
+</li>
+<li><p>No forest map: there will be no forest masking</p></li>
+</ul>
+<p>The user can also use any GEE asset by setting it’s value in the <code class="code docutils literal notranslate"><span class="pre">textfield</span></code> or selecting an image in the raster list. The image needs to be a mask with values of the first band set to:
+-   0 for non-forest
+-   1 for forest</p>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/basemap.png"
+               title="use the built-in GFC dataset to build a forest mask with a 70% of treecover and based on the 2019 version."
+               data-title="use the built-in GFC dataset to build a forest mask with a 70% of treecover and based on the 2019 version."
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/basemap.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="advanced-parameters">
+<h4>Advanced parameters<a class="headerlink" href="#advanced-parameters" title="Permalink to this headline">¶</a></h4>
+<p>These parameters are advanced parameters of the FCDM process please read the article carefully to get a good understanding of their objectives.</p>
+<div class="section" id="self-referencing">
+<h5>Self-referencing<a class="headerlink" href="#self-referencing" title="Permalink to this headline">¶</a></h5>
+<p>For the self referencing kernel you simply need to set 1 single parameter: <strong>Radius of circular kernel</strong> that will define in meter the buffer used for the self-referencing operation. default set to: code:<cite>150</cite>.</p>
+</div>
+<div class="section" id="ddr">
+<h5>DDR<a class="headerlink" href="#ddr" title="Permalink to this headline">¶</a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Disturbance-Density-Realted (DDR) filtering</p>
+</div>
+<p>Here, 3 parameters need to be set:</p>
+<ul class="simple">
+<li><p><strong>Threshold for filtering</strong>: The threshold of change magnitude that will be considered as intermediate disturbance result. Default to <code class="code docutils literal notranslate"><span class="pre">0.035</span></code>.</p></li>
+<li><p><strong>Radius of circular kernel for filtering</strong>: in meter, the radius of the buffer. Default to: code:<cite>80</cite>.</p></li>
+<li><p><strong>Min number of intermediate disturbance events per cleaning kernel</strong>: the threshold number of intermediate disturbance events within a kernel to consider the kernel center pixel to be kept or discarded (irrespective of pixel value). Default set to <code class="code docutils literal notranslate"><span class="pre">3</span></code>.</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/advanced_params.png"
+               title="the default set of advanced parameters"
+               data-title="the default set of advanced parameters"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/advanced_params.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+</div>
+<div class="section" id="compute">
+<h4>Compute<a class="headerlink" href="#compute" title="Permalink to this headline">¶</a></h4>
+<p>Click on <span class="guilabel">Run FCDM Computation</span> to launch the process in GEE. The layers will automatically be displayed on the visualisation map.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This operation takes no time as the actual computation is done when the map refreshes itself.</p>
+</div>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/run_fcdm.png"
+               title="the run panel"
+               data-title="the run panel"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/run_fcdm.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+</div>
+<div class="section" id="map">
+<h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h3>
+<p>In this map, the different layers of the computation will be displayed:</p>
+<ul class="simple">
+<li><p>the forest mask (in green)</p></li>
+<li><p>the delta-rNBR (red where there are disturbances)</p></li>
+<li><p>the AOI (in light blue)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the map is fully zoomed out, the disturbances are not visible because of GEE pyramiding policy. Zoom in 2 to 3 times to see the disturbances.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Every time the user zoom in, GEE will recompute all the values on the fly. This opreation is time consuming so be patient. The forest mask is a simple image, when the delta-rNBR finishes its refresh, it’s perfectly aligned with it. As long as it’s blurry, it means that GEE is still computing.</p>
+</div>
+<a class=""
+               data-lightbox="group-fcdm"
+               href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/result_map.png"
+               title="vizualization of the SANDAN province with all the default parameters with reference period of 2019 and analysis 2020"
+               data-title="vizualization of the SANDAN province with all the default parameters with reference period of 2019 and analysis 2020"
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/result_map.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="download-images">
+<h3>Download images<a class="headerlink" href="#download-images" title="Permalink to this headline">¶</a></h3>
+<p>Click on the cloud in the top left corner of the map, it will open the following popup where the user will be able to customize exportation parameters.</p>
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/export_panel.png"><img alt="the downloading popup" class="align-center" src="https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/export_panel.png" style="width: 50%;" /></a>
+<ul>
+<li><p><strong>filename prefix</strong>: the prefix that will be used to described the file in SEPAL or the asset in GEE. Default to <code class="code docutils literal notranslate"><span class="pre">&lt;aoi_anme&gt;_&lt;referenced</span> <span class="pre">perdiod</span> <span class="pre">year&gt;_&lt;analysis_period_year`</span></code>. It can be customize in anything but every non UTF8 character will automatically be changed in “_”.</p></li>
+<li><p><strong>select dataset</strong>: the user can export any of the following datasets: <code class="code docutils literal notranslate"><span class="pre">Delta-rNBR</span></code>, <code class="code docutils literal notranslate"><span class="pre">Delta-rNBR</span> <span class="pre">wihthout</span> <span class="pre">DDR</span></code>, <code class="code docutils literal notranslate"><span class="pre">anaysis</span> <span class="pre">rNBR</span></code>, <code class="code docutils literal notranslate"><span class="pre">reference</span> <span class="pre">rNBR</span></code> and <code class="code docutils literal notranslate"><span class="pre">forest</span> <span class="pre">mask</span></code>. default to only <code class="code docutils literal notranslate"><span class="pre">Delta-rNBR</span></code>.</p></li>
+<li><p><strong>scale</strong>: The user can select any exportation scale from 10m to 300m.</p></li>
+<li><p><strong>select export method</strong>: as a SEPAL file or as a GEE asset</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>if you select <code class="code docutils literal notranslate"><span class="pre">as</span> <span class="pre">a</span> <span class="pre">SEPAL</span> <span class="pre">file</span></code>, then the application cannot be closed before the end of the exportation.
+On the other hand GEE export can be monitored from the GEE task manager.</p>
+</div>
+</li>
+</ul>
+<p>Click <span class="guilabel">Apply</span> to start the exportation process.</p>
+
+    <script>
+        var div = document.getElementsByClassName("tocsection editthispage")[0];
+        var link = div.getElementsByTagName("a")[0];
+        link.href = "https://github.com/12rambau/fcdm/edit/master/doc/en.rst";
+    </script>
+    </div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

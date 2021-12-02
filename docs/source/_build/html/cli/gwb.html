@@ -1,0 +1,2071 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuidosToolbox Workbench – GWB &#8212; SEPAL  documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Open Foris Geospatial Toolkit" href="ofgt.html" />
+    <link rel="prev" title="Google Earth Engine" href="gee.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../modules/index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="gdal.html">
+   Geospatial Data Abstraction Library
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gdrive.html">
+   Google Drive
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gee.html">
+   Google Earth Engine
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   GuidosToolbox Workbench – GWB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ofgt.html">
+   Open Foris Geospatial Toolkit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="otb.html">
+   Orfeo Toolbox
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-setup">
+   Initial setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage-instructions-overview">
+   Usage Instructions Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#available-commands">
+   Available Commands
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-acc">
+     GWB_ACC
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#requirements">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-dist">
+     GWB_DIST
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#remarks">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-fad">
+     GWB_FAD
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#requirement">
+       Requirement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-frag">
+     GWB_FRAG
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-lm">
+     GWB_LM
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id17">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id18">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-mspa">
+     GWB_MSPA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id20">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id21">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id22">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-p223">
+     GWB_P223
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id23">
+       Requirement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id24">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id25">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-parc">
+     GWB_PARC
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id26">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id27">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id28">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-rec">
+     GWB_REC
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id29">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id30">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id31">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-rss">
+     GWB_RSS
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id32">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id33">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id34">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gwb-spa">
+     GWB_SPA
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id36">
+       Requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id37">
+       Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id38">
+       Remarks
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/cli/gwb.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="guidostoolbox-workbench-gwb">
+<h1>GuidosToolbox Workbench – GWB<a class="headerlink" href="#guidostoolbox-workbench-gwb" title="Permalink to this headline">¶</a></h1>
+<p>The GuidosToolbox Workbench (<strong>GWB</strong>, <a class="reference external" href="https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/">homepage</a>) is a subset of the desktop software package GuidosToolbox (<a class="reference external" href="https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/">GTB</a>) designed as a cmd-line application for Linux 64bit servers.</p>
+<p>This document provides usage instructions for the cmd-line implementation of  <strong>GWB</strong>. Documentation on the GWB SEPAL browser-based application is available <a class="reference external" href="https://docs.sepal.io/en/latest/modules/dwn/gwb.html">here</a>.</p>
+<div class="section" id="initial-setup">
+<h2>Initial setup<a class="headerlink" href="#initial-setup" title="Permalink to this headline">¶</a></h2>
+<p>As regular user, please first copy the <strong>GWB</strong> setup into your <code class="code docutils literal notranslate"><span class="pre">$HOME</span></code> account using the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> cp -fr /opt/GWB/*put ~/
+</pre></div>
+</div>
+<p>You will now find the new directories <code class="code docutils literal notranslate"><span class="pre">input</span></code> and <code class="code docutils literal notranslate"><span class="pre">output</span></code> in your <code class="code docutils literal notranslate"><span class="pre">$HOME</span></code> account.</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">input</span></code>: This directory contains module-specific parameter files, two sample geotif images and a README file.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">output</span></code>: This directory is empty.</p></li>
+</ul>
+<p>All GWB modules require categorical raster input maps in data type unsigned byte (8bit), with discrete integer values within [0, 255] byte. The two sample images in the directory <code class="code docutils literal notranslate"><span class="pre">input</span></code> are:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">example.tif</span></code>: 0 byte - Missing, 1 byte - Background, 2 byte - Foreground</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">clc3class.tif</span></code>: 1 byte - Agriculture, 2 byte - Natural, 3 byte - Developed</p></li>
+</ul>
+<p><strong>GWB</strong> is designed to apply the module-specific settings of the respective parameter file to all tif-images placed in the directory <code class="code docutils literal notranslate"><span class="pre">input</span></code>. The module-specific results will be written into the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Please also run the above cp-command to update your <strong>GWB</strong>-setup files with potentially modified files provided by a newer version of <strong>GWB</strong>.</p></li>
+<li><p>The directory <code class="code docutils literal notranslate"><span class="pre">input</span></code> has a subdirectory <code class="code docutils literal notranslate"><span class="pre">backup</span></code> having backup copies of all parameter files. This subdirectory may also be used to temporarily store images that should be excluded from processing.</p></li>
+</ul>
+</div>
+<p>Example of the <strong>GWB</strong> setup in the user account <code class="code docutils literal notranslate"><span class="pre">/home/prambaud</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">pwd</span>
+<span class="go">/home/prambaud</span>
+
+<span class="gp">$</span> ls output/
+<span class="gp">$</span> ls input/
+<span class="go">acc-parameters.txt   clc3class.tif        example.tif</span>
+<span class="go">frag-parameters.txt  mspa-parameters.txt  parc-parameters.txt</span>
+<span class="go">rec-parameters.txt   spa-parameters.txt   backup</span>
+<span class="go">dist-parameters.txt  fad-parameters.txt   lm-parameters.txt</span>
+<span class="go">p223-parameters.txt  readme.txt           rss-parameters.txt</span>
+
+<span class="gp">$</span> less input/readme.txt
+<span class="go">Images:</span>
+<span class="go">- GWB will process all images from the folder &#39;input&#39; having the suffix: .tif</span>
+
+<span class="go">Parameter files: *-parameter.txt</span>
+<span class="go">- please do not delete these files</span>
+<span class="go">- modify only the settings at the end of the file enclosed by *****</span>
+
+<span class="go">Directory backup: not needed for processing</span>
+<span class="go">- a set of backup parameter files is included here</span>
+<span class="go">- temporarily store images here that you want to exclude from processing</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage-instructions-overview">
+<h2>Usage Instructions Overview<a class="headerlink" href="#usage-instructions-overview" title="Permalink to this headline">¶</a></h2>
+<p>To get an overview of all <strong>GWB</strong> modules enter the command: <code class="code docutils literal notranslate"><span class="pre">GWB</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB
+<span class="go">===============================================================================</span>
+<span class="go">GWB: GuidosToolbox-Workbench:</span>
+<span class="go">===============================================================================</span>
+<span class="go">cmd-line image analysis modules from GuidosToolbox</span>
+<span class="gp gp-VirtualEnv">(https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/)</span><span class="go">:</span>
+<span class="go">Usage of GWB implies compliance with the conditions in the EULA_GWB.pdf</span>
+<span class="gp gp-VirtualEnv">(https://ies-ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf)</span>
+
+<span class="go">GWB_check4updates</span>
+<span class="go">   Display installed and current program version</span>
+<span class="go">   and test for program updates</span>
+
+<span class="go">GWB_ACC: Accounting of image objects and area classes</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing,</span>
+<span class="go">    optional: 3b-special background 1, 4b-special background 2</span>
+<span class="go">    Parameter file: input/acc-parameters.txt</span>
+
+<span class="go">GWB_DIST: Euclidean Distance and Hypsometric Curve</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing</span>
+<span class="go">    Parameter file: input/dist-parameters.txt</span>
+
+<span class="go">GWB_FAD: Multiscale fragmentation analysis</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing,</span>
+<span class="go">    optional: 3b-special BG, 4b-non-fragmenting BG</span>
+<span class="go">    Parameter file: input/fad-parameters.txt</span>
+
+<span class="go">GWB_FRAG: user-selected custom scale fragmentation analysis</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing,</span>
+<span class="go">    optional: 3b-special BG, 4b-non-fragmenting BG</span>
+<span class="go">    Parameter file: input/frag-parameters.txt</span>
+
+<span class="go">GWB_LM: Landscape Mosaic</span>
+<span class="go">    Requirements: 1b-Agriculture, 2b-Natural, 3b-Developed</span>
+<span class="go">    optional: 0b-missing</span>
+<span class="go">    Parameter file: input/lm-parameters.txt</span>
+
+<span class="go">GWB_MSPA: Morphological Spatial Pattern Analysis (up to 25 classes)</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing</span>
+<span class="go">    Parameter file: input/mspa-parameters.txt</span>
+
+<span class="go">GWB_P223: Foreground Density [%], Contagion [%], or Adjacency [%]</span>
+<span class="go">    Spatcon: P2, P22, P23, Shannon, Sumd</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, 3b-specific BG (for Adjacency), optional: 0b-missing</span>
+<span class="go">    Parameter file: input/p223-parameters.txt</span>
+
+<span class="go">GWB_PARC: Landscape Parcellation index</span>
+<span class="go">    Requirements: [1b, 255b]-land cover classes, optional: 0b-missing</span>
+<span class="go">    Parameter file: input/parc-parameters.txt</span>
+
+<span class="go">GWB_REC: Recode class values</span>
+<span class="go">    Requirements: categorical map with up to 256 classes [0b, 255b]</span>
+<span class="go">    Parameter file: input/rec-parameters.txt</span>
+
+<span class="go">GWB_RSS: Restoration Status summary</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing</span>
+<span class="go">    Parameter file: input/rss-parameters.txt</span>
+
+<span class="go">GWB_SPA: Spatial Pattern Analysis (2, 3, 5, or 6 classes)</span>
+<span class="go">    Requirements: 1b-BG, 2b-FG, optional: 0b-missing</span>
+<span class="go">    Parameter file: input/spa-parameters.txt</span>
+
+<span class="go">More details in the module-specific parameter files, or run: GWB_XXX --help</span>
+
+<span class="go">Usage:</span>
+<span class="go">    a) standalone mode (within the directory GWB):</span>
+<span class="go">        ./GWB_ACC  OR add a custom full path to your input and output directory i.e.:</span>
+<span class="go">            ./GWB_ACC -i=&lt;your dir_input&gt; -o=&lt;your dir_output&gt;</span>
+
+<span class="go">    b) system mode (GWB installed in /opt/):</span>
+<span class="go">        add the full path to your input and output directory i.e.:</span>
+<span class="go">            GWB_ACC -i=&lt;your dir_input&gt; -o=&lt;your dir_output&gt;</span>
+
+<span class="go">To get started in system mode, copy the input/output directories to</span>
+<span class="go">your home folder using the command:</span>
+<span class="go">cp -fr /opt/GWB/*put ~/</span>
+<span class="go">===============================================================================</span>
+</pre></div>
+</div>
+<p>It is also possible to use the “help” option: <code class="code docutils literal notranslate"><span class="pre">GWB_ACC</span> <span class="pre">--help</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_ACC --help
+<span class="go">----------------------------------------------------------------------------------</span>
+<span class="go">usage: /usr/bin/GWB_ACC -i=dir_input -o=dir_output</span>
+<span class="go">-i=&lt;full path to directory &#39;input&#39;&gt;</span>
+<span class="gp gp-VirtualEnv">(with your input images and parameter files)</span><span class="go">;</span>
+<span class="go">Standalone mode: GWB/input</span>
+<span class="go">-o=&lt;full path to directory &#39;output&#39;&gt;</span>
+<span class="gp gp-VirtualEnv">(location for results, must exist and must be empty)</span><span class="go">;</span>
+<span class="go">Standalone mode: GWB/output</span>
+<span class="go">--help: show options</span>
+
+<span class="go">Standalone mode: ./GWB_ACC</span>
+<span class="go">System mode/use custom directories: GWB_ACC -i=&lt;your dir_input&gt; -o=&lt;your dir_output&gt;</span>
+<span class="go">----------------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When used for the first time, please accept the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf">EULA</a> terms. This step is only needed once.</p>
+</div>
+<p>Additional, general remarks:</p>
+<ul>
+<li><p>The directory <code class="code docutils literal notranslate"><span class="pre">output</span></code> must be empty before running a new analysis. Please watch out for hidden files/folders in this directory, which may be the result of an interrupted execution. The safest way to empty the directory is to delete it and recreate a new directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>.</p></li>
+<li><p><strong>GWB</strong> will automatically process all suitable geotiff images (single band and of datatype byte) from the directory <code class="code docutils literal notranslate"><span class="pre">input</span></code>. Images of different format or that are not compatible with the selected analysis module requirements will be skipped. Details on each image processing result can be found in the log-file in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>.</p></li>
+<li><p><strong>GWB</strong> is written in the  the <a class="reference external" href="https://www.l3harrisgeospatial.com/Software-Technology/IDL">IDL language</a>. It includes all required IDL libraries and the source code of each module, stored in the folder: <code class="code docutils literal notranslate"><span class="pre">/opt/GWB/tools/source/</span></code>.</p></li>
+<li><p>To list your current version of <strong>GWB</strong>, or to check for potential new <strong>GWB</strong> versions, please run the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_check4updates
+</pre></div>
+</div>
+</li>
+<li><p>Any distance or area measures are calculated in pixels. It is therefore crucial to use images in equal area projection. Conversion to meters/hectares require to know the pixel resolution.</p></li>
+</ul>
+</div>
+<div class="section" id="available-commands">
+<h2>Available Commands<a class="headerlink" href="#available-commands" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Please enter your own settings by amending the module-specific parameters within the section marked with <code class="code docutils literal notranslate"><span class="pre">*******</span></code> in the respective input/&lt;module&gt;-parameters.txt file. Don’t change anything else in the parameter file, don’t delete or add lines or the module execution will crash. If in doubt, consult the respective input/backup/&lt;module&gt;-parameters.txt file.</p>
+</div>
+<div class="section" id="gwb-acc">
+<h3>GWB_ACC<a class="headerlink" href="#gwb-acc" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Accounting</strong> analysis. Accounting will label and calculate the area of all foreground objects. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Accounting.pdf">Accounting</a> product sheet.</p>
+<div class="section" id="requirements">
+<h4>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+<li><p>3 byte: special background 1 (optional)</p></li>
+<li><p>4 byte: special background 2 (optional)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/acc-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_ACCOUNTING parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; ACC: Accounting of image objects and patch area size classes
+;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
+;; optional: 3b-special background 1, 4b-special background 2
+;; Please specify entries at lines 25-29 ONLY using the following options:
+;;
+;; line 25: Foreground connectivity: 8 (default) or 4
+;; line 26: spatial pixel resolution in meters:
+;; line 27: up to 5 area thresholds [unit: pixels] in increasing order
+;;          and separated by a single space.
+;; line 28: output option:   default (stats + image of viewport) OR
+;;   detailed (stats + images of ID, area, viewport; requires much more CPU/RAM!))
+;; line 29: big3pink: 0 (no - default) or 1 (show 3 largest objects in pink color)
+;;
+;; an example parameter file with default output would look like this:
+;; 8
+;; 25
+;; 200 2000 20000 100000 200000
+;; default
+;; 0
+****************************************************************************
+8
+25
+200 2000 20000 100000 200000
+default
+1
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_ACC</span></code> Command and listing of results in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_ACC -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_ACC using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">Accounting finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">acc.log  clc3class_acc  example_acc</span>
+
+<span class="go">output/clc3class_acc:</span>
+<span class="go">clc3class_acc.csv  clc3class_acc.tif  clc3class_acc.txt</span>
+
+<span class="go">output/example_acc:</span>
+<span class="go">example_acc.csv  example_acc.tif  example_acc.txt</span>
+</pre></div>
+</div>
+<p>example statistics and graphical result of input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Accounting size classes result using:
+example
+Base settings: 8-connectivity, pixel resolution: 25 [m]
+Conversion factor: pixel_to_hectare: 0.0625000, pixel_to_acres: 0.154441
+---------------------------------------------------------------------------------------------
+Size class 1: [1, 200] pixels; color: black
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+            2789             31190           97.8596         7.2790497
+---------------------------------------------------------------------------------------------
+Size class 2: [201, 2000] pixels; color: red
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+                44             23643           1.54386         5.5177484
+---------------------------------------------------------------------------------------------
+Size class 3: [2001, 20000] pixels; color: yellow
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+                14             98972          0.491228         23.097855
+---------------------------------------------------------------------------------------------
+Size class 4: [20001, 100000] pixels; color: orange
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+                2             59874         0.0701754         13.973255
+---------------------------------------------------------------------------------------------
+Size class 5: [100001, 200000] pixels; color: brown
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+                0                 0           0.00000         0.0000000
+---------------------------------------------------------------------------------------------
+Size class 6: [200001 -&gt; ] pixels; color: green
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+                1            214811         0.0350877         50.132092
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Sum of all classes:
+        # Objects      Area[pixels]     % of all objects  % of total FGarea
+            2850            428490           100.000         100.00000
+
+Median Patch Size:                5
+Average Patch Size:          150.347
+Standard Deviation:          4143.11
+
+Three largest object IDs and area[pixels]; color: pink
+These 3 objects overlay objects listed above
+1)                  1            214811
+2)                901             33508
+3)               1662             26366
+</pre></div>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/example_acc.tif"><img alt="../_images/example_acc.tif" src="../_images/example_acc.tif" style="width: 50%;" /></a>
+</div>
+<p>Accounting has been used to map and summarize forest patch size classes in the <a class="reference external" href="http://www.fao.org/publications/sofo/en/">FAO SOFO2020</a> report and the Forest Europe <a class="reference external" href="https://foresteurope.org/publications/">State of Europe’s Forest 2020</a> report with additional technical details in the respective JRC Technical Reports for <a class="reference external" href="https://doi.org/10.2760/145325">FAO</a> and <a class="reference external" href="https://doi.org/10.2760/991401">FE</a>.</p>
+</div>
+</div>
+<div class="section" id="gwb-dist">
+<h3>GWB_DIST<a class="headerlink" href="#gwb-dist" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Euclidean Distance</strong> analysis. Each pixel will show the shortest distance to the foreground boundary. Pixels inside a foreground object have a positive distance value while background pixels have a negative distance value. The result are spatially explicit maps and tabular summary statistics.
+Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Distance-Euclidean.pdf">Distance</a> product sheet.</p>
+<div class="section" id="id1">
+<h4>Requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/dist-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_DIST parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; DIST: Euclidean Distance + Hypsometric Curve
+;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
+;;
+;; Please specify entries at lines 17-18 ONLY using the following options:
+;;
+;; line 17: Foreground connectivity: 8 (default) or 4
+;; line 18: 1-Eucl.Distance only   or  2- Eucl.Distance + Hysometric Curve
+;;
+;; an example parameter file with default settings would look like this:
+;; 8
+;; 2
+****************************************************************************
+8
+2
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_DIST</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_DIST -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_DIST using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="gp">%</span> Loaded DLM: LAPACK.
+<span class="gp">%</span> Loaded DLM: PNG.
+<span class="go">Done with: example.tif</span>
+<span class="go">DIST finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">dist.log  example_dist</span>
+
+<span class="go">output/example_dist:</span>
+<span class="go">example_dist_hist.png      example_dist_hmc.csv  example_dist_hmc.png</span>
+<span class="go">example_dist_hmc.txt       example_dist.tif      example_dist.txt</span>
+<span class="go">example_dist_viewport.tif</span>
+</pre></div>
+</div>
+<p>Example statistics (hypsometric curve) and spatial result of input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/example_dist_hmc.png"><img alt="../_images/example_dist_hmc.png" src="../_images/example_dist_hmc.png" style="width: 49%;" /></a>
+<a class="reference internal image-reference" href="../_images/example_dist.tif"><img alt="../_images/example_dist.tif" src="../_images/example_dist.tif" style="width: 49%;" /></a>
+</div>
+<div class="section" id="remarks">
+<h4>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The result provides additional statistics in txt and csv format.</p></li>
+<li><p>Spatially explicit distance per-pixel values are shown in a pseudo-elevation color map. Positive values are associated with land (forest: yellow, orange, red, green), negative values with sea (non-forest: cyan to dark blue) and a value of zero corresponds to the coast line (forest– non-forest boundary).</p></li>
+<li><p>Actual per-pixel distance values are provided in a dedicated image (not shown here)</p></li>
+<li><p>Per-pixel distance values can be summarized with the Hypsometric curve (see above).</p></li>
+</ul>
+<p><strong>Euclidean Distance</strong> maps of forest patches have been used to map and summarize forest fragmentation, see for example <a class="reference external" href="https://doi.org/10.3390/su10051472">Kozak et al</a>.</p>
+</div>
+</div>
+<div class="section" id="gwb-fad">
+<span id="id3"></span><h3>GWB_FAD<a class="headerlink" href="#gwb-fad" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>fragmentation</strong> analysis at <strong>five fixed observation scales</strong>. Because forest fragmentation is scale-dependent, fragmentation is reported at five observation scales, which allows different observers to make their own choice about scales and threshold of concern. The change of fragmentation across different observation scales provides additional interesting information. Fragmentation is measured by determining the Forest Area Density (<strong>FAD</strong>) within a shifting, local neighborhood. It can be measured at pixel or patch level. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf">Fragmentation</a> product sheet.</p>
+<div class="section" id="requirement">
+<h4>Requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+<li><p>3 byte: specific background (optional)</p></li>
+<li><p>4 byte: non-fragmenting background (optional)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/fad-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_FAD parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; FAD = multi-scale fragmentation analysis at fixed observation scales of
+;; [7x7, 13x13, 27x27, 81x81, 243x243] pixels
+;;
+;; FAD: per-pixel density, color-coded into 6 fragmentation classes
+;; FAD-APP2: average per-patch density, color-coded into 2 classes
+;; FAD-APP5: average per-patch density, color-coded into 5 classes
+;;
+;; Input image requirements: 1b-background, 2b-foreground, optional:
+;;    0b-missing, 3b-special background, 4b-non-fragmenting background
+;;
+;; FAD will provide 5+1 images and summary statistics.
+;;
+;; Please specify entries at lines 28-30 ONLY using the following options:
+;; line 28: FAD  or  FAD-APP2  or  FAD-APP5
+;; line 29: Foreground connectivity: 8 (default) or 4
+;; line 30: high-precision: 1 (default) or 0
+;;         (1-float precision, 0-rounded byte)
+;;
+;; an example parameter file doing FAD-APP5 and using 8-connected foreground:
+;; FAD-APP5
+;; 8
+;; 1
+****************************************************************************
+FAD
+8
+1
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>Example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_FAD</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_FAD -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_FAD using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="gp">%</span> Loaded DLM: LAPACK.
+<span class="gp">%</span> Loaded DLM: PNG.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">FAD finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">clc3class_fad  example_fad  fad.log</span>
+
+<span class="go">output/clc3class_fad:</span>
+<span class="go">clc3class_fad_13.tif      clc3class_fad_27.tif       clc3class_fad_81.tif</span>
+<span class="go">clc3class_fad_mscale.csv  clc3class_fad_mscale.tif   clc3class_fad_243.tif</span>
+<span class="go">clc3class_fad_7.tif       clc3class_fad_barplot.png  clc3class_fad_mscale.sav</span>
+<span class="go">clc3class_fad_mscale.txt</span>
+
+<span class="go">output/example_fad:</span>
+<span class="go">example_fad_13.tif      example_fad_27.tif       example_fad_81.tif</span>
+<span class="go">example_fad_mscale.csv  example_fad_mscale.tif   example_fad_243.tif</span>
+<span class="go">example_fad_7.tif       example_fad_barplot.png  example_fad_mscale.sav</span>
+<span class="go">example_fad_mscale.txt</span>
+</pre></div>
+</div>
+<p>Example statistics and spatial result of a multi-scale per-pixel analysis of the input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/example_fad_barplot.png"><img alt="../_images/example_fad_barplot.png" src="../_images/example_fad_barplot.png" style="width: 49%;" /></a>
+<a class="reference internal image-reference" href="../_images/example_fad_mscale.tif"><img alt="../_images/example_fad_mscale.tif" src="../_images/example_fad_mscale.tif" style="width: 49%;" /></a>
+</div>
+<div class="section" id="id5">
+<h4>Remarks<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The result provides additional statistics in txt and csv format.</p></li>
+<li><p>The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB.</p></li>
+<li><p>In addition to the above multi-scale image, the result provides fragmentation images at each of the 5 fixed observation scales.</p></li>
+<li><p>Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).</p></li>
+</ul>
+<p>Fragmentation has been used to map and summarize the degree of forest fragmentation by Riitters et al. (<a class="reference external" href="https://doi.org/10.1007/s10021-002-0209-2">2002</a>, <a class="reference external" href="https://doi.org/10.1038/srep00653">2012</a>) as well as the US Forest Inventory and Analysis (<a class="reference external" href="https://www.fia.fs.fed.us/">FIA</a>) reports since 2003.</p>
+</div>
+</div>
+<div class="section" id="gwb-frag">
+<h3>GWB_FRAG<a class="headerlink" href="#gwb-frag" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>fragmentation</strong> analysis at a <strong>user-selected observation scale</strong>. This module and its option are similar to <a class="reference internal" href="#gwb-fad"><span class="std std-ref">GWB_FAD</span></a> but allow the user to specify a single (or multiple) specific observation scale. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf">Fragmentation</a> product sheet.</p>
+<div class="section" id="id9">
+<h4>Requirements<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+<li><p>3 byte: specific background (optional)</p></li>
+<li><p>4 byte: non-fragmenting background (optional)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/frag-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_FRAG parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; FOS = fragmentation analysis at up to 10 user-selected observation scales
+;;
+;; FOS5/6: per-pixel density, color-coded into 5/6 fragmentation classes
+;; FOS-APP2: average per-patch density, color-coded into 2 classes
+;; FOS-APP5: average per-patch density, color-coded into 5 classes
+;;
+;; Input image requirements: 1b-background, 2b-foreground, optional:
+;;    0b-missing, 3b-special background, 4b-non-fragmenting background
+;;
+;; FOS will provide an image per observation scale and summary statistics.
+;;
+;; Please specify entries at lines 32-36 ONLY using the following options:
+;; line 32: FOS5 (default)  or  FOS6  or  FOS-APP2  or  FOS-APP5
+;; line 33: Foreground connectivity: 8 (default) or 4
+;; line 34: pixel resolution [meters]
+;; line 35: up to 10 window sizes [unit: pixels] in increasing order
+;;          and separated by a single space.
+;; line 36: high-precision: 1 (default) or 0
+;;          (1-float precision, 0-rounded byte)
+;;
+;; an example parameter file doing FOS5 and using 8-connected foreground:
+;; FOS5
+;; 8
+;; 100
+;; 27
+;; 1
+****************************************************************************
+FAD-APP2
+8
+100
+23
+1
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>Example<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_FRAG</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_FRAG -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_FRAG using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">Frag finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">clc3class_frag  example_frag  frag.log</span>
+
+<span class="go">output/clc3class_frag:</span>
+<span class="go">clc3class_fad-app2_23.tif  clc3class_frag.csv  clc3class_frag.sav</span>
+<span class="go">clc3class_frag.txt</span>
+
+<span class="go">output/example_frag:</span>
+<span class="go">example_fad-app2_23.tif  example_frag.csv  example_frag.sav</span>
+<span class="go">example_frag.txt</span>
+</pre></div>
+</div>
+<p>Example statistics and spatial result of custom-scale per patch analysis of the input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code>, here FAD-APP2 showing Continuous forest patches in light green and Separated forest patches in dark green.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>FAD-APP: Foreground Area Density summary analysis for image:
+example.tif
+================================================================================
+8-conn FG: area, # patches, aps [pixels]: 428490, 2850, 150.34737
+Pixel resolution: 100[m], pix2ha: 1.00000, pix2acr: 2.47105
+Observation scale:   1
+Neighborhood area:   23x23
+    [hectare]:     529.00
+    [acres]:    1307.19
+================================================================================
+FAD-APP 5-class:
+        Rare:      1.2089
+    Patchy:      7.1572
+Transitional:      4.2668
+    Dominant:     87.3670
+    Interior:      0.0000
+FAD-APP 2-class:
+Separated:      8.3661
+Continuous:     91.6339
+================================================================================
+    FAD_av:     75.2900
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/example_fad-app2_23.tif"><img alt="../_images/example_fad-app2_23.tif" src="../_images/example_fad-app2_23.tif" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="id11">
+<h4>Remarks<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The result provides additional statistics in txt and csv format.</p></li>
+<li><p>The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB.</p></li>
+<li><p>The result provides one fragmentation image for each custom observation scale. In the example above, the user selected 1 observation scale with local neighborhood of 23x23 pixels.</p></li>
+<li><p>Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).</p></li>
+</ul>
+<p>Fragmentation has been used to map and summarize the degree of forest fragmentation in the <a class="reference external" href="http://www.fao.org/publications/sofo/en/">FAO SOFO2020</a> report and the Forest Europe <a class="reference external" href="https://foresteurope.org/publications/">State of Europe’s Forest 2020</a> report with additional technical details in the respective JRC Technical Reports for <a class="reference external" href="https://doi.org/10.2760/145325">FAO</a> and <a class="reference external" href="https://doi.org/10.2760/991401">FE</a>.</p>
+</div>
+</div>
+<div class="section" id="gwb-lm">
+<h3>GWB_LM<a class="headerlink" href="#gwb-lm" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Landscape Mosaic</strong> analysis at a <strong>user-selected observation scale</strong>. The Landscape Mosaic measures land cover heterogeneity, or human influence, in a tri-polar classification of a location accounting for the relative contributions of the three land cover types <strong>Agriculture</strong>, <strong>Natural</strong>, <strong>Developed</strong> in the area surrounding that location. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf">Landscape Mosaic</a> product sheet.</p>
+<div class="section" id="id16">
+<h4>Requirements<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: Agriculture</p></li>
+<li><p>2 byte: Natural</p></li>
+<li><p>3 byte: Developed</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Input image values &gt; 3 byte will be considered as missing data</p>
+</div>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/lm-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_LM parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; LM will provide an image and summary statistics.
+;; Please specify entries at line 14 ONLY using the following options:
+;; line 14: kdim: square window size [pixels], uneven in [3, 5, ...501]
+;;          obs_scale [hectare] = (pixres[m] * kdim)^2 / 10000
+;;
+;; example parameter file
+;; (assuming a pixel resolution of 30m, a 11x11 window ~ 10.9 ha):
+;; 11
+****************************************************************************
+23
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h4>Example<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_LM</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_LM -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_LM using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="gp">%</span> Loaded DLM: PNG.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">LM finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">clc3class_lm_23  example_lm_23  lm23.log</span>
+
+<span class="go">output/clc3class_lm_23:</span>
+<span class="go">clc3class_lm_23_103class.tif  clc3class_lm_23_heatmap.png   clc3class_lm_23.tif</span>
+<span class="go">lm103class_legend.png         clc3class_lm_23_heatmap.csv   clc3class_lm_23_heatmap.sav</span>
+<span class="go">heatmap_legend.png</span>
+
+<span class="go">output/example_lm_23:</span>
+<span class="go">example_lm_23_103class.tif  example_lm_23_heatmap.png   example_lm_23.tif</span>
+<span class="go">lm103class_legend.png       example_lm_23_heatmap.csv   example_lm_23_heatmap.sav</span>
+<span class="go">heatmap_legend.png</span>
+</pre></div>
+</div>
+<p>Example statistics (heatmap) and spatial result of custom-scale analysis of the input image <code class="code docutils literal notranslate"><span class="pre">clc3class.tif</span></code>, showing degree of predominance of land cover types Agriculture, Natural, Developed.</p>
+<a class="reference internal image-reference" href="../_images/lm103class_legend.png"><img alt="../_images/lm103class_legend.png" src="../_images/lm103class_legend.png" style="width: 49%;" /></a>
+<a class="reference internal image-reference" href="../_images/clc3class_lm_23.tif"><img alt="../_images/clc3class_lm_23.tif" src="../_images/clc3class_lm_23.tif" style="width: 49%;" /></a>
+</div>
+<div class="section" id="id18">
+<h4>Remarks<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The IDL-specific sav-file contains all information to conduct LM change analysis in GTB.</p></li>
+<li><p>LM is not restricted to <strong>Ag</strong>, <strong>Nat</strong>, <strong>Dev</strong> but can be applied to any 3 types of dominant land cover.</p></li>
+<li><p>The result provides the LM analysis for a single custom observation scale. In the example above, and assuming a pixel resolution of 100 meter, an observation scale of 23x23 pixels corresponds to a local neighborhood (analysis scale) of 2300x2300 meters ~ 50 hectare.</p></li>
+<li><p>The heatmap facilitates assessments of temporal changes and/or comparison between different sites.</p></li>
+</ul>
+<p>The Landscape Mosaic has been used to map and summarize the degree of landscape heterogeneity in many occasions (see references in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf">Landscape Mosaic</a> product sheet), including the <a class="reference external" href="https://www.srs.fs.usda.gov/pubs/37766">RPA</a>, <a class="reference external" href="https://urldefense.com/v3/__https:/www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1126895/1/Livro-Doc-345-1815-final-3.pdf__;!!DOxrgLBm!QdlMk1JDuaLmRLWA6JeqizIFwET3sAHqnWlLDX8vQnfpu9edG2iAIws94-RV3jkaakScfw$">Embrapa</a>, and <a class="reference external" href="https://doi.org/10.2760/757183">MAES</a> reports.</p>
+</div>
+</div>
+<div class="section" id="gwb-mspa">
+<h3>GWB_MSPA<a class="headerlink" href="#gwb-mspa" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If your are considering using the MSPA tool, keep in mind that the process is relatively complex and provide a lot of information (up to 25 classes). If you are only interested in fragmentation and/or less than 6 classes, please consider using <code class="code docutils literal notranslate"><span class="pre">GWB_FRAG</span></code> or <code class="code docutils literal notranslate"><span class="pre">GWB_SPA</span></code>.</p>
+</div>
+<p>This module will conduct the <strong>Morphological Spatial Pattern Analysis</strong>. <a class="reference external" href="https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/">MSPA</a> analyses shape and connectivity and conducts a segmentation of foreground (i.e. forest) patches in up to 25 feature classes. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf">Morphology</a> product sheet.</p>
+<div class="section" id="id20">
+<h4>Requirements<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/mspa-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_MSPA parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; MSPA: Morphological Spatial Pattern Analysis (up to 25 classes)
+;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
+;;
+;; MSPA will provide an image and summary statistics.
+;; (see tools/docs/MSPA_Guide.pdf for details)
+;; Please specify entries at lines 23-26 ONLY using the following options:
+;;
+;; line 23: MSPA parameter 1: Foreground connectivity: 8 (default) or 4
+;; line 24: MSPA parameter 2: EdgeWidth: 1 (default) or larger integer values
+;; line 25: MSPA parameter 3: Transition: 1 (default) or 0
+;; line 26: MSPA parameter 4: IntExt: 1 (default) or 0
+;;
+;; a parameter file with the default settings would look like this:
+;; 8
+;; 1
+;; 1
+;; 1
+****************************************************************************
+8
+1
+1
+1
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id21">
+<h4>Example<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_MSPA</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_MSPA -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_MSPA using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">MSPA processing finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">example_mspa  mspa.log</span>
+
+<span class="go">output/example_mspa:</span>
+<span class="go">example_8_1_1_1.tif  example_8_1_1_1.txt</span>
+</pre></div>
+</div>
+<p>Example statistics of the input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code> and explanatory sketch of the basic MSPA feature classes:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>MSPA results using:
+example (MSPA: 8_1_1_1, FG_area: 428490, iFG_area: 485606)
+
+MSPA-class [color]:  FG/data pixels [%]  #/BGarea
+============================================================
+    CORE(s) [green]:            --/--     0
+    CORE(m) [green]:      75.09/32.19     1196
+    CORE(l) [green]:            --/--     0
+        ISLET [brown]:       3.26/ 1.40     2429
+PERFORATION [blue]:       2.17/ 0.93     423
+        EDGE [black]:      13.54/ 5.80     890
+        LOOP [yellow]:       0.60/ 0.26     541
+        BRIDGE [red]:       1.42/ 0.61     765
+    BRANCH [orange]:       3.93/ 1.68     4685
+    Background [grey]:         --/57.14     2319/571240
+    Missing [white]:            0.03      51/270
+    Opening [grey]:  88.24 Integrity     2291/57116
+Core-Opening [darkgrey]:       --/ 0.59     717/5927
+Border-Opening [grey]:         --/ 5.12     1574/51189
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/mspalegend.gif"><img alt="../_images/mspalegend.gif" src="../_images/mspalegend.gif" style="width: 49%;" /></a>
+<a class="reference internal image-reference" href="../_images/example_8_1_1_1.tif"><img alt="../_images/example_8_1_1_1.tif" src="../_images/example_8_1_1_1.tif" style="width: 49%;" /></a>
+</div>
+<div class="section" id="id22">
+<h4>Remarks<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>MSPA is very versatile and can be applied to any binary map, scale and thematic layer. Please consult the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/MSPA_Guide.pdf">MSPA Guide</a>, the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf">Morphology product sheet</a> and/or the  <a class="reference external" href="https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/">MSPA website</a>    for further information.</p></li>
+<li><p>The simplified version, GWB_SPA provides fewer classes. GWB_SPA may be useful to get started and may be sufficient to address many assessments.</p></li>
+</ul>
+<p>MSPA is a purely geometric analysis scheme, which can be applied to any type of raster image. It has been used in more than 100 peer-reviewed publications to map and summarize the spatial pattern, fragmentation and connectivity of forest and other land cover patches, including the detection of structural and functional connecting pathways, analyzing urban greenspace, landscape restoration up to classifying zooplankton species.</p>
+</div>
+</div>
+<div class="section" id="gwb-p223">
+<h3>GWB_P223<a class="headerlink" href="#gwb-p223" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Density</strong> (P2), <strong>Contagion</strong> (P22) or <strong>Adjacency</strong> (P23) analysis of foreground (<strong>FG</strong>) objects at a user-selected observation scale (<a class="reference external" href="https://www.srs.fs.usda.gov/pubs/ja/ja_riitters006.pdf">Riitters et al. (2000)</a>). The result are spatially explicit maps and tabular summary statistics. The classification is determined by measurements of forest amount (P2) and connectivity (P22) within the neighborhood that is centered on a subject forest pixel. P2 is the probability that a pixel in the neighborhood is forest, and P22 is the probability that a pixel next to a forest pixel is also forest.</p>
+<div class="section" id="id23">
+<h4>Requirement<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+<li><p>3 byte: specific background (for P23 only)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/p223-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_P223 parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; FG-Density (P2), FG-Contagion (P22), or FG-Adjacency (P23)
+;; Input image requirements: 1b-background, 2b-foreground,
+;; 3b-specific background (for P23), optional: 0b-missing
+;;
+;; P223 will provide a color-coded image showing [0,100]% for either
+;; FG-Density, FG-Contagion, or FG-Adjacency masked for the Foreground cover.
+;; Use the alternative options 11, 12, 13 to obtain the original spatcon
+;; output without normalisation, masking, or color-coding.
+;;
+;; For original spatcon output ONLY:
+;; Missing values are coded as 0 (rounded byte), or -0.01 (float precision).
+;; For all output types, missing indicates the input window contained
+;; only missing pixels.
+;; For FG-Contagion and FG-Adjacency output only, missing also indicates
+;; the input window contained no foreground pixels (there was no information
+;; about foreground edge).
+;; For all output types, rounded byte = (float precision * 254) + 1
+;;
+;; Please specify entries at lines 41-43 ONLY using the following options:
+;; line 41:  1 FG-Density   (FG-masked and normalised), or
+;;           2 FG-Contagion (FG-masked and normalised), or
+;;           3 FG-Adjacency (FG-masked and normalised), or
+;;          11 FG-Density   (original spatcon output), or
+;;          12 FG-Contagion (original spatcon output), or
+;;          13 FG-Adjacency (original spatcon output), or
+;;          14 FG-Shannon   (original spatcon output), or
+;;          15 FG-SumD      (original spatcon output)
+;; line 42: kdim: square window size [pixels], uneven in [3, 5, ..., 501]
+;;          obs_scale [hectare] = (pixres * kdim)^2 / 10000
+;; line 43: high-precision: 1 (default, float precision) or 0 (rounded byte)
+;;
+;; an example parameter file for FG-Density and using a 27x27 window:
+;; 1
+;; 27
+;; 1
+****************************************************************************
+1
+27
+1
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id24">
+<h4>Example<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_P223</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_P223 -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_P223 using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">P2 finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">example_p2_27  p2_27.log</span>
+
+<span class="go">output/example_p2_27:</span>
+<span class="go">example_p2_27.tif  example_p2_27.txt</span>
+</pre></div>
+</div>
+<p>Example statistics and spatial result of the input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code> for P2, showing degree of forest density:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>P2-summary at Observation Scale: 27
+Total Foreground Area [pixels]: 428490
+Average P2: 73.7660
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/example_p2_27.tif"><img alt="../_images/example_p2_27.tif" src="../_images/example_p2_27.tif" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="id25">
+<h4>Remarks<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Density, Contagion or Adjacency are scale-dependent (specified by the size of the moving window).</p></li>
+<li><p>This moving window approach (originally called Pf/Pff) forms the base for other derived analysis schemes, such as <code class="code docutils literal notranslate"><span class="pre">GWB_LM</span></code>/<code class="code docutils literal notranslate"><span class="pre">GWB_FAD</span></code>/<code class="code docutils literal notranslate"><span class="pre">GWB_FRAG</span></code>.</p></li>
+</ul>
+<p>Both, Density and Contagion add a first spatial information content on top of the primary information of forest, forest amount. Information on forest Density and Contagion is an integral part of many national forest inventories and forest resource assessments. However, the derived products Fragmentation and Landscape Mosaic may be easier to communicate.</p>
+</div>
+</div>
+<div class="section" id="gwb-parc">
+<h3>GWB_PARC<a class="headerlink" href="#gwb-parc" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>parcellation</strong> analysis. This module provides a statistical summary file (txt/csv- format) with details for each unique class found in the image as well as the full image content: class value, total number of objects, total area, degree of parcellation.
+Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf">Parcellation</a> product sheet.</p>
+<div class="section" id="id26">
+<h4>Requirements<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>at least two different landcover classes</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/parc-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_PARC parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; PARC: Landscape Parcellation index
+;; Input image requirements: [1b, 255b]-land cover classes,
+;;    optional: 0b-missing
+;;
+;; PARC will provide summary statistics only.
+;;
+;; Please specify entries at lines 17 ONLY using the following options:
+;; line 17: Foreground connectivity: 8 (default) or 4
+;;
+;; an example parameter file using 8-connected foreground:
+;; 8
+****************************************************************************
+8
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id27">
+<h4>Example<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_PARC</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_PARC -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_PARC using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">PARC finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">clc3class_parc  example_parc  parc.log</span>
+
+<span class="go">output/clc3class_parc:</span>
+<span class="go">clc3class_parc.csv  clc3class_parc.txt</span>
+
+<span class="go">output/example_parc:</span>
+<span class="go">example_parc.csv  example_parc.txt</span>
+</pre></div>
+</div>
+<p>Example statistics of the input image <code class="code docutils literal notranslate"><span class="pre">clc3class.tif</span></code> showing statistics and degree of parcellation for each land cover class as well as for the entire image area:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Class   Value      Count     Area[pixels]     APS          AWAPS       AWAPS/data     DIVISION      PARC[%]
+    1       1          45       2448931    54420.7000  2076600.0000  1271360.0000        0.1520        1.1937
+    2       2         164        957879     5840.7300    82557.6000    19770.0000        0.9138       17.7426
+    3       3         212        593190     2798.0700   128177.0000    19008.4000        0.7839       11.0897
+================================================================================================================
+8-conn. Parcels:      421       4000000     9501.1875                1310139.4429        0.6725        8.0790
+</pre></div>
+</div>
+</div>
+<div class="section" id="id28">
+<h4>Remarks<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Parcellation is a normalized summary index in [0, 100] %.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">GWB_PARC</span></code> provides a tabular summary only.</p></li>
+</ul>
+<p>Parcellation, or the degree of dissection, may be useful to provide a quick tabular summary for each land cover class and the entire image. Together with the degree of division, it may be used to make a statement on the dissection of a particular land cover class. Because Parcellation is a normalized index, measuring Parcellation can be used to quantify temporal changes over a given site as well as directly compare the degree of parcellation of different sites. Being able to quantify changes in percent may also be useful to investigate if a given landscape planning measure had in fact a tangible influence on a specific land cover type or not.</p>
+</div>
+</div>
+<div class="section" id="gwb-rec">
+<h3>GWB_REC<a class="headerlink" href="#gwb-rec" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct <strong>recoding</strong> of categorical land cover classes.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Please ensure to strictly follow the instructions outlined in the file <code class="code docutils literal notranslate"><span class="pre">input/rec-parameters.txt</span></code>. In particular:</p>
+<ul class="simple">
+<li><p>Do not delete or insert any new lines.</p></li>
+<li><p>Modify the first column only in this file.</p></li>
+<li><p>Insert the new recoded class value as an integer number for each of the 256 classes.</p></li>
+<li><p>Class values that are not encountered in the image will be skipped.</p></li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h4>Requirements<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format Byte.</p>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/rec-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_REC parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; REC: Recode image classes
+;; Input image requirements: [0b, 255b] - classes
+;; Output: the same image coverage but with recoded class values
+;;
+;; Please specify 256 lines (line 20 - 275) having two entries per line:
+;; new_recoded_value [0, 255]   old_original_value[0, 255]
+;;
+;; The first column: must have 256 entries showing the recoded values
+;; The second column: MUST be in sequential order from 0 to 255, DO NOT EDIT
+;; Class values not found in the image will be skipped.
+;; i.e., to recode the class 55 to 3, line 75 would read: 3 55
+;;
+;; Recode lookup table:
+;; new_recoded_value[0, 255]  old_original_value[0, 255]
+****************************************************************************
+0    0
+1    1
+2    2
+3    3
+4    4
+5    5
+6    6
+7    7
+8    8
+9    9
+10   10
+11   11
+12   12
+13   13
+14   14
+15   15
+16   16
+17   17
+18   18
+19   19
+20   20
+21   21
+22   22
+23   23
+24   24
+25   25
+26   26
+27   27
+28   28
+29   29
+30   30
+31   31
+32   32
+33   33
+34   34
+35   35
+36   36
+37   37
+38   38
+39   39
+40   40
+41   41
+42   42
+43   43
+44   44
+45   45
+46   46
+47   47
+48   48
+49   49
+50   50
+51   51
+52   52
+53   53
+54   54
+55   55
+56   56
+57   57
+58   58
+59   59
+60   60
+61   61
+62   62
+63   63
+64   64
+65   65
+66   66
+67   67
+68   68
+69   69
+70   70
+71   71
+72   72
+73   73
+74   74
+75   75
+76   76
+77   77
+78   78
+79   79
+80   80
+81   81
+82   82
+83   83
+84   84
+85   85
+86   86
+87   87
+88   88
+89   89
+90   90
+91   91
+92   92
+93   93
+94   94
+95   95
+96   96
+97   97
+98   98
+99   99
+100  100
+101  101
+102  102
+103  103
+104  104
+105  105
+106  106
+107  107
+108  108
+109  109
+110  110
+111  111
+112  112
+113  113
+114  114
+115  115
+116  116
+117  117
+118  118
+119  119
+120  120
+121  121
+122  122
+123  123
+124  124
+125  125
+126  126
+127  127
+128  128
+129  129
+130  130
+131  131
+132  132
+133  133
+134  134
+135  135
+136  136
+137  137
+138  138
+139  139
+140  140
+141  141
+142  142
+143  143
+144  144
+145  145
+146  146
+147  147
+148  148
+149  149
+150  150
+151  151
+152  152
+153  153
+154  154
+155  155
+156  156
+157  157
+158  158
+159  159
+160  160
+161  161
+162  162
+163  163
+164  164
+165  165
+166  166
+167  167
+168  168
+169  169
+170  170
+171  171
+172  172
+173  173
+174  174
+175  175
+176  176
+177  177
+178  178
+179  179
+180  180
+181  181
+182  182
+183  183
+184  184
+185  185
+186  186
+187  187
+188  188
+189  189
+190  190
+191  191
+192  192
+193  193
+194  194
+195  195
+196  196
+197  197
+198  198
+199  199
+200  200
+201  201
+202  202
+203  203
+204  204
+205  205
+206  206
+207  207
+208  208
+209  209
+210  210
+211  211
+212  212
+213  213
+214  214
+215  215
+216  216
+217  217
+218  218
+219  219
+220  220
+221  221
+222  222
+223  223
+224  224
+225  225
+226  226
+227  227
+228  228
+229  229
+230  230
+231  231
+232  232
+233  233
+234  234
+235  235
+236  236
+237  237
+238  238
+239  239
+240  240
+241  241
+242  242
+243  243
+244  244
+245  245
+246  246
+247  247
+248  248
+249  249
+250  250
+251  251
+252  252
+253  253
+254  254
+255  255
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id30">
+<h4>Example<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_REC</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_REC -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_REC using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">Recode finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">clc3class_rec  example_rec  rec.log</span>
+
+<span class="go">output/clc3class_rec:</span>
+<span class="go">clc3class_rec.tif</span>
+
+<span class="go">output/example_rec:</span>
+<span class="go">example_rec.tif</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id31">
+<h4>Remarks<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>The recoded images have the suffix _rec.tif to distinguish them from the original images.</p></li>
+<li><p>To verify the recoding run the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gdalinfo -hist &lt;path2image&gt;
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Recoding may be useful to quickly setup a forest mask from a land cover map by reassigning specific land cover classes to forest. Please note that most <strong>GWB</strong> modules require a (pseudo) binary forest mask of data type Byte with the assignment:</p>
+<ul class="simple">
+<li><p>0 byte: missing data (optional)</p></li>
+<li><p>1 byte: Background</p></li>
+<li><p>2 byte: Foreground (i.e., forest)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="gwb-rss">
+<h3>GWB_RSS<a class="headerlink" href="#gwb-rss" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Restoration Status Summary analysis</strong>. It will calculate key attributes of the current network status, composed of foreground (forest) patches and it provides the normalized degree of network coherence. The result are tabular summary statistics. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf">Restoration Planner</a> product sheet.</p>
+<div class="section" id="id32">
+<h4>Requirements<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format Byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Any other values are considered as missing data</p>
+</div>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/rss-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_RESTORATION-STATUS parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; RSS: Restoration Status = network coherenceof image objetcs
+;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
+;;
+;; Please specify entry at lines 14 ONLY using the following options:
+;; line 14: Foreground connectivity: 8 default) or 4
+;;
+;; an example parameter file with default output would look like this:
+;; 8
+****************************************************************************
+8
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id33">
+<h4>Example<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
+<p>The result is stored in a single csv-file in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, listing the statistics for each input image in one line, accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_RSS</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_RSS -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_RSS using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">RSS finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">rss8.csv  rss8.log</span>
+</pre></div>
+</div>
+<p>Summary statistics for each input image showing the normalized degree of network coherence and additional key network parameters:</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>FNAME</p></th>
+<th class="head"><p>AREA</p></th>
+<th class="head"><p>RAC[%]</p></th>
+<th class="head"><p>NR_OBJ</p></th>
+<th class="head"><p>LARG_OBJ</p></th>
+<th class="head"><p>APS</p></th>
+<th class="head"><p>CNOA</p></th>
+<th class="head"><p>ECA</p></th>
+<th class="head"><p>COH[%]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>clc3class.tif</p></td>
+<td><p>957879.00</p></td>
+<td><p>23.946975</p></td>
+<td><p>164</p></td>
+<td><p>176747</p></td>
+<td><p>5840.7256</p></td>
+<td><p>180689</p></td>
+<td><p>281211.93</p></td>
+<td><p>29.357771</p></td>
+</tr>
+<tr class="row-odd"><td><p>example.tif</p></td>
+<td><p>428490.00</p></td>
+<td><p>42.860572</p></td>
+<td><p>2850</p></td>
+<td><p>214811</p></td>
+<td><p>150.34737</p></td>
+<td><p>311712</p></td>
+<td><p>221292.76</p></td>
+<td><p>51.644789</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id34">
+<h4>Remarks<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">GWB_RSS</span></code> provides a succinct summary of key network status attributes including area, extent, patch summary statistics, equivalent connected area and degree of network coherence.</p></li>
+<li><p>As a normalized index, Coherence can be used to directly compare the integrity of different networks or to quantitatively assess changes in network integrity over time.</p></li>
+<li><p>The provision of key network status attributes is essential for any restoration planning.</p></li>
+<li><p>The desktop application <a class="reference external" href="https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/">GuidosToolbox</a> provides additional, interactive tools for restoration planning.</p></li>
+</ul>
+<p>With the provision of a normalized degree of network coherence, <code class="code docutils literal notranslate"><span class="pre">GWB_RSS</span></code> provides a powerful tool to measure and rank the integrity of forest networks for different regions of interest. This feature may be useful to set priorities for restoration planning or to measure implementation progress and overall success of policy regulations.</p>
+</div>
+</div>
+<div class="section" id="gwb-spa">
+<h3>GWB_SPA<a class="headerlink" href="#gwb-spa" title="Permalink to this headline">¶</a></h3>
+<p>This module will conduct the <strong>Simplified Pattern Analysis</strong>. SPA analyses shape and conducts a segmentation of foreground patches into 2, 3, 5, or 6 feature classes. The result are spatially explicit maps and tabular summary statistics. <code class="code docutils literal notranslate"><span class="pre">GWB_SPA</span></code> is a simpler version of <code class="code docutils literal notranslate"><span class="pre">GWB_MSPA</span></code>. Details on the methodology and input/output options can be found in the <a class="reference external" href="https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf">Morphology</a> product sheet.</p>
+<div class="section" id="id36">
+<h4>Requirements<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
+<p>Single band geotiff in data format byte:</p>
+<ul class="simple">
+<li><p>0 byte: missing (optional)</p></li>
+<li><p>1 byte: background</p></li>
+<li><p>2 byte: foreground (forest)</p></li>
+</ul>
+<p>Processing parameter options are stored in the file <code class="code docutils literal notranslate"><span class="pre">input/spa-parameters.txt</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; GTB_SPA parameter file:
+;;    ***  do NOT delete header lines starting with &quot;;;&quot; ***
+;;
+;; SPA: Spatial Pattern Analysis (2, 3, 5, or 6 classes)
+;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
+;;
+;; SPAx will provide an image and summary statistics using 8-connectivity.
+;; Line 18: enter a single number, representing the number of pattern classes:
+;; 2: SLF, Coherent
+;; 3: Core, Core-Openings, Margin
+;; 5: Core, Core-Openings, Edge, Perforation, Margin
+;; 6: Core, Core-Openings, Edge, Perforation, Islet, Margin
+;;
+;; an example parameter file would look like this:
+;; 5
+****************************************************************************
+2
+****************************************************************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="id37">
+<h4>Example<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
+<p>The results are stored in the directory <code class="code docutils literal notranslate"><span class="pre">output</span></code>, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_SPA</span></code> command and listing of results in the directory output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> GWB_SPA -i<span class="o">=</span>/home/prambaud/input -o<span class="o">=</span>/home/prambaud/output
+<span class="go">IDL 8.8.0 (linux x86_64 m64).</span>
+<span class="gp gp-VirtualEnv">(c)</span> <span class="go">2020, Harris Geospatial Solutions, Inc.</span>
+
+<span class="go">GWB_SPA using:</span>
+<span class="go">dir_input= /home/prambaud/input</span>
+<span class="go">dir_output= /home/prambaud/output</span>
+<span class="gp">%</span> Loaded DLM: TIFF.
+<span class="go">Done with: clc3class.tif</span>
+<span class="go">Done with: example.tif</span>
+<span class="go">SPA2 finished sucessfully</span>
+
+<span class="gp">$</span> ls -R output/
+<span class="go">output/:</span>
+<span class="go">example_spa2  spa2.log</span>
+
+<span class="go">output/example_spa2:</span>
+<span class="go">example_spa2.tif  example_spa2.txt</span>
+</pre></div>
+</div>
+<p>Statistics and spatial result of the input image <code class="code docutils literal notranslate"><span class="pre">example.tif</span></code> showing a 2-class segmentation (SPA2): Coherent and Small &amp; Linear Features (SLF):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>SPA2: 8-connected Foreground, summary analysis for image:
+/home/prambaud/input/example.tif
+
+Image Dimension X/Y: 1000/1000
+Image Area =               Data Area                    + No Data (Missing) Area
+        = [ Foreground (FG) +   Background (BG)  ]     +          Missing
+        = [        FG       + {Core-Opening + other BG} ] +       Missing
+
+================================================================================
+        Category              Area [pixels]:
+================================================================================
+        Coherent:                 388899
++              SLF:                  39591
+--------------------------------------------------------------------------------
+= Foreground Total:                 428490
++ Background Total:                 571240
+--------------------------------------------------------------------------------
+=  Data Area Total:                 999730
+
+        Data Area:                 999730
++          Missing:                    270
+--------------------------------------------------------------------------------
+= Image Area Total:                1000000
+
+
+================================================================================
+        Category    Proportion [%]:
+================================================================================
+    Coherent/Data:     38.9004
++         SLF/Data:      3.9602
+--------------------------------------------------------------------------------
+        FG/Data:     42.8606
+--------------------------------------------------------------------------------
+    Coherent/FG:     90.7603
++           SLF/FG:      9.2397
+================================================================================
+
+
+================================================================================
+        Category          Count [#]:
+================================================================================
+        Coherent:             847
+        FG Objects:            2850
+            SLF:            6792
+================================================================================
+</pre></div>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/example_spa2.tif"><img alt="../_images/example_spa2.tif" src="../_images/example_spa2.tif" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="id38">
+<h4>Remarks<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The full version, GWB_MSPA provides many more features and classes.</p></li>
+<li><p>Please use <code class="code docutils literal notranslate"><span class="pre">GWB_MSPA</span></code> if you need an edge width &gt; 1 pixel and/or to detect connecting pathways.</p></li>
+</ul>
+<p><code class="code docutils literal notranslate"><span class="pre">GWB_SPA</span></code> is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient in many application fields. Advanced analysis, including the detection of connecting pathways require using the full version <code class="code docutils literal notranslate"><span class="pre">GWB_MSPA</span></code>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

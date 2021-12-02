@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip time series &#8212; SEPAL  documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Coverage analysis tool for optical data" href="coverage_analysis.html" />
+    <link rel="prev" title="ALOS Kyoto &amp; Carbon Mosaics by JAXA" href="alos_mosaics.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../other.html">
+   other
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fcdm.html">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_pysmm.html">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../time-series.html">
+   time-series
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_r.html">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../PlanetLab.html">
+   PlanetLab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepafe.html">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#select-file">
+   Select file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table">
+     Table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shape">
+     Shape
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#select-time-serie-parameters">
+   Select time serie parameters
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drivers">
+     drivers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#points">
+     points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bands">
+     bands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mosaics">
+     mosaics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thumbnails">
+     thumbnails
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#square-size">
+     square size
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#export-data">
+   Export data
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/dwn/clip-time-series.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="clip-time-series">
+<h1>Clip time series<a class="headerlink" href="#clip-time-series" title="Permalink to this headline">¶</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This documentation should explain every step to execute the module. If any question or bug remains, please consider post it on the <a class="reference external" href="https://github.com/openforis/clip-time-series/issues/new">bug report page</a>.</p>
+</div>
+<p>This module allows the user to download as a <code class="code docutils literal notranslate"><span class="pre">.pdf</span></code> an auto generated time series from customizable dates.
+Each mosaic will be represented in a square of custom size from <strong>500x500m</strong> to <strong>1000x10000km</strong> around the point of interest using the band combination selected by the user.</p>
+<div class="section" id="select-file">
+<h2>Select file<a class="headerlink" href="#select-file" title="Permalink to this headline">¶</a></h2>
+<p>First the user needs to select a file. This file will be the main input of the module and each page of the final <code class="code docutils literal notranslate"><span class="pre">.pdf</span></code> will match a geometry of the input. The user can use 2 types of input:</p>
+<ul class="simple">
+<li><p>Table file (<code class="code docutils literal notranslate"><span class="pre">.csv</span></code>, <code class="code docutils literal notranslate"><span class="pre">.txt</span></code>) containing at least coordinates and ID columns</p></li>
+<li><p>Shapes (<code class="code docutils literal notranslate"><span class="pre">.geojson</span></code>, <code class="code docutils literal notranslate"><span class="pre">.shp</span></code>, <code class="code docutils literal notranslate"><span class="pre">.geopackage</span></code>) with at least geometry and Id column</p></li>
+</ul>
+<div class="section" id="table">
+<h3>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h3>
+<p>Select the <span class="guilabel">point</span> radio button.</p>
+<p>The table file can be <code class="code docutils literal notranslate"><span class="pre">.csv</span></code> or <code class="code docutils literal notranslate"><span class="pre">.txt</span></code>. It needs to have at least 3 columns including the latitude coordinates, the longitude coordinates and an Id. the name of the columns can be anything.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The table coordinates need to remain unprojected, i.e. in EPSG:4326</p>
+</div>
+<p>Select the file by clicking <span class="guilabel">Table file</span>. Only the matching file type will be displayed. User can navigate through its SEPAL folders to find the appropriate table.</p>
+<p>One a file is selected, the widget will try to autopopulate the id, latitude and longitude columns. If columns are wrongly set of if data are missing the user need to select one of the file column to completely describe the points (x, y, id).</p>
+<a class=""
+               data-lightbox="group-clip-time-serie"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_table.png"
+               title="input selector using a table dataset"
+               data-title="input selector using a table dataset"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_table.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="input table"/>
+                </a><p>Click on <span class="guilabel">load your pts file</span> to load the points as a geodataframe in the app model and display them on a map.
+The points will be represented as marker clusters and the map will automatically zoom on them. click on any cluster to zoom in.</p>
+<a class=""
+               data-lightbox="group-clip-time-serie"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/map_table.png"
+               title="input map after selecting the default point file"
+               data-title="input map after selecting the default point file"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/map_table.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="map table"/>
+                </a><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click on :guilabel:` download test dataset` will automatically download and validate a set of point in the app. Use it to discover the module functionalities.</p>
+</div>
+</div>
+<div class="section" id="shape">
+<h3>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">¶</a></h3>
+<p>Select the <span class="guilabel">shape</span> radio button.</p>
+<p>The table file can be any file type digested by the <code class="code docutils literal notranslate"><span class="pre">fiona</span></code> librairy. The file need to have at least 1 column to describe the Id.</p>
+<p>The Id column will be used to name the points in the final pdf. Select it in the updated dropdown menu “Id column”.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>if you use names for <cite>id</cite> make sure that they are all unique.</p>
+</div>
+<a class=""
+               data-lightbox="group-clip-time-serie"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_shape.png"
+               title="input selector using a shapefile dataset. "Name" have been selected as Id column."
+               data-title="input selector using a shapefile dataset. "Name" have been selected as Id column."
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_shape.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="input_shape"/>
+                </a><p>Click on <span class="guilabel">load your pts file</span> to load the shapes as a geodataframe in the app model and display them on a map. The map will be updated with the selected shapes and zoom on the area of interes.</p>
+<a class=""
+               data-lightbox="group-clip-time-serie"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/map_shape.png"
+               title="input map after selecting a shapefile dataset."
+               data-title="input map after selecting a shapefile dataset."
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/map_shape.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="map_shape"/>
+                </a></div>
+</div>
+<div class="section" id="select-time-serie-parameters">
+<h2>Select time serie parameters<a class="headerlink" href="#select-time-serie-parameters" title="Permalink to this headline">¶</a></h2>
+<p>In this second step, the user is asked to select the parameters of its time series.</p>
+<div class="section" id="drivers">
+<h3>drivers<a class="headerlink" href="#drivers" title="Permalink to this headline">¶</a></h3>
+<p>2 drivers are available in this module. You can select either a GEE based computation (images will be retreived from GEE) or planet (images will be retreived from planet servers using the user API key).</p>
+<p>If the user selects <span class="guilabel">gee</span>, the panel will ask you to select the satellites you want to use for the thumbnails. you can select any satellites imagery from landsat family and Sentinel program.</p>
+<p>The best available image is then selected using the following hierarchy order:</p>
+<ul class="simple">
+<li><p>Sentinel 2</p></li>
+<li><p>Landsat 8</p></li>
+<li><p>landsat 5</p></li>
+<li><p>landsat 7</p></li>
+</ul>
+<p>If the user select <span class="guilabel">planet</span>, the panel will ask for the Planet API key.</p>
+</div>
+<div class="section" id="points">
+<h3>points<a class="headerlink" href="#points" title="Permalink to this headline">¶</a></h3>
+<p>The number of points a user wants to display can vary. If the user select all then all the available points in the provided file will be used. It’s also possible to select a subset of them using there <strong>id</strong> names.</p>
+</div>
+<div class="section" id="bands">
+<h3>bands<a class="headerlink" href="#bands" title="Permalink to this headline">¶</a></h3>
+<p>multiple band combination can be selected:</p>
+<ul class="simple">
+<li><p>Using the <code class="code docutils literal notranslate"><span class="pre">gee</span></code> driver:</p>
+<ul>
+<li><p>Red, Green, Blue</p></li>
+<li><p>Nir, Red, Green</p></li>
+<li><p>Nir, Swir1, Red</p></li>
+<li><p>Swir2, Nir, Red</p></li>
+<li><p>Swir2, Swir1, Red</p></li>
+<li><p>Swir2, Nir, Green</p></li>
+</ul>
+</li>
+<li><p>Using the <code class="code docutils literal notranslate"><span class="pre">planet</span></code> driver:</p>
+<ul>
+<li><p>rgb</p></li>
+<li><p>cir</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="mosaics">
+<h3>mosaics<a class="headerlink" href="#mosaics" title="Permalink to this headline">¶</a></h3>
+<p>Each selected mosaics will be represented by a thumbnail in the final <code class="code docutils literal notranslate"><span class="pre">pdf</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>User can select as many mosaics as he wants but note:</p>
+<ul class="simple">
+<li><p>The page will remain in A4 format so the thumbnails will become smaller and smaller proportionnaly to the number of mosaics.</p></li>
+<li><p>Each image needs to be downloaded to SEPAL so many images =&gt; longer compuation time</p></li>
+</ul>
+</div>
+<p>Using the <code class="code docutils literal notranslate"><span class="pre">gee</span></code> driver, mosaics are yearly cloudless mosaics build on the best found satellites as described in the previous section.</p>
+<p>Using the <code class="code docutils literal notranslate"><span class="pre">planet</span></code> driver, 3 types of mosaics can be selected (and mixed together):</p>
+<ul class="simple">
+<li><p>NICFI bianual mosaics</p></li>
+<li><p>NICFI monthly mosaics</p></li>
+<li><p>Other (any other mosaics associated to the user API key)</p></li>
+</ul>
+</div>
+<div class="section" id="thumbnails">
+<h3>thumbnails<a class="headerlink" href="#thumbnails" title="Permalink to this headline">¶</a></h3>
+<p>Select a thumbnail size. This will be the minimal size of the thumbnail used. If the shape defined in the first panel is bigger then the software will try to fint he smallest square around the shape centered on the centroid of the shape.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>if the final outter square of a shape is bigger than <strong>10000x10000km</strong>, gee and planet will refuse to export your data. Remember that this module is not meant to export national time series but thumbnails.</p>
+</div>
+</div>
+<div class="section" id="square-size">
+<h3>square size<a class="headerlink" href="#square-size" title="Permalink to this headline">¶</a></h3>
+<p>In the middle of the final image, the software will display a small square to visually represent the point. User can select the size of this square depending on the size of its thumbnails.</p>
+<p>If the used dataset is shapefile then the square will be replace by the shape geometry.</p>
+<p>When you click on the validation button, the module gives you a sum up of the download your about to perform. It’s a warning step to avoid the download of huge number of points on wrongly defined parameters.</p>
+<a class=""
+               data-lightbox="group-clip-time-series"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/viz_gee.png"
+               title="An example set of parameter to create a pdf file. Data sum-up can be found in the Orange rectangle."
+               data-title="An example set of parameter to create a pdf file. Data sum-up can be found in the Orange rectangle."
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/viz_gee.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="viz"/>
+                </a></div>
+</div>
+<div class="section" id="export-data">
+<h2>Export data<a class="headerlink" href="#export-data" title="Permalink to this headline">¶</a></h2>
+<p>Only one single button here. Click on it and the downloading of your images will be send to earthengine or planet.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The build of the <code class="code docutils literal notranslate"><span class="pre">.pdf</span></code> file can consume lots of computation resources and in particular RAM. if you’re module freezes more than 2-3 minutes you certainly ran out of memory and the Python kernel have died. Restart the process with a bigger instance.</p>
+</div>
+<a class=""
+               data-lightbox="group-clip-time-series"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/process_loading.png"
+               title="the progress bar of a downloading process"
+               data-title="the progress bar of a downloading process"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/process_loading.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt="process_loading"/>
+                </a><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The images will be removed from your gdrive after the creation of the pdf to save space</p>
+</div>
+<p>Then the module will give you a clickable link in the green button and a preview of the first page of the <code class="code docutils literal notranslate"><span class="pre">pdf</span></code></p>
+<a class=""
+               data-lightbox="group-clip-time-series"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_shape_planet.png"
+               title="the output preview of a shape input using planet mosaics"
+               data-title="the output preview of a shape input using planet mosaics"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_shape_planet.png"
+                     class=""
+                     width="49%"
+                     height="auto"
+                     alt="results"/>
+                </a><a class=""
+               data-lightbox="group-clip-time-series"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_planet.png"
+               title="the output preview of a table input using planet mosaics"
+               data-title="the output preview of a table input using planet mosaics"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_planet.png"
+                     class=""
+                     width="49%"
+                     height="auto"
+                     alt="results"/>
+                </a><a class=""
+               data-lightbox="group-clip-time-series"
+               href="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_landsat.png"
+               title="the output preview of a table input using landsat mosaics"
+               data-title="the output preview of a table input using landsat mosaics"
+               
+               ><img src="https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_landsat.png"
+                     class=""
+                     width="49%"
+                     height="auto"
+                     alt="results"/>
+                </a>
+    <script>
+        var div = document.getElementsByClassName("tocsection editthispage")[0];
+        var link = div.getElementsByTagName("a")[0];
+        link.href = "https://github.com/openforis/clip-time-series/edit/master/doc/en.rst";
+    </script>
+    </div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

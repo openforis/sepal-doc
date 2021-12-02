@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time series analysis &#8212; SEPAL  documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="cusum" href="cusum.html" />
+    <link rel="prev" title="BFAST GPU" href="bfast_gpu.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../other.html">
+   other
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="clip-time-series.html">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fcdm.html">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_pysmm.html">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../time-series.html">
+   time-series
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../PlanetLab.html">
+   PlanetLab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepafe.html">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-the-test-dataset">
+   Download the test dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-time-series-analysis">
+   Run time-series analysis
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/dwn/bfast_r.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="time-series-analysis">
+<h1>Time series analysis<a class="headerlink" href="#time-series-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The Breaks for Additive Seasonal and Trend (BFAST) method enables to analyze the dynamics of satellite dense time series and overcome the major challenge to distinguish land-cover change from seasonal phenological variations.</p>
+<p><a class="reference external" href="https://doi.org/10.1016/j.rse.2010.08.003">Verbesselt et al. (2010)</a>, <a class="reference external" href="https://doi.org/10.1016/j.isprsjprs.2015.03.015">Dutrieux et al. (2015)</a> and <a class="reference external" href="https://doi.org/10.1016/j.rse.2015.08.020">DeVries et al. (2015)</a> used this approach to demonstrate that time series can be decomposed into trend, seasonal, and remainder components and that the time and number of changes can be detected at high temporal resolution (i.e., 16 days), enabling detection of tree cover change and separation from the phenology signal.</p>
+<p>The same authors developed the <a class="reference external" href="https://www.rdocumentation.org/packages/bfastSpatial/versions/0.6.2">bfastSpatial package</a> which provides utilities to perform change detection analysis on time-series of spatial gridded data, such as the Landsat satellite imagery that cover our period of interest.</p>
+<p>The package has been tested in the early versions of the cloud based platform developed by FAO for parallel processing of remote sensing data (<a class="reference external" href="https://sepal.io">https://sepal.io</a>). It has been recently adapted into a functional processing chain (<a class="reference external" href="https://github.com/yfinegold/runBFAST">https://github.com/yfinegold/runBFAST</a>) which is wrapped in the current Shiny application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Processing of time-series using BFAST is computed in SEPAL, so selecting a powerful instance is recommended. The computation is parallelized on several CPUs, so an instance with a large number of CPUs is recommended as well. Click on the terminal button  and select a new instance. Instance ”m16” with 16 CPUs, might be fast enough to do the processing.</p>
+</div>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In the introduction section: the welcome, intro to BFAST and parameterization tabs provide additional information about the mechanics of the algorithm. It is highly recommended to read the text in these tabs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The application is only available in English at the moment. French and Spanish translations will be updated shortly. If you are interested in translating the application into your own language contact <a class="reference external" href="mailto:remi&#46;dannunzio&#37;&#52;&#48;fao&#46;org">remi<span>&#46;</span>dannunzio<span>&#64;</span>fao<span>&#46;</span>org</a> or <a class="reference external" href="mailto:yelena&#46;finegold&#37;&#52;&#48;fao&#46;org">yelena<span>&#46;</span>finegold<span>&#64;</span>fao<span>&#46;</span>org</a></p>
+</div>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/introduction.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/introduction.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a></div>
+<div class="section" id="download-the-test-dataset">
+<h2>Download the test dataset<a class="headerlink" href="#download-the-test-dataset" title="Permalink to this headline">¶</a></h2>
+<p>If this is your first time using the time series analysis tool it is very useful and recommended that you first, try with the example data set. This will help you to first understand the logic and parameters of the analysis with already well-prepared data, afterwards, you can apply it to your own data. The example data set can be downloaded in the ‘download test data’ tab.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/test_download.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/test_download.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>Click on <span class="guilabel">Download test dataset</span>. The data is downloaded into the <code class="code docutils literal notranslate"><span class="pre">bfast_data_test</span></code> folder in your root directory. The file location and information about the download will appear in the bottom right corner.</p>
+</div>
+<div class="section" id="run-time-series-analysis">
+<h2>Run time-series analysis<a class="headerlink" href="#run-time-series-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Click on the Process tab in the left column.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/process_tab.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/process_tab.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>First, you need to select the time series folder. Click on the Time Series Folder button to navigate to the folder with your downloaded data (either downloaded from the SEPAL search option or the test data set)</p>
+<p>Select the whole time series folder in your download folder. If your AOI had different features, the application will ask you to select which one you want to process, you can select one, all of them or some of them. In the example below, you can see how it looks with an example where you have 140 distinct features.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_ts.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_ts.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_ts_tile.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_ts_tile.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>There is an option to apply a mask and run BFAST only on areas inside the mask. You can select a file with 0 and 1 values. 0 values will be excluded and 1 included in the computation.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_mask.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/select_mask.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>If you would like to use a mask, select the <strong>FNF mask</strong> and then select the raster file by clicking on the <strong>forest/non-forest</strong> mask button and navigating to and selected the mask file.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/fnf_mask.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/fnf_mask.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/browse_mask.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/browse_mask.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>Next, change the parameters for your study area. At this stage, the BFAST explorer described in section number 2 can be very useful. You can use it to understand the seasonal and interannual patterns of the land cover that you are analysing over your study area. You can do this over several pixels to have a better idea.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that this module will define a historical period and a monitoring period, so it corresponds to the option “bfastmonitor” in the BFAST explorer module.</p>
+</div>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/parameters.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/parameters.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>The parameters include:</p>
+<ul class="simple">
+<li><p><strong>History beginning year</strong> – The year that marks the start of the historical period. The actual start date will depend on the history parameter chosen.</p></li>
+<li><p><strong>Monitoring start and end years</strong> – The monitoring start year is the year that marks the end of the historical period and the start of the monitoring period. The monitoring end year marks the end of the monitoring period.</p></li>
+<li><p><strong>History parameter</strong> – Specifies the start of a stable history period. The options are:</p>
+<ul>
+<li><p>reverse ordered CUSUM (ROC), looks backwards in time, using a stepwise approach, to identify a stable history period</p></li>
+<li><p>Bai and Perron breakpoint estimation (BP), also identifies a stable history period and can additionally be used to identify disturbances in the historical period.</p></li>
+<li><p>all, uses all available observations.</p></li>
+<li><p>numeric, i.e. 2011, the start date can be specified using the year.</p></li>
+</ul>
+</li>
+<li><p><strong>Elements of the formula</strong> – The formula describes the type of regression model applied. The options are:</p>
+<ul>
+<li><p>trend + harmon, a linear trend and a harmonic season component</p></li>
+<li><p>harmon, a harmonic season component</p></li>
+<li><p>trend, a linear trend</p></li>
+</ul>
+</li>
+<li><p><strong>Order parameter</strong> – Specifies the order of the harmonic term, defaulting to 3.</p></li>
+<li><p><strong>Type parameter</strong> – Specifies the type of monitoring process. For additional documentation on the type parameter see the <a class="reference external" href="https://cran.r-project.org/web/packages/strucchange/index.html">strucchange package documentation</a>. The options are:</p>
+<ul>
+<li><p>Moving sums of residuals (MOSUM), where residuals are calculated as the difference between expected values and actual observations in a monitoring period based on OLS residuals.</p></li>
+<li><p>Cumulative sum (CUSUM), cumulative sums of standardized residuals (MOSUM uses a moving sum, while CUSUM uses a cumulative of the same residuals)</p></li>
+<li><p>Moving estimates (ME), the moving estimates process is returned</p></li>
+<li><p>Fluctuation, returns the recursive estimates process</p></li>
+</ul>
+</li>
+<li><p><strong>Raster band outputs</strong> – Result layers to be returned. Can be any combination of <code class="code docutils literal notranslate"><span class="pre">breakpoint</span></code>, <code class="code docutils literal notranslate"><span class="pre">magnitude</span></code>, <code class="code docutils literal notranslate"><span class="pre">error</span></code>, <code class="code docutils literal notranslate"><span class="pre">history</span></code>, <code class="code docutils literal notranslate"><span class="pre">r.squared</span></code>, <code class="code docutils literal notranslate"><span class="pre">adj.r.squared</span></code>, <code class="code docutils literal notranslate"><span class="pre">coefficients</span></code>. By default: <code class="code docutils literal notranslate"><span class="pre">breakpoint</span></code>, <code class="code docutils literal notranslate"><span class="pre">magnitude</span></code> and <code class="code docutils literal notranslate"><span class="pre">error</span></code> are returned by the function. It is important to know which layers have been requested and in which order they will be exported because the layer names are not specified. Note that if “coefficients” is included, the output will include the following: “(Intercept)” and any trend and/or harmonic coefficients depending on the values of formula and order.</p></li>
+<li><p><strong>Computation mode</strong> – chose between running the calculation for the entire monitoring period (overall) or each year of the monitoring period (sequential):</p>
+<ul>
+<li><p>Overall – runs BFAST one time for the monitoring period and provides a maximum of one breakpoint for the entire monitoring period</p></li>
+<li><p>Sequential – runs BFAST for each year of the monitoring period. The output will be per year of the monitoring period and provides a maximum of one breakpoint per year in the monitoring period. This option does not create the thresholded output and will not display the output within the application. To view the results, use the visualizer in SEPAL or download the results to your local computer.</p></li>
+</ul>
+</li>
+</ul>
+<p>Once you have decided on your parameters, run BFAST by clicking on the Launch BFAST calculation button in the results box.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/launch.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/launch.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>Depending on the size of your area and the size of your instance, BFAST can take a long time run. It is not necessary to keep this application open for the results to be created, it is only necessary to make sure that the instance is running.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/log.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/log.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>If your AOI has multiple polygons and contains many numeric folders, i.e. 1, 2, 3, etc., it will run the BFAST calculation for each of the folders, recursively.</p>
+<p>If you are running a large area or have a weak internet connection which might cause the application to disconnect you can go to your user resources in SEPAL and set the amount of time your session should stay open (see image below). This way you can shut down SEPAL and the calculation will continue.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/instance.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/instance.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the page goes grey and you see Disconnected from the server, don’t worry! The process is still running, and you can follow the previous step to make sure your session remains active.</p>
+</div>
+<p>If you are feeling patient or have a small study area, you can wait for the algorithm to finish running and view one of the outputs, the thresholded magnitude.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/finished.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/finished.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>When the calculation finishes running you will see the text <code class="code docutils literal notranslate"><span class="pre">Done</span> <span class="pre">processing!!!</span> <span class="pre">Click</span> <span class="pre">on</span> <span class="pre">DISPLAY</span> <span class="pre">THE</span> <span class="pre">RESULTS</span></code>. You can now click on the <span class="guilabel">Display BFAST results from this session</span> button to display the thresholded magnitude.</p>
+<p>The output from BFAST by default include 3 bands, the breakpoint, the magnitude and error. An additional output is calculated in this application, which is the thresholded magnitude. The thresholded magnitude is calculated using the magnitude output, calculating the mean magnitude value over the AOI and applying thresholds up to +/- 4 standard deviations from the mean. This layer indicates the positive or negative intensity of change of each pixel. Above 2 standard deviations, you can interpret that a change has certainly occurred compared to the historical period modelled.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/preview.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/preview.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are not using the instance anymore to process more time-series, please shut down the instance clicking in the trashbin button.</p>
+</div>
+<p>You can also download your results using FileZilla to your hard drive using ArcGIS for example. Here you can see an example of how the layers can be displayed:</p>
+<p>BFAST was computed over the following area in Indonesia over the years 2013-2019. The years 2013-2016 were used as historical period and 2016-2019 as the monitoring period.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_rgb.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_rgb.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>Band_1</strong> shows the date when the breakpoint was detected. The output is stored as a decimal date.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_1.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>Band_2</strong> shows the BFAST magnitude of change, in this case, the mean of the cumulative increase or decrease of NDMI since the monitoring period started. It would indicate pixels where vegetation has become wetter or drier. The values can be considered as relative changes, where the units are related to the average deviation from the trend of NDMI.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_2.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_2.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>Band_3</strong> shows the errors, these are pixels where the algorithm did not find enough data to compute the trends.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_3.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_band_3.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>Finally, you will find an additional layer called “threshold”. The thresholded magnitude is calculated using the magnitude output, calculating the mean magnitude value over the AOI and applying thresholds up to +/- 4 standard deviations from the mean. The layer is a thematic, classification map which has values ranging from 0-10, which correspond to the legend below. You can see how to name them in the figure below.</p>
+<a class=""
+               data-lightbox="group-bfastspatial"
+               href="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_sigma.png"
+               title=""
+               data-title=""
+               
+               ><img src="https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_sigma.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a>
+    <script>
+        var div = document.getElementsByClassName("tocsection editthispage")[0];
+        var link = div.getElementsByTagName("a")[0];
+        link.href = "https://github.com/12rambau/bfastspatial/edit/master/www/tutorial/tutorial.rst";
+    </script>
+    </div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

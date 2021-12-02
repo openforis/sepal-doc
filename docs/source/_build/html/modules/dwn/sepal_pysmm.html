@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soil Moisture Mapping &#8212; SEPAL  documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="se.plan" href="seplan.html" />
+    <link rel="prev" title="SEPAL-MGCI" href="sepal_mgci.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/sepal.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../setup/index.html">
+  Getting started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cookbook/index.html">
+  Cookbook
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Modules
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../cli/index.html">
+  CLI
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../team/index.html">
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/openforis/sepal" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/OpenForis" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://gis.stackexchange.com/questions/tagged/sepal" rel="noopener" target="_blank" title="GIS Stackexchange">
+            <span><i class="fab fa-stack-exchange"></i></span>
+            <label class="sr-only">GIS Stackexchange</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured" rel="noopener" target="_blank" title="Youtube">
+            <span><i class="fab fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../other.html">
+   other
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="alert_module.html">
+     Deforestation alert analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alos_mosaics.html">
+     ALOS Kyoto &amp; Carbon Mosaics by JAXA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="clip-time-series.html">
+     Clip time series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coverage_analysis.html">
+     Coverage analysis tool for optical data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fcdm.html">
+     FCDM
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geo_processing.html">
+     geo_processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_python.html">
+     Forest change mask
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gfc_wrapper_R.html">
+     gfc_wrapper_R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwb.html">
+     GuidosToolbox Workbench
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gwl_analysis.html">
+     gwl_analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="import_to_gee.html">
+     Vector file manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_analysis.html">
+     Stratified Area Estimation - Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sae_design.html">
+     sae_design
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sdg_indicator.html">
+     SDG 15.3.1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepal_mgci.html">
+     SEPAL-MGCI
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Soil Moisture Mapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seplan.html">
+     se.plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tmf.html">
+     tmf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="zonal-analysis.html">
+     Zonal analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../time-series.html">
+   time-series
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_explorer.html">
+     BFAST Explorer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_gpu.html">
+     BFAST GPU
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bfast_r.html">
+     Time series analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cusum.html">
+     cusum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sar_time_series.html">
+     sar_time_series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../inventories.html">
+   inventories
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bootstrap_sampling_simulator.html">
+     bootstrap_sampling_simulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_generator.html">
+     plot_generator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../disaster.html">
+   disaster
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="damage_proxy_map.html">
+     Damage Proxy Maps
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../PlanetLab.html">
+   PlanetLab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planet_order.html">
+     Planet order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sepafe.html">
+     SEPAFE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../SMFM.html">
+   SMFM
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_biota.html">
+     smfm_biota
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="smfm_deforest.html">
+     smfm_deforest
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-sepal">
+   Open SEPAL
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#process-sentinel-1-time-series-data-to-generate-maps-of-soil-moisture">
+   Process Sentinel-1 time series data to generate maps of soil moisture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-the-soil-moisture-maps-from-gee-to-sepal">
+   Download the soil moisture maps from GEE to SEPAL
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-process-and-analyze-soil-moisture-time-series-data">
+   Post-process and analyze soil moisture time-series data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizing-imagery">
+   Visualizing imagery
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/openforis/sepal-doc/edit/master/docs/source/modules/dwn/sepal_pysmm.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="soil-moisture-mapping">
+<h1>Soil Moisture Mapping<a class="headerlink" href="#soil-moisture-mapping" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="open-sepal">
+<h2>Open SEPAL<a class="headerlink" href="#open-sepal" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open SEPAL and Login</p>
+<ol class="arabic simple">
+<li><p>If SEPAL is not already open, click the following link to open SEPAL in your browser: <a class="reference external" href="https://sepal.io/">https://sepal.io/</a></p></li>
+<li><p>Connect SEPAL to Google account</p></li>
+</ol>
+</li>
+<li><p>Make sure SEPAL is connected to your google account as described in the section Connecting to Google Earth Engine</p>
+<ol class="arabic simple">
+<li><p>Upload your area of interest (AOI) shapefile as a GEE asset</p></li>
+</ol>
+</li>
+<li><p>Instructions for uploading a shapefile as an asset can be found here: <a class="reference external" href="https://developers.google.com/earth-engine/importing">https://developers.google.com/earth-engine/importing</a></p>
+<ol class="arabic simple">
+<li><p>Start an <code class="code docutils literal notranslate"><span class="pre">m4</span></code> instance in the Terminal</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="process-sentinel-1-time-series-data-to-generate-maps-of-soil-moisture">
+<h2>Process Sentinel-1 time series data to generate maps of soil moisture<a class="headerlink" href="#process-sentinel-1-time-series-data-to-generate-maps-of-soil-moisture" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Open and launch Soil Moisture Mapping application</p>
+<ol class="arabic simple">
+<li><p>To access the module, click on the Apps tab in SEPAL. Then use the search box and write “SOIL MOISTURE MAPPING” or use bottom pagination and find it manually.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.1.PNG" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>The application will be launched and displayed over a new tab in the SEPAL panel.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.2.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.2.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.2.PNG" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>The module has 5 main steps that can be selected in the left panel: “AOI selection”, “download”, “closing filter”, “calculate statistics”, and “display map”.</p></li>
+<li><p>Click over the AOI selection step and follow the next 4 sub-steps.</p></li>
+<li><p>In the AOI selection step, choose ‘Use GEE asset’, paste your GEE Asset ID into the box and click on the “Use asset” button to select that as your AOI.</p></li>
+<li><p>Two new select dropdowns will appear, choose your variable, field, and wait until the polygon is loaded into the map.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.6.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.6.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.6.PNG" style="width: 500px;" /></a>
+</div>
+</li>
+<li><p>The next step in this process is to select the date range of the data that you want to process through GEE, there are three options:</p>
+<ol class="arabic simple">
+<li><p><strong>Single date</strong>: will process one soil moisture closest to the date selected</p></li>
+<li><p><strong>Range</strong>: will process all Sentinel-1 data to create a time series of soil moisture maps for the date range selected</p></li>
+<li><p><strong>All-time series</strong>: will process all available Sentinel-1 data, since the launch of the satellite in 2015, to create a time series of soil moisture maps.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.2.3.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.2.3.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.2.3.PNG" style="width: 300px;" /></a>
+</div>
+</li>
+<li><p>Initiating the soil moisture processing</p>
+<ol class="arabic simple">
+<li><p>After the filters are selected, go to the “Run Process” tab.</p></li>
+<li><p>Once the “Start” button is clicked, the availability of Sentinel-1 data is assessed and the command is sent to Earth Engine to run the classification of soil moisture.</p></li>
+<li><p>This process could take a long time depending on the dimensions of the feature and on the number of images to be processed.</p></li>
+<li><p>If the selected dates are not available, the system will display a message with the closest images to the input dates.</p>
+<ol class="arabic simple">
+<li><p>The most recent image available depends on the GLDAS product, which has a delay of 1 to 2 months.</p></li>
+</ol>
+</li>
+<li><p>The green Processing bar shows the name of the task that is sent to GEE. When the processing reaches 100% all the tasks have been sent to GEE and the classification of soil moisture will continue there.</p></li>
+<li><p>After all the tasks are sent to GEE the module can be closed. The processing will continue uninterrupted in GEE. In GEE the processing can take hours or days depending on the size of the AOI and the date range selected.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.3.6.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.3.6.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.3.6.PNG" style="width: 500px;" /></a>
+</div>
+</li>
+<li><p>Checking the progress of the soil moisture processing GEE</p>
+<ol class="arabic simple">
+<li><p>A way to check on the status of each task is to go to the GEE code editor.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.1.PNG" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>Click on the ‘Tasks’ tab in the section on the right. You should see the process running with the spinning gear.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.2.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.2.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.4.2.PNG" style="width: 300px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>When the download completes you will see a blue checkmark. Check periodically on your download to make sure all the dates specified are being downloaded.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="download-the-soil-moisture-maps-from-gee-to-sepal">
+<h2>Download the soil moisture maps from GEE to SEPAL<a class="headerlink" href="#download-the-soil-moisture-maps-from-gee-to-sepal" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Check if the processing is complete in GEE</p>
+<ol class="arabic simple">
+<li><p>Check on the status of each task in the GEE code editor. Click on the ‘Tasks’ tab in the section on the right. You should see blue checkmarks next to all the tasks.</p></li>
+<li><p>The soil moisture maps for each date have been downloaded to your Google Drive. The next step will automatically move those images from your Google account to your SEPAL account.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.1.2.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.1.2.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.1.2.PNG" style="width: 300px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>You can start downloading the images while they are being processed in GEE, but we recommend waiting until all or part of the images has been processed in GEE.</p></li>
+</ol>
+</li>
+<li><p>Use the download step</p>
+<ol class="arabic simple">
+<li><p>In the left panel, click over the Download button.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.2.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.2.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.2.1.PNG" style="width: 180px;" /></a>
+</div>
+</li>
+<li><p>Select the download task file</p>
+<ol class="arabic">
+<li><p>The file structure for downloading and managing the soil moisture data follows this structure: <code class="code docutils literal notranslate"><span class="pre">home/username/pysmm_downloads/0_raw/asset_name/row_name</span></code></p>
+<ol class="arabic simple">
+<li><p>All downloads can always be found in the pysmm_downloads folder</p></li>
+<li><p>Each time a different asset is used to derive soil moisture, a new folder for the asset will be created</p></li>
+<li><p>For each polygon that is used from the asset, selected by specifying the column and row field names, a unique folder with the row field name will contain the task download file.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.3.1.3.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.3.1.3.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.3.1.3.PNG" style="width: 500px;" /></a>
+</div>
+</li>
+<li><p>The task download file can be found in the folder <cite>home/user/ pysmm_downloads/0_raw/assetname/rowname/</cite></p></li>
+<li><p>The task download file naming convention is: task_datedownloadinitiated_code.txt</p></li>
+<li><p>Use the three dropdown lists to select the desired task text file is by clicking on the folder names.</p></li>
+<li><p>There are options to overwrite duplicates already downloaded into SEPAL and to remove the downloaded images from Google Drive. Once the images are removed from Google Drive the task download file will no longer function because those images will not be stored in Google Drive.</p>
+<ol class="arabic simple">
+<li><p>Overwrite SEPAL images: In case you previously have downloaded an image in the same path folder, the module will overwrite the images with the same name.</p></li>
+<li><p>Remove Google Drive images: Mark this option if you want to download the images to your SEPAL account and delete the files from your Google Drive account.</p></li>
+</ol>
+</li>
+<li><p>Click on the DOWNLOAD button to download the soil moisture maps from your Google Drive account to SEPAL.</p></li>
+<li><p>The images will download one by one, leave the application open while the download is running.</p></li>
+<li><p>After the data download completes you can use tools available in SEPAL to process and analyze these soil moisture maps.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="post-process-and-analyze-soil-moisture-time-series-data">
+<h2>Post-process and analyze soil moisture time-series data<a class="headerlink" href="#post-process-and-analyze-soil-moisture-time-series-data" title="Permalink to this headline">¶</a></h2>
+<p>After the download is complete, we can apply a robust methodology for image filtering to fill no-data gaps and assess trends in the time series of soil moisture maps.</p>
+<ol class="arabic">
+<li><p>Select the Closing filter step</p>
+<ol class="arabic simple">
+<li><p>In the left panel select the “Closing filter” tab.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.1.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.1.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.1.1.PNG" style="width: 180px;" /></a>
+</div>
+</li>
+<li><p>Run the post-processing section of the module</p>
+<ol class="arabic simple">
+<li><p>Navigate to the folder where the images are stored. This module will process a folder with many images, going through each of the images. Therefore, the input should be the folder in which are the raw images are stored. The module will automatically display two select menus, select the desired options.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.2.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.2.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.2.1.PNG" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>The raw imagery is stored in the same folder that the task download file is located.</p></li>
+<li><p>Click on START button to run a data-filling algorithm on each of the soil moisture maps.</p></li>
+<li><p>Due to speckle in the Sentinel-1 imagery the soil moisture maps contain some noise and no-data values which are corrected for to some extent using grayscale morphological operation from ORFEO toolbox, a free and open-source image processing tool. To read more about the parameterization of the Orfeo toolbox tool, read: <a class="reference external" href="https://www.orfeo-toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html">https://www.orfeo-toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html</a>.</p></li>
+<li><p>This process is done by the SEPAL instance, the time will depend on the number of images and the dimension, after finishing all the images, the progress bar will be green colored.</p></li>
+</ol>
+</li>
+<li><p>Run the Statistics postprocess.</p>
+<ol class="arabic simple">
+<li><p>In the left panel select the “Calculate statistics” tab.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.1.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.1.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.1.PNG" style="width: 180px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>After the data is filtered, a time series analysis of the soil moisture maps can be performed. Several statistics can be applied whether to the entire time series or to a specified range, statistics as median, mean, standard deviation, or linear trend (slope of the line) are available to process the selected data.</p></li>
+<li><p>This module uses the Stack Composed python module, which is a module that computes a specific statistic for all valid pixel values across the time series using a parallel process.</p></li>
+<li><p>Select column and field to process all images inside that folder.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.4.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.4.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.4.PNG" style="width: 400px;" /></a>
+</div>
+<ol class="arabic">
+<li><p>There are three options for analyzing the data for different time frames.</p>
+<ol class="arabic simple">
+<li><p>All-time series: runs the analysis for all the images in the folder</p></li>
+<li><p>Range:  runs the analysis for all the images within the time frame selected</p></li>
+<li><p>Season:  the user can define a season by selecting months. The analysis is run for only the months selected within the years selected. For example, if January, February, and 2016, 2017, 2018 are selected, then the analysis would run for January 2016, January 2017, January 2018,  February 2016, February 2017, and February 2018.
+You can also select only one year or month, so it will process all the years/months in the selection.</p></li>
+<li><p>There are different options for the statistics that can be calculated. The options are:</p>
+<ol class="arabic simple">
+<li><p>Median</p></li>
+<li><p>Mean</p></li>
+<li><p>Gmean, geometric mean</p></li>
+<li><p>Max</p></li>
+<li><p>Min</p></li>
+<li><p>Std, standard deviation</p></li>
+<li><p>Valid pixels</p></li>
+<li><p>Linear trend</p></li>
+</ol>
+</li>
+<li><p>The ‘Valid pixels’ option will create a new image representing only the count of the valid pixels from the stack.</p></li>
+<li><p>The Median, Mean, Geometric Mean, Max, Min, Standard Deviation and Valid pixels, are statistics that do not require much computing requirements, so the time to perform those task it’s relatively quick, depending on the extent of the image.</p></li>
+<li><p>The advanced settings are intended to be used to improve the time and manage the system resources. Normally this is optimized automatically but can be modified by the user. This setting controls the number of processors you use for parallel processing, allowing you to optimize the time by processing a huge image by using several processors at the same time. Automatically all available processors will be used. Note that the more CPUs available in the instance you selected in the terminal, the faster the processing will be.</p>
+<ol class="arabic simple">
+<li><p><strong>Processors</strong>: by default, the module will display the number of processors that are active in the current instance session and will perform the stack-composed with all of them, however, in order to test the best benchmark to the specific stack, this number could be changed within the advanced settings tab.</p></li>
+<li><p><strong>Chunks</strong>: the number in the chunk specifies the shape of the array that will be processed in parallel over the different processors. i.e., if 180 is the specified number of chunks, then the stack-composed module will divide the input image into several small square pieces of 180 pixels with its shape, for more information about how to select the best chunk shape, follow the dask documentation.</p></li>
+</ol>
+</li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.7.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.7.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.7.PNG" style="width: 600px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>Once the settings are specified, click on the ‘Calculate statistics’ button.</p></li>
+<li><p>After selecting the temporal range to run the analysis and parameter to calculate, the images that are processed are listed, along with the date of the imagery.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.9.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.9.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.9.PNG" style="width: 400px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>The processed images can be found in the folder: <cite>home/user/pysmm_downloads/1_processed/assetname/rowname/stats</cite></p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="visualizing-imagery">
+<h2>Visualizing imagery<a class="headerlink" href="#visualizing-imagery" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>In the left panel select the “Display map” tab.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.1_.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.1_.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.1_.PNG" style="width: 180px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>The map visualization tab will allow you to display any monoband image in your SEPAL account, not only the downloaded data.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.2.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.2.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.2.PNG" style="width: 500px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>Click over the “Search file” button and navigate over the dropdown list, search the desired image, and click on the “Display image” button.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.3.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.3.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.3.PNG" style="width: 400px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p>Wait until the image is rendered in the map and explore the general output.</p></li>
+<li><p>Mark the “Inspector” checkbox and click over any coordinate inside the image to explore the pixel values, you will see an output box in the bottom right corner with the data.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.4.PNG"><img alt="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.4.PNG" src="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.4.PNG" style="width: 500px;" /></a>
+</div>
+<p>Open-source data from Sentinel 1 operates using C-band synthetic aperture radar imaging. C-band type has a wavelength of 3.8 – 7.5 cm and thus it has limited penetration into dense forest canopies. Therefore, forested areas should be excluded from the analysis. L-band data should be used instead of such areas.</p>
+<p>It is recommended that densely vegetated areas are excluded from analysis due to the limitation of C-band radar to penetrate dense canopy cover. Use a forest map to exclude dense forest areas from the analysis.
+.. custom-edit:: <a class="reference external" href="https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst">https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst</a></p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2020-2021, the SEPAL development team.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.3.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
