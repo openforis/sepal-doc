@@ -79,7 +79,8 @@
         "url": "https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/en.rst"
     },
     "smfm_biota": {
-        "tag": "SMFM"
+        "tag": "SMFM",
+        "url": "https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/en.rst"
     },
     "smfm_deforest": {
         "tag": "SMFM"
