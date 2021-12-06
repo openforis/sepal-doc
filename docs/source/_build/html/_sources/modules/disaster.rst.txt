@@ -1,9 +1,0 @@
-disaster
-========
-
-List of the modules gathered under the disaster tag:
-
-.. toctree::  
-    :maxdepth: 1
-    
-    dwn/damage_proxy_map

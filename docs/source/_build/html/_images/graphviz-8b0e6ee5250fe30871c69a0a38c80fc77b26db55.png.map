@@ -1,7 +1,0 @@
-<map id="process" name="process">
-<area shape="rect" id="node1" href="#mosaic-generation-landsat-sentinel-2" title="Mosaic Image creation" alt="" coords="102,5,293,53"/>
-<area shape="rect" id="node2" href="#image-classification" title="Image classification" alt="" coords="5,101,173,149"/>
-<area shape="rect" id="node3" href="#image-change-detection" title="Two dates cange detection" alt="" coords="198,101,413,149"/>
-<area shape="rect" id="node4" href="#sample-based-estimation-of-area-and-accuracy" title="Sample based area and error" alt="" coords="83,197,312,245"/>
-<area shape="rect" id="node5" href="#documentation-and-archiving" title="Documentation" alt="" coords="130,293,265,341"/>
-</map>
