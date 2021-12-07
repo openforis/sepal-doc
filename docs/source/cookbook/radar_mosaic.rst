@@ -32,7 +32,7 @@ The following video tutorial depicts those steps in a reproducable way:
 .. youtube:: lip8C4tq7ig
     :height: 315
     :width: 560
-    :align: start
+    :align: center
 
 More detailed explanation on what a Timescan is, how it relates to the concept of Analysis-Ready-Data
 and what influences do the processing parameters have will be added later.
