@@ -134,3 +134,6 @@ docs/source/modules/*.rst
 
 # visual studio code
 .vscode/
+
+# pycharm idea folder
+.idea/
