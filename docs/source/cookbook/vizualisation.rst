@@ -1,4 +1,4 @@
-vizualisation
+Vizualisation
 =============
 
 .. warning::
