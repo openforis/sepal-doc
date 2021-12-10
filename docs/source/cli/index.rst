@@ -53,5 +53,5 @@ They will allow the user to code wokflows in any of the available languages usin
     gwb
     ofgt
     otb
-    pyhton
+    python
     r
