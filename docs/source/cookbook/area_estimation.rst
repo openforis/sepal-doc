@@ -132,7 +132,7 @@ There are three ways to choose your area of interest. Bring up the menu by click
 -   Select from EE table
 -   Draw a polygon
 
-.. figure:: ../img/cookbook/area_estimation/area_of_interest.png
+.. figure:: ../_images/cookbook/area_estimation/area_of_interest.png
    :alt: The Area of Interest menu
    :width: 350
    :align: center
@@ -152,7 +152,7 @@ Select :code:`Mai-Ndombe`.
 
 Click :code:`Next`.
 
-.. figure:: ../img/cookbook/area_estimation/country_province.png
+.. figure:: ../_images/cookbook/area_estimation/country_province.png
    :alt: The Country or Province selection screen.
    :align: center
 
@@ -166,7 +166,7 @@ In the :code:`Date` menu you can select the :code:`Year` you are interested in o
     -   Select July 1 of 2019 as your target date (**2019-07-01**), and move your date flags to **May 1-September 30**.
     -   Click :code:`Apply`.
 
-.. figure:: ../img/cookbook/area_estimation/date_menu.png
+.. figure:: ../_images/cookbook/area_estimation/date_menu.png
    :alt: The date menu.
    :align: center
 
@@ -183,7 +183,7 @@ Now SEPAL will load a preview of your data. By default it will show you where RG
 -   To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs. For example, Click on :code:`Dat` to expand the date range if you would like.
 -   The last two tabs are for :code:`scene selection` and :code:`composite`, which are more advanced filtering steps. We'll cover those now.
 
-.. figure:: ../img/cookbook/area_estimation/mosaic_preview.png
+.. figure:: ../_images/cookbook/area_estimation/mosaic_preview.png
    :alt: A preview of your mosaic.
    :align: center
 
@@ -192,7 +192,7 @@ We're now going to go through the **scene selection process**. This allows you t
 -   You can change the scenes that are selected using the :code:`SCN` button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on :code:`Use All Scenes` and then :code:`Apply`.
 -   Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
-.. figure:: ../img/cookbook/area_estimation/scene_selection.png
+.. figure:: ../_images/cookbook/area_estimation/scene_selection.png
    :alt: Selecting scenes for your mosaic.
    :align: center
 
@@ -202,27 +202,27 @@ Click :code:`Apply`. The result should look like the below image.
 
     Notice the collection of circles over the **Mai Ndombe** study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven't selected the scenes yet.
 
-.. figure:: ../img/cookbook/area_estimation/scene_selection_zeros.png
+.. figure:: ../_images/cookbook/area_estimation/scene_selection_zeros.png
     :alt: Scene selection process showing zeros before selection.
     :align: center
 
 Click the :code:`Auto-Select` button to auto-select some scenes.
 
-.. figure:: ../img/cookbook/area_estimation/auto_select_scenes.png
+.. figure:: ../_images/cookbook/area_estimation/auto_select_scenes.png
     :alt: Arrow showing the button for auto selecting scenes.
     :width: 550
     :align: center
 
 You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to **2** and the maximum to **100**. Click :code:`Select Scenes`. If there is only one scene for an area, that will be the only one selected despite the minimum.
 
-.. figure:: ../img/cookbook/area_estimation/auto_select_scenes_menu.png
+.. figure:: ../_images/cookbook/area_estimation/auto_select_scenes_menu.png
     :alt: Menu for auto selecting scenes.
     :width: 350
     :align: center
 
 You should now see imagery overlain with circles indicating how many scenes are selected.
 
-.. figure:: ../img/cookbook/area_estimation/imagery_number_scenes.png
+.. figure:: ../_images/cookbook/area_estimation/imagery_number_scenes.png
     :alt: Example of the imagery with the number of scenes selected
     :width: 450
     :align: center
@@ -231,7 +231,7 @@ You will notice that the circles that previously displayed a zero now display a 
 
 Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
-.. figure:: ../img/cookbook/area_estimation/select_scenes_interface.png
+.. figure:: ../_images/cookbook/area_estimation/select_scenes_interface.png
     :alt: The select scenes interface showing 0 available and 4 selected scenes
     :align: center
 
@@ -244,11 +244,11 @@ In the window that opens, you will see a list of selected scenes on the right si
 To expand the Landsat image, hover over one of the images and click :code:`Preview`. Click on the image to close the zoomed in graphic and return to the list of scenes.
 To remove a scene from the composite, click the :code:`Remove` button when you hover over the selected scene.
 
-.. figure:: ../img/cookbook/area_estimation/remove_preview_scenes.png
+.. figure:: ../_images/cookbook/area_estimation/remove_preview_scenes.png
     :alt: Removing or previewing selected scenes.
     :align: center
 
-.. figure:: ../img/cookbook/area_estimation/scene_preview.png
+.. figure:: ../_images/cookbook/area_estimation/scene_preview.png
     :alt: Scene preview screen.
     :align: center
 
@@ -257,7 +257,7 @@ On the left hand side, you will see **Available Scenes**, which are images that 
 -   Once you are satisfied with the selected imagery for a given area, click :code:`Close` in the bottom right corner.
 -   You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
-.. figure:: ../img/cookbook/area_estimation/select_scenes_1.png
+.. figure:: ../_images/cookbook/area_estimation/select_scenes_1.png
     :alt: Select scenes screen showing one available scene and 3 selected scenes
     :width: 450
     :align: center
@@ -270,14 +270,14 @@ You can also change the composing method using the :code:`CMP` button on the low
 
 For this exercise, we will leave these at their default settings. If you make changes, click :code:`Apply` after you're done.
 
-.. figure:: ../img/cookbook/area_estimation/composite.png
+.. figure:: ../_images/cookbook/area_estimation/composite.png
     :alt: The composite menu.
     :width: 350px
     :align: center
 
 Now we'll explore the :code:`Bands` dropdown. Click on the :code:`Red|Green|Blue` at the bottom of the page.
 
-.. figure:: ../img/cookbook/area_estimation/arrow_bands.png
+.. figure:: ../_images/cookbook/area_estimation/arrow_bands.png
     :alt: Arrow pointing at the red, green, blue bands.
     :align: center
 
@@ -287,14 +287,14 @@ The below dropdown menu will appear.
 -   Once selected, the preview will automatically show what the composite will look like.
 -   Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.
 
-.. figure:: ../img/cookbook/area_estimation/bands_menu.png
+.. figure:: ../_images/cookbook/area_estimation/bands_menu.png
     :alt: The band combinations menu.
     :width: 350px
     :align: center
 
 The map now shows the complete mosaic that incorporates all of the user-defined settings. Here is an example, yours may look different depending on which scenes you chose.
 
-.. figure:: ../img/cookbook/area_estimation/completed_mosaic.png
+.. figure:: ../_images/cookbook/area_estimation/completed_mosaic.png
     :alt: The imagery preview with the completed mosaic shown.
     :width: 450
     :align: center
@@ -324,13 +324,13 @@ Now let's explore options for the recipe. Click on the three lines in the upper 
 
 Click on :code:`Save recipe….` This will also let you rename the mosaic if you choose.
 
-.. figure:: ../img/cookbook/area_estimation/save_duplicate_export_recipe.png
+.. figure:: ../_images/cookbook/area_estimation/save_duplicate_export_recipe.png
     :alt: Save, duplicate, export recipe menu.
     :align: center
 
 Now if you click on the three lines icon, you should see an additional option: **Revert to old revision...**
 
-.. figure:: ../img/cookbook/area_estimation/revert_to_old_revision.png
+.. figure:: ../_images/cookbook/area_estimation/revert_to_old_revision.png
     :alt: After saving the menu adds a revert to old revision option.
     :align: center
 
@@ -341,7 +341,7 @@ Clicking on this option brings up a list of auto-saved versions from SEPAL. You 
 
     Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
 
-.. figure:: ../img/cookbook/area_estimation/revision_menu.png
+.. figure:: ../_images/cookbook/area_estimation/revision_menu.png
     :alt: Revisions menu dropdown.
     :align: center
 
@@ -349,11 +349,11 @@ Finally, we will save the mosaic itself. This is called ‘retrieving' the mosai
 
 To download this imagery mosaic to your SEPAL account, click the :code:`Retrieve` button.
 
-.. figure:: ../img/cookbook/area_estimation/retrieve.png
+.. figure:: ../_images/cookbook/area_estimation/retrieve.png
     :alt: The retrieve button.
     :align: center
 
-.. figure:: ../img/cookbook/area_estimation/retrieve_menu.png
+.. figure:: ../_images/cookbook/area_estimation/retrieve_menu.png
     :alt: The retrieve menu
     :align: center
 
@@ -372,7 +372,7 @@ When you have the desired bands selected, click :code:`Retrieve`.
 
 You will notice the :code:`Tasks` icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.
 
-.. figure:: ../img/cookbook/area_estimation/retrieval_task.png
+.. figure:: ../_images/cookbook/area_estimation/retrieval_task.png
    :alt: Retrieval task being carried out
    :align: center
 
@@ -501,14 +501,14 @@ Under :code:`Area of Interest`:
 
 -   Select **Draw Polygon** from the dropdown list.
 
-    .. figure:: ../img/cookbook/area_estimation/aoi_dropdown.png
+    .. figure:: ../_images/cookbook/area_estimation/aoi_dropdown.png
         :alt: Area of interest dropdown menu.
         :width: 450px
         :align: center
 
 -   Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-    .. figure:: ../img/cookbook/area_estimation/rondonia.png
+    .. figure:: ../_images/cookbook/area_estimation/rondonia.png
         :alt: A polygon drawn around the State of Rondonia.
         :align: center
 
@@ -536,7 +536,7 @@ For future exercises, you may need to know how to find your Earth Engine Asset.
 5.  You will see a window with information about your mosaic pop up.
 6.  Click on the two overlapping box icon to copy your asset's location.
 
-.. figure:: ../img/cookbook/area_estimation/mosaic_information.png
+.. figure:: ../_images/cookbook/area_estimation/mosaic_information.png
     :alt: Your mosaic's information pane.
     :align: center
 
@@ -603,7 +603,7 @@ In the Legend menu, click :code:`+ Add` This will add a place for you to write y
 -   Choose colors for each class as you see fit.
 -   Click :code:`Close`.
 
-.. figure:: ../img/cookbook/area_estimation/classification_legend.png
+.. figure:: ../_images/cookbook/area_estimation/classification_legend.png
     :alt: Classification legend.
     :align: center
 
@@ -634,7 +634,7 @@ We will use the Planet NICFI composites for this example. The composites are ava
 
     You can also select "Show labels" to enable labels that can help you orient yourself in the landscape.
 
-.. figure:: ../img/cookbook/area_estimation/layer_view.png
+.. figure:: ../_images/cookbook/area_estimation/layer_view.png
    :alt: The layers available.
    :align: center
 
@@ -658,7 +658,7 @@ Now we will start collecting forest training data:
 
     If you haven't classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
-.. figure:: ../img/cookbook/area_estimation/collecting_forest_data.png
+.. figure:: ../_images/cookbook/area_estimation/collecting_forest_data.png
     :alt: Collecting forest data in the SEPAL interface.
     :align: center
 
@@ -686,7 +686,7 @@ After you collect your training data for **Forest**, you may see the classificat
 -   To disable the classification preview to continue to collect training data, return to the map layer selector.
 -   Uncheck the "Classification" Overlay.
 
-.. figure:: ../img/cookbook/area_estimation/classification_overlay.png
+.. figure:: ../_images/cookbook/area_estimation/classification_overlay.png
     :alt: Disabling the classification overlay.
     :width: 450
     :align: center
@@ -700,7 +700,7 @@ Once you are satisfied with your forested training data points, move on to the *
     -   Collect 10-15 data points for Water and be sure to spread them throughout Lake Mai Ndombe, the water sources feeding into it, and a couple of the water bodies/rivers to the eastern side of the mosaic. Be sure to put 2-3 points on rivers.
     -   Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
 
-.. figure:: ../img/cookbook/area_estimation/data_points_water.png
+.. figure:: ../_images/cookbook/area_estimation/data_points_water.png
    :alt: Collecting data points in water.
    :align: center
 
@@ -710,7 +710,7 @@ Let's now collect some building and road non-forest Training Data.
 -   Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
 -   Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-.. figure:: ../img/cookbook/area_estimation/data_points_residential.png
+.. figure:: ../_images/cookbook/area_estimation/data_points_residential.png
    :alt: Collecting residential and other human settlement area data points.
    :align: center
 
@@ -719,7 +719,7 @@ Next, place several points in grassland/pasture, shrub, and agricultural areas a
 -   Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest.
 -   The texture of the vegetation is one of the best ways to differentiate between trees and grasses/shrubs. Look at the below image and notice the clear contrast between the area where the points are placed and the other areas in the image that have rougher textures and that create shadows.
 
-.. figure:: ../img/cookbook/area_estimation/data_points_low_vegetation.png
+.. figure:: ../_images/cookbook/area_estimation/data_points_low_vegetation.png
    :alt: Collecting low vegetation data
    :align: center
 
@@ -741,7 +741,7 @@ Once again when you are done collecting data for these categories, zoom out to t
 Classification using machine learning algorithms (Random Forests)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../img/cookbook/area_estimation/random_forest_model_outcome.png
+.. figure:: ../_images/cookbook/area_estimation/random_forest_model_outcome.png
    :alt: The outcome of a random forest model.
    :align: center
 
@@ -787,7 +787,7 @@ Click on the green :code:`Add` button.
 
 Now you will be asked to confirm the link between the legend you input previously and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, click :code:`Done`, then click :code:`Close`.
 
-.. figure:: ../img/cookbook/area_estimation/link.png
+.. figure:: ../_images/cookbook/area_estimation/link.png
    :alt: link between legend and classification
    :align: center
 
@@ -816,7 +816,7 @@ If you turned off your classification preview previously to collect training dat
 -   Select "Classification"
 -   Make sure Classification now has a check mark next to it, indicating that the layer is now turned on.
 
-.. figure:: ../img/cookbook/area_estimation/classification_preview.png
+.. figure:: ../_images/cookbook/area_estimation/classification_preview.png
     :alt: A preview of a classification.
     :align: center
 
@@ -834,7 +834,7 @@ Now we'll save our classification output.
 -   Once the download begins, you will see the spinning wheel in the bottom left of the web-page in **Tasks.** Click the spinning wheel to observe the progress of your export.
 -   When complete, if you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification name folder). If you chose GEE Asset the file will be in your GEE Assets.
 
-.. figure:: ../img/cookbook/area_estimation/retrieval_interface.png
+.. figure:: ../_images/cookbook/area_estimation/retrieval_interface.png
     :alt: The retrieval interface.
     :width: 450
     :align: center
@@ -848,7 +848,7 @@ Following analysis you should spend some time looking at your change detection i
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. figure:: ../img/cookbook/area_estimation/examine_classification_map.png
+.. figure:: ../_images/cookbook/area_estimation/examine_classification_map.png
     :alt: Examining your change detection map
     :align: center
 
@@ -914,7 +914,7 @@ Click :code:`Retrieve Mosaic` and select **Blue, Green, Red, NIR, SWIR1, SWIR2**
 
    If you don't see the Google Earth Engine asset option, you'll need to connect your Google account to SEPAL by clicking on your user name in the lower right.
 
-.. figure:: ../img/cookbook/area_estimation/retrieval_mosaic.png
+.. figure:: ../_images/cookbook/area_estimation/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
    :width: 450
    :align: center
@@ -946,7 +946,7 @@ Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as 
 
 Repeat the previous steps for your 2020 optical mosaic.
 
-.. figure:: ../img/cookbook/area_estimation/two_assets.png
+.. figure:: ../_images/cookbook/area_estimation/two_assets.png
    :alt: Two assets ready for classification.
    :align: center
 
@@ -999,7 +999,7 @@ In the Legend menu, click :code:`+ Add`. This will add a place for you to write 
 
 Choose colors for each class as you see fit and click :code:`Close`.
 
-.. figure:: ../img/cookbook/area_estimation/3_classes.png
+.. figure:: ../_images/cookbook/area_estimation/3_classes.png
     :alt: Classification legend.
     :align: center
 
@@ -1041,7 +1041,7 @@ Collect training data for the "Stable Forest" class. Place points where there is
 
 One trick for determining change is to place a "Change" point in an area of suspected change. Then you can compare 2015 and 2020 imagery without losing the place you were looking at. If it is not Change, you can switch which classification you have identified the point as.
 
-.. figure:: ../img/cookbook/area_estimation/finding_change.png
+.. figure:: ../_images/cookbook/area_estimation/finding_change.png
    :alt: Using Google imagery to examine areas for change.
    :align: center
 
@@ -1054,7 +1054,7 @@ When you are happy with your data points, click on the :code:`AUX` button in the
 Finally click on the :code:`CLS` button in the bottom right. You can change your classification type to see how the output changes.
 8. If it has not already, SEPAL will now load a preview of your classification.
 
-.. figure:: ../img/cookbook/area_estimation/change_detection_model_preview.png
+.. figure:: ../_images/cookbook/area_estimation/change_detection_model_preview.png
     :alt: A preview of the change detection model output.
     :width: 450
     :align: center
@@ -1091,7 +1091,7 @@ Following analysis you should spend some time looking at your change detection i
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. figure:: ../img/cookbook/area_estimation/examine_change_detection_map.png
+.. figure:: ../_images/cookbook/area_estimation/examine_change_detection_map.png
    :alt: Examining your change detection map
    :align: center
 
@@ -1137,7 +1137,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
     Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python. 
 
 
-.. figure:: ../img/cookbook/area_estimation/smfm_notebook_cell.png
+.. figure:: ../_images/cookbook/area_estimation/smfm_notebook_cell.png
     :alt: Example of a Jupyter Notebook cell.
     :width: 450
     :align: center
@@ -1149,7 +1149,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
     To run a cell, click on the cell then locate and click the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 
-.. figure:: ../img/cookbook/area_estimation/smfm_notebook_run.png
+.. figure:: ../_images/cookbook/area_estimation/smfm_notebook_run.png
     :alt: Example running a Jupyter Notebook cell.
     :width: 450
     :align: center
@@ -1163,7 +1163,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
         a. Navigate to the tool bar at the top of the notebook and select *Kernel*.
         b. From the dropdown menu, select *restart Kernel and Clear Outputs*
 
-.. figure:: ../img/cookbook/area_estimation/smfm_notebook_kernel.png
+.. figure:: ../_images/cookbook/area_estimation/smfm_notebook_kernel.png
     :alt: Example restarting Jupyter Notebook kernel.
     :width: 450
     :align: center
@@ -1232,7 +1232,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
    
 ``` python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory ```
 
-.. figure:: ../img/cookbook/area_estimation/smfm_notebook_1_setup.png
+.. figure:: ../_images/cookbook/area_estimation/smfm_notebook_1_setup.png
     :alt: Successful setup.
     :width: 450
     :align: center
@@ -1251,7 +1251,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
           
    4. Return to the SMFM notebook and repeat step 1.
 
-.. figure:: ../img/cookbook/area_estimation/smfm_clone_deforest.png
+.. figure:: ../_images/cookbook/area_estimation/smfm_clone_deforest.png
     :alt: Cloning a repository via the SEPAL terminal.
     :width: 450
     :align: center
@@ -1321,7 +1321,7 @@ Now that we have run the deforestation processing chain, we can visualize our ou
    a. If you changed the name of your output file be sure to update the path on line 8 for the variable *confirmed*.
 
 
-    .. figure:: ../img/cookbook/area_estimation/smfm_confirmations.png
+    .. figure:: ../_images/cookbook/area_estimation/smfm_confirmations.png
         :alt: Example of a Jupyter Notebook cell.
         :width: 450
         :align: center
@@ -1335,7 +1335,7 @@ Next, we will check out the deforest warning output.
 
 1. Run the second **Data visualization** cell
     
-    .. figure:: ../img/cookbook/area_estimation/smfm_warnings.png
+    .. figure:: ../_images/cookbook/area_estimation/smfm_warnings.png
         :alt: Example of a Jupyter Notebook cell.
         :width: 450
         :align: center
@@ -1382,7 +1382,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and then Type “BF
 
 Find a location on the map that you would like to run BFAST on. Click a location to drop a marker, and then click the marker to select it. Select **Landsat 8 SR** from the select satellite products dropdown. Click :code:`Get Data`, It may take a moment to download all the data for the point.
 
-.. figure:: ../img/cookbook/area_estimation/BFAST_explorer.png
+.. figure:: ../_images/cookbook/area_estimation/BFAST_explorer.png
     :alt: The BFAST Explorer interface.
     :align: center
 
@@ -1400,13 +1400,13 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 
 Select **bfastmonitor** as the algorithm.
 
-.. figure:: ../img/cookbook/area_estimation/BFAST_explorer_interface.png
+.. figure:: ../_images/cookbook/area_estimation/BFAST_explorer_interface.png
    :alt: The BFAST Explorer interface.
    :align: center
 
 You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
-.. figure:: ../img/cookbook/area_estimation/BFAST_visualization.png
+.. figure:: ../_images/cookbook/area_estimation/BFAST_visualization.png
    :align: center
 
 You can also download all the time series data by clicking the blue :code:`Data` button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
@@ -1441,7 +1441,7 @@ TimeSync is a tool that researchers and managers can use to validate remotely se
 
 From TimeSync's Introduction materials, here is an example output:
 
-.. figure:: ../img/cookbook/area_estimation/TimeSync_example.png
+.. figure:: ../_images/cookbook/area_estimation/TimeSync_example.png
    :alt: An example from TimeSync.
    :align: center
 
@@ -1459,7 +1459,7 @@ From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, 
 
 From LandTrendr's documentation, here's an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: https://emapr.GitHub.io/LT-GEE/landtrendr.html.
 
-.. figure:: ../img/cookbook/area_estimation/LandTrendr.png
+.. figure:: ../_images/cookbook/area_estimation/LandTrendr.png
    :alt: The LandTrendr interface
    :align: center
 
@@ -1530,7 +1530,7 @@ These directions will provide a stratified random sample of the proper sampling 
 
 First, navigate to https://sepal.io/ and sign in. Select the :code:`Apps` button (purple wrench). Type ‘stratified' into the search bar or scroll through the different process apps to find “Stratified Area Estimator - Design”. Select **Stratified Area Estimator - Design.** Note that loading the tool takes a few minutes.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_area_estimator_design.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_area_estimator_design.png
     :alt: Stratified Area Estimator-Design tool.
     :align: center
 
@@ -1538,7 +1538,7 @@ First, navigate to https://sepal.io/ and sign in. Select the :code:`Apps` button
 
     Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
 
-    .. figure:: ../img/cookbook/area_estimation/fail_stratified_estimator_tool.png
+    .. figure:: ../_images/cookbook/area_estimation/fail_stratified_estimator_tool.png
         :alt: Failure of the stratified area estimator tool.
         :align: center
 
@@ -1548,7 +1548,7 @@ On the **Introduction** page, you can change the language from English to French
 The Description, Background, and "How to use the tool" panels provide more information about the tool.
 The Reference and Documents panel provides links to other information about stratified sampling, such as REDD Compass.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_estimator_interface.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_estimator_interface.png
    :alt: The stratified estimator interface.
    :align: center
 
@@ -1578,7 +1578,7 @@ Next, click :code:`Strata areas` on the left side of the screen. In the **Area c
 
     If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_estimator_map_legend.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_estimator_map_legend.png
    :alt: Stratified estimator tool showing the display map and legend and areas filled out.
    :align: center
 
@@ -1616,7 +1616,7 @@ Click on the box under **“high confidence”** and assign your high confidence
 
      DO NOT assign your No Data class to either high or low confidence.
 
-.. figure:: ../img/cookbook/area_estimation/high_low_expected_user_accuracy.png
+.. figure:: ../_images/cookbook/area_estimation/high_low_expected_user_accuracy.png
    :alt: High and low expected user accuracy.
    :align: center
 
@@ -1642,7 +1642,7 @@ Now we will calculate the required sample size for each strata. You can click on
 
 -   If you would like, you can edit the name of the file & download a csv with the sample design. The file contains the table shown above with some additional calculations. However, SEPAL will automatically save this file.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_estimator_sampling.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_estimator_sampling.png
     :alt: The stratified estimator sampling size and distribution of samples screen.
     :align: center
 
@@ -1657,7 +1657,7 @@ Select **Generate sampling points** and wait until the progress bar in the botto
 
     Sometimes this step fails, no download button will appear, and you will need to refresh the page and restart the process.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_estimator_map.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_estimator_map.png
    :alt: The stratified estimator tool's sample allocation screen.
    :align: center
 
@@ -1682,7 +1682,7 @@ To create a project via the CEO-SEPAL bridge, click on **Create CEO project**. T
 .. danger::
    You MUST be logged out of CEO for this pathway to work.
 
-.. figure:: ../img/cookbook/area_estimation/ceo_project_sepal.png
+.. figure:: ../_images/cookbook/area_estimation/ceo_project_sepal.png
    :alt: Creating a CEO project through SEPAL.
    :align: center
 
@@ -1702,19 +1702,19 @@ Make sure you have downloaded the .csv of your stratified random sample plots (`
 
     If you have ‘no data' rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.
 
-.. figure:: ../img/cookbook/area_estimation/example_data_sepal_classification.png
+.. figure:: ../_images/cookbook/area_estimation/example_data_sepal_classification.png
    :alt: Example data from the SEPAL classification.
    :align: center
 
 Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (i.e. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if that is correct) we suggest first randomizing the order of the rows. To do this, click the :code:`Sort & Filter` button in Excel.
 
-.. figure:: ../img/cookbook/area_estimation/sort_filter_excel.png
+.. figure:: ../_images/cookbook/area_estimation/sort_filter_excel.png
    :alt: Using the Sort and Filter features in Excel.
    :align: center
 
 Next, Sort on the ‘id' field by value, either smallest to largest or largest to smallest.
 
-.. figure:: ../img/cookbook/area_estimation/custom_filter_excel.png
+.. figure:: ../_images/cookbook/area_estimation/custom_filter_excel.png
    :alt: A custom sort in Excel.
    :width: 450
    :align: center
@@ -1796,7 +1796,7 @@ When you're on the institution's page, click on the “Create New Project” but
 
     -   You can add additional survey questions if you'd like to experiment. An example of two survey cards is shown below.
 
-.. figure:: ../img/cookbook/area_estimation/example_survey_card.png
+.. figure:: ../_images/cookbook/area_estimation/example_survey_card.png
    :alt: An example survey card setup
    :width: 450
    :align: center
@@ -1900,7 +1900,7 @@ In CEO, these are the additional data sources that you have added to your CEO pr
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see `module 5`_).
 
-.. figure:: ../img/cookbook/area_estimation/data_source_recording.png
+.. figure:: ../_images/cookbook/area_estimation/data_source_recording.png
    :alt: A data source recording document.
    :align: center
 
@@ -2037,13 +2037,13 @@ Data collection in CEO
 
 To collect data in CEO, navigate to the project you created in `section 4.1.2`_. Your screen should look like this:
 
-.. figure:: ../img/cookbook/area_estimation/data_collection_CEO.png
+.. figure:: ../_images/cookbook/area_estimation/data_collection_CEO.png
     :alt: The data collection interface in CEO
     :align: center
 
 Click **Go to first plot.** This will take you to your first plot. Answer all of the questions for your first plot by clicking on the appropriate answers. If you created multiple questions, you can navigate between questions using the numbers above your question text. Click on :code:`Save` to save your answers and move on to the next plot.
 
-.. figure:: ../img/cookbook/area_estimation/data_collection_process.png
+.. figure:: ../_images/cookbook/area_estimation/data_collection_process.png
    :alt: The data collection process in CEO
    :align: center
 
@@ -2053,7 +2053,7 @@ Continue answering questions until you reach the last plot. When you have finish
 
     Your project name should now be green, indicating that all plots have been completed. If it is yellow, click on the project name and answer the remaining questions.
 
-.. figure:: ../img/cookbook/area_estimation/ceo_sepal_manual.png
+.. figure:: ../_images/cookbook/area_estimation/ceo_sepal_manual.png
    :alt: A partly completed project.
    :align: center
 
@@ -2294,7 +2294,7 @@ Understanding the error matrix
 
 A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
 
-.. figure:: ../img/cookbook/area_estimation/confusion_matrix_example.png
+.. figure:: ../_images/cookbook/area_estimation/confusion_matrix_example.png
    :alt: A confusion matrix example.
    :align: center
 
@@ -2306,13 +2306,13 @@ A common tool to quantify agreement is the error matrix (sometimes called a conf
 
 For your own data, calculate an error matrix following the above guidelines:
 
-.. figure:: ../img/cookbook/area_estimation/example_error_matrix.png
+.. figure:: ../_images/cookbook/area_estimation/example_error_matrix.png
    :alt: An example error matrix.
    :align: center
 
 Here's a completed example for a project using 4 classes:
 
-.. figure:: ../img/cookbook/area_estimation/example_error_matrix_4class.png
+.. figure:: ../_images/cookbook/area_estimation/example_error_matrix_4class.png
    :alt: Example error matrix for a 4 class project.
    :align: center
 
@@ -2360,7 +2360,7 @@ If your column for the correct map class is text, you will need to either:
     -   Press enter. You should now see either a 1 or a 2 populate the column. Double check that it is the correct value.
     -   Fill the entire column.
 
-.. figure:: ../img/cookbook/area_estimation/example_dataset.png
+.. figure:: ../_images/cookbook/area_estimation/example_dataset.png
    :alt: An example dataset
    :width: 400
    :align: center
@@ -2380,7 +2380,7 @@ First, open the Stratified Area Estimator-Analysis Tool. In the Apps SEPAL windo
 
 You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
-.. figure:: ../img/cookbook/area_estimation/stratified_estimator_analysis_tool.png
+.. figure:: ../_images/cookbook/area_estimation/stratified_estimator_analysis_tool.png
    :alt: The stratified estimator analysis tool.
    :align: center
 
@@ -2399,7 +2399,7 @@ Select the **Inputs** page on the left side of the screen. You will see two data
     -   Click the **Area data** button.
     -   Open the **sae_design_AmazonClassification** folder, or the folder labeled :code:`sae_design_your-name-here` if you did not call your classification **AmazonClassification**. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification). Within this folder, select **area_rast.csv** (see image below).
 
-.. figure:: ../img/cookbook/area_estimation/add_classification.png
+.. figure:: ../_images/cookbook/area_estimation/add_classification.png
    :alt: Adding the classification
    :width: 450
    :align: center
@@ -2430,7 +2430,7 @@ Choose the class column from the area file—map_code or map_edited_class. The m
 
 You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column). This example uses a CEO project.
 
-.. figure:: ../img/cookbook/area_estimation/required_input_fields.png
+.. figure:: ../_images/cookbook/area_estimation/required_input_fields.png
    :alt: The required input fields.
    :width: 450
    :align: center
@@ -2443,7 +2443,7 @@ The **Results** page will display a few different accuracy statistics, including
 
 The rows represent your assignments while the columns represent the map classifier's. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
-.. figure:: ../img/cookbook/area_estimation/confusion_matrix_output_sepal.png
+.. figure:: ../_images/cookbook/area_estimation/confusion_matrix_output_sepal.png
    :alt: The confusion matrix output by SEPAL.
    :width: 450
    :align: center
@@ -2459,7 +2459,7 @@ Under **Area estimates**, the table shows you the area estimates, and producer's
 
 Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** using the slider at the top of the panel. You can Download area estimates as tabular data (.csv) using the button.
 
-.. figure:: ../img/cookbook/area_estimation/area_estimate.png
+.. figure:: ../_images/cookbook/area_estimation/area_estimate.png
    :alt: The area estimates screen in SEPAL.
    :align: center
 
@@ -2471,7 +2471,7 @@ In this exercise we collected validation data using a stratified sample, so the 
 
     Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
-.. figure:: ../img/cookbook/area_estimation/area_estimate_graph.png
+.. figure:: ../_images/cookbook/area_estimation/area_estimate_graph.png
    :alt: A graph of the area estimates based on different sample design.
    :width: 450
    :align: center
@@ -2677,12 +2677,12 @@ We've all been in this situation before: it seems ridiculous to have multiple ne
 
 Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 
-.. figure:: ../img/cookbook/area_estimation/version_control_system.png
+.. figure:: ../_images/cookbook/area_estimation/version_control_system.png
    :alt: Figure showing how version control systems work
 
 Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 
-.. figure:: ../img/cookbook/area_estimation/version_control_multiple_contributors.png
+.. figure:: ../_images/cookbook/area_estimation/version_control_multiple_contributors.png
    :alt: Version control with multiple contributors
 
 A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.GitHub.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.GitHub.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
@@ -2713,14 +2713,14 @@ Google Earth Engine version control
 
 Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
 
-.. figure:: ../img/cookbook/area_estimation/gee_scripts.png
+.. figure:: ../_images/cookbook/area_estimation/gee_scripts.png
    :alt: The GEE scripts tab.
    :width: 450
    :align: center
 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
-.. figure:: ../img/cookbook/area_estimation/earth_engine_code_editor.png
+.. figure:: ../_images/cookbook/area_estimation/earth_engine_code_editor.png
    :alt: Earth engine code editor
    :align: center
 

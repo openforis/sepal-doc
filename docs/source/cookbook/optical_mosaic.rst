@@ -7,10 +7,10 @@ Overview
 A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together.
 This can be achieved on contiguous rasters (left) but also on overlapping images (right). 
 
-.. image:: ../img/cookbook/optical_mosaic/mosaic_contiguous.gif
+.. image:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
     :width: 49%
 
-.. image:: ../img/cookbook/optical_mosaic/mosaic_overlay.png
+.. image:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
     :width: 49%
 
 These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells or take the maximum or minimum value. In addition, certain corrections can be made to the image to correct for clouds, snow etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics on any AOI.
@@ -25,17 +25,17 @@ Start
 
 Once the mosaic recipe is selected, SEPAL will show up the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2). 
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/landing.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/landing.png
     :group: optical-mosaic-recipe
     :title: the landing page of the optical mosaic recipe
 
 The first step is to change the name of the recipe. This name will be used to name your files and recipes in the SEPAL folders. Use the best-suited convention for your need. Simply double-click the tab and write a new name. It will default to :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/default_title.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/default_title.png
     :title: optical mosaics default title 
     :width: 49%
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/modified_title.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/modified_title.png
     :title: optical mosaics modified title 
     :width: 49%
     
@@ -55,7 +55,7 @@ On the bottom right corner, 5 tabs are available. They will allow you to customi
 -   :guilabel:`SCN`: the scene selection parameters
 -   :guilabel:`CMP`: the composition parameters
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/no_parameters.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/no_parameters.png
     :title: The 5 tabs to set up SEPAL optical mosaic parameters
     :group: optical-mosaic-recipe
 
@@ -68,7 +68,7 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/aoi_landing.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/aoi_landing.png
     :title: The 3 differents ways to select an AOI in SEPAL
     :group: optical-mosaic-recipe
 
@@ -96,7 +96,7 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
     :title: Select AOI based on administrative layers
     :group: optical-mosaic-recipe
 
@@ -122,7 +122,7 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_table.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
     :title: Select AOI based on EE table
     :group: optical-mosaic-recipe
 
@@ -135,7 +135,7 @@ The pointer in the map will be converted into a :icon:`fa fa-plus`. Click succes
 
 Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_polygon.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
     :title: Select AOI based on drawn polygon
     :group: optical-mosaic-recipe
 
@@ -147,7 +147,7 @@ Yearly mosaic
 
 In the :guilabel:`DAT` tab, you will be asked to select a year. It will define the year which pixels in the mosaic should come from. When the selection is done click on :icon:`fa fa-check` :guilabel:`apply` button.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/select_year.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/select_year.png
     :title: The year selection panel
     :group: optical-mosaic-recipe
 
@@ -164,7 +164,7 @@ The number of images on one single season of one year may not be enough to produ
 
 When the selection is done click on :icon:`fa fa-check` :guilabel:`apply` button.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/select_season.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/select_season.png
     :title: The season selection panel
     :group: optical-mosaic-recipe
 
@@ -199,7 +199,7 @@ As mentioned in the introduction, a mosaic uses different raster datasets and th
 
 -   :guilabel:`A+B`: `Sentinel-2 Multispectral instrument <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2>`__ is a wide-swath, high-resolution, multi-spectral imaging mission supporting Copernicus Land Monitoring studies, including the monitoring of vegetation, soil and water cover, as well as observation of inland waterways and coastal areas.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/select_source.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/select_source.png
     :title: The source selection panel
     :group: optical-mosaic-recipe
 
@@ -222,7 +222,7 @@ Select :guilabel:`select scenes` and 3 new selection options will become availab
 
 To validate your selection, click on :icon:`fa fa-check` :guilabel:`Apply` button.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/scene_method.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/scene_method.png
     :title: The source selection panel
     :group: optical-mosaic-recipe
 
@@ -243,7 +243,7 @@ Composite
 
 To create a mosaic, you will need to provide SEPAL with the compositing method to create the final image. Here is a description of all the possible compositing options available. 
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/composite_options.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/composite_options.png
     :title: The panel to select the composite options of your mosaic
     :group: optical-mosaic-recipe
 
@@ -336,7 +336,7 @@ On the top right corner, three tabs are available. They will allow you to custom
 -   :icon:`fas fa-trash`: clear selected scenes
 -   :icon:`fas fa-cloud-download-alt`: retrieve mosaic
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/analysis.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/analysis.png
     :title: The 3 tabs to select the scenes and export mosaic
     :group: optical-mosaic-recipe
 
@@ -365,7 +365,7 @@ SEPAL will use the priority defined in the :guilabel:`SCN` tab to order the scen
 
     The result is never perfect but can be used as a starting point for manual selection of scenes.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/auto-select.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/auto-select.png
     :title: Panel to select the minimum and maximum number of scenes to auto select in each tile
     :group: optical-mosaic-recipe
 
@@ -375,7 +375,7 @@ Clear all scene
 If at least 1 scene is selected, the :icon:`fas fa-trash` tab will be available. Click on it to open the clear panel. 
 Click on :guilabel:`clear scenes` and all the scenes selected (manually or automatically) will be removed. 
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/remove_all.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/remove_all.png
     :title: The panel to unselect all the scenes from the mosaic
     :group: optical-mosaic-recipe
 
@@ -387,7 +387,7 @@ Hover a tile circled-number and click on it to open the scene selection menu (1)
 -   Available scene (2): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in :guilabel:`SCN` tab. 
 -   Selected scenes (3): The scenes that are currently selected. 
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/select_scenes.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/select_scenes.png
     :title: The popup window used to select individual scenes for one single tile
     :group: optical-mosaic-recipe
 
@@ -399,24 +399,24 @@ Each thumbnail represents a scene of the tile stack and you have the option to i
 -   The cloud coverage of the scene in % and its position in the stack values :icon:`fas fa-cloud`: 
 -   The distance from target day in days within the season and its position in the stack values :icon:`fas fa-calendar-check`: 
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/thumbnail_available.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_available.png
     :width: 24%
     :title: the thumbnail of a scene when it's in the available scene area
     :group: optical-mosaic-recipe
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/thumbnail_selected.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_selected.png
     :width: 74%
     :title: the thumbnail of a scene when it's in the selected scene area
     :group: optical-mosaic-recipe
 
 You can decide to move the scene to the **selected** area by clicking :icon:`fa fa-plus`:guilabel:`add` or move it back to **available** by clicking :icon:`fa fa-minus` :guilabel:`remove`.  
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/thumbnail_available_hover.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_available_hover.png
     :width: 24%
     :title: the thumbnail of a scene when it's in the available scene area when it's hovered
     :group: optical-mosaic-recipe
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/thumbnail_selected_hover.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_selected_hover.png
     :width: 74%
     :title: the thumbnail of a scene when it's in the selected scene area when it's hovered
     :group: optical-mosaic-recipe
@@ -432,7 +432,7 @@ Retrieve
 
 Clicking on the :icon:`fas fa-cloud-download-alt` tab will open the retrieve panel where the you can select the exportation parameters.
 
-.. thumbnail:: ../img/cookbook/optical_mosaic/retrieve.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/retrieve.png
     :title: the last panel of the optical mosaic: the exportation
     :group: optical-mosaic-recipe
 
@@ -523,12 +523,12 @@ Going to the task tab (bottom left corner using the :icon:`fa fa-tasks` or :icon
 
 When the task is finished the frame will be displayed in green as shown on the second image.
 
-.. thumbnail:: ../img/cookbook/time_series/download.png
+.. thumbnail:: ../_images/cookbook/time_series/download.png
     :width: 49%
     :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
     :group: time-series-recipe
 
-.. thumbnail:: ../img/cookbook/time_series/download_complete.png
+.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
     :width: 49%
     :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
     :group: time-series-recipe

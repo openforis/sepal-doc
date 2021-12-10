@@ -22,7 +22,7 @@ To start a SEPAL application gor to the dashboard of application by clicking on 
 -   Juyter Notebook: an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. support Kernels in many different languages including R, Python and NodesJS.
 -   JupyterLab: JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.
 
-.. thumbnail:: ../img/module/index/dashboard.png
+.. thumbnail:: ../_images/module/index/dashboard.png
     :title: the landing page of the dashboard of application
 
 To find the aplication he's looking for, the user can navigate in the different app pages (3), use the tags (4) or use the search bar (5).
@@ -50,14 +50,14 @@ Some applications require more powerful instances than the default :code:`t1`. I
 
 #.  Go to the SEPAL termninal and wait for the instance selector to start
 
-    .. thumbnail:: ../img/module/index/terminal.png
+    .. thumbnail:: ../_images/module/index/terminal.png
        :title: the SEPAL instance selector
         
 #.  Type the instance name suggested in the documentation of your app and press :kbd:`Enter`.
 
 #.  Wait for the instance to finish loading
 
-    .. thumbnail:: ../img/module/index/m4_started.png
+    .. thumbnail:: ../_images/module/index/m4_started.png
         :title: start a m4 instance
         
 #.  Go back to the dashboard of application to launch your app. It will be automatically using the instance you opened and won't restart a :code:`t1`.

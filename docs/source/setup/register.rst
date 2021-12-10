@@ -14,13 +14,13 @@ Sign Up to SEPAL
 
     This registration is compulsory to use the platform
 
-.. image:: ../img/setup/register/sepal_splash_page.png
+.. image:: ../_images/setup/register/sepal_splash_page.png
    :alt: Sepal splash page.
    :align: center
 
 You can request an account by visiting `sepal.io <sepal.io>`_ and clicking :code:`Sign Up`. This will take you to a Google Doc sign-up form to fill out. You will be set up with an account within a day or so.
 
-.. image:: ../img/setup/register/request_sepal.png
+.. image:: ../_images/setup/register/request_sepal.png
    :alt: Request access to sepal.io
    :align: center
 
@@ -43,13 +43,13 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 To request a GEE account, please visit https://earthengine.google.com/new_signup/.
 
-.. image:: ../img/setup/register/gee_landing.png
+.. image:: ../_images/setup/register/gee_landing.png
    :alt: Request access to google earth engine
    :align: center
 
 Once you have a Google Earth Engine account, you can access GEE here: https://code.earthengine.google.com/.
 
-.. image:: ../img/setup/register/gee_code.png
+.. image:: ../_images/setup/register/gee_code.png
    :alt: gee code editor
    :align: center
 
@@ -68,7 +68,7 @@ In your browser window, navigate to https://collect.earth/. CEO supports Google 
 
 Click :code:`Login/Register` on the upper right.
 
-.. image:: ../img/setup/register/ceo_landing.png
+.. image:: ../_images/setup/register/ceo_landing.png
    :alt: CEO landing page
    :align: center
 

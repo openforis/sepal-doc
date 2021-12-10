@@ -9,7 +9,7 @@ If you don't find what you need please let us know using the `GitHub issue track
 
 We will be happy to receive contributions from people that use this documentation, so if you find a typo, don't hesitate to use the :guilabel:`edit this page` button on the right side of every documentation page to help us improve the way we present the platform!
 
-.. thumbnail:: ../img/setup/index/planet_classification.png
+.. thumbnail:: ../_images/setup/index/planet_classification.png
     :title: example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the classification tool in SEPAL
 
 .. toctree::

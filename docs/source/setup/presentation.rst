@@ -25,7 +25,7 @@ Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
 
 Type in your **Username** and **Password** and click **Login**.
 
-.. image:: ../img/setup/presentation/sepal_login.png
+.. image:: ../_images/setup/presentation/sepal_login.png
    :alt: SEPAL login page
    :align: center
 
@@ -62,7 +62,7 @@ Home
 
 Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-.. image:: ../img/setup/presentation/sepal_home.png
+.. image:: ../_images/setup/presentation/sepal_home.png
    :alt: SEPAL home screen
    :align: center
 
@@ -91,7 +91,7 @@ Change the Google Account associated with your SEPAL account by clicking **Use m
 
 Next to your **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: ../img/setup/presentation/user_report_panel.png
+.. image:: ../_images/setup/presentation/user_report_panel.png
    :alt: User Report panel.
    :width: 350px
    :align: center
@@ -101,7 +101,7 @@ Process Tab
 
 Click the :code:`Process` tab on the left side of the window.
 
-.. image:: ../img/setup/presentation/process_tab_location.png
+.. image:: ../_images/setup/presentation/process_tab_location.png
    :alt: Arrow pointing out the process tab location
    :align: center
 
@@ -121,7 +121,7 @@ Click the green :code:`Files` tab on the left side of the window. This will disp
 
 For example, click the :code:`downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
 
-.. image:: ../img/setup/presentation/files_menu.png
+.. image:: ../_images/setup/presentation/files_menu.png
    :alt: The files menu
    :align: center
    :width: 350
@@ -152,7 +152,7 @@ To increase the size of your instance, follow the following steps:
 -   Press Enter on your keyboard.
 -   Wait for the new instance to start. This will take several minutes.
 
-.. image:: ../img/setup/presentation/terminal.png
+.. image:: ../_images/setup/presentation/terminal.png
    :alt: The terminal page, including an example of changing the instance
    :align: center
    :width: 450
@@ -162,7 +162,7 @@ Apps Tab
 
 Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
 
-.. image:: ../img/setup/presentation/apps_interface.png
+.. image:: ../_images/setup/presentation/apps_interface.png
    :alt: The Apps interface
    :align: center
 

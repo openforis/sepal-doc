@@ -1,4 +1,4 @@
-.. image:: docs/source/img/sepal_header.png
+.. image:: docs/source/_images/sepal_header.png
 
 sepal-doc
 =========
