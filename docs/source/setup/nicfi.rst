@@ -22,7 +22,7 @@ First make sure you have a Google Earth Engine account. Follow _`this tutorial <
 
 Sign up for a NICFI Planet data access using the same email address that has access to Google Earth Engine. You can sign up for access to the NICFI data program here: `<https://www.planet.com/nicfi/>`_ and make sure to specify your email address that has access to GEE in the field “What is your GEE identity” 
 
-.. image:: ../img/setup/register/nicfi_landing.png
+.. image:: ../_images/setup/register/nicfi_landing.png
    :alt: planet nicfi landing page
    :align: center
    
@@ -38,7 +38,7 @@ Next step is to make sure SEPAL is connected to the same email address that has 
 
 If you are connected to a Google account and that is the same account that as access to NICFI-Planet Basemaps in GEE, great!
 
-.. figure:: ../img/setup/gee/user_interface_connected.png
+.. figure:: ../_images/setup/gee/user_interface_connected.png
     :alt: sepal and gee connected
     :align: center
     :width: 50%

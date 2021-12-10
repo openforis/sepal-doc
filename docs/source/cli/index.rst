@@ -16,7 +16,7 @@ SEPAL platform includes a variety of useful Command Line Interface utilities to 
     
 These tools can be called directly from the terminal or any programming language sending commands to the kernel including R and Python (installed by default on any SEPAL account).
 
-.. thumbnail:: ../img/cli/index/cli_gdalinfo.gif
+.. thumbnail:: ../_images/cli/index/cli_gdalinfo.gif
     :title: How to use the gdalinfo command in a SEPAL terminal
     
 .. note::
