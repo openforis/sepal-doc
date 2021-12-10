@@ -1,4 +1,4 @@
-CLassification
+Classification
 ==============
 
 .. warning::

@@ -419,7 +419,7 @@ Each time the value in the first column of :code:`lookup.txt` is found in the Jo
 -   Load :code:`landuse.shp` in QGIS and look at your attribute table. You should now find the new column called newcol with it values.
 -   Take a look at the ID 7. The newcol value in :code:`landuse.shp` is -9999. This is due to the fact that there was no value 7 in the first column of the lookup table. In that case the corresponding value is not present in the lookup table, therefore the newcol value for that record becomes -9999.
 
-.. figure:: ../img/cli/ofgt/oft-addattr.png
+.. figure:: ../_images/cli/ofgt/oft-addattr.png
     :width: 50%
     :alt: final shp attributes
     
@@ -532,7 +532,7 @@ You can visualize the result in QGIS:
 
     qgis results/forestcolor.tif
 
-.. figure:: ../img/cli/ofgt/oft-addpct.png
+.. figure:: ../_images/cli/ofgt/oft-addpct.png
     :width: 50%
     :alt: color added to an image
     
@@ -650,7 +650,7 @@ Visualize the results in QGIS:
 
     qgis images/forestc.tif results/bb_33.tif
 
-.. figure:: ../img/cli/ofgt/oft-bb.png
+.. figure:: ../_images/cli/ofgt/oft-bb.png
     :width: 50%
     :alt: bounding box for 33 value
 
@@ -712,7 +712,7 @@ Output to be found in folder :code:`plots_LT52_CUB00.tif_bands_3_4` created afte
 
     oft−classvalues −compare . bash 1 3
 
-.. figure:: ../img/cli/ofgt/compare_1_3.png
+.. figure:: ../_images/cli/ofgt/compare_1_3.png
     :width: 50%
 
     Comparaison bewteen band 1 and 3
@@ -724,7 +724,7 @@ Now compare **band1**, **band2** and **band3**:
 
     oft−classvalues −compare . bash 1 2 3
 
-.. figure:: ../img/cli/ofgt/compare_1_2_3.png
+.. figure:: ../_images/cli/ofgt/compare_1_2_3.png
     :width: 50%
 
     Comparaison bewteen band 1 to 3
@@ -899,7 +899,7 @@ Verify in QGIS if your pixel values of :code:`forestc.tif` match the polygon val
 
     if the raster output is black, click on it’s Properties -> Style -> Color Map and chose Pseudo Color
 
-.. figure:: ../img/cli/ofgt/oft-combine-mask_create_mask.png
+.. figure:: ../_images/cli/ofgt/oft-combine-mask_create_mask.png
 
     Left: Attribute table of :code:`landuse.shp`. Right: Zoom of output raster :code:`forestc.tif` in QGIS using the colourmap **Pseudocolour**.
      
@@ -961,7 +961,7 @@ Run :code:`oft-combine-masks.bash`: Input: :code:`mask1.tif`, :code:`mask2.tif`,
 
 Verify in QGIS if :code:`combined-masks.img` contains all mask values, and if the additional polygon of :code:`clouds.shp` has the values 99 (look into attribute table of clouds.shp under the last column).
 
-.. figure:: ../img/cli/ofgt/oft-combine-mask_combined.png
+.. figure:: ../_images/cli/ofgt/oft-combine-mask_combined.png
     :width: 50%
 
     Combined masks including the larger polygon from clouds.shp.
@@ -1069,7 +1069,7 @@ Print the result on screen:
     333.00 732285.00 −2443885.00 100.00 3033.00 2.00 2.00 100.00 3033.00 2.00 2.00 100.00 3033.00 46.00 20.00 18.00 39.00 45.00 124.00 46.00 20.00 18.00 39.00 45.00 124.00 100.00 3033.00 56.00 43.00 35.00 81.00 56.00 26.00 56.00 43.00 35.00 81.00 56.00 26.00
     334.00 732285.00 −2442885.00 100.00 3000.00 2.00 2.00 100.00 3000.00 2.00 2.00 100.00 3000.00 48.00 20.00 18.00 36.00 42.00 125.00 48.00 20.00 18.00 36.00 42.00 125.00 100.00 3000.00 55.00 43.00 35.00 77.00 54.00 27.00 55.00 43.00 35.00 77.00 54.00 27.00    
 
-.. figure:: ../img/cli/ofgt/oft-compare-overlap.png
+.. figure:: ../_images/cli/ofgt/oft-compare-overlap.png
     :width: 50%
     
     Output of oft-compare-overlap.bash visualized in QGIS.
@@ -1237,7 +1237,7 @@ Open your working directory using:
         cd results
         oft−cuttile.pl coordinates.txt proj.txt . Tiles
 
-.. figure:: ../img/cli/ofgt/oft-cuttile.png
+.. figure:: ../_images/cli/ofgt/oft-cuttile.png
     :width: 50%
     
     The four tiles overlayed on base image, displayed with differing band composition to base imagery.
@@ -1315,7 +1315,7 @@ Calculation of the mean using the option -f 0:
 Load your computed rasters in QGIS and verify your output statistics
 using Identify Results.
 
-.. figure:: ../img/cli/ofgt/oft-filter.png
+.. figure:: ../_images/cli/ofgt/oft-filter.png
     :width: 50%
     
     Example of the computed mean.tif
@@ -1388,7 +1388,7 @@ Look at the first ten lines of your result:
 
 Load the data in QGIS using ’Add Delimited Text Layer’ and see if it overlays on your Landsat image.
 
-.. figure:: ../img/cli/ofgt/oft-gengrid.png
+.. figure:: ../_images/cli/ofgt/oft-gengrid.png
     :width: 50%
 
     Zoom of the result overlayed on the original Landsat image in QGIS.
@@ -1486,7 +1486,7 @@ Let’s run :code:`oft-polygonize.bash` using the input image :code:`landsat_t1.
 
 Take a look at your shapefile in QGIS on go on properties of the .shp ->Labels ->tick Display Labels, set Field Containing Label to DN ->Press OK. The DN of each polygon in :code:`oft-polygonize.shp` should be the same as the pixel value of :code:`landsat_t1.tif` for the same location.
 
-.. figure:: ../img/cli/ofgt/oft-polygonize.png
+.. figure:: ../_images/cli/ofgt/oft-polygonize.png
     :width: 50%
 
     Zoomed view of oft-polygonize.shp
@@ -1677,7 +1677,7 @@ Open your working directory using
 
 The script :code:`oft-sigshp.bash` is able to create a signature file for both data types, numerical and factorial, depending on the stored data in your shapefile. In the next steps we will lead you through an example exercises for each data type:
 
-.. figure:: ../img/cli/ofgt/poly20_attribute.png
+.. figure:: ../_images/cli/ofgt/poly20_attribute.png
     :width: 50%
 
     Attribute table of polyN20.shp
@@ -2358,12 +2358,12 @@ Gapfilling with mask of the scan-line using a simple mask created with :code:`of
 
 Now, use :code:`oft-gapfill` to fill the areas indicated as "1" in the mask: Output automatically processed: :code:`filled_la1_sd2_simplemask.tif`
 
-.. figure:: ../img/cli/ofgt/oft-gapfill_original.png
+.. figure:: ../_images/cli/ofgt/oft-gapfill_original.png
     :width: 50%
     
     Original Landsat image.
 
-.. figure:: ../img/cli/ofgt/oft-gapfill.png
+.. figure:: ../_images/cli/ofgt/oft-gapfill.png
     :width: 50%
     
     Landsat imager after gap fill
@@ -2416,12 +2416,12 @@ LoadNDVI :code:`landsat_t1.tif` in QGIS and Check that all pixels of your NDVI i
 
 Here is an example of how the result looks like:
 
-.. figure:: ../img/cli/ofgt/oft-ndvi.png
+.. figure:: ../_images/cli/ofgt/oft-ndvi.png
     :width: 50%
 
     Zoomed view of the original Landsat image.
 
-.. figure:: ../img/cli/ofgt/oft-ndvi_freak-out.png
+.. figure:: ../_images/cli/ofgt/oft-ndvi_freak-out.png
     :width: 50%
 
     Zoomed view of the NDVI-result using the ’freak out’ colour map in QGIS.
@@ -2491,12 +2491,12 @@ Let’s run :code:`oft-prepare-images-for-gapfill.bash` using following input:
 
 Two output images mask are automatically processed: :code:`gapmask_landsat_t1_6bands_landsat_t2.tif` and :code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`.
 
-.. figure:: ../img/cli/ofgt/oft-gapmask.png
+.. figure:: ../_images/cli/ofgt/oft-gapmask.png
     :width: 50%
     
     :code:`gapmask_landsat_t1_6bands_landsat_t2.tif`
 
-.. figure:: ../img/cli/ofgt/oft-goodarea.png
+.. figure:: ../_images/cli/ofgt/oft-goodarea.png
     :width: 50%
 
     :code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`
@@ -2588,12 +2588,12 @@ Then tool will ask you then for further information:
 
 - Open QGIS and load your the original imagery :code:`image/forestc.tif` (Colour map: **Pseudocolour**) and the result :code:`results/reclassforestc.img`. Click with the **Identify Features** Tool over the the different classes and see how they have changed after the reclassification:
 
-.. figure:: ../img/cli/ofgt/oft-reclass_original.png
+.. figure:: ../_images/cli/ofgt/oft-reclass_original.png
     :width: 50%
     
     Original input image :code:`forestc.tif`.
 
-.. figure:: ../img/cli/ofgt/oft-reclass.png
+.. figure:: ../_images/cli/ofgt/oft-reclass.png
     :width: 50%
     
     Reclassified output raster :code:`reclassforestc.img`.
@@ -2621,7 +2621,7 @@ Again the tool will ask you for further information:
 
 - Open QGIS and load your result image :code:`reclass_min50.img` and zoom into the top left corner. You can see that the original classes 1-6 and 99 of :code:`landsat_t1_min50.tif` were reclassified the way we defined it in the lookup table input :code:`reclass.txt`.
 
-.. figure:: ../img/cli/ofgt/oft-reclass_ex2.png
+.. figure:: ../_images/cli/ofgt/oft-reclass_ex2.png
     :width: 50%
 
     Zoom into the top left corner of our final result :code:`reclass_min50.img`.
@@ -2796,12 +2796,12 @@ Lets run :code:`oft-trim-mask.bash` using :code:`landsat_t2.tif`. Automatically 
 
 Verify in QGIS your our result if the mask pixel values are 1 or 0.
 
-.. figure:: ../img/cli/ofgt/oft-trim-mask_original.png
+.. figure:: ../_images/cli/ofgt/oft-trim-mask_original.png
     :width: 50%
     
     Original image :code:`landsat_t2.tif` with visible gaps in QGIS
 
-.. figure:: ../img/cli/ofgt/oft-trim-mask.png
+.. figure:: ../_images/cli/ofgt/oft-trim-mask.png
     :width: 50%
 
     Output :code:`landsat_t2_mask.tif` using the Pseudo-colour colour map in QGIS
@@ -3834,7 +3834,7 @@ Let’s run :code:`oft-cluster` with Input: :code:`landsat_t1.tif` ; Output: :co
 
 Load the result in QGIS and see that all the pixel values are between 1 and 50 corresponding to the 50 classes we defined in the command line.
 
-.. figure:: ../img/cli/ofgt/oft-cluster.png
+.. figure:: ../_images/cli/ofgt/oft-cluster.png
 
     Cluster50.tif
 
@@ -3859,7 +3859,7 @@ In the last step we want to create polygons using the Input: :code:`clump_clus50
 
     gdal_polygonize.py clump_clus50_.tif −f "ESRI Shapefile" clump_clus50.shp
 
-.. figure:: ../img/cli/ofgt/gdal_polygonize.png
+.. figure:: ../_images/cli/ofgt/gdal_polygonize.png
    
     Left: Zoom into the cluster image Cluster50.tif. Right: Corresponding zoom into the shapefile clump clus50.shp.
 
@@ -3996,7 +3996,7 @@ The program will ask you for:
 
 Load your result my kmeans.tif in QGIS:
 
-.. figure:: ../img/cli/ofgt/oft-kmeans.png
+.. figure:: ../_images/cli/ofgt/oft-kmeans.png
 
     shows the classified image my kmeans.tif with pixel values between 1 and 25.
 
@@ -4138,7 +4138,7 @@ Load your result my :code:`knn.tif` in QGIS:
 
 You can see the polygons labeled corresponding to their landuse-class on top of our result :code:`my_knn.tif`, of which the pixel values vary between 1-5 (e.g. 1.78283) as there are 5 landuse-classes (1,2,3,4,5).
 
-.. figure:: ../img/cli/ofgt/oft-knn.png
+.. figure:: ../_images/cli/ofgt/oft-knn.png
 
     Result :code:`my_knn.tif` overlayed with :code:`landuse.shp`
 
@@ -4335,7 +4335,7 @@ For this exercise we will use :code:`landsat_t1.tif` as image file and :code:`la
 The output image is automatically processed: :code:`landsat_t1_mask.tif`
 Check in QGIS the values of your output-mask
 
-.. figure:: ../img/cli/ofgt/oft−prepare−image−for−nn.png
+.. figure:: ../_images/cli/ofgt/oft−prepare−image−for−nn.png
 
     Output of :code:`oft-prepare-image-for-nn.bash` is :code:`landsat_t1_mask.tif`   
     
@@ -4393,19 +4393,19 @@ Two output images are automatically processed:
 -   :code:`landsat_t2_mask_unique_mask.tif`
 -   :code:`landsat_t2_mask_accumulated_mask.tif`
 
-.. figure:: ../img/cli/ofgt/oft−unique−mask−for−nn_mask.png
+.. figure:: ../_images/cli/ofgt/oft−unique−mask−for−nn_mask.png
 
     Mask of base image: :code:`mask.tif`
 
 Here you will get the Mask of new image: :code:`landsat_t2_mask.tif` (left) and the Output: :code:`landsat_t2_mask_unique_mask.tif` (right).
 
-.. image:: ../img/cli/ofgt/oft−unique−mask−for−nn.png
+.. image:: ../_images/cli/ofgt/oft−unique−mask−for−nn.png
     :width: 40%
     :align: left
 
     
 
-.. image:: ../img/cli/ofgt/oft−unique−mask−for−nn_unique.png
+.. image:: ../_images/cli/ofgt/oft−unique−mask−for−nn_unique.png
     :width: 40%
     :align: left
 
@@ -4572,7 +4572,7 @@ Now zoom in and will see something similar to the image displayed, depending on 
 
     The segmentation image :code:`landsat_t1_min50.tif` can be used in a further step for :code:`oft-segstat`.
 
-.. figure:: ../img/cli/ofgt/oft-seg.png
+.. figure:: ../_images/cli/ofgt/oft-seg.png
 
     The segmentation image :code:`landsat_t1_min50.tif`
 

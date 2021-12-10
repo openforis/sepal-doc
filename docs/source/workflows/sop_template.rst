@@ -114,7 +114,7 @@ Additional guidance for the development of sample-based area estimation SOPs is 
 
 The templates for the SOPs outline current best practices for all the steps of sample-based area estimation. There is descriptive text with instructions for each stage which should be replaced with details from each user. Forms are also included, which are used to record the details about the application of the SOPs. Some of the templates have prerequisite requirements. Many of these can be generated through a pilot survey and/or careful planning.
 
-.. figure:: ../img/cookbook/sop_template/SOP_link.png
+.. figure:: ../_images/workflows/sop_template/SOP_link.png
    :alt: The link to view and download the SOP templates from FAO and FCPF.
    :align: center
 
@@ -270,7 +270,7 @@ In the future, you may want to revise your SOPs. This may happen when you develo
 
 When you revise your SOPs you will need to keep a few things in mind. The first is that you will need to keep track of versioning. With versioning, you use a unique version name or version number for each update to your SOP. For example, the first version of your sampling design for your sample-based area estimate SOPs may be 1.0 and your revision may be 2.0. FAO’s SOP templates include a field for versioning.
 
-.. figure:: ../img/cookbook/sop_template/versioning.png
+.. figure:: ../_images/workflows/sop_template/versioning.png
    :alt: The versioning section of the Sample Design SOP template.
    :align: center
 
@@ -283,7 +283,7 @@ Third, you will need to revise the document in a methodical fashion. In these di
 3. If your different SOP versions do not have versioning, consider adding versioning. At the very least, add versioning to your updated SOP.
 4. In the Version Log section of the SOP template, fill in details of the historic versions of the SOP. You may choose to only fill in details for the previous SOP, or you may include additional previous versions.
 
-.. figure:: ../img/cookbook/sop_template/changelog1.png
+.. figure:: ../_images/workflows/sop_template/changelog1.png
    :alt: Record information about your previous SOP in the Version Log.
    :align: center
 
@@ -291,7 +291,7 @@ Third, you will need to revise the document in a methodical fashion. In these di
 5. Follow the directions in 3.4 How to adapt FAO’s templates for your SOP in order to create your updated SOP.
 6. Record what changes were made to your SOP in the updated SOP version in the Version Log section of the SOP template.
 
-.. figure:: ../img/cookbook/sop_template/changelog2.png
+.. figure:: ../_images/workflows/sop_template/changelog2.png
    :alt: Record your changes to the SOP.
    :align: center
 

@@ -1,4 +1,4 @@
-planet mosaic
+Planet mosaic
 =============
 
 .. warning::

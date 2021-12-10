@@ -24,7 +24,7 @@ When clicking on a file, use the :code:`download` button to download it to your 
 
     The download button is only available when you click on 1 single file. You can't download a full folder at once.
 
-.. image:: ../img/setup/filezilla/jupyter-notebook-dashboard.png
+.. image:: ../_images/setup/filezilla/jupyter-notebook-dashboard.png
 
 
 Jupyterlab
@@ -55,7 +55,7 @@ In the SEPAL application dashboard, open a new Jupyter Notebook app.
 
 From there The file menu (in red on the bellow image) enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming and copying.
 
-.. image:: ../img/setup/filezilla/rstudio_dashboard.png
+.. image:: ../_images/setup/filezilla/rstudio_dashboard.png
 
 Using the :code:`upload` button at the top left of the red rectangle, you will be able to upload files from your local computer.
 
@@ -66,7 +66,7 @@ In the SEPAL file explorer, you will be able to work with files and directories 
 
 after clicking on a single file, use the :code:`download` button to download the file to your local folder.
 
-.. image:: ../img/setup/filezilla/sepal_file_manager.png
+.. image:: ../_images/setup/filezilla/sepal_file_manager.png
 
 .. warning::
 
@@ -112,7 +112,7 @@ In the site manager pop-up click on the :code:`New Site` button. Use the screens
 
     for :code:`user` and :code:`password`; use the credential you use to connect to the platform
 
-.. image:: ../img/setup/filezilla/register_new_site.png
+.. image:: ../_images/setup/filezilla/register_new_site.png
 
 Click on :code:`Connect` and your SEPAL drive will appear in the right panel. In parallel, in the left panel, you'll find the files and folders of your computer.
 
@@ -124,7 +124,7 @@ The next step is to get familiar with FileZilla's window layout.
 Here is a quick introduction: 
 Below the toolbar (1) and quick connect bar (2), the message log (3) displays transfer and connection related messages. Below, you can find the file listings. The left column (local pane, 4) displays the local files and directories, i.e. the stuff on the PC you're using FileZilla on. The right column (server pane, 5) displays the files and directories on the server you are connected to. Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom. You can easily navigate either of the trees and lists by clicking around like in any other file manager. At the bottom of the window, the transfer queue (6) lists the to-be-transferred and already transferred files.
 
-.. image:: ../img/setup/filezilla/filezilla_panel.png
+.. image:: ../_images/setup/filezilla/filezilla_panel.png
 
 .. seealso::
 
