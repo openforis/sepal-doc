@@ -11,6 +11,7 @@ Welcome to SEPAL's documentation!
    Cookbook<cookbook/index>
    Modules<modules/index>
    CLI<cli/index>
+   Workflows<workflows/index>
     <team/index>
 
 
