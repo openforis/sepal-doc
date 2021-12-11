@@ -1,20 +1,45 @@
 CCDC - Asset Creation
 *********************
 
-Overview
---------
+Introduction
+------------
 
 Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_.
 
-CCDC is a holistic methodological framework that encompasses various aspects of land mapping and monitoring by using multi-temporal satellite data. The core of the method is the *temporal segmentation* at *pixel-level*. CCDC is data-agnostic, meaning any type of multi-temporal satellite imagery can be theoretically ingested. As opposed to other time-series methods, it is capable to utilize all available bands and derived band ratios.
+CCDC is a holistic methodological framework that encompasses various aspects of land mapping and monitoring by using multi-temporal satellite data. The core of the method is a *temporal segmentation* at *pixel-level*. CCDC is data-agnostic, meaning any type of multi-temporal satellite imagery can be theoretically ingested. As opposed to other time-series methods, it is capable to utilize all available bands and derived band ratios.
 
 The temporal segmentation step includes fitting a harmonic model to the observed time-series and detect breaks that indicate a change in land cover or land use. We call the information layers stored from this process a **CCDC asset**.
 
-The layers of the **CCDC asset** contain information of change happening for each pixel. In addition, the model parameters are stored for the time-series in between those breaks.
+The layers of the **CCDC asset** contain information of change happening for each pixel, including the date of the break as well its magnitude. In addition, the model parameters are stored for the time-series segments in between those breaks. With the help of these parameters it is possible to extract synthetic images at any given point in time (i.e. *CCDC slices*) that can be used for any subsequent type of classification or regression task.
+
+.. warning::
+
+    The creation of a CCDC asset is the mandatory first step for all types of subsequent workflows and analysis. This step is highly compute intense, which makes it difficult for on-the-fly-processing. An export as an Earth Engine asset is highly recommended. For this, your SEPAL account needs to be connected to your Google Earth Engine account. Follow `Connect SEPAL to GEE <../setup/gee.html>`__ to learn how to register for Google Earth Engine and connect it to your SEPAL account.
+
+Getting Started
+---------------
+
+Once logged into SEPAL, open the recipe menu (1) by clicking on the |recipes| button at the top left of the SEPAL start screen. Within the recipe menu (1), select CCDC, which opens a new SEPAL recipe tab (2).
+
+.. |recipes| image:: ../_images/icons/recipes.png
+    :width: 4%
+
+The first step is to change the name for the recipe, so once it is closed, you can
+
+On the lower right, you can select :icon:`fas fa-globe`
+Once the time-series recipe is selected, SEPAL will show up the recipe process in a new tab(1), the base map will change to Google high-resolution imagery and the AOI selection window will open itself on the bottom right side (2).
 
 
-The creation of a CCDC asset is the mandatory first step for all types of subsequent workflows and analysis.
+Parameter selection
+-------------------
 
+
+Pixel analysis
+-------------
+
+
+Export
+------
 
 Quick Guide for Landsat-8 based Asset creation
 ==============================================
