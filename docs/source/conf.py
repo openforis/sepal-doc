@@ -39,6 +39,7 @@ extensions = [
     '_extentions.line_break',
     '_extentions.custom_edit',
     '_extentions.icon',
+    '_extentions.btn'
 ]
 
 # spelling options
