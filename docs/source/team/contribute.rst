@@ -117,6 +117,21 @@ ReST role to include inline icons in the documenation (usualy when referencing a
 
 I'm a folder icon: :icon:`fa fa-folder`
 
+btn
+"""
+
+Rest role to include complete btn in the documentation. You can find the icon you're looking for in the fontawesome library `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__. The text is optional.
+
+.. code-block:: rst 
+
+    I'm a apply btn: :btn:`<fas fa-check> apply`
+
+    I'm the app btn: :btn:`<fas fa-wrench>`
+
+I'm a apply btn: :btn:`<fas fa-check> apply`
+
+I'm the app btn: :btn:`<fas fa-wrench>`
+
 Minor change
 ------------
 
