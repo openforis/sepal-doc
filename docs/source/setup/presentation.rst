@@ -32,7 +32,7 @@ Type in your **Username** and **Password** and click **Login**.
 .. tip::
    When working in SEPAL, do not click your browser's back button. This will go back to the previous web-page. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
-Setup the local
+Setup the locale
 ---------------
 
 .. youtube:: Lv0HwPDQx50
@@ -42,9 +42,9 @@ The first step to create a SEPAL environment is to set up the language you want 
 
 .. note::
 
-    This selection will not be definitive and you will still be able to change from the launch page
+    You can always change your language preference from SEPAL's launch page.
 
-Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these language in sepal come back to the launch page. (disconnect yourself if necessary). On this page click on :code:`Launch`.
+Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these languages in SEPAL, return to the launch page. (you may have to logout of SEPAL to return to launch page). On this page click on :code:`Launch`.
 
 Once you've clicked, you will access the login page. At the top-right side of this panel, click on the button corresponding to your language: 
 
