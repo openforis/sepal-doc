@@ -12,6 +12,7 @@ Welcome to SEPAL's documentation!
    Modules<modules/index>
    CLI<cli/index>
    Workflows<workflows/index>
+   Features<feature/index>
     <team/index>
 
 

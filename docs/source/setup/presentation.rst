@@ -15,7 +15,7 @@ In this page, you will be introduced to the SEPAL interface. You will learn how 
     **prerequites**
 
     -   Internet access
-    -   SEPAL account (see ‘Getting Started')
+    -   SEPAL account (see 'Getting Started')
             
 
 Access SEPAL
@@ -33,7 +33,7 @@ Type in your **Username** and **Password** and click **Login**.
    When working in SEPAL, do not click your browser's back button. This will go back to the previous web-page. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
 Setup the locale
----------------
+----------------
 
 .. youtube:: Lv0HwPDQx50
     :align: center
