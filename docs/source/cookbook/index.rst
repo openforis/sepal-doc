@@ -4,9 +4,9 @@ SEPAL recipes
 Overview 
 --------
 
-Harness high performance cloud-based computing and modern geospatial data infrastructures via SEPAL recipes. They are the main feature of the platform and offer users access to state of the art data processing workflows with web based User Experience. 
+Harness high performance cloud-based computing and modern geospatial data infrastructures via SEPAL recipes. They are the main feature of the platform and offer users the ability to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly and easily.  
 
-Allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly.
+A SEPAL recipe is a record of the steps and parameters used to make a dataset (e.g. optical mosaic, radar mosaic, classifiction, etc.). The recipe can be saved and the same data re-created 'on-the-fly' whenever needed or used in further analyses. A recipe is not, in itself, data. Using SEPAL recipes enables documentation of the parameters and steps used to create mosaics / composites, classifications, time-series and other datasets or information products. SEPAL recipes, once saved, are available from the SEPAL interface after you login to the platform. Recipes can be copied (for example to change only the sensor used, leaving all other parameters the same), deleted, and run.
 
 With recipes, users can get access Google Earth Engine's multi-petabyte catalog of satellite imagery and use their planetary-scale analysis capabilities without writing a single line of code. Just connect your Google account to SEPAL.
 
@@ -66,16 +66,16 @@ Gallery
 Start a recipe
 --------------
 
-.. warning::
+.. tip::
 
-    If you have not connected your SEPAL account to Google Earth Engine, you won't be able to download your data.
+    It is recommended to connect your SEPAL account to your Google Earth Engine account in order to read/write from GEE assets. If your accounts are not linked, you will only be able to download data to your SEPAL workspace.
 
-To start a recipe, first go to the Process tab :icon:`fa fa-globe`. There you'll see the list of all the existing recipes in your SEPAL account.
+To start a recipe, first go to the Process tab :icon:`fa fa-globe`. There you'll see the list of all the saved recipes in your SEPAL account.
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132474880-12333a36-dee0-4bdc-a0b4-0e9aab24b601.png
     :title: recipe list displayed in the web interface
  
-Then click on the green :icon:`fa fa-plus-circle` button in the bottom right corner. It will open the recipe type selector popup. Select any of the availabel recipe type and follow our tutorials to know more about its usage. 
+Then click on the green :icon:`fa fa-plus-circle` button in the bottom right corner. It will open the recipe type selector popup. Select any of the available recipe type and follow our tutorials to know more about its usage. 
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132481048-6149f776-a7ed-47cb-8f75-3519aa1b8f1e.png
     :title: create a recipe from available workflows
