@@ -5,7 +5,7 @@ To get the full potential of the SEPAL platform you need to register to several 
 
 .. tip::
 
-    All the tool referenced here are free to use and will not charge you in any way.
+    All the tools referenced here are free to use and will not charge you in any way.
 
 Sign Up to SEPAL
 ----------------
@@ -37,9 +37,9 @@ Sign up to GEE
 
 .. note::
 
-    This step is not compulsory if you don't want to export your data. SEPAL can run computation on its own Google Earth Engine account on your behalf.
+    This step is not compulsory. SEPAL can run computation on its own Google Earth Engine account on your behalf. However, we highly recommend signing up for GEE as this will significantly improve your SEPAL experience.
 
-Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL. You will need to have a Google email in order to sign up. If you don't have one already, you can set one up here: http://mail.google.com/mail/sign-up. 
+You will need to have a Google email in order to sign up for Google Earth Engine. If you don't have one already, you can set one up here: http://mail.google.com/mail/sign-up. 
 
 To request a GEE account, please visit https://earthengine.google.com/new_signup/.
 

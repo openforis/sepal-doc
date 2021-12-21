@@ -4,17 +4,19 @@ Use Google Earth Engine with SEPAL
 GEE and SEPAL
 -------------
 
-SEPAL is a free cloud-computing platform that gives you access to multiple data resources and the possibility to process massive datasets with one single requirement: an internet connection. 
+SEPAL is a cloud-computing platform that gives you access to geospatial data resources (either via Google Earth Engine data catalogue or user-provided data) and powerful computing resources to process these data to produce useful information. SEPAL is free to use and is open-source. 
 
-On one hand, SEPAL is providing AWS instances (cloud based computers on the Amazon cloud) that can be used to process data in modules or using your own scripts (in R, Python or in the terminal). On the other hand, SEPAL is closely linked to Google Earth Engine, a Google powered Earth-observation cloud-computing platform. 
+SEPAL currently 'resides' in the Amazon AWS ecosystem and makes use of AWS cloud computers, or instances, that can be used to process data using pre-programmed SEPAL applications or using your own code (in R, Python or in the terminal). SEPAL is also closely linked to Google Earth Engine (GEE), a Google powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE API.  
 
-By using the resources of Google through there JS and Python API, we are able to compute large amount of data, access the vast Google dataset catalog and easily share our results with others. Everything free of charge and without using the AWS instances. 
+All the recipes of SEPAL are based on GEE and actually running scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL applications list, the applications tagged with the Google "G" logo are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
 
-All the recipes of SEPAL are based on GEE and actually running scripts written by our team to get state-of-the-art processes without coding them in the JS code editor. In the module list, the modules tagged with the Google "G" logo are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
+SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your own, personal GEE access credentials. However, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (e.g. authentication will not work) if your GEE and SEPAL accounts are unlinked.
 
-These recipes can be run using the default GEE credential of SEPAL, but you won't be able to export your result to SEPAL nor to any Gdrive storage space. So modules can simply not run if not connected to your GEE.
+.. tip:
 
-To cut a long story short.... to get the best of SEPAL, we highly suggest to our user to open their own Google Earth Engine account and connect it to SEPAL. In this doc, we will guide you through the full process of creating a GEE account and link it to SEPAL. 
+   See linking SEPAL and GEE accounts in the previous section.
+
+To get the best of SEPAL, we highly suggest all users to open their own Google Earth Engine account and link it to SEPAL. In this doc, we will guide you through the full process of creating a GEE account and link it to SEPAL. 
 
 Create a GEE account
 --------------------
@@ -22,7 +24,7 @@ Create a GEE account
 Sign-up
 ^^^^^^^
 
-Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL. You will need to have a Google Account in order to sign up. If you don't have one already, you can set one up here: https://accounts.google.com/servicelogin. 
+Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL as GEE assets or SEPAL applications using GEE. You will need to have a Google Account in order to sign up. If you don't have one already, you can set one up here: https://accounts.google.com/servicelogin. 
 
 To request a GEE account, please visit https://earthengine.google.com/new_signup/.
 
@@ -99,7 +101,7 @@ Now if you come back to your asset list (**zone 1** panel "asset") you should se
 Connection  between GEE  and SEPAL
 ----------------------------------
 
-As explain in the first section, SEPAL can work without being connected to your GEE account but you will lose numerous opportunities of interaction with our platform. In this section the connection procedure between GEE and SEPAL will be presented. 
+SEPAL can work without being connected to your GEE account but you will lose numerous opportunities of interaction with our platform. In this section the connection procedure between GEE and SEPAL will be presented. 
 
 Connection
 ^^^^^^^^^^
