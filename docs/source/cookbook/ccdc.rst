@@ -25,7 +25,7 @@ Getting Started
 Create Recipe
 ^^^^^^^^^^^^^^
 
-Once logged into SEPAL, open the recipe menu by clicking on the orange :icon:`fas fa-globe` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
+Once logged into SEPAL, open the recipe menu by clicking on the orange :icon:`fa fa-globe` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/recipe_selection.png
     :group: ccdc-recipe-selection
@@ -175,23 +175,23 @@ After clicking the :guilabel:`NEXT` button in the date selection, the sensor sel
 Optical data
 """""""""""
 
-CCDC is originally tested on optical Landsat satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including Tier 1 and Tier 2 collections, to run it on decadal-long time-series.
+CCDC is originally tested on optical *Landsat* satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including *Tier 1* and *Tier 2* collections, to run it on decadal-long time-series.
 
 .. warning::
 
-    The inclusion of Tier 2 products as well as Landsat 7 may introduce artifacts due to the reduced quality of the data. For recent short-term time-series it might be better to either select the Landsat-8 or Sentinel-2 mission, which deliver imagery from 2013 and 2015, respectively. This will however reduce the density of observations for the underlying time-series.
+    The inclusion of *Tier 2* products as well as *Landsat 7* may introduce artifacts due to the reduced quality of the data. For recent short-term time-series it might be better to either select the Landsat-8 or Sentinel-2 mission, which deliver imagery from 2013 and 2015, respectively. This will however reduce the density of observations for the underlying time-series.
 
 .. warning::
 
-    For very cloud-prone regions, it is also possible to combine the Landsat data with the Sentinel-2 data to densify the underlying time-series. Note that because of differences in the sensors (although band names are equal) and the overpass time, artifacts may be introduced that will affect the breakpoint detection.
+    For very cloud-prone regions, it is also possible to combine the *Landsat* data with the *Sentinel-2* data to densify the underlying time-series. Note that because of differences in the sensors (although band names are equal) and the overpass time, artifacts may be introduced that will affect the breakpoint detection.
 
 The breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of the CCDC breakpoint detection. Unfortunately, there does not seem to be a *"one size fits all"* preset for all kinds of applications. Scientific evidence is suggesting to use all color bands but the blue `Zhu et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_. According to the study, the selection of additional ratio bands does not add any improvement. However, it should be noted that this assumption is based on the detection of all types of land cover changes and that the study uses a modified version of CCDC (named COLD), where the change in bands are weighted differently than in the original version used in SEPAL, respectively Google Earth Engine.
 
 .. tip::
 
-    The use of the color bands allows you to later select the *Green* and the *Swir1* band as TMASK bands for CCDC's internal, multi-temporal cloud removal. You find this in the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`.
+    The use of the color bands allows you to later select the :code:`Green` and the :code:`Swir1` band as TMASK bands for CCDC's internal, multi-temporal cloud removal. You find this in the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`.
 
-If the creation of the CCDC asset is aimed at the detection of both, forest degradation and deforestation, the *Normalized Degradation Forest Index* NDFI might be another suitable choice as applied by `Bullock et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. Note that this article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or the color bands. For instance one can consider the *Normalized Differenced Moisture Index* NDMI when looking at Mangrove forests.
+If the creation of the CCDC asset is aimed at the detection of both, forest degradation and deforestation, the *Normalized Degradation Forest Index* :code:`NDFI` might be another suitable choice as applied by `Bullock et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. Note that this article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or the color bands. For instance one can consider the *Normalized Differenced Moisture Index* :code:`NDMI` when looking at Mangrove forests.
 
 .. tip::
     In case of doubt, we suggest to go for the default option and use all of the color bands, except the blue one.
@@ -209,7 +209,7 @@ If the creation of the CCDC asset is aimed at the detection of both, forest degr
 Radar Data
 """"""""""
 
-In order to create a CCDC asset based on underlying radar time-series, you need to select the :guilabel:`RADAR` button. This will make use the Sentinel-1 C-Band SAR Image Collection in Google Earth Engine. To the best of our knowledge, no scientific studies have been done that investigate the ideal band selection for breakpoint detection. As a starting point we suggest to use the default option that includes the VV and the VH band.
+In order to create a CCDC asset based on underlying radar time-series, you need to select the :guilabel:`RADAR` button. This will make use the *Sentinel-1* C-Band SAR Image Collection in Google Earth Engine. To the best of our knowledge, no scientific studies have been done that investigate the ideal band selection for breakpoint detection. As a starting point we suggest to use the default option that includes the :code:`VV` and the :code:`VH` band.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_radar.png
     :title: Sensor Selection - Radar
@@ -220,7 +220,7 @@ In order to create a CCDC asset based on underlying radar time-series, you need 
 Planet data
 """""""""""
 
-For the creation of a CCDC asset based on Planet data, you have the choice of either selecting the Planet custom basemaps (including the NICFI Level 1 data), or daily imagery itself.
+For the creation of a CCDC asset based on *Planet* data, you have the choice of either selecting the *Planet custom basemaps* (including the NICFI Level 1 data), or *Planet daily imagery* itself.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_planet.png
     :title: Sensor Selection - Planet
@@ -231,7 +231,7 @@ For the creation of a CCDC asset based on Planet data, you have the choice of ei
 |
 In both cases, the data already needs to reside within Earth Engine as an *ImageCollection asset*, whose ID needs to be filled in the respective field.
 
-In case you want to use the NICFI Level-1 basemaps, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://developers.planet.com/docs/integrations/gee/nicfi/>`_. The NICFI Level-1 assets are splitted by continent and have the following Asset IDs:
+In case you want to use the *NICFI Level-1 basemaps*, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://docs.sepal.io/en/latest/setup/nicfi.html>`_. The NICFI Level-1 assets are splitted by continent and have the following Asset IDs:
 
     - projects/planet-nicfi/assets/basemaps/africa
     - projects/planet-nicfi/assets/basemaps/asia
@@ -340,7 +340,7 @@ Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 o
 |
 **Histogram Matching**
 
-Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabl:`ENABLE` this option as it will harmonize the radiometry between each single image.
+Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option as it will harmonize the radiometry between each single image.
 
 CCDC parameters
 ^^^^^^^^^^^^^^^
@@ -357,11 +357,11 @@ The selection of the presets can be interpreted at selecting the balance between
     :group: ccdc-asset-recipe
 |
 
-    - The parameters of the :guilabel:`CONSERVATIVE` are favoring commission over omission error rate in the breakpoint detection (i.e. aiming at high User Accuracy, low False Positives). In other words, CCDC is going to detect less breaks, but they are more likely to be correct. This comes at the cost of missing some actual changes, therefore having an increased omission error.
+- The parameters of the :guilabel:`CONSERVATIVE` are favoring commission over omission error rate in the breakpoint detection (i.e. aiming at high User Accuracy, low False Positives). In other words, CCDC is going to detect less breaks, but they are more likely to be correct. This comes at the cost of missing some actual changes, therefore having an increased omission error.
 
-    - The parameters of the :guilabel:`MODERATE` are trying to balance commission and omission errors in the breakpoint detection. In other words, CCDC is going to both, omit and commit some of the actual changes, keeping both level of error rates similar with a balanced False Positive and False Negative detection rate.
+- The parameters of the :guilabel:`MODERATE` are trying to balance commission and omission errors in the breakpoint detection. In other words, CCDC is going to both, omit and commit some of the actual changes, keeping both level of error rates similar with a balanced False Positive and False Negative detection rate.
 
-    - The parameters of the :guilabel:`AGGRESSIVE` are favoring omission over commission error rate in the breakpoint detection (i.e. aiming at high Producer Accuracy, low False Negatives). In other words, CCDC is going to detect more breaks than with the other settings, reducing the likelihood of missing change. This comes at the cost of also detecting a lot of falsely detected change though.
+- The parameters of the :guilabel:`AGGRESSIVE` are favoring omission over commission error rate in the breakpoint detection (i.e. aiming at high Producer Accuracy, low False Negatives). In other words, CCDC is going to detect more breaks than with the other settings, reducing the likelihood of missing change. This comes at the cost of also detecting a lot of falsely detected change though.
 
 .. tip::
 
@@ -369,7 +369,7 @@ The selection of the presets can be interpreted at selecting the balance between
 
 Advanced Options
 """"""""""""""
-More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabal:`MORE` button.
+More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabel:`MORE` button.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/opt_ccdc_advanced.png
     :title: Opt Selection - Advanced
@@ -401,7 +401,7 @@ This parameter determines the minimum length of any inner temporal segment.
 
 **LAMBDA**
 
-The lambda parameter is part of the LASSO regression used for the modelling of the time-series. It is used to generalize the model and thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might result even in the annulation of some of the parameters. In practical terms, an initially 3rd order harmonic model, might shrink to a 1st order harmonic, if this provides the best generalized fit. Setting lambda to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalised model. If lambda is set too high, the model will underfit, which also not wanted. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither over- nor underfitting will be around this number.
+The lambda parameter is part of the LASSO regression used for the modelling of the time-series. It is used to generalize the model and thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might result even in the annulation of some of the parameters. In practical terms, an initially 3rd order harmonic model, might shrink to a 1st order harmonic, if this provides the best generalized fit. Setting lambda to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalised model. If lambda is set too high, the model will underfit, which also not wanted. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither over nor underfitting will be around this number.
 
 **Max iterations**
 
@@ -436,7 +436,7 @@ Export
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Click on the :icon:`fa fa-cloud-download-alt` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
+Click on the :icon:`fas fa-cloud-download-alt` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
 
 If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point.
 
