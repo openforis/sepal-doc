@@ -31,6 +31,7 @@ Once logged into SEPAL, open the recipe menu by clicking on the orange :icon:`fa
     :group: ccdc-recipe-selection
     :title: Selection menu for SEPAL recipes
     :width: 60%
+    :align: center
 
 Rename Recipe
 ^^^^^^^^^^^^^
@@ -174,7 +175,7 @@ After clicking the :guilabel:`NEXT` button in the date selection, the sensor sel
 Optical data
 """""""""""
 
-CCDC is originally tested on optical Landsat satellites. In SEPAL you have the possibility to select adn combine all past and present Landsat missions, including Tier 1 and Tier 2 collections, to run it on decadal-long time-series.
+CCDC is originally tested on optical Landsat satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including Tier 1 and Tier 2 collections, to run it on decadal-long time-series.
 
 .. warning::
 
@@ -396,17 +397,18 @@ A high value allows for more noise in the time-series, and less changes will be 
 
 **Min Number of Years Scaler**
 
-tba
+This parameter determines the minimum length of any inner temporal segment.
 
 **LAMBDA**
 
 The lambda parameter is part of the LASSO regression used for the modelling of the time-series. It is used to generalize the model and thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might result even in the annulation of some of the parameters. In practical terms, an initially 3rd order harmonic model, might shrink to a 1st order harmonic, if this provides the best generalized fit. Setting lambda to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalised model. If lambda is set too high, the model will underfit, which also not wanted. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither over- nor underfitting will be around this number.
+
 **Max iterations**
 
-tba
+Those are the iterations for the maximum number of runs for LASSO regression convergence. If set to 0, regular OLS is used instead of LASSO.
 
 On-the-fly Pixel analysis
--------------
+-------------------------
 
 Click on the :icon:`fa fa-chart-area` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
 
@@ -431,6 +433,15 @@ On the main graph, the orange lines shows the CCDC modelled time-series. Each of
 Export
 ------
 
+Trigger the export task
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Click on the :icon:`fa fa-cloud-download-alt` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
+
+If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point.
+
+The scale parameter depends on the data selected and the level of detail you will need for your further analysis. Landsat based assets are usually created at 30 meters. Sentinel-1 and 2 can be at 10 meter, but will need 9 times more space as compared to 30 meter resolution.
+
 .. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_export_full.png
     :title: Export CCDC Asset - full band selection
     :width: 49%
@@ -440,3 +451,25 @@ Export
     :title: Export CCDC Asset - reduced band selection
     :width: 49%
     :group: ccdc-asset-recipe
+
+
+Exportation status
+^^^^^^^^^^^^^^^^^^
+
+Going to the task tab (bottom left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+
+.. tip::
+
+    This operation is running between GEE and SEPAL servers in the background, you can thus close the SEPAL page without killing the process.
+
+When the task is finished the frame will be displayed in green as shown on the second image.
+
+.. thumbnail:: ../_images/cookbook/time_series/download.png
+    :width: 49%
+    :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
+    :group: time-series-recipe
+
+.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
+    :width: 49%
+    :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
+    :group: time-series-recipe
