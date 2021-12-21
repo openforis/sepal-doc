@@ -164,7 +164,7 @@ In the :guilabel:`DAT` tab, you will be asked to select the starting date and th
 Sensor selection
 ^^^^^^^^^^^^^^^^
 
-After clicking the :guilabel:`NEXT` button in the date selection, the sensor selection pop-up menu will automatically open (1). Here you need to specify the sensor(s) and the bands used for the breakpoint detection. You have the choice between 3 types, optical (including the Landsat and Sentinel-2 missions), radar (including the Sentinel-1 mission) and Planet data, where both daily imagery or monthly basemaps can be used as data input (given you have a valid Planet API key).
+After clicking the :guilabel:`NEXT` button in the date selection, the sensor selection pop-up menu will automatically open (1). Here you need to specify the sensor(s) and the bands used for the breakpoint detection. You have the choice between 3 types, :guilabel:`OPTICAL` (including the Landsat and Sentinel-2 missions), :guilabel:`RADAR` (including the Sentinel-1 mission) and :guilabel:`PLANET`, where both daily imagery or monthly basemaps can be used as data input (given you have a valid Planet API key).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_overview.png
     :title: Sensor Selection
@@ -182,9 +182,9 @@ CCDC is originally tested on optical Landsat satellites. In SEPAL you have the p
 
 .. warning::
 
-    For very cloud-prone regions, it is also possible to combine the Landsat data with the Sentinel-2 data to densify the underlying time-series. Note that because of differences in the sensors (although band names are equal) and the overpass time, artifacts may be introduced tht will affect the breakpoint detection.
+    For very cloud-prone regions, it is also possible to combine the Landsat data with the Sentinel-2 data to densify the underlying time-series. Note that because of differences in the sensors (although band names are equal) and the overpass time, artifacts may be introduced that will affect the breakpoint detection.
 
-The breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of the CCDC breakpoint detection. Unfortunately, there does not seem to be a *"one size fits all"* preset for all kinds of applications. Scientific evidence is suggesting to use all color bands but the blue `Zhu et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_. According to the study, the selection of additional ratio bands does not add any improvement. However, this assumption is based on the detection of all kinds of land cover changes and uses a modified version of CCDC (COLD), where the change in bands are weighted differently than in the original version used in SEPAL, respectively Google Earth Engine.
+The breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of the CCDC breakpoint detection. Unfortunately, there does not seem to be a *"one size fits all"* preset for all kinds of applications. Scientific evidence is suggesting to use all color bands but the blue `Zhu et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_. According to the study, the selection of additional ratio bands does not add any improvement. However, it should be noted that this assumption is based on the detection of all types of land cover changes and that the study uses a modified version of CCDC (named COLD), where the change in bands are weighted differently than in the original version used in SEPAL, respectively Google Earth Engine.
 
 .. tip::
 
@@ -290,7 +290,7 @@ Multiple pre-processing parameters can be set to improve the quality of the prov
 Radar data
 """"""""""
 
-The default parameters (below figure on the left) are rather optimized for performance and coverage than for the quality. It is therefore recommended to modify them accordingly (below figure on the right).
+The default parameters (below figure on the left) are rather optimized for performance and coverage than for the highest quality of the data. It is therefore recommended to modify them accordingly (below figure on the right).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/prc_radar_default.png
     :title: Prc Selection - Radar default
@@ -303,6 +303,7 @@ The default parameters (below figure on the left) are rather optimized for perfo
     :group: ccdc-asset-recipe
 
 |
+**Orbit Selection**
 The orbit selection for radar satellites refers to the flight direction of the satellite that is different from sun-adverted and the sun-facing side of the planet. One distinguishes ascending (from south pole towards north pole) and descending (from north to south pole) direction. Being independent from the sunlight, radar satellites can acquire at both, day and nighttime. However, they do not acquire constantly.
 
 In case of the Sentinel-1 mission, areas outside of Europe are usually only covered by either one or the other. With the help of the below figure you should be able to see by which orbit direction your Area of Interest is covered.
@@ -313,49 +314,129 @@ In case of the Sentinel-1 mission, areas outside of Europe are usually only cove
 .. warning::
     While you can select both orbits to be on the safe side, marginal areas that are covered by both orbits might result in different models than for areas only covered by on eor the other, due to the differences in observation geometry. It is therefore recommended to properly select your orbit direction. Instead, if it happens that your full AOI is covered by both orbits, do also select both.
 
+**Geometric Correction**
+
 Setting the *Geometric Correction* to :guilabel:`TERRAIN` will correct for distortions of the radar backscatter signal along slopes. This is crucial for all types of land cover or biogeophysical parameter retrieval and is therefore **highly recommended**.
 
-Speckle Filtering is a common step in radar remote sensing and reduces the random noise within radar imagery. While CCDC has already a very effective filtering effect on the backscatter through the time-series modelling, selecting the multi-temporal :guilabel:`QUEGAN` shall improve the detection of breaks and is therefore recommended. However, as it is very compute intense, processing and export
+**Speckle-Filtering**
 
+Speckle Filtering is a common step in radar remote sensing and reduces the random noise within radar imagery. While CCDC has already a very effective filtering effect on the backscatter through the time-series modelling, selecting the multi-temporal :guilabel:`QUEGAN` shall improve the detection of breaks and is therefore recommended. However, as it is very compute intense, processing and export might take a considerable amount of time, and in some cases might even fail.
+
+**Outlier Removal**
+
+Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them by a multi-temporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artifacts. More aggressive filtering might include actual change events and is therefore not recommended.
+
+Planet data
+""""""""""
+
+Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 options. The default parameters are reflecting a quite aggressive way of cloud removal (see figure below).
+
+.. thumbnail:: ../_images/cookbook/ccdc_asset/prc_planet_default.png
+    :title: Prc Selection - Planet default
+    :width: 49%
+    :align: center
+    :group: ccdc-asset-recipe
+|
+**Histogram Matching**
+
+Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabl:`ENABLE` this option as it will harmonize the radiometry between each single image.
 
 CCDC parameters
 ^^^^^^^^^^^^^^^
 
+Presets
+""""""
+Behind the :guilabel:`OPT` you can find 3 basic presets of CCDC parameters.
+The selection of the presets can be interpreted at selecting the balance between commission and omission error for the breakpoint detection.
 
-Pixel analysis
+.. thumbnail:: ../_images/cookbook/ccdc_asset/opt_ccdc_simple.png
+    :title: Opt Selection - Simple
+    :width: 49%
+    :align: center
+    :group: ccdc-asset-recipe
+|
+
+    - The parameters of the :guilabel:`CONSERVATIVE` are favoring commission over omission error rate in the breakpoint detection (i.e. aiming at high User Accuracy, low False Positives). In other words, CCDC is going to detect less breaks, but they are more likely to be correct. This comes at the cost of missing some actual changes, therefore having an increased omission error.
+
+    - The parameters of the :guilabel:`MODERATE` are trying to balance commission and omission errors in the breakpoint detection. In other words, CCDC is going to both, omit and commit some of the actual changes, keeping both level of error rates similar with a balanced False Positive and False Negative detection rate.
+
+    - The parameters of the :guilabel:`AGGRESSIVE` are favoring omission over commission error rate in the breakpoint detection (i.e. aiming at high Producer Accuracy, low False Negatives). In other words, CCDC is going to detect more breaks than with the other settings, reducing the likelihood of missing change. This comes at the cost of also detecting a lot of falsely detected change though.
+
+.. tip::
+
+    If you have chosen the color bands for breakpoint detection within the sensor menu, it is worthwile to go into the advanced options using the :guilabel:`MORE` button and select the :guilabel:`GREEN` and :guilabel:`SWIR1` band as :guilabel:`TMASK BANDS`.
+
+Advanced Options
+""""""""""""""
+More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabal:`MORE` button.
+
+.. thumbnail:: ../_images/cookbook/ccdc_asset/opt_ccdc_advanced.png
+    :title: Opt Selection - Advanced
+    :width: 49%
+    :align: center
+    :group: ccdc-asset-recipe
+
+|
+**Date Format**
+
+This option allows to safe the dates in various formats. Note that SEPAL deals by default with :guilabel:`FRACTIONAL YEARS` in all of the CCDC related recipes.
+
+**TMASK BANDS**
+
+The bands selected here are used for additional multi-temporal filtering of cloud affected pixels that have not been identified as such throughout the pre-processing of the single images. For optical data from Landsat and Sentinel-2, the :guilabel:`GREEN` and :guilabel:`SWIR1` bands are recommended.
+
+**Min Observations**
+
+This is the number of observations needed before a break is actually confirmed based on its temporal behaviour. A low number will lead to more changes and reduce the gaps between two temporal segments. Higher numbers will lead to more confidence in the observed change, but in cloud-prone regions might lead to long gaps between two temporal segments. Usually, a number between 4 to 8 is recommended.
+
+**Chi Square Probability**
+
+The Chi-Square test will test if an observation is part of the general statistical distribution of the time-series. A low value of Chi-Square probability will favor the rejection of the null-hypothesis (i.e. being part of the statistical distribution), therefore flagging it as possible change. Ultimately, a lower value leads to more breaks detected, which favors omission over commission error.
+A high value allows for more noise in the time-series, and less changes will be detected, therefore lowering the commission error rate.
+
+**Min Number of Years Scaler**
+
+tba
+
+**LAMBDA**
+
+The lambda parameter is part of the LASSO regression used for the modelling of the time-series. It is used to generalize the model and thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might result even in the annulation of some of the parameters. In practical terms, an initially 3rd order harmonic model, might shrink to a 1st order harmonic, if this provides the best generalized fit. Setting lambda to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalised model. If lambda is set too high, the model will underfit, which also not wanted. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither over- nor underfitting will be around this number.
+**Max iterations**
+
+tba
+
+On-the-fly Pixel analysis
 -------------
 
+Click on the :icon:`fa fa-chart-area` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
+
+The plotting area (3) is dynamic and can be customized by the user.
+
+You can select the observation feature by selecting one of the available measures in the dropdown selector in the top left corner (4). The available bands are the same as the described previously.
+
+Using the slider (5), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series.
+
+On the main graph, the orange lines shows the CCDC modelled time-series. Each of the blue points represents an actual observation. You can both hover over the point or the line to let the tooltip describe the value and date of the observation, as well as the model values and the temporal extent of the specific segment.
+
+.. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_pixel_analysis.png
+    :title: Pixel Analysis
+    :width: 100%
+    :group: ccdc-asset-recipe
+
+.. warning::
+
+    The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected pre-processing parameters. If the popup window displays a spinning wheel, wait up to 2 min to see the data displayed.
 
 
 Export
 ------
 
-Quick Guide for Landsat-8 based Asset creation
-==============================================
+.. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_export_full.png
+    :title: Export CCDC Asset - full band selection
+    :width: 49%
+    :group: ccdc-asset-recipe
 
-1. Create a CCDC recipe
-2. Select your Area of Interest in the **AOI** tab
-3. Select your time of interest in the  **DAT** tab, considering a initialization period (12 clear observations, 2-3 years for cloudy areas) before you expect some change.
-4. Within the **SRC*** tab, select L8 under Optical datasets and use the color bands blue, green, red, nir, swir1 and swir2 for breakpoint detection.
-5. Within the **PRC** tab select *Surface Reflectance* and *BRDF correction*. In addition set the default parameter for cloud masking to **AGGRESSIVE** and turn the cloud shadow mask on.
-6. Within the **OPT** tab you can leave the default options.
-7. Finally, you will export your assets using the *Download Button*
-
-
-.. tip::
-    The creation of a CCDC asset is computationally intense. Therefore, results shall be exported as an Earth Engine asset for the smooth operation of subsequent steps.
-
-
-.. info::
-
-
-
-
-
-.. warning::
-
-    The documentation of this functionality is under construction.
-
-.. tip::
-
-    For specific help, please open an issue on our repository by clicking on this `link <https://github.com/openforis/sepal-doc/issues/new?assignees=&labels=&template=documentation-needed.md>`__.
+.. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_export_reduced.png
+    :title: Export CCDC Asset - reduced band selection
+    :width: 49%
+    :group: ccdc-asset-recipe
