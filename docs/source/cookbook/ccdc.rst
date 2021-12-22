@@ -2,7 +2,7 @@ CCDC - Asset Creation
 *********************
 
 Background
-------------
+----------
 
 Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_.
 
