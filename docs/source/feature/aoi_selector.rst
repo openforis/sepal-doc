@@ -1,7 +1,7 @@
 Area of Interest Selection
 ==========================
 
-In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default `:btn:`<fas fa-globe>` process recipes` or the `:btn:`<fas-wrench>` custom modules` you will find different user interfaces.
+In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fa fa-globe>` process recipes or the :btn:`<fa fas-wrench>` custom modules` you will find different user interfaces.
 
 .. _recipe_aoi:
 
