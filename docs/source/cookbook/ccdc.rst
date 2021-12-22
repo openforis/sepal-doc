@@ -152,12 +152,12 @@ Date Range
 
 In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :icon:`fa fa-check` :guilabel:`Select` button to validate a date. When both dates are selected click on :icon:`fa fa-check` :guilabel:`apply` button.
 
-.. thumbnail:: ../_images/cookbook/time_series/dates.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/dates.png
     :title: Select AOI based on EE table
     :width: 49%
     :group: time-series-recipe
 
-.. thumbnail:: ../_images/cookbook/time_series/datepicker.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/datepicker.png
     :title: Select AOI based on EE table
     :width: 49%
     :group: time-series-recipe
@@ -283,7 +283,7 @@ Multiple pre-processing parameters can be set to improve the quality of the prov
 -   :guilabel:`Off`: don't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts.
 
 
-.. thumbnail:: ../_images/cookbook/time_series/pre_processing.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/pre_processing.png
     :title: The pre-processing panel to select the extra filtering processes that will improve the quality of the provided images.
     :group: time-series-recipe
 
