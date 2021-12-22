@@ -1,5 +1,5 @@
 CCDC - Asset Creation
-*********************
+=====================
 
 Background
 ----------
@@ -25,7 +25,7 @@ Getting Started
 Create Recipe
 ^^^^^^^^^^^^^^
 
-Once logged into SEPAL, open the recipe menu by clicking on the orange :icon:`fa fa-globe` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
+Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/recipe_selection.png
     :group: ccdc-recipe-selection
@@ -54,21 +54,18 @@ The following steps describe the parameter selection that can be found on the lo
 .. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_start_screen.png
     :title: CCDC assed parameters
 
-|
+.. line-break::
+
 The buttons open the following dialogues:
 
-:guilabel:`AOI` Area of interest (AOI)
-
-:guilabel:`DAT` Time of Interest (TOI), i.e. the time-span for the underlying time-series
-
-:guilabel:`SRC` Selection of sensor(s)
-
-:guilabel:`PRC` Pre-processing parameters
-
-:guilabel:`OPT` CCDC Parameters
+-   :guilabel:`AOI` Area of interest (AOI)
+-   :guilabel:`DAT` Time of Interest (TOI), i.e. the time-span for the underlying time-series
+-   :guilabel:`SRC` Selection of sensor(s)
+-   :guilabel:`PRC` Pre-processing parameters
+-   :guilabel:`OPT` CCDC Parameters
 
 Area of Interest
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:
 
@@ -150,7 +147,7 @@ Once the geometry is closed, the AOI will be previewed in the small map at the b
 Date Range
 ^^^^^^^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :icon:`fa fa-check` :guilabel:`Select` button to validate a date. When both dates are selected click on :icon:`fa fa-check` :guilabel:`apply` button.
+In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/dates.png
     :title: Select AOI based on EE table
@@ -173,7 +170,7 @@ After clicking the :guilabel:`NEXT` button in the date selection, the sensor sel
     :group: ccdc-asset-recipe
 
 Optical data
-"""""""""""
+""""""""""""
 
 CCDC is originally tested on optical *Landsat* satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including *Tier 1* and *Tier 2* collections, to run it on decadal-long time-series.
 
@@ -228,17 +225,18 @@ For the creation of a CCDC asset based on *Planet* data, you have the choice of 
     :align: center
     :group: ccdc-asset-recipe
 
-|
+.. line-break::
+
 In both cases, the data already needs to reside within Earth Engine as an *ImageCollection asset*, whose ID needs to be filled in the respective field.
 
 In case you want to use the *NICFI Level-1 basemaps*, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://docs.sepal.io/en/latest/setup/nicfi.html>`_. The NICFI Level-1 assets are splitted by continent and have the following Asset IDs:
 
-    - projects/planet-nicfi/assets/basemaps/africa
-    - projects/planet-nicfi/assets/basemaps/asia
-    - projects/planet-nicfi/assets/basemaps/americas
-
+-   projects/planet-nicfi/assets/basemaps/africa
+-   projects/planet-nicfi/assets/basemaps/asia
+-   projects/planet-nicfi/assets/basemaps/americas
 
 .. tip::
+
     For data ordered through the Planet API (i.e. daily imagery or custom basemaps other than NICFI Level 1 data), you can specify Earth Engine as the download location.
 
 Using CCDC with Planet has not been explored widely, so that again the optimal selection of the breakpoint bands depends on testing it out by yourself. However, in accordance with Landsat based analysis we suggest to use the Green , Red and NIR bands to get started.
@@ -303,7 +301,8 @@ The default parameters (below figure on the left) are rather optimized for perfo
     :width: 49%
     :group: ccdc-asset-recipe
 
-|
+.. line-break::
+
 **Orbit Selection**
 The orbit selection for radar satellites refers to the flight direction of the satellite that is different from sun-adverted and the sun-facing side of the planet. One distinguishes ascending (from south pole towards north pole) and descending (from north to south pole) direction. Being independent from the sunlight, radar satellites can acquire at both, day and nighttime. However, they do not acquire constantly.
 
@@ -311,8 +310,11 @@ In case of the Sentinel-1 mission, areas outside of Europe are usually only cove
 
 .. image:: https://sentinels.copernicus.eu/documents/247904/3944045/Sentinel-1-Revisit-Coverage-Frequency-Geometry-2019.jpeg
     :alt: Sentinel-1 observation scenario
-|
+
+.. line-break::
+
 .. warning::
+
     While you can select both orbits to be on the safe side, marginal areas that are covered by both orbits might result in different models than for areas only covered by on eor the other, due to the differences in observation geometry. It is therefore recommended to properly select your orbit direction. Instead, if it happens that your full AOI is covered by both orbits, do also select both.
 
 **Geometric Correction**
@@ -328,7 +330,7 @@ Speckle Filtering is a common step in radar remote sensing and reduces the rando
 Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them by a multi-temporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artifacts. More aggressive filtering might include actual change events and is therefore not recommended.
 
 Planet data
-""""""""""
+"""""""""""
 
 Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 options. The default parameters are reflecting a quite aggressive way of cloud removal (see figure below).
 
@@ -337,7 +339,9 @@ Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 o
     :width: 49%
     :align: center
     :group: ccdc-asset-recipe
-|
+
+.. line-break::
+
 **Histogram Matching**
 
 Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option as it will harmonize the radiometry between each single image.
@@ -346,7 +350,7 @@ CCDC parameters
 ^^^^^^^^^^^^^^^
 
 Presets
-""""""
+"""""""
 Behind the :guilabel:`OPT` you can find 3 basic presets of CCDC parameters.
 The selection of the presets can be interpreted at selecting the balance between commission and omission error for the breakpoint detection.
 
@@ -355,7 +359,8 @@ The selection of the presets can be interpreted at selecting the balance between
     :width: 49%
     :align: center
     :group: ccdc-asset-recipe
-|
+
+.. line-break::
 
 - The parameters of the :guilabel:`CONSERVATIVE` are favoring commission over omission error rate in the breakpoint detection (i.e. aiming at high User Accuracy, low False Positives). In other words, CCDC is going to detect less breaks, but they are more likely to be correct. This comes at the cost of missing some actual changes, therefore having an increased omission error.
 
@@ -368,7 +373,7 @@ The selection of the presets can be interpreted at selecting the balance between
     If you have chosen the color bands for breakpoint detection within the sensor menu, it is worthwile to go into the advanced options using the :guilabel:`MORE` button and select the :guilabel:`GREEN` and :guilabel:`SWIR1` band as :guilabel:`TMASK BANDS`.
 
 Advanced Options
-""""""""""""""
+""""""""""""""""
 More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabel:`MORE` button.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/opt_ccdc_advanced.png
@@ -377,7 +382,8 @@ More advanced users have the possibility to manually set all of the actual CCDC 
     :align: center
     :group: ccdc-asset-recipe
 
-|
+.. line-break::
+
 **Date Format**
 
 This option allows to safe the dates in various formats. Note that SEPAL deals by default with :guilabel:`FRACTIONAL YEARS` in all of the CCDC related recipes.
@@ -410,7 +416,7 @@ Those are the iterations for the maximum number of runs for LASSO regression con
 On-the-fly Pixel analysis
 -------------------------
 
-Click on the :icon:`fa fa-chart-area` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
+Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
 
 The plotting area (3) is dynamic and can be customized by the user.
 
@@ -436,7 +442,7 @@ Export
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Click on the :icon:`fas fa-cloud-download-alt` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
+Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
 
 If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point.
 
@@ -456,7 +462,7 @@ The scale parameter depends on the data selected and the level of detail you wil
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the task tab (bottom left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 
