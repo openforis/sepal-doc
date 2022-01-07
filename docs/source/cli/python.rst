@@ -26,7 +26,7 @@ Description
 
 The SEPAL python environment is not empty and embed numerous librairies. They are listed here: 
 
-.. code-block:: python
+.. code-block:: console
 
     ########  geospatial data analysis  ########
     scikit-image

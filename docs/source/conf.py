@@ -39,6 +39,7 @@ extensions = [
     '_extentions.line_break',
     '_extentions.custom_edit',
     '_extentions.icon',
+    '_extentions.btn'
 ]
 
 # spelling options
@@ -55,7 +56,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["**.ipynb_checkpoints", 'data/template/*.rst']
+exclude_patterns = ["**.ipynb_checkpoints"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -74,6 +75,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "show_nav_level": 2,
     "show_prev_next": False,
+    "default_mode": "dark",
     "icon_links": [
         {
             "name": "GitHub",
@@ -109,11 +111,11 @@ html_context = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = ['css/custom.css']
+html_css_files = ["css/custom.css"]
 
 # -- Options for images -------------------------------------------------------
 
@@ -129,9 +131,9 @@ import json
 
 # dirs 
 source_dir = Path(__file__).expanduser().parent
-module_dir = source_dir/'modules'
-dwn_dir = module_dir/'dwn'
-template_dir = source_dir/"data"/"template"
+module_dir = source_dir/"modules"
+dwn_dir = module_dir/"dwn"
+template_dir = source_dir/"_templates"
 
 # templates
 tag_template = template_dir/"module_tag.rst"
@@ -140,7 +142,7 @@ index_template = template_dir/"index.rst"
 
 # data 
 module_json = source_dir/"data"/'modules'/'en.json'
-no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/data/template/no_module.rst"
+no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/_templates/no_module.rst"
 
 # flush the modules folder 
 [f.unlink() for f in module_dir.glob("*.rst")]

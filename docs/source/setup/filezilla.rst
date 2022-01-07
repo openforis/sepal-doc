@@ -4,18 +4,18 @@ Exchange files with SEPAL
 built-in tools 
 --------------
 
-To exchange files with SEPAL you can use the build-in tools of the platform. that does not require any installation. 
+To exchange files with SEPAL there are several built-in tools you can use. 
 
 .. note:: 
 
-    Remember that these tools are limited and that big upload or download will require to use an FTP solution. 
+    SEPAL's built-in tools for uploading and downloading are limited. Uploading or downloading very large amounts of data is best done using an FTP solution. 
 
 Jupyter Notebook 
 ^^^^^^^^^^^^^^^^
 
 In the SEPAL application dashboard, open a new Jupyter Notebook app.
 
-From there, The notebook dashboard enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
+From there, the notebook dashboard enables you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
 
 Using the :code:`upload` button you'll be able to upload a file from your computer to the platform
 When clicking on a file, use the :code:`download` button to download it to your computer.
@@ -32,7 +32,7 @@ Jupyterlab
 
 In the SEPAL application dashboard, open a new Jupyterlab app. 
 
-From there, The file browser and File menu enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
+From there, the file browser and File menu enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
 
 Files can be uploaded to the current directory of the file browser by dragging and dropping files onto the file browser, or by clicking the “Upload Files” button at the top of the file browser:
 
@@ -51,7 +51,7 @@ Any file in Jupyterlab can be downloaded by right-clicking its name in the file 
 Rstudio
 ^^^^^^^
 
-In the SEPAL application dashboard, open a new Jupyter Notebook app.
+In the SEPAL application dashboard, open a new Rstudio app.
 
 From there The file menu (in red on the bellow image) enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming and copying.
 
@@ -75,16 +75,16 @@ after clicking on a single file, use the :code:`download` button to download the
 FTP solution 
 ------------
 
-SEPAL content can also be accessed via SSH File Transfer Protocol (FTP). any FTP solution might work but in this section we will present it using FileZilla. Adaptation to your favorite FTP solution should be straight forward. 
+SEPAL content can also be accessed via SSH File Transfer Protocol (FTP). Any FTP solution might work but in this section we will present it using FileZilla. Adaptation to your favorite FTP solution should be straight forward. 
 
 FileZilla
 ^^^^^^^^^
 
-If you don't have any FTP solution installed on your local machine AND if you don't know what is a FTP solution no worries, this documentation page is here to help you. 
+If you don't have any FTP solution installed on your local machine AND if you don't know what a FTP solution is...no worries, this documentation page is here to help you. 
 
 .. seealso::
 
-    An FTP client is software that allows you to connect to an FTP server in order to exchange files Once connected, you can publish your files so that they are accessible from your website.
+    An FTP client is software that allows you to connect to an FTP server in order to exchange files. Once connected, you can upload, download, copy, or delete files on your local computer or the remote computer.
 
 FileZilla®, is a free FTP solution. The FileZilla Client not only supports FTP, but also FTP over TLS (FTPS) and SFTP (this is the one we are actually using in SEPAL). It is an open source software distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
@@ -92,7 +92,7 @@ FileZilla®, is a free FTP solution. The FileZilla Client not only supports FTP,
 
     The software can be downloaded from `here <https://FileZilla-project.org/download.php?type=client>`_
 
-Now that the presentation are done, let's move on to the usage
+Now that the presentations are done, let's move on to the usage
 
 Connect your FTP client to SEPAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
