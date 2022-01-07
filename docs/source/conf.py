@@ -75,6 +75,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "show_nav_level": 2,
     "show_prev_next": False,
+    "default_mode": "dark",
     "icon_links": [
         {
             "name": "GitHub",
