@@ -1,4 +1,4 @@
-pydata-sphinx-theme
+git+git@github.com:sepal-contrib/pydata-sphinx-theme.git@dark-theme
 Sphinx>=3.5.1
 sphinx-notfound-page>=0.6
 graphviz>=0.16
