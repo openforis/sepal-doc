@@ -96,7 +96,12 @@ html_theme_options = {
             "name": "Youtube",
             "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
             "icon": "fab fa-youtube"
-        }
+        },
+        {
+            "name": "Google forum",
+            "url": "https://groups.google.com/g/sepal-users",
+            "icon": "fab fa-google"
+        },
     ],
     "use_edit_page_button": True,
 }
