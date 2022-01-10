@@ -32,6 +32,11 @@ To request access to SEPAL, you will simply need to enter:
 -   institution or country
 -   a brief explanation of why you want to use SEPAL
 
+.. tip:: 
+
+    Once you signup to SEPAL, you'll might want to request access to our group on Google. follow this `link <https://groups.google.com/g/sepal-users>`__ and click on :guilabel:`ask to join group`. 
+    For community questions (only in english) we recommand to use the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ platform and use the :guilabel:`sepal` tag. Your question might be useful to others!
+
 Sign up to GEE
 --------------
 
