@@ -205,6 +205,13 @@ urlretrieve (
     data_dir/"r_packages.sh"
 )
 
+# Python environment
+print(f"copy Python libs from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/config/requirements.txt", 
+    data_dir/"python_lib.txt"
+)
+
 
 
 
