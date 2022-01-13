@@ -34,7 +34,7 @@ To request access to SEPAL, you will simply need to enter:
 
 .. tip:: 
 
-    Once you signup to SEPAL, you'll might want to request access to our group on Google. follow this `link <https://groups.google.com/g/sepal-users>`__ and click on :guilabel:`ask to join group`. 
+    Once you signup to SEPAL, you can request access to our group on Google. follow this `link <https://groups.google.com/g/sepal-users>`__ and click on :guilabel:`ask to join group`. 
     For community questions (only in english) we recommand to use the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ platform and use the :guilabel:`sepal` tag. Your question might be useful to others!
 
 Sign up to GEE
@@ -67,7 +67,7 @@ Sign Up to CEO
 
 .. note::
 
-    This step is not compulsory if you don't want to get the best out of our classification tools. CEO is used to produce training data for some of our models.
+    This step is not compulsory. However, to get the best out of our classification and validation tools, we highly recommend using CEO or Collect Earth for collecting point-based training and validation data. CEO is used to produce training data for some of our models, for example.
 
 In your browser window, navigate to https://collect.earth/. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
 
