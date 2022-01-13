@@ -138,3 +138,6 @@ docs/source/modules/*.rst
 
 # pycharm idea folder
 .idea/
+
+# mac os files 
+.DS_Store 
