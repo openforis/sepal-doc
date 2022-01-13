@@ -188,7 +188,7 @@ The breakpoint detection is at the heart of CCDC. The respective selection of ba
 
     The use of the color bands allows you to later select the :code:`Green` and the :code:`Swir1` band as TMASK bands for CCDC's internal, multi-temporal cloud removal. You find this in the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`.
 
-If the creation of the CCDC asset is aimed at the detection of both, forest degradation and deforestation, the *Normalized Degradation Forest Index* :code:`NDFI` might be another suitable choice as applied by `Bullock et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. Note that this article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or the color bands. For instance one can consider the *Normalized Differenced Moisture Index* :code:`NDMI` when looking at Mangrove forests.
+If the creation of the CCDC asset is aimed at the detection of both, forest degradation and deforestation, the *Normalized Difference Fraction Index* :code:`NDFI` might be another suitable choice as applied by `Bullock et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. Note that this article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or the color bands. For instance one can consider the *Normalized Differenced Moisture Index* :code:`NDMI` when looking at Mangrove forests.
 
 .. tip::
     In case of doubt, we suggest to go for the default option and use all of the color bands, except the blue one.
@@ -229,7 +229,7 @@ For the creation of a CCDC asset based on *Planet* data, you have the choice of 
 
 In both cases, the data already needs to reside within Earth Engine as an *ImageCollection asset*, whose ID needs to be filled in the respective field.
 
-In case you want to use the *NICFI Level-1 basemaps*, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://docs.sepal.io/en/latest/setup/nicfi.html>`_. The NICFI Level-1 assets are splitted by continent and have the following Asset IDs:
+In case you want to use the *NICFI Level-1 basemaps*, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://docs.sepal.io/en/latest/setup/nicfi.html>`_. The NICFI Level-1 assets are split by continent and have the following Asset IDs:
 
 -   projects/planet-nicfi/assets/basemaps/africa
 -   projects/planet-nicfi/assets/basemaps/asia
