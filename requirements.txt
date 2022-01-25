@@ -5,3 +5,4 @@ graphviz>=0.16
 sphinxcontrib-spelling
 sphinxcontrib-images
 sphinx-icon
+sphinx-btn
