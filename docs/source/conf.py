@@ -35,11 +35,11 @@ extensions = [
     'sphinxcontrib.spelling',
     'sphinxcontrib.images',
     'sphinxcontrib.icon',
+    'sphinxcontrib.btn',
     'notfound.extension',
     '_extentions.video',
     '_extentions.line_break',
-    '_extentions.custom_edit',
-    '_extentions.btn'
+    '_extentions.custom_edit'
 ]
 
 # spelling options
