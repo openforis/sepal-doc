@@ -34,11 +34,11 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
     'sphinxcontrib.images',
+    'sphinxcontrib.icon',
     'notfound.extension',
     '_extentions.video',
     '_extentions.line_break',
     '_extentions.custom_edit',
-    '_extentions.icon',
     '_extentions.btn'
 ]
 
