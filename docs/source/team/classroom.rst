@@ -31,7 +31,6 @@ Creating a classroom
 If you need material for a webinar you can either directly reuse one of the general classroom or create your own. You can follow the steps presented in the following tutorial to create a class of your own. 
 
 .. youtube:: pl-tBjAM9g4
-        :align: center
 
 .. tip::
 
