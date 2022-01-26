@@ -6,3 +6,4 @@ sphinxcontrib-spelling
 sphinxcontrib-images
 sphinx-icon
 sphinx-btn
+sphinxcontrib-youtube
