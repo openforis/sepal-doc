@@ -36,8 +36,8 @@ extensions = [
     'sphinxcontrib.images',
     'sphinxcontrib.icon',
     'sphinxcontrib.btn',
+    'sphinxcontrib.youtube',
     'notfound.extension',
-    '_extentions.video',
     '_extentions.line_break',
     '_extentions.custom_edit'
 ]

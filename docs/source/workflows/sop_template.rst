@@ -30,7 +30,6 @@ A brief YouTube video of the process can be watched below:
 .. youtube:: d-A5_vy9EXM
    :height: 315
    :width: 560
-   :align: center
 
 2. Learning objectives
 -----------------------
