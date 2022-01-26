@@ -103,6 +103,7 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
+    "footer_items": ["copyright", "sphinx-version", "licence"]
 }
 
 html_context = {
