@@ -76,8 +76,33 @@ a[data-lightbox] img {padding: .25em;}
 }
 
 #map-overlay {
-   background-color: rgba(255, 255, 255, .8);
+   
    z-index: -1;
 }
 
+body[data-theme=light] #map-overlay {
+   background-color: rgba(255, 255, 255, .8);
+}
+
+body[data-theme=dark] #map-overlay {
+   background-color: rgba(var(--pst-color-background), .3);
+}
+
+.leaflet-container {
+   background: rgb(var(--pst-color-background)) !important;
+}
+
+footer {
+   background-color: rgb(var(--pst-color-background));
+}
+
+/*******************************************************************************
+* overwrite image filter in dark theme 
+* most of our images are from SEPAL which is already using a dark theme 
+* there is no need for extra contrast and dimned brightness
+*
+*/
+body[data-theme=light] img {
+   filter: brightness(1) contrast(1);
+}
 

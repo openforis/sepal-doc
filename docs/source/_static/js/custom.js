@@ -2,12 +2,16 @@ function init() {
     var map = L.map('map', { zoomControl: false }).setView([0, 0], 3);
         
     //CartoDB layer names: light_all / dark_all / light_nonames / dark_nonames
-    var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-        });
-        
-    layer.addTo(map);
-    map.attributionControl.setPrefix(''); // Don't show the 'Powered by Leaflet' text. Attribution overload
+    var layers = {
+        "light": L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {attribution: "",}),
+        "dark": L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {attribution: "",})
+    }
+
+    const startTheme = document.body.dataset.theme
+    layers[startTheme].addTo(map)
+
+    // Don't show the 'Powered by Leaflet' text. Attribution overload
+    map.attributionControl.setPrefix('');
 
     // Remove all interaction
     map.dragging.disable();
@@ -18,6 +22,35 @@ function init() {
     map.keyboard.disable();
     if (map.tap) map.tap.disable();
     document.getElementById('map').style.cursor='default';
+
+    // observe bofy theme value 
+    const mutationCallback = (mutationsList) => {
+        for (const mutation of mutationsList) {
+            
+            // exit if not the correct attribute
+            if (mutation.type !== "attributes" || mutation.attributeName == "data-theme") {return}
+
+            // refactor the map
+            var theme = mutation.target.getAttribute("data-theme")
+
+            //alert(map.hasLayer(layers[theme]));
+
+            if (!map.hasLayer(layers[theme])) {
+                
+                // remove the layers 
+                map.eachLayer(function(layer){
+                    map.removeLayer(layer);
+                });
+
+                // add the correct one
+                layers[theme].addTo(map)
+            }
+        }
+    }
+    
+    const observer = new MutationObserver(mutationCallback)
+    observer.observe(document.body, { attributes: true })
+
 };
 
 window.onload = init;
