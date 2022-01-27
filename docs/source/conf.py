@@ -103,7 +103,7 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
-    "footer_items": ["copyright", "sphinx-version", "licence"]
+    "footer_items": ["copyright", "sphinx-version", "licence", "map"]
 }
 
 html_context = {
@@ -120,7 +120,16 @@ html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = ["css/custom.css"]
+html_css_files = [
+    "css/custom.css",
+    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+]
+
+html_js_files = [
+    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js",
+    "js/custom.js"
+]
+
 
 # -- Options for images -------------------------------------------------------
 
