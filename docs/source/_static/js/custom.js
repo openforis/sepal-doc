@@ -7,7 +7,7 @@ function init() {
         "dark": L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {attribution: "",})
     }
 
-    const startTheme = document.body.dataset.theme
+    const startTheme = document.body.dataset.theme ? document.body.dataset.theme : "light"
     layers[startTheme].addTo(map)
 
     // Don't show the 'Powered by Leaflet' text. Attribution overload
