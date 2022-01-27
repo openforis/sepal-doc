@@ -7,11 +7,13 @@ Overview
 A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together.
 This can be achieved on contiguous rasters (left) but also on overlapping images (right). 
 
-.. image:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
+.. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
     :width: 49%
+    :group: optical-mosaic-recipe
 
-.. image:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
     :width: 49%
+    :group: optical-mosaic-recipe
 
 These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells or take the maximum or minimum value. In addition, certain corrections can be made to the image to correct for clouds, snow etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics on any AOI.
 
