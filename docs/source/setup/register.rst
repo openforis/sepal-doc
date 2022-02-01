@@ -27,6 +27,7 @@ You can request an account by visiting `sepal.io <sepal.io>`_ and clicking :code
 If you do not have a SEPAL account, you can request access here: http://tinyurl.com/fao-sepal.
 
 To request access to SEPAL, you will simply need to enter:
+
 -   email address
 -   name
 -   institution or country
@@ -36,6 +37,10 @@ To request access to SEPAL, you will simply need to enter:
 
     Once you signup to SEPAL, you can request access to our group on Google. follow this `link <https://groups.google.com/g/sepal-users>`__ and click on :guilabel:`ask to join group`. 
     For community questions (only in english) we recommand to use the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ platform and use the :guilabel:`sepal` tag. Your question might be useful to others!
+
+.. warning::
+
+    Registrations are evaluated individually by the administrators of the platform to prevent bots and malicious users from accessing SEPAL. Thus registration process take between 1 and 3 days. For the same reasons, incomplete registration forms will be refused.  
 
 Sign up to GEE
 --------------
