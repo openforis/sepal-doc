@@ -71,11 +71,35 @@ Date (Range) selection
 
 As described above, the slicing procedure cuts out the model parameters of a specific date in order to generate the expected reflectance at that given point in time. This can be either a concrete date, or a date range. For the latter, the median value of the selected time period over the modelled time-series is calculated.
 
-In addition, it is possible to display the detected breaks for the intersecting temporal segments. Note that for date ranges, more than 1 break can fall within the specific time-period. This needs to be considered in the next parameter setting, the CCDC slicign parameters.
+In addition, it is possible to display the detected breaks for the intersecting temporal segments. Note that for date ranges, more than 1 break can fall within the specific time-period. This needs to be considered in the next parameter setting, the CCDC slicing parameters.
 
 CCDC Slicing Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+Specific Date
+""""""""""""
+
+In case a single date has been selected, the slicing parameters will look as shown in the Figure below.
+
+.. thumbnail:: ../_images/cookbook/ccdc_slice/ccdc_slice_date_parameters.png
+    :group: ccdc-slice-parameters-date
+    :title: Selection menu for CCDC slice parameters
+    :width: 60%
+    :align: center
+
+The first parameter is the number of **harmonics** used to extract the modelled reflectance at the given point in time. 3 harmonic terms are set by default. lowering this number will result in a smoothed time-series that does not depict intra-annual periodicity. Setting this value to 1 will only capture the inter-annual periodicity, i.e. annual seasonality, while a value of 0 results in the mean value over the segments time period.
+
+The **Gap Strategy** relates to the presence of gaps between 2 temporal segments, i.e. the presence of a break. After a detected break, CCDC re-initializes a new model (i.e. new segment) only after a couple of observations. In between, no model is available from which to extract the data. In order to avoid masked pixels the user has the possibility to:
+
+1. **Interpolate** - use a temporally weighted mean between the previous and the subsequent model for the given data
+
+2. **Extrapolate** - use the extrapolated value of the closest, previous, or next model for the given date
+3. **Mask** - mask the value as no data
+
+In case of extrapolation the additional option **Segment to Extrapolate** allows to the choose either the model parameters from the previous, next or closest segment with respect to the selected data. Furthermore, the **Max Days to Extrapolate** setting allows to limit the number of days until this procedure is considered valid. If the difference between the selected date and the segment's valid time period is greater than this threshold value, the pixel will be automatically masked.
+
+Date Range
+""""""""""
 
 Visualization
 -----------------
@@ -98,7 +122,7 @@ Export
 ------
 
 Trigger the export task
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace.
 
