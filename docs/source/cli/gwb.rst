@@ -1,7 +1,7 @@
 GuidosToolbox Workbench – GWB
 =============================
 
-The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. 
+The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
 
 This document provides usage instructions for the cmd-line implementation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
 
@@ -529,7 +529,7 @@ Fragmentation has been used to map and summarize the degree of forest fragmentat
 GWB_FRAG
 ^^^^^^^^
 
-This module will conduct the **fragmentation** analysis at a **user-selected observation scale**. This module and its option are similar to :ref:`gwb_fad` but allow the user to specify a single (or multiple) specific observation scale. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Fragmentation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_ product sheet.
+This module will conduct the **fragmentation** analysis at a **user-selected observation scale**. This module and its options are similar to :ref:`gwb_fad` but allow the user to specify a single (or multiple) specific observation scale. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Fragmentation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_ product sheet.
 
 Requirements
 """"""""""""
@@ -576,7 +576,7 @@ Processing parameter options are stored in the file :code:`input/frag-parameters
     ;; 27
     ;; 1
     ****************************************************************************
-    FAD-APP2
+    FOS-APP2
     8
     100
     23
@@ -609,18 +609,18 @@ The results are stored in the directory :code:`output`, one directory for each i
     clc3class_frag  example_frag  frag.log
 
     output/clc3class_frag:
-    clc3class_fad-app2_23.tif  clc3class_frag.csv  clc3class_frag.sav  
-    clc3class_frag.txt
+    clc3class_FOS-APP2_23.tif  clc3class_FOS-APP2.csv  clc3class_FOS-APP2.sav  
+    clc3class_FOS-APP2.txt
 
     output/example_frag:
-    example_fad-app2_23.tif  example_frag.csv  example_frag.sav  
-    example_frag.txt
+    example_FOS-APP2_23.tif  example_FOS-APP2.csv  example_FOS-APP2.sav  
+    example_FOS-APP2.txt
 
-Example statistics and spatial result of custom-scale per patch analysis of the input image :code:`example.tif`, here FAD-APP2 showing Continuous forest patches in light green and Separated forest patches in dark green.
+Example statistics and spatial result of custom-scale per patch analysis of the input image :code:`example.tif`, here FOS-APP2 showing Continuous forest patches in light green and Separated forest patches in dark green.
 
 .. code-block:: text
 
-    FAD-APP: Foreground Area Density summary analysis for image: 
+    FOS-APP2: Foreground Area Density summary analysis for image: 
     example.tif
     ================================================================================
     8-conn FG: area, # patches, aps [pixels]: 428490, 2850, 150.34737
@@ -630,17 +630,17 @@ Example statistics and spatial result of custom-scale per patch analysis of the 
         [hectare]:     529.00
         [acres]:    1307.19
     ================================================================================
-    FAD-APP 5-class:
+    FOS-APP 5-class:
             Rare:      1.2089
         Patchy:      7.1572
     Transitional:      4.2668
         Dominant:     87.3670
         Interior:      0.0000
-    FAD-APP 2-class:
+    FOS-APP 2-class:
     Separated:      8.3661
     Continuous:     91.6339
     ================================================================================
-        FAD_av:     75.2900
+        FOS_av:     75.2900
 
 .. figure:: ../_images/cli/gwb/example_fad-app2_23.png
     :width: 50%
@@ -752,7 +752,7 @@ GWB_MSPA
 
 .. warning::
 
-    If your are considering using the MSPA tool, keep in mind that the process is relatively complex and provide a lot of information (up to 25 classes). If you are only interested in fragmentation and/or less than 6 classes, please consider using :code:`GWB_FRAG` or :code:`GWB_SPA`.
+    If your are considering using the MSPA module, keep in mind that the result provides a lot of information (up to 25 classes). The alternative module :code:`GWB_SPA` provides a similar but simplified assessment with up to 6 classes only. Both modules describe morphological features of foreground objects. While MSPA may address certain features of fragmentation, a more comprehensive assessment of fragmentation is obtained with the dedicated fragmentation modules :code:`GWB_FRAG` or :code:`GWB_FAD`.
 
 This module will conduct the **Morphological Spatial Pattern Analysis**. `MSPA <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ analyses shape and connectivity and conducts a segmentation of foreground (i.e. forest) patches in up to 25 feature classes. The result are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Morphology <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ product sheet.
 
@@ -777,22 +777,28 @@ Processing parameter options are stored in the file :code:`input/mspa-parameters
     ;;
     ;; MSPA will provide an image and summary statistics.
     ;; (see tools/docs/MSPA_Guide.pdf for details)
-    ;; Please specify entries at lines 23-26 ONLY using the following options:
+    ;; Please specify entries at lines 27-32 ONLY using the following options:
     ;;
-    ;; line 23: MSPA parameter 1: Foreground connectivity: 8 (default) or 4 
-    ;; line 24: MSPA parameter 2: EdgeWidth: 1 (default) or larger integer values
-    ;; line 25: MSPA parameter 3: Transition: 1 (default) or 0 
-    ;; line 26: MSPA parameter 4: IntExt: 1 (default) or 0 
+    ;; line 27: MSPA parameter 1: Foreground connectivity: 8 (default) or 4 
+    ;; line 28: MSPA parameter 2: EdgeWidth: 1 (default) or larger integer values
+    ;; line 29: MSPA parameter 3: Transition: 1 (default) or 0 
+    ;; line 30: MSPA parameter 4: IntExt: 1 (default) or 0 
+    ;; line 31: disk: 0 (default) or 1 (requires 20% less RAM but +40% processing time)
+    ;; line 32: statistics: 0 (default) or 1 (add summary statistics)
     ;;
     ;; a parameter file with the default settings would look like this:
     ;; 8
     ;; 1
     ;; 1
     ;; 1
+    ;; 0
+    ;; 0
     ****************************************************************************
     8
     1
     1
+    1
+    0
     1
     ****************************************************************************
 
@@ -844,7 +850,7 @@ Example statistics of the input image :code:`example.tif` and explanatory sketch
         BRANCH [orange]:       3.93/ 1.68     4685
         Background [grey]:         --/57.14     2319/571240
         Missing [white]:            0.03      51/270
-        Opening [grey]:  88.24 Integrity     2291/57116
+        Opening [grey]:   1.50 Porosity     2291/57116
     Core-Opening [darkgrey]:       --/ 0.59     717/5927
     Border-Opening [grey]:         --/ 5.12     1574/51189
 
@@ -860,7 +866,7 @@ Remarks
 -   MSPA is very versatile and can be applied to any binary map, scale and thematic layer. Please consult the `MSPA Guide <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/MSPA_Guide.pdf>`_, the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ and/or the  `MSPA website <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_    for further information.
 -   The simplified version, GWB_SPA provides fewer classes. GWB_SPA may be useful to get started and may be sufficient to address many assessments.
 
-MSPA is a purely geometric analysis scheme, which can be applied to any type of raster image. It has been used in more than 100 peer-reviewed publications to map and summarize the spatial pattern, fragmentation and connectivity of forest and other land cover patches, including the detection of structural and functional connecting pathways, analyzing urban greenspace, landscape restoration up to classifying zooplankton species.
+MSPA is a purely geometric analysis scheme, which can be applied to any type of raster image. It has been used in numerous peer-reviewed publications to map and summarize the spatial pattern, fragmentation and connectivity of forest and other land cover patches, including the detection of structural and functional connecting pathways, analyzing urban greenspace, landscape restoration up to classifying zooplankton species.
 
 GWB_P223
 ^^^^^^^^
@@ -1475,20 +1481,20 @@ The result is stored in a single csv-file in the directory :code:`output`, listi
 Summary statistics for each input image showing the normalized degree of network coherence and additional key network parameters:
 
 .. csv-table:: 
-    :header: "FNAME", "AREA", "RAC[%]", "NR_OBJ", "LARG_OBJ", "APS", "CNOA", "ECA", "COH[%]"
+    :header: "FNAME", "AREA", "RAC[%]", "NR_OBJ", "LARG_OBJ", "APS", "CNOA", "ECA", "COH[%]", "REST_POT[%]"
 
-    clc3class.tif,957879.00,23.946975,164,176747,5840.7256,180689,281211.93,29.357771
-    example.tif,428490.00,42.860572,2850,214811,150.34737,311712,221292.76,51.644789
+    clc3class.tif,957879.00,23.946975,164,176747,5840.7256,180689,281211.93,29.357771,70.642229
+    example.tif,428490.00,42.860572,2850,214811,150.34737,311712,221292.76,51.644789,48.355211
 
 Remarks
 """""""
 
--   :code:`GWB_RSS` provides a succinct summary of key network status attributes including area, extent, patch summary statistics, equivalent connected area and degree of network coherence.
--   As a normalized index, Coherence can be used to directly compare the integrity of different networks or to quantitatively assess changes in network integrity over time.
+-   :code:`GWB_RSS` provides a succinct summary of key network status attributes including area, extent, patch summary statistics, equivalent connected area, degree of network coherence, and the restoration potential.
+-   As a normalized index, Coherence or its complement Restoration Potential, can be used to directly compare the integrity of different networks or to quantitatively assess changes in network integrity over time.
 -   The provision of key network status attributes is essential for any restoration planning.
 -   The desktop application `GuidosToolbox <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_ provides additional, interactive tools for restoration planning.
 
-With the provision of a normalized degree of network coherence, :code:`GWB_RSS` provides a powerful tool to measure and rank the integrity of forest networks for different regions of interest. This feature may be useful to set priorities for restoration planning or to measure implementation progress and overall success of policy regulations.
+With the provision of a normalized degree of network coherence and restoration potential, :code:`GWB_RSS` provides a powerful tool to measure and rank the integrity of forest networks for different regions of interest. This feature may be useful to set priorities for restoration planning or to measure implementation progress and overall success of policy regulations.
 
 GWB_SPA
 ^^^^^^^
@@ -1517,7 +1523,7 @@ Processing parameter options are stored in the file :code:`input/spa-parameters.
     ;;
     ;; SPAx will provide an image and summary statistics using 8-connectivity.
     ;; Line 18: enter a single number, representing the number of pattern classes:
-    ;; 2: SLF, Coherent
+    ;; 2: SLF, Contiguous
     ;; 3: Core, Core-Openings, Margin  
     ;; 5: Core, Core-Openings, Edge, Perforation, Margin
     ;; 6: Core, Core-Openings, Edge, Perforation, Islet, Margin
@@ -1556,7 +1562,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     output/example_spa2:
     example_spa2.tif  example_spa2.txt
 
-Statistics and spatial result of the input image :code:`example.tif` showing a 2-class segmentation (SPA2): Coherent and Small & Linear Features (SLF):
+Statistics and spatial result of the input image :code:`example.tif` showing a 2-class segmentation (SPA2): Contiguous and Small & Linear Features (SLF):
 
 .. code-block:: text
 
@@ -1571,7 +1577,7 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
     ================================================================================
             Category              Area [pixels]: 
     ================================================================================
-            Coherent:                 388899
+            Contiguous:                 388899
     +              SLF:                  39591
     --------------------------------------------------------------------------------
     = Foreground Total:                 428490
@@ -1579,7 +1585,7 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
     --------------------------------------------------------------------------------
     =  Data Area Total:                 999730
     
-            Data Area:                 999730
+             Data Area:                 999730
     +          Missing:                    270
     --------------------------------------------------------------------------------
     = Image Area Total:                1000000
@@ -1588,12 +1594,12 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
     ================================================================================
             Category    Proportion [%]: 
     ================================================================================
-        Coherent/Data:     38.9004
+       Contiguous/Data:     38.9004
     +         SLF/Data:      3.9602
     --------------------------------------------------------------------------------
-            FG/Data:     42.8606
+               FG/Data:     42.8606
     --------------------------------------------------------------------------------
-        Coherent/FG:     90.7603
+         Contiguous/FG:     90.7603
     +           SLF/FG:      9.2397
     ================================================================================
     
@@ -1601,9 +1607,9 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
     ================================================================================
             Category          Count [#]: 
     ================================================================================
-            Coherent:             847
+            Contiguous:             847
             FG Objects:            2850
-                SLF:            6792
+                   SLF:            6792
     ================================================================================
 
 .. figure:: ../_images/cli/gwb/example_spa2.png
