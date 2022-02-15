@@ -193,6 +193,25 @@ for name in module_list:
         
     # prompt for the readthedoc build
     print(f"{name} documentation have been copied to the dwn folder")
+    
+#  -- copy the requirements of the R and Python environment to data ------------
+
+data_dir = source_dir/"data"
+
+# R environment
+print(f"copy R packages from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/script/init_r_packages.sh", 
+    data_dir/"r_packages.sh"
+)
+
+# Python environment
+print(f"copy Python libs from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/config/requirements.txt", 
+    data_dir/"python_lib.txt"
+)
+
 
 
 
