@@ -103,18 +103,10 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
-    "footer_items": ["copyright", "sphinx-version", "licence"],
-    "switcher": {
-        # "json_url": "/_static/switcher.json",
-        "json_url": "https://pydata-sphinx-theme.readthedocs.io/en/latest/_static/switcher.json",
-        "url_template": "https://pydata-sphinx-theme.readthedocs.io/en/v{version}/",
-        "version_match": "0.0.0",
-        "navbar_end": ["version-switcher", "navbar-icon-links"]
-    }
+    "footer_items": ["copyright", "sphinx-version", "licence"]
 }
 
 html_context = {
-    "default_mode": "light",
     "github_user": "openforis",
     "github_repo": "sepal-doc",
     "github_version": "master",
