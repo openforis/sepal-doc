@@ -21,6 +21,7 @@ We will be happy to receive contributions from people that use this documentatio
     gee
     filezilla
     nicfi
+    password
 
 .. spelling::
 
