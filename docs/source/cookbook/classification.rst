@@ -4,7 +4,13 @@ Classification
 Overview
 --------
 
-Find a catchy introduction for classification process 
+With this recipe, SEPAL will help the user build a supervised classification of any mosaic image. It is build on top of the most advanced tools available on Google Earth Engine (These classifiers include CART, RandomForest, NaiveBayes and SVM) and create a easy-to-use User interface to:
+
+-   select the image to classiffy
+-   define the class table
+-   add training data from external sources and on-the-fly selection
+
+In combination with the other tools of SEPAL the classifcation recipe can help you provide accurate land-use maps, without coding a single line of code.
 
 Start
 -----
