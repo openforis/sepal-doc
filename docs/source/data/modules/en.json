@@ -88,5 +88,8 @@
     "tmf": {},
     "zonal-analysis": {
         "url": "https://raw.githubusercontent.com/openforis/zonal-analysis/master/doc/en.rst"
+    },
+    "gee-source": {
+        "url": "https://raw.githubusercontent.com/12rambau/gee_source/master/doc/en.rst"
     }
 }
