@@ -70,23 +70,23 @@
         "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst"
     },
     "sepal_mgci": {
-        "url": "https://raw.githubusercontent.com/dfguerrerom/sepal_mgci/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst"
     },
     "sepal_pysmm": {
-        "url": "https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_pysmm/release/doc/en.rst"
     },
     "seplan": {
         "url": "https://raw.githubusercontent.com/sepal-contrib/se.plan/master/doc/en.rst"
     },
     "smfm_biota": {
         "tag": "SMFM",
-        "url": "https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_smfm_biota/release/doc/en.rst"
     },
     "smfm_deforest": {
         "tag": "SMFM"
     },
     "tmf": {},
     "zonal-analysis": {
-        "url": "https://raw.githubusercontent.com/openforis/zonal-analysis/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal/zonal-analysis/master/doc/en.rst"
     }
 }
