@@ -101,6 +101,12 @@ In case of extrapolation the additional option **Segment to Extrapolate** allows
 Date Range
 """"""""""
 
+.. thumbnail:: ../_images/cookbook/ccdc_slice/ccdc_slice_date_range_parameters.png
+    :group: ccdc-slice-parameters-date-range
+    :title: Selection menu for CCDC slice parameters - date range
+    :width: 60%
+    :align: center
+
 Visualization
 -----------------
 
