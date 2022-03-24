@@ -70,7 +70,9 @@ To get an overview of all **GWB** modules enter the command: :code:`GWB`
 
     $ GWB
     ===============================================================================
-    GWB: GuidosToolbox-Workbench:
+              GWB: GuidosToolbox-Workbench
+    ===============================================================================
+         Part A: brief module description
     ===============================================================================
     cmd-line image analysis modules from GuidosToolbox 
     (https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/):
@@ -132,19 +134,52 @@ To get an overview of all **GWB** modules enter the command: :code:`GWB`
     
     More details in the module-specific parameter files, or run: GWB_XXX --help
     
-    Usage: 
-        a) standalone mode (within the directory GWB): 
-            ./GWB_ACC  OR add a custom full path to your input and output directory i.e.: 
-                ./GWB_ACC -i=<your dir_input> -o=<your dir_output>
-    
-        b) system mode (GWB installed in /opt/): 
-            add the full path to your input and output directory i.e.: 
-                GWB_ACC -i=<your dir_input> -o=<your dir_output>
-    
-    To get started in system mode, copy the input/output directories to
-    your home folder using the command:
-    cp -fr /opt/GWB/*put ~/
     ===============================================================================
+         Part B: usage
+    =============================================================================== 
+    a) standalone mode (within the directory GWB): ./GWB_ACC
+       OR add a custom full path to your input and output directory i.e.: 
+       ./GWB_ACC -i=<your dir_input> -o=<your dir_output>
+    
+    b) system mode (GWB installed in /opt/):
+       To get started in system mode, copy the input/output directories to
+       your home folder using the command: cp -fr /opt/GWB/*put ~/
+       To process, add the full path to your input and output directory: 
+       GWB_ACC -i=$HOME/input -o=$HOME/output
+    
+    ===============================================================================
+         Part C: processing requirements
+    ===============================================================================
+    RAM requirements depend on module processing settings and the amount 
+    and the configuration of objects in the input image.
+    You can use: /usr/bin/time -v <full GWB-command> and then look 
+    at 'Maximum resident set size', which will show the maximum 
+    RAM usage point (in kb) encountered during execution.
+     a) RAMpeakGB = divide 'Maximum resident set size' by 1024^2
+     b) imsizeGB = image size in GB = xdim*ydim/1024^3
+     c) processing RAM requirement by module: RAMpeak/imsizeGB
+    
+    Approximate peak RAM usage factors for an image of size imsizeGB: 
+    GWB_ACC  : 30 * imsizeGB
+    GWB_DIST : 18 * imsizeGB
+    GWB_FAD  : 30 * imsizeGB
+    GWB_FRAG : 13 * imsizeGB
+    GWB_LM   :  9 * imsizeGB
+    GWB_MSPA : 20 * imsizeGB
+    GWB_P223 : 15 * imsizeGB
+    GWB_PARC : 22 * imsizeGB
+    GWB_REC  :  2 * imsizeGB
+    GWB_RSS  : 20 * imsizeGB
+    GWB_SPA  : 20 * imsizeGB
+    Example: input image 50,000 x 50,000 pixels -> imsizeGB = 2.33 GB. 
+    Processing this image for GWB_ACC will require 30 * 2.33 ~ 70 GB RAM
+    
+    The RAM usage factors above are indicative only. They depend on module 
+    settings and the amount/configuration of objects in the input image.
+    ===============================================================================
+     ***  Please scroll up to read GWB information in Part A, B, C above  ***
+    ===============================================================================
+
 
 It is also possible to use the "help" option: :code:`GWB_ACC --help`
 
