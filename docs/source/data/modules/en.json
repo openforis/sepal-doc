@@ -87,6 +87,9 @@
     },
     "tmf": {},
     "zonal-analysis": {
-        "url": "https://raw.githubusercontent.com/sepal/zonal-analysis/master/doc/en.rst"
+      "url": "https://raw.githubusercontent.com/sepal-contrib/zonal-analysis/release/doc/en.rst"
+    },
+    "gee-source": {
+        "url": "https://raw.githubusercontent.com/sepal-contrib/gee_source/release/doc/en.rst"
     }
 }
