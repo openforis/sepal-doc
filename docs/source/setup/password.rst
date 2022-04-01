@@ -1,24 +1,24 @@
 Reset password
 ==============
 
-If users forget their password, they may retrieve or reset it, provided they have access to the email address specified for their account. A password may be recovered by submitting a request through one of the website's logon forms.
+If you have forgotten your log-in password, you might want to retrieve or reset it by proving you have access to the email address of your account. A password may be recovered by submitting a request through one of the website's logon forms.
 
 .. warning::
 
-    Resetting of passwords is not possible without the email adress used in the platform. test every email you can think about before going back to the registration form
+    Resetting passwords is not possible without the email address used to log in to the platform. Test every email you can think about before going back to the registration form.
 
-This process will be performed in 3 steps presented in the following page.
+This process will be performed in 3 steps presented on the following page.
 
 Tell us who you are
 -------------------
 
-First step click on the :code:`forgot password?` button on the landing page of SEPAL
+In the first step, click the :code:`forgot password?` link on the SEPAL landing page.
 
 .. thumbnail:: ../_images/setup/password/landing.png
    :title: landing page of SEPAL where the user can find the "forgot password" button
    :group: setup_password
 
-Now that you are on the reset password page, enter the email adress you used to register on SEPAL in the "email" text field of the page. When you're done click :btn:`<fas fa-envelope> Reset password`.
+Now that you are on the reset password page, enter the email address you used to register on SEPAL in the "email" text field of the page. When you're done click :btn:`<fas fa-envelope> Reset password`.
 
 .. thumbnail:: ../_images/setup/password/email-setup.png
    :title: the reset password page where the user can specify its email adress
@@ -26,9 +26,9 @@ Now that you are on the reset password page, enter the email adress you used to 
 
 .. warning:: 
 
-    If the field become red, it means that your email adress is not found in our database. Be careful with typo and test multiple adress you may have used another when you registered. 
+    If the field becomes red, it means that your email address was not found in our database. Be careful with typos and test multiple addresses —you may have used another when you registered. 
 
-If the email is validated, a confirmation email will be send from SEPAL to your associated email adress. The notification system will display a note of information on the top right corner of the screen.
+If the email is validated, a confirmation email will be sent from SEPAL to your associated email address. The notification system will display a note of the information on the top right corner of the screen.
 
 .. thumbnail:: ../_images/setup/password/email-confirmation.png
    :title: the confirmation notification that a reset password email have been send to your account
@@ -38,7 +38,7 @@ If the email is validated, a confirmation email will be send from SEPAL to your 
 Email confirmation
 ------------------
 
-To reset your password SEPAL uses an email confirmation system because: 
+To reset your password, SEPAL uses an email confirmation system because: 
 
 -   Attackers cannot lock the accounts of other users by guessing their user names and using the forgotten password recovery function.
 -   Passwords cannot be read from the email by potential attackers.
@@ -51,14 +51,14 @@ For all these reasons, SEPAL will send you the following email.
    :title: example of a reset password email
    :group: setup_password
 
-clink on the :code:`this` link. It will open the reset password interface in a new browser page.
+Clik the :code:`this` link. It will open the reset password interface on a new browser page.
 
 Change password
 ---------------
 
-In the reset password interface, 3 fields are avalable:
+In the reset password interface, 3 fields are available:
 
--   **username:** the username associated to your email adress in the database.
+-   **username:** the username associated with your email address in the database.
     
     .. note::
     
@@ -74,7 +74,7 @@ Once everything is set, click on :btn:`<fas fa-check> Set password` to validate 
    :title: the change password interface
    :group: setup_password
 
-Once validated the new password will be automatically associated to your account. The user will be automatically authenticated and a notifciation will be displayed at the top right side of the screen.
+Once validated, the new password will be automatically associated with your account. The user will be automatically authenticated and a notification will be displayed at the top right side of the screen.
 
 .. thumbnail:: ../_images/setup/password/change-password-notification.png
    :title: the change password interface
