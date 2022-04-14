@@ -111,6 +111,7 @@ html_context = {
     "github_repo": "sepal-doc",
     "github_version": "master",
     "doc_path": "docs/source",
+    "default_mode": "dark",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
