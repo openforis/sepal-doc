@@ -1,17 +1,3 @@
- :root {
-     
-    /***************************************************************************
-    * Color
-    * 
-    * Colors are defined in rgb string way, "red, green, blue"
-    **/
-    --pts-color-sepal: 24, 102, 145;
-
-    --pst-color-h1: var(--pts-color-sepal);
-    --pst-color-h2: var(--pts-color-sepal);
-    --pst-color-active-navigation: var(--pts-color-sepal);
- }
-
 /*******************************************************************************
 *   text justification
 *
@@ -52,7 +38,7 @@ a[data-lightbox] img {padding: .25em;}
    display: inline-block;
 }
 .footer-item:not(:last-child) {
-   border-right: 1px solid rgba(var(--pst-color-text-base), 1);
+   border-right: 1px solid var(--pst-color-text-base);
    margin-right: .5em;
    padding-right: .5em;
  }
@@ -76,7 +62,6 @@ a[data-lightbox] img {padding: .25em;}
 }
 
 #map-overlay {
-   
    z-index: -1;
 }
 
@@ -85,15 +70,18 @@ body[data-theme=light] #map-overlay {
 }
 
 body[data-theme=dark] #map-overlay {
-   background-color: rgba(var(--pst-color-background), .3);
+   background-color: rgba(18, 18, 18, .3);
 }
 
 .leaflet-container {
-   background: rgb(var(--pst-color-background)) !important;
+   background: var(--pst-color-background) !important;
 }
 
+.lb-outerContainer {
+    background-color: var(--pst-color-background);
+
 footer {
-   background-color: rgb(var(--pst-color-background));
+   background-color: var(--pst-color-background);
 }
 
 /*******************************************************************************
