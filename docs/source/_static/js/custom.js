@@ -3,8 +3,8 @@ function init() {
         
     //CartoDB layer names: light_all / dark_all / light_nonames / dark_nonames
     var layers = {
-        "light": L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {attribution: "",}),
-        "dark": L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {attribution: "",})
+        "light": L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {attribution: "",}),
+        "dark": L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {attribution: "",})
     }
 
     const startTheme = document.documentElement.dataset.theme ? document.documentElement.dataset.theme : "light"
