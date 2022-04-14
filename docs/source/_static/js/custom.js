@@ -7,7 +7,7 @@ function init() {
         "dark": L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {attribution: "",})
     }
 
-    const startTheme = document.body.dataset.theme ? document.body.dataset.theme : "light"
+    const startTheme = document.documentElement.dataset.theme ? document.documentElement.dataset.theme : "light"
     layers[startTheme].addTo(map)
 
     // Don't show the 'Powered by Leaflet' text. Attribution overload
@@ -23,7 +23,7 @@ function init() {
     if (map.tap) map.tap.disable();
     document.getElementById('map').style.cursor='default';
 
-    // observe bofy theme value 
+    // observe html theme value 
     const mutationCallback = (mutationsList) => {
         for (const mutation of mutationsList) {
             
@@ -49,7 +49,7 @@ function init() {
     }
     
     const observer = new MutationObserver(mutationCallback)
-    observer.observe(document.body, { attributes: true })
+    observer.observe(document.documentElement, { attributes: true })
 
 };
 
