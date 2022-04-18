@@ -15,7 +15,7 @@ In this page, you will be introduced to the SEPAL interface. You will learn how 
     **prerequites**
 
     -   Internet access
-    -   SEPAL account (see ‘Getting Started')
+    -   SEPAL account (see 'Getting Started')
             
 
 Access SEPAL
@@ -25,26 +25,25 @@ Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
 
 Type in your **Username** and **Password** and click **Login**.
 
-.. image:: ../img/setup/presentation/sepal_login.png
+.. image:: ../_images/setup/presentation/sepal_login.png
    :alt: SEPAL login page
    :align: center
 
 .. tip::
    When working in SEPAL, do not click your browser's back button. This will go back to the previous web-page. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
-Setup the local
----------------
+Setup the locale
+----------------
 
 .. youtube:: Lv0HwPDQx50
-    :align: center
 
 The first step to create a SEPAL environment is to set up the language you want to use. 
 
 .. note::
 
-    This selection will not be definitive and you will still be able to change from the launch page
+    You can always change your language preference from SEPAL's launch page.
 
-Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these language in sepal come back to the launch page. (disconnect yourself if necessary). On this page click on :code:`Launch`.
+Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these languages in SEPAL, return to the launch page. (you may have to logout of SEPAL to return to launch page). On this page click on :code:`Launch`.
 
 Once you've clicked, you will access the login page. At the top-right side of this panel, click on the button corresponding to your language: 
 
@@ -62,7 +61,7 @@ Home
 
 Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-.. image:: ../img/setup/presentation/sepal_home.png
+.. image:: ../_images/setup/presentation/sepal_home.png
    :alt: SEPAL home screen
    :align: center
 
@@ -83,25 +82,36 @@ You can edit your user account info, including Name, Password, Email and Organiz
 
     You cannot edit your Username in this interface.
 
-Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
+Link your Google Earth Engine account with your SEPAL account by clicking **Use my own Google Account** and following the instructions. If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace). If your GEE and SEPAL accounts are not linked, data downloads to your SEPAL workspace will still be possible and the data will pass through the SEPAL service account Google Drive.
 
-.. warning::
+.. tip::
 
-   Be sure to connect your Google Account in order to be able to Retrieve Mosaics and use the export function in SEPAL. You should use the same account you used to sign up for Google Earth Engine.
+   Unilinking your GEE and SEPAL accounts for downloading to SEPAL workspace may help if you do not have sufficient space available in your personal Google Drive.
 
-Next to your **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
+Linking your GEE and SEPAL accounts will enable the possibility to read and write from your GEE Assets. To save data created in SEPAL as a GEE Asset or to use your existing GEE Assets in classifications or further processing in SEPAL, you will need to have your GEE and SEPAL accounts linked.
 
-.. image:: ../img/setup/presentation/user_report_panel.png
+.. tip::
+
+   Link your SEPAL and GEE accounts in order to read and write to GEE Assets from SEPAL.
+
+Next to your **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`. This shows you your used / available processing and storage resources. Instance spending refers to the resources used / available to start and run cloud computers. Storage space and spending refers to the resources used / available for storage in your SEPAL workspace. If you are running any processes in your current session, they will show up here under Sessions.
+
+.. image:: ../_images/setup/presentation/user_report_panel.png
    :alt: User Report panel.
    :width: 350px
    :align: center
+   
+.. tip::
+
+   SEPAL is not to be used for long-term data storage. This is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage.
+   
 
 Process Tab
 ^^^^^^^^^^^
 
 Click the :code:`Process` tab on the left side of the window.
 
-.. image:: ../img/setup/presentation/process_tab_location.png
+.. image:: ../_images/setup/presentation/process_tab_location.png
    :alt: Arrow pointing out the process tab location
    :align: center
 
@@ -109,19 +119,25 @@ You should now see four options in the center of the screen:
 
 -   **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
 -   **Radar Mosaic** allows you to create a mosaic using Sentinel 1 data.
+-   **Planet Mosaic** allows you to create a mosaic using NICFI / Planet basemaps (if you have permission from NICFI / Planet).
 -   **Classification** allows you to use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.
 -   **Time Series** allows you to download time series information to your SEPAL storage.
+-   **CCDC** create a CCDC asset from a time series.
+-   **CCDC Slice** create a slice of a CCDC asset for a specific date or date range.
+-   **Class Change** create a class change map from two categorical images, either SEPAL recipes or GEE assets.
+-   **Index Change** create an index change map from two single-band images, either SEPAL recipes or GEE assets.
+-   **Remapping** remap categorical or continuous image bands into new categories.
 
 When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.
 
 Files Tab
 ^^^^^^^^^
 
-Click the green :code:`Files` tab on the left side of the window. This will display all of your files in SEPAL.
+Click the green :code:`Files` tab on the left side of the window. This will display all of your files stored in your SEPAL workspace.
 
 For example, click the :code:`downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
 
-.. image:: ../img/setup/presentation/files_menu.png
+.. image:: ../_images/setup/presentation/files_menu.png
    :alt: The files menu
    :align: center
    :width: 350
@@ -142,9 +158,9 @@ This links you to the Linux command line that you can use in a variety of ways t
 
 When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize.
 
-One of the most important features of the Terminal is the ability to increase your instance size. The default instance is not sufficient for analyzing large amounts of data, for example running a classification on a large area.
+One of the most important features of the Terminal is the ability to start and stop instances. 
 
-To increase the size of your instance, follow the following steps:
+To start an instance, use the following steps as a guide:
 
 -   First examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.
 -   Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost effective.
@@ -152,7 +168,11 @@ To increase the size of your instance, follow the following steps:
 -   Press Enter on your keyboard.
 -   Wait for the new instance to start. This will take several minutes.
 
-.. image:: ../img/setup/presentation/terminal.png
+To stop an instance, type 'exit' at the command line. You can then refresh the terminal page to start a new instance. You can also stop an instance by clicking on your username on the right side of the screen and accessing your account information. Under 'Sessions' click on the trashcan icon to shut down your instances.
+
+Once an instance has stopped, you can follow the instance startup steps again to select a larger instance if necessary.
+
+.. image:: ../_images/setup/presentation/terminal.png
    :alt: The terminal page, including an example of changing the instance
    :align: center
    :width: 450
@@ -160,9 +180,9 @@ To increase the size of your instance, follow the following steps:
 Apps Tab
 ^^^^^^^^
 
-Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
+Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL. Applications are pre-programmed (typically using R or Python) to perform specific, useful tasks. Applications make use of instances and running an application will use your SEPAL computing resources.
 
-.. image:: ../img/setup/presentation/apps_interface.png
+.. image:: ../_images/setup/presentation/apps_interface.png
    :alt: The Apps interface
    :align: center
 

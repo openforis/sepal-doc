@@ -1,11 +1,11 @@
-.. image:: docs/source/img/sepal_header.png
+.. image:: docs/source/_images/sepal_header.png
 
 sepal-doc
 =========
 
-.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+.. image:: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
     :target: LICENSE
-    :alt: License: MIT
+    :alt: License: CC BY-SA 4.0
 
 .. image:: https://readthedocs.org/projects/sepal-doc/badge/?version=latest
     :target: https://sepal-doc.readthedocs.io/en/latest/?badge=latest

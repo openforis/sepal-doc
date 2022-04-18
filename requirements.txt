@@ -3,4 +3,7 @@ Sphinx>=3.5.1
 sphinx-notfound-page>=0.6
 graphviz>=0.16
 sphinxcontrib-spelling
-sphinxcontrib-images
+git+https://github.com/12rambau/images.git@gif#egg=sphinxcontrib-images
+sphinx-icon
+sphinx-btn
+sphinxcontrib-youtube

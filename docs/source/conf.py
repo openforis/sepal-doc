@@ -34,11 +34,12 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
     'sphinxcontrib.images',
+    'sphinxcontrib.icon',
+    'sphinxcontrib.btn',
+    'sphinxcontrib.youtube',
     'notfound.extension',
-    '_extentions.video',
     '_extentions.line_break',
-    '_extentions.custom_edit',
-    '_extentions.icon',
+    '_extentions.custom_edit'
 ]
 
 # spelling options
@@ -55,7 +56,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["**.ipynb_checkpoints", 'data/template/*.rst']
+exclude_patterns = ["**.ipynb_checkpoints"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -64,8 +65,8 @@ exclude_patterns = ["**.ipynb_checkpoints", 'data/template/*.rst']
 # a list of builtin themes.
 #
 html_theme = 'pydata_sphinx_theme'
-html_logo = os.path.abspath('img/sepal.png') 
-html_favicon = os.path.abspath('img/favicon.ico')
+html_logo = os.path.abspath('_images/sepal.png') 
+html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
 html_sidebars = {
     "**": ["search-field", "sidebar-nav-bs"]
@@ -94,9 +95,15 @@ html_theme_options = {
             "name": "Youtube",
             "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
             "icon": "fab fa-youtube"
-        }
+        },
+        {
+            "name": "Google forum",
+            "url": "https://groups.google.com/g/sepal-users",
+            "icon": "fab fa-google"
+        },
     ],
     "use_edit_page_button": True,
+    "footer_items": ["copyright", "sphinx-version", "licence"]
 }
 
 html_context = {
@@ -109,11 +116,11 @@ html_context = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = ['css/custom.css']
+html_css_files = ["css/custom.css"]
 
 # -- Options for images -------------------------------------------------------
 
@@ -129,9 +136,9 @@ import json
 
 # dirs 
 source_dir = Path(__file__).expanduser().parent
-module_dir = source_dir/'modules'
-dwn_dir = module_dir/'dwn'
-template_dir = source_dir/"data"/"template"
+module_dir = source_dir/"modules"
+dwn_dir = module_dir/"dwn"
+template_dir = source_dir/"_templates"
 
 # templates
 tag_template = template_dir/"module_tag.rst"
@@ -140,7 +147,7 @@ index_template = template_dir/"index.rst"
 
 # data 
 module_json = source_dir/"data"/'modules'/'en.json'
-no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/data/template/no_module.rst"
+no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/_templates/no_module.rst"
 
 # flush the modules folder 
 [f.unlink() for f in module_dir.glob("*.rst")]
@@ -186,6 +193,25 @@ for name in module_list:
         
     # prompt for the readthedoc build
     print(f"{name} documentation have been copied to the dwn folder")
+    
+#  -- copy the requirements of the R and Python environment to data ------------
+
+data_dir = source_dir/"data"
+
+# R environment
+print(f"copy R packages from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/script/init_r_packages.sh", 
+    data_dir/"r_packages.sh"
+)
+
+# Python environment
+print(f"copy Python libs from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/config/requirements.txt", 
+    data_dir/"python_lib.txt"
+)
+
 
 
 

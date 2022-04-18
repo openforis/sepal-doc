@@ -21,17 +21,17 @@ Start
 
 Once the time-series recipe is selected, SEPAL will show up the recipe process in a new tab(1), the base map will change to Google high-resolution imagery and the AOI selection window will open itself on the bottom right side (2). 
 
-.. thumbnail:: ../img/cookbook/time_series/landing.png
+.. thumbnail:: ../_images/cookbook/time_series/landing.png
     :group: time-series-recipe
     :title: the landing page of the time series recipe
 
 The first step is to change the name of the recipe. This name will be used to name your files and recipes in the SEPAL folders. Use the best-suited convention for your need. Simply double-click the tab and write a new name. It will default to :code:`Time_series_<start_date>_<end_date>_<band name>`.
 
-.. thumbnail:: ../img/cookbook/time_series/default_title.png
+.. thumbnail:: ../_images/cookbook/time_series/default_title.png
     :title: time series default title 
     :width: 49%
 
-.. thumbnail:: ../img/cookbook/time_series/title.png
+.. thumbnail:: ../_images/cookbook/time_series/title.png
     :title: time series modified title 
     :width: 49%
     
@@ -49,7 +49,7 @@ On the bottom right corner, 4 tabs are available. They will allow you to customi
 -   :guilabel:`SRC`: the sources datasets of the time series
 -   :guilabel:`PRC`: the pre-processing parameters
 
-.. thumbnail:: ../img/cookbook/time_series/no_parameters.png
+.. thumbnail:: ../_images/cookbook/time_series/no_parameters.png
     :title: The 4 tabs to set up SEPAL time series parameters
     :group: time-series-recipe
 
@@ -62,7 +62,7 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_landing.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_landing.png
     :title: The 3 differents ways to select an AOI in SEPAL
     :group: time-series-recipe
 
@@ -90,7 +90,7 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
     :title: Select AOI based on administrative layers
     :group: time-series-recipe
 
@@ -116,7 +116,7 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_table.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
     :title: Select AOI based on EE table
     :group: time-series-recipe
 
@@ -129,7 +129,7 @@ The pointer in the map will be converted into a :icon:`fa fa-plus`. Click succes
 
 Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../img/cookbook/time_series/aoi_polygon.png
+.. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
     :title: Select AOI based on drawn polygon
     :group: time-series-recipe
 
@@ -138,12 +138,12 @@ Dates
 
 In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :icon:`fa fa-check` :guilabel:`Select` button to validate a date. When both dates are selected click on :icon:`fa fa-check` :guilabel:`apply` button.
 
-.. thumbnail:: ../img/cookbook/time_series/dates.png
+.. thumbnail:: ../_images/cookbook/time_series/dates.png
     :title: Select AOI based on EE table
     :width: 49%
     :group: time-series-recipe
 
-.. thumbnail:: ../img/cookbook/time_series/datepicker.png
+.. thumbnail:: ../_images/cookbook/time_series/datepicker.png
     :title: Select AOI based on EE table
     :width: 49%
     :group: time-series-recipe
@@ -191,7 +191,7 @@ One can Optionally Select in the last dropdown a classification recipe and apply
 
 When all the data are selected click on :icon:`fa fa-check` :guilabel:`apply`.
 
-.. thumbnail:: ../img/cookbook/time_series/sources.png
+.. thumbnail:: ../_images/cookbook/time_series/sources.png
     :title: The sources panel to select the different datasets that will be used in the time-series.
     :group: time-series-recipe
 
@@ -230,7 +230,7 @@ Multiple pre-processing parameters can be set to improve the quality of the prov
 -   :guilabel:`Off`: don't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts.
 
 
-.. thumbnail:: ../img/cookbook/time_series/pre_processing.png
+.. thumbnail:: ../_images/cookbook/time_series/pre_processing.png
     :title: The pre-processing panel to select the extra filtering processes that will improve the quality of the provided images.
     :group: time-series-recipe
 
@@ -287,10 +287,10 @@ The time series will use a single observation for each pixel. This observation c
         -   :math:`0.3037 (band 1) + 0.2793 (band 2) + 0.4743 (band 3) + 0.5585 (band 4) + 0.5082 (band 5) + 0.1863 (band 7)`
     *   -   :guilabel:`greeness`
         -   greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`−0.2848 (band 1) − 0.2435 (band 2) − 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) − 0.1800 (band 7)`
+        -   :math:`-0.2848 (band 1) - 0.2435 (band 2) - 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) - 0.1800 (band 7)`
     *   -   :guilabel:`wetness`
         -   wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) − 0.7112 (band 5) − 0.4572 (band 7)`
+        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) - 0.7112 (band 5) - 0.4572 (band 7)`
     *   -   :guilabel:`fourth`
         -   fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
         -
@@ -350,7 +350,7 @@ The analysis icons can be found in the top right corner of the sepal window:
 - :icon:`fa fa-chart-area`: plot data
 - :icon:`fa fa-cloud-download-alt`: retreive data
 
-.. thumbnail:: ../img/cookbook/time_series/data_analysis.png
+.. thumbnail:: ../_images/cookbook/time_series/data_analysis.png
     :title: The 2 tabs used to plot or retreive the Time series data
     :group: time-series-recipe
 
@@ -375,7 +375,7 @@ On the main graph, each point represents one valid (based on the pre-processing 
 
     The coordinates of the point are displayed at the top of the chart window.
 
-.. thumbnail:: ../img/cookbook/time_series/plot.png
+.. thumbnail:: ../_images/cookbook/time_series/plot.png
     :title: Plot chart popup window providing all the available information on one single pixel alongside the time series.
     :group: time-series-recipe
 
@@ -383,7 +383,7 @@ On the main graph, each point represents one valid (based on the pre-processing 
 
     The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected pre-processing parameters. If the popup window displays a spinning wheel, wait up to 2 min to see the data displayed.
 
-    .. thumbnail:: ../img/cookbook/time_series/plot_loading.png
+    .. thumbnail:: ../_images/cookbook/time_series/plot_loading.png
         :title: Plot chart popup window providing all the available information on one single pixel alongside the time series. If there are numerous observations and a complex pre-processing, retrieving the data to SEPAL can take up to 2 min 
         :group: time-series-recipe
 
@@ -404,7 +404,7 @@ You can set a custom scale for exportation by changing the value of the slider (
 
 When all the data is selected click on the :icon:`fa fa-check` :guilabel:`apply` button. Notice that the task tab in the bottom left corner of the screen (1) will change from :icon:`fa fa-tasks` to :icon:`fa fa-spinner` which means that the tasks are loading.
 
-.. thumbnail:: ../img/cookbook/time_series/export_param.png
+.. thumbnail:: ../_images/cookbook/time_series/export_param.png
     :title: Select the parameter of the exportation process to retreive the data from GEE to SEPAL's folders.
     :group: time-series-recipe
 
@@ -420,12 +420,12 @@ Going to the task tab (bottom left corner using the :icon:`fa fa-tasks` or :icon
 
 When the task is finished the frame will be displayed in green as shown on the second image.
 
-.. thumbnail:: ../img/cookbook/time_series/download.png
+.. thumbnail:: ../_images/cookbook/time_series/download.png
     :width: 49%
     :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
     :group: time-series-recipe
 
-.. thumbnail:: ../img/cookbook/time_series/download_complete.png
+.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
     :width: 49%
     :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
     :group: time-series-recipe

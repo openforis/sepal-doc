@@ -70,6 +70,7 @@ instance/
 
 # Sphinx documentation
 docs/build/
+docs/source/_build/
 
 # PyBuilder
 target/
@@ -134,3 +135,9 @@ docs/source/modules/*.rst
 
 # visual studio code
 .vscode/
+
+# pycharm idea folder
+.idea/
+
+# mac os files 
+.DS_Store 

@@ -22,10 +22,20 @@ p {text-align: justify;}
 *   logo coloring
 *
 **/
-i.fa-twitter:hover {color: #1da1f2;}
-i.fa-youtube:hover {color: #ff0000;}
-i.fa-github:hover {color: #333;}
-i.fa-stack-exchange:hover {color: #1e5397;}
+span .fa-twitter:hover {color: #1da1f2;}
+span .fa-youtube:hover {color: #ff0000;}
+span .fa-github:hover {color: #333;}
+span .fa-stack-exchange:hover {color: #1e5397;}
+span .fa-google:hover {color: #34a853;}
+ 
+/**
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+**/
 
 /*********************************************************************************
 *   change the lightbox cursor
@@ -33,3 +43,19 @@ i.fa-stack-exchange:hover {color: #1e5397;}
 **/
 a[data-lightbox] {cursor: zoom-in;}
 a[data-lightbox] img {padding: .25em;}
+
+/*********************************************************************************
+*  make the footer inlined
+*
+**/
+.footer-item {
+   display: inline-block;
+}
+.footer-item:not(:last-child) {
+   border-right: 1px solid rgba(var(--pst-color-text-base), 1);
+   margin-right: .5em;
+   padding-right: .5em;
+ }
+
+
+

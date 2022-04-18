@@ -13,7 +13,7 @@ We are glad to receive feedback from our user and colleagues from the SEPAL team
 Introduction
 ------------
 
-The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe Sphinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/img/`.
+The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe Sphinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/_images/`.
 
 If some of the files are misplaced there build into html pages cannot be guaranteed. Please respect the following instructions when you consider making changes to the repository. 
 
@@ -63,12 +63,10 @@ Here you'll find an example:
     .. youtube:: Ub6N8aWThw4
         :height: 315
         :width: 560
-        :align: start
 
 .. youtube:: Ub6N8aWThw4
     :height: 315
     :width: 560
-    :align: start
 
 line-break
 """"""""""
@@ -117,6 +115,21 @@ ReST role to include inline icons in the documenation (usualy when referencing a
 
 I'm a folder icon: :icon:`fa fa-folder`
 
+btn
+"""
+
+Rest role to include complete btn in the documentation. You can find the icon you're looking for in the fontawesome library `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__. The text is optional.
+
+.. code-block:: rst 
+
+    I'm a apply btn: :btn:`<fas fa-check> apply`
+
+    I'm the app btn: :btn:`<fas fa-wrench>`
+
+I'm a apply btn: :btn:`<fas fa-check> apply`
+
+I'm the app btn: :btn:`<fas fa-wrench>`
+
 Minor change
 ------------
 
@@ -125,14 +138,14 @@ Page edit
 
 If you want to make modifications to an existing page of documentation because you've seen a typo, or you want to improve an explanation the workflow is extremely simple. Click on the :code:`edit this page` button that will always be on the right side of the screen:
 
-.. figure:: ../img/team/contribute/edit_page.png
+.. figure:: ../_images/team/contribute/edit_page.png
     :alt: edit page button
 
     The edit page button on the landing page
 
 By clicking it you will be send to a Github editor where you can make all the modification you want in this file. when you are done modifying click on the :code:`propose change` at the bottom of the page. It will create a PR including your modifications, our maintainer will evaluate it and the PR will be published in the documentation. 
 
-.. figure:: ../img/team/contribute/edit_github.png
+.. figure:: ../_images/team/contribute/edit_github.png
     :alt: edit a page directly in GitHub
 
     edit a page directly in GitHub
@@ -141,14 +154,14 @@ By clicking it you will be send to a Github editor where you can make all the mo
 
     To make sure that you modification are well understood modify the title of the commit by filling the first field. you can use "typo", "change image" "code-block error"; in short anything that describe the modification that you've done. This name CANNOT be changed.
 
-    .. figure:: ../img/team/contribute/create_branch.png
+    .. figure:: ../_images/team/contribute/create_branch.png
         :alt: create a branch 
 
         Create a branch when correcting anything
 
 Once you're done, a PR will automatically be set for you in the OpenForis repository. Remove all the comments as you're not making a real PR but an adjustment, normally the title will automatically be set with the name of your commit. click on :code:`create pull request`.
 
-.. figure:: ../img/team/contribute/typo_pr.png
+.. figure:: ../_images/team/contribute/typo_pr.png
     :alt: typo pr
 
     Create an automatic PR for minor modifications
@@ -157,7 +170,7 @@ Once you're done, a PR will automatically be set for you in the OpenForis reposi
 
     Once your PR is accepted, you will be notified. please consider deleting your branch. 
 
-    .. figure:: ../img/team/contribute/delete_branch.png
+    .. figure:: ../_images/team/contribute/delete_branch.png
         :alt: delete branch 
 
         Delete the branch once the PR is accepted by maintainers
@@ -193,14 +206,14 @@ Fork project
 
 To work on multiple files at the same time, you cannot work directly from GitHub and you need to install a local version of the source. You don't have the rights (even the maintainer doesn't have the right) to directly push to master to avoid the publication of bad quality documentation page. The first step will then be to fork the project in your own account. To do so click on the :code:`fork` button at the top right side of the `Github page of the doc <https://github.com/openforis/sepal-doc>`_:
 
-.. figure:: ../img/team/contribute/fork.png
+.. figure:: ../_images/team/contribute/fork.png
     :alt: github fork
 
     The fork button on GitHub
 
 In the fork popup that will open select your the account you want to use (if you have only one account there will be 1 choice):
 
-.. figure:: ../img/team/contribute/fork_select.png
+.. figure:: ../_images/team/contribute/fork_select.png
     :alt: fork popup
 
     Select the acount to fork
@@ -211,7 +224,7 @@ Then you should end up in the following page. Take a look at the top left side o
 
     To know more about the forking system in GitHub please go to this `link <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_
 
-.. figure:: ../img/team/contribute/fork_landing.png
+.. figure:: ../_images/team/contribute/fork_landing.png
     :alt: landing page of the forked project
 
     landing page of the forked project
@@ -250,7 +263,7 @@ lets check that the doc can be build without error, go to the doc folder and run
 
 now a new folder :code:`build` have been created in your sepal-doc folder. double-click on :code:`sepal-doc/docs/build/html/index.html`. Your computer will open a browser page which should be the landing page of the documentation. you can then navigate wherever you fancy. the URL at the top of the browser should not be starting with **https:://** but **file:///** meaning that it's a local html page. Another tip that you are displaying a local page is that there is no advertisement in the side bar. 
 
-.. figure:: ../img/team/contribute/local_landing.png
+.. figure:: ../_images/team/contribute/local_landing.png
     :alt: local landing
 
     landing of the local build documentation
@@ -329,7 +342,7 @@ The first step will be to identify the section you want your page to be included
 
         .. include:: disclaimer.rst
 
-Now that you have selected a section you can create a documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx and the one we presented in the first section of this page. To keep the consistency of the folders and help people that will maintain the images, the images you will use should live in the following folder: :code:`sepal-doc/docs/source/img/<section>/<page>/`. 
+Now that you have selected a section you can create a documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx and the one we presented in the first section of this page. To keep the consistency of the folders and help people that will maintain the images, the images you will use should live in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`. 
 
 Add now the page you've created to the :code:`toctree` directive (table of content) in the :code:`<section>/index.rst` file. You just need to add your filename without the extension respecting the indentation as follow:
 
@@ -359,9 +372,9 @@ the file will be linked to the rest of the documentation via the left panel of y
 Modify images
 """""""""""""
 
-As explained before for each page the contained images are saved in the mirror folder :code:`sepal-doc/docs/source/img/` that reproduce the structure of the :code:`sepal-doc/docs/source` structure. 
+As explained before for each page the contained images are saved in the mirror folder :code:`sepal-doc/docs/source/_images/` that reproduce the structure of the :code:`sepal-doc/docs/source` structure. 
 
-Open the page you want to modify and search for the :code:`.. image` or :code:`.. figure` directive that set the image you want to modify. You now just need to change the image in the :code:`img/` folder and continue using the same name. 
+Open the page you want to modify and search for the :code:`.. image` or :code:`.. figure` directive that set the image you want to modify. You now just need to change the image in the :code:`_images/` folder and continue using the same name. 
 
 If you think that an image is missing you can add one in a any of the page. add the image in the appropriate folder and then call it using one of the following directives. Never forget the :code:`alt` option, it will be the only information displayed if your image fail to load.
 
@@ -369,7 +382,7 @@ If you think that an image is missing you can add one in a any of the page. add 
 
     .. code-block:: rst 
 
-        .. figure:: ../img/<section>/<page>/<image>.png
+        .. figure:: ../_images/<section>/<page>/<image>.png
             :alt: <the image callback text>
 
             <A caption>
@@ -378,7 +391,7 @@ If you think that an image is missing you can add one in a any of the page. add 
 
     .. code-block:: rst 
 
-        .. image:: ../img/<section>/<page>/<image>.png
+        .. image:: ../_images/<section>/<page>/<image>.png
             :alt: <The image callback>
 
 New section
@@ -441,7 +454,7 @@ Go to your classroom page and click on the share link. On the following page cop
 -   the title of the class 
 -   the invitation link of the class
 
-.. figure:: ../img/team/contribute/class_share.png
+.. figure:: ../_images/team/contribute/class_share.png
     :alt: the share links 
 
     Google class sharing links
@@ -500,21 +513,21 @@ Create a PR
 
 Now that you have finished your modifications and pushed them to GitHub we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`). on this page click on the :code:`pull request` button:
 
-.. figure:: ../img/team/contribute/start_pr.png
+.. figure:: ../_images/team/contribute/start_pr.png
     :alt: pull request btn 
 
     Start the pull request interface
 
 In the pull request interface, click on :code:`new pull request` button: 
 
-.. figure:: ../img/team/contribute/new_pr.png
+.. figure:: ../_images/team/contribute/new_pr.png
     :alt: new pull request
 
     create a new pull request
 
 Now you need to select what is going to be pushed and where. Assuming that you have followed this entire documentation, you have not created any branch in your fork so on the left side leave :code:`openforis/sepal-doc/master` and on the right side :code:`<account>/sepal-doc/master` (1). Some extra information on the commit that will be added to master are displayed in (2). If everything is set properly (normally you don't have to change anything) then click on the :code:`create pull request` button.
 
-.. figure:: ../img/team/contribute/compare_pr.png
+.. figure:: ../_images/team/contribute/compare_pr.png
     :alt: compare branches
 
 Now you enter the final step of your modifications. fill the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beginning of the documentation, you started your modifications to answer an issue from the issue tracker. It need to be referenced in your PR message at line 2 using :code:`#<issue number>`. It will help the maintainers that will review your PR understanding what you are adding to the documentation. 
@@ -527,14 +540,14 @@ The :code:`Allow edits by maintainers` checkbox needs to always be checked (defa
 
 When everything is set, you can click on :code:`create pull request` (3). 
 
-.. figure:: ../img/team/contribute/valid_pr.png
+.. figure:: ../_images/team/contribute/valid_pr.png
     :alt: valid pr 
 
     Validate the creation of the PR
 
 Some check will be performed automatically to check if your PR can be build with ReadTheDoc and distribute in https://docs.sepal.io.
 
-.. figure:: ../img/team/contribute/ci_pr.png
+.. figure:: ../_images/team/contribute/ci_pr.png
     :alt: ci in pr 
 
     The continous integration will run in Github
@@ -545,12 +558,12 @@ When everything is ready the maintainer will look at your PR and make the approp
 
     once the PR is validate, please consider deleting your fork in order to avoid merging issues next you'll want to make modification to the repository.
 
-    .. figure:: ../img/team/contribute/delete_fork.png
+    .. figure:: ../_images/team/contribute/delete_fork.png
         :alt: delete fork
 
         click here and follow the instructions ot delete your repository
 
-    .. figure:: ../img/team/contribute/delete_popup.png
+    .. figure:: ../_images/team/contribute/delete_popup.png
         :alt: delete popup
 
         Popu to delete the fork used in the closed PR

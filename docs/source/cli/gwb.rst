@@ -320,7 +320,7 @@ example statistics and graphical result of input image :code:`example.tif`:
     2)                901             33508
     3)               1662             26366
 
-.. figure:: ../img/cli/gwb/example_acc.tif
+.. figure:: ../_images/cli/gwb/example_acc.png
     :width: 50%
     :align: center
 
@@ -399,10 +399,10 @@ The results are stored in the directory :code:`output`, one directory for each i
 
 Example statistics (hypsometric curve) and spatial result of input image :code:`example.tif`:
 
-.. image:: ../img/cli/gwb/example_dist_hmc.png
+.. image:: ../_images/cli/gwb/example_dist_hmc.png
     :width: 49%
 
-.. image:: ../img/cli/gwb/example_dist.tif
+.. image:: ../_images/cli/gwb/example_dist.png
     :width: 49%
 
 Remarks
@@ -510,10 +510,10 @@ The results are stored in the directory :code:`output`, one directory for each i
 
 Example statistics and spatial result of a multi-scale per-pixel analysis of the input image :code:`example.tif`:
 
-.. image:: ../img/cli/gwb/example_fad_barplot.png
+.. image:: ../_images/cli/gwb/example_fad_barplot.png
     :width: 49%
 
-.. image:: ../img/cli/gwb/example_fad_mscale.tif
+.. image:: ../_images/cli/gwb/example_fad_mscale.png
     :width: 49%
 
 Remarks
@@ -642,7 +642,7 @@ Example statistics and spatial result of custom-scale per patch analysis of the 
     ================================================================================
         FAD_av:     75.2900
 
-.. figure:: ../img/cli/gwb/example_fad-app2_23.tif
+.. figure:: ../_images/cli/gwb/example_fad-app2_23.png
     :width: 50%
 
 Remarks
@@ -731,10 +731,10 @@ The results are stored in the directory :code:`output`, one directory for each i
 
 Example statistics (heatmap) and spatial result of custom-scale analysis of the input image :code:`clc3class.tif`, showing degree of predominance of land cover types Agriculture, Natural, Developed.
 
-.. image:: ../img/cli/gwb/lm103class_legend.png
+.. image:: ../_images/cli/gwb/lm103class_legend.png
     :width: 49%
 
-.. image:: ../img/cli/gwb/clc3class_lm_23.tif
+.. image:: ../_images/cli/gwb/clc3class_lm_23.png
     :width: 49%
 
 
@@ -848,10 +848,10 @@ Example statistics of the input image :code:`example.tif` and explanatory sketch
     Core-Opening [darkgrey]:       --/ 0.59     717/5927
     Border-Opening [grey]:         --/ 5.12     1574/51189
 
-.. image:: ../img/cli/gwb/mspalegend.gif
+.. image:: ../_images/cli/gwb/mspalegend.gif
     :width: 49%
 
-.. image:: ../img/cli/gwb/example_8_1_1_1.tif
+.. image:: ../_images/cli/gwb/example_8_1_1_1.png
     :width: 49%
 
 Remarks
@@ -962,7 +962,7 @@ Example statistics and spatial result of the input image :code:`example.tif` for
     Total Foreground Area [pixels]: 428490
     Average P2: 73.7660
 
-.. figure:: ../img/cli/gwb/example_p2_27.tif
+.. figure:: ../_images/cli/gwb/example_p2_27.png
     :width: 50%
 
 Remarks
@@ -1606,7 +1606,7 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
                 SLF:            6792
     ================================================================================
 
-.. figure:: ../img/cli/gwb/example_spa2.tif
+.. figure:: ../_images/cli/gwb/example_spa2.png
     :width: 50%
 
 Remarks

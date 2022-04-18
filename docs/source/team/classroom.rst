@@ -15,11 +15,11 @@ First open your professional Google account and go to the `Google Classroom page
 
 You should see something like the following image, minus the classes : 
 
-.. image:: ../img/team/classroom/dashboard.png
+.. image:: ../_images/team/classroom/dashboard.png
 
 each class is composed by several :code:`topics` and each topic can embed different kind of material including : :code:`exercices`, :code:`exams` and :code:`material` as presented in the image below:
 
-.. image:: ../img/team/classroom/stream.png
+.. image:: ../_images/team/classroom/stream.png
 
 .. seealso:: 
 
@@ -31,7 +31,6 @@ Creating a classroom
 If you need material for a webinar you can either directly reuse one of the general classroom or create your own. You can follow the steps presented in the following tutorial to create a class of your own. 
 
 .. youtube:: pl-tBjAM9g4
-        :align: center
 
 .. tip::
 
@@ -39,7 +38,7 @@ If you need material for a webinar you can either directly reuse one of the gene
 
 When creating basic content, you can re-use posts from classes were you are teaching as shown in the following image:
 
-.. image:: ../img/team/classroom/new-post.png
+.. image:: ../_images/team/classroom/new-post.png
 
 .. warning:: 
 
@@ -49,7 +48,7 @@ When creating basic content, you can re-use posts from classes were you are teac
 
     To avoid duplicate copies of content, do NOT click the option to copy all attachments
 
-    .. image:: ../img/team/classroom/no-duplicate.png
+    .. image:: ../_images/team/classroom/no-duplicate.png
 
 Use the general content
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,20 +61,20 @@ In your drive got to the “share with me" section and click on the “General C
 
     If the content has not been shared with you ask for it to any of your colleague
 
-.. image:: ../img/team/classroom/shared-with-me.png
+.. image:: ../_images/team/classroom/shared-with-me.png
 
 
 Then press :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive. 
 
-.. image:: ../img/team/classroom/pop-up.png
+.. image:: ../_images/team/classroom/pop-up.png
 
 In a classroom to reuse a file from this folder, edit the classroom content:
 
-.. image:: ../img/team/classroom/edit.png
+.. image:: ../_images/team/classroom/edit.png
 
 Then add a file from Gdrive (to make sure that you're reusing an already existing file):
 
-.. image:: ../img/team/classroom/add-file.png
+.. image:: ../_images/team/classroom/add-file.png
 
 .. note::
 

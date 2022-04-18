@@ -1,9 +1,9 @@
 {
     "alert_module": {
-        "url": "https://raw.githubusercontent.com/openforis/alert_module/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/alert_module/release/doc/en.rst"
     },
     "alos_mosaics": {
-        "url": "https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/alos_mosaics/release/doc/en.rst"
     },
     "bfast_explorer": {
         "tag": "time-series",
@@ -11,7 +11,7 @@
     },
     "bfast_gpu": {
         "tag": "time-series",
-        "url": "https://raw.githubusercontent.com/12rambau/bfast_gpu/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/bfast_gpu/release/doc/en.rst"
     },
     "bfast_r": {
         "tag": "time-series",
@@ -21,36 +21,36 @@
         "tag": "inventories"
     },
     "clip-time-series": {
-        "url": "https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/clip-time-series/release/doc/en.rst"
     },
     "coverage_analysis": {
-        "url": "https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/coverage_analysis/release/doc/en.rst"
     },
     "cusum": {
         "tag": "time-series"
     },
     "damage_proxy_map": {
         "tag": "disaster",
-        "url": "https://raw.githubusercontent.com/BuddyVolly/damage_proxy_maps/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/damage_proxy_maps/release/doc/en.rst"
     },
     "fcdm": {
-        "url": "https://raw.githubusercontent.com/12rambau/fcdm/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/fcdm/release/doc/en.rst"
     },
     "geo_processing": {},
     "gfc_wrapper_python": {
-        "url": "https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/gfc_wrapper_python/release/doc/en.rst"
     },
     "gfc_wrapper_R": {},
     "gwb": {
-        "url": "https://raw.githubusercontent.com/12rambau/gwb/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/gwb/release/doc/en.rst"
     },
     "gwl_analysis": {},
-    "import_to_gee": {
-        "url": "https://raw.githubusercontent.com/openforis/import_to_gee/master/doc/en.rst"
+    "vector_manager": {
+        "url": "https://raw.githubusercontent.com/sepal-contrib/vector_manager/release/doc/en.rst"
     },
     "planet_order": {
         "tag": "PlanetLab",
-        "url": "https://raw.githubusercontent.com/12rambau/planet-order/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/planet-order/release/doc/en.rst"
     },
     "plot_generator": {
         "tag": "inventories"
@@ -63,29 +63,33 @@
         "tag": "time-series"
     },
     "sdg_indicator": {
-        "url": "https://raw.githubusercontent.com/12rambau/sdg_indicators_module/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/release/doc/en.rst"
     },
     "sepafe": {
         "tag": "PlanetLab",
-        "url": "https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst"
     },
     "sepal_mgci": {
-        "url": "https://raw.githubusercontent.com/dfguerrerom/sepal_mgci/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst"
     },
     "sepal_pysmm": {
-        "url": "https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_pysmm/release/doc/en.rst"
     },
     "seplan": {
-        "url": "https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/se.plan/master/doc/en.rst"
     },
     "smfm_biota": {
-        "tag": "SMFM"
+        "tag": "SMFM",
+        "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_smfm_biota/release/doc/en.rst"
     },
     "smfm_deforest": {
         "tag": "SMFM"
     },
     "tmf": {},
     "zonal-analysis": {
-        "url": "https://raw.githubusercontent.com/openforis/zonal-analysis/master/doc/en.rst"
+      "url": "https://raw.githubusercontent.com/sepal-contrib/zonal-analysis/release/doc/en.rst"
+    },
+    "gee-source": {
+        "url": "https://raw.githubusercontent.com/sepal-contrib/gee_source/release/doc/en.rst"
     }
 }
