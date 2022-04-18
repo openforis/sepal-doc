@@ -4,7 +4,7 @@ Planet mosaic
 Overview 
 --------
 
-A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from different time overlay provided provided by Planet. These overlay can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells or take the maximum or minimum value. In addition, certain corrections can be made to the image to correct for clouds, snow etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create Planet mosaics on any AOI.
+A mosaic is a process of combining spatially overlapping images into an individual image. In SEPAL, you can create a composited dataset from Planet images taken at different times. The process can be done using different techniques, for example, you can choose to keep only the pixel value from the first or last image, combine the values of the overlapped pixels using a weighting algorithm, average, or use the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds/shadows, snow, etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create Planet mosaics within any area of interest.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/time-series.png
     :group: planet-mosaic-recipe
@@ -46,7 +46,7 @@ On the bottom right corner, 4 tabs are available. They will allow you to customi
 
 -   :guilabel:`AOI`: the Area of interest (AOI)
 -   :guilabel:`DAT`: the dates of the time series
--   :guilabel:`SRC`: the sources datasets of the time series
+-   :guilabel:`SRC`: the time series dataset source
 -   :guilabel:`OPT`: the filtering options
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/no_parameters.png
@@ -73,37 +73,37 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 Date
 ^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the dates of the time series used to build the mosaic image. You need to provide a start and an end date. 
+In the :guilabel:`DAT` tab, you will be asked to select the dates of the time series used to build the composited image. You need to provide a start and an end date. 
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/date.png
     :title: The date selection window
     :group: planet-mosaic-recipe
 
-click on the :btn:`<fas fa-calendar-alt>` to display the Date picker and select your date. 
+Click the :btn:`<fas fa-calendar-alt>` to display the Date picker and select your date. 
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/date_picker.png
     :title: The SEPAL datepicker as it is used in the planet mosaic tool
     :group: planet-mosaic-recipe
 
-When the selection is done click on :btn:`<fa fa-chevron-right> next` button.
+When the selection is done click :btn:`<fa fa-chevron-right> next` button.
 
 Sources
 ^^^^^^^
 
-SEPAL can use multiple data sources to create your mosaics as long as they are Planet related datasets.
+SEPAL can use multiple data sources to create your mosaics/composites as long as they are Planet related datasets.
 
-3 options are availables: :guilabel:`NICFI basemaps`, :guilabel:`Custom basemaps`, :guilabel:`Daily imagery`
+3 options are available: :guilabel:`NICFI basemaps`, :guilabel:`Custom basemaps`, :guilabel:`Daily imagery`
 
-Once your finished, click on :btn:`<fas fa-check> done` to finish the process. 
+Once you are finished, click on :btn:`<fas fa-check> done` to finish the process. 
 
 NICFI basemaps
 """"""""""""""
 
-The NICFI basemap use the level 1 NICFI data provided by SEPAL. 
+The NICFI basemap uses the level 1 NICFI data provided by SEPAL. 
 
 .. warning::
     
-    provided data are montly mosaics so your time range need to be longer than 1 month. If not only one image will be used.
+    provided data are monthly mosaics, which means that your time range needs to be longer than 1 month. Otherwise, only one image will be used.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/sources.png
     :title: The different sources available in SEPAL to build Planet mosaics
@@ -112,7 +112,7 @@ The NICFI basemap use the level 1 NICFI data provided by SEPAL.
 Custom basemaps 
 """""""""""""""
 
-Using this option the user can provide a custom :code:`ImageCollection` asset provided by Planet (such as the NICFI level 1 data provided to registered users).
+You can provide a custom :code:`ImageCollection` Planet asset (such as NICFI level 1 data provided to registered users).
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/sources_custom.png
     :title: The different sources available in SEPAL to build Planet mosaics
@@ -123,9 +123,9 @@ Daily imagery
 
 .. danger::
 
-    Only user granted access with NICFI level 2 data can use this option.
+    Only users with granted access to NICFI level 2 data can use this option.
 
-Using this option the user can provide a custom daily :code:`ImageCollection` asset provided by Planet.
+Choose this option to provide custom Planet daily :code:`ImageCollection` imagery.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/sources_level_2.png
     :title: The different sources available in SEPAL to build Planet mosaics
@@ -136,36 +136,35 @@ Options
 
 .. note::
 
-    This step is not mandatory as Planet mosaic are already sanitised.
+    This step is not mandatory due to Planet mosaics are already sanitized.
 
-SEPAL provide the user with options to customize the images used to composite the moasic raster.
-The selcted parameter will be automatically applied to the analysis so simply click on :btn:`<fas fa-times> close` to finish the customization.
+SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fas fa-times> close` button to finish the customization.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/options.png
     :title: The 3 options available in SEPAL to build Planet mosaics
     :group: planet-mosaic-recipe
 
-cloud masking
+Cloud masking
 """""""""""""
 
-Planet composites already removes clouds. Setting this to a value > 0 will remove additional clouds using GEE algorithm.
+Planet composites already remove clouds. Setting this parameter to a value greater than zero (0) will remove additional clouds using a Google Earth Engine (GEE) algorithm.
 
 Shadow masking
 """"""""""""""
 
-Planet composites already removes shadows. Setting this to a value > 0 will remove additional shadows using GEE algorithm.
+Planet composites already remove shadows. Setting this parameter to a greater value than zero (0) will remove additional shadows using a GEE algorithm.
 
-cloud buffering
+Cloud buffering
 """""""""""""""
 
--   :guilabel:`none`: Only mask the clouds. It might leave hazy pixels around masked clouds, but will minimize the amount of maxed pixels in the mosaic.
+-   :guilabel:`none`: Only mask clouds. It might leave hazy pixels around masked clouds but will minimize the amount of maxed pixels in the mosaic.
 -   :guilabel:`moderate`: Mask an additional 120m around each larger cloud. This helps prevent hazy pixels at the border of clouds to be included in the mosaic.
 -   :guilabel:`aggressive`: Mask an additional 600m around each larger cloud. This helps prevent hazy pixels at the border of clouds to be included in the mosaic.
 
 Analysis
 --------
 
-Once all the parameter have been set, the mosaic will be rendered on the fliy on screen. Multiple color combination can be displayed such as the one shown in the next figures. 
+Once all the parameters have been set, the mosaic will be rendered on the fly. Multiple color combinations can be displayed, see next figures. 
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/mosaic_rgb.png
     :title: The on-the-fly rendered mosaic displayed using red, blue, green bands
@@ -190,7 +189,7 @@ Once all the parameter have been set, the mosaic will be rendered on the fliy on
 Retrieve
 --------
 
-Clicking on the :btn:`<fas fa-cloud-download-alt>` tab will open the retrieve panel where the you can select the exportation parameters.
+Click the :btn:`<fas fa-cloud-download-alt>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/retrieve.png
     :title: the last panel of the planet mosaic: the exportation
@@ -200,11 +199,11 @@ Clicking on the :btn:`<fas fa-cloud-download-alt>` tab will open the retrieve pa
 Bands
 ^^^^^
 
-You need to select the band to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. 
+You need to select the band(s) to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. 
 
 .. tip:: 
 
-    There is no fixed rule to the band selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis.
+    There is no fixed rule to the band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis.
 
 Raw bands
 """""""""
@@ -228,12 +227,12 @@ Indexes
 Scale 
 ^^^^^
 
-You can set a custom scale for exportation by changing the value in the :code:`scale` field. Requesting a smaller resolution than images native resolution will not improve the quality of the output, just its size so keep in mind that PlanetLab data native resolution is 4.7 m.
+You can set a custom scale for exportation by changing the value in the :code:`scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, just its size so keep in mind that PlanetLab data's native resolution is 3 - 4.1 m (altitude dependent Ground Sample Distance,  `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__).
 
 Destination
 ^^^^^^^^^^^
 
-You can export the image to :guilabel:`sepal workspace` or to :guilabel:`google earth engine asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` folder, in the second one the image will be exported to your GEE account asset list. 
+You can export the mosaic composition to :guilabel:`sepal workspace` or to :guilabel: GEE as an `asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` SEPAL folder, in the second one the image will be exported to your GEE account asset list. 
 
 .. warning::
 
@@ -259,18 +258,14 @@ Once the download process is done, you can access the data in your SEPAL folders
 
 .. danger::
 
-    Understanding how images are stored in an Planet Mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you.
+    Understanding how images are stored in a Planet Mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you.
 
 The data are stored in a folder using the name of the Planet mosaic as it was set in the first section of this document. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`<PM name>_<gee tile id>.vrt` file. 
 
 .. tip:: 
 
-    The full folder with a consistent tree hierarchy is required to read the `.vrt`
+    The full folder with a consistent tree hierarchy is required to read the :code:`.vrt`
 
 .. important::
 
     Now that you have downloaded the Planet Mosaic to your SEPAL or/and GEE account, it can be retrieved to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows.
-
-
-
-
