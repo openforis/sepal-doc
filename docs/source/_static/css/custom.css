@@ -1,24 +1,10 @@
- :root {
-     
-    /*****************************************************************************
-    * Color
-    * 
-    * Colors are defined in rgb string way, "red, green, blue"
-    **/
-    --pts-color-sepal: 24, 102, 145;
-
-    --pst-color-h1: var(--pts-color-sepal);
-    --pst-color-h2: var(--pts-color-sepal);
-    --pst-color-active-navigation: var(--pts-color-sepal);
- }
-
-/*********************************************************************************
+/*******************************************************************************
 *   text justification
 *
 **/
 p {text-align: justify;}
 
-/*********************************************************************************
+/*******************************************************************************
 *   logo coloring
 *
 **/
@@ -37,14 +23,14 @@ span .fa-google:hover {color: #34a853;}
 }
 **/
 
-/*********************************************************************************
+/*******************************************************************************
 *   change the lightbox cursor
 *
 **/
 a[data-lightbox] {cursor: zoom-in;}
 a[data-lightbox] img {padding: .25em;}
 
-/*********************************************************************************
+/*******************************************************************************
 *  make the footer inlined
 *
 **/
@@ -52,10 +38,59 @@ a[data-lightbox] img {padding: .25em;}
    display: inline-block;
 }
 .footer-item:not(:last-child) {
-   border-right: 1px solid rgba(var(--pst-color-text-base), 1);
+   border-right: 1px solid var(--pst-color-text-base);
    margin-right: .5em;
    padding-right: .5em;
  }
 
+/*******************************************************************************
+* characteristic of the map
+*
+**/
+#map, #map-overlay { 
+   position: fixed;
+   top: 0;
+   left: 0;
+   margin: 0;
+   padding: 0; 
+   height: 100vh;
+   width: 100vw;
+}
 
+#map {
+   z-index: -2;
+}
+
+#map-overlay {
+   z-index: -1;
+}
+
+html[data-theme=light] #map-overlay {
+   background-color: rgba(255, 255, 255, .8);
+}
+
+html[data-theme=dark] #map-overlay {
+   background-color: rgba(18, 18, 18, .3);
+}
+
+.leaflet-container {
+   background: var(--pst-color-background) !important;
+}
+
+.lb-outerContainer {
+    background-color: var(--pst-color-background);
+
+footer {
+   background-color: var(--pst-color-background);
+}
+
+/*******************************************************************************
+* overwrite image filter in dark theme 
+* most of our images are from SEPAL which is already using a dark theme 
+* there is no need for extra contrast and dimned brightness
+*
+*/
+html[data-theme=dark] img {
+   filter: brightness(1) contrast(1);
+}
 
