@@ -92,5 +92,8 @@
     "gee-source": {
         "url": "https://raw.githubusercontent.com/sepal-contrib/gee_source/release/doc/en.rst"
     },
+    "weplan": {
+        "url": "https://raw.githubusercontent.com/sepal-contrib/weplan/release/doc/en.rst"
+    },
     "basin-river": {}
 }
