@@ -26,6 +26,9 @@ Harnessing cloud-based supercomputers and modern geospatial data infrastructures
 You said SEPAL?
 ---------------
 
+.. youtube:: niOUVE8N7wo
+    :center:
+
 SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
 SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
