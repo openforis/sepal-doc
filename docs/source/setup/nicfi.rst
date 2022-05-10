@@ -85,4 +85,4 @@ If you are not connected to your Google account or are connected via a different
 
 .. important::
 
-    For more information on how to use these high resolution data on SEPAL instances, please refer to the section of the `Planet academy <https://university.planet.com/path/nicfi>`__ dedicated to NICFI imagery. 
+    For additional information that may help when processing the NICFI/Planet high resolution imagery in SEPAL, please refer to the section of the `Planet academy <https://university.planet.com/path/nicfi>`__ dedicated to NICFI imagery. 
