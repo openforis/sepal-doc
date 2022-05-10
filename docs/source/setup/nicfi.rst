@@ -85,4 +85,4 @@ If you are not connected to your Google account or are connected via a different
 
 .. important::
 
-    Now you are ready to easily access and process the NICFI-Planet Basemaps in SEPAL!!  
+    For additional information that may help when processing the NICFI/Planet high resolution imagery in SEPAL, please refer to the section of the `Planet academy <https://university.planet.com/path/nicfi>`__ dedicated to NICFI imagery. 
