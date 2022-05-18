@@ -25,7 +25,7 @@ These overlay areas can be managed in various ways. For example, you can choose 
 Start
 -----
 
-Once the mosaic recipe is selected, SEPAL will show up the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2). 
+Once the mosaic recipe is selected, SEPAL will display the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2). 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/landing.png
     :group: optical-mosaic-recipe
@@ -49,11 +49,11 @@ The first step is to change the name of the recipe. This name will be used to na
 Parameters 
 ----------
 
-On the bottom right corner, 5 tabs are available. They will allow you to customize the time series to your needs.
+On the bottom right corner, 5 tabs are available. They will allow you to customize the mosaic creation to your needs.
 
 -   :guilabel:`AOI`: the Area of interest (AOI)
--   :guilabel:`DAT`: the dates of the time series
--   :guilabel:`SRC`: the sources datasets of the time series
+-   :guilabel:`DAT`: the target date of interest for the mosaic/composite
+-   :guilabel:`SRC`: the sources datasets of the mosaic/composite
 -   :guilabel:`SCN`: the scene selection parameters
 -   :guilabel:`CMP`: the composition parameters
 
