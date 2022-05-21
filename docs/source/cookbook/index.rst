@@ -80,6 +80,19 @@ Then click on the green :icon:`fa fa-plus-circle` button in the bottom right cor
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132481048-6149f776-a7ed-47cb-8f75-3519aa1b8f1e.png
     :title: create a recipe from available workflows
 
+Save a recipe
+-------------
+
+.. note::
+
+    Using saved recipes is the recommended way for sharing parameters to developers when debugging.
+
+Select a recipe in the main menu to dispaly it in a tab. Then click on :btn:`<fas fa-bars>` in the topright corner and select :btn:`Export recipe`. The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`.
+
+.. thumbnail:: ../_images/cookbook/index/export_recipe.png
+    :title: Export the current recipe to the local computer
+
+
 recipes
 -------
 
