@@ -34,7 +34,7 @@ These tools can be called directly from the terminal or any programming language
     
         nohup gdalinfo example.tif &
         
-    All the console outputs will be redirected to a :code:`nohup.out` in your home directory but the execution will be running in the background. Thus you will be able to safely close the terminal or even the browser window without killing your process. more information about :code:`nohup` can be found `here <https://en.wikipedia.org/wiki/Nohup`__. 
+    All the console outputs will be redirected to a :code:`nohup.out` in your home directory but the execution will be running in the background. Thus you will be able to safely close the terminal or even the browser window without killing your process. more information about :code:`nohup` can be found `here <https://en.wikipedia.org/wiki/Nohup>`__. 
     
 
 coding tools
