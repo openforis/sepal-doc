@@ -20,11 +20,22 @@ These tools can be called directly from the terminal or any programming language
     
 .. note::
 
-    the code executed previously on an existing :code:`example.tif` file.
+    The code executed previously on an existing :code:`example.tif` file.
 
     .. code-block:: console
         
         gdalinfo example.tif
+        
+.. tip::
+
+    If the code you want to execute is taking time, please consider running it in the background using :code:`nohup`.
+    
+    .. code-block:: console
+    
+        nohup gdalinfo example.tif &
+        
+    All the console outputs will be redirected to a :code:`nohup.out` in your home directory but the execution will be running in the background. Thus you will be able to safely close the terminal or even the browser window without killing your process. more information about :code:`nohup` can be found `here <https://en.wikipedia.org/wiki/Nohup>`__. 
+    
 
 coding tools
 ------------
