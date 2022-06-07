@@ -87,6 +87,10 @@ html_theme_options = {
             "icon": "fab fa-twitter"
         },
         {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/open-foris/",
+            "icon": "fab fa-linkedin"
+        {
             "name": "GIS Stackexchange",
             "url": "https://gis.stackexchange.com/questions/tagged/sepal",
             "icon": "fab fa-stack-exchange"
