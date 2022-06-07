@@ -90,6 +90,7 @@ html_theme_options = {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/company/open-foris/",
             "icon": "fab fa-linkedin"
+        },
         {
             "name": "GIS Stackexchange",
             "url": "https://gis.stackexchange.com/questions/tagged/sepal",
