@@ -7,24 +7,50 @@ The `drive` CLI is a utility that allows managing the Google Drive account from 
 Usage
 -----
 
-Upload SEPAL files
-^^^^^^^^^^^^^^^^^^
+Initialize drive connection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start an authorization token:
-
-.. code-block:: bash
-
-
-	$ drive init          
-	$ # Visit the displayed URL and paste the code.
-
-Select a local folder and use `push` command.
+Before running any of the drive commandas, you have to start a session, to do so, run the following line:
 
 .. code-block:: bash
 
-	$ drive push /home/username/image_folder/*.tif
-	$ # Confirm the changes and wait for the transfer.
+    $ drive init
 
+As result, an URL will be displayed in the terminal, visit it by copying and pasting it in your browser. Log-in to your Google account and, "trust the connection" by click the "allow" button. An authorization code will be displayed, copy it and paste it in the Sepal terminal. Now you are ready to use the :code:`drive` CLI tool.
+
+.. note::
+    
+    The authorization token will expire on every session, this process has to be repeated each time you want to use the :code:`drive` command tool.
+
+Upload files
+------------
+
+You can upload files from your SEPAL environment by using the :code:`push` command. 
+
+.. code-block:: bash
+
+    $ drive push /home/username/image_folder/*.tif
+    $ # confirm the changes and wait for the transfer.
+    
+    $ # check additional parameters by using -help flag
+    $ drive push -h
+    
+
+
+Download files
+--------------
+
+To download files, use the :code:`pull` command. This command will create files that doesn't exist locally but does remotely. 
+
+.. code-block:: bash
+    
+    $ cd my_folder
+    ~/my_folder$ drive pull 
+    
+    $ # check additional parameters by using -help flag
+    $ drive pull -h
+
+This command will syncronize the files that are not present in your sepal session but are present in your Google Drive account folder.
 
 Additional commands
 ^^^^^^^^^^^^^^^^^^^
