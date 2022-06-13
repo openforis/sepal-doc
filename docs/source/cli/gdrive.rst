@@ -16,7 +16,7 @@ Before running any of the drive commands, you have to start a session, to do so,
 
     $ drive init
 
-As result, an URL will be displayed in the terminal, visit it by copying and pasting it in your browser. Log-in to your Google account and, "trust the connection" by click the "allow" button. An authorization code will be displayed, copy it and paste it in the Sepal terminal. Now you are ready to use the :code:`drive` CLI tool.
+As result, an URL will be displayed in the terminal, visit it by copying and pasting it in your browser. Log-in to your Google account and, "trust the connection" by clicking the "allow" button. An authorization code will be displayed, copy it and paste it into the Sepal terminal. Now you are ready to use the :code:`drive` CLI tool.
 
 .. note::
     
