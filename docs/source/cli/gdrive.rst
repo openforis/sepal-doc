@@ -10,7 +10,7 @@ Usage
 Initialize drive connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before running any of the drive commandas, you have to start a session, to do so, run the following line:
+Before running any of the drive commands, you have to start a session, to do so, run the following line:
 
 .. code-block:: bash
 
