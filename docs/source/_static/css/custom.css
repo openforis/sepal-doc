@@ -1,16 +1,9 @@
- :root {
-     
-    /*****************************************************************************
-    * Color
-    * 
-    * Colors are defined in rgb string way, "red, green, blue"
-    **/
-    --pts-color-sepal: 24, 102, 145;
-
-    --pst-color-h1: var(--pts-color-sepal);
-    --pst-color-h2: var(--pts-color-sepal);
-    --pst-color-active-navigation: var(--pts-color-sepal);
- }
+/*********************************************************************************
+*   custom colors
+*
+**/
+html[data=dark]{--pst-color-primary: rgb(24, 102, 145);}
+html[data=light]{--pst-color-primary: rgb(24, 102, 145);}
 
 /*********************************************************************************
 *   text justification
@@ -53,6 +46,12 @@ a[data-lightbox] img {padding: .25em;}
    margin-right: .5em;
    padding-right: .5em;
  }
+
+/*********************************************************************************
+*  prevent brighness changes
+*
+**/
+html[data-theme=dark]{filter: none;}
 
 
 
