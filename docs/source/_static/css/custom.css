@@ -2,8 +2,8 @@
 *   custom colors
 *
 **/
-html[data=dark]{--pst-color-primary: rgb(24, 102, 145);}
-html[data=light]{--pst-color-primary: rgb(24, 102, 145);}
+html[data-theme=dark]{--pst-color-primary: rgb(24, 102, 145);}
+html[data-theme=light]{--pst-color-primary: rgb(24, 102, 145);}
 
 /*******************************************************************************
 *   text justification
