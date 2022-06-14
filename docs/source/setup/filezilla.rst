@@ -37,12 +37,10 @@ From there, the file browser and File menu enable you to work with files and dir
 Files can be uploaded to the current directory of the file browser by dragging and dropping files onto the file browser, or by clicking the “Upload Files” button at the top of the file browser:
 
 .. youtube:: 1bd2QHqQSH4
-    :align: center
 
 Any file in Jupyterlab can be downloaded by right-clicking its name in the file browser and selecting :code:`Download` from the context menu:
 
 .. youtube:: Wl7Ozl6rMcc
-    :align: center
 
 .. seealso:: 
 

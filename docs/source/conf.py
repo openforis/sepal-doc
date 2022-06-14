@@ -34,12 +34,12 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.spelling',
     'sphinxcontrib.images',
+    'sphinxcontrib.icon',
+    'sphinxcontrib.btn',
+    'sphinxcontrib.youtube',
     'notfound.extension',
-    '_extentions.video',
     '_extentions.line_break',
-    '_extentions.custom_edit',
-    '_extentions.icon',
-    '_extentions.btn'
+    '_extentions.custom_edit'
 ]
 
 # spelling options
@@ -75,7 +75,6 @@ html_theme_options = {
     "navigation_with_keys": False,
     "show_nav_level": 2,
     "show_prev_next": False,
-    "default_mode": "dark",
     "icon_links": [
         {
             "name": "GitHub",
@@ -86,6 +85,11 @@ html_theme_options = {
             "name": "Twitter",
             "url": "https://twitter.com/OpenForis",
             "icon": "fab fa-twitter"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/open-foris/",
+            "icon": "fab fa-linkedin"
         },
         {
             "name": "GIS Stackexchange",
@@ -104,6 +108,7 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
+    "footer_items": ["copyright", "sphinx-version", "licence", "map"]
 }
 
 html_context = {
@@ -111,6 +116,7 @@ html_context = {
     "github_repo": "sepal-doc",
     "github_version": "master",
     "doc_path": "docs/source",
+    "default_mode": "auto",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -120,7 +126,16 @@ html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = ["css/custom.css"]
+html_css_files = [
+    "css/custom.css",
+    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+]
+
+html_js_files = [
+    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js",
+    "js/custom.js"
+]
+
 
 # -- Options for images -------------------------------------------------------
 
@@ -193,6 +208,25 @@ for name in module_list:
         
     # prompt for the readthedoc build
     print(f"{name} documentation have been copied to the dwn folder")
+    
+#  -- copy the requirements of the R and Python environment to data ------------
+
+data_dir = source_dir/"data"
+
+# R environment
+print(f"copy R packages from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/script/init_r_packages.sh", 
+    data_dir/"r_packages.sh"
+)
+
+# Python environment
+print(f"copy Python libs from to data folder")
+urlretrieve (
+    "https://raw.githubusercontent.com/openforis/sepal/master/modules/geospatial-toolkit/config/requirements.txt", 
+    data_dir/"python_lib.txt"
+)
+
 
 
 

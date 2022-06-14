@@ -7,11 +7,13 @@ Overview
 A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together.
 This can be achieved on contiguous rasters (left) but also on overlapping images (right). 
 
-.. image:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
+.. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
     :width: 49%
+    :group: optical-mosaic-recipe
 
-.. image:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
     :width: 49%
+    :group: optical-mosaic-recipe
 
 These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells or take the maximum or minimum value. In addition, certain corrections can be made to the image to correct for clouds, snow etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics on any AOI.
 
@@ -23,7 +25,7 @@ These overlay areas can be managed in various ways. For example, you can choose 
 Start
 -----
 
-Once the mosaic recipe is selected, SEPAL will show up the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2). 
+Once the mosaic recipe is selected, SEPAL will display the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2). 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/landing.png
     :group: optical-mosaic-recipe
@@ -47,11 +49,11 @@ The first step is to change the name of the recipe. This name will be used to na
 Parameters 
 ----------
 
-On the bottom right corner, 5 tabs are available. They will allow you to customize the time series to your needs.
+On the bottom right corner, 5 tabs are available. They will allow you to customize the mosaic creation to your needs.
 
 -   :guilabel:`AOI`: the Area of interest (AOI)
--   :guilabel:`DAT`: the dates of the time series
--   :guilabel:`SRC`: the sources datasets of the time series
+-   :guilabel:`DAT`: the target date of interest for the mosaic/composite
+-   :guilabel:`SRC`: the sources datasets of the mosaic/composite
 -   :guilabel:`SCN`: the scene selection parameters
 -   :guilabel:`CMP`: the composition parameters
 

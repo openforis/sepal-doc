@@ -225,7 +225,7 @@ Here is an example of a compatible point file:
 
 .. csv-table::
    :header: Id, x, y
-   :widths: 100%
+   :width: 100%
    :align: center
 
    1, -74.0, 4.0

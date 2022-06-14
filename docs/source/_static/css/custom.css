@@ -1,40 +1,35 @@
-/*********************************************************************************
+/*******************************************************************************
 *   custom colors
 *
 **/
 html[data=dark]{--pst-color-primary: rgb(24, 102, 145);}
 html[data=light]{--pst-color-primary: rgb(24, 102, 145);}
 
-/*********************************************************************************
+/*******************************************************************************
 *   text justification
 *
 **/
 p {text-align: justify;}
 
-/*********************************************************************************
+/*******************************************************************************
 *   logo coloring
 *
 **/
-i.fa-twitter:hover {color: #1da1f2;}
-i.fa-youtube:hover {color: #ff0000;}
-i.fa-github:hover {color: #333;}
-i.fa-stack-exchange:hover {color: #1e5397;}
-i.fa-google:hover {
-  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
+span .fa-twitter:hover {color: #1da1f2;}
+span .fa-youtube:hover {color: #ff0000;}
+span .fa-github:hover {color: #333;}
+span .fa-stack-exchange:hover {color: #1e5397;}
+span .fa-google:hover {color: #34a853;}
+span .fa-linkedin:hover {color: #0072b1;}
 
-/*********************************************************************************
+/*******************************************************************************
 *   change the lightbox cursor
 *
 **/
 a[data-lightbox] {cursor: zoom-in;}
 a[data-lightbox] img {padding: .25em;}
 
-/*********************************************************************************
+/*******************************************************************************
 *  make the footer inlined
 *
 **/
@@ -42,7 +37,7 @@ a[data-lightbox] img {padding: .25em;}
    display: inline-block;
 }
 .footer-item:not(:last-child) {
-   border-right: 1px solid rgba(var(--pst-color-text-base), 1);
+   border-right: 1px solid var(--pst-color-text-base);
    margin-right: .5em;
    padding-right: .5em;
  }
@@ -53,5 +48,45 @@ a[data-lightbox] img {padding: .25em;}
 **/
 html[data-theme=dark]{filter: none;}
 
+/*******************************************************************************
+* characteristic of the map
+*
+**/
+#map, #map-overlay { 
+   position: fixed;
+   top: 0;
+   left: 0;
+   margin: 0;
+   padding: 0; 
+   height: 100vh;
+   width: 100vw;
+}
 
+#map {
+   z-index: -2;
+}
+
+#map-overlay {
+   z-index: -1;
+}
+
+html[data-theme=light] #map-overlay {
+   background-color: rgba(255, 255, 255, .8);
+}
+
+html[data-theme=dark] #map-overlay {
+   background-color: rgba(18, 18, 18, .3);
+}
+
+.leaflet-container {
+   background: var(--pst-color-background) !important;
+}
+
+.lb-outerContainer {
+    background-color: var(--pst-color-background);
+}
+
+footer {
+   background-color: var(--pst-color-background);
+}
 

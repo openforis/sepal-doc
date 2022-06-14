@@ -63,12 +63,10 @@ Here you'll find an example:
     .. youtube:: Ub6N8aWThw4
         :height: 315
         :width: 560
-        :align: start
 
 .. youtube:: Ub6N8aWThw4
     :height: 315
     :width: 560
-    :align: start
 
 line-break
 """"""""""

@@ -287,10 +287,10 @@ The time series will use a single observation for each pixel. This observation c
         -   :math:`0.3037 (band 1) + 0.2793 (band 2) + 0.4743 (band 3) + 0.5585 (band 4) + 0.5082 (band 5) + 0.1863 (band 7)`
     *   -   :guilabel:`greeness`
         -   greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`−0.2848 (band 1) − 0.2435 (band 2) − 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) − 0.1800 (band 7)`
+        -   :math:`-0.2848 (band 1) - 0.2435 (band 2) - 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) - 0.1800 (band 7)`
     *   -   :guilabel:`wetness`
         -   wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) − 0.7112 (band 5) − 0.4572 (band 7)`
+        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) - 0.7112 (band 5) - 0.4572 (band 7)`
     *   -   :guilabel:`fourth`
         -   fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
         -
