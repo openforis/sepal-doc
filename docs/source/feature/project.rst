@@ -58,7 +58,7 @@ Recipes
 
 When entering in the process interface by default no projects are selected, meaning that the user will see all the recipes available in its SEPAL account. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`.
 
-.. thumbnail:: ../_images/feature/project/all-recipies.png
+.. thumbnail:: ../_images/feature/project/all-recipes.png
     :title: All the recipies available in one account
     :group: recipe-process
     :align: center
