@@ -2850,7 +2850,7 @@ Now you know:
 -   How to use version control options for your project!
 -   How to report your area estimation project
 
-.. spelling::
+.. spelling:word-list::
 
     AmazonClassification
     sae

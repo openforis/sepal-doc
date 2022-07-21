@@ -22,7 +22,7 @@ We will be happy to receive contributions from people that use this documentatio
     filezilla
     nicfi
     password
-
-.. spelling::
+    
+.. spelling:word-list::
 
     filezilla

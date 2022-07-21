@@ -205,7 +205,7 @@ First go back to the **zone 1** panel "asset" and click on any asset in your ass
 
 if you click on the :code:`copy link` button you will copy the link to the clipboard and you'll be able to paste it in SEPAL. If you want to share this asset to other people, you need to give them this link (the one you just copied to clipboard) and authorized them to use it. For this purpose, click on the :code:`share` button of the popup and choose between the different sharing options. 
 
-.. spelling::
+.. spelling:word-list::
 
     galatheetest
 

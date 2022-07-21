@@ -4639,7 +4639,7 @@ Here you can find the downloaded projection definition file for the UTM zone 20N
     PARAMETER["false northing" ,0] , AUTHORITY["EPSG" ,"32620"] ,
     A X I S [ "Easting" , EAST ] , AXIS["Northing" ,NORTH]]
 
-.. spelling::
+.. spelling:word-list::
 
     newcol
     colortable
