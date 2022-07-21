@@ -6,4 +6,4 @@ sphinxcontrib-spelling
 git+https://github.com/12rambau/images.git@gif#egg=sphinxcontrib-images
 sphinx-icon
 sphinx-btn
-sphinxcontrib-youtube
+git+https://github.com/12rambau/youtube.git@sepal-bug#egg=sphinxcontrib-youtube
