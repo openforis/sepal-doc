@@ -227,6 +227,10 @@ urlretrieve (
     data_dir/"python_lib.txt"
 )
 
+# -- Option for Latex output ---------------------------------------------------
 
+# create a custom sphinx output for the youtube and vimeo video
+youtube_cmd = r"\newcommand{\sphinxcontribyoutube}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}" + "\n"
+vimeo_cmd = r"\newcommand{\sphinxcontribvimeo}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}" + "\n"
 
-
+latex_elements = {"preamble": youtube_cmd + vimeo_cmd}
