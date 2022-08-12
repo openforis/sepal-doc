@@ -34,7 +34,7 @@ Project
     
     For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed.
     
-To create a project, click on :btn:`<fas fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fas fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fas fa-check> Apply` to validate it. The newly created project will apear in the list. 
+To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fas fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fas fa-check> Apply` to validate it. The newly created project will apear in the list. 
 
 .. thumbnail:: ../_images/feature/project/new-project.png
     :title: project management popup windows
