@@ -1,7 +1,14 @@
 .. figure:: _images/sepal_header.png
 
-Welcome to SEPAL's documentation!
-=================================
+.. The page title must be in rST for it to show in next/prev page buttons.
+   Therefore we add a special style rule to only this page that hides h1 tags
+
+.. raw:: html
+
+    <style type="text/css">h1 {display:none;}</style>
+
+SEPAL
+=====
 
 .. toctree::
    :maxdepth: 1

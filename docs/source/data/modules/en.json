@@ -67,7 +67,7 @@
     },
     "sepafe": {
         "tag": "PlanetLab",
-        "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst"
+        "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/master/doc/en.rst"
     },
     "sepal_mgci": {
         "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst"
