@@ -37,6 +37,7 @@ extensions = [
     'sphinxcontrib.icon',
     'sphinxcontrib.btn',
     'sphinxcontrib.youtube',
+    'sphinx_design',
     'notfound.extension',
     '_extentions.line_break',
     '_extentions.custom_edit'
