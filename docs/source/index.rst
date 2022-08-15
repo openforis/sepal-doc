@@ -1,5 +1,5 @@
-.. figure:: _images/sepal_header.png
-
+.. figure:: _images/sepal.png
+    :class: main-logo
 .. The page title must be in rST for it to show in next/prev page buttons.
    Therefore we add a special style rule to only this page that hides h1 tags
 
@@ -22,21 +22,24 @@ SEPAL
    Features<feature/index>
     <team/index>
 
+.. rst-class:: text-center
 
-SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. 
-SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. 
-Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program.
+    SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. 
+    SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. 
+    Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program.
+
+    SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
+
+.. youtube:: niOUVE8N7wo
+    :align: center
+
+
 
 .. image:: _images/logos/openForis.png
     :target: http://www.openforis.org
 
-You said SEPAL?
----------------
 
-SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
-.. youtube:: niOUVE8N7wo
-    :align: center
 
 SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
 
