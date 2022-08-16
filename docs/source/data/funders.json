@@ -1,0 +1,20 @@
+{
+    "fao": {
+        "html": "http://www.fao.org",
+        "dark": "dark/fao.png",
+        "light": "light/fao.png",
+        "size": "xl"
+    },
+    "openforis": {
+        "html": "http://www.openforis.org",
+        "light": "light/openforis.png",
+        "dark": "dark/openforis.png",
+        "size": "xl"
+    },
+    "nicfi": {
+        "html": "https://www.nicfi.no",
+        "light": "light/nicfi.png",
+        "dark": "dark/nicfi.png",
+        "size": "xl"
+    }
+}

@@ -40,7 +40,8 @@ extensions = [
     'sphinx_design',
     'notfound.extension',
     '_extentions.line_break',
-    '_extentions.custom_edit'
+    '_extentions.custom_edit',
+    '_extentions.logos',
 ]
 
 # spelling options
