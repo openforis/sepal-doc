@@ -6,5 +6,5 @@ sphinxcontrib-spelling
 sphinxcontrib-images
 sphinx-icon
 sphinx-btn
-sphinxcontrib-youtube
 sphinx_design
+git+https://github.com/sphinx-contrib/youtube.git
