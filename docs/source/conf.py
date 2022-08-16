@@ -70,9 +70,7 @@ html_theme = 'pydata_sphinx_theme'
 html_logo = os.path.abspath('_images/sepal.png') 
 html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
-html_sidebars = {
-    "**": ["search-field", "sidebar-nav-bs"]
-}
+html_sidebars = {"index": []}
 html_theme_options = {
     "header_links_before_dropdown": 6,
     "navigation_with_keys": False,
