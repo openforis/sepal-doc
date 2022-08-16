@@ -1,5 +1,9 @@
-.. figure:: _images/sepal.png
-    :class: main-logo
+.. image:: _images/sepal.png
+    :class: main-logo only-light
+
+.. image:: _images/sepal.png
+    :class: main-logo only-dark
+
 .. The page title must be in rST for it to show in next/prev page buttons.
    Therefore we add a special style rule to only this page that hides h1 tags
 
