@@ -1,3 +1,5 @@
+:html_theme.sidebar_secondary.remove:
+
 .. figure:: _images/sepal.png
     :class: main-logo only-light
 
