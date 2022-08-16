@@ -1,7 +1,7 @@
-.. image:: _images/sepal.png
+.. figure:: _images/sepal.png
     :class: main-logo only-light
 
-.. image:: _images/sepal.png
+.. figure:: _images/sepal.png
     :class: main-logo only-dark
 
 .. The page title must be in rST for it to show in next/prev page buttons.

@@ -2,9 +2,8 @@
 *   custom elements
 *
 **/
-.main-logo {
-   max-width: 500px;
-}
+.main-logo {max-width: 500px;}
+.bd-header-article {background-color: transparent !important;}
 
 
 /*******************************************************************************
