@@ -3,7 +3,7 @@
         "html": "https://ec.europa.eu/jrc/en",
         "dark": "dark/jrc.png",
         "light": "light/jrc.png",
-        "size": "xl"
+        "size": "md"
     },
     "esa": {
         "html": "https://www.esa.int",
@@ -21,7 +21,7 @@
         "html": "https://um.fi/frontpage",
         "dark": "dark/finland.png",
         "light": "light/finland.png",
-        "size": "xl"
+        "size": "md"
     },
     "germany": {
         "html": "https://www.bmu.de/en/",
@@ -33,49 +33,49 @@
         "html": "http://www.fao.org/gfoi/home/en/",
         "dark": "dark/gfoi.png",
         "light": "light/gfoi.png",
-        "size": "xl"
+        "size": "md"
     },
     "google": {
         "html": "https://about.google/intl/en-US/",
         "dark": "dark/google.png",
         "light": "light/google.png",
-        "size": "xl"
+        "size": "md"
     },
     "jaxa": {
         "html": "https://global.jaxa.jp",
         "dark": "dark/jaxa.png",
         "light": "light/jaxa.png",
-        "size": "xl"
+        "size": "md"
     },
     "jica": {
         "html": "https://www.jica.go.jp/english/index.html",
         "dark": "dark/jica.png",
         "light": "light/jica.png",
-        "size": "xl"
+        "size": "md"
     },
     "nasa": {
         "html": "https://www.nasa.gov",
         "dark": "dark/nasa.png",
         "light": "light/nasa.png",
-        "size": "xl"
+        "size": "md"
     },
     "kfw": {
         "html": "https://www.kfw.de/kfw.de-2.html",
         "dark": "dark/kfw.png",
         "light": "light/kfw.png",
-        "size": "xl"
+        "size": "md"
     },
     "sivacarbon": {
         "html": "https://www.silvacarbon.org",
         "dark": "dark/sivacarbon.png",
-        "light": "light/sivacarbon.png",
+        "light": "light/silvacarbon.png",
         "size": "xl"
     },
     "servir": {
         "html": "https://www.servirglobal.net",
         "dark": "dark/servir.png",
         "light": "light/servir.png",
-        "size": "xl"
+        "size": "md"
     },
     "sig": {
         "html": "https://sig-gis.com",
@@ -93,6 +93,6 @@
         "html": "https://www.worldbank.org/en/home",
         "dark": "dark/worldbank.png",
         "light": "light/worldbank.png",
-        "size": "xl"
+        "size": "md"
     }
 }

@@ -23,7 +23,7 @@ class Logos(Directive):
     def run(self):
         
         # accommodate different logo shapes (width values in rem)
-        sizes = {"xs": 2, "sm": 2.5, "md": 3, "lg": 4.5, "xl": 5, "xxl": 6}
+        sizes = {"md": 6, "lg": 4.5, "xl": 8, "xxl": 20}
         
         # get the env 
         env = self.state.document.settings.env

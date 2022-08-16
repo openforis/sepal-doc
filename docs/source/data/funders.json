@@ -3,18 +3,18 @@
         "html": "http://www.fao.org",
         "dark": "dark/fao.png",
         "light": "light/fao.png",
-        "size": "xl"
+        "size": "xxl"
     },
     "openforis": {
         "html": "http://www.openforis.org",
         "light": "light/openforis.png",
         "dark": "dark/openforis.png",
-        "size": "xl"
+        "size": "xxl"
     },
     "nicfi": {
         "html": "https://www.nicfi.no",
         "light": "light/nicfi.png",
         "dark": "dark/nicfi.png",
-        "size": "xl"
+        "size": "xxl"
     }
 }
