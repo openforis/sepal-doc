@@ -1,7 +1,7 @@
 SEPAL team documentation
 ========================
 
-.. include:: disclaimer.rst
+.. include:: ../_templates/disclaimer.rst
 
 .. toctree::
     :maxdepth: 1

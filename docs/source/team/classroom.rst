@@ -1,4 +1,4 @@
-.. include:: disclaimer.rst
+.. include:: ../_templates/disclaimer.rst
 
 Google classroom
 ================
