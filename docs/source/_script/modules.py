@@ -106,7 +106,7 @@ def get_tags():
             for m in secondary_modules:
                 link = f":doc:`dwn/{m}`"
                 desc = module_list[m].get("description", "...")
-                f.write(f"    {link},'{desc}'\n")
+                f.write(f'    {link},"{desc}"\n')
             f.write("\n")
                 
         # prompt for the readthedoc build
