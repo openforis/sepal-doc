@@ -143,5 +143,5 @@ docs/source/modules/*.rst
 .DS_Store 
 
 # environment files
-docs/source/data/python_lib.txt
-docs/source/data/r_packages.sh
+docs/source/_data/python_lib.txt
+docs/source/_data/r_packages.sh

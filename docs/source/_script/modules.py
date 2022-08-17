@@ -18,7 +18,7 @@ doc_template = template_dir/"no_module.rst"
 index_template = template_dir/"index.rst"
 
 # data 
-module_json = source_dir/"data"/'modules'/'en.json'
+module_json = source_dir/"_data"/'modules'/'en.json'
 no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/_templates/no_module.rst"
 
 # destination file shared by the methods

@@ -26,7 +26,7 @@ Description
 
 The SEPAL python environment is not empty and embed numerous librairies. They are listed here: 
 
-.. literalinclude:: ../data/python_lib.txt
+.. literalinclude:: ../_data/python_lib.txt
     :language: sh
 
 Run :code:`pip freeze | grep <name of your lib>` to check if it's already installed. 

@@ -1,4 +1,4 @@
-.. include:: disclaimer.rst
+.. include:: ../_templates/disclaimer.rst
 
 Google classroom
 ================
@@ -83,74 +83,3 @@ Then add a file from Gdrive (to make sure that you're reusing an already existin
 .. danger:: 
 
     All the team members have the right to edit this file, mistakes will impact all of us and all the already existing classrooms that use this file.
-
-List of available Classes
--------------------------
-
-.. tip:: 
-
-    If you have not been added to one of this class and you need to use it's content send an email to `sepal.classroom@gmail.com <mailto:sepal.classroom@gmail.com>`_ and you'll be add as a teacher
-
-General classroom
-^^^^^^^^^^^^^^^^^
-
-.. warning::
-
-    If you need or want to create a new classroom follow the steps described in the usage section. Add the language at the beginning of your class name to help the maintainers of the google account to order things. instead of "SEPAL Intro", you'll set "EN - SEPAL Intro".
-
-.. tip::
-
-    These classroom are intended to stay generic and reusable. You can use them in any of your own classroom and modify them to reflect the latest updates to the platform.
-
-English
-"""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/general/en.csv
-
-French
-""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/general/fr.csv
-
-Spanish
-"""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/general/es.csv
-
-Portuguese
-""""""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/general/pr.csv
-
-Project classroom
-^^^^^^^^^^^^^^^^^
-
-English
-"""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/project/en.csv
-
-French
-""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/project/fr.csv
-
-Spanish
-"""""""
-
-.. csv-table::
-    :header-rows: 1
-    :file: ../data/project/es.csv
-
