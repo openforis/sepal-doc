@@ -11,8 +11,11 @@
 
 .. raw:: html
 
-    <style type="text/css">h1 {display:none;}</style>
-    <style type="text/css">h2 {text-align:center;}</style>
+    <style type="text/css">
+        h1 {display:none;}
+        h2 {text-align:center;}
+        .bd-content {max-width: none;}
+    </style>  
 
 SEPAL
 =====
