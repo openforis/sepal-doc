@@ -10,7 +10,7 @@
         "url": "https://raw.githubusercontent.com/12rambau/bfast-explorer/master/md/tutorial.rst"
     },
     "bfast_gpu": {
-        "tag": ["time-series"],
+        "tag": ["time-series", "restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/bfast_gpu/release/doc/en.rst"
     },
     "bfast_r": {
@@ -21,13 +21,14 @@
         "tag": ["inventories"]
     },
     "clip-time-series": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/clip-time-series/release/doc/en.rst"
     },
     "coverage_analysis": {
         "url": "https://raw.githubusercontent.com/sepal-contrib/coverage_analysis/release/doc/en.rst"
     },
     "cusum": {
-        "tag": ["time-series"]
+        "tag": ["time-series", "restoration"]
     },
     "damage_proxy_map": {
         "tag": ["disaster"],
@@ -42,6 +43,7 @@
     },
     "gfc_wrapper_R": {},
     "gwb": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/gwb/release/doc/en.rst"
     },
     "gwl_analysis": {},
@@ -63,6 +65,7 @@
         "tag": ["time-series"]
     },
     "sdg_indicator": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/release/doc/en.rst"
     },
     "sepafe": {
@@ -70,12 +73,15 @@
         "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/master/doc/en.rst"
     },
     "sepal_mgci": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst"
     },
     "sepal_pysmm": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/sepal_pysmm/release/doc/en.rst"
     },
     "seplan": {
+        "tag": ["restoration"],
         "url": "https://raw.githubusercontent.com/sepal-contrib/se.plan/master/doc/en.rst"
     },
     "smfm_biota": {
