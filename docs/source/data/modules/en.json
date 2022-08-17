@@ -102,6 +102,7 @@
         "url": "https://raw.githubusercontent.com/sepal-contrib/weplan/release/doc/en.rst"
     },
     "basin-river": {
+        "description": "Interactive development environment for Jupyter notebooks, code, and data.",
         "url": "https://raw.githubusercontent.com/sepal-contrib/basin-rivers/master/doc/en.rst"
         
     }

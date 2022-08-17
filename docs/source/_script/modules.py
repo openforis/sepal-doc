@@ -104,7 +104,9 @@ def get_tags():
             f.write("\n\n")
             f.write(".. csv-table::\n\n")
             for m in secondary_modules:
-                f.write(f'    :doc:`dwn/{m}`,...\n')
+                link = f":doc:`dwn/{m}`"
+                desc = module_list[m].get("description", "...")
+                f.write(f"    {link},'{desc}'\n")
             f.write("\n")
                 
         # prompt for the readthedoc build
