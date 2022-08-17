@@ -5,6 +5,8 @@
 .main-logo {max-width: 500px;}
 .bd-header-article {background-color: transparent !important;}
 .bd-content .sd-card {background-color: var(--pst-color-background);}
+@media (min-width: 959.98px){.bd-sidebar-primary {background-color: transparent;}}
+@media (min-width: 1199.98px){.bd-sidebar-secondary {background-color: transparent;}}
 
 /*******************************************************************************
 *   prevent pydata from adding extra background colors to my images 
