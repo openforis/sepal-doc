@@ -54,9 +54,7 @@ a[data-lightbox] img {padding: .25em;}
 *  make the footer inlined
 *
 **/
-.footer-item {
-   display: inline-block;
-}
+.footer-item {display: inline-block;}
 .footer-item:not(:last-child) {
    border-right: 1px solid var(--pst-color-text-base);
    margin-right: .5em;
@@ -83,31 +81,11 @@ html[data-theme=dark]{filter: none;}
    width: 100vw;
 }
 
-#map {
-   z-index: -2;
-}
-
-#map-overlay {
-   z-index: -1;
-}
-
-html[data-theme=light] #map-overlay {
-   background-color: rgba(255, 255, 255, .8);
-}
-
-html[data-theme=dark] #map-overlay {
-   background-color: rgba(18, 18, 18, .3);
-}
-
-.leaflet-container {
-   background: var(--pst-color-background) !important;
-}
-
-.lb-outerContainer {
-    background-color: var(--pst-color-background);
-}
-
-footer {
-   background-color: var(--pst-color-background);
-}
+#map {z-index: -2;}
+#map-overlay {z-index: -1;}
+html[data-theme=light] #map-overlay {background-color: rgba(255, 255, 255, .8);}
+html[data-theme=dark] #map-overlay {background-color: rgba(18, 18, 18, .3);}
+.leaflet-container {background: var(--pst-color-background) !important;}
+.lb-outerContainer {background-color: var(--pst-color-background);}
+footer {background-color: var(--pst-color-background);}
 
