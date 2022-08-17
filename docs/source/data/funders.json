@@ -9,7 +9,7 @@
         "html": "http://www.openforis.org",
         "light": "light/openforis.png",
         "dark": "dark/openforis.png",
-        "size": "xxl"
+        "size": "xl"
     },
     "nicfi": {
         "html": "https://www.nicfi.no",

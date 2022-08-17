@@ -7,4 +7,5 @@ sphinxcontrib-images
 sphinx-icon
 sphinx-btn
 sphinx_design
+sphinx-togglebutton
 git+https://github.com/sphinx-contrib/youtube.git

@@ -12,6 +12,7 @@
 .. raw:: html
 
     <style type="text/css">h1 {display:none;}</style>
+    <style type="text/css">h2 {text-align:center;}</style>
 
 SEPAL
 =====
@@ -82,7 +83,9 @@ SEPAL
 Funders
 -------
 
-SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway.
+.. rst-class:: text-center
+
+    SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway.
 
 .. logos:: funders
 
