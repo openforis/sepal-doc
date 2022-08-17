@@ -15,7 +15,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 sys.path.insert(0, os.path.abspath('.'))
+
 from _script import environment
+from _script import modules
 
 
 # -- Project information -----------------------------------------------------
@@ -148,69 +150,9 @@ images_config = {
 
 # -- Copy the modules documentation ------------------------------------------
 
-from urllib.request import urlretrieve
-from shutil import copy
-import json 
-
-# dirs 
-source_dir = Path(__file__).expanduser().parent
-module_dir = source_dir/"modules"
-dwn_dir = module_dir/"dwn"
-template_dir = source_dir/"_templates"
-
-# templates
-tag_template = template_dir/"module_tag.rst"
-doc_template = template_dir/"no_module.rst"
-index_template = template_dir/"index.rst"
-
-# data 
-module_json = source_dir/"data"/'modules'/'en.json'
-no_module_url = "https://github.com/openforis/sepal-doc/blob/master/docs/source/_templates/no_module.rst"
-
-# flush the modules folder 
-[f.unlink() for f in module_dir.glob("*.rst")]
-
-# dst files 
-module_index = module_dir/"index.rst"
-copy(index_template, module_index)
-
-with module_json.open() as json_file:
-    module_list = json.load(json_file)
-
-for name in module_list:
-    
-    dst = dwn_dir / f'{name}.rst'
-    
-    file = module_list[name].pop("url", no_module_url)
-    if file != no_module_url: 
-        urlretrieve (file, dst)
-    else:
-        copy(doc_template, dst)
-        txt = dst.read_text()
-        txt = txt.replace("Module_name", name).replace("=", "="*len(name))
-        dst.write_text(txt)
-        
-    with dst.open("a") as f: 
-        f.writelines(["", f".. custom-edit:: {file}"])
-        
-    # create a tag stub file 
-    tag = module_list[name].pop("tag", "other")
-    tag_file = module_dir/f"{tag}.rst"
-    
-    if not tag_file.is_file():
-        copy(tag_template, tag_file)
-        txt = tag_file.read_text()
-        txt = txt.replace("module_tag", tag).replace("=", "="*len(tag))
-        tag_file.write_text(txt)
-        
-        with module_index.open("a") as f:
-            f.write(f"\n    {tag}")
-            
-    with tag_file.open('a') as f:
-        f.write(f"\n    dwn/{name}")
-        
-    # prompt for the readthedoc build
-    print(f"{name} documentation have been copied to the dwn folder")
+modules.get_index()
+modules.get_modules()
+modules.get_tags()
     
 #  -- copy the requirements of the R and Python environment to data ------------
 
