@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.request import urlretrieve
 
 source_dir = Path(__file__).expanduser().parents[1]
-data_dir = source_dir/"data"
+data_dir = source_dir/"_data"
 sepal_url = "https://raw.githubusercontent.com/openforis/sepal/master/"
 
 # R environment

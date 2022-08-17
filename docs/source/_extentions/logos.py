@@ -34,10 +34,10 @@ class Logos(Directive):
         html += '\t<div id="funder-logos" class="d-flex flex-wrap flex-row justify-content-center align-items-center">\n'
         
         # get the funder list as a dict 
-        data_dir = Path(__file__).parents[1]/"data"
+        data_dir = Path(__file__).parents[1]/"_data"/"logo"
         logo_file = data_dir/f"{self.arguments[0]}.json"
-        funders = json.loads(logo_file.read_text())
-        for k, v in funders.items():
+        logos = json.loads(logo_file.read_text())
+        for k, v in logos.items():
             
             # get informations from the parameters
             size = sizes[v["size"]]

@@ -26,7 +26,7 @@ Description
 
 The SEPAL :code:`R` environment is not empty and embed numerous packages:
 
-.. literalinclude:: ../data/r_packages.sh
+.. literalinclude:: ../_data/r_packages.sh
     :language: sh
     :emphasize-lines: 32-298
     
