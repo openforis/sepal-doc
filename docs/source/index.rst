@@ -43,7 +43,7 @@ SEPAL
 
     SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
 
-.. grid:: 3
+.. grid:: 1 2 2 3
     :gutter: 2
 
     .. grid-item-card:: :fas:`running` Register
