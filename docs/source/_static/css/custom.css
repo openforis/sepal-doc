@@ -5,6 +5,16 @@
 .main-logo {max-width: 500px;}
 .bd-header-article {background-color: transparent !important;}
 
+/*******************************************************************************
+*   prevent pydata from adding extra background colors to my images 
+*   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879 
+*   will be solved
+*
+**/
+html[data-theme=dark] .bd-content img:not(.only-dark) {
+   background: transparent;
+   border-radius: 0;
+}
 
 /*******************************************************************************
 *   custom colors
