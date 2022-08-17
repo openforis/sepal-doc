@@ -37,9 +37,12 @@ extensions = [
     'sphinxcontrib.icon',
     'sphinxcontrib.btn',
     'sphinxcontrib.youtube',
+    'sphinx_design',
+    'sphinx_togglebutton',
     'notfound.extension',
     '_extentions.line_break',
-    '_extentions.custom_edit'
+    '_extentions.custom_edit',
+    '_extentions.logos',
 ]
 
 # spelling options
@@ -68,10 +71,9 @@ html_theme = 'pydata_sphinx_theme'
 html_logo = os.path.abspath('_images/sepal.png') 
 html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
-html_sidebars = {
-    "**": ["search-field", "sidebar-nav-bs"]
-}
+html_sidebars = {"index": []}
 html_theme_options = {
+    "header_links_before_dropdown": 6,
     "navigation_with_keys": False,
     "show_nav_level": 2,
     "show_prev_next": False,

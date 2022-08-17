@@ -1,0 +1,98 @@
+{
+    "jrc": {
+        "html": "https://ec.europa.eu/jrc/en",
+        "dark": "dark/jrc.png",
+        "light": "light/jrc.png",
+        "size": "sm"
+    },
+    "esa": {
+        "html": "https://www.esa.int",
+        "dark": "dark/esa.png",
+        "light": "light/esa.png",
+        "size": "md"
+    },
+    "eth": {
+        "html": "https://ethz.ch/en.html",
+        "dark": "dark/eth.png",
+        "light": "light/eth.png",
+        "size": "md"
+    },
+    "finland": {
+        "html": "https://um.fi/frontpage",
+        "dark": "dark/finland.png",
+        "light": "light/finland.png",
+        "size": "xs"
+    },
+    "germany": {
+        "html": "https://www.bmu.de/en/",
+        "dark": "dark/germany.png",
+        "light": "light/germany.png",
+        "size": "md"
+    },
+    "gfoi": {
+        "html": "http://www.fao.org/gfoi/home/en/",
+        "dark": "dark/gfoi.png",
+        "light": "light/gfoi.png",
+        "size": "sm"
+    },
+    "google": {
+        "html": "https://about.google/intl/en-US/",
+        "dark": "dark/google.png",
+        "light": "light/google.png",
+        "size": "sm"
+    },
+    "jaxa": {
+        "html": "https://global.jaxa.jp",
+        "dark": "dark/jaxa.png",
+        "light": "light/jaxa.png",
+        "size": "xs"
+    },
+    "jica": {
+        "html": "https://www.jica.go.jp/english/index.html",
+        "dark": "dark/jica.png",
+        "light": "light/jica.png",
+        "size": "xs"
+    },
+    "nasa": {
+        "html": "https://www.nasa.gov",
+        "dark": "dark/nasa.png",
+        "light": "light/nasa.png",
+        "size": "xs"
+    },
+    "kfw": {
+        "html": "https://www.kfw.de/kfw.de-2.html",
+        "dark": "dark/kfw.png",
+        "light": "light/kfw.png",
+        "size": "xs"
+    },
+    "sivacarbon": {
+        "html": "https://www.silvacarbon.org",
+        "dark": "dark/silvacarbon.png",
+        "light": "light/silvacarbon.png",
+        "size": "md"
+    },
+    "servir": {
+        "html": "https://www.servirglobal.net",
+        "dark": "dark/servir.png",
+        "light": "light/servir.png",
+        "size": "xs"
+    },
+    "sig": {
+        "html": "https://sig-gis.com",
+        "dark": "dark/sig.png",
+        "light": "light/sig.png",
+        "size": "sm"
+    },
+    "wageningen": {
+        "html": "https://www.wur.nl/en.htm",
+        "dark": "dark/wur.png",
+        "light": "light/wur.png",
+        "size": "lg"
+    },
+    "worldbank": {
+        "html": "https://www.worldbank.org/en/home",
+        "dark": "dark/worldbank.png",
+        "light": "light/worldbank.png",
+        "size": "sm"
+    }
+}
