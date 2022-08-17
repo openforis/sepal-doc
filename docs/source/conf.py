@@ -73,9 +73,9 @@ html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
 html_sidebars = {"index": []}
 html_theme_options = {
-    "header_links_before_dropdown": 6,
+    "header_links_before_dropdown": 7,
     "navigation_with_keys": False,
-    "show_nav_level": 2,
+    "show_nav_level": 1,
     "show_prev_next": False,
     "icon_links": [
         {
