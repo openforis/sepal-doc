@@ -1,9 +1,11 @@
-pydata-sphinx-theme==0.9.0
+git+https://github.com/pydata/pydata-sphinx-theme.git
 Sphinx>=3.5.1
 sphinx-notfound-page>=0.6
 graphviz>=0.16
 sphinxcontrib-spelling
-git+https://github.com/12rambau/images.git@gif#egg=sphinxcontrib-images
+sphinxcontrib-images
 sphinx-icon
 sphinx-btn
-git+https://github.com/sphinx-contrib/youtube.git#egg=sphinxcontrib-youtube
+sphinx_design
+sphinx-togglebutton
+git+https://github.com/sphinx-contrib/youtube.git

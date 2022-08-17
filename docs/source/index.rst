@@ -1,7 +1,25 @@
-.. figure:: _images/sepal_header.png
+:html_theme.sidebar_secondary.remove:
 
-Welcome to SEPAL's documentation!
-=================================
+.. figure:: _images/sepal.png
+    :class: main-logo only-light
+
+.. figure:: _images/sepal.png
+    :class: main-logo only-dark
+
+.. The page title must be in rST for it to show in next/prev page buttons.
+   Therefore we add a special style rule to only this page that hides h1 tags
+
+.. raw:: html
+
+    <style type="text/css">
+        h1 {display:none;}
+        h2 {text-align:center;}
+        .bd-content {max-width: none;}
+        .big-font {font-size: var(--pst-font-size-h4);}
+    </style>  
+
+SEPAL
+=====
 
 .. toctree::
    :maxdepth: 1
@@ -15,116 +33,77 @@ Welcome to SEPAL's documentation!
    Features<feature/index>
     <team/index>
 
+.. rst-class:: text-center font-weight-bold big-font
 
-SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. 
-SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. 
-Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program.
+    System for earth observation, data access, processing, analysis for land monitoring
 
-.. image:: _images/logos/openForis.png
-    :target: http://www.openforis.org
+.. admonition:: presentation video
+    :class: dropdown
 
-You said SEPAL?
----------------
+    .. youtube:: niOUVE8N7wo
+        :align: center
 
-SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
+.. important:: 
+    
+    SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
 
-.. youtube:: niOUVE8N7wo
-    :align: center
+.. grid:: 1 2 2 3
+    :gutter: 2
 
-SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
+    .. grid-item-card:: :fas:`running` Register
+        :link: setup/register.html
 
-SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway.
+        Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account, download and get the basics of the platform.
 
-If you want to start using Sepal, jump to the `Getting started <setup/index.html>`_ section! 
+    .. grid-item-card:: :fas:`plug` Connect to Earth Engine
+        :link: setup/gee.html
 
-Thanks to
----------
+        SEPAL uses the best of Google Earth Engine (GEE) and make it available for users without coding experience. To get the best of the platform you should connect your own free account. This page contains all you need to know to create a GEE account and how to link it with SEPAL.
 
-.. image:: _images/logos/nicfi.png
-    :target: https://www.nicfi.no
+    .. grid-item-card:: :fas:`book-open` Start a recipe
+        :link: cookbook/index.html
 
-In partnership with 
--------------------
+        To run analysis SEPAL uses recipes. these recipes are the founding blocks of our processes. To learn how to use them and learn more about the different functionalities of the platform, follow this tutorials. 
 
-.. image:: _images/logos/jrc.png
-    :target: https://ec.europa.eu/jrc/en
-    :class: ma-2
-    :height: 90
+    .. grid-item-card:: :fas:`book-open` Start a modules
+        :link: modules/index.html
 
-.. image:: _images/logos/esa.png
-    :target: https://www.esa.int
-    :class: ma-2
-    :height: 70
+        To run integrated workflows SEPAL uses applications. These modules are designed by the SEPAL team or other organization. To run specific tasks without relying on coding experience. To learn how to use them and learn more about the different functionalities follow this tutorials. 
 
-.. image:: _images/logos/eth.png
-    :target: https://ethz.ch/en.html
-    :class: ma-2
-    :height: 30
+    .. grid-item-card:: :fas:`plug` Connect to NICFI PlanetLab imagery
+        :link: setup/nicfi.html
 
-.. image:: _images/logos/finland.png
-    :target: https://um.fi/frontpage
-    :class: ma-2
-    :height: 80
+        Through our partnership with NICFI and PlanetLab, SEPAL can use the very high resolution imagery from PlanetLab for its recipes and module. To use these images SEPAL need to be connected to your PLanet account. Follow these step to link our platform to the VHR imagery.
 
-.. image:: _images/logos/germany.png
-    :target: https://www.bmu.de/en/
-    :class: ma-2
-    :height: 110
+    .. grid-item-card:: :fas:`desktop` Use se.plan module
+        :link: modules/dwn/seplan.html
 
-.. image:: _images/logos/gfoi.png
-    :target: http://www.fao.org/gfoi/home/en/
-    :class: ma-2
-    :height: 90
+        **se.plan** is a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders. if you're interested in using the application to compute your restoration index, follow our documentation. 
 
-.. image:: _images/logos/google.png
-    :target: https://about.google/intl/en-US/
-    :class: ma-2
-    :height: 80
+About us
+--------
 
-.. image:: _images/logos/jaxa.png
-    :target: https://global.jaxa.jp
-    :class: ma-2
-    :height: 80
+.. rst-class:: text-center
 
-.. image:: _images/logos/jica.png
-    :target: https://www.jica.go.jp/english/index.html
-    :class: ma-2
-    :height: 80
+    SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. 
+    SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. 
+    Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program.
 
-.. image:: _images/logos/nasa.png
-    :target: https://www.nasa.gov
-    :class: ma-2
-    :height: 80
+    SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
-.. image:: _images/logos/kfw.png
-    :target: https://www.kfw.de/kfw.de-2.html
-    :class: ma-2
-    :height: 60
+Funders
+-------
 
-.. image:: _images/logos/SilvaCarbon.png
-    :target: https://www.silvacarbon.org
-    :class: ma-2
-    :height: 80
+.. rst-class:: text-center
 
-.. image:: _images/logos/servir.png
-    :target: https://www.servirglobal.net
-    :class: ma-2
-    :height: 80
+    SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway.
 
-.. image:: _images/logos/sig.png
-    :target: https://sig-gis.com
-    :class: ma-2
-    :height: 100
+.. logos:: funders
 
-.. image:: _images/logos/wageningen.png
-    :target: https://www.wur.nl/en.htm
-    :class: ma-2
-    :height: 110
+Suporting institutions
+----------------------
 
-.. image:: _images/logos/worldBank.png
-    :target: https://www.worldbank.org/en/home
-    :class: ma-2
-    :height: 90
+.. logos:: institutions
 
 .. |trash-icon| raw:: html
 
