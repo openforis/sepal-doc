@@ -5,7 +5,7 @@ GDAL is a translator library for raster and vector geospatial data formats that 
 
 .. note::
 
-    The current version availalble on SEPAL is : :code:`3.3.2`
+    The current version availalble on SEPAL is : :code:`3.4.3`
 
 available commands 
 ------------------
