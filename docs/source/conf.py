@@ -75,7 +75,7 @@ html_sidebars = {"index": []}
 html_theme_options = {
     "header_links_before_dropdown": 6,
     "navigation_with_keys": False,
-    "show_nav_level": 2,
+    "show_nav_level": 1,
     "show_prev_next": False,
     "icon_links": [
         {
