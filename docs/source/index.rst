@@ -12,7 +12,6 @@
 .. raw:: html
 
     <style type="text/css">h1 {display:none;}</style>
-    <style type="text/css">h2 {align}</style>
 
 SEPAL
 =====
@@ -43,6 +42,39 @@ SEPAL
 .. note::
 
     SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
+
+.. grid:: 3
+    :gutter: 2
+
+    .. grid-item-card:: :fas:`running` Register
+        :link: setup/register.html
+
+        Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account and download and get the basics of the platform.
+
+    .. grid-item-card:: :fas:`plug` Connect to Earth Engine
+        :link: setup/gee.html
+
+        SEPAL use the best of Google Earth Engine (GEE) without and make it available for users without coding experience. To use the platform you can rely on the provided account but to get the best of the platform you should connect your own free account. This page contains all you need to know to create a GEE account and how to link it with SEPAL.
+
+    .. grid-item-card:: :fas:`book-open` Start a recipe
+        :link: cookbook/index.html
+
+        To run analysis SEPAL uses recipes. these recipes are the founding blocks of our processes. to learn how to use them and learn more about the different focntionalities of the platform follow this tutorials. 
+
+    .. grid-item-card:: :fas:`book-open` Start a modules
+        :link: modules/index.html
+
+        To run integrated workflows SEPAL uses applications. these modules are designed by the SEPAL team or other organization to run specific tasks without relying on coding experience. To learn how to use them and learn more about the different focntionalities follow this tutorials. 
+
+    .. grid-item-card:: :fas:`plug` Connect to NICFI PlanetLab imagery
+        :link: setup/nicfi.html
+
+        Through our partnership with NICFI and PlanetLab, SEPAL can use the very high resolution imagery from PlanetLab for its recipes and module. To use these images SEPAL need to be connected to your PLanet account. Follow these step to link our platform to the VHR imagery.
+
+    .. grid-item-card:: :fas:`desktop` Use se.plan module
+        :link: modules/dwn/seplan.html
+
+        **se.plan** is a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders. if you're interested in using the application to compute your restoration index, follow our documentation. 
 
 Funders
 -------
