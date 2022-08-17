@@ -67,7 +67,7 @@
     },
     "sivacarbon": {
         "html": "https://www.silvacarbon.org",
-        "dark": "dark/sivacarbon.png",
+        "dark": "dark/silvacarbon.png",
         "light": "light/silvacarbon.png",
         "size": "md"
     },
