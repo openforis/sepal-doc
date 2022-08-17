@@ -141,3 +141,7 @@ docs/source/modules/*.rst
 
 # mac os files 
 .DS_Store 
+
+# environment files
+docs/source/data/python_lib.txt
+docs/source/data/r_packages.sh
