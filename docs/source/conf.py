@@ -38,6 +38,7 @@ extensions = [
     'sphinxcontrib.btn',
     'sphinxcontrib.youtube',
     'sphinx_design',
+    'sphinx_togglebutton',
     'notfound.extension',
     '_extentions.line_break',
     '_extentions.custom_edit',
