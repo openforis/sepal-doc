@@ -72,9 +72,9 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 
 they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/aoi.png
     :title: Select AOI based on administrative layers
-    :group: time-series-recipe
+    :group: optical-mosaic-recipe
 
 Date
 ^^^^
@@ -377,55 +377,11 @@ Clicking on the :icon:`fas fa-cloud-download-alt` tab will open the retrieve pan
 Bands
 """""
 
-You need to select the band to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. 
+You need to select the band to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. See the :doc:`../feature/bands` to discover the full list of the SEPAL available bands.
 
 .. tip:: 
 
     There is no fixed rule to the band selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis.
-
-Raw bands
-#########
-
--   :guilabel:`blue`: blue
--   :guilabel:`green`: green 
--   :guilabel:`red`: red 
--   :guilabel:`nir`: near infrared 
--   :guilabel:`swir1`: shortwave infrared 1 
--   :guilabel:`swir2`: shortwave infrared 2 
-
-Derived bands
-#############
-
--   :guilabel:`aerosol`: aerosol attributes
--   :guilabel:`thermal`: thermal
--   :guilabel:`thermal2`: thermal2
-
-Tasseled cap
-############
-
--   :guilabel:`brightness`: brightness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`greeness`: greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`wetness`: wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`fourth`: fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`fifth`: fifth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`sixth`: sixth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-
-Indexes
-#######
-
--   :guilabel:`NDVI`: `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__
--   :guilabel:`NDMI`: `Normalized Difference Moisture Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__
--   :guilabel:`NDWI`: `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__  
--   :guilabel:`MNDWI`: `Modified Normalized Difference Water Index <https://doi.org/10.1080/01431160600589179>`__ 
--   :guilabel:`NDFI`: `Normalized Difference Fraction Index <http://10.1016/j.jag.2016.06.020>`__ 
--   :guilabel:`EVI`: `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__
--   :guilabel:`EVI2`: Two-band EVI (Enhanced vegetation index)
--   :guilabel:`SAVI`: `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__
--   :guilabel:`NBR`: `Normailzed burn ratio <https://doi.org/10.2737/RMRS-GTR-164>`__
--   :guilabel:`UI`: Urban index
--   :guilabel:`NDBI`: `Normalized Difference Built-up Index <#>`__
--   :guilabel:`IBI`: Index based built-up index
--   :guilabel:`BUI`: Built-up Index
 
 Dates
 #####

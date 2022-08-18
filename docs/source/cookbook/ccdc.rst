@@ -75,9 +75,9 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 
 they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/aoi.png
     :title: Select AOI based on administrative layers
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
 
 Date Range
 ^^^^^^^^^^
@@ -87,12 +87,12 @@ In the :guilabel:`DAT` tab, you will be asked to select the starting date and th
 .. thumbnail:: ../_images/cookbook/ccdc_asset/dates.png
     :title: Select AOI based on EE table
     :width: 49%
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/datepicker.png
     :title: Select AOI based on EE table
     :width: 49%
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
 
 Sensor selection
 ^^^^^^^^^^^^^^^^
