@@ -43,7 +43,7 @@ The first step to create a SEPAL environment is to set up the language you want 
 
     You can always change your language preference from SEPAL's launch page.
 
-Sepal is by default in English, but is also available in several languages such as French and Spanish. To use these languages in SEPAL, return to the launch page. (you may have to logout of SEPAL to return to launch page). On this page click on :code:`Launch`.
+SEPAL is by default in English, but is also available in several languages such as French and Spanish. To use these languages in SEPAL, return to the launch page. (you may have to logout of SEPAL to return to launch page). On this page click on :code:`Launch`.
 
 Once you've clicked, you will access the login page. At the top-right side of this panel, click on the button corresponding to your language: 
 
