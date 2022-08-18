@@ -6,7 +6,7 @@ Background
 
 Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_.
 
-CCDC is a holistic methodological framework that encompasses various aspects of space-borne land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**. It is furthermore capable to utilize all available **bands** and derived *band ratios*.
+CCDC is a holistic methodological framework that encompasses various aspects of space-borne, multi-temporal land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**. It is furthermore capable to utilize all available **bands** and derived *band ratios*.
 
 CCDC is **data-agnostic**, meaning any type of multi-temporal satellite imagery can be ingested (e.g. optical, radar). SEPAL supports its usage with Landsat, Sentinel-1 & 2 as well as Planet basemaps and daily imagery. Note that for the latter, a Planet API key is necessary.
 
