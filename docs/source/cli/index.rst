@@ -25,6 +25,10 @@ These tools can be called directly from the terminal or any programming language
     .. code-block:: console
         
         gdalinfo example.tif
+
+.. tip::
+
+    If you're running actions from multiple directories or multiple instances, you can open multiple terminal tabs and name them as you see fit.
         
 .. tip::
 
