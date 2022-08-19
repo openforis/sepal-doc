@@ -413,6 +413,8 @@ The lambda parameter is part of the LASSO regression used for the modelling of t
 
 Those are the iterations for the maximum number of runs for LASSO regression convergence. If set to 0, regular OLS is used instead of LASSO.
 
+.. ccdc_pixel_analys
+
 On-the-fly Pixel analysis
 -------------------------
 
