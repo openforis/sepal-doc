@@ -18,7 +18,7 @@ sphinx:
 
 # Optionally build your docs in additional formats such as PDF
 formats:
-  - epub
+  # - epub (https://github.com/sphinx-contrib/btn/issues/4)
   - pdf
 
 # Optionally set the version of Python and requirements required to build your docs
