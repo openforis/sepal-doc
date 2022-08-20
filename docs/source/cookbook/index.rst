@@ -98,6 +98,11 @@ recipes
 
 .. toctree::
     :maxdepth: 1
-    :glob:
-
-    *
+    
+    optical_mosaic
+    radar_mosaic
+    planet_mosaic
+    classification
+    time_series
+    ccdc
+    ccdc_slice
