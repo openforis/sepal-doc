@@ -153,14 +153,49 @@ Trigger the export task
 
 Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace.
 
+you can export this asset as a :code:`.tif` image to your SEPAL workspace or as an *Image* in GEE.
+The scale parameter depends on the data selected and the level of detail you will need for your further analysis. Landsat based assets are usually created at 30 meters. Sentinel-1 and 2 can be at 10 meter, but will need 9 times more space as compared to 30 meter resolution.
+
 Bands
+"""""
+
+In the CCDC slice exportation you can select any band that was available in the initial CCDC asset. the result will be the evaluated values of the model at the slice date for single date and the mean value for date range.
+
 Band type
+"""""""""
+
+For each selected band, the user can select which output from the model he want to export. For display the value is sufficient but for another analysis like classification, it's very important to add information relative to the model itself (amplitude, error, phase) to increase the quality of the output information.
 
 Segment bands
+"""""""""""""
+
+User can also export the specific **segment bands**. These bands are relative to the segment intercepted by the slice (if the slice is in a break the previous segment is selected). this is where you'll find the dates of the breaks and information about confidence, number of observations etc...
+
+.. thumbnail:: ../_images/cookbook/ccdc_slice/export.png
+    :title: Exportation parameters of a ccdc slice
+    :group: recipe-ccdc-slice
 
 
 Exportation status
 ^^^^^^^^^^^^^^^^^^
+
+Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+
+.. tip::
+
+    This operation is running between GEE and SEPAL servers in the background, you can thus close the SEPAL page without killing the process.
+
+When the task is finished the frame will be displayed in green as shown on the second image.
+
+.. thumbnail:: ../_images/cookbook/ccdc_slice/download.png
+    :width: 49%
+    :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
+    :group: recipe-ccdc-slice
+
+.. thumbnail:: ../_images/cookbook/ccdc_slice/download_complete.png
+    :width: 49%
+    :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
+    :group: recipe-ccdc-slice
 
 
 

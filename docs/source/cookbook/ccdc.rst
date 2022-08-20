@@ -472,12 +472,12 @@ Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn
 
 When the task is finished the frame will be displayed in green as shown on the second image.
 
-.. thumbnail:: ../_images/cookbook/time_series/download.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/download.png
     :width: 49%
     :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
 
-.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/download_complete.png
     :width: 49%
     :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
