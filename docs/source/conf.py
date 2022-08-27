@@ -71,11 +71,14 @@ exclude_patterns = ["**.ipynb_checkpoints"]
 # a list of builtin themes.
 #
 html_theme = 'pydata_sphinx_theme'
-html_logo = os.path.abspath('_images/sepal.png') 
 html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
 html_sidebars = {"index": []}
 html_theme_options = {
+    "logo": {
+        "image_light": "sepal_light.png",
+        "image_dark": "sepal_dark.png",
+    },
     "header_links_before_dropdown": 7,
     "navigation_with_keys": False,
     "show_nav_level": 1,
