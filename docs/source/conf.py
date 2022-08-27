@@ -171,6 +171,7 @@ html_js_files = [
     "js/custom.js"
 ]
 
+html_extra_path = ["browserconfig.xml"]
 
 # -- Options for images -------------------------------------------------------
 
