@@ -8,7 +8,7 @@ SEPAL is a free, open-source cloud-computing platform that gives you access to g
 
 SEPAL currently "resides" in the Amazon Web Services (AWS) ecosystem and makes use of AWS cloud computers, or instances, that can be used to process data using pre-programmed SEPAL applications or your own code (in R, Python or in the terminal). SEPAL is also closely linked to GEE, a Google-powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE Application Programming Interface (API).  
 
-All SEPAL recipes are based on GEE and actually running scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL applications list, the applications tagged with the Google logo ("**G**") are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
+All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL applications list, the applications tagged with the Google logo ("**G**") are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
 
 SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials. However, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (e.g. authentication will not work) if your GEE and SEPAL accounts are unlinked.
 
@@ -112,13 +112,13 @@ Connection
 
 The first step is to navigate to the SEPAL landing page (`sepal.io <https://sepal.io>`_) and sign in. 
 
-On the following page, click on your **Username** on the lower-right side of the window. On the following image, your username will appear in the red rectangle (:code:`prambaud`).
+On the following page, click on your **Username** on the lower-right side of the window (in red below) (:code:`prambaud`).
 
 .. image:: ../_images/setup/gee/sepal_landing.png
     :alt: SEPAL landing
     :align: center
 
-By clicking on the username, a **User Details** pop-up will apear, where you can modify your personal information. On the upper-right side of this pop-up, next to the Google logo (**G**), you will see the status of the connection between your SEPAL and GEE accounts (Note: If you have not connected your accounts, it will read "Disconnected").
+By clicking on the username, a **User Details** pop-up will appear, where you can modify your personal information. On the upper-right side of this pop-up, next to the Google logo (**G**), you will see the status of the connection between your SEPAL and GEE accounts (Note: If you have not connected your accounts, it will read "Disconnected").
 
 .. image:: ../_images/setup/gee/user_interface_disconnected.png
     :alt: SEPAL disconnected
@@ -160,7 +160,7 @@ When you use SEPAL recipes and modules, you'll be asked to use GEE assets to pro
 
 .. tip::
 
-    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allow you to deal with the full process directly from SEPAL without going to the GEE code interface. See the :doc:`../modules/dwn/import_to_gee` module documentation for more details.
+    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the GEE code interface. See the :doc:`../modules/dwn/import_to_gee` module documentation for more details.
 
 Go to **Assets** in the **Zone 1** panel on the Code Editor page:
 
@@ -202,7 +202,7 @@ Use my assets
 
 Once you've uploaded your assets, you can use them in SEPAL by copying and pasting the name of each anywhere SEPAL asks for an asset name.
 
-To find the asset name, go back to **Assets** in the **Zone 1** panel and click on any asset in the list. The following pop-up window will apear: 
+To find the asset name, go back to **Assets** in the **Zone 1** panel and click on any asset in the list. The following pop-up window will appear: 
 
 .. image:: ../_images/setup/gee/asset_popup.png
     :alt: asset popup
