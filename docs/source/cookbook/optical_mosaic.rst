@@ -15,7 +15,7 @@ This can be achieved on both contiguous rasters (left) and overlapping images (r
     :width: 49%
     :group: optical-mosaic-recipe
 
-These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells, or take the maximum or minimum value. In addition, certain corrections can be made to the image to account for clouds, snow, and other factors. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics on any area of interest (AOI).
+These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells, or take the maximum or minimum value. In addition, certain corrections can be made to the image to account for clouds, snow, and other factors. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics in any area of interest (AOI).
 
 .. Note::
 
@@ -31,7 +31,7 @@ Once the mosaic recipe is selected, SEPAL will display the recipe process in a n
     :group: optical-mosaic-recipe
     :title: The landing page of the optical mosaic recipe.
 
-The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your need. Simply double-click the tab and write a new name. It will default to :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`.
+The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and write a new name. It will default to :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/default_title.png
     :title: Optical mosaics default title. 
@@ -71,7 +71,7 @@ The data exported by the recipe will be generated from within the bounds of the 
 -   Drawn polygons
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/aoi_landing.png
-    :title: The 3 differents ways to select an AOI in SEPAL.
+    :title: The 3 different ways to select an AOI in SEPAL.
     :group: optical-mosaic-recipe
 
 .. tip:: 
@@ -96,7 +96,7 @@ A buffer can be applied on these boundaries. Define its size in kilometers (km) 
 
     The AOI and preview will take longer to display when buffering is enabled.
 
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on the :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom into the AOI, which will be outlined in grey.
+Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on the :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom into the AOI, which will be outlined in gray.
 
 .. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
     :title: Select AOI based on administrative layers.
@@ -122,7 +122,7 @@ A buffer can be applied on these boundaries. Define its size (in km) by using th
 
     The AOI and the preview will take longer to show up when buffering is enabled.
 
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on the :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom in on the AOI, which will be outlined in grey.
+Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on the :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom in on the AOI, which will be outlined in gray.
 
 .. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
     :title: Select AOI based on EE table.
@@ -135,7 +135,7 @@ You can use custom AOI defined by a drawn shape. This shape will be converted in
 
 The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon.
 
-Once the shape is complete, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom in on the AOI, which will be outlined in grey.
+Once the shape is complete, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom in on the AOI, which will be outlined in gray.
 
 .. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
     :title: Select AOI based on drawn polygon.
