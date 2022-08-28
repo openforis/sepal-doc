@@ -863,56 +863,56 @@ Turn on the imagery for your Classification and pan and zoom around the map. Com
 Image change detection
 ----------------------
 
-Image change detection allows us to understand differences in the landscape--or more correctly, in the satellite images taken of the landscape--over time. There are many questions that change detection methods can help answer, including “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”
+Image change detection allows us to understand differences in the landscape as they appear in satellite images over time. There are many questions that change detection methods can help answer, including “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”
 
-Most methods for change detection use algorithms backed by statistical methods to extract and compare information in the satellite images. To conduct change detection then, we need multiple mosaics or images, each one representing a point in time. Here, we will describe how to detect change between two dates using a simple model, however this theory can be expanded to include more dates. In addition, we'll describe time series analysis, which generally looks at longer periods of time.
+Most methods for change detection use algorithms backed by statistical methods to extract and compare information in the satellite images. To conduct change detection, we need multiple mosaics or images, each one representing a point in time. In this section of SEPAL documentation, we will describe how to detect change between two dates using a simple model (note: this theory can be expanded to include more dates as well). In addition, we'll describe time series analysis, which generally looks at longer periods of time.
 
-The objective of this module is to become associated with methods of detecting change for an area of interest using the SEPAL platform. This will build upon and incorporate what we have covered in the previous modules including: creating mosaics, creating training samples, and classifying imagery. This module is split into two exercises. The first addresses change detection using two dates, and the second more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. At the end of this module you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
+The objective of this module is to become associated with methods of detecting change for an AOI using the SEPAL platform. We will build upon and incorporate what we have covered in the previous modules, including: creating mosaics, creating training samples, and classifying imagery. This module is split into two exercises. The first addresses change detection using two dates; the second demonstrates more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. At the end of this module, you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
 
 This module should take you approximately 3 hours.
 
 .. _section 3.1:
 
-Two date change detection
+Two-date change detection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this Exercise, you will learn how to conduct a two-date change detection in SEPAL. This approach uses the same classification algorithm you used in `module 2`_. This approach can be used with more than two dates if you so choose in the future.
+In this exercise, you will learn how to conduct a two-date change detection in SEPAL. This approach uses the same classification algorithm you used in `Module 2`_. This approach can be used with more than two dates if you so choose in the future.
 
 In this example, you will create optical mosaics and classify them, building on skills learned in Modules 1 and 2. Alternatively, you may also use two classifications from your own research area.
 
 .. note::
 
-    **objectives**:
+    **Objectives**:
 
     -   Learn how to conduct a two-date change detection
-    -   Build on skills learned in `module 1`_ & `module 2`_
+    -   Build on skills learned in `Module 1`_ and `Module 2`_
 
-.. warning::
+.. note::
 
     **Prerequisites**:
 
     -   SEPAL account
-    -   Complete `module 1`_ & `module 2`_ or be familiar with the skills covered
+    -   Completion of `Module 1`_ and `Module 2`_, or familiarity with the skills covered in these modules.
 
 Create mosaics for change detection
 """""""""""""""""""""""""""""""""""
 
-Before we can identify change, we first need to have images to compare. We will create two mosaics of Sri Lanka, generate some training data, and then classify the mosaics. This is discussed in detail in `module 1`_ & `module 2`_.
+Before we can identify change, we first need to have images to compare. We will create two mosaics of Sri Lanka, generate some training data, and then classify the mosaics. This is discussed in detail in `Module 1`_ and `Module 2`_.
 
-Open the :code:`Process` menu and click on :code:`Optical mosaic`. Alternatively click the **green plus symbol** to open the **Create Recipe** menu and then click on :code:`Optical Mosaic`.
+Open the :code:`Process` menu and click on :code:`Optical mosaic`. Alternatively, click the **green plus symbol** to open the **Create recipe** menu and then click on :code:`Optical mosaic`.
 
-use the following data:
+Use the following data:
 
 -   Choose **Sri Lanka** for the Area of interest (AOI).
 -   Select 2015 for the Date (DAT).
 -   Select Landsat 8 (L8) as the source (SRC).
--   In the Composite (CMP) menu, ensure the surface reflectance **(SR) correction** is selected and median is the compositing method.
+-   In the Composite (CMP) menu, ensure the surface reflectance **(SR) correction** is selected, as well as median as the compositing method.
 
-Click :code:`Retrieve Mosaic` and select **Blue, Green, Red, NIR, SWIR1, SWIR2**. Then select Google Earth Engine Asset, and lastly click :code:`retrieve`.
+Click :code:`Retrieve mosaic` and select **Blue, Green, Red, NIR, SWIR1, SWIR2**. Then select Google Earth Engine Asset. Lastly, click :code:`Retrieve`.
 
 .. note::
 
-   If you don't see the Google Earth Engine asset option, you'll need to connect your Google account to SEPAL by clicking on your user name in the lower right.
+   If you don't see the Google Earth Engine asset option, you'll need to connect your Google account to SEPAL by clicking on your user name on the lower-right ride.
 
 .. figure:: ../_images/workflows/area_estimation/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
