@@ -334,7 +334,7 @@ Analysis
 After selecting the parameters, you can start interacting with the scenes and begin the analysis.
 In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result.
 
--   :icon:`fas fa-magic`: auto-select scenes
+-   :btn:`<fas fa-magic>`: auto-select scenes
 -   :icon:`fas fa-trash`: clear selected scenes
 -   :btn:`<fas fa-cloud-download-alt>`: retrieve mosaic
 
