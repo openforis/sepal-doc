@@ -2,7 +2,7 @@ Getting started with SEPAL
 ==========================
 
 Set up an account and learn how to access the SEPAL interface
-------------
+---------------------------------------------------------------
 
 In this section of SEPAL documentation, you can learn about the key requirements needed to use the platform.
 
