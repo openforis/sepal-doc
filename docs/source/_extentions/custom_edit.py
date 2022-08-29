@@ -18,9 +18,11 @@ class CustomEdit(Directive):
     option_spec = {}
     html = """
     <script>
-        var div = document.getElementsByClassName("tocsection editthispage")[0];
-        var link = div.getElementsByTagName("a")[0];
-        link.href = "{}";
+        document.addEventListener('DOMContentLoaded', function() {{
+            var div = document.getElementsByClassName("tocsection editthispage")[0];
+            var link = div.getElementsByTagName("a")[0];
+            link.href = "{}";
+        }});  
     </script>
     """
     
