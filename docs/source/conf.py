@@ -42,6 +42,7 @@ extensions = [
     'sphinxcontrib.youtube',
     'sphinx_design',
     'sphinx_togglebutton',
+    'sphinx-favicon',
     'notfound.extension',
     '_extentions.line_break',
     '_extentions.custom_edit',
@@ -67,15 +68,15 @@ exclude_patterns = ["**.ipynb_checkpoints"]
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
+# The theme to use for HTML and HTML Help pages.
 html_theme = 'pydata_sphinx_theme'
-html_logo = os.path.abspath('_images/sepal.png') 
-html_favicon = os.path.abspath('_images/favicon.ico')
 html_last_updated_fmt = ''
 html_sidebars = {"index": []}
 html_theme_options = {
+    "logo": {
+        "image_light": "sepal_light.png",
+        "image_dark": "sepal_dark.png",
+    },
     "header_links_before_dropdown": 7,
     "navigation_with_keys": False,
     "show_nav_level": 1,
@@ -124,6 +125,35 @@ html_context = {
     "default_mode": "auto",
 }
 
+favicons = [
+    {
+        "rel": "apple-touch-icon",
+        "size": "180x180",
+        "static-file": "apple-touch-icon.png"
+    },
+    {
+        "rel": "icon",
+        "type": "image/png",
+        "size": "32x32",
+        "static-file": "favicon-32x32.png"
+    },
+    {
+        "rel": "icon",
+        "type": "image/png",
+        "size": "16x16",
+        "static-file": "favicon-16x16.png"
+    },
+    {
+        "rel": "mask-icon",
+        "static-file": "safari-pinned-tab.svg",
+        "color": "#186691"
+    },
+    {
+        "rel": "manifest",
+        "static-file": "/site.webmanifest"
+    }
+]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -141,6 +171,7 @@ html_js_files = [
     "js/custom.js"
 ]
 
+html_extra_path = ["browserconfig.xml"]
 
 # -- Options for images -------------------------------------------------------
 
