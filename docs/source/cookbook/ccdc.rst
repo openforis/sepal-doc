@@ -6,7 +6,7 @@ Background
 
 Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_.
 
-CCDC is a holistic methodological framework that encompasses various aspects of space-borne land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**. It is furthermore capable to utilize all available **bands** and derived *band ratios*.
+CCDC is a holistic methodological framework that encompasses various aspects of space-borne, multi-temporal land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**. It is furthermore capable to utilize all available **bands** and derived *band ratios*.
 
 CCDC is **data-agnostic**, meaning any type of multi-temporal satellite imagery can be ingested (e.g. optical, radar). SEPAL supports its usage with Landsat, Sentinel-1 & 2 as well as Planet basemaps and daily imagery. Note that for the latter, a Planet API key is necessary.
 
@@ -348,6 +348,8 @@ The lambda parameter is part of the LASSO regression used for the modelling of t
 
 Those are the iterations for the maximum number of runs for LASSO regression convergence. If set to 0, regular OLS is used instead of LASSO.
 
+.. ccdc_pixel_analys
+
 On-the-fly Pixel analysis
 -------------------------
 
@@ -405,12 +407,12 @@ Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn
 
 When the task is finished the frame will be displayed in green as shown on the second image.
 
-.. thumbnail:: ../_images/cookbook/time_series/download.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/download.png
     :width: 49%
     :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
 
-.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
+.. thumbnail:: ../_images/cookbook/ccdc_asset/download_complete.png
     :width: 49%
     :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
-    :group: time-series-recipe
+    :group: ccdc-asset-recipe
