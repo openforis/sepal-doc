@@ -62,13 +62,11 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-.. thumbnail:: ../_images/cookbook/planet_mosaic/aoi_landing.png
-    :title: The 3 differents ways to select an AOI in SEPAL
+they are extensively described in our documentation. Please read :doc:`..feature/aoi_selector` to know more.
+
+.. thumbnail:: ../_images/cookbook/planet_mosaic/aoi.png
+    :title: Select AOI based on administrative layers
     :group: planet-mosaic-recipe
-
-.. tip::
-
-    The AOI selection process is fully described in `AOI selection <../feature/aoi_selector.html>`__
 
 Date
 ^^^^

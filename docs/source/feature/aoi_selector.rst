@@ -12,9 +12,9 @@ The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon l
 
 For many of the recipes, an area of interest has to be selected. Locate the AOI selection button at the bottom right corner. Click the :guilabel:`AOI` button to open the selection window.
 
-.. thumbnail:: ../_images/cookbook/optical_mosaic/no_parameters.png
+.. thumbnail:: ../_images/feature/aoi_selector/no_parameters.png
     :title: The 5 tabs to set up SEPAL optical mosaic parameters
-    :group: optical-mosaic-recipe
+    :group: feature_aoi
     :align: center
     :width: 700
 
@@ -24,9 +24,9 @@ There are multiple methods to select AOI's in the SEPAL process recipes:
 -   EE Tables (Earth Engine).
 -   Drawn polygons.
 
-.. thumbnail:: ../_images/cookbook/optical_mosaic/aoi_landing.png
+.. thumbnail:: ../_images/feature/aoi_selector/aoi_landing.png
     :title: The 3 differents ways to select an AOI in SEPAL
-    :group: optical-mosaic-recipe
+    :group: feature_aoi
     :align: center
     :width: 700
 
@@ -53,9 +53,9 @@ A buffer can be applied to the AOI boundaries, define its size using the provide
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/feature/aoi_selector/aoi_administrative.png
     :title: Select AOI based on administrative layers
-    :group: optical-mosaic-recipe
+    :group: feature_aoi
     :align: center
     :width: 700
 
@@ -81,9 +81,9 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
 Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
+.. thumbnail:: ../_images/feature/aoi_selector/aoi_table.png
     :title: Select AOI based on EE table
-    :group: optical-mosaic-recipe
+    :group: feature_aoi
     :align: center
     :width: 700
 
@@ -96,7 +96,7 @@ The pointer in the map will be converted into a :icon:`fa fa-plus`. Click succes
 
 Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
+.. thumbnail:: ../_images/feature/aoi_selector/aoi_polygon.png
     :title: Select AOI based on drawn polygon
     :group: optical-mosaic-recipe
     :align: center

@@ -70,75 +70,10 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-.. thumbnail:: ../_images/cookbook/optical_mosaic/aoi_landing.png
-    :title: The 3 differents ways to select an AOI in SEPAL
-    :group: optical-mosaic-recipe
+they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
 
-.. tip:: 
-
-    The type choice made at this step is not definitive, simply click on :icon:`fa fa-globe` :guilabel:`<the selected method>` on top of the AOI window and a dropdown will allow you to switch between the mentioned methods.
-
-Administrative boundaries
-"""""""""""""""""""""""""
-
-You can select administrative layers as an AOI. These geometries are extracted from the `FAO GAUL Level 1 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__. Select :guilabel:`Select country/province`. 
-
-.. note::
-
-    As GEE does not support non-latin characters, accents and special characters have been removed from country and provinces names.
-
-In the first dropdown menu, you will be able to select a Country (administrative layer 0) from the country list.  
-Optionally one can also select a province (administrative level 1) within the country selected. The dropdown list is updated on the fly according to the country selection. If nothing is selected, the whole country will be considered. 
-
-A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to 0 i.e. disabled. 
-
-.. note:: 
-
-    The area of interest and preview will take longer to show up when buffering is enabled.
-
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
-
-.. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
+.. thumbnail:: ../_images/cookbook/optical_mosaic/aoi.png
     :title: Select AOI based on administrative layers
-    :group: optical-mosaic-recipe
-
-EE table
-""""""""
-
-You can use custom AOI defined by shapes. These shapes need to be ingested in EarthEngine as a :code:`ee.FeatureCollection`. Select :guilabel:`EE table`.
-
-In the first dropdown, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`). 
-
-.. warning::
-
-    You must have access to this asset. If that's not the case ask the owner of the asset to modify the sharing parameters.
-
--   Select :guilabel:`include all` and the whole geometries associated with the features will be used as AOI. 
--   Select :guilabel:`filter` and you will be able to provide a column name and a value to filter within the table. The Aoi will then be reduced to the filtered features of the initial asset. 
-
-A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to 0 i.e. disabled. 
-
-.. note:: 
-
-    The area of interest and the preview will take longer to show up when buffering is enabled.
-
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
-
-.. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
-    :title: Select AOI based on EE table
-    :group: optical-mosaic-recipe
-
-Draw polygon
-""""""""""""
-
-You can use custom AOI defined by a drawn shape. This shape will be converted into a :code:`ee.FeatureCollection` on the fly. Select :guilabel:`draw a polygon` to use this option.
-
-The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon.
-
-Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
-
-.. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
-    :title: Select AOI based on drawn polygon
     :group: optical-mosaic-recipe
 
 Date
@@ -442,55 +377,11 @@ Clicking on the :icon:`fas fa-cloud-download-alt` tab will open the retrieve pan
 Bands
 """""
 
-You need to select the band to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. 
+You need to select the band to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output. See the :doc:`../feature/bands` to discover the full list of the SEPAL available bands.
 
 .. tip:: 
 
     There is no fixed rule to the band selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis.
-
-Raw bands
-#########
-
--   :guilabel:`blue`: blue
--   :guilabel:`green`: green 
--   :guilabel:`red`: red 
--   :guilabel:`nir`: near infrared 
--   :guilabel:`swir1`: shortwave infrared 1 
--   :guilabel:`swir2`: shortwave infrared 2 
-
-Derived bands
-#############
-
--   :guilabel:`aerosol`: aerosol attributes
--   :guilabel:`thermal`: thermal
--   :guilabel:`thermal2`: thermal2
-
-Tasseled cap
-############
-
--   :guilabel:`brightness`: brightness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`greeness`: greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`wetness`: wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`fourth`: fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`fifth`: fifth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
--   :guilabel:`sixth`: sixth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-
-Indexes
-#######
-
--   :guilabel:`NDVI`: `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__
--   :guilabel:`NDMI`: `Normalized Difference Moisture Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__
--   :guilabel:`NDWI`: `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__  
--   :guilabel:`MNDWI`: `Modified Normalized Difference Water Index <https://doi.org/10.1080/01431160600589179>`__ 
--   :guilabel:`NDFI`: `Normalized Difference Fraction Index <http://10.1016/j.jag.2016.06.020>`__ 
--   :guilabel:`EVI`: `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__
--   :guilabel:`EVI2`: Two-band EVI (Enhanced vegetation index)
--   :guilabel:`SAVI`: `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__
--   :guilabel:`NBR`: `Normailzed burn ratio <https://doi.org/10.2737/RMRS-GTR-164>`__
--   :guilabel:`UI`: Urban index
--   :guilabel:`NDBI`: `Normalized Difference Built-up Index <#>`__
--   :guilabel:`IBI`: Index based built-up index
--   :guilabel:`BUI`: Built-up Index
 
 Dates
 #####
