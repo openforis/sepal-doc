@@ -1,13 +1,13 @@
 Register with SEPAL
-===============
+===================
 
 Request access to the interface and sign up for other services 
-----------------
+--------------------------------------------------------------
 
 The first step to using SEPAL is requesting access to the platform on the project website. To unlock the full potential of the interface, you can register with Google Earth Engine (GEE) and Collect Earth Online (CEO), both available free of charge.
 
 Sign up for SEPAL
-----------------
+-----------------
 
 .. note::
 
@@ -37,11 +37,11 @@ Once submitted, platform administrators will review your application. If approve
 
 .. tip:: 
 
-    Once you sign up for SEPAL, you can request access to the Sepal Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`__ and clicking on the button, :guilabel:`Ask to join group`. 
-    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ platform and ask a question to the community using the :guilabel:`sepal` tag. Your question might be useful to others! 
+    Once you sign up for SEPAL, you can request access to the Sepal Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
+    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Your question might be useful to others! 
 
 Sign up for Google Earth Engine (GEE)
---------------
+-------------------------------------
 
 .. note::
 
@@ -66,7 +66,7 @@ Once you have a GEE account, you can access the interface here: https://code.ear
     If you experience problems registering with GEE, contact the SEPAL team for assistance.
 
 Sign up for Collect Earth Online (CEO)
---------------
+--------------------------------------
 
 .. note::
 
