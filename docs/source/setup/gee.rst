@@ -110,7 +110,7 @@ SEPAL can work without being connected to your GEE account, but you will miss nu
 Connection
 ^^^^^^^^^^
 
-The first step is to navigate to the SEPAL landing page (`sepal.io <https://sepal.io>`_) and sign in. 
+The first step is to navigate to the SEPAL landing page (`sepal.io <https://sepal.io>`__) and sign in. 
 
 On the following page, click on your **Username** on the lower-right side of the window (in red below) (:code:`prambaud`).
 
