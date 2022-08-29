@@ -336,7 +336,7 @@ In the upper-right corner, three tabs are available. They will allow you to cust
 
 -   :icon:`fas fa-magic`: auto-select scenes
 -   :icon:`fas fa-trash`: clear selected scenes
--   :icon:`fas fa-cloud-download-alt`: retrieve mosaic
+-   :btn:`<fas fa-cloud-download-alt>`: retrieve mosaic
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/analysis.png
     :title: The 3 tabs to select the scenes and export mosaic.
