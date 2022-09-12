@@ -21,7 +21,7 @@ In support of NICFI’s mission, you can use this data for a number of projects 
 
 The NICFI & Planet Basemaps for Tropical Forest Monitoring are now available in Google Earth Engine and in SEPAL for easy processing. With a few simple steps, you can create your own custom mosaics using the Planet basemaps.
 
-First make sure you have a Google Earth Engine account. Follow :doc:`this tutorial <register#sign-up-to-gee>` to apply for a GEE account if you don’t already have one.
+First make sure you have a Google Earth Engine account. Follow :doc:`this tutorial <register>` to apply for a GEE account if you don’t already have one.
 
 Sign-up for NICFI imagery
 -------------------------
