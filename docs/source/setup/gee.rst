@@ -156,7 +156,7 @@ Simply click on the :code:`Disconnect your Google account` button and your accou
 Upload files to GEE 
 -------------------
 
-When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters or vectors to the core GEE-based algorithm. These assets can be either public assets that someone shared with you or assets that you created yourself and would like to use.
+When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters (:code:`ee.Image`) or vectors (:code:`ee.FeatureCollection`) to the core GEE-based algorithm. These assets can be either public assets that someone shared with you or assets that you created yourself and would like to use.
 
 .. tip::
 
