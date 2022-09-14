@@ -31,7 +31,7 @@ Once the desired application is found, simply click on it to initiate the proces
 
 .. note:: 
 
-    Applications that include a "G" in their descriptor require a connection to Google Earth Engine (GEE) to run. Please refer to `Connect GEE and SEPAL <../setup/gee.html#connection-between-gee-and-sepal>`__ for more information.
+    Applications that include a :icon:`fas fab-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. Please refer to `Connect GEE and SEPAL <../setup/gee.html#connection-between-gee-and-sepal>`__ for more information.
     
 .. note::
 
