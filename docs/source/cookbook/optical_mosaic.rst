@@ -19,7 +19,7 @@ These overlay areas can be managed in various ways. For example, you can choose 
 
 .. Note::
 
-    You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. Navigate to `Connect SEPAL to GEE <../setup/gee.html>`__ to learn more.
+    You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. Navigate to :doc:`../setup/gee` to learn more.
 
 
 Start
