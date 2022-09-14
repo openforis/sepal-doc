@@ -160,7 +160,7 @@ When you use SEPAL recipes and modules, you'll be asked to use GEE assets to pro
 
 .. tip::
 
-    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the GEE code interface. See the :doc:`../modules/dwn/import_to_gee` module documentation for more details.
+    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the GEE code interface. See the :doc:`../modules/dwn/vector_manager` module documentation for more details.
 
 Go to **Assets** in the **Zone 1** panel on the Code Editor page:
 
