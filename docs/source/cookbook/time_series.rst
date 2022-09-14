@@ -62,81 +62,16 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-.. thumbnail:: ../_images/cookbook/time_series/aoi_landing.png
-    :title: The 3 differents ways to select an AOI in SEPAL
-    :group: time-series-recipe
-
-.. tip:: 
-
-    The type choice made at this step is not definitive, simply click on :icon:`fa fa-globe` :guilabel:`<the selected method>` on top of the AOI window and a dropdown will allow you to switch between the mentioned methods.
-
-Administrative boundaries
-"""""""""""""""""""""""""
-
-You can select administrative layers as an AOI. These geometries are extracted from the `FAO GAUL Level 1 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__. Select :guilabel:`Select country/province`. 
-
-.. note::
-
-    As GEE does not support non-latin characters, accents and special characters have been removed from country and provinces names.
-
-In the first dropdown menu, you will be able to select a Country (administrative layer 0) from the country list.  
-Optionally one can also select a province (administrative level 1) within the country selected. The dropdown list is updated on the fly according to the country selection. If nothing is selected, the whole country will be considered. 
-
-A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to 0 i.e. disabled. 
-
-.. note:: 
-
-    The area of interest and preview will take longer to show up when buffering is enabled.
-
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
+they are extensively described in our documentation. Please read :doc:`..feature/aoi_selector` to know more.
 
 .. thumbnail:: ../_images/cookbook/time_series/aoi_administrative.png
     :title: Select AOI based on administrative layers
     :group: time-series-recipe
 
-EE table
-""""""""
-
-The user can use custom AOI defined by shapes. These shapes need to be ingested in EarthEngine as a :code:`ee.FeatureCollection`. Select :guilabel:`EE table`.
-
-in the first dropdown, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`). 
-
-.. warning::
-
-    You must have access to this asset. If that's not the case ask the owner of the asset to modify the sharing parameters.
-
--   Select :guilabel:`include all` and the whole geometries associated with the features will be used as AOI. 
--   Select :guilabel:`filter` and the user will be able to provide a column name and a value to filter within the table. The Aoi will then be reduced to the filtered features of the initial asset. 
-
-A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to 0 i.e. disabled. 
-
-.. note:: 
-
-    The area of interest and the preview will take longer to show up when buffering is enabled.
-
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
-
-.. thumbnail:: ../_images/cookbook/time_series/aoi_table.png
-    :title: Select AOI based on EE table
-    :group: time-series-recipe
-
-Draw polygon
-""""""""""""
-
-The user can use custom AOI defined by a drawn shape. This shape will be converted into a :code:`ee.FeatureCollection` on the fly. Select :guilabel:`draw a polygon` to use this option.
-
-The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon.
-
-Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click on :icon:`fa fa-check` :guilabel:`Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
-
-.. thumbnail:: ../_images/cookbook/time_series/aoi_polygon.png
-    :title: Select AOI based on drawn polygon
-    :group: time-series-recipe
-
 Dates
 ^^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :icon:`fa fa-check` :guilabel:`Select` button to validate a date. When both dates are selected click on :icon:`fa fa-check` :guilabel:`apply` button.
+In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button.
 
 .. thumbnail:: ../_images/cookbook/time_series/dates.png
     :title: Select AOI based on EE table
@@ -151,45 +86,9 @@ In the :guilabel:`DAT` tab, you will be asked to select the starting date and th
 Sources
 ^^^^^^^
 
-As mentioned in the introduction, A SITS makes use of different satellite sources to obtain a larger data series with a shorter time interval between the images. To meet this objective, SEPAL allows you to select data from multiple entry points. You can select multiple sources in the following list (click on the link to see the corresponding dataset information):
+As mentioned in the introduction, A SITS makes use of different satellite sources to obtain a larger data series with a shorter time interval between the images. To meet this objective, SEPAL allows you to select data from multiple entry points. You can select multiple sources from :btn:`radar`, :btn:`optical` or :btn:`planet` datasets.
 
--   Optical datasets: These datasets are based on Optical satellites imagery.
-
-    -   :guilabel:`L8`: `Landsat 8 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances [<=12 m root mean square error (RMSE)]. All Tier 1 Landsat data can be considered consistent and inter-calibrated (regardless of the sensor) across the full collection.
-        
-        .. line-break::
-
-    -   :guilabel:`L8 T2`: `Landsat 8 Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies.
-        
-        .. line-break::
-
-    -   :guilabel:`L7`: `Landsat 7 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances [<=12 m root mean square error (RMSE)]. All Tier 1 Landsat data can be considered consistent and inter-calibrated (regardless of the sensor) across the full collection.
-        
-        .. line-break::
-
-    -   :guilabel:`L7 T2`: `Landsat 7 Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies.
-
-        .. line-break::
-
-    -   :guilabel:`L4-5`: `Landsat 4 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1>`__ combined with `Landsat 5 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances [<=12 m root mean square error (RMSE)]. All Tier 1 Landsat data can be considered consistent and inter-calibrated (regardless of the sensor) across the full collection.
-
-        .. line-break::
-
-    -   :guilabel:`L4-5 T2`: `Landsat 4 TM Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T2>`__ combined with `Landsat 5 TM Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies.
-        
-        .. line-break::
-
-    -   :guilabel:`S2`: `Sentinel-2 Multispectral instrument <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2>`__ is a wide-swath, high-resolution, multi-spectral imaging mission supporting Copernicus Land Monitoring studies, including the monitoring of vegetation, soil and water cover, as well as observation of inland waterways and coastal areas.        
-
-        .. line-break::
-
--   Radar datasets: This dataset is based on Radar satellite imagery.
-
-    -   :guilabel:`S1`: `Sentinel-1 SAR GRD <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD>`__. The Sentinel-1 mission provides data from a dual-polarization C-band Synthetic Aperture Radar (SAR) instrument at 5.405GHz (C band). This collection includes the S1 Ground Range Detected (GRD) scenes, processed using the Sentinel-1 Toolbox to generate a calibrated, ortho-corrected product. The collection is updated daily. New assets are ingested within two days after they become available.
-
-One can Optionally Select in the last dropdown a classification recipe and apply the classifier to every acquisition in the time-series, transforming the time series into a land cover time series. To know more about the classification recipe got to `Classification <./classification.html>`__.
-
-When all the data are selected click on :icon:`fa fa-check` :guilabel:`apply`.
+When all the data are selected click on :btn:`<fa fa-check> apply`.
 
 .. thumbnail:: ../_images/cookbook/time_series/sources.png
     :title: The sources panel to select the different datasets that will be used in the time-series.
@@ -241,104 +140,7 @@ Available Bands
 
     The wavelength of each band is dependant on the used satellite.
 
-The time series will use a single observation for each pixel. This observation can be one of the following: 
-
-.. list-table::
-    :header-rows: 1
-
-    *   -   Name
-        -   Description
-        -   Formula
-    *   -   :guilabel:`blue`
-        -   blue
-        -   
-    *   -   :guilabel:`green`
-        -   green 
-        -
-    *   -   :guilabel:`red`
-        -    red
-        -
-    *   -   :guilabel:`nir`
-        -   near infrared 
-        -
-    *   -   :guilabel:`swir1`
-        -   shortwave infrared 1 
-        -   
-    *   -   :guilabel:`swir2`
-        -   shortwave infrared 1
-        -
-    *   -   :guilabel:`aerosol`
-        -   aerosol attributes
-        -   
-    *   -   :guilabel:`pan`
-        -   panchromatic band
-        -   
-    *   -   :guilabel:`cirrus`
-        -   cirrus cloud detection
-        -   
-    *   -   :guilabel:`thermal`
-        -   thermal
-        -   
-    *   -   :guilabel:`thermal2`
-        -   thermal2
-        -
-    *   -   :guilabel:`brightness`
-        -   brightness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`0.3037 (band 1) + 0.2793 (band 2) + 0.4743 (band 3) + 0.5585 (band 4) + 0.5082 (band 5) + 0.1863 (band 7)`
-    *   -   :guilabel:`greeness`
-        -   greeness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`-0.2848 (band 1) - 0.2435 (band 2) - 0.5436 (band 3) + 0.7243 (band 4) + 0.0840 (band 5) - 0.1800 (band 7)`
-    *   -   :guilabel:`wetness`
-        -   wetness from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -   :math:`0.1509 (band 1) + 0.1973 (band 2) + 0.3279 (band 3) + 0.3406 (band 4) - 0.7112 (band 5) - 0.4572 (band 7)`
-    *   -   :guilabel:`fourth`
-        -   fourth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -
-    *   -   :guilabel:`fifth`
-        -   fifth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -
-    *   -   :guilabel:`sixth`
-        -   sixth from `Tasseled cap bands <https://en.wikipedia.org/wiki/Tasseled_cap_transformation>`__
-        -
-    *   -   :guilabel:`NDVI`
-        -   `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__
-        -   :math:`((nir - red)/(nir + red))`
-    *   -   :guilabel:`NDMI`: 
-        -   `Normalized Difference Moisture Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__ 
-        -    :math:`ndmi = (nir - swir1)/(nir + swir1)`
-    *   -   :guilabel:`NDWI`
-        -   `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__
-        -   
-    *   -   :guilabel:`MNDWI`
-        -   `Modified Normalized Difference Water Index <https://doi.org/10.1080/01431160600589179>`__ 
-        -   :math:`mndwi = (green - swir) / (green + swir)`
-    *   -   :guilabel:`NDFI`
-        -   `Normalized Difference Fraction Index <http://10.1016/j.jag.2016.06.020>`__ 
-        -   :math:`ndfi = (GV_shade - (NPV + soil)/(GV_shade + NPV + soil)`
-    *   -   :guilabel:`EVI`
-        -   `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__
-        -    :math:`evi =G * (nir - red)/(nir + C_1 * red - C_2 * blue + L)`
-    *   -   :guilabel:`EVI2`
-        -   Two-band EVI (Enhanced vegetation index)
-        -   :math:`evi_2 = 2.5 * (nir - red) / (nir + 2.4 * red + 1)`
-    *   -   :guilabel:`SAVI`
-        -   `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__
-        -   :math:`((nir - red) / (nir + red + L)) x (1 + L)`
-    *   -   :guilabel:`NBR`
-        -   `Normailzed burn ratio <https://doi.org/10.2737/RMRS-GTR-164>`__
-        -   :math:`nbr = (nir - swir) / (nir + swir)`
-    *   -   :guilabel:`UI`
-        -   Urban index
-        -   :math:`ui = (swir2 - nir) / (swir2 + nir)`
-    *   -   :guilabel:`NDBI`
-        -   `Normalized Difference Built-up Index <#>`__
-        -   :math:`ndbi = (swir - nir) / (swir + nir)`
-    *   -   :guilabel:`IBI`
-        -   Index based built-up index
-        -   :math:`ibi = (ndbi - (savi + mndwi) / 2) / (ndbi + (savi + mndwi) / 2)`
-    *   -   :guilabel:`BUI`
-        -   Built-up Index
-        -   :math:`bui = (red - swir1) / (red + swir1) + (swir2 - swir1) / (swir2 + swir1)`
+The time series will use a single observation for each pixel. This observation can be one of the available bands in SEPAL. See the :doc:`../feature/bands` to discover the full list of the SEPAL available bands.
 
 Analysis
 --------
@@ -347,8 +149,8 @@ Once all the parameters are set, you can generate data from the recipe. Some can
 
 The analysis icons can be found in the top right corner of the sepal window: 
 
-- :icon:`fa fa-chart-area`: plot data
-- :icon:`fa fa-cloud-download-alt`: retreive data
+- :btn:`<fa fa-chart-area>`: plot data
+- :btn:`<fa fa-cloud-download-alt>`: retreive data
 
 .. thumbnail:: ../_images/cookbook/time_series/data_analysis.png
     :title: The 2 tabs used to plot or retreive the Time series data
@@ -361,7 +163,7 @@ The analysis icons can be found in the top right corner of the sepal window:
 Plot
 ^^^^
 
-Click on the :icon:`fa fa-chart-area` button to start the plotting tool. Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window. 
+Click on :btn:`<fa fa-chart-area>` to start the plotting tool. Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window. 
 
 The plotting area is dynamic and can be customized by the user.
 
@@ -394,7 +196,7 @@ The data generated by the recipe can also be used in other workflows but before 
 
 Parameters 
 """"""""""
-Click on the :icon:`fa fa-cloud-download-alt` button, it will open the download parameters window. You will be able to select the measure to use on each observation of the time-series. This measure can be selected in the list of available bands presented in a previous section.
+Click on the :btn:`<fa fa-cloud-download-alt>`, it will open the download parameters window. You will be able to select the measure to use on each observation of the time-series. This measure can be selected in the list of available bands presented in a previous section.
 
 .. tip:: 
 
@@ -402,7 +204,7 @@ Click on the :icon:`fa fa-cloud-download-alt` button, it will open the download 
 
 You can set a custom scale for exportation by changing the value of the slider (m). Keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m.
 
-When all the data is selected click on the :icon:`fa fa-check` :guilabel:`apply` button. Notice that the task tab in the bottom left corner of the screen (1) will change from :icon:`fa fa-tasks` to :icon:`fa fa-spinner` which means that the tasks are loading.
+When all the data is selected click on the :btn:`<fa fa-check> apply` button. Notice that the task tab in the bottom left corner of the screen (1) will change from :btn:`<fa fa-tasks>` to :btn:`<fa fa-spinner>` which means that the tasks are loading.
 
 .. thumbnail:: ../_images/cookbook/time_series/export_param.png
     :title: Select the parameter of the exportation process to retreive the data from GEE to SEPAL's folders.
@@ -412,7 +214,7 @@ When all the data is selected click on the :icon:`fa fa-check` :guilabel:`apply`
 Exportation status
 """"""""""""""""""
 
-Going to the task tab (bottom left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 
