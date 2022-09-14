@@ -113,7 +113,7 @@ Click the :code:`Process` tab on the left side of the window.
    :alt: Arrow pointing out the process tab location.
    :align: center
 
-You should now see four options in the center of the screen:
+You should now see many options in the center of the screen:
 
 -   **Optical Mosaic** Create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
 -   **Radar Mosaic** Create a mosaic using Sentinel 1 data.
