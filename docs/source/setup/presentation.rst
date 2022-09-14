@@ -84,7 +84,7 @@ Link your Google Earth Engine (GEE) account with your SEPAL account by clicking 
 
 .. tip::
 
-   Linking your GEE and SEPAL accounts for downloading to SEPAL workspace may help if you do not have sufficient space available in your personal Google Drive.
+   Unlinking your GEE and SEPAL accounts for downloading to SEPAL workspace may help if you do not have sufficient space available in your personal Google Drive.
 
 Linking your GEE and SEPAL accounts will allow you to read and write from your GEE Assets. To save data created in SEPAL as a GEE Asset or to use your existing GEE Assets in classifications or further processing in SEPAL, you will need to have your GEE and SEPAL accounts linked.
 
