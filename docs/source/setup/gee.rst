@@ -36,7 +36,7 @@ To request a GEE account, please visit https://earthengine.google.com/new_signup
    :alt: Request access to google earth engine.
    :align: center
 
-Once you have a GEE account, you can access the platform here: https://code.earthengine.google.com/.
+Once you have a GEE account, you can access the platform code editor here: https://code.earthengine.google.com/.
 
 .. image:: ../_images/setup/register/gee_code.png
    :alt: GEE code editor
