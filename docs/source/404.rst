@@ -12,3 +12,7 @@ UH OH! You're lost.
 
 The page you are looking for does not exist.
 How you got here is a mystery. But you can click the SEPAL button on top of the page to go back to the homepage.
+
+.. note:: 
+
+    Recently the module/recipes lists have been refactored to reflect the tag structure of SEPAL so if you landed here following a link, please press :guilabel:`ctrl`+:guilabel:`k` and type the name of your module.
