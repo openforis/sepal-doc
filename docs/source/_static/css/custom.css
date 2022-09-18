@@ -14,7 +14,7 @@
 *   will be solved
 *
 **/
-html[data-theme=dark] .bd-content img:not(.only-dark) {
+html[data-theme=dark] .bd-content img:not(.only-dark):not(.dark-light) {
    background: transparent;
    border-radius: 0;
 }
@@ -66,18 +66,8 @@ a[data-lightbox] img {padding: .25em;}
 *
 **/
 html[data-theme=dark]{filter: none;}
-@media only screen and (max-width: 576px) {
-   .only-big {
-      display: none;
-   }
-}
-@media only screen and (min-width: 576px) {
-   .only-small {
-      display: none;
-   }
-}
-
-html[data-theme=dark] img {background: unset;}
+@media (max-width: 576px) {.only-big {display: none;}}
+@media (min-width: 576px) {.only-small {display: none;}}
 
 
 /*******************************************************************************
