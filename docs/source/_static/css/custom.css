@@ -62,10 +62,20 @@ a[data-lightbox] img {padding: .25em;}
  }
 
 /*******************************************************************************
-*  prevent brighness changes
+*  add some images rules
 *
 **/
 html[data-theme=dark]{filter: none;}
+@media only screen and (max-width: 576px) {
+   .only-big {
+      display: none;
+   }
+}
+@media only screen and (min-width: 576px) {
+   .only-small {
+      display: none;
+   }
+}
 
 /*******************************************************************************
 * characteristic of the map
