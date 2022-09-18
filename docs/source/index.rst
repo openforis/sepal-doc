@@ -1,9 +1,11 @@
 :html_theme.sidebar_secondary.remove:
 
 .. image:: _images/sepal_light.png
-    :class: main-logo only-light center
+    :align: center
+    :class: main-logo only-light
 
 .. image:: _images/sepal_dark.png
+    :align: center
     :class: main-logo only-dark center
 
 .. The page title must be in rST for it to show in next/prev page buttons.
