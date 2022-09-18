@@ -67,10 +67,8 @@ a[data-lightbox] img {padding: .25em;}
 **/
 html[data-theme=dark]{filter: none;}
 @media (max-width: 576px) {.only-big {display: none !important;}}
-@media (min-width: 576px) {.only-small {
-   display: none !important;
-   max-height: 200px;
-}}
+.only-small {max-height: 200px;}
+@media (min-width: 576px) {.only-small {display: none !important;}}
 
 
 /*******************************************************************************
