@@ -1,10 +1,20 @@
 :html_theme.sidebar_secondary.remove:
 
-.. figure:: _images/sepal_light.png
-    :class: main-logo only-light
+.. image:: _images/sepal_light.png
+    :align: center
+    :class: main-logo only-light only-big
 
-.. figure:: _images/sepal_dark.png
-    :class: main-logo only-dark
+.. image:: _images/sepal_dark.png
+    :align: center
+    :class: main-logo only-dark center only-big
+
+.. image:: _images/logo_light.png
+    :align: center
+    :class: main-logo only-light only-small
+
+.. image:: _images/logo_dark.png
+    :align: center
+    :class: main-logo only-dark center only-small
 
 .. The page title must be in rST for it to show in next/prev page buttons.
    Therefore we add a special style rule to only this page that hides h1 tags
