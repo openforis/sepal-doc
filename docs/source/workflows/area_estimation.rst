@@ -7,7 +7,7 @@ Perform area estimation analysis with SEPAL-CEO
 
 .. prerequisites::
 
-    To follow this tutorial, you need to:
+    To follow this tutorial, you will need to:
 
     -   register to SEPAL;
     -   register to GEE; and
@@ -18,17 +18,17 @@ Introduction
 
 Welcome to Area estimation with SEPAL and CEO!
 
-In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover/land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
+In this manual, you will learn how to perform area estimation for land use/land cover and two-date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors (e.g. maps derived from land cover/land use classifications may have errors due to pixel mixing, or noise in the input data). Using pixel-counting methods will produce biased estimates of area; you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
 
 The goal of this article is to teach you how to perform these tasks so that you can conduct your own area estimation for land use/land cover or change detection classifications.
 
-In this article, you will find four modules covering methods, and one module covering the documentation needed for replicating these methods. The modules are as follows:
+In this article, you will find four modules covering methods and one module covering the documentation needed for replicating these methods. The modules are as follows:
 
 * In `Module 1`_, you will learn how to generate mosaics based on satellite imagery in SEPAL. You will learn how to build these mosaics by selecting different data sources and images based on dates and cloud cover.
 * In `Module 2`_, you will learn how to perform a land use/land cover image classification using random forest methods. You will learn how to define your land uses and land covers, collect training data, and run your model.
-* In `Module 3`_, you will learn how to perform image change detection. Building on skills from `Module 1`_ and `Module 2`_, you will define what change looks like, collect training data, and run your model. You will also learn about different tools used to perform time series analysis.
-* In `Module 4`_, you will learn how to calculate a sample-based estimate of area and error. You will learn how to use stratified random sampling and verification image analysis in order to calculate area and error estimates based on the classification you create in `Module 2`_. You will also learn about some key documentation steps in preparation for `Module 5`_.
-* In `Module 5`_, you will learn about documenting and archiving your area estimation project. The information in this step is required for your project to be replicated by yourself or your colleagues in the future, either for additional areas or points in time.
+* In `Module 3`_, you will learn how to perform image change detection. Building on skills from `Module 1`_ and `Module 2`_, you will define what change looks like, collect training data, and run your model. You will also learn about different tools used to perform time-series analysis.
+* In `Module 4`_, you will learn how to calculate a sample-based estimate of area and error. You will learn how to use stratified random sampling and verification image analysis to calculate area and error estimates based on the classification you create in `Module 2`_. You will also learn about some key documentation steps in preparation for `Module 5`_.
+* In `Module 5`_, you will learn about documenting and archiving your area estimation project. The information in this step is required for your project to be replicated by yourself or your colleagues in the future (either for additional areas or points in time).
 
 These exercises include step-by-step directions and are built to facilitate learning through reading and by doing. This article will be accompanied by short videos, which will visually illustrate the steps described in the text.
 
@@ -47,13 +47,13 @@ These exercises include step-by-step directions and are built to facilitate lear
            sample -> doc;
         }
 
-The primary tool needed to complete this tutorial is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web-based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more, all from your browser. Part of the Open Foris suite of tools, SEPAL was designed by the Food and Agricultural Organization of the United Nations (FAO) to aid in remote sensing applications in developing countries. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
+The primary tool needed to complete this tutorial is the System for Earth Observation Data Access, Processing and Analysis for Land Monitoring (SEPAL). SEPAL is a web-based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs and more – all from your browser. Part of the Open Foris suite of tools, SEPAL was designed by the Food and Agricultural Organization of the United Nations (FAO) to aid in remote sensing applications in developing countries. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates Collect Earth Online (CEO) and Google Earth Engine (GEE).
 
-SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and, thus, inefficient for processing satellite imagery. It achieves this by drawing on a cloud-based supercomputer, which enables users to process, store, and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
+SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and inefficient for processing satellite imagery. It achieves this by utilizing a cloud-based supercomputer, which enables users to process, store and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
 
-Two other tools will also be needed to complete this tutorial: CEO and GEE. CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from Google Earth Engine, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and leverage their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
+Two other tools will also be needed to complete this tutorial: CEO and GEE. CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
 
-GEE combines a multi-petabyte catalog of satellite imagery and geospatial dataset with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the Earth Engine JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: 
+GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the GEE JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: 
 
     -   JavaScript code editor; 
     -   a map display for visualizing geospatial datasets; 
@@ -67,7 +67,7 @@ GEE combines a multi-petabyte catalog of satellite imagery and geospatial datase
 
 .. seealso::
 
-    For more information, go to:
+    For more information, you can use the following resources:
 
     -   A previously published forest change detection manual for SEPAL: `Forest Cover Change Detection with SEPAL <https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing>`_
     -   Olofsson et al 2014: `FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change <http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/>`_
@@ -79,9 +79,9 @@ GEE combines a multi-petabyte catalog of satellite imagery and geospatial datase
 Project planning information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, in the future you may use these techniques for your own projects. We encourage you to think about the following items to ensure your resulting products will be relevant, and that your chosen methods are well documented and transparent.
+Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future. We encourage you to think about the following items to ensure that your resulting products will be relevant and that your chosen methods are well-documented and transparent.
 
--   Descriptions and Objectives of the Project (State issues and information needs). Are you trying to conform to an IPCC Tier?
+-   Descriptions and Objectives of the Project (State issues and information needs). Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
 
 -   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? Do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 
@@ -92,12 +92,12 @@ Project planning and methods documentation play a key role in any remote sensing
 -   Description of the features/classes to be modeled or mapped.
 
     -   Do you have a national definition of “forest”?
-    -   Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
+    -   Are you aware of the IPCC guidelines for the recommended land-use classes and how they will relate to mapping land cover?
     -   Do you have key categories that will drive different analysis techniques?
 
 -   Considerations for measuring, reporting and verifying your data.
 
-    -   Do you have a strategy? Do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)
+    -   Do you have a strategy? Do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path? Who are the decision makers that will inform these strategies?
     -   What field data will be required for classification and accuracy assessment?
     -   Do you have an existing National Forest Monitoring System (NFMS) in place?
 
@@ -110,7 +110,7 @@ Project planning and methods documentation play a key role in any remote sensing
 Mosaic generation (Landsat & Sentinel 2)
 ----------------------------------------
 
-SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two date change detection processes covered in `Module 2`_ and `Module 3`_ respectively. These mosaics can be downloaded locally or to your Google Drive.
+SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two-date change detection processes covered in `Module 2`_ and `Module 3`_ respectively. These mosaics can be downloaded locally or to your Google Drive account.
 
 In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway.
 
@@ -118,15 +118,15 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 
     **Objectives**
 
-    -   learn how to create an image mosaic;
-    -   become familiar with a variety of options for selecting dates, sensors, mosaicking and download options; and
-    -   create a cloud-free mosaic for 2016.
+    -   Learn how to create an image mosaic.
+    -   Become familiar with a variety of options for selecting dates, sensors, mosaicking and download options.
+    -   Create a cloud-free mosaic for 2016.
 
 .. note::
 
     **Prerequisites**
 
-    -   Registering for a SEPAL account
+    -   SEPAL account registration
 
 Create a Landsat Mosaic
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -137,16 +137,16 @@ Select the :code:`Processing` tab.
 
 Then, select :code:`Optical Mosaic`.
 
-When the Optical Mosaic tab opens, you will see an **Area of Interest** window in the lower-right corner of your screen.
+When the Optical Mosaic tab opens, you will see an **Area of Interest** (AOI) window in the lower-right corner of your screen.
 
-There are three ways to choose your area of interest. Open the menu by selecting the carrot on the right side of the window label.
+There are three ways to choose your AOI. Open the menu by selecting the carrot on the right side of the window label.
 
 -   Select Country/Province (the default)
 -   Select from EE table
 -   Draw a polygon
 
 .. figure:: ../_images/workflows/area_estimation/area_of_interest.png
-   :alt: The Area of Interest (AOI) menu.
+   :alt: The AOI menu.
    :width: 350
    :align: center
 
@@ -161,6 +161,7 @@ In the list of countries that pops up, scroll down until you see the available o
 Select :code:`Mai-Ndombe`.
 
 .. tip::
+
     **Optional**: You can add a **Buffer** to your mosaic. This will include an area around the province of the specified size in your mosaic.
 
 Select :code:`Next`.
@@ -169,11 +170,11 @@ Select :code:`Next`.
    :alt: The Country or Province selection screen.
    :align: center
 
-In the :code:`Date` menu you can choose the :code:`Year` you are interested in or select :code:`More`.
+In the :code:`Date` menu, you can choose the :code:`Year` you are interested in or select :code:`More`.
 
 -   This interface allows you to refine the dates or seasons you are interested in.
 -   You can select a :code:`target date` (the date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
--   You can also include additional seasons from the past or the future by adjusting the :code:`Past Seasons` and :code:`Future Seasons` slider. This will include additional years' data of the same dates specified. For example, if you're interested in August 2015, including one future season will also include data from August 2016. This is useful if you're interested in a specific time of year but there is significant cloud cover.
+-   You can also include additional seasons from the past or the future by adjusting the :code:`Past Seasons` and :code:`Future Seasons` slider. This will include additional years' data of the same dates specified (if you're interested in August 2015, including one future season will also include data from August 2016). This is useful if you're interested in a specific time of year, but there is significant cloud cover.
 -   For this exercise, let's create imagery for the dry season of 2019.
 
     -   Select July 1 of 2019 as your target date (**2019-07-01**), and move your date flags to **May 1-September 30**.
@@ -183,12 +184,12 @@ In the :code:`Date` menu you can choose the :code:`Year` you are interested in o
    :alt: The date menu.
    :align: center
 
-Now select the :code:`Data Sources (SRC)` you'd like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected. Then select :code:`Done`.
+Now select the :code:`Data Sources (SRC)` you'd like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected. Select :code:`Done`.
 
--   **L8** began operating in 2012 and is continuing to collect data
--   **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present
--   **L4-5 TM,** collected data from July 1982-May 2012
--   **Sentinel 2 A+B** began operating in June 2015
+-   **L8** began operating in 2012 and is continuing to collect data.
+-   **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present.
+-   **L4-5 TM,** collected data from July 1982-May 2012.
+-   **Sentinel 2 A+B** began operating in June 2015.
 
 Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
 
@@ -200,7 +201,7 @@ Now SEPAL will load a preview of your data. By default it will show you where RG
    :alt: A preview of your mosaic.
    :align: center
 
-We're now going to go through the **scene selection process**. This allows you to change which specific images to include in your mosaic.
+We're now going to go through the **Scene selection process**. This allows you to change which specific images to include in your mosaic.
 
 -   You can change the scenes that are selected using the :code:`SCN` button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by selecting :code:`Use All Scenes` and then :code:`Apply`.
 -   Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
@@ -209,7 +210,7 @@ We're now going to go through the **scene selection process**. This allows you t
    :alt: Selecting scenes for your mosaic.
    :align: center
 
-Click :code:`Apply`. The result should look like the below image.
+Select :code:`Apply`. The result should look like the image below.
 
 .. note::
 
@@ -222,11 +223,11 @@ Click :code:`Apply`. The result should look like the below image.
 Choose the :code:`Auto-Select` button to auto-select some scenes.
 
 .. figure:: ../_images/workflows/area_estimation/auto_select_scenes.png
-    :alt: Arrow showing the button for auto selecting scenes.
+    :alt: Arrow showing the button for auto-selecting scenes.
     :width: 550
     :align: center
 
-You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to **2** and the maximum to **100**. Click :code:`Select Scenes`. If there is only one scene for an area, that will be the only one selected despite the minimum.
+You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to **2** and the maximum to **100**. Choose :code:`Select Scenes`. If there is only one scene for an area, that will be the only one selected despite the minimum.
 
 .. figure:: ../_images/workflows/area_estimation/auto_select_scenes_menu.png
     :alt: Menu for auto-selecting scenes.
@@ -240,21 +241,22 @@ You should now see imagery with overlaying circles, indicating how many scenes a
     :width: 450
     :align: center
 
-You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
+You will notice that the circles that previously displayed a **O** now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 
-Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
+Hover over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Select that circle.
 
 .. figure:: ../_images/workflows/area_estimation/select_scenes_interface.png
-    :alt: The select scenes interface showing 0 available and 4 selected scenes.
+    :alt: The Select scenes interface showing **0** available and **4** selected scenes.
     :align: center
 
 In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 
--   Satellite (e.g. L8, L7, L5 or L4);
--   Percent cloud cover; and
+-   Satellite (e.g. L8, L7, L5 or L4)
+-   Percent cloud cover
 -   Number of days from the target date
 
 To expand the Landsat image, hover over one of the images and select :code:`Preview`. Click on the image to close the zoomed in graphic and return to the list of scenes.
+
 To remove a scene from the composite, select the :code:`Remove` button when you hover over the selected scene.
 
 .. figure:: ../_images/workflows/area_estimation/remove_preview_scenes.png
@@ -265,13 +267,13 @@ To remove a scene from the composite, select the :code:`Remove` button when you 
     :alt: Scene preview screen.
     :align: center
 
-On the leftmost side, you will see **Available Scenes**, which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it, or if there are additional scenes you would like to add, hover over the image and select :code:`Add`.
+On the leftmost side, you will see **Available Scenes**, which are images that will not be included in the mosaic, but can be added to it. If you have removed an image and would like to re-add it, or if there are additional scenes you would like to add, hover over the image and select :code:`Add`.
 
 -   Once you are satisfied with the selected imagery for a given area, select :code:`Close` in the lower-right corner.
 -   You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
 .. figure:: ../_images/workflows/area_estimation/select_scenes_1.png
-    :alt: Select scenes screen showing one available scene and 3 selected scenes.
+    :alt: Select scenes screen showing **1** available scene and **3** selected scenes.
     :width: 450
     :align: center
 
@@ -279,7 +281,7 @@ You can also change the composing method using the :code:`CMP` button on the low
 
 .. note::
 
-    Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
+    Notice that there are several additional options including shadow tolerance, haze tolerance, Normalized Difference Vegetation Index (NDVI) importance, cloud masking, and cloud buffering.
 
 For this exercise, we will leave these at their default settings. If you make changes, select :code:`Apply` after you're done.
 
@@ -296,9 +298,9 @@ Now we'll explore the :code:`Bands` dropdown. Select :code:`Red|Green|Blue` at t
 
 The dropdown menu will appear, as seen below.
 
--   Select the **NIR, RED, GREEN** band combination. This band combination displays vegetation as red (darker reds indicate dense vegetation). Bare ground and urban areas appear grey or tan, while water appears black. NIR stands for near infrared.
+-   Select the **NIR, RED, GREEN** band combination (NIR stands for near infrared). This band combination displays vegetation as red (darker reds indicate dense vegetation); bare ground and urban areas appear grey or tan; water appears black.
 -   Once selected, the preview will automatically show what the composite will look like.
--   Use the scroll wheel on your mouse to zoom in on the mosaic and then select and move to pan around the image. This will help you assess the quality of the mosaic.
+-   Use the scroll wheel on your mouse to zoom in on the mosaic and then click and move to pan around the image. This will help you assess the quality of the mosaic.
 
 .. figure:: ../_images/workflows/area_estimation/bands_menu.png
     :alt: The band combinations menu.
@@ -317,10 +319,10 @@ Using what you've learned, take some time to explore adjusting some of the input
 -   For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
 -   The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
-Name and Save your Recipe and Mosaic
+Name and save your recipe and mosaic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now, we will name the "Recipe" for creating the mosaic and explore options for the recipe.
+Now, we will name the "recipe" for creating the mosaic and explore options for the recipe.
 
 .. note::
     You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL's CEO.
@@ -332,13 +334,13 @@ Now, we will name the "Recipe" for creating the mosaic and explore options for t
 Let's explore options for the recipe. Select the three lines in the upper-right corner.
 
 -   You can **Save the recipe** (SEPAL will do this automatically on retrieval) so that it is available later.
--   You can also **Duplicate the recipe**. This is useful for creating two years of data, as we will do in `Module 3`_.
--   Finally, you can **Export the recipe**. This downloads a zip file with a JSON of your mosaic specifications.
+-   You can also **Duplicate the recipe**. This is useful for creating two years of data, which we will do in `Module 3`_.
+-   Finally, you can **Export the recipe**. This downloads a ZIP file with a JavaScript Object Notation (JSON) of your mosaic specifications.
 
 Select :code:`Save recipe….` This will also let you rename the mosaic, if you choose.
 
 .. figure:: ../_images/workflows/area_estimation/save_duplicate_export_recipe.png
-    :alt: Save, duplicate, and export recipe menu.
+    :alt: Save, duplicate and export recipe menu.
     :align: center
 
 Now if you click on the three lines icon, you should see an additional option: **Revert to old revision...**
@@ -373,14 +375,14 @@ A window will appear with the following options:
 
 -   **Bands to Retrieve:** select the desired bands you would like to include in the download.
 
-    -   Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
+    -   Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. This will show you visible and infrared data collected by Landsat.
     -   Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
     -   Metadata on Date, Day of Year, and Days from Target can also be selected.
 
 -   **Scale:** The resolution of the mosaic. Landsat data is collected at 30 meter (m) resolution, so we will leave the slider there.
--   **Retrieve to:** Sepal Workspace is the default option. Other options may appear depending on your permissions.
+-   **Retrieve to:** SEPAL Workspace is the default option. Other options may appear, depending on your permissions.
 
-When you have the desired bands selected, click :code:`Retrieve`.
+When you have the desired bands selected, select :code:`Retrieve`.
 
 You will notice the :code:`Tasks` icon is now spinning. If you select it, you will see that the data retrieval is in process. This step will take some time.
 
@@ -396,23 +398,23 @@ You will notice the :code:`Tasks` icon is now spinning. If you select it, you wi
 Image classification
 --------------------
 
-The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness). Learning to do image classification well is extremely important and requires experience. This module was designed to help you build some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class.
+The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or an impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness). Learning to do image classification well is extremely important and requires experience. This module was designed to help you acquire some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class.
 
-There are both supervised (uses human guidance, including training data) and unsupervised (does not use human guidance) classification methods. The random forest approach demonstrated here uses training data and is thus a supervised classification method.
+There are both supervised (uses human guidance, including training data) and unsupervised (does not use human guidance) classification methods. The "random forest approach" demonstrated here uses training data and is thus a supervised classification method.
 
-There are a number of supervised classification algorithms that can be used to assign the pixels in the image to the various map classes. One way of performing a supervised classification is to utilize a Machine Learning algorithm. Machine Learning algorithms utilize training data combined with image values to learn how to classify pixels. Using manually collected training data, these algorithms can train a classifier, and then use the relationships identified in the training process to classify the rest of the pixels in the map. The selection of image values (e.g., NDVI, elevation, etc.) used to train any statistical model should be well thought out and informed by your knowledge of the phenomenon of interest to classify your data (e.g. by forest, water, clouds, or other).
+There are a number of supervised classification algorithms that can be used to assign the pixels in the image to the various map classes. One way of performing a supervised classification is to utilize a machine learning (ML) algorithm. Machine learning algorithms utilize training data combined with image values to learn how to classify pixels. Using manually collected training data, these algorithms can train a classifier, and then use the relationships identified in the training process to classify the rest of the pixels in the map. The selection of image values (e.g. NDVI, elevation, etc.) used to train any statistical model should be well thought out and informed by your knowledge of the phenomenon of interest to classify your data (e.g. by forest, water, clouds, or other).
 
-In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user generated reference data set. This data set is collected either in the field or manually through examination of remotely sensed data sources such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in `Module 4`_.
+In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user generated reference data set. This dataset is collected either in the field or manually through examination of remotely sensed data sources, such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in `Module 4`_.
 
-Before starting your classification, you will need to create a response design with details about each of the land covers / land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (in `Section 2.2`_ we will use a region of Brazil); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4 we will run the classification and examine our results.
+Before starting your classification, you will need to create a response design with details about each of the land covers/land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (in `Section 2.2`_ [we will use a region of Brazil]); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4, we will run the classification and examine our results.
 
-The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University. To learn more about their materials and their work, visit their GitHub site at https://github.com/beeoda.
+The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis (BEEODA) in the Department of Earth & Environment at Boston University. To learn more about their materials and their work, visit their GitHub site at https://github.com/beeoda.
 
-At the end of this module you will have a classified land use land cover map.
+At the end of this module, you will have a classified land use/land cover map.
 
 .. note::
 
-    This section takes approximately 4 hours to complete.
+    This section takes approximately four hours to complete.
 
 
 .. _Section 2.1:
@@ -420,24 +422,24 @@ At the end of this module you will have a classified land use land cover map.
 Response design for classification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating consistent labeling protocols is necessary for creating accurate training data and later, accurate sample based estimates (see `Module 4`_). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover / land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
+Creating consistent labeling protocols is necessary for creating accurate training data and accurate sample-based estimates (see `Module 4`_). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover/land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
 
-In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points (for more on decision points, go to `Section 5.1`_).
+In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points (for more information about decision points, go to `Section 5.1`_).
 
 .. note::
 
-    **Objective**: Learn how to create a classification scheme for land cover / land use classification mapping.
+    **Objective**: Learn how to create a classification scheme for land cover/land use classification mapping.
 
 
 Specify the classification scheme
 """""""""""""""""""""""""""""""""
 
-“Classification scheme” is the name used to describe the land cover and land use classes adopted. It should cover all of the possible classes that occur in the area of interest. Here, you will create a classification scheme with detailed definitions of the land cover and land use classes to share with interpreters.
+“Classification scheme” is the name used to describe the land cover and land-use classes adopted. It should cover all of the possible classes that occur in the AOI. Here, you will create a classification scheme with detailed definitions of the land cover and land-use classes to share with interpreters.
 
-Create a decision tree for your land cover or land use classes. There may be one already in use by your department. The tree should capture the most important classifications for your study. Here is an example:
+Create a decision tree for your land cover or land-use classes. There may be one already in use by your department. The tree should capture the most important classifications for your study. Here is an example:
 
 -   This example includes a hierarchical component. The green and red categories have multiple sub-categories, which might be multiple types of forest, crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
--   For this Exercise, we'll use a simplified land cover and land use classification as in this graph:
+-   For this exercise, we'll use a simplified land cover and land-use classification as in this graph:
 
 .. graphviz::
 
@@ -449,33 +451,33 @@ Create a decision tree for your land cover or land use classes. There may be one
            lc -> nf;
         }
 
-When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the Intergovernmental Panel on Climate Change (IPCC) land-use categories, CORINE land cover (CLC), or land cover and land use, landscape (LUCAS).
+When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CORINE land cover (CLC), or land cover and land use, landscape (LUCAS).
 
--   If applicable, your classification scheme should be consistent with the national land cover and land use definitions.
+-   If applicable, your classification scheme should be consistent with the national land cover and land-use definitions.
 -   In cases where the classification scheme definition is different from the national definition, you will need to provide a reason.
 
-Create a detailed definition for each land cover and land use change class included in the classification scheme. We recommend you include measurable thresholds.
+Create a detailed definition for each land cover and land-use change class included in the classification scheme. We recommend that you include measurable thresholds.
 
-Our classification will take place in Brazil, in an area of the Amazon rainforest undergoing deforestation.
+Our classification will take place in an area of the Amazon rainforest undergoing deforestation in Brazil.
 
 -   We'll define Forest as an area containing more than 70% of tree cover.
-    ii. We'll define Non-forest as areas with less than 70% of tree cover. This will capture urban areas, water, and agricultural fields.
+    We'll define Non-forest as areas with less than 70% of tree cover. This will capture urban areas, water and agricultural fields.
 
 -   For creating your own classifications, here's some things to keep in mind:
 
-    -   It is important to have definitions for each of the classes. A lack of clear definitions of the land cover classes can make the quality of the resulting maps difficult to assess, and challenging for others to use. The definitions you come up with now will probably be working definitions that you find you need to modify as you move through the land cover classification process.
+    -   It is important to have definitions for each of the classes. A lack of clear definitions of the land cover classes can make the quality of the resulting maps difficult to assess and challenging for others to use. The definitions you come up with now will probably be working definitions that you find you need to modify as you move through the land cover classification process.
 
     .. note::
 
         As you become more familiar with the landscape, data limitations, and the ability of the land cover classification methods to discriminate some classes better than others, you will undoubtedly need to update your definitions.
 
-    -   As you develop your definitions, you should be relating back to your applications. Make sure that your definitions meet your project objectives. For example, if you are creating a map to be used as part of your United Nations Framework Convention on Climate Change (UNFCCC) greenhouse gas reporting documents, you will need to make sure that your definition of forest meets the needs of this application.
+    -   As you develop your definitions, you should be relating back to your applications. Make sure that your definitions meet your project objectives (e.g. if you are creating a map to be used as part of your United Nations Framework Convention on Climate Change [UNFCCC] greenhouse gas reporting documents, you will need to make sure that your definition of forest meets the needs of this application.
 
     .. note::
 
         The above land cover tree is an excerpt of text from the Methods and Guidance from the Global Forest Observations Initiative (GFOI) document that describes the Intergovernmental Panel on Climate Change (IPCC) 2003 Good Practice Guidance (GPG) forest definition and suggestions to consider when drafting your forest definition. When creating your own decision tree, be sure to specify if your definitions follow a specific standard (e.g. using ISO standard Land Cover Meta-Language [LCML, ISO 19144-2] or similar).
 
-    -   During this online training course, you will be mapping land cover across the landscape using the Landsat composite, a moderate resolution data set. You may develop definitions based upon your knowledge from the field or from investigating high resolution imagery. However, when deriving your land cover class definitions, it's also important to be aware of how the definitions relate to the data used to model the land cover.
+    -   During this online training course, you will be mapping land cover across the landscape using the Landsat composite, a moderate resolution data set. You may develop definitions based on your knowledge from the field or from investigating high-resolution imagery; however, when deriving your land cover class definitions, it's also important to be aware of how the definitions relate to the data used to model the land cover.
 
     .. note::
 
@@ -488,7 +490,7 @@ For additional resources, go to http://www.ipcc.ch/ipccreports/tar/wg2/index.php
 Create a mosaic for classification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We first need an image to classify before running a classification. For best results, we will need to create an optical mosaic with good coverage of our study area. We will build on knowledge gained in `Module 1`_ to create an optical mosaic in SEPAL and retrieve it to Google Earth Engine.
+We first need an image to classify before running a classification. For best results, we will need to create an optical mosaic with good coverage of our study area. We will build upon knowledge gained in `Module 1`_ to create an optical mosaic in SEPAL and retrieve it in GEE.
 
 In SEPAL, you can run a classification on either a mosaic recipe or on a GEE asset. It is best practice to run a classification using an asset, rather than on the fly with a recipe. This will improve how quickly your classification will export and avoid computational limitations.
 
@@ -1230,7 +1232,7 @@ B. Use SEPAL workflow to generate time series of forest probability images.
       4.  Download the time series to your SEPAL workspace.
 
 .. note::
-   It will take many hours to download the classified time series to your account depending on how large your AOI is.
+   It will take many hours to download the classified time series to your account, depending on how large your AOI is.
 
 Setup
 """""
@@ -2165,11 +2167,11 @@ You must create a project using CEO to add additional questions about confidence
 Quality management and archiving - Quality Control
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-Quality control refers to the quality of interpretation through cross-validation based on a set of samples that were assessed by two or more interpreters. See also the cold data check mentioned above. These checks can be conducted in CEO by creating multiple projects with the same sample plots. Multiple interpreters can each complete one of these projects, allowing for comparison.
+Quality control refers to the quality of interpretation through cross-validation based on a set of samples that were assessed by two or more interpreters (see also the cold data check mentioned above). These checks can be conducted in CEO by creating multiple projects with the same sample plots. Multiple interpreters can each complete one of these projects, allowing for comparison.
 
 Establish a reference interpretation for each of the cross-validation sample units.
 
-Choose a reference interpretation--this should be one of the interpreter's class assignments. This reference interpretation will be the basis for establishing the performance of individual interpreters.
+Choose a reference interpretation (this should be one of the interpreter's class assignments. This reference interpretation will be the basis for establishing the performance of individual interpreters.
 
 Calculate agreement for each interpreter based on the reference interpretation. For each pair of interpreters, create a confusion matrix and include it in your project documentation.
 
@@ -2180,7 +2182,7 @@ Calculate agreement for each interpreter based on the reference interpretation. 
     Class 2 (interpreter), Counts of sample points, Counts of sample points, Counts of sample points
     Class k (interpreter), Counts of sample points, Counts of sample points, Counts of sample points
 
-To work an example, pretend that you and another interpreter have both collected data on a set of sample units on this Amazon land cover classification. Here are the results:
+For example, pretend that you and another interpreter have both collected data on a set of sample units on this Amazon land cover classification. Here are the results:
 
 .. csv-table::
     :header: Point number, Interpreter 1, Reference
@@ -2276,38 +2278,38 @@ Now calculate the per-class agreement. Note that percent should be calculated by
     Non-forest (reference), Percent, Percent, Percent, Percent
     Total                 , Percent, Percent, Percent, Percent
 
-.. _section 4.3:
+.. _Section 4.3:
 
 Area and uncertainty estimation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The final step of calculating the sample-based estimates of error and area is taking the map areas (generated in `section 4.1`_), and your verification data points from our data collection (`section 4.2`_), conducted according to the response design rules (`section 4.1`_) and using statistics to output the final estimates of area and uncertainty.
+The final step of calculating the sample-based estimates of error and area involves taking the map areas (generated in `Section 4.1`_) and your verification data points from our data collection (`Section 4.2`_), conducted according to the response design rules (`Section 4.1`_), and using statistics to output the final estimates of area and uncertainty.
 
-In `section 4.3.1`_, we provide an optional description of error matrices, also called confusion matrices. This provides the underlying theory for using the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
+In `Section 4.3.1`_, we provide an optional description of error matrices, also called confusion matrices. This provides the underlying theory for using the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
 Please note that you will need to upload your collected data from CEO to Sepal using the directions found in `section 4.1.1`_. If you used the CEO-SEPAL bridge, you must log out of CEO for the “Import CEO Project” link to work.
 
 .. note::
 
     **objectives**:
 
-    -   create area estimate for your classification
-    -   create uncertainty/error estimate for your classification
+    -   Create area estimate for your classification.
+    -   Create uncertainty/error estimate for your classification.
 
-.. warning::
+.. note::
 
     **Prerequisites**:
 
-    -   Completed verification data, or reference data (`section 4.2`_)
-    -   Map areas generated by your sampling design (`section 4.1`_)
+    -   Completed verification data, or reference data (`Section 4.2`_).
+    -   Map areas generated by your sampling design (`Section 4.1`_).
 
-.. _section 4.3.1:
+.. _Section 4.3.1:
 
 Understanding the error matrix
 """"""""""""""""""""""""""""""
 
 .. note::
 
-    This step is fully optional
+    This step is optional.
 
 A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
 
@@ -2321,7 +2323,7 @@ A common tool to quantify agreement is the error matrix (sometimes called a conf
 -   The producer's accuracy can be quantified by dividing the number of correctly classified plots by the sum of the plots classified as the mapped class in the validation reference sample. For the forest class in the example above, this is 17 correctly identified points divided by 20 samples that were classified as forest from the reference data. Producer's accuracies for each class are shown in the pink cells. Producer's accuracy is the complement of errors of omission (sites that are not classified as forest in the map that are actually forest).
 
 
-For your own data, calculate an error matrix following the above guidelines:
+For your own data, calculate an error matrix following the above guidelines.
 
 .. figure:: ../_images/workflows/area_estimation/example_error_matrix.png
    :alt: An example error matrix.
@@ -2339,27 +2341,27 @@ Once the error matrix is created, the area estimation becomes straightforward. E
 
 At the heart of the analysis is the implementation of an unbiased area estimator. Different estimators can be implemented to assess accuracy. In the next part, you will use a stratified estimation since you have a sample stratified by the discrete map classes.
 
-.. _section 4.3.2:
+.. _Section 4.3.2:
 
 Preparing your CEO collected data for analysis in SEPAL
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. note::
 
-    This step is fully optional
+    This step is optional.
 
-Open the .csv file you downloaded from Collect Earth Online in `section 4.2.3`_. It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”. Inspect the column data.
+Open the CSV file you downloaded from CEO in `Section 4.2.3`_. It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”. Inspect the column data.
 
 You should have:
 
 -   A column named “PL_MAP_CLASS” that consists of numeric values. These are the classes assigned by the classification.
--   A column with your question about the correct map class as the column header. In this example, it is “IS THIS FOREST OR NON-FOREST”.
+-   A column with your question about the correct map class as the column header. In this example, it is: “IS THIS FOREST OR NON-FOREST”.
 
-These are the classes you assigned manually in CEO based on map imagery. This will either be numeric (1 or 2) or text (Forest and Non-forest) depending on how you set up your Collect Earth Online project.
+These are the classes you assigned manually in CEO based on map imagery. This will either be numeric (1 or 2) or text (Forest and Non-forest) depending on how you set up your CEO project.
 
 .. note::
 
-    If your column for the correct map class is numeric, you can directly save your .csv file and upload it to SEPAL.
+    If your column for the correct map class is numeric, you can directly save your CSV file and upload it to SEPAL.
 
 If your column for the correct map class is text, you will need to either:
 
@@ -2372,19 +2374,19 @@ If your column for the correct map class is text, you will need to either:
 
         .. note::
 
-            This will use an if statement to assign the number 1 to sample plots you assigned the value “Forest” to, and the number 2 to other plots (here, plots labeled Non-forest). If you have more than two classes, you will need to use nested IF statements.
+            This will use an "if statement" to assign the number 1 to sample plots you assigned the value “Forest” to, and the number 2 to other plots (here, plots labeled Non-forest). If you have more than two classes, you will need to use nested if statements.
 
     -   Press enter. You should now see either a 1 or a 2 populate the column. Double check that it is the correct value.
     -   Fill the entire column.
 
 .. figure:: ../_images/workflows/area_estimation/example_dataset.png
-   :alt: An example dataset
+   :alt: An example dataset.
    :width: 400
    :align: center
 
-Finally Save your .csv file and upload it to SEPAL.
+Save your CSV file and upload it to SEPAL.
 
-.. _section 4.3.3:
+.. _Section 4.3.3:
 
 Using the stratified estimator in SEPAL
 """""""""""""""""""""""""""""""""""""""
@@ -2393,7 +2395,7 @@ The aim of this stratified sampling design tool is to analyze results from a str
 
 The concept is derived from map accuracy assessment principles: characterized frequency of errors (omission and commission) for each map class may be used to compute area estimates and also to estimate the uncertainties (confidence intervals) for the areas for each class.
 
-First, open the Stratified Area Estimator-Analysis Tool. In the Apps SEPAL window select Stratified Area Estimator - Analysis. This tool is very similar to the Design tool that you used to create your stratified sample.
+First, open the Stratified Area Estimator-Analysis Tool. In the Apps SEPAL window, select Stratified Area Estimator - Analysis. This tool is very similar to the Design tool that you used to create your stratified sample.
 
 You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
@@ -2405,19 +2407,19 @@ Select the **Inputs** page on the left side of the screen. You will see two data
 
 -   **Reference Data**:  this refers to the table that you classified and exported in the previous section. It will contain a column that identifies the map output class for each point as well as a column for the value from the image interpreter (validation classification).
 
-    -   For projects completed in CEO: Select the **Reference data** button and navigate to the .csv file you downloaded from CEO and then uploaded to SEPAL in `section 4.3.2`_.
-    -   For projects completed in CEO-SEPAL bridge:
-        -   Check that you are logged out of the Collect Earth Online website.
+    -   For projects completed in CEO: Select the **Reference data** button and navigate to the CSV file you downloaded from CEO and then uploaded to SEPAL in `Section 4.3.2`_.
+    -   For projects completed in the CEO-SEPAL bridge:
+        -   Check that you are signed out of the CEO website.
         -   Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO url**. You can also click the **Paste CEO url from clipboard** button.
         -   Click :code:`Import CEO project`. This will populate the input file for the Reference data as well as the column names.
 
--   **Area data**:  this is a CSV that was automatically created during the Stratified Area Estimator--Design workflow. It contains area values for each mapped land cover class.
+-   **Area data**:  This is a CSV file that was automatically created during the Stratified Area Estimator--Design workflow. It contains area values for each mapped land cover class.
 
-    -   Click the **Area data** button.
-    -   Open the **sae_design_AmazonClassification** folder, or the folder labeled :code:`sae_design_your-name-here` if you did not call your classification **AmazonClassification**. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification). Within this folder, select **area_rast.csv** (see image below).
+    -   Select the **Area data** button.
+    -   Open the **sae_design_AmazonClassification** folder, or the folder labeled :code:`sae_design_your-name-here`, if you did not call your classification **AmazonClassification**. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification). Within this folder, select **area_rast.csv** (see image below).
 
 .. figure:: ../_images/workflows/area_estimation/add_classification.png
-   :alt: Adding the classification
+   :alt: Adding the classification.
    :width: 450
    :align: center
 
@@ -2427,17 +2429,18 @@ Choose the column with the reference data information.
 
 .. note::
 
-    -   For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in `section 4.3.2`_.
+    -   For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in `Section 4.3.2`_.
     -   For projects completed in CEO-SEPAL: ref_code
 
-Choose the column with the map data information
+Choose the column with the map data information.
 
 .. note::
 
     -   For projects completed in CEO: PL_MAP_CLASS
     -   For projects completed in CEO-SEPAL: map_code
 
-Choose the map area column from the area file—map_area
+Choose the map area column from the area file—map_area.
+
 Choose the class column from the area file—map_code or map_edited_class. The map_edited_class has the names you entered manually during the design phase, while the map_code has the numeric class codes.
 
 .. note::
@@ -2452,41 +2455,41 @@ You can add a **Display data** column to enable validation on the fly. You can c
    :width: 450
    :align: center
 
-Once you have set these input parameters, select :code:`Check` on the left side of the window. This page will simply plot your samples on a world map. Fix the locations of your plots by specifying the correct columns to use as the X and Y coordinates in the map. Click the drop down menus and select the appropriate coordinate columns for X and Y coordinates. X coordinate should be LON; Y coordinate should be LAT.
+Once you have set these input parameters, select :code:`Check` on the left side of the window. This page will simply plot your samples on a world map. Fix the locations of your plots by specifying the correct columns to use as the X and Y coordinates in the map. Select the drop down menus and choose the appropriate coordinate columns for X and Y coordinates. X coordinate should be LON; Y coordinate should be LAT.
 
-Next, click the :code:`Results` page on the left side of the screen.
+Next, select the :code:`Results` page on the left side of the screen.
 
 The **Results** page will display a few different accuracy statistics, including a **Confusion Matrix, Area Estimates,** and a **Graph** of area estimates with confidence intervals. The Confusion Matrix enables you to assess the agreement of the map and validation data sets.
 
-The rows represent your assignments while the columns represent the map classifier's. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
+The rows represent your assignments, while the columns represent the map classifier's. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
 .. figure:: ../_images/workflows/area_estimation/confusion_matrix_output_sepal.png
    :alt: The confusion matrix output by SEPAL.
    :width: 450
    :align: center
 
-Typically you would have to create the confusion table yourself and calculate the accuracies, however, the SAE-Analysis tool does this for you.
+Typically, you would have to create the confusion table yourself and calculate the accuracies; however, the SAE-Analysis tool does this for you.
 
 .. seealso::
 
-    -   If you completed section `section 4.3.1`_, how does the SAE-Analysis tool's calculations compare with your own?
-    -   You can download confusion matrix as tabular data (.csv) using the button.
+    -   If you completed `Section 4.3.1`_, how does the SAE-Analysis tool's calculations compare with your own?
+    -   You can download the confusion matrix as tabular data (a CSV file) using the button.
 
 Under **Area estimates**, the table shows you the area estimates, and producer's and user's accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
 
-Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** using the slider at the top of the panel. You can Download area estimates as tabular data (.csv) using the button.
+Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** by using the slider at the top of the panel. You can Download area estimates as tabular data (a CSV file) using the button.
 
 .. figure:: ../_images/workflows/area_estimation/area_estimate.png
-   :alt: The area estimates screen in SEPAL.
+   :alt: The Area estimates screen in SEPAL.
    :align: center
 
 The **Graph** plots area estimates based on: map pixel count, stratified random sample, simple random sample, unbiased stratified random and direct estimate stratified random.
 
-In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Need to define unbiased stratified random and direct estimate stratified random.
+In this exercise, we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Need to define unbiased stratified random and direct estimate stratified random.
 
 .. note::
 
-    Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
+    The Map pixel count value differs from these stratified random sample estimates. This shows how using a Map pixel count is a poor estimation of actual area.
 
 .. figure:: ../_images/workflows/area_estimation/area_estimate_graph.png
    :alt: A graph of the area estimates based on different sample design.
@@ -2500,39 +2503,39 @@ Documentation and archiving
 
 Documentation of your area estimate and archiving this information for future reference are critical in order to replicate your estimation process. Examples where you would want to repeat your analysis include different areas (states, provinces, ecological regions) or time periods (months, years).
 
-We have built in documentation steps into other Modules of this Manual, however here we bring this information together. We discuss key documentation steps, including logging decision points (`section 5.1`_), Reporting (`section 5.2`_), Commenting in code (`section 5.3`_), and Version control (`section 5.4`_), as well as archiving steps (`section 5.5`_).
+We have built in documentation steps into other modules of this guide; however here we bring this information together. We discuss key documentation steps, including logging decision points (`Section 5.1`_), Reporting (`Section 5.2`_), Commenting in code (`Section 5.3`_), and Version control (`Section 5.4`_), as well as archiving steps (`Section 5.5`_).
 
 This module should take approximately 1 hour to read. The time taken to complete this module for your specific situation will vary depending on the size and scope of your project.
 
-.. _section 5.1:
+.. _Section 5.1:
 
 Logging decision points
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Logging decision points is a critical part of documenting your area estimation process and being able to recreate your estimation process.
 
-A decision point is anywhere where you make a decision about your project that can change the outcome. For example, “We decided that pixels with over 75% tree cover should be classified as Forest cover” is a decision point.
+A decision point is anywhere where you make a decision about your project that can change the outcome (e.g. “We decided that pixels with over 75% tree cover should be classified as Forest cover” is a decision point).
 
-In the previous Modules, we have suggested that you document these types of decision points as you go along. This includes:
+In the previous modules, we have suggested that you document these types of decision points as you go along. This includes:
 
-* `module 2`_:
+* `Module 2`_:
 
-  * Logging your land use decision tree (`section 2.1`_).
-  * Logging your land use classification definitions (`section 2.1`_).
-  * Settings used for classification, along with any refinements (`section 2.4`_).
+  * Logging your land use decision tree (`Section 2.1`_).
+  * Logging your land use classification definitions (`Section 2.1`_).
+  * Settings used for classification, along with any refinements (`Section 2.4`_).
 
-* `module 3`_:
+* `Module 3`_:
 
-  * Logging two date change detection decisions, including what classes can change and imagery and processes used in the classification (`section 3.1`_)
+  * Logging two date change detection decisions, including what classes can change and imagery and processes used in the classification (`Section 3.1`_)
 
-* `module 4`_:
+* `Module 4`_:
 
-  * Stratification choices (`section 4.1`_).
-  * Data collection procedures (`section 4.2`_).
+  * Stratification choices (`Section 4.1`_).
+  * Data collection procedures (`Section 4.2`_).
 
-You may also choose to follow your organization's Standard Operating Procedures. For example: https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing.
+You may also choose to follow your organization's Standard Operating Procedures (e.g. https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing).
 
-.. _section 5.2:
+.. _Section 5.2:
 
 Reporting
 ^^^^^^^^^
@@ -2544,61 +2547,61 @@ Here we provide a rough outline of what you should include in your reporting.
 In your report, you should include:
 
 -   An introduction, describing why the project was completed and any goals of the project.
--   Your project's methods, that is how your project was completed. it should include:
+-   Your project's methods (how your project was completed), including:
 
     -   All tools used in your analysis.
-    -   All decision points (`section 5.1`_)
+    -   All decision points (`Section 5.1`_).
     -   Any other information needed to recreate your project.
 
 -   Your project results:
 
-    -   Your area estimation (`section 4.3`_).
-    -   The error associated with your classification (`section 4.3`_).
+    -   Your area estimation (`Section 4.3`_).
+    -   The error associated with your classification (`Section 4.3`_).
     -   A comparison of any self checks (one interpreter) and cross checks (between interpreters) with the main sets of plots.
 
 -   Any actions or next steps arising from your analysis.
 
 Writing your report will take time and attention. Documenting your steps along the way, as discussed in Modules 1-4 and Exercise 5.1 will help you write your report more efficiently.
 
-.. danger::
+.. attention::
 
-    **Always follow your organization's reporting guidelines**. For example, if your estimation is developed to support a National Forest Monitoring System, you will need to comply with UN reporting standards.
+    **Always follow your organization's reporting guidelines** (e.g. if your estimation is developed to support a National Forest Monitoring System, you will need to comply with UN reporting standards).
 
-As another example, FAO's Standard Operating Procedure requires reports include at least the following information about the data collection process:
+FAO's Standard Operating Procedure requires reports include at least the following information about the data collection process:
 
--   A brief narrative on the modalities for data collection
--   The interpreters, their contact information, institutions and roles
--   Overview of sample unit allocation to interpreters and any subsequent revisions made to the allocation
--   A summary of the training conducted that details the topics covered
--   A list of attendees for the training and their attendance record
--   Challenges and limitations during the data collection
--   Potential sources of bias during the data collection
--   Impossible transitions excluded from data collection
--   The results of the assessment of interpretation quality
+-   A brief narrative on the modalities for data collection.
+-   The interpreters, their contact information, institutions and roles.
+-   Overview of sample unit allocation to interpreters and any subsequent revisions made to the allocation.
+-   A summary of the training conducted that details the topics covered.
+-   A list of attendees for the training and their attendance record.
+-   Challenges and limitations during the data collection.
+-   Potential sources of bias during the data collection.
+-   Impossible transitions excluded from data collection.
+-   The results of the assessment of interpretation quality.
 -   External appraisal of interpretation quality contact information and narrative report from the appraiser
 
-.. _section 5.3:
+.. _Section 5.3:
 
 Commenting in Scripts
 ^^^^^^^^^^^^^^^^^^^^^
 
-While none of the steps involved in this manual require writing code, more complex classification projects may use programming environments such as Google Earth Engine. This Exercise discusses best practices for commenting your code if you use tools such as Google Earth Engine.
+While none of the steps involved in this manual require writing code, more complex classification projects may use programming environments such as GEE. This exercise discusses best practices for commenting your code if you use tools such as GEE.
 
-Leaving comments in your code can be a helpful way to describe information of what a particular function does, leave warnings or considerations to other programmers (including your future self!), provide key information on licensing, or save information on what you still want to complete while coding. In this section we will briefly demonstrate both good and bad commenting techniques.
+Leaving comments in your code can be a helpful way to describe information of what a particular function does, leave warnings or considerations to other programmers (including your future self!), provide key information on licensing, or save information on what you still want to complete while coding. In this section, we will briefly demonstrate both good and bad commenting techniques.
 
-When commenting your code you should take into account your target audience. Is your code going to be used for a workshop? Will it be read by other scientists or programmers? Or will you lose access to it after submitting it to a publication or project partner? Answering these questions will help you determine what approach to take when commenting your code.
+When commenting your code you should take into account your target audience. Is your code going to be used for a workshop? Will it be read by other scientists or programmers? Will you lose access to it after submitting it to a publication or project partner? Answering these questions will help you determine what approach to take when commenting your code.
 
 Many of these tips are derived from the suggestions laid out in Robert C. Martins' book *Clean Code*, which would be a good reference if you would like to learn more about coding cleanly and commenting:
 
 -   **Keep comments short**. Keeping your comments short is helpful to both the writer of the comment and the reader. Having multiple long comments in your code can lead to readers skipping over them and thus making them inefficient. Long comments can start to clutter your code.
 
-- It is best to use comments **sparingly** and when possible **rename variables** or use functions to reflect what you would like to have commented. Comments can quickly become outdated and are less of a priority to update. Comments are a representation of what your code does, but can sometimes be misleading.
+- It is best to use comments **sparingly**; when possible, **rename variables** or use functions to reflect what you would like to have commented. Comments can quickly become outdated and are less of a priority to update. Comments are a representation of what your code does, but can sometimes be misleading.
 
 -   Using comments to add some informative content or explain the intent behind your code, but **don't be redundant**. Informative comments are little snippets of information that aid in reading through your code. A comment explaining your intent can be useful where the processing you have done is slightly complicated to read through.
 
 -   **Don't leave in commented out code**. Leaving in commented out code quickly becomes confusing. Is the commented out code something new that is to be implemented? Is it something that was broken and the other code fixed? Should it be uncommented to provide a different result? It is best to use a form of version control so you can safely delete these lines and go back to them if you need to later.
 
--   Try to **not be redundant** with comments. Comments that simply reiterate what the code is doing often are not helpful and will add to clutter. Use comments to clarify what the code is doing. This is nice for when you are using code in a workshop, or perhaps in a final version which is released with a publication that will not be changed later.
+-   Try to **not be redundant** with comments. Comments that simply reiterate what the code is doing often are not helpful and will add to clutter. Use comments to clarify what the code is doing. This is nice for when you are using code in a workshop, or perhaps in a final version that is released with a publication that will not be changed later.
 
 -   Do be careful as just like with other comments, errors in them are just as bad as in your code!
 
@@ -2666,18 +2669,18 @@ And here is an example where comments (A) can be replaced by variables (B).
         var results = myAnalysis(selectedDateRange, selectedSensor)
     }
 
-In this example above you can see that you write roughly the same number of lines of code with and without comments. However, by adding descriptive variable names, the code itself becomes simpler to understand.
+In this example above, you can see that you write roughly the same number of lines of code with and without comments. However, by adding descriptive variable names, the code itself becomes simpler to understand.
 
-Finally, note that reading the actual code will always be truer than reading the comments. In the first example it poses the question: “Did the user pass in a year range that is within the valid range for the selected satellite?“ But what if you choose to include aerial imagery or UAV data sources at some point? Chances are you won't feel compelled to go back and update your comment.
+Finally, note that reading the actual code will always be truer than reading the comments. In the first example, it poses the question: "Did the user pass in a year range that is within the valid range for the selected satellite?" But what if you choose to include aerial imagery or UAV data sources at some point? Chances are, you won't feel compelled to go back and update your comment.
 
-.. _section 5.4:
+.. _Section 5.4:
 
 Transparent coding: GitHub and saving GEE scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In addition to commenting your code so that future users can understand what is being done, saving your code is another important part of project documentation. As in `section 5.3`_, this exercise is only relevant if you have implemented code in your area estimation, such as through Python or Google Earth Engine.
+In addition to commenting your code so that future users can understand what is being done, saving your code is another important part of project documentation. As in `Section 5.3`_, this exercise is only relevant if you have implemented code in your area estimation, such as through Python or GEE.
 
-In this exercise we will touch upon how to be transparent with your code and save your code. Any time you are writing a script or some code, it is probably a good idea to have a version control system in place so you can track your changes, and have a backup in case a mistake happens to your code. We discuss this in two contexts: Git for local code, and Google Earth Engine's approach to version control.
+In this exercise we will touch upon how to be transparent with your code and save your code. Any time you are writing a script or some code, it is probably a good idea to have a version control system in place so you can track your changes and have a backup in case a mistake happens to your code. We discuss this in two contexts: Git for local code and GEE's approach to version control.
 
 Version Control and Git
 """""""""""""""""""""""
@@ -2692,29 +2695,29 @@ We'll start by exploring how version control can be used to keep track of what o
 
 We've all been in this situation before: it seems ridiculous to have multiple nearly-identical versions of the same document. Some word processors let us deal with this a little better, such as Microsoft Word's Track Changes, Google Docs' version history, or LibreOffice's Recording and Displaying Changes.
 
-Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
+Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your most recent version.
 
 .. figure:: ../_images/workflows/area_estimation/version_control_system.png
-   :alt: Figure showing how version control systems work
+   :alt: Figure showing how version control systems work.
 
-Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
+Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document (e.g. two users can make independent sets of changes on the same document).
 
 .. figure:: ../_images/workflows/area_estimation/version_control_multiple_contributors.png
-   :alt: Version control with multiple contributors
+   :alt: Version control with multiple contributors.
 
 A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.GitHub.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.GitHub.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
 Of version control systems, Git (and implementation GitHub that includes a GUI Desktop version) is perhaps the most widely used. Here we provide a very basic overview of Git and links to additional resources.
 
-Git is a popular free and open source software for a distributed version control system and is the basis of GitHub. With a GitHub account, you can create repositories to hold your code and track the changes you make to it as you develop it. GitHub stores all your code, which means that even if something happens to your computer, your code will be saved.
+Git is a popular free and open-source software for a distributed version control system and is the basis of GitHub. With a GitHub account, you can create repositories to hold your code and track the changes you make to it as you develop it. GitHub stores all your code, which means that even if something happens to your computer, your code will be saved.
 
 This is also a great way to share or collaborate on code. You can easily send a link to your repository to whomever you want, and you could have other scientists working on one portion of the code on their home computer while you do as well.
 
 .. seealso::
 
-    If you would like to learn more about git or version control, you can work through the Software Carpentry workshop at your own pace here: http://swcarpentry.GitHub.io/git-novice/.
+    If you would like to learn more about Git or version control, you can work through the Software Carpentry workshop at your own pace here: http://swcarpentry.GitHub.io/git-novice/.
 
-You can work through how to set up a git repository system for yourself or your organization (unpaid but must run locally or on your own servers).
+You can work through how to set up a Git repository system for yourself or your organization (unpaid but must run locally or on your own servers).
 
 .. note::
 
@@ -2725,10 +2728,10 @@ You can work through how to set up a git repository system for yourself or your 
 
     With https://zenodo.org/ and GitHub together, you can create DOI numbers for versions of your code for publication.
 
-Google Earth Engine version control
-"""""""""""""""""""""""""""""""""""
+GEE version control
+"""""""""""""""""""
 
-Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
+GEE has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, Select the history icon next to a script in order to compare or revert it to an older version.
 
 .. figure:: ../_images/workflows/area_estimation/gee_scripts.png
    :alt: The GEE scripts tab.
@@ -2738,10 +2741,10 @@ Google Earth Engine has implemented version control and version history for all 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
 .. figure:: ../_images/workflows/area_estimation/earth_engine_code_editor.png
-   :alt: Earth engine code editor
+   :alt: GEE code editor.
    :align: center
 
-.. _section 5.5:
+.. _Section 5.5:
 
 Data archiving and creating metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2753,7 +2756,7 @@ Data archiving
 
 For data archiving, the following information needs to be compiled:
 
--   A database of the sample data collected by the interpreters including:
+-   A database of the sample data collected by the interpreters, including:
 
     -   The geographical coordinates in define coordinate or projection system.
     -   The unique identification code for each sample unit.
@@ -2764,21 +2767,21 @@ For data archiving, the following information needs to be compiled:
 
 Think about the work you did in completing Modules 1-4. What other data do you think should be archived? What would be helpful to your colleagues or yourself in the future looking to replicate your work?
 
-You should store the data collection report, your data tables, any metadata, etc. in a standard format. When naming files you should follow a naming convention such as Data collection_data_date[year/month/day]_version number (FAO SOP). When writing your documentation report, you should include links to your data storage locations.
+You should store the data collection report, your data tables, any metadata, etc. in a standard format. When naming files, you should follow a naming convention, such as Data collection_data_date[year/month/day]_version number (FAO SOP). When writing your documentation report, you should include links to your data storage locations.
 
 Creating metadata
 """""""""""""""""
 
-This worksheet is designed to assist you in becoming more efficient and informed about documenting and archiving information relating to the planning, preparation, and management of remote sensing dataset and analysis, such as analyses conducted for forest inventory monitoring (e.g. REDD+ activities).
+This worksheet is designed to assist you in becoming more efficient and informed about documenting and archiving information related to the planning, preparation, and management of remote sensing dataset and analysis, such as analyses conducted for forest inventory monitoring (e.g. REDD+ activities).
 
-Documentation and archiving remote sensing analysis methods ensures there is transparency and makes it easier to replicate or improve methods as programs increase in complexity and robustness. For more information on the good practice recommendations for documentation, archiving and reporting please refer to the 2006 IPCC Guidelines Vol. 1 Chp. 6 Section 11.
+Documentation and archiving remote sensing analysis methods ensures that there is transparency and makes it easier to replicate or improve methods as programs increase in complexity and robustness. For more information on the good practice recommendations for documentation, archiving and reporting, please refer to the 2006 IPCC Guidelines (Vol. 1, Chp. 6, Section 11).
 
-Below we have provided you with headings and some questions for each step in the metadata creation process, that is, where you should provide information about your workflow in order to ensure transparency about your data and processing steps and comply with best practices. The information you provide below should be sufficient and clear enough so that someone else can understand how the analysis was conducted and would be able to replicate it.
+Below, we have provided you with headings and some questions for each step in the metadata creation process, including where you should provide information about your workflow in order to ensure transparency about your data and processing steps, and to comply with best practices. The information you provide below should be sufficient and clear enough so that someone else can understand how the analysis was conducted and would be able to replicate it.
 
-When completing this exercise, think about the work you have completed in the 4 first modules. When you conduct your own classification and area estimation processes in the future, take the time to customize and add additional sections to this document. This exercise is designed to get you started in this practice and moving down the right path.
+When completing this exercise, think about the work you have completed in the first four modules. When you conduct your own classification and area estimation processes in the future, take the time to customize and add additional sections to this document. This exercise is designed to get you started in this practice and moving down the right path.
 
 .. csv-table::
-    :header: Preparing and Downloading Cloud-free Composite Using Google Earth,
+    :header: Preparing and Downloading Cloud-free Composite Using GEE,
     :widths: 50, 50
 
     Data used                         ,
@@ -2806,7 +2809,7 @@ When completing this exercise, think about the work you have completed in the 4 
     :header: Image Classification Scheme,
     :widths: 50, 50
 
-    "Document Clear definitions for classes or categories (i.e., land use categories defined by the IPCC as: Forest Land, Cropland, Grassland, Wetlands, Settlements, and Other Land)",
+    "Document Clear definitions for classes or categories (i.e., land-use categories defined by the IPCC as: Forest Land, Cropland, Grassland, Wetlands, Settlements, and Other Land)",
     "Have you identified any categories as \“Key Categories\”? How is the analysis different?  Please refer to Volume 1, Chapter 4 of the 2006 IPCC Guidelines on what defines a \“Key Category\”.",
     Assess RS results,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),
@@ -2846,26 +2849,26 @@ When completing this exercise, think about the work you have completed in the 4 
 
 .. line-break::
 
-conclusion
+Conclusion
 ----------
 
-.. important::
+.. note::
 
     **Congratulations! You have completed the SEPAL-CEO Area Estimation cookbook!**
 
 Now you know:
 
--   How to perform an accuracy assessment and generate area estimates in SEPAL
--   How to conduct a two-date change detection classification in SEPAL
--   How to create a stratified random sampling design for your map and a project (CEO or CEO-SEPAL) to collect reference data
--   How to create a Landsat mosaic using the many customizable parameters in SEPAL
--   How to collect training data in SEPAL's classification interface
--   How to produce map classifications in SEPAL
--   How to assess important quality assurance metrics for your project
--   How to log key decision points for your project!
--   How to comment code
--   How to use version control options for your project!
--   How to report your area estimation project
+-   how to perform an accuracy assessment and generate area estimates in SEPAL;
+-   how to conduct a two-date change detection classification in SEPAL;
+-   how to create a stratified random sampling design for your map and a project (CEO or CEO-SEPAL) to collect reference data;
+-   how to create a Landsat mosaic using the many customizable parameters in SEPAL;
+-   how to collect training data in SEPAL's classification interface;
+-   how to produce map classifications in SEPAL;
+-   how to assess important quality assurance metrics for your project;
+-   how to log key decision points for your project;
+-   how to comment code;
+-   how to use version control options for your project; and
+-   how to report your area estimation project.
 
 .. spelling:word-list::
 
