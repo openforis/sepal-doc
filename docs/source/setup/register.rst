@@ -79,7 +79,7 @@ Requesting processing resources will allow you to use all the modules built into
 To request resources, click the quota button that is located in the bottom right corner, and click the green button :btn:`<fas fa-pencil-alt> Request additional resources`, a form asking you for the limits (instance, storing and storage) and a message that will be read by the platform administators. If you are not sure how many resources you will use, please visit the `resource management <resource>`_ section, where more detailed info can be found.
 
 .. thumbnail:: ../_images/setup/register/sepal_request_button.png
-    :width: 62%
+    :width: 61%
     :group: request
     :title: Request additional resources
 
