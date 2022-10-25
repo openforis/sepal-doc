@@ -1,44 +1,96 @@
-Register with SEPAL
-===================
+Register to SEPAL
+=================
 
-Request access to the interface and sign up for other services 
---------------------------------------------------------------
+SEPAL is a computing-based platform for autonomous land monitoring. To gain access to the platform you will first have to create an account and depending on your needs :ref:`request additional resources <request>`. 
 
-The first step to using SEPAL is requesting access to the platform on the project website. To unlock the full potential of the interface, you can register with Google Earth Engine (GEE) and Collect Earth Online (CEO), both available free of charge.
+In this guide you will learn how to:
 
-Sign up for SEPAL
+- :ref:`Create an account (mandatory) <create>`
+- :ref:`Request for additional resources (recommended) <request>`
+- :ref:`Register and link with Google Earth Engine (recommended) <gee>`
+- :ref:`Register to Collect Earth Online (optional) <ceo>`
+
+.. _create:
+
+Create an account
 -----------------
 
-.. note::
+Requesting an account in SEPAL is an automatic process, to start it, use your browser and go to `sepal.io <https://sepal.io/>`_, you will see the landing page (left image) with two buttons: :btn:`launch` and  :btn:`documentation`. To sign up, first click launch button, the page (right image) with the log-in form will be loaded with a sign up button below. Click the green :btn:`Sign up` button if you do not already have a SEPAL account.
 
-    Registration with SEPAL is required to use the platform.
+.. thumbnail:: ../_images/setup/register/sepal_landing.png
+    :width: 49%
+    :group: landing
+    :title: sepal.io landing page
 
-.. image:: ../_images/setup/register/sepal_splash_page.png
-   :alt: Sepal splash page.
-   :align: center
+.. thumbnail:: ../_images/setup/register/sepal_splash_page.png
+    :width: 49%
+    :group: landing
+    :title: sepal.io splash page
 
-You can request access to SEPAL by visiting `sepal.io <sepal.io>`_, clicking :code:`Sign up`, and completing the Google Form. You will be asked to provide:
+In the sign-up form, all the fields are mandatory. Set a username, your name (first and last name), email address, and your organization. Note that at this point you do not yet set a password.
 
--   your email address
--   your name
--   your institution
--   your country
--   a brief explanation of what you intend to do with the platform
+.. thumbnail:: ../_images/setup/register/sepal_sign_up.png
+    :width: 60%
+    :align: center
+    :group: register
+    :title: sign up form
 
-Once submitted, platform administrators will review your application. If approved, you will receive notification within approximately 1 to 3 days.
 
-.. note::
+Click the :btn:`sign-up` button. If all the fields were successfully validated, a pop-up message will be displayed at the top right corner saying that a confirmation email has been sent to your email.
 
-    Applications are evaluated by the administrators to prevent bots and malicious users from accessing the platform. Incomplete registration forms will be refused. 
+.. thumbnail:: ../_images/setup/register/sepal_sent_message.png
+    :width: 40%
+    :align: center
+    :group: register
+    :title: sign up form
 
-.. image:: ../_images/setup/register/request_sepal.png
-   :alt: Request access to sepal.io
-   :align: center
+
+Check your email inbox that you used to sign up for SEPAL and click the link in the confirmation email to validate your account. You will be redirected to the password creation form, fill the fields and click the :btn:`sign-up` button. If everything goes well you now have access to SEPAL.
+
+.. thumbnail:: ../_images/setup/register/sepal_confirmation_email.png
+    :width: 80%
+    :align: center
+    :group: register
+    :title: confirmation email
 
 .. tip:: 
 
-    Once you sign up for SEPAL, you can request access to the Sepal Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
-    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Your question might be useful to others! 
+    Once you sign up for SEPAL, you can request access to the SEPAL Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
+    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Don't be shy to post your question publically, your question might be useful to others! 
+
+
+With this new account, you can perform some basic operations, such as visualizing satellite imagery, processing satellite imagery and saving recipes (but not retrieving) and navigating through the platform. To get full access, go to :ref:`request access section <request>`.
+
+.. note:: Even though you are now logged into the platform, some of the SEPAL features are not fully available —see the left tabs bar: :btn:`<fas fa-terminal> terminal` and :btn:`<fas fa-wrench> tools` buttons are deactivated, this is because these functions require an instance (check how to initiate an instance) and a quota (:ref:`see how to request quota resources <request>`).
+
+    .. thumbnail:: ../_images/setup/register/sepal_recent_disabled_buttons.png
+        :width: 30%
+        :align: center
+        :group: register
+        :title: Fresh account. Disabled options.
+
+.. _request:
+
+Request resources (quota)
+-------------------------
+
+Requesting processing resources will allow you to use all the modules built into SEPAL, development tools as Jupyter or RStudio, as well as access to the command line terminal. 
+
+To request resources, click the quota button that is located in the bottom right corner, and click the green button :btn:`<fas fa-pencil-alt> Request additional resources`, a form asking you for the limits (instance, storing and storage) and a message that will be read by the platform administators. If you are not sure how many resources you will use, please visit the `resource management <resource>`_ section, where more detailed information can be found.
+
+.. thumbnail:: ../_images/setup/register/sepal_request_button.png
+    :width: 61%
+    :group: request
+    :title: Request additional resources
+
+.. thumbnail:: ../_images/setup/register/sepal_request_form.png
+    :width: 38%
+    :group: request
+    :title: Request form
+
+.. note::  Applications are evaluated by the administrators to prevent bots and malicious users from accessing the platform. 
+
+.. _gee:
 
 Sign up for Google Earth Engine (GEE)
 -------------------------------------
@@ -64,6 +116,8 @@ Once you have a GEE account, you can access the interface here: https://code.ear
 .. tip::
 
     If you experience problems registering with GEE, contact the SEPAL team for assistance.
+
+.. _ceo:
 
 Sign up for Collect Earth Online (CEO)
 --------------------------------------
