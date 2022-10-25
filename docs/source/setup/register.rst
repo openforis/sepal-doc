@@ -1,7 +1,7 @@
 Register to SEPAL
 =================
 
-SEPAL is a computing-based platform for autonomous land monitoring, to gain access to the platform you will first have to create an account and, depending on your needs :ref:`request additional resources <request>`. 
+SEPAL is a computing-based platform for autonomous land monitoring. To gain access to the platform you will first have to create an account and depending on your needs :ref:`request additional resources <request>`. 
 
 In this guide you will learn how to:
 
@@ -15,7 +15,7 @@ In this guide you will learn how to:
 Create an account
 -----------------
 
-Requesting an account in SEPAL is an automatic process, to start it, use your browser and go to `sepal.io <https://sepal.io/>`_, you will see the landing page (left image below) with two buttons: :btn:`launch` and :btn:`documentation`, click launch button, the splash page (right) with the log-in form will be loaded, locate the green :btn:`Sign up` button and click it.
+Requesting an account in SEPAL is an automatic process, to start it, use your browser and go to `sepal.io <https://sepal.io/>`_, you will see the landing page (left image) with two buttons: :btn:`launch` and  :btn:`documentation`. To sign up, first click launch button, the page (right image) with the log-in form will be loaded with a sign up button below. Click the green :btn:`Sign up` button if you do not already have a SEPAL account.
 
 .. thumbnail:: ../_images/setup/register/sepal_landing.png
     :width: 49%
@@ -27,7 +27,7 @@ Requesting an account in SEPAL is an automatic process, to start it, use your br
     :group: landing
     :title: sepal.io splash page
 
-In the sign-up form, all the fields are mandatories, set a username, your name, email address, and your organization. Note that at this point you do not have to set a password.
+In the sign-up form, all the fields are mandatory. Set a username, your name (first and last name), email address, and your organization. Note that at this point you do not yet set a password.
 
 .. thumbnail:: ../_images/setup/register/sepal_sign_up.png
     :width: 60%
@@ -36,7 +36,7 @@ In the sign-up form, all the fields are mandatories, set a username, your name, 
     :title: sign up form
 
 
-Click the :btn:`sign-up` button. If all the fields were successfully validated, a popup message will be displayed at the top right corner saying that a confirmation email has been sent to your email.
+Click the :btn:`sign-up` button. If all the fields were successfully validated, a pop-up message will be displayed at the top right corner saying that a confirmation email has been sent to your email.
 
 .. thumbnail:: ../_images/setup/register/sepal_sent_message.png
     :width: 40%
@@ -45,7 +45,7 @@ Click the :btn:`sign-up` button. If all the fields were successfully validated, 
     :title: sign up form
 
 
-Check your mailbox and click the link inside to validate your account. You will be redirected to the password creation form, fill the fields and click the :btn:`sign-up` button. If everything goes well you will now inside SEPAL.
+Check your email inbox that you used to sign up for SEPAL and click the link in the confirmation email to validate your account. You will be redirected to the password creation form, fill the fields and click the :btn:`sign-up` button. If everything goes well you now have access to SEPAL.
 
 .. thumbnail:: ../_images/setup/register/sepal_confirmation_email.png
     :width: 80%
@@ -55,13 +55,13 @@ Check your mailbox and click the link inside to validate your account. You will 
 
 .. tip:: 
 
-    Once you sign up for SEPAL, you can request access to the Sepal Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
-    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Your question might be useful to others! 
+    Once you sign up for SEPAL, you can request access to the SEPAL Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
+    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Don't be shy to post your question publically, your question might be useful to others! 
 
 
-With this fresh account, you can perform some basic operations, such as recipes (not retrieve), visualization or navigating through the platform. To get full access, go to :ref:`request access section <request>`.
+With this new account, you can perform some basic operations, such as visualizing satellite imagery, processing satellite imagery and saving recipes (but not retrieving) and navigating through the platform. To get full access, go to :ref:`request access section <request>`.
 
-.. note:: Even though you are now logged into the platform, some of the SEPAL features are not fully available —see the left tabs bar: :btn:`<fas fa-terminal> terminal` and :btn:`<fas fa-wrench> tools` buttons are deactivated, this is because these functions require an instance (check how to instantiate an instance) and a quota (:ref:`see how to request quota resources <request>`).
+.. note:: Even though you are now logged into the platform, some of the SEPAL features are not fully available —see the left tabs bar: :btn:`<fas fa-terminal> terminal` and :btn:`<fas fa-wrench> tools` buttons are deactivated, this is because these functions require an instance (check how to initiate an instance) and a quota (:ref:`see how to request quota resources <request>`).
 
     .. thumbnail:: ../_images/setup/register/sepal_recent_disabled_buttons.png
         :width: 30%
@@ -76,7 +76,7 @@ Request resources (quota)
 
 Requesting processing resources will allow you to use all the modules built into SEPAL, development tools as Jupyter or RStudio, as well as access to the command line terminal. 
 
-To request resources, click the quota button that is located in the bottom right corner, and click the green button :btn:`<fas fa-pencil-alt> Request additional resources`, a form asking you for the limits (instance, storing and storage) and a message that will be read by the platform administators. If you are not sure how many resources you will use, please visit the `resource management <resource>`_ section, where more detailed info can be found.
+To request resources, click the quota button that is located in the bottom right corner, and click the green button :btn:`<fas fa-pencil-alt> Request additional resources`, a form asking you for the limits (instance, storing and storage) and a message that will be read by the platform administators. If you are not sure how many resources you will use, please visit the `resource management <resource>`_ section, where more detailed information can be found.
 
 .. thumbnail:: ../_images/setup/register/sepal_request_button.png
     :width: 61%
