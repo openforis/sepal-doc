@@ -7,9 +7,9 @@ SEPAL provides free access to computation resources that are shared among our us
     
     The SEPAL user starter pack includes:
     
-    - 1 USD/month of instance spending
-    - 1 USD/month of storage spending
-    - 20 Gb of storage    
+    - 0 USD/month of instance spending
+    - 0 USD/month of storage spending
+    - 0 Gb of storage    
 
 Some actions or projects may require more storage to perform province- or country-analysis; other actions or projects may require more instances to perform heavier computation processes. 
 
