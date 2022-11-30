@@ -1,25 +1,31 @@
 Getting started with SEPAL
 ==========================
 
-Set up an account and learn how to access the SEPAL interface
----------------------------------------------------------------
+Discover key requirements needed to use the platform
+----------------------------------------------------
 
-In this section of SEPAL documentation, you can learn about the key requirements needed to use the platform.
+In this section of SEPAL documentation, you can learn how to:
 
-You will read an Introduction to SEPAL and discover how to:
+-   :doc:`Register to SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`
+-   :doc:`Use Google Earth Engine (GEE) with SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`
+-   :doc:`Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`
+-   :doc:`Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`
+-   :doc:`Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>
+-   :doc:`Reset your password <https://docs.sepal.io/en/latest/setup/password.html>`
 
--   :doc:`Register to SEPAL`
--   :doc:`Use Google Earth Engine (GEE) with SEPAL`
--   :doc:`Exchange files with with SEPAL`
--   :doc:`Use Norway’s International Climate & Forests Initiative (NICFI) - Planet Lab data`
--   :doc:`Reset your password`
+Navigate to other pages in this section by selecting links located in **Section navigation** in the left pane.
 
-You can navigate to other pages in this section by following links located in the left panel. If you can't find what you're looking for, please let us know by utilizing the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_.
+Navigate to other sections in this article by selecting links located in **On this page** in the right pane.
 
-We would be happy to receive contributions from people reviewing this documentation. If you find a problem, we encourage you to follow the :btn:`<fas fa-pencil-alt> Edit this page` link located in the right panel to help us improve the way we present the platform!
+Make contributions to the documentation by selecting **Edit this page** in the right pane.
+
+If you can't find what you're looking for, use the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_.
+
+
+For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
 
 .. thumbnail:: ../_images/setup/index/planet_classification.png
-    :title: Example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the Classification tool in SEPAL.
+    :title: Example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the **Classification** tool in SEPAL.
 
 .. toctree::
     :maxdepth: 1
