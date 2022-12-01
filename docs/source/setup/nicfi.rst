@@ -41,7 +41,7 @@ Sign up for NICFI Planet data access using the same email address associated wit
    
 .. tip::
 
-    If you are already a NICFI user and would like to access the basemaps in GEE, go to www.planet.com/nicfi/?gee=show to apply for access. 
+    If you are already a NICFI user and would like to access the basemaps in GEE, go to `<www.planet.com/nicfi/?gee=show>`_ to apply for access. 
     
 .. note::
     
