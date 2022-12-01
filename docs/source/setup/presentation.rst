@@ -21,23 +21,23 @@ On this page, you will be introduced to the SEPAL interface and learn how to acc
 Access SEPAL
 ------------
 
-Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
+Navigate to `sepal.io <https://sepal.io/>`_ to open SEPAL, use the log-in form and fill your username and password and, click the :btn:`Login` button.
 
-Type in your **Username** and **Password** and click **Login**.
-
-.. image:: ../_images/setup/presentation/sepal_login.png
-   :alt: SEPAL login page
+.. thumbnail:: ../_images/setup/presentation/sepal_login.png
+   :title: SEPAL login page
+   :width: 70%
    :align: center
 
 .. tip::
    When working in SEPAL, do not click your browser's back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. In some instances, you may find an arrow in the upper-left or upper-right corner of the SEPAL interface to navigate to a previous window.
 
-Set up the locale
-----------------
+Set up language
+---------------
+
+The first step to create a SEPAL environment is to set up the language you want to use, follow the instructions in the video below.
 
 .. youtube:: Lv0HwPDQx50
 
-The first step to create a SEPAL environment is to set up the language you want to use. 
 
 .. note::
 
@@ -59,9 +59,10 @@ Home
 
 Once you are logged in, you will see the following screen. Notice that your username is displayed in the lower-right.
 
-.. image:: ../_images/setup/presentation/sepal_home.png
-   :alt: SEPAL home screen
-   :align: center
+.. thumbnail:: ../_images/setup/presentation/sepal_home.png
+    :title: SEPAL home screen
+    :align: center
+    :width: 70%
 
 There are four main navigation tabs in the dock on the left side of the screen:
 
@@ -94,8 +95,8 @@ Linking your GEE and SEPAL accounts will allow you to read and write from your G
 
 Next to **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`, which displays the status (used / available) of your processing and storage resources. Instance spending refers to the resources used / available to start and run cloud computers. Storage space and spending refers to the resources used / available for storage in your SEPAL workspace. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: ../_images/setup/presentation/user_report_panel.png
-   :alt: User Report panel.
+.. thumbnail:: ../_images/setup/presentation/user_report_panel.png
+   :title: User Report panel.
    :width: 350px
    :align: center
    
@@ -109,9 +110,10 @@ Process Tab
 
 Click the :code:`Process` tab on the left side of the window.
 
-.. image:: ../_images/setup/presentation/process_tab_location.png
-   :alt: Arrow pointing out the process tab location.
+.. thumbnail:: ../_images/setup/presentation/process_tab_location.png
+   :title: Arrow pointing out the process tab location.
    :align: center
+   :width: 70%
 
 You should now see many options in the center of the screen:
 
@@ -135,11 +137,11 @@ Click the green :code:`Files` tab on the left side of the window. This will disp
 
 For example, click the :code:`Downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty.
 
-.. image:: ../_images/setup/presentation/files_menu.png
-   :alt: The files menu.
-   :align: center
-   :width: 350
-
+.. thumbnail:: ../_images/setup/presentation/files_menu.png
+    :title: The files menu.
+    :align: center
+    :width: 50%
+    
 Notice that there are four buttons on the upper-right side of the window. The three rightmost buttons will be inactive until you select a file.
 
 -   The left button will show hidden files (files and folder names starting with ‘.').
@@ -170,8 +172,8 @@ To stop an instance, type "exit" in the command line. You can then refresh the t
 
 Once an instance has stopped, you can follow the instance startup steps again to select a larger instance, if necessary.
 
-.. image:: ../_images/setup/presentation/terminal.png
-   :alt: The terminal page, including an example of changing the instance.
+.. thumbnail:: ../_images/setup/presentation/terminal.png
+   :title: The terminal page, including an example of changing the instance.
    :align: center
    :width: 450
 
@@ -180,9 +182,10 @@ Apps Tab
 
 Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL. Applications are pre-programmed (typically using R or Python) to perform specific, useful tasks. Applications make use of instances and running an application will use your SEPAL computing resources.
 
-.. image:: ../_images/setup/presentation/apps_interface.png
-   :alt: The Apps interface.
-   :align: center
+.. thumbnail:: ../_images/setup/presentation/apps_interface.png
+    :title: The Apps interface.
+    :align: center
+    :width: 70%
 
 This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
