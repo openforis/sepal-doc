@@ -32,23 +32,24 @@ To sign up for a Google account, go to https://accounts.google.com/servicelogin.
 
 To request a GEE account, go to https://earthengine.google.com/new_signup/.
 
-.. image:: ../_images/setup/register/gee_landing.png
-   :alt: Request access to GEE.
-   :align: center
+.. thumbnail:: ../_images/setup/register/gee_landing.png
+    :title: Request access to google earth engine.
+    :align: center
 
 Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**.
 
-.. image:: ../_images/setup/register/gee_code.png
-   :alt: Earth Engine Code Editor.
-   :align: center
+.. thumbnail:: ../_images/setup/register/gee_code.png
+    :title: GEE code editor
+    :align: center
 
 .. tip::
 
     When you first connect to the **Earth Engine Code Editor**, it is strongly advised to take the short tour provided in the interface. 
 
-    .. image:: ../_images/setup/gee/editor_tour.png
-        :alt: GEE code editor tour
+    .. thumbnail:: ../_images/setup/gee/editor_tour.png
+        :title: GEE code editor tour
         :align: center
+        :width: 40%
 
 .. tip::
 
@@ -61,9 +62,9 @@ To use your GEE account in the SEPAL interface, you need to set up the **Home** 
 
 1. To set up the **Home** folder, go to the **Earth Engine Code Editor**.
 
-.. image:: ../_images/setup/gee/gee_code.png
-   :alt: Earth Engine Code Editor.
-   :align: center
+.. thumbnail:: ../_images/setup/gee/gee_code.png
+    :title: GEE code editor
+    :align: center
 
 The page is divided into three zones and a map:
 
@@ -83,20 +84,24 @@ The page is divided into three zones and a map:
 
 2. Go to **Zone 1** > Select **Assets** > Select **Create home folder**.
 
-.. image:: ../_images/setup/gee/create_home.png
-    :alt: GEE asset creation.
+.. thumbnail:: ../_images/setup/gee/create_home.png
+    :title: gee asset creation
     :align: center
+    :width: 60%
 
 3. Select the name of the folder (Note: This can only be set once and never changed; if you're not satisfied with the suggested name, you can create your own, as long as there are no spaces or special characters).
 
-.. image:: ../_images/setup/gee/home_pop_up.png
-    :alt: GEE popup for Home folder creation.
+.. thumbnail:: ../_images/setup/gee/home_pop_up.png
+    :title: GEE popup for Home creation
     :align: center
+    :width: 50%
 
 4. When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the asset tree. In this example, we used *galatheetest*:
 
-.. image:: ../_images/setup/gee/asset_tree.png
-    :alt: Asset tree.
+.. thumbnail:: ../_images/setup/gee/asset_tree.png
+    :title: asset tree
+    :align: center
+    :width: 60%
 
 .. note:: 
 
@@ -116,23 +121,27 @@ Connection
 
 2. Select your **Username** in the lower-right side of the window (e.g. (:code:`prambaud`) in red in the image below).
 
-.. image:: ../_images/setup/gee/sepal_landing.png
-    :alt: SEPAL landing
+.. thumbnail:: ../_images/setup/gee/sepal_landing.png
+    :title: SEPAL landing
     :align: center
 
 3. Next to the Google logo (:icon:`fab fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*).
 
-.. image:: ../_images/setup/gee/user_interface_disconnected.png
-    :alt: SEPAL disconnected.
+.. thumbnail:: ../_images/setup/gee/user_interface_disconnected.png
+    :title: SEPAL disconnected
+    :align: center
+    :width: 40%
 
 4. Select **Google account** in the lower section of the pop-up window (Note: if your GEE account is disconnected, you will see text that reminds you what functionalities are unavailable without a custom GEE account).
 
-.. image:: ../_images/setup/gee/gee_disconnected.png
-    :alt: Connection pop-up window.
+.. thumbnail:: ../_images/setup/gee/gee_disconnected.png
+    :title: connection pop-up
+    :align: center
+    :width: 40%
 
 5. Select **Connect your Google account** in the pop-up window that appears. Choose the account associated with GEE in the list.
 
-.. image:: ../_images/setup/gee/gee_credential.png
+.. thumbnail:: ../_images/setup/gee/gee_credential.png
 
 .. Note::
 
@@ -140,8 +149,10 @@ Connection
 
 6. After the connection process is complete, you will be redirected to the SEPAL website. If you select **User interface** again, the pop-up window will display *Connected* in green in the upper-right.
 
-.. image:: ../_images/setup/gee/user_interface_connected.png
-    :alt: SEPAL and GEE connected.
+.. thumbnail:: ../_images/setup/gee/user_interface_connected.png
+    :title: SEPAL and GEE connected
+    :align: center
+    :width: 50%
 
 Disconnection
 ^^^^^^^^^^^^^
@@ -150,8 +161,10 @@ If you want to change accounts or remove the link between your SEPAL and GEE acc
 
 1. Return to the user interface and select **Google account**. You should see the following window:
 
-.. image:: ../_images/setup/gee/gee_connected.png
-    :alt: GEE connected. 
+.. thumbnail:: ../_images/setup/gee/gee_connected.png
+    :title: gee connected
+    :align: center
+    :width: 40%
 
 2. Select **Disconnect your Google account**.
 
@@ -166,8 +179,10 @@ When you use SEPAL recipes and modules, you'll be asked to use GEE assets to pro
 
 1. Go to **Assets** in the **Zone 1** panel on the **Earth Engine Code Editor** page:
 
-.. image:: ../_images/setup/gee/gee_asset_list.png
-    :alt: GEE asset list.
+.. thumbnail:: ../_images/setup/gee/gee_asset_list.png
+    :title: GEE asset list
+    :align: center
+    :width: 50%
 
 2. Select **New**. You will have several choices, including raster, shape, and table, which will be described in the following sections.
 
@@ -183,8 +198,10 @@ If you need to upload a raster image:
 
     By default, the asset will be named after the base-name.
 
-.. image:: ../_images/setup/gee/upload_image.png
-    :alt: Upload image.
+.. thumbnail:: ../_images/setup/gee/upload_image.png
+    :title: upload image
+    :align: center
+    :width: 50%
 
 Shape
 ^^^^^
@@ -194,8 +211,10 @@ If you need to upload a shape as a :code:`ee.FeatureCollection`:
 1. Select **Shape upload**. 
 2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`; if you didn't compress the file, a :code:`.shp` alone is not sufficient and must be accompanied with other files describing the shape as in the example in the image below).
 
-.. image:: ../_images/setup/gee/upload_shape.png
-    :alt: Upload .shp.
+.. thumbnail:: ../_images/setup/gee/upload_shape.png
+    :title: upload shp
+    :align: center
+    :width: 50%
 
 Table
 ^^^^^
@@ -205,8 +224,10 @@ If you need to upload a table as a :code:`ee.FeatureCollection`:
 1. Select **csv file upload**. 
 2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`).
 
-.. image:: ../_images/setup/gee/upload_csv.png
-    :alt: Upload .csv.
+.. thumbnail:: ../_images/setup/gee/upload_csv.png
+    :title: upload csv
+    :align: center
+    :width: 50%
 
 Use your GEE assets in SEPAL
 ----------------------------
@@ -215,8 +236,11 @@ Once you've uploaded your assets, you can use them in SEPAL by copying and pasti
 
 To find the asset name, go back to **Assets** in the **Zone 1** pane and click on any asset in the list. The following pop-up window will appear: 
 
-.. image:: ../_images/setup/gee/asset_popup.png
-    :alt: asset popup
+.. thumbnail:: ../_images/setup/gee/asset_popup.png
+    :title: asset popup
+    :align: center
+    :width: 80%
+
 
 If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. Alternatively, you can select **Share** in the pop-up window and choose between the different sharing options.
 
