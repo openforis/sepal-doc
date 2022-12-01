@@ -52,7 +52,7 @@ Access NICFI through GEE
 
 The NICFI Planet data can also be accessed from GEE, allowing you to use the PlanetLab imagery in SEPAL recipes, such as **Classification** or **Time series**, by authorizing your GEE account to access PlanetLab data. 
 
-1.  Go to the `Planet Platform Explorer <www.planet.com/explorer>`__and select **My Account** in the upper-right corner. 
+1.  Go to the `Planet Platform Explorer <www.planet.com/explorer>`__ and select **My Account** in the upper-right corner. 
 
 .. thumbnail:: ../_images/setup/nicfi/explorer.png
     :title: The platform explorer of the PlanetLab website. The **My account** dropdown menu appears when hovering.
