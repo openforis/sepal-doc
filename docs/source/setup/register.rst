@@ -151,4 +151,4 @@ To create a new account:
     If you forget your password, select **Forgot your password?** and follow the instructions.
     
     
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <>` or contact the SEPAL team at sepal@fao.org.
