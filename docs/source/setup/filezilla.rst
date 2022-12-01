@@ -54,7 +54,7 @@ Any file in Jupyterlab can be downloaded by right-clicking its name in the **Fil
 
 .. seealso:: 
 
-    More information about the Jupyterlab interface can be found in `Jupyterlab documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`_.
+    More information about the Jupyterlab interface can be found in `Jupyterlab documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__.
 
 Rstudio
 ^^^^^^^
