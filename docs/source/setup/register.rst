@@ -17,7 +17,7 @@ Create a SEPAL account
 ----------------------
 (Mandatory)
 
-1.  Go to `sepal.io <https://sepal.io/>`.
+1.  Go to `sepal.io <https://sepal.io/>`__.
 2.  Select **Launch** > **Sign up**.
 
 .. thumbnail:: ../_images/setup/register/sepal_landing.png
