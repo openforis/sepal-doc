@@ -139,7 +139,7 @@ Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3)
 
 .. seealso::
 
-    For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`_. 
+    For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__. 
     
     
 For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
