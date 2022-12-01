@@ -17,7 +17,7 @@ Navigate to other pages in this section by selecting links located in **Section 
 
 Navigate to other sections in this article by selecting links located in **On this page** in the right pane.
 
-Make contributions to the documentation by selecting :icon:`fa-solid fa-pencil` **Edit this page** in the right pane.
+Make contributions to the documentation by selecting :icon:`fas fa-pencil` **Edit this page** in the right pane.
 
 If you can't find what you're looking for, use the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_.
 
