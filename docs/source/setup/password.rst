@@ -73,7 +73,7 @@ In the reset password form, three fields are available:
 
 -   **Username**: The username associated with your email address in the database.
     
-    .. note::
+    .. important::
     
         Your username cannot be changed.
 
