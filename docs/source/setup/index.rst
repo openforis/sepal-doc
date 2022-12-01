@@ -10,7 +10,7 @@ In this section of SEPAL documentation, you can learn how to:
 -   :doc:`Use Google Earth Engine (GEE) with SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`
 -   :doc:`Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`
 -   :doc:`Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`
--   :doc:`Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>
+-   :doc:`Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>`
 -   :doc:`Reset your password <https://docs.sepal.io/en/latest/setup/password.html>`
 
 Navigate to other pages in this section by selecting links located in **Section navigation** in the left pane.
