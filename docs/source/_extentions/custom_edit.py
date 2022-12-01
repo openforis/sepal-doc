@@ -28,16 +28,11 @@ class CustomEdit(Directive):
     
     def run(self):
         
-        # get the raw link 
+        # get the raw link and transform it into an edit link
         raw_link = directives.uri(self.arguments[0])
-        
-        # transform it into an edit link 
-        raw = "raw.githubusercontent.com"
-        github = "github.com"
-        edit = "edit"
-        list_ = raw_link.replace(raw, github).split("/")
-        list_.insert(5, edit)
-        link = "/".join(list_)
+        split_url = raw_link.replace("raw.githubusercontent.com", "github.com").split("/")
+        split_url.insert(5, "edit")
+        link = "/".join(split_url)
         
         return [nodes.raw('', self.html.format(link), format='html')]
     

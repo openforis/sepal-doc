@@ -85,36 +85,37 @@ html_theme_options = {
         {
             "name": "GitHub",
             "url": "https://github.com/openforis/sepal",
-            "icon": "fab fa-github"
+            "icon": "fa-brands fa-github"
         },
         {
             "name": "Twitter",
             "url": "https://twitter.com/OpenForis",
-            "icon": "fab fa-twitter"
+            "icon": "fa-brands fa-twitter"
         },
         {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/company/open-foris/",
-            "icon": "fab fa-linkedin"
+            "icon": "fa-brands fa-linkedin"
         },
         {
             "name": "GIS Stackexchange",
             "url": "https://gis.stackexchange.com/questions/tagged/sepal",
-            "icon": "fab fa-stack-exchange"
+            "icon": "fa-brands fa-stack-exchange"
         },
         {
             "name": "Youtube",
             "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
-            "icon": "fab fa-youtube"
+            "icon": "fa-brands fa-youtube"
         },
         {
             "name": "Google forum",
             "url": "https://groups.google.com/g/sepal-users",
-            "icon": "fab fa-google"
+            "icon": "fa-brands fa-google"
         },
     ],
     "use_edit_page_button": True,
-    "footer_items": ["copyright", "sphinx-version", "licence", "map"]
+    "footer_items": ["copyright", "sphinx-version", "licence", "map"],
+    "left_sidebar_end": ["sidebar-ethical-ads.html"],
 }
 
 html_context = {
