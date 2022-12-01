@@ -100,7 +100,7 @@ The FileZilla Client not only supports FTP, but also FTP over Transport Layer Se
 
 .. tip:: 
 
-    To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`.
+    To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`_.
 
 Connect your FTP client to SEPAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
