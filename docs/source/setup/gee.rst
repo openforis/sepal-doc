@@ -117,7 +117,7 @@ In this section, the connection procedure between GEE and SEPAL will be presente
 Connection
 ^^^^^^^^^^
 
-1. Go to `sepal.io <https://sepal.io>` and sign in.
+1. Go to `sepal.io <https://sepal.io>`__ and sign in.
 
 2. Select your **Username** in the lower-right side of the window (e.g. (:code:`prambaud`) in red in the image below).
 
