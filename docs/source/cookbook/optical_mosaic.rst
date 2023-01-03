@@ -1,31 +1,44 @@
-Optical mosaic
-==============
+Optical mosaics
+===============
 
-Overview 
+Combine images to create single raster datasets with Optical mosaics
+--------------------------------------------------------------------
+
+Overview
 --------
 
 A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together.
-This can be achieved on both contiguous rasters (left) and overlapping images (right). 
+This can be achieved on both contiguous rasters (see first image) and overlapping images (see second image). 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_contiguous.gif
     :width: 49%
     :group: optical-mosaic-recipe
+    :title: Contiguous rasters.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
     :width: 49%
     :group: optical-mosaic-recipe
+    :title: Overlapping images.=
 
-These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells, or take the maximum or minimum value. In addition, certain corrections can be made to the image to account for clouds, snow, and other factors. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics in any area of interest (AOI).
+These overlay areas can be managed in various ways. For example, you can choose to: 
+
+-   keep only the raster data from the first or last dataset; 
+-   combine the values of the overlay cells using a weighting algorithm; 
+-   average the values of the overlay cells; or 
+-   take the maximum or minimum value. 
+
+In addition, certain corrections can be made to the image to account for clouds, snow and other factors; these operations are complex and repetitive. 
+
+SEPAL offers you an interactive and intuitive way to create mosaics in any area of interest (AOI).
 
 .. Note::
 
-    You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. Navigate to :doc:`../setup/gee` to learn more.
-
+    You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. For more information, go to :doc:`../setup/gee`.
 
 Start
 -----
 
-Once the mosaic recipe is selected, SEPAL will display the recipe process in a new tab (1) and the AOI selection window will appear on the lower-right side (2). 
+Once the mosaic recipe is selected, SEPAL will display the recipe process in a new tab (1) and the **AOI selection** window will appear on the lower-right side (2). 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/landing.png
     :group: optical-mosaic-recipe
@@ -45,11 +58,10 @@ The first step is to change the name of the recipe. This name will be used to id
 
     The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<dates>_<measure>`.
 
-
 Parameters 
 ----------
 
-In the lower-right corner, 5 tabs are available. They will allow you to customize the mosaic creation to your needs.
+In the lower-right corner, five tabs are available, which will allow you to customize the mosaic creation to your needs:
 
 -   :guilabel:`AOI`: area of interest
 -   :guilabel:`DAT`: target date of interest for the mosaic/composite
@@ -70,7 +82,7 @@ The data exported by the recipe will be generated from within the bounds of the 
 -   EE Tables
 -   Drawn polygons
 
-they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
+They are extensively described in our documentation. For more information, read :doc:`feature/aoi_selector`.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/aoi.png
     :title: Select AOI based on administrative layers
@@ -82,7 +94,7 @@ Date
 Yearly mosaic
 """""""""""""
 
-In the :guilabel:`DAT` tab, you will be asked to select a year. It will define the year which pixels in the mosaic should come from. When the selection is done, click on the :icon:`fa fa-check` :guilabel:`Apply` button.
+In the :guilabel:`DAT` tab, select a year which pixels in the mosaic should come from. When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_year.png
     :title: The year selection panel.
@@ -91,15 +103,15 @@ In the :guilabel:`DAT` tab, you will be asked to select a year. It will define t
 Seasonal mosaic
 """""""""""""""
 
-Click on :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest. 
+Select :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest. 
 
-Click on the :icon:`fa fa-calendar` (1) to open the date selection pop-up. The selected date will be the target of the mosaic (the date from which pixels in the mosaic should ideally come). 
+Select the :icon:`fa fa-calendar` (1) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from). 
 
-Using the main slider (2) define a season around the target date. This season defines two dates: a starting date and an ending date. SEPAL will then retrieve the mosaic images between those dates. 
+Using the main slider (2), define a season around the target date by identifying a starting date and an ending date. SEPAL will then retrieve the mosaic images between those dates. 
 
 The number of images in one single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - (3)) and in the future (:code:`Future season` - (4)). 
 
-When the selection is done click on the :icon:`fa fa-check` :guilabel:`Apply` button.
+When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_season.png
     :title: The season selection panel.
@@ -108,9 +120,9 @@ When the selection is done click on the :icon:`fa fa-check` :guilabel:`Apply` bu
 Sources
 ^^^^^^^
 
-As mentioned in the introduction, a mosaic uses different raster datasets that can be obtained from multiple sources. SEPAL allows you to select data from multiple entry points. Below, you can find a description of these sources (click on the link to see the corresponding dataset information):
+As mentioned in the introduction, a mosaic uses different raster datasets that can be obtained from multiple sources. SEPAL allows you to select data from multiple entry points. Below, you can find a description of these sources (select a link to see the corresponding dataset information):
 
--   :guilabel:`L8`: `Landsat 8 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m root mean square error [RMSE]). All Tier 1 Landsat data can be considered consistent and inter-calibrated (regardless of the sensor used) across the full collection.
+-   :guilabel:`L8`: `Landsat 8 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are intercalibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m root mean square error [RMSE]). All Tier 1 Landsat data can be considered consistent and intercalibrated (regardless of the sensor used) across the full collection.
     
     .. line-break::
 
@@ -118,7 +130,7 @@ As mentioned in the introduction, a mosaic uses different raster datasets that c
     
     .. line-break::
 
--   :guilabel:`L7`: `Landsat 7 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m RMSE). All Tier 1 Landsat data can be considered consistent and inter-calibrated across the full collection (regardless of the sensor used).
+-   :guilabel:`L7`: `Landsat 7 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are intercalibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m RMSE). All Tier 1 Landsat data can be considered consistent and inter-calibrated across the full collection (regardless of the sensor used).
     
     .. line-break::
 
@@ -126,7 +138,7 @@ As mentioned in the introduction, a mosaic uses different raster datasets that c
 
     .. line-break::
 
--   :guilabel:`L4-5`: `Landsat 4 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1>`__ combined with `Landsat 5 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12m RMSE). All Tier 1 Landsat data can be considered consistent and inter-calibrated across the full collection (regardless of the sensor used).
+-   :guilabel:`L4-5`: `Landsat 4 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1>`__ combined with `Landsat 5 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12m RMSE). All Tier 1 Landsat data can be considered consistent and intercalibrated across the full collection (regardless of the sensor used).
 
     .. line-break::
 
@@ -140,24 +152,24 @@ As mentioned in the introduction, a mosaic uses different raster datasets that c
     :title: The source selection panel.
     :group: optical-mosaic-recipe
 
-To validate your selection, click on the :icon:`fa fa-check` :guilabel:`Apply` button.
+To validate your selection, select the :icon:`fa fa-check` :guilabel:`Apply` button.
 
 Scenes
 ^^^^^^
 
 .. note:: 
 
-    If Sentinel and Landsat data have been selected, you will be forced to use all scenes. As the tilling system from Sentinel and Landsat data are different, it's impossible to select scenes using the tool presented in the following sections.
+    If Sentinel and Landsat data have been selected, you will be forced to use all scenes. As the tiling system from Sentinel and Landsat data are different, it's impossible to select scenes using the tool presented in the following sections.
 
-You can use multiple options to select the best scenes for your mosaic. The most simple is to use every image available based on the date parameters. Click :guilabel:`Use all scenes` and all of the images will be integrated into the mosaic. 
+You can use multiple options to select the best scenes for your mosaic. The most simple is to use every image available based on the date parameters. Select :guilabel:`Use all scenes` and all images will be integrated into the mosaic. 
 
-Choose :guilabel:`Select scenes` and 3 new selection options will become available. SEPAL sorts the images available for each tile. Three :code:`Priority` options are available; choose the one that suits your analysis: 
+Choose :guilabel:`Select scenes` and choose one of the three available :code:`Priority` options, based on the needs of your analysis (SEPAL sorts the images available for each tile):
 
 -   :guilabel:`Cloud free`: Prioritizes images with zero or few clouds. 
--   :guilabel:`Target date`: Prioritizes images that match with the target date 
+-   :guilabel:`Target date`: Prioritizes images that match with the target date. 
 -   :guilabel:`Balanced`: Prioritizes images that maximize both cloud and target date.
 
-To validate your selection, click on the :icon:`fa fa-check` :guilabel:`Apply` button.
+To validate your selection, select the :icon:`fa fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/scene_method.png
     :title: The source selection panel.
@@ -178,7 +190,7 @@ Composite
     -   **Snow masking**: :guilabel:`On`
     -   **Composing method**: :guilabel:`Medoid`
 
-To create a mosaic, you will need to provide SEPAL with the compositing method to create the final image. Here is a description of all of the possible compositing options available. 
+To create a mosaic, you will need to provide SEPAL with the compositing method to create the final image. See the following image for all of the possible compositing options available.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/composite_options.png
     :title: The panel to select the composite options of your mosaic.
@@ -191,11 +203,14 @@ This will apply corrections on the stacked pixels to improve the quality of the 
 
 -   :guilabel:`SR`: Surface reflectance improves comparison between multiple images over the same region by accounting for atmospheric effects such as aerosol scattering and thin clouds, which can help in the detection and characterization of Earth surface change. Top of atmosphere images are used if not selected.
 -   :guilabel:`BRDF`: Uses a bidirectional reflectance distribution function model to characterize surface reflectance anisotropy. For a given land area, the BRDF is established based on selected multiangular observations of surface reflectance.
--   :guilabel:`Calibrate`:  Calibrates Sentinel and Landsat data to make them compatible.
+-   :guilabel:`Calibrate`: Calibrates Sentinel and Landsat data to make them compatible.
     
     .. note:: 
         
-        This option is only available if Landsat and Sentinel data are mixed, as well as BRDF and SR corrections are disabled.
+        This option is only available if: 
+        
+        -   Landsat and Sentinel data are mixed; and 
+        -   BRDF and SR corrections are disabled.
 
 Pixel filters
 """""""""""""
@@ -204,26 +219,27 @@ Activating any of the filters will remove some pixels from the stack. Removing p
 
 .. note:: 
 
-    Each filter is applied iteratively. For example, if the Normalized difference vegetation index (NDVI) is already filtering all pixels but one, there will be nothing left in the stack to be filtered by day of the year. 
+    Each filter is applied iteratively. For example, if the normalized difference vegetation index (NDVI) is already filtering all pixels but one, there will be nothing left in the stack to be filtered by day of year. 
+
     Note as well that adding filters significantly increases the creation time of the mosaic.
 
--   **Shadow**: Filters the xx% darkest pixels of the stack.
--   **Haze**: Computes a haze index and filter the xx% highest values.
--   **NDVI**: Computes the NDVI and only keeps the xx% highest values.
--   **Day of the year**: Computes the distance from target day in days and filters out the xx% farthest.
+-   **Shadow**: Filters the XX% darkest pixels of the stack.
+-   **Haze**: Computes a haze index and filters the XX% highest values.
+-   **NDVI**: Computes the NDVI and only keeps the XX% highest values.
+-   **Day of the year**: Computes the distance from target day in days and filters out the XX% farthest.
 
 Cloud detection 
 """""""""""""""
 
-It refers to the algorithm used to detect clouds. 
+Refers to the algorithm used to detect clouds. 
 
 -   :guilabel:`QA bands`: Uses QA bands to identify clouds in Sentinel data.
 -   :guilabel:`Cloud score`: Uses the computed cloud score to identify clouds in Landsat data.
--   :guilabel:`Pino 26`: Uses the Pino_26 algorithm to identify clouds (`D. Simonetti, 2021 <https://doi.org/10.1016/j.dib.2021.107488>`__).
+-   :guilabel:`Pino 26`: Uses the Pino_26 algorithm to identify clouds (For more information, see `D. Simonetti, 2021 <https://doi.org/10.1016/j.dib.2021.107488>`__).
 
     .. Note:: 
 
-        This filter is only available for Sentinel exclusive source and when both :guilabel:`BRDF` and :guilabel:`SR` correction are disabled.
+        This filter is only available for Sentinel exclusive source, and when both :guilabel:`BRDF` and :guilabel:`SR` correction are disabled.
 
 Cloud masking 
 """""""""""""
@@ -231,8 +247,8 @@ Cloud masking
 Controls how clouds will be masked based on the cloud detection algorithm selected. 
 
 -   :guilabel:`off`: Uses cloud-free pixels if possible, but doesn't mask areas without cloud-free pixels.
--   :guilabel:`moderate`: Relies only on image source QA bands for cloud masking. Moderate threshold is used.
--   :guilabel:`aggressive`: Relies on image source QA bands and a cloud scoring algorithm for cloud masking with an aggressive threshold. This will probably mask out some built-up areas and other bright features.
+-   :guilabel:`moderate`: Relies only on image source QA bands for cloud masking (a moderate threshold is used).
+-   :guilabel:`aggressive`: Relies on image source QA bands and a cloud scoring algorithm for cloud masking with an aggressive threshold (this will probably mask out some built-up areas and other bright features).
 
 Cloud buffering
 """""""""""""""
@@ -243,14 +259,14 @@ When pixels are identified as clouds, SEPAL can remove pixels in a small buffer 
 
     Buffering is done on the pixel level, so using this option will significantly increase the creation time of the mosaic.
 
--   :guilabel:`none`: Doesn't use cloud buffering
+-   :guilabel:`none`: Doesn't use cloud buffering.
 -   :guilabel:`moderate`: Masks an additional **120 m** around each larger cloud. 
 -   :guilabel:`aggressive`: Masks an additional **600 m** around each larger cloud. 
 
 Snow masking
 """"""""""""
 
-Define how snowy pixels will be masked.
+Defines how snowy pixels will be masked.
 
 -   :guilabel:`on`: Masks snow. This tends to leave some pixels with shadowy snow.
 -   :guilabel:`off`: Doesn't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts.
@@ -269,23 +285,24 @@ Analysis
 After selecting the parameters, you can start interacting with the scenes and begin the analysis.
 In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result.
 
--   :btn:`<fas fa-magic>`: auto-select scenes
--   :btn:`<fas fa-trash>`: clear selected scenes
--   :btn:`<fas fa-cloud-download-alt>`: retrieve mosaic
+-   :btn:`<fas fa-magic>`: Auto-select scenes.
+-   :btn:`<fas fa-trash>`: Clear selected scenes.
+-   :btn:`<fas fa-cloud-download-alt>`: Retrieve mosaic.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/analysis.png
-    :title: The 3 tabs to select the scenes and export mosaic.
+    :title: The three tabs to select the scenes and export mosaic.
     :group: optical-mosaic-recipe
 
 .. note::
 
     If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fas fa-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot).
-    If you can't see the image scene area, you probably have selected a small area of interest. Zoom out on the map and you will see the number of available images in the circles.
+    
+    If you can't see the image scene area, you probably have selected a small AOI. Zoom out on the map and you will see the number of available images in the circles.
 
-Select Scenes
+Select scenes
 ^^^^^^^^^^^^^
 
-To create a mosaic, you need to select the scenes that will be used to compute each pixel value of the mosaic. To do so, SEPAL provides a user-friendly interface that will guide you through the selection process. You don't have to select the stack for every pixel; instead, SEPAL will clip the AOI in smaller pieces called **Tiles**. These tiles correspond to the native tiling system of your dataset and are displayed on the map with circled numbers in their centroid. Each number corresponds to the number of scenes available to build the mosaic tile; hover over these circles to see the tile boundaries appear. 
+To create a mosaic, you need to select the scenes that will be used to compute each pixel value of the mosaic. To do so, SEPAL provides a user-friendly interface that will guide you through the selection process. You don't have to select the stack for every pixel; instead, SEPAL will clip the AOI in smaller pieces called **Tiles**. These tiles correspond to the native tiling system of your dataset and are displayed on the map with circled numbers in their centroid. Each number corresponds to the number of scenes available to build the mosaic tile. Hover over these circles to see the tile boundaries appear. 
 
 .. note:: 
 
@@ -294,8 +311,10 @@ To create a mosaic, you need to select the scenes that will be used to compute e
 Auto-select scene 
 """""""""""""""""
 
-Clicking on the :icon:`fas fa-magic` tab will open the auto-selection panel. 
-Move the sliders to select the minimum and the maximum number of scenes SEPAL should select in a tile. Then, click on the :guilabel:`Validate` button to apply the auto-select method. 
+Selecting the :icon:`fas fa-magic` tab will open the **Auto-selection** panel. 
+
+Move the sliders to select the minimum and the maximum number of scenes SEPAL should select in a tile. Then, select the :guilabel:`Validate` button to apply the auto-select method. 
+
 SEPAL will use the priority defined in the :guilabel:`SCN` tab to order the scene and collect the optimal number for your request.
 
 .. note:: 
@@ -303,14 +322,15 @@ SEPAL will use the priority defined in the :guilabel:`SCN` tab to order the scen
     The result is never perfect but can be used as a starting point for the manual selection of scenes.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/auto-select.png
-    :title: Panel to select the minimum and maximum number of scenes to auto select in each tile.
+    :title: Panel to select the minimum and maximum number of scenes to auto-select in each tile.
     :group: optical-mosaic-recipe
 
-Clear all scene
-"""""""""""""""
+Clear all scenes
+""""""""""""""""
 
-If at least one scene is selected, the :icon:`fas fa-trash` tab will be available. Click on it to open the clear panel. 
-Click on :guilabel:`Clear scenes` and all the scenes selected, either manually or automatically, will be removed. 
+If at least one scene is selected, the :icon:`fas fa-trash` tab will be available. Select it to open the **Clear** panel. 
+
+Select :guilabel:`Clear scenes` to remove all manually and automatically selected scenes. 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/remove_all.png
     :title: The panel to unselect all the scenes from the mosaic.
@@ -319,9 +339,9 @@ Click on :guilabel:`Clear scenes` and all the scenes selected, either manually o
 Manual selection
 """"""""""""""""
 
-To open the scene selection menu, hover over a tile circled-number and click on it (1). The window will be divided into two sections: 
+To open the scene selection menu, hover over a tile circled-number and select it (1). The window will be divided into two sections: 
 
--   Available scene (2): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in :guilabel:`SCN` tab. 
+-   Available scene (2): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in the :guilabel:`SCN` tab. 
 -   Selected scenes (3): The scenes that are currently selected. 
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_scenes.png
@@ -343,41 +363,40 @@ Each thumbnail represents a scene of the tile stack. You have the option to incl
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_selected.png
     :width: 74%
-    :title: The thumbnail of a scene when it's in the selected scene area
+    :title: The thumbnail of a scene when it's in the selected scene area.
     :group: optical-mosaic-recipe
 
-You can decide to move the scene to the **Selected** area by clicking :icon:`fa fa-plus`:guilabel:`Add` or moving it back to **Available** by clicking :icon:`fa fa-minus` :guilabel:`Remove`.  
+You can decide to move the scene to the **Selected** area by selecting :icon:`fa fa-plus`:guilabel:`Add` or moving it back to **Available** by selecting :icon:`fa fa-minus` :guilabel:`Remove`.  
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_available_hover.png
     :width: 24%
-    :title: The thumbnail of a scene when it's in the available scene area while hovering over it.
+    :title: The thumbnail of a scene when it's in the **Available scene area** while hovering over it.
     :group: optical-mosaic-recipe
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_selected_hover.png
     :width: 74%
-    :title: the thumbnail of a scene when it's in the selected scene area while hovering over it.
+    :title: The thumbnail of a scene when it's in the **Selected scene area** while hovering over it.
     :group: optical-mosaic-recipe
 
 .. tip:: 
 
-    Scenes are moved from one side to the other so they are not duplicated and cannot be selected twice. Be careful if your connection is slow; wait for the thumbnail to move before clicking again (if you click too fast, you could select 2 different images instead of one).
+    Scenes are moved from one side to the other so they are not duplicated and cannot be selected twice. Be careful if your connection is slow; wait for the thumbnail to move before clicking again (if you click too fast, you could select two different images instead of one).
 
-Once you are happy with your selection, click the :guilabel:`Apply` button to close the window and use the selected scenes to compute the mosaic on this tile. When the window is closed, SEPAL resets the rendering of all the tiles.
+Once you are happy with your selection, select the :guilabel:`Apply` button to close the window and use the selected scenes to compute the mosaic on this tile. When the window is closed, SEPAL resets the rendering of all the tiles.
 
 Retrieve
 ^^^^^^^^
 
-Clicking on the :icon:`fas fa-cloud-download-alt` tab will open the retrieve panel where the you can select the exportation parameters.
+Selecting the :icon:`fas fa-cloud-download-alt` tab will open the retrieve panel where you can select the exportation parameters.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/retrieve.png
     :title: The last panel of the optical mosaic: the exportation.
     :group: optical-mosaic-recipe
 
-
 Bands
 """""
 
-You need to select the band(s) to export with the mosaic. There is no maximum number of bands, but exporting useless bands will only increase the size and time of the output. See the :doc:`../feature/bands` to discover the full list of the SEPAL available bands.
+You need to select the band(s) to export with the mosaic. There is no maximum number of bands, but exporting useless bands will only increase the size and time of the output. To discover the full list of available bands with SEPAL, see :doc:`../feature/bands`.
 
 .. tip:: 
 
@@ -386,13 +405,13 @@ You need to select the band(s) to export with the mosaic. There is no maximum nu
 Dates
 #####
 
--   :guilabel:`dayofyear`: The Julian calendar date (day of the year) 
+-   :guilabel:`dayofyear`: The Julian calendar date (day of the year).
 -   :guilabel:`dayfromtarget`: The distance to the target date within the season in days.
 
-Scale 
+Scale
 """""
 
-You can set a custom scale for exportation by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output, just its size, so keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m.) 
+You can set a custom scale for exportation by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.) 
 
 Destination
 """""""""""
@@ -403,27 +422,29 @@ You can export the image to the :guilabel:`SEPAL workspace` or to the ;guilabel:
 
     If :guilabel:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__.
 
-Click on :guilabel:`Apply` to start the download process. 
+Select :guilabel:`Apply` to start the download process. 
 
 Exportation status
 """"""""""""""""""
 
-Going to the task tab (lower-left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (lower-left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. 
+
+If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 
     This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without stopping the process.
 
-When the task is finished, the frame will be displayed in green, as shown on the second image.
+When the task is finished, the frame will be displayed in green, as shown on the second image below.
 
 .. thumbnail:: ../_images/cookbook/time_series/download.png
     :width: 49%
-    :title: Evolution of the downloading process of the recipe displayed in the task manager of SEPAL.
+    :title: Evolution of the downloading process of the recipe displayed in the **Task manager** of SEPAL.
     :group: time-series-recipe
 
 .. thumbnail:: ../_images/cookbook/time_series/download_complete.png
     :width: 49%
-    :title: Completed downloading process of the recipe displayed in the task manager of SEPAL.
+    :title: Completed downloading process of the recipe displayed in the **Task manager** of SEPAL.
     :group: time-series-recipe
 
 Access
@@ -446,7 +467,7 @@ Once the download process is complete, you can access the data in your SEPAL fol
 
     Understanding how images are stored in an optical mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you.
 
-The data are stored in a folder using the name of the optical mosaic as it was set in the first section of this documentation. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file. 
+The data are stored in a folder using the name of the optical mosaic as it was created in the first section of this article. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file. 
 
 .. tip:: 
 
@@ -455,3 +476,6 @@ The data are stored in a folder using the name of the optical mosaic as it was s
 .. important::
 
     Now that you have downloaded the MO to your SEPAL and/or GEE account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows.
+    
+    
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
