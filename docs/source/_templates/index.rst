@@ -35,7 +35,7 @@ Refer to the next section to start a specific instance manually.
 
 .. note:: 
 
-    Applications that include a :icon:`fas fab-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. For more information, see `Connect GEE and SEPAL <../setup/gee.html#connection-between-gee-and-sepal>`__.
+    Applications that include a :icon:`fas fab-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. For more information, see :doc:`../setup/gee`.
     
 .. note::
 
