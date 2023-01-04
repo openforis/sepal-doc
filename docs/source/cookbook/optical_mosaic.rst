@@ -82,7 +82,7 @@ The data exported by the recipe will be generated from within the bounds of the 
 -   EE Tables
 -   Drawn polygons
 
-They are extensively described in our documentation. For more information, read :doc:`feature/aoi_selector`.
+They are extensively described in our documentation. For more information, read :doc:`../feature/aoi_selector`.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/aoi.png
     :title: Select AOI based on administrative layers
