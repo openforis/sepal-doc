@@ -18,7 +18,7 @@ This can be achieved on both contiguous rasters (see first image) and overlappin
 .. thumbnail:: ../_images/cookbook/optical_mosaic/mosaic_overlay.png
     :width: 49%
     :group: optical-mosaic-recipe
-    :title: Overlapping images.=
+    :title: Overlapping images.
 
 These overlay areas can be managed in various ways. For example, you can choose to: 
 
