@@ -80,7 +80,7 @@ Request additional SEPAL resources
 To use SEPAL modules and acesss the command line terminal and development tools like Jupyter or RStudio, you will need to request processing resources. 
 
 1.  Select **Quota** > :btn:`<fa-solid fa-pencil> Request additional resources`. 
-2.  Complete the form and select **Apply**. 
+2.  Complete the form and select :btn:`<fa-solid fa-check> Apply`. 
 
 If you do not know how many resources you will use, go to the `resource management <resource>` section for more information.
 
