@@ -38,7 +38,7 @@ Create a SEPAL account
     :group: register
     :title: Sign-up form.
 
-4.  Select **Sign up**.
+4.  Select :btn:`<fa-solid fa-envelope> Sign up`.
 
 .. thumbnail:: ../_images/setup/register/sepal_sent_message.png
     :width: 40%
