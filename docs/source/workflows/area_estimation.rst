@@ -1,17 +1,20 @@
 Perform area estimation analysis with SEPAL-CEO
 ===============================================
 
+Complete area estimation for land use/land cover and two-date change detection classifications
+----------------------------------------------------------------------------------------------
+
 .. note::
 
-    All thanks goes to `SIG-GIS <https://sig-gis.com>`_ for this documentation material.
+    The SEPAL team would like to thank `SIG-GIS <https://sig-gis.com>`_ for this documentation material.
 
-.. warning::
+.. important::
 
-    To follow this tutorial, you need to:
+    To follow this tutorial, you need to register to:
 
-    -   register to SEPAL
-    -   register to GEE
-    -   register to CEO
+    -   SEPAL
+    -   Google Earth Engine (GEE)
+    -   Collect Earth Online (CEO)
 
 Introduction
 ------------
@@ -876,43 +879,49 @@ This module should take you approximately 3 hours.
 Two-date change detection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this exercise, you will learn how to conduct a two-date change detection in SEPAL. This approach uses the same classification algorithm you used in `Module 2`_. This approach can be used with more than two dates if you so choose in the future.
+In this exercise, you will learn how to conduct a two-date change detection in SEPAL with the same classification algorithm used in `Module 2`_. 
 
-In this example, you will create optical mosaics and classify them, building on skills learned in Modules 1 and 2. Alternatively, you may also use two classifications from your own research area.
+This approach can be used with more than two dates in the future, if needed.
+
+In this example, you will create optical mosaics and classify them, building on skills learned in Module 1 and Module 2. 
+
+You may use two classifications from your own research area, if you prefer.
 
 .. note::
 
     **Objectives**:
 
-    -   Learn how to conduct a two-date change detection
-    -   Build on skills learned in `Module 1`_ and `Module 2`_
+    -   Learn how to conduct a two-date change detection.
+    -   Build on skills learned in `Module 1`_ and `Module 2`_.
 
 .. note::
 
     **Prerequisites**:
 
-    -   SEPAL account
+    -   SEPAL account.
     -   Completion of `Module 1`_ and `Module 2`_, or familiarity with the skills covered in these modules.
 
 Create mosaics for change detection
 """""""""""""""""""""""""""""""""""
 
-Before we can identify change, we first need to have images to compare. We will create two mosaics of Sri Lanka, generate some training data, and then classify the mosaics. This is discussed in detail in `Module 1`_ and `Module 2`_.
+Before we can identify change, we first need to have images to compare. 
 
-Open the :code:`Process` menu and click on :code:`Optical mosaic`. Alternatively, click the **green plus symbol** to open the **Create recipe** menu and then click on :code:`Optical mosaic`.
+In this section, we will create two mosaics of Sri Lanka, generate training data, and then classify the mosaics. This is discussed in detail in `Module 1`_ and `Module 2`_.
+
+Open the :code:`Process` menu and select :code:`Optical mosaic`. Alternatively, select the **green plus symbol** to open the **Create recipe** menu; then, select :code:`Optical mosaic`.
 
 Use the following data:
 
--   Choose **Sri Lanka** for the Area of interest (AOI).
--   Select 2015 for the Date (DAT).
+-   Choose **Sri Lanka** for the area of interest (AOI).
+-   Select 2015 for the date (DAT).
 -   Select Landsat 8 (L8) as the source (SRC).
--   In the Composite (CMP) menu, ensure the surface reflectance **(SR) correction** is selected, as well as median as the compositing method.
+-   In the **Composite** (CMP) menu, ensure that surface reflectance (**(SR) correction**) is selected, as well as **Median** as the compositing method.
 
-Click :code:`Retrieve mosaic` and select **Blue, Green, Red, NIR, SWIR1, SWIR2**. Then select Google Earth Engine Asset. Lastly, click :code:`Retrieve`.
+Select :code:`Retrieve mosaic`; then select **Blue, Green, Red, NIR, SWIR1, SWIR2**. Lastly, select **Google Earth Engine Asset** and :code:`Retrieve`.
 
 .. note::
 
-   If you don't see the Google Earth Engine asset option, you'll need to connect your Google account to SEPAL by clicking on your user name on the lower-right ride.
+   If you don't see the **Google Earth Engine Asset** option, you need to connect your Google account to SEPAL by selecting your username in the lower-right.
 
 .. figure:: ../_images/workflows/area_estimation/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
@@ -2859,3 +2868,6 @@ Now you know:
     sourcebook
     plotid
     SriLanka
+    
+
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
