@@ -61,7 +61,7 @@ Create a SEPAL account
     
     Go to https://groups.google.com/g/sepal-users and select **Ask to join group**.
 
-    For support, go to the `Geographic Information Systems StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>` and ask a question to the community using the **SEPAL** tag.
+    For support, go to the `Geographic Information Systems StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ and ask a question to the community using the **SEPAL** tag.
 
 .. note:: With your new account, you can perform basic operations, such as visualizing and processing satellite imagery, saving recipes, and navigating through the platform; however, some SEPAL features are not fully available (e.g. in the **Tabs** bar on the left, **Terminal** and **Tools** are deactivated because these functions require an instance and a quota). To get full access, go to the :ref:`request access section <request>`.
 
