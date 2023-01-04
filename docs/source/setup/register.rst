@@ -122,7 +122,7 @@ Once you have a GEE account, go to https://code.earthengine.google.com/ to acces
 
 .. tip::
 
-    If you experience problems registering with GEE, contact the SEPAL team at SEPAL@fao.org.
+    If you experience problems registering with GEE, contact the SEPAL team at sepal@fao.org.
 
 .. _ceo:
 
