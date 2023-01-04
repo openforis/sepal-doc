@@ -108,7 +108,7 @@ Sign up for Google Earth Engine (GEE)
 
 If you already have a Google email address, go to https://earthengine.google.com/new_signup/ to sign up for a GEE account.
 
-.. image:: ../_images/setup/register/gee_landing.png.
+.. image:: ../_images/setup/register/gee_landing.png
    :alt: Request access to Google Earth Engine (GEE).
    :align: center
 
