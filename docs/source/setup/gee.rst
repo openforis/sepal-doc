@@ -245,4 +245,4 @@ To find the asset name, go back to **Assets** in the **Zone 1** pane and click o
 If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. Alternatively, you can select **Share** in the pop-up window and choose between the different sharing options.
 
 
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
