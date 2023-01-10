@@ -195,3 +195,6 @@ This will bring up a list of apps you can run in SEPAL. More information about e
 -   **Geo Processing- Beta:** Offers a selection of easy-to-use change detection and segmentation tools.
 -   **BFAST Explorer:** Tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
 -   Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation.
+
+
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
