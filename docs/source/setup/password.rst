@@ -96,4 +96,4 @@ Once validated, the new password will be automatically updated on your account. 
    :group: setup_password
    
    
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
