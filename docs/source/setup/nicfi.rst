@@ -98,4 +98,4 @@ If you are either not connected to your Google account or connected via a differ
     For additional information that may help when processing the NICFI/Planet high-resolution imagery in SEPAL, please refer to `the section of Planet Academy <https://university.planet.com/path/nicfi>`__ dedicated to NICFI imagery. 
 
 
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
