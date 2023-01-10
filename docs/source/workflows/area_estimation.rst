@@ -1,24 +1,27 @@
 Perform area estimation analysis with SEPAL-CEO
 ===============================================
 
+Conduct area estimation for land use/land cover or change detection classifications
+-----------------------------------------------------------------------------------
+
 .. acknowledgements::
 
     The SEPAL team thanks `SIG-GIS <https://sig-gis.com>`_ for contributing this article to SEPAL documentation.
 
 .. prerequisites::
 
-    To follow this tutorial, you will need to:
+    To follow this tutorial, you will need to register to:
 
-    -   register to SEPAL;
-    -   register to GEE; and
-    -   register to CEO.
+    -   System for Earth Observation Data Access, Processing and Analysis for Land Monitoring (SEPAL);
+    -   Google Earth Engine (GEE); and
+    -   Collect Earth Online (CEO).
 
 Introduction
 ------------
 
 Welcome to Area estimation with SEPAL and CEO!
 
-In this manual, you will learn how to perform area estimation for land use/land cover and two-date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors (e.g. maps derived from land cover/land use classifications may have errors due to pixel mixing, or noise in the input data). Using pixel-counting methods will produce biased estimates of area; you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
+In this article, you will learn how to perform area estimation for land use/land cover and two-date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors (e.g. maps derived from land cover/land use classifications may have errors due to pixel mixing, or noise in the input data). Using pixel-counting methods will produce biased estimates of area; you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
 
 The goal of this article is to teach you how to perform these tasks so that you can conduct your own area estimation for land use/land cover or change detection classifications.
 
@@ -51,7 +54,9 @@ The primary tool needed to complete this tutorial is the System for Earth Observ
 
 SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and inefficient for processing satellite imagery. It achieves this by utilizing a cloud-based supercomputer, which enables users to process, store and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
 
-Two other tools will also be needed to complete this tutorial: CEO and GEE. CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
+Two other tools will also be needed to complete this tutorial: CEO and GEE. 
+
+CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
 
 GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the GEE JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: 
 
@@ -81,13 +86,13 @@ Project planning information
 
 Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future. We encourage you to think about the following items to ensure that your resulting products will be relevant and that your chosen methods are well-documented and transparent.
 
--   Descriptions and Objectives of the Project (State issues and information needs). Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
+-   Descriptions and objectives of the project (issues and information needs). Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
 
 -   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? Do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 
 -   How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
 
--   Description of the project area / extent (e.g. national, subnational, specific forest, etc.)
+-   Description of the project area/extent (e.g. national, subnational, specific forest, etc.)
 
 -   Description of the features/classes to be modeled or mapped.
 
@@ -503,7 +508,9 @@ In SEPAL, you can run a classification on either a mosaic recipe or on a GEE ass
 
 .. note::
 
-    **Prerequisite**: `Module 1`_
+    **Prerequisite**: 
+    
+    -   `Module 1`_
 
 Creating and exporting a mosaic for a drawn AOI
 """""""""""""""""""""""""""""""""""""""""""""""
@@ -555,7 +562,7 @@ For future exercises, you may need to know how to find your Earth Engine Asset.
     :alt: Your mosaic's information pane.
     :align: center
 
-.. _section 2.3:
+.. _Section 2.3:
 
 Creating a classification and training data collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1198,7 +1205,7 @@ This tutorial will use the demo data that is packaged with the SMFM Deforest too
 
 If you already have a time series of percent forest coverage, feel free to use that.
     
-A. Download demo data
+A. Download demo data.
 
    1. Go to your SEPAL **Terminal**.
    2. Start a new instance or join your current instance.
@@ -1224,7 +1231,7 @@ B. Use SEPAL workflow to generate time series of forest probability images.
       4. Select the **%forest output**.
       5. Save the classification as a recipe.
    
-   1. Open a new time-series
+   1. Open a new time-series.
 
       1.  Select the same AOI as your mosaic. 
       2.  Choose a date range for the time series.
@@ -1255,7 +1262,7 @@ Go to the **Apps** menu by selecting the wrench icon and typing "SMFM" into the 
 
     Successful setup.
 
-2. Install the package via the SEPAL Terminal
+2. Install the package via the SEPAL Terminal.
    
    1. Go to your SEPAL **Terminal**.
    2. Type *1* to access the terminal of Session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account. 
@@ -1380,7 +1387,9 @@ TimeSync integration is coming to CEO in 2021.
 
 .. note::
 
-    **Prerequisite**: SEPAL account
+    **Prerequisite**: 
+    
+    -   SEPAL account
 
 BFAST Explorer
 """"""""""""""
@@ -1460,7 +1469,6 @@ From TimeSync's Introduction materials, here is an example output:
 
 For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: https://www.timesync.forestry.oregonstate.edu/tutorial.html. You can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here: http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf, and an introductory presentation here: https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf.
 
-
 LandTrendr
 ++++++++++
 
@@ -1476,7 +1484,7 @@ From LandTrendr's documentation, here's an example output in the GUI. However, L
    :alt: The LandTrendr interface
    :align: center
 
-.. _module 4:
+.. _Module 4:
 
 Sample-based estimation of area and accuracy
 --------------------------------------------
@@ -2496,7 +2504,7 @@ In this exercise, we collected validation data using a stratified sample, so the
    :width: 450
    :align: center
 
-.. _module 5:
+.. _Module 5:
 
 Documentation and archiving
 ---------------------------
@@ -2879,3 +2887,6 @@ Now you know:
     sourcebook
     plotid
     SriLanka
+
+
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
