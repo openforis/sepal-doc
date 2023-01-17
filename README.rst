@@ -41,12 +41,6 @@ To build the documentation from the files:
     git clone https://github.com/openforis/sepal-doc
     cd sepal-doc
     pip install nox 
-    nox
-
-alternatively you can run the specific :code:`docs` session: 
-
-.. code-block:: console
-
     nox -s docs
 
 Contribute

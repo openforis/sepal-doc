@@ -9,4 +9,16 @@ import nox
 def docs(session):
     """Build the documentation."""
     session.install("-r", "requirements.txt")
-    session.run("sphinx-build", "-b", "html", "docs/source", "docs/build")
+    session.run("sphinx-build", "-b", "html", "docs/source", "docs/build/html")
+    
+@nox.session(reuse_venv=True)
+def i18n(session):
+    """Create the translation files"""
+    session.install("-r", "requirements.txt")
+    session.install("sphinx", "sphinx-intl")
+    session.run("sphinx-build", "-b", "gettext", "docs/source", "docs/build/gettext")
+    session.run(
+        "sphinx-intl", "update", "-p", "docs/build/gettext",
+        "--local-dir", "docs/source/_locale",
+        "-l", "fr", "-l", "en"
+    )

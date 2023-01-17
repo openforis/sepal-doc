@@ -28,13 +28,13 @@ jobs:
 
       - name: generate .po files
         run: |
-          sphinx-build -M gettext docs/source docs/build
-          sphinx-intl update -p docs/build/gettext -l fr -l en
+          sphinx-build -b gettext docs/source docs/build/gettext
+          sphinx-intl update -p docs/build/gettext --local-dir docs/source/_locale -l fr -l en
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
         with: 
           commit_message: Automatic translation update
-          
+
       - name: trigger RDT build 
         run: curl -X POST -d "branches=main" -d "token=$RDT_TOKEN" $RDT_URL
