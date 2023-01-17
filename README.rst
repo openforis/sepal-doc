@@ -28,6 +28,27 @@ Note
 
 This folder gather all the documentation material of the sepal platform: `<https://sepal.io>`_
 
+Build
+-----
+
+To build the documentation from the files:
+1. Clone the repository to your local machine 
+1. install nox
+1. run the nox build
+
+.. code-block:: console
+
+    git clone https://github.com/openforis/sepal-doc
+    cd sepal-doc
+    pip install nox 
+    nox
+
+alternatively you can run the specific :code:`docs` session: 
+
+.. code-block:: console
+
+    nox -s docs
+
 Contribute
 ----------
 
