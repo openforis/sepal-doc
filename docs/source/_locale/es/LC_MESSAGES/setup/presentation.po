@@ -1,31 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-01-17 17:47\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/presentation.po\n"
+"X-Crowdin-File-ID: 99\n"
+"Language: es_ES\n"
 
 #: ../../source/setup/presentation.rst:2
 msgid "Introduction to SEPAL"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:4
-msgid ""
-"On this page, you will be introduced to the SEPAL interface and learn how"
-" to access SEPAL's features to facilitate the remote sensing exercises "
-"found in the rest of the documentation."
+msgid "On this page, you will be introduced to the SEPAL interface and learn how to access SEPAL's features to facilitate the remote sensing exercises found in the rest of the documentation."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:8
@@ -57,19 +55,11 @@ msgid "Access SEPAL"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:24
-msgid ""
-"Navigate to `sepal.io <https://sepal.io/>`_ to open SEPAL, use the log-in"
-" form and fill your username and password and, click the :btn:`Login` "
-"button."
+msgid "Navigate to `sepal.io <https://sepal.io/>`_ to open SEPAL, use the log-in form and fill your username and password and, click the :btn:`Login` button."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:32
-msgid ""
-"When working in SEPAL, do not click your browser's back button. This will"
-" go back to the previous webpage. Use the buttons within SEPAL to "
-"navigate to previous pages. In some instances, you may find an arrow in "
-"the upper-left or upper-right corner of the SEPAL interface to navigate "
-"to a previous window."
+msgid "When working in SEPAL, do not click your browser's back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. In some instances, you may find an arrow in the upper-left or upper-right corner of the SEPAL interface to navigate to a previous window."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:35
@@ -77,9 +67,7 @@ msgid "Set up language"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:37
-msgid ""
-"The first step to create a SEPAL environment is to set up the language "
-"you want to use, follow the instructions in the video below."
+msgid "The first step to create a SEPAL environment is to set up the language you want to use, follow the instructions in the video below."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:44
@@ -87,13 +75,7 @@ msgid "You can always change your language preference from SEPAL's launch page."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:46
-msgid ""
-"SEPAL is by default in English, but is also available in other languages,"
-" such as French and Spanish. To use these languages in SEPAL, return to "
-"the launch page (you may be required to logout). On this page, click on "
-":code:`Launch`, which will provide you with access to the login page. In "
-"the upper-right side of this panel, click on the button corresponding to "
-"your language:"
+msgid "SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language:"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:48
@@ -109,9 +91,7 @@ msgid "es: Español"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:52
-msgid ""
-"The SEPAL launch page should reload itself and the language you selected "
-"will be used by the platform for all of its tools."
+msgid "The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:55
@@ -123,15 +103,11 @@ msgid "Home"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:60
-msgid ""
-"Once you are logged in, you will see the following screen. Notice that "
-"your username is displayed in the lower-right."
+msgid "Once you are logged in, you will see the following screen. Notice that your username is displayed in the lower-right."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:67
-msgid ""
-"There are four main navigation tabs in the dock on the left side of the "
-"screen:"
+msgid "There are four main navigation tabs in the dock on the left side of the screen:"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:69
@@ -139,10 +115,7 @@ msgid "**Process:** Select imagery and create mosaics."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:70
-msgid ""
-"**Files:** Navigate through your personal SEPAL folders. This is where "
-"you can download, delete, and visualize data (using the Data "
-"Visualization link)."
+msgid "**Files:** Navigate through your personal SEPAL folders. This is where you can download, delete, and visualize data (using the Data Visualization link)."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:71
@@ -154,22 +127,15 @@ msgid "**Apps:** Follow links to a variety of pre-loaded tools."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:74
-msgid ""
-"On the lower-left is the red :code:`Tasks` tab. Clicking on this brings "
-"up a list of currently-running tasks."
+msgid "On the lower-left is the red :code:`Tasks` tab. Clicking on this brings up a list of currently-running tasks."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:76
-msgid ""
-"**Account Information** can be found on the lower-right side of the "
-"webpage by clicking the Username button. This opens an overlay that "
-"displays important user account information."
+msgid "**Account Information** can be found on the lower-right side of the webpage by clicking the Username button. This opens an overlay that displays important user account information."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:78
-msgid ""
-"You can edit your user account info, including Name, Password, Email and "
-"Organization here. Click :code:`Save` to make those changes permanent."
+msgid "You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:82
@@ -177,56 +143,27 @@ msgid "You cannot edit your Username in this interface."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:84
-msgid ""
-"Link your Google Earth Engine (GEE) account with your SEPAL account by "
-"clicking **Use my own Google Account** and following the instructions. If"
-" your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive "
-"as a temporary storage space for data downloaded to your SEPAL workspace "
-"(e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace”"
-" will first be saved to your Google Drive account before being saved in "
-"your SEPAL workspace). If your GEE and SEPAL accounts are not linked, "
-"data downloads to your SEPAL workspace will still be possible and the "
-"data will pass through SEPAL's Google Drive account."
+msgid "Link your Google Earth Engine (GEE) account with your SEPAL account by clicking **Use my own Google Account** and following the instructions. If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace). If your GEE and SEPAL accounts are not linked, data downloads to your SEPAL workspace will still be possible and the data will pass through SEPAL's Google Drive account."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:88
-msgid ""
-"Unlinking your GEE and SEPAL accounts for downloading to SEPAL workspace "
-"may help if you do not have sufficient space available in your personal "
-"Google Drive."
+msgid "Unlinking your GEE and SEPAL accounts for downloading to SEPAL workspace may help if you do not have sufficient space available in your personal Google Drive."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:90
-msgid ""
-"Linking your GEE and SEPAL accounts will allow you to read and write from"
-" your GEE Assets. To save data created in SEPAL as a GEE Asset or to use "
-"your existing GEE Assets in classifications or further processing in "
-"SEPAL, you will need to have your GEE and SEPAL accounts linked."
+msgid "Linking your GEE and SEPAL accounts will allow you to read and write from your GEE Assets. To save data created in SEPAL as a GEE Asset or to use your existing GEE Assets in classifications or further processing in SEPAL, you will need to have your GEE and SEPAL accounts linked."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:94
-msgid ""
-"Link your SEPAL and GEE accounts in order to read and write to GEE Assets"
-" from SEPAL."
+msgid "Link your SEPAL and GEE accounts in order to read and write to GEE Assets from SEPAL."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:96
-msgid ""
-"Next to **Account Information** is a section called **User Report**, "
-"represented by the :code:`$ X/h`, which displays the status (used / "
-"available) of your processing and storage resources. Instance spending "
-"refers to the resources used / available to start and run cloud "
-"computers. Storage space and spending refers to the resources used / "
-"available for storage in your SEPAL workspace. If you are running any "
-"processes in your current session, they will show up here under Sessions."
+msgid "Next to **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`, which displays the status (used / available) of your processing and storage resources. Instance spending refers to the resources used / available to start and run cloud computers. Storage space and spending refers to the resources used / available for storage in your SEPAL workspace. If you are running any processes in your current session, they will show up here under Sessions."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:105
-msgid ""
-"SEPAL is not to be used for long-term data storage. This is costly. The "
-"platform is best used by storing only the data necessary for processing. "
-"After processing and producing a product, data should be downloaded to "
-"your personal computer and deleted from SEPAL storage."
+msgid "SEPAL is not to be used for long-term data storage. This is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:109
@@ -242,9 +179,7 @@ msgid "You should now see many options in the center of the screen:"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:120
-msgid ""
-"**Optical Mosaic** Create a mosaic using Landsat and/or Sentinel 2 data. "
-"This is what we will do in Exercise 1.2."
+msgid "**Optical Mosaic** Create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:121
@@ -252,15 +187,11 @@ msgid "**Radar Mosaic** Create a mosaic using Sentinel 1 data."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:122
-msgid ""
-"**Planet Mosaic** Create a mosaic using NICFI / Planet basemaps (if you "
-"have permission from NICFI / Planet)."
+msgid "**Planet Mosaic** Create a mosaic using NICFI / Planet basemaps (if you have permission from NICFI / Planet)."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:123
-msgid ""
-"**Classification** Use a random forest model to classify images from "
-"SEPAL or GEE. This will be the focus of Module 2."
+msgid "**Classification** Use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:124
@@ -272,33 +203,23 @@ msgid "**CCDC** Create a CCDC asset from a time series."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:126
-msgid ""
-"**CCDC Slice** Create a slice of a CCDC asset for a specific date or date"
-" range."
+msgid "**CCDC Slice** Create a slice of a CCDC asset for a specific date or date range."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:127
-msgid ""
-"**Class Change** Create a class change map from two categorical images "
-"(either SEPAL recipes or GEE assets)."
+msgid "**Class Change** Create a class change map from two categorical images (either SEPAL recipes or GEE assets)."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:128
-msgid ""
-"**Index Change** Create an index change map from two single-band images "
-"(either SEPAL recipes or GEE assets)."
+msgid "**Index Change** Create an index change map from two single-band images (either SEPAL recipes or GEE assets)."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:129
-msgid ""
-"**Remapping** Remap categorical or continuous image bands into new "
-"categories."
+msgid "**Remapping** Remap categorical or continuous image bands into new categories."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:131
-msgid ""
-"When you click on one of these options, it will open a new tab with the "
-"GUI interface that allows you to specify your desired options."
+msgid "When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:134
@@ -306,29 +227,19 @@ msgid "Files Tab"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:136
-msgid ""
-"Click the green :code:`Files` tab on the left side of the window. This "
-"will display all of your files stored in your SEPAL workspace."
+msgid "Click the green :code:`Files` tab on the left side of the window. This will display all of your files stored in your SEPAL workspace."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:138
-msgid ""
-"For example, click the :code:`Downloads` folder to expand it. This will "
-"display the folders containing any of the data you have downloaded in "
-"SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will "
-"be empty."
+msgid "For example, click the :code:`Downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:145
-msgid ""
-"Notice that there are four buttons on the upper-right side of the window."
-" The three rightmost buttons will be inactive until you select a file."
+msgid "Notice that there are four buttons on the upper-right side of the window. The three rightmost buttons will be inactive until you select a file."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:147
-msgid ""
-"The left button will show hidden files (files and folder names starting "
-"with ‘.')."
+msgid "The left button will show hidden files (files and folder names starting with ‘.')."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:148
@@ -352,22 +263,15 @@ msgid "Click the :code:`Terminal` tab on the left side of the screen."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:157
-msgid ""
-"This links you to the Linux command line that you can use in a variety of"
-" ways to manage data, load data from an outside location, or process data"
-" using a series of commands."
+msgid "This links you to the Linux command line that you can use in a variety of ways to manage data, load data from an outside location, or process data using a series of commands."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:159
-msgid ""
-"When you initially load the Terminal, you will see information about your"
-" usage and the available types of instances you can initialize."
+msgid "When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:161
-msgid ""
-"One of the most important features of the Terminal is the ability to "
-"start and stop instances."
+msgid "One of the most important features of the Terminal is the ability to start and stop instances."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:163
@@ -375,21 +279,15 @@ msgid "To start an instance, use the following steps as a guide:"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:165
-msgid ""
-"First examine the “Available instance types” table. This is updated "
-"periodically but an example from September of 2020 is shown below."
+msgid "First examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:166
-msgid ""
-"Choose an instance Type that fits your needs. Frequently a t2 or m2 is "
-"sufficient and cost-effective."
+msgid "Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost-effective."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:167
-msgid ""
-"Next to the “Select (t1):” text, type in \"t2\" or your chosen instance "
-"type."
+msgid "Next to the “Select (t1):” text, type in \"t2\" or your chosen instance type."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:168
@@ -401,18 +299,11 @@ msgid "Wait for the new instance to start. This will take several minutes."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:171
-msgid ""
-"To stop an instance, type \"exit\" in the command line. You can then "
-"refresh the terminal page to start a new instance. You can also stop an "
-"instance by clicking on your username on the right side of the screen and"
-" accessing your account information. Under \"Sessions\" click on the "
-"trashcan icon to shut down your instances."
+msgid "To stop an instance, type \"exit\" in the command line. You can then refresh the terminal page to start a new instance. You can also stop an instance by clicking on your username on the right side of the screen and accessing your account information. Under \"Sessions\" click on the trashcan icon to shut down your instances."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:173
-msgid ""
-"Once an instance has stopped, you can follow the instance startup steps "
-"again to select a larger instance, if necessary."
+msgid "Once an instance has stopped, you can follow the instance startup steps again to select a larger instance, if necessary."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:181
@@ -420,55 +311,34 @@ msgid "Apps Tab"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:183
-msgid ""
-"Click the **Apps** tab on the left side of the screen. This will open up "
-"a screen that shows applications that you can access through SEPAL. "
-"Applications are pre-programmed (typically using R or Python) to perform "
-"specific, useful tasks. Applications make use of instances and running an"
-" application will use your SEPAL computing resources."
+msgid "Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL. Applications are pre-programmed (typically using R or Python) to perform specific, useful tasks. Applications make use of instances and running an application will use your SEPAL computing resources."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:190
-msgid ""
-"This will bring up a list of apps you can run in SEPAL. More information "
-"about each app is found by clicking on the “i” on the right hand side. "
-"Some of the apps include:"
+msgid "This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:"
 msgstr ""
 
 #: ../../source/setup/presentation.rst:192
-msgid ""
-"**R Studio:** Provides access to the R environment where you can run "
-"processing scripts and upload data to your SEPAL folder."
+msgid "**R Studio:** Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:193
-msgid ""
-"**Stratified Area Estimator- Design:** Tool for creating stratified "
-"designs to estimate areas. We will use this tool in Module 4."
+msgid "**Stratified Area Estimator- Design:** Tool for creating stratified designs to estimate areas. We will use this tool in Module 4."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:194
-msgid ""
-"**Stratified Area Estimator- Analysis:** Tool for analyzing the results "
-"of your stratified design sampling to estimate areas. We will use this "
-"tool in Module 4."
+msgid "**Stratified Area Estimator- Analysis:** Tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:195
-msgid ""
-"**Geo Processing- Beta:** Offers a selection of easy-to-use change "
-"detection and segmentation tools."
+msgid "**Geo Processing- Beta:** Offers a selection of easy-to-use change detection and segmentation tools."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:196
-msgid ""
-"**BFAST Explorer:** Tool for performing pixel-based time series analysis "
-"of Landsat Surface Reflectance data."
+msgid "**BFAST Explorer:** Tool for performing pixel-based time series analysis of Landsat Surface Reflectance data."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:197
-msgid ""
-"Many more that can be found in the section `Modules "
-"<../modules/index.html>`_ of the documentation."
+msgid "Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation."
 msgstr ""
 
