@@ -44,6 +44,7 @@ templates_path = ['_templates']
 exclude_patterns = ["**.ipynb_checkpoints"]
 locale_dirs =["_locale/"]
 gettext_compact = False
+language = "fr"
 
 # -- Options for HTML output ---------------------------------------------------
 

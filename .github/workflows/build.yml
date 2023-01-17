@@ -4,10 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron:  '0 0 * * *'
-  
-env:
-  RDT_URL: ${{ secrets.RDT_URL }}
-  RDT_TOKEN: ${{ secrets.RDT_TOKEN }}
 
 jobs:
   build:
@@ -29,12 +25,9 @@ jobs:
       - name: generate .po files
         run: |
           sphinx-build -b gettext docs/source docs/build/gettext
-          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l fr -l en
+          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l fr -l en -l es
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
         with: 
           commit_message: Automatic translation update
-
-      - name: trigger RDT build 
-        run: curl -X POST -d "branches=main" -d "token=$RDT_TOKEN" $RDT_URL
