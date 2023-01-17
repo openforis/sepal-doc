@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-01-17 17:47\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/index.po\n"
+"X-Crowdin-File-ID: 87\n"
+"Language: fr_FR\n"
 
 #: ../../source/index.rst:34
 msgid "Getting started"
@@ -50,9 +51,7 @@ msgid "SEPAL"
 msgstr ""
 
 #: ../../source/index.rst:48
-msgid ""
-"System for earth observation, data access, processing, analysis for land "
-"monitoring"
+msgid "System for earth observation, data access, processing, analysis for land monitoring"
 msgstr ""
 
 #: ../../source/index.rst:50
@@ -60,56 +59,31 @@ msgid "presentation video"
 msgstr ""
 
 #: ../../source/index.rst:58
-msgid ""
-"SEPAL is always improving. Our team members try their best to constantly "
-"update and improve the tools available inside the platform."
+msgid "SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform."
 msgstr ""
 
 #: ../../source/index.rst:66
-msgid ""
-"Complete begginer with SEPAL ? start registering yourself to the "
-"platfrorm and start the fantastic journey of producing Earth Observation "
-"data from everywhere! It contains everything you need to start an "
-"account, download and get the basics of the platform."
+msgid "Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account, download and get the basics of the platform."
 msgstr ""
 
 #: ../../source/index.rst:71
-msgid ""
-"SEPAL uses the best of Google Earth Engine (GEE) and make it available "
-"for users without coding experience. To get the best of the platform you "
-"should connect your own free account. This page contains all you need to "
-"know to create a GEE account and how to link it with SEPAL."
+msgid "SEPAL uses the best of Google Earth Engine (GEE) and make it available for users without coding experience. To get the best of the platform you should connect your own free account. This page contains all you need to know to create a GEE account and how to link it with SEPAL."
 msgstr ""
 
 #: ../../source/index.rst:76
-msgid ""
-"To run analysis SEPAL uses recipes. these recipes are the founding blocks"
-" of our processes. To learn how to use them and learn more about the "
-"different functionalities of the platform, follow this tutorials."
+msgid "To run analysis SEPAL uses recipes. these recipes are the founding blocks of our processes. To learn how to use them and learn more about the different functionalities of the platform, follow this tutorials."
 msgstr ""
 
 #: ../../source/index.rst:81
-msgid ""
-"To run integrated workflows SEPAL uses applications. These modules are "
-"designed by the SEPAL team or other organization. To run specific tasks "
-"without relying on coding experience. To learn how to use them and learn "
-"more about the different functionalities follow this tutorials."
+msgid "To run integrated workflows SEPAL uses applications. These modules are designed by the SEPAL team or other organization. To run specific tasks without relying on coding experience. To learn how to use them and learn more about the different functionalities follow this tutorials."
 msgstr ""
 
 #: ../../source/index.rst:86
-msgid ""
-"Through our partnership with NICFI and PlanetLab, SEPAL can use the very "
-"high resolution imagery from PlanetLab for its recipes and module. To use"
-" these images SEPAL need to be connected to your PLanet account. Follow "
-"these step to link our platform to the VHR imagery."
+msgid "Through our partnership with NICFI and PlanetLab, SEPAL can use the very high resolution imagery from PlanetLab for its recipes and module. To use these images SEPAL need to be connected to your PLanet account. Follow these step to link our platform to the VHR imagery."
 msgstr ""
 
 #: ../../source/index.rst:91
-msgid ""
-"**se.plan** is a spatially explicit online tool designed to support "
-"forest restoration planning decisions by restoration stakeholders. if "
-"you're interested in using the application to compute your restoration "
-"index, follow our documentation."
+msgid "**se.plan** is a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders. if you're interested in using the application to compute your restoration index, follow our documentation."
 msgstr ""
 
 #: ../../source/index.rst:94
@@ -117,26 +91,11 @@ msgid "About us"
 msgstr ""
 
 #: ../../source/index.rst:98
-msgid ""
-"SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of "
-"tools. SEPAL allows users to query and process satellite data quickly and"
-" efficiently, tailor their products for local needs, and produce "
-"sophisticated and relevant geospatial analyses quickly. Harnessing cloud-"
-"based supercomputers and modern geospatial data infrastructures (e.g. "
-"Google Earth Engine), SEPAL enables access and processing of historical "
-"satellite data as well as newer data from Landsat and higher-resolution "
-"data from Europe's Copernicus program."
+msgid "SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program."
 msgstr ""
 
 #: ../../source/index.rst:102
-msgid ""
-"SEPAL is a cloud computing-based platform for autonomous land monitoring "
-"using remotely-sensed data. It is a combination of Google Earth Engine "
-"and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R "
-"Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial "
-"Toolkit. It allows users to access powerful cloud-computing resources to "
-"query, access and process satellite data quickly and efficiently for "
-"creating advanced analyses."
+msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
 msgstr ""
 
 #: ../../source/index.rst:105
@@ -144,9 +103,7 @@ msgid "Funders"
 msgstr ""
 
 #: ../../source/index.rst:109
-msgid ""
-"SEPAL is a project of the Forestry Department of the United Nations Food "
-"and Agriculture Organization (FAO) funded by the Government of Norway."
+msgid "SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway."
 msgstr ""
 
 #: ../../source/index.rst:114
