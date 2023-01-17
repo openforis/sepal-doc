@@ -13,5 +13,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
+      - uses: actions/checkout@v3
+        with: 
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: pip install sphinx sphinx-intl
+
+      - name: generate .po files
+        run: |
+          sphinx-build -M gettext docs/source docs/build
+          sphinx-intl update -p docs/build/gettext -l fr -l en
+
+      - name: push the files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with: 
+          commit_message: Automatic translation update
+          
       - name: trigger RDT build 
         run: curl -X POST -d "branches=main" -d "token=$RDT_TOKEN" $RDT_URL
