@@ -19,6 +19,6 @@ def i18n(session):
     session.run("sphinx-build", "-b", "gettext", "docs/source", "docs/build/gettext")
     session.run(
         "sphinx-intl", "update", "-p", "docs/build/gettext",
-        "--local-dir", "docs/source/_locale",
-        "-l", "fr", "-l", "en"
+        "--locale-dir", "docs/source/_locale",
+        "-l", "en", "-l", "fr", "-l", "es"
     )

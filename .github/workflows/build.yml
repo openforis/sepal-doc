@@ -29,7 +29,7 @@ jobs:
       - name: generate .po files
         run: |
           sphinx-build -b gettext docs/source docs/build/gettext
-          sphinx-intl update -p docs/build/gettext --local-dir docs/source/_locale -l fr -l en
+          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l fr -l en
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
