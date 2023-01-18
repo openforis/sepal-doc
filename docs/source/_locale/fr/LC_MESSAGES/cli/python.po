@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-18 12:30\n"
+"PO-Revision-Date: 2023-01-18 13:26\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -68,25 +68,25 @@ msgstr "SEPAL supporte la création de Python venv. dans cette section, nous all
 
 #: ../../source/cli/python.rst:57
 msgid "By design Jupyter is runnnig on the Python Kernel described in the previous section. you can also use the kernel associated to our applications (they start with :code:`venv`). If your work rely on very specific version numbers it might be good to run everything on a dedicated environment."
-msgstr ""
+msgstr "Par design Jupyter est executer sur le noyau Python décrit dans la section précédente. vous pouvez également utiliser le noyau associé à nos applications (elles commencent par :code:`venv`). Si votre travail repose sur des numéros de version très spécifiques, il est peut-être bon de tout exécuter sur un environnement dédié."
 
 #: ../../source/cli/python.rst:59
 msgid "If not existing, create a directory to host your virtual environments. From the root directory run:"
-msgstr ""
+msgstr "S'il n'existe pas, créez un répertoire pour héberger vos environnements virtuels. À partir du répertoire racine, exécutez :"
 
 #: ../../source/cli/python.rst:65
 msgid "in this folder create a virtual environment:"
-msgstr ""
+msgstr "dans ce dossier créez un environnement virtuel :"
 
 #: ../../source/cli/python.rst:72
 msgid "Now create a Jupyter Kernel linked to this venv:"
-msgstr ""
+msgstr "Maintenant, créez un noyau Jupyter lié à ce venv :"
 
 #: ../../source/cli/python.rst:78
 msgid "Now this venv will be available as a kernel inside your Jupyter workspace. This kernel will be automatically removed if you destroy the venv directory."
-msgstr ""
+msgstr "Maintenant ce venv sera disponible en tant que noyau dans votre espace de travail Jupyter, ce noyau sera automatiquement supprimé si vous détruisez le répertoire venv."
 
 #: ../../source/cli/python.rst:80
 msgid "If you want to install libs inside this venv you need first to activate it:"
-msgstr ""
+msgstr "Si vous voulez installer des libs à l'intérieur de ce venv, vous devez d'abord l'activer :"
 
