@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-01-18 12:30\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,51 +20,51 @@ msgstr ""
 
 #: ../../source/cli/python.rst:2
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../source/cli/python.rst:5
 msgid "Usage"
-msgstr ""
+msgstr "Utilisation"
 
 #: ../../source/cli/python.rst:7
 msgid "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible though Jupyter Notebook, JupyterLab or the terminal:"
-msgstr ""
+msgstr "Les instances SEPAL fonctionnent sur des machines Ubuntu :code:`focal` et fournissent donc un environnement :code:`Python 3.8` fonctionnel. Cet environnement est accessible via Jupyter Notebook, JupyterLab ou le terminal :"
 
 #: ../../source/cli/python.rst:25
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../../source/cli/python.rst:27
 msgid "The SEPAL python environment is not empty and embed numerous librairies. They are listed here:"
-msgstr ""
+msgstr "L'environnement Python de SEPAL n'est pas vide et intègre de nombreuses librairies. Elles sont listées ici :"
 
 #: ../../source/cli/python.rst:32
 msgid "Run :code:`pip freeze | grep <name of your lib>` to check if it's already installed."
-msgstr ""
+msgstr "Exécutez :code:`pip freeze | grep <name of your lib>` pour vérifier si elle est déjà installée."
 
 #: ../../source/cli/python.rst:36
 msgid "Customization"
-msgstr ""
+msgstr "Personnalisation"
 
 #: ../../source/cli/python.rst:38
 msgid "The SEPAL environment can be customized to user needs using any third-party librairies and pip. By default installation will be run in :code:`--user` mode and won't affect other SEPAL users."
-msgstr ""
+msgstr "L'environnement SEPAL peut être personnalisé en fonction des besoins des utilisateurs en utilisant n'importe quelle librairie tierce et pip. Par défaut, l'installation sera exécutée en mode :code:`--user` et n'affectera pas les autres utilisateurs de SEPAL."
 
 #: ../../source/cli/python.rst:46
 msgid "If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
-msgstr ""
+msgstr "Si vous rencontrez des problèmes de compatibilité lors de la personnalisation de votre environnement SEPAL, veuillez nous le faire savoir dans le `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 
 #: ../../source/cli/python.rst:49
 msgid "Virtual environment"
-msgstr ""
+msgstr "Environnement virtuel"
 
 #: ../../source/cli/python.rst:53
 msgid "SEPAL does not support conda environments, if you need to install compiled librairies, please the SEPAL team via the  `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
-msgstr ""
+msgstr "SEPAL ne prend pas en charge les environnements conda, si vous avez besoin d'installer des librairies compilées, veuillez contacter l'équipe SEPAL via le `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 
 #: ../../source/cli/python.rst:55
 msgid "SEPAL supports python venv creation. in this section we'll explain how you can create a venv and link it to Jupyter so you can run your processes on the associated kernel."
-msgstr ""
+msgstr "SEPAL supporte la création de Python venv. dans cette section, nous allons vous expliquer comment vous pouvez créer un venv et le lier à Jupyter afin que vous puissiez exécuter vos processus sur le noyau associé."
 
 #: ../../source/cli/python.rst:57
 msgid "By design Jupyter is runnnig on the Python Kernel described in the previous section. you can also use the kernel associated to our applications (they start with :code:`venv`). If your work rely on very specific version numbers it might be good to run everything on a dedicated environment."
