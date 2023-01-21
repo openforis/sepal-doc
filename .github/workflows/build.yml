@@ -20,12 +20,12 @@ jobs:
           python-version: '3.8'
 
       - name: Install dependencies
-        run: pip install sphinx sphinx-intl
+        run: pip install -r requirements.txt
 
       - name: generate .po files
         run: |
           sphinx-build -b gettext docs/source docs/build/gettext
-          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l fr -l en -l es
+          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l en -l fr -l es -l ar -l pt -l zh -l ru -l sv -l it
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
