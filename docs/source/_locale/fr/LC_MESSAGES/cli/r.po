@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 15:22\n"
+"PO-Revision-Date: 2023-01-21 16:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -36,37 +36,37 @@ msgstr "Description"
 
 #: ../../source/cli/r.rst:27
 msgid "The SEPAL :code:`R` environment is not empty and embed numerous packages:"
-msgstr ""
+msgstr "L'environnement SEPAL :code:`R` n'est pas vide et intègre de nombreux packages :"
 
 #: ../../source/cli/r.rst:33
 msgid "To check the availability of a specific package:"
-msgstr ""
+msgstr "Pour vérifier la disponibilité d'un package spécifique :"
 
 #: ../../source/cli/r.rst:35
 msgid "Open RStudio"
-msgstr ""
+msgstr "Ouvrir RStudio"
 
 #: ../../source/cli/r.rst:36
 msgid "Navigate to :guilabel:`Help` -> :guilabel:`R Help` (from the menu above)"
-msgstr ""
+msgstr "Naviguez vers :guilabel:`Help` -> :guilabel:`R help` (à partir du menu ci-dessus)"
 
 #: ../../source/cli/r.rst:37
 msgid "You will see the help panel opened."
-msgstr ""
+msgstr "Vous verrez le panneau d'aide ouvert."
 
 #: ../../source/cli/r.rst:38
 msgid "Then follow, :code:`Reference` --> :code:`Packages`"
-msgstr ""
+msgstr "Suivez ensuite :code:`Référence` --> :code:`Packages`"
 
 #: ../../source/cli/r.rst:46
 msgid "Customization"
-msgstr ""
+msgstr "Personnalisation"
 
 #: ../../source/cli/r.rst:48
 msgid "The SEPAL environment can be customized to user needs using any third-party packages and CRAN in **Rstudio**:"
-msgstr ""
+msgstr "L'environnement SEPAL peut être personnalisé en fonction des besoins de l'utilisateur en utilisant n'importe quel package tiers et CRAN dans **Rstudio** :"
 
 #: ../../source/cli/r.rst:56
 msgid "If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
-msgstr ""
+msgstr "Si vous rencontrez des problèmes de compatibilité lors de la personnalisation de votre environnement SEPAL, veuillez nous le faire savoir dans le `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 
