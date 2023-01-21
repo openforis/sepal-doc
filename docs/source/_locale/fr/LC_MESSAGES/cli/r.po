@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-01-21 15:22\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../source/cli/r.rst:2
 msgid "R code"
-msgstr ""
+msgstr "R code"
 
 #: ../../source/cli/r.rst:5
 msgid "Usage"
-msgstr ""
+msgstr "Utilisation"
 
 #: ../../source/cli/r.rst:7
 msgid "SEPAL instances run on :code:`focal` ubuntu machines and provide a fully functional :code:`R 4.1.2` environment. This environment is accecible Rstudio, Jupyterlab or the terminal:"
-msgstr ""
+msgstr "Les instances SEPAL fonctionnent sur des machines Ubuntu :code:`focal` et fournissent donc un environnement :code:`R 4.1.2` fonctionnel. Cet environnement est accessible via Rstudio, JupyterLab ou le terminal :"
 
 #: ../../source/cli/r.rst:25
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../../source/cli/r.rst:27
 msgid "The SEPAL :code:`R` environment is not empty and embed numerous packages:"
