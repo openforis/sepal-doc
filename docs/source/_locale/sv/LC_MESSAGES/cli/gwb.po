@@ -1,0 +1,1109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2023, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-21 09:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../source/cli/gwb.rst:2
+msgid "GuidosToolbox Workbench – GWB"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:4
+msgid ""
+"The GuidosToolbox Workbench (**GWB**, `homepage "
+"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset "
+"of the desktop software package GuidosToolbox (`GTB "
+"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a"
+" cmd-line application for Linux 64bit servers. Citation reference: "
+"`GuidosToolbox Workbench: Spatial analysis of raster maps for ecological "
+"applications <https://doi.org/10.1111/ecog.05864>`_."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:6
+msgid ""
+"This document provides usage instructions for the cmd-line implementation"
+" of  **GWB**. Documentation on the GWB SEPAL browser-based application is"
+" available `here "
+"<https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:10
+msgid "Initial setup"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:12
+msgid ""
+"As regular user, please first copy the **GWB** setup into your "
+":code:`$HOME` account using the command:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:18
+msgid ""
+"You will now find the new directories :code:`input` and :code:`output` in"
+" your :code:`$HOME` account."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:20
+msgid ""
+":code:`input`: This directory contains module-specific parameter files, "
+"two sample geotif images and a README file."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:21
+msgid ":code:`output`: This directory is empty."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:23
+msgid ""
+"All GWB modules require categorical raster input maps in data type "
+"unsigned byte (8bit), with discrete integer values within [0, 255] byte. "
+"The two sample images in the directory :code:`input` are:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:25
+msgid ""
+":code:`example.tif`: 0 byte - Missing, 1 byte - Background, 2 byte - "
+"Foreground"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:26
+msgid ""
+":code:`clc3class.tif`: 1 byte - Agriculture, 2 byte - Natural, 3 byte - "
+"Developed"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:29
+msgid ""
+"**GWB** is designed to apply the module-specific settings of the "
+"respective parameter file to all tif-images placed in the directory "
+":code:`input`. The module-specific results will be written into the "
+"directory :code:`output`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:33
+msgid ""
+"Please also run the above cp-command to update your **GWB**-setup files "
+"with potentially modified files provided by a newer version of **GWB**."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:34
+msgid ""
+"The directory :code:`input` has a subdirectory :code:`backup` having "
+"backup copies of all parameter files. This subdirectory may also be used "
+"to temporarily store images that should be excluded from processing."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:36
+msgid "Example of the **GWB** setup in the user account :code:`/home/prambaud`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:65
+msgid "Usage Instructions Overview"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:67
+msgid "To get an overview of all **GWB** modules enter the command: :code:`GWB`"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:184
+msgid "It is also possible to use the \"help\" option: :code:`GWB_ACC --help`"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:205
+msgid ""
+"When used for the first time, please accept the `EULA <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf>`_ terms. This step is only "
+"needed once."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:207
+msgid "Additional, general remarks:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:209
+msgid ""
+"The directory :code:`output` must be empty before running a new analysis."
+" Please watch out for hidden files/folders in this directory, which may "
+"be the result of an interrupted execution. The safest way to empty the "
+"directory is to delete it and recreate a new directory :code:`output`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:210
+msgid ""
+"**GWB** will automatically process all suitable geotiff images (single "
+"band and of datatype byte) from the directory :code:`input`. Images of "
+"different format or that are not compatible with the selected analysis "
+"module requirements will be skipped. Details on each image processing "
+"result can be found in the log-file in the directory :code:`output`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:211
+msgid ""
+"**GWB** is written in the  the `IDL language "
+"<https://www.l3harrisgeospatial.com/Software-Technology/IDL>`_. It "
+"includes all required IDL libraries and the source code of each module, "
+"stored in the folder: :code:`/opt/GWB/tools/source/`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:212
+msgid ""
+"To list your current version of **GWB**, or to check for potential new "
+"**GWB** versions, please run the command:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:218
+msgid ""
+"Any distance or area measures are calculated in pixels. It is therefore "
+"crucial to use images in equal area projection. Conversion to "
+"meters/hectares require to know the pixel resolution."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:221
+msgid "Available Commands"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:225
+msgid ""
+"Please enter your own settings by amending the module-specific parameters"
+" within the section marked with :code:`*******` in the respective "
+"input/<module>-parameters.txt file. Don't change anything else in the "
+"parameter file, don't delete or add lines or the module execution will "
+"crash. If in doubt, consult the respective "
+"input/backup/<module>-parameters.txt file."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:228
+msgid "GWB_ACC"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:230
+msgid ""
+"This module will conduct the **Accounting** analysis. Accounting will "
+"label and calculate the area of all foreground objects. The result are "
+"spatially explicit maps and tabular summary statistics. Details on the "
+"methodology and input/output options can be found in the `Accounting "
+"<https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-"
+"Accounting.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:233 ../../source/cli/gwb.rst:371
+#: ../../source/cli/gwb.rst:570 ../../source/cli/gwb.rst:699
+#: ../../source/cli/gwb.rst:795 ../../source/cli/gwb.rst:1024
+#: ../../source/cli/gwb.rst:1120 ../../source/cli/gwb.rst:1458
+#: ../../source/cli/gwb.rst:1540
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:235 ../../source/cli/gwb.rst:373
+#: ../../source/cli/gwb.rst:463 ../../source/cli/gwb.rst:571
+#: ../../source/cli/gwb.rst:700 ../../source/cli/gwb.rst:796
+#: ../../source/cli/gwb.rst:914 ../../source/cli/gwb.rst:1026
+#: ../../source/cli/gwb.rst:1542
+msgid "Single band geotiff in data format byte:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:237 ../../source/cli/gwb.rst:375
+#: ../../source/cli/gwb.rst:465 ../../source/cli/gwb.rst:573
+#: ../../source/cli/gwb.rst:702 ../../source/cli/gwb.rst:798
+#: ../../source/cli/gwb.rst:916 ../../source/cli/gwb.rst:1028
+#: ../../source/cli/gwb.rst:1462 ../../source/cli/gwb.rst:1544
+msgid "0 byte: missing (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:238 ../../source/cli/gwb.rst:376
+#: ../../source/cli/gwb.rst:466 ../../source/cli/gwb.rst:574
+#: ../../source/cli/gwb.rst:799 ../../source/cli/gwb.rst:917
+#: ../../source/cli/gwb.rst:1463 ../../source/cli/gwb.rst:1545
+msgid "1 byte: background"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:239 ../../source/cli/gwb.rst:377
+#: ../../source/cli/gwb.rst:467 ../../source/cli/gwb.rst:575
+#: ../../source/cli/gwb.rst:800 ../../source/cli/gwb.rst:918
+#: ../../source/cli/gwb.rst:1464 ../../source/cli/gwb.rst:1546
+msgid "2 byte: foreground (forest)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:240
+msgid "3 byte: special background 1 (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:241
+msgid "4 byte: special background 2 (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:243
+msgid ""
+"Processing parameter options are stored in the file :code:`input/acc-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:279 ../../source/cli/gwb.rst:404
+#: ../../source/cli/gwb.rst:508 ../../source/cli/gwb.rst:622
+#: ../../source/cli/gwb.rst:732 ../../source/cli/gwb.rst:841
+#: ../../source/cli/gwb.rst:971 ../../source/cli/gwb.rst:1055
+#: ../../source/cli/gwb.rst:1406 ../../source/cli/gwb.rst:1491
+#: ../../source/cli/gwb.rst:1573
+msgid "Example"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:281 ../../source/cli/gwb.rst:406
+#: ../../source/cli/gwb.rst:510 ../../source/cli/gwb.rst:624
+#: ../../source/cli/gwb.rst:734 ../../source/cli/gwb.rst:843
+#: ../../source/cli/gwb.rst:973 ../../source/cli/gwb.rst:1057
+#: ../../source/cli/gwb.rst:1408 ../../source/cli/gwb.rst:1575
+msgid ""
+"The results are stored in the directory :code:`output`, one directory for"
+" each input image accompanied by a log-file providing details on "
+"computation time and processing success of each input image."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:284
+msgid ""
+":code:`GWB_ACC` Command and listing of results in the directory "
+":code:`output`:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:310
+msgid ""
+"example statistics and graphical result of input image "
+":code:`example.tif`:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:362
+msgid ""
+"Accounting has been used to map and summarize forest patch size classes "
+"in the `FAO SOFO2020 <http://www.fao.org/publications/sofo/en/>`_ report "
+"and the Forest Europe `State of Europe's Forest 2020 "
+"<https://foresteurope.org/publications/>`_ report with additional "
+"technical details in the respective JRC Technical Reports for `FAO "
+"<https://doi.org/10.2760/145325>`_ and `FE "
+"<https://doi.org/10.2760/991401>`_."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:365
+msgid "GWB_DIST"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:367
+msgid ""
+"This module will conduct the **Euclidean Distance** analysis. Each pixel "
+"will show the shortest distance to the foreground boundary. Pixels inside"
+" a foreground object have a positive distance value while background "
+"pixels have a negative distance value. The result are spatially explicit "
+"maps and tabular summary statistics. Details on the methodology and "
+"input/output options can be found in the `Distance <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Distance-Euclidean.pdf>`_ "
+"product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:379
+msgid ""
+"Processing parameter options are stored in the file :code:`input/dist-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:408
+msgid ":code:`GWB_DIST` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:435
+msgid ""
+"Example statistics (hypsometric curve) and spatial result of input image "
+":code:`example.tif`:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:444 ../../source/cli/gwb.rst:555
+#: ../../source/cli/gwb.rst:684 ../../source/cli/gwb.rst:777
+#: ../../source/cli/gwb.rst:899 ../../source/cli/gwb.rst:1010
+#: ../../source/cli/gwb.rst:1098 ../../source/cli/gwb.rst:1437
+#: ../../source/cli/gwb.rst:1525 ../../source/cli/gwb.rst:1654
+msgid "Remarks"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:446 ../../source/cli/gwb.rst:557
+#: ../../source/cli/gwb.rst:686
+msgid "The result provides additional statistics in txt and csv format."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:447
+msgid ""
+"Spatially explicit distance per-pixel values are shown in a pseudo-"
+"elevation color map. Positive values are associated with land (forest: "
+"yellow, orange, red, green), negative values with sea (non-forest: cyan "
+"to dark blue) and a value of zero corresponds to the coast line (forest– "
+"non-forest boundary)."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:448
+msgid ""
+"Actual per-pixel distance values are provided in a dedicated image (not "
+"shown here)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:449
+msgid ""
+"Per-pixel distance values can be summarized with the Hypsometric curve "
+"(see above)."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:451
+msgid ""
+"**Euclidean Distance** maps of forest patches have been used to map and "
+"summarize forest fragmentation, see for example `Kozak et al "
+"<https://doi.org/10.3390/su10051472>`_."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:456
+msgid "GWB_FAD"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:458
+msgid ""
+"This module will conduct the **fragmentation** analysis at **five fixed "
+"observation scales**. Because forest fragmentation is scale-dependent, "
+"fragmentation is reported at five observation scales, which allows "
+"different observers to make their own choice about scales and threshold "
+"of concern. The change of fragmentation across different observation "
+"scales provides additional interesting information. Fragmentation is "
+"measured by determining the Forest Area Density (**FAD**) within a "
+"shifting, local neighborhood. It can be measured at pixel or patch level."
+" The result are spatially explicit maps and tabular summary statistics. "
+"Details on the methodology and input/output options can be found in the "
+"`Fragmentation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-"
+"Fragmentation-FADFOS.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:461 ../../source/cli/gwb.rst:912
+msgid "Requirement"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:468 ../../source/cli/gwb.rst:576
+msgid "3 byte: specific background (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:469 ../../source/cli/gwb.rst:577
+msgid "4 byte: non-fragmenting background (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:471
+msgid ""
+"Processing parameter options are stored in the file :code:`input/fad-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:512
+msgid ":code:`GWB_FAD` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:546
+msgid ""
+"Example statistics and spatial result of a multi-scale per-pixel analysis"
+" of the input image :code:`example.tif`:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:558 ../../source/cli/gwb.rst:687
+msgid ""
+"The IDL-specific sav-file contains all information to conduct "
+"fragmentation change analysis in GTB."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:559
+msgid ""
+"In addition to the above multi-scale image, the result provides "
+"fragmentation images at each of the 5 fixed observation scales."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:560 ../../source/cli/gwb.rst:689
+msgid ""
+"Options to report at pixel- or patch-level and to select the number of "
+"fragmentation classes (6, 5, 2)."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:562
+msgid ""
+"Fragmentation has been used to map and summarize the degree of forest "
+"fragmentation by Riitters et al. (`2002 "
+"<https://doi.org/10.1007/s10021-002-0209-2>`_, `2012 "
+"<https://doi.org/10.1038/srep00653>`_) as well as the US Forest Inventory"
+" and Analysis (`FIA <https://www.fia.fs.fed.us/>`_) reports since 2003."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:565
+msgid "GWB_FRAG"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:567
+msgid ""
+"This module will conduct the **fragmentation** analysis at a **user-"
+"selected observation scale**. This module and its options are similar to "
+":ref:`gwb_fad` but allow the user to specify a single (or multiple) "
+"specific observation scale. The result are spatially explicit maps and "
+"tabular summary statistics. Details on the methodology and input/output "
+"options can be found in the `Fragmentation <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_ "
+"product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:579
+msgid ""
+"Processing parameter options are stored in the file :code:`input/frag-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:626
+msgid ":code:`GWB_FRAG` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:654
+msgid ""
+"Example statistics and spatial result of custom-scale per patch analysis "
+"of the input image :code:`example.tif`, here FOS-APP2 showing Continuous "
+"forest patches in light green and Separated forest patches in dark green."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:688
+msgid ""
+"The result provides one fragmentation image for each custom observation "
+"scale. In the example above, the user selected 1 observation scale with "
+"local neighborhood of 23x23 pixels."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:691
+msgid ""
+"Fragmentation has been used to map and summarize the degree of forest "
+"fragmentation in the `FAO SOFO2020 "
+"<http://www.fao.org/publications/sofo/en/>`_ report and the Forest Europe"
+" `State of Europe's Forest 2020 "
+"<https://foresteurope.org/publications/>`_ report with additional "
+"technical details in the respective JRC Technical Reports for `FAO "
+"<https://doi.org/10.2760/145325>`_ and `FE "
+"<https://doi.org/10.2760/991401>`_."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:694
+msgid "GWB_LM"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:696
+msgid ""
+"This module will conduct the **Landscape Mosaic** analysis at a **user-"
+"selected observation scale**. The Landscape Mosaic measures land cover "
+"heterogeneity, or human influence, in a tri-polar classification of a "
+"location accounting for the relative contributions of the three land "
+"cover types **Agriculture**, **Natural**, **Developed** in the area "
+"surrounding that location. The result are spatially explicit maps and "
+"tabular summary statistics. Details on the methodology and input/output "
+"options can be found in the `Landscape Mosaic <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:703
+msgid "1 byte: Agriculture"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:704
+msgid "2 byte: Natural"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:705
+msgid "3 byte: Developed"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:709
+msgid "Input image values > 3 byte will be considered as missing data"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:711
+msgid ""
+"Processing parameter options are stored in the file :code:`input/lm-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:736
+msgid ":code:`GWB_LM` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:767
+msgid ""
+"Example statistics (heatmap) and spatial result of custom-scale analysis "
+"of the input image :code:`clc3class.tif`, showing degree of predominance "
+"of land cover types Agriculture, Natural, Developed."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:778
+msgid ""
+"The IDL-specific sav-file contains all information to conduct LM change "
+"analysis in GTB."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:779
+msgid ""
+"LM is not restricted to **Ag**, **Nat**, **Dev** but can be applied to "
+"any 3 types of dominant land cover."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:780
+msgid ""
+"The result provides the LM analysis for a single custom observation "
+"scale. In the example above, and assuming a pixel resolution of 100 "
+"meter, an observation scale of 23x23 pixels corresponds to a local "
+"neighborhood (analysis scale) of 2300x2300 meters ~ 50 hectare."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:781
+msgid ""
+"The heatmap facilitates assessments of temporal changes and/or comparison"
+" between different sites."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:783
+msgid ""
+"The Landscape Mosaic has been used to map and summarize the degree of "
+"landscape heterogeneity in many occasions (see references in the "
+"`Landscape Mosaic <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-"
+"Pattern-LM.pdf>`_ product sheet), including the `RPA "
+"<https://www.srs.fs.usda.gov/pubs/37766>`_, `Embrapa "
+"<https://urldefense.com/v3/__https:/www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1126895/1"
+"/Livro-"
+"Doc-345-1815-final-3.pdf__;!!DOxrgLBm!QdlMk1JDuaLmRLWA6JeqizIFwET3sAHqnWlLDX8vQnfpu9edG2iAIws94-RV3jkaakScfw$>`_,"
+" and `MAES <https://doi.org/10.2760/757183>`_ reports."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:786
+msgid "GWB_MSPA"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:790
+msgid ""
+"If your are considering using the MSPA module, keep in mind that the "
+"result provides a lot of information (up to 25 classes). The alternative "
+"module :code:`GWB_SPA` provides a similar but simplified assessment with "
+"up to 6 classes only. Both modules describe morphological features of "
+"foreground objects. While MSPA may address certain features of "
+"fragmentation, a more comprehensive assessment of fragmentation is "
+"obtained with the dedicated fragmentation modules :code:`GWB_FRAG` or "
+":code:`GWB_FAD`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:792
+msgid ""
+"This module will conduct the **Morphological Spatial Pattern Analysis**. "
+"`MSPA <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ "
+"analyses shape and connectivity and conducts a segmentation of foreground"
+" (i.e. forest) patches in up to 25 feature classes. The result are "
+"spatially explicit maps and tabular summary statistics. Details on the "
+"methodology and input/output options can be found in the `Morphology "
+"<https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-"
+"Morphology.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:802
+msgid ""
+"Processing parameter options are stored in the file :code:`input/mspa-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:845
+msgid ":code:`GWB_MSPA` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:868
+msgid ""
+"Example statistics of the input image :code:`example.tif` and explanatory"
+" sketch of the basic MSPA feature classes:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:901
+msgid ""
+"MSPA is very versatile and can be applied to any binary map, scale and "
+"thematic layer. Please consult the `MSPA Guide <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GTB/MSPA_Guide.pdf>`_, the `Morphology product "
+"sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-"
+"Morphology.pdf>`_ and/or the  `MSPA website "
+"<https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_    for "
+"further information."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:902
+msgid ""
+"The simplified version, GWB_SPA provides fewer classes. GWB_SPA may be "
+"useful to get started and may be sufficient to address many assessments."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:904
+msgid ""
+"MSPA is a purely geometric analysis scheme, which can be applied to any "
+"type of raster image. It has been used in numerous peer-reviewed "
+"publications to map and summarize the spatial pattern, fragmentation and "
+"connectivity of forest and other land cover patches, including the "
+"detection of structural and functional connecting pathways, analyzing "
+"urban greenspace, landscape restoration up to classifying zooplankton "
+"species."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:907
+msgid "GWB_P223"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:909
+msgid ""
+"This module will conduct the **Density** (P2), **Contagion** (P22) or "
+"**Adjacency** (P23) analysis of foreground (**FG**) objects at a user-"
+"selected observation scale (`Riitters et al. (2000) "
+"<https://www.srs.fs.usda.gov/pubs/ja/ja_riitters006.pdf>`_). The result "
+"are spatially explicit maps and tabular summary statistics. The "
+"classification is determined by measurements of forest amount (P2) and "
+"connectivity (P22) within the neighborhood that is centered on a subject "
+"forest pixel. P2 is the probability that a pixel in the neighborhood is "
+"forest, and P22 is the probability that a pixel next to a forest pixel is"
+" also forest."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:919
+msgid "3 byte: specific background (for P23 only)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:921
+msgid ""
+"Processing parameter options are stored in the file "
+":code:`input/p223-parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:975
+msgid ":code:`GWB_P223` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:998
+msgid ""
+"Example statistics and spatial result of the input image "
+":code:`example.tif` for P2, showing degree of forest density:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1012
+msgid ""
+"Density, Contagion or Adjacency are scale-dependent (specified by the "
+"size of the moving window)."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1013
+msgid ""
+"This moving window approach (originally called Pf/Pff) forms the base for"
+" other derived analysis schemes, such as "
+":code:`GWB_LM`/:code:`GWB_FAD`/:code:`GWB_FRAG`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1015
+msgid ""
+"Both, Density and Contagion add a first spatial information content on "
+"top of the primary information of forest, forest amount. Information on "
+"forest Density and Contagion is an integral part of many national forest "
+"inventories and forest resource assessments. However, the derived "
+"products Fragmentation and Landscape Mosaic may be easier to communicate."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1018
+msgid "GWB_PARC"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1020
+msgid ""
+"This module will conduct the **parcellation** analysis. This module "
+"provides a statistical summary file (txt/csv- format) with details for "
+"each unique class found in the image as well as the full image content: "
+"class value, total number of objects, total area, degree of parcellation."
+" Details on the methodology and input/output options can be found in the "
+"`Parcellation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-"
+"Objects-Parcellation.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1029
+msgid "at least two different landcover classes"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1031
+msgid ""
+"Processing parameter options are stored in the file :code:`input/parc-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1059
+msgid ":code:`GWB_PARC` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1086
+msgid ""
+"Example statistics of the input image :code:`clc3class.tif` showing "
+"statistics and degree of parcellation for each land cover class as well "
+"as for the entire image area:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1100
+msgid "Parcellation is a normalized summary index in [0, 100] %."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1101
+msgid ":code:`GWB_PARC` provides a tabular summary only."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1103
+msgid ""
+"Parcellation, or the degree of dissection, may be useful to provide a "
+"quick tabular summary for each land cover class and the entire image. "
+"Together with the degree of division, it may be used to make a statement "
+"on the dissection of a particular land cover class. Because Parcellation "
+"is a normalized index, measuring Parcellation can be used to quantify "
+"temporal changes over a given site as well as directly compare the degree"
+" of parcellation of different sites. Being able to quantify changes in "
+"percent may also be useful to investigate if a given landscape planning "
+"measure had in fact a tangible influence on a specific land cover type or"
+" not."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1106
+msgid "GWB_REC"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1108
+msgid "This module will conduct **recoding** of categorical land cover classes."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1112
+msgid ""
+"Please ensure to strictly follow the instructions outlined in the file "
+":code:`input/rec-parameters.txt`. In particular:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1114
+msgid "Do not delete or insert any new lines."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1115
+msgid "Modify the first column only in this file."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1116
+msgid ""
+"Insert the new recoded class value as an integer number for each of the "
+"256 classes."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1117
+msgid "Class values that are not encountered in the image will be skipped."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1122
+msgid "Single band geotiff in data format Byte."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1124
+msgid ""
+"Processing parameter options are stored in the file :code:`input/rec-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1410
+msgid ":code:`GWB_REC` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1439
+msgid ""
+"The recoded images have the suffix _rec.tif to distinguish them from the "
+"original images."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1440
+msgid "To verify the recoding run the command:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1446
+msgid ""
+"Recoding may be useful to quickly setup a forest mask from a land cover "
+"map by reassigning specific land cover classes to forest. Please note "
+"that most **GWB** modules require a (pseudo) binary forest mask of data "
+"type Byte with the assignment:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1448
+msgid "0 byte: missing data (optional)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1449
+msgid "1 byte: Background"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1450
+msgid "2 byte: Foreground (i.e., forest)"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1453
+msgid "GWB_RSS"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1455
+msgid ""
+"This module will conduct the **Restoration Status Summary analysis**. It "
+"will calculate key attributes of the current network status, composed of "
+"foreground (forest) patches and it provides the normalized degree of "
+"network coherence. The result are tabular summary statistics. Details on "
+"the methodology and input/output options can be found in the `Restoration"
+" Planner <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-"
+"RestorationPlanner.pdf>`_ product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1460
+msgid "Single band geotiff in data format Byte:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1468
+msgid "Any other values are considered as missing data"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1470
+msgid ""
+"Processing parameter options are stored in the file :code:`input/rss-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1493
+msgid ""
+"The result is stored in a single csv-file in the directory "
+":code:`output`, listing the statistics for each input image in one line, "
+"accompanied by a log-file providing details on computation time and "
+"processing success of each input image."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1495
+msgid ":code:`GWB_RSS` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1516
+msgid ""
+"Summary statistics for each input image showing the normalized degree of "
+"network coherence and additional key network parameters:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "FNAME"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "AREA"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "RAC[%]"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "NR_OBJ"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "LARG_OBJ"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "APS"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "CNOA"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "ECA"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "COH[%]"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "REST_POT[%]"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "clc3class.tif"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "957879.00"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "23.946975"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "164"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "176747"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "5840.7256"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "180689"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "281211.93"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "29.357771"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "70.642229"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "example.tif"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "428490.00"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "42.860572"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "2850"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "214811"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "150.34737"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "311712"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "221292.76"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "51.644789"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1
+msgid "48.355211"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1527
+msgid ""
+":code:`GWB_RSS` provides a succinct summary of key network status "
+"attributes including area, extent, patch summary statistics, equivalent "
+"connected area, degree of network coherence, and the restoration "
+"potential."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1528
+msgid ""
+"As a normalized index, Coherence or its complement Restoration Potential,"
+" can be used to directly compare the integrity of different networks or "
+"to quantitatively assess changes in network integrity over time."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1529
+msgid ""
+"The provision of key network status attributes is essential for any "
+"restoration planning."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1530
+msgid ""
+"The desktop application `GuidosToolbox "
+"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_ provides "
+"additional, interactive tools for restoration planning."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1532
+msgid ""
+"With the provision of a normalized degree of network coherence and "
+"restoration potential, :code:`GWB_RSS` provides a powerful tool to "
+"measure and rank the integrity of forest networks for different regions "
+"of interest. This feature may be useful to set priorities for restoration"
+" planning or to measure implementation progress and overall success of "
+"policy regulations."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1535
+msgid "GWB_SPA"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1537
+msgid ""
+"This module will conduct the **Simplified Pattern Analysis**. SPA "
+"analyses shape and conducts a segmentation of foreground patches into 2, "
+"3, 5, or 6 feature classes. The result are spatially explicit maps and "
+"tabular summary statistics. :code:`GWB_SPA` is a simpler version of "
+":code:`GWB_MSPA`. Details on the methodology and input/output options can"
+" be found in the `Morphology <https://ies-"
+"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ "
+"product sheet."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1548
+msgid ""
+"Processing parameter options are stored in the file :code:`input/spa-"
+"parameters.txt`."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1577
+msgid ":code:`GWB_SPA` command and listing of results in the directory output:"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1600
+msgid ""
+"Statistics and spatial result of the input image :code:`example.tif` "
+"showing a 2-class segmentation (SPA2): Contiguous and Small & Linear "
+"Features (SLF):"
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1656
+msgid "The full version, GWB_MSPA provides many more features and classes."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1657
+msgid ""
+"Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to"
+" detect connecting pathways."
+msgstr ""
+
+#: ../../source/cli/gwb.rst:1659
+msgid ""
+":code:`GWB_SPA` is a purely geometric analysis scheme, which can be "
+"applied to any type of raster image. It is ideal to describe the "
+"morphology of foreground (forest) patches for basic mapping and "
+"statistics, which may be sufficient in many application fields. Advanced "
+"analysis, including the detection of connecting pathways require using "
+"the full version :code:`GWB_MSPA`."
+msgstr ""
+
