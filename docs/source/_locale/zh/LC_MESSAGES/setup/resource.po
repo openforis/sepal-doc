@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 16:23\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/resource.po\n"
+"X-Crowdin-File-ID: 103\n"
+"Language: zh_CN\n"
 
 #: ../../source/setup/resource.rst:2
 msgid "Manage your resources"
@@ -34,12 +35,7 @@ msgid "-Understand your **User report** -Manage instances -Request resources"
 msgstr ""
 
 #: ../../source/setup/resource.rst:13
-msgid ""
-"SEPAL provides free access to computation resources that are shared among"
-" registered users. To prevent exportation mistakes, new users are granted"
-" few resources that are sufficient for discovering the functionalities "
-"and running sub-regional analysis. By default, instances are closed "
-"automatically when they are not being used."
+msgid "SEPAL provides free access to computation resources that are shared among registered users. To prevent exportation mistakes, new users are granted few resources that are sufficient for discovering the functionalities and running sub-regional analysis. By default, instances are closed automatically when they are not being used."
 msgstr ""
 
 #: ../../source/setup/resource.rst:17
@@ -59,18 +55,11 @@ msgid "0 Gb of storage"
 msgstr ""
 
 #: ../../source/setup/resource.rst:23
-msgid ""
-"Some actions or projects may require more storage to perform analysis at "
-"the province or country level; other actions or projects may require more"
-" instances to perform heavier computation processes. If you need more "
-"storage or instances, you can submit a quota request to the SEPAL team by"
-" following the instructions below."
+msgid "Some actions or projects may require more storage to perform analysis at the province or country level; other actions or projects may require more instances to perform heavier computation processes. If you need more storage or instances, you can submit a quota request to the SEPAL team by following the instructions below."
 msgstr ""
 
 #: ../../source/setup/resource.rst:27
-msgid ""
-"Since quota requests are reviewed on a case-by-case basis, response time "
-"may vary."
+msgid "Since quota requests are reviewed on a case-by-case basis, response time may vary."
 msgstr ""
 
 #: ../../source/setup/resource.rst:30
@@ -78,19 +67,11 @@ msgid "User report"
 msgstr ""
 
 #: ../../source/setup/resource.rst:32
-msgid ""
-"In **Terminal**, **Applications** or **Recipes**, select **User report** "
-"on the lower-right side of the window to see your current instance "
-"consumption: :btn:`<fas fa-dollar-sign> x.xx/h`."
+msgid "In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fas fa-dollar-sign> x.xx/h`."
 msgstr ""
 
 #: ../../source/setup/resource.rst:49
-msgid ""
-"After selecting this button, the **Resource management** pop-up window "
-"will appear, displaying the current consumption of all of your resources "
-"expressed in percentages (1) (Note: a full bar indicates that you have "
-"reached one of your monthly quotas) and instances that are currently "
-"running (2)."
+msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2)."
 msgstr ""
 
 #: ../../source/setup/resource.rst:51
@@ -102,16 +83,11 @@ msgid "Manage instances"
 msgstr ""
 
 #: ../../source/setup/resource.rst:60
-msgid ""
-"Amazon Web Services (AWS) instances can be managed from this interface as"
-" well."
+msgid "Amazon Web Services (AWS) instances can be managed from this interface as well."
 msgstr ""
 
 #: ../../source/setup/resource.rst:62
-msgid ""
-"In the **User report** pop-up window, each line represents a different "
-"instance, where you can see their technical features and the hourly quota"
-" consumption."
+msgid "In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and the hourly quota consumption."
 msgstr ""
 
 #: ../../source/setup/resource.rst:64
@@ -119,25 +95,15 @@ msgid "You can select the **Trashcan** icon to stop an instance."
 msgstr ""
 
 #: ../../source/setup/resource.rst:70
-msgid ""
-"If the process you launched is a long computation (e.g. the **BFAST "
-"application** or any **Change detection algorithm**) and you want to "
-"close the SEPAL window, you can run the process in the background."
+msgid "If the process you launched is a long computation (e.g. the **BFAST application** or any **Change detection algorithm**) and you want to close the SEPAL window, you can run the process in the background."
 msgstr ""
 
 #: ../../source/setup/resource.rst:72
-msgid ""
-"Select **Edit** to open the **Instance** pop-up window, where the slider "
-"bar displays the amount of time remaining before your instance will be "
-"shut down. Increase this value for the estimated duration of your process"
-" and you can then safely close the SEPAL browser tab."
+msgid "Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab."
 msgstr ""
 
 #: ../../source/setup/resource.rst:76
-msgid ""
-"If you increase the lifespan of your instance, it will continue to "
-"consume your quota. Check regularly that your process is running "
-"effectively to avoid losing resources."
+msgid "If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources."
 msgstr ""
 
 #: ../../source/setup/resource.rst:83
@@ -153,29 +119,18 @@ msgid "In order for your request to be considered, you must:"
 msgstr ""
 
 #: ../../source/setup/resource.rst:89
-msgid ""
-"Change the quota to values that meet your needs (e.g. more storage and "
-"fewer instances). The values entered are suggestions that the "
-"administrator will be able to change, if needed. (1)"
+msgid "Change the quota to values that meet your needs (e.g. more storage and fewer instances). The values entered are suggestions that the administrator will be able to change, if needed. (1)"
 msgstr ""
 
 #: ../../source/setup/resource.rst:90
-msgid ""
-"Provide an extensive explanation for why you need these resources, as "
-"well as the project name, the type of analysis and the area of interest "
-"(AOI). (2)"
+msgid "Provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI). (2)"
 msgstr ""
 
 #: ../../source/setup/resource.rst:96
-msgid ""
-"Once validated, the request is sent to the SEPAL team, who will take "
-"measures in the coming days to update your profile, which may include "
-"contacting you directly if they need any extra details."
+msgid "Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details."
 msgstr ""
 
 #: ../../source/setup/resource.rst:103
-msgid ""
-"For support, :doc:`ask the community <>` or contact the SEPAL team at "
-"SEPAL@fao.org."
+msgid "For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org."
 msgstr ""
 
