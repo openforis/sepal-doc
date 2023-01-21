@@ -1,0 +1,706 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2023, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../source/modules/dwn/alert_module.rst:2
+msgid "Deforestation alert analysis"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:6
+msgid ""
+"To use this module, you must at least register to the NICFI PlanetLab "
+"program and link your GEE account to it. More information can be found at"
+" :doc:`../../setup/nicfi`."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:10
+msgid "Set up"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:12
+msgid ""
+"From the SEPAL app dashboard (purple :icon:`fas fa-wrench` on the left "
+"side), search for and click on **deforestation alert analysis**."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:16
+msgid "The launching process can take several minutes"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:22
+msgid ""
+"The application should launch itself as a map displaying the world. At "
+"the bottom-left side you will find 3 special buttons to open useful "
+"links:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:24
+msgid ":btn:`<fas fa-book-open>` the link to the documentation of the module"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:25
+msgid ":btn:`<fas fa-bug>` the link to open a new issue in the github repository"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:26
+msgid ":btn:`<fas fa-file-code>` the link to the source code of the application"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:28
+msgid "Clicking on them will open the link in a new webpage."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:31
+msgid ""
+"In the bottom right corner of the map. 3 buttons will help the user "
+"navigate through the different widgets of the application:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:33
+msgid ""
+":btn:`<fas fa-map-marker-alt>`: the widget to select the AOI (Area of "
+"interest)"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:34
+msgid ""
+":btn:`<fas fa-exclamation-triangle>`: the widget to select the alerts and"
+" filter them"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:35
+msgid ":btn:`<fas fa-globe>`: the widget to select Planet parameters"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:37
+msgid ""
+"In the top left corner there is :btn:`<fas fa-info>` button to open the "
+"metatada interface. More information in the next sections of this "
+"document."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:44
+#: ../../source/modules/dwn/alert_module.rst:309
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:46
+msgid ""
+"The settings need to be fully validated to load the alerts on the map. It"
+" has 3 sections that need to be filled in order:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:48
+msgid "**AOI**"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:49
+msgid "**Alert**"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:50
+msgid "**Planet** (optional)"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:53
+msgid "Area of interest"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:55
+msgid ""
+"The Area Of Interest (AOI) is set using the same  interface as in other "
+"applications. You can read :doc:`../../feature/aoi_selector` for more "
+"information."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:57
+msgid ""
+"In this step the user will be able to select any type of AOI method. When"
+" validated, the AOI will be displayed in gold on the map."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:64
+msgid "Alert"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:66
+msgid ""
+"The user then needs to select the alert system to use. Various drivers "
+"are available in the module and the documentation will reflects any "
+"changes or addition made by the SEPAL team."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:68
+msgid "Follow this process:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:70
+msgid ""
+"Select a driver in the dropdown list. The module will show in blue the "
+"area covered by the driver. If you don't see a background color change, "
+"your AOI is not covered"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:71
+msgid ""
+"Then select a date range. It can be xx days in the past using the "
+"\"recent\" mode or any time in the past using the \"historical\" mode."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:72
+msgid ""
+"using the slider, you can filter the minimal size of the alerts from 0 to"
+" 100 ha. 0 corresponding to no filter at all."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:76
+msgid ""
+"Some Alert drivers are already filtered by dates, the date selector is "
+"thus not displayed"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:115
+msgid "GLAD-L"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:119
+msgid ""
+"The GLAD-L repository is currently under heavy maintenance, no alerts "
+"from 2022 are available. Only historical date from 2018 to 2021 can be "
+"selected. More information `here "
+"<https://code.earthengine.google.com/4c46540499ee0f7b7c14959a069927d2>`__."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:121
+msgid ""
+"By selecting this alert system, you will use the GLAD alerts based on the"
+" Landsatsatellites."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:123
+#, python-format
+msgid ""
+"Since the opening of the Landsat archive in 2008, medium spatial "
+"resolution data have been available for use in alert-based applications."
+"  Since 2013, two Landsat sensors, the Enhanced Thematic Mapper Plus "
+"(ETM+) onboard Landsat 7, and the Operational Land Imager (OLI) onboard "
+"Landsat 8, have been systematically acquiring global multi-spectral "
+"observations at a 30m spatial resolution.  The orbits of the two "
+"spacecraft are coordinated to enable potential 8-day repeat coverage "
+"globally.   Given this cadence, the use of Landsat as a near-real time "
+"source of land change information is possible. The data displayed and "
+"made available here quantify forest disturbance events for the tropics "
+"using ETM+ and OLI data as an input.  Daily updates are made for areas "
+"where quality land observations are acquired.  We define forest cover as "
+"5m tall trees with a canopy closure exceeding 30%.  An alert is defined "
+"as any Landsat pixel that experiences a canopy loss in excess of 50% "
+"cover."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:125
+msgid ""
+"More information on these alerts can be found on the `GLAD forest alert "
+"page <https://glad.umd.edu/dataset/glad-forest-alerts>`__."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:128
+msgid "RADD"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:132
+msgid ""
+"RADD alerts only cover the tropical part of the Americas and Africa. More"
+" information can be found in their documenation."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:134
+msgid "Selecting this alert system, you will use the RADD alerts:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:136
+msgid ""
+"Sentinel-1’s cloud-penetrating radar provides gap-free observations for "
+"the tropics consistently every 6 to 12 days. In the densely cloud covered"
+" tropics, this represents a major advantage for the rapid detection of "
+"small-scale forest disturbances such as subsistence agriculture and "
+"selective logging. The RADD (RAdar for Detecting Deforestation) alerts "
+"contribute to the World Resources Institute’s Global Forest Watch "
+"initiative in providing timely and accurate information to support a wide"
+" range of stakeholders in sustainable forest management and law "
+"enforcement activities against illegal deforestation. The RADD alerts are"
+" implemented in Google Earth Engine. RADD alerts are available openly via"
+" Google Earth Engine, the Global Forest Watch platform, SEPAL.io and "
+"EarthMap.org."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:138
+msgid ""
+"More information on these alerts can be found on the `Wageningen "
+"university portal <https://www.wur.nl/en/Research-Results/Chair-groups"
+"/Environmental-Sciences/Laboratory-of-Geo-information-Science-and-Remote-"
+"Sensing/Research/Sensing-measuring/RADD-Forest-Disturbance-Alert.htm>`__."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:141
+msgid "NRT"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:145
+msgid ""
+"This functionality will remain experimental until the SEPAL team removes "
+"the \"beta\" status on the near real time alert creation recipe."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:147
+msgid ""
+"Selecting this alert system, the user will use the near real time alerts "
+"provided by the SEPAL recipe on a specific AOI and for specific dates. "
+"You only needs to provide access to the alert asset."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:152
+#: ../../source/modules/dwn/alert_module.rst:176
+msgid "The footprint of the alert is only displayed once the asset is selected."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:155
+msgid "GLAD-S"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:159
+msgid ""
+"When publishing this documentation (2022-04-26) only the north part of "
+"South America is covered by the alert system. Open the following `link "
+"<https://code.earthengine.google.com/3b5238d7558dbafec5072838f1bac1e9?hideCode============true>`__"
+" to see the area in the GEE code editor."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:161
+msgid ""
+"By selecting this alert system, you will use the GLAD alerts based on the"
+" Sentinel 2 satellites."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:163
+msgid ""
+"Loss of primary forest is mapped in near-real time at 10m resolution "
+"using Sentinel-2 multispectral data. Cloud, shadow, water are detected in"
+" each new Sentinel-2 image and a forest loss algorithm is applied to all "
+"remaining clear land observations. The algorithm relies on the spectral "
+"data in each new image in combination with spectral metrics from a "
+"baseline period of the previous two years. Confidence is built through "
+"repeated loss observations in the consequent images."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:166
+msgid "CUSUM"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:170
+msgid "this will be using the :code:`.tif` output of :doc:`cusum`."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:172
+msgid ""
+"Once you've run the CUSUM module, you'll obtain a 3 bands :code:`.tif` "
+"file. Ingest this file in Google Earth Engine using the `code editor "
+"interface <https://code.earthengine.google.com/>`__. Once the map is "
+"available in your assets you can use it in the module. If you don't find "
+"the asset in the list, click on the :icon:`fas fa-sync` icon to reload "
+"your asset list."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:179
+msgid "JICA"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:181
+msgid ""
+"Vietnamese forest department is using a specific alert system that works "
+"well. It generates a geojson file every 10 days. This system have been "
+"developped in partnership with JICA and you can check the GEE application"
+" `here (vietnamese) <http://canhbaomatrung.kiemlam.org.vn>`__."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:185
+#: ../../source/modules/dwn/alert_module.rst:194
+msgid ""
+"For this alert driver, the AOI parameter is ignored and all the alerts "
+"available in the file be loaded."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:188
+msgid "RECOVER"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:190
+msgid ""
+"The user can save it's work by exporting the already interpreted alerts "
+"in :code:`.gpkg` forma`. By selecting this format, you will be able to "
+"recover your previous analysis and continue the interpretation process."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:198
+msgid "Validation"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:200
+msgid ""
+"Once everything is set, the user can click on :btn:`select alerts` and "
+"the module will start downloading the information from google earth "
+"engine. the module will tile the AOI in smaller chunks to avoid GEE "
+"limitation, if you use a big area downloading can take up to 15 min. The "
+"alerts are displayed as shapes in red on the map and the settings panel "
+"will close automatically. If alerts are found in your AOI."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:207
+msgid "Metadata"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:209
+msgid ""
+"Click on :btn:`<fas fa-info>`to show the metadata panel. This panel will "
+"allow you to validate the alerts identified by the driver using Planet "
+"VHR (Very High Resolution) imagery. All information about the current "
+"alert will be displayed in this table:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:211
+msgid "alert ID: the Id of the alert"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:212
+msgid ""
+"geometry edition: a button to trigger geometry edition for one single "
+"alert"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:213
+msgid "date: the identified date of the deforestation event"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:214
+msgid "surface: the deforested surface in hectares"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:215
+msgid "coordinates: the coordinates of the center of the alert"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:216
+msgid "review: the visual evaluation performed by the user"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:217
+msgid "comments: some extra comments on the alert"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:219
+msgid "The next sections will cover the editable fields of this table."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:226
+msgid "alert ID"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:228
+msgid ""
+"on the top you will find the list of alerts ordered by size. To acess "
+"them the user can either click on the blue arrows or click on the carret "
+"to select one in the dropdown menu. Once an alert is selected "
+"(represented now in orange on the map), the Planet panel will open itself"
+" on the top right corner of the map and the information of the alert will"
+" be displayed."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:232
+msgid ""
+"To jump from one alert to another, the user can also directly click on "
+"the map, the information will be loaded automatically."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:239
+msgid "Geometry edition"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:241
+msgid ""
+"Some drivers perform automatic analysis and sometimes the geometry of the"
+" alerts poorly represent what you see on the VHR imagery. Using this "
+"module you can redifine the geometry before exporting your results to "
+"perfectly fit the deforested area."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:243
+msgid "Click on :btn:`edit geometry`. It will release the edition interface (1)."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:244
+msgid ""
+"Click on :btn:`<fas fa-edit>` to start edition and move the white square "
+"to add or remove vertices."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:245
+msgid "Once done click on :btn:`save` to exit the edition mode"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:251
+msgid "alternatively:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:253
+msgid "Click on :btn:`<fas fa-trash>`to start the deletion interface"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:254
+msgid ""
+"Click on :btn:`clear all` to remove the edited geometry. The geometry "
+"will be returned to it's original state before any edition was done."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:260
+msgid ""
+"Once the edition is completed click again on the button in the metada "
+"panel to stop edition: :btn:`finish edition`."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:263
+msgid "Date"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:265
+msgid ""
+"If the selected driver embeds the dates of the alerts, this field will be"
+" prefield with a meaningful date of deforestation event, if not we take "
+"the date found in the file title."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:267
+msgid ""
+"Once the deforestation event is identified you might want to update the "
+"date value to reflect what you see on the VHR imagery. Click in the field"
+" to use the datepicker."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:270
+msgid "Review"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:272
+msgid ""
+"By default all alerts are set to :code:`unset`. After interpreting the "
+"Planet imagery, change the value of the radio \"review\" from:"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:274
+msgid ":code:`yes`: the alert is valid as well as the date"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:275
+msgid ":code:`no`: the alert is not valid (no deforestation event)"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:276
+msgid ":code:`unset`: no review has been performed"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:279
+msgid "Comments"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:281
+msgid ""
+"You can fill this comment section with any aditional information you "
+"might want. There is no size limits."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:284
+msgid "Export"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:286
+msgid ""
+"At the very bottom of the metadata panel 3 exportation button can be "
+"found. Each one will export the alerts and their reviews in a specific "
+"format."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:289
+msgid "to kml"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:291
+msgid ""
+"Export the alerts as a :code:`.kml` file readable with Google Earth. Each"
+" alert will use its ID as label. You can export them at the beginning of "
+"the review if you want to use Google Earth in the review process."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:294
+msgid "to gpkg"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:296
+msgid ""
+"Export the alerts as a :code:`.gpkg` file readable by any GIS software. "
+"It will embed the geometry and all the properties associated with each "
+"feature/alert (including the original geometry). This file can be used to"
+" save progresses and reused as an input of the process."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:299
+msgid "to csv"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:301
+msgid ""
+"Export the alerts as a :code:`.csv` file. Each alert properties are kept "
+"and the file represents each feature using the coordinates "
+"(lattitude/longitude) of the center of each alert."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:304
+msgid "Planet imagery"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:306
+msgid ""
+"To interprete the validity of the alert, this module is based on the "
+"Planet NICFI imagery."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:313
+msgid ""
+"this panel is fully optional. If nothing is set, the module will use "
+"Planet NICFI level 1 data (monthly mosaics). If you have a NICFI level 2 "
+"access, providing your API key will grant you access to daily imagery."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:315
+msgid ""
+"click on :btn:`<fas fa-globe>` to access the`planet API interface. In "
+"this panel you can connect to your Planet Profile using either your "
+"credentials or your password."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:317
+msgid "Select the credential mode between \"credentials\" and \"API key\""
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:318
+msgid "Set and validate your credentials"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:320
+msgid "If the icon is green then you are connected."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:322
+msgid ""
+"Click on :btn:`NICFI` to see the details of the substrictions available "
+"with your profile. If the level 2 data are accecible you will be granted "
+"access to daily imagery for reviewing steps."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:340
+msgid "Advance parameters"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:342
+msgid ""
+"Once validated you'll be able to modify the Planet advance parameters. "
+"These parameters are used to request images to Planet, some default "
+"parameters have been set but changes may improve the readability of the "
+"image."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:344
+msgid ""
+"**number of images**: the max number of images to display on the map, "
+"default to 6"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:345
+msgid ""
+"**day before**: number of previous day the interface can search for "
+"images. useful when lot of cloud coverage, default to 1"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:346
+msgid ""
+"**day after**: number of previous day the interface can search for "
+"images. useful when lot of cloud coverage, default to 1"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:347
+msgid ""
+"**cloud coverage**: the requested maximal cloud coverage of the images, "
+"default to 20%"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:354
+msgid "Level 1 (monthly)"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:356
+msgid ""
+"Level 1 data are monthly mosaics. When a alert is clicked, the module "
+"will load the closest month from the observation date. the user can then "
+"use the Planet navigator to change the displayed image. Click on the "
+":btn:`<fas fa-palette>` to change the color of the images from CIR to "
+"RGB. The user can select the monthly mosaic directly from the dropdown "
+"menu or use the navigation buttons. :btn:`<fas fa-chevron-left>` (res. "
+":btn:`<fas fa-chevron-right>`) will move from one mont in the past (res. "
+"in the future). The :btn:`<fas fa-circle>` will set back on the closest "
+"date from the observation date."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:365
+msgid "Level 2 (daily)"
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:369
+msgid "This option is only available for users that have a NICFI level 2 access."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:371
+msgid ""
+"Level 2 data are daily imagery. When an alert is clicked, the module will"
+" load the closest day from the observation date and display images using "
+"the advanced parameters provided by the user."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:375
+msgid ""
+"Multiple images are displayed at once so don't hesitate to play with the "
+"layer control to hide and show different scenes."
+msgstr ""
+
+#: ../../source/modules/dwn/alert_module.rst:377
+msgid ""
+"Thus user can navigate through the images using the buttons in the Planet"
+" navigator. Click on :btn:`<fas fa-chevron-left>` (res. :btn:`<fas fa-"
+"chevron-right>`) to move one day in the past (res. one day in the "
+"future). Click on :btn:`<fas fa-chevron-double-left>` (res. :btn:`<fas "
+"fa-chevron-double-right>`) to move one month in the past (res. one month "
+"in the future). The :btn:`<fas fa-circle>` will set back on the closest "
+"date from the observation date."
+msgstr ""
+

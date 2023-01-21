@@ -14,11 +14,12 @@ def docs(session):
 @nox.session(reuse_venv=True)
 def i18n(session):
     """Create the translation files"""
+    supported_languages = ["en", "fr", "es", "ar", "pt", "zh", "ru", "sv", "it"]
     session.install("-r", "requirements.txt")
     session.install("sphinx", "sphinx-intl")
     session.run("sphinx-build", "-b", "gettext", "docs/source", "docs/build/gettext")
     session.run(
         "sphinx-intl", "update", "-p", "docs/build/gettext",
         "--locale-dir", "docs/source/_locale",
-        "-l", "en", "-l", "fr", "-l", "es"
+        *[f"-l {l}" for l in supported_languages]
     )
