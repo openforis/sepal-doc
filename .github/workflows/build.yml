@@ -5,6 +5,9 @@ on:
   schedule:
     - cron:  '0 0 * * *'
 
+env: 
+  SPHINXINTL_LANGUAGE: en,fr,es,ar,pt,zh,ru,sv,it
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,7 +28,7 @@ jobs:
       - name: generate .po files
         run: |
           sphinx-build -b gettext docs/source docs/build/gettext
-          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale -l en -l fr -l es -l ar -l pt -l zh -l ru -l sv -l it
+          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
