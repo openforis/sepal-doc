@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-01-21 12:01\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,81 +20,81 @@ msgstr ""
 
 #: ../../source/cli/index.rst:2
 msgid "SEPAL environment"
-msgstr ""
+msgstr "Environnement SEPAL"
 
 #: ../../source/cli/index.rst:5
 msgid "CLI tools"
-msgstr ""
+msgstr "Outils CLI"
 
 #: ../../source/cli/index.rst:7
 msgid "SEPAL platform includes a variety of useful Command Line Interface utilities to help resolve specific problems, some of them are listed below:"
-msgstr ""
+msgstr "La plate-forme SEPAL inclut une variété d'utilitaires utiles d'interface en ligne de commande pour aider à résoudre des problèmes spécifiques, certains d'entre eux sont listés ci-dessous :"
 
 #: ../../source/cli/index.rst:9
 msgid "gdal"
-msgstr ""
+msgstr "gdal"
 
 #: ../../source/cli/index.rst:10
 msgid "gdrive"
-msgstr ""
+msgstr "gdrive"
 
 #: ../../source/cli/index.rst:11
 msgid "gee"
-msgstr ""
+msgstr "gee"
 
 #: ../../source/cli/index.rst:12
 msgid "gwb"
-msgstr ""
+msgstr "gwb"
 
 #: ../../source/cli/index.rst:13
 msgid "ofgt"
-msgstr ""
+msgstr "ofgt"
 
 #: ../../source/cli/index.rst:14
 msgid "otb"
-msgstr ""
+msgstr "otb"
 
 #: ../../source/cli/index.rst:16
 msgid "These tools can be called directly from the terminal or any programming language sending commands to the kernel including R and Python (installed by default on any SEPAL account)."
-msgstr ""
+msgstr "Ces outils peuvent être appelés directement depuis le terminal ou n'importe quel langage de programmation envoyant des commandes au noyau, y compris R et Python (installé par défaut sur n'importe quel compte SEPAL)."
 
 #: ../../source/cli/index.rst:23
 msgid "The code executed previously on an existing :code:`example.tif` file."
-msgstr ""
+msgstr "Le code exécuté précédemment sur un fichier :code:`example.tif`."
 
 #: ../../source/cli/index.rst:31
 msgid "If you're running actions from multiple directories or multiple instances, you can open multiple terminal tabs and name them as you see fit."
-msgstr ""
+msgstr "Si vous exécutez des actions à partir de plusieurs répertoires ou de plusieurs instances, vous pouvez ouvrir plusieurs onglets de terminal et les nommer comme bon vous semble."
 
 #: ../../source/cli/index.rst:35
 msgid "If the code you want to execute is taking time, please consider running it in the background using :code:`nohup`."
-msgstr ""
+msgstr "Si le code que vous voulez exécuter prend du temps, pensez à l'exécuter en arrière-plan en utilisant :code:`nohup`."
 
 #: ../../source/cli/index.rst:41
 msgid "All the console outputs will be redirected to a :code:`nohup.out` in your home directory but the execution will be running in the background. Thus you will be able to safely close the terminal or even the browser window without killing your process. more information about :code:`nohup` can be found `here <https://en.wikipedia.org/wiki/Nohup>`__."
-msgstr ""
+msgstr "Toutes les sorties de la console seront redirigées vers un :code:`nohup.out` dans votre répertoire personnel mais l'exécution sera exécutée en arrière-plan. Ainsi, vous serez en mesure de fermer le terminal ou même la fenêtre du navigateur en toute sécurité sans tuer votre processus. plus d'informations sur :code:`nohup` peuvent être trouvées `ici <https://en.wikipedia.org/wiki/Nohup>`__."
 
 #: ../../source/cli/index.rst:45
 msgid "coding tools"
-msgstr ""
+msgstr "outils de développement"
 
 #: ../../source/cli/index.rst:47
 msgid "In the app section, you'll find at the top of the list 3 coding tools:"
-msgstr ""
+msgstr "Dans la section de l'application, vous trouverez en haut de la liste 3 outils de développement :"
 
 #: ../../source/cli/index.rst:49
 msgid "JupyterLab"
-msgstr ""
+msgstr "JupyterLab"
 
 #: ../../source/cli/index.rst:50
 msgid "JupyterNotebook"
-msgstr ""
+msgstr "JupyterNotebook"
 
 #: ../../source/cli/index.rst:51
 msgid "Rstudio"
-msgstr ""
+msgstr "Rstudio"
 
 #: ../../source/cli/index.rst:56
 msgid "They will allow the user to code wokflows in any of the available languages using the coresponding environment built-in in SEPAL. These environments are fully customizables, click on the :code:`Python` or :code:`R` section to know more."
-msgstr ""
+msgstr "Ils permettront à l'utilisateur de coder des wokflows dans n'importe quelle langue disponible en utilisant l'environnement corespondant intégré dans SEPAL. Ces environnements sont entièrement personnalisables, cliquez sur la section :code:`Python` ou :code:`R` pour en savoir plus."
 
