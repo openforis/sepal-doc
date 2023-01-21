@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 09:52\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/gee.po\n"
+"X-Crowdin-File-ID: 45\n"
+"Language: ru_RU\n"
+
+#: ../../source/cli/gee.rst:2
+msgid "Google Earth Engine"
+msgstr ""
+
+#: ../../source/cli/gee.rst:4
+msgid "The earthengine tool is a utility program that allows you to manage Earth Engine assets and tasks from the command line. It is installed automatically when you install the Python API. To check whether the tool is installed and functioning correctly, type the following on a command line:"
+msgstr ""
+
+#: ../../source/cli/gee.rst:10
+msgid "If the tool is properly installed then it will print out a short summary of available commands. To get help on a specific command, use:"
+msgstr ""
+
+#: ../../source/cli/gee.rst:16
+msgid "When you first install the Python API you will need to log in using the :code:`authenticate` command described below."
+msgstr ""
+
+#: ../../source/cli/gee.rst:19
+msgid "available commands"
+msgstr ""
+
+#: ../../source/cli/gee.rst:21
+msgid "More information on the available command can be found on `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__."
+msgstr ""
+
