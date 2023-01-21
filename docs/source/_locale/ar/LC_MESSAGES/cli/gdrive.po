@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 09:51\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/gdrive.po\n"
+"X-Crowdin-File-ID: 43\n"
+"Language: ar_SA\n"
+
+#: ../../source/cli/gdrive.rst:2
+msgid "Google Drive"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:5
+msgid "The `drive` CLI is a utility that allows managing the Google Drive account from the SEPAL console, to read the full documentation please refer to the Readme file directly in the GitHub repository https://github.com/odeke-em/drive."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:8
+msgid "Usage"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:11
+msgid "Initialize drive connection"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:13
+msgid "Before running any of the drive commands, you have to start a session, to do so, run the following line:"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:19
+msgid "As result, an URL will be displayed in the terminal, visit it by copying and pasting it in your browser. Log-in to your Google account and, \"trust the connection\" by clicking the \"allow\" button. An authorization code will be displayed, copy it and paste it into the Sepal terminal. Now you are ready to use the :code:`drive` CLI tool."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:23
+msgid "The authorization token will expire on every session, this process has to be repeated each time you want to use the :code:`drive` command tool."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:26
+msgid "Upload files"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:28
+msgid "You can upload files from your SEPAL environment by using the :code:`push` command."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:41
+msgid "Download files"
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:43
+msgid "To download files, use the :code:`pull` command. This command will create files that doesn't exist locally but does remotely."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:53
+msgid "This command will syncronize the files that are not present in your sepal session but are present in your Google Drive account folder."
+msgstr ""
+
+#: ../../source/cli/gdrive.rst:56
+msgid "Additional commands"
+msgstr ""
+
