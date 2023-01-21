@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:30+0100\n"
+"PO-Revision-Date: 2023-01-21 09:52\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/ccdc.po\n"
+"X-Crowdin-File-ID: 59\n"
+"Language: ru_RU\n"
+
+#: ../../source/cookbook/ccdc.rst:2
+msgid "CCDC - Asset Creation"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:5
+msgid "Background"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:7
+msgid "Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:9
+msgid "CCDC is a holistic methodological framework that encompasses various aspects of space-borne, multi-temporal land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**. It is furthermore capable to utilize all available **bands** and derived *band ratios*."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:11
+msgid "CCDC is **data-agnostic**, meaning any type of multi-temporal satellite imagery can be ingested (e.g. optical, radar). SEPAL supports its usage with Landsat, Sentinel-1 & 2 as well as Planet basemaps and daily imagery. Note that for the latter, a Planet API key is necessary."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:13
+msgid "The temporal segmentation step starts by fitting a 3rd order harmonic model to each band of the initial part of the time-series. Thereafter, the observations are tested against the model for each band selected as a **breakpoint band**. In case of a significant repetitive deviation from the model, a break is flagged. Subsequently, a new segment is initialized for the upcoming observations until the next break is going to be detected."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:15
+msgid "A **CCDC asset** retains the information of change(s) happening for each pixel, including the date of the break as well as its magnitude. In addition, the model parameters are stored for the time-series segments in between those breaks. Therefore, another way of thinking about a **CCDC asset** is to consider it as a **condensed, synthetic time-series**. By only storing each segments model parameters, we drastically reduce the storage needs as opposed to store the full-time-series. At the same time, we retain the possibility to re-create the data at any given point in time by using the model's parameters."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:19
+msgid "The creation of a CCDC asset is the mandatory first step for all types of subsequent workflows and analysis. This step is highly compute intense, which makes it difficult for on-the-fly-processing. An export as an Earth Engine asset is highly recommended. For this, your SEPAL account needs to be connected to your Google Earth Engine account. Follow `Connect SEPAL to GEE <../setup/gee.html>`__ to learn how to register for Google Earth Engine and connect it to your SEPAL account."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:23
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:26
+msgid "Create Recipe"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:28
+msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:37
+msgid "Rename Recipe"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:39
+msgid "The first step one should do is to change the name of the recipe by double-clicking on tab on the top of the map. This will have the effect that your recipe will be automatically saved and is visible in the list of created recipes. Furthermore, the given name will be used for exported files, both locally and on Earth Engine. We suggest to use the following convention: :code:`CCDC-asset_<aoi>_<sensor(s)>_<start_date>_<end_date>`."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:50
+msgid "Parameter selection"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:52
+msgid "The following steps describe the parameter selection that can be found on the lower right of the screen."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:59
+msgid "The buttons open the following dialogues:"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:61
+msgid ":guilabel:`AOI` Area of interest (AOI)"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:62
+msgid ":guilabel:`DAT` Time of Interest (TOI), i.e. the time-span for the underlying time-series"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:63
+msgid ":guilabel:`SRC` Selection of sensor(s)"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:64
+msgid ":guilabel:`PRC` Pre-processing parameters"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:65
+msgid ":guilabel:`OPT` CCDC Parameters"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:68
+msgid "Area of Interest"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:70
+msgid "The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:72
+msgid "Administrative boundaries"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:73
+msgid "EE Tables"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:74
+msgid "Drawn polygons"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:76
+msgid "they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:83
+msgid "Date Range"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:85
+msgid "In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:98
+msgid "Sensor selection"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:100
+msgid "After clicking the :guilabel:`NEXT` button in the date selection, the sensor selection pop-up menu will automatically open (1). Here you need to specify the sensor(s) and the bands used for the breakpoint detection. You have the choice between 3 types, :guilabel:`OPTICAL` (including the Landsat and Sentinel-2 missions), :guilabel:`RADAR` (including the Sentinel-1 mission) and :guilabel:`PLANET`, where both daily imagery or monthly basemaps can be used as data input (given you have a valid Planet API key)."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:108 ../../source/cookbook/ccdc.rst:185
+msgid "Optical data"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:110
+msgid "CCDC is originally tested on optical *Landsat* satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including *Tier 1* and *Tier 2* collections, to run it on decadal-long time-series."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:114
+msgid "The inclusion of *Tier 2* products as well as *Landsat 7* may introduce artifacts due to the reduced quality of the data. For recent short-term time-series it might be better to either select the Landsat-8 or Sentinel-2 mission, which deliver imagery from 2013 and 2015, respectively. This will however reduce the density of observations for the underlying time-series."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:118
+msgid "For very cloud-prone regions, it is also possible to combine the *Landsat* data with the *Sentinel-2* data to densify the underlying time-series. Note that because of differences in the sensors (although band names are equal) and the overpass time, artifacts may be introduced that will affect the breakpoint detection."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:120
+msgid "The breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of the CCDC breakpoint detection. Unfortunately, there does not seem to be a *\"one size fits all\"* preset for all kinds of applications. Scientific evidence is suggesting to use all color bands but the blue `Zhu et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_. According to the study, the selection of additional ratio bands does not add any improvement. However, it should be noted that this assumption is based on the detection of all types of land cover changes and that the study uses a modified version of CCDC (named COLD), where the change in bands are weighted differently than in the original version used in SEPAL, respectively Google Earth Engine."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:124
+msgid "The use of the color bands allows you to later select the :code:`Green` and the :code:`Swir1` band as TMASK bands for CCDC's internal, multi-temporal cloud removal. You find this in the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:126
+msgid "If the creation of the CCDC asset is aimed at the detection of both, forest degradation and deforestation, the *Normalized Difference Fraction Index* :code:`NDFI` might be another suitable choice as applied by `Bullock et al 2020 <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. Note that this article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or the color bands. For instance one can consider the *Normalized Differenced Moisture Index* :code:`NDMI` when looking at Mangrove forests."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:129
+msgid "In case of doubt, we suggest to go for the default option and use all of the color bands, except the blue one."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:142
+msgid "Radar Data"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:144
+msgid "In order to create a CCDC asset based on underlying radar time-series, you need to select the :guilabel:`RADAR` button. This will make use the *Sentinel-1* C-Band SAR Image Collection in Google Earth Engine. To the best of our knowledge, no scientific studies have been done that investigate the ideal band selection for breakpoint detection. As a starting point we suggest to use the default option that includes the :code:`VV` and the :code:`VH` band."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:153 ../../source/cookbook/ccdc.rst:268
+msgid "Planet data"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:155
+msgid "For the creation of a CCDC asset based on *Planet* data, you have the choice of either selecting the *Planet custom basemaps* (including the NICFI Level 1 data), or *Planet daily imagery* itself."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:165
+msgid "In both cases, the data already needs to reside within Earth Engine as an *ImageCollection asset*, whose ID needs to be filled in the respective field."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:167
+msgid "In case you want to use the *NICFI Level-1 basemaps*, you can use the already existing assets within Earth Engine, given that you enabled the access feature as explained `here <https://docs.sepal.io/en/latest/setup/nicfi.html>`_. The NICFI Level-1 assets are split by continent and have the following Asset IDs:"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:169
+msgid "projects/planet-nicfi/assets/basemaps/africa"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:170
+msgid "projects/planet-nicfi/assets/basemaps/asia"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:171
+msgid "projects/planet-nicfi/assets/basemaps/americas"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:175
+msgid "For data ordered through the Planet API (i.e. daily imagery or custom basemaps other than NICFI Level 1 data), you can specify Earth Engine as the download location."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:177
+msgid "Using CCDC with Planet has not been explored widely, so that again the optimal selection of the breakpoint bands depends on testing it out by yourself. However, in accordance with Landsat based analysis we suggest to use the Green , Red and NIR bands to get started."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:181
+msgid "Pre-processing options"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:189
+msgid "This section is optional as these parameters are set by default."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:191
+msgid "correction: :code:`None`"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:192
+msgid "cloud detection: :guilabel:`QA bands`, :guilabel:`Cloud score`"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:193
+msgid "cloud masking: :guilabel:`moderate`"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:194
+msgid "snow masking: :guilabel:`on`"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:196
+msgid "Multiple pre-processing parameters can be set to improve the quality of the provided images. SEPAL has gathered 4 of them in the form of these interactive buttons. If you think others should be added to hesitate to mention it in our `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:198
+msgid "**Correction**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:200
+msgid ":guilabel:`surface reflectance`: Use scenes atmospherically corrected surface reflectance."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:201
+msgid ":guilabel:`BRDF correction`: Correct for bidirectional reflectance distribution function (BRDF) effects."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:203
+msgid "**Cloud detection**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:205
+msgid ":guilabel:`QA bands`: use pre-created QA bands from datasets"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:206
+msgid ":guilabel:`Cloud score`: use cloud scoring algorithm"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:208
+msgid "**Cloud masking**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:210
+msgid ":guilabel:`Moderate`: rely only on image source QA bands for cloud masking"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:211
+msgid ":guilabel:`Aggressive`: rely on image source QA bands and a cloud scoring algorithm for cloud masking. This will probably mask out some built-up areas and other bright features."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:213
+msgid "**Snow masking**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:215
+msgid ":guilabel:`On`: mask snow. This tends to leave some pixels with shadowy snow"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:216
+msgid ":guilabel:`Off`: don't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:225
+msgid "Radar data"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:227
+msgid "The default parameters (below figure on the left) are rather optimized for performance and coverage than for the highest quality of the data. It is therefore recommended to modify them accordingly (below figure on the right)."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:241
+msgid "**Orbit Selection** The orbit selection for radar satellites refers to the flight direction of the satellite that is different from sun-adverted and the sun-facing side of the planet. One distinguishes ascending (from south pole towards north pole) and descending (from north to south pole) direction. Being independent from the sunlight, radar satellites can acquire at both, day and nighttime. However, they do not acquire constantly."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:244
+msgid "In case of the Sentinel-1 mission, areas outside of Europe are usually only covered by either one or the other. With the help of the below figure you should be able to see by which orbit direction your Area of Interest is covered."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:-1
+msgid "Sentinel-1 observation scenario"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:253
+msgid "While you can select both orbits to be on the safe side, marginal areas that are covered by both orbits might result in different models than for areas only covered by on eor the other, due to the differences in observation geometry. It is therefore recommended to properly select your orbit direction. Instead, if it happens that your full AOI is covered by both orbits, do also select both."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:255
+msgid "**Geometric Correction**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:257
+msgid "Setting the *Geometric Correction* to :guilabel:`TERRAIN` will correct for distortions of the radar backscatter signal along slopes. This is crucial for all types of land cover or biogeophysical parameter retrieval and is therefore **highly recommended**."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:259
+msgid "**Speckle-Filtering**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:261
+msgid "Speckle Filtering is a common step in radar remote sensing and reduces the random noise within radar imagery. While CCDC has already a very effective filtering effect on the backscatter through the time-series modelling, selecting the multi-temporal :guilabel:`QUEGAN` shall improve the detection of breaks and is therefore recommended. However, as it is very compute intense, processing and export might take a considerable amount of time, and in some cases might even fail."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:263
+msgid "**Outlier Removal**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:265
+msgid "Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them by a multi-temporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artifacts. More aggressive filtering might include actual change events and is therefore not recommended."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:270
+msgid "Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 options. The default parameters are reflecting a quite aggressive way of cloud removal (see figure below)."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:280
+msgid "**Histogram Matching**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:282
+msgid "Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option as it will harmonize the radiometry between each single image."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:285
+msgid "CCDC parameters"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:288
+msgid "Presets"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:289
+msgid "Behind the :guilabel:`OPT` you can find 3 basic presets of CCDC parameters. The selection of the presets can be interpreted at selecting the balance between commission and omission error for the breakpoint detection."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:300
+msgid "The parameters of the :guilabel:`CONSERVATIVE` are favoring commission over omission error rate in the breakpoint detection (i.e. aiming at high User Accuracy, low False Positives). In other words, CCDC is going to detect less breaks, but they are more likely to be correct. This comes at the cost of missing some actual changes, therefore having an increased omission error."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:302
+msgid "The parameters of the :guilabel:`MODERATE` are trying to balance commission and omission errors in the breakpoint detection. In other words, CCDC is going to both, omit and commit some of the actual changes, keeping both level of error rates similar with a balanced False Positive and False Negative detection rate."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:304
+msgid "The parameters of the :guilabel:`AGGRESSIVE` are favoring omission over commission error rate in the breakpoint detection (i.e. aiming at high Producer Accuracy, low False Negatives). In other words, CCDC is going to detect more breaks than with the other settings, reducing the likelihood of missing change. This comes at the cost of also detecting a lot of falsely detected change though."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:308
+msgid "If you have chosen the color bands for breakpoint detection within the sensor menu, it is worthwile to go into the advanced options using the :guilabel:`MORE` button and select the :guilabel:`GREEN` and :guilabel:`SWIR1` band as :guilabel:`TMASK BANDS`."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:311
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:312
+msgid "More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabel:`MORE` button."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:322
+msgid "**Date Format**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:324
+msgid "This option allows to safe the dates in various formats. Note that SEPAL deals by default with :guilabel:`FRACTIONAL YEARS` in all of the CCDC related recipes."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:326
+msgid "**TMASK BANDS**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:328
+msgid "The bands selected here are used for additional multi-temporal filtering of cloud affected pixels that have not been identified as such throughout the pre-processing of the single images. For optical data from Landsat and Sentinel-2, the :guilabel:`GREEN` and :guilabel:`SWIR1` bands are recommended."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:330
+msgid "**Min Observations**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:332
+msgid "This is the number of observations needed before a break is actually confirmed based on its temporal behaviour. A low number will lead to more changes and reduce the gaps between two temporal segments. Higher numbers will lead to more confidence in the observed change, but in cloud-prone regions might lead to long gaps between two temporal segments. Usually, a number between 4 to 8 is recommended."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:334
+msgid "**Chi Square Probability**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:336
+msgid "The Chi-Square test will test if an observation is part of the general statistical distribution of the time-series. A low value of Chi-Square probability will favor the rejection of the null-hypothesis (i.e. being part of the statistical distribution), therefore flagging it as possible change. Ultimately, a lower value leads to more breaks detected, which favors omission over commission error. A high value allows for more noise in the time-series, and less changes will be detected, therefore lowering the commission error rate."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:339
+msgid "**Min Number of Years Scaler**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:341
+msgid "This parameter determines the minimum length of any inner temporal segment."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:343
+msgid "**LAMBDA**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:345
+msgid "The lambda parameter is part of the LASSO regression used for the modelling of the time-series. It is used to generalize the model and thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might result even in the annulation of some of the parameters. In practical terms, an initially 3rd order harmonic model, might shrink to a 1st order harmonic, if this provides the best generalized fit. Setting lambda to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalised model. If lambda is set too high, the model will underfit, which also not wanted. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither over nor underfitting will be around this number."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:347
+msgid "**Max iterations**"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:349
+msgid "Those are the iterations for the maximum number of runs for LASSO regression convergence. If set to 0, regular OLS is used instead of LASSO."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:354
+msgid "On-the-fly Pixel analysis"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:356
+msgid "Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:358
+msgid "The plotting area (3) is dynamic and can be customized by the user."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:360
+msgid "You can select the observation feature by selecting one of the available measures in the dropdown selector in the top left corner (4). The available bands are the same as the described previously."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:362
+msgid "Using the slider (5), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:364
+msgid "On the main graph, the orange lines shows the CCDC modelled time-series. Each of the blue points represents an actual observation. You can both hover over the point or the line to let the tooltip describe the value and date of the observation, as well as the model values and the temporal extent of the specific segment."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:373
+msgid "The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected pre-processing parameters. If the popup window displays a spinning wheel, wait up to 2 min to see the data displayed."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:377
+msgid "Export"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:380
+msgid "Trigger the export task"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:382
+msgid "Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:384
+msgid "If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:386
+msgid "The scale parameter depends on the data selected and the level of detail you will need for your further analysis. Landsat based assets are usually created at 30 meters. Sentinel-1 and 2 can be at 10 meter, but will need 9 times more space as compared to 30 meter resolution."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:400
+msgid "Exportation status"
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:402
+msgid "Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:406
+msgid "This operation is running between GEE and SEPAL servers in the background, you can thus close the SEPAL page without killing the process."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:408
+msgid "When the task is finished the frame will be displayed in green as shown on the second image."
+msgstr ""
+
