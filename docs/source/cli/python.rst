@@ -81,5 +81,5 @@ If you want to install libs inside this venv you need first to activate it:
 
 .. code-block:: console
 
-    ./<venv_name>/bin/activate
+    source ./<venv_name>/bin/activate
 
