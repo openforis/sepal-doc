@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 16:22\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/radar_mosaic.po\n"
+"X-Crowdin-File-ID: 73\n"
+"Language: zh_CN\n"
+
+#: ../../source/cookbook/radar_mosaic.rst:2
+msgid "Radar mosaics"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:4
+msgid "The SEPAL recipe for radar mosaics allows users to generate analysis-ready data (ARD) from the Sentinel-1 C-Band synthetic aperture radar (SAR) mission, which can be used in subsequent analysis, such as land cover classification."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:8
+msgid "Quick guide: timescans"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:10
+msgid "The following steps demonstrate the default procedure for creating a yearly timescan, which is useful for tasks, such as land cover mapping."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:12
+msgid "Select the Radar mosaic within the SEPAL recipes."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:13
+msgid "Select your area of interest (AOI) and the year."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:14
+msgid "Check for orbit coverage."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:16
+msgid "3.1 De-select all processing parameters."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:18
+msgid "3.2 Select **Ascending Orbit** and let the mosaic render."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:20
+msgid "3.3 De-select **Ascending Orbit** and select **Descending Orbit** and let the mosaic render."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:22
+msgid "3.4 See if both orbits cover the entire AOI. If they do, select both and let the mosaic render, then check for artifacts that may originate from using both orbits. If they do not, select the orbit that covers the entire AOI."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:24
+msgid "Select **TERRAIN** under Geometric operations."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:25
+msgid "Select **MODERATE** under Outlier removal"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:26
+msgid "Export Median, Min, Max, and STD layers for both polarization bands VV and VH."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:28
+msgid "The following video tutorial demonstrates these steps in a reproducible way:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:34
+msgid "More detailed explanations of what a timescan is, how it relates to the concept of ARD, and what influences the processing parameters have will be added to this documentation at a later date."
+msgstr ""
+

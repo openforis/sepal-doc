@@ -1,27 +1,40 @@
 Reset password
 ==============
 
-If you have forgotten your log-in password, you can retrieve or reset it by proving you have access to the email address associated with your account. A password may be recovered by submitting a request by following the directions located at one of the website's log-in forms.
+Create a new password for your SEPAL account
+--------------------------------------------
+
+In this article, you can learn how to:
+
+-   Access your SEPAL account by creating new password.
+
+If you have forgotten the password for your SEPAL account, you can reset it by proving you have access to the email address associated with your account. 
+
+A password may be recovered by submitting a request by following the directions located at one of the website's sign-in forms.
 
 .. note::
 
-    Resetting passwords is not possible without knowing and having access to the email address used to log in to the platform. Before requesting a new account with SEPAL, we suggest testing all of your email accounts first.
+    Resetting passwords is not possible without knowing and having access to the email address used to sign in to the platform. Before requesting a new account with SEPAL, test all of your email accounts.
 
-This password reset and retrieval process will be performed in three steps, as presented on the following page.
+This password reset process can be performed in three steps:
+
+1.  Provide your email address.
+2.  Complete email verification.
+3.  Create a new password.
 
 Tell us who you are
 -------------------
 
-Click the :code:`Forgot password?` link on the SEPAL landing page.
+Select **Forgot password** on the SEPAL landing page.
 
 .. thumbnail:: ../_images/setup/password/landing.png
-   :title: Landing page of SEPAL where the user can find the "Forgot password?" button.
+   :title: SEPAL landing page where the user can find the **Forgot password?** button.
    :group: setup_password
 
-On the reset password page, enter the email address you used to register for SEPAL, then click :btn:`<fas fa-envelope> Reset password`.
+Enter the email address you used to register for SEPAL, then select **Reset password**.
 
 .. thumbnail:: ../_images/setup/password/email-setup.png
-   :title: The reset password page where you can insert your email address.
+   :title: The **Reset password** page where you can insert your email address.
    :group: setup_password
 
 .. note:: 
@@ -48,35 +61,39 @@ To reset your password, SEPAL uses an email confirmation system because:
 For all of these reasons, SEPAL will send you the following email. 
 
 .. thumbnail:: ../_images/setup/password/email.png
-   :title: Example of a reset password email.
+   :title: Example of a **Reset password** email.
    :group: setup_password
 
-Click the :code:`This` link. It will open the reset password interface on a new browser page.
+Follow the instructions to reset your password on a new browser page.
 
 Change password
 ---------------
 
-In the reset password interface, three fields are available:
+In the reset password form, three fields are available:
 
--   **Username:** The username associated with your email address in the database.
+-   **Username**: The username associated with your email address in the database.
     
-    .. note::
+    .. important::
     
         Your username cannot be changed.
 
--   **Password:** Your new password. 
--   **Confirm password:** A security field where you need to provide your new password again.
+-   **Password**: Your new password. 
 
-Provide a password in the :code:`Password` and :code:`Confirm Password` fields. If the two fields are not exactly the same, the form cannot be validated.
+-   **Confirm password**: A security field where you need to provide your new password again.
 
-Once everything is set, click on :btn:`<fas fa-check> Set password` to validate your new password.
+Enter the new password in the **Password** and **Confirm Password** fields (Note: if the two fields are not exactly the same, the form cannot be validated).
+
+Select **Set password** to validate your new password.
 
 .. thumbnail:: ../_images/setup/password/change-password.png
-   :title: The change password interface.
+   :title: The **Change password** interface.
    :group: setup_password
 
-Once validated, the new password will be automatically associated with your account. The user will be authenticated and a notification will be displayed in the upper-right side of the screen.
+Once validated, the new password will be automatically updated on your account. The user will be authenticated and a notification will be displayed in the upper-right.
 
 .. thumbnail:: ../_images/setup/password/change-password-notification.png
-   :title: The change password interface.
+   :title: The **Change password** interface.
    :group: setup_password
+   
+   
+For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.

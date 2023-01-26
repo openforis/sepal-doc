@@ -1,0 +1,613 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 16:21\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/optical_mosaic.po\n"
+"X-Crowdin-File-ID: 69\n"
+"Language: ar_SA\n"
+
+#: ../../source/cookbook/optical_mosaic.rst:2
+msgid "Optical mosaic"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:5
+msgid "Overview"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:7
+msgid "A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together. This can be achieved on both contiguous rasters (left) and overlapping images (right)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:18
+msgid "These overlay areas can be managed in various ways. For example, you can choose to keep only the raster data from the first or last dataset, combine the values of the overlay cells using a weighting algorithm, average the values of the overlay cells, or take the maximum or minimum value. In addition, certain corrections can be made to the image to account for clouds, snow, and other factors. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create mosaics in any area of interest (AOI)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:22
+msgid "You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. Navigate to :doc:`../setup/gee` to learn more."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:26
+msgid "Start"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:28
+msgid "Once the mosaic recipe is selected, SEPAL will display the recipe process in a new tab (1) and the AOI selection window will appear on the lower-right side (2)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:34
+msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and write a new name. It will default to :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:46
+msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<dates>_<measure>`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:50
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:52
+msgid "In the lower-right corner, 5 tabs are available. They will allow you to customize the mosaic creation to your needs."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:54
+msgid ":guilabel:`AOI`: area of interest"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:55
+msgid ":guilabel:`DAT`: target date of interest for the mosaic/composite"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:56
+msgid ":guilabel:`SRC`: source datasets of the mosaic/composite"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:57
+msgid ":guilabel:`SCN`: scene selection parameters"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:58
+msgid ":guilabel:`CMP`: composition parameters"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:65
+msgid "AOI Selection"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:67
+msgid "The data exported by the recipe will be generated from within the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:69
+msgid "Administrative boundaries"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:70
+msgid "EE Tables"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:71
+msgid "Drawn polygons"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:73
+msgid "they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:80
+msgid "Date"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:83
+msgid "Yearly mosaic"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:85
+msgid "In the :guilabel:`DAT` tab, you will be asked to select a year. It will define the year which pixels in the mosaic should come from. When the selection is done, click on the :icon:`fa fa-check` :guilabel:`Apply` button."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:92
+msgid "Seasonal mosaic"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:94
+msgid "Click on :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:96
+msgid "Click on the :icon:`fa fa-calendar` (1) to open the date selection pop-up. The selected date will be the target of the mosaic (the date from which pixels in the mosaic should ideally come)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:98
+msgid "Using the main slider (2) define a season around the target date. This season defines two dates: a starting date and an ending date. SEPAL will then retrieve the mosaic images between those dates."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:100
+msgid "The number of images in one single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - (3)) and in the future (:code:`Future season` - (4))."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:102
+msgid "When the selection is done click on the :icon:`fa fa-check` :guilabel:`Apply` button."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:109
+msgid "Sources"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:111
+msgid "As mentioned in the introduction, a mosaic uses different raster datasets that can be obtained from multiple sources. SEPAL allows you to select data from multiple entry points. Below, you can find a description of these sources (click on the link to see the corresponding dataset information):"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:113
+msgid ":guilabel:`L8`: `Landsat 8 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m root mean square error [RMSE]). All Tier 1 Landsat data can be considered consistent and inter-calibrated (regardless of the sensor used) across the full collection."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:117
+msgid ":guilabel:`L8 T2`: `Landsat 8 Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:121
+msgid ":guilabel:`L7`: `Landsat 7 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m RMSE). All Tier 1 Landsat data can be considered consistent and inter-calibrated across the full collection (regardless of the sensor used)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:125
+msgid ":guilabel:`L7 T2`: `Landsat 7 Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:129
+msgid ":guilabel:`L4-5`: `Landsat 4 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T1>`__ combined with `Landsat 5 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are inter-calibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12m RMSE). All Tier 1 Landsat data can be considered consistent and inter-calibrated across the full collection (regardless of the sensor used)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:133
+msgid ":guilabel:`L4-5 T2`: `Landsat 4 TM Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT04_C01_T2>`__ combined with `Landsat 5 TM Tier 2 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T2>`__. Scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. This includes Systematic terrain (L1GT) and Systematic (L1GS) processed scenes, as well as any L1TP scenes that do not meet the Tier 1 specifications due to significant cloud cover, insufficient ground control, and other factors. Users interested in Tier 2 scenes can analyze the RMSE and other properties to determine the suitability for use in individual applications and studies."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:137
+msgid ":guilabel:`A+B`: `Sentinel-2 Multispectral instrument <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2>`__ is a wide-swath, high-resolution, multi-spectral imaging mission supporting Copernicus Land Monitoring studies, including the monitoring of vegetation, soil and water cover, as well as the observation of inland waterways and coastal areas."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:143
+#: ../../source/cookbook/optical_mosaic.rst:160
+msgid "To validate your selection, click on the :icon:`fa fa-check` :guilabel:`Apply` button."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:146
+msgid "Scenes"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:150
+msgid "If Sentinel and Landsat data have been selected, you will be forced to use all scenes. As the tilling system from Sentinel and Landsat data are different, it's impossible to select scenes using the tool presented in the following sections."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:152
+msgid "You can use multiple options to select the best scenes for your mosaic. The most simple is to use every image available based on the date parameters. Click :guilabel:`Use all scenes` and all of the images will be integrated into the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:154
+msgid "Choose :guilabel:`Select scenes` and 3 new selection options will become available. SEPAL sorts the images available for each tile. Three :code:`Priority` options are available; choose the one that suits your analysis:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:156
+msgid ":guilabel:`Cloud free`: Prioritizes images with zero or few clouds."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:157
+msgid ":guilabel:`Target date`: Prioritizes images that match with the target date"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:158
+msgid ":guilabel:`Balanced`: Prioritizes images that maximize both cloud and target date."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:167
+msgid "Composite"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:171
+msgid "This step is optional. SEPAL provides the folowing options by default:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:173
+msgid "**Correction**: :guilabel:`SR`, :guilabel:`BRDF`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:174
+msgid "**Pixel filters**: No filters"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:175
+msgid "**Cloud detection**: :guilabel:`QA bands`, :guilabel:`Cloud score`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:176
+msgid "**Cloud masking**: :guilabel:`Moderate`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:177
+msgid "**Cloud buffering**: :guilabel:`None`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:178
+msgid "**Snow masking**: :guilabel:`On`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:179
+msgid "**Composing method**: :guilabel:`Medoid`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:181
+msgid "To create a mosaic, you will need to provide SEPAL with the compositing method to create the final image. Here is a description of all of the possible compositing options available."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:188
+msgid "Corrections"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:190
+msgid "This will apply corrections on the stacked pixels to improve the quality of the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:192
+msgid ":guilabel:`SR`: Surface reflectance improves comparison between multiple images over the same region by accounting for atmospheric effects such as aerosol scattering and thin clouds, which can help in the detection and characterization of Earth surface change. Top of atmosphere images are used if not selected."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:193
+msgid ":guilabel:`BRDF`: Uses a bidirectional reflectance distribution function model to characterize surface reflectance anisotropy. For a given land area, the BRDF is established based on selected multiangular observations of surface reflectance."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:194
+msgid ":guilabel:`Calibrate`:  Calibrates Sentinel and Landsat data to make them compatible."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:198
+msgid "This option is only available if Landsat and Sentinel data are mixed, as well as BRDF and SR corrections are disabled."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:201
+msgid "Pixel filters"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:203
+msgid "Activating any of the filters will remove some pixels from the stack. Removing pixels improves the quality of the mosaic, as they are not taken into account in the median value computation."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:207
+msgid "Each filter is applied iteratively. For example, if the Normalized difference vegetation index (NDVI) is already filtering all pixels but one, there will be nothing left in the stack to be filtered by day of the year. Note as well that adding filters significantly increases the creation time of the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:210
+#, python-format
+msgid "**Shadow**: Filters the xx% darkest pixels of the stack."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:211
+#, python-format
+msgid "**Haze**: Computes a haze index and filter the xx% highest values."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:212
+#, python-format
+msgid "**NDVI**: Computes the NDVI and only keeps the xx% highest values."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:213
+#, python-format
+msgid "**Day of the year**: Computes the distance from target day in days and filters out the xx% farthest."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:216
+msgid "Cloud detection"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:218
+msgid "It refers to the algorithm used to detect clouds."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:220
+msgid ":guilabel:`QA bands`: Uses QA bands to identify clouds in Sentinel data."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:221
+msgid ":guilabel:`Cloud score`: Uses the computed cloud score to identify clouds in Landsat data."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:222
+msgid ":guilabel:`Pino 26`: Uses the Pino_26 algorithm to identify clouds (`D. Simonetti, 2021 <https://doi.org/10.1016/j.dib.2021.107488>`__)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:226
+msgid "This filter is only available for Sentinel exclusive source and when both :guilabel:`BRDF` and :guilabel:`SR` correction are disabled."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:229
+msgid "Cloud masking"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:231
+msgid "Controls how clouds will be masked based on the cloud detection algorithm selected."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:233
+msgid ":guilabel:`off`: Uses cloud-free pixels if possible, but doesn't mask areas without cloud-free pixels."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:234
+msgid ":guilabel:`moderate`: Relies only on image source QA bands for cloud masking. Moderate threshold is used."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:235
+msgid ":guilabel:`aggressive`: Relies on image source QA bands and a cloud scoring algorithm for cloud masking with an aggressive threshold. This will probably mask out some built-up areas and other bright features."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:238
+msgid "Cloud buffering"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:240
+msgid "When pixels are identified as clouds, SEPAL can remove pixels in a small buffer around it to prevent hazy pixels at the borders of clouds to be included in the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:244
+msgid "Buffering is done on the pixel level, so using this option will significantly increase the creation time of the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:246
+msgid ":guilabel:`none`: Doesn't use cloud buffering"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:247
+msgid ":guilabel:`moderate`: Masks an additional **120 m** around each larger cloud."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:248
+msgid ":guilabel:`aggressive`: Masks an additional **600 m** around each larger cloud."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:251
+msgid "Snow masking"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:253
+msgid "Define how snowy pixels will be masked."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:255
+msgid ":guilabel:`on`: Masks snow. This tends to leave some pixels with shadowy snow."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:256
+msgid ":guilabel:`off`: Doesn't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:259
+msgid "Composing method"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:261
+msgid "After filtering the stack of pixels, SEPAL will compute the median value on the different bands of the image. The composing method will define how the final pixel value is extracted."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:263
+msgid ":guilabel:`Medoid`: Uses the closest pixel from the median value. As a real pixel from the stack, the final value will embed metadata (e.g. the date of observation)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:264
+msgid ":guilabel:`Median`: Uses the computed value of the median. If no pixel is matching this value, the pixel will not embed any metadata. It tends to produce smoother mosaics."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:267
+msgid "Analysis"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:269
+msgid "After selecting the parameters, you can start interacting with the scenes and begin the analysis. In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:272
+msgid ":btn:`<fas fa-magic>`: auto-select scenes"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:273
+msgid ":btn:`<fas fa-trash>`: clear selected scenes"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:274
+msgid ":btn:`<fas fa-cloud-download-alt>`: retrieve mosaic"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:282
+msgid "If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fas fa-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot). If you can't see the image scene area, you probably have selected a small area of interest. Zoom out on the map and you will see the number of available images in the circles."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:286
+msgid "Select Scenes"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:288
+msgid "To create a mosaic, you need to select the scenes that will be used to compute each pixel value of the mosaic. To do so, SEPAL provides a user-friendly interface that will guide you through the selection process. You don't have to select the stack for every pixel; instead, SEPAL will clip the AOI in smaller pieces called **Tiles**. These tiles correspond to the native tiling system of your dataset and are displayed on the map with circled numbers in their centroid. Each number corresponds to the number of scenes available to build the mosaic tile; hover over these circles to see the tile boundaries appear."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:292
+msgid "Landsat and Sentinel datasets have a different grid system, which is why the selection process cannot be used if you have selected both of these datasets. If you have an idea related to the user interface (UI) that could make them work together, please let us know in our `issue tracker <https://github.com/openforis/sepal>`__. We would be happy to implement it."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:295
+msgid "Auto-select scene"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:297
+msgid "Clicking on the :icon:`fas fa-magic` tab will open the auto-selection panel. Move the sliders to select the minimum and the maximum number of scenes SEPAL should select in a tile. Then, click on the :guilabel:`Validate` button to apply the auto-select method. SEPAL will use the priority defined in the :guilabel:`SCN` tab to order the scene and collect the optimal number for your request."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:303
+msgid "The result is never perfect but can be used as a starting point for the manual selection of scenes."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:310
+msgid "Clear all scene"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:312
+msgid "If at least one scene is selected, the :icon:`fas fa-trash` tab will be available. Click on it to open the clear panel. Click on :guilabel:`Clear scenes` and all the scenes selected, either manually or automatically, will be removed."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:320
+msgid "Manual selection"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:322
+msgid "To open the scene selection menu, hover over a tile circled-number and click on it (1). The window will be divided into two sections:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:324
+msgid "Available scene (2): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in :guilabel:`SCN` tab."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:325
+msgid "Selected scenes (3): The scenes that are currently selected."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:331
+msgid "Each thumbnail represents a scene of the tile stack. You have the option to include them in the mosaic. The scenes located on the left side are the **available scenes**; the **available scene** is on the right side. In both cases, the following information can be found on the thumbnail:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:333
+msgid "A small preview of the scene in the *red, blue, green* band combination."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:334
+msgid "The exact date in yyyy-mm-dd of the scene."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:335
+msgid "The satellite name :icon:`fas fa-satellite-dish`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:336
+msgid "The cloud coverage of the scene in % and its position in the stack values :icon:`fas fa-cloud`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:337
+msgid "The distance from target day in days within the season and its position in the stack values :icon:`fas fa-calendar-check`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:349
+msgid "You can decide to move the scene to the **Selected** area by clicking :icon:`fa fa-plus`:guilabel:`Add` or moving it back to **Available** by clicking :icon:`fa fa-minus` :guilabel:`Remove`."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:363
+msgid "Scenes are moved from one side to the other so they are not duplicated and cannot be selected twice. Be careful if your connection is slow; wait for the thumbnail to move before clicking again (if you click too fast, you could select 2 different images instead of one)."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:365
+msgid "Once you are happy with your selection, click the :guilabel:`Apply` button to close the window and use the selected scenes to compute the mosaic on this tile. When the window is closed, SEPAL resets the rendering of all the tiles."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:368
+msgid "Retrieve"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:370
+msgid "Clicking on the :icon:`fas fa-cloud-download-alt` tab will open the retrieve panel where the you can select the exportation parameters."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:378
+msgid "Bands"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:380
+msgid "You need to select the band(s) to export with the mosaic. There is no maximum number of bands, but exporting useless bands will only increase the size and time of the output. See the :doc:`../feature/bands` to discover the full list of the SEPAL available bands."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:384
+msgid "There is no fixed rule to the band selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of downstream analysis."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:387
+msgid "Dates"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:389
+msgid ":guilabel:`dayofyear`: The Julian calendar date (day of the year)"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:390
+msgid ":guilabel:`dayfromtarget`: The distance to the target date within the season in days."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:393
+msgid "Scale"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:395
+msgid "You can set a custom scale for exportation by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output, just its size, so keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m.)"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:398
+msgid "Destination"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:400
+msgid "You can export the image to the :guilabel:`SEPAL workspace` or to the ;guilabel:`Google Earth Engine Asset` folder. The same image will be exported to both; however, for the former, you will find it in :code:`.tif` format in the :code:`Downloads` folder; for the latter, the image will be exported to your GEE account asset list."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:404
+msgid "If :guilabel:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:406
+msgid "Click on :guilabel:`Apply` to start the download process."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:409
+msgid "Exportation status"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:411
+msgid "Going to the task tab (lower-left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:415
+msgid "This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without stopping the process."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:417
+msgid "When the task is finished, the frame will be displayed in green, as shown on the second image."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:430
+msgid "Access"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:432
+msgid "Once the download process is complete, you can access the data in your SEPAL folders. The data will be stored in the :code:`Downloads` folder using the following format:"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:447
+msgid "Understanding how images are stored in an optical mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:449
+msgid "The data are stored in a folder using the name of the optical mosaic as it was set in the first section of this documentation. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file."
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:453
+msgid "The full folder with a consistent tree folder is required to read the `.vrt`"
+msgstr ""
+
+#: ../../source/cookbook/optical_mosaic.rst:457
+msgid "Now that you have downloaded the MO to your SEPAL and/or GEE account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
+msgstr ""
+

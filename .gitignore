@@ -130,8 +130,10 @@ dmypy.json
 .pyre/
 
 # module documentation files
-docs/source/modules/dwn/*
 docs/source/modules/*.rst
+docs/source/_locale/en/LC_MESSAGES/modules
+docs/source/_locale/fr/LC_MESSAGES/modules
+docs/source/_locale/es/LC_MESSAGES/modules
 
 # visual studio code
 .vscode/

@@ -1,42 +1,42 @@
 Use Google Earth Engine (GEE) with SEPAL
-==================================
+========================================
+
+Sign up for a GEE account and connect with SEPAL
+------------------------------------------------
+
+In this article, you can learn how to:
+
+-  Set up your GEE account
+-  Connect your GEE account and SEPAL account
+-  Upload files to GEE
+-  Use GEE assets in SEPAL
 
 GEE and SEPAL
 -------------
 
-SEPAL is a free, open-source cloud-computing platform that gives you access to geospatial data resources (either via the GEE data catalogue or user-provided data) and powerful computing resources to process these data to produce useful information.
+SEPAL is closely linked to GEE, a Google-powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE application programming interface (API).  
 
-SEPAL currently "resides" in the Amazon Web Services (AWS) ecosystem and makes use of AWS cloud computers, or instances, that can be used to process data using pre-programmed SEPAL applications or your own code (in R, Python or in the terminal). SEPAL is also closely linked to GEE, a Google-powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE Application Programming Interface (API).  
+All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fab fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
 
-All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL applications list, the applications tagged with the Google logo (:icon:`fab fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations. 
+SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked.
 
-SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials. However, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (e.g. authentication will not work) if your GEE and SEPAL accounts are unlinked.
+Set up your GEE account
+-----------------------
 
-.. tip:
-
-   See linking SEPAL and GEE accounts in the previous section for more information.
-
-To get the best of SEPAL, we highly suggest that all users open their own GEE account and link it to SEPAL. 
-
-In this section of SEPAL documentation, we will guide you through the full process of creating a GEE account and linking it to SEPAL. 
-
-Create a GEE account
---------------------
-
-Sign-up
+Sign up
 ^^^^^^^
 
-Signing up for GEE is required to properly export images and data products from SEPAL as GEE assets or SEPAL applications using GEE. 
+A GEE account is required to properly export images and data products as GEE assets or SEPAL applications using GEE from the SEPAL interface. A Google account is required to sign up for GEE.
 
-You will need to have a Google account to sign up. If you don't have one already, you can set one up here: https://accounts.google.com/servicelogin. 
+To sign up for a Google account, go to https://accounts.google.com/servicelogin.
 
-To request a GEE account, please visit https://earthengine.google.com/new_signup/.
+To request a GEE account, go to https://earthengine.google.com/new_signup/.
 
 .. thumbnail:: ../_images/setup/register/gee_landing.png
     :title: Request access to google earth engine.
     :align: center
 
-Once you have a GEE account, you can access the platform code editor here: https://code.earthengine.google.com/.
+Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**.
 
 .. thumbnail:: ../_images/setup/register/gee_code.png
     :title: GEE code editor
@@ -44,7 +44,7 @@ Once you have a GEE account, you can access the platform code editor here: https
 
 .. tip::
 
-    When you first connect to the code editor, it is strongly advised to take the short tour provided in the interface. 
+    When you first connect to the **Earth Engine Code Editor**, it is strongly advised to take the short tour provided in the interface. 
 
     .. thumbnail:: ../_images/setup/gee/editor_tour.png
         :title: GEE code editor tour
@@ -53,50 +53,50 @@ Once you have a GEE account, you can access the platform code editor here: https
 
 .. tip::
 
-    If you experience trouble while linking your Google account to GEE, we encourage you to contact the SEPAL team for support.
+    If you experience trouble while linking your Google account to GEE, contact the SEPAL team at SEPAL@fao.org.
     
 Initialize the **Home** folder
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To use your GEE account in SEPAL, you need to  set up the **Home** folder, where all your assets (vectors, rasters, collections, mosaics, classifications, etc.) will be exported. Failing to set up this folder will prevent you from successfully executing export requests.
+To use your GEE account in the SEPAL interface, you need to set up the **Home** folder, where all of your **Assets** (i.e. **Vectors**, **Rasters**, **Collections**, **Mosaics** and **Classifications**) will be exported. Failing to set up this folder will prevent you from successfully executing export requests.
 
-To set up the **Home** folder, go to the GEE Code Editor.
+1. To set up the **Home** folder, go to the **Earth Engine Code Editor**.
 
 .. thumbnail:: ../_images/setup/gee/gee_code.png
     :title: GEE code editor
     :align: center
 
-The webpage is divided into 3 zones and a map:
+The page is divided into three zones and a map:
 
-1.  **Zone 1**: Provides you with access to your GEE account information, which is divided into three panels:
+**Zone 1**: Provides you with access to your GEE account information, which is divided into three panes:
     
-    -   **Assets**: Displays all of the assets in your account. 
+    -   **Assets**: Displays all of the assets in your account.
     -   **Scripts**: Displays all of the scripts available with your account (shared and written).
     -   **Doc**: Displays documentation of the JS GEE API, if you need to code in this editor.
 
-2.  **Zone 2**: Allows advanced users to code their own scripts using the GEE JS API.
+**Zone 2**: Allows advanced users to code their own scripts using the GEE JS API.
 
-3.  **Zone 3**: Displays information about current processes, which is divided into 3 panels:
+**Zone 3**: Displays information about current processes, which is divided into three panes:
 
     -   **Inspector**: Transforms the arrow of the mouse into a pointer, allowing you to click anywhere on the map to view information about what you are displaying.
-    -   **Tasks**: Displays all of the tasks of your account (running, finished or failed). 
+    -   **Tasks**: Displays all of the tasks of your account, as well as their statuses (i.e. *running*, *finished* or *failed*). 
     -   **Console**: Displays the console panel of running scripts.
 
-Go to **Zone 1** and select the **Assets** panel. Click on the red :code:`Create home folder` button.
+2. Go to **Zone 1** > Select **Assets** > Select **Create home folder**.
 
 .. thumbnail:: ../_images/setup/gee/create_home.png
     :title: gee asset creation
     :align: center
     :width: 60%
 
-This opens a pop-up menu to select the name of the folder, which can only be set once and never changed. If you're not satisfied with the suggested name, you can create your own (the only limitation is that you can not use spaces or special characters).
+3. Select the name of the folder (Note: This can only be set once and never changed; if you're not satisfied with the suggested name, you can create your own, as long as there are no spaces or special characters).
 
 .. thumbnail:: ../_images/setup/gee/home_pop_up.png
     :title: GEE popup for Home creation
     :align: center
     :width: 50%
 
-When you return to your list of assets (**Zone 1** panel "**Assets**") you should see the name you provided as the first folder at the root of the asset tree. In this example, we used "galatheetest":
+4. When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the asset tree. In this example, we used *galatheetest*:
 
 .. thumbnail:: ../_images/setup/gee/asset_tree.png
     :title: asset tree
@@ -110,101 +110,106 @@ When you return to your list of assets (**Zone 1** panel "**Assets**") you shoul
 Connection between GEE and SEPAL
 --------------------------------
 
-SEPAL can work without being connected to your GEE account, but you will miss numerous opportunities to interact with the platform. In this section, the connection procedure between GEE and SEPAL will be presented. 
+SEPAL can work without being connected to your GEE account, but you will miss numerous opportunities to leverage the platform's potential. 
+
+In this section, the connection procedure between GEE and SEPAL will be presented. 
 
 Connection
 ^^^^^^^^^^
 
-The first step is to navigate to the SEPAL landing page (`sepal.io <https://sepal.io>`__) and sign in. 
+1. Go to `sepal.io <https://sepal.io>`__ and sign in.
 
-On the following page, click on your **Username** on the lower-right side of the window (in red below) (:code:`prambaud`).
+2. Select your **Username** in the lower-right side of the window (e.g. (:code:`prambaud`) in red in the image below).
 
 .. thumbnail:: ../_images/setup/gee/sepal_landing.png
     :title: SEPAL landing
     :align: center
 
-By clicking on the username, a **User Details** pop-up will appear, where you can modify your personal information. On the upper-right side of this pop-up, next to the Google logo (**G**), you will see the status of the connection between your SEPAL and GEE accounts (Note: If you have not connected your accounts, it will read "Disconnected").
+3. Next to the Google logo (:icon:`fab fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*).
 
 .. thumbnail:: ../_images/setup/gee/user_interface_disconnected.png
     :title: SEPAL disconnected
     :align: center
     :width: 40%
 
-Click on :code:`Google account` in the lower section of the pop-up. Another pop-up will then appear (Note: If your GEE account is disconnected, you will see text that reminds you what functionalities are unavailable without a custom GEE account).
+4. Select **Google account** in the lower section of the pop-up window (Note: if your GEE account is disconnected, you will see text that reminds you what functionalities are unavailable without a custom GEE account).
 
 .. thumbnail:: ../_images/setup/gee/gee_disconnected.png
     :title: connection pop-up
     :align: center
     :width: 40%
 
-Click on :code:`Connect your Google account`. In the list provided, select the account associated with GEE: 
+5. Select **Connect your Google account** in the pop-up window that appears. Choose the account associated with GEE in the list.
 
 .. thumbnail:: ../_images/setup/gee/gee_credential.png
 
 .. Note::
 
-    You will see a message requesting your permission to authorize SEPAL's access to your Google Drive, as well as your **Asset** and **Home** folders to export recipes and module results.
+    You will see a message requesting your permission to authorize SEPAL's access to your Google Drive, as well as your **Assets** and **Home** folders to export recipes and module results.
 
-After the connection process is complete, you will be redirected to the SEPAL website. If you click on the "User interface" button again, the pop-up window will display "Connected" in green on the upper-right side.
+6. After the connection process is complete, you will be redirected to the SEPAL website. If you select **User interface** again, the pop-up window will display *Connected* in green in the upper-right.
 
 .. thumbnail:: ../_images/setup/gee/user_interface_connected.png
     :title: SEPAL and GEE connected
     :align: center
     :width: 50%
 
-
 Disconnection
 ^^^^^^^^^^^^^
 
 If you want to change accounts or remove the link between your SEPAL and GEE accounts, you can disconnect SEPAL from GEE at any time. 
 
-Return to the user interface and click on :code:`Google account`. You should see the following window: 
+1. Return to the user interface and select **Google account**. You should see the following window:
 
 .. thumbnail:: ../_images/setup/gee/gee_connected.png
     :title: gee connected
     :align: center
     :width: 40%
 
-Simply click on the :code:`Disconnect your Google account` button and your accounts will no longer be linked. 
+2. Select **Disconnect your Google account**.
 
-Upload files to GEE 
+Upload files to GEE
 -------------------
 
 When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters (:code:`ee.Image`) or vectors (:code:`ee.FeatureCollection`) to the core GEE-based algorithm. These assets can be either public assets that someone shared with you or assets that you created yourself and would like to use.
 
 .. tip::
 
-    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the GEE code interface. See the :doc:`../modules/dwn/vector_manager` module documentation for more details.
+    For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the **Earth Engine Code Editor** (see the :doc:`../modules/dwn/vector_manager` module documentation for more details).
 
-Go to **Assets** in the **Zone 1** panel on the Code Editor page:
+1. Go to **Assets** in the **Zone 1** panel on the **Earth Engine Code Editor** page:
 
 .. thumbnail:: ../_images/setup/gee/gee_asset_list.png
     :title: GEE asset list
     :align: center
     :width: 50%
 
-
-Click on the :code:`New` button. You will have several choices that will be described in the following sections.
+2. Select **New**. You will have several choices, including raster, shape, and table, which will be described in the following sections.
 
 Raster
 ^^^^^^
 
-If you need to upload a raster image use the :code:`Image` button. In the pop-up window that appears, select the file you want to upload from your computer. It can be in any of the following formats: :code:`.tiff`, :code:`.tif`, :code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`. You can then change the name of your asset in the next textfield.
+If you need to upload a raster image: 
+
+1. Select **Image**. 
+2. In the pop-up window that appears, select the file you want to upload from your computer (Note: compatible formats include :code:`.tiff`, :code:`.tif`, :code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`; the name of your asset can be changed in the next text field).
 
 .. tip:: 
 
-    By default the asset will be named after the tif base-name.
+    By default, the asset will be named after the base-name.
 
 .. thumbnail:: ../_images/setup/gee/upload_image.png
     :title: upload image
     :align: center
     :width: 50%
 
-
 Shape
 ^^^^^
 
-If you need to upload a shape as a :code:`ee.FeatureCollection`, click on the :code:`Shape upload` button. In the pop-up window that appears, select the file you want to upload from your computer. It can be any shape file in the following formats: :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`. Keep in mind that if you didn't compress the file, a :code:`.shp` alone is not sufficient and must be accompanied with other files describing the shape as in the following example: 
+If you need to upload a shape as a :code:`ee.FeatureCollection`: 
+
+1. Select **Shape upload**. 
+2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`; if you didn't compress the file, a :code:`.shp` alone is not sufficient and must be accompanied with other files describing the shape as in the example in the image below).
 
 .. thumbnail:: ../_images/setup/gee/upload_shape.png
     :title: upload shp
@@ -214,20 +219,22 @@ If you need to upload a shape as a :code:`ee.FeatureCollection`, click on the :c
 Table
 ^^^^^
 
-If you need to upload a table as a :code:`ee.FeatureCollection`, click on the :code:`csv file upload` button. In the pop-up window that appears, select the file you want to upload from your computer. It can be any table in the following formats: :code:`.csv`, :code:`.json`.
+If you need to upload a table as a :code:`ee.FeatureCollection`:
+
+1. Select **csv file upload**. 
+2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`).
 
 .. thumbnail:: ../_images/setup/gee/upload_csv.png
     :title: upload csv
     :align: center
     :width: 50%
 
-
-Use my assets
-^^^^^^^^^^^^^
+Use your GEE assets in SEPAL
+----------------------------
 
 Once you've uploaded your assets, you can use them in SEPAL by copying and pasting the name of each anywhere SEPAL asks for an asset name.
 
-To find the asset name, go back to **Assets** in the **Zone 1** panel and click on any asset in the list. The following pop-up window will appear: 
+To find the asset name, go back to **Assets** in the **Zone 1** pane and click on any asset in the list. The following pop-up window will appear: 
 
 .. thumbnail:: ../_images/setup/gee/asset_popup.png
     :title: asset popup
@@ -235,10 +242,7 @@ To find the asset name, go back to **Assets** in the **Zone 1** panel and click 
     :width: 80%
 
 
-If you click on the :code:`Copy link` button, the link will be copied to the clipboard and you can paste it into SEPAL. 
+If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. Alternatively, you can select **Share** in the pop-up window and choose between the different sharing options.
 
-If you want to share this asset with other people, you can send them this link (the one you just copied to the clipboard) and authorize them to use it. Alternatively, you can click on the :code:`Share` button in the pop-up and choose between the different sharing options. 
 
-.. spelling:word-list::
-
-    galatheetest
+For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
