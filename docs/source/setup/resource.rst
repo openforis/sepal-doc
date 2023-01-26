@@ -100,4 +100,4 @@ Once validated, the request is sent to the SEPAL team, who will take measures in
    :group: setup_resource
    
    
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
