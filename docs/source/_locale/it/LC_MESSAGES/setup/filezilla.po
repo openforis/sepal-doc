@@ -1,22 +1,18 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 16:22\n"
+"POT-Creation-Date: 2023-01-27 01:04+0000\n"
+"PO-Revision-Date: 2023-01-21 16:22+0000\n"
 "Last-Translator: \n"
+"Language: it_IT\n"
 "Language-Team: Italian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: it\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/filezilla.po\n"
-"X-Crowdin-File-ID: 89\n"
-"Language: it_IT\n"
 
 #: ../../source/setup/filezilla.rst:2
 msgid "Exchange files with SEPAL"
@@ -31,7 +27,9 @@ msgid "In this article, you can learn how to exchange files with SEPAL using:"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:9
-msgid "Built-in tools, including: -   Jupytyr Notebook -   Jupityrlab -   RStudio -   SEPAL file explorer"
+msgid ""
+"Built-in tools, including: -   Jupytyr Notebook -   Jupityrlab -   "
+"RStudio -   SEPAL file explorer"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:14
@@ -43,11 +41,17 @@ msgid "Built-in tools"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:19
-msgid "To exchange files with SEPAL, there are several built-in tools you can use."
+msgid ""
+"To exchange files with SEPAL, there are several built-in tools you can "
+"use."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:23
-msgid "Since SEPAL's built-in tools for uploading and downloading are limited, large amounts of data should be uploaded or downloaded using an FTP solution, such as FileZilla® (for more information, see the section \"FTP solution\" below)."
+msgid ""
+"Since SEPAL's built-in tools for uploading and downloading are limited, "
+"large amounts of data should be uploaded or downloaded using an FTP "
+"solution, such as FileZilla® (for more information, see the section \"FTP"
+" solution\" below)."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:26
@@ -55,7 +59,11 @@ msgid "Jupyter Notebook"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:28
-msgid "In the SEPAL **Application** dashboard, open a new **Jupyter Notebook app**. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared."
+msgid ""
+"In the SEPAL **Application** dashboard, open a new **Jupyter Notebook "
+"app**. The **Notebook** dashboard enables you to access files and "
+"directories on your system, which can be opened, created, deleted, "
+"renamed, downloaded, copied and shared."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:30
@@ -67,7 +75,9 @@ msgid "Select **Download** to download a selected file to your computer."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:36
-msgid "**Download** is only available when you click on a single file (Note: folders can not be downloaded)."
+msgid ""
+"**Download** is only available when you click on a single file (Note: "
+"folders can not be downloaded)."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:41
@@ -79,19 +89,29 @@ msgid "In the SEPAL interface **Dashboard**, open a new **Jupyterlab app**."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:45
-msgid "Use the **File browser** and **File menu** to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared."
+msgid ""
+"Use the **File browser** and **File menu** to access files and "
+"directories on your system, which can be opened, created, deleted, "
+"renamed, downloaded, copied and shared."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:47
-msgid "Upload files to the **File browser** directory by dragging and dropping, or by selecting **Upload files** at the top of the **File browser**:"
+msgid ""
+"Upload files to the **File browser** directory by dragging and dropping, "
+"or by selecting **Upload files** at the top of the **File browser**:"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:51
-msgid "Any file in Jupyterlab can be downloaded by right-clicking its name in the **File browser** and selecting **Download** from the context menu:"
+msgid ""
+"Any file in Jupyterlab can be downloaded by right-clicking its name in "
+"the **File browser** and selecting **Download** from the context menu:"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:57
-msgid "More information about the Jupyterlab interface can be found in `Jupyterlab documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__."
+msgid ""
+"More information about the Jupyterlab interface can be found in "
+"`Jupyterlab documentation "
+"<https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:60
@@ -103,11 +123,16 @@ msgid "In the SEPAL interface **Dashboard**, open a new **RStudio app**."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:64
-msgid "Use the **File menu** (in red in the yellow image below) to access files and directories on your system, which can be opened, created, deleted, renamed and copied."
+msgid ""
+"Use the **File menu** (in red in the yellow image below) to access files "
+"and directories on your system, which can be opened, created, deleted, "
+"renamed and copied."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:68
-msgid "Upload files from your computer by selecting **Upload** in the upper-left of the red rectangle."
+msgid ""
+"Upload files from your computer by selecting **Upload** in the upper-left"
+" of the red rectangle."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:71
@@ -115,15 +140,21 @@ msgid "SEPAL file explorer"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:73
-msgid "In the SEPAL **File explorer**, you will be able to access files and directories on your system, which can be deleted and downloaded."
+msgid ""
+"In the SEPAL **File explorer**, you will be able to access files and "
+"directories on your system, which can be deleted and downloaded."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:75
-msgid "After selecting a single file, select **Download** to download the file to your local folder."
+msgid ""
+"After selecting a single file, select **Download** to download the file "
+"to your local folder."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:81
-msgid "You cannot download multiple files or folders directly through this interface."
+msgid ""
+"You cannot download multiple files or folders directly through this "
+"interface."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:84
@@ -131,15 +162,23 @@ msgid "FTP solution"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:86
-msgid "SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP)."
+msgid ""
+"SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer"
+" Protocol (FTP)."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:88
-msgid "If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example."
+msgid ""
+"If you don't know what an FTP solution is and/or don't have an FTP "
+"solution installed on your computer, you can learn more by reading this "
+"section, where FileZilla is used as an example."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:92
-msgid "An FTP client is software that allows you to connect to an FTP server in order to exchange files. Once connected, you can upload, download, copy or delete files on either the remote computer or your local computer."
+msgid ""
+"An FTP client is software that allows you to connect to an FTP server in "
+"order to exchange files. Once connected, you can upload, download, copy "
+"or delete files on either the remote computer or your local computer."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:95
@@ -147,15 +186,23 @@ msgid "FileZilla®"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:97
-msgid "FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
+msgid ""
+"FileZilla® is a free, open-source FTP solution distributed free of charge"
+" under the terms of the `GNU General Public License "
+"<https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:99
-msgid "The FileZilla Client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL."
+msgid ""
+"The FileZilla Client not only supports FTP, but also FTP over Transport "
+"Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), "
+"both used in SEPAL."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:103
-msgid "To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`_."
+msgid ""
+"To download the software, go to `<https://FileZilla-"
+"project.org/download.php?type=client>`_."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:106
@@ -167,7 +214,9 @@ msgid "Accessing files in SEPAL is easy using FileZilla."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:110
-msgid "To use FileZilla, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** >> **New Site**."
+msgid ""
+"To use FileZilla, open the application and connect to the SEPAL server by"
+" selecting **Menu** > **File** > **Site Manager** >> **New Site**."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:112
@@ -199,7 +248,9 @@ msgid "**Password:** <your SEPAL password>"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:123
-msgid "For **User** and **Password**, enter the credentials you use to connect to the platform."
+msgid ""
+"For **User** and **Password**, enter the credentials you use to connect "
+"to the platform."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:127
@@ -215,18 +266,42 @@ msgid "Use the FTP client to interact with SEPAL"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:134
-msgid "Familiarize yourself with FileZilla's window layout by following this overview:"
+msgid ""
+"Familiarize yourself with FileZilla's window layout by following this "
+"overview:"
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:136
-msgid "Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3) displays messages related to transfers and connection. Below, you can find the file listings. The left column (**Local pane**, 4) displays the local files and directories (e.g. content on the PC you're using FileZilla on). The right column (**Remote pane**, 5) displays the files and directories on the server you are connected to. Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom. You can easily navigate either of the trees and lists by clicking around, like you would in any other file manager. In the lower section of the window, the **Transfer queue** (6) lists the status of to-be-tranferred or already transfered files."
+msgid ""
+"Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message "
+"log** (3) displays messages related to transfers and connection. Below, "
+"you can find the file listings. The left column (**Local pane**, 4) "
+"displays the local files and directories (e.g. content on the PC you're "
+"using FileZilla on). The right column (**Remote pane**, 5) displays the "
+"files and directories on the server you are connected to. Both columns "
+"have a directory tree at the top and a detailed listing of the currently "
+"selected directory's contents at the bottom. You can easily navigate "
+"either of the trees and lists by clicking around, like you would in any "
+"other file manager. In the lower section of the window, the **Transfer "
+"queue** (6) lists the status of to-be-tranferred or already transfered "
+"files."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:142
-msgid "For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
+msgid ""
+"For more information on using FileZilla, go to their `wiki page "
+"<https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:145
-msgid "For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org."
+msgid ""
+"For support, :doc:`ask the community <https://groups.google.com/g/sepal-"
+"users>`."
 msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community <>`"
+#~ " or contact the SEPAL team at "
+#~ "SEPAL@fao.org."
+#~ msgstr ""
 

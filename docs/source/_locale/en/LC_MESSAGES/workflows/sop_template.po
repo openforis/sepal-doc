@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:30+0100\n"
+"POT-Creation-Date: 2023-01-27 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,17 @@ msgid ""
 "estimation for REDD+"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:10
-msgid "1. Background"
+#: ../../source/workflows/sop_template.rst:5
+msgid ""
+"Reduce uncertainty, improve consistency and ensure a successful high-"
+"quality analysis with SOPs"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:12
+msgid "1. Background"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:14
 msgid ""
 "This tutorial will teach you how to create Standard Operating Procedures "
 "(SOPs) for sample-based area estimation tasks using templates that are "
@@ -35,19 +41,22 @@ msgid ""
 "to create SOPs for other tasks."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:14
+#: ../../source/workflows/sop_template.rst:16
 msgid ""
 "SOPs are used in this context as guidance documents, operationalizing "
 "required processes for sample-based area estimation, which are used to "
 "estimate greenhouse gas emissions and emission reductions in a REDD+ "
-"context. They include step-by-step procedures that should be unambiguous,"
-" so that they can be easily repeated, even if successive assessments are "
+"context (REDD+ refers to Reducing Emissions from Deforestation and Forest"
+" Degradation, and the role of conservation, sustainable management of "
+"forests and enhancement of forest carbon stocks in developing countries)."
+" They include step-by-step procedures that should be unambiguous, so that"
+" they can be easily repeated, even if successive assessments are "
 "undertaken by persons unfamiliar with the process. These documents should"
 " be reviewed periodically and regularly updated with any additions or "
-"changes to the methods; their use should be reinforced."
+"changes to the methods, and their use should be reinforced."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:16
+#: ../../source/workflows/sop_template.rst:18
 msgid ""
 "SOPs are integral to a successful high-quality analysis, as their use "
 "ensures consistency. They are especially important for reducing "
@@ -60,83 +69,87 @@ msgid ""
 "their rigor and that they were applied properly."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:18
+#: ../../source/workflows/sop_template.rst:20
 msgid "Benefits of a well-written and utilized SOP include:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:20
+#: ../../source/workflows/sop_template.rst:22
 msgid "defensibility of the methods;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:21
+#: ../../source/workflows/sop_template.rst:23
 msgid "credibility, especially in compliance with requirements;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:22
+#: ../../source/workflows/sop_template.rst:24
 msgid "easier comparability with similar entities’ procedures;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:23
+#: ../../source/workflows/sop_template.rst:25
 msgid "consistency of methodology and thus higher quality data;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:24
+#: ../../source/workflows/sop_template.rst:26
 msgid "reduction of effort needed to carry out the procedure;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:25
+#: ../../source/workflows/sop_template.rst:27
 msgid "reduction of systematic errors; and"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:26
+#: ../../source/workflows/sop_template.rst:28
 msgid "reduction of uncertainty in data."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:28
+#: ../../source/workflows/sop_template.rst:30
 msgid "A brief YouTube video of the process can be watched below:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:35
+#: ../../source/workflows/sop_template.rst:37
 msgid "2. Learning objectives"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:37
+#: ../../source/workflows/sop_template.rst:38
+msgid "By the end of this article, you will be able to:"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:40
 msgid "determine which SOPs are necessary for your specific context;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:38
+#: ../../source/workflows/sop_template.rst:41
 msgid ""
-"introduce the Food and Agriculture Organization of the United Nations "
-"(FAO) SOP templates; and"
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:39
-msgid "create effective SOPs tailored to your requirements."
+"understand SOP templates from the Food and Agriculture Organization of "
+"the United Nations (FAO); and"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:42
+msgid "create effective SOPs tailored to your requirements."
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:45
 msgid "2.1 Prerequisites"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:44
-msgid "Internet connection"
+#: ../../source/workflows/sop_template.rst:47
+msgid "internet connection"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:48
+#: ../../source/workflows/sop_template.rst:50
 msgid "3. Tutorial: Creating area estimation SOPs using templates"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:51
+#: ../../source/workflows/sop_template.rst:53
 msgid "3.1 What SOPs do you need?"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:53
+#: ../../source/workflows/sop_template.rst:55
 msgid ""
 "Determining what SOPs you need to create to support your area estimation "
 "goals can be a daunting task."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:55
+#: ../../source/workflows/sop_template.rst:57
 msgid ""
 "This tutorial is focused on creating SOPs for sample-based area "
 "estimation. Area estimation answers questions concerning total areas of "
@@ -144,106 +157,106 @@ msgid ""
 "within administrative or physiographic boundaries. These estimates should"
 " be reported with their uncertainty. For example, if you ask the "
 "question, “How much deforestation occurred between 2010 and 2015?”, the "
-"answer could be generated with Area estimation (e.g. “50,000 ha (± 15,000"
+"answer could be generated with area estimation (e.g. “50,000 ha (± 15,000"
 " ha) of forest was lost.”)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:57
+#: ../../source/workflows/sop_template.rst:59
 msgid ""
 "SOPs describe the steps necessary to move from your question to arrive at"
 " an answer in a rigorous, standardized and reproducible manner."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:59
+#: ../../source/workflows/sop_template.rst:61
 msgid "Major steps in sample-based area estimation include:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:61
-#: ../../source/workflows/sop_template.rst:87
+#: ../../source/workflows/sop_template.rst:63
+#: ../../source/workflows/sop_template.rst:88
 msgid "Sampling design"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:62
-#: ../../source/workflows/sop_template.rst:88
-msgid "Response design"
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:63
-#: ../../source/workflows/sop_template.rst:89
-msgid "Data collection"
-msgstr ""
-
 #: ../../source/workflows/sop_template.rst:64
-msgid "Data cleaning"
+#: ../../source/workflows/sop_template.rst:89
+msgid "Response design"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:65
 #: ../../source/workflows/sop_template.rst:90
-msgid "Data analysis"
+msgid "Data collection"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:66
-msgid "Analysis reporting"
+msgid "Data cleaning"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:67
+#: ../../source/workflows/sop_template.rst:91
+msgid "Data analysis"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:68
+msgid "Analysis reporting"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:70
 msgid ""
 "Your approach (or your organization’s approach) to area estimation may "
 "include all or some of these steps, or you may have other major steps not"
 " included in this list."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:70
+#: ../../source/workflows/sop_template.rst:72
 msgid ""
 "In general, one SOP is created for each major step (e.g. sampling design "
 "and data collection would each get their own SOP)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:72
+#: ../../source/workflows/sop_template.rst:74
 msgid ""
 "If you have performed area estimation previously, consider your existing "
 "approach. Which steps does your approach include? Are there any steps not"
-" included above (e.g. a Data entry step)? Below, write down the major "
+" included above (e.g. a data entry step)? Below, write down the major "
 "steps that you need to create SOPs for."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:74
+#: ../../source/workflows/sop_template.rst:76
 msgid "Step 1:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:75
+#: ../../source/workflows/sop_template.rst:77
 msgid "Step 2:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:76
+#: ../../source/workflows/sop_template.rst:78
 msgid "Step 3:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:77
+#: ../../source/workflows/sop_template.rst:79
 msgid "Step 4:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:78
+#: ../../source/workflows/sop_template.rst:80
 msgid "Step 5:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:79
+#: ../../source/workflows/sop_template.rst:81
 msgid "Step 6:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:80
+#: ../../source/workflows/sop_template.rst:82
 msgid "Step 7:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:81
+#: ../../source/workflows/sop_template.rst:83
 msgid "Step 8:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:84
+#: ../../source/workflows/sop_template.rst:86
 msgid "We suggest you include at least the following SOPs:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:92
+#: ../../source/workflows/sop_template.rst:93
 msgid ""
 "If you are creating SOPs for a process other than area estimation, you "
 "will need to define your question and the major steps that will take you "
@@ -272,20 +285,20 @@ msgid ""
 "for your process or when your methods address unusual circumstances."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:104
+#: ../../source/workflows/sop_template.rst:103
 msgid "3.3 FAO’s templates for SOP creation"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:106
+#: ../../source/workflows/sop_template.rst:105
 msgid ""
 "The templates for stratified area estimate SOPs from the Forest Carbon "
 "Partnership Facility (FCPF) and FAO are hosted online on the `Forest "
-"Carbon Partnership Facility Website "
+"Carbon Partnership Facility website "
 "<https://www.forestcarbonpartnership.org/measurement-reporting-and-"
 "verification-mrv>`_."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:108
+#: ../../source/workflows/sop_template.rst:107
 msgid ""
 "These templates aim to further standardize the development of SOPs for "
 "entities looking to estimate and monitor their activity data and "
@@ -299,21 +312,21 @@ msgid ""
 "well."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:110
+#: ../../source/workflows/sop_template.rst:109
 msgid ""
 "Additional guidance for the development of sample-based area estimation "
 "SOPs is forthcoming and will be hosted on `OpenMRV <www.openmrv.org>`_. "
-"This guidance document will describe descriptions of the different "
-"options each country can choose for each field in FAO’s template SOPs, "
-"good practices and some examples and tools when available. The guidance "
+"This guidance document will provide descriptions of different options "
+"each country can choose for each field in FAO’s template SOPs, as well as"
+" good practices, examples, and tools, when available. The guidance "
 "document will complement the steps in this module."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:112
+#: ../../source/workflows/sop_template.rst:111
 msgid ""
-"The templates for the SOPs outline current best practices for all the "
+"The templates for the SOPs outline current best practices for all of the "
 "steps of sample-based area estimation. There is descriptive text with "
-"instructions for each stage which should be replaced with details from "
+"instructions for each stage that should be replaced with details from "
 "each user. Forms are also included, which are used to record the details "
 "about the application of the SOPs. Some of the templates have "
 "prerequisite requirements. Many of these can be generated through a pilot"
@@ -324,78 +337,78 @@ msgstr ""
 msgid "The link to view and download the SOP templates from FAO and FCPF."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:118
+#: ../../source/workflows/sop_template.rst:117
 msgid "**SOP Template descriptions:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:120
+#: ../../source/workflows/sop_template.rst:119
 msgid ""
-"Sampling design: Procedure and QA/QC for sampling design in land use / "
-"land cover change surveys."
+"**Sampling design**: Procedure and QA/QC for sampling design in land use "
+"/ land cover change surveys."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:122
+#: ../../source/workflows/sop_template.rst:121
 msgid "Use to develop protocols for establishing sample plots."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:123
+#: ../../source/workflows/sop_template.rst:122
 msgid ""
 "Prerequisites: If you select stratified sampling, you will need "
 "categorized maps for every monitoring period from which to stratify."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:125
+#: ../../source/workflows/sop_template.rst:124
 msgid ""
-"Response design: Assigning labels to samples and reducing interpreter "
-"bias."
+"**Response design**: Assigning labels to samples and reducing interpreter"
+" bias."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:127
+#: ../../source/workflows/sop_template.rst:126
 msgid ""
 "Use to develop protocols for creating an interpretation key, specifying a"
 " decision tree for interpretation, choosing a data collection software "
 "and survey design, and/or establishing how to reduce interpreter bias."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:128
+#: ../../source/workflows/sop_template.rst:127
 msgid "Prerequisites: None."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:130
-msgid "Data collection: Sample-based visual interpretation data collection."
+#: ../../source/workflows/sop_template.rst:129
+msgid "**Data collection**: Sample-based visual interpretation data collection."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:132
+#: ../../source/workflows/sop_template.rst:131
 msgid ""
 "Use to develop protocols for creating a classification manual, training "
 "your interpreters, establishing how samples will be divided or shared "
 "between interpreters, and/or deciding on your data archiving method."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:133
+#: ../../source/workflows/sop_template.rst:132
 msgid "Prerequisites: Completion of sampling and response designs."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:135
-msgid "Data analysis: Estimating areas and their uncertainties."
+#: ../../source/workflows/sop_template.rst:134
+msgid "**Data analysis**: Estimating areas and their uncertainties."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:137
+#: ../../source/workflows/sop_template.rst:136
 msgid ""
 "Use to develop protocols for building an error matrix or calculating "
 "strata weights, area proportions per class, area estimates, and/or "
 "standard errors and uncertainties."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:138
+#: ../../source/workflows/sop_template.rst:137
 msgid "Prerequisites: Completion of data collection."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:142
+#: ../../source/workflows/sop_template.rst:141
 msgid "3.4 How to adapt FAO’s templates for your SOP"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:144
+#: ../../source/workflows/sop_template.rst:143
 msgid ""
 "FAO’s SOP templates can be adapted to your own context and be used to "
 "inform your own SOPs. We understand that many organizations have "
@@ -406,14 +419,13 @@ msgid ""
 " were applying it, you found that there were updates needed."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:146
+#: ../../source/workflows/sop_template.rst:145
 msgid ""
-"If you have not previously worked through the sample-based area "
-"estimation process previously, you may need to work through these steps "
-"more than once."
+"If you have not previously completed the sample-based area estimation "
+"process, you may need to work through these steps more than once."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:149
+#: ../../source/workflows/sop_template.rst:148
 msgid ""
 "Throughout this section, we include tips, best practices, lessons "
 "learned, and advice from creators of existing REDD+ SOPs. We surveyed "
@@ -423,47 +435,47 @@ msgid ""
 "with those who created them."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:152
+#: ../../source/workflows/sop_template.rst:150
 msgid ""
-"Pick the SOP template that you will be using (see 3.3 above on when to "
-"use the different templates)."
+"Pick the SOP template that you will be using (see Section 3.3 above on "
+"when to use the different templates)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:154
-msgid "For this example, we will use the Sampling Design template."
+#: ../../source/workflows/sop_template.rst:152
+msgid "For this example, we will use the **Sampling Design** template."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:155
+#: ../../source/workflows/sop_template.rst:153
 msgid ""
 "`Download the template for the SOP and the blank form template. "
 "<https://www.forestcarbonpartnership.org/measurement-reporting-and-"
-"verification-mrv>`_"
+"verification-mrv>`_."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:157
+#: ../../source/workflows/sop_template.rst:155
 msgid "There are two key parts to FAO’s sample-based area estimate SOP templates."
 msgstr ""
 
+#: ../../source/workflows/sop_template.rst:157
+msgid ""
+"**Templates for Standard Operating Procedures (SOPs)**. These contain "
+"current best practices for completing a sample-based area estimation."
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:158
+msgid ""
+"**Blank form templates**. These are designed to create a record when the "
+"SOPs are applied. This will demonstrate that the process has been "
+"conducted as described in the SOPs."
+msgstr ""
+
 #: ../../source/workflows/sop_template.rst:159
-msgid ""
-"Templates for Standard Operating Procedures (SOPs). These contain current"
-" best practices for completing a sample-based area estimation."
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:160
-msgid ""
-"Blank form templates. These are designed to create a record when the SOPs"
-" are applied. This will demonstrate that the process has been conducted "
-"as described in the SOPs."
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:161
 msgid ""
 "These two templates are meant to be used in tandem. The SOP provides "
 "guidance for how to fill out the form templates."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:162
+#: ../../source/workflows/sop_template.rst:160
 msgid ""
 "When you have completed adapting the templates to your context, you will "
 "have two documents for each step: The SOPs themselves and the form to "
@@ -474,38 +486,38 @@ msgid ""
 "particular sampling design."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:164
+#: ../../source/workflows/sop_template.rst:162
 msgid ""
 "Read through the entire template, including the templates for SOPs and "
 "the blank form."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:166
+#: ../../source/workflows/sop_template.rst:164
 msgid ""
-"Note the gray text (e.g. in the Version and Date of Issue fields). This "
-"text is meant for you to fill in to adapt the template to your context. "
-"You may find it helpful to write down key information that you will need "
-"to gather to complete the SOP."
+"Note the gray text (e.g. in the **Version** and **Date of Issue** "
+"fields). This text is meant to help you to fill in the field and adapt "
+"the template to your context. You may find it helpful to write down key "
+"information that you will need to gather to complete the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:167
+#: ../../source/workflows/sop_template.rst:165
 msgid ""
 "Note all of the roles that will be required. These are referred to in "
-"either the black or gray text (e.g. “The Coordinator” is referred to in "
-"the Sampling Design SOP template under Procedure in Step 0). Write down "
-"who will perform these roles in your organization. The same person may "
-"fulfill multiple roles. Do you have additional staff that will assist? If"
-" so, include their names."
+"either the black or gray text (e.g. **The Coordinator** is referred to in"
+" the **Sampling Design SOP template** under **Procedure** in **Step 0**)."
+" Write down who will perform these roles in your organization. The same "
+"person may fulfill multiple roles. Do you have additional staff that will"
+" assist? If so, include their names."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:168
+#: ../../source/workflows/sop_template.rst:166
 msgid ""
 "The `SOP Instructions "
 "<https://www.forestcarbonpartnership.org/sites/fcp/files/Instructions.pdf>`_"
-" have role definitions under “Assigning roles and responsibilities.”"
+" have role definitions under **Assigning roles and responsibilities**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:169
+#: ../../source/workflows/sop_template.rst:167
 msgid ""
 "If the guidance for the development of sample-based area estimation SOPs "
 "is available on `OpenMRV <www.openmrv.org>`_`, please read the "
@@ -514,48 +526,49 @@ msgid ""
 "that you might find very useful."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:171
+#: ../../source/workflows/sop_template.rst:169
 msgid ""
 "Gather information about existing sampling design processes for area "
 "estimation."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:173
+#: ../../source/workflows/sop_template.rst:171
 msgid ""
-"Gather any previous written material that your organization has produced "
-"for sampling design, etc. This may include SOPs that you have used for "
-"sampling design previously (see also 3.6 Updating your SOPs below)."
+"Gather any previous written material or other resources that your "
+"organization has produced for sampling design. This may include SOPs that"
+" you have used for sampling design previously (see also Section 3.6 "
+"Updating your SOPs below)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:174
+#: ../../source/workflows/sop_template.rst:172
 msgid ""
 "Contact any members of your organization who have previously completed "
 "sampling design to understand what their process was."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:175
+#: ../../source/workflows/sop_template.rst:173
 msgid ""
-"At the start of the process, it is important to take the time to collect "
-"all necessary information, resources, involved personnel, and potential "
-"methodologies and tools. Although resources are becoming more available "
-"and more centralized, several inputs may still be scattered. The FAO "
-"template guides were promoted as particularly practical resources for "
-"knowing what information must be gathered and how it should be organized."
-" These are also empty templates, so practical examples should be sought "
-"out as a complimentary resource. Completed SOPs of other countries should"
-" be examined at the start of the process for this purpose. Note all of "
-"the example SOPs and other resources you use, so you may properly cite "
-"their work."
+"At the start of the process, take the time to collect all necessary "
+"information, resources, involved personnel, and potential methodologies "
+"and tools. Although resources are becoming more available and "
+"centralized, several inputs may still be scattered. The FAO template "
+"guides were promoted as particularly practical resources for knowing what"
+" information must be gathered and how it should be organized. These are "
+"also empty templates, so practical examples should be sought out as a "
+"complimentary resource. Completed SOPs of other countries should be "
+"examined at the start of the process for this purpose. Note all of the "
+"example SOPs and other resources you use, so you may properly cite their "
+"work."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:177
+#: ../../source/workflows/sop_template.rst:175
 msgid ""
 "Reach out to the stakeholders in your organization for the sampling "
 "design procedure. Bringing stakeholders in during the early stages can "
 "increase buy-in for your SOPs."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:180
+#: ../../source/workflows/sop_template.rst:178
 msgid ""
 "These templates are generalized and not customized to the individual "
 "needs of each country or entity. Discuss with your team what additional "
@@ -568,79 +581,79 @@ msgid ""
 "based on what methods you are utilizing."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:182
+#: ../../source/workflows/sop_template.rst:180
 msgid ""
 "Several survey respondents emphasized the importance of making SOP "
 "creation a participatory process. Involving the stakeholders early is "
 "invaluable and time-saving. SOP users and technical experts should be "
-"involved in the conversation. Occasionally interpreters may be necessary,"
-" so allocate time for this and other availability restrictions in your "
-"planning. Survey respondents also advised that it is important to "
-"estimate the amount of work and experience required for each of the "
+"involved in the conversation. Occasionally, interpreters may be "
+"necessary, so allocate time for this and other availability restrictions "
+"in your planning. Survey respondents also advised that it is important to"
+" estimate the amount of work and experience required for each of the "
 "planned stages of the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:185
+#: ../../source/workflows/sop_template.rst:182
 msgid "Start with the documentation section of the SOP template."
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:184
+msgid ""
+"Add a **Version** and **Date of Issue**. You can find more information "
+"about versioning in Section 3.6."
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:185
+msgid ""
+"Edit the **Purpose**, if necessary (e.g. you may want to ask your "
+"stakeholders for their input on what the appropriate **Purpose** is)."
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:186
+msgid ""
+"List all of the **Roles and responsibilities**. For the Sampling Design "
+"SOP, you will need: **Coordinator** and **Statistician**. As you go "
+"through refining your SOP procedure, these may change. Be sure to update "
+"the **Responsibilities** section if this happens."
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:187
 msgid ""
-"Add a Version and Date of Issue. You can find more information about "
-"versioning in 3.6."
+"Similarly, your **Prerequisites** will change based on the **Procedure**."
+" Be sure to update this section."
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:188
 msgid ""
-"Edit the Purpose, if necessary (e.g. you may want to ask your "
-"stakeholders for their input on what the appropriate Purpose is)."
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:189
-msgid ""
-"List all of the roles and responsibilities. For the Sampling Design SOP, "
-"you will need: “Coordinator” and “Statistician”. As you go through "
-"refining your SOP procedure, these may change. Be sure to update the "
-"Responsibilities section if this happens."
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:190
-msgid ""
-"Similarly, your Prerequisites will change based on the Procedure. Be sure"
-" to update this section."
-msgstr ""
-
-#: ../../source/workflows/sop_template.rst:191
-msgid ""
-"Write down any Related Documents, including any material your "
+"Write down any **Related Documents**, including any material your "
 "organization produced previously or other documents you use to produce "
 "the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:193
-msgid "Complete the Procedure section."
+#: ../../source/workflows/sop_template.rst:190
+msgid "Complete the **Procedure** section."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:195
+#: ../../source/workflows/sop_template.rst:192
 msgid ""
-"Compare the list of steps in the Procedure section of the SOP with the "
-"steps you previously used to complete a Sampling Design."
+"Compare the list of steps in the **Procedure** section of the SOP with "
+"the steps you previously used to complete a **Sampling Design**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:196
+#: ../../source/workflows/sop_template.rst:193
 msgid ""
 "Brainstorm with your team and stakeholders what additional steps may be "
 "needed to add to the template."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:197
+#: ../../source/workflows/sop_template.rst:194
 msgid ""
 "The best practice is to go through the whole process and write down every"
 " step. You should go through your whole sampling design process, from "
 "gathering inputs to producing the output."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:198
+#: ../../source/workflows/sop_template.rst:195
 msgid ""
 "As you review the process and write down steps, have the template "
 "available. Make note of how your current process matches the steps laid "
@@ -648,7 +661,7 @@ msgid ""
 "you use."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:199
+#: ../../source/workflows/sop_template.rst:196
 msgid ""
 "Often, your processes will somehow match the steps proposed in the "
 "template. You can then make a few modifications and add the important "
@@ -657,7 +670,7 @@ msgid ""
 " strata."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:200
+#: ../../source/workflows/sop_template.rst:197
 msgid ""
 "Modify the SOP template to fit your desired steps where your process "
 "cannot easily fit into the SOP template. For example, if your sampling "
@@ -665,7 +678,7 @@ msgid ""
 "(e.g. a province), you could add this as Step 1a."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:201
+#: ../../source/workflows/sop_template.rst:198
 msgid ""
 "Be sure any changes do not reduce the rigor of the process. For example, "
 "suppose you previously used 5 samples per strata, regardless of area "
@@ -676,13 +689,13 @@ msgid ""
 "of sample units in the SOP template."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:202
+#: ../../source/workflows/sop_template.rst:199
 msgid ""
 "The guidance document will have important methods background and can "
 "particularly help you complete this section of the SOP template."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:205
+#: ../../source/workflows/sop_template.rst:202
 msgid ""
 "The sustainability of SOPs in the long-term is a concern of many "
 "countries. Technologies advance and often the uncertainties of results "
@@ -697,122 +710,122 @@ msgid ""
 " that should be well-planned and better established over time."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:208
-msgid "Fill in the Quality management section."
+#: ../../source/workflows/sop_template.rst:204
+msgid "Fill in the **Quality management** section."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:210
+#: ../../source/workflows/sop_template.rst:206
 msgid ""
 "If your organization has existing QA/QC procedures for sample-based area "
 "estimation, detail your QA/QC procedures here."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:211
+#: ../../source/workflows/sop_template.rst:207
 msgid ""
 "The guidance document includes suggested QA/QC ideas and procedures for "
 "each SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:212
+#: ../../source/workflows/sop_template.rst:208
 msgid ""
 "If your organization does not have existing QA/QC procedures, we have "
-"also included some resources for you in the section titled “3.7 "
-"Additional resources for aid in writing SOPs”."
+"also included some resources for you in the Section 3.7 Additional "
+"resources for aid in writing SOPs."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:215
+#: ../../source/workflows/sop_template.rst:210
 msgid ""
-"Once you have an initial draft Sampling Design SOP derived from the "
-"template SOP, use the draft to work through the Sampling Design blank "
-"form template."
+"Once you have an initial draft **Sampling Design SOP** derived from the "
+"template SOP, use the draft to work through the **Sampling Design blank "
+"form template**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:217
+#: ../../source/workflows/sop_template.rst:212
 msgid "Note anything that is unclear and revise the SOP accordingly."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:218
+#: ../../source/workflows/sop_template.rst:213
 msgid ""
 "Note anything that you do while working through the SOP that is not "
 "recorded in the blank form. Revise both the SOP and the blank form to "
 "make sure these items are recorded."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:221
+#: ../../source/workflows/sop_template.rst:216
 msgid ""
 "SOPs are meant to communicate a process. In the case of area estimation, "
 "this process is complex. Clear communication is key. Some simple methods "
 "for achieving clarity are to:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:223
+#: ../../source/workflows/sop_template.rst:218
 msgid ""
 "include screenshots, photographs, and other media (when relevant) to "
 "clearly communicate steps;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:224
+#: ../../source/workflows/sop_template.rst:219
 msgid ""
 "be specific about any software tools, online tools, code (e.g. Python, "
 "R), and imagery that you use (e.g. describe where imagery is hosted and "
 "how to access it, as well as how to run code);"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:225
+#: ../../source/workflows/sop_template.rst:220
 msgid ""
 "use clear language, avoiding uncommon abbreviations and jargon, and "
 "define any common abbreviations the first time they are used;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:226
+#: ../../source/workflows/sop_template.rst:221
 msgid ""
 "be intentional about choosing when to use paragraphs of text and when to "
 "use numbered steps;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:227
+#: ../../source/workflows/sop_template.rst:222
 msgid ""
 "focus on making steps clear for the reader (e.g. if there are steps that "
 "get long, consider breaking them down);"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:228
+#: ../../source/workflows/sop_template.rst:223
 msgid "consider including descriptions of the purpose for each subsection;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:229
+#: ../../source/workflows/sop_template.rst:224
 msgid "provide real life examples of your directions;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:230
+#: ../../source/workflows/sop_template.rst:225
 msgid "use consistent formatting and structure throughout the document(s);"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:231
+#: ../../source/workflows/sop_template.rst:226
 msgid "consider all potential readers of your SOPs;"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:232
+#: ../../source/workflows/sop_template.rst:227
 msgid ""
 "involve your stakeholders, people who will be following the SOPs, and "
 "those with oversight of the SOP creation process and deliverables to "
 "check for clarity early in the process; and"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:233
+#: ../../source/workflows/sop_template.rst:228
 msgid ""
 "include definitions for terms and classes that are not universally "
-"accepted (e.g. forest, deforestation, degradation, and forest types)."
+"accepted (e.g. forest, deforestation, degradation and forest types)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:236
+#: ../../source/workflows/sop_template.rst:230
 msgid ""
 "Have other team members or colleagues review the SOP documentation. If "
 "possible, do a full trial run of your SOP. Have the team member or "
 "colleague go through the entire sampling design process using the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:238
+#: ../../source/workflows/sop_template.rst:232
 msgid ""
 "They should be able to create a sufficient sample design product, "
 "including sample locations and a completed form. This indicates that "
@@ -820,56 +833,56 @@ msgid ""
 "will be sufficient between different individuals."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:239
+#: ../../source/workflows/sop_template.rst:233
 msgid ""
 "Watch them go through the SOP. Are there any places where they seem "
 "confused? Resist the urge to help them; instead, if there is anything "
 "they do wrong, make note of it."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:240
+#: ../../source/workflows/sop_template.rst:234
 msgid ""
 "After they go through the SOP, have a conversation about the experience. "
 "Ask them if there were points where they were confused or uncertain of "
 "what to do next."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:241
+#: ../../source/workflows/sop_template.rst:235
 msgid ""
 "Revise the SOP and blank form templates based on the team member or "
 "colleagues’ feedback and your notes from watching them complete the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:243
+#: ../../source/workflows/sop_template.rst:237
 msgid ""
-"You should now have a Sampling Design SOP and matching form that is "
+"You should now have a **Sampling Design SOP** and matching form that is "
 "complete and easy to understand."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:244
+#: ../../source/workflows/sop_template.rst:238
 msgid ""
 "Once you have created an SOP, you should not just let it sit on a shelf. "
 "Any team members doing sampling design work should be trained on the SOP "
 "and should follow the SOP whenever they create a sampling design."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:245
+#: ../../source/workflows/sop_template.rst:239
 msgid "Repeat steps 1-12 for any additional SOPs that you need to create."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:248
+#: ../../source/workflows/sop_template.rst:242
 msgid "3.5 Saving your SOPs and completed forms"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:250
+#: ../../source/workflows/sop_template.rst:244
 msgid ""
 "Once you have completed your SOPs, you will need to store them for future"
 " reference. This location should be chosen carefully, so that they are "
-"available readily for anyone who needs to use them and so that they are "
+"readily available for anyone who needs to use them and so that they are "
 "not lost."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:252
+#: ../../source/workflows/sop_template.rst:246
 msgid ""
 "Name your SOP documents with clear descriptive titles and file names, so "
 "their purpose is easily discernible. This is especially important if you "
@@ -877,7 +890,7 @@ msgid ""
 "number and/or year created."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:253
+#: ../../source/workflows/sop_template.rst:247
 msgid ""
 "Discuss with your stakeholders where your organization’s sample-based "
 "area estimation documents are located. Additionally, ask where they would"
@@ -885,59 +898,57 @@ msgid ""
 "SOP documents were located, where is the first place they would look?)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:254
+#: ../../source/workflows/sop_template.rst:248
 msgid ""
 "Consider your stakeholders’ responses. Choose a location that will be "
-"readily available and intuitive to your stakeholders."
+"readily available and intuitive to them."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:255
-msgid ""
-"Create a folder to store all of your area estimation SOPs in this "
-"location."
+#: ../../source/workflows/sop_template.rst:249
+msgid "Create a folder to store all of your area estimation SOPs."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:256
+#: ../../source/workflows/sop_template.rst:250
 msgid ""
 "Record where your SOPs are stored in multiple locations (e.g. you may "
-"want to create ‘shortcuts’ in the folders where your stakeholders "
-"indicated that they would look for the SOP documents. You may also want "
-"to add a link to where the SOPs are stored in other documents related to "
-"your area estimation process, such as in your data dictionary document."
+"want to create shortcuts in the folders where your stakeholders indicated"
+" that they would look for the SOP documents). You may also want to add a "
+"link to where the SOPs are stored in other documents related to your area"
+" estimation process (e.g. in your data dictionary document)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:258
+#: ../../source/workflows/sop_template.rst:252
 msgid ""
 "Additionally, when you use your SOPs, you will create completed forms "
 "recording your sampling design, response design, etc. You will need to "
 "save these documents in a project folder for archiving purposes."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:260
+#: ../../source/workflows/sop_template.rst:254
 msgid ""
 "If you intend to share these completed documents, it may be helpful to "
-"include a \"Cite as\" statement so others can easily reference your work."
-" For some public-facing uses, it may also be necessary to attach a "
-"Creative Commons license within the document."
+"include a **Suggested citation** so others can easily reference your "
+"work. For some public-facing uses, it may also be necessary to attach a "
+"**Creative Commons license** within the document."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:264
+#: ../../source/workflows/sop_template.rst:257
 msgid "3.6 Updating your SOPs"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:266
+#: ../../source/workflows/sop_template.rst:259
 msgid ""
 "In the future, you may want to revise your SOPs. This may happen when you"
 " developed an SOP previously (e.g. during the last biennial inventory) "
-"and you are applying it again. You may find areas where your SOP could be"
+"and you are applying it again; you may find areas where your SOP could be"
 " improved (e.g. to make it more rigorous or clear). These updates should "
 "be recorded in a transparent and systematic manner."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:268
+#: ../../source/workflows/sop_template.rst:261
 msgid ""
-"When you revise your SOPs you will need to keep a few things in mind. The"
-" first is that you will need to keep track of versioning. With "
+"When you revise your SOPs, you will need to keep a few things in mind. "
+"The first is that you will need to keep track of versioning. With "
 "versioning, you use a unique version name or version number for each "
 "update to your SOP. For example, the first version of your sampling "
 "design for your sample-based area estimate SOP may be 1.0 and your "
@@ -948,7 +959,7 @@ msgstr ""
 msgid "The versioning section of the Sample Design SOP template."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:274
+#: ../../source/workflows/sop_template.rst:267
 msgid ""
 "Second, you will need to keep track of any revisions you make to your "
 "document. This is important so that future users of the SOP can see what "
@@ -956,74 +967,75 @@ msgid ""
 "what was changed from the last version is a good way to document this."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:276
+#: ../../source/workflows/sop_template.rst:269
 msgid ""
 "Third, you will need to revise the document in a methodical fashion. In "
-"these directions, we will refer to the \"previous SOP\", which is the "
-"most recent version of the SOP, and the \"updated SOP\", which is the "
+"these directions, we will refer to the **previous SOP**, which is the "
+"most recent version of the SOP, and the **updated SOP**, which is the "
 "version you are actively revising."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:278
+#: ../../source/workflows/sop_template.rst:271
 msgid ""
 "Gather any historic versions of the SOP you are reviewing. Here we will "
-"use the example of a Sampling Design SOP."
+"use the example of a **Sampling Design SOP**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:279
+#: ../../source/workflows/sop_template.rst:272
 msgid ""
-"Identify the most recent version of your SOP (this will be the \"previous"
-" SOP\")."
+"Identify the most recent version of your SOP (this will be the **previous"
+" SOP**)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:280
+#: ../../source/workflows/sop_template.rst:273
 msgid ""
 "If your different SOP versions do not have versioning, consider adding "
-"versioning. At the very least, add versioning to your updated SOP."
+"versioning. At the very least, add versioning to your **updated SOP**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:281
+#: ../../source/workflows/sop_template.rst:274
 msgid ""
-"In the Version Log section of the SOP template, fill in details of the "
-"historic versions of the SOP. You may choose to only fill in details for "
-"the previous SOP, or you may include additional previous versions."
+"In the **Version Log** section of the **SOP template**, fill in details "
+"of the historic versions of the SOP. You may choose to only fill in "
+"details for the **previous SOP**, or you may include additional previous "
+"versions."
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:-1
 msgid "Record information about your previous SOP in the Version Log."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:288
+#: ../../source/workflows/sop_template.rst:280
 msgid ""
-"Follow the directions in 3.4 How to adapt FAO’s templates for your SOP in"
-" order to create your updated SOP."
+"Follow the directions in Section 3.4 How to adapt FAO’s templates for "
+"your SOP in order to create your **updated SOP**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:289
+#: ../../source/workflows/sop_template.rst:281
 msgid ""
 "Record what changes were made to your SOP in the updated SOP version in "
-"the Version Log section of the SOP template."
+"the **Version Log** section of the **SOP template**."
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:-1
 msgid "Record your changes to the SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:296
+#: ../../source/workflows/sop_template.rst:287
 msgid ""
-"Retain your previous SOP in an “Archive” or “Previous versions” folder "
-"within the same directory as the updated SOP."
+"Retain your **previous SOP** in an **Archive** or **Previous versions** "
+"folder within the same directory as the **updated SOP**."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:300
+#: ../../source/workflows/sop_template.rst:290
 msgid "3.7 Additional resources for aid in writing SOPs"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:302
+#: ../../source/workflows/sop_template.rst:292
 msgid "**Guidance Documents:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:304
+#: ../../source/workflows/sop_template.rst:294
 msgid ""
 "Intergovernmental Panel on Climate Change (IPCC) guidelines `Good "
 "Practice Guidance and Uncertainty Management in National Greenhouse Gas "
@@ -1031,20 +1043,20 @@ msgid ""
 "uncertainty-management-in-national-greenhouse-gas-inventories/>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:305
+#: ../../source/workflows/sop_template.rst:295
 msgid ""
 "Global Forest Observations Initiative (GFOI) `Methods and Guidance "
 "Documentation <http://www.fao.org/gfoi/components/methods-and-guidance-"
 "documentation/en/>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:306
+#: ../../source/workflows/sop_template.rst:296
 msgid ""
 "U.S. Department of Agriculture (USDA) and United States Forest Service "
 "(USFS) `reporting formats <https://www.fia.fs.fed.us/forestcarbon/>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:307
+#: ../../source/workflows/sop_template.rst:297
 #, python-format
 msgid ""
 "Forest Carbon Partnership Facility (FCPF) `Carbon Fund Methodological "
@@ -1052,88 +1064,88 @@ msgid ""
 "<https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:308
+#: ../../source/workflows/sop_template.rst:298
 msgid ""
-"Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and "
+"Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. & "
 "Wulder, M.A., 2014. Good practices for estimating area and assessing "
 "accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. "
 "Available at `<http://www.fao.org/sustainable-forest-"
 "management/toolbox/tools/tool-detail/en/c/411863/>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:310
+#: ../../source/workflows/sop_template.rst:300
 msgid "**Sample-based Area Estimation Documents:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:312
+#: ../../source/workflows/sop_template.rst:302
 msgid ""
 "Food and Agriculture Organization of the United Nations `Map Accuracy "
 "Assessment and Area Estimation: A Practical Guide "
 "<http://www.fao.org/3/i5601e/i5601e.pdf>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:313
-#: ../../source/workflows/sop_template.rst:326
+#: ../../source/workflows/sop_template.rst:303
+#: ../../source/workflows/sop_template.rst:316
 msgid ""
 "See the \"Perform area estimation analysis with SEPAL-CEO\" cookbook, "
 "particularly Module 4."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:314
-#: ../../source/workflows/sop_template.rst:327
+#: ../../source/workflows/sop_template.rst:304
+#: ../../source/workflows/sop_template.rst:317
 msgid ""
 "Forthcoming guidance: Guidance for the development of sample-based area "
 "estimation SOP."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:315
-#: ../../source/workflows/sop_template.rst:328
+#: ../../source/workflows/sop_template.rst:305
+#: ../../source/workflows/sop_template.rst:318
 msgid ""
 "Forthcoming white paper: Jonckheere, I., R. Hamilton, J. M. Michel, E. "
 "Donegan. Forthcoming 2021. Issues and good practices in sample-based area"
 " estimation."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:317
+#: ../../source/workflows/sop_template.rst:307
 msgid "**Tools:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:319
+#: ../../source/workflows/sop_template.rst:309
 msgid ""
 "‘AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps "
 "<https://smbyc.github.io/AcATaMa/>’_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:320
+#: ../../source/workflows/sop_template.rst:310
 msgid "‘Collect Earth Online <https://collect.earth/support>’_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:321
+#: ../../source/workflows/sop_template.rst:311
 msgid "‘Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>’_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:322
+#: ../../source/workflows/sop_template.rst:312
 msgid ""
 "<https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP "
 "guidelines for quality assurance for reporting all environmental data and"
 " procedures."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:324
+#: ../../source/workflows/sop_template.rst:314
 msgid "**QA/QC Resources:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:330
+#: ../../source/workflows/sop_template.rst:320
 msgid "**Other Information:**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:332
+#: ../../source/workflows/sop_template.rst:322
 msgid ""
 "Helpful for writing SOPs, but are not specific to sample-based area "
 "estimation for activity and emission reporting:"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:334
+#: ../../source/workflows/sop_template.rst:324
 msgid ""
 "`How to Write a Standard Operating Procedure (SOP "
 "<https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents"
@@ -1141,45 +1153,45 @@ msgid ""
 "practices for what to include in an SOP in a simple manner."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:335
+#: ../../source/workflows/sop_template.rst:325
 msgid ""
 "`US Environmental Protection Agency - Guidance for Preparing Standard "
 "Operating Procedures (SOPs) "
 "<https://www.epa.gov/sites/default/files/2015-06/documents/g6-final.pdf>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:339
+#: ../../source/workflows/sop_template.rst:329
 msgid "4. Frequently Asked Questions (FAQs)"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:341
+#: ../../source/workflows/sop_template.rst:331
 msgid "**How can I access the FAO template SOPs?**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:343
+#: ../../source/workflows/sop_template.rst:333
 msgid ""
 "Please visit the `Forest Carbon Partnership Facility Website "
 "<https://www.forestcarbonpartnership.org/measurement-reporting-and-"
 "verification-mrv>`_"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:345
+#: ../../source/workflows/sop_template.rst:335
 msgid "**Does my SOP have to be in English, like the FAO templates?**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:347
+#: ../../source/workflows/sop_template.rst:337
 msgid ""
 "No, SOPs are usually written in the official language of the country in "
 "which they were developed. Translation is not required."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:349
+#: ../../source/workflows/sop_template.rst:339
 msgid ""
 "**How do I reference the SOPs of other countries or entities in my "
 "report?**"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:351
+#: ../../source/workflows/sop_template.rst:341
 msgid ""
 "Citing the work of others is an important part of your SOP, and can "
 "provide further justification for methods you are replicating. On the "
@@ -1189,11 +1201,11 @@ msgid ""
 "documents."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:355
+#: ../../source/workflows/sop_template.rst:345
 msgid "5. References"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:356
+#: ../../source/workflows/sop_template.rst:346
 msgid ""
 "Bihn, E., Schermann, M., Wszelaki, A., Wall, G., & Amundson, S. (2014). "
 "On-Farm Decision Tree Project: Appendix—How to Write an SOP (1st ed.). "
@@ -1202,13 +1214,13 @@ msgid ""
 "/How-to-Write-SOP.pdf."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:358
+#: ../../source/workflows/sop_template.rst:348
 msgid ""
 "Bogor, Indonesia: Indonesia’s Work Programme for 2010 ITTO PD 519/08/Rev."
 " 1 (F) Forest Policy and Climate Change Center, FORDA."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:360
+#: ../../source/workflows/sop_template.rst:350
 #, python-format
 msgid ""
 "Forest Carbon Partnership Facility. (2016). FCPF Carbon Fund "
@@ -1216,34 +1228,34 @@ msgid ""
 "https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:362
+#: ../../source/workflows/sop_template.rst:352
 msgid ""
 "Forestry Research and Development Agency Ministry of Forestry, Indonesia."
 " (2010). Standard Operating Procedures (SOPs) for Field Measurement (p. "
 "1)."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:364
+#: ../../source/workflows/sop_template.rst:354
 msgid ""
 "IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4:"
 " Agriculture, Forestry and Other Land Use. http://www.ipcc-"
 "nggip.iges.or.jp/public/2006gl/vol4.html"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:366
+#: ../../source/workflows/sop_template.rst:356
 msgid ""
 "Observations Initiative. Edition 3.0. Available online at "
 "https://www.reddcompass.org/download-the-mgd"
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:368
+#: ../../source/workflows/sop_template.rst:358
 msgid ""
 "Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., "
 "& Wulder, M. A. (2014). Good practices for estimating area and assessing "
 "accuracy of land change. Remote Sensing of Environment, 148, 42-57."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:370
+#: ../../source/workflows/sop_template.rst:360
 msgid ""
 "Measurement, Reporting and Verification (MRV) | Forest Carbon Partnership"
 " Facility. forestcarbonpartnership.org. (2018). Retrieved 8 June 2021, "
@@ -1251,14 +1263,483 @@ msgid ""
 "verification-mrv."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:372
+#: ../../source/workflows/sop_template.rst:362
 msgid ""
 "United States, Environmental Protection Agency. (2007). Guidance for "
 "Preparing Standard Operating Procedures (SOPs) - EPA QA/G-6. Washington, "
 "DC: United States, Environmental Protection Agency."
 msgstr ""
 
-#: ../../source/workflows/sop_template.rst:375
+#: ../../source/workflows/sop_template.rst:367
 msgid "Thank you for reading this tutorial on creating SOPs with templates!"
 msgstr ""
+
+#: ../../source/workflows/sop_template.rst:369
+msgid ""
+"For support, :doc:`ask the community <https://groups.google.com/g/sepal-"
+"users>`."
+msgstr ""
+
+#~ msgid ""
+#~ "SOPs are used in this context as"
+#~ " guidance documents, operationalizing required"
+#~ " processes for sample-based area "
+#~ "estimation, which are used to estimate"
+#~ " greenhouse gas emissions and emission "
+#~ "reductions in a REDD+ context. They "
+#~ "include step-by-step procedures that "
+#~ "should be unambiguous, so that they "
+#~ "can be easily repeated, even if "
+#~ "successive assessments are undertaken by "
+#~ "persons unfamiliar with the process. "
+#~ "These documents should be reviewed "
+#~ "periodically and regularly updated with "
+#~ "any additions or changes to the "
+#~ "methods; their use should be reinforced."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "introduce the Food and Agriculture "
+#~ "Organization of the United Nations (FAO)"
+#~ " SOP templates; and"
+#~ msgstr ""
+
+#~ msgid "Internet connection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tutorial is focused on creating "
+#~ "SOPs for sample-based area estimation."
+#~ " Area estimation answers questions "
+#~ "concerning total areas of different "
+#~ "categories (e.g. land use, land cover,"
+#~ " and land cover change) within "
+#~ "administrative or physiographic boundaries. "
+#~ "These estimates should be reported with"
+#~ " their uncertainty. For example, if "
+#~ "you ask the question, “How much "
+#~ "deforestation occurred between 2010 and "
+#~ "2015?”, the answer could be generated"
+#~ " with Area estimation (e.g. “50,000 "
+#~ "ha (± 15,000 ha) of forest was "
+#~ "lost.”)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have performed area estimation"
+#~ " previously, consider your existing "
+#~ "approach. Which steps does your approach"
+#~ " include? Are there any steps not "
+#~ "included above (e.g. a Data entry "
+#~ "step)? Below, write down the major "
+#~ "steps that you need to create SOPs"
+#~ " for."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The templates for stratified area "
+#~ "estimate SOPs from the Forest Carbon "
+#~ "Partnership Facility (FCPF) and FAO are"
+#~ " hosted online on the `Forest Carbon"
+#~ " Partnership Facility Website "
+#~ "<https://www.forestcarbonpartnership.org/measurement-"
+#~ "reporting-and-verification-mrv>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional guidance for the development "
+#~ "of sample-based area estimation SOPs "
+#~ "is forthcoming and will be hosted "
+#~ "on `OpenMRV <www.openmrv.org>`_. This guidance"
+#~ " document will describe descriptions of "
+#~ "the different options each country can"
+#~ " choose for each field in FAO’s "
+#~ "template SOPs, good practices and some"
+#~ " examples and tools when available. "
+#~ "The guidance document will complement "
+#~ "the steps in this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The templates for the SOPs outline "
+#~ "current best practices for all the "
+#~ "steps of sample-based area estimation."
+#~ " There is descriptive text with "
+#~ "instructions for each stage which should"
+#~ " be replaced with details from each"
+#~ " user. Forms are also included, which"
+#~ " are used to record the details "
+#~ "about the application of the SOPs. "
+#~ "Some of the templates have prerequisite"
+#~ " requirements. Many of these can be"
+#~ " generated through a pilot survey "
+#~ "and/or careful planning."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sampling design: Procedure and QA/QC for"
+#~ " sampling design in land use / "
+#~ "land cover change surveys."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Response design: Assigning labels to "
+#~ "samples and reducing interpreter bias."
+#~ msgstr ""
+
+#~ msgid "Data collection: Sample-based visual interpretation data collection."
+#~ msgstr ""
+
+#~ msgid "Data analysis: Estimating areas and their uncertainties."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have not previously worked "
+#~ "through the sample-based area estimation"
+#~ " process previously, you may need to"
+#~ " work through these steps more than"
+#~ " once."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pick the SOP template that you "
+#~ "will be using (see 3.3 above on"
+#~ " when to use the different "
+#~ "templates)."
+#~ msgstr ""
+
+#~ msgid "For this example, we will use the Sampling Design template."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Download the template for the SOP "
+#~ "and the blank form template. "
+#~ "<https://www.forestcarbonpartnership.org/measurement-"
+#~ "reporting-and-verification-mrv>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Templates for Standard Operating Procedures"
+#~ " (SOPs). These contain current best "
+#~ "practices for completing a sample-based"
+#~ " area estimation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Blank form templates. These are designed"
+#~ " to create a record when the "
+#~ "SOPs are applied. This will demonstrate"
+#~ " that the process has been conducted"
+#~ " as described in the SOPs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note the gray text (e.g. in the"
+#~ " Version and Date of Issue fields)."
+#~ " This text is meant for you to"
+#~ " fill in to adapt the template "
+#~ "to your context. You may find it"
+#~ " helpful to write down key "
+#~ "information that you will need to "
+#~ "gather to complete the SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note all of the roles that will"
+#~ " be required. These are referred to"
+#~ " in either the black or gray "
+#~ "text (e.g. “The Coordinator” is referred"
+#~ " to in the Sampling Design SOP "
+#~ "template under Procedure in Step 0). "
+#~ "Write down who will perform these "
+#~ "roles in your organization. The same "
+#~ "person may fulfill multiple roles. Do"
+#~ " you have additional staff that will"
+#~ " assist? If so, include their names."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `SOP Instructions "
+#~ "<https://www.forestcarbonpartnership.org/sites/fcp/files/Instructions.pdf>`_"
+#~ " have role definitions under “Assigning "
+#~ "roles and responsibilities.”"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gather any previous written material "
+#~ "that your organization has produced for"
+#~ " sampling design, etc. This may "
+#~ "include SOPs that you have used "
+#~ "for sampling design previously (see also"
+#~ " 3.6 Updating your SOPs below)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "At the start of the process, it"
+#~ " is important to take the time "
+#~ "to collect all necessary information, "
+#~ "resources, involved personnel, and potential"
+#~ " methodologies and tools. Although "
+#~ "resources are becoming more available "
+#~ "and more centralized, several inputs may"
+#~ " still be scattered. The FAO template"
+#~ " guides were promoted as particularly "
+#~ "practical resources for knowing what "
+#~ "information must be gathered and how "
+#~ "it should be organized. These are "
+#~ "also empty templates, so practical "
+#~ "examples should be sought out as a"
+#~ " complimentary resource. Completed SOPs of"
+#~ " other countries should be examined "
+#~ "at the start of the process for"
+#~ " this purpose. Note all of the "
+#~ "example SOPs and other resources you "
+#~ "use, so you may properly cite "
+#~ "their work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Several survey respondents emphasized the "
+#~ "importance of making SOP creation a "
+#~ "participatory process. Involving the "
+#~ "stakeholders early is invaluable and "
+#~ "time-saving. SOP users and technical "
+#~ "experts should be involved in the "
+#~ "conversation. Occasionally interpreters may be"
+#~ " necessary, so allocate time for this"
+#~ " and other availability restrictions in "
+#~ "your planning. Survey respondents also "
+#~ "advised that it is important to "
+#~ "estimate the amount of work and "
+#~ "experience required for each of the "
+#~ "planned stages of the SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Add a Version and Date of Issue."
+#~ " You can find more information about"
+#~ " versioning in 3.6."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Edit the Purpose, if necessary (e.g. "
+#~ "you may want to ask your "
+#~ "stakeholders for their input on what "
+#~ "the appropriate Purpose is)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "List all of the roles and "
+#~ "responsibilities. For the Sampling Design "
+#~ "SOP, you will need: “Coordinator” and"
+#~ " “Statistician”. As you go through "
+#~ "refining your SOP procedure, these may"
+#~ " change. Be sure to update the "
+#~ "Responsibilities section if this happens."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Similarly, your Prerequisites will change "
+#~ "based on the Procedure. Be sure to"
+#~ " update this section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Write down any Related Documents, "
+#~ "including any material your organization "
+#~ "produced previously or other documents "
+#~ "you use to produce the SOP."
+#~ msgstr ""
+
+#~ msgid "Complete the Procedure section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Compare the list of steps in the"
+#~ " Procedure section of the SOP with"
+#~ " the steps you previously used to "
+#~ "complete a Sampling Design."
+#~ msgstr ""
+
+#~ msgid "Fill in the Quality management section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your organization does not have "
+#~ "existing QA/QC procedures, we have also"
+#~ " included some resources for you in"
+#~ " the section titled “3.7 Additional "
+#~ "resources for aid in writing SOPs”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have an initial draft "
+#~ "Sampling Design SOP derived from the "
+#~ "template SOP, use the draft to "
+#~ "work through the Sampling Design blank"
+#~ " form template."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "include definitions for terms and "
+#~ "classes that are not universally "
+#~ "accepted (e.g. forest, deforestation, "
+#~ "degradation, and forest types)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You should now have a Sampling "
+#~ "Design SOP and matching form that "
+#~ "is complete and easy to understand."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have completed your SOPs, "
+#~ "you will need to store them for"
+#~ " future reference. This location should "
+#~ "be chosen carefully, so that they "
+#~ "are available readily for anyone who "
+#~ "needs to use them and so that "
+#~ "they are not lost."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Consider your stakeholders’ responses. Choose"
+#~ " a location that will be readily "
+#~ "available and intuitive to your "
+#~ "stakeholders."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create a folder to store all of"
+#~ " your area estimation SOPs in this"
+#~ " location."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Record where your SOPs are stored "
+#~ "in multiple locations (e.g. you may "
+#~ "want to create ‘shortcuts’ in the "
+#~ "folders where your stakeholders indicated "
+#~ "that they would look for the SOP"
+#~ " documents. You may also want to "
+#~ "add a link to where the SOPs "
+#~ "are stored in other documents related"
+#~ " to your area estimation process, "
+#~ "such as in your data dictionary "
+#~ "document."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you intend to share these "
+#~ "completed documents, it may be helpful"
+#~ " to include a \"Cite as\" statement"
+#~ " so others can easily reference your"
+#~ " work. For some public-facing uses,"
+#~ " it may also be necessary to "
+#~ "attach a Creative Commons license within"
+#~ " the document."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the future, you may want to "
+#~ "revise your SOPs. This may happen "
+#~ "when you developed an SOP previously "
+#~ "(e.g. during the last biennial "
+#~ "inventory) and you are applying it "
+#~ "again. You may find areas where "
+#~ "your SOP could be improved (e.g. "
+#~ "to make it more rigorous or "
+#~ "clear). These updates should be recorded"
+#~ " in a transparent and systematic "
+#~ "manner."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When you revise your SOPs you will"
+#~ " need to keep a few things in"
+#~ " mind. The first is that you "
+#~ "will need to keep track of "
+#~ "versioning. With versioning, you use a"
+#~ " unique version name or version "
+#~ "number for each update to your "
+#~ "SOP. For example, the first version "
+#~ "of your sampling design for your "
+#~ "sample-based area estimate SOP may be"
+#~ " 1.0 and your revision may be "
+#~ "2.0. FAO’s SOP templates include a "
+#~ "field for versioning."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Third, you will need to revise the"
+#~ " document in a methodical fashion. In"
+#~ " these directions, we will refer to"
+#~ " the \"previous SOP\", which is the"
+#~ " most recent version of the SOP, "
+#~ "and the \"updated SOP\", which is "
+#~ "the version you are actively revising."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gather any historic versions of the "
+#~ "SOP you are reviewing. Here we "
+#~ "will use the example of a Sampling"
+#~ " Design SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Identify the most recent version of "
+#~ "your SOP (this will be the "
+#~ "\"previous SOP\")."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your different SOP versions do "
+#~ "not have versioning, consider adding "
+#~ "versioning. At the very least, add "
+#~ "versioning to your updated SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the Version Log section of the"
+#~ " SOP template, fill in details of "
+#~ "the historic versions of the SOP. "
+#~ "You may choose to only fill in "
+#~ "details for the previous SOP, or "
+#~ "you may include additional previous "
+#~ "versions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Follow the directions in 3.4 How "
+#~ "to adapt FAO’s templates for your "
+#~ "SOP in order to create your "
+#~ "updated SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Record what changes were made to "
+#~ "your SOP in the updated SOP "
+#~ "version in the Version Log section "
+#~ "of the SOP template."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Retain your previous SOP in an "
+#~ "“Archive” or “Previous versions” folder "
+#~ "within the same directory as the "
+#~ "updated SOP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Olofsson, P., Foody, G.M., Herold, M.,"
+#~ " Stehman, S.V., Woodcock, C.E. and "
+#~ "Wulder, M.A., 2014. Good practices for"
+#~ " estimating area and assessing accuracy "
+#~ "of land change. Remote Sensing of "
+#~ "Environment, 148, pp.42-57. Available at "
+#~ "`<http://www.fao.org/sustainable-forest-"
+#~ "management/toolbox/tools/tool-detail/en/c/411863/>`_"
+#~ msgstr ""
 
