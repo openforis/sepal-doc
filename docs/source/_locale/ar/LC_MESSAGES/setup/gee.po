@@ -1,19 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-21 16:22+0000\n"
+"PO-Revision-Date: 2023-01-27 01:13\n"
 "Last-Translator: \n"
-"Language: ar_SA\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/gee.po\n"
+"X-Crowdin-File-ID: 91\n"
+"Language: ar_SA\n"
 
 #: ../../source/setup/gee.rst:2
 msgid "Use Google Earth Engine (GEE) with SEPAL"
@@ -48,32 +51,15 @@ msgid "GEE and SEPAL"
 msgstr ""
 
 #: ../../source/setup/gee.rst:17
-msgid ""
-"SEPAL is closely linked to GEE, a Google-powered Earth-observation cloud-"
-"computing platform. SEPAL can access data stored in the GEE data catalog,"
-" use GEE for processing large datasets, and read and write data to GEE "
-"assets. A large part of SEPAL's existing code is based on the JavaScript "
-"GEE application programming interface (API)."
+msgid "SEPAL is closely linked to GEE, a Google-powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE application programming interface (API)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:19
-msgid ""
-"All SEPAL recipes are based on GEE and run scripts written by SEPAL team "
-"members to enable access to state-of-the-art processing algorithms "
-"without having to write code. In the SEPAL **Applications** list, the "
-"applications tagged with the Google logo (:icon:`fab fa-google`) are also"
-" running with the Python GEE API and don't require you to use big "
-"instances to run complex operations."
+msgid "All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fab fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations."
 msgstr ""
 
 #: ../../source/setup/gee.rst:21
-msgid ""
-"SEPAL recipes can be run from the main SEPAL interface using default "
-"SEPAL credentials or your personal GEE access credentials; however, to "
-"run the SEPAL applications that employ GEE, you will need to link your "
-"SEPAL and GEE accounts. SEPAL applications that make use of GEE will not "
-"run (i.e. authentication will not work) if your GEE and SEPAL accounts "
-"are unlinked."
+msgid "SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked."
 msgstr ""
 
 #: ../../source/setup/gee.rst:27
@@ -81,40 +67,27 @@ msgid "Sign up"
 msgstr ""
 
 #: ../../source/setup/gee.rst:29
-msgid ""
-"A GEE account is required to properly export images and data products as "
-"GEE assets or SEPAL applications using GEE from the SEPAL interface. A "
-"Google account is required to sign up for GEE."
+msgid "A GEE account is required to properly export images and data products as GEE assets or SEPAL applications using GEE from the SEPAL interface. A Google account is required to sign up for GEE."
 msgstr ""
 
 #: ../../source/setup/gee.rst:31
-msgid ""
-"To sign up for a Google account, go to "
-"https://accounts.google.com/servicelogin."
+msgid "To sign up for a Google account, go to https://accounts.google.com/servicelogin."
 msgstr ""
 
 #: ../../source/setup/gee.rst:33
-msgid ""
-"To request a GEE account, go to "
-"https://earthengine.google.com/new_signup/."
+msgid "To request a GEE account, go to https://earthengine.google.com/new_signup/."
 msgstr ""
 
 #: ../../source/setup/gee.rst:39
-msgid ""
-"Once you have a GEE account, go to https://code.earthengine.google.com/ "
-"to access the **Earth Engine Code Editor**."
+msgid "Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:47
-msgid ""
-"When you first connect to the **Earth Engine Code Editor**, it is "
-"strongly advised to take the short tour provided in the interface."
+msgid "When you first connect to the **Earth Engine Code Editor**, it is strongly advised to take the short tour provided in the interface."
 msgstr ""
 
 #: ../../source/setup/gee.rst:56
-msgid ""
-"If you experience trouble while linking your Google account to GEE, "
-"contact the SEPAL team at SEPAL@fao.org."
+msgid "If you experience trouble while linking your Google account to GEE, contact the SEPAL team at SEPAL@fao.org."
 msgstr ""
 
 #: ../../source/setup/gee.rst:59
@@ -122,12 +95,7 @@ msgid "Initialize the **Home** folder"
 msgstr ""
 
 #: ../../source/setup/gee.rst:61
-msgid ""
-"To use your GEE account in the SEPAL interface, you need to set up the "
-"**Home** folder, where all of your **Assets** (i.e. **Vectors**, "
-"**Rasters**, **Collections**, **Mosaics** and **Classifications**) will "
-"be exported. Failing to set up this folder will prevent you from "
-"successfully executing export requests."
+msgid "To use your GEE account in the SEPAL interface, you need to set up the **Home** folder, where all of your **Assets** (i.e. **Vectors**, **Rasters**, **Collections**, **Mosaics** and **Classifications**) will be exported. Failing to set up this folder will prevent you from successfully executing export requests."
 msgstr ""
 
 #: ../../source/setup/gee.rst:63
@@ -139,9 +107,7 @@ msgid "The page is divided into three zones and a map:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:71
-msgid ""
-"**Zone 1**: Provides you with access to your GEE account information, "
-"which is divided into three panes:"
+msgid "**Zone 1**: Provides you with access to your GEE account information, which is divided into three panes:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:73
@@ -149,40 +115,27 @@ msgid "**Assets**: Displays all of the assets in your account."
 msgstr ""
 
 #: ../../source/setup/gee.rst:74
-msgid ""
-"**Scripts**: Displays all of the scripts available with your account "
-"(shared and written)."
+msgid "**Scripts**: Displays all of the scripts available with your account (shared and written)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:75
-msgid ""
-"**Doc**: Displays documentation of the JS GEE API, if you need to code in"
-" this editor."
+msgid "**Doc**: Displays documentation of the JS GEE API, if you need to code in this editor."
 msgstr ""
 
 #: ../../source/setup/gee.rst:77
-msgid ""
-"**Zone 2**: Allows advanced users to code their own scripts using the GEE"
-" JS API."
+msgid "**Zone 2**: Allows advanced users to code their own scripts using the GEE JS API."
 msgstr ""
 
 #: ../../source/setup/gee.rst:79
-msgid ""
-"**Zone 3**: Displays information about current processes, which is "
-"divided into three panes:"
+msgid "**Zone 3**: Displays information about current processes, which is divided into three panes:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:81
-msgid ""
-"**Inspector**: Transforms the arrow of the mouse into a pointer, allowing"
-" you to click anywhere on the map to view information about what you are "
-"displaying."
+msgid "**Inspector**: Transforms the arrow of the mouse into a pointer, allowing you to click anywhere on the map to view information about what you are displaying."
 msgstr ""
 
 #: ../../source/setup/gee.rst:82
-msgid ""
-"**Tasks**: Displays all of the tasks of your account, as well as their "
-"statuses (i.e. *running*, *finished* or *failed*)."
+msgid "**Tasks**: Displays all of the tasks of your account, as well as their statuses (i.e. *running*, *finished* or *failed*)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:83
@@ -194,23 +147,15 @@ msgid "Go to **Zone 1** > Select **Assets** > Select **Create home folder**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:92
-msgid ""
-"Select the name of the folder (Note: This can only be set once and never "
-"changed; if you're not satisfied with the suggested name, you can create "
-"your own, as long as there are no spaces or special characters)."
+msgid "Select the name of the folder (Note: This can only be set once and never changed; if you're not satisfied with the suggested name, you can create your own, as long as there are no spaces or special characters)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:99
-msgid ""
-"When you return to your list of **Assets** (located in the **Zone 1** "
-"panel), you should see the name you provided as the first folder at the "
-"root of the asset tree. In this example, we used *galatheetest*:"
+msgid "When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the asset tree. In this example, we used *galatheetest*:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:108
-msgid ""
-"Now that you have initialized your GEE account, you can start the "
-"connection process between SEPAL and GEE."
+msgid "Now that you have initialized your GEE account, you can start the connection process between SEPAL and GEE."
 msgstr ""
 
 #: ../../source/setup/gee.rst:111
@@ -218,15 +163,11 @@ msgid "Connection between GEE and SEPAL"
 msgstr ""
 
 #: ../../source/setup/gee.rst:113
-msgid ""
-"SEPAL can work without being connected to your GEE account, but you will "
-"miss numerous opportunities to leverage the platform's potential."
+msgid "SEPAL can work without being connected to your GEE account, but you will miss numerous opportunities to leverage the platform's potential."
 msgstr ""
 
 #: ../../source/setup/gee.rst:115
-msgid ""
-"In this section, the connection procedure between GEE and SEPAL will be "
-"presented."
+msgid "In this section, the connection procedure between GEE and SEPAL will be presented."
 msgstr ""
 
 #: ../../source/setup/gee.rst:118
@@ -238,45 +179,27 @@ msgid "Go to `sepal.io <https://sepal.io>`__ and sign in."
 msgstr ""
 
 #: ../../source/setup/gee.rst:122
-msgid ""
-"Select your **Username** in the lower-right side of the window (e.g. "
-"(:code:`prambaud`) in red in the image below)."
+msgid "Select your **Username** in the lower-right side of the window (e.g. (:code:`prambaud`) in red in the image below)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:128
-msgid ""
-"Next to the Google logo (:icon:`fab fa-google`) on the upper-right side "
-"of the **User Details** pop-up window, you will see the status of the "
-"connection between your SEPAL and GEE accounts (Note: if you have not "
-"connected your accounts, it will read *Disconnected*)."
+msgid "Next to the Google logo (:icon:`fab fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:135
-msgid ""
-"Select **Google account** in the lower section of the pop-up window "
-"(Note: if your GEE account is disconnected, you will see text that "
-"reminds you what functionalities are unavailable without a custom GEE "
-"account)."
+msgid "Select **Google account** in the lower section of the pop-up window (Note: if your GEE account is disconnected, you will see text that reminds you what functionalities are unavailable without a custom GEE account)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:142
-msgid ""
-"Select **Connect your Google account** in the pop-up window that appears."
-" Choose the account associated with GEE in the list."
+msgid "Select **Connect your Google account** in the pop-up window that appears. Choose the account associated with GEE in the list."
 msgstr ""
 
 #: ../../source/setup/gee.rst:148
-msgid ""
-"You will see a message requesting your permission to authorize SEPAL's "
-"access to your Google Drive, as well as your **Assets** and **Home** "
-"folders to export recipes and module results."
+msgid "You will see a message requesting your permission to authorize SEPAL's access to your Google Drive, as well as your **Assets** and **Home** folders to export recipes and module results."
 msgstr ""
 
 #: ../../source/setup/gee.rst:150
-msgid ""
-"After the connection process is complete, you will be redirected to the "
-"SEPAL website. If you select **User interface** again, the pop-up window "
-"will display *Connected* in green in the upper-right."
+msgid "After the connection process is complete, you will be redirected to the SEPAL website. If you select **User interface** again, the pop-up window will display *Connected* in green in the upper-right."
 msgstr ""
 
 #: ../../source/setup/gee.rst:158
@@ -284,15 +207,11 @@ msgid "Disconnection"
 msgstr ""
 
 #: ../../source/setup/gee.rst:160
-msgid ""
-"If you want to change accounts or remove the link between your SEPAL and "
-"GEE accounts, you can disconnect SEPAL from GEE at any time."
+msgid "If you want to change accounts or remove the link between your SEPAL and GEE accounts, you can disconnect SEPAL from GEE at any time."
 msgstr ""
 
 #: ../../source/setup/gee.rst:162
-msgid ""
-"Return to the user interface and select **Google account**. You should "
-"see the following window:"
+msgid "Return to the user interface and select **Google account**. You should see the following window:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:169
@@ -300,34 +219,19 @@ msgid "Select **Disconnect your Google account**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:174
-msgid ""
-"When you use SEPAL recipes and modules, you'll be asked to use GEE assets"
-" to provide rasters (:code:`ee.Image`) or vectors "
-"(:code:`ee.FeatureCollection`) to the core GEE-based algorithm. These "
-"assets can be either public assets that someone shared with you or assets"
-" that you created yourself and would like to use."
+msgid "When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters (:code:`ee.Image`) or vectors (:code:`ee.FeatureCollection`) to the core GEE-based algorithm. These assets can be either public assets that someone shared with you or assets that you created yourself and would like to use."
 msgstr ""
 
 #: ../../source/setup/gee.rst:178
-msgid ""
-"For vector files, SEPAL provides an interface to upload them from your "
-"computer to the platform and eventually to GEE. This process allows you "
-"to deal with the full process directly from SEPAL without going to the "
-"**Earth Engine Code Editor** (see the "
-":doc:`../modules/dwn/vector_manager` module documentation for more "
-"details)."
+msgid "For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the **Earth Engine Code Editor** (see the :doc:`../modules/dwn/vector_manager` module documentation for more details)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:180
-msgid ""
-"Go to **Assets** in the **Zone 1** panel on the **Earth Engine Code "
-"Editor** page:"
+msgid "Go to **Assets** in the **Zone 1** panel on the **Earth Engine Code Editor** page:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:187
-msgid ""
-"Select **New**. You will have several choices, including raster, shape, "
-"and table, which will be described in the following sections."
+msgid "Select **New**. You will have several choices, including raster, shape, and table, which will be described in the following sections."
 msgstr ""
 
 #: ../../source/setup/gee.rst:190
@@ -343,11 +247,7 @@ msgid "Select **Image**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:195
-msgid ""
-"In the pop-up window that appears, select the file you want to upload "
-"from your computer (Note: compatible formats include :code:`.tiff`, "
-":code:`.tif`, :code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`; "
-"the name of your asset can be changed in the next text field)."
+msgid "In the pop-up window that appears, select the file you want to upload from your computer (Note: compatible formats include :code:`.tiff`, :code:`.tif`, :code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`; the name of your asset can be changed in the next text field)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:199
@@ -367,14 +267,7 @@ msgid "Select **Shape upload**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:212
-msgid ""
-"In the pop-up window that appears, select the file you want to upload "
-"from your computer (note: compatible formats include :code:`.shp`, "
-":code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, "
-":code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`; if you "
-"didn't compress the file, a :code:`.shp` alone is not sufficient and must"
-" be accompanied with other files describing the shape as in the example "
-"in the image below)."
+msgid "In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.shp`, :code:`.zip`, :code:`.dbf`, :code:`.prj`, :code:`.shx`, :code:`.cpg`, :code:`.fix`, :code:`.qix`, :code:`.sbn` or :code:`.shp.xml`; if you didn't compress the file, a :code:`.shp` alone is not sufficient and must be accompanied with other files describing the shape as in the example in the image below)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:220
@@ -390,10 +283,7 @@ msgid "Select **csv file upload**."
 msgstr ""
 
 #: ../../source/setup/gee.rst:225
-msgid ""
-"In the pop-up window that appears, select the file you want to upload "
-"from your computer (note: compatible formats include :code:`.csv`, "
-":code:`.json`)."
+msgid "In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:233
@@ -401,29 +291,19 @@ msgid "Use your GEE assets in SEPAL"
 msgstr ""
 
 #: ../../source/setup/gee.rst:235
-msgid ""
-"Once you've uploaded your assets, you can use them in SEPAL by copying "
-"and pasting the name of each anywhere SEPAL asks for an asset name."
+msgid "Once you've uploaded your assets, you can use them in SEPAL by copying and pasting the name of each anywhere SEPAL asks for an asset name."
 msgstr ""
 
 #: ../../source/setup/gee.rst:237
-msgid ""
-"To find the asset name, go back to **Assets** in the **Zone 1** pane and "
-"click on any asset in the list. The following pop-up window will appear:"
+msgid "To find the asset name, go back to **Assets** in the **Zone 1** pane and click on any asset in the list. The following pop-up window will appear:"
 msgstr ""
 
 #: ../../source/setup/gee.rst:245
-msgid ""
-"If you select **Copy link**, the link will be copied to the clipboard and"
-" you can paste it into SEPAL or send it to someone for authorized use. "
-"Alternatively, you can select **Share** in the pop-up window and choose "
-"between the different sharing options."
+msgid "If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. Alternatively, you can select **Share** in the pop-up window and choose between the different sharing options."
 msgstr ""
 
 #: ../../source/setup/gee.rst:248
-msgid ""
-"For support, :doc:`ask the community <https://groups.google.com/g/sepal-"
-"users>`."
+msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
 msgstr ""
 
 #~ msgid ""
