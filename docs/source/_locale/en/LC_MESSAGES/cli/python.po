@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid ""
 "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a "
 "fully functional :code:`Pyhton 3.8` environment. This environment is "
-"accecible though Jupyter Notebook, JupyterLab or the terminal:"
+"accecible through Jupyter Notebook, JupyterLab or the terminal:"
 msgstr ""
 
 #: ../../source/cli/python.rst:25
@@ -44,8 +44,8 @@ msgstr ""
 
 #: ../../source/cli/python.rst:32
 msgid ""
-"Run :code:`pip freeze | grep <name of your lib>` to check if it's already"
-" installed."
+"Run :code:`pip show <name of your lib>` to check if it's already "
+"installed."
 msgstr ""
 
 #: ../../source/cli/python.rst:36
@@ -119,4 +119,19 @@ msgid ""
 "If you want to install libs inside this venv you need first to activate "
 "it:"
 msgstr ""
+
+#~ msgid ""
+#~ "SEPAL instances run on :code:`focal` "
+#~ "ubuntu machines and thus provide a "
+#~ "fully functional :code:`Pyhton 3.8` "
+#~ "environment. This environment is accecible "
+#~ "though Jupyter Notebook, JupyterLab or "
+#~ "the terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run :code:`pip freeze | grep <name "
+#~ "of your lib>` to check if it's "
+#~ "already installed."
+#~ msgstr ""
 
