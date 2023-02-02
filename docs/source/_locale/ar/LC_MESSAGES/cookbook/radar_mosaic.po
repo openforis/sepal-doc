@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-27 01:13\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"PO-Revision-Date: 2023-02-02 17:29\n"
 "Last-Translator: \n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,7 @@ msgid "More detailed explanations of what a timescan is, how it relates to the c
 msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:38
-msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -123,5 +123,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Select **MODERATE** under Outlier removal"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
 #~ msgstr ""
 
