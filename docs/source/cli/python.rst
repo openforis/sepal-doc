@@ -4,7 +4,7 @@ Python
 Usage
 -----
 
-SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible though Jupyter Notebook, JupyterLab or the terminal:
+SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible through Jupyter Notebook, JupyterLab or the terminal:
 
 .. thumbnail:: ../_images/cli/python/jupyter_example.png
     :title: a code run in Jupyterlab
@@ -29,7 +29,7 @@ The SEPAL python environment is not empty and embed numerous librairies. They ar
 .. literalinclude:: ../_data/python_lib.txt
     :language: sh
 
-Run :code:`pip freeze | grep <name of your lib>` to check if it's already installed.
+Run :code:`pip show <name of your lib>` to check if it's already installed.
 
 
 Customization
