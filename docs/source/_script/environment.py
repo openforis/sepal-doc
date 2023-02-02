@@ -27,3 +27,9 @@ def get_python():
     urlretrieve(url, data_dir / "python_lib.txt")
 
     return
+
+
+if __name__ == "__main__":
+    """copy the requirements of the R and Python environment to data"""
+    get_R()
+    get_python()
