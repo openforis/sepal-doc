@@ -9,6 +9,10 @@ build:
     - graphviz
   tools:
     python: "3.9"
+  jobs:
+    pre_build:
+      - python docs/source/_script/modules.py
+      - python docs/source/_script/environment.py
 
 sphinx:
   configuration: docs/source/conf.py

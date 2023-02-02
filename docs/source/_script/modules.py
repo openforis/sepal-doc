@@ -113,3 +113,11 @@ def get_tags():
         print(f"{tag} stub file have been hydrated")
 
     return
+
+
+if __name__ == "__main__":
+    """Copy the modules documentation"""
+
+    get_index()
+    get_modules()
+    get_tags()

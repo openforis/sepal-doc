@@ -10,6 +10,8 @@ import nox
 def docs(session):
     """Build the documentation."""
     session.install("-r", "requirements.txt")
+    session.run("python", "docs/source/_script/modules.py")
+    session.run("python", "docs/source/_script/environment.py")
     session.run("sphinx-build", "-b", "html", "docs/source", "docs/build/html")
 
 

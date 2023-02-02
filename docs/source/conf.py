@@ -7,14 +7,11 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Path setup ----------------------------------------------------------------
 
-import os
 import sys
 from datetime import datetime
 from pathlib import Path
 
-sys.path.insert(0, os.path.abspath("."))
-
-from _script import environment, modules  # noqa: E402
+sys.path.append(str(Path(".").resolve()))
 
 # -- Project information -------------------------------------------------------
 
@@ -162,14 +159,3 @@ spelling_word_list_filename = [
     str(Path(__file__).expanduser().parent / "_data" / "spelling" / "en_US.txt")
 ]
 spelling_verbose = False
-
-# -- Copy the modules documentation --------------------------------------------
-
-modules.get_index()
-modules.get_modules()
-modules.get_tags()
-
-# -- copy the requirements of the R and Python environment to data -------------
-
-environment.get_R()
-environment.get_python()
