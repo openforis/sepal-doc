@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-27 01:13\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"PO-Revision-Date: 2023-02-02 17:29\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -822,7 +822,7 @@ msgid "The full folder with a consistent tree folder is required to read the `.v
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:646
-msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -1532,5 +1532,10 @@ msgstr ""
 #~ "The full folder with a consistent "
 #~ "tree folder is required to read "
 #~ "the `.vrt`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
 #~ msgstr ""
 

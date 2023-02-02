@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 16:21\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"PO-Revision-Date: 2023-02-02 17:29\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -204,7 +204,7 @@ msgid "Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool 
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:136
-msgid "The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :ref:`ccdc_pixel_analys` for a complete description."
+msgid "The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :doc:`cookbook/ccdc:On the fly Pixel analysis` for a complete description."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:138
@@ -270,4 +270,13 @@ msgstr ""
 #: ../../source/cookbook/ccdc_slice.rst:188
 msgid "When the task is finished the frame will be displayed in green as shown on the second image."
 msgstr ""
+
+#~ msgid ""
+#~ "The plotting area (3) is the same"
+#~ " as the one presented in the "
+#~ "CCDC recipe with small adjustment to "
+#~ "the slicing operation. Refer to "
+#~ ":ref:`ccdc_pixel_analys` for a complete "
+#~ "description."
+#~ msgstr ""
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-27 01:12\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"PO-Revision-Date: 2023-02-02 17:28\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -372,7 +372,7 @@ msgid "Now that you have downloaded the TS to your SEPAL account, it can be down
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:316
-msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -592,5 +592,10 @@ msgstr ""
 #~ "can differ from one SEPAL tile to"
 #~ " another, due to data availability "
 #~ "and pre-processing filters."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
 #~ msgstr ""
 
