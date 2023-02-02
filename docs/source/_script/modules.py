@@ -1,10 +1,10 @@
 """
 copy the module documentation from the corresponding repositories and link it to the SEPAL documentation
 """
-from pathlib import Path
-from urllib.request import urlretrieve
-from shutil import copy
 import json
+from pathlib import Path
+from shutil import copy
+from urllib.request import urlretrieve
 
 # dirs
 source_dir = Path(__file__).expanduser().parents[1]

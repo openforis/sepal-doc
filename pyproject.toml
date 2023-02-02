@@ -1,0 +1,7 @@
+[tool.ruff]
+fix = true
+select = ["E", "F", "W", "I", "RUF"]
+ignore = ["E501"] # line too long | Black take care of it
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"

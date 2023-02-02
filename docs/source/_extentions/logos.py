@@ -6,8 +6,8 @@ The directive does note require any argument.
 Example::
     .. logos:: funders
 """
-from pathlib import Path
 import json
+from pathlib import Path
 
 from docutils import nodes
 from docutils.parsers.rst import Directive
@@ -26,7 +26,7 @@ class Logos(Directive):
         sizes = {"xs": 6, "sm": 8, "md": 10, "lg": 12, "xl": 15, "xxl": 20}
 
         # get the env
-        env = self.state.document.settings.env
+        self.state.document.settings.env
 
         # Write the html content line by line for readability
         # init the html content

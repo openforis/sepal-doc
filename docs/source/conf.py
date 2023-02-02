@@ -14,8 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.abspath("."))
 
-from _script import environment
-from _script import modules
+from _script import environment, modules  # noqa: E402
 
 # -- Project information -------------------------------------------------------
 
