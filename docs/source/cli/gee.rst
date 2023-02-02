@@ -13,9 +13,9 @@ If the tool is properly installed then it will print out a short summary of avai
 
     $ earthengine command -h
 
-When you first install the Python API you will need to log in using the :code:`authenticate` command described below. 
+When you first install the Python API you will need to log in using the :code:`authenticate` command described below.
 
-available commands 
+available commands
 ------------------
 
 More information on the available command can be found on `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__.

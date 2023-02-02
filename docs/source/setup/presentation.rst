@@ -16,7 +16,7 @@ On this page, you will be introduced to the SEPAL interface and learn how to acc
 
     -   Internet access
     -   SEPAL account (see "Getting Started")
-            
+
 
 Access SEPAL
 ------------
@@ -43,13 +43,13 @@ The first step to create a SEPAL environment is to set up the language you want 
 
     You can always change your language preference from SEPAL's launch page.
 
-SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language: 
+SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language:
 
 - fr: Français
 - en: English
 - es: Español
 
-The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools. 
+The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools.
 
 SEPAL interface
 ---------------
@@ -75,7 +75,7 @@ On the lower-left is the red :code:`Tasks` tab. Clicking on this brings up a lis
 
 **Account Information** can be found on the lower-right side of the webpage by clicking the Username button. This opens an overlay that displays important user account information.
 
-You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent. 
+You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent.
 
 .. note::
 
@@ -99,11 +99,11 @@ Next to **Account Information** is a section called **User Report**, represented
    :title: User Report panel.
    :width: 350px
    :align: center
-   
+
 .. note::
 
    SEPAL is not to be used for long-term data storage. This is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage.
-   
+
 
 Process Tab
 ^^^^^^^^^^^
@@ -141,7 +141,7 @@ For example, click the :code:`Downloads` folder to expand it. This will display 
     :title: The files menu.
     :align: center
     :width: 50%
-    
+
 Notice that there are four buttons on the upper-right side of the window. The three rightmost buttons will be inactive until you select a file.
 
 -   The left button will show hidden files (files and folder names starting with ‘.').
@@ -158,7 +158,7 @@ This links you to the Linux command line that you can use in a variety of ways t
 
 When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize.
 
-One of the most important features of the Terminal is the ability to start and stop instances. 
+One of the most important features of the Terminal is the ability to start and stop instances.
 
 To start an instance, use the following steps as a guide:
 
@@ -197,4 +197,4 @@ This will bring up a list of apps you can run in SEPAL. More information about e
 -   Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation.
 
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

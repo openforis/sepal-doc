@@ -54,19 +54,19 @@ The primary tool needed to complete this tutorial is the System for Earth Observ
 
 SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and inefficient for processing satellite imagery. It achieves this by utilizing a cloud-based supercomputer, which enables users to process, store and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
 
-Two other tools will also be needed to complete this tutorial: CEO and GEE. 
+Two other tools will also be needed to complete this tutorial: CEO and GEE.
 
 CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
 
-GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the GEE JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: 
+GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the GEE JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements:
 
-    -   JavaScript code editor; 
-    -   a map display for visualizing geospatial datasets; 
-    -   an API reference documentation (Docs tab); 
-    -   Git-based Script Manager (Scripts tab); 
-    -   Console output (Console tab); 
-    -   Task Manager (Tasks tab) to handle long-running queries; 
-    -   Interactive map query (Inspector tab); 
+    -   JavaScript code editor;
+    -   a map display for visualizing geospatial datasets;
+    -   an API reference documentation (Docs tab);
+    -   Git-based Script Manager (Scripts tab);
+    -   Console output (Console tab);
+    -   Task Manager (Tasks tab) to handle long-running queries;
+    -   Interactive map query (Inspector tab);
     -   search of the data archive or saved scripts; and
     -   geometry drawing tools.
 
@@ -508,8 +508,8 @@ In SEPAL, you can run a classification on either a mosaic recipe or on a GEE ass
 
 .. note::
 
-    **Prerequisite**: 
-    
+    **Prerequisite**:
+
     -   `Module 1`_
 
 Creating and exporting a mosaic for a drawn AOI
@@ -866,7 +866,7 @@ Now we'll save our classification output.
 QA/QC considerations and methods
 """"""""""""""""""""""""""""""""
 
-Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area, are described in `Module 4`_. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. 
+Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area, are described in `Module 4`_. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications.
 
 Here we'll discuss one approach to informal QA/QC.
 
@@ -902,11 +902,11 @@ This module should take you approximately 3 hours to complete.
 Two-date change detection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this exercise, you will learn how to conduct a two-date change detection in SEPAL with the same classification algorithm used in `Module 2`_. 
+In this exercise, you will learn how to conduct a two-date change detection in SEPAL with the same classification algorithm used in `Module 2`_.
 
 This approach can be used with more than two dates in the future, if needed.
 
-In this example, you will create optical mosaics and classify them, building on skills learned in Module 1 and Module 2. 
+In this example, you will create optical mosaics and classify them, building on skills learned in Module 1 and Module 2.
 
 You may use two classifications from your own research area, if you prefer.
 
@@ -927,7 +927,7 @@ You may use two classifications from your own research area, if you prefer.
 Create mosaics for change detection
 """""""""""""""""""""""""""""""""""
 
-Before we can identify change, we first need to have images to compare. 
+Before we can identify change, we first need to have images to compare.
 
 In this section, we will create two mosaics of Sri Lanka, generate training data, and then classify the mosaics. This is discussed in detail in `Module 1`_ and `Module 2`_.
 
@@ -1157,7 +1157,7 @@ For this exercise, we will be using the sample data that is included with the to
     "Learn how to use the SMFM Deforest tool", "SEPAL account"
     "","Completed SEPAL modules on mosaics, classification, & time series"
 
-Jupyter notebook basics (optional) 
+Jupyter notebook basics (optional)
 """"""""""""""""""""""""""""""""""
 
 If you are unfamiliar with Jupyter notebooks, this section is meant to get you acquainted enough with the system to successfully run the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
@@ -1175,7 +1175,7 @@ If you are unfamiliar with Jupyter notebooks, this section is meant to get you a
 
 
 2. Running cells
-    
+
     To run a cell, select the cell, then locate and select the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 
@@ -1186,7 +1186,7 @@ If you are unfamiliar with Jupyter notebooks, this section is meant to get you a
 
 
 3. Kernel
-    
+
     The kernel is the computation engine that executes the code in the jupyter notebook. In this case it is a python 3 kernel. For this tutorial, you do not need to know much about this, but if notebook freezes or you need to reset for any reason, you can find kernel operations in the toolbar menu.
 
     Restarting the kernel:
@@ -1205,41 +1205,41 @@ Preparing your data
 For this exercise, we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create a time series of forest probability using tools with the SEPAL platform.
 
 .. attention::
-    SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL. 
+    SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL.
 
 This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
 If you already have a time series of percent forest coverage, feel free to use that.
-    
+
 A. Download demo data.
 
    1. Go to your SEPAL **Terminal**.
    2. Start a new instance or join your current instance.
    3. Clone the deforest Github repository to your SEPAL account using the following command.
-   
-   ``` git clone https://github.com/smfm-project/deforest ``` 
-   
+
+   ``` git clone https://github.com/smfm-project/deforest ```
+
 B. Use SEPAL workflow to generate time series of forest probability images.
 
    1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Mosaic generation with SEPAL".
 
    2. Save the mosaic as a recipe.
 
-   3. Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".   
+   3. Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".
 
       1. Select the bands you want to include in the classification.
       2. Add forest/non-forest training data.
- 
+
          1. Sample points directly in SEPAL.
-         2. Optionally, use Earth Engine asset. 
-   
+         2. Optionally, use Earth Engine asset.
+
       3. Apply the classifier.
       4. Select the **%forest output**.
       5. Save the classification as a recipe.
-   
+
    1. Open a new time-series.
 
-      1.  Select the same AOI as your mosaic. 
+      1.  Select the same AOI as your mosaic.
       2.  Choose a date range for the time series.
       3.  In the 'SRC' box, select satellites you used in the previous steps and the classification to apply.
       4.  Download the time series to your SEPAL workspace.
@@ -1256,9 +1256,9 @@ Go to the **Apps** menu by selecting the wrench icon and typing "SMFM" into the 
    Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, please close the tab and repeat the steps above. If this does not work, reload SEPAL.
 
 1. Click and run the first cell under the **Setup** header. This cell runs two commands: the first installs the deforest Python module and the second runs the **--help** switch to display some documentation on running the tool.
-   
+
    1. If the help text is output beneath the cell, move onto the 3rd step. If there is an error, continue to step 2. The error message might say:
-   
+
 ``` python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory ```
 
 .. figure:: ../_images/workflows/area_estimation/smfm_notebook_1_setup.png
@@ -1269,15 +1269,15 @@ Go to the **Apps** menu by selecting the wrench icon and typing "SMFM" into the 
     Successful setup.
 
 2. Install the package via the SEPAL Terminal.
-   
+
    1. Go to your SEPAL **Terminal**.
-   2. Type *1* to access the terminal of Session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account. 
+   2. Type *1* to access the terminal of Session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account.
    3. Clone the Deforest github repository to your SEPAL account.
-      
+
       .. code-block:: console
-      
+
           git clone https://github.com/smfm-project/deforest
-          
+
    4. Return to the SMFM notebook and repeat step 1.
 
 .. figure:: ../_images/workflows/area_estimation/smfm_clone_deforest.png
@@ -1318,7 +1318,7 @@ Example path to time series updated::
    "Scale","-s","Scale inputs by a factor of 6000. In a full-scale run, this should be set to 10000, here it's used to correct an inadequate classification."
    "Verbose","-v","Prints information to the console as the tool is run."
 
-If you would like to use a time frame other than the example, update the **date range** switch. 
+If you would like to use a time frame other than the example, update the **date range** switch.
 
 3. Run the **Process the time series** cell.
 
@@ -1334,7 +1334,7 @@ If you would like to use a time frame other than the example, update the **date 
    The output deforestation image will be saved to the home directory of SEPAL account(home/username) by default. If you want to save your images in a different location it can be changed by adding the new path after the **-o** switch.
 
    2. Download outputs to local computer (optional).
-   
+
       1. Navigate to the *Files* section of your SEPAL account.
       2. Locate the output image to download and click to select it. In this case, the image is named *sampleOutput_confirmed*.
       3. Click the download icon.
@@ -1352,23 +1352,23 @@ Now that we have run the deforestation processing chain, we can visualize our ou
         :alt: Example of a Jupyter Notebook cell.
         :width: 450
         :align: center
-    
-   The confirmed image shows the years of change that have been detected in the time series. Stable forest is colored green, non forest is colored yellow, and the change years colored by a blue gradient. 
+
+   The confirmed image shows the years of change that have been detected in the time series. Stable forest is colored green, non forest is colored yellow, and the change years colored by a blue gradient.
 
    It is recommended that the user discards the first 2-3 years of change, or uses a very high quality forest baseline map to mask out locations that weren't forest at the start of the time series. This is needed since our input imagery is a forest probability time series which initially considers the landscape as forest.
 
 Next, we will check out the deforest warning output.
 
 1. Run the second **Data visualization** cell
-    
+
     .. figure:: ../_images/workflows/area_estimation/smfm_warnings.png
         :alt: Example of a Jupyter Notebook cell.
         :width: 450
         :align: center
 
-    
-   This image shows the combined probability of non-forest existing at the end of our time series in locations that have not yet been flagged as deforested. This can be used to provide information on locations that have not yet reached the threshold for confirmed changes, but are looking likely to be possible. 
-   
+
+   This image shows the combined probability of non-forest existing at the end of our time series in locations that have not yet been flagged as deforested. This can be used to provide information on locations that have not yet reached the threshold for confirmed changes, but are looking likely to be possible.
+
    You can view a demonstration of the above steps on `YouTube <https://youtu.be/9BswdPlncfM>`_.
 
 Additional Resources
@@ -1393,8 +1393,8 @@ TimeSync integration is coming to CEO in 2021.
 
 .. note::
 
-    **Prerequisite**: 
-    
+    **Prerequisite**:
+
     -   SEPAL account
 
 BFAST Explorer
@@ -1770,7 +1770,7 @@ When you're on the institution's page, select the “Create New Project” butto
 -   **TEMPLATE**: This section is used to copy all of the information — including project info, area, and sampling design — from an existing published project to a new project.
 
     -   This is useful if you have an existing project you want to duplicate for another year or location, or if you're iterating through project design. You can use a published or closed project from your institution or another institutions' public project.
-    
+
     -   The project id is found in the URL when you're on the data collection page for the project.
 
 -   **PROJECT INFO**: Under Project Info, enter the project's **Name** and **Description.**
@@ -1789,13 +1789,13 @@ When you're on the institution's page, select the “Create New Project” butto
 -   **Sample Plot Design**: Here, select the radio button next to .csv.
 
     -   Select **Upload** and upload the CSV file of your stratified random sample. Note that the number of plots you want to sample must be 5000 or less.
-    
+
     -   Select if you would like round or square plots, and specify the size. For example, you might specify square plots of 30 m width in order to match Landsat grid size.
 
 -   **Sample Point Design**: Under the Sample Design header is really determining the sample point design within each sample plot.
 
     -   You can choose Random or Gridded, as well as how many samples per plot or the sample resolution respectively. You can also choose to have one central point.
-    
+
     -   Using CEO's built-in system, the maximum number of sample points per plot is 200. The maximum total number of sample points for the project across all plots is 50000.
 
 -   **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.

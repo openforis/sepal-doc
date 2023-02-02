@@ -18,7 +18,7 @@ In combination with the other tools of SEPAL, the classification recipe can help
 Start
 -----
 
-Once the classification recipe is selected, SEPAL will show the recipe process in a new tab (1) and the **Image selection** window will appear in the lower-right (2). 
+Once the classification recipe is selected, SEPAL will show the recipe process in a new tab (1) and the **Image selection** window will appear in the lower-right (2).
 
 .. thumbnail:: ../_images/cookbook/classification/landing.png
     :group: classification-recipe
@@ -27,13 +27,13 @@ Once the classification recipe is selected, SEPAL will show the recipe process i
 The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and enter a new name. It will default to :code:`Classification_<timestamp>`.
 
 .. thumbnail:: ../_images/cookbook/classification/default_title.png
-    :title: Classification default title. 
+    :title: Classification default title.
     :width: 49%
 
 .. thumbnail:: ../_images/cookbook/classification/modified_title.png
-    :title: Classification modified title. 
+    :title: Classification modified title.
     :width: 49%
-    
+
 .. note::
 
     The SEPAL team recommends using the following naming convention: :code:`<image_name>_<classification>_<measures>`.
@@ -56,17 +56,17 @@ In the lower-right corner, the following five tabs are available, allowing you t
 Image selection
 ^^^^^^^^^^^^^^^
 
-The first step consists of selecting the image bands on which to apply the classifier. The number of selected bands (i.e. images) is not limited. 
+The first step consists of selecting the image bands on which to apply the classifier. The number of selected bands (i.e. images) is not limited.
 
-.. note:: 
+.. note::
 
     Keep in mind that increasing the number of bands to analyse will improve the model but slow down the rendering of the final image.
 
-.. note:: 
+.. note::
 
     If multiple images are selected, each selected image should overlap each other. If masked pixels are found in one of the bands, the classifier will mask them.
 
-Select :btn:`<fas fa-plus> Add`. The following screen should be displayed: 
+Select :btn:`<fas fa-plus> Add`. The following screen should be displayed:
 
 .. thumbnail:: ../_images/cookbook/classification/image_source.png
     :group: classification-recipe
@@ -78,23 +78,23 @@ Image type
 Users can select images coming from an **Existing recipe** or an exported **GEE asset** (see advantages and disadvantages below). Both should be an :code:`ee.Image`, rather than a :code:`Time series` or :code:`ee.ImageCollection`.
 
 -   **Existing recipe**:
-    
+
     -   Advantages:
 
         -   All of the computed bands from SEPAL can be used.
-        -   Any modification to the existing recipe will be propagated in the final classification. 
+        -   Any modification to the existing recipe will be propagated in the final classification.
 
     -   Disadvantages:
 
         -   The initial recipe will be computed at each rendering step, slowing down the classification process and potentially breaking on-the-fly rendering due to GEE timeout errors.
 
--   **GEE asset**:  
+-   **GEE asset**:
 
     -   Advantages:
-        
-        -   Can be shared with other users. 
+
+        -   Can be shared with other users.
         -   The computation will be faster, as the image has already been exported.
-    
+
     -   Disadvantages:
 
         -   Only the exported bands will be available.
@@ -102,7 +102,7 @@ Users can select images coming from an **Existing recipe** or an exported **GEE 
 
 Both methods behave the same way in the interface.
 
-Select bands 
+Select bands
 """"""""""""
 
 .. tip::
@@ -116,11 +116,11 @@ Image bands
 
 Once an asset has been selected, SEPAL will load its bands in the interface. You can use any band that is native to the image as input for the classification process. Simply click on the band name to select them. The selected bands are summarized in the expansion panel title (1) and displayed in gold in the panel content (2).
 
-In this example, we selected the following: 
+In this example, we selected the following:
 
--   :code:`red` 
--   :code:`nir` 
--   :code:`swir` 
+-   :code:`red`
+-   :code:`nir`
+-   :code:`swir`
 -   :code:`green`
 
 .. thumbnail:: ../_images/cookbook/classification/native_bands.png
@@ -130,13 +130,13 @@ In this example, we selected the following:
 Derived bands
 #############
 
-The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly. 
+The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly.
 
 Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands.
 
-.. note:: 
+.. note::
 
-    If more than two bands are selected, the operation will be applied to the Cartesian product of the bands. If you select bands :math:`A`, :math:`B` and :math:`C`, and apply the :code:`Difference` derived bands, you'll add three bands to your analysis: 
+    If more than two bands are selected, the operation will be applied to the Cartesian product of the bands. If you select bands :math:`A`, :math:`B` and :math:`C`, and apply the :code:`Difference` derived bands, you'll add three bands to your analysis:
 
     -   :math:`A - B`
     -   :math:`A - C`
@@ -174,23 +174,23 @@ In this step, the user will specify the legend that should be used in the output
 Manual legend
 """""""""""""
 
-The first and most natural way of building a legend is to do it from scratch. 
+The first and most natural way of building a legend is to do it from scratch.
 
 Select :btn:`<fas fa-plus> Add` to add a new class to your legend.
 
-A class is defined by three key elements: 
+A class is defined by three key elements:
 
 - Color (1): Select the small color square to open the color selector and choose any color (color[s] must be unique).
 - Value (2): Select any integer value (value must be unique).
 - Class (3): Insert a class description (cannot be empty).
 
-Select the :btn:`<fas fa-plus> Add` button again to add an extra class line. The :btn:`<fas fa-trash>` button can be used to remove a specific line. 
+Select the :btn:`<fas fa-plus> Add` button again to add an extra class line. The :btn:`<fas fa-trash>` button can be used to remove a specific line.
 
 .. tip::
 
     Select :btn:`HEX` (4) to display the hexadecimal value of the selected color. It can also be used to insert a known color palette by utilizing its values.
 
-If multiple classes are created and you are not sure which one to use, you can apply colors to them by selecting a preselected color-map (5). They are provided by the `gee community <https://github.com/gee-community/ee-palettes>`__ and will be applied to every existing class in your panel. 
+If multiple classes are created and you are not sure which one to use, you can apply colors to them by selecting a preselected color-map (5). They are provided by the `gee community <https://github.com/gee-community/ee-palettes>`__ and will be applied to every existing class in your panel.
 
 .. thumbnail:: ../_images/cookbook/classification/create_legend.png
     :group: classification-recipe
@@ -209,7 +209,7 @@ If you already have a file describing your legend, you can use it, rather than i
 
     The column names will help SEPAL predict information, but are not compulsory.
 
-For example, a .csv file containing the following information is fully qualified to be used in SEPAL: 
+For example, a .csv file containing the following information is fully qualified to be used in SEPAL:
 
 .. code-block::
 
@@ -226,7 +226,7 @@ For example, a .csv file containing the following information is fully qualified
     95,Mangroves,#00cf75
     100,Moss,#fae6a0
 
-This one is the same using RGB-defined colors: 
+This one is the same using RGB-defined colors:
 
 .. code-block::
 
@@ -243,7 +243,7 @@ This one is the same using RGB-defined colors:
     95,Mangroves,0,207,117
     100,Moss,250,230,160
 
-Once the fully qualified legend file has been prepared on your computer, select :btn:`<fas fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files. 
+Once the fully qualified legend file has been prepared on your computer, select :btn:`<fas fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files.
 
 As shown on the next image, you can then select the columns that are defining your .csv file (select :btn:`Single column` for hexadecimal-defined colors and :btn:`multiple columns` for RGB-defined colors).
 
@@ -257,16 +257,16 @@ Select :btn:`<fas fa-check> Apply` to validate your selection. The classes will 
     :group: classification-recipe
     :title: Imported legend from a .csv file.
 
-Select :btn:`<fas fa-check> Done` to validate this step. 
+Select :btn:`<fas fa-check> Done` to validate this step.
 
-Every panel should be closed and the colors of the legend are now displayed at the bottom of the map. No classification is performed, as we didn't provide any training data. Nevertheless, this step is the last mandatory step for setting parameters. Training data can be added using the on-the-fly training functionality. 
+Every panel should be closed and the colors of the legend are now displayed at the bottom of the map. No classification is performed, as we didn't provide any training data. Nevertheless, this step is the last mandatory step for setting parameters. Training data can be added using the on-the-fly training functionality.
 
 Export legend
 """""""""""""
 
-Once your legend is validated, select the :btn:`<fas fa-chevron-up>` and then :code:`Export as CSV`. 
+Once your legend is validated, select the :btn:`<fas fa-chevron-up>` and then :code:`Export as CSV`.
 
-A file will be downloaded to you computer named :code:`<recipe_name>_legend.csv`, which will contain the legend information in the following format: 
+A file will be downloaded to you computer named :code:`<recipe_name>_legend.csv`, which will contain the legend information in the following format:
 
 .. code-block::
 
@@ -278,13 +278,13 @@ A file will be downloaded to you computer named :code:`<recipe_name>_legend.csv`
 Select training data
 ^^^^^^^^^^^^^^^^^^^^
 
-.. note:: 
+.. note::
 
-    This step is not mandatory. 
+    This step is not mandatory.
 
-Two inputs are required to create the classification output: 
+Two inputs are required to create the classification output:
 
-- pixel values (e.g. bands) to classify; and 
+- pixel values (e.g. bands) to classify; and
 - training data to set up the classification model.
 
 This menu will help the user manage the training data of the model used. To open it, select :btn:`TRN` in the lower-right side of the window.
@@ -298,36 +298,36 @@ Collected reference data
 
 Collected reference data are data selected on-the-fly by the user. The workflow will be explained later in the documentation. In this panel, this type of data can be managed by the user.
 
-The data appear as a pair, associating coordinates to a class value, which will be used to create training data in the classification model. 
+The data appear as a pair, associating coordinates to a class value, which will be used to create training data in the classification model.
 
 If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fas fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:
 
 .. code-block::
 
     XCoordinate,YCoordinate,class
-    32.77189961605467,-11.616264558754402,80 
+    32.77189961605467,-11.616264558754402,80
     ...
 
-If you are not satisfied with the selected data, select :btn:`<fas fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis. 
+If you are not satisfied with the selected data, select :btn:`<fas fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis.
 
-.. tip:: 
+.. tip::
 
-    A confirmation pop-up window should prevent you from accidentally deleting everything.  
+    A confirmation pop-up window should prevent you from accidentally deleting everything.
 
 Existing training data
 """"""""""""""""""""""
 
-Instead of collecting all of the data by hand, SEPAL provides numerous ways to include already existing training data into your analysis. The data can be from multiple formats and will be included in the model to improve the quality of the final map. 
+Instead of collecting all of the data by hand, SEPAL provides numerous ways to include already existing training data into your analysis. The data can be from multiple formats and will be included in the model to improve the quality of the final map.
 
 .. note::
 
     The imported files can use an extended version of the legend provided in the previous step, but to avoid unexpected behaviour, at least one of the classes of your legend and the provided training data need to match.
 
-.. note:: 
+.. note::
 
     If the added training data are outside of the image to classify, they will have no impact on the final result (with the exception of the SEPAL recipe).
 
-To add new data, select :btn:`<fas fa-plus> Add` and choose the type of data to import: 
+To add new data, select :btn:`<fas fa-plus> Add` and choose the type of data to import:
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-data.png
     :group: classification-recipe
@@ -336,11 +336,11 @@ To add new data, select :btn:`<fas fa-plus> Add` and choose the type of data to 
 CSV
 ###
 
-By selecting :btn:`csv file`, SEPAL will request a file from your computer in :code:`.csv` format. The file needs to include two pieces of information: geographic coordinates and class value. 
+By selecting :btn:`csv file`, SEPAL will request a file from your computer in :code:`.csv` format. The file needs to include two pieces of information: geographic coordinates and class value.
 
-This can be done using coordinates in :code:`EPSG:4326` latitude and longitude, as well as a `GeoJSON <https://geojson.org>`__ compatible point object. The file can embed other multiple columns that will not be considered during the analysis. 
+This can be done using coordinates in :code:`EPSG:4326` latitude and longitude, as well as a `GeoJSON <https://geojson.org>`__ compatible point object. The file can embed other multiple columns that will not be considered during the analysis.
 
-The following table is compatible with SEPAL: 
+The following table is compatible with SEPAL:
 
 .. code-block::
 
@@ -358,7 +358,7 @@ The columns used to define the X (longitude) and Y (latitude) coordinates are ma
 
     If your file contains a GeoJSON column instead of coordinates, select :btn:`geojson column` to switch the interface to one column selection.
 
-Now that you have set up the coordinates of your points, SEPAL will request the columns specifying the class value (not the name) in a second frame. Only the single column is supported so far. Select the column from your file that embeds the class values. 
+Now that you have set up the coordinates of your points, SEPAL will request the columns specifying the class value (not the name) in a second frame. Only the single column is supported so far. Select the column from your file that embeds the class values.
 
 .. tip::
 
@@ -396,7 +396,7 @@ For the other steps, please reproduce what was presented in the .csv section abo
 Sample classification
 #####################
 
-Instead of providing dataset points, SEPAL can also extract reference data from an already existing classification. It's a good way to improve an already existing classification system using an image with a better resolution. 
+Instead of providing dataset points, SEPAL can also extract reference data from an already existing classification. It's a good way to improve an already existing classification system using an image with a better resolution.
 
 To sample data, SEPAL will randomly select a number of points in each class and extract the class value using the provided resolution.
 
@@ -419,7 +419,7 @@ Start by selecting btn:`Sample classification` in the opened pop-up window, wher
 
     When all of the parameters are selected, it can take time, as SEPAL builds the sampling values on-the-fly. They will only be displayed once the sampling is validated.
 
-Select :btn:`<fas fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it. 
+Select :btn:`<fas fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it.
 
 Select the :btn:`<fas fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored.
 
@@ -432,12 +432,12 @@ SEPAL recipe
 
 SEPAL is also able to dirrectly apply a model built in another recipe as training data. In this case, we are not importing the points, but all of the model from the external recipe. It will not add points to the map. It's useful when the same classification needs to be applied on the same area for multiple years. The classification work can be carried out only in the first year and then applied recursively on all the others.
 
-Select :btn:`Saved SEPAL recipe` to open the pop-up window. In the dropdown menu, select one of the recipes saved in your SEPAL account. 
+Select :btn:`Saved SEPAL recipe` to open the pop-up window. In the dropdown menu, select one of the recipes saved in your SEPAL account.
 
 .. note::
-    
+
     The imported recipe needs to be a classification recipe. If none are found, the dropdown menu will be empty.
-    
+
     This recipe cannot come from another SEPAL account.
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-recipe.png
@@ -447,7 +447,7 @@ Select :btn:`Saved SEPAL recipe` to open the pop-up window. In the dropdown menu
 Use auxiliary datasets
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Some information that could be useful to the classification model is not always included in your image bands. A common example is **Elevation**. In order to improve the quality of the classification, SEPAL can provide some extra datasets to add auxiliary bands to the classification model. 
+Some information that could be useful to the classification model is not always included in your image bands. A common example is **Elevation**. In order to improve the quality of the classification, SEPAL can provide some extra datasets to add auxiliary bands to the classification model.
 
 Select :btn:`AUX` to open the **Auxiliaries** tab. Three sources are currently implemented in the platform (any number of them can be selected):
 
@@ -462,7 +462,7 @@ Select :btn:`AUX` to open the **Auxiliaries** tab. Three sources are currently i
 Classifier configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: 
+.. note::
 
     Customizing the classifier is a section designed for advanced users. Make sure that you thoroughly understand how the classifier you're using works before changing its parameters.
 
@@ -470,9 +470,9 @@ Classifier configuration
 
     The default value is a **Random Forest** classifier using 25 trees.
 
-The classification tool used in SEPAL is based on the `Smile - Statistical Machine Intelligence and Learning Engine Javascript <https://haifengl.github.io/classification.html>`__ library. Please refer to their documentation for specific descriptions of each model. 
+The classification tool used in SEPAL is based on the `Smile - Statistical Machine Intelligence and Learning Engine Javascript <https://haifengl.github.io/classification.html>`__ library. Please refer to their documentation for specific descriptions of each model.
 
-Select :btn:`CLS` to open the classification parameter menu. SEPAL supports 7 classifiers: 
+Select :btn:`CLS` to open the classification parameter menu. SEPAL supports 7 classifiers:
 
 -   Random Forest
 -   Gradient tree boost
@@ -482,9 +482,9 @@ Select :btn:`CLS` to open the classification parameter menu. SEPAL supports 7 cl
 -   Min distance
 -   Decision Tree
 
-For each of them, the workflow is the same: 
+For each of them, the workflow is the same:
 
-1.  Select the classifier by clicking on the corresponding name. SEPAL will display some of the parameters available. 
+1.  Select the classifier by clicking on the corresponding name. SEPAL will display some of the parameters available.
 2.  Select :btn:`More` on the lower left side of the panel to fully customize your classifier. The classification results will be updated on-the-fly.
 
 .. thumbnail:: ../_images/cookbook/classification/cls_less.png
@@ -511,7 +511,7 @@ Set up the view
 
 In order to improve the classification, one must set up the view to display all of the information. While these guidelines could be modified and extended, they are still useful as an introductory resource.
 
-In the following image, we displayed: 
+In the following image, we displayed:
 
 -   The current recipe (1) using the class colors in categorical mode.
 -   The current image (what you are classifying) (2) using the NIR,RED,SWIR band combination.
@@ -519,23 +519,23 @@ In the following image, we displayed:
 
 The number (4) indicates a cluster of existing training points. Zoom-in and they will be displayed as markers using the color of the class they mark (5).
 
-.. important:: 
+.. important::
 
-    This initial classification has been set using sampled data. Since they are sampled from a larger image, some are out of the image. They will have no impact on the classification as they are applied to masked pixels (6). 
+    This initial classification has been set using sampled data. Since they are sampled from a larger image, some are out of the image. They will have no impact on the classification as they are applied to masked pixels (6).
 
 .. thumbnail:: ../_images/cookbook/classification/classification_view.png
     :group: classification-recipe
     :title: A classification set-up ready to add new training data.
 
 
-Select points 
+Select points
 ^^^^^^^^^^^^^
 
 To start adding points, open the training interface by selecting :btn:`<fas fa-map-marker>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fas fa-plus`.
 
-The process to add new training data is as follows: 
+The process to add new training data is as follows:
 
-1.   **Click on the map to select a point**: You can click in any of the panels (this is not restricted to the recipe panel), but to be useful, the point needs to be within the border of the AOI. If it's not already the case, the class selection panel will appear in the upper-right of the window (2). 
+1.   **Click on the map to select a point**: You can click in any of the panels (this is not restricted to the recipe panel), but to be useful, the point needs to be within the border of the AOI. If it's not already the case, the class selection panel will appear in the upper-right of the window (2).
 2.   **Select the class value**: The previous class value is preselected, but you can change it to any other class value from the defined legend. The legend is displayed as :code:`<legend_classname> (<legend_value>)`.
 
 You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fas fa-times> Close` (3) and select :btn:`<fas fa-map-marker>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window.
@@ -547,7 +547,7 @@ You can now click elsewhere on the map to add another point. If you are satisfie
 Modify existing points
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To modify existing points, select the :btn:`<fas fa-map-marker>` to open the point editing interface and follow the following steps: 
+To modify existing points, select the :btn:`<fas fa-map-marker>` to open the point editing interface and follow the following steps:
 
 1.   **Select a point**: To select a point, click on an existing marker. It will appear bolder than the others. If it's not already the case, the class selection panel will appear in the upper-right of the window.
 2.   **Change the class value**: The point class will be selected in the editing menu with a :icon:`fas fa-check`. Select any other class value to change it.
@@ -557,7 +557,7 @@ Check the validity
 
 SEPAL embeds information to help the user understand if the amount of training data is sufficient to produce an accurate classification model. In the recipe window, change the band combination to :code:`Class probability`. The user now sees the probability of the model (i.e. the confidence level of the level with output class for each pixel). If the value is high (>80%), then the pixel can be considered valid; if the value is low (<80%), the model needs more training data or extra bands to improve the analysis.
 
-In the example image, the lake is classified as a "permanent water body" with a confidence of 65%, which is higher than the rest of the vegetation around it. 
+In the example image, the lake is classified as a "permanent water body" with a confidence of 65%, which is higher than the rest of the vegetation around it.
 
 .. thumbnail:: ../_images/cookbook/classification/classification_confidence.png
     :group: classification-recipe
@@ -577,9 +577,9 @@ Start download
 
 Selecting the :icon:`fas fa-cloud-download-alt` tab will open the **Retrieve** panel where you can select the exportation parameters (1).
 
-You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output. 
+You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output.
 
-You can set a custom scale for exportation (3) by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.) 
+You can set a custom scale for exportation (3) by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.)
 
 You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Earth Engine Asset` list. The same image will be exported, but in the first case you will find it in :code:`.tif` format in the :code:`Downloads` folder; in the second case, the image will be exported to your GEE account asset list.
 
@@ -587,7 +587,7 @@ You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Ea
 
     If :btn:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__.
 
-Select :btn:`<fas fa-check> Apply` to start the download process. 
+Select :btn:`<fas fa-check> Apply` to start the download process.
 
 .. thumbnail:: ../_images/cookbook/classification/export.png
     :group: classification-recipe
@@ -596,7 +596,7 @@ Select :btn:`<fas fa-check> Apply` to start the download process.
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-By going to the **Task** tab (in the lower-left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. 
+By going to the **Task** tab (in the lower-left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
 
 The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
@@ -638,9 +638,9 @@ Once the download process is done, you can access the data in your SEPAL folders
 
 The data are stored in a folder using the name of the optical mosaic as it was created in the first section of this article. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file.
 
-.. tip:: 
+.. tip::
 
     The full folder with a consistent tree folder is required to read the `.vrt`.
 
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

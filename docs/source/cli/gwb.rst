@@ -3,13 +3,13 @@ GuidosToolbox Workbench – GWB
 
 The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers. Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
 
-This document provides usage instructions for the cmd-line implementation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_. 
+This document provides usage instructions for the cmd-line implementation of  **GWB**. Documentation on the GWB SEPAL browser-based application is available `here <https://docs.sepal.io/en/latest/modules/dwn/gwb.html>`_.
 
 
 Initial setup
 -------------
 
-As regular user, please first copy the **GWB** setup into your :code:`$HOME` account using the command: 
+As regular user, please first copy the **GWB** setup into your :code:`$HOME` account using the command:
 
 .. code-block:: console
 
@@ -30,7 +30,7 @@ All GWB modules require categorical raster input maps in data type unsigned byte
 
 .. note::
 
-    -   Please also run the above cp-command to update your **GWB**-setup files with potentially modified files provided by a newer version of **GWB**.  
+    -   Please also run the above cp-command to update your **GWB**-setup files with potentially modified files provided by a newer version of **GWB**.
     -   The directory :code:`input` has a subdirectory :code:`backup` having backup copies of all parameter files. This subdirectory may also be used to temporarily store images that should be excluded from processing.
 
 Example of the **GWB** setup in the user account :code:`/home/prambaud`.
@@ -42,10 +42,10 @@ Example of the **GWB** setup in the user account :code:`/home/prambaud`.
 
     $ ls output/
     $ ls input/
-    acc-parameters.txt   clc3class.tif        example.tif         
-    frag-parameters.txt  mspa-parameters.txt  parc-parameters.txt  
-    rec-parameters.txt   spa-parameters.txt   backup              
-    dist-parameters.txt  fad-parameters.txt   lm-parameters.txt    
+    acc-parameters.txt   clc3class.tif        example.tif
+    frag-parameters.txt  mspa-parameters.txt  parc-parameters.txt
+    rec-parameters.txt   spa-parameters.txt   backup
+    dist-parameters.txt  fad-parameters.txt   lm-parameters.txt
     p223-parameters.txt  readme.txt           rss-parameters.txt
 
     $ less input/readme.txt
@@ -58,7 +58,7 @@ Example of the **GWB** setup in the user account :code:`/home/prambaud`.
 
     Directory backup: not needed for processing
     - a set of backup parameter files is included here
-    - temporarily store images here that you want to exclude from processing    
+    - temporarily store images here that you want to exclude from processing
 
 
 Usage Instructions Overview
@@ -74,92 +74,92 @@ To get an overview of all **GWB** modules enter the command: :code:`GWB`
     ===============================================================================
          Part A: brief module description
     ===============================================================================
-    cmd-line image analysis modules from GuidosToolbox 
+    cmd-line image analysis modules from GuidosToolbox
     (https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/):
     Usage of GWB implies compliance with the conditions in the EULA_GWB.pdf
     (https://ies-ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf)
-    
+
     GWB_check4updates
        Display installed and current program version
-       and test for program updates 
- 
+       and test for program updates
+
     GWB_ACC: Accounting of image objects and area classes
-        Requirements: 1b-BG, 2b-FG, optional: 0b-missing, 
+        Requirements: 1b-BG, 2b-FG, optional: 0b-missing,
         optional: 3b-special background 1, 4b-special background 2
         Parameter file: input/acc-parameters.txt
- 
+
     GWB_DIST: Euclidean Distance and Hypsometric Curve
         Requirements: 1b-BG, 2b-FG, optional: 0b-missing
         Parameter file: input/dist-parameters.txt
- 
+
     GWB_FAD: Multiscale fragmentation analysis
-        Requirements: 1b-BG, 2b-FG, optional: 0b-missing, 
+        Requirements: 1b-BG, 2b-FG, optional: 0b-missing,
         optional: 3b-special BG, 4b-non-fragmenting BG
         Parameter file: input/fad-parameters.txt
-    
+
     GWB_FRAG: user-selected custom scale fragmentation analysis
-        Requirements: 1b-BG, 2b-FG, optional: 0b-missing, 
+        Requirements: 1b-BG, 2b-FG, optional: 0b-missing,
         optional: 3b-special BG, 4b-non-fragmenting BG
         Parameter file: input/frag-parameters.txt
-    
-    GWB_LM: Landscape Mosaic 
-        Requirements: 1b-Agriculture, 2b-Natural, 3b-Developed 
+
+    GWB_LM: Landscape Mosaic
+        Requirements: 1b-Agriculture, 2b-Natural, 3b-Developed
         optional: 0b-missing
         Parameter file: input/lm-parameters.txt
-    
+
     GWB_MSPA: Morphological Spatial Pattern Analysis (up to 25 classes)
         Requirements: 1b-BG, 2b-FG, optional: 0b-missing
         Parameter file: input/mspa-parameters.txt
-    
+
     GWB_P223: Foreground Density [%], Contagion [%], or Adjacency [%]
         Spatcon: P2, P22, P23, Shannon, Sumd
         Requirements: 1b-BG, 2b-FG, 3b-specific BG (for Adjacency), optional: 0b-missing
         Parameter file: input/p223-parameters.txt
-    
+
     GWB_PARC: Landscape Parcellation index
         Requirements: [1b, 255b]-land cover classes, optional: 0b-missing
         Parameter file: input/parc-parameters.txt
-    
+
     GWB_REC: Recode class values
         Requirements: categorical map with up to 256 classes [0b, 255b]
         Parameter file: input/rec-parameters.txt
-    
+
     GWB_RSS: Restoration Status summary
         Requirements: 1b-BG, 2b-FG, optional: 0b-missing
         Parameter file: input/rss-parameters.txt
-    
+
     GWB_SPA: Spatial Pattern Analysis (2, 3, 5, or 6 classes)
         Requirements: 1b-BG, 2b-FG, optional: 0b-missing
         Parameter file: input/spa-parameters.txt
-    
+
     More details in the module-specific parameter files, or run: GWB_XXX --help
-    
+
     ===============================================================================
          Part B: usage
-    =============================================================================== 
+    ===============================================================================
     a) standalone mode (within the directory GWB): ./GWB_ACC
-       OR add a custom full path to your input and output directory i.e.: 
+       OR add a custom full path to your input and output directory i.e.:
        ./GWB_ACC -i=<your dir_input> -o=<your dir_output>
-    
+
     b) system mode (GWB installed in /opt/):
        To get started in system mode, copy the input/output directories to
        your home folder using the command: cp -fr /opt/GWB/*put ~/
-       To process, add the full path to your input and output directory: 
+       To process, add the full path to your input and output directory:
        GWB_ACC -i=$HOME/input -o=$HOME/output
-    
+
     ===============================================================================
          Part C: processing requirements
     ===============================================================================
-    RAM requirements depend on module processing settings and the amount 
+    RAM requirements depend on module processing settings and the amount
     and the configuration of objects in the input image.
-    You can use: /usr/bin/time -v <full GWB-command> and then look 
-    at 'Maximum resident set size', which will show the maximum 
+    You can use: /usr/bin/time -v <full GWB-command> and then look
+    at 'Maximum resident set size', which will show the maximum
     RAM usage point (in kb) encountered during execution.
      a) RAMpeakGB = divide 'Maximum resident set size' by 1024^2
      b) imsizeGB = image size in GB = xdim*ydim/1024^3
      c) processing RAM requirement by module: RAMpeak/imsizeGB
-    
-    Approximate peak RAM usage factors for an image of size imsizeGB: 
+
+    Approximate peak RAM usage factors for an image of size imsizeGB:
     GWB_ACC  : 30 * imsizeGB
     GWB_DIST : 18 * imsizeGB
     GWB_FAD  : 30 * imsizeGB
@@ -171,10 +171,10 @@ To get an overview of all **GWB** modules enter the command: :code:`GWB`
     GWB_REC  :  2 * imsizeGB
     GWB_RSS  : 20 * imsizeGB
     GWB_SPA  : 20 * imsizeGB
-    Example: input image 50,000 x 50,000 pixels -> imsizeGB = 2.33 GB. 
+    Example: input image 50,000 x 50,000 pixels -> imsizeGB = 2.33 GB.
     Processing this image for GWB_ACC will require 30 * 2.33 ~ 70 GB RAM
-    
-    The RAM usage factors above are indicative only. They depend on module 
+
+    The RAM usage factors above are indicative only. They depend on module
     settings and the amount/configuration of objects in the input image.
     ===============================================================================
      ***  Please scroll up to read GWB information in Part A, B, C above  ***
@@ -188,12 +188,12 @@ It is also possible to use the "help" option: :code:`GWB_ACC --help`
     $ GWB_ACC --help
     ----------------------------------------------------------------------------------
     usage: /usr/bin/GWB_ACC -i=dir_input -o=dir_output
-    -i=<full path to directory 'input'> 
+    -i=<full path to directory 'input'>
     (with your input images and parameter files);
-    Standalone mode: GWB/input 
-    -o=<full path to directory 'output'> 
+    Standalone mode: GWB/input
+    -o=<full path to directory 'output'>
     (location for results, must exist and must be empty);
-    Standalone mode: GWB/output 
+    Standalone mode: GWB/output
     --help: show options
 
     Standalone mode: ./GWB_ACC
@@ -201,7 +201,7 @@ It is also possible to use the "help" option: :code:`GWB_ACC --help`
     ----------------------------------------------------------------------------------
 
 .. tip::
-    
+
     When used for the first time, please accept the `EULA <https://ies-ows.jrc.ec.europa.eu/gtb/GWB/EULA_GWB.pdf>`_ terms. This step is only needed once.
 
 Additional, general remarks:
@@ -209,7 +209,7 @@ Additional, general remarks:
 -   The directory :code:`output` must be empty before running a new analysis. Please watch out for hidden files/folders in this directory, which may be the result of an interrupted execution. The safest way to empty the directory is to delete it and recreate a new directory :code:`output`.
 -   **GWB** will automatically process all suitable geotiff images (single band and of datatype byte) from the directory :code:`input`. Images of different format or that are not compatible with the selected analysis module requirements will be skipped. Details on each image processing result can be found in the log-file in the directory :code:`output`.
 -   **GWB** is written in the  the `IDL language <https://www.l3harrisgeospatial.com/Software-Technology/IDL>`_. It includes all required IDL libraries and the source code of each module, stored in the folder: :code:`/opt/GWB/tools/source/`.
--   To list your current version of **GWB**, or to check for potential new **GWB** versions, please run the command: 
+-   To list your current version of **GWB**, or to check for potential new **GWB** versions, please run the command:
 
     .. code-block:: console
 
@@ -220,7 +220,7 @@ Additional, general remarks:
 Available Commands
 ------------------
 
-.. danger:: 
+.. danger::
 
     Please enter your own settings by amending the module-specific parameters within the section marked with :code:`*******` in the respective input/<module>-parameters.txt file. Don't change anything else in the parameter file, don't delete or add lines or the module execution will crash. If in doubt, consult the respective input/backup/<module>-parameters.txt file.
 
@@ -232,7 +232,7 @@ This module will conduct the **Accounting** analysis. Accounting will label and 
 Requirements
 """"""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
@@ -240,12 +240,12 @@ Single band geotiff in data format byte:
 -   3 byte: special background 1 (optional)
 -   4 byte: special background 2 (optional)
 
-Processing parameter options are stored in the file :code:`input/acc-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/acc-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_ACCOUNTING parameter file: 
+    ;; GTB_ACCOUNTING parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; ACC: Accounting of image objects and patch area size classes
@@ -253,11 +253,11 @@ Processing parameter options are stored in the file :code:`input/acc-parameters.
     ;; optional: 3b-special background 1, 4b-special background 2
     ;; Please specify entries at lines 25-29 ONLY using the following options:
     ;;
-    ;; line 25: Foreground connectivity: 8 (default) or 4 
-    ;; line 26: spatial pixel resolution in meters: 
+    ;; line 25: Foreground connectivity: 8 (default) or 4
+    ;; line 26: spatial pixel resolution in meters:
     ;; line 27: up to 5 area thresholds [unit: pixels] in increasing order
     ;;          and separated by a single space.
-    ;; line 28: output option:   default (stats + image of viewport) OR 
+    ;; line 28: output option:   default (stats + image of viewport) OR
     ;;   detailed (stats + images of ID, area, viewport; requires much more CPU/RAM!))
     ;; line 29: big3pink: 0 (no - default) or 1 (show 3 largest objects in pink color)
     ;;
@@ -293,7 +293,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     dir_input= /home/prambaud/input
     dir_output= /home/prambaud/output
     % Loaded DLM: TIFF.
-    Done with: clc3class.tif    
+    Done with: clc3class.tif
     Done with: example.tif
     Accounting finished sucessfully
 
@@ -311,44 +311,44 @@ example statistics and graphical result of input image :code:`example.tif`:
 
 .. code-block:: text
 
-    Accounting size classes result using: 
+    Accounting size classes result using:
     example
     Base settings: 8-connectivity, pixel resolution: 25 [m]
     Conversion factor: pixel_to_hectare: 0.0625000, pixel_to_acres: 0.154441
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 1: [1, 200] pixels; color: black
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                 2789             31190           97.8596         7.2790497
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 2: [201, 2000] pixels; color: red
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                     44             23643           1.54386         5.5177484
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 3: [2001, 20000] pixels; color: yellow
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                     14             98972          0.491228         23.097855
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 4: [20001, 100000] pixels; color: orange
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                     2             59874         0.0701754         13.973255
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 5: [100001, 200000] pixels; color: brown
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                     0                 0           0.00000         0.0000000
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
     Size class 6: [200001 -> ] pixels; color: green
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                     1            214811         0.0350877         50.132092
-    --------------------------------------------------------------------------------------------- 
-    --------------------------------------------------------------------------------------------- 
+    ---------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------
     Sum of all classes:
             # Objects      Area[pixels]     % of all objects  % of total FGarea
                 2850            428490           100.000         100.00000
-    
+
     Median Patch Size:                5
     Average Patch Size:          150.347
     Standard Deviation:          4143.11
-    
+
     Three largest object IDs and area[pixels]; color: pink
     These 3 objects overlay objects listed above
     1)                  1            214811
@@ -370,18 +370,18 @@ Details on the methodology and input/output options can be found in the `Distanc
 Requirements
 """"""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
 
-Processing parameter options are stored in the file :code:`input/dist-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/dist-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_DIST parameter file: 
+    ;; GTB_DIST parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; DIST: Euclidean Distance + Hypsometric Curve
@@ -389,7 +389,7 @@ Processing parameter options are stored in the file :code:`input/dist-parameters
     ;;
     ;; Please specify entries at lines 17-18 ONLY using the following options:
     ;;
-    ;; line 17: Foreground connectivity: 8 (default) or 4 
+    ;; line 17: Foreground connectivity: 8 (default) or 4
     ;; line 18: 1-Eucl.Distance only   or  2- Eucl.Distance + Hysometric Curve
     ;;
     ;; an example parameter file with default settings would look like this:
@@ -405,7 +405,7 @@ Example
 
 The results are stored in the directory :code:`output`, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.
 
-:code:`GWB_DIST` command and listing of results in the directory output: 
+:code:`GWB_DIST` command and listing of results in the directory output:
 
 .. code-block:: console
 
@@ -428,8 +428,8 @@ The results are stored in the directory :code:`output`, one directory for each i
     dist.log  example_dist
 
     output/example_dist:
-    example_dist_hist.png      example_dist_hmc.csv  example_dist_hmc.png  
-    example_dist_hmc.txt       example_dist.tif      example_dist.txt  
+    example_dist_hist.png      example_dist_hmc.csv  example_dist_hmc.png
+    example_dist_hmc.txt       example_dist.tif      example_dist.txt
     example_dist_viewport.tif
 
 Example statistics (hypsometric curve) and spatial result of input image :code:`example.tif`:
@@ -460,7 +460,7 @@ This module will conduct the **fragmentation** analysis at **five fixed observat
 Requirement
 """""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
@@ -468,12 +468,12 @@ Single band geotiff in data format byte:
 -   3 byte: specific background (optional)
 -   4 byte: non-fragmenting background (optional)
 
-Processing parameter options are stored in the file :code:`input/fad-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/fad-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_FAD parameter file: 
+    ;; GTB_FAD parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; FAD = multi-scale fragmentation analysis at fixed observation scales of
@@ -482,15 +482,15 @@ Processing parameter options are stored in the file :code:`input/fad-parameters.
     ;; FAD: per-pixel density, color-coded into 6 fragmentation classes
     ;; FAD-APP2: average per-patch density, color-coded into 2 classes
     ;; FAD-APP5: average per-patch density, color-coded into 5 classes
-    ;; 
-    ;; Input image requirements: 1b-background, 2b-foreground, optional: 
+    ;;
+    ;; Input image requirements: 1b-background, 2b-foreground, optional:
     ;;    0b-missing, 3b-special background, 4b-non-fragmenting background
     ;;
     ;; FAD will provide 5+1 images and summary statistics.
     ;;
     ;; Please specify entries at lines 28-30 ONLY using the following options:
     ;; line 28: FAD  or  FAD-APP2  or  FAD-APP5
-    ;; line 29: Foreground connectivity: 8 (default) or 4 
+    ;; line 29: Foreground connectivity: 8 (default) or 4
     ;; line 30: high-precision: 1 (default) or 0
     ;;         (1-float precision, 0-rounded byte)
     ;;
@@ -509,7 +509,7 @@ Example
 
 The results are stored in the directory :code:`output`, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.
 
-:code:`GWB_FAD` command and listing of results in the directory output: 
+:code:`GWB_FAD` command and listing of results in the directory output:
 
 .. code-block:: console
 
@@ -526,21 +526,21 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     FAD finished sucessfully
-    
+
     $ ls -R output/
     output/:
     clc3class_fad  example_fad  fad.log
 
     output/clc3class_fad:
-    clc3class_fad_13.tif      clc3class_fad_27.tif       clc3class_fad_81.tif       
-    clc3class_fad_mscale.csv  clc3class_fad_mscale.tif   clc3class_fad_243.tif  
-    clc3class_fad_7.tif       clc3class_fad_barplot.png  clc3class_fad_mscale.sav  
+    clc3class_fad_13.tif      clc3class_fad_27.tif       clc3class_fad_81.tif
+    clc3class_fad_mscale.csv  clc3class_fad_mscale.tif   clc3class_fad_243.tif
+    clc3class_fad_7.tif       clc3class_fad_barplot.png  clc3class_fad_mscale.sav
     clc3class_fad_mscale.txt
 
     output/example_fad:
-    example_fad_13.tif      example_fad_27.tif       example_fad_81.tif       
-    example_fad_mscale.csv  example_fad_mscale.tif   example_fad_243.tif  
-    example_fad_7.tif       example_fad_barplot.png  example_fad_mscale.sav  
+    example_fad_13.tif      example_fad_27.tif       example_fad_81.tif
+    example_fad_mscale.csv  example_fad_mscale.tif   example_fad_243.tif
+    example_fad_7.tif       example_fad_barplot.png  example_fad_mscale.sav
     example_fad_mscale.txt
 
 Example statistics and spatial result of a multi-scale per-pixel analysis of the input image :code:`example.tif`:
@@ -555,7 +555,7 @@ Remarks
 """""""
 
 -   The result provides additional statistics in txt and csv format.
--   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB. 
+-   The IDL-specific sav-file contains all information to conduct fragmentation change analysis in GTB.
 -   In addition to the above multi-scale image, the result provides fragmentation images at each of the 5 fixed observation scales.
 -   Options to report at pixel- or patch-level and to select the number of fragmentation classes (6, 5, 2).
 
@@ -576,28 +576,28 @@ Single band geotiff in data format byte:
 -   3 byte: specific background (optional)
 -   4 byte: non-fragmenting background (optional)
 
-Processing parameter options are stored in the file :code:`input/frag-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/frag-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_FRAG parameter file: 
+    ;; GTB_FRAG parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; FOS = fragmentation analysis at up to 10 user-selected observation scales
-    ;; 
+    ;;
     ;; FOS5/6: per-pixel density, color-coded into 5/6 fragmentation classes
     ;; FOS-APP2: average per-patch density, color-coded into 2 classes
     ;; FOS-APP5: average per-patch density, color-coded into 5 classes
-    ;; 
-    ;; Input image requirements: 1b-background, 2b-foreground, optional: 
+    ;;
+    ;; Input image requirements: 1b-background, 2b-foreground, optional:
     ;;    0b-missing, 3b-special background, 4b-non-fragmenting background
     ;;
     ;; FOS will provide an image per observation scale and summary statistics.
     ;;
     ;; Please specify entries at lines 32-36 ONLY using the following options:
     ;; line 32: FOS5 (default)  or  FOS6  or  FOS-APP2  or  FOS-APP5
-    ;; line 33: Foreground connectivity: 8 (default) or 4 
+    ;; line 33: Foreground connectivity: 8 (default) or 4
     ;; line 34: pixel resolution [meters]
     ;; line 35: up to 10 window sizes [unit: pixels] in increasing order
     ;;          and separated by a single space.
@@ -623,7 +623,7 @@ Example
 
 The results are stored in the directory :code:`output`, one directory for each input image accompanied by a log-file providing details on computation time and processing success of each input image.
 
-:code:`GWB_FRAG` command and listing of results in the directory output: 
+:code:`GWB_FRAG` command and listing of results in the directory output:
 
 .. code-block:: console
 
@@ -638,30 +638,30 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     Frag finished sucessfully
-    
+
     $ ls -R output/
     output/:
     clc3class_frag  example_frag  frag.log
 
     output/clc3class_frag:
-    clc3class_FOS-APP2_23.tif  clc3class_FOS-APP2.csv  clc3class_FOS-APP2.sav  
+    clc3class_FOS-APP2_23.tif  clc3class_FOS-APP2.csv  clc3class_FOS-APP2.sav
     clc3class_FOS-APP2.txt
 
     output/example_frag:
-    example_FOS-APP2_23.tif  example_FOS-APP2.csv  example_FOS-APP2.sav  
+    example_FOS-APP2_23.tif  example_FOS-APP2.csv  example_FOS-APP2.sav
     example_FOS-APP2.txt
 
 Example statistics and spatial result of custom-scale per patch analysis of the input image :code:`example.tif`, here FOS-APP2 showing Continuous forest patches in light green and Separated forest patches in dark green.
 
 .. code-block:: text
 
-    FOS-APP2: Foreground Area Density summary analysis for image: 
+    FOS-APP2: Foreground Area Density summary analysis for image:
     example.tif
     ================================================================================
     8-conn FG: area, # patches, aps [pixels]: 428490, 2850, 150.34737
     Pixel resolution: 100[m], pix2ha: 1.00000, pix2acr: 2.47105
     Observation scale:   1
-    Neighborhood area:   23x23     
+    Neighborhood area:   23x23
         [hectare]:     529.00
         [acres]:    1307.19
     ================================================================================
@@ -697,7 +697,7 @@ This module will conduct the **Landscape Mosaic** analysis at a **user-selected 
 
 Requirements
 """"""""""""
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: Agriculture
@@ -708,12 +708,12 @@ Single band geotiff in data format byte:
 
     Input image values > 3 byte will be considered as missing data
 
-Processing parameter options are stored in the file :code:`input/lm-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/lm-parameters.txt`.
 
-.. code-block:: text 
+.. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_LM parameter file: 
+    ;; GTB_LM parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; LM will provide an image and summary statistics.
@@ -721,7 +721,7 @@ Processing parameter options are stored in the file :code:`input/lm-parameters.t
     ;; line 14: kdim: square window size [pixels], uneven in [3, 5, ...501]
     ;;          obs_scale [hectare] = (pixres[m] * kdim)^2 / 10000
     ;;
-    ;; example parameter file 
+    ;; example parameter file
     ;; (assuming a pixel resolution of 30m, a 11x11 window ~ 10.9 ha):
     ;; 11
     ****************************************************************************
@@ -749,19 +749,19 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     LM finished sucessfully
-    
+
     $ ls -R output/
     output/:
     clc3class_lm_23  example_lm_23  lm23.log
 
     output/clc3class_lm_23:
-    clc3class_lm_23_103class.tif  clc3class_lm_23_heatmap.png   clc3class_lm_23.tif  
-    lm103class_legend.png         clc3class_lm_23_heatmap.csv   clc3class_lm_23_heatmap.sav  
+    clc3class_lm_23_103class.tif  clc3class_lm_23_heatmap.png   clc3class_lm_23.tif
+    lm103class_legend.png         clc3class_lm_23_heatmap.csv   clc3class_lm_23_heatmap.sav
     heatmap_legend.png
 
     output/example_lm_23:
-    example_lm_23_103class.tif  example_lm_23_heatmap.png   example_lm_23.tif   
-    lm103class_legend.png       example_lm_23_heatmap.csv   example_lm_23_heatmap.sav  
+    example_lm_23_103class.tif  example_lm_23_heatmap.png   example_lm_23.tif
+    lm103class_legend.png       example_lm_23_heatmap.csv   example_lm_23_heatmap.sav
     heatmap_legend.png
 
 Example statistics (heatmap) and spatial result of custom-scale analysis of the input image :code:`clc3class.tif`, showing degree of predominance of land cover types Agriculture, Natural, Developed.
@@ -799,12 +799,12 @@ Single band geotiff in data format byte:
 -   1 byte: background
 -   2 byte: foreground (forest)
 
-Processing parameter options are stored in the file :code:`input/mspa-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/mspa-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_MSPA parameter file: 
+    ;; GTB_MSPA parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; MSPA: Morphological Spatial Pattern Analysis (up to 25 classes)
@@ -814,10 +814,10 @@ Processing parameter options are stored in the file :code:`input/mspa-parameters
     ;; (see tools/docs/MSPA_Guide.pdf for details)
     ;; Please specify entries at lines 27-32 ONLY using the following options:
     ;;
-    ;; line 27: MSPA parameter 1: Foreground connectivity: 8 (default) or 4 
+    ;; line 27: MSPA parameter 1: Foreground connectivity: 8 (default) or 4
     ;; line 28: MSPA parameter 2: EdgeWidth: 1 (default) or larger integer values
-    ;; line 29: MSPA parameter 3: Transition: 1 (default) or 0 
-    ;; line 30: MSPA parameter 4: IntExt: 1 (default) or 0 
+    ;; line 29: MSPA parameter 3: Transition: 1 (default) or 0
+    ;; line 30: MSPA parameter 4: IntExt: 1 (default) or 0
     ;; line 31: disk: 0 (default) or 1 (requires 20% less RAM but +40% processing time)
     ;; line 32: statistics: 0 (default) or 1 (add summary statistics)
     ;;
@@ -865,13 +865,13 @@ The results are stored in the directory :code:`output`, one directory for each i
     output/example_mspa:
     example_8_1_1_1.tif  example_8_1_1_1.txt
 
-Example statistics of the input image :code:`example.tif` and explanatory sketch of the basic MSPA feature classes: 
+Example statistics of the input image :code:`example.tif` and explanatory sketch of the basic MSPA feature classes:
 
-.. code-block:: text 
+.. code-block:: text
 
-    MSPA results using: 
+    MSPA results using:
     example (MSPA: 8_1_1_1, FG_area: 428490, iFG_area: 485606)
-    
+
     MSPA-class [color]:  FG/data pixels [%]  #/BGarea
     ============================================================
         CORE(s) [green]:            --/--     0
@@ -911,36 +911,36 @@ This module will conduct the **Density** (P2), **Contagion** (P22) or **Adjacenc
 Requirement
 """""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
 -   3 byte: specific background (for P23 only)
 
-Processing parameter options are stored in the file :code:`input/p223-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/p223-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_P223 parameter file: 
+    ;; GTB_P223 parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; FG-Density (P2), FG-Contagion (P22), or FG-Adjacency (P23)
-    ;; Input image requirements: 1b-background, 2b-foreground, 
+    ;; Input image requirements: 1b-background, 2b-foreground,
     ;; 3b-specific background (for P23), optional: 0b-missing
     ;;
     ;; P223 will provide a color-coded image showing [0,100]% for either
     ;; FG-Density, FG-Contagion, or FG-Adjacency masked for the Foreground cover.
-    ;; Use the alternative options 11, 12, 13 to obtain the original spatcon 
+    ;; Use the alternative options 11, 12, 13 to obtain the original spatcon
     ;; output without normalisation, masking, or color-coding.
     ;;
     ;; For original spatcon output ONLY:
-    ;; Missing values are coded as 0 (rounded byte), or -0.01 (float precision). 
-    ;; For all output types, missing indicates the input window contained 
+    ;; Missing values are coded as 0 (rounded byte), or -0.01 (float precision).
+    ;; For all output types, missing indicates the input window contained
     ;; only missing pixels.
-    ;; For FG-Contagion and FG-Adjacency output only, missing also indicates 
-    ;; the input window contained no foreground pixels (there was no information 
+    ;; For FG-Contagion and FG-Adjacency output only, missing also indicates
+    ;; the input window contained no foreground pixels (there was no information
     ;; about foreground edge).
     ;; For all output types, rounded byte = (float precision * 254) + 1
     ;;
@@ -987,7 +987,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     P2 finished sucessfully
-    
+
     $ ls -R output/
     output/:
     example_p2_27  p2_27.log
@@ -1023,27 +1023,27 @@ Details on the methodology and input/output options can be found in the `Parcell
 Requirements
 """"""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   at least two different landcover classes
 
-Processing parameter options are stored in the file :code:`input/parc-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/parc-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_PARC parameter file: 
+    ;; GTB_PARC parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; PARC: Landscape Parcellation index
-    ;; Input image requirements: [1b, 255b]-land cover classes, 
+    ;; Input image requirements: [1b, 255b]-land cover classes,
     ;;    optional: 0b-missing
     ;;
     ;; PARC will provide summary statistics only.
     ;;
     ;; Please specify entries at lines 17 ONLY using the following options:
-    ;; line 17: Foreground connectivity: 8 (default) or 4 
+    ;; line 17: Foreground connectivity: 8 (default) or 4
     ;;
     ;; an example parameter file using 8-connected foreground:
     ;; 8
@@ -1058,7 +1058,7 @@ The results are stored in the directory :code:`output`, one directory for each i
 
 :code:`GWB_PARC` command and listing of results in the directory output:
 
-.. code-block:: console 
+.. code-block:: console
 
     $ GWB_PARC -i=/home/prambaud/input -o=/home/prambaud/output
     IDL 8.8.0 (linux x86_64 m64).
@@ -1071,7 +1071,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     PARC finished sucessfully
-    
+
     $ ls -R output/
     output/:
     clc3class_parc  example_parc  parc.log
@@ -1107,7 +1107,7 @@ GWB_REC
 
 This module will conduct **recoding** of categorical land cover classes.
 
-.. danger:: 
+.. danger::
 
     Please ensure to strictly follow the instructions outlined in the file :code:`input/rec-parameters.txt`. In particular:
 
@@ -1121,12 +1121,12 @@ Requirements
 
 Single band geotiff in data format Byte.
 
-Processing parameter options are stored in the file :code:`input/rec-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/rec-parameters.txt`.
 
-.. code-block:: text 
+.. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_REC parameter file: 
+    ;; GTB_REC parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; REC: Recode image classes
@@ -1136,11 +1136,11 @@ Processing parameter options are stored in the file :code:`input/rec-parameters.
     ;; Please specify 256 lines (line 20 - 275) having two entries per line:
     ;; new_recoded_value [0, 255]   old_original_value[0, 255]
     ;;
-    ;; The first column: must have 256 entries showing the recoded values 
+    ;; The first column: must have 256 entries showing the recoded values
     ;; The second column: MUST be in sequential order from 0 to 255, DO NOT EDIT
     ;; Class values not found in the image will be skipped.
     ;; i.e., to recode the class 55 to 3, line 75 would read: 3 55
-    ;; 
+    ;;
     ;; Recode lookup table:
     ;; new_recoded_value[0, 255]  old_original_value[0, 255]
     ****************************************************************************
@@ -1422,7 +1422,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     Recode finished sucessfully
-    
+
     $ ls -R output/
     output/:
     clc3class_rec  example_rec  rec.log
@@ -1437,10 +1437,10 @@ Remarks
 """""""
 
 -   The recoded images have the suffix _rec.tif to distinguish them from the original images.
--   To verify the recoding run the command: 
-    
+-   To verify the recoding run the command:
+
     .. code-block:: console
-    
+
         $ gdalinfo -hist <path2image>
 
 Recoding may be useful to quickly setup a forest mask from a land cover map by reassigning specific land cover classes to forest. Please note that most **GWB** modules require a (pseudo) binary forest mask of data type Byte with the assignment:
@@ -1457,29 +1457,29 @@ This module will conduct the **Restoration Status Summary analysis**. It will ca
 Requirements
 """"""""""""
 
-Single band geotiff in data format Byte: 
+Single band geotiff in data format Byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
 
-.. warning:: 
+.. warning::
 
     Any other values are considered as missing data
 
-Processing parameter options are stored in the file :code:`input/rss-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/rss-parameters.txt`.
 
 .. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_RESTORATION-STATUS parameter file: 
+    ;; GTB_RESTORATION-STATUS parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; RSS: Restoration Status = network coherenceof image objetcs
     ;; Input image requirements: 1b-background, 2b-foreground, optional: 0b-missing
     ;;
     ;; Please specify entry at lines 14 ONLY using the following options:
-    ;; line 14: Foreground connectivity: 8 default) or 4 
+    ;; line 14: Foreground connectivity: 8 default) or 4
     ;;
     ;; an example parameter file with default output would look like this:
     ;; 8
@@ -1507,7 +1507,7 @@ The result is stored in a single csv-file in the directory :code:`output`, listi
     Done with: clc3class.tif
     Done with: example.tif
     RSS finished sucessfully
-    
+
     $ ls -R output/
     output/:
     rss8.csv  rss8.log
@@ -1515,7 +1515,7 @@ The result is stored in a single csv-file in the directory :code:`output`, listi
 
 Summary statistics for each input image showing the normalized degree of network coherence and additional key network parameters:
 
-.. csv-table:: 
+.. csv-table::
     :header: "FNAME", "AREA", "RAC[%]", "NR_OBJ", "LARG_OBJ", "APS", "CNOA", "ECA", "COH[%]", "REST_POT[%]"
 
     clc3class.tif,957879.00,23.946975,164,176747,5840.7256,180689,281211.93,29.357771,70.642229
@@ -1539,18 +1539,18 @@ This module will conduct the **Simplified Pattern Analysis**. SPA analyses shape
 Requirements
 """"""""""""
 
-Single band geotiff in data format byte: 
+Single band geotiff in data format byte:
 
 -   0 byte: missing (optional)
 -   1 byte: background
 -   2 byte: foreground (forest)
 
-Processing parameter options are stored in the file :code:`input/spa-parameters.txt`. 
+Processing parameter options are stored in the file :code:`input/spa-parameters.txt`.
 
-.. code-block:: text 
+.. code-block:: text
 
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; GTB_SPA parameter file: 
+    ;; GTB_SPA parameter file:
     ;;    ***  do NOT delete header lines starting with ";;" ***
     ;;
     ;; SPA: Spatial Pattern Analysis (2, 3, 5, or 6 classes)
@@ -1559,7 +1559,7 @@ Processing parameter options are stored in the file :code:`input/spa-parameters.
     ;; SPAx will provide an image and summary statistics using 8-connectivity.
     ;; Line 18: enter a single number, representing the number of pattern classes:
     ;; 2: SLF, Contiguous
-    ;; 3: Core, Core-Openings, Margin  
+    ;; 3: Core, Core-Openings, Margin
     ;; 5: Core, Core-Openings, Edge, Perforation, Margin
     ;; 6: Core, Core-Openings, Edge, Perforation, Islet, Margin
     ;;
@@ -1589,7 +1589,7 @@ The results are stored in the directory :code:`output`, one directory for each i
     Done with: clc3class.tif
     Done with: example.tif
     SPA2 finished sucessfully
-    
+
     $ ls -R output/
     output/:
     example_spa2  spa2.log
@@ -1601,16 +1601,16 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
 
 .. code-block:: text
 
-    SPA2: 8-connected Foreground, summary analysis for image: 
+    SPA2: 8-connected Foreground, summary analysis for image:
     /home/prambaud/input/example.tif
-    
+
     Image Dimension X/Y: 1000/1000
     Image Area =               Data Area                    + No Data (Missing) Area
-            = [ Foreground (FG) +   Background (BG)  ]     +          Missing    
-            = [        FG       + {Core-Opening + other BG} ] +       Missing    
-    
+            = [ Foreground (FG) +   Background (BG)  ]     +          Missing
+            = [        FG       + {Core-Opening + other BG} ] +       Missing
+
     ================================================================================
-            Category              Area [pixels]: 
+            Category              Area [pixels]:
     ================================================================================
             Contiguous:                 388899
     +              SLF:                  39591
@@ -1619,15 +1619,15 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
     + Background Total:                 571240
     --------------------------------------------------------------------------------
     =  Data Area Total:                 999730
-    
+
              Data Area:                 999730
     +          Missing:                    270
     --------------------------------------------------------------------------------
     = Image Area Total:                1000000
-    
-    
+
+
     ================================================================================
-            Category    Proportion [%]: 
+            Category    Proportion [%]:
     ================================================================================
        Contiguous/Data:     38.9004
     +         SLF/Data:      3.9602
@@ -1637,10 +1637,10 @@ Statistics and spatial result of the input image :code:`example.tif` showing a 2
          Contiguous/FG:     90.7603
     +           SLF/FG:      9.2397
     ================================================================================
-    
-    
+
+
     ================================================================================
-            Category          Count [#]: 
+            Category          Count [#]:
     ================================================================================
             Contiguous:             847
             FG Objects:            2850
@@ -1654,7 +1654,7 @@ Remarks
 """""""
 
 -   The full version, GWB_MSPA provides many more features and classes.
--   Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to detect connecting pathways. 
+-   Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to detect connecting pathways.
 
 :code:`GWB_SPA` is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient in many application fields. Advanced analysis, including the detection of connecting pathways require using the full version :code:`GWB_MSPA`.
 

@@ -21,7 +21,7 @@ The following steps demonstrate the default procedure for creating a yearly time
 
     3.3 De-select **Ascending orbit** and select **Descending orbit**. Let the mosaic render.
 
-    3.4 See if both orbits cover the entire AOI. If they do not, select the orbit that covers the entire AOI. If they do, select both and let the mosaic render; then, check for artifacts that may originate from using both orbits. 
+    3.4 See if both orbits cover the entire AOI. If they do not, select the orbit that covers the entire AOI. If they do, select both and let the mosaic render; then, check for artifacts that may originate from using both orbits.
 
 4. Select **Terrain** under Geometric operations.
 5. Select **Moderate** under Outlier removal.
@@ -35,4 +35,4 @@ The following video tutorial demonstrates these steps in a reproducible way:
 
 More detailed explanations of what a timescan is, how it relates to the concept of ARD, and what influences the processing parameters have will be added to this documentation at a later date.
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

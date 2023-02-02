@@ -13,7 +13,7 @@ Satellite observations offer opportunities for understanding how the Earth is ch
 
 Change detection can only provide a "before and after" scenario; a time-series analysis provides an opportunity to study patterns and key changes in the landscape evolution over time.
 
-This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-tools>`__ and `Copernicus <https://www.copernicus.eu/>`__ programs' imagery using the Google Earth Engine (GEE) datacube.  
+This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-tools>`__ and `Copernicus <https://www.copernicus.eu/>`__ programs' imagery using the Google Earth Engine (GEE) datacube.
 
 .. attention::
 
@@ -22,7 +22,7 @@ This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <ht
 Start
 -----
 
-Once the Time-series recipe is selected, SEPAL will open the recipe process in a new tab (1); the base map will change to Google high-resolution imagery and the **Area of interest (AOI)** selection window will appear in the lower right (2). 
+Once the Time-series recipe is selected, SEPAL will open the recipe process in a new tab (1); the base map will change to Google high-resolution imagery and the **Area of interest (AOI)** selection window will appear in the lower right (2).
 
 .. thumbnail:: ../_images/cookbook/time_series/landing.png
     :group: time-series-recipe
@@ -35,9 +35,9 @@ The first step is to change the name of the recipe. This name will be used to id
     :width: 49%
 
 .. thumbnail:: ../_images/cookbook/time_series/title.png
-    :title: Time-series modified title. 
+    :title: Time-series modified title.
     :width: 49%
-    
+
 .. note::
 
     The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<start-<end>_<measure>_<sensors>` (e.g. :code:`sgp_2012-2018_ndfi_l78`).
@@ -127,7 +127,7 @@ Multiple pre-processing parameters can be set to improve the quality of the prov
 -   :guilabel:`Aggressive`: Rely on image source QA bands and a cloud-scoring algorithm for cloud masking. This will probably "mask" some built-up areas and other bright features.
 
 **Snow masking**
-    
+
 -   :guilabel:`On`: Mask snow. This tends to leave some pixels with shadowy snow.
 -   :guilabel:`Off`: Don't mask snow. Note that some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artifacts.
 
@@ -139,7 +139,7 @@ Multiple pre-processing parameters can be set to improve the quality of the prov
 Available Bands
 ^^^^^^^^^^^^^^^
 
-.. note:: 
+.. note::
 
     The wavelength of each band is dependent on the satellite used.
 
@@ -150,7 +150,7 @@ Analysis
 
 Once all of the parameters are set, you can generate data from the recipe. Some can be directly generated on-the-fly from the interface; the rest require retrieving the data from SEPAL folders.
 
-The analysis icons can be found in the upper-right corner of the SEPAL interface: 
+The analysis icons can be found in the upper-right corner of the SEPAL interface:
 
 - :btn:`<fa fa-chart-area>`: Plot data.
 - :btn:`<fa fa-cloud-download-alt>`: Retrieve data.
@@ -161,22 +161,22 @@ The analysis icons can be found in the upper-right corner of the SEPAL interface
 
 .. tip::
 
-    The **Download** icon is only enabled when the data parameters are complete. If the button is disabled, check your parameters, as some might be missing. 
+    The **Download** icon is only enabled when the data parameters are complete. If the button is disabled, check your parameters, as some might be missing.
 
 Plot
 ^^^^
 
-Select :btn:`<fa fa-chart-area>` to start the plotting tool. Move the pointer to the main map; the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following pop-up window. 
+Select :btn:`<fa fa-chart-area>` to start the plotting tool. Move the pointer to the main map; the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following pop-up window.
 
 The plotting area is dynamic and can be customized by the user.
 
-Using the slider (1), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series. 
+Using the slider (1), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series.
 
-You can also select the observation feature by selecting one of the available measures in the dropdown selector in the upper-left corner (2). The available bands are the same as those described previously. 
+You can also select the observation feature by selecting one of the available measures in the dropdown selector in the upper-left corner (2). The available bands are the same as those described previously.
 
 On the main graph, each point represents one valid observation (based on the pre-processing filters). Hover over the point to let the tooltip describe the value and date of the observation (3).
 
-.. tip:: 
+.. tip::
 
     The coordinates of the point are displayed at the top of the chart window.
 
@@ -184,12 +184,12 @@ On the main graph, each point represents one valid observation (based on the pre
     :title: Plot chart pop-up window providing all of the available information on one single pixel alongside the time series.
     :group: time-series-recipe
 
-.. attention:: 
+.. attention::
 
     Since the plot feature is retrieving information from GEE on-the-fly and presenting it in an interactive window, this operation can take time, depending on the number of available observations and the complexity of the selected preprocessing parameters. If a spinning wheel appears in the pop-up window, you may have to wait up to two minutes to see the data displayed.
 
     .. thumbnail:: ../_images/cookbook/time_series/plot_loading.png
-        :title: Plot chart pop-up window providing all of the available information on one single pixel alongside the time series. If there are numerous observations and complex preprocessing, retrieving the data can take up to two minutes. 
+        :title: Plot chart pop-up window providing all of the available information on one single pixel alongside the time series. If there are numerous observations and complex preprocessing, retrieving the data can take up to two minutes.
         :group: time-series-recipe
 
 Export
@@ -197,11 +197,11 @@ Export
 
 In order for the data generated by the recipe to be used in other workflows, it needs to be retrieved from GEE and uploaded to SEPAL.
 
-Parameters 
+Parameters
 """"""""""
 Select :btn:`<fa fa-cloud-download-alt>` to open the **Download parameters** window. You will be able to select the measure to use on each observation of the time-series. This measure can be selected in the list of available bands presented above in a previous section.
 
-.. note:: 
+.. note::
 
     There is no fixed rule to the measure selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted measure will improve the quality of the downstream analysis.
 
@@ -265,11 +265,11 @@ Once the downloading process is done, you can access the data in your SEPAL fold
 
     Understanding how images are stored in a Time series is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you.
 
-The data are stored in a folder using the name of the time series as it was labeled in the first section of this document. The SEPAL team was forced to use this folder structure as GEE is unable to export an :code:`ee.ImageCollection`. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and reassembled in a :code:`stack.vrt` file. 
+The data are stored in a folder using the name of the time series as it was labeled in the first section of this document. The SEPAL team was forced to use this folder structure as GEE is unable to export an :code:`ee.ImageCollection`. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and reassembled in a :code:`stack.vrt` file.
 
 The AOI provided by the user will be divided into multiple SEPAL tiles. The AOI is a :code:`ee.FeatureCollection`; each feature is downloaded in a different tile. If the tile is bigger than 2° x 2° (EPSG:4326), then the feature is divided again until all of the tiles are smaller than the maximum 2° size. The tiles are identified by their :code:`<tile_number>`.
 
-To limit the size of the downloaded images, in each SEPAL tile, the time period is divided into **Chunks** of 3 months. They are identified by their :code:`<chunk-<start>_<end>`. **Chunks** are image folders. As a SEPAL tile is still bigger than what GEE can download at once, the images are divided into GEE tiles. This tiling system uses its own identification system (000000xxxx-000000xxxx). Consequently, **Chunks** contain tile raster images. Each one of these images is composed of one band per observation date, with the value of the measure for each pixel. The bands are named with the date. 
+To limit the size of the downloaded images, in each SEPAL tile, the time period is divided into **Chunks** of 3 months. They are identified by their :code:`<chunk-<start>_<end>`. **Chunks** are image folders. As a SEPAL tile is still bigger than what GEE can download at once, the images are divided into GEE tiles. This tiling system uses its own identification system (000000xxxx-000000xxxx). Consequently, **Chunks** contain tile raster images. Each one of these images is composed of one band per observation date, with the value of the measure for each pixel. The bands are named with the date.
 
 To gather all these rasters together, a first agregation on time is performed. One :code:`stack.vrt` is created per GEE tile, meaning that each :code:`stack.vrt` file contains all the :code:`*<gee tiling id>.tif` contained in each **Chunk**, reconstituting the full time period on the smallest spatial unit: the GEE tile. Each file is stored in a folder called :code:`tile-<gee tiling id>`.
 
@@ -281,7 +281,7 @@ The last file: :code:`date.csv` gathers all the observation dates in chronologic
 
     The dates contained in :code:`date.csv` can differ from one SEPAL tile to another, due to data availability and preprocessing filters.
 
-.. tip:: 
+.. tip::
 
     The full folder with a consistent treefolder is required to read the `.vrt`
 
@@ -311,6 +311,6 @@ Here is an example of a real TS folder:
 .. important::
 
     Now that you have downloaded the TS to your SEPAL account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in one of our `time-series analysis modules <../modules/time-series.html>`__.
-    
-    
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+
+
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

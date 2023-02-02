@@ -8,7 +8,7 @@ In the majority of SEPAL modules, the first mandatory input, is the area of inte
 Recipe AOI
 ^^^^^^^^^^
 
-The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon located at the left side of the SEPAL window. 
+The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon located at the left side of the SEPAL window.
 
 For many of the recipes, an area of interest has to be selected. Locate the AOI selection button at the bottom right corner. Click the :guilabel:`AOI` button to open the selection window.
 
@@ -30,24 +30,24 @@ There are multiple methods to select AOI's in the SEPAL process recipes:
     :align: center
     :width: 700
 
-.. tip:: 
+.. tip::
 
     The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed.
 
 Administrative boundaries
 """""""""""""""""""""""""
 
-You can select administrative layers as AOI. These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__. To use them, select the :guilabel:`Select country/province` method in the dropdown list. 
+You can select administrative layers as AOI. These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__. To use them, select the :guilabel:`Select country/province` method in the dropdown list.
 
 .. note::
 
     As GEE does not support non-Latin characters, accents and special characters have been removed from country and province names.
 
-In the first dropdown menu, you will be able to select a Country (administrative layer 0) from the country list and optionally, you can select a province (administrative level 1) within the country selected. The dropdown list is updated on the fly with the 1st administrative level boundaries according to the country selection. If nothing is selected, the whole country will be considered. 
+In the first dropdown menu, you will be able to select a Country (administrative layer 0) from the country list and optionally, you can select a province (administrative level 1) within the country selected. The dropdown list is updated on the fly with the 1st administrative level boundaries according to the country selection. If nothing is selected, the whole country will be considered.
 
-A buffer can be applied to the AOI boundaries, define its size using the provided slider (in km). It is by default set to 0, i.e. disabled. 
+A buffer can be applied to the AOI boundaries, define its size using the provided slider (in km). It is by default set to 0, i.e. disabled.
 
-.. note:: 
+.. note::
 
     The area of interest and preview will take longer to show up when buffering is enabled.
 
@@ -64,18 +64,18 @@ EE table
 
 You can use custom AOI defined by shapes. These shapes need to be ingested in Earth Engine as a :code:`ee.FeatureCollection` (see `how to upload custom assets to GEE <../setup/gee.html#upload-files-to-gee>`__). To use this method, select :guilabel:`EE table` .
 
-In the first dropdown, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`). 
+In the first dropdown, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`).
 
 .. warning::
 
     Make sure you have access to this asset. If that is not the case, ask the owner of the source to modify the sharing permission, otherwise, you won't be able to use the dataset.
 
--   Select :guilabel:`include all` and the whole geometries associated with the features will be used as an AOI. 
--   Select :guilabel:`filter` and you will be able to provide a column name and a value to filter the table. The Aoi will then be reduced to the filtered features in the input asset. 
+-   Select :guilabel:`include all` and the whole geometries associated with the features will be used as an AOI.
+-   Select :guilabel:`filter` and you will be able to provide a column name and a value to filter the table. The Aoi will then be reduced to the filtered features in the input asset.
 
-A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to :code:`0`, i.e. disabled. 
+A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to :code:`0`, i.e. disabled.
 
-.. note:: 
+.. note::
 
     The area of interest and the preview will take longer to show up when buffering is enabled.
 
@@ -118,7 +118,7 @@ An AOI selector module is composed of two main sections: the available methods (
 Available methods
 """""""""""""""""
 
-There are two types of processes that require different AOI inputs and it will depend on the way the module is created and where are the core processes done: directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__ or in GEE. Although both interfaces look exactly the same, the methods and the inner data sources might vary, e.g. the administrative definitions. 
+There are two types of processes that require different AOI inputs and it will depend on the way the module is created and where are the core processes done: directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__ or in GEE. Although both interfaces look exactly the same, the methods and the inner data sources might vary, e.g. the administrative definitions.
 
 Administrative definitions
 """"""""""""""""""""""""""
@@ -159,18 +159,18 @@ When you are looking for a more specific area of interest, the module AOI select
 Vector file
 ###########
 
-Use this option to upload a custom vector file. Select the :guilabel:`Vector file` method in the dropdown list, a file manager (1) widget will be displayed below allowing you to search and select a vector file stored in your SEPAL environment (see `how to exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_). The below dropdown named :guilabel:`Column` (2) is useful to filter the features of the vector file, the default option is :guilabel:`Use all features` which means that any filter is done. To filter the collection, select a column and a :guilabel:`Value` (3) in the corresponding dropdown list, then click the :guilabel:`Select aoi` button. 
-     
+Use this option to upload a custom vector file. Select the :guilabel:`Vector file` method in the dropdown list, a file manager (1) widget will be displayed below allowing you to search and select a vector file stored in your SEPAL environment (see `how to exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_). The below dropdown named :guilabel:`Column` (2) is useful to filter the features of the vector file, the default option is :guilabel:`Use all features` which means that any filter is done. To filter the collection, select a column and a :guilabel:`Value` (3) in the corresponding dropdown list, then click the :guilabel:`Select aoi` button.
+
 .. thumbnail:: ../_images/feature/aoi_selector/method_vector_file.png
    :title: Module vector file
    :align: center
    :width: 600
-   
 
-.. note:: 
-    
+
+.. note::
+
     he available vector formats are: [:code:`.shp`, :code:`.geojson`, :code:`.gpkg`, :code:`.kml`]. Once selected, the module will transform its original coordinate system into :code:`EPSG:4326`.
-    
+
     Remember that if the module you are using is doing the computation in GEE, a new :code:`feature collection` asset will be created and stored in you GEE root folder using the name of the provided file prefixed by :code:`aoi_`.
 
 Drawn shape
@@ -189,7 +189,7 @@ Three drawing geometries will be shown up at the top left corner of the map: a :
    :align: center
    :width: 300
 
-.. tip:: 
+.. tip::
 
     To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fas fa-plus-square>` and :btn:`<fas fa-minus-square>` buttons located at the top right corner.
 
@@ -209,7 +209,7 @@ Use this method to load a single or multiple point dataset. Select :guilabel:`Po
    :align: center
    :width: 600
 
-Use the file selector widget to navigate through your SEPAL environment and search a table file (:code:`.csv` or :code:`.txt`) containing the coordinates of your points. Make sure the file use the following structure: 
+Use the file selector widget to navigate through your SEPAL environment and search a table file (:code:`.csv` or :code:`.txt`) containing the coordinates of your points. Make sure the file use the following structure:
 - at least 3 columns
 - 1 providing an id (unique point identifier)
 - 1 providing longitude coordinates
@@ -217,7 +217,7 @@ Use the file selector widget to navigate through your SEPAL environment and sear
 
 .. danger::
 
-    The points coordinates need to be set in :code:`EPSG:4326`. 
+    The points coordinates need to be set in :code:`EPSG:4326`.
 
 Here is an example of a compatible point file:
 

@@ -9,11 +9,11 @@ Usage
 Google classroom
 ^^^^^^^^^^^^^^^^
 
-To provide the team with consistent and up to date formation material, we decided to use the Google classroom platform. It will allow everyone to share and update the presentations and material that will be used by the whole team. 
+To provide the team with consistent and up to date formation material, we decided to use the Google classroom platform. It will allow everyone to share and update the presentations and material that will be used by the whole team.
 
 First open your professional Google account and go to the `Google Classroom page <https://classroom.google.com/u/0/h>`_:
 
-You should see something like the following image, minus the classes : 
+You should see something like the following image, minus the classes :
 
 .. image:: ../_images/team/classroom/dashboard.png
 
@@ -21,30 +21,30 @@ each class is composed by several :code:`topics` and each topic can embed differ
 
 .. image:: ../_images/team/classroom/stream.png
 
-.. seealso:: 
+.. seealso::
 
     If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_) they will answer as soon as possible.
 
 Creating a classroom
 ^^^^^^^^^^^^^^^^^^^^
 
-If you need material for a webinar you can either directly reuse one of the general classroom or create your own. You can follow the steps presented in the following tutorial to create a class of your own. 
+If you need material for a webinar you can either directly reuse one of the general classroom or create your own. You can follow the steps presented in the following tutorial to create a class of your own.
 
 .. youtube:: pl-tBjAM9g4
 
 .. tip::
 
-    If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account. 
+    If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account.
 
 When creating basic content, you can re-use posts from classes were you are teaching as shown in the following image:
 
 .. image:: ../_images/team/classroom/new-post.png
 
-.. warning:: 
+.. warning::
 
     Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_).
 
-.. danger:: 
+.. danger::
 
     To avoid duplicate copies of content, do NOT click the option to copy all attachments
 
@@ -64,7 +64,7 @@ In your drive got to the “share with me" section and click on the “General C
 .. image:: ../_images/team/classroom/shared-with-me.png
 
 
-Then press :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive. 
+Then press :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive.
 
 .. image:: ../_images/team/classroom/pop-up.png
 
@@ -80,6 +80,6 @@ Then add a file from Gdrive (to make sure that you're reusing an already existin
 
     The file you're using is made for general purpose and it's not supposed to be adapted to the specific needs of your formation. If the modification you're making are improving the quality of the presentation it's perfect but if you adapt it to your formation specific need, you should consider copy it to you drive.
 
-.. danger:: 
+.. danger::
 
     All the team members have the right to edit this file, mistakes will impact all of us and all the already existing classrooms that use this file.

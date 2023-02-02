@@ -29,7 +29,7 @@ For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.
 .. toctree::
     :maxdepth: 1
     :hidden:
-    
+
     register
     presentation
     gee
@@ -37,7 +37,7 @@ For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.
     nicfi
     password
     resource
-    
+
 .. spelling:word-list::
 
     filezilla
