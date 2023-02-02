@@ -6,7 +6,7 @@ on:
     - cron: "0 0 * * *"
 
 env:
-  SPHINXINTL_LANGUAGE: en,fr,es,ar,pt,zh,ru,sv,it
+  SPHINXINTL_LANGUAGE: en
 
 jobs:
   build:
