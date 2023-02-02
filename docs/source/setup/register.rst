@@ -55,10 +55,10 @@ Create a SEPAL account
     :group: register
     :title: Confirmation email.
 
-.. tip:: 
+.. tip::
 
     After completing registration, you can request access to the **SEPAL Users Google Group**.
-    
+
     Go to https://groups.google.com/g/sepal-users and select **Ask to join group**.
 
     For support, go to the `Geographic Information Systems StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ and ask a question to the community using the **SEPAL** tag.
@@ -77,10 +77,10 @@ Request additional SEPAL resources
 ----------------------------------
 (Recommended)
 
-To use SEPAL modules and acesss the command line terminal and development tools like Jupyter or RStudio, you will need to request processing resources. 
+To use SEPAL modules and acesss the command line terminal and development tools like Jupyter or RStudio, you will need to request processing resources.
 
-1.  Select **Quota** > :btn:`<fa-solid fa-pencil> Request additional resources`. 
-2.  Complete the form and select :btn:`<fa-solid fa-check> Apply`. 
+1.  Select **Quota** > :btn:`<fa-solid fa-pencil> Request additional resources`.
+2.  Complete the form and select :btn:`<fa-solid fa-check> Apply`.
 
 If you do not know how many resources you will use, go to the `resource management <resource>` section for more information.
 
@@ -133,11 +133,11 @@ Sign up for Collect Earth Online (CEO)
 .. note::
 
     To get the most out of the SEPAL platform's **Classification** and **Validation** tools, the SEPAL team highly suggests using CEO for collecting point-based training and validation data.
-    
+
 To create a new account:
 
 1.  Open your browser (Google Chrome, Microsoft Edge, or Mozilla Firefox).
-2.  Go to https://collect.earth. 
+2.  Go to https://collect.earth.
 3.  Select **Register**.
 4.  Complete the form and Select **Register**.
 5.  Log in with your **Email** and **Password**.
@@ -149,6 +149,6 @@ To create a new account:
 .. tip::
 
     If you forget your password, select **Forgot your password?** and follow the instructions.
-    
-    
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+
+
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

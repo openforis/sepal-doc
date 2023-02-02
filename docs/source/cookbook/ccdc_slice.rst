@@ -115,13 +115,13 @@ The first parameter is the number of **harmonics** used to extract the modelled 
 
 Then you need to select the **Break analysis band**. As the slice is including a range of observation, the model can include multiple segments and thus multiple breaks. this parameter will select the band used by SEPAL to select the break that will be kept in the slice output.
 
-Breaks identified by the CCDC asset at the end of the time period are usually errors. if your slicing is ending at the same date as your CCDC asset, you should consider masking the end break. 
+Breaks identified by the CCDC asset at the end of the time period are usually errors. if your slicing is ending at the same date as your CCDC asset, you should consider masking the end break.
 
 SEPAL offers 4 ways of selecting the remaining break:
 
 - :guilabel:`first`: the first break within the slice date range
 - :guilabel:`last`: the last break within the slice date range
-- :guilabel:`magnitude`: the break with the highest magnitude of change 
+- :guilabel:`magnitude`: the break with the highest magnitude of change
 - :guilabel:`confidence`: the break with the highest confidence value (see :doc:`ccdc` for mor information about confidence computation)
 
 By selecting a specific breack direction, the break sekection will only take into acount the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default we consider :guilabel:`any` break direction.
@@ -133,7 +133,7 @@ Visualization
 
 Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window.
 
-The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :ref:`ccdc_pixel_analys` for a complete description.
+The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :doc:`cookbook/ccdc:On the fly Pixel analysis` for a complete description.
 
 The plotting area cover all the CCDC asset range, in red (4) the user will see the slice. It will be a sector of the plot if date range is selected and a red line if single date is selected.
 
@@ -149,7 +149,7 @@ Export
 ------
 
 Trigger the export task
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace.
 

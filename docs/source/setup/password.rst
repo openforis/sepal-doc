@@ -8,7 +8,7 @@ In this article, you can learn how to:
 
 -   Access your SEPAL account by creating new password.
 
-If you have forgotten the password for your SEPAL account, you can reset it by proving you have access to the email address associated with your account. 
+If you have forgotten the password for your SEPAL account, you can reset it by proving you have access to the email address associated with your account.
 
 A password may be recovered by submitting a request by following the directions located at one of the website's sign-in forms.
 
@@ -37,9 +37,9 @@ Enter the email address you used to register for SEPAL, then select **Reset pass
    :title: The **Reset password** page where you can insert your email address.
    :group: setup_password
 
-.. note:: 
+.. note::
 
-    If the field becomes red, your email address was not found in our database. Be careful with typos and test multiple addresses, as you may have used another when you registered. 
+    If the field becomes red, your email address was not found in our database. Be careful with typos and test multiple addresses, as you may have used another when you registered.
 
 Once your email address is validated, a confirmation email will be sent from SEPAL to your associated email account. The notification system will display a message containing this information in the upper-right corner of the screen.
 
@@ -51,14 +51,14 @@ Once your email address is validated, a confirmation email will be sent from SEP
 Email confirmation
 ------------------
 
-To reset your password, SEPAL uses an email confirmation system because: 
+To reset your password, SEPAL uses an email confirmation system because:
 
 -   Attackers cannot lock the accounts of other users by guessing their usernames and utilizing the forgotten password recovery function.
 -   Passwords cannot be read from your email account by potential attackers.
 -   The reset links are only temporarily valid.
 -   After someone uses a password reset link, it becomes invalid and cannot be accessed again.
 
-For all of these reasons, SEPAL will send you the following email. 
+For all of these reasons, SEPAL will send you the following email.
 
 .. thumbnail:: ../_images/setup/password/email.png
    :title: Example of a **Reset password** email.
@@ -72,12 +72,12 @@ Change password
 In the reset password form, three fields are available:
 
 -   **Username**: The username associated with your email address in the database.
-    
+
     .. important::
-    
+
         Your username cannot be changed.
 
--   **Password**: Your new password. 
+-   **Password**: Your new password.
 
 -   **Confirm password**: A security field where you need to provide your new password again.
 
@@ -94,6 +94,6 @@ Once validated, the new password will be automatically updated on your account. 
 .. thumbnail:: ../_images/setup/password/change-password-notification.png
    :title: The **Change password** interface.
    :group: setup_password
-   
-   
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+
+
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

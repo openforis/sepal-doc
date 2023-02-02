@@ -6,6 +6,6 @@ SEPAL team documentation
 .. toctree::
     :maxdepth: 1
     :hidden:
- 
+
     contribute
     classroom

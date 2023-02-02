@@ -7,22 +7,22 @@ Use SEPAL's built-in tools and FTP solutions to exhange files
 In this article, you can learn how to exchange files with SEPAL using:
 
 -   Built-in tools, including:
-    -   Jupytyr Notebook 
-    -   Jupityrlab 
-    -   RStudio 
+    -   Jupytyr Notebook
+    -   Jupityrlab
+    -   RStudio
     -   SEPAL file explorer
 -   an FTP solution, specifically FileZilla®
 
-Built-in tools 
+Built-in tools
 --------------
 
-To exchange files with SEPAL, there are several built-in tools you can use. 
+To exchange files with SEPAL, there are several built-in tools you can use.
 
-.. note:: 
+.. note::
 
     Since SEPAL's built-in tools for uploading and downloading are limited, large amounts of data should be uploaded or downloaded using an FTP solution, such as FileZilla® (for more information, see the section "FTP solution" below).
 
-Jupyter Notebook 
+Jupyter Notebook
 ^^^^^^^^^^^^^^^^
 
 In the SEPAL **Application** dashboard, open a new **Jupyter Notebook app**. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared.
@@ -40,7 +40,7 @@ Select **Download** to download a selected file to your computer.
 Jupyterlab
 ^^^^^^^^^^
 
-In the SEPAL interface **Dashboard**, open a new **Jupyterlab app**. 
+In the SEPAL interface **Dashboard**, open a new **Jupyterlab app**.
 
 Use the **File browser** and **File menu** to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared.
 
@@ -52,7 +52,7 @@ Any file in Jupyterlab can be downloaded by right-clicking its name in the **Fil
 
 .. youtube:: Wl7Ozl6rMcc
 
-.. seealso:: 
+.. seealso::
 
     More information about the Jupyterlab interface can be found in `Jupyterlab documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__.
 
@@ -80,10 +80,10 @@ After selecting a single file, select **Download** to download the file to your 
 
     You cannot download multiple files or folders directly through this interface.
 
-FTP solution 
+FTP solution
 ------------
 
-SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP). 
+SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP).
 
 If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example.
 
@@ -94,11 +94,11 @@ If you don't know what an FTP solution is and/or don't have an FTP solution inst
 FileZilla®
 ^^^^^^^^^^
 
-FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_. 
+FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
 The FileZilla Client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL.
 
-.. tip:: 
+.. tip::
 
     To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`_.
 
@@ -111,12 +111,12 @@ To use FileZilla, open the application and connect to the SEPAL server by select
 
 Use the screenshot below as a guide for filling out the form:
 
--   **Host:** ssh.sepal.io 
+-   **Host:** ssh.sepal.io
 -   **Port:** 443
 -   **Protocol:** SFTP – SSH File Transfer Protocol
--   **Logon Type:** Normal 
+-   **Logon Type:** Normal
 -   **User:** <your SEPAL username>
--   **Password:** <your SEPAL password> 
+-   **Password:** <your SEPAL password>
 
 .. note::
 
@@ -124,11 +124,11 @@ Use the screenshot below as a guide for filling out the form:
 
 .. image:: ../_images/setup/filezilla/register_new_site.png
 
-By selecting **Connect**, your SEPAL drive will appear in the right pane. 
+By selecting **Connect**, your SEPAL drive will appear in the right pane.
 
 In the left pane, you can find files and folders on your computer.
 
-Use the FTP client to interact with SEPAL 
+Use the FTP client to interact with SEPAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Familiarize yourself with FileZilla's window layout by following this overview:
@@ -139,7 +139,7 @@ Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3)
 
 .. seealso::
 
-    For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__. 
-    
-    
+    For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__.
+
+
 For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.

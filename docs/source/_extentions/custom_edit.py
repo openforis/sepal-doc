@@ -10,6 +10,7 @@ Example::
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 
+
 class CustomEdit(Directive):
     has_content = False
     required_arguments = 1
@@ -25,17 +26,19 @@ class CustomEdit(Directive):
         }});  
     </script>
     """
-    
+
     def run(self):
-        
+
         # get the raw link and transform it into an edit link
         raw_link = directives.uri(self.arguments[0])
-        split_url = raw_link.replace("raw.githubusercontent.com", "github.com").split("/")
+        split_url = raw_link.replace("raw.githubusercontent.com", "github.com").split(
+            "/"
+        )
         split_url.insert(5, "edit")
         link = "/".join(split_url)
-        
-        return [nodes.raw('', self.html.format(link), format='html')]
-    
+
+        return [nodes.raw("", self.html.format(link), format="html")]
+
+
 def setup(builder):
-    directives.register_directive('custom-edit', CustomEdit)
-        
+    directives.register_directive("custom-edit", CustomEdit)

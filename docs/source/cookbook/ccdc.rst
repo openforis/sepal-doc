@@ -73,7 +73,7 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
+they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/aoi.png
     :title: Select AOI based on administrative layers

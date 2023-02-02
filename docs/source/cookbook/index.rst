@@ -7,7 +7,7 @@ Harness high-performance cloud-based computing and modern geospatial data infras
 Overview
 --------
 
-SEPAL recipes are the main feature of the platform and offer users the ability to quickly and efficiently query and process satellite data, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses.  
+SEPAL recipes are the main feature of the platform and offer users the ability to quickly and efficiently query and process satellite data, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses.
 
 A SEPAL recipe is a record of the steps and parameters used to make a dataset (e.g. optical mosaic, radar mosaic, classification, etc.). The recipe can be saved, with the same data recreated on-the-fly whenever needed or used in further analyses. A recipe is not, in itself, data. Using SEPAL recipes enables documentation of the parameters and steps used to create mosaics, composites, classifications, time series and other datasets or information products. SEPAL recipes, once saved, are available in the SEPAL interface after you sign in to the platform. Recipes can be run, deleted, or copied (e.g. to change the sensor used, while leaving all other parameters the same).
 
@@ -77,8 +77,8 @@ To start a recipe, go to the **Process** tab :icon:`fa fa-globe`, where you'll s
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132474880-12333a36-dee0-4bdc-a0b4-0e9aab24b601.png
     :title: Recipe list displayed in the web interface.
- 
-Select the green :icon:`fa fa-plus-circle` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage. 
+
+Select the green :icon:`fa fa-plus-circle` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage.
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132481048-6149f776-a7ed-47cb-8f75-3519aa1b8f1e.png
     :title: Create a recipe from available workflows.
@@ -100,7 +100,7 @@ Recipes
 
 .. toctree::
     :maxdepth: 1
-    
+
     optical_mosaic
     radar_mosaic
     planet_mosaic
@@ -108,6 +108,6 @@ Recipes
     time_series
     ccdc
     ccdc_slice
-    
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

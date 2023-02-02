@@ -1,10 +1,9 @@
 ---
 name: Typo
 about: something's wrong with the documentation page
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **what page?**
