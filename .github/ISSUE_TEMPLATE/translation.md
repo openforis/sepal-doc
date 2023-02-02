@@ -1,10 +1,9 @@
 ---
 name: Translation
 about: Tell us when a translation is missing in your language
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **what page**
