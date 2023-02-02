@@ -11,6 +11,7 @@ source_dir = Path(__file__).expanduser().parents[1]
 module_dir = source_dir / "modules"
 dwn_dir = module_dir / "dwn"
 template_dir = source_dir / "_templates"
+locale_dir = source_dir / "_locale"
 
 # templates
 tag_template = template_dir / "module_tag.rst"
@@ -26,7 +27,7 @@ module_index = module_dir / "index.rst"
 
 
 def get_index():
-
+    """Create an index file for module from the template"""
     [f.unlink() for f in module_dir.glob("*.rst")]
     copy(index_template, module_index)
 
@@ -34,7 +35,7 @@ def get_index():
 
 
 def get_modules():
-
+    """Get the documentation file for all modules"""
     # flush the modules folder in case something was left by the previous build
     [f.unlink() for f in dwn_dir.glob("*.rst")]
 
@@ -44,7 +45,7 @@ def get_modules():
 
         dst = dwn_dir / f"{name}.rst"
 
-        file = module_list[name].pop("url", no_module_url)
+        file = module_list[name].get("url", no_module_url)
         if file != no_module_url:
             urlretrieve(file, dst)
         else:
@@ -66,7 +67,7 @@ def get_modules():
 
 
 def get_tags():
-
+    """Create tags table for the modules"""
     module_list = json.loads(module_json.read_text())
 
     # extract the list of tags
@@ -115,9 +116,38 @@ def get_tags():
     return
 
 
+def get_translation():
+    """Get the translation .po files from the repository"""
+
+    module_list = json.loads(module_json.read_text())
+    locale_list = [d.stem for d in locale_dir.glob("*/")]
+
+    # loop in the modules
+    for name in module_list:
+
+        locale_folder = module_list[name].get("locale")
+        filename = Path(module_list[name].get("url")).stem
+
+        if locale_folder is None:
+            print(f"{name} module has no translations in any languages")
+            continue
+
+        for loc in locale_list:
+            src_file = Path(locale_folder) / loc / "LC_MESSAGES" / f"{filename}.po"
+            dst_file = (
+                locale_dir / loc / "LC_MESSAGES" / "modules" / "dwn" / f"{name}.po"
+            )
+
+            try:
+                urlretrieve(src_file, dst_file)
+            except Exception:
+                print(f"{name} module has no translations in {loc}")
+
+
 if __name__ == "__main__":
     """Copy the modules documentation"""
 
     get_index()
     get_modules()
+    get_translation()
     get_tags()
