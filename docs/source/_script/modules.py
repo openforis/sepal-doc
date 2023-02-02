@@ -126,13 +126,14 @@ def get_translation():
     for name in module_list:
 
         locale_folder = module_list[name].get("locale")
-        filename = Path(module_list[name].get("url")).stem
+        doc_url = module_list[name].get("url")
 
-        if locale_folder is None:
+        if locale_folder is None or doc_url is None:
             print(f"{name} module has no translations in any languages")
             continue
 
         for loc in locale_list:
+            filename = Path(doc_url).stem
             src_file = Path(locale_folder) / loc / "LC_MESSAGES" / f"{filename}.po"
             dst_file = (
                 locale_dir / loc / "LC_MESSAGES" / "modules" / "dwn" / f"{name}.po"
