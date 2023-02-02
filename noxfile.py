@@ -6,14 +6,14 @@ The nox run are build in isolated environment that will be stored in .nox. to fo
 import nox
 
 
-@nox.session(reuse_venv=True)
+@nox.session(name="docs", reuse_venv=True)
 def docs(session):
     """Build the documentation."""
     session.install("-r", "requirements.txt")
     session.run("sphinx-build", "-b", "html", "docs/source", "docs/build/html")
 
 
-@nox.session(reuse_venv=True)
+@nox.session(name="i18n", reuse_venv=True)
 def i18n(session):
     """Create the translation files"""
     supported_languages = ["en", "fr", "es", "ar", "pt", "zh", "ru", "sv", "it"]
@@ -29,3 +29,10 @@ def i18n(session):
         "docs/source/_locale",
         *[f"-l {i}" for i in supported_languages],
     )
+
+
+@nox.session(name="lint", reuse_venv=True)
+def lint(session):
+    """Lint the documentation repository"""
+    session.install("pre-commit")
+    session.run("pre-commit", "run", "-a")
