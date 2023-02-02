@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-18 13:26\n"
+"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"PO-Revision-Date: 2023-02-02 17:28\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,8 @@ msgid "Usage"
 msgstr "Utilisation"
 
 #: ../../source/cli/python.rst:7
-msgid "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible though Jupyter Notebook, JupyterLab or the terminal:"
-msgstr "Les instances SEPAL fonctionnent sur des machines Ubuntu :code:`focal` et fournissent donc un environnement :code:`Python 3.8` fonctionnel. Cet environnement est accessible via Jupyter Notebook, JupyterLab ou le terminal :"
+msgid "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible through Jupyter Notebook, JupyterLab or the terminal:"
+msgstr ""
 
 #: ../../source/cli/python.rst:25
 msgid "Description"
@@ -39,8 +39,8 @@ msgid "The SEPAL python environment is not empty and embed numerous librairies. 
 msgstr "L'environnement Python de SEPAL n'est pas vide et intègre de nombreuses librairies. Elles sont listées ici :"
 
 #: ../../source/cli/python.rst:32
-msgid "Run :code:`pip freeze | grep <name of your lib>` to check if it's already installed."
-msgstr "Exécutez :code:`pip freeze | grep <name of your lib>` pour vérifier si elle est déjà installée."
+msgid "Run :code:`pip show <name of your lib>` to check if it's already installed."
+msgstr ""
 
 #: ../../source/cli/python.rst:36
 msgid "Customization"
@@ -89,4 +89,19 @@ msgstr "Maintenant ce venv sera disponible en tant que noyau dans votre espace d
 #: ../../source/cli/python.rst:80
 msgid "If you want to install libs inside this venv you need first to activate it:"
 msgstr "Si vous voulez installer des libs à l'intérieur de ce venv, vous devez d'abord l'activer :"
+
+#~ msgid ""
+#~ "SEPAL instances run on :code:`focal` "
+#~ "ubuntu machines and thus provide a "
+#~ "fully functional :code:`Pyhton 3.8` "
+#~ "environment. This environment is accecible "
+#~ "though Jupyter Notebook, JupyterLab or "
+#~ "the terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run :code:`pip freeze | grep <name "
+#~ "of your lib>` to check if it's "
+#~ "already installed."
+#~ msgstr ""
 
