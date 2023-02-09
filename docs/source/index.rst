@@ -110,6 +110,8 @@ Funders
 
 .. logos:: funders
 
+toto
+
 Suporting institutions
 ----------------------
 

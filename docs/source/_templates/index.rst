@@ -64,9 +64,8 @@ Some applications require more powerful instances than the default :code:`t1`. I
 
 4.  Go back to the dashboard of the application to launch your app. It will automatically be using the instance you opened and won't restart a :code:`t1`.
 
+For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+
 .. toctree::
     :hidden:
     :maxdepth: 1
-
-
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
