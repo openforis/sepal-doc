@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-10 01:05+0000\n"
+"POT-Creation-Date: 2023-02-11 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,14 +145,13 @@ msgid ""
 "and Agriculture Organization (FAO) funded by the Government of Norway."
 msgstr ""
 
-#: ../../source/index.rst:113
-msgid "toto"
-msgstr ""
-
-#: ../../source/index.rst:116
+#: ../../source/index.rst:114
 msgid "Suporting institutions"
 msgstr ""
 
 #~ msgid "Modules"
+#~ msgstr ""
+
+#~ msgid "toto"
 #~ msgstr ""
 
