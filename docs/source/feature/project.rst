@@ -82,7 +82,7 @@ Once a project is selected it will appear as "current project" in the project li
     :group: recipe-process
     :align: center
 
-Once a project is selected, any newly created recipe will fallback to the current project.
+Once a project is selected and a recipe is created, it will belong to the selected project.
 
 .. tip::
 
