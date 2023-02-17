@@ -79,5 +79,5 @@ Note that If you want to install libs inside this venv you need first to activat
 
 .. code-block:: console
 
-    source ./<venv_name>/bin/activate
+    source your_venv_path/bin/activate
 
