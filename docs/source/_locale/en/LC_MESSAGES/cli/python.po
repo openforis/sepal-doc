@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
+"POT-Creation-Date: 2023-02-20 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,28 +96,24 @@ msgstr ""
 #: ../../source/cli/python.rst:59
 msgid ""
 "If not existing, create a directory to host your virtual environments. "
-"From the root directory run:"
+"From the root directory, run the following line:"
 msgstr ""
 
 #: ../../source/cli/python.rst:65
-msgid "in this folder create a virtual environment:"
+msgid "And then, copy and paste the following lines in your terminal:"
 msgstr ""
 
-#: ../../source/cli/python.rst:72
-msgid "Now create a Jupyter Kernel linked to this venv:"
-msgstr ""
-
-#: ../../source/cli/python.rst:78
+#: ../../source/cli/python.rst:76
 msgid ""
 "Now this venv will be available as a kernel inside your Jupyter "
 "workspace. This kernel will be automatically removed if you destroy the "
 "venv directory."
 msgstr ""
 
-#: ../../source/cli/python.rst:80
+#: ../../source/cli/python.rst:78
 msgid ""
-"If you want to install libs inside this venv you need first to activate "
-"it:"
+"Note that If you want to install libs inside this venv you need first to "
+"activate it:"
 msgstr ""
 
 #~ msgid ""
@@ -133,5 +129,23 @@ msgstr ""
 #~ "Run :code:`pip freeze | grep <name "
 #~ "of your lib>` to check if it's "
 #~ "already installed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If not existing, create a directory "
+#~ "to host your virtual environments. From"
+#~ " the root directory run:"
+#~ msgstr ""
+
+#~ msgid "in this folder create a virtual environment:"
+#~ msgstr ""
+
+#~ msgid "Now create a Jupyter Kernel linked to this venv:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to install libs inside"
+#~ " this venv you need first to "
+#~ "activate it:"
 #~ msgstr ""
 
