@@ -70,7 +70,7 @@ And then, copy and paste the following lines in your terminal:
     python3 -m venv "$folder_name" # Create the venv, this line could take some time.
     source "$folder_name/bin/activate" # Activate the virtual enviroment just created.
     pip install ipykernel # Install ipykernel in our venv.
-    python -m ipykernel install --user --name="$folder_name" -display-name="(venv) - $folder_name" # Add the new venv kernel to jupyter.
+    python -m ipykernel install --user --name="$folder_name" --display-name="(venv) - $folder_name" # Add the new venv kernel to jupyter.
     deactivate # (optional) exit from environment.
 
 Now this venv will be available as a kernel inside your Jupyter workspace. This kernel will be automatically removed if you destroy the venv directory.
