@@ -20,7 +20,7 @@ class LineBreak(SphinxDirective):
     """line break directive
 
     Example::
-    .. br::
+    .. line-break::
     """
 
     has_content = False
@@ -65,7 +65,7 @@ def setup(app: Sphinx) -> Dict[str, bool]:
         texinfo=(visit_line_break_node_unsuported, None),
         text=(visit_line_break_node_unsuported, None),
     )
-    app.add_directive("br", LineBreak)
+    app.add_directive("line-break", LineBreak)
 
     return {
         "parallel_read_safe": True,
