@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-22 20:38\n"
+"PO-Revision-Date: 2023-02-22 21:48\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -477,7 +477,7 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:303
 msgid "Select scenes"
-msgstr ""
+msgstr "Sélectionner les scènes"
 
 #: ../../source/cookbook/optical_mosaic.rst:305
 msgid "To create a mosaic, you need to select the scenes that will be used to compute each pixel value of the mosaic. To do so, SEPAL provides a user-friendly interface that will guide you through the selection process. You don't have to select the stack for every pixel; instead, SEPAL will clip the AOI in smaller pieces called **Tiles**. These tiles correspond to the native tiling system of your dataset and are displayed on the map with circled numbers in their centroid. Each number corresponds to the number of scenes available to build the mosaic tile. Hover over these circles to see the tile boundaries appear."
