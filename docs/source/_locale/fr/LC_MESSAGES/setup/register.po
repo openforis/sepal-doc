@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../source/setup/register.rst:2
 msgid "Register to SEPAL and other key platforms"
-msgstr ""
+msgstr "S'inscrire à SEPAL et à d'autres plateformes clés"
 
 #: ../../source/setup/register.rst:5
 msgid "Set up your accounts and request additional resources"
-msgstr ""
+msgstr "Configurez vos comptes et demandez des ressources supplémentaires"
 
 #: ../../source/setup/register.rst:7
 msgid "In this article, you can learn how to:"
-msgstr ""
+msgstr "Dans cet article, vous pouvez apprendre à :"
 
 #: ../../source/setup/register.rst:9
 msgid ":ref:`Create a SEPAL account <create>` (Mandatory)"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../source/setup/register.rst:17
 msgid "Create a SEPAL account"
-msgstr ""
+msgstr "Créer un compte SEPAL"
 
 #: ../../source/setup/register.rst:18
 msgid "(Mandatory)"
@@ -56,23 +56,23 @@ msgstr ""
 
 #: ../../source/setup/register.rst:20
 msgid "Go to `sepal.io <https://sepal.io/>`__."
-msgstr ""
+msgstr "Allez sur `sepal.io <https://sepal.io/>`__."
 
 #: ../../source/setup/register.rst:21
 msgid "Select :guilabel:`Launch` > :guilabel:`Sign up`."
-msgstr ""
+msgstr "Sélectionnez :guilabel:`Lancement` > :guilabel:`Inscription`."
 
 #: ../../source/setup/register.rst:33
 msgid "Enter your information into the form."
-msgstr ""
+msgstr "Entrez vos informations dans le formulaire."
 
 #: ../../source/setup/register.rst:41
 msgid "Select :btn:`<fa-solid fa-envelope> Sign up`."
-msgstr ""
+msgstr "Sélectionnez :btn:`<fa-solid fa-envelope> Inscription`."
 
 #: ../../source/setup/register.rst:49
 msgid "Complete email verification."
-msgstr ""
+msgstr "Valider votre email de vérification."
 
 #: ../../source/setup/register.rst:50
 msgid "Create a password."
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../source/setup/register.rst:77
 msgid "Request additional SEPAL resources"
-msgstr ""
+msgstr "Demander des ressources SEPAL supplémentaires"
 
 #: ../../source/setup/register.rst:78 ../../source/setup/register.rst:103
 msgid "(Recommended)"
@@ -156,11 +156,11 @@ msgstr ""
 
 #: ../../source/setup/register.rst:130
 msgid "Sign up for Collect Earth Online (CEO)"
-msgstr ""
+msgstr "Inscrivez-vous à Collect Earth Online (CEO)"
 
 #: ../../source/setup/register.rst:131
 msgid "(Optional)"
-msgstr ""
+msgstr "(Facultatif)"
 
 #: ../../source/setup/register.rst:135
 msgid "To get the most out of the SEPAL platform's **Classification** and **Validation** tools, the SEPAL team highly suggests using CEO for collecting point-based training and validation data."
@@ -176,31 +176,31 @@ msgstr ""
 
 #: ../../source/setup/register.rst:140
 msgid "Go to https://collect.earth."
-msgstr ""
+msgstr "Allez sur https://collect.earth."
 
 #: ../../source/setup/register.rst:141
 msgid "Select **Register**."
-msgstr ""
+msgstr "Sélectionnez **S'inscrire**."
 
 #: ../../source/setup/register.rst:142
 msgid "Complete the form and Select **Register**."
-msgstr ""
+msgstr "Remplissez le formulaire et sélectionnez **S'inscrire**."
 
 #: ../../source/setup/register.rst:143
 msgid "Log in with your **Email** and **Password**."
-msgstr ""
+msgstr "Connectez-vous avec votre **email** et votre **mot de passe**."
 
 #: ../../source/setup/register.rst:-1
 msgid "CEO landing page"
-msgstr ""
+msgstr "Page d'accueil de CEO"
 
 #: ../../source/setup/register.rst:151
 msgid "If you forget your password, select **Forgot your password?** and follow the instructions."
-msgstr ""
+msgstr "Si vous oubliez votre mot de passe, sélectionnez **Mot de passe oublié?** et suivez les instructions."
 
 #: ../../source/setup/register.rst:154
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
+msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
