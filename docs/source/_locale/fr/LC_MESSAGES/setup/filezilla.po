@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-27 01:12\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:2
 msgid "Exchange files with SEPAL"
-msgstr ""
+msgstr "Échanger des fichiers avec SEPAL"
 
 #: ../../source/setup/filezilla.rst:5
 msgid "Use SEPAL's built-in tools and FTP solutions to exhange files"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:17
 msgid "Built-in tools"
-msgstr ""
+msgstr "Outils intégrés"
 
 #: ../../source/setup/filezilla.rst:19
 msgid "To exchange files with SEPAL, there are several built-in tools you can use."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:26
 msgid "Jupyter Notebook"
-msgstr ""
+msgstr "Jupyter Notebook"
 
 #: ../../source/setup/filezilla.rst:28
 msgid "In the SEPAL **Application** dashboard, open a new **Jupyter Notebook app**. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared."
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:41
 msgid "Jupyterlab"
-msgstr ""
+msgstr "JupyterLab"
 
 #: ../../source/setup/filezilla.rst:43
 msgid "In the SEPAL interface **Dashboard**, open a new **Jupyterlab app**."
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:71
 msgid "SEPAL file explorer"
-msgstr ""
+msgstr "Explorateur de fichiers SEPAL"
 
 #: ../../source/setup/filezilla.rst:73
 msgid "In the SEPAL **File explorer**, you will be able to access files and directories on your system, which can be deleted and downloaded."
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:84
 msgid "FTP solution"
-msgstr ""
+msgstr "Solution FTP"
 
 #: ../../source/setup/filezilla.rst:86
 msgid "SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP)."
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:95
 msgid "FileZilla®"
-msgstr ""
+msgstr "FileZilla®"
 
 #: ../../source/setup/filezilla.rst:97
 msgid "FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
@@ -176,51 +176,51 @@ msgstr ""
 
 #: ../../source/setup/filezilla.rst:114
 msgid "**Host:** ssh.sepal.io"
-msgstr ""
+msgstr "**Hôte :** ssh.sepal.io"
 
 #: ../../source/setup/filezilla.rst:115
 msgid "**Port:** 443"
-msgstr ""
+msgstr "**Port :** 443"
 
 #: ../../source/setup/filezilla.rst:116
 msgid "**Protocol:** SFTP – SSH File Transfer Protocol"
-msgstr ""
+msgstr "**Protocole :** SFTP – SSH File Transfer Protocol"
 
 #: ../../source/setup/filezilla.rst:117
 msgid "**Logon Type:** Normal"
-msgstr ""
+msgstr "**Type de connexion :** Normal"
 
 #: ../../source/setup/filezilla.rst:118
 msgid "**User:** <your SEPAL username>"
-msgstr ""
+msgstr "**Utilisateur:** <votre nom d'utilisateur SEPAL>"
 
 #: ../../source/setup/filezilla.rst:119
 msgid "**Password:** <your SEPAL password>"
-msgstr ""
+msgstr "**Mot de passe :** <votre mot de passe SEPAL>"
 
 #: ../../source/setup/filezilla.rst:123
 msgid "For **User** and **Password**, enter the credentials you use to connect to the platform."
-msgstr ""
+msgstr "Pour **Utilisateur** et **Mot de passe**, entrez les identifiants que vous utilisez pour vous connecter à la plateforme."
 
 #: ../../source/setup/filezilla.rst:127
 msgid "By selecting **Connect**, your SEPAL drive will appear in the right pane."
-msgstr ""
+msgstr "En sélectionnant **Connecter**, votre lecteur SEPAL apparaîtra dans le panneau de droite."
 
 #: ../../source/setup/filezilla.rst:129
 msgid "In the left pane, you can find files and folders on your computer."
-msgstr ""
+msgstr "Dans le volet gauche, vous pouvez trouver des fichiers et des dossiers sur votre ordinateur."
 
 #: ../../source/setup/filezilla.rst:132
 msgid "Use the FTP client to interact with SEPAL"
-msgstr ""
+msgstr "Utiliser le client FTP pour interagir avec SEPAL"
 
 #: ../../source/setup/filezilla.rst:134
 msgid "Familiarize yourself with FileZilla's window layout by following this overview:"
-msgstr ""
+msgstr "Familiarisez-vous avec la mise en page de FileZilla en suivant cette vue d'ensemble :"
 
 #: ../../source/setup/filezilla.rst:136
 msgid "Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3) displays messages related to transfers and connection. Below, you can find the file listings. The left column (**Local pane**, 4) displays the local files and directories (e.g. content on the PC you're using FileZilla on). The right column (**Remote pane**, 5) displays the files and directories on the server you are connected to. Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom. You can easily navigate either of the trees and lists by clicking around, like you would in any other file manager. In the lower section of the window, the **Transfer queue** (6) lists the status of to-be-tranferred or already transfered files."
-msgstr ""
+msgstr "Sous la **Barre d'outils** (1) et la **Barre de connexion rapide** (2), le **Journal des messages** (3) affiche les messages relatifs aux transferts et à la connexion. Ci-dessous, vous pouvez trouver les listes de fichiers. La colonne de gauche (**volet local**, 4) affiche les fichiers et répertoires locaux (par exemple, le contenu sur le PC sur lequel vous utilisez FileZilla). La colonne de droite (**Panneau distant**, 5) affiche les fichiers et répertoires sur le serveur auquel vous êtes connecté. Les deux colonnes ont une arborescence de répertoires en haut et une liste détaillée du contenu du répertoire actuellement sélectionné en bas de page. Vous pouvez facilement naviguer dans l'un des arbres et des listes en cliquant autour, comme vous le feriez dans n'importe quel autre gestionnaire de fichiers. Dans la partie inférieure de la fenêtre, la **file de transfert** (6) liste l'état des fichiers à transférer ou déjà transférés."
 
 #: ../../source/setup/filezilla.rst:142
 msgid "For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
