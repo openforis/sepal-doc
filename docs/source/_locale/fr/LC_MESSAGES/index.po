@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-11 00:57+0000\n"
-"PO-Revision-Date: 2023-02-11 01:00\n"
+"PO-Revision-Date: 2023-02-22 14:36\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/index.rst:34
 msgid "Getting started"
-msgstr ""
+msgstr "Premiers pas"
 
 #: ../../source/index.rst:34
 msgid "Cookbook"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../source/index.rst:34
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 #: ../../source/index.rst:34
 msgid "Workflows"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../source/index.rst:34
 msgid "Features"
-msgstr ""
+msgstr "Fonctionnalités"
 
 #: ../../source/index.rst:34
 msgid " "
@@ -48,7 +48,7 @@ msgstr "SEPAL"
 
 #: ../../source/index.rst:48
 msgid "System for earth observation, data access, processing, analysis for land monitoring"
-msgstr ""
+msgstr "Système pour l'accès, le traitement et l'analyse de données pour la surveillance des terres"
 
 #: ../../source/index.rst:50
 msgid "presentation video"
@@ -56,7 +56,7 @@ msgstr "vidéos de Présentation"
 
 #: ../../source/index.rst:58
 msgid "SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform."
-msgstr ""
+msgstr "SEPAL est en constante amélioration. Les membres de notre équipe font de leur mieux pour constamment mettre à jour et améliorer les outils disponibles sur la plateforme."
 
 #: ../../source/index.rst:66
 msgid "Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account, download and get the basics of the platform."
@@ -84,11 +84,11 @@ msgstr ""
 
 #: ../../source/index.rst:94
 msgid "About us"
-msgstr ""
+msgstr "Qui sommes-nous ?"
 
 #: ../../source/index.rst:98
 msgid "SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools. SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program."
-msgstr ""
+msgstr "SEPAL fait partie de la suite d'outils `Open Foris <http://www.openforis.org>`_. SEPAL permet aux utilisateurs de demander et de traiter les données par satellite rapidement et efficacement, adapter leurs produits aux besoins locaux et produire rapidement des analyses géospatiales sophistiquées et pertinentes. En exploitant les superordinateurs dans le cloud et les infrastructures de données géospatiales modernes (ex. Google Earth Engine), SEPAL permet l'accès et le traitement des données satellites historiques ainsi que des données plus récentes de Landsat et des données de plus haute résolution du programme Copernicus en Europe."
 
 #: ../../source/index.rst:102
 msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../source/index.rst:109
 msgid "SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway."
-msgstr ""
+msgstr "SEPAL est un projet du Département des forêts de l'Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO) financé par le gouvernement norvégien."
 
 #: ../../source/index.rst:114
 msgid "Suporting institutions"
