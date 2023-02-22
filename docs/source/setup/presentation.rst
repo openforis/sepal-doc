@@ -190,11 +190,12 @@ Click the **Apps** tab on the left side of the screen. This will open up a scree
 This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
 -   **R Studio:** Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder.
--   **Stratified Area Estimator- Design:** Tool for creating stratified designs to estimate areas. We will use this tool in Module 4.
--   **Stratified Area Estimator- Analysis:** Tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.
--   **Geo Processing- Beta:** Offers a selection of easy-to-use change detection and segmentation tools.
--   **BFAST Explorer:** Tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
--   Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation.
+-   **JupyterLab:** Provides access to the Python environement where you can run complex data workflows.
+-   **BFAST GPU:** GPU implementation of the BFAST algorithm to analyse time series.
+-   **Deforestation alert analysis:** Retrieve any type of alert on a selected AOI.
+-   **Mountain Green Cover Index:** Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale.
+-   **SMFM Biota:** Calculate biomass change over time using ALOS Palsar data.
+-   Many more that can be found in the section :doc:`../modules/index` of the documentation.
 
 
 For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
