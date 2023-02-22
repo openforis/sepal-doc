@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-14 01:04+0000\n"
-"PO-Revision-Date: 2023-02-14 01:23\n"
+"PO-Revision-Date: 2023-02-22 21:48\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -60,19 +60,19 @@ msgstr ""
 
 #: ../../source/feature/project.rst:24
 msgid "In the next section we'll present how one can create a new project and manage the existing projects in its SEPAL account."
-msgstr ""
+msgstr "Dans la section suivante, nous présenterons comment créer un nouveau projet et gérer les projets existants dans son compte SEPAL."
 
 #: ../../source/feature/project.rst:27
 msgid "Project"
-msgstr ""
+msgstr "Projet"
 
 #: ../../source/feature/project.rst:31
 msgid "Projets are personnal, they cannot be shared and they are not visible to other users."
-msgstr ""
+msgstr "Les Projets sont personnels, ils ne peuvent pas être partagés et ils ne sont pas visibles aux autres utilisateurs."
 
 #: ../../source/feature/project.rst:35
 msgid "For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed."
-msgstr ""
+msgstr "Pour chaque utilisateur, un projet :code:`[no projetc]` est créé à l'étape d'inscription. Ce projet sera la solution de secours pour toutes les recettes qui ont été créées avant la publication de la fonctionnalité. Il ne peut pas être supprimé ou renommé."
 
 #: ../../source/feature/project.rst:37
 msgid "To create a project, click on :btn:`<fas fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fas fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fas fa-check> Apply` to validate it. The newly created project will apear in the list."
