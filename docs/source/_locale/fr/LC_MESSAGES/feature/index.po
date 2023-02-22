@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../source/feature/index.rst:2
 msgid "Features"
-msgstr ""
+msgstr "Fonctionnalités"
 
 #: ../../source/feature/index.rst:4
 msgid "SEPAL provide handy features to analyse, combine and visualize different types of data. As this features can be access via many different recipes or module, they are described exausthively in this section of the documentation."
-msgstr ""
+msgstr "SEPAL fournit des fonctionnalités pratiques pour analyser, combiner et visualiser différents types de données. Comme ces fonctionnalités peuvent être accédées via de nombreuses recettes ou modules différents, elles sont décrites exausthiquement dans cette section de la documentation."
 
