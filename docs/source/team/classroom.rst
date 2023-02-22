@@ -23,7 +23,7 @@ each class is composed by several :code:`topics` and each topic can embed differ
 
 .. seealso::
 
-    If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_) they will answer as soon as possible.
+    If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>`_ and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`_) they will answer as soon as possible.
 
 Creating a classroom
 ^^^^^^^^^^^^^^^^^^^^
@@ -34,7 +34,7 @@ If you need material for a webinar you can either directly reuse one of the gene
 
 .. tip::
 
-    If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account.
+    If you create your own course as a combination of different modules, invite :email:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account.
 
 When creating basic content, you can re-use posts from classes were you are teaching as shown in the following image:
 
@@ -42,7 +42,7 @@ When creating basic content, you can re-use posts from classes were you are teac
 
 .. warning::
 
-    Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_).
+    Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`).
 
 .. danger::
 

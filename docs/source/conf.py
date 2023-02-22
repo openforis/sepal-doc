@@ -28,6 +28,7 @@ extensions = [
     "sphinxcontrib.images",
     "sphinxcontrib.icon",
     "sphinxcontrib.btn",
+    "sphinxcontrib.email",
     "sphinxcontrib.youtube",
     "sphinx_design",
     "sphinx_togglebutton",
@@ -41,7 +42,7 @@ templates_path = ["_templates"]
 exclude_patterns = ["**.ipynb_checkpoints"]
 locale_dirs = ["_locale/"]
 gettext_compact = False
-language = "fr"
+language = "en"
 
 # -- Options for HTML output ---------------------------------------------------
 

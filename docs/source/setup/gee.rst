@@ -53,7 +53,7 @@ Once you have a GEE account, go to https://code.earthengine.google.com/ to acces
 
 .. tip::
 
-    If you experience trouble while linking your Google account to GEE, contact the SEPAL team at SEPAL@fao.org.
+    If you experience trouble while linking your Google account to GEE, contact the SEPAL team at :email:`sepal@fao.org`.
 
 Initialize the **Home** folder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -21,7 +21,7 @@ Make contributions to the documentation by selecting :icon:`fas fa-pencil` **Edi
 
 If you can't find what you're looking for, use the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_.
 
-For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org.
+For support, :doc:`ask the community <>` or contact the SEPAL team at :email:`sepal@fao.org`.
 
 .. thumbnail:: ../_images/setup/index/planet_classification.png
     :title: Example of a classification for Uganda based on a combination of Sentinel-1 Timescan and Sentinel-2 CCDC slice data using the **Classification** tool in SEPAL.
