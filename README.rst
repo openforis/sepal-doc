@@ -38,8 +38,11 @@ Currently the documentation is available in the following languages:
      - Français
      - Español
    * - .. image:: https://img.shields.io/static/v1?label=en&message=100%&logo=crowdin&logoColor=white&color=blue
+           :target: https://crowdin.com/project/sepal-doc
      - .. image:: https://img.shields.io/badge/dynamic/json?logoColor=white&label=fr&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15322738-562097.json
+           :target: https://crowdin.com/project/sepal-doc
      - .. image:: https://img.shields.io/badge/dynamic/json?logoColor=white&label=es&logo=crowdin&query=%24.progress.0.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15322738-562097.json
+           :target: https://crowdin.com/project/sepal-doc
 
 You can contribute to the translation effort on our `crowdin project <https://crowdin.com/project/sepal-doc>`__.
 
