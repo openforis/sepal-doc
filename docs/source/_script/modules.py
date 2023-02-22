@@ -52,13 +52,17 @@ def get_modules():
             copy(doc_template, dst)
 
         txt = dst.read_text()
-        txt = txt.replace("Module_name", name).replace("=", "=" * len(name))
-        dst.write_text(txt)
+
+        # update content if the module was not found
+        # it's a customization of the template
+        if file == no_module_url:
+            txt = txt.replace("Module_name", name).replace("=", "=" * len(name))
 
         # add the custom edit directive to the file to ensure the "edit this page"
-        # point to the correct file
-        with dst.open("a") as f:
-            f.writelines(["", f".. custom-edit:: {file}"])
+        # point to the correct file.
+        txt += f"\n.. custom-edit:: {file}\n"
+
+        dst.write_text(txt)
 
         # prompt for the readthedoc build
         print(f"{name} documentation have been copied to the dwn folder")
