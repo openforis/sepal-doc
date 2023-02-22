@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-02-22 19:27\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,55 +20,55 @@ msgstr ""
 
 #: ../../source/setup/resource.rst:2
 msgid "Manage your resources"
-msgstr ""
+msgstr "Gérer vos ressources"
 
 #: ../../source/setup/resource.rst:5
 msgid "Monitor usage and request resources"
-msgstr ""
+msgstr "Surveiller l'utilisation et la demande de ressources"
 
 #: ../../source/setup/resource.rst:7
 msgid "In this article, you can learn how to:"
-msgstr ""
+msgstr "Dans cet article, vous pouvez apprendre à :"
 
 #: ../../source/setup/resource.rst:9
 msgid "-Understand your **User report** -Manage instances -Request resources"
-msgstr ""
+msgstr "-Comprendre votre **rapport utilisateur** -Gérer les instances -Demander des ressources"
 
 #: ../../source/setup/resource.rst:13
 msgid "SEPAL provides free access to computation resources that are shared among registered users. To prevent exportation mistakes, new users are granted few resources that are sufficient for discovering the functionalities and running sub-regional analysis. By default, instances are closed automatically when they are not being used."
-msgstr ""
+msgstr "SEPAL fournit un accès gratuit aux ressources de calcul qui sont partagées entre les utilisateurs enregistrés. Pour éviter les erreurs d'exportation, les nouveaux utilisateurs reçoivent des ressources limitées suffisantes pour découvrir les fonctionnalités et exécuter l'analyse sous-régionale. Par défaut, les instances sont fermées automatiquement lorsqu'elles ne sont pas utilisées."
 
 #: ../../source/setup/resource.rst:17
 msgid "The SEPAL user starter pack includes:"
-msgstr ""
+msgstr "Le pack de démarrage de l'utilisateur SEPAL comprend:"
 
 #: ../../source/setup/resource.rst:19
 msgid "0 USD/month of instance spending"
-msgstr ""
+msgstr "0 USD/mois de dépense d'instance"
 
 #: ../../source/setup/resource.rst:20
 msgid "0 USD/month of storage spending"
-msgstr ""
+msgstr "0 USD/mois de dépense de stockage"
 
 #: ../../source/setup/resource.rst:21
 msgid "0 Gb of storage"
-msgstr ""
+msgstr "0 Go de stockage"
 
 #: ../../source/setup/resource.rst:23
 msgid "Some actions or projects may require more storage to perform analysis at the province or country level; other actions or projects may require more instances to perform heavier computation processes. If you need more storage or instances, you can submit a quota request to the SEPAL team by following the instructions below."
-msgstr ""
+msgstr "Certaines actions ou projets peuvent nécessiter plus de stockage pour effectuer des analyses au niveau de la province ou du pays ; d'autres actions ou projets peuvent nécessiter plus d'instances pour effectuer des processus de calcul plus intenses. Si vous avez besoin de plus de stockage ou d'instances, vous pouvez soumettre une demande de quota à l'équipe SEPAL en suivant les instructions ci-dessous."
 
 #: ../../source/setup/resource.rst:27
 msgid "Since quota requests are reviewed on a case-by-case basis, response time may vary."
-msgstr ""
+msgstr "Comme les demandes de quotas sont examinées au cas par cas, le temps de réponse peut varier."
 
 #: ../../source/setup/resource.rst:30
 msgid "User report"
-msgstr ""
+msgstr "Rapport utilisateur"
 
 #: ../../source/setup/resource.rst:32
 msgid "In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fas fa-dollar-sign> x.xx/h`."
-msgstr ""
+msgstr "Dans le **Terminal**, **Applications** ou **Recettes**, sélectionnez **Rapport d'utilisateur** sur le côté inférieur droit de la fenêtre pour voir votre consommation d'instance actuelle: :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
 
 #: ../../source/setup/resource.rst:49
 msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2)."
@@ -80,11 +80,11 @@ msgstr ""
 
 #: ../../source/setup/resource.rst:58
 msgid "Manage instances"
-msgstr ""
+msgstr "Gérer une instance"
 
 #: ../../source/setup/resource.rst:60
 msgid "Amazon Web Services (AWS) instances can be managed from this interface as well."
-msgstr ""
+msgstr "Les instances Amazon Web Services (AWS) peuvent également être gérées à partir de cette interface."
 
 #: ../../source/setup/resource.rst:62
 msgid "In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and the hourly quota consumption."
@@ -104,11 +104,11 @@ msgstr ""
 
 #: ../../source/setup/resource.rst:76
 msgid "If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources."
-msgstr ""
+msgstr "Si vous augmentez la durée de vie de votre instance, elle continuera à consommer votre quota. Vérifiez régulièrement que votre processus fonctionne efficacement pour éviter de perdre des ressources."
 
 #: ../../source/setup/resource.rst:83
 msgid "Request resources"
-msgstr ""
+msgstr "Demander des ressources"
 
 #: ../../source/setup/resource.rst:85
 msgid "From the **Resource manager**, select **Request additional resources**."
@@ -116,23 +116,23 @@ msgstr ""
 
 #: ../../source/setup/resource.rst:87
 msgid "In order for your request to be considered, you must:"
-msgstr ""
+msgstr "Pour que votre demande soit prise en considération, vous devez :"
 
 #: ../../source/setup/resource.rst:89
 msgid "Change the quota to values that meet your needs (e.g. more storage and fewer instances). The values entered are suggestions that the administrator will be able to change, if needed. (1)"
-msgstr ""
+msgstr "Changez le quota en valeurs qui répondent à vos besoins (par exemple plus de stockage et moins d'instances). Les valeurs saisies sont des suggestions que l'administrateur pourra modifier, si nécessaire. (1)"
 
 #: ../../source/setup/resource.rst:90
 msgid "Provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI). (2)"
-msgstr ""
+msgstr "Fournissez une explication détaillée pour expliquer pourquoi vous avez besoin de ces ressources. ainsi que le nom du projet, le type d'analyse et le domaine d'intérêt (AOI). (2)"
 
 #: ../../source/setup/resource.rst:96
 msgid "Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details."
-msgstr ""
+msgstr "Une fois validée, la demande est envoyée à l'équipe SEPAL qui prendra des mesures dans les prochains jours pour mettre à jour votre profil, qui peuvent comprendre de vous contacter directement pour plus de détails."
 
 #: ../../source/setup/resource.rst:103
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
+msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
