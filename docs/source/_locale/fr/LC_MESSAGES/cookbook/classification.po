@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-02-22 21:48\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:42
 msgid "Parameters"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../source/cookbook/classification.rst:44
 msgid "In the lower-right corner, the following five tabs are available, allowing you to customize the time series to your needs:"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:59
 msgid "The first step consists of selecting the image bands on which to apply the classifier. The number of selected bands (i.e. images) is not limited."
-msgstr ""
+msgstr "La première étape consiste à sélectionner les bandes d'images sur lesquelles appliquer le classificateur. Le nombre de bandes sélectionnées (c'est-à-dire les images) n'est pas limité."
 
 #: ../../source/cookbook/classification.rst:63
 msgid "Keep in mind that increasing the number of bands to analyse will improve the model but slow down the rendering of the final image."
@@ -129,11 +129,11 @@ msgstr ""
 #: ../../source/cookbook/classification.rst:82
 #: ../../source/cookbook/classification.rst:93
 msgid "Advantages:"
-msgstr ""
+msgstr "Avantages :"
 
 #: ../../source/cookbook/classification.rst:84
 msgid "All of the computed bands from SEPAL can be used."
-msgstr ""
+msgstr "Toutes les bandes calculées de SEPAL peuvent être utilisées."
 
 #: ../../source/cookbook/classification.rst:85
 msgid "Any modification to the existing recipe will be propagated in the final classification."
@@ -142,7 +142,7 @@ msgstr ""
 #: ../../source/cookbook/classification.rst:87
 #: ../../source/cookbook/classification.rst:98
 msgid "Disadvantages:"
-msgstr ""
+msgstr "Inconvénients :"
 
 #: ../../source/cookbook/classification.rst:89
 msgid "The initial recipe will be computed at each rendering step, slowing down the classification process and potentially breaking on-the-fly rendering due to GEE timeout errors."
@@ -150,19 +150,19 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:91
 msgid "**GEE asset**:"
-msgstr ""
+msgstr "**Asset GEE**:"
 
 #: ../../source/cookbook/classification.rst:95
 msgid "Can be shared with other users."
-msgstr ""
+msgstr "Peut être partagé avec d'autres utilisateurs."
 
 #: ../../source/cookbook/classification.rst:96
 msgid "The computation will be faster, as the image has already been exported."
-msgstr ""
+msgstr "Le calcul sera plus rapide, car l'image a déjà été exportée."
 
 #: ../../source/cookbook/classification.rst:100
 msgid "Only the exported bands will be available."
-msgstr ""
+msgstr "Seules les bandes exportées seront disponibles."
 
 #: ../../source/cookbook/classification.rst:101
 msgid "The :code:`Image` needs to be re-exported to propagate changes."
@@ -218,7 +218,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:133
 msgid "The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly."
-msgstr ""
+msgstr "L'analyse ne se limite pas à des bandes natives disponibles ; SEPAL peut également construire des bandes dérivées supplémentaires à la volée."
 
 #: ../../source/cookbook/classification.rst:135
 msgid "Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands."
