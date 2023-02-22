@@ -1,13 +1,7 @@
-"""Logo extention to create a list of logos
-
-The directive does note require any argument.
-Example::
-    .. logos:: funders
-"""
+"""Logo extention to create a list of logos"""
 import json
 from pathlib import Path
-from typing import List
-from typing import Dict
+from typing import List, Dict
 
 from docutils import nodes
 from sphinx.util.docutils import SphinxDirective, SphinxTranslator
