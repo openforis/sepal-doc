@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-20 01:05+0000\n"
-"PO-Revision-Date: 2023-02-20 01:19\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -72,11 +72,11 @@ msgstr "Par design Jupyter est executer sur le noyau Python décrit dans la sect
 
 #: ../../source/cli/python.rst:59
 msgid "If not existing, create a directory to host your virtual environments. From the root directory, run the following line:"
-msgstr ""
+msgstr "S'il n'existe pas, créez un répertoire pour héberger vos environnements virtuels. À partir du répertoire racine, exécutez la ligne suivante :"
 
 #: ../../source/cli/python.rst:65
 msgid "And then, copy and paste the following lines in your terminal:"
-msgstr ""
+msgstr "Ensuite, copiez/collez les lignes suivantes dans votre terminal :"
 
 #: ../../source/cli/python.rst:76
 msgid "Now this venv will be available as a kernel inside your Jupyter workspace. This kernel will be automatically removed if you destroy the venv directory."
@@ -84,7 +84,7 @@ msgstr "Maintenant ce venv sera disponible en tant que noyau dans votre espace d
 
 #: ../../source/cli/python.rst:78
 msgid "Note that If you want to install libs inside this venv you need first to activate it:"
-msgstr ""
+msgstr "Notez que si vous voulez installer des libs à l'intérieur de ce venv, vous devez d'abord l'activer :"
 
 #~ msgid ""
 #~ "SEPAL instances run on :code:`focal` "
