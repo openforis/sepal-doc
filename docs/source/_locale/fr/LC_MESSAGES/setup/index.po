@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:47\n"
+"PO-Revision-Date: 2023-02-22 14:36\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/setup/index.rst:2
 msgid "Getting started with SEPAL"
-msgstr ""
+msgstr "Se lancer avec SEPAL"
 
 #: ../../source/setup/index.rst:5
 msgid "Discover key requirements needed to use the platform"
@@ -28,15 +28,15 @@ msgstr ""
 
 #: ../../source/setup/index.rst:7
 msgid "In this section of SEPAL documentation, you can learn how to:"
-msgstr ""
+msgstr "Dans cette section de la documentation de SEPAL, vous pouvez apprendre à :"
 
 #: ../../source/setup/index.rst:9
 msgid ":doc:`Register to SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`"
-msgstr ""
+msgstr ":doc:`Inscription à SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`"
 
 #: ../../source/setup/index.rst:10
 msgid ":doc:`Use Google Earth Engine (GEE) with SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`"
-msgstr ""
+msgstr ":doc:`Utilisez Google Earth Engine (GEE) avec SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`"
 
 #: ../../source/setup/index.rst:11
 msgid ":doc:`Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`"
@@ -44,33 +44,33 @@ msgstr ""
 
 #: ../../source/setup/index.rst:12
 msgid ":doc:`Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`"
-msgstr ""
+msgstr ":doc:`Échanger des fichiers avec SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`"
 
 #: ../../source/setup/index.rst:13
 msgid ":doc:`Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>`"
-msgstr ""
+msgstr ":doc:`Gérer vos ressources <https://docs.sepal.io/en/latest/setup/resource.html>`"
 
 #: ../../source/setup/index.rst:14
 msgid ":doc:`Reset your password <https://docs.sepal.io/en/latest/setup/password.html>`"
-msgstr ""
+msgstr ":doc:`Réinitialiser votre mot de passe <https://docs.sepal.io/en/latest/setup/password.html>`"
 
 #: ../../source/setup/index.rst:16
 msgid "Navigate to other pages in this section by selecting links located in **Section navigation** in the left pane."
-msgstr ""
+msgstr "Naviguez vers d'autres pages de cette section en sélectionnant les liens situés dans **la Section de navigation** dans le volet de gauche."
 
 #: ../../source/setup/index.rst:18
 msgid "Navigate to other sections in this article by selecting links located in **On this page** in the right pane."
-msgstr ""
+msgstr "Naviguez vers d'autres sections de cet article en sélectionnant les liens situés dans **Sur cette page** dans le volet de droite."
 
 #: ../../source/setup/index.rst:20
 msgid "Make contributions to the documentation by selecting :icon:`fas fa-pencil` **Edit this page** in the right pane."
-msgstr ""
+msgstr "Contribuez à la documentation en sélectionnant :icon:`fa-solid fa-pencil` **Modifier cette page** dans le volet de droite."
 
 #: ../../source/setup/index.rst:22
 msgid "If you can't find what you're looking for, use the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_."
-msgstr ""
+msgstr "Si vous ne trouvez pas ce que vous cherchez, utilisez le `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_."
 
 #: ../../source/setup/index.rst:25
 msgid "For support, :doc:`ask the community <>` or contact the SEPAL team at SEPAL@fao.org."
-msgstr ""
+msgstr "Pour obtenir de l'aide, :doc:`demandez à la communauté <>` ou contactez l'équipe SEPAL à SEPAL@fao.org."
 
