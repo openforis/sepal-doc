@@ -3,16 +3,18 @@
 from typing import Dict, List
 
 from docutils import nodes
-from sphinx.util.docutils import SphinxDirective, SphinxTranslator
-from sphinx.environment import BuildEnvironment
-from sphinx.util import logging
 from sphinx.application import Sphinx
+from sphinx.util import logging
+from sphinx.util.docutils import SphinxDirective, SphinxTranslator
 
 logger = logging.getLogger(__name__)
 
+
 class line_break_node(nodes.General, nodes.Element):
     """line break node"""
+
     pass
+
 
 class LineBreak(SphinxDirective):
     """line break directive
@@ -29,19 +31,25 @@ class LineBreak(SphinxDirective):
 
     def run(self) -> List[line_break_node]:
 
-        return[line_break_node()]
+        return [line_break_node()]
 
-def visit_line_break_node_html(translator: SphinxTranslator, node: line_break_node) -> None:
+
+def visit_line_break_node_html(
+    translator: SphinxTranslator, node: line_break_node
+) -> None:
     """Entry point of the html line break node"""
 
     translator.body.append("<br/>")
 
-def depart_line_break_node_html(*args) -> None:
-    """Entry point of the ignored line break node."""
-    logger.warning("LineBreak: unsupported output format (node skipped)")
-    raise nodes.SkipNode
 
-def visit_line_break_node_unsuported(translator: SphinxTranslator, node: line_break_node) -> None:
+def depart_line_break_node_html(*args) -> None:
+    """Exit point of the ignored line break node."""
+    pass
+
+
+def visit_line_break_node_unsuported(
+    translator: SphinxTranslator, node: line_break_node
+) -> None:
     """Entry point of the ignored logo node."""
     logger.warning("Logo: unsupported output format (node skipped)")
     raise nodes.SkipNode

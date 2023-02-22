@@ -1,21 +1,22 @@
 """Logo extention to create a list of logos"""
 import json
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List
 
 from docutils import nodes
-from sphinx.util.docutils import SphinxDirective, SphinxTranslator
-from sphinx.environment import BuildEnvironment
-from sphinx.util import logging
 from sphinx.application import Sphinx
+from sphinx.util import logging
+from sphinx.util.docutils import SphinxDirective, SphinxTranslator
 
 logger = logging.getLogger(__name__)
 
 SIZES = {"xs": 6, "sm": 8, "md": 10, "lg": 12, "xl": 15, "xxl": 20}
 "Accommodate different logo shapes (width values in rem)"
 
+
 class logo_node(nodes.General, nodes.Element):
     """Logo Node"""
+
     pass
 
 
@@ -35,7 +36,7 @@ class Logos(SphinxDirective):
     def run(self) -> List[logo_node]:
 
         # get the env
-        env: BuildEnvironment = self.env
+        self.env
 
         # get the data
         data_dir = Path(__file__).parents[1] / "_data" / "logo"
@@ -43,6 +44,7 @@ class Logos(SphinxDirective):
         logos = json.loads(logo_file.read_text())
 
         return [logo_node(logos=logos)]
+
 
 def visit_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
     """Entry point of the html logo node"""
@@ -70,10 +72,12 @@ def visit_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
 
         translator.body.append(html)
 
+
 def depart_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
     """exit from the html node and close the container"""
 
     translator.body.append("\t</div>\n</div>\n")
+
 
 def visit_logo_node_unsuported(translator: SphinxTranslator, node: logo_node) -> None:
     """Entry point of the ignored logo node."""
