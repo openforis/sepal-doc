@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-22 21:48\n"
+"PO-Revision-Date: 2023-02-23 14:10\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -36,15 +36,15 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:12
 msgid "select the image to classify;"
-msgstr ""
+msgstr "sélectionner l'image à classer ;"
 
 #: ../../source/cookbook/classification.rst:13
 msgid "define the class table; and"
-msgstr ""
+msgstr "définir la table de classe ; et"
 
 #: ../../source/cookbook/classification.rst:14
 msgid "add training data from external sources and on-the-fly selection."
-msgstr ""
+msgstr "ajouter des données d'entrainement à partir de sources externes et de sélection à la volée."
 
 #: ../../source/cookbook/classification.rst:16
 msgid "In combination with the other tools of SEPAL, the classification recipe can help you provide accurate land-use maps, without writing a single line of code."
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:39
 msgid "The SEPAL team recommends using the following naming convention: :code:`<image_name>_<classification>_<measures>`."
-msgstr ""
+msgstr "L'équipe SEPAL recommande d'utiliser la convention suivante : :code:`<image_name>_<classification>_<measures>`."
 
 #: ../../source/cookbook/classification.rst:42
 msgid "Parameters"
@@ -76,27 +76,27 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:46
 msgid ":guilabel:`IMG`: The image to classify."
-msgstr ""
+msgstr ":guilabel:`IMG`: L'image à classifier."
 
 #: ../../source/cookbook/classification.rst:47
 msgid ":guilabel:`LEG`: The legend of the classification system."
-msgstr ""
+msgstr ":guilabel:`LEG`: La légende du système de classification."
 
 #: ../../source/cookbook/classification.rst:48
 msgid ":guilabel:`TRN`: The training data of the model."
-msgstr ""
+msgstr ":guilabel:`TRN`: Les données d'entrainement du modèle."
 
 #: ../../source/cookbook/classification.rst:49
 msgid ":guilabel:`AUX`: The auxiliary global dataset to use in the model."
-msgstr ""
+msgstr ":guilabel:`AUX`: le jeu de données global auxiliaire à utiliser dans le modèle."
 
 #: ../../source/cookbook/classification.rst:50
 msgid ":guilabel:`CLS`: The classifier configuration."
-msgstr ""
+msgstr ":guilabel:`CLS`: La configuration du classificateur."
 
 #: ../../source/cookbook/classification.rst:57
 msgid "Image selection"
-msgstr ""
+msgstr "Sélection de l'image"
 
 #: ../../source/cookbook/classification.rst:59
 msgid "The first step consists of selecting the image bands on which to apply the classifier. The number of selected bands (i.e. images) is not limited."
@@ -104,7 +104,7 @@ msgstr "La première étape consiste à sélectionner les bandes d'images sur le
 
 #: ../../source/cookbook/classification.rst:63
 msgid "Keep in mind that increasing the number of bands to analyse will improve the model but slow down the rendering of the final image."
-msgstr ""
+msgstr "Gardez à l'esprit que l'augmentation du nombre de bandes à analyser améliorera le modèle mais ralentira le rendu de l'image finale."
 
 #: ../../source/cookbook/classification.rst:67
 msgid "If multiple images are selected, each selected image should overlap each other. If masked pixels are found in one of the bands, the classifier will mask them."
@@ -226,23 +226,23 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:139
 msgid "If more than two bands are selected, the operation will be applied to the Cartesian product of the bands. If you select bands :math:`A`, :math:`B` and :math:`C`, and apply the :code:`Difference` derived bands, you'll add three bands to your analysis:"
-msgstr ""
+msgstr "Si plus de deux bandes sont sélectionnées, l'opération sera appliquée au produit cartésien des bandes. Si vous sélectionnez des bandes :math:`A`, :math:`B` et :math:`C`, et appliquez les bandes dérivées de :code:`Différence`, vous ajouterez trois bandes à votre analyse :"
 
 #: ../../source/cookbook/classification.rst:141
 msgid ":math:`A - B`"
-msgstr ""
+msgstr ":math:`A - B`"
 
 #: ../../source/cookbook/classification.rst:142
 msgid ":math:`A - C`"
-msgstr ""
+msgstr ":math:`A - C`"
 
 #: ../../source/cookbook/classification.rst:143
 msgid ":math:`B - C`"
-msgstr ""
+msgstr ":math:`B - C`"
 
 #: ../../source/cookbook/classification.rst:151
 msgid "You should notice that in the figure, we compute the normalized difference between :code:`nir` and :code:`red` (i.e. the NDVI). It is also precomputed in the :code:`Indexes` derived bands."
-msgstr ""
+msgstr "Vous devriez remarquer que dans la figure, nous calculons la différence normalisée entre :code:`nir` et :code:`rouge` (i. . le NDVI). Il est également précalculé dans les bandes dérivées de :code:`Indexes`."
 
 #: ../../source/cookbook/classification.rst:153
 msgid "Once the image selection is done, select :btn:`<fas fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fas fa-trash>` button, you will remove the image and its band from the analysis altogether."
