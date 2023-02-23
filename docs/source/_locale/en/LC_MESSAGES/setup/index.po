@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"POT-Creation-Date: 2023-02-23 01:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,9 +89,15 @@ msgid ""
 "<https://github.com/openforis/sepal-doc/issues/new/choose>`_."
 msgstr ""
 
-#: ../../source/setup/index.rst:25
+#: ../../source/setup/index.rst:24
 msgid ""
 "For support, :doc:`ask the community <>` or contact the SEPAL team at "
-"SEPAL@fao.org."
+":email:`sepal@fao.org`."
 msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community <>`"
+#~ " or contact the SEPAL team at "
+#~ "SEPAL@fao.org."
+#~ msgstr ""
 
