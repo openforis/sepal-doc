@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-14 01:04+0000\n"
-"PO-Revision-Date: 2023-02-22 21:48\n"
+"PO-Revision-Date: 2023-02-25 19:05\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../source/feature/project.rst:57
 msgid "Recipes"
-msgstr ""
+msgstr "Recettes"
 
 #: ../../source/feature/project.rst:59
 msgid "When entering in the process interface by default no projects are selected, meaning that the user will see all the recipes available in its SEPAL account. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`."
