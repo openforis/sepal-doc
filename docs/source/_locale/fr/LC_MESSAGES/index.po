@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-11 00:57+0000\n"
-"PO-Revision-Date: 2023-02-25 19:05\n"
+"PO-Revision-Date: 2023-02-25 20:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "CLI"
 
 #: ../../source/index.rst:34
 msgid "Workflows"
-msgstr "Flux de travail"
+msgstr "Workflows"
 
 #: ../../source/index.rst:34
 msgid "Features"
@@ -60,27 +60,27 @@ msgstr "SEPAL est en constante amélioration. Les membres de notre équipe font 
 
 #: ../../source/index.rst:66
 msgid "Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account, download and get the basics of the platform."
-msgstr ""
+msgstr "Débutant avec SEPAL ? commencez à vous inscrire sur la plateforme et commencez le fantastique voyage de production de données d'observation de la Terre de partout! Il contient tout ce dont vous avez besoin pour démarrer un compte, télécharger et obtenir les bases de la plate-forme."
 
 #: ../../source/index.rst:71
 msgid "SEPAL uses the best of Google Earth Engine (GEE) and make it available for users without coding experience. To get the best of the platform you should connect your own free account. This page contains all you need to know to create a GEE account and how to link it with SEPAL."
-msgstr ""
+msgstr "SEPAL utilise le meilleur de Google Earth Engine (GEE) et le rend disponible pour les utilisateurs sans expérience de codage. Pour obtenir le meilleur de la plate-forme, vous devez connecter votre propre compte gratuit. Cette page contient tout ce que vous devez savoir pour créer un compte GEE et comment le lier avec SEPAL."
 
 #: ../../source/index.rst:76
 msgid "To run analysis SEPAL uses recipes. these recipes are the founding blocks of our processes. To learn how to use them and learn more about the different functionalities of the platform, follow this tutorials."
-msgstr ""
+msgstr "Pour exécuter l'analyse SEPAL utilise des recettes, ces recettes sont les éléments fondateurs de nos processus. Pour apprendre comment les utiliser et en apprendre davantage sur les différentes fonctionnalités de la plate-forme, suivez ce tutoriel."
 
 #: ../../source/index.rst:81
 msgid "To run integrated workflows SEPAL uses applications. These modules are designed by the SEPAL team or other organization. To run specific tasks without relying on coding experience. To learn how to use them and learn more about the different functionalities follow this tutorials."
-msgstr ""
+msgstr "Pour exécuter des workflows intégrés, SEPAL utilise des applications. Ces modules sont conçus par l'équipe SEPAL ou d'autres organisations. Exécuter des tâches spécifiques sans besoin d'expérience de codage. Pour apprendre comment les utiliser et en apprendre plus sur les différentes fonctionnalités, suivez ce tutoriel."
 
 #: ../../source/index.rst:86
 msgid "Through our partnership with NICFI and PlanetLab, SEPAL can use the very high resolution imagery from PlanetLab for its recipes and module. To use these images SEPAL need to be connected to your PLanet account. Follow these step to link our platform to the VHR imagery."
-msgstr ""
+msgstr "Grâce à notre partenariat avec NICFI et PlanetLab, SEPAL peut utiliser l'imagerie très haute résolution de PlanetLab pour ses recettes et modules. Pour utiliser ces images, SEPAL doit être connecté à votre compte Planet. Suivez cette étape pour relier notre plateforme à l'imagerie Très Haute Résolution (VHR)."
 
 #: ../../source/index.rst:91
 msgid "**se.plan** is a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders. if you're interested in using the application to compute your restoration index, follow our documentation."
-msgstr ""
+msgstr "**se.plan** est un outil en ligne spatialement explicite conçu pour soutenir les décisions de planification de la restauration forestière par les parties prenantes à la restauration. si vous êtes intéressé à utiliser l'application pour calculer votre index de restauration, suivez notre documentation."
 
 #: ../../source/index.rst:94
 msgid "About us"
@@ -92,11 +92,11 @@ msgstr "SEPAL fait partie de la suite d'outils `Open Foris <http://www.openforis
 
 #: ../../source/index.rst:102
 msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
-msgstr ""
+msgstr "SEPAL est une plate-forme basée sur le cloud pour la surveillance autonome des terres en utilisant des données à satellitaires. C'est une combinaison de Google Earth Engine et de logiciels open source comme ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit et OpenForis Geospatial Toolkit. Il permet aux utilisateurs d'accéder rapidement et efficacement à des ressources informatiques puissantes pour interroger et traiter les données satellitaires afin de créer des analyses avancées."
 
 #: ../../source/index.rst:105
 msgid "Funders"
-msgstr ""
+msgstr "Partenaires"
 
 #: ../../source/index.rst:109
 msgid "SEPAL is a project of the Forestry Department of the United Nations Food and Agriculture Organization (FAO) funded by the Government of Norway."
