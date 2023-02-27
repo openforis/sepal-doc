@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-22 21:48\n"
+"PO-Revision-Date: 2023-02-27 13:23\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:2
 msgid "Optical mosaics"
-msgstr ""
+msgstr "Mosaïques optiques"
 
 #: ../../source/cookbook/optical_mosaic.rst:5
 msgid "Combine images to create single raster datasets with Optical mosaics"
-msgstr ""
+msgstr "Combinez des images pour créer des jeux de données matriciels avec des mosaïques optiques"
 
 #: ../../source/cookbook/optical_mosaic.rst:8
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/cookbook/optical_mosaic.rst:10
 msgid "A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together. This can be achieved on both contiguous rasters (see first image) and overlapping images (see second image)."
@@ -36,35 +36,35 @@ msgstr "Une mosaïque est une combinaison ou une fusion de deux ou plusieurs ima
 
 #: ../../source/cookbook/optical_mosaic.rst:23
 msgid "These overlay areas can be managed in various ways. For example, you can choose to:"
-msgstr ""
+msgstr "Ces zones de superposition peuvent être gérées de différentes manières. Par exemple, vous pouvez choisir de:"
 
 #: ../../source/cookbook/optical_mosaic.rst:25
 msgid "keep only the raster data from the first or last dataset;"
-msgstr ""
+msgstr "ne conserve que les données matricielles du premier ou dernier jeu de données ;"
 
 #: ../../source/cookbook/optical_mosaic.rst:26
 msgid "combine the values of the overlay cells using a weighting algorithm;"
-msgstr ""
+msgstr "combiner les valeurs des cellules de superposition à l'aide d'un algorithme de pondération ;"
 
 #: ../../source/cookbook/optical_mosaic.rst:27
 msgid "average the values of the overlay cells; or"
-msgstr ""
+msgstr "moyenner les valeurs des cellules de superposition ; ou"
 
 #: ../../source/cookbook/optical_mosaic.rst:28
 msgid "take the maximum or minimum value."
-msgstr ""
+msgstr "prend la valeur maximale ou minimale."
 
 #: ../../source/cookbook/optical_mosaic.rst:30
 msgid "In addition, certain corrections can be made to the image to account for clouds, snow and other factors; these operations are complex and repetitive."
-msgstr ""
+msgstr "En outre, certaines corrections peuvent être apportées à l'image pour tenir compte des nuages, de la neige et d'autres facteurs; ces opérations sont complexes et répétitives."
 
 #: ../../source/cookbook/optical_mosaic.rst:32
 msgid "SEPAL offers you an interactive and intuitive way to create mosaics in any area of interest (AOI)."
-msgstr ""
+msgstr "SEPAL vous offre un moyen interactif et intuitif de créer des mosaïques dans n'importe quel zone d'intérêt (AOI)."
 
 #: ../../source/cookbook/optical_mosaic.rst:36
 msgid "You won't be able to retrieve the images if your SEPAL and Google Earth Engine (GEE) accounts are not connected. For more information, go to :doc:`../setup/gee`."
-msgstr ""
+msgstr "Vous ne pourrez pas récupérer les images si vos comptes SEPAL et Google Earth Engine (GEE) ne sont pas connectés. Pour plus d'informations, allez dans :doc:`../setup/gee`."
 
 #: ../../source/cookbook/optical_mosaic.rst:39
 msgid "Start"
@@ -76,11 +76,11 @@ msgstr "Une fois la recette de mosaïque sélectionnée, SEPAL affichera le proc
 
 #: ../../source/cookbook/optical_mosaic.rst:47
 msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and write a new name. It will default to :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`."
-msgstr ""
+msgstr "La première étape est de changer le nom de la recette. Ce nom sera utilisé pour identifier vos fichiers et recettes dans les dossiers SEPAL. Utilisez la convention la mieux adaptée à vos besoins. Double-cliquez simplement sur l'onglet et écrivez un nouveau nom. Il sera par défaut à :code:`Optical_mosaic_<start_date>_<end_date>_<band name>`."
 
 #: ../../source/cookbook/optical_mosaic.rst:59
 msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<dates>_<measure>`."
-msgstr ""
+msgstr "L'équipe SEPAL recommande d'utiliser la convention suivante : :code:`<aoi name>_<dates>_<measure>`."
 
 #: ../../source/cookbook/optical_mosaic.rst:62
 msgid "Parameters"
@@ -88,7 +88,7 @@ msgstr "Paramètres"
 
 #: ../../source/cookbook/optical_mosaic.rst:64
 msgid "In the lower-right corner, five tabs are available, which will allow you to customize the mosaic creation to your needs:"
-msgstr ""
+msgstr "Dans le coin inférieur droit, cinq onglets sont disponibles, ce qui vous permettra de personnaliser la création de mosaïques selon vos besoins :"
 
 #: ../../source/cookbook/optical_mosaic.rst:66
 msgid ":guilabel:`AOI`: area of interest"
@@ -116,15 +116,15 @@ msgstr "Sélection AOI"
 
 #: ../../source/cookbook/optical_mosaic.rst:79
 msgid "The data exported by the recipe will be generated from within the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
-msgstr ""
+msgstr "Les données exportées par la recette seront générées à partir des limites de l'AOI. Il y a plusieurs façons de sélectionner l'AOI dans SEPAL:"
 
 #: ../../source/cookbook/optical_mosaic.rst:81
 msgid "Administrative boundaries"
-msgstr ""
+msgstr "Limites administratives"
 
 #: ../../source/cookbook/optical_mosaic.rst:82
 msgid "EE Tables"
-msgstr ""
+msgstr "Tables EE"
 
 #: ../../source/cookbook/optical_mosaic.rst:83
 msgid "Drawn polygons"
