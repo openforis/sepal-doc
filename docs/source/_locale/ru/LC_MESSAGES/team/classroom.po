@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 16:23\n"
+"POT-Creation-Date: 2023-02-23 01:01+0000\n"
+"PO-Revision-Date: 2023-02-23 01:07\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgid "each class is composed by several :code:`topics` and each topic can embed
 msgstr ""
 
 #: ../../source/team/classroom.rst:26
-msgid "If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_) they will answer as soon as possible."
+msgid "If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>`_ and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`_) they will answer as soon as possible."
 msgstr ""
 
 #: ../../source/team/classroom.rst:29
@@ -59,7 +59,7 @@ msgid "If you need material for a webinar you can either directly reuse one of t
 msgstr ""
 
 #: ../../source/team/classroom.rst:37
-msgid "If you create your own course as a combination of different modules, invite :code:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account."
+msgid "If you create your own course as a combination of different modules, invite :email:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:39
@@ -67,7 +67,7 @@ msgid "When creating basic content, you can re-use posts from classes were you a
 msgstr ""
 
 #: ../../source/team/classroom.rst:45
-msgid "Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ and `Pierrick Rambaud <mailto:pierrick.rambaud@fao.org>`_)."
+msgid "Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`)."
 msgstr ""
 
 #: ../../source/team/classroom.rst:49
@@ -109,4 +109,36 @@ msgstr ""
 #: ../../source/team/classroom.rst:85
 msgid "All the team members have the right to edit this file, mistakes will impact all of us and all the already existing classrooms that use this file."
 msgstr ""
+
+#~ msgid ""
+#~ "If you have any question about the"
+#~ " classrooms of the team and how "
+#~ "to use them don't hesitate to "
+#~ "contact the maintainer of the gmail "
+#~ "account (`Aurelie shapiro "
+#~ "<mailto:aurelie.shapiro@fao.org>`_ and `Pierrick "
+#~ "Rambaud <mailto:pierrick.rambaud@fao.org>`_) they "
+#~ "will answer as soon as possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you create your own course as"
+#~ " a combination of different modules, "
+#~ "invite :code:`sepal.classrom@gmail.com` as a "
+#~ "teacher, and then make this account "
+#~ "owner of the classroom. As a "
+#~ "teacher you will still be able to"
+#~ " do everything but the content will"
+#~ " resides in a communal account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Don't forget to be add as teacher"
+#~ " on any class you want to "
+#~ "reuse. ask it via mail to the "
+#~ "maintainer of the gmail account "
+#~ "(`Aurelie shapiro <mailto:aurelie.shapiro@fao.org>`_ "
+#~ "and `Pierrick Rambaud "
+#~ "<mailto:pierrick.rambaud@fao.org>`_)."
+#~ msgstr ""
 

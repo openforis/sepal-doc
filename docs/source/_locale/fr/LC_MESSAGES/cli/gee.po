@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-02-25 19:05\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,25 +20,25 @@ msgstr ""
 
 #: ../../source/cli/gee.rst:2
 msgid "Google Earth Engine"
-msgstr ""
+msgstr "Google Earth Engine"
 
 #: ../../source/cli/gee.rst:4
 msgid "The earthengine tool is a utility program that allows you to manage Earth Engine assets and tasks from the command line. It is installed automatically when you install the Python API. To check whether the tool is installed and functioning correctly, type the following on a command line:"
-msgstr ""
+msgstr "L'outil earthengine est un programme utilitaire qui vous permet de gérer les assets et les tâches Earth Engine à partir de la ligne de commande. Il est installé automatiquement lorsque vous installez l'API Python. Pour vérifier si l'outil est installé et fonctionne correctement, tapez ce qui suit sur une ligne de commande :"
 
 #: ../../source/cli/gee.rst:10
 msgid "If the tool is properly installed then it will print out a short summary of available commands. To get help on a specific command, use:"
-msgstr ""
+msgstr "Si l'outil est correctement installé, il affichera un bref résumé des commandes disponibles. Pour obtenir de l'aide sur une commande spécifique, utilisez :"
 
 #: ../../source/cli/gee.rst:16
 msgid "When you first install the Python API you will need to log in using the :code:`authenticate` command described below."
-msgstr ""
+msgstr "Lorsque vous installez pour la première fois l'API Python, vous devrez vous connecter en utilisant la commande :code:`authenticate` décrite ci-dessous."
 
 #: ../../source/cli/gee.rst:19
 msgid "available commands"
-msgstr ""
+msgstr "commandes disponibles"
 
 #: ../../source/cli/gee.rst:21
 msgid "More information on the available command can be found on `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__."
-msgstr ""
+msgstr "Plus d'informations sur la commande disponible peuvent être trouvées sur `le site internet de Google API <https://developers.google.com/earth-engine/guides/command_line>`__."
 

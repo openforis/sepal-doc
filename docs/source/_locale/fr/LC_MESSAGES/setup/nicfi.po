@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-02-25 20:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,59 +20,59 @@ msgstr ""
 
 #: ../../source/setup/nicfi.rst:2
 msgid "Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data"
-msgstr ""
+msgstr "Utiliser l’Initiative internationale sur le climat et les forêts de Norvège (NICFI) - Données Planet Lab"
 
 #: ../../source/setup/nicfi.rst:5
 msgid "Sign up for NICFI and connect with Google Earth Engine (GEE)"
-msgstr ""
+msgstr "Inscrivez-vous à NICFI et connectez-vous avec Google Earth Engine (GEE)"
 
 #: ../../source/setup/nicfi.rst:7
 msgid "In this article, you can learn how to:"
-msgstr ""
+msgstr "Dans cet article, vous pouvez apprendre à :"
 
 #: ../../source/setup/nicfi.rst:9 ../../source/setup/nicfi.rst:34
 msgid "Sign up for NICFI imagery"
-msgstr ""
+msgstr "S'inscrire aux imageries NICFI"
 
 #: ../../source/setup/nicfi.rst:10 ../../source/setup/nicfi.rst:51
 msgid "Access NICFI through GEE"
-msgstr ""
+msgstr "Accéder à NICFI via GEE"
 
 #: ../../source/setup/nicfi.rst:14
 msgid "Adapted from `<https://developers.planet.com/docs/integrations/gee/nicfi/>`_."
-msgstr ""
+msgstr "Adapté de `<https://developers.planet.com/docs/integrations/gee/nicfi/>`_."
 
 #: ../../source/setup/nicfi.rst:17
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/setup/nicfi.rst:19
 msgid "Through NICFI, anyone can now access Planet’s high-resolution, analysis-ready mosaics of the world’s tropics to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity, and facilitate sustainable development."
-msgstr ""
+msgstr "Grâce à NICFI, tout le monde peut désormais accéder aux mosaïques de haute résolution des tropiques du monde entier prêtes à être analysées pour aider à réduire et à inverser la perte de forêts tropicales, lutter contre le changement climatique, conserver la biodiversité et faciliter le développement durable."
 
 #: ../../source/setup/nicfi.rst:21
 msgid "In support of NICFI’s mission, you can use this data for a number of purposes, including, but not limited to:"
-msgstr ""
+msgstr "Pour soutenir la mission de NICFI, vous pouvez utiliser ces données à plusieurs fins, y compris, mais sans s’y limiter :"
 
 #: ../../source/setup/nicfi.rst:23
 msgid "advancing scientific research about the world’s tropical forests and the critical services they provide;"
-msgstr ""
+msgstr "faire progresser la recherche scientifique sur les forêts tropicales du monde et les services essentiels qu’elles fournissent ;"
 
 #: ../../source/setup/nicfi.rst:24
 msgid "implementing and improving policies for sustainable forest management and land use in developing tropical forest countries and jurisdictions;"
-msgstr ""
+msgstr "mettre en œuvre et améliorer les politiques d'aménagement forestier durable et d'aménagement du territoire dans les pays et juridictions des forêts tropicales en développement ;"
 
 #: ../../source/setup/nicfi.rst:25
 msgid "increasing transparency and accountability in the tropics;"
-msgstr ""
+msgstr "accroître la transparence et la responsabilité dans les tropiques ;"
 
 #: ../../source/setup/nicfi.rst:26
 msgid "protecting and improving the rights of Indigenous Peoples and local communities in tropical forest countries; and"
-msgstr ""
+msgstr "protéger et améliorer les droits des peuples autochtones et des communautés locales dans les pays des forêts tropicales ; et"
 
 #: ../../source/setup/nicfi.rst:27
 msgid "innovating solutions towards reducing pressure on forests from global commodities and financial markets."
-msgstr ""
+msgstr "des solutions innovantes pour réduire la pression sur les forêts provenant des marchés financiers et des produits de base mondiaux."
 
 #: ../../source/setup/nicfi.rst:29
 msgid "The NICFI & Planet Basemaps for Tropical Forest Monitoring are now available in Google Earth Engine (GEE) and SEPAL for easy processing. In a few simple steps, you can create your own custom mosaics using the Planet basemaps."
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../source/setup/nicfi.rst:75
 msgid "To connect to GEE, your GEE email address must be the same as the email address used for SEPAL."
-msgstr ""
+msgstr "Pour vous connecter à GEE, votre adresse e-mail GEE doit être la même que celle utilisée pour SEPAL."
 
 #: ../../source/setup/nicfi.rst:81
 msgid "The next step is to make sure SEPAL is connected to the same email address that has access to NICFI-Planet Basemaps in GEE using the same process as in GEE."
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../source/setup/nicfi.rst:-1
 msgid "SEPAL and GEE connected."
-msgstr ""
+msgstr "SEPAL et GEE connectés."
 
 #: ../../source/setup/nicfi.rst:90
 msgid "If you are either not connected to your Google account or connected via a different email address that does not have access to the NICFI-Planet Basemaps, select **Google account** and choose the email address that has access to NICFI-Planet Basemaps in GEE."

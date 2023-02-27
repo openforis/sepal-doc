@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:30\n"
+"POT-Creation-Date: 2023-02-23 01:01+0000\n"
+"PO-Revision-Date: 2023-02-23 01:06\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -323,31 +323,68 @@ msgid "**R Studio:** Provides access to the R environment where you can run proc
 msgstr ""
 
 #: ../../source/setup/presentation.rst:193
-msgid "**Stratified Area Estimator- Design:** Tool for creating stratified designs to estimate areas. We will use this tool in Module 4."
+msgid "**JupyterLab:** Provides access to the Python environement where you can run complex data workflows."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:194
-msgid "**Stratified Area Estimator- Analysis:** Tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4."
+msgid "**BFAST GPU:** GPU implementation of the BFAST algorithm to analyse time series."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:195
-msgid "**Geo Processing- Beta:** Offers a selection of easy-to-use change detection and segmentation tools."
+msgid "**Deforestation alert analysis:** Retrieve any type of alert on a selected AOI."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:196
-msgid "**BFAST Explorer:** Tool for performing pixel-based time series analysis of Landsat Surface Reflectance data."
+msgid "**Mountain Green Cover Index:** Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale."
 msgstr ""
 
 #: ../../source/setup/presentation.rst:197
-msgid "Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation."
+msgid "**SMFM Biota:** Calculate biomass change over time using ALOS Palsar data."
 msgstr ""
 
-#: ../../source/setup/presentation.rst:200
+#: ../../source/setup/presentation.rst:198
+msgid "Many more that can be found in the section :doc:`../modules/index` of the documentation."
+msgstr ""
+
+#: ../../source/setup/presentation.rst:201
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Stratified Area Estimator- Design:** Tool"
+#~ " for creating stratified designs to "
+#~ "estimate areas. We will use this "
+#~ "tool in Module 4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Stratified Area Estimator- Analysis:** Tool"
+#~ " for analyzing the results of your"
+#~ " stratified design sampling to estimate "
+#~ "areas. We will use this tool in"
+#~ " Module 4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Geo Processing- Beta:** Offers a "
+#~ "selection of easy-to-use change "
+#~ "detection and segmentation tools."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**BFAST Explorer:** Tool for performing "
+#~ "pixel-based time series analysis of "
+#~ "Landsat Surface Reflectance data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Many more that can be found in "
+#~ "the section `Modules <../modules/index.html>`_ "
+#~ "of the documentation."
 #~ msgstr ""
 

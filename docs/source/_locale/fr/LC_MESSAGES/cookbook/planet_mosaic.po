@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-02-27 13:23\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:40
 msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<dates>_<measure>`."
-msgstr ""
+msgstr "L'équipe SEPAL recommande d'utiliser la convention suivante : :code:`<aoi name>_<dates>_<measure>`."
 
 #: ../../source/cookbook/planet_mosaic.rst:43
 msgid "Parameters"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:57
 msgid "AOI Selection"
-msgstr ""
+msgstr "Sélection AOI"
 
 #: ../../source/cookbook/planet_mosaic.rst:59
 msgid "The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:72
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: ../../source/cookbook/planet_mosaic.rst:74
 msgid "In the :guilabel:`DAT` tab, you will be asked to select the dates of the time series used to build the composited image. You need to provide a start and an end date."
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:89
 msgid "Sources"
-msgstr ""
+msgstr "Sources"
 
 #: ../../source/cookbook/planet_mosaic.rst:91
 msgid "SEPAL can use multiple data sources to create your mosaics/composites as long as they are Planet related datasets."
@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:146
 msgid "Cloud masking"
-msgstr ""
+msgstr "Masquage des nuages"
 
 #: ../../source/cookbook/planet_mosaic.rst:148
 msgid "Planet composites already remove clouds. Setting this parameter to a value greater than zero (0) will remove additional clouds using a Google Earth Engine (GEE) algorithm."

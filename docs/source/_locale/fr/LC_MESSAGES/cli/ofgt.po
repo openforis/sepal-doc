@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:30+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr ""
 
 #: ../../source/cli/ofgt.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../source/cli/ofgt.rst:12
 msgid "About this manual"
-msgstr ""
+msgstr "À propos de ce manuel"
 
 #: ../../source/cli/ofgt.rst:14
 msgid "The user manual is developed to help getting into spatial analysis using the Open Foris Geospatial Toolkit. It gives basic explanations of how OFGT functions. It is not attempted to explain the theoretical background on how to do geospatial analysis using remote sensing or GIS, but rather will guide you through hands-on examples for each tool, next to some general areas, such as the installation. Further, the manual will link to relevant man pages and other documentation. In addition, the user manual is written in a way that it can be understood by people who are experienced Windows or Mac users, but have not used Linux or OFGT much before. Sources and documentation for OFGT can be obtained here: http://openforis.org/tools/geospatial-toolkit.html"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../source/cli/ofgt.rst:18
 msgid "What is OFGT?"
-msgstr ""
+msgstr "Qu'est-ce que OFGT ?"
 
 #: ../../source/cli/ofgt.rst:20
 msgid "OFGT - Open Foris Geospatial Toolkit is a a collection of prototype command- line utilities for processing of geographical data. The tools can be divided into stand-alone programs and scripts and they have been tested mainly in Ubuntu Linux environment although can be used with other linux distros, Mac OS, and MS Windows (Cywgin) as well. Most of the stand-alone programs use GDAL libraries and many of the scripts rely heavily on GDAL command-line utilities. The OFGT project started under the Open Foris Initiative to develop, share and support software tools and methods for multi-purpose forest assessment, monitoring and reporting http://openforis.org. The Initiative develops and supports innovative, easy-to-use tools needed to produce reliable, timely information on the state of forest resources and their uses. The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction and other image processing analysis. Overview of OFGT versions currently available:"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../source/cli/ofgt.rst:36
 msgid "First time users"
-msgstr ""
+msgstr "Nouveaux utilisateurs"
 
 #: ../../source/cli/ofgt.rst:38
 msgid "First time users, the terminal is your friend: The Open Foris Geospatial Toolkit tutorial is aiming to provide straight forward guidelines and examples to help first time users to familiarize themselves with the Open Foris Geospatial Toolkit. This includes the installation of Ubuntu, various geospatial tools and, in particular, the installation and application of the Open Foris Geospatial Toolkit. You do not need to be an expert, we just would like you to be curious to try things out. Do not be afraid of using the command-line! We know that the terminal window is for many users a barrier of being afraid ruining everything and having to start from scratch. These days the terminal is not exclusively for advanced computer enthusiasts. Give it a try and just start playing around following the tutorials and instructions you can find in the wiki."
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../source/cli/ofgt.rst:41
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: ../../source/cli/ofgt.rst:43
 msgid "Open Foris Geospatial Toolkit is released under GNU GPLv3 license."
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../source/cli/ofgt.rst:46
 msgid "Get Info"
-msgstr ""
+msgstr "Obtenir les infos"
 
 #: ../../source/cli/ofgt.rst:48
 msgid "You can check the current version info with the following command:"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:47\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -28,25 +28,25 @@ msgstr ""
 
 #: ../../source/workflows/index.rst:2
 msgid "Workflows"
-msgstr ""
+msgstr "Workflows"
 
 #: ../../source/workflows/index.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/workflows/index.rst:7
 msgid "SEPAL is gathering numerous tools and recipes to help users perform data analysis. These tools can be combined in a modular way to execute more complex workflows."
-msgstr ""
+msgstr "SEPAL rassemble de nombreux outils et recettes pour aider les utilisateurs à effectuer des analyses de données. Ces outils peuvent être combinés de manière modulaire pour exécuter des flux de travail plus complexes."
 
 #: ../../source/workflows/index.rst:9
 msgid "This section is presenting some workflows that involve the usage of multiple SEPAL tools (modules and/or recipes)."
-msgstr ""
+msgstr "Cette section présente certains workflows qui impliquent l'utilisation de plusieurs outils SEPAL (modules et/ou recettes)."
 
 #: ../../source/workflows/index.rst:13
 msgid "If your workflow is not described here and you think it would make sense to have it in the main SEPAL documentation, please send us a message in our `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__."
-msgstr ""
+msgstr "Si votre flux de travail n'est pas décrit ici et que vous pensez qu'il serait judicieux de l'avoir dans la documentation principale de SEPAL, veuillez nous envoyer un message dans notre `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__."
 
 #: ../../source/workflows/index.rst:16
 msgid "Table of content"
-msgstr ""
+msgstr "Table des matières"
 

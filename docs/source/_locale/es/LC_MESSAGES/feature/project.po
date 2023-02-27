@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:47\n"
+"POT-Creation-Date: 2023-02-14 01:04+0000\n"
+"PO-Revision-Date: 2023-02-14 01:23\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgid "Once a project is selected it will appear as \"current project\" in the p
 msgstr ""
 
 #: ../../source/feature/project.rst:85
-msgid "Once a project is selected, any newly created recipe will fallback to the current project."
+msgid "Once a project is selected and a recipe is created, it will belong to the selected project."
 msgstr ""
 
 #: ../../source/feature/project.rst:89
@@ -149,4 +149,10 @@ msgstr ""
 #: ../../source/feature/project.rst:114
 msgid "When creating recipes, like :code:`Classification` users can use other recipe as input for the process. To avoid flooding the dropdown with to many values only the recipes from the same projet will be displayed (left). If one still want to see all the recipes in the dropdown, click on :btn:`All` and all the recipes will be exposed using project names as headers (right)."
 msgstr ""
+
+#~ msgid ""
+#~ "Once a project is selected, any "
+#~ "newly created recipe will fallback to"
+#~ " the current project."
+#~ msgstr ""
 

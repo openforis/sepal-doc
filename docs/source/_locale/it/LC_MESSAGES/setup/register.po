@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:30\n"
+"POT-Creation-Date: 2023-02-23 01:01+0000\n"
+"PO-Revision-Date: 2023-02-23 01:07\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -151,7 +151,7 @@ msgid "Google Earth Enging (GEE) code editor."
 msgstr ""
 
 #: ../../source/setup/register.rst:125
-msgid "If you experience problems registering with GEE, contact the SEPAL team at sepal@fao.org."
+msgid "If you experience problems registering with GEE, contact the SEPAL team at :email:`sepal@fao.org`."
 msgstr ""
 
 #: ../../source/setup/register.rst:130
@@ -211,5 +211,11 @@ msgstr ""
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you experience problems registering "
+#~ "with GEE, contact the SEPAL team "
+#~ "at sepal@fao.org."
 #~ msgstr ""
 

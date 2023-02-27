@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-02-22 17:00\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,53 +20,53 @@ msgstr ""
 
 #: ../../source/cli/gdrive.rst:2
 msgid "Google Drive"
-msgstr ""
+msgstr "Google Drive"
 
 #: ../../source/cli/gdrive.rst:5
 msgid "The `drive` CLI is a utility that allows managing the Google Drive account from the SEPAL console, to read the full documentation please refer to the Readme file directly in the GitHub repository https://github.com/odeke-em/drive."
-msgstr ""
+msgstr "Le CLI :code:`drive` est un utilitaire qui permet de gérer le compte Google Drive à partir de la console SEPAL, pour lire la documentation complète, veuillez vous référer au fichier Readme directement dans le dépôt GitHub https://github.om/odeke-em/drive."
 
 #: ../../source/cli/gdrive.rst:8
 msgid "Usage"
-msgstr ""
+msgstr "Utilisation"
 
 #: ../../source/cli/gdrive.rst:11
 msgid "Initialize drive connection"
-msgstr ""
+msgstr "Initialiser la connexion à drive"
 
 #: ../../source/cli/gdrive.rst:13
 msgid "Before running any of the drive commands, you have to start a session, to do so, run the following line:"
-msgstr ""
+msgstr "Avant d'exécuter une des commandes de drive, vous devez démarrer une session, pour ce faire, exécutez la ligne suivante :"
 
 #: ../../source/cli/gdrive.rst:19
 msgid "As result, an URL will be displayed in the terminal, visit it by copying and pasting it in your browser. Log-in to your Google account and, \"trust the connection\" by clicking the \"allow\" button. An authorization code will be displayed, copy it and paste it into the Sepal terminal. Now you are ready to use the :code:`drive` CLI tool."
-msgstr ""
+msgstr "Une URL sera affichée dans le terminal, visitez le en le copiant et en le collant dans votre navigateur. Connectez-vous à votre compte Google et, \"Faites confiance à la connexion\" en cliquant sur le bouton \"Autoriser\". Un code d'autorisation sera affiché, copié et collé dans le terminal SEPAL. Maintenant vous êtes prêt à utiliser l'outil CLI :code:`drive`."
 
 #: ../../source/cli/gdrive.rst:23
 msgid "The authorization token will expire on every session, this process has to be repeated each time you want to use the :code:`drive` command tool."
-msgstr ""
+msgstr "Le jeton d'autorisation expirera à chaque session, ce processus doit être répété chaque fois que vous voulez utiliser l'outil de commande :code:`drive`."
 
 #: ../../source/cli/gdrive.rst:26
 msgid "Upload files"
-msgstr ""
+msgstr "Envoyer des fichiers"
 
 #: ../../source/cli/gdrive.rst:28
 msgid "You can upload files from your SEPAL environment by using the :code:`push` command."
-msgstr ""
+msgstr "Vous pouvez télécharger des fichiers depuis votre environnement SEPAL en utilisant la commande :code:`push`."
 
 #: ../../source/cli/gdrive.rst:41
 msgid "Download files"
-msgstr ""
+msgstr "Télécharger les fichiers"
 
 #: ../../source/cli/gdrive.rst:43
 msgid "To download files, use the :code:`pull` command. This command will create files that doesn't exist locally but does remotely."
-msgstr ""
+msgstr "Pour télécharger des fichiers, utilisez la commande :code:`pull`. Cette commande va créer des fichiers qui n'existent pas encore localement."
 
 #: ../../source/cli/gdrive.rst:53
 msgid "This command will syncronize the files that are not present in your sepal session but are present in your Google Drive account folder."
-msgstr ""
+msgstr "Cette commande synchronisera les fichiers qui ne sont pas présents dans votre session SEPAL, mais sont présents dans le dossier de votre compte Google Drive."
 
 #: ../../source/cli/gdrive.rst:56
 msgid "Additional commands"
-msgstr ""
+msgstr "Commandes supplémentaires"
 
