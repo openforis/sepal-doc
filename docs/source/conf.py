@@ -32,7 +32,7 @@ extensions = [
     "sphinxcontrib.youtube",
     "sphinx_design",
     "sphinx_togglebutton",
-    "sphinx-favicon",
+    "sphinx_favicon",
     "notfound.extension",
     "_extentions.line_break",
     "_extentions.custom_edit",
