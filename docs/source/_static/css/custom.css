@@ -23,8 +23,8 @@
 }
 
 /*******************************************************************************
-*   prevent pydata from adding extra background colors to my images 
-*   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879 
+*   prevent pydata from adding extra background colors to my images
+*   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879
 *   will be solved
 *
 **/
@@ -84,19 +84,6 @@ a[data-lightbox] {
 }
 a[data-lightbox] img {
   padding: 0.25em;
-}
-
-/*******************************************************************************
-*  make the footer inlined
-*
-**/
-.footer-item {
-  display: inline-block;
-}
-.footer-item:not(:last-child) {
-  border-right: 1px solid var(--pst-color-text-base);
-  margin-right: 0.5em;
-  padding-right: 0.5em;
 }
 
 /*******************************************************************************

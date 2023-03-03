@@ -118,7 +118,8 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
-    "footer_items": ["copyright", "sphinx-version", "licence", "map"],
+    "footer_start": ["copyright", "sphinx-version"],
+    "footer_end": ["licence", "map"],
     "left_sidebar_end": ["sidebar-ethical-ads.html"],
 }
 
