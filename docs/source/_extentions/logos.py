@@ -54,7 +54,7 @@ def visit_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
     html = '<div class="container my-4">\n'
     html += '\t<div id="funder-logos" class="d-flex flex-wrap flex-row justify-content-center align-items-center">\n'
 
-    for k, v in node["logos"].items():
+    for v in node["logos"].values():
 
         # get informations from the parameters
         size = SIZES[v["size"]]
@@ -70,7 +70,7 @@ def visit_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
         html += "</a>"
         html += "</div>\n"
 
-        translator.body.append(html)
+    translator.body.append(html)
 
 
 def depart_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
