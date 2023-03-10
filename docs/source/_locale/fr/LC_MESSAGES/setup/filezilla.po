@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-02-22 15:51\n"
+"PO-Revision-Date: 2023-03-10 08:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,19 +24,19 @@ msgstr "Échanger des fichiers avec SEPAL"
 
 #: ../../source/setup/filezilla.rst:5
 msgid "Use SEPAL's built-in tools and FTP solutions to exhange files"
-msgstr ""
+msgstr "Utiliser les outils intégrés de SEPAL et les solutions FTP pour échanger des fichiers"
 
 #: ../../source/setup/filezilla.rst:7
 msgid "In this article, you can learn how to exchange files with SEPAL using:"
-msgstr ""
+msgstr "Dans cet article, vous pouvez apprendre à échanger des fichiers avec SEPAL en utilisant :"
 
 #: ../../source/setup/filezilla.rst:9
 msgid "Built-in tools, including: -   Jupytyr Notebook -   Jupityrlab -   RStudio -   SEPAL file explorer"
-msgstr ""
+msgstr "Outils intégrés, y compris : - Jupyter Notebook-  Jupityrlab-  RStudio-  Explorateur de fichiers SEPAL"
 
 #: ../../source/setup/filezilla.rst:14
 msgid "an FTP solution, specifically FileZilla®"
-msgstr ""
+msgstr "une solution FTP, spécifiquement FileZilla®"
 
 #: ../../source/setup/filezilla.rst:17
 msgid "Built-in tools"
@@ -44,11 +44,11 @@ msgstr "Outils intégrés"
 
 #: ../../source/setup/filezilla.rst:19
 msgid "To exchange files with SEPAL, there are several built-in tools you can use."
-msgstr ""
+msgstr "Pour échanger des fichiers avec SEPAL, il existe plusieurs outils intégrés que vous pouvez utiliser."
 
 #: ../../source/setup/filezilla.rst:23
 msgid "Since SEPAL's built-in tools for uploading and downloading are limited, large amounts of data should be uploaded or downloaded using an FTP solution, such as FileZilla® (for more information, see the section \"FTP solution\" below)."
-msgstr ""
+msgstr "Comme les outils intégrés de SEPAL pour le téléchargement et le téléchargement sont limités, les grandes quantités de données doivent être téléchargées ou téléchargées à l'aide d'une solution FTP, comme FileZilla® (pour plus d'informations, voir la section \"Solution FTP\" ci-dessous)."
 
 #: ../../source/setup/filezilla.rst:26
 msgid "Jupyter Notebook"
@@ -56,19 +56,19 @@ msgstr "Jupyter Notebook"
 
 #: ../../source/setup/filezilla.rst:28
 msgid "In the SEPAL **Application** dashboard, open a new **Jupyter Notebook app**. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared."
-msgstr ""
+msgstr "Dans le tableau de bord SEPAL **Application**, ouvrez une nouvelle **application Jupyter Notebook**. Le tableau de bord **Notebook** vous permet d'accéder aux fichiers et répertoires de votre système, qui peuvent être ouverts, créés, supprimés, renommés, téléchargés, copiés et partagés."
 
 #: ../../source/setup/filezilla.rst:30
 msgid "Select **Upload** to upload a file from your computer to the platform."
-msgstr ""
+msgstr "Sélectionnez **Télécharger** pour télécharger un fichier de votre ordinateur vers la plate-forme."
 
 #: ../../source/setup/filezilla.rst:32
 msgid "Select **Download** to download a selected file to your computer."
-msgstr ""
+msgstr "Sélectionnez **Télécharger** pour télécharger un fichier sélectionné sur votre ordinateur."
 
 #: ../../source/setup/filezilla.rst:36
 msgid "**Download** is only available when you click on a single file (Note: folders can not be downloaded)."
-msgstr ""
+msgstr "**Téléchargement** n'est disponible que lorsque vous cliquez sur un seul fichier (Note : les dossiers ne peuvent pas être téléchargés)."
 
 #: ../../source/setup/filezilla.rst:41
 msgid "Jupyterlab"
