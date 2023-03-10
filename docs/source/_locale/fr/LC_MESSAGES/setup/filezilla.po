@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-03-10 08:25\n"
+"PO-Revision-Date: 2023-03-10 09:21\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -76,23 +76,23 @@ msgstr "JupyterLab"
 
 #: ../../source/setup/filezilla.rst:43
 msgid "In the SEPAL interface **Dashboard**, open a new **Jupyterlab app**."
-msgstr ""
+msgstr "Dans l'interface SEPAL **Tableau de bord**, ouvrez une nouvelle **application Jupyterlab**."
 
 #: ../../source/setup/filezilla.rst:45
 msgid "Use the **File browser** and **File menu** to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared."
-msgstr ""
+msgstr "Utilisez le **Navigateur de fichiers** et **Menu de fichiers** pour accéder aux fichiers et répertoires de votre système, qui peuvent être ouverts, créés, supprimés, renommés, téléchargés, copiés et partagés."
 
 #: ../../source/setup/filezilla.rst:47
 msgid "Upload files to the **File browser** directory by dragging and dropping, or by selecting **Upload files** at the top of the **File browser**:"
-msgstr ""
+msgstr "Téléversez des fichiers dans le répertoire **File browser** par glisser-déposer, ou en sélectionnant **Upload files** en haut du **File browser**:"
 
 #: ../../source/setup/filezilla.rst:51
 msgid "Any file in Jupyterlab can be downloaded by right-clicking its name in the **File browser** and selecting **Download** from the context menu:"
-msgstr ""
+msgstr "N'importe quel fichier dans Jupyterlab peut être téléchargé en cliquant avec le bouton droit de la souris sur son nom dans le **navigateur de fichiers** et en sélectionnant **Télécharger** dans le menu contextuel :"
 
 #: ../../source/setup/filezilla.rst:57
 msgid "More information about the Jupyterlab interface can be found in `Jupyterlab documentation <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__."
-msgstr ""
+msgstr "Plus d'informations sur l'interface Jupyterlab peuvent être trouvées dans la `documentation Jupyterlab <https://Jupyterlab.readthedocs.io/en/stable/getting_started/overview.html>`__."
 
 #: ../../source/setup/filezilla.rst:60
 msgid "Rstudio"
@@ -100,15 +100,15 @@ msgstr "Rstudio"
 
 #: ../../source/setup/filezilla.rst:62
 msgid "In the SEPAL interface **Dashboard**, open a new **RStudio app**."
-msgstr ""
+msgstr "Dans l'interface SEPAL **Tableau de bord**, ouvrez une nouvelle **application RStudio**."
 
 #: ../../source/setup/filezilla.rst:64
 msgid "Use the **File menu** (in red in the yellow image below) to access files and directories on your system, which can be opened, created, deleted, renamed and copied."
-msgstr ""
+msgstr "Utilisez le **Menu Fichier** (en rouge dans l'image jaune ci-dessous) pour accéder aux fichiers et répertoires sur votre système, qui peuvent être ouvertes, créées, supprimées, renommées et copiées."
 
 #: ../../source/setup/filezilla.rst:68
 msgid "Upload files from your computer by selecting **Upload** in the upper-left of the red rectangle."
-msgstr ""
+msgstr "Téléchargez des fichiers depuis votre ordinateur en sélectionnant **Télécharger** en haut à gauche du rectangle rouge."
 
 #: ../../source/setup/filezilla.rst:71
 msgid "SEPAL file explorer"
@@ -116,15 +116,15 @@ msgstr "Explorateur de fichiers SEPAL"
 
 #: ../../source/setup/filezilla.rst:73
 msgid "In the SEPAL **File explorer**, you will be able to access files and directories on your system, which can be deleted and downloaded."
-msgstr ""
+msgstr "Dans l'**Explorateur de fichiers** de SEPAL, vous pourrez accéder aux fichiers et répertoires de votre système, qui peuvent être supprimés et téléchargés."
 
 #: ../../source/setup/filezilla.rst:75
 msgid "After selecting a single file, select **Download** to download the file to your local folder."
-msgstr ""
+msgstr "Après avoir sélectionné un seul fichier, sélectionnez **Télécharger** pour télécharger le fichier dans votre dossier local."
 
 #: ../../source/setup/filezilla.rst:81
 msgid "You cannot download multiple files or folders directly through this interface."
-msgstr ""
+msgstr "Vous ne pouvez pas télécharger plusieurs fichiers ou dossiers directement via cette interface."
 
 #: ../../source/setup/filezilla.rst:84
 msgid "FTP solution"
@@ -132,15 +132,15 @@ msgstr "Solution FTP"
 
 #: ../../source/setup/filezilla.rst:86
 msgid "SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP)."
-msgstr ""
+msgstr "Le contenu de SEPAL est également accessible via un protocole de transfert de fichiers (SSH) (STP)."
 
 #: ../../source/setup/filezilla.rst:88
 msgid "If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example."
-msgstr ""
+msgstr "Si vous ne savez pas ce qu'est une solution FTP et/ou si vous n'avez pas de solution FTP installée sur votre ordinateur, vous pouvez en apprendre plus en lisant cette section, où FileZilla est utilisé comme exemple."
 
 #: ../../source/setup/filezilla.rst:92
 msgid "An FTP client is software that allows you to connect to an FTP server in order to exchange files. Once connected, you can upload, download, copy or delete files on either the remote computer or your local computer."
-msgstr ""
+msgstr "Un client FTP est un logiciel qui vous permet de vous connecter à un serveur FTP pour échanger des fichiers. Une fois connecté, vous pouvez télécharger, copier ou supprimer des fichiers sur l'ordinateur distant ou votre ordinateur local."
 
 #: ../../source/setup/filezilla.rst:95
 msgid "FileZilla®"
@@ -148,31 +148,31 @@ msgstr "FileZilla®"
 
 #: ../../source/setup/filezilla.rst:97
 msgid "FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
-msgstr ""
+msgstr "FileZilla® est une solution FTP gratuite et open-source distribuée gratuitement selon les termes de la `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
 
 #: ../../source/setup/filezilla.rst:99
 msgid "The FileZilla Client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL."
-msgstr ""
+msgstr "Le client FileZilla ne prend pas seulement en charge FTP, mais aussi FTP over Transport Layer Security (TLS) – FTPS – et Secure File Transfer Protocol (SFTP), tous deux utilisés dans SEPAL."
 
 #: ../../source/setup/filezilla.rst:103
 msgid "To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`_."
-msgstr ""
+msgstr "Pour télécharger le logiciel, allez à `<https://FileZilla-project.org/download.php?type=client>`_."
 
 #: ../../source/setup/filezilla.rst:106
 msgid "Connect your FTP client to SEPAL"
-msgstr ""
+msgstr "Connectez votre client FTP à SEPAL"
 
 #: ../../source/setup/filezilla.rst:108
 msgid "Accessing files in SEPAL is easy using FileZilla."
-msgstr ""
+msgstr "L'accès aux fichiers dans SEPAL est facilité grâce à FileZilla."
 
 #: ../../source/setup/filezilla.rst:110
 msgid "To use FileZilla, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** >> **New Site**."
-msgstr ""
+msgstr "Pour utiliser FileZilla, ouvrez l'application et connectez-vous au serveur SEPAL en sélectionnant **Menu** > **Fichier** > **Gestionnaire de sites** >> **Nouveau site**."
 
 #: ../../source/setup/filezilla.rst:112
 msgid "Use the screenshot below as a guide for filling out the form:"
-msgstr ""
+msgstr "Utilisez la capture d'écran ci-dessous comme guide pour remplir le formulaire :"
 
 #: ../../source/setup/filezilla.rst:114
 msgid "**Host:** ssh.sepal.io"
@@ -224,11 +224,11 @@ msgstr "Sous la **Barre d'outils** (1) et la **Barre de connexion rapide** (2), 
 
 #: ../../source/setup/filezilla.rst:142
 msgid "For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
-msgstr ""
+msgstr "Pour plus d'informations sur l'utilisation de FileZilla, allez sur leur `page wiki <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
 
 #: ../../source/setup/filezilla.rst:145
 msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
-msgstr ""
+msgstr "Pour obtenir de l'aide, :doc:`demande à la communauté <https://groups.google.com/g/sepal-users>`."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
