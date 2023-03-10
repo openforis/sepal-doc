@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-14 01:04+0000\n"
-"PO-Revision-Date: 2023-02-25 19:05\n"
+"PO-Revision-Date: 2023-03-10 09:21\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,15 +24,15 @@ msgstr ""
 
 #: ../../source/feature/project.rst:4
 msgid "When interacting with SEPAL processes, a user will create \"recipes\". These recipes can be interconnected and work together inside a single project e.g. the :code:`Mosaics` used in a :code:`Classification`. To help users deal with these interconnections SEPAL is providing a :code:`Project` system that will help them to organize their works."
-msgstr ""
+msgstr "Lorsque vous interagissez avec les processus SEPAL, un utilisateur créera des \"recettes\". Ces recettes peuvent être interconnectées et travailler ensemble dans un seul projet par ex. les :code:`Mosaics` utilisés dans une :code:`Classification`. Pour aider les utilisateurs à gérer ces interconnexions, SEPAL fournit un système de :code:`Project` qui les aidera à organiser leurs travaux."
 
 #: ../../source/feature/project.rst:7
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/feature/project.rst:9
 msgid "Go to the processes interface of SEPAL (:btn:`<fas fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases."
-msgstr ""
+msgstr "Allez à l'interface processus de SEPAL (:btn:`<fas fa-globe>`) vous devriez voir ce qui suit, complétée par une liste de recettes existantes si vous en avez déjà créé quelques-unes dans les versions précédentes."
 
 #: ../../source/feature/project.rst:16
 msgid "the following intercation are available on this page:"
@@ -40,15 +40,15 @@ msgstr ""
 
 #: ../../source/feature/project.rst:18
 msgid "add a recipe"
-msgstr ""
+msgstr "ajouter une recette"
 
 #: ../../source/feature/project.rst:19
 msgid "manage the project"
-msgstr ""
+msgstr "gérer le projet"
 
 #: ../../source/feature/project.rst:20
 msgid "select a project"
-msgstr ""
+msgstr "sélectionner un projet"
 
 #: ../../source/feature/project.rst:21
 msgid "order recipies by name or update date"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../source/feature/project.rst:22
 msgid "edit recipes"
-msgstr ""
+msgstr "éditer les recettes"
 
 #: ../../source/feature/project.rst:24
 msgid "In the next section we'll present how one can create a new project and manage the existing projects in its SEPAL account."
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../source/feature/project.rst:92
 msgid "Edit recipies"
-msgstr ""
+msgstr "Éditer des recettes"
 
 #: ../../source/feature/project.rst:94
 msgid "Recipe behavior can be edited directly from this view. Click the :btn:`<fas fa-edit> Edit` button to open the edition interface."
@@ -124,7 +124,7 @@ msgstr ""
 
 #: ../../source/feature/project.rst:101
 msgid "from this interface you can:"
-msgstr ""
+msgstr "à partir de cette interface vous pouvez :"
 
 #: ../../source/feature/project.rst:103
 msgid ":btn:`<fas fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s)."
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../source/feature/project.rst:112
 msgid "connect recipes"
-msgstr ""
+msgstr "connecter des recettes"
 
 #: ../../source/feature/project.rst:114
 msgid "When creating recipes, like :code:`Classification` users can use other recipe as input for the process. To avoid flooding the dropdown with to many values only the recipes from the same projet will be displayed (left). If one still want to see all the recipes in the dropdown, click on :btn:`All` and all the recipes will be exposed using project names as headers (right)."
