@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-22 19:27\n"
+"PO-Revision-Date: 2023-03-10 09:21\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -72,11 +72,11 @@ msgstr "Dans le **Terminal**, **Applications** ou **Recettes**, sélectionnez **
 
 #: ../../source/setup/resource.rst:49
 msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2)."
-msgstr ""
+msgstr "Après avoir sélectionné ce bouton, la fenêtre pop-up **Gestion des ressources** apparaîtra affichant la consommation actuelle de toutes vos ressources exprimées en pourcentages (1) (Note : une barre complète indique que vous avez atteint l'un de vos quotas) et des instances qui fonctionnent actuellement (2)."
 
 #: ../../source/setup/resource.rst:51
 msgid "You can request additional resources by selecting the green button."
-msgstr ""
+msgstr "Vous pouvez demander des ressources supplémentaires en cliquant sur le bouton vert."
 
 #: ../../source/setup/resource.rst:58
 msgid "Manage instances"
@@ -88,19 +88,19 @@ msgstr "Les instances Amazon Web Services (AWS) peuvent également être gérée
 
 #: ../../source/setup/resource.rst:62
 msgid "In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and the hourly quota consumption."
-msgstr ""
+msgstr "Dans la fenêtre pop-up **Rapport utilisateur**, chaque ligne représente une instance différente, où vous pouvez voir leurs caractéristiques techniques et la consommation horaire de quotas."
 
 #: ../../source/setup/resource.rst:64
 msgid "You can select the **Trashcan** icon to stop an instance."
-msgstr ""
+msgstr "Vous pouvez sélectionner l'icône **Corbeille** pour arrêter une instance."
 
 #: ../../source/setup/resource.rst:70
 msgid "If the process you launched is a long computation (e.g. the **BFAST application** or any **Change detection algorithm**) and you want to close the SEPAL window, you can run the process in the background."
-msgstr ""
+msgstr "Si le processus que vous avez lancé est un long calcul (par ex. l'application **BFAST** ou n'importe quel **algorithme de détection de changement**) et vous voulez fermer la fenêtre SEPAL, vous pouvez exécuter le processus en arrière-plan."
 
 #: ../../source/setup/resource.rst:72
 msgid "Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab."
-msgstr ""
+msgstr "Sélectionnez **Modifier** pour ouvrir la fenêtre pop-up **Instance**, où la barre de curseur affiche le temps restant avant que votre instance ne soit arrêtée. Augmentez cette valeur pour la durée estimée de votre processus et vous pourrez ensuite fermer l'onglet navigateur SEPAL en toute sécurité."
 
 #: ../../source/setup/resource.rst:76
 msgid "If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources."
@@ -112,7 +112,7 @@ msgstr "Demander des ressources"
 
 #: ../../source/setup/resource.rst:85
 msgid "From the **Resource manager**, select **Request additional resources**."
-msgstr ""
+msgstr "Dans le **gestionnaire de ressources**, sélectionnez **Demander des ressources supplémentaires**."
 
 #: ../../source/setup/resource.rst:87
 msgid "In order for your request to be considered, you must:"
