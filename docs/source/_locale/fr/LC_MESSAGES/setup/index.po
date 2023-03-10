@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-23 01:01+0000\n"
-"PO-Revision-Date: 2023-02-23 01:06\n"
+"PO-Revision-Date: 2023-03-10 09:21\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Se lancer avec SEPAL"
 
 #: ../../source/setup/index.rst:5
 msgid "Discover key requirements needed to use the platform"
-msgstr ""
+msgstr "Découvrez les exigences clés requises pour utiliser la plateforme"
 
 #: ../../source/setup/index.rst:7
 msgid "In this section of SEPAL documentation, you can learn how to:"
@@ -40,7 +40,7 @@ msgstr ":doc:`Utilisez Google Earth Engine (GEE) avec SEPAL <https://docs.sepal.
 
 #: ../../source/setup/index.rst:11
 msgid ":doc:`Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`"
-msgstr ""
+msgstr ":doc:`Utilisez les données de l'Initiative internationale sur le climat et les forêts de Norvège (NICFI) - Planet Lab <https://docs.sepal.io/en/latest/setup/nicfi.html>`"
 
 #: ../../source/setup/index.rst:12
 msgid ":doc:`Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`"
@@ -72,7 +72,7 @@ msgstr "Si vous ne trouvez pas ce que vous cherchez, utilisez le `GitHub issue t
 
 #: ../../source/setup/index.rst:24
 msgid "For support, :doc:`ask the community <>` or contact the SEPAL team at :email:`sepal@fao.org`."
-msgstr ""
+msgstr "Pour obtenir de l'aide, :doc:`demandez à la communauté <>` ou contactez l'équipe SEPAL à :email:`sepal@fao.org`."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"

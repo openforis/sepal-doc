@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-27 13:23\n"
+"PO-Revision-Date: 2023-02-27 14:47\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -128,11 +128,11 @@ msgstr "Tables EE"
 
 #: ../../source/cookbook/optical_mosaic.rst:83
 msgid "Drawn polygons"
-msgstr ""
+msgstr "Polygones personnalisés"
 
 #: ../../source/cookbook/optical_mosaic.rst:85
 msgid "They are extensively described in our documentation. For more information, read :doc:`../feature/aoi_selector`."
-msgstr ""
+msgstr "Ils sont décrits dans notre documentation. Pour plus d'informations, lisez :doc:`../feature/aoi_selector`."
 
 #: ../../source/cookbook/optical_mosaic.rst:92
 msgid "Date"
@@ -140,35 +140,35 @@ msgstr "Date"
 
 #: ../../source/cookbook/optical_mosaic.rst:95
 msgid "Yearly mosaic"
-msgstr ""
+msgstr "Mosaïque annuelle"
 
 #: ../../source/cookbook/optical_mosaic.rst:97
 msgid "In the :guilabel:`DAT` tab, select a year which pixels in the mosaic should come from. When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button."
-msgstr ""
+msgstr "Dans l'onglet :guilabel:`DAT` de , sélectionnez une année dont les pixels devraient venir dans la mosaïque. Lorsque la sélection est terminée, sélectionnez le bouton :icon:`fa fa-check` :guilabel:`Apply`."
 
 #: ../../source/cookbook/optical_mosaic.rst:104
 msgid "Seasonal mosaic"
-msgstr ""
+msgstr "Mosaïque saisonnière"
 
 #: ../../source/cookbook/optical_mosaic.rst:106
 msgid "Select :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest."
-msgstr ""
+msgstr "Sélectionnez :guilabel:`Plus` dans le panneau :guilabel:`DAT` pour étendre l'outil de sélection de date. Plutôt que de choisir une année, vous pouvez choisir une saison d'intérêt."
 
 #: ../../source/cookbook/optical_mosaic.rst:108
 msgid "Select the :icon:`fa fa-calendar` (1) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from)."
-msgstr ""
+msgstr "Sélectionnez le :icon:`fa fa-calendar` (1) pour ouvrir la fenêtre pop-up **Sélection de date**. La date sélectionnée sera la cible de la mosaïque (c'est-à-dire la date à partir de laquelle les pixels de la mosaïque devraient idéalement venir)."
 
 #: ../../source/cookbook/optical_mosaic.rst:110
 msgid "Using the main slider (2), define a season around the target date by identifying a starting date and an ending date. SEPAL will then retrieve the mosaic images between those dates."
-msgstr ""
+msgstr "En utilisant le curseur principal (2), définissez une saison autour de la date cible en identifiant une date de début et une date de fin. SEPAL récupérera ensuite les images de mosaïque entre ces dates."
 
 #: ../../source/cookbook/optical_mosaic.rst:112
 msgid "The number of images in one single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - (3)) and in the future (:code:`Future season` - (4))."
-msgstr ""
+msgstr "Le nombre d'images en une seule saison d'un an peut ne pas suffire à produire une mosaïque correcte. SEPAL fournit deux curseurs secondaires pour augmenter la réserve d'images pour créer la mosaïque. Les deux comptent le nombre de saisons que SEPAL peut récupérer dans le passé (:code:`Saison passée` - (3)) et dans le futur (:code:`Saison futur` - (4))."
 
 #: ../../source/cookbook/optical_mosaic.rst:114
 msgid "When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button."
-msgstr ""
+msgstr "Lorsque la sélection est terminée, sélectionnez le bouton :icon:`fa fa-check` :guilabel:`Apply`."
 
 #: ../../source/cookbook/optical_mosaic.rst:121
 msgid "Sources"
@@ -176,7 +176,7 @@ msgstr "Sources"
 
 #: ../../source/cookbook/optical_mosaic.rst:123
 msgid "As mentioned in the introduction, a mosaic uses different raster datasets that can be obtained from multiple sources. SEPAL allows you to select data from multiple entry points. Below, you can find a description of these sources (select a link to see the corresponding dataset information):"
-msgstr ""
+msgstr "Comme mentionné dans l'introduction, une mosaïque utilise différents ensembles de données matriciels qui peuvent être obtenus à partir de sources multiples. SEPAL vous permet de sélectionner des données à partir de plusieurs points d’entrée. Ci-dessous, vous pouvez trouver une description de ces sources (sélectionnez un lien pour voir les informations du jeu de données correspondant):"
 
 #: ../../source/cookbook/optical_mosaic.rst:125
 msgid ":guilabel:`L8`: `Landsat 8 Tier 1 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1>`__. Landsat scenes with the highest available data quality are placed into Tier 1 and considered suitable for time-series processing analysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data that have well-characterized radiometry and are intercalibrated across the different Landsat sensors. The geo-registration of Tier 1 scenes will be consistent and within prescribed tolerances (<=12 m root mean square error [RMSE]). All Tier 1 Landsat data can be considered consistent and intercalibrated (regardless of the sensor used) across the full collection."
@@ -209,11 +209,11 @@ msgstr ""
 #: ../../source/cookbook/optical_mosaic.rst:155
 #: ../../source/cookbook/optical_mosaic.rst:172
 msgid "To validate your selection, select the :icon:`fa fa-check` :guilabel:`Apply` button."
-msgstr ""
+msgstr "Pour valider votre sélection, sélectionnez le bouton :icon:`fa fa-check` :guilabel:`Apply`."
 
 #: ../../source/cookbook/optical_mosaic.rst:158
 msgid "Scenes"
-msgstr ""
+msgstr "Scènes"
 
 #: ../../source/cookbook/optical_mosaic.rst:162
 msgid "If Sentinel and Landsat data have been selected, you will be forced to use all scenes. As the tiling system from Sentinel and Landsat data are different, it's impossible to select scenes using the tool presented in the following sections."
@@ -221,99 +221,99 @@ msgstr "Si les données Sentinel et Landsat ont été sélectionnées, vous sere
 
 #: ../../source/cookbook/optical_mosaic.rst:164
 msgid "You can use multiple options to select the best scenes for your mosaic. The most simple is to use every image available based on the date parameters. Select :guilabel:`Use all scenes` and all images will be integrated into the mosaic."
-msgstr ""
+msgstr "Vous pouvez utiliser plusieurs options pour sélectionner les meilleures scènes de votre mosaïque. Le plus simple est d'utiliser toutes les images disponibles en fonction des paramètres de date. Sélectionnez :guilabel:`Utilisez toutes les scènes` et toutes les images seront intégrées dans la mosaïque."
 
 #: ../../source/cookbook/optical_mosaic.rst:166
 msgid "Choose :guilabel:`Select scenes` and choose one of the three available :code:`Priority` options, based on the needs of your analysis (SEPAL sorts the images available for each tile):"
-msgstr ""
+msgstr "Choisissez :guilabel:`Selectionner les scènes` et choisissez l'une des trois options :code:`Priorité` disponibles en fonction des besoins de votre analyse (SEPAL trie les images disponibles pour chaque tuile) :"
 
 #: ../../source/cookbook/optical_mosaic.rst:168
 msgid ":guilabel:`Cloud free`: Prioritizes images with zero or few clouds."
-msgstr ""
+msgstr ":guilabel:`Cloud free`: Priorise les images avec zéro ou peu de nuages."
 
 #: ../../source/cookbook/optical_mosaic.rst:169
 msgid ":guilabel:`Target date`: Prioritizes images that match with the target date."
-msgstr ""
+msgstr ":guilabel:`Date cible`: Priorise les images qui correspondent à la date cible."
 
 #: ../../source/cookbook/optical_mosaic.rst:170
 msgid ":guilabel:`Balanced`: Prioritizes images that maximize both cloud and target date."
-msgstr ""
+msgstr ":guilabel:`Equilibré`: Priorise les images qui maximisent à la fois l'absence de nuage et la date de cible."
 
 #: ../../source/cookbook/optical_mosaic.rst:179
 msgid "Composite"
-msgstr ""
+msgstr "Composite"
 
 #: ../../source/cookbook/optical_mosaic.rst:183
 msgid "This step is optional. SEPAL provides the folowing options by default:"
-msgstr ""
+msgstr "Cette étape est optionnelle. SEPAL fournit les options d'affichage par défaut :"
 
 #: ../../source/cookbook/optical_mosaic.rst:185
 msgid "**Correction**: :guilabel:`SR`, :guilabel:`BRDF`"
-msgstr ""
+msgstr "**Correction** : :guilabel:`SR`, :guilabel:`BRDF`"
 
 #: ../../source/cookbook/optical_mosaic.rst:186
 msgid "**Pixel filters**: No filters"
-msgstr ""
+msgstr "**Filtres Pixels** : Pas de filtres"
 
 #: ../../source/cookbook/optical_mosaic.rst:187
 msgid "**Cloud detection**: :guilabel:`QA bands`, :guilabel:`Cloud score`"
-msgstr ""
+msgstr "**Détection de nuage**: :guilabel:`Bandes QA`, :guilabel:`Score Cloud`"
 
 #: ../../source/cookbook/optical_mosaic.rst:188
 msgid "**Cloud masking**: :guilabel:`Moderate`"
-msgstr ""
+msgstr "**Masquage des nuages**: :guilabel:`Modéré`"
 
 #: ../../source/cookbook/optical_mosaic.rst:189
 msgid "**Cloud buffering**: :guilabel:`None`"
-msgstr ""
+msgstr "**buffer de nuage**: :guilabel:`Aucun`"
 
 #: ../../source/cookbook/optical_mosaic.rst:190
 msgid "**Snow masking**: :guilabel:`On`"
-msgstr ""
+msgstr "**Masquage des neiges** : :guilabel:`Activé`"
 
 #: ../../source/cookbook/optical_mosaic.rst:191
 msgid "**Composing method**: :guilabel:`Medoid`"
-msgstr ""
+msgstr "**Composition de la méthode**: :guilabel:`Medoid`"
 
 #: ../../source/cookbook/optical_mosaic.rst:193
 msgid "To create a mosaic, you will need to provide SEPAL with the compositing method to create the final image. See the following image for all of the possible compositing options available."
-msgstr ""
+msgstr "Pour créer une mosaïque, vous devrez fournir à SEPAL la méthode de composition pour créer l'image finale. Voir l'image suivante pour toutes les options possibles de composition disponibles."
 
 #: ../../source/cookbook/optical_mosaic.rst:200
 msgid "Corrections"
-msgstr ""
+msgstr "Corrections"
 
 #: ../../source/cookbook/optical_mosaic.rst:202
 msgid "This will apply corrections on the stacked pixels to improve the quality of the mosaic."
-msgstr ""
+msgstr "Cela appliquera des corrections sur les pixels empilés pour améliorer la qualité de la mosaïque."
 
 #: ../../source/cookbook/optical_mosaic.rst:204
 msgid ":guilabel:`SR`: Surface reflectance improves comparison between multiple images over the same region by accounting for atmospheric effects such as aerosol scattering and thin clouds, which can help in the detection and characterization of Earth surface change. Top of atmosphere images are used if not selected."
-msgstr ""
+msgstr ":guilabel:`SR`: La réflexion sur la surface améliore la comparaison entre plusieurs images sur la même région en prenant en compte les effets atmosphériques tels que la dispersion des aérosols et les nuages minces, qui peuvent aider à la détection et à la caractérisation des changements de surface de la Terre. Les images en haute atmosphère (TOA) sont utilisées si non sélectionnées."
 
 #: ../../source/cookbook/optical_mosaic.rst:205
 msgid ":guilabel:`BRDF`: Uses a bidirectional reflectance distribution function model to characterize surface reflectance anisotropy. For a given land area, the BRDF is established based on selected multiangular observations of surface reflectance."
-msgstr ""
+msgstr ":guilabel:`BRDF`: Utilise un modèle de fonction de distribution de réflectance bidirectionnelle pour caractériser l'anisotropie réfléchissante de surface. Pour une surface donnée, le BRDF est établi en fonction des observations multiangulaires sélectionnées des reflets de surface."
 
 #: ../../source/cookbook/optical_mosaic.rst:206
 msgid ":guilabel:`Calibrate`: Calibrates Sentinel and Landsat data to make them compatible."
-msgstr ""
+msgstr ":guilabel:`Calibrate`: Calibre les données de Sentinelle et de Landsat pour les rendre compatibles."
 
 #: ../../source/cookbook/optical_mosaic.rst:210
 msgid "This option is only available if:"
-msgstr ""
+msgstr "Cette option n'est disponible que si :"
 
 #: ../../source/cookbook/optical_mosaic.rst:212
 msgid "Landsat and Sentinel data are mixed; and"
-msgstr ""
+msgstr "Les données de Landsat et de Sentinelle sont mélangées ; et"
 
 #: ../../source/cookbook/optical_mosaic.rst:213
 msgid "BRDF and SR corrections are disabled."
-msgstr ""
+msgstr "Les corrections BRDF et SR sont désactivées."
 
 #: ../../source/cookbook/optical_mosaic.rst:216
 msgid "Pixel filters"
-msgstr ""
+msgstr "Filtres des pixels"
 
 #: ../../source/cookbook/optical_mosaic.rst:218
 msgid "Activating any of the filters will remove some pixels from the stack. Removing pixels improves the quality of the mosaic, as they are not taken into account in the median value computation."
@@ -349,7 +349,7 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:232
 msgid "Cloud detection"
-msgstr ""
+msgstr "Détection des nuages"
 
 #: ../../source/cookbook/optical_mosaic.rst:234
 msgid "Refers to the algorithm used to detect clouds."
