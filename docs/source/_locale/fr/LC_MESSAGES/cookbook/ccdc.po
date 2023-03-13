@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-03-13 20:57\n"
+"PO-Revision-Date: 2023-03-13 22:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -200,15 +200,15 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:169
 msgid "projects/planet-nicfi/assets/basemaps/africa"
-msgstr ""
+msgstr "projets/planet-nicfi/assets/basemaps/africa"
 
 #: ../../source/cookbook/ccdc.rst:170
 msgid "projects/planet-nicfi/assets/basemaps/asia"
-msgstr ""
+msgstr "projets/planet-nicfi/assets/basemaps/asia"
 
 #: ../../source/cookbook/ccdc.rst:171
 msgid "projects/planet-nicfi/assets/basemaps/americas"
-msgstr ""
+msgstr "projets/planet-nicfi/assets/basemaps/americas"
 
 #: ../../source/cookbook/ccdc.rst:175
 msgid "For data ordered through the Planet API (i.e. daily imagery or custom basemaps other than NICFI Level 1 data), you can specify Earth Engine as the download location."
@@ -220,11 +220,11 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:181
 msgid "Pre-processing options"
-msgstr ""
+msgstr "Options de prétraitement"
 
 #: ../../source/cookbook/ccdc.rst:189
 msgid "This section is optional as these parameters are set by default."
-msgstr ""
+msgstr "Cette section est optionnelle car ces paramètres sont définis par défaut."
 
 #: ../../source/cookbook/ccdc.rst:191
 msgid "correction: :code:`None`"
@@ -340,7 +340,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:265
 msgid "Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them by a multi-temporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artifacts. More aggressive filtering might include actual change events and is therefore not recommended."
-msgstr ""
+msgstr "Les données Sentinel-1 sont sujettes à certains artefacts rares, comme les interférences d'autres sources d'ondes radio ou les fortes précipitations. SEPAL offre la possibilité de les exclure par une détection multi-temporelle d'anomalies. Par défaut, une réduction :guilabel:`moderate` est appropriée pour supprimer de tels artefacts. Un filtrage plus agressif peut inclure des changements réels et n'est donc pas recommandé."
 
 #: ../../source/cookbook/ccdc.rst:270
 msgid "Pre-processing parameters of Planet data are similar ot the Landsat/Sentinel-2 options. The default parameters are reflecting a quite aggressive way of cloud removal (see figure below)."
@@ -352,11 +352,11 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:282
 msgid "Histogram Matching is by default disabled. This is ok when dealing with already pre-processed monthly basemaps. However, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option as it will harmonize the radiometry between each single image."
-msgstr ""
+msgstr "La correspondance de l'histogramme est désactivée par défaut. Ceci est ok lorsque vous traitez des basemaps mensuels déjà prétraités. Cependant, si la collection est composée d'images quotidiennes, il est fortement recommandé d' :guilabel:`enable` cette option car elle harmonisera la radiométrie entre chaque image."
 
 #: ../../source/cookbook/ccdc.rst:285
 msgid "CCDC parameters"
-msgstr ""
+msgstr "Paramètres CCDC"
 
 #: ../../source/cookbook/ccdc.rst:288
 msgid "Presets"
@@ -380,11 +380,11 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:308
 msgid "If you have chosen the color bands for breakpoint detection within the sensor menu, it is worthwile to go into the advanced options using the :guilabel:`MORE` button and select the :guilabel:`GREEN` and :guilabel:`SWIR1` band as :guilabel:`TMASK BANDS`."
-msgstr ""
+msgstr "Si vous avez choisi les bandes de couleur pour la détection des points de break dans le menu des capteurs, Il vaut la peine d'aller dans les options avancées en utilisant le bouton :guilabel:`MORE` et sélectionnez :guilabel:`GREEN` et :guilabel:`SWIR1` en tant que :guilabel:`TMASK BANDS`."
 
 #: ../../source/cookbook/ccdc.rst:311
 msgid "Advanced Options"
-msgstr ""
+msgstr "Options avancées"
 
 #: ../../source/cookbook/ccdc.rst:312
 msgid "More advanced users have the possibility to manually set all of the actual CCDC parameters by clicking on the :guilabel:`MORE` button."
@@ -396,7 +396,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:324
 msgid "This option allows to safe the dates in various formats. Note that SEPAL deals by default with :guilabel:`FRACTIONAL YEARS` in all of the CCDC related recipes."
-msgstr ""
+msgstr "Cette option permet de sauvegarder les dates sous différents formats. Notez que SEPAL traite par défaut avec :guilabel:`ANNEES FRACTIONALES` dans toutes les recettes liées au CCDC."
 
 #: ../../source/cookbook/ccdc.rst:326
 msgid "**TMASK BANDS**"
@@ -464,7 +464,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:362
 msgid "Using the slider (5), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series."
-msgstr ""
+msgstr "En utilisant le curseur (5), la largeur temporelle affichée peut être modifiée. Elle ne peut pas dépasser la date de début et/ou la date de fin de la série temporelle."
 
 #: ../../source/cookbook/ccdc.rst:364
 msgid "On the main graph, the orange lines shows the CCDC modelled time-series. Each of the blue points represents an actual observation. You can both hover over the point or the line to let the tooltip describe the value and date of the observation, as well as the model values and the temporal extent of the specific segment."
@@ -476,11 +476,11 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:377
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #: ../../source/cookbook/ccdc.rst:380
 msgid "Trigger the export task"
-msgstr ""
+msgstr "Déclencher la tâche d'exportation"
 
 #: ../../source/cookbook/ccdc.rst:382
 msgid "Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository."
@@ -496,7 +496,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:400
 msgid "Exportation status"
-msgstr ""
+msgstr "État d'exportation"
 
 #: ../../source/cookbook/ccdc.rst:402
 msgid "Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
