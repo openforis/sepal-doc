@@ -12,3 +12,4 @@ git+https://github.com/sphinx-contrib/youtube.git
 sphinx-favicon>=1.0.1
 sphinx-intl
 sphinxcontrib-email
+sphinx-last-updated-by-git
