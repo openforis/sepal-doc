@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-03-13 07:51\n"
+"PO-Revision-Date: 2023-03-13 20:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:19
 msgid "Create Recipe"
-msgstr ""
+msgstr "Créer une recette"
 
 #: ../../source/cookbook/ccdc_slice.rst:21
 msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC slice, which opens a new SEPAL recipe tab."
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:30
 msgid "Rename Recipe"
-msgstr ""
+msgstr "Renommer la recette"
 
 #: ../../source/cookbook/ccdc_slice.rst:32
 msgid "The first step one should do is to change the name of the recipe by double-clicking on tab on the top of the map. This will have the effect that your recipe will be automatically saved and is visible in the list of created recipes. Furthermore, the given name will be used for exported files, both locally and on Earth Engine. We suggest to use the following convention: :code:`CCDC-slice_<aoi>_<sensor(s)>_<date>`."
@@ -64,15 +64,15 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:43
 msgid "Parameter selection"
-msgstr ""
+msgstr "Sélection des paramètres"
 
 #: ../../source/cookbook/ccdc_slice.rst:45
 msgid "The following steps describe the parameter selection that can be found on the lower right of the screen."
-msgstr ""
+msgstr "Les étapes suivantes décrivent la sélection des paramètres qui se trouve en bas à droite de l'écran."
 
 #: ../../source/cookbook/ccdc_slice.rst:53
 msgid "The buttons open the following dialogues:"
-msgstr ""
+msgstr "Les boutons ouvrent les dialogues suivants :"
 
 #: ../../source/cookbook/ccdc_slice.rst:55
 msgid ":guilabel:`SRC` Selection of CCDC asset source"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:105
 msgid "Date Range"
-msgstr ""
+msgstr "Intervalle temporel"
 
 #: ../../source/cookbook/ccdc_slice.rst:107
 msgid "In case a date range has been selected, the slicing parameters will look as shown in the Figure below."
