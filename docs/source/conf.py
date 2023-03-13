@@ -33,6 +33,7 @@ extensions = [
     "sphinx_design",
     "sphinx_togglebutton",
     "sphinx_favicon",
+    "sphinx_last_updated_by_git",
     "notfound.extension",
     "_extentions.line_break",
     "_extentions.custom_edit",
@@ -47,7 +48,7 @@ language = "en"
 # -- Options for HTML output ---------------------------------------------------
 
 html_theme = "pydata_sphinx_theme"
-html_last_updated_fmt = ""
+html_last_updated_fmt = None
 html_sidebars = {"index": []}
 html_context = {
     "github_user": "openforis",
@@ -118,9 +119,8 @@ html_theme_options = {
         },
     ],
     "use_edit_page_button": True,
-    "footer_start": ["copyright", "sphinx-version"],
+    "footer_start": ["copyright", "sphinx-version", "last-updated"],
     "footer_end": ["licence", "map"],
-    "left_sidebar_end": ["sidebar-ethical-ads.html"],
 }
 
 # -- option for the favicon extention ------------------------------------------
