@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"PO-Revision-Date: 2023-03-13 07:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:2
 msgid "Area of Interest Selection"
-msgstr ""
+msgstr "Sélection du domaine d'intérêt"
 
 #: ../../source/feature/aoi_selector.rst:4
 msgid "In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fas fa-globe>` process recipes or the :btn:`<fas fa-wrench>` custom applications you will find different user interfaces."
-msgstr ""
+msgstr "Dans la majorité des modules SEPAL, la première entrée obligatoire, est le domaine d'intérêt (AOI), cette entrée sera utilisée comme limite pour couper les processus et leurs sorties. Selon que vous utilisez les recettes de processus par défaut :btn:`<fas fa-globe>` ou les applications personnalisées :btn:`<fas fa-wrench>`vous trouverez différentes interfaces utilisateurs."
 
 #: ../../source/feature/aoi_selector.rst:9
 msgid "Recipe AOI"
-msgstr ""
+msgstr "Recette AOI"
 
 #: ../../source/feature/aoi_selector.rst:11
 msgid "The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon located at the left side of the SEPAL window."
-msgstr ""
+msgstr "Les recettes sont accessibles par l'icône doré de globe :btn:`<fas fa-globe>` située sur le côté gauche de la fenêtre SEPAL."
 
 #: ../../source/feature/aoi_selector.rst:13
 msgid "For many of the recipes, an area of interest has to be selected. Locate the AOI selection button at the bottom right corner. Click the :guilabel:`AOI` button to open the selection window."
-msgstr ""
+msgstr "Pour beaucoup de recettes, il faut choisir une zone d'interêt. Localisez le bouton de sélection AOI en bas à droite. Cliquez sur le bouton :guilabel:`AOI` pour ouvrir la fenêtre de sélection."
 
 #: ../../source/feature/aoi_selector.rst:21
 msgid "There are multiple methods to select AOI's in the SEPAL process recipes:"
-msgstr ""
+msgstr "Il y a plusieurs méthodes pour sélectionner les AOI dans les recettes de processus SEPAL :"
 
 #: ../../source/feature/aoi_selector.rst:23
 msgid "Country/province (administrative boundaries)."
-msgstr ""
+msgstr "Pays/province (frontières administratives)."
 
 #: ../../source/feature/aoi_selector.rst:24
 msgid "EE Tables (Earth Engine)."
-msgstr ""
+msgstr "EE Tables (GEE)."
 
 #: ../../source/feature/aoi_selector.rst:25
 msgid "Drawn polygons."
-msgstr ""
+msgstr "Polygones personnalisés."
 
 #: ../../source/feature/aoi_selector.rst:35
 msgid "The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed."
-msgstr ""
+msgstr "La méthode sélectionnée à cette étape n'est pas définitive, vous pouvez le modifier à n'importe quel stade en cliquant simplement sur :btn:`<fa fa-globe> méthode selectionnée` en haut de la fenêtre AOI et une liste avec les méthodes disponibles sera affichée."
 
 #: ../../source/feature/aoi_selector.rst:38
 msgid "Administrative boundaries"
-msgstr ""
+msgstr "Limites administratives"
 
 #: ../../source/feature/aoi_selector.rst:40
 msgid "You can select administrative layers as AOI. These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__. To use them, select the :guilabel:`Select country/province` method in the dropdown list."
-msgstr ""
+msgstr "Vous pouvez sélectionner les couches administratives comme AOI. Ces géométries sont extraites du jeu de données `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ disponible sur `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__. Pour les utiliser, sélectionnez la méthode :guilabel:`Sélectionnez un pays/province` dans la liste déroulante."
 
 #: ../../source/feature/aoi_selector.rst:44
 msgid "As GEE does not support non-Latin characters, accents and special characters have been removed from country and province names."
-msgstr ""
+msgstr "Comme GEE ne prend pas en charge les caractères non-latins, les accents et les caractères spéciaux ont été retirés des noms de pays et de province."
 
 #: ../../source/feature/aoi_selector.rst:46
 msgid "In the first dropdown menu, you will be able to select a Country (administrative layer 0) from the country list and optionally, you can select a province (administrative level 1) within the country selected. The dropdown list is updated on the fly with the 1st administrative level boundaries according to the country selection. If nothing is selected, the whole country will be considered."
-msgstr ""
+msgstr "Dans le premier menu déroulant, vous serez en mesure de sélectionner un pays (couche administrative 0) dans la liste des pays et, en option, vous pouvez sélectionner une province (niveau administratif 1) dans le pays sélectionné. La liste déroulante est mise à jour à la volée avec le 1er niveau administratif en fonction de la sélection du pays. Si rien n'est sélectionné, tout le pays sera considéré."
 
 #: ../../source/feature/aoi_selector.rst:48
 msgid "A buffer can be applied to the AOI boundaries, define its size using the provided slider (in km). It is by default set to 0, i.e. disabled."
-msgstr ""
+msgstr "Un buffer peut être appliqué aux limites AOI, définir sa taille en utilisant le curseur fourni (en km). Par défaut, la valeur est 0, c'est-à-dire désactivée."
 
 #: ../../source/feature/aoi_selector.rst:52
 msgid "The area of interest and preview will take longer to show up when buffering is enabled."
-msgstr ""
+msgstr "La zone d'intérêt et l'aperçu mettent plus de temps à s'afficher lorsque le buffer est activée."
 
 #: ../../source/feature/aoi_selector.rst:54
 msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
-msgstr ""
+msgstr "Une fois que tous les paramètres sont sélectionnés, l'AOI sera prévisualisé dans la petite carte en bas du cadre. Pour le valider, cliquez sur le bouton :btn:`<fa fa-check> Appliquer`. Une fois validée, la carte va zoomer sur l'AOI et la dessiner en gris sur la carte."
 
 #: ../../source/feature/aoi_selector.rst:63
 msgid "EE table"
-msgstr ""
+msgstr "Tables EE"
 
 #: ../../source/feature/aoi_selector.rst:65
 msgid "You can use custom AOI defined by shapes. These shapes need to be ingested in Earth Engine as a :code:`ee.FeatureCollection` (see `how to upload custom assets to GEE <../setup/gee.html#upload-files-to-gee>`__). To use this method, select :guilabel:`EE table` ."
@@ -96,99 +96,99 @@ msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:67
 msgid "In the first dropdown, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`)."
-msgstr ""
+msgstr "Dans la première liste déroulante, fournissez un nom d'assetGEE entièrement qualifié (par exemple :code:`projects/gtfp-fao/assets/aoi_ecowas`)."
 
 #: ../../source/feature/aoi_selector.rst:71
 msgid "Make sure you have access to this asset. If that is not the case, ask the owner of the source to modify the sharing permission, otherwise, you won't be able to use the dataset."
-msgstr ""
+msgstr "Assurez-vous d'avoir accès à cet actif. Si ce n'est pas le cas, demandez au propriétaire de la source de modifier l'autorisation de partage, sinon, vous ne pourrez pas utiliser le jeu de données."
 
 #: ../../source/feature/aoi_selector.rst:73
 msgid "Select :guilabel:`include all` and the whole geometries associated with the features will be used as an AOI."
-msgstr ""
+msgstr "Sélectionnez :guilabel:`include all` et l'ensemble des géométries associées aux features seront utilisées comme une AOI."
 
 #: ../../source/feature/aoi_selector.rst:74
 msgid "Select :guilabel:`filter` and you will be able to provide a column name and a value to filter the table. The Aoi will then be reduced to the filtered features in the input asset."
-msgstr ""
+msgstr "Sélectionnez :guilabel:`filter` et vous serez en mesure de fournir un nom de colonne et une valeur pour filtrer la table. Le Aoi sera alors réduit aux features filtrées de l'asset d'entrée."
 
 #: ../../source/feature/aoi_selector.rst:76
 msgid "A buffer can be applied on these boundaries, define its size using the provided slider (in km). It is by default set to :code:`0`, i.e. disabled."
-msgstr ""
+msgstr "Un buffer peut être appliqué aux frontières, vous pouvez definir sa taille en utilisant le curseur fourni (en km). Par défaut, la valeur est :code:`0`, c'est-à-dire désactivée."
 
 #: ../../source/feature/aoi_selector.rst:80
 msgid "The area of interest and the preview will take longer to show up when buffering is enabled."
-msgstr ""
+msgstr "La zone d'intérêt et l'aperçu mettent plus de temps à s'afficher lorsque le buffer est activée."
 
 #: ../../source/feature/aoi_selector.rst:82
 msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map."
-msgstr ""
+msgstr "Une fois que tous les paramètres sont sélectionnés, l'AOI sera prévisualisé dans la petite carte en bas du cadre. Pour le valider, cliquez sur le bouton :btn:`<fa fa-check> Appliquer`. Une fois validée, la carte va zoomer sur l'AOI et la dessiner en gris sur la carte."
 
 #: ../../source/feature/aoi_selector.rst:91
 msgid "Draw polygon"
-msgstr ""
+msgstr "Dessiner un polygone"
 
 #: ../../source/feature/aoi_selector.rst:93
 msgid "You can use a custom AOI defined by a drawn shape. This shape will be converted into a :code:`ee.FeatureCollection` on the fly. Select :guilabel:`draw a polygon` to use this method."
-msgstr ""
+msgstr "Vous pouvez utiliser une AOI personnalisée définie par une forme dessinée. Cette forme sera convertie en une :code:`ee.FeatureCollection` à la volée. Sélectionnez :guilabel:`dessiner un polygon` pour utiliser cette méthode."
 
 #: ../../source/feature/aoi_selector.rst:95
 msgid "The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon."
-msgstr ""
+msgstr "Le pointeur dans la carte sera converti en un :icon:`fa fa-plus`. Cliquez successivement sur la carte pour dessiner un polygone."
 
 #: ../../source/feature/aoi_selector.rst:97
 msgid "Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
-msgstr ""
+msgstr "Une fois que tous les paramètres sont sélectionnés, l'AOI sera prévisualisé dans la petite carte en bas du cadre. Pour le valider, cliquez sur le bouton :btn:`<fa fa-check> Appliquer`. Une fois validée, la carte va zoomer sur l'AOI et la dessiner en gris sur la carte."
 
 #: ../../source/feature/aoi_selector.rst:107
 msgid "Module AOI"
-msgstr ""
+msgstr "Module AOI"
 
 #: ../../source/feature/aoi_selector.rst:109
 msgid "The module AOI selector is available in some of the SEPAL-contrib modules. To access an app, click the purple wrench :btn:`<fa fa-wrench>` located on the left side of the SEPAL platform, use the app's dashboard to search and open a module."
-msgstr ""
+msgstr "Le sélecteur d'AOI est disponible dans certains modules SEPAL-contrib. Pour accéder à une application, cliquez sur la clé violette :btn:`<fa fa-wrench>` située sur le côté gauche de la plate-forme SEPAL, utilisez le tableau de bord de l'application pour rechercher et ouvrir un module."
 
 #: ../../source/feature/aoi_selector.rst:111
 msgid "An AOI selector module is composed of two main sections: the available methods (1) and the map (2). Although we will mention all the features and methods available, some of them might not be available in the context of the module you are working on."
-msgstr ""
+msgstr "Dans les modules, un sélecteur d'AOI est composé de deux sections principales : les méthodes disponibles (1) et la carte (2). Bien que nous mentionnerons toutes les fonctionnalités et méthodes disponibles, Certaines d'entre elles peuvent ne pas être disponibles dans le contexte du module sur lequel vous travaillez."
 
 #: ../../source/feature/aoi_selector.rst:119
 msgid "Available methods"
-msgstr ""
+msgstr "Méthodes disponibles"
 
 #: ../../source/feature/aoi_selector.rst:121
 msgid "There are two types of processes that require different AOI inputs and it will depend on the way the module is created and where are the core processes done: directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__ or in GEE. Although both interfaces look exactly the same, the methods and the inner data sources might vary, e.g. the administrative definitions."
-msgstr ""
+msgstr "Il y a deux types de processus qui nécessitent des entrées AOI différentes et qui dépendront de la façon dont le module est créé et où sont effectués les processus de base : directement dans une instance `SEPAL <.. modules/index.html#start-instance-manually>`__ ou dans GEE. Bien que les deux interfaces soient exactement les mêmes, les méthodes et les sources de données internes peuvent varier, par exemple les définitions administratives."
 
 #: ../../source/feature/aoi_selector.rst:124
 msgid "Administrative definitions"
-msgstr ""
+msgstr "Définition administrative"
 
 #: ../../source/feature/aoi_selector.rst:126
 msgid "Similar to the previously mentioned :ref:`recipe AOI selector <recipe_aoi>`, the module AOI uses the `FAO GAUL GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ boundaries for GEE and the `GADM 3.6 <https://gadm.org/data.html>`__ features for local processes, however, in this case, the tool allows you to recurse at a maximum second administrative level. The available sources are the following:"
-msgstr ""
+msgstr "Similaire au :ref:`sélecteur AOI dans les recette <recipe_aoi>` mentionné précédemment , le module AOI utilise les limites de la `FAO GAUL GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ pour GEE et `GADM 3.6 <https://gadm.org/data.html>`__ pour les processus locaux, cependant, dans ce cas, l'outil vous permet de récuperer jusqu'au niveau administratif de niveau 2. Les sources disponibles sont les suivantes :"
 
 #: ../../source/feature/aoi_selector.rst:129
 msgid "GEE"
-msgstr ""
+msgstr "GEE"
 
 #: ../../source/feature/aoi_selector.rst:131
 msgid "Country/province (level 0): countries or provinces at level 0, available at `FAO GAUL GEE level 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__"
-msgstr ""
+msgstr "Pays/province (niveau 0): pays ou provinces au niveau 0, disponibles au `niveau FAO GAUL GEE 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__"
 
 #: ../../source/feature/aoi_selector.rst:132
 msgid "Admin level 1: first administrative level, `FAO GAUL GEE level 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__."
-msgstr ""
+msgstr "Admin niveau 1: premier niveau administratif, `FAO GAUL GEE niveau 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__."
 
 #: ../../source/feature/aoi_selector.rst:133
 msgid "Admin level 2: second administrative level, `FAO GAUL GEE level 2 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2>`__."
-msgstr ""
+msgstr "Admin niveau 2: second niveau administratif, `FAO GAUL GEE niveau 2 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2>`__."
 
 #: ../../source/feature/aoi_selector.rst:136
 msgid "Local"
-msgstr ""
+msgstr "Locale"
 
 #: ../../source/feature/aoi_selector.rst:138
 msgid "All the administrative levels are accessible from the `GADM website <https://gadm.org/data.html>`__ ."
-msgstr ""
+msgstr "Tous les niveaux administratifs sont accessibles depuis le `site web GADM <https://gadm.org/data.html>`__ ."
 
 #: ../../source/feature/aoi_selector.rst:140
 msgid "Use the :guilabel:`AOI selection method` dropdown list, and select the target administrative level, a new dropdown will load up with all the corresponding boundaries to the next administrative level that is linked with the base level, i.e. select :code:`Admin level 2` as the method, chose :code:`Colombia` as a country, select the :code:`Amazonas` department as the next level, and finally select :code:`Leticia` municipality."
