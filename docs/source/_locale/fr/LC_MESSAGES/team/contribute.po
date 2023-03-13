@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:30+0100\n"
-"PO-Revision-Date: 2023-03-13 07:51\n"
+"PO-Revision-Date: 2023-03-13 11:00\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,19 +24,19 @@ msgstr "Cette section est destinée uniquement aux membres de l'équipe Sepal. S
 
 #: ../../source/team/contribute.rst:4
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuer"
 
 #: ../../source/team/contribute.rst:6
 msgid "When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change."
-msgstr ""
+msgstr "Lorsque vous contribuez à ce dépôt, veuillez d'abord discuter du changement que vous souhaitez faire via une issue, ou toute autre méthode avec les propriétaires de ce dépôt avant de faire un changement."
 
 #: ../../source/team/contribute.rst:9
 msgid "Please note we have a `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_, please follow it in all your interactions with the project."
-msgstr ""
+msgstr "Veuillez noter que nous avons un `code de conduite <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_, veuillez le suivre dans toutes vos interactions avec le projet."
 
 #: ../../source/team/contribute.rst:11
 msgid "We are glad to receive feedback from our user and colleagues from the SEPAL team. This documentation is yours, feel free to improve it!"
-msgstr ""
+msgstr "Nous sommes heureux de recevoir les commentaires de notre utilisateur et de nos collègues de l'équipe SEPAL. Cette documentation est la votre, n'hésitez pas à l'améliorer!"
 
 #: ../../source/team/contribute.rst:14
 msgid "Introduction"
@@ -44,39 +44,39 @@ msgstr "Introduction"
 
 #: ../../source/team/contribute.rst:16
 msgid "The :code:`sepal-doc` has a fixed structure that needs to be respected to stay inline withe Sphinx builder requirements. All modification should be made in the :code:`sepal-doc/docs/source/` folder and the images associated with a page should live in the corresponding folder in :code:`sepal-doc/docs/source/_images/`."
-msgstr ""
+msgstr ":code:`sepal-doc` a une structure fixe qui doit être respectée pour rester aligné avec les exigences du constructeur Sphinx. Toutes les modifications doivent être apportées dans le dossier :code:`sepal-doc/docs/source/` et les images associées à une page devraient être présentes dans le dossier correspondant dans :code:`sepal-doc/docs/source/_images/`."
 
 #: ../../source/team/contribute.rst:18
 msgid "If some of the files are misplaced there build into html pages cannot be guaranteed. Please respect the following instructions when you consider making changes to the repository."
-msgstr ""
+msgstr "Si certains des fichiers sont mal placés, il est impossible de garantir la création de pages html. Veuillez respecter les instructions suivantes lorsque vous envisagez d'apporter des modifications au dépôt."
 
 #: ../../source/team/contribute.rst:21
 msgid "Tools"
-msgstr ""
+msgstr "Outils"
 
 #: ../../source/team/contribute.rst:23
 msgid "The work of the sepal-doc repository is to create .rst files in an ordered way. To do that will will use at it's maximum the potential of the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library (to create the build) and the `ReadTheDoc <https://readthedocs.org>`_ website (to distribute the build)."
-msgstr ""
+msgstr "L'objectif du dépôt sepal-doc est de créer des fichiers :code:`.rst` de manière ordonnée. Pour ce faire, nous utiliserons au maximum le potentiel de la bibliothèque Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ (pour créer le site html) et du site web `ReadTheDoc <https://readthedocs.org>`_ (pour distribuer le site)."
 
 #: ../../source/team/contribute.rst:27
 msgid "To work on this project you will need the following:"
-msgstr ""
+msgstr "Pour travailler sur ce projet, vous aurez besoin des éléments suivants :"
 
 #: ../../source/team/contribute.rst:29
 msgid "basic knowledge of any lightweight markup language ( markdown, latex, etc..) that will help you understand .rst"
-msgstr ""
+msgstr "la connaissance de base de n'importe quel langage de balisage léger ( markdown, latex, etc..) qui vous aidera à comprendre .rst"
 
 #: ../../source/team/contribute.rst:30
 msgid "the `Sphinx directives documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_"
-msgstr ""
+msgstr "la `documentation des directives Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_"
 
 #: ../../source/team/contribute.rst:31
 msgid "a GitHub account"
-msgstr ""
+msgstr "un compte GitHub"
 
 #: ../../source/team/contribute.rst:32
 msgid "basic understanding of terminal commands"
-msgstr ""
+msgstr "compréhension de base des commandes de terminal"
 
 #: ../../source/team/contribute.rst:35
 msgid "Guidelines"
