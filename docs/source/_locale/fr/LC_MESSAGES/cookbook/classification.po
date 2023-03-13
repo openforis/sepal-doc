@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-23 14:10\n"
+"PO-Revision-Date: 2023-03-13 07:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:2
 msgid "Classification"
-msgstr ""
+msgstr "Classification"
 
 #: ../../source/cookbook/classification.rst:5
 msgid "Build supervised classifications of mosaic images to create easy-to-use user interfaces with the Classification recipe"
@@ -28,11 +28,11 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:8
 msgid "Overview"
-msgstr ""
+msgstr "Présentation"
 
 #: ../../source/cookbook/classification.rst:10
 msgid "With this recipe, SEPAL will help users build a supervised classification of any mosaic image. It is built on top of the most advanced tools available on Google Earth Engine (GEE) (including the classifiers CART, RandomForest, NaiveBayes and SVM), allowing users to create an easy-to-use user interface to:"
-msgstr ""
+msgstr "Avec cette recette, SEPAL aidera les utilisateurs à construire une classification supervisée de toute image de mosaïque. Il est construit sur les outils les plus avancés disponibles sur Google Earth Engine (GEE) (y compris les classificateurs CART, RandomForest, NaiveBayes et SVM), et se présente comme un outils facile à utiliser pour:"
 
 #: ../../source/cookbook/classification.rst:12
 msgid "select the image to classify;"
@@ -48,19 +48,19 @@ msgstr "ajouter des données d'entrainement à partir de sources externes et de 
 
 #: ../../source/cookbook/classification.rst:16
 msgid "In combination with the other tools of SEPAL, the classification recipe can help you provide accurate land-use maps, without writing a single line of code."
-msgstr ""
+msgstr "En combinaison avec les autres outils de SEPAL, la recette de classification peut vous aider à fournir des cartes précises d'utilisation des sols, sans écrire une seule ligne de code."
 
 #: ../../source/cookbook/classification.rst:19
 msgid "Start"
-msgstr ""
+msgstr "Commencer"
 
 #: ../../source/cookbook/classification.rst:21
 msgid "Once the classification recipe is selected, SEPAL will show the recipe process in a new tab (1) and the **Image selection** window will appear in the lower-right (2)."
-msgstr ""
+msgstr "Une fois que la recette de classification est sélectionnée, SEPAL affichera le processus de recette dans un nouvel onglet (1) et la fenêtre **Sélection d'image** apparaîtra en bas à droite (2)."
 
 #: ../../source/cookbook/classification.rst:27
 msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and enter a new name. It will default to :code:`Classification_<timestamp>`."
-msgstr ""
+msgstr "La première étape est de changer le nom de la recette. Ce nom sera utilisé pour identifier vos fichiers et recettes dans les dossiers SEPAL. Utilisez la convention la mieux adaptée à vos besoins. Double-cliquez simplement sur l'onglet et entrez un nouveau nom. Il sera par défaut à :code:`Classification_<timestamp>`."
 
 #: ../../source/cookbook/classification.rst:39
 msgid "The SEPAL team recommends using the following naming convention: :code:`<image_name>_<classification>_<measures>`."
@@ -72,7 +72,7 @@ msgstr "Paramètres"
 
 #: ../../source/cookbook/classification.rst:44
 msgid "In the lower-right corner, the following five tabs are available, allowing you to customize the time series to your needs:"
-msgstr ""
+msgstr "Dans le coin inférieur droit, les cinq onglets suivants sont disponibles, vous permettant de personnaliser la série temporelle selon vos besoins:"
 
 #: ../../source/cookbook/classification.rst:46
 msgid ":guilabel:`IMG`: The image to classify."
@@ -108,23 +108,23 @@ msgstr "Gardez à l'esprit que l'augmentation du nombre de bandes à analyser am
 
 #: ../../source/cookbook/classification.rst:67
 msgid "If multiple images are selected, each selected image should overlap each other. If masked pixels are found in one of the bands, the classifier will mask them."
-msgstr ""
+msgstr "Si plusieurs images sont sélectionnées, chaque image sélectionnée doit se chevaucher. Si des pixels masqués sont trouvés dans une des bandes, le classificateur les masquera."
 
 #: ../../source/cookbook/classification.rst:69
 msgid "Select :btn:`<fas fa-plus> Add`. The following screen should be displayed:"
-msgstr ""
+msgstr "Sélectionnez :btn:`<fas fa-plus> Ajouter`. L'écran suivant doit être affiché :"
 
 #: ../../source/cookbook/classification.rst:76
 msgid "Image type"
-msgstr ""
+msgstr "Type d'image"
 
 #: ../../source/cookbook/classification.rst:78
 msgid "Users can select images coming from an **Existing recipe** or an exported **GEE asset** (see advantages and disadvantages below). Both should be an :code:`ee.Image`, rather than a :code:`Time series` or :code:`ee.ImageCollection`."
-msgstr ""
+msgstr "Les utilisateurs peuvent sélectionner des images provenant d'une **recette existante** ou d'un **asset GEE** exporté (voir avantages et inconvénients ci-dessous). Les deux devraient être un :code:`ee.Image`, plutôt qu'une :code:`série temporelle` ou :code:`ee.ImageCollection`."
 
 #: ../../source/cookbook/classification.rst:80
 msgid "**Existing recipe**:"
-msgstr ""
+msgstr "**Recette existante**:"
 
 #: ../../source/cookbook/classification.rst:82
 #: ../../source/cookbook/classification.rst:93
@@ -137,7 +137,7 @@ msgstr "Toutes les bandes calculées de SEPAL peuvent être utilisées."
 
 #: ../../source/cookbook/classification.rst:85
 msgid "Any modification to the existing recipe will be propagated in the final classification."
-msgstr ""
+msgstr "Toute modification de la recette existante sera propagée dans la classification finale."
 
 #: ../../source/cookbook/classification.rst:87
 #: ../../source/cookbook/classification.rst:98
@@ -146,7 +146,7 @@ msgstr "Inconvénients :"
 
 #: ../../source/cookbook/classification.rst:89
 msgid "The initial recipe will be computed at each rendering step, slowing down the classification process and potentially breaking on-the-fly rendering due to GEE timeout errors."
-msgstr ""
+msgstr "La recette initiale sera calculée à chaque étape du rendu, ce qui ralentira le processus de classification et risque de casser le rendu à la volée en raison d'erreurs de timeout GEE."
 
 #: ../../source/cookbook/classification.rst:91
 msgid "**GEE asset**:"
@@ -166,55 +166,55 @@ msgstr "Seules les bandes exportées seront disponibles."
 
 #: ../../source/cookbook/classification.rst:101
 msgid "The :code:`Image` needs to be re-exported to propagate changes."
-msgstr ""
+msgstr "La :code:`ee.Image` doit être réexportée pour propager les modifications."
 
 #: ../../source/cookbook/classification.rst:103
 msgid "Both methods behave the same way in the interface."
-msgstr ""
+msgstr "Les deux méthodes se comportent de la même manière dans l'interface."
 
 #: ../../source/cookbook/classification.rst:106
 msgid "Select bands"
-msgstr ""
+msgstr "Sélectionnez des bandes"
 
 #: ../../source/cookbook/classification.rst:110
 msgid "For this example, we will use a public asset created with the optical mosaic tool from SEPAL. It's a Sentinel-2 mosaic of Eastern Province in Zambia during the dry season from 2012 to 2020. Multiple bands are available."
-msgstr ""
+msgstr "Pour cet exemple, nous utiliserons un bien public créé avec l'outil de mosaïque optique de SEPAL. C'est une mosaïque Sentinel-2 de la province de l'Est en Zambie pendant la saison sèche de 2012 à 2020."
 
 #: ../../source/cookbook/classification.rst:112
 msgid "Use the following asset name if you want to reproduce our workflow: :code:`projects/sepal-cookbook/assets/classification/zmb-eastern_2012_2021`"
-msgstr ""
+msgstr "Utilisez le nom d'actif suivant si vous voulez reproduire notre flux de travail: :code:`projects/sepal-cookbook/assets/classification/zmb-eastern_2012_2021`"
 
 #: ../../source/cookbook/classification.rst:115
 msgid "Image bands"
-msgstr ""
+msgstr "Bandes spectrales"
 
 #: ../../source/cookbook/classification.rst:117
 msgid "Once an asset has been selected, SEPAL will load its bands in the interface. You can use any band that is native to the image as input for the classification process. Simply click on the band name to select them. The selected bands are summarized in the expansion panel title (1) and displayed in gold in the panel content (2)."
-msgstr ""
+msgstr "Une fois qu'un asset a été sélectionnée, SEPAL chargera ses bandes dans l'interface. Vous pouvez utiliser n'importe quelle bande qui est native de l'image comme entrée pour le processus de classification. Il vous suffit de cliquer sur le nom de la bande pour les sélectionner. Les bandes sélectionnées sont résumées dans le titre du panneau d'extension (1) et affichées en doré dans le contenu du panneau (2)."
 
 #: ../../source/cookbook/classification.rst:119
 msgid "In this example, we selected the following:"
-msgstr ""
+msgstr "Dans cet exemple, nous avons sélectionné les éléments suivants :"
 
 #: ../../source/cookbook/classification.rst:121
 msgid ":code:`red`"
-msgstr ""
+msgstr ":code:`rouge`"
 
 #: ../../source/cookbook/classification.rst:122
 msgid ":code:`nir`"
-msgstr ""
+msgstr ":code:`nir`"
 
 #: ../../source/cookbook/classification.rst:123
 msgid ":code:`swir`"
-msgstr ""
+msgstr ":code:`swir`"
 
 #: ../../source/cookbook/classification.rst:124
 msgid ":code:`green`"
-msgstr ""
+msgstr ":code:`vert`"
 
 #: ../../source/cookbook/classification.rst:131
 msgid "Derived bands"
-msgstr ""
+msgstr "Bandes dérivées"
 
 #: ../../source/cookbook/classification.rst:133
 msgid "The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly."
@@ -222,7 +222,7 @@ msgstr "L'analyse ne se limite pas à des bandes natives disponibles ; SEPAL peu
 
 #: ../../source/cookbook/classification.rst:135
 msgid "Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands."
-msgstr ""
+msgstr "Sélectionnez :btn:`<fas fa-plus> Bandes dérivées` au bas de la fenêtre pop-up et sélectionnez la méthode de dérivation. Ceci ajoutera un nouveau panneau au panneau d'extension avec le nom de la méthode sélectionnée (1). La méthode sélectionnée sera appliquée aux bandes sélectionnées."
 
 #: ../../source/cookbook/classification.rst:139
 msgid "If more than two bands are selected, the operation will be applied to the Cartesian product of the bands. If you select bands :math:`A`, :math:`B` and :math:`C`, and apply the :code:`Difference` derived bands, you'll add three bands to your analysis:"
@@ -246,83 +246,83 @@ msgstr "Vous devriez remarquer que dans la figure, nous calculons la différence
 
 #: ../../source/cookbook/classification.rst:153
 msgid "Once the image selection is done, select :btn:`<fas fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fas fa-trash>` button, you will remove the image and its band from the analysis altogether."
-msgstr ""
+msgstr "Une fois la sélection de l'image terminée, sélectionnez :btn:`<fas fa-check> Appliquer` et la fenêtre pop-up se fermera. Les images et bandes seront affichées dans le panneau :guilabel:`IMG` dans le coin inférieur droit de l'écran. En sélectionnant le bouton :btn:`<fas fa-trash>`, vous supprimerez complètement l'image et sa bande de l'analyse."
 
 #: ../../source/cookbook/classification.rst:159
 msgid "From there, select :btn:`<fas fa-chevron-right> Next` to continue to the next step."
-msgstr ""
+msgstr "À partir de là, sélectionnez :btn:`<fas fa-chevron-right> Next` pour passer à l'étape suivante."
 
 #: ../../source/cookbook/classification.rst:162
 msgid "Legend setup"
-msgstr ""
+msgstr "Configuration de la légende"
 
 #: ../../source/cookbook/classification.rst:164
 msgid "In this step, the user will specify the legend that should be used in the output classified image. Any categorical classification that associates integer value to a class name will work. SEPAL provides multiple ways to create and customize a legend."
-msgstr ""
+msgstr "Dans cette étape, l'utilisateur spécifiera la légende qui doit être utilisée dans l'image de sortie classifiée. Toute classification catégorielle qui associe une valeur entière à un nom de classe fonctionnera. SEPAL fournit plusieurs façons de créer et de personnaliser une légende."
 
 #: ../../source/cookbook/classification.rst:172
 msgid "Legends created here are fully compatible with other functionalities of SEPAL, including applications."
-msgstr ""
+msgstr "Les légendes créées ici sont entièrement compatibles avec d'autres fonctionnalités de SEPAL, y compris les applications."
 
 #: ../../source/cookbook/classification.rst:175
 msgid "Manual legend"
-msgstr ""
+msgstr "Légende manuelle"
 
 #: ../../source/cookbook/classification.rst:177
 msgid "The first and most natural way of building a legend is to do it from scratch."
-msgstr ""
+msgstr "La première et la plus naturelle façon de construire une légende est de le faire à partir de zéro."
 
 #: ../../source/cookbook/classification.rst:179
 msgid "Select :btn:`<fas fa-plus> Add` to add a new class to your legend."
-msgstr ""
+msgstr "Sélectionnez :btn:`<fas fa-plus> Ajouter` pour ajouter une nouvelle classe à votre légende."
 
 #: ../../source/cookbook/classification.rst:181
 msgid "A class is defined by three key elements:"
-msgstr ""
+msgstr "Une classe est définie par trois éléments clés :"
 
 #: ../../source/cookbook/classification.rst:183
 msgid "Color (1): Select the small color square to open the color selector and choose any color (color[s] must be unique)."
-msgstr ""
+msgstr "Couleur (1) : Sélectionnez le petit carré de couleur pour ouvrir le sélecteur de couleur et choisissez n'importe quelle couleur (la couleur doit être unique)."
 
 #: ../../source/cookbook/classification.rst:184
 msgid "Value (2): Select any integer value (value must be unique)."
-msgstr ""
+msgstr "Valeur (2): Sélectionnez n'importe quelle valeur entière (la valeur doit être unique)."
 
 #: ../../source/cookbook/classification.rst:185
 msgid "Class (3): Insert a class description (cannot be empty)."
-msgstr ""
+msgstr "Classe (3): Insérer une description de classe (ne peut pas être vide)."
 
 #: ../../source/cookbook/classification.rst:187
 msgid "Select the :btn:`<fas fa-plus> Add` button again to add an extra class line. The :btn:`<fas fa-trash>` button can be used to remove a specific line."
-msgstr ""
+msgstr "Sélectionnez à nouveau le bouton :btn:`<fas fa-plus> Ajouter` pour ajouter une ligne de classe supplémentaire. Le bouton :btn:`<fas fa-trash>` peut être utilisé pour supprimer une ligne spécifique."
 
 #: ../../source/cookbook/classification.rst:191
 msgid "Select :btn:`HEX` (4) to display the hexadecimal value of the selected color. It can also be used to insert a known color palette by utilizing its values."
-msgstr ""
+msgstr "Sélectionnez :btn:`HEX` (4) pour afficher la valeur hexadécimale de la couleur sélectionnée. Il peut également être utilisé pour insérer une palette de couleurs connue en utilisant ses valeurs."
 
 #: ../../source/cookbook/classification.rst:193
 msgid "If multiple classes are created and you are not sure which one to use, you can apply colors to them by selecting a preselected color-map (5). They are provided by the `gee community <https://github.com/gee-community/ee-palettes>`__ and will be applied to every existing class in your panel."
-msgstr ""
+msgstr "Si plusieurs classes sont créées et que vous n'êtes pas sûr de quelle classe utiliser, vous pouvez leur appliquer des couleurs en sélectionnant une palette de couleurs présélectionnée (5). Elles sont fournies par la `communauté gee <https://github.com/gee-community/ee-palettes>`__ et seront appliquées à chaque classe existante de votre panneau."
 
 #: ../../source/cookbook/classification.rst:200
 msgid "Import legend"
-msgstr ""
+msgstr "Importer une légende"
 
 #: ../../source/cookbook/classification.rst:202
 msgid "If you already have a file describing your legend, you can use it, rather than identifying every legend item individually. Your legend needs to be saved in .csv format and contain the following information:"
-msgstr ""
+msgstr "Si vous avez déjà un fichier décrivant votre légende, vous pouvez l'utiliser plutôt que d'identifier chaque élément de légende individuellement. Votre légende doit être enregistrée au format .csv et contenir les informations suivantes :"
 
 #: ../../source/cookbook/classification.rst:204
 msgid "color (stored as a hexadecimal value [e.g. \"#FFFF00\"] or in three columns [red, blue, green]);"
-msgstr ""
+msgstr "color (stocké en tant que valeur hexadécimale [par exemple \"#FF00\"] ou en trois colonnes [rouge, bleu, vert]);"
 
 #: ../../source/cookbook/classification.rst:205
 msgid "value (stored as an integer); and"
-msgstr ""
+msgstr "valeur (stockée en tant qu'entier) ; et"
 
 #: ../../source/cookbook/classification.rst:206
 msgid "class (stored as a string)."
-msgstr ""
+msgstr "classe (stocké sous forme de chaine de caractères)."
 
 #: ../../source/cookbook/classification.rst:210
 msgid "The column names will help SEPAL predict information, but are not compulsory."
