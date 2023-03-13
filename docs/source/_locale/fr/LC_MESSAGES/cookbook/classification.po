@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-03-13 07:51\n"
+"PO-Revision-Date: 2023-03-13 22:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -751,7 +751,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:573
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #: ../../source/cookbook/classification.rst:576
 msgid "Start download"
@@ -783,7 +783,7 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:597
 msgid "Exportation status"
-msgstr ""
+msgstr "État d'exportation"
 
 #: ../../source/cookbook/classification.rst:599
 msgid "By going to the **Task** tab (in the lower-left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks."
