@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-02-27 13:23\n"
+"PO-Revision-Date: 2023-03-13 20:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -84,19 +84,19 @@ msgstr "Sélection AOI"
 
 #: ../../source/cookbook/planet_mosaic.rst:59
 msgid "The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
-msgstr ""
+msgstr "Les données exportées par la recette seront coupées dans les limites de l'AOI. Il y a plusieurs façons de sélectionner l'AOI dans SEPAL:"
 
 #: ../../source/cookbook/planet_mosaic.rst:61
 msgid "Administrative boundaries"
-msgstr ""
+msgstr "Bordures administratives"
 
 #: ../../source/cookbook/planet_mosaic.rst:62
 msgid "EE Tables"
-msgstr ""
+msgstr "Tables EE"
 
 #: ../../source/cookbook/planet_mosaic.rst:63
 msgid "Drawn polygons"
-msgstr ""
+msgstr "Dessiner un polygone"
 
 #: ../../source/cookbook/planet_mosaic.rst:65
 msgid "they are extensively described in our documentation. Please read :doc:`..feature/aoi_selector` to know more."
