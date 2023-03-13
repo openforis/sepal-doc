@@ -143,3 +143,13 @@ html[data-theme="dark"] #map-overlay {
 footer {
   background-color: var(--pst-color-background);
 }
+
+/*******************************************************************************
+* algnement of the footer
+* to be removed if https://github.com/pydata/pydata-sphinx-theme/issues/1243 gets
+* closed
+*
+**/
+footer div.footer-items__end {
+  text-align: end;
+}
