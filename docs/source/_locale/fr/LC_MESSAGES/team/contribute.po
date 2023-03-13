@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:30+0100\n"
-"PO-Revision-Date: 2023-03-13 11:00\n"
+"PO-Revision-Date: 2023-03-13 12:00\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -80,80 +80,80 @@ msgstr "compréhension de base des commandes de terminal"
 
 #: ../../source/team/contribute.rst:35
 msgid "Guidelines"
-msgstr ""
+msgstr "Instructions"
 
 #: ../../source/team/contribute.rst:37
 msgid "There are very few guidelines to respect that are not directly specified by the .rst documentation or the template."
-msgstr ""
+msgstr "Il y a très peu de lignes directrices à respecter qui ne sont pas directement spécifiées par la documentation .rst ou le template."
 
 #: ../../source/team/contribute.rst:39
 msgid "In all the files you write please respect the following indentation: :code:`4 spaces`. it includes directives (option and content) AND bullet points"
-msgstr ""
+msgstr "Dans tous les fichiers que vous écrivez, veuillez respecter l'indentation suivante : :code:`4 espaces`. Cela inclut les directives (option et contenu) ET les listes à puces"
 
 #: ../../source/team/contribute.rst:40
 msgid "For the headings of your files use the following symbols (from heading 1 to heading 6) :code:`=`, :code:`-`, :code:`^`, :code:`\"`, :code:`#`, :code:`+`"
-msgstr ""
+msgstr "Pour les en-têtes de vos fichiers, utilisez les symboles suivants (de la rubrique 1 à la rubrique 6) :code:`=`, :code:`-`, :code:`^`, :code:`\"`, :code:`#`, :code:`+`"
 
 #: ../../source/team/contribute.rst:43
 msgid "Custom"
-msgstr ""
+msgstr "Personnaliser"
 
 #: ../../source/team/contribute.rst:45
 msgid "Here you will find the custom directives that have been added to help us build our documentation:"
-msgstr ""
+msgstr "Vous trouverez ici les directives personnalisées qui ont été ajoutées pour nous aider à construire notre documentation :"
 
 #: ../../source/team/contribute.rst:48
 msgid "videos"
-msgstr ""
+msgstr "vidéos"
 
 #: ../../source/team/contribute.rst:50
 msgid "ReST directive for embedding Youtube and Vimeo videos. There are two directives added: :code:`youtube` and :code:`vimeo`. The only argument is the video id of the video to include. Both directives have three optional arguments: - :code:`height`, - :code:`width`, - :code:`align`"
-msgstr ""
+msgstr "Directive ReST pour l'intégration de vidéos Youtube et Vimeo. Il y a deux directives ajoutées : :code:`youtube` et :code:`vimeo`. Le seul argument est l'identifiant vidéo de la vidéo à inclure. Les deux directives ont trois arguments optionnels : - :code:`height`, - :code:`width`, - :code:`align`"
 
 #: ../../source/team/contribute.rst:57
 msgid "Default height is **281** and default width is **500**. By default the video will be aligned on the **left** side."
-msgstr ""
+msgstr "La hauteur par défaut est **281** et la largeur par défaut est **500**. Par défaut, la vidéo sera alignée sur le côté **gauche**."
 
 #: ../../source/team/contribute.rst:59 ../../source/team/contribute.rst:77
 #: ../../source/team/contribute.rst:90
 msgid "Here you'll find an example:"
-msgstr ""
+msgstr "Vous trouverez ici un exemple :"
 
 #: ../../source/team/contribute.rst:72
 msgid "line-break"
-msgstr ""
+msgstr "saut de ligne"
 
 #: ../../source/team/contribute.rst:74
 msgid "ReST directive for creating line break in your documentation when needed. The directive does note require any argument."
-msgstr ""
+msgstr "Directive ReST pour créer un saut de ligne dans votre documentation si nécessaire. La directive nécessite n'importe quel argument."
 
 #: ../../source/team/contribute.rst:86
 msgid "graphviz"
-msgstr ""
+msgstr "graphviz"
 
 #: ../../source/team/contribute.rst:88
 msgid "Directive to embed graphviz code. The input code for dot is given as the content. To better understand graphviz, please refer to the `graphviz documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_."
-msgstr ""
+msgstr "Directive pour intégrer le code graphviz. Le code d'entrée pour le point est donné comme contenu. Pour mieux comprendre graphviz, veuillez vous référer à la `documentation graphviz <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_."
 
 #: ../../source/team/contribute.rst:108
 msgid "icon"
-msgstr ""
+msgstr "icon"
 
 #: ../../source/team/contribute.rst:110
 msgid "ReST role to include inline icons in the documenation (usualy when referencing a btn). You can find the icon you're looking for in the fontawesome library `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__."
-msgstr ""
+msgstr "Rôle ReST pour inclure les icônes en ligne dans la documentation (généralement lorsque vous faites référence à un btn). Vous pouvez trouver l'icône que vous cherchez dans la bibliothèque fontawesome `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__."
 
 #: ../../source/team/contribute.rst:116
 msgid "I'm a folder icon: :icon:`fa fa-folder`"
-msgstr ""
+msgstr "Je suis une icône de dossier : :icon:`fa fa-folder`"
 
 #: ../../source/team/contribute.rst:119
 msgid "btn"
-msgstr ""
+msgstr "btn"
 
 #: ../../source/team/contribute.rst:121
 msgid "Rest role to include complete btn in the documentation. You can find the icon you're looking for in the fontawesome library `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__. The text is optional."
-msgstr ""
+msgstr "Rest rôle pour inclure des bouttons dans la documentation. Vous pouvez trouver l'icône que vous cherchez dans la bibliothèque fontawesome `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__. Le texte est facultatif."
 
 #: ../../source/team/contribute.rst:129
 msgid "I'm a apply btn: :btn:`<fas fa-check> apply`"
@@ -161,71 +161,71 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:131
 msgid "I'm the app btn: :btn:`<fas fa-wrench>`"
-msgstr ""
+msgstr "Je suis l'app btn : :btn:`<fas fa-wrench>`"
 
 #: ../../source/team/contribute.rst:134
 msgid "Minor change"
-msgstr ""
+msgstr "Changement mineur"
 
 #: ../../source/team/contribute.rst:137
 msgid "Page edit"
-msgstr ""
+msgstr "Édition d'une page"
 
 #: ../../source/team/contribute.rst:139
 msgid "If you want to make modifications to an existing page of documentation because you've seen a typo, or you want to improve an explanation the workflow is extremely simple. Click on the :code:`edit this page` button that will always be on the right side of the screen:"
-msgstr ""
+msgstr "Si vous voulez apporter des modifications à une page existante de documentation parce que vous avez vu une faute de frappe, ou vous voulez améliorer une explication le workflow est extrêmement simple. Cliquez sur le bouton :code:`éditer cette page` qui sera toujours sur le côté droit de l'écran:"
 
 #: ../../source/team/contribute.rst:144
 msgid "edit page button"
-msgstr ""
+msgstr "bouton d'édition de la page"
 
 #: ../../source/team/contribute.rst:144
 msgid "The edit page button on the landing page"
-msgstr ""
+msgstr "Le bouton d'édition de la page sur la page d'accueil"
 
 #: ../../source/team/contribute.rst:146
 msgid "By clicking it you will be send to a Github editor where you can make all the modification you want in this file. when you are done modifying click on the :code:`propose change` at the bottom of the page. It will create a PR including your modifications, our maintainer will evaluate it and the PR will be published in the documentation."
-msgstr ""
+msgstr "En cliquant dessus, vous serez envoyé à un éditeur Github où vous pourrez faire toutes les modifications que vous voulez dans ce fichier. lorsque vous avez terminé de modifier, cliquez sur le :code:`propose change` en bas de la page. Il créera une PR incluant vos modifications, notre responsable l'évaluera et la PR sera publiée dans la documentation."
 
 #: ../../source/team/contribute.rst:151
 msgid "edit a page directly in GitHub"
-msgstr ""
+msgstr "éditer une page directement dans GitHub"
 
 #: ../../source/team/contribute.rst:155
 msgid "To make sure that you modification are well understood modify the title of the commit by filling the first field. you can use \"typo\", \"change image\" \"code-block error\"; in short anything that describe the modification that you've done. This name CANNOT be changed."
-msgstr ""
+msgstr "Pour vous assurer que votre modification est bien compris, modifiez le titre du commit en remplissant le premier champ. vous pouvez utiliser « typo», « image change» « code-block error »; en bref, tout ce qui décrit la modification que vous avez faite. Ce nom NE PEUT PAS être modifié."
 
 #: ../../source/team/contribute.rst
 msgid "create a branch"
-msgstr ""
+msgstr "créer une branche"
 
 #: ../../source/team/contribute.rst:160
 msgid "Create a branch when correcting anything"
-msgstr ""
+msgstr "Créer une branche en corrigeant quoi que ce soit"
 
 #: ../../source/team/contribute.rst:162
 msgid "Once you're done, a PR will automatically be set for you in the OpenForis repository. Remove all the comments as you're not making a real PR but an adjustment, normally the title will automatically be set with the name of your commit. click on :code:`create pull request`."
-msgstr ""
+msgstr "Une fois que vous avez terminé, une PR sera automatiquement définie dans le dépôt OpenForis. Supprimez tous les commentaires car vous ne faites pas une vraie PR mais un ajustement, normalement le titre sera automatiquement défini avec le nom de votre commit. cliquez sur :code:`crate pull request`."
 
 #: ../../source/team/contribute.rst:167
 msgid "typo pr"
-msgstr ""
+msgstr "faute de frappe"
 
 #: ../../source/team/contribute.rst:167
 msgid "Create an automatic PR for minor modifications"
-msgstr ""
+msgstr "Créer une PR automatique pour des modifications mineures"
 
 #: ../../source/team/contribute.rst:171
 msgid "Once your PR is accepted, you will be notified. please consider deleting your branch."
-msgstr ""
+msgstr "Une fois que votre RP est accepté, vous serez informé. Veuillez penser à supprimer votre branche."
 
 #: ../../source/team/contribute.rst
 msgid "delete branch"
-msgstr ""
+msgstr "supprimer la branche"
 
 #: ../../source/team/contribute.rst:176
 msgid "Delete the branch once the PR is accepted by maintainers"
-msgstr ""
+msgstr "Supprimer la branche une fois que la PR est acceptée par les responsables"
 
 #: ../../source/team/contribute.rst:179
 msgid "Module edit"
@@ -425,27 +425,27 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:325
 msgid "**CLI**: all the CLI tools that are installed by default in SEPAL"
-msgstr ""
+msgstr "**CLI** : tous les outils CLI qui sont installés par défaut dans SEPAL"
 
 #: ../../source/team/contribute.rst:327
 msgid "In :code:`sepal-doc/docs/source/cli/` folder"
-msgstr ""
+msgstr "Dans le dossier :code:`sepal-doc/docs/source/cli/`"
 
 #: ../../source/team/contribute.rst:329
 msgid "**Team**: a hidden section only available to team member that helps them contribute to the platform"
-msgstr ""
+msgstr "**Team** : une section cachée uniquement disponible pour les membres de l'équipe qui les aident à contribuer à la plateforme"
 
 #: ../../source/team/contribute.rst:331
 msgid "In :code:`sepal-doc/docs/source/team/` folder"
-msgstr ""
+msgstr "Dans le dossier :code:`sepal-doc/docs/source/team/`"
 
 #: ../../source/team/contribute.rst:335
 msgid "in the :code:`module` section, only the :code:`index.rst` file should be modified as the others are all downloaded from their repository (see **New module** subsection)"
-msgstr ""
+msgstr "dans la section :code:`module`, seul le fichier :code:`index.rst` devrait être modifié car les autres sont tous téléchargés depuis leur dépôt (voir la sous-section **Nouveau module**)"
 
 #: ../../source/team/contribute.rst:339
 msgid "If you create a team page the first line of your .rst file should always be :"
-msgstr ""
+msgstr "Si vous créez une page **team**, la première ligne de votre fichier .rst devrait toujours être :"
 
 #: ../../source/team/contribute.rst:345
 msgid "Now that you have selected a section you can create a documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx and the one we presented in the first section of this page. To keep the consistency of the folders and help people that will maintain the images, the images you will use should live in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`."
@@ -453,19 +453,19 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:347
 msgid "Add now the page you've created to the :code:`toctree` directive (table of content) in the :code:`<section>/index.rst` file. You just need to add your filename without the extension respecting the indentation as follow:"
-msgstr ""
+msgstr "Ajoutez maintenant la page que vous avez créée à la directive :code:`toctree` (table de contenu) dans le fichier :code:`<section>/index.st`. Vous devez juste ajouter votre nom de fichier sans l'extension respectant l'indentation comme suit:"
 
 #: ../../source/team/contribute.rst:360
 msgid "the file will be linked to the rest of the documentation via the left panel of your section. The title of the page will be display instead of the file name. If you forget to link it, you will see the following message while compiling the doc. It means that you page cannot be accessed with navigation buttons."
-msgstr ""
+msgstr "le fichier sera lié au reste de la documentation via le panneau de gauche de votre section. Le titre de la page sera affiché à la place du nom du fichier. Si vous oubliez de le lier, vous verrez le message suivant lors de la compilation de la documentation. Cela signifie que votre page ne peut pas être accédée avec les boutons de navigation."
 
 #: ../../source/team/contribute.rst:369
 msgid "If you are struggling with .rst don't hesitate to contact the maintainers of the doc they will be more than happy to help."
-msgstr ""
+msgstr "Si vous éprouvez des difficultés avec .rst, n'hésitez pas à contacter les responsables du doc qu'ils seront plus que heureux de vous aider."
 
 #: ../../source/team/contribute.rst:373
 msgid "Modify images"
-msgstr ""
+msgstr "Modifier les images"
 
 #: ../../source/team/contribute.rst:375
 msgid "As explained before for each page the contained images are saved in the mirror folder :code:`sepal-doc/docs/source/_images/` that reproduce the structure of the :code:`sepal-doc/docs/source` structure."
