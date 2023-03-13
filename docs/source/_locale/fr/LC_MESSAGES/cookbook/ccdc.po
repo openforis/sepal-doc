@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-03-13 07:51\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:5
 msgid "Background"
-msgstr ""
+msgstr "Contexte"
 
 #: ../../source/cookbook/ccdc.rst:7
 msgid "Powered by the API of `Google's Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:175
 msgid "For data ordered through the Planet API (i.e. daily imagery or custom basemaps other than NICFI Level 1 data), you can specify Earth Engine as the download location."
-msgstr ""
+msgstr "Pour les données commandées via l'API Planet (i.e. des images quotidiennes ou des basemaps personnalisés autres que les données de niveau 1 du NICFI), vous pouvez spécifier Earth Engine comme emplacement de téléchargement."
 
 #: ../../source/cookbook/ccdc.rst:177
 msgid "Using CCDC with Planet has not been explored widely, so that again the optimal selection of the breakpoint bands depends on testing it out by yourself. However, in accordance with Landsat based analysis we suggest to use the Green , Red and NIR bands to get started."
