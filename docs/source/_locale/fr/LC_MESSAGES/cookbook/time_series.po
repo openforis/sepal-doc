@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-22 20:38\n"
+"PO-Revision-Date: 2023-03-13 20:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -101,15 +101,15 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:64
 msgid "Administrative boundaries"
-msgstr ""
+msgstr "Bordures administratives"
 
 #: ../../source/cookbook/time_series.rst:65
 msgid "EE Tables"
-msgstr ""
+msgstr "Tables EE"
 
 #: ../../source/cookbook/time_series.rst:66
 msgid "Drawn polygons"
-msgstr ""
+msgstr "Dessiner un polygone"
 
 #: ../../source/cookbook/time_series.rst:68
 msgid "For more information, go to :doc:`..feature/aoi_selector`."
