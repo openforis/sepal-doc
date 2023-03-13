@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-03-13 07:51\n"
+"PO-Revision-Date: 2023-03-13 20:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:26
 msgid "Create Recipe"
-msgstr ""
+msgstr "Créer une recette"
 
 #: ../../source/cookbook/ccdc.rst:28
 msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab."
@@ -64,71 +64,71 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:37
 msgid "Rename Recipe"
-msgstr ""
+msgstr "Renommer la recette"
 
 #: ../../source/cookbook/ccdc.rst:39
 msgid "The first step one should do is to change the name of the recipe by double-clicking on tab on the top of the map. This will have the effect that your recipe will be automatically saved and is visible in the list of created recipes. Furthermore, the given name will be used for exported files, both locally and on Earth Engine. We suggest to use the following convention: :code:`CCDC-asset_<aoi>_<sensor(s)>_<start_date>_<end_date>`."
-msgstr ""
+msgstr "La première étape consiste à changer le nom de la recette en double-cliquant sur l'onglet en haut de la carte. Cela aura pour effet que votre recette sera automatiquement sauvegardée et sera visible dans la liste des recettes créées. De plus, le nom donné sera utilisé pour les fichiers exportés, à la fois localement et sur Earth Engine. Nous vous suggérons d'utiliser la convention suivante : :code:`CCDC-asset_<aoi>_<sensor(s)>_<start_date>_<end_date>`."
 
 #: ../../source/cookbook/ccdc.rst:50
 msgid "Parameter selection"
-msgstr ""
+msgstr "Sélection des paramètres"
 
 #: ../../source/cookbook/ccdc.rst:52
 msgid "The following steps describe the parameter selection that can be found on the lower right of the screen."
-msgstr ""
+msgstr "Les étapes suivantes décrivent la sélection des paramètres qui se trouve en bas à droite de l'écran."
 
 #: ../../source/cookbook/ccdc.rst:59
 msgid "The buttons open the following dialogues:"
-msgstr ""
+msgstr "Les boutons ouvrent les dialogues suivants :"
 
 #: ../../source/cookbook/ccdc.rst:61
 msgid ":guilabel:`AOI` Area of interest (AOI)"
-msgstr ""
+msgstr ":guilabel:`AOI` Zone d'intérêt (AOI)"
 
 #: ../../source/cookbook/ccdc.rst:62
 msgid ":guilabel:`DAT` Time of Interest (TOI), i.e. the time-span for the underlying time-series"
-msgstr ""
+msgstr ":guilabel:`DAT` Heure d'intérêt (TOI), c'est-à-dire la durée de la série temporelle sous-jacente"
 
 #: ../../source/cookbook/ccdc.rst:63
 msgid ":guilabel:`SRC` Selection of sensor(s)"
-msgstr ""
+msgstr ":guilabel:`SRC` Sélection de capteur(s)"
 
 #: ../../source/cookbook/ccdc.rst:64
 msgid ":guilabel:`PRC` Pre-processing parameters"
-msgstr ""
+msgstr ":guilabel:`PRC` Paramètres de prétraitement"
 
 #: ../../source/cookbook/ccdc.rst:65
 msgid ":guilabel:`OPT` CCDC Parameters"
-msgstr ""
+msgstr ":guilabel:`OPT` Paramètres CCDC"
 
 #: ../../source/cookbook/ccdc.rst:68
 msgid "Area of Interest"
-msgstr ""
+msgstr "Zone d'intérêt"
 
 #: ../../source/cookbook/ccdc.rst:70
 msgid "The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
-msgstr ""
+msgstr "Les données exportées par la recette seront coupées dans les limites de l'AOI. Il y a plusieurs façons de sélectionner l'AOI dans SEPAL:"
 
 #: ../../source/cookbook/ccdc.rst:72
 msgid "Administrative boundaries"
-msgstr ""
+msgstr "Bordures administratives"
 
 #: ../../source/cookbook/ccdc.rst:73
 msgid "EE Tables"
-msgstr ""
+msgstr "Tables EE"
 
 #: ../../source/cookbook/ccdc.rst:74
 msgid "Drawn polygons"
-msgstr ""
+msgstr "Dessiner un polygone"
 
 #: ../../source/cookbook/ccdc.rst:76
 msgid "they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more."
-msgstr ""
+msgstr "elles sont décrites dans notre documentation. Veuillez lire :doc:`../feature/aoi_selector` pour en savoir plus."
 
 #: ../../source/cookbook/ccdc.rst:83
 msgid "Date Range"
-msgstr ""
+msgstr "Intervalle temporel"
 
 #: ../../source/cookbook/ccdc.rst:85
 msgid "In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button."
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:98
 msgid "Sensor selection"
-msgstr ""
+msgstr "Sélection des capteurs"
 
 #: ../../source/cookbook/ccdc.rst:100
 msgid "After clicking the :guilabel:`NEXT` button in the date selection, the sensor selection pop-up menu will automatically open (1). Here you need to specify the sensor(s) and the bands used for the breakpoint detection. You have the choice between 3 types, :guilabel:`OPTICAL` (including the Landsat and Sentinel-2 missions), :guilabel:`RADAR` (including the Sentinel-1 mission) and :guilabel:`PLANET`, where both daily imagery or monthly basemaps can be used as data input (given you have a valid Planet API key)."
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:108 ../../source/cookbook/ccdc.rst:185
 msgid "Optical data"
-msgstr ""
+msgstr "Données optiques"
 
 #: ../../source/cookbook/ccdc.rst:110
 msgid "CCDC is originally tested on optical *Landsat* satellites. In SEPAL you have the possibility to select and combine all past and present Landsat missions, including *Tier 1* and *Tier 2* collections, to run it on decadal-long time-series."
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:142
 msgid "Radar Data"
-msgstr ""
+msgstr "Données radar"
 
 #: ../../source/cookbook/ccdc.rst:144
 msgid "In order to create a CCDC asset based on underlying radar time-series, you need to select the :guilabel:`RADAR` button. This will make use the *Sentinel-1* C-Band SAR Image Collection in Google Earth Engine. To the best of our knowledge, no scientific studies have been done that investigate the ideal band selection for breakpoint detection. As a starting point we suggest to use the default option that includes the :code:`VV` and the :code:`VH` band."
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:153 ../../source/cookbook/ccdc.rst:268
 msgid "Planet data"
-msgstr ""
+msgstr "Données Planet"
 
 #: ../../source/cookbook/ccdc.rst:155
 msgid "For the creation of a CCDC asset based on *Planet* data, you have the choice of either selecting the *Planet custom basemaps* (including the NICFI Level 1 data), or *Planet daily imagery* itself."
