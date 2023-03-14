@@ -71,6 +71,7 @@ instance/
 # Sphinx documentation
 docs/build/
 docs/source/_build/
+warnings.txt
 
 # PyBuilder
 target/
@@ -141,8 +142,8 @@ docs/source/_locale/es/LC_MESSAGES/modules
 # pycharm idea folder
 .idea/
 
-# mac os files 
-.DS_Store 
+# mac os files
+.DS_Store
 
 # environment files
 docs/source/_data/python_lib.txt
