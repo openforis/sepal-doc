@@ -1657,9 +1657,3 @@ Remarks
 -   Please use :code:`GWB_MSPA` if you need an edge width > 1 pixel and/or to detect connecting pathways.
 
 :code:`GWB_SPA` is a purely geometric analysis scheme, which can be applied to any type of raster image. It is ideal to describe the morphology of foreground (forest) patches for basic mapping and statistics, which may be sufficient in many application fields. Advanced analysis, including the detection of connecting pathways require using the full version :code:`GWB_MSPA`.
-
-.. spelling:word-list::
-
-    cp
-    sav
-    clc

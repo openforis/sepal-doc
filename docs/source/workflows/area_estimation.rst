@@ -2884,14 +2884,4 @@ Now you know:
 -   how to use version control options for your project; and
 -   how to report your area estimation project.
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
-
-.. spelling:word-list::
-
-    AmazonClassification
-    sae
-    ceo
-    mapathon
-    sourcebook
-    plotid
-    SriLanka
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

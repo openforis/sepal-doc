@@ -4,7 +4,7 @@ Creating Standard Operating Procedures (SOPs) for sample-based area estimation f
 Reduce uncertainty, improve consistency and ensure a successful high-quality analysis with SOPs
 -----------------------------------------------------------------------------------------------
 
-.. acknowledgements::
+.. admonition:: acknowledgements
 
     The SEPAL team thanks `SIG-GIS <https://sig-gis.com>`_ for contributing this article to SEPAL documentation.
 
@@ -366,4 +366,4 @@ United States, Environmental Protection Agency. (2007). Guidance for Preparing S
 
 Thank you for reading this tutorial on creating SOPs with templates!
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

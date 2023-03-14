@@ -2,10 +2,9 @@ pydata-sphinx-theme
 Sphinx>=3.5.1
 sphinx-notfound-page>=0.6
 graphviz>=0.16
-sphinxcontrib-spelling
 sphinxcontrib-images
-sphinx-icon
-sphinx-btn
+sphinx-icon>=0.2.2
+sphinx-btn>=0.1.2
 sphinx-design
 sphinx-togglebutton
 git+https://github.com/sphinx-contrib/youtube.git

@@ -9,7 +9,9 @@ from urllib.request import urlretrieve
 # dirs
 source_dir = Path(__file__).expanduser().parents[1]
 module_dir = source_dir / "modules"
+module_dir.mkdir(exist_ok=True)
 dwn_dir = module_dir / "dwn"
+dwn_dir.mkdir(exist_ok=True)
 template_dir = source_dir / "_templates"
 locale_dir = source_dir / "_locale"
 

@@ -94,7 +94,7 @@ Date
 Yearly mosaic
 """""""""""""
 
-In the :guilabel:`DAT` tab, select a year which pixels in the mosaic should come from. When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button.
+In the :guilabel:`DAT` tab, select a year which pixels in the mosaic should come from. When the selection is done, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_year.png
     :title: The year selection panel.
@@ -105,13 +105,13 @@ Seasonal mosaic
 
 Select :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest.
 
-Select the :icon:`fa fa-calendar` (1) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from).
+Select the :icon:`fa-solid fa-calendar` (1) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from).
 
 Using the main slider (2), define a season around the target date by identifying a starting date and an ending date. SEPAL will then retrieve the mosaic images between those dates.
 
 The number of images in one single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - (3)) and in the future (:code:`Future season` - (4)).
 
-When the selection is done, select the :icon:`fa fa-check` :guilabel:`Apply` button.
+When the selection is done, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_season.png
     :title: The season selection panel.
@@ -152,7 +152,7 @@ As mentioned in the introduction, a mosaic uses different raster datasets that c
     :title: The source selection panel.
     :group: optical-mosaic-recipe
 
-To validate your selection, select the :icon:`fa fa-check` :guilabel:`Apply` button.
+To validate your selection, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
 
 Scenes
 ^^^^^^
@@ -169,7 +169,7 @@ Choose :guilabel:`Select scenes` and choose one of the three available :code:`Pr
 -   :guilabel:`Target date`: Prioritizes images that match with the target date.
 -   :guilabel:`Balanced`: Prioritizes images that maximize both cloud and target date.
 
-To validate your selection, select the :icon:`fa fa-check` :guilabel:`Apply` button.
+To validate your selection, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/scene_method.png
     :title: The source selection panel.
@@ -285,9 +285,9 @@ Analysis
 After selecting the parameters, you can start interacting with the scenes and begin the analysis.
 In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result.
 
--   :btn:`<fas fa-magic>`: Auto-select scenes.
--   :btn:`<fas fa-trash>`: Clear selected scenes.
--   :btn:`<fas fa-cloud-download-alt>`: Retrieve mosaic.
+-   :btn:`<fa-solid fa-wand-magic>`: Auto-select scenes.
+-   :btn:`<fa-solid fa-trash>`: Clear selected scenes.
+-   :btn:`<fa-solid fa-cloud-arrow-down>`: Retrieve mosaic.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/analysis.png
     :title: The three tabs to select the scenes and export mosaic.
@@ -295,7 +295,7 @@ In the upper-right corner, three tabs are available. They will allow you to cust
 
 .. note::
 
-    If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fas fa-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot).
+    If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fa-solid fa-wand-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot).
 
     If you can't see the image scene area, you probably have selected a small AOI. Zoom out on the map and you will see the number of available images in the circles.
 
@@ -311,7 +311,7 @@ To create a mosaic, you need to select the scenes that will be used to compute e
 Auto-select scene
 """""""""""""""""
 
-Selecting the :icon:`fas fa-magic` tab will open the **Auto-selection** panel.
+Selecting the :icon:`fa-solid fa-wand-magic` tab will open the **Auto-selection** panel.
 
 Move the sliders to select the minimum and the maximum number of scenes SEPAL should select in a tile. Then, select the :guilabel:`Validate` button to apply the auto-select method.
 
@@ -328,7 +328,7 @@ SEPAL will use the priority defined in the :guilabel:`SCN` tab to order the scen
 Clear all scenes
 """"""""""""""""
 
-If at least one scene is selected, the :icon:`fas fa-trash` tab will be available. Select it to open the **Clear** panel.
+If at least one scene is selected, the :icon:`fa-solid fa-trash` tab will be available. Select it to open the **Clear** panel.
 
 Select :guilabel:`Clear scenes` to remove all manually and automatically selected scenes.
 
@@ -352,9 +352,9 @@ Each thumbnail represents a scene of the tile stack. You have the option to incl
 
 -   A small preview of the scene in the *red, blue, green* band combination.
 -   The exact date in yyyy-mm-dd of the scene.
--   The satellite name :icon:`fas fa-satellite-dish`.
--   The cloud coverage of the scene in % and its position in the stack values :icon:`fas fa-cloud`.
--   The distance from target day in days within the season and its position in the stack values :icon:`fas fa-calendar-check`.
+-   The satellite name :icon:`fa-solid fa-satellite-dish`.
+-   The cloud coverage of the scene in % and its position in the stack values :icon:`fa-solid fa-cloud`.
+-   The distance from target day in days within the season and its position in the stack values :icon:`fa-solid fa-calendar-check`.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_available.png
     :width: 24%
@@ -366,7 +366,7 @@ Each thumbnail represents a scene of the tile stack. You have the option to incl
     :title: The thumbnail of a scene when it's in the selected scene area.
     :group: optical-mosaic-recipe
 
-You can decide to move the scene to the **Selected** area by selecting :icon:`fa fa-plus`:guilabel:`Add` or moving it back to **Available** by selecting :icon:`fa fa-minus` :guilabel:`Remove`.
+You can decide to move the scene to the **Selected** area by selecting :icon:`fa-solid fa-plus`:guilabel:`Add` or moving it back to **Available** by selecting :icon:`fa-solid fa-minus` :guilabel:`Remove`.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/thumbnail_available_hover.png
     :width: 24%
@@ -387,7 +387,7 @@ Once you are happy with your selection, select the :guilabel:`Apply` button to c
 Retrieve
 ^^^^^^^^
 
-Selecting the :icon:`fas fa-cloud-download-alt` tab will open the retrieve panel where you can select the exportation parameters.
+Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the retrieve panel where you can select the exportation parameters.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/retrieve.png
     :title: The last panel of the optical mosaic: the exportation.
@@ -427,7 +427,7 @@ Select :guilabel:`Apply` to start the download process.
 Exportation status
 """"""""""""""""""
 
-Going to the task tab (lower-left corner using the :icon:`fa fa-tasks` or :icon:`fa fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed.
+Going to the task tab (lower-left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 

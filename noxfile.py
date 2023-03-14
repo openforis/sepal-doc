@@ -9,10 +9,20 @@ import nox
 @nox.session(name="docs", reuse_venv=True)
 def docs(session):
     """Build the documentation."""
+    builder = session.posargs[0] if len(session.posargs) > 0 else "html"
     session.install("-r", "requirements.txt")
     session.run("python", "docs/source/_script/modules.py")
     session.run("python", "docs/source/_script/environment.py")
-    session.run("sphinx-build", "-b", "html", "docs/source", "docs/build/html")
+    session.run(
+        "sphinx-build",
+        "-b",
+        builder,
+        "docs/source",
+        f"docs/build/{builder}",
+        "-w",
+        "warnings.txt",
+    )
+    session.run("python", "tests/check_warnings.py")
 
 
 @nox.session(name="i18n", reuse_venv=True)

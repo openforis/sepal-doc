@@ -23,7 +23,7 @@ each class is composed by several :code:`topics` and each topic can embed differ
 
 .. seealso::
 
-    If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>`_ and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`_) they will answer as soon as possible.
+    If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`) they will answer as soon as possible.
 
 Creating a classroom
 ^^^^^^^^^^^^^^^^^^^^

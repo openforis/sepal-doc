@@ -24,7 +24,6 @@ author = "Pierrick Rambaud"
 extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.graphviz",
-    "sphinxcontrib.spelling",
     "sphinxcontrib.images",
     "sphinxcontrib.icon",
     "sphinxcontrib.btn",
@@ -79,8 +78,8 @@ latex_elements = {"preamble": youtube_cmd + vimeo_cmd}
 
 html_theme_options = {
     "logo": {
-        "image_light": "sepal_light.png",
-        "image_dark": "sepal_dark.png",
+        "image_light": "_static/sepal_light.png",
+        "image_dark": "_static/sepal_dark.png",
     },
     "header_links_before_dropdown": 7,
     "navigation_with_keys": False,
@@ -150,14 +149,3 @@ favicons = [
 # -- Options for images --------------------------------------------------------
 
 images_config = {"download": False}
-
-# -- spelling options ----------------------------------------------------------
-
-spelling_lang = "en_US"
-spelling_show_suggestions = True
-spelling_exclude_patterns = ["modules/dwn/*.rst"]
-spelling_filters = ["_filters.Names"]
-spelling_word_list_filename = [
-    str(Path(__file__).expanduser().parent / "_data" / "spelling" / "en_US.txt")
-]
-spelling_verbose = False

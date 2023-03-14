@@ -35,7 +35,7 @@ Refer to the next section to start a specific instance manually.
 
 .. note::
 
-    Applications that include a :icon:`fas fab-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. For more information, see :doc:`../setup/gee`.
+    Applications that include a :icon:`fa-solid fa-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. For more information, see :doc:`../setup/gee`.
 
 .. note::
 
@@ -64,7 +64,7 @@ Some applications require more powerful instances than the default :code:`t1`. I
 
 4.  Go back to the dashboard of the application to launch your app. It will automatically be using the instance you opened and won't restart a :code:`t1`.
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
 
 .. toctree::
     :hidden:
