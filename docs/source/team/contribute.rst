@@ -467,42 +467,7 @@ You now have 1 single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.
 
 Replace "<ID>" by the number of the class, "<link>" by the invitation link and "<title>" by the title of the classroom. Add also the latest "<modification date>" in "YYY-mm-dd" format.
 
-Doc spell check
-"""""""""""""""
 
-.. warning::
-
-    Experimental feature, still require some work to identify all the FAO related words and avoid false positives.
-
-If you want to spell check your work you can run a specific building tool based on `sphinxcontrib-spelling <https://sphinxcontrib-spelling.readthedocs.io/en/latest/customize.html#private-dictionaries>`_. Open a terminal and move to the :code:`sepal-doc/docs/` folder. There run the following command:
-
-.. code-block::
-
-    make spelling
-
-A long output of misspelled word will be displayed in your terminal. it's not really user-friendly. It's also building a spelling folder that contains all the files with misspelled words  in :code:`sepal-doc/docs/build/spelling/`.
-
-For each line you will have:
-
--   the file
--   the line
--   the misspelled word
--   a list of suggestion
--   the context
-
-Here is an example:
-
-.. code-block::
-
-    cli/gwb.rst:
-    748:
-    (informmation)
-    ["information", "inflammation", "information's", "informational", "conformation"]
-    If your are considering using the MSPA tool, keep in mind that the process is relatively complex and provide a lot of informmation (up to 25 classes). If you are only interested in fragmentation and/or less than 6 classes, please consider using
-
-.. tip::
-
-    Instead of using our tool maybe your IDE is providing a spell check tool designed for .rst file.
 
 Create a PR
 -----------

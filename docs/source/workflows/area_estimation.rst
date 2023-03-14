@@ -2885,13 +2885,3 @@ Now you know:
 -   how to report your area estimation project.
 
 For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
-
-.. spelling:word-list::
-
-    AmazonClassification
-    sae
-    ceo
-    mapathon
-    sourcebook
-    plotid
-    SriLanka

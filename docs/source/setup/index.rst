@@ -37,7 +37,3 @@ For support, `ask the community <https://groups.google.com/g/sepal-users>`__ or 
     nicfi
     password
     resource
-
-.. spelling:word-list::
-
-    filezilla

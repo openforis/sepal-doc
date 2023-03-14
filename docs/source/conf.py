@@ -150,14 +150,3 @@ favicons = [
 # -- Options for images --------------------------------------------------------
 
 images_config = {"download": False}
-
-# -- spelling options ----------------------------------------------------------
-
-spelling_lang = "en_US"
-spelling_show_suggestions = True
-spelling_exclude_patterns = ["modules/dwn/*.rst"]
-spelling_filters = ["_filters.Names"]
-spelling_word_list_filename = [
-    str(Path(__file__).expanduser().parent / "_data" / "spelling" / "en_US.txt")
-]
-spelling_verbose = False
