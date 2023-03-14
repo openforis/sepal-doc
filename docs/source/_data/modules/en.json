@@ -1,7 +1,7 @@
 {
   "alert_module": {
     "description": "Retrieve any type of alert on a selected AOI",
-    "url": "https://raw.githubusercontent.com/sepal-contrib/alert_module/release/doc/en.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/alert_module/master/doc/en.rst"
   },
   "alos_mosaics": {
     "description": "Create and manipulate ALOS K&C Mosaics",

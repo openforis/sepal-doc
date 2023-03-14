@@ -148,3 +148,4 @@ docs/source/_locale/es/LC_MESSAGES/modules
 # environment files
 docs/source/_data/python_lib.txt
 docs/source/_data/r_packages.sh
+docs/source/modules/dwn/
