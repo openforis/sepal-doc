@@ -62,7 +62,7 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-they are extensively described in our documentation. Please read :doc:`..feature/aoi_selector` to know more.
+they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/aoi.png
     :title: Select AOI based on administrative layers
@@ -77,7 +77,7 @@ In the :guilabel:`DAT` tab, you will be asked to select the dates of the time se
     :title: The date selection window
     :group: planet-mosaic-recipe
 
-Click the :btn:`<fa-solid fa-calendar-alt>` to display the Date picker and select your date.
+Click the :btn:`<fa-solid fa-calendar-days>` to display the Date picker and select your date.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/date_picker.png
     :title: The SEPAL datepicker as it is used in the planet mosaic tool
@@ -136,7 +136,7 @@ Options
 
     This step is not mandatory due to Planet mosaics are already sanitized.
 
-SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fa-solid fa-times> close` button to finish the customization.
+SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fa-solid fa-xmark> close` button to finish the customization.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/options.png
     :title: The 3 options available in SEPAL to build Planet mosaics
@@ -187,7 +187,7 @@ Once all the parameters have been set, the mosaic will be rendered on the fly. M
 Retrieve
 --------
 
-Click the :btn:`<fa-solid fa-cloud-download-alt>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
+Click the :btn:`<fa-solid fa-cloud-arrow-down>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/retrieve.png
     :title: the last panel of the planet mosaic: the exportation

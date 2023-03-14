@@ -142,4 +142,4 @@ Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3)
     For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__.
 
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

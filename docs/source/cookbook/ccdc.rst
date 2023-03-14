@@ -379,7 +379,7 @@ Export
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Click on the :btn:`<fa-solid fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
+Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
 
 If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point.
 
@@ -399,7 +399,7 @@ The scale parameter depends on the data selected and the level of detail you wil
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-tasks>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 

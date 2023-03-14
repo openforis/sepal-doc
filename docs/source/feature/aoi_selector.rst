@@ -191,7 +191,7 @@ Three drawing geometries will be shown up at the top left corner of the map: a :
 
 .. tip::
 
-    To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fa-solid fa-plus-square>` and :btn:`<fa-solid fa-minus-square>` buttons located at the top right corner.
+    To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` buttons located at the top right corner.
 
 - :btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry in the map. To close and finish your geometry, click the first vertex or use the :guilabel:`finish` button. Note that once you select the polygon geometry, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`.
 

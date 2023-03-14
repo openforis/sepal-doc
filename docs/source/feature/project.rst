@@ -34,7 +34,7 @@ Project
 
     For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed.
 
-To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list.
+To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list.
 
 .. thumbnail:: ../_images/feature/project/new-project.png
     :title: project management popup windows
@@ -91,7 +91,7 @@ Once a project is selected and a recipe is created, it will belong to the select
 Edit recipies
 ^^^^^^^^^^^^^
 
-Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-edit> Edit` button to open the edition interface.
+Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the edition interface.
 
 .. thumbnail:: ../_images/feature/project/edit-recipes.png
     :title: The recipe edit interface
@@ -101,7 +101,7 @@ Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid
 from this interface you can:
 
 -   :btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s).
--   :btn:`<fa-solid fa-random> Move`: Move the selected recipe(s) to another project.
+-   :btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project.
 -   :btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently.
 
 .. warning::

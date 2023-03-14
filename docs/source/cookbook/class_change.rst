@@ -51,7 +51,7 @@ The first step is to select the 2 images to compare. :guilabel:`FRM` and :guilab
 
 You need to select a categorical image, this can be a classification recipe, or any categorical asset from your google earthengine account. In both cases you'll need to select the band to use for the transition and the legend.
 
-If the selected asset/recipe is a classification recipe (or its export) the legend will be automatically field with the metadata of the file. else you'll need to updload it manually. click on :btn:`fa-solid fa-edit` to open the legend edition tool. It's the same as the one described in the classification recipe. Please refer to :doc:`classification` if you need extra information.
+If the selected asset/recipe is a classification recipe (or its export) the legend will be automatically field with the metadata of the file. else you'll need to updload it manually. click on :btn:`fa-solid fa-pen-to-square` to open the legend edition tool. It's the same as the one described in the classification recipe. Please refer to :doc:`classification` if you need extra information.
 
 .. thumbnail:: ../_images/cookbook/class_change/from.png
     :group: recipe_class_change
@@ -97,7 +97,7 @@ Analysis
 Export
 ^^^^^^
 
-Clicking on the :icon:`fa-solid fa-cloud-download-alt` tab will open the retrieve panel where the you can select the exportation parameters.
+Clicking on the :icon:`fa-solid fa-cloud-arrow-down` tab will open the retrieve panel where the you can select the exportation parameters.
 
 .. thumbnail:: ../_images/cookbook/class_change/export.png
     :title: the last panel of the class change recipe: the exportation
@@ -128,7 +128,7 @@ Click on :guilabel:`apply` to start the download process.
 Exportation status
 """"""""""""""""""
 
-Going to the task tab (bottom left corner using the :icon:`fa-solid fa-tasks` or :icon:`fa-solid fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 

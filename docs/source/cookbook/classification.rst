@@ -531,14 +531,14 @@ The number (4) indicates a cluster of existing training points. Zoom-in and they
 Select points
 ^^^^^^^^^^^^^
 
-To start adding points, open the training interface by selecting :btn:`<fa-solid fa-map-marker>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fa-solid fa-plus`.
+To start adding points, open the training interface by selecting :btn:`<fa-solid fa-location-dot>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fa-solid fa-plus`.
 
 The process to add new training data is as follows:
 
 1.   **Click on the map to select a point**: You can click in any of the panels (this is not restricted to the recipe panel), but to be useful, the point needs to be within the border of the AOI. If it's not already the case, the class selection panel will appear in the upper-right of the window (2).
 2.   **Select the class value**: The previous class value is preselected, but you can change it to any other class value from the defined legend. The legend is displayed as :code:`<legend_classname> (<legend_value>)`.
 
-You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fa-solid fa-times> Close` (3) and select :btn:`<fa-solid fa-map-marker>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window.
+You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fa-solid fa-xmark> Close` (3) and select :btn:`<fa-solid fa-location-dot>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window.
 
 .. thumbnail:: ../_images/cookbook/classification/add_point.png
     :group: classification-recipe
@@ -547,7 +547,7 @@ You can now click elsewhere on the map to add another point. If you are satisfie
 Modify existing points
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To modify existing points, select the :btn:`<fa-solid fa-map-marker>` to open the point editing interface and follow the following steps:
+To modify existing points, select the :btn:`<fa-solid fa-location-dot>` to open the point editing interface and follow the following steps:
 
 1.   **Select a point**: To select a point, click on an existing marker. It will appear bolder than the others. If it's not already the case, the class selection panel will appear in the upper-right of the window.
 2.   **Change the class value**: The point class will be selected in the editing menu with a :icon:`fa-solid fa-check`. Select any other class value to change it.
@@ -575,7 +575,7 @@ Export
 Start download
 ^^^^^^^^^^^^^^
 
-Selecting the :icon:`fa-solid fa-cloud-download-alt` tab will open the **Retrieve** panel where you can select the exportation parameters (1).
+Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve** panel where you can select the exportation parameters (1).
 
 You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output.
 
@@ -596,7 +596,7 @@ Select :btn:`<fa-solid fa-check> Apply` to start the download process.
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-tasks>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
+By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
 
 The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 

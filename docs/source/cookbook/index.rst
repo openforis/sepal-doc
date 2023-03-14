@@ -78,7 +78,7 @@ To start a recipe, go to the **Process** tab :icon:`fa-solid fa-globe`, where yo
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132474880-12333a36-dee0-4bdc-a0b4-0e9aab24b601.png
     :title: Recipe list displayed in the web interface.
 
-Select the green :icon:`fa-solid fa-plus-circle` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage.
+Select the green :icon:`fa-solid fa-circle-plus` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage.
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132481048-6149f776-a7ed-47cb-8f75-3519aa1b8f1e.png
     :title: Create a recipe from available workflows.
@@ -108,6 +108,7 @@ Recipes
     time_series
     ccdc
     ccdc_slice
+    class_change
 
 
 For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

@@ -2884,7 +2884,7 @@ Now you know:
 -   how to use version control options for your project; and
 -   how to report your area estimation project.
 
-For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`.
+For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
 
 .. spelling:word-list::
 

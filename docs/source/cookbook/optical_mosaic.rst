@@ -285,9 +285,9 @@ Analysis
 After selecting the parameters, you can start interacting with the scenes and begin the analysis.
 In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result.
 
--   :btn:`<fa-solid fa-magic>`: Auto-select scenes.
+-   :btn:`<fa-solid fa-wand-magic>`: Auto-select scenes.
 -   :btn:`<fa-solid fa-trash>`: Clear selected scenes.
--   :btn:`<fa-solid fa-cloud-download-alt>`: Retrieve mosaic.
+-   :btn:`<fa-solid fa-cloud-arrow-down>`: Retrieve mosaic.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/analysis.png
     :title: The three tabs to select the scenes and export mosaic.
@@ -295,7 +295,7 @@ In the upper-right corner, three tabs are available. They will allow you to cust
 
 .. note::
 
-    If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fa-solid fa-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot).
+    If you have not selected the option :guilabel:`Select scenes` in the :guilabel:`SCN` tab, the :icon:`fa-solid fa-wand-magic` button will be disabled and the scene areas will be hidden as no scene selection needs to be performed (see those with a number in a circle on the previous screenshot).
 
     If you can't see the image scene area, you probably have selected a small AOI. Zoom out on the map and you will see the number of available images in the circles.
 
@@ -311,7 +311,7 @@ To create a mosaic, you need to select the scenes that will be used to compute e
 Auto-select scene
 """""""""""""""""
 
-Selecting the :icon:`fa-solid fa-magic` tab will open the **Auto-selection** panel.
+Selecting the :icon:`fa-solid fa-wand-magic` tab will open the **Auto-selection** panel.
 
 Move the sliders to select the minimum and the maximum number of scenes SEPAL should select in a tile. Then, select the :guilabel:`Validate` button to apply the auto-select method.
 
@@ -387,7 +387,7 @@ Once you are happy with your selection, select the :guilabel:`Apply` button to c
 Retrieve
 ^^^^^^^^
 
-Selecting the :icon:`fa-solid fa-cloud-download-alt` tab will open the retrieve panel where you can select the exportation parameters.
+Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the retrieve panel where you can select the exportation parameters.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/retrieve.png
     :title: The last panel of the optical mosaic: the exportation.
@@ -427,7 +427,7 @@ Select :guilabel:`Apply` to start the download process.
 Exportation status
 """"""""""""""""""
 
-Going to the task tab (lower-left corner using the :icon:`fa-solid fa-tasks` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed.
+Going to the task tab (lower-left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
