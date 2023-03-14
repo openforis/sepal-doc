@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:28\n"
+"PO-Revision-Date: 2023-03-13 22:25\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:5
 msgid "Background"
-msgstr ""
+msgstr "Contexte"
 
 #: ../../source/cookbook/ccdc_slice.rst:7
 msgid "Powered by the API of Google's `Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:19
 msgid "Create Recipe"
-msgstr ""
+msgstr "Créer une recette"
 
 #: ../../source/cookbook/ccdc_slice.rst:21
 msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC slice, which opens a new SEPAL recipe tab."
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:30
 msgid "Rename Recipe"
-msgstr ""
+msgstr "Renommer la recette"
 
 #: ../../source/cookbook/ccdc_slice.rst:32
 msgid "The first step one should do is to change the name of the recipe by double-clicking on tab on the top of the map. This will have the effect that your recipe will be automatically saved and is visible in the list of created recipes. Furthermore, the given name will be used for exported files, both locally and on Earth Engine. We suggest to use the following convention: :code:`CCDC-slice_<aoi>_<sensor(s)>_<date>`."
@@ -64,15 +64,15 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:43
 msgid "Parameter selection"
-msgstr ""
+msgstr "Sélection des paramètres"
 
 #: ../../source/cookbook/ccdc_slice.rst:45
 msgid "The following steps describe the parameter selection that can be found on the lower right of the screen."
-msgstr ""
+msgstr "Les étapes suivantes décrivent la sélection des paramètres qui se trouve en bas à droite de l'écran."
 
 #: ../../source/cookbook/ccdc_slice.rst:53
 msgid "The buttons open the following dialogues:"
-msgstr ""
+msgstr "Les boutons ouvrent les dialogues suivants :"
 
 #: ../../source/cookbook/ccdc_slice.rst:55
 msgid ":guilabel:`SRC` Selection of CCDC asset source"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:105
 msgid "Date Range"
-msgstr ""
+msgstr "Intervalle temporel"
 
 #: ../../source/cookbook/ccdc_slice.rst:107
 msgid "In case a date range has been selected, the slicing parameters will look as shown in the Figure below."
@@ -217,11 +217,11 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:149
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #: ../../source/cookbook/ccdc_slice.rst:152
 msgid "Trigger the export task"
-msgstr ""
+msgstr "Déclencher la tâche d'exportation"
 
 #: ../../source/cookbook/ccdc_slice.rst:154
 msgid "Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace."
@@ -257,7 +257,7 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:180
 msgid "Exportation status"
-msgstr ""
+msgstr "État d'exportation"
 
 #: ../../source/cookbook/ccdc_slice.rst:182
 msgid "Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
