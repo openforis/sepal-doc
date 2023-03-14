@@ -24,7 +24,6 @@ author = "Pierrick Rambaud"
 extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.graphviz",
-    "sphinxcontrib.spelling",
     "sphinxcontrib.images",
     "sphinxcontrib.icon",
     "sphinxcontrib.btn",
