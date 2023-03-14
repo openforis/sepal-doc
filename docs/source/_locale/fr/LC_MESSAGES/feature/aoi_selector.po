@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-03-14 08:23\n"
+"PO-Revision-Date: 2023-03-14 09:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -336,17 +336,17 @@ msgstr "Le widget de sélection de fichiers va rechercher tous les asset :code:`
 
 #: ../../source/feature/aoi_selector.rst:252
 msgid "Once you have selected a valid asset, the module will query all the available columns in your provided asset and will display them in the column dropdown widget. By default, all the features in the dataset will be selected :guilabel:`Use all features`, however, if you are interested in using a specific geometry, select a column to filter your dataset, and a new dropdown will load all the unique values for that specific column, select one."
-msgstr ""
+msgstr "Une fois que vous avez sélectionné un asset valide, le module interroge toutes les colonnes disponibles dans la ressource fournie et les affichera dans le menu déroulant des colonnes. Par défaut, toutes les fonctionnalités du jeu de données seront sélectionnées :guilabel:`Utiliser toutes les fonctionnalités`, cependant, si vous preferer utiliser une géométrie spécifique, sélectionnez une colonne pour filtrer votre jeu de données, et une nouvelle liste déroulante chargera toutes les valeurs uniques pour cette colonne spécifique, sélectionnez-en une."
 
 #: ../../source/feature/aoi_selector.rst:254
 msgid "note that this method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa fa-google` icon at the right side of the drawer."
-msgstr ""
+msgstr "notez que cette méthode ne sera disponible que si vous utilisez un module qui nécessite une connexion à votre compte GEE. Vous pouvez vérifier cela en naviguant dans le tableau de bord de l'application et en remarquant l'icône :icon:`fa fa-google` sur le côté droit du tiroir."
 
 #: ../../source/feature/aoi_selector.rst:257
 msgid "Not all the modules have all the mentioned methods, their availability will depend on the module context, i.e. some apps would require polygons while others points."
-msgstr ""
+msgstr "Tous les modules n'ont pas toutes les méthodes mentionnées, leur disponibilité dépendra du contexte du module, i.e. Certaines applications nécessitent des polygones tandis que d'autres des points."
 
 #: ../../source/feature/aoi_selector.rst:259
 msgid "Finally, click the :guilabel:`Select AOI` button, if all the inputs are correct you will see a success message and your aoi will be displayed in green on the map. Otherwise, an indicative error message will be displayed."
-msgstr ""
+msgstr "Enfin, cliquez sur le bouton :guilabel:`Sélectionnez AOI`, si toutes les entrées sont correctes, vous verrez un message de succès et votre aoi sera affiché en vert sur la carte. Sinon, un message d'erreur indicatif sera affiché."
 
