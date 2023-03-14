@@ -111,9 +111,9 @@ ReST role to include inline icons in the documenation (usualy when referencing a
 
 .. code-block:: rst
 
-    I'm a folder icon: :icon:`fa fa-folder`
+    I'm a folder icon: :icon:`fa-solid fa-folder`
 
-I'm a folder icon: :icon:`fa fa-folder`
+I'm a folder icon: :icon:`fa-solid fa-folder`
 
 btn
 """
@@ -122,13 +122,13 @@ Rest role to include complete btn in the documentation. You can find the icon yo
 
 .. code-block:: rst
 
-    I'm a apply btn: :btn:`<fas fa-check> apply`
+    I'm a apply btn: :btn:`<fa-solid fa-check> apply`
 
-    I'm the app btn: :btn:`<fas fa-wrench>`
+    I'm the app btn: :btn:`<fa-solid fa-wrench>`
 
-I'm a apply btn: :btn:`<fas fa-check> apply`
+I'm a apply btn: :btn:`<fa-solid fa-check> apply`
 
-I'm the app btn: :btn:`<fas fa-wrench>`
+I'm the app btn: :btn:`<fa-solid fa-wrench>`
 
 Minor change
 ------------

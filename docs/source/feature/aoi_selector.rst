@@ -1,14 +1,14 @@
 Area of Interest Selection
 ==========================
 
-In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fas fa-globe>` process recipes or the :btn:`<fas fa-wrench>` custom applications you will find different user interfaces.
+In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fa-solid fa-globe>` process recipes or the :btn:`<fa-solid fa-wrench>` custom applications you will find different user interfaces.
 
 .. _recipe_aoi:
 
 Recipe AOI
 ^^^^^^^^^^
 
-The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon located at the left side of the SEPAL window.
+The recipes are accessible through the orange :btn:`<fa-solid fa-globe>` globe icon located at the left side of the SEPAL window.
 
 For many of the recipes, an area of interest has to be selected. Locate the AOI selection button at the bottom right corner. Click the :guilabel:`AOI` button to open the selection window.
 
@@ -32,7 +32,7 @@ There are multiple methods to select AOI's in the SEPAL process recipes:
 
 .. tip::
 
-    The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed.
+    The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa-solid fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed.
 
 Administrative boundaries
 """""""""""""""""""""""""
@@ -51,7 +51,7 @@ A buffer can be applied to the AOI boundaries, define its size using the provide
 
     The area of interest and preview will take longer to show up when buffering is enabled.
 
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
+Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_administrative.png
     :title: Select AOI based on administrative layers
@@ -79,7 +79,7 @@ A buffer can be applied on these boundaries, define its size using the provided 
 
     The area of interest and the preview will take longer to show up when buffering is enabled.
 
-Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
+Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_table.png
     :title: Select AOI based on EE table
@@ -92,9 +92,9 @@ Draw polygon
 
 You can use a custom AOI defined by a drawn shape. This shape will be converted into a :code:`ee.FeatureCollection` on the fly. Select :guilabel:`draw a polygon` to use this method.
 
-The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon.
+The pointer in the map will be converted into a :icon:`fa-solid fa-plus`. Click successively on the map to draw a polygon.
 
-Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
+Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_polygon.png
     :title: Select AOI based on drawn polygon
@@ -106,7 +106,7 @@ Once the geometry is closed, the AOI will be previewed in the small map at the b
 Module AOI
 ^^^^^^^^^^
 
-The module AOI selector is available in some of the SEPAL-contrib modules. To access an app, click the purple wrench :btn:`<fa fa-wrench>` located on the left side of the SEPAL platform, use the app's dashboard to search and open a module.
+The module AOI selector is available in some of the SEPAL-contrib modules. To access an app, click the purple wrench :btn:`<fa-solid fa-wrench>` located on the left side of the SEPAL platform, use the app's dashboard to search and open a module.
 
 An AOI selector module is composed of two main sections: the available methods (1) and the map (2). Although we will mention all the features and methods available, some of them might not be available in the context of the module you are working on.
 
@@ -182,7 +182,7 @@ Use this option to manually draw geometries in the map.  Select the :guilabel:`D
 
 .. note:: If the module you are using is doing the process in GEE, a new asset will be created and stored in the root of your GEE account with the given name prefixed by :code:`aoi_`.
 
-Three drawing geometries will be shown up at the top left corner of the map: a :btn:`<fa fa-draw-polygon>` polygon, a :btn:`<fas fa-square>` square and a :btn:`<fas fa-circle>` circle.
+Three drawing geometries will be shown up at the top left corner of the map: a :btn:`<fa-solid fa-draw-polygon>` polygon, a :btn:`<fa-solid fa-square>` square and a :btn:`<fa-solid fa-circle>` circle.
 
 .. thumbnail:: ../_images/feature/aoi_selector/map_drawers.png
    :title: Map drawers
@@ -191,13 +191,13 @@ Three drawing geometries will be shown up at the top left corner of the map: a :
 
 .. tip::
 
-    To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fas fa-plus-square>` and :btn:`<fas fa-minus-square>` buttons located at the top right corner.
+    To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fa-solid fa-plus-square>` and :btn:`<fa-solid fa-minus-square>` buttons located at the top right corner.
 
-- :btn:`<fa fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry in the map. To close and finish your geometry, click the first vertex or use the :guilabel:`finish` button. Note that once you select the polygon geometry, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`.
+- :btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry in the map. To close and finish your geometry, click the first vertex or use the :guilabel:`finish` button. Note that once you select the polygon geometry, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`.
 
-- :btn:`<fas fa-square>` (rectangle): Click the top left corner of the rectangle in the map, it will be the first vertex of the geometry, now, —without clicking—, move the mouse to the opposite corner (bottom left) and click the map, it will close the geometry and the rectangle will be colored in a teal color.
+- :btn:`<fa-solid fa-square>` (rectangle): Click the top left corner of the rectangle in the map, it will be the first vertex of the geometry, now, —without clicking—, move the mouse to the opposite corner (bottom left) and click the map, it will close the geometry and the rectangle will be colored in a teal color.
 
-- :btn:`<fas fa-circle>` (circle): Click the center of the circle and —without stopping clicking— draw the distance (radius), then drop the click. A new blue marker will appear on the map showing the center of the circle. The geometry won't be drawn in the map until you click the :guilabel:`Select AOI` button, so do not worry if you can't see the circle at this time, the module will save the geometry in the background.
+- :btn:`<fa-solid fa-circle>` (circle): Click the center of the circle and —without stopping clicking— draw the distance (radius), then drop the click. A new blue marker will appear on the map showing the center of the circle. The geometry won't be drawn in the map until you click the :guilabel:`Select AOI` button, so do not worry if you can't see the circle at this time, the module will save the geometry in the background.
 
 Point file
 ##########
@@ -251,7 +251,7 @@ The File selector widget will search for all the :code:`Table` assets (i.e. Feat
 
 Once you have selected a valid asset, the module will query all the available columns in your provided asset and will display them in the column dropdown widget. By default, all the features in the dataset will be selected :guilabel:`Use all features`, however, if you are interested in using a specific geometry, select a column to filter your dataset, and a new dropdown will load all the unique values for that specific column, select one.
 
-.. note:: note that this method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa fa-google` icon at the right side of the drawer.
+.. note:: note that this method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa-solid fa-google` icon at the right side of the drawer.
 
 
 .. note:: Not all the modules have all the mentioned methods, their availability will depend on the module context, i.e. some apps would require polygons while others points.

@@ -77,13 +77,13 @@ In the :guilabel:`DAT` tab, you will be asked to select the dates of the time se
     :title: The date selection window
     :group: planet-mosaic-recipe
 
-Click the :btn:`<fas fa-calendar-alt>` to display the Date picker and select your date.
+Click the :btn:`<fa-solid fa-calendar-alt>` to display the Date picker and select your date.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/date_picker.png
     :title: The SEPAL datepicker as it is used in the planet mosaic tool
     :group: planet-mosaic-recipe
 
-When the selection is done click :btn:`<fa fa-chevron-right> next` button.
+When the selection is done click :btn:`<fa-solid fa-chevron-right> next` button.
 
 Sources
 ^^^^^^^
@@ -92,7 +92,7 @@ SEPAL can use multiple data sources to create your mosaics/composites as long as
 
 3 options are available: :guilabel:`NICFI basemaps`, :guilabel:`Custom basemaps`, :guilabel:`Daily imagery`
 
-Once you are finished, click on :btn:`<fas fa-check> done` to finish the process.
+Once you are finished, click on :btn:`<fa-solid fa-check> done` to finish the process.
 
 NICFI basemaps
 """"""""""""""
@@ -136,7 +136,7 @@ Options
 
     This step is not mandatory due to Planet mosaics are already sanitized.
 
-SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fas fa-times> close` button to finish the customization.
+SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fa-solid fa-times> close` button to finish the customization.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/options.png
     :title: The 3 options available in SEPAL to build Planet mosaics
@@ -187,7 +187,7 @@ Once all the parameters have been set, the mosaic will be rendered on the fly. M
 Retrieve
 --------
 
-Click the :btn:`<fas fa-cloud-download-alt>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
+Click the :btn:`<fa-solid fa-cloud-download-alt>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/retrieve.png
     :title: the last panel of the planet mosaic: the exportation
@@ -236,7 +236,7 @@ You can export the mosaic composition to :guilabel:`sepal workspace` or to :guil
 
     If :guilabel:`google earth engine asset` is not displayed, it means that your GEE account is not connected to SEPAL, please refer to `Connect SEPAL to GEE <../setup/gee.html>`__.
 
-Click on :btn:`<fas fa-check> apply` to start the download process.
+Click on :btn:`<fa-solid fa-check> apply` to start the download process.
 
 Access
 ^^^^^^

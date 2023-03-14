@@ -79,8 +79,8 @@ latex_elements = {"preamble": youtube_cmd + vimeo_cmd}
 
 html_theme_options = {
     "logo": {
-        "image_light": "sepal_light.png",
-        "image_dark": "sepal_dark.png",
+        "image_light": "_static/sepal_light.png",
+        "image_dark": "_static/sepal_dark.png",
     },
     "header_links_before_dropdown": 7,
     "navigation_with_keys": False,

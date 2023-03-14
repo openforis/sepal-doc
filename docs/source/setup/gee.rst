@@ -16,7 +16,7 @@ GEE and SEPAL
 
 SEPAL is closely linked to GEE, a Google-powered Earth-observation cloud-computing platform. SEPAL can access data stored in the GEE data catalog, use GEE for processing large datasets, and read and write data to GEE assets. A large part of SEPAL's existing code is based on the JavaScript GEE application programming interface (API).
 
-All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fab fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations.
+All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fa-brands fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations.
 
 SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked.
 
@@ -125,7 +125,7 @@ Connection
     :title: SEPAL landing
     :align: center
 
-3. Next to the Google logo (:icon:`fab fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*).
+3. Next to the Google logo (:icon:`fa-brands fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*).
 
 .. thumbnail:: ../_images/setup/gee/user_interface_disconnected.png
     :title: SEPAL disconnected

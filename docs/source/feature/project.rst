@@ -6,7 +6,7 @@ When interacting with SEPAL processes, a user will create "recipes". These recip
 Overview
 --------
 
-Go to the processes interface of SEPAL (:btn:`<fas fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases.
+Go to the processes interface of SEPAL (:btn:`<fa-solid fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases.
 
 .. thumbnail:: ../_images/feature/project/project-landing.png
     :title: Landing page of the processes exposing the project interface
@@ -34,7 +34,7 @@ Project
 
     For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed.
 
-To create a project, click on :btn:`<fas fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fas fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fas fa-check> Apply` to validate it. The newly created project will apear in the list.
+To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list.
 
 .. thumbnail:: ../_images/feature/project/new-project.png
     :title: project management popup windows
@@ -46,7 +46,7 @@ To create a project, click on :btn:`<fas fa-folder-tree> Projects`. It will open
     :group: recipe-process
     :width: 49%
 
-To remove a project, click on the :btn:`<fas fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well.
+To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well.
 
 .. thumbnail:: ../_images/feature/project/project-list.png
     :title: The list of projects available in your SEPAL account
@@ -86,12 +86,12 @@ Once a project is selected and a recipe is created, it will belong to the select
 
 .. tip::
 
-    If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fas fa-plus> Add recipe`.
+    If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fa-solid fa-plus> Add recipe`.
 
 Edit recipies
 ^^^^^^^^^^^^^
 
-Recipe behavior can be edited directly from this view. Click the :btn:`<fas fa-edit> Edit` button to open the edition interface.
+Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-edit> Edit` button to open the edition interface.
 
 .. thumbnail:: ../_images/feature/project/edit-recipes.png
     :title: The recipe edit interface
@@ -100,9 +100,9 @@ Recipe behavior can be edited directly from this view. Click the :btn:`<fas fa-e
 
 from this interface you can:
 
--   :btn:`<fas fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s).
--   :btn:`<fas fa-random> Move`: Move the selected recipe(s) to another project.
--   :btn:`<fas fa-trash> Remove`: Delete the recipe permanently.
+-   :btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s).
+-   :btn:`<fa-solid fa-random> Move`: Move the selected recipe(s) to another project.
+-   :btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently.
 
 .. warning::
 

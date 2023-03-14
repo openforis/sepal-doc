@@ -117,4 +117,4 @@ Suporting institutions
 
 .. |trash-icon| raw:: html
 
-    <i class="fa fa-trash"></i>
+    <i class="fa-solid fa-trash"></i>

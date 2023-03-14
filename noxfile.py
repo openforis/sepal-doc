@@ -9,7 +9,7 @@ import nox
 @nox.session(name="docs", reuse_venv=True)
 def docs(session):
     """Build the documentation."""
-    builder = session.posargs[0] if len(session.posagrs) > 0 else "html"
+    builder = session.posargs[0] if len(session.posargs) > 0 else "html"
     session.install("-r", "requirements.txt")
     session.run("python", "docs/source/_script/modules.py")
     session.run("python", "docs/source/_script/environment.py")

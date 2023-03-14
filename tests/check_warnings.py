@@ -34,13 +34,13 @@ def check_warnings(file: Path) -> int:
         index = [i for i, twa in enumerate(test_warnings) if wa in twa]
         if len(index) == 0:
             missing_warnings += [wa]
-            print(f"Warning was not raised: {wa}\n")
+            print(f"Warning was not raised: {wa}")
         else:
             test_warnings.pop(index[0])
 
     # the remaining one are unexpected
     for twa in test_warnings:
-        print(f"Unexpected warning: {twa}\n")
+        print(f"Unexpected warning: {twa}")
 
     return len(missing_warnings) != 0 or len(test_warnings) != 0
 

@@ -29,7 +29,7 @@ Some actions or projects may require more storage to perform analysis at the pro
 User report
 -----------
 
-In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fas fa-dollar-sign> x.xx/h`.
+In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`.
 
 .. thumbnail:: ../_images/setup/resource/button_from_recipe.png
    :title: The **User report** button from a **Recipe**.

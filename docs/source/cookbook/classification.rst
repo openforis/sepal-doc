@@ -66,7 +66,7 @@ The first step consists of selecting the image bands on which to apply the class
 
     If multiple images are selected, each selected image should overlap each other. If masked pixels are found in one of the bands, the classifier will mask them.
 
-Select :btn:`<fas fa-plus> Add`. The following screen should be displayed:
+Select :btn:`<fa-solid fa-plus> Add`. The following screen should be displayed:
 
 .. thumbnail:: ../_images/cookbook/classification/image_source.png
     :group: classification-recipe
@@ -132,7 +132,7 @@ Derived bands
 
 The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly.
 
-Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands.
+Select :btn:`<fa-solid fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands.
 
 .. note::
 
@@ -150,13 +150,13 @@ Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and
 
     You should notice that in the figure, we compute the normalized difference between :code:`nir` and :code:`red` (i.e. the NDVI). It is also precomputed in the :code:`Indexes` derived bands.
 
-Once the image selection is done, select :btn:`<fas fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fas fa-trash>` button, you will remove the image and its band from the analysis altogether.
+Once the image selection is done, select :btn:`<fa-solid fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fa-solid fa-trash>` button, you will remove the image and its band from the analysis altogether.
 
 .. thumbnail:: ../_images/cookbook/classification/selected_bands.png
     :group: classification-recipe
     :title: All the selected bands from the selected images.
 
-From there, select :btn:`<fas fa-chevron-right> Next` to continue to the next step.
+From there, select :btn:`<fa-solid fa-chevron-right> Next` to continue to the next step.
 
 Legend setup
 ^^^^^^^^^^^^
@@ -176,7 +176,7 @@ Manual legend
 
 The first and most natural way of building a legend is to do it from scratch.
 
-Select :btn:`<fas fa-plus> Add` to add a new class to your legend.
+Select :btn:`<fa-solid fa-plus> Add` to add a new class to your legend.
 
 A class is defined by three key elements:
 
@@ -184,7 +184,7 @@ A class is defined by three key elements:
 - Value (2): Select any integer value (value must be unique).
 - Class (3): Insert a class description (cannot be empty).
 
-Select the :btn:`<fas fa-plus> Add` button again to add an extra class line. The :btn:`<fas fa-trash>` button can be used to remove a specific line.
+Select the :btn:`<fa-solid fa-plus> Add` button again to add an extra class line. The :btn:`<fa-solid fa-trash>` button can be used to remove a specific line.
 
 .. tip::
 
@@ -243,7 +243,7 @@ This one is the same using RGB-defined colors:
     95,Mangroves,0,207,117
     100,Moss,250,230,160
 
-Once the fully qualified legend file has been prepared on your computer, select :btn:`<fas fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files.
+Once the fully qualified legend file has been prepared on your computer, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files.
 
 As shown on the next image, you can then select the columns that are defining your .csv file (select :btn:`Single column` for hexadecimal-defined colors and :btn:`multiple columns` for RGB-defined colors).
 
@@ -251,20 +251,20 @@ As shown on the next image, you can then select the columns that are defining yo
     :group: classification-recipe
     :title: Import legend from csv.
 
-Select :btn:`<fas fa-check> Apply` to validate your selection. The classes will be added to the legend panel and you'll be able to modify the legend using the parameters presented in the previous section.
+Select :btn:`<fa-solid fa-check> Apply` to validate your selection. The classes will be added to the legend panel and you'll be able to modify the legend using the parameters presented in the previous section.
 
 .. thumbnail:: ../_images/cookbook/classification/imported_csv.png
     :group: classification-recipe
     :title: Imported legend from a .csv file.
 
-Select :btn:`<fas fa-check> Done` to validate this step.
+Select :btn:`<fa-solid fa-check> Done` to validate this step.
 
 Every panel should be closed and the colors of the legend are now displayed at the bottom of the map. No classification is performed, as we didn't provide any training data. Nevertheless, this step is the last mandatory step for setting parameters. Training data can be added using the on-the-fly training functionality.
 
 Export legend
 """""""""""""
 
-Once your legend is validated, select the :btn:`<fas fa-chevron-up>` and then :code:`Export as CSV`.
+Once your legend is validated, select the :btn:`<fa-solid fa-chevron-up>` and then :code:`Export as CSV`.
 
 A file will be downloaded to you computer named :code:`<recipe_name>_legend.csv`, which will contain the legend information in the following format:
 
@@ -300,7 +300,7 @@ Collected reference data are data selected on-the-fly by the user. The workflow 
 
 The data appear as a pair, associating coordinates to a class value, which will be used to create training data in the classification model.
 
-If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fas fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:
+If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:
 
 .. code-block::
 
@@ -308,7 +308,7 @@ If you're satisfied with the current selection and you want to share the data wi
     32.77189961605467,-11.616264558754402,80
     ...
 
-If you are not satisfied with the selected data, select :btn:`<fas fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis.
+If you are not satisfied with the selected data, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis.
 
 .. tip::
 
@@ -327,7 +327,7 @@ Instead of collecting all of the data by hand, SEPAL provides numerous ways to i
 
     If the added training data are outside of the image to classify, they will have no impact on the final result (with the exception of the SEPAL recipe).
 
-To add new data, select :btn:`<fas fa-plus> Add` and choose the type of data to import:
+To add new data, select :btn:`<fa-solid fa-plus> Add` and choose the type of data to import:
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-data.png
     :group: classification-recipe
@@ -348,7 +348,7 @@ The following table is compatible with SEPAL:
     32.77189961605467,-11.616264558754402,80,Shrublands,Pierrick rambaud
     ...
 
-The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fas fa-chevron-left> Next` once every column is filled.
+The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fa-solid fa-chevron-left> Next` once every column is filled.
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-csv-coords.png
     :group: classification-recipe
@@ -368,9 +368,9 @@ Now that you have set up the coordinates of your points, SEPAL will request the 
     :group: classification-recipe
     :title: Import a .csv file in SEPAL as training data.
 
-Select :btn:`<fas fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file.
+Select :btn:`<fa-solid fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file.
 
-Selecting the :btn:`<fas fa-check> Done` button will complete the uploading procedure.
+Selecting the :btn:`<fa-solid fa-check> Done` button will complete the uploading procedure.
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-csv-summary.png
     :group: classification-recipe
@@ -419,9 +419,9 @@ Start by selecting btn:`Sample classification` in the opened pop-up window, wher
 
     When all of the parameters are selected, it can take time, as SEPAL builds the sampling values on-the-fly. They will only be displayed once the sampling is validated.
 
-Select :btn:`<fas fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it.
+Select :btn:`<fa-solid fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it.
 
-Select the :btn:`<fas fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored.
+Select the :btn:`<fa-solid fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored.
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-sample-summary.png
     :group: classification-recipe
@@ -531,14 +531,14 @@ The number (4) indicates a cluster of existing training points. Zoom-in and they
 Select points
 ^^^^^^^^^^^^^
 
-To start adding points, open the training interface by selecting :btn:`<fas fa-map-marker>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fas fa-plus`.
+To start adding points, open the training interface by selecting :btn:`<fa-solid fa-map-marker>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fa-solid fa-plus`.
 
 The process to add new training data is as follows:
 
 1.   **Click on the map to select a point**: You can click in any of the panels (this is not restricted to the recipe panel), but to be useful, the point needs to be within the border of the AOI. If it's not already the case, the class selection panel will appear in the upper-right of the window (2).
 2.   **Select the class value**: The previous class value is preselected, but you can change it to any other class value from the defined legend. The legend is displayed as :code:`<legend_classname> (<legend_value>)`.
 
-You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fas fa-times> Close` (3) and select :btn:`<fas fa-map-marker>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window.
+You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fa-solid fa-times> Close` (3) and select :btn:`<fa-solid fa-map-marker>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window.
 
 .. thumbnail:: ../_images/cookbook/classification/add_point.png
     :group: classification-recipe
@@ -547,10 +547,10 @@ You can now click elsewhere on the map to add another point. If you are satisfie
 Modify existing points
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To modify existing points, select the :btn:`<fas fa-map-marker>` to open the point editing interface and follow the following steps:
+To modify existing points, select the :btn:`<fa-solid fa-map-marker>` to open the point editing interface and follow the following steps:
 
 1.   **Select a point**: To select a point, click on an existing marker. It will appear bolder than the others. If it's not already the case, the class selection panel will appear in the upper-right of the window.
-2.   **Change the class value**: The point class will be selected in the editing menu with a :icon:`fas fa-check`. Select any other class value to change it.
+2.   **Change the class value**: The point class will be selected in the editing menu with a :icon:`fa-solid fa-check`. Select any other class value to change it.
 
 Check the validity
 ^^^^^^^^^^^^^^^^^^
@@ -575,7 +575,7 @@ Export
 Start download
 ^^^^^^^^^^^^^^
 
-Selecting the :icon:`fas fa-cloud-download-alt` tab will open the **Retrieve** panel where you can select the exportation parameters (1).
+Selecting the :icon:`fa-solid fa-cloud-download-alt` tab will open the **Retrieve** panel where you can select the exportation parameters (1).
 
 You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output.
 
@@ -587,7 +587,7 @@ You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Ea
 
     If :btn:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__.
 
-Select :btn:`<fas fa-check> Apply` to start the download process.
+Select :btn:`<fa-solid fa-check> Apply` to start the download process.
 
 .. thumbnail:: ../_images/cookbook/classification/export.png
     :group: classification-recipe
@@ -596,7 +596,7 @@ Select :btn:`<fas fa-check> Apply` to start the download process.
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-By going to the **Task** tab (in the lower-left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
+By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-tasks>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
 
 The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
