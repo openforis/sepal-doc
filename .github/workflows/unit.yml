@@ -29,8 +29,8 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Build docs
         run: |
-          python -m docs/source/_script/modules.py
-          python -m docs/source/_script/environment.py
+          python docs/source/_script/modules.py
+          python docs/source/_script/environment.py
           sphinx-build -b html docs/source docs/build/html -w warnings.txt
       - name: Check for unexpected Sphinx warnings
         run: python tests/check_warnings.py
