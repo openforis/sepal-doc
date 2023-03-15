@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"PO-Revision-Date: 2023-03-15 08:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "Aperçu"
 
 #: ../../source/feature/project.rst:9
 msgid "Go to the processes interface of SEPAL (:btn:`<fa-solid fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases."
-msgstr ""
+msgstr "Allez à l'interface processus de SEPAL (:btn:`<fa-solid fa-globe>`) vous devriez voir ce qui suit, complétée par une liste de recettes existantes si vous en avez déjà créé quelques-unes dans les versions précédentes."
 
 #: ../../source/feature/project.rst:16
 msgid "the following intercation are available on this page:"
@@ -76,11 +76,11 @@ msgstr "Pour chaque utilisateur, un projet :code:`[no projetc]` est créé à l'
 
 #: ../../source/feature/project.rst:37
 msgid "To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list."
-msgstr ""
+msgstr "Pour créer un projet, cliquez sur :btn:`<fa-solid fa-folder-tree> Projets`. Cela ouvrira l'interface suivante. puis cliquez sur :btn:`<fa-solid fa-pencil> Ajouter` pour créer un nouveau projet. Remplissez simplement le nom et appuyez sur :btn:`<fa-solid fa-check> Appliquez` pour le valider. Le projet nouvellement créé apparaîtra dans la liste."
 
 #: ../../source/feature/project.rst:49
 msgid "To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well."
-msgstr ""
+msgstr "Pour supprimer un projet, cliquez sur l'icône :btn:`<fa-solid fa-trash>` à côté de son nom. Toutes les recettes incluses dans le processus seront également détruites."
 
 #: ../../source/feature/project.rst:57
 msgid "Recipes"
@@ -112,7 +112,7 @@ msgstr "Une fois qu'un projet est sélectionné et qu'une recette est créée, i
 
 #: ../../source/feature/project.rst:89
 msgid "If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fa-solid fa-plus> Add recipe`."
-msgstr ""
+msgstr "Si vous ne voulez pas que votre recette soit associée à un projet, dé-filtrez la liste avant de cliquer sur :btn:`<fa-solid fa-plus> Ajouter une recette`."
 
 #: ../../source/feature/project.rst:92
 msgid "Edit recipies"
@@ -120,7 +120,7 @@ msgstr "Éditer des recettes"
 
 #: ../../source/feature/project.rst:94
 msgid "Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the edition interface."
-msgstr ""
+msgstr "Le comportement de la recette peut être édité directement à partir de cette vue. Cliquez sur le bouton :btn:`<fa-solid fa-pen-to-square> Éditez` pour ouvrir l'interface d'édition."
 
 #: ../../source/feature/project.rst:101
 msgid "from this interface you can:"
@@ -128,15 +128,15 @@ msgstr "à partir de cette interface vous pouvez :"
 
 #: ../../source/feature/project.rst:103
 msgid ":btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s)."
-msgstr ""
+msgstr ":btn:`<fa-solid fa-check> Sélectionner`: Sélectionner/désélectionner toutes les recettes affichées à l'écran. Toute autre opération d'édition ne sera appliquée que sur la ou les recettes sélectionnées."
 
 #: ../../source/feature/project.rst:104
 msgid ":btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project."
-msgstr ""
+msgstr ":btn:`<fa-solid fa-shuffle> Déplacer`: Déplacer le(s) recette(s) sélectionnée(s) vers un autre projet."
 
 #: ../../source/feature/project.rst:105
 msgid ":btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently."
-msgstr ""
+msgstr ":btn:`<fa-solid fa-trash> Supprimer`: Supprime définitivement la recette."
 
 #: ../../source/feature/project.rst:109
 msgid "Before deleting individual recipes make sure that they are not used as inputs in others."
