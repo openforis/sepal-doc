@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:30+0100\n"
-"PO-Revision-Date: 2023-03-13 12:00\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:06\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -144,8 +144,8 @@ msgid "ReST role to include inline icons in the documenation (usualy when refere
 msgstr "Rôle ReST pour inclure les icônes en ligne dans la documentation (généralement lorsque vous faites référence à un btn). Vous pouvez trouver l'icône que vous cherchez dans la bibliothèque fontawesome `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__."
 
 #: ../../source/team/contribute.rst:116
-msgid "I'm a folder icon: :icon:`fa fa-folder`"
-msgstr "Je suis une icône de dossier : :icon:`fa fa-folder`"
+msgid "I'm a folder icon: :icon:`fa-solid fa-folder`"
+msgstr ""
 
 #: ../../source/team/contribute.rst:119
 msgid "btn"
@@ -156,12 +156,12 @@ msgid "Rest role to include complete btn in the documentation. You can find the 
 msgstr "Rest rôle pour inclure des bouttons dans la documentation. Vous pouvez trouver l'icône que vous cherchez dans la bibliothèque fontawesome `page <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__. Le texte est facultatif."
 
 #: ../../source/team/contribute.rst:129
-msgid "I'm a apply btn: :btn:`<fas fa-check> apply`"
+msgid "I'm a apply btn: :btn:`<fa-solid fa-check> apply`"
 msgstr ""
 
 #: ../../source/team/contribute.rst:131
-msgid "I'm the app btn: :btn:`<fas fa-wrench>`"
-msgstr "Je suis l'app btn : :btn:`<fas fa-wrench>`"
+msgid "I'm the app btn: :btn:`<fa-solid fa-wrench>`"
+msgstr ""
 
 #: ../../source/team/contribute.rst:134
 msgid "Minor change"
@@ -559,87 +559,39 @@ msgstr ""
 msgid "Replace \"<ID>\" by the number of the class, \"<link>\" by the invitation link and \"<title>\" by the title of the classroom. Add also the latest \"<modification date>\" in \"YYY-mm-dd\" format."
 msgstr ""
 
-#: ../../source/team/contribute.rst:471
-msgid "Doc spell check"
-msgstr ""
-
-#: ../../source/team/contribute.rst:475
-msgid "Experimental feature, still require some work to identify all the FAO related words and avoid false positives."
-msgstr ""
-
-#: ../../source/team/contribute.rst:477
-msgid "If you want to spell check your work you can run a specific building tool based on `sphinxcontrib-spelling <https://sphinxcontrib-spelling.readthedocs.io/en/latest/customize.html#private-dictionaries>`_. Open a terminal and move to the :code:`sepal-doc/docs/` folder. There run the following command:"
-msgstr ""
-
-#: ../../source/team/contribute.rst:483
-msgid "A long output of misspelled word will be displayed in your terminal. it's not really user-friendly. It's also building a spelling folder that contains all the files with misspelled words  in :code:`sepal-doc/docs/build/spelling/`."
-msgstr ""
-
-#: ../../source/team/contribute.rst:485
-msgid "For each line you will have:"
-msgstr ""
-
-#: ../../source/team/contribute.rst:487
-msgid "the file"
-msgstr ""
-
-#: ../../source/team/contribute.rst:488
-msgid "the line"
-msgstr ""
-
-#: ../../source/team/contribute.rst:489
-msgid "the misspelled word"
-msgstr ""
-
-#: ../../source/team/contribute.rst:490
-msgid "a list of suggestion"
-msgstr ""
-
-#: ../../source/team/contribute.rst:491
-msgid "the context"
-msgstr ""
-
-#: ../../source/team/contribute.rst:493
-msgid "Here is an example:"
-msgstr ""
-
-#: ../../source/team/contribute.rst:505
-msgid "Instead of using our tool maybe your IDE is providing a spell check tool designed for .rst file."
-msgstr ""
-
-#: ../../source/team/contribute.rst:508
+#: ../../source/team/contribute.rst:473
 msgid "Create a PR"
 msgstr ""
 
-#: ../../source/team/contribute.rst:512
+#: ../../source/team/contribute.rst:477
 msgid "This very documentation page was requested in the `issue #19 <https://github.com/openforis/sepal-doc/issues/19>`_ and add to the main documentation through the `PR #24 <https://github.com/openforis/sepal-doc/pull/24>`_."
 msgstr ""
 
-#: ../../source/team/contribute.rst:514
+#: ../../source/team/contribute.rst:479
 msgid "Now that you have finished your modifications and pushed them to GitHub we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`). on this page click on the :code:`pull request` button:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:519
+#: ../../source/team/contribute.rst:484
 msgid "pull request btn"
 msgstr ""
 
-#: ../../source/team/contribute.rst:519
+#: ../../source/team/contribute.rst:484
 msgid "Start the pull request interface"
 msgstr ""
 
-#: ../../source/team/contribute.rst:521
+#: ../../source/team/contribute.rst:486
 msgid "In the pull request interface, click on :code:`new pull request` button:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:526
+#: ../../source/team/contribute.rst:491
 msgid "new pull request"
 msgstr ""
 
-#: ../../source/team/contribute.rst:526
+#: ../../source/team/contribute.rst:491
 msgid "create a new pull request"
 msgstr ""
 
-#: ../../source/team/contribute.rst:528
+#: ../../source/team/contribute.rst:493
 msgid "Now you need to select what is going to be pushed and where. Assuming that you have followed this entire documentation, you have not created any branch in your fork so on the left side leave :code:`openforis/sepal-doc/master` and on the right side :code:`<account>/sepal-doc/master` (1). Some extra information on the commit that will be added to master are displayed in (2). If everything is set properly (normally you don't have to change anything) then click on the :code:`create pull request` button."
 msgstr ""
 
@@ -647,47 +599,47 @@ msgstr ""
 msgid "compare branches"
 msgstr ""
 
-#: ../../source/team/contribute.rst:533
+#: ../../source/team/contribute.rst:498
 msgid "Now you enter the final step of your modifications. fill the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beginning of the documentation, you started your modifications to answer an issue from the issue tracker. It need to be referenced in your PR message at line 2 using :code:`#<issue number>`. It will help the maintainers that will review your PR understanding what you are adding to the documentation."
 msgstr ""
 
-#: ../../source/team/contribute.rst:537
+#: ../../source/team/contribute.rst:502
 msgid "You can click on the preview button to see what your PR look like with links"
 msgstr ""
 
-#: ../../source/team/contribute.rst:539
+#: ../../source/team/contribute.rst:504
 msgid "The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (2). This will allow the maintainers to make modifications to your PR files (e.g. if you made a mistake in a rst directive)"
 msgstr ""
 
-#: ../../source/team/contribute.rst:541
+#: ../../source/team/contribute.rst:506
 msgid "When everything is set, you can click on :code:`create pull request` (3)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:546
+#: ../../source/team/contribute.rst:511
 msgid "valid pr"
 msgstr ""
 
-#: ../../source/team/contribute.rst:546
+#: ../../source/team/contribute.rst:511
 msgid "Validate the creation of the PR"
 msgstr ""
 
-#: ../../source/team/contribute.rst:548
+#: ../../source/team/contribute.rst:513
 msgid "Some check will be performed automatically to check if your PR can be build with ReadTheDoc and distribute in https://docs.sepal.io."
 msgstr ""
 
-#: ../../source/team/contribute.rst:553
+#: ../../source/team/contribute.rst:518
 msgid "ci in pr"
 msgstr ""
 
-#: ../../source/team/contribute.rst:553
+#: ../../source/team/contribute.rst:518
 msgid "The continous integration will run in Github"
 msgstr ""
 
-#: ../../source/team/contribute.rst:555
+#: ../../source/team/contribute.rst:520
 msgid "When everything is ready the maintainer will look at your PR and make the appropriate modifications (if needed), afterward the PR will be accepted and the new page will be available in the main documentation."
 msgstr ""
 
-#: ../../source/team/contribute.rst:559
+#: ../../source/team/contribute.rst:524
 msgid "once the PR is validate, please consider deleting your fork in order to avoid merging issues next you'll want to make modification to the repository."
 msgstr ""
 
@@ -695,7 +647,7 @@ msgstr ""
 msgid "delete fork"
 msgstr ""
 
-#: ../../source/team/contribute.rst:564
+#: ../../source/team/contribute.rst:529
 msgid "click here and follow the instructions ot delete your repository"
 msgstr ""
 
@@ -703,11 +655,77 @@ msgstr ""
 msgid "delete popup"
 msgstr ""
 
-#: ../../source/team/contribute.rst:569
+#: ../../source/team/contribute.rst:534
 msgid "Popu to delete the fork used in the closed PR"
 msgstr ""
 
-#: ../../source/team/contribute.rst:571
+#: ../../source/team/contribute.rst:536
 msgid "IF YOU ARE OWNER OF :code:`openforis` DO NOT DELETE THE :code:`openforis/sepal-doc` ONE"
 msgstr ""
+
+#~ msgid "I'm a folder icon: :icon:`fa fa-folder`"
+#~ msgstr ""
+
+#~ msgid "I'm a apply btn: :btn:`<fas fa-check> apply`"
+#~ msgstr ""
+
+#~ msgid "I'm the app btn: :btn:`<fas fa-wrench>`"
+#~ msgstr ""
+
+#~ msgid "Doc spell check"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Experimental feature, still require some "
+#~ "work to identify all the FAO "
+#~ "related words and avoid false positives."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to spell check your"
+#~ " work you can run a specific "
+#~ "building tool based on `sphinxcontrib-"
+#~ "spelling <https://sphinxcontrib-"
+#~ "spelling.readthedocs.io/en/latest/customize.html#private-"
+#~ "dictionaries>`_. Open a terminal and "
+#~ "move to the :code:`sepal-doc/docs/` "
+#~ "folder. There run the following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A long output of misspelled word "
+#~ "will be displayed in your terminal. "
+#~ "it's not really user-friendly. It's "
+#~ "also building a spelling folder that "
+#~ "contains all the files with misspelled"
+#~ " words  in :code:`sepal-"
+#~ "doc/docs/build/spelling/`."
+#~ msgstr ""
+
+#~ msgid "For each line you will have:"
+#~ msgstr ""
+
+#~ msgid "the file"
+#~ msgstr ""
+
+#~ msgid "the line"
+#~ msgstr ""
+
+#~ msgid "the misspelled word"
+#~ msgstr ""
+
+#~ msgid "a list of suggestion"
+#~ msgstr ""
+
+#~ msgid "the context"
+#~ msgstr ""
+
+#~ msgid "Here is an example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Instead of using our tool maybe "
+#~ "your IDE is providing a spell "
+#~ "check tool designed for .rst file."
+#~ msgstr ""
 
