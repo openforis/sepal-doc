@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:07\n"
+"PO-Revision-Date: 2023-03-15 08:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:2
 msgid "Time series"
-msgstr ""
+msgstr "Séries temporelles"
 
 #: ../../source/cookbook/time_series.rst:5
 msgid "Create and retrieve Satellite Image Time Series (SITS) to study patterns and key changes in landscape evolution over time"
-msgstr ""
+msgstr "Créer et récupérer des Série Temporelles d'images satellites (SITS) pour étudier les modèles et les changements clés dans l'évolution du paysage au fil du temps"
 
 #: ../../source/cookbook/time_series.rst:8
 msgid "Overview"
-msgstr ""
+msgstr "Présentation"
 
 #: ../../source/cookbook/time_series.rst:10
 msgid "A Satellite Image Time Series (SITS) is a set of satellite images taken of the same scene at different times. A SITS makes use of different satellite sources to obtain a larger data series with a short time interval between two images. In this case, it is fundamental to observe the spatial resolution and registration constraints."
@@ -36,68 +36,68 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:12
 msgid "Satellite observations offer opportunities for understanding how the Earth is changing, determining the causes of these changes, and predicting future changes. Remotely-sensed data, combined with information from ecosystem models, offers an opportunity for predicting and understanding the behavior of Earth's ecosystem. Sensors with high spatial and temporal resolutions make the observation of precise spatio-temporal structures in dynamic scenes more accessible. Temporal components integrated with spectral and spatial dimensions allow the identification of complex patterns concerning applications connected with environmental monitoring and analysis of land cover dynamics."
-msgstr ""
+msgstr "Les observations par satellite offrent des occasions de comprendre comment la Terre est en train de changer, de déterminer les causes de ces changements et de prévoir les changements futurs. Les données à distance, combinées à des informations issues de modèles écosystémiques, offrent la possibilité de prédire et de comprendre le comportement de l'écosystème de la Terre. Les capteurs à haute résolution spatiale et temporelle rendent l’observation de structures spatio-temporelles précises dans des scènes dynamiques plus accessibles. Les composants temporels intégrés aux dimensions spectrale et spatiale permettent l'identification de modèles complexes concernant les applications liées à la surveillance environnementale et à l'analyse de la dynamique de la couverture terrestre."
 
 #: ../../source/cookbook/time_series.rst:14
 msgid "Change detection can only provide a \"before and after\" scenario; a time-series analysis provides an opportunity to study patterns and key changes in the landscape evolution over time."
-msgstr ""
+msgstr "La détection des changements ne peut fournir qu'un scénario \"avant et après\" ; une analyse de séries temporelles offre l'occasion d'étudier les modèles et les changements clés dans l'évolution du paysage au fil du temps."
 
 #: ../../source/cookbook/time_series.rst:16
 msgid "This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-tools>`__ and `Copernicus <https://www.copernicus.eu/>`__ programs' imagery using the Google Earth Engine (GEE) datacube."
-msgstr ""
+msgstr "Cette recette SEPAL permet aux utilisateurs de créer et de récupérer des SITS basés sur l'imagerie des programmes `Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-tools>`__ et `Copernicus <https://www.copernicus.eu/>`__ à l'aide du datacube de Google Earth Engine (GEE)."
 
 #: ../../source/cookbook/time_series.rst:20
 msgid "You won't be able to download images if your SEPAL and GEE account aren't connected. To learn more, go to `Connect SEPAL to GEE <../setup/gee.html>`__."
-msgstr ""
+msgstr "Vous ne serez pas en mesure de télécharger des images si votre compte SEPAL et GEE n'est pas connecté. Pour en savoir plus, allez à `Connecter SEPAL à GEE <../setup/gee.html>`__."
 
 #: ../../source/cookbook/time_series.rst:23
 msgid "Start"
-msgstr ""
+msgstr "Commencer"
 
 #: ../../source/cookbook/time_series.rst:25
 msgid "Once the Time-series recipe is selected, SEPAL will open the recipe process in a new tab (1); the base map will change to Google high-resolution imagery and the **Area of interest (AOI)** selection window will appear in the lower right (2)."
-msgstr ""
+msgstr "Une fois la recette de la série temporelle sélectionnée, SEPAL ouvrira le processus de recette dans un nouvel onglet (1); la carte de base passera à l'image de haute résolution Google et la fenêtre de sélection **Zone d'intérêt (AOI)** apparaîtra en bas à droite (2)."
 
 #: ../../source/cookbook/time_series.rst:31
 msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in the SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and enter a new name. It will default to :code:`Time_series_<start_date>_<end_date>_<band name>`."
-msgstr ""
+msgstr "La première étape est de changer le nom de la recette. Ce nom sera utilisé pour identifier vos fichiers et recettes dans les dossiers SEPAL. Utilisez la convention la mieux adaptée à vos besoins. Double-cliquez simplement sur l'onglet et entrez un nouveau nom. Il sera par défaut à :code:`Time_series_<start_date>_<end_date>_<band name>`."
 
 #: ../../source/cookbook/time_series.rst:43
 msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<start-<end>_<measure>_<sensors>` (e.g. :code:`sgp_2012-2018_ndfi_l78`)."
-msgstr ""
+msgstr "L'équipe SEPAL recommande d'utiliser la convention de nommage suivante : :code:`<aoi name>_<start-<end>_<measure>_<sensors>` (ex : :code:`sgp_2012-2018_ndfi_l78`)."
 
 #: ../../source/cookbook/time_series.rst:46
 #: ../../source/cookbook/time_series.rst:201
 msgid "Parameters"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../source/cookbook/time_series.rst:48
 msgid "In the lower-right corner, four tabs are available. They will allow you to customize the time series to your needs."
-msgstr ""
+msgstr "Dans le coin inférieur droit, quatre onglets sont disponibles. Ils vous permettront de personnaliser la série temporelle selon vos besoins."
 
 #: ../../source/cookbook/time_series.rst:50
 msgid ":guilabel:`AOI`: Area of interest (AOI)."
-msgstr ""
+msgstr ":guilabel:`AOI`: Zone d'intérêt (AOI)."
 
 #: ../../source/cookbook/time_series.rst:51
 msgid ":guilabel:`DAT`: Dates of the time series."
-msgstr ""
+msgstr ":guilabel:`DAT`: Dates de la série temporelle."
 
 #: ../../source/cookbook/time_series.rst:52
 msgid ":guilabel:`SRC`: Source datasets of the time series."
-msgstr ""
+msgstr ":guilabel:`SRC`: jeu de données source de la série temporelle."
 
 #: ../../source/cookbook/time_series.rst:53
 msgid ":guilabel:`PRC`: Pre-processing parameters."
-msgstr ""
+msgstr ":guilabel:`PRC`: Paramètres de prétraitement."
 
 #: ../../source/cookbook/time_series.rst:60
 msgid "AOI selection"
-msgstr ""
+msgstr "Sélection de l'AOI"
 
 #: ../../source/cookbook/time_series.rst:62
 msgid "The data exported by the recipe will be confined to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
-msgstr ""
+msgstr "Les données exportées par la recette seront limitées aux limites de l'AOI. Il y a plusieurs façons de sélectionner l'AOI dans SEPAL:"
 
 #: ../../source/cookbook/time_series.rst:64
 msgid "Administrative boundaries"
@@ -113,7 +113,7 @@ msgstr "Dessiner un polygone"
 
 #: ../../source/cookbook/time_series.rst:68
 msgid "For more information, go to :doc:`../feature/aoi_selector`."
-msgstr ""
+msgstr "Pour plus d'informations, allez à :doc:`../feature/aoi_selector`."
 
 #: ../../source/cookbook/time_series.rst:75
 msgid "Dates"
