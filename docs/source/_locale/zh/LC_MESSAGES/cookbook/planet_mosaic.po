@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 16:22\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:08\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -99,7 +99,7 @@ msgid "Drawn polygons"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:65
-msgid "they are extensively described in our documentation. Please read :doc:`..feature/aoi_selector` to know more."
+msgid "they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:72
@@ -111,11 +111,11 @@ msgid "In the :guilabel:`DAT` tab, you will be asked to select the dates of the 
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:80
-msgid "Click the :btn:`<fas fa-calendar-alt>` to display the Date picker and select your date."
+msgid "Click the :btn:`<fa-solid fa-calendar-days>` to display the Date picker and select your date."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:86
-msgid "When the selection is done click :btn:`<fa fa-chevron-right> next` button."
+msgid "When the selection is done click :btn:`<fa-solid fa-chevron-right> next` button."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:89
@@ -131,7 +131,7 @@ msgid "3 options are available: :guilabel:`NICFI basemaps`, :guilabel:`Custom ba
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:95
-msgid "Once you are finished, click on :btn:`<fas fa-check> done` to finish the process."
+msgid "Once you are finished, click on :btn:`<fa-solid fa-check> done` to finish the process."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:98
@@ -175,7 +175,7 @@ msgid "This step is not mandatory due to Planet mosaics are already sanitized."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:139
-msgid "SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fas fa-times> close` button to finish the customization."
+msgid "SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fa-solid fa-xmark> close` button to finish the customization."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:146
@@ -223,7 +223,7 @@ msgid "Retrieve"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:190
-msgid "Click the :btn:`<fas fa-cloud-download-alt>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination."
+msgid "Click the :btn:`<fa-solid fa-cloud-arrow-down>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:198
@@ -307,7 +307,7 @@ msgid "If :guilabel:`google earth engine asset` is not displayed, it means that 
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:239
-msgid "Click on :btn:`<fas fa-check> apply` to start the download process."
+msgid "Click on :btn:`<fa-solid fa-check> apply` to start the download process."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:242
@@ -333,4 +333,50 @@ msgstr ""
 #: ../../source/cookbook/planet_mosaic.rst:269
 msgid "Now that you have downloaded the Planet Mosaic to your SEPAL or/and GEE account, it can be retrieved to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
+
+#~ msgid ""
+#~ "they are extensively described in our"
+#~ " documentation. Please read "
+#~ ":doc:`..feature/aoi_selector` to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click the :btn:`<fas fa-calendar-alt>`"
+#~ " to display the Date picker and "
+#~ "select your date."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the selection is done click "
+#~ ":btn:`<fa fa-chevron-right> next` "
+#~ "button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you are finished, click on "
+#~ ":btn:`<fas fa-check> done` to finish "
+#~ "the process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL provides you with options to "
+#~ "customize the images used to create "
+#~ "the compositing mosaic. The selected "
+#~ "parameter will be automatically applied "
+#~ "to the analysis, click the :btn:`<fas"
+#~ " fa-times> close` button to finish"
+#~ " the customization."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click the :btn:`<fas fa-cloud-"
+#~ "download-alt>` tab, the retrieve panel "
+#~ "will be displayed, you can select "
+#~ "which bands or indexes to download, "
+#~ "specify the output scale, and "
+#~ "destination."
+#~ msgstr ""
+
+#~ msgid "Click on :btn:`<fas fa-check> apply` to start the download process."
+#~ msgstr ""
 
