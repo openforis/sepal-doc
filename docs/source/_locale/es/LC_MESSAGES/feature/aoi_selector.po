@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-17 17:46\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:06\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -23,7 +23,7 @@ msgid "Area of Interest Selection"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:4
-msgid "In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fas fa-globe>` process recipes or the :btn:`<fas fa-wrench>` custom applications you will find different user interfaces."
+msgid "In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fa-solid fa-globe>` process recipes or the :btn:`<fa-solid fa-wrench>` custom applications you will find different user interfaces."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:9
@@ -31,7 +31,7 @@ msgid "Recipe AOI"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:11
-msgid "The recipes are accessible through the orange :btn:`<fas fa-globe>` globe icon located at the left side of the SEPAL window."
+msgid "The recipes are accessible through the orange :btn:`<fa-solid fa-globe>` globe icon located at the left side of the SEPAL window."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:13
@@ -55,7 +55,7 @@ msgid "Drawn polygons."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:35
-msgid "The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed."
+msgid "The selected method at this step is not definitive, you can change it at any stage by simply clicking the :btn:`<fa-solid fa-globe> selected method` dropdown on the top of the AOI window and a list with the available methods will be displayed."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:38
@@ -83,7 +83,7 @@ msgid "The area of interest and preview will take longer to show up when bufferi
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:54
-msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
+msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:63
@@ -119,7 +119,7 @@ msgid "The area of interest and the preview will take longer to show up when buf
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:82
-msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map."
+msgid "Once all the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:91
@@ -131,11 +131,11 @@ msgid "You can use a custom AOI defined by a drawn shape. This shape will be con
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:95
-msgid "The pointer in the map will be converted into a :icon:`fa fa-plus`. Click successively on the map to draw a polygon."
+msgid "The pointer in the map will be converted into a :icon:`fa-solid fa-plus`. Click successively on the map to draw a polygon."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:97
-msgid "Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
+msgid "Once the geometry is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it click the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom on the AOI and draw it in grey on the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:107
@@ -143,7 +143,7 @@ msgid "Module AOI"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:109
-msgid "The module AOI selector is available in some of the SEPAL-contrib modules. To access an app, click the purple wrench :btn:`<fa fa-wrench>` located on the left side of the SEPAL platform, use the app's dashboard to search and open a module."
+msgid "The module AOI selector is available in some of the SEPAL-contrib modules. To access an app, click the purple wrench :btn:`<fa-solid fa-wrench>` located on the left side of the SEPAL platform, use the app's dashboard to search and open a module."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:111
@@ -247,23 +247,23 @@ msgid "If the module you are using is doing the process in GEE, a new asset will
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:185
-msgid "Three drawing geometries will be shown up at the top left corner of the map: a :btn:`<fa fa-draw-polygon>` polygon, a :btn:`<fas fa-square>` square and a :btn:`<fas fa-circle>` circle."
+msgid "Three drawing geometries will be shown up at the top left corner of the map: a :btn:`<fa-solid fa-draw-polygon>` polygon, a :btn:`<fa-solid fa-square>` square and a :btn:`<fa-solid fa-circle>` circle."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:194
-msgid "To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fas fa-plus-square>` and :btn:`<fas fa-minus-square>` buttons located at the top right corner."
+msgid "To draw, zoom in at your area of interest by using the mouse wheel or the :btn:`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` buttons located at the top right corner."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:196
-msgid ":btn:`<fa fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry in the map. To close and finish your geometry, click the first vertex or use the :guilabel:`finish` button. Note that once you select the polygon geometry, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`."
+msgid ":btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry in the map. To close and finish your geometry, click the first vertex or use the :guilabel:`finish` button. Note that once you select the polygon geometry, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:198
-msgid ":btn:`<fas fa-square>` (rectangle): Click the top left corner of the rectangle in the map, it will be the first vertex of the geometry, now, —without clicking—, move the mouse to the opposite corner (bottom left) and click the map, it will close the geometry and the rectangle will be colored in a teal color."
+msgid ":btn:`<fa-solid fa-square>` (rectangle): Click the top left corner of the rectangle in the map, it will be the first vertex of the geometry, now, —without clicking—, move the mouse to the opposite corner (bottom left) and click the map, it will close the geometry and the rectangle will be colored in a teal color."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:200
-msgid ":btn:`<fas fa-circle>` (circle): Click the center of the circle and —without stopping clicking— draw the distance (radius), then drop the click. A new blue marker will appear on the map showing the center of the circle. The geometry won't be drawn in the map until you click the :guilabel:`Select AOI` button, so do not worry if you can't see the circle at this time, the module will save the geometry in the background."
+msgid ":btn:`<fa-solid fa-circle>` (circle): Click the center of the circle and —without stopping clicking— draw the distance (radius), then drop the click. A new blue marker will appear on the map showing the center of the circle. The geometry won't be drawn in the map until you click the :guilabel:`Select AOI` button, so do not worry if you can't see the circle at this time, the module will save the geometry in the background."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:205
@@ -339,7 +339,7 @@ msgid "Once you have selected a valid asset, the module will query all the avail
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:254
-msgid "note that this method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa fa-google` icon at the right side of the drawer."
+msgid "note that this method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa-solid fa-google` icon at the right side of the drawer."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:257
@@ -349,4 +349,157 @@ msgstr ""
 #: ../../source/feature/aoi_selector.rst:259
 msgid "Finally, click the :guilabel:`Select AOI` button, if all the inputs are correct you will see a success message and your aoi will be displayed in green on the map. Otherwise, an indicative error message will be displayed."
 msgstr ""
+
+#~ msgid ""
+#~ "In the majority of SEPAL modules, "
+#~ "the first mandatory input, is the "
+#~ "area of interest (AOI), this input "
+#~ "will be used as a boundary to "
+#~ "cut the processes and its outputs. "
+#~ "Depending on if you are using the"
+#~ " default :btn:`<fas fa-globe>` process "
+#~ "recipes or the :btn:`<fas fa-wrench>`"
+#~ " custom applications you will find "
+#~ "different user interfaces."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The recipes are accessible through the"
+#~ " orange :btn:`<fas fa-globe>` globe "
+#~ "icon located at the left side of"
+#~ " the SEPAL window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The selected method at this step "
+#~ "is not definitive, you can change "
+#~ "it at any stage by simply clicking"
+#~ " the :btn:`<fa fa-globe> selected "
+#~ "method` dropdown on the top of the"
+#~ " AOI window and a list with the"
+#~ " available methods will be displayed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all the parameters are selected,"
+#~ " the AOI will be previewed in "
+#~ "the small map at the bottom of "
+#~ "the frame. To validate it click "
+#~ "the :btn:`<fa fa-check> Apply` button."
+#~ " Once validated, the map will zoom"
+#~ " on the AOI and draw it in "
+#~ "grey on the map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all the parameters are selected,"
+#~ " the AOI will be previewed in "
+#~ "the small map at the bottom of "
+#~ "the frame. To validate it, click "
+#~ "the :btn:`<fa fa-check> Apply` button."
+#~ " Once validated, the map will zoom"
+#~ " in on the AOI and draw it "
+#~ "in grey on the map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The pointer in the map will be "
+#~ "converted into a :icon:`fa fa-plus`. "
+#~ "Click successively on the map to "
+#~ "draw a polygon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the geometry is closed, the "
+#~ "AOI will be previewed in the small"
+#~ " map at the bottom of the "
+#~ "frame. To validate it click the "
+#~ ":btn:`<fa fa-check> Apply` button. Once"
+#~ " validated, the map will zoom on "
+#~ "the AOI and draw it in grey "
+#~ "on the map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The module AOI selector is available "
+#~ "in some of the SEPAL-contrib "
+#~ "modules. To access an app, click "
+#~ "the purple wrench :btn:`<fa fa-wrench>`"
+#~ " located on the left side of "
+#~ "the SEPAL platform, use the app's "
+#~ "dashboard to search and open a "
+#~ "module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Three drawing geometries will be shown"
+#~ " up at the top left corner of"
+#~ " the map: a :btn:`<fa fa-draw-"
+#~ "polygon>` polygon, a :btn:`<fas fa-"
+#~ "square>` square and a :btn:`<fas fa-"
+#~ "circle>` circle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To draw, zoom in at your area "
+#~ "of interest by using the mouse "
+#~ "wheel or the :btn:`<fas fa-plus-"
+#~ "square>` and :btn:`<fas fa-minus-"
+#~ "square>` buttons located at the top "
+#~ "right corner."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fa fa-draw-polygon>` (polygon): "
+#~ "Draw your custom polygon by clicking "
+#~ "the vertices of the geometry in "
+#~ "the map. To close and finish your"
+#~ " geometry, click the first vertex or"
+#~ " use the :guilabel:`finish` button. Note"
+#~ " that once you select the polygon "
+#~ "geometry, three new buttons will be "
+#~ "available at the top of the map:"
+#~ " :guilabel:`Finish`, :guilabel:`Delete last "
+#~ "point` and :guilabel:`Cancel`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-square>` (rectangle): Click "
+#~ "the top left corner of the "
+#~ "rectangle in the map, it will be"
+#~ " the first vertex of the geometry,"
+#~ " now, —without clicking—, move the "
+#~ "mouse to the opposite corner (bottom "
+#~ "left) and click the map, it will"
+#~ " close the geometry and the rectangle"
+#~ " will be colored in a teal "
+#~ "color."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-circle>` (circle): Click "
+#~ "the center of the circle and "
+#~ "—without stopping clicking— draw the "
+#~ "distance (radius), then drop the click."
+#~ " A new blue marker will appear "
+#~ "on the map showing the center of"
+#~ " the circle. The geometry won't be"
+#~ " drawn in the map until you "
+#~ "click the :guilabel:`Select AOI` button, "
+#~ "so do not worry if you can't "
+#~ "see the circle at this time, the"
+#~ " module will save the geometry in "
+#~ "the background."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "note that this method will only be"
+#~ " available when you are using a "
+#~ "module that requires a connection to "
+#~ "your GEE account. You can check "
+#~ "this by navigating through the app's "
+#~ "dashboard and noticing the :icon:`fa "
+#~ "fa-google` icon at the right side "
+#~ "of the drawer."
+#~ msgstr ""
 
