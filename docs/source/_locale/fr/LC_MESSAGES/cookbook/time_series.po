@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 08:19\n"
+"PO-Revision-Date: 2023-03-15 09:16\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -117,11 +117,11 @@ msgstr "Pour plus d'informations, allez à :doc:`../feature/aoi_selector`."
 
 #: ../../source/cookbook/time_series.rst:75
 msgid "Dates"
-msgstr ""
+msgstr "Dates"
 
 #: ../../source/cookbook/time_series.rst:77
 msgid "In the :guilabel:`DAT` tab, you will be asked to select the start date and end date of the time series. Select the **Date** text field to open a pop-up window. Choose the :btn:`<fa-solid fa-check> Select` button to choose a date. When both dates have been chosen, select the :btn:`<fa-solid fa-check> Apply` button."
-msgstr ""
+msgstr "Dans l'onglet :guilabel:`DAT`, il vous sera demandé de sélectionner la date de début et la date de fin de la série horaire. Sélectionnez le champ de texte **Date** pour ouvrir une fenêtre popup. Choisissez le bouton :btn:`<fa-solid fa-check> Select` pour choisir une date. Lorsque les deux dates ont été choisies, sélectionnez le bouton :btn:`<fa-solid fa-check> Appliquer`."
 
 #: ../../source/cookbook/time_series.rst:90
 msgid "Sources"
@@ -129,15 +129,15 @@ msgstr "Sources"
 
 #: ../../source/cookbook/time_series.rst:92
 msgid "As mentioned in the introduction, a SITS makes use of different satellite sources to obtain a larger data series with a shorter time interval between the images. To meet this objective, SEPAL allows you to select data from multiple entry points. You can select multiple sources from :btn:`Radar`, :btn:`Optical` or :btn:`Planet` datasets."
-msgstr ""
+msgstr "Comme mentionné dans l'introduction, un SITS utilise différentes sources satellites pour obtenir une plus grande série de données avec un intervalle de temps plus court entre les images. Pour atteindre cet objectif, SEPAL vous permet de sélectionner des données à partir de plusieurs points d’entrée. Vous pouvez sélectionner plusieurs sources dans les jeux de données :btn:`Radar`, :btn:`Optical` ou :btn:`Planet`."
 
 #: ../../source/cookbook/time_series.rst:94
 msgid "When all of the data has been selected, select :btn:`<fa-solid fa-check> Apply`."
-msgstr ""
+msgstr "Lorsque toutes les données ont été sélectionnées, sélectionnez :btn:`<fa-solid fa-check> Appliquer`."
 
 #: ../../source/cookbook/time_series.rst:101
 msgid "Pre-processing"
-msgstr ""
+msgstr "Prétraitement"
 
 #: ../../source/cookbook/time_series.rst:105
 msgid "This section is optional as these parameters are set by default."
@@ -145,27 +145,27 @@ msgstr "Cette section est optionnelle car ces paramètres sont définis par déf
 
 #: ../../source/cookbook/time_series.rst:107
 msgid "Correction: :code:`None`"
-msgstr ""
+msgstr "Correction: :code:`Aucun`"
 
 #: ../../source/cookbook/time_series.rst:108
 msgid "Cloud detection: :guilabel:`QA bands`, :guilabel:`Cloud score`"
-msgstr ""
+msgstr "Détection de nuage: :guilabel:`Bandes QA`, :guilabel:`Score Cloud`"
 
 #: ../../source/cookbook/time_series.rst:109
 msgid "Cloud masking: :guilabel:`moderate`"
-msgstr ""
+msgstr "Masquage de nuage: :guilabel:`modéré`"
 
 #: ../../source/cookbook/time_series.rst:110
 msgid "Snow masking: :guilabel:`on`"
-msgstr ""
+msgstr "Masquage des neiges: :guilabel:`activé`"
 
 #: ../../source/cookbook/time_series.rst:112
 msgid "Multiple pre-processing parameters can be set to improve the quality of the provided images. SEPAL has gathered four of them in the form of these interactive buttons. If you think others should be added, don't hesitate to mention it in our `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
-msgstr ""
+msgstr "Plusieurs paramètres de pré-traitement peuvent être définis pour améliorer la qualité des images fournies. SEPAL en a rassemblé quatre sous la forme de ces boutons interactifs. Si vous pensez que d'autres devraient être ajoutées, n'hésitez pas à le mentionner dans notre `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 
 #: ../../source/cookbook/time_series.rst:114
 msgid "**Correction**"
-msgstr ""
+msgstr "**Correction**"
 
 #: ../../source/cookbook/time_series.rst:116
 msgid ":guilabel:`Surface reflectance`: Use scenes' atmospherically corrected surface reflectance."
@@ -229,15 +229,15 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:151
 msgid "Once all of the parameters are set, you can generate data from the recipe. Some can be directly generated on-the-fly from the interface; the rest require retrieving the data from SEPAL folders."
-msgstr ""
+msgstr "Une fois que tous les paramètres sont définis, vous pouvez générer des données à partir de la recette. Certains peuvent être générés directement à la volée à partir de l'interface ; le reste nécessite de récupérer les données des dossiers SEPAL."
 
 #: ../../source/cookbook/time_series.rst:153
 msgid "The analysis icons can be found in the upper-right corner of the SEPAL interface:"
-msgstr ""
+msgstr "Les icônes d'analyse se trouvent dans le coin supérieur droit de l'interface SEPAL :"
 
 #: ../../source/cookbook/time_series.rst:155
 msgid ":btn:`<fa-solid fa-chart-area>`: Plot data."
-msgstr ""
+msgstr ":btn:`<fa-solid fa-chart-area>`: Tracer les données."
 
 #: ../../source/cookbook/time_series.rst:156
 msgid ":btn:`<fa-solid fa-cloud-arrow-down>`: Retrieve data."
@@ -361,11 +361,11 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:286
 msgid "The full folder with a consistent treefolder is required to read the `.vrt`"
-msgstr ""
+msgstr "Le dossier complet avec une arborescence cohérente est nécessaire pour lire le fichier `.vrt`"
 
 #: ../../source/cookbook/time_series.rst:288
 msgid "Here is an example of a real TS folder:"
-msgstr ""
+msgstr "Voici un exemple d'un vrai dossier de Serie Temporelle :"
 
 #: ../../source/cookbook/time_series.rst:313
 msgid "Now that you have downloaded the TS to your SEPAL account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in one of our `time-series analysis modules <../modules/time-series.html>`__."
@@ -373,7 +373,7 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:316
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
+msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "Satellite observations offer opportunities for"
