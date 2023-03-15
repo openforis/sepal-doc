@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-27 01:04+0000\n"
-"PO-Revision-Date: 2023-01-27 01:14\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:08\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -24,6 +24,14 @@ msgstr ""
 
 #: ../../source/workflows/sop_template.rst:5
 msgid "Reduce uncertainty, improve consistency and ensure a successful high-quality analysis with SOPs"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:7
+msgid "acknowledgements"
+msgstr ""
+
+#: ../../source/workflows/sop_template.rst:9
+msgid "The SEPAL team thanks `SIG-GIS <https://sig-gis.com>`_ for contributing this article to SEPAL documentation."
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:12
@@ -828,7 +836,7 @@ msgid "Thank you for reading this tutorial on creating SOPs with templates!"
 msgstr ""
 
 #: ../../source/workflows/sop_template.rst:369
-msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -1292,5 +1300,10 @@ msgstr ""
 #~ "Environment, 148, pp.42-57. Available at "
 #~ "`<http://www.fao.org/sustainable-forest-"
 #~ "management/toolbox/tools/tool-detail/en/c/411863/>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
 #~ msgstr ""
 
