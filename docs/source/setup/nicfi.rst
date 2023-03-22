@@ -33,10 +33,27 @@ The first step is to make sure you have a GEE account. You can follow `this tuto
 Sign up for NICFI imagery
 -------------------------
 
-Sign up for NICFI Planet data access using the same email address associated with your GEE account. To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_. Click on the **Sign up** button and fill in the form.
+Sign up for NICFI Planet data access using the same email address associated with your GEE account. To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_. 
 
 .. thumbnail:: ../_images/setup/nicfi/nicfi_page.png
    :title: Planet NICFI landing page.
+   :group: setup_nicfi
+
+
+Click on the **Sign up** button and fill in the form. 
+
+.. thumbnail:: ../_images/setup/nicfi/signup1.png
+   :title: Sign up form.
+   :group: setup_nicfi
+
+
+After submitting the form, an email will be sent with a link to activate your account. 
+Please check your email for an invitation to complete the sign up process.
+
+Click on the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account.
+
+.. thumbnail:: ../_images/setup/nicfi/activate_account.gif
+   :title: Account activation form.
    :group: setup_nicfi
 
 .. tip::
@@ -46,6 +63,8 @@ Sign up for NICFI Planet data access using the same email address associated wit
 .. note::
 
     Approval for accessing NICFI-Planet Basemaps in GEE can take up to one week.
+
+
 
 Access NICFI through GEE
 ------------------------
