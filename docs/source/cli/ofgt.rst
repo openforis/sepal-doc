@@ -12,7 +12,7 @@ The OFGT project started under the Open Foris Initiative to develop, share and s
 available commands
 ------------------
 
-The complete documentation of the GDAL commands can be found on the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__.
+The complete documentation of the OFGT commands can be found on the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__.
 
 
 General Tools
