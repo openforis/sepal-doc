@@ -22,14 +22,16 @@
 .. raw:: html
 
     <style type="text/css">
-        h1 {display:none;}
+        h1 {text-align:center;}
         h2 {text-align:center;}
-        .bd-content {max-width: none;}
-        .big-font {font-size: var(--pst-font-size-h4);}
+        h3 {text-align:center;}
+        .bd-main .bd-content .bd-article-container {max-width: 100%;}
+        .big-font {font-size: var(--pst-font-size-h4); color: var(--pst-color-primary)}
+        .video_wrapper.align-center {margin: auto;}
     </style>
 
-SEPAL
-=====
+Documentation
+=============
 
 .. toctree::
    :maxdepth: 1
@@ -43,66 +45,119 @@ SEPAL
    Features<feature/index>
     <team/index>
 
+.. rst-class:: text-center
+
+    System for Earth Observation Data Access, Processing and Analysis for Land Monitoring
+
 .. rst-class:: text-center font-weight-bold big-font
 
-    System for earth observation, data access, processing, analysis for land monitoring
+    An open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge.
 
-.. admonition:: presentation video
-    :class: dropdown
+.. youtube:: niOUVE8N7wo
+    :align: center
+    :width: 60%
 
-    .. youtube:: niOUVE8N7wo
-        :align: center
+Learn how to use the platform with SEPAL documentation
+------------------------------------------------------
 
-.. important::
+.. rst-class:: text-center
 
-    SEPAL is always improving. Our team members try their best to constantly update and improve the tools available inside the platform.
+    The SEPAL team developed this GitHub page to help users get the most out of the interface.
 
-.. grid:: 1 2 2 3
+Getting started
+^^^^^^^^^^^^^^^
+
+.. grid:: 1 3 3 3
     :gutter: 2
 
-    .. grid-item-card:: :fas:`running` Register
+    .. grid-item-card:: :fas:`running` Register to SEPAL
         :link: setup/register.html
 
-        Complete begginer with SEPAL ? start registering yourself to the platfrorm and start the fantastic journey of producing Earth Observation data from everywhere! It contains everything you need to start an account, download and get the basics of the platform.
+        Set up your SEPAL account and request additional resources.
 
-    .. grid-item-card:: :fas:`plug` Connect to Earth Engine
+    .. grid-item-card:: :fas:`plug` Connect to GEE
         :link: setup/gee.html
 
-        SEPAL uses the best of Google Earth Engine (GEE) and make it available for users without coding experience. To get the best of the platform you should connect your own free account. This page contains all you need to know to create a GEE account and how to link it with SEPAL.
-
-    .. grid-item-card:: :fas:`book-open` Start a recipe
-        :link: cookbook/index.html
-
-        To run analysis SEPAL uses recipes. these recipes are the founding blocks of our processes. To learn how to use them and learn more about the different functionalities of the platform, follow this tutorials.
-
-    .. grid-item-card:: :fas:`book-open` Start a modules
-        :link: modules/index.html
-
-        To run integrated workflows SEPAL uses applications. These modules are designed by the SEPAL team or other organization. To run specific tasks without relying on coding experience. To learn how to use them and learn more about the different functionalities follow this tutorials.
+        Register with Google Earth Engine (GEE) and connect your account to SEPAL.
 
     .. grid-item-card:: :fas:`plug` Connect to NICFI PlanetLab imagery
         :link: setup/nicfi.html
 
-        Through our partnership with NICFI and PlanetLab, SEPAL can use the very high resolution imagery from PlanetLab for its recipes and module. To use these images SEPAL need to be connected to your PLanet account. Follow these step to link our platform to the VHR imagery.
+        Sign up to use Norway’s International Climate and Forests Initiative (NICFI) – PlanetLab data and connect your account to GEE.
 
-    .. grid-item-card:: :fas:`desktop` Use se.plan module
+Recipes and modules
+^^^^^^^^^^^^^^^^^^^
+
+.. grid:: 1 3 3 3
+    :gutter: 2
+
+    .. grid-item-card:: :fas:`book-open` Start a recipe
+        :link: cookbook/index.html
+
+        Run analysis with recipes, the foundation of SEPAL processes.
+
+    .. grid-item-card:: :fas:`cogs` Start a module
+        :link: modules/index.html
+
+        Run integrated workflows with modules – no need of coding experience required.
+
+    .. grid-item-card:: :fas:`map` Use the se.plan module
         :link: modules/dwn/seplan.html
 
-        **se.plan** is a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders. if you're interested in using the application to compute your restoration index, follow our documentation.
+        Compute your restoration index with se.plan, a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders.
 
-About us
---------
+Other resources
+^^^^^^^^^^^^^^^
+
+.. grid:: 1 2 2 2
+    :gutter: 2
+
+    .. grid-item-card:: :fas:`rss` SEPAL website
+        :link: https://sepal.io/
+
+        Discover the impact of the project.
+
+    .. grid-item-card:: :fas:`rss` Open Foris
+        :link: https://openforis.org/
+
+        Browse the Suite of Tools.
+
+SEPAL is always improving
+-------------------------
+
+.. rst-class:: center-text
+
+    Our team members are committed to improving the platform and its documentation to enhance user experience.
+
+    Encounter a problem? See an issue?  Need help? Take one of the following actions to make the project better.
+
+
+.. grid:: 1 2 2 4
+    :gutter: 2
+
+    .. grid-item-card:: :fas:`comments` Ask the Google Group community
+        :link: https://groups.google.com/g/sepal-users
+
+    .. grid-item-card:: :fab:`github` Use the GitHub Issue Tracker
+        :link: https://github.com/openforis/sepal/issues
+
+    .. grid-item-card:: :fab:`stack-exchange` Ask the GIS StackExchange community
+        :link: https://gis.stackexchange.com/questions/tagged/sepal
+
+    .. grid-item-card:: :fas:`book-open` Register for an online facilitated course from the FAO elearning Academy
+        :link: https://www.fao.org/in-action/sepal/activities/Elearning/en
+
+About the platform
+------------------
 
 .. rst-class:: text-center
 
-    SEPAL is part of the `Open Foris <http://www.openforis.org>`_ suite of tools.
-    SEPAL allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly.
-    Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. Google Earth Engine), SEPAL enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe's Copernicus program.
+    SEPAL is part of the `Open Foris <http://www.openforis.org>`__ suite of tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses quickly. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
 
-    SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of Google Earth Engine and open source software like ORFEO Toolbox, Python, Jupyter, GDAL, R, R Studio Server, R Shiny Server, SNAP Toolkit, and OpenForis Geospatial Toolkit. It allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
+    SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely-sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
-Funders
--------
+Suporting institutions
+----------------------
 
 .. rst-class:: text-center
 
@@ -110,11 +165,4 @@ Funders
 
 .. logos:: funders
 
-Suporting institutions
-----------------------
-
 .. logos:: institutions
-
-.. |trash-icon| raw:: html
-
-    <i class="fa-solid fa-trash"></i>
