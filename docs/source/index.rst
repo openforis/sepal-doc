@@ -24,8 +24,10 @@
     <style type="text/css">
         h1 {text-align:center;}
         h2 {text-align:center;}
-        .bd-content {max-width: none;}
+        h3 {text-align:center;}
+        .bd-main .bd-content .bd-article-container {max-width: 100%;}
         .big-font {font-size: var(--pst-font-size-h4); color: var(--pst-color-primary)}
+        .video_wrapper.align-center {margin: auto;}
     </style>
 
 Documentation
@@ -53,6 +55,7 @@ Documentation
 
 .. youtube:: niOUVE8N7wo
     :align: center
+    :width: 60%
 
 Learn how to use the platform with SEPAL documentation
 ------------------------------------------------------
