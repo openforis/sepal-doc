@@ -8,4 +8,5 @@ SEPAL team documentation
     :hidden:
 
     contribute
+    style_guide
     classroom
