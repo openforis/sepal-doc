@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-03-30 01:14\n"
+"PO-Revision-Date: 2023-03-30 07:20\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../source/cli/gwb.rst:2
 msgid "GuidosToolbox Workbench – GWB"
-msgstr ""
+msgstr "GuidosToolbox Workbench – GWB"
 
 #: ../../source/cli/gwb.rst:4
 msgid "The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers."
-msgstr ""
+msgstr "Le GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) est un sous-ensemble du logiciel de bureau GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) conçu comme une application en ligne de cmd pour les serveurs Linux 64 bits."
 
 #: ../../source/cli/gwb.rst:6
 msgid "Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_."
-msgstr ""
+msgstr "Référence: `GuidosToolbox Workbench: Analyse spatiale des cartes matricielles pour les applications écologiques <https://doi.org/10.1111/ecog.05864>`_."
 
 #: ../../source/cli/gwb.rst:10
 msgid "The current version available on SEPAL is 1.9.0"
-msgstr ""
+msgstr "La version actuelle disponible sur SEPAL est 1.9.0"
 
 #: ../../source/cli/gwb.rst:13
 msgid "available commands"
@@ -40,7 +40,7 @@ msgstr "commandes disponibles"
 
 #: ../../source/cli/gwb.rst:15
 msgid "The complete documentation of the GWB commands can be found on the `GWB manual <https://gwbdoc.readthedocs.io>`__"
-msgstr ""
+msgstr "La documentation complète des commandes GWB se trouve sur le `Manuel GWB <https://gwbdoc.readthedocs.io>`__"
 
 #~ msgid ""
 #~ "The GuidosToolbox Workbench (**GWB**, "
