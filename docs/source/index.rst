@@ -16,15 +16,10 @@
     :align: center
     :class: main-logo only-dark center only-small
 
-.. The page title must be in rST for it to show in next/prev page buttons.
-   Therefore we add a special style rule to only this page that hides h1 tags
-
 .. raw:: html
 
     <style type="text/css">
         h1 {text-align:center;}
-        h2 {text-align:left;}
-        h3 {text-align:left;}
         .bd-main .bd-content .bd-article-container {max-width: 100%;}
         .big-font {font-size: var(--pst-font-size-h4); color: var(--pst-color-primary)}
         .video_wrapper.align-center {margin: auto;}
@@ -47,7 +42,7 @@ Documentation
 
 
 
-.. rst-class:: text-left font-weight-bold big-font
+.. rst-class:: font-weight-bold big-font
 
         SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge.
 
@@ -56,15 +51,13 @@ Documentation
 .. youtube:: niOUVE8N7wo
     :align: center
     :width: 60%
-    
-    
-    
+
+
+
 Learn how to use the platform with SEPAL documentation
 ------------------------------------------------------
 
-.. rst-class:: text-left
-
-    The SEPAL team developed this GitHub page to help users get the most out of the interface.
+The SEPAL team developed this GitHub page to help users get the most out of the interface.
 
 
 
@@ -124,10 +117,10 @@ Other resources
         :link: https://www.fao.org/in-action/sepal/en
 
         Discover the impact of the project.
-        
+
     .. grid-item-card:: :fas:`rss` SEPAL platform
         :link: https://sepal.io/
- 
+
         Learn more about the interface.
 
     .. grid-item-card:: :fas:`rss` Open Foris
@@ -140,9 +133,7 @@ Other resources
 SEPAL is always improving.
 --------------------------
 
-.. rst-class:: left-text
-
-    Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation.
+Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation.
 
 
 
@@ -166,20 +157,16 @@ SEPAL is always improving.
 About the platform
 ------------------
 
-.. rst-class:: text-left
+SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
 
-    SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
-
-    SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
+SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
 
 
 Suporting institutions
 ----------------------
 
-.. rst-class:: text-left
-
-    SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO).
+SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO).
 
 .. logos:: funders
 
