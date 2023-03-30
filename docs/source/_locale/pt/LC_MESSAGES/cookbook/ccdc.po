@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:29\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:07\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -59,7 +59,7 @@ msgid "Create Recipe"
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:28
-msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab."
+msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa-solid fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab."
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:37
@@ -131,7 +131,7 @@ msgid "Date Range"
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:85
-msgid "In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button."
+msgid "In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa-solid fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa-solid fa-check> apply` button."
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:98
@@ -451,7 +451,7 @@ msgid "On-the-fly Pixel analysis"
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:356
-msgid "Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window."
+msgid "Click on the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa-solid fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window."
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:358
@@ -483,7 +483,7 @@ msgid "Trigger the export task"
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:382
-msgid "Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository."
+msgid "Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository."
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:384
@@ -499,7 +499,7 @@ msgid "Exportation status"
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:402
-msgid "Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
+msgid "Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:406
@@ -514,5 +514,69 @@ msgstr ""
 #~ "they are extensively described in our"
 #~ " documentation. Please read "
 #~ ":doc:`feature/aoi_selector` to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once logged into SEPAL, open the "
+#~ "recipe menu by clicking on the "
+#~ "orange :btn:`<fa fa-globe>` button at"
+#~ " the top left of the SEPAL "
+#~ "start screen. Within the recipe menu "
+#~ "(*see figure below*), select CCDC, which"
+#~ " opens a new SEPAL recipe tab."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the :guilabel:`DAT` tab, you will "
+#~ "be asked to select the starting "
+#~ "date and the ending date of the"
+#~ " time series. Click on the date "
+#~ "tex field to open a date picker"
+#~ " popup. Click on the :btn:`<fa fa-"
+#~ "check> Select` button to validate a "
+#~ "date. When both dates are selected "
+#~ "click on :btn:`<fa fa-check> apply` "
+#~ "button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on the :btn:`<fa fa-chart-"
+#~ "area>` button to start the plotting "
+#~ "tool (1). Move the pointer to the"
+#~ " main map, the pointer will be "
+#~ "transformed into a :icon:`fa fa-plus`"
+#~ " (2). Click anywhere in the AOI "
+#~ "to plot data for this specific "
+#~ "location in the following popup window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on the :btn:`<fas fa-cloud-"
+#~ "download-alt>` button to open the "
+#~ "export dialogue. Here you can select "
+#~ "the bands to retrieve and the "
+#~ "scale at which you would like to"
+#~ " save the asset. CCDC Assets are "
+#~ "only compatible with Google Earth "
+#~ "Engine, for which a new asset will"
+#~ " be created in your personal Earth"
+#~ " Engine repository."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Going to the task tab (bottom left"
+#~ " corner using the :btn:`<fa fa-"
+#~ "tasks>` or :btn:`<fa fa-spinner>` "
+#~ "buttons —depending on the loading "
+#~ "status—), you will see the list of"
+#~ " the different loading tasks. The "
+#~ "interface will provide you with "
+#~ "information about the task progress and"
+#~ " it will display an error if "
+#~ "the exportation has failed. If you "
+#~ "are unsatisfied with the way we "
+#~ "present information, the task can also"
+#~ " be monitored using the `GEE task "
+#~ "manager <https://code.earthengine.google.com/tasks>`__."
 #~ msgstr ""
 

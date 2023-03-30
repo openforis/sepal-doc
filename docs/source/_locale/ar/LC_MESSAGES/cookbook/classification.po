@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:29\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:06\n"
 "Last-Translator: \n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -111,7 +111,7 @@ msgid "If multiple images are selected, each selected image should overlap each 
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:69
-msgid "Select :btn:`<fas fa-plus> Add`. The following screen should be displayed:"
+msgid "Select :btn:`<fa-solid fa-plus> Add`. The following screen should be displayed:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:76
@@ -221,7 +221,7 @@ msgid "The analysis is not limited to natively available bands. SEPAL can also b
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:135
-msgid "Select :btn:`<fas fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands."
+msgid "Select :btn:`<fa-solid fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:139
@@ -245,11 +245,11 @@ msgid "You should notice that in the figure, we compute the normalized differenc
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:153
-msgid "Once the image selection is done, select :btn:`<fas fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fas fa-trash>` button, you will remove the image and its band from the analysis altogether."
+msgid "Once the image selection is done, select :btn:`<fa-solid fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fa-solid fa-trash>` button, you will remove the image and its band from the analysis altogether."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:159
-msgid "From there, select :btn:`<fas fa-chevron-right> Next` to continue to the next step."
+msgid "From there, select :btn:`<fa-solid fa-chevron-right> Next` to continue to the next step."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:162
@@ -273,7 +273,7 @@ msgid "The first and most natural way of building a legend is to do it from scra
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:179
-msgid "Select :btn:`<fas fa-plus> Add` to add a new class to your legend."
+msgid "Select :btn:`<fa-solid fa-plus> Add` to add a new class to your legend."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:181
@@ -293,7 +293,7 @@ msgid "Class (3): Insert a class description (cannot be empty)."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:187
-msgid "Select the :btn:`<fas fa-plus> Add` button again to add an extra class line. The :btn:`<fas fa-trash>` button can be used to remove a specific line."
+msgid "Select the :btn:`<fa-solid fa-plus> Add` button again to add an extra class line. The :btn:`<fa-solid fa-trash>` button can be used to remove a specific line."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:191
@@ -337,7 +337,7 @@ msgid "This one is the same using RGB-defined colors:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:246
-msgid "Once the fully qualified legend file has been prepared on your computer, select :btn:`<fas fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files."
+msgid "Once the fully qualified legend file has been prepared on your computer, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:248
@@ -345,11 +345,11 @@ msgid "As shown on the next image, you can then select the columns that are defi
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:254
-msgid "Select :btn:`<fas fa-check> Apply` to validate your selection. The classes will be added to the legend panel and you'll be able to modify the legend using the parameters presented in the previous section."
+msgid "Select :btn:`<fa-solid fa-check> Apply` to validate your selection. The classes will be added to the legend panel and you'll be able to modify the legend using the parameters presented in the previous section."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:260
-msgid "Select :btn:`<fas fa-check> Done` to validate this step."
+msgid "Select :btn:`<fa-solid fa-check> Done` to validate this step."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:262
@@ -361,7 +361,7 @@ msgid "Export legend"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:267
-msgid "Once your legend is validated, select the :btn:`<fas fa-chevron-up>` and then :code:`Export as CSV`."
+msgid "Once your legend is validated, select the :btn:`<fa-solid fa-chevron-up>` and then :code:`Export as CSV`."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:269
@@ -405,11 +405,11 @@ msgid "The data appear as a pair, associating coordinates to a class value, whic
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:303
-msgid "If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fas fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:"
+msgid "If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:311
-msgid "If you are not satisfied with the selected data, select :btn:`<fas fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis."
+msgid "If you are not satisfied with the selected data, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:315
@@ -433,7 +433,7 @@ msgid "If the added training data are outside of the image to classify, they wil
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:330
-msgid "To add new data, select :btn:`<fas fa-plus> Add` and choose the type of data to import:"
+msgid "To add new data, select :btn:`<fa-solid fa-plus> Add` and choose the type of data to import:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:337
@@ -453,7 +453,7 @@ msgid "The following table is compatible with SEPAL:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:351
-msgid "The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fas fa-chevron-left> Next` once every column is filled."
+msgid "The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fa-solid fa-chevron-left> Next` once every column is filled."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:359
@@ -469,11 +469,11 @@ msgid "Using the :code:`row filter expression` text field, one can filter out so
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:371
-msgid "Select :btn:`<fas fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file."
+msgid "Select :btn:`<fa-solid fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:373
-msgid "Selecting the :btn:`<fas fa-check> Done` button will complete the uploading procedure."
+msgid "Selecting the :btn:`<fa-solid fa-check> Done` button will complete the uploading procedure."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:380
@@ -537,11 +537,11 @@ msgid "When all of the parameters are selected, it can take time, as SEPAL build
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:422
-msgid "Select :btn:`<fas fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it."
+msgid "Select :btn:`<fa-solid fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:424
-msgid "Select the :btn:`<fas fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored."
+msgid "Select the :btn:`<fa-solid fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:431
@@ -697,7 +697,7 @@ msgid "Select points"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:534
-msgid "To start adding points, open the training interface by selecting :btn:`<fas fa-map-marker>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fas fa-plus`."
+msgid "To start adding points, open the training interface by selecting :btn:`<fa-solid fa-location-dot>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fa-solid fa-plus`."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:536
@@ -713,7 +713,7 @@ msgid "**Select the class value**: The previous class value is preselected, but 
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:541
-msgid "You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fas fa-times> Close` (3) and select :btn:`<fas fa-map-marker>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window."
+msgid "You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fa-solid fa-xmark> Close` (3) and select :btn:`<fa-solid fa-location-dot>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:548
@@ -721,7 +721,7 @@ msgid "Modify existing points"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:550
-msgid "To modify existing points, select the :btn:`<fas fa-map-marker>` to open the point editing interface and follow the following steps:"
+msgid "To modify existing points, select the :btn:`<fa-solid fa-location-dot>` to open the point editing interface and follow the following steps:"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:552
@@ -729,7 +729,7 @@ msgid "**Select a point**: To select a point, click on an existing marker. It wi
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:553
-msgid "**Change the class value**: The point class will be selected in the editing menu with a :icon:`fas fa-check`. Select any other class value to change it."
+msgid "**Change the class value**: The point class will be selected in the editing menu with a :icon:`fa-solid fa-check`. Select any other class value to change it."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:556
@@ -758,7 +758,7 @@ msgid "Start download"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:578
-msgid "Selecting the :icon:`fas fa-cloud-download-alt` tab will open the **Retrieve** panel where you can select the exportation parameters (1)."
+msgid "Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve** panel where you can select the exportation parameters (1)."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:580
@@ -778,7 +778,7 @@ msgid "If :btn:`Google Earth Engine Asset` is not displayed, it means that your 
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:590
-msgid "Select :btn:`<fas fa-check> Apply` to start the download process."
+msgid "Select :btn:`<fa-solid fa-check> Apply` to start the download process."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:597
@@ -786,7 +786,7 @@ msgid "Exportation status"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:599
-msgid "By going to the **Task** tab (in the lower-left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks."
+msgid "By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:601
@@ -1537,5 +1537,209 @@ msgstr ""
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-plus> Add`. The "
+#~ "following screen should be displayed:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-plus> Derived "
+#~ "bands` at the bottom of the "
+#~ "pop-up window and select the deriving"
+#~ " method to. This will add a a"
+#~ " new panel to the expansion panel "
+#~ "with the selected method name (1). "
+#~ "The selected method will be applied "
+#~ "to the selected bands."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the image selection is done, "
+#~ "select :btn:`<fas fa-check> Apply` and"
+#~ " the pop-up window will close. "
+#~ "The images and bands will be "
+#~ "displayed in the :guilabel:`IMG` panel "
+#~ "on the lower-right corner of the"
+#~ " screen. By selecting the :btn:`<fas "
+#~ "fa-trash>` button, you will remove "
+#~ "the image and its band from the"
+#~ " analysis altogether."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From there, select :btn:`<fas fa-"
+#~ "chevron-right> Next` to continue to "
+#~ "the next step."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-plus> Add` to add a new class to your legend."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the :btn:`<fas fa-plus> Add` "
+#~ "button again to add an extra class"
+#~ " line. The :btn:`<fas fa-trash>` "
+#~ "button can be used to remove a "
+#~ "specific line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the fully qualified legend file "
+#~ "has been prepared on your computer, "
+#~ "select :btn:`<fas fa-chevron-up>` and"
+#~ " then :code:`Import from CSV`, which "
+#~ "will open a pop-up window where"
+#~ " you can drag and drop the file"
+#~ " or select it manually from your "
+#~ "computer files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-check> Apply` to"
+#~ " validate your selection. The classes "
+#~ "will be added to the legend panel"
+#~ " and you'll be able to modify "
+#~ "the legend using the parameters "
+#~ "presented in the previous section."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-check> Done` to validate this step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once your legend is validated, select"
+#~ " the :btn:`<fas fa-chevron-up>` and"
+#~ " then :code:`Export as CSV`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're satisfied with the current "
+#~ "selection and you want to share "
+#~ "the data with others, select :btn:`<fas"
+#~ " fa-chevron-up>` and then "
+#~ ":code:`Export reference data to csv`. A"
+#~ " file will be created named: "
+#~ ":code:`<recipe_name>_reference_data.csv` and sent to"
+#~ " your computer. It will embed all "
+#~ "of the gathered point data using "
+#~ "the following convention:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are not satisfied with the"
+#~ " selected data, select :btn:`<fas fa-"
+#~ "chevron-up>` and then :code:`Clear "
+#~ "collected reference data` to remove all"
+#~ " collected data from the analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To add new data, select :btn:`<fas "
+#~ "fa-plus> Add` and choose the type"
+#~ " of data to import:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The columns used to define the X"
+#~ " (longitude) and Y (latitude) coordinates"
+#~ " are manually set up in the "
+#~ "pop-up window. Select :btn:`<fas fa-"
+#~ "chevron-left> Next` once every column "
+#~ "is filled."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-chevron-left> next`"
+#~ " to add the data to the model."
+#~ " SEPAL will provide a summary of "
+#~ "the classes in the legend of the"
+#~ " classification and the number of "
+#~ "training points added by your file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Selecting the :btn:`<fas fa-check> Done`"
+#~ " button will complete the uploading "
+#~ "procedure."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-chevron-right> "
+#~ "Next` to display the sampling summary."
+#~ " In this panel, SEPAL displays each"
+#~ " class of the legend (as defined "
+#~ "in the previous section) and the "
+#~ "number of samples created for it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the :btn:`<fas fa-plus>` (1) "
+#~ "buttons to change the number of "
+#~ "samples in a specific class. By "
+#~ "default, SEPAL ignores the samples with"
+#~ " a :code:`Null` value. One can select"
+#~ " :btn:`Default` (2) for any of the"
+#~ " classes, so that these points end"
+#~ " up in this default class instead "
+#~ "of being ignored."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start adding points, open the "
+#~ "training interface by selecting :btn:`<fas "
+#~ "fa-map-marker>` in the upper-right"
+#~ " of the screen (1). Once selected,"
+#~ " the background color becomes darker "
+#~ "and the pointer of the mouse "
+#~ "becomes a :icon:`fas fa-plus`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can now click elsewhere on the"
+#~ " map to add another point. If "
+#~ "you are satisfied with the "
+#~ "classification, select :btn:`<fas fa-times>"
+#~ " Close` (3) and select :btn:`<fas "
+#~ "fa-map-marker>` again to stop editing"
+#~ " the points. Every time a new "
+#~ "point is added, the classification map"
+#~ " is recomputed and rendered in the"
+#~ " left window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To modify existing points, select the"
+#~ " :btn:`<fas fa-map-marker>` to open"
+#~ " the point editing interface and "
+#~ "follow the following steps:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Change the class value**: The point"
+#~ " class will be selected in the "
+#~ "editing menu with a :icon:`fas fa-"
+#~ "check`. Select any other class value "
+#~ "to change it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Selecting the :icon:`fas fa-cloud-"
+#~ "download-alt` tab will open the "
+#~ "**Retrieve** panel where you can select"
+#~ " the exportation parameters (1)."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-check> Apply` to start the download process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By going to the **Task** tab (in"
+#~ " the lower-left corner using the "
+#~ ":btn:`<fa fa-tasks>` or :btn:`<fa fa-"
+#~ "spinner>` buttons, depending on the "
+#~ "loading status), you will see the "
+#~ "list of different loading tasks."
 #~ msgstr ""
 

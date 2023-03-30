@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-14 01:04+0000\n"
-"PO-Revision-Date: 2023-03-13 06:56\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 08:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -31,8 +31,8 @@ msgid "Overview"
 msgstr "Aperçu"
 
 #: ../../source/feature/project.rst:9
-msgid "Go to the processes interface of SEPAL (:btn:`<fas fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases."
-msgstr "Allez à l'interface processus de SEPAL (:btn:`<fas fa-globe>`) vous devriez voir ce qui suit, complétée par une liste de recettes existantes si vous en avez déjà créé quelques-unes dans les versions précédentes."
+msgid "Go to the processes interface of SEPAL (:btn:`<fa-solid fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases."
+msgstr "Allez à l'interface processus de SEPAL (:btn:`<fa-solid fa-globe>`) vous devriez voir ce qui suit, complétée par une liste de recettes existantes si vous en avez déjà créé quelques-unes dans les versions précédentes."
 
 #: ../../source/feature/project.rst:16
 msgid "the following intercation are available on this page:"
@@ -75,12 +75,12 @@ msgid "For every user a :code:`[no project]` project is created at registration 
 msgstr "Pour chaque utilisateur, un projet :code:`[no projetc]` est créé à l'étape d'inscription. Ce projet sera la solution de secours pour toutes les recettes qui ont été créées avant la publication de la fonctionnalité. Il ne peut pas être supprimé ou renommé."
 
 #: ../../source/feature/project.rst:37
-msgid "To create a project, click on :btn:`<fas fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fas fa-pencil-alt> Add` to create a new project. Simply fill the name and press :btn:`<fas fa-check> Apply` to validate it. The newly created project will apear in the list."
-msgstr "Pour créer un projet, cliquez sur :btn:`<fas fa-folder-tree> Projets`. Cela ouvrira l'interface suivante. puis cliquez sur :btn:`<fas fa-pencil-alt> Ajouter` pour créer un nouveau projet. Remplissez simplement le nom et appuyez sur :btn:`<fas fa-check> Appliquez` pour le valider. Le projet nouvellement créé apparaîtra dans la liste."
+msgid "To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list."
+msgstr "Pour créer un projet, cliquez sur :btn:`<fa-solid fa-folder-tree> Projets`. Cela ouvrira l'interface suivante. puis cliquez sur :btn:`<fa-solid fa-pencil> Ajouter` pour créer un nouveau projet. Remplissez simplement le nom et appuyez sur :btn:`<fa-solid fa-check> Appliquez` pour le valider. Le projet nouvellement créé apparaîtra dans la liste."
 
 #: ../../source/feature/project.rst:49
-msgid "To remove a project, click on the :btn:`<fas fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well."
-msgstr "Pour supprimer un projet, cliquez sur l'icône :btn:`<fas fa-trash>` à côté de son nom. Toutes les recettes incluses dans le processus seront également détruites."
+msgid "To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well."
+msgstr "Pour supprimer un projet, cliquez sur l'icône :btn:`<fa-solid fa-trash>` à côté de son nom. Toutes les recettes incluses dans le processus seront également détruites."
 
 #: ../../source/feature/project.rst:57
 msgid "Recipes"
@@ -111,32 +111,32 @@ msgid "Once a project is selected and a recipe is created, it will belong to the
 msgstr "Une fois qu'un projet est sélectionné et qu'une recette est créée, il appartiendra au projet sélectionné."
 
 #: ../../source/feature/project.rst:89
-msgid "If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fas fa-plus> Add recipe`."
-msgstr "Si vous ne voulez pas que votre recette soit associée à un projet, dé-filtrez la liste avant de cliquer sur :btn:`<fas fa-plus> Ajouter une recette`."
+msgid "If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fa-solid fa-plus> Add recipe`."
+msgstr "Si vous ne voulez pas que votre recette soit associée à un projet, dé-filtrez la liste avant de cliquer sur :btn:`<fa-solid fa-plus> Ajouter une recette`."
 
 #: ../../source/feature/project.rst:92
 msgid "Edit recipies"
 msgstr "Éditer des recettes"
 
 #: ../../source/feature/project.rst:94
-msgid "Recipe behavior can be edited directly from this view. Click the :btn:`<fas fa-edit> Edit` button to open the edition interface."
-msgstr "Le comportement de la recette peut être édité directement à partir de cette vue. Cliquez sur le bouton :btn:`<fas fa-edit> Éditez` pour ouvrir l'interface d'édition."
+msgid "Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the edition interface."
+msgstr "Le comportement de la recette peut être édité directement à partir de cette vue. Cliquez sur le bouton :btn:`<fa-solid fa-pen-to-square> Éditez` pour ouvrir l'interface d'édition."
 
 #: ../../source/feature/project.rst:101
 msgid "from this interface you can:"
 msgstr "à partir de cette interface vous pouvez :"
 
 #: ../../source/feature/project.rst:103
-msgid ":btn:`<fas fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s)."
-msgstr ":btn:`<fas fa-check> Sélectionner`: Sélectionner/désélectionner toutes les recettes affichées à l'écran. Toute autre opération d'édition ne sera appliquée que sur la ou les recettes sélectionnées."
+msgid ":btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s)."
+msgstr ":btn:`<fa-solid fa-check> Sélectionner`: Sélectionner/désélectionner toutes les recettes affichées à l'écran. Toute autre opération d'édition ne sera appliquée que sur la ou les recettes sélectionnées."
 
 #: ../../source/feature/project.rst:104
-msgid ":btn:`<fas fa-random> Move`: Move the selected recipe(s) to another project."
-msgstr ":btn:`<fas fa-random> Déplacer`: Déplacer le(s) recette(s) sélectionnée(s) vers un autre projet."
+msgid ":btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project."
+msgstr ":btn:`<fa-solid fa-shuffle> Déplacer`: Déplacer le(s) recette(s) sélectionnée(s) vers un autre projet."
 
 #: ../../source/feature/project.rst:105
-msgid ":btn:`<fas fa-trash> Remove`: Delete the recipe permanently."
-msgstr ":btn:`<fas fa-trash> Supprimer`: Supprime définitivement la recette."
+msgid ":btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently."
+msgstr ":btn:`<fa-solid fa-trash> Supprimer`: Supprime définitivement la recette."
 
 #: ../../source/feature/project.rst:109
 msgid "Before deleting individual recipes make sure that they are not used as inputs in others."
@@ -154,5 +154,63 @@ msgstr "Lors de la création de recettes, comme :code:`Classification` les utili
 #~ "Once a project is selected, any "
 #~ "newly created recipe will fallback to"
 #~ " the current project."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Go to the processes interface of "
+#~ "SEPAL (:btn:`<fas fa-globe>`) you should"
+#~ " see the following, completed by a"
+#~ " list of existing recipes if you've"
+#~ " already created some in the previous"
+#~ " releases."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To create a project, click on "
+#~ ":btn:`<fas fa-folder-tree> Projects`. It"
+#~ " will open the following interface. "
+#~ "then click on :btn:`<fas fa-pencil-"
+#~ "alt> Add` to create a new project."
+#~ " Simply fill the name and press "
+#~ ":btn:`<fas fa-check> Apply` to validate"
+#~ " it. The newly created project will"
+#~ " apear in the list."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To remove a project, click on the"
+#~ " :btn:`<fas fa-trash>` icon next to"
+#~ " its name. All the recipes included"
+#~ " in the process will be destroyed "
+#~ "as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you don't want your recipe to"
+#~ " be associated with any project, "
+#~ "unfilter the list before clicking on "
+#~ ":btn:`<fas fa-plus> Add recipe`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Recipe behavior can be edited directly"
+#~ " from this view. Click the :btn:`<fas"
+#~ " fa-edit> Edit` button to open "
+#~ "the edition interface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-check> Select`: Select/unselect"
+#~ " all the recipes shown on screen. "
+#~ "Any other edition operation will be "
+#~ "only applied on the selected recipe(s)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-random> Move`: Move the"
+#~ " selected recipe(s) to another project."
+#~ msgstr ""
+
+#~ msgid ":btn:`<fas fa-trash> Remove`: Delete the recipe permanently."
 #~ msgstr ""
 

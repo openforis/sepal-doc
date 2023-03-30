@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-23 01:01+0000\n"
-"PO-Revision-Date: 2023-02-23 01:06\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -55,7 +55,7 @@ msgid "SEPAL is closely linked to GEE, a Google-powered Earth-observation cloud-
 msgstr ""
 
 #: ../../source/setup/gee.rst:19
-msgid "All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fab fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations."
+msgid "All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fa-brands fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations."
 msgstr ""
 
 #: ../../source/setup/gee.rst:21
@@ -183,7 +183,7 @@ msgid "Select your **Username** in the lower-right side of the window (e.g. (:co
 msgstr ""
 
 #: ../../source/setup/gee.rst:128
-msgid "Next to the Google logo (:icon:`fab fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*)."
+msgid "Next to the Google logo (:icon:`fa-brands fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*)."
 msgstr ""
 
 #: ../../source/setup/gee.rst:135
@@ -303,7 +303,7 @@ msgid "If you select **Copy link**, the link will be copied to the clipboard and
 msgstr ""
 
 #: ../../source/setup/gee.rst:248
-msgid "For support, :doc:`ask the community <https://groups.google.com/g/sepal-users>`."
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -316,5 +316,35 @@ msgstr ""
 #~ "If you experience trouble while linking"
 #~ " your Google account to GEE, contact"
 #~ " the SEPAL team at SEPAL@fao.org."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All SEPAL recipes are based on GEE"
+#~ " and run scripts written by SEPAL "
+#~ "team members to enable access to "
+#~ "state-of-the-art processing algorithms "
+#~ "without having to write code. In "
+#~ "the SEPAL **Applications** list, the "
+#~ "applications tagged with the Google logo"
+#~ " (:icon:`fab fa-google`) are also "
+#~ "running with the Python GEE API "
+#~ "and don't require you to use big"
+#~ " instances to run complex operations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next to the Google logo (:icon:`fab "
+#~ "fa-google`) on the upper-right "
+#~ "side of the **User Details** pop-"
+#~ "up window, you will see the status"
+#~ " of the connection between your SEPAL"
+#~ " and GEE accounts (Note: if you "
+#~ "have not connected your accounts, it "
+#~ "will read *Disconnected*)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
 #~ msgstr ""
 
