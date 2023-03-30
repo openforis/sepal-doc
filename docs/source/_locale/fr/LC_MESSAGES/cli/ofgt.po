@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-03-30 01:14\n"
+"PO-Revision-Date: 2023-03-30 07:20\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "commandes disponibles"
 
 #: ../../source/cli/ofgt.rst:15
 msgid "The complete documentation of the OFGT commands can be found on the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
-msgstr ""
+msgstr "La documentation complète des commandes OFGT se trouve sur le `manuel OFGT <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
 
 #: ../../source/cli/ofgt.rst:19
 msgid "General Tools"
