@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:07\n"
+"PO-Revision-Date: 2023-03-30 08:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "SEPAL est étroitement liée à GEE, une plateforme d’observation de l
 
 #: ../../source/setup/gee.rst:19
 msgid "All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. In the SEPAL **Applications** list, the applications tagged with the Google logo (:icon:`fa-brands fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations."
-msgstr ""
+msgstr "Toutes les recettes SEPAL sont basées sur GEE et exécutent des scripts écrits par les membres de l'équipe SEPAL pour permettre l'accès à des algorithmes de traitement à la pointe de la technologie sans avoir à écrire du code. Dans la liste des **Applications** SEPAL les applications taggées avec le logo Google (:icon:`fa-brands fa-google`) fonctionnent également avec l'API Python GEE et ne vous obligent pas à utiliser de grandes instances pour exécuter des opérations complexes."
 
 #: ../../source/setup/gee.rst:21
 msgid "SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked."
@@ -184,7 +184,7 @@ msgstr "Sélectionnez votre **nom d'utilisateur** dans le côté inférieur droi
 
 #: ../../source/setup/gee.rst:128
 msgid "Next to the Google logo (:icon:`fa-brands fa-google`) on the upper-right side of the **User Details** pop-up window, you will see the status of the connection between your SEPAL and GEE accounts (Note: if you have not connected your accounts, it will read *Disconnected*)."
-msgstr ""
+msgstr "À côté du logo Google (:icon:`fa-brands fa-google`) en haut à droite de la fenêtre pop-up **Détails de l'utilisateur**, vous verrez l'état de la connexion entre vos comptes SEPAL et GEE (Note : si vous n'avez pas connecté vos comptes, vous lirez *Déconnecté*)."
 
 #: ../../source/setup/gee.rst:135
 msgid "Select **Google account** in the lower section of the pop-up window (Note: if your GEE account is disconnected, you will see text that reminds you what functionalities are unavailable without a custom GEE account)."
@@ -304,7 +304,7 @@ msgstr "Si vous sélectionnez **Copy link**, le lien sera copié dans le presse-
 
 #: ../../source/setup/gee.rst:248
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
+msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
