@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-30 01:00+0000\n"
+"PO-Revision-Date: 2023-03-30 01:14\n"
+"Last-Translator: \n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/team/style_guide.po\n"
+"X-Crowdin-File-ID: 123\n"
+
+#: ../../source/team/style_guide.rst:2
+msgid "documentation style guide"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:4
+msgid "Help us maintain useful, clear, concise, consistent and fluid writing across the documentation by following the SEPAL documentation style guide."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:6
+msgid "Learn the basics of SEPAL documentation style and ensure that your contributions are as useful as possible for the community."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:9
+msgid "Goals and principles"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:11
+msgid "The goal of SEPAL documentation is to guide users through the SEPAL interface. As an external contributor or a member of the SEPAL team, think of yourself as a tour guide for users. To achieve this goal, the SEPAL team ensures that writing is:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:14
+msgid "useful"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:15 ../../source/team/style_guide.rst:90
+msgid "clear"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:16
+msgid "concise"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:17
+msgid "consistent"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:18
+msgid "fluid"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:21
+msgid "Style tips"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:23
+msgid "Here are some basic guidelines for following SEPAL documentation style."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:26
+msgid "Focus on user needs"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:28
+msgid "Consider users’ questions and goals when writing SEPAL documentation. For every article, make sure users’ questions have been addressed and answered, allowing them to achieve their goals."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:31
+msgid "Be simple and direct"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:33
+msgid "Keep language clear, concise and fluid. Use numbered and bulleted lists, instead of long paragraphs, whenever possible."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:36
+msgid "Use direct tone"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:38
+msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:40
+msgid "In simpler terms: Tell the user what to do in the moment they are reading the documentation (e.g. Open the SEPAL interface and enter your email address.). Avoid addressing the audience directly, when possible. In other words, limit the use of the words “you” and “your” (e.g. To sign up for a Google account, go to accounts.google.com/servicelogin.). When addressing the audience is necessary, use the word “you” or “your” (e.g. To reset your password, go to docs.sepal.io/en/latest/setup/password.html.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:45
+msgid "Word list"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:47
+msgid "Here is a list of common words used in SEPAL documentation."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:50
+msgid "Key terminology"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:52
+msgid "Use the following terms, when possible."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:55
+msgid "The SEPAL team"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:57
+msgid "The authors of the documentation should be referred to as “the SEPAL team” (e.g. The SEPAL team maintains the documentation to guide users through the SEPAL interface.). If the term, “the SEPAL team” has been overused, use the words “we” or “us” instead."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:61
+msgid "The SEPAL interface"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:63
+msgid "The interface should be referred to as the “SEPAL interface” (e.g. Open the SEPAL interface and enter your email address.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:66
+msgid "SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:68
+msgid "The website where SEPAL documentation is located should be referred to as either “SEPAL documentation” or simply, “the documentation” (e.g. Learn more about SEPAL documentation by reading this article.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:71
+msgid "A section of SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:73
+msgid "A section of the documentation should be referred to as a “section of SEPAL documentation” or a “section of the documentation”, as necessary (e.g. Discover how to register for SEPAL in the “Getting started” section of the documentation.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:76
+msgid "An article within SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:78
+msgid "A page within the documentation should be referred to as an “article” (e.g. Learn more about the SEPAL interface in the article, “Introduction to SEPAL” in the “Getting started with SEPAL” section.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:81
+msgid "Describing interactions with the interface"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:83
+msgid "Here is a list of common words used to describe actions in the SEPAL interface."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:85
+msgid "open"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:86
+msgid "close"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:87
+msgid "leave"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:88
+msgid "go to"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:89
+msgid "select"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:91
+msgid "choose"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:92
+msgid "enter"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:93
+msgid "sign in, sign out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:94
+msgid "switch, turn on, turn off"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:95
+msgid "zoom, zoom in, zoom out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:98
+msgid "Directional terminology"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:100
+msgid "Here is a list of common words to describe location in the SEPAL interface. Indicate location in relation to objects within the interface, whenever possible."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:102
+msgid "upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:103
+msgid "lower right (noun), lower-right (adjective), rightmost (adjectives), on the right side of"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:104
+msgid "pane (instead of panel)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:107
+msgid "Other things to consider"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:109
+msgid "Here are some other basic guidelines to follow when writing SEPAL documentation."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:112
+msgid "Sentence structure"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:114
+msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood, whenever possible (e.g. Open the SEPAL interface and enter your email address.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:117
+msgid "Capitalization"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:119
+msgid "Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper names), except when mirroring appearance of text in the SEPAL interface.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:122
+msgid "Quotation marks"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:124
+msgid "Use double quotation marks for titles of articles and sections (e.g. The “Getting started” section.). Use double quotation marks for direct quotes (e.g. for the text displayed in an error message.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:127
+msgid "Bold"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:128
+msgid "Use bold formatting for the names of buttons, checkboxes, panes, drop-down menus, and other options (e.g. Select Export.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:131
+msgid "Italic"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:133
+msgid "Use italicized text for introducing key terminology (only italics only at first mention) (e.g. There is formal QA/QC and informal QA/QC.)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:136
+msgid "Further reading"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:138
+msgid "To find answers to questions not available in the SEPAL documentation style guide, go to the following links:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:140
+msgid "`FAOSTYLE (2022) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (for general style guidelines according to FAO)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:141
+msgid "`GitHub documentation <https://docs.github.com/en>`__ (for exemplary documentation)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:142
+msgid "`Microsoft style guide <https://learn.microsoft.com/en-us/docs/>`__ (for an exemplary style guide, specifically for documentation)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:144
+msgid "`“Procedures and instructions” <https://docs.microsoft.com/en-us/style-guide/procedures-instructions/>`__ (for a guide on writing these elements)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:145
+msgid "`“Describing interactions with UI” <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__ (for a guide on writing these elements)"
+msgstr ""
+
