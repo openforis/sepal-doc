@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"PO-Revision-Date: 2023-03-30 08:19\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -32,27 +32,27 @@ msgstr "Dans cette section de la documentation de SEPAL, vous pouvez apprendre �
 
 #: ../../source/setup/index.rst:9
 msgid "`Register to SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`__"
-msgstr ""
+msgstr "`S'inscrire à SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`__"
 
 #: ../../source/setup/index.rst:10
 msgid "`Use Google Earth Engine (GEE) with SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`__"
-msgstr ""
+msgstr "`Utilisez Google Earth Engine (GEE) avec SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`__"
 
 #: ../../source/setup/index.rst:11
 msgid "`Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`__"
-msgstr ""
+msgstr "`Utilisez les données de l'Initiative internationale sur le climat et les forêts de Norvège (NICFI) - Planet Lab <https://docs.sepal.io/en/latest/setup/nicfi.html>`__"
 
 #: ../../source/setup/index.rst:12
 msgid "`Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`__"
-msgstr ""
+msgstr "`Échanger des fichiers avec SEPAL <https://docs.sepal.io/fr/latest/setup/filezilla.html>`__"
 
 #: ../../source/setup/index.rst:13
 msgid "`Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>`__"
-msgstr ""
+msgstr "`Gérer vos ressources <https://docs.sepal.io/fr/latest/setup/resource.html>`__"
 
 #: ../../source/setup/index.rst:14
 msgid "`Reset your password <https://docs.sepal.io/en/latest/setup/password.html>`__"
-msgstr ""
+msgstr "`Réinitialiser votre mot de passe <https://docs.sepal.io/fr/latest/setup/password.html>`__"
 
 #: ../../source/setup/index.rst:16
 msgid "Navigate to other pages in this section by selecting links located in **Section navigation** in the left pane."
@@ -64,7 +64,7 @@ msgstr "Naviguez vers d'autres sections de cet article en sélectionnant les lie
 
 #: ../../source/setup/index.rst:20
 msgid "Make contributions to the documentation by selecting :icon:`fa-solid fa-pencil` **Edit this page** in the right pane."
-msgstr ""
+msgstr "Contribuez à la documentation en sélectionnant :icon:`fa-solid fa-pencil` **Modifier cette page** dans le volet de droite."
 
 #: ../../source/setup/index.rst:22
 msgid "If you can't find what you're looking for, use the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`_."
@@ -72,7 +72,7 @@ msgstr "Si vous ne trouvez pas ce que vous cherchez, utilisez le `GitHub issue t
 
 #: ../../source/setup/index.rst:24
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__ or contact the SEPAL team at :email:`sepal@fao.org`."
-msgstr ""
+msgstr "Pour obtenir de l’aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__ ou contactez l’équipe SEPAL à :email:`sepal@fao.org`."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
