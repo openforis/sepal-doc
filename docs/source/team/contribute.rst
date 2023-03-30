@@ -39,6 +39,26 @@ There are very few guidelines to respect that are not directly specified by the 
 - In all the files you write please respect the following indentation: :code:`4 spaces`. it includes directives (option and content) AND bullet points
 - For the headings of your files use the following symbols (from heading 1 to heading 6) :code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, :code:`+`
 
+.. code-block:: rst
+
+    Heading 1
+    =========
+
+    heading 2
+    ---------
+
+    heading 3
+    ^^^^^^^^^
+
+    heading 4
+    """""""""
+
+    heading 5
+    #########
+
+    heading 6
+    +++++++++
+
 Custom
 ^^^^^^
 
