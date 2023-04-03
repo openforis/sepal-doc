@@ -42,7 +42,7 @@ Sign up for NICFI Planet data access using the same email address associated wit
 
 Click on the **Sign up** button and fill in the form. 
 
-.. thumbnail:: ../_images/setup/nicfi/signup1.png
+.. thumbnail:: ../_images/setup/nicfi/signup.png
    :title: Sign up form.
    :group: setup_nicfi
 
@@ -52,7 +52,7 @@ Please check your email for an invitation to complete the sign up process.
 
 Click on the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account.
 
-.. thumbnail:: ../_images/setup/nicfi/activate_account.gif
+.. thumbnail:: ../_images/setup/nicfi/activate_account.png
    :title: Account activation form.
    :group: setup_nicfi
 
