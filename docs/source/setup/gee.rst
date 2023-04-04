@@ -41,8 +41,8 @@ For first-time users of SEPAL, you will want to select 'Use Without a Cloud Proj
 .. thumbnail:: ../_images/setup/register/gee_gcp_declaration.png
     :title: Use google earth engine without cloud project.
     :align: center
-    
-    
+
+
 Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**.
 
 .. thumbnail:: ../_images/setup/register/gee_code.png
