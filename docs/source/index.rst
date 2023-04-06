@@ -1,25 +1,9 @@
 :html_theme.sidebar_secondary.remove:
 
-.. image:: _images/sepal_light.png
-    :align: center
-    :class: main-logo only-light only-big
-
-.. image:: _images/sepal_dark.png
-    :align: center
-    :class: main-logo only-dark center only-big
-
-.. image:: _images/logo_light.png
-    :align: center
-    :class: main-logo only-light only-small
-
-.. image:: _images/logo_dark.png
-    :align: center
-    :class: main-logo only-dark center only-small
-
 .. raw:: html
 
     <style type="text/css">
-        h1 {text-align:center;}
+        h1 {display: none;}
         .bd-main .bd-content .bd-article-container {max-width: 100%;}
         .big-font {font-size: var(--pst-font-size-h4); color: var(--pst-color-primary)}
         .video_wrapper.align-center {margin: auto;}
@@ -27,6 +11,10 @@
 
 Documentation
 =============
+
+.. image:: _images/documentation_banner.png
+    :align: center
+    :class: light-dark
 
 .. toctree::
    :maxdepth: 1
@@ -41,15 +29,11 @@ Documentation
     <team/index>
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 .. rst-class:: font-weight-bold big-font
 
         SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge.
 
-.. line-break::
-.. line-break::
 .. line-break::
 
 .. youtube:: niOUVE8N7wo
@@ -57,16 +41,12 @@ Documentation
     :width: 60%
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 Learn how to use the platform with SEPAL documentation
 ------------------------------------------------------
 
 The SEPAL team developed this GitHub page to help users get the most out of the interface.
 
-.. line-break::
-.. line-break::
 .. line-break::
 
 Getting started
@@ -91,8 +71,6 @@ Getting started
         Sign up to use Norway’s International Climate and Forests Initiative (NICFI) – PlanetLab data and connect your account to GEE.
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 Recipes and modules
 ^^^^^^^^^^^^^^^^^^^
@@ -115,8 +93,6 @@ Recipes and modules
 
         Compute your restoration index with se.plan, a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders.
 
-.. line-break::
-.. line-break::
 .. line-break::
 
 Other resources
@@ -141,16 +117,12 @@ Other resources
         Browse the Suite of Tools.
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 SEPAL is always improving.
 --------------------------
 
 Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation.
 
-.. line-break::
-.. line-break::
 .. line-break::
 
 .. grid:: 1 2 2 4
@@ -169,8 +141,6 @@ Encounter a problem? See an issue? Need help? Take one of the following actions 
         :link: https://www.fao.org/in-action/sepal/activities/Elearning/en
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 About the platform
 ------------------
@@ -180,16 +150,12 @@ SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. T
 SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
 
 .. line-break::
-.. line-break::
-.. line-break::
 
 Suporting institutions
 ----------------------
 
 SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO).
 
-.. line-break::
-.. line-break::
 .. line-break::
 
 .. logos:: funders
