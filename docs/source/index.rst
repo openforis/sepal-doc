@@ -19,7 +19,7 @@
 .. raw:: html
 
     <style type="text/css">
-        h1 {text-align:center;}
+        h1 {display: none;}
         .bd-main .bd-content .bd-article-container {max-width: 100%;}
         .big-font {font-size: var(--pst-font-size-h4); color: var(--pst-color-primary)}
         .video_wrapper.align-center {margin: auto;}
@@ -27,6 +27,10 @@
 
 Documentation
 =============
+
+.. image:: _images/documentation_banner.png
+    :align: center
+    :class: light-dark
 
 .. toctree::
    :maxdepth: 1
