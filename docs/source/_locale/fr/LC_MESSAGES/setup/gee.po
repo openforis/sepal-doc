@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-05 00:48+0000\n"
-"PO-Revision-Date: 2023-04-05 00:49\n"
+"PO-Revision-Date: 2023-04-06 14:52\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "Pour demander un compte GEE, allez sur https://earthengine.google.com/ne
 
 #: ../../source/setup/gee.rst:39
 msgid "For first-time users of SEPAL, you will want to select 'Use Without a Cloud Project' as this is how non-commercial users of GEE should begin. The link between GEE and Google Cloud Projects (GCP) is evolving and SEPAL will continue to develop in order to make use of GCP correctly. For now, though...use SEPAL without a GCP."
-msgstr ""
+msgstr "Pour les nouveaux utilisateurs de SEPAL, vous devrez sélectionner 'Utiliser sans projet cloud' car c'est ainsi que les utilisateurs non commerciaux de GEE devraient commencer. Le lien entre les projets GEE et Google Cloud (GCP) évolue et SEPAL continuera à se développer afin de pouvoir utiliser correctement GCP. Cependant, pour l'instant, utiliser SEPAL sans GCP."
 
 #: ../../source/setup/gee.rst:46
 msgid "Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**."
