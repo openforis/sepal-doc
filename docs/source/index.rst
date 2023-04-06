@@ -1,21 +1,5 @@
 :html_theme.sidebar_secondary.remove:
 
-.. image:: _images/sepal_light.png
-    :align: center
-    :class: main-logo only-light only-big
-
-.. image:: _images/sepal_dark.png
-    :align: center
-    :class: main-logo only-dark center only-big
-
-.. image:: _images/logo_light.png
-    :align: center
-    :class: main-logo only-light only-small
-
-.. image:: _images/logo_dark.png
-    :align: center
-    :class: main-logo only-dark center only-small
-
 .. raw:: html
 
     <style type="text/css">
