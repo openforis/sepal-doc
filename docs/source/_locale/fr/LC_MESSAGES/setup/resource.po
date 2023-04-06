@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"PO-Revision-Date: 2023-04-06 13:39\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgstr "Rapport utilisateur"
 
 #: ../../source/setup/resource.rst:32
 msgid "In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
-msgstr ""
+msgstr "Dans le **Terminal**, **Applications** ou **Recettes**, sélectionnez **Rapport d'utilisateur** sur le côté inférieur droit de la fenêtre pour voir votre consommation d'instance actuelle: :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
 
 #: ../../source/setup/resource.rst:49
 msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2)."
