@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-31 01:00+0000\n"
-"PO-Revision-Date: 2023-03-31 01:05\n"
+"PO-Revision-Date: 2023-04-06 14:52\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Documentation"
 
 #: ../../source/index.rst:49
 msgid "SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge."
-msgstr ""
+msgstr "SEPAL (Système d'accès aux données d'observation de la Terre, Le traitement et l'analyse de l'observation des terres) est un projet et une plate-forme open-source qui permet aux gens du monde entier de mieux comprendre la dynamique de la couverture terrestre en facilitant l'accès et l'utilisation efficaces des données d'observation de la Terre - sans avoir besoin de connaissances en codage."
 
 #: ../../source/index.rst:64
 msgid "Learn how to use the platform with SEPAL documentation"
@@ -96,7 +96,7 @@ msgstr "Découvrez l'impact du projet."
 
 #: ../../source/index.rst:136
 msgid "Learn more about the interface."
-msgstr ""
+msgstr "En savoir plus sur l'interface."
 
 #: ../../source/index.rst:141
 msgid "Browse the Suite of Tools."
@@ -104,11 +104,11 @@ msgstr "Naviguez dans la suite d'outils."
 
 #: ../../source/index.rst:148
 msgid "SEPAL is always improving."
-msgstr ""
+msgstr "SEPAL est en constante amélioration."
 
 #: ../../source/index.rst:150
 msgid "Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation."
-msgstr ""
+msgstr "Vous rencontrez un problème ? Vous avez besoin d'aide ? Prenez l'une des actions suivantes pour aider les membres de notre équipe à améliorer l'expérience utilisateur en améliorant la plate-forme et la documentation."
 
 #: ../../source/index.rst:176
 msgid "About the platform"
@@ -116,11 +116,11 @@ msgstr "À propos de la plateforme"
 
 #: ../../source/index.rst:178
 msgid "SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program."
-msgstr ""
+msgstr "SEPAL fait partie de la suite d'outils `Open Foris <http://www.openforis.org>`__. La plateforme permet aux utilisateurs d' interroger et de traiter les données par satellite rapidement et efficacement, adapter leurs produits aux besoins locaux et produire des analyses géospatiales sophistiquées et pertinentes. Exploiter les superordinateurs dans le cloud et les infrastructures de données géospatiales modernes (p. ex. GEE), l’interface permet l’accès et le traitement des données historiques satellitaires ainsi que des données plus récentes provenant de Landsat et des données de plus haute résolution du programme Copernicus en Europe."
 
 #: ../../source/index.rst:180
 msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
-msgstr ""
+msgstr "SEPAL est une plate-forme basée sur l'informatique dans le cloud pour la surveillance autonome des terres en utilisant des données à distance sensées. Il s'agit d'une combinaison de GEE et de logiciels open-source tels que GDAL, Jupyter, l'Open Foris Geospatial Toolkit, Boîte à outils ORFEO, Python, R, R Shiny Server, R Studio Server et SNAP Toolkit. La plateforme permet aux utilisateurs d'accéder rapidement et efficacement à des ressources informatiques puissantes pour interroger et traiter les données satellitaires afin de créer des analyses avancées."
 
 #: ../../source/index.rst:187
 msgid "Suporting institutions"
@@ -128,7 +128,7 @@ msgstr "Institutions partenaires"
 
 #: ../../source/index.rst:189
 msgid "SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO)."
-msgstr ""
+msgstr "SEPAL est un projet financé par le gouvernement norvégien du Département des forêts de l'Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)."
 
 #~ msgid "Modules"
 #~ msgstr ""
