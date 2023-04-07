@@ -33,7 +33,7 @@ For support, `ask the community <https://groups.google.com/g/sepal-users>`__ or 
     register
     presentation
     gee
-    filezilla
     nicfi
-    password
     resource
+    filezilla
+    password
