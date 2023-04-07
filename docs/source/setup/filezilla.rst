@@ -85,6 +85,10 @@ FTP solution
 
 SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP).
 
+.. warning::
+
+    You must request user resources in order for any FTP solution to connect to SEPAL. Follow the steps described in :doc:`./resource` for more information.
+
 If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example.
 
 .. seealso::
