@@ -149,6 +149,3 @@ To create a new account:
 .. tip::
 
     If you forget your password, select **Forgot your password?** and follow the instructions.
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

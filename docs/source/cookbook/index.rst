@@ -109,6 +109,3 @@ Recipes
     ccdc
     ccdc_slice
     class_change
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

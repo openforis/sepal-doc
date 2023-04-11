@@ -311,6 +311,3 @@ Here is an example of a real TS folder:
 .. important::
 
     Now that you have downloaded the TS to your SEPAL account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in one of our `time-series analysis modules <../modules/time-series.html>`__.
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

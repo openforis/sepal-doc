@@ -34,5 +34,3 @@ The following video tutorial demonstrates these steps in a reproducible way:
     :width: 560
 
 More detailed explanations of what a timescan is, how it relates to the concept of ARD, and what influences the processing parameters have will be added to this documentation at a later date.
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

@@ -641,6 +641,3 @@ The data are stored in a folder using the name of the optical mosaic as it was c
 .. tip::
 
     The full folder with a consistent tree folder is required to read the `.vrt`.
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

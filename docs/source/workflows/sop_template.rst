@@ -365,5 +365,3 @@ United States, Environmental Protection Agency. (2007). Guidance for Preparing S
 
 
 Thank you for reading this tutorial on creating SOPs with templates!
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

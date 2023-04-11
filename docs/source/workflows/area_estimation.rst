@@ -2883,5 +2883,3 @@ Now you know:
 -   how to comment code;
 -   how to use version control options for your project; and
 -   how to report your area estimation project.
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
