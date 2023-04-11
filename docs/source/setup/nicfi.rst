@@ -47,7 +47,7 @@ Click on the **Sign up** button and fill in the form.
    :group: setup_nicfi
 
 
-After submitting the form, an email will be sent with a link to activate your account. 
+After submitting the form, an email will be sent with a link to activate your account.
 Please check your email for an invitation to complete the sign up process.
 
 Click on the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account.
