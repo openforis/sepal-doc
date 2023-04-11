@@ -132,11 +132,25 @@ footer {
 }
 
 /*******************************************************************************
-* algnement of the footer
-* to be removed if https://github.com/pydata/pydata-sphinx-theme/issues/1243 gets
-* closed
-*
-**/
-footer div.footer-items__end {
-  text-align: end;
+* custom article footer rendering
+*/
+footer.bd-footer-article {
+  background-color: transparent;
+  border-top: 1px solid var(--pst-color-border);
+}
+
+.bd-footer-article .footer-article-items {
+  flex-direction: row;
+}
+
+.bd-footer-article .footer-article-items .footer-article-item {
+  flex-grow: 1;
+}
+
+.community {
+  text-align: right;
+}
+
+.last-updated {
+  color: var(--pst-color-text-muted);
 }
