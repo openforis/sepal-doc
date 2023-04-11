@@ -40,7 +40,7 @@ Sign up for NICFI Planet data access using the same email address associated wit
    :group: setup_nicfi
 
 
-Click on the **Sign up** button and fill in the form. 
+Click on the **Sign up** button and fill in the form.
 
 .. thumbnail:: ../_images/setup/nicfi/signup.png
    :title: Sign up form.
