@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 17:25+0000\n"
-"PO-Revision-Date: 2023-02-02 17:29\n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:08\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -55,11 +55,11 @@ msgid "Connect your SEPAL account to your GEE account to read and write GEE asse
 msgstr ""
 
 #: ../../source/cookbook/index.rst:76
-msgid "To start a recipe, go to the **Process** tab :icon:`fa fa-globe`, where you'll see the list of all saved recipes in your SEPAL account."
+msgid "To start a recipe, go to the **Process** tab :icon:`fa-solid fa-globe`, where you'll see the list of all saved recipes in your SEPAL account."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:81
-msgid "Select the green :icon:`fa fa-plus-circle` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage."
+msgid "Select the green :icon:`fa-solid fa-circle-plus` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:87
@@ -71,14 +71,14 @@ msgid "Using saved recipes is the recommended method for sharing parameters to d
 msgstr ""
 
 #: ../../source/cookbook/index.rst:93
-msgid "Select a recipe in the main menu to display it in a tab. Then select :btn:`<fas fa-bars>` in the upper-right corner and select :btn:`Export recipe`. The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`."
+msgid "Select a recipe in the main menu to display it in a tab. Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`. The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:99
 msgid "Recipes"
 msgstr ""
 
-#: ../../source/cookbook/index.rst:113
+#: ../../source/cookbook/index.rst:114
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
@@ -169,5 +169,33 @@ msgstr ""
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start a recipe, go to the "
+#~ "**Process** tab :icon:`fa fa-globe`, "
+#~ "where you'll see the list of all"
+#~ " saved recipes in your SEPAL account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the green :icon:`fa fa-plus-"
+#~ "circle` button in the lower-right "
+#~ "corner to open the **Recipe type "
+#~ "selector** pop-up window. Select any "
+#~ "of the available recipe types and "
+#~ "follow our tutorials to learn more "
+#~ "about each type's usage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select a recipe in the main menu"
+#~ " to display it in a tab. Then"
+#~ " select :btn:`<fas fa-bars>` in the"
+#~ " upper-right corner and select "
+#~ ":btn:`Export recipe`. The file will be"
+#~ " downloaded to your computer using "
+#~ "the following name: "
+#~ ":code:`<name_of_the_recipe>.json.zip`."
 #~ msgstr ""
 

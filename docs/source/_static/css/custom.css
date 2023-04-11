@@ -90,21 +90,8 @@ a[data-lightbox] img {
 *  add some images rules
 *
 **/
-html[data-theme="dark"] {
+html[data-theme="dark"] img:not(.only-dark):not(.dark-light) {
   filter: none;
-}
-@media (max-width: 576px) {
-  .only-big {
-    display: none !important;
-  }
-}
-.only-small {
-  max-height: 200px;
-}
-@media (min-width: 576px) {
-  .only-small {
-    display: none !important;
-  }
 }
 
 /*******************************************************************************

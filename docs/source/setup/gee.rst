@@ -36,6 +36,13 @@ To request a GEE account, go to https://earthengine.google.com/new_signup/.
     :title: Request access to google earth engine.
     :align: center
 
+For first-time users of SEPAL, you will want to select 'Use Without a Cloud Project' as this is how non-commercial users of GEE should begin. The link between GEE and Google Cloud Projects (GCP) is evolving and SEPAL will continue to develop in order to make use of GCP correctly. For now, though...use SEPAL without a GCP.
+
+.. thumbnail:: ../_images/setup/register/gee_gcp_declaration.png
+    :title: Use google earth engine without cloud project.
+    :align: center
+
+
 Once you have a GEE account, go to https://code.earthengine.google.com/ to access the **Earth Engine Code Editor**.
 
 .. thumbnail:: ../_images/setup/register/gee_code.png
