@@ -33,7 +33,7 @@ The first step is to make sure you have a GEE account. You can follow `this tuto
 Sign up for NICFI imagery
 -------------------------
 
-Sign up for NICFI Planet data access using the same email address associated with your GEE account. To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_. 
+Sign up for NICFI Planet data access using the same email address associated with your GEE account. To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_.
 
 .. thumbnail:: ../_images/setup/nicfi/nicfi_page.png
    :title: Planet NICFI landing page.
