@@ -94,6 +94,3 @@ Once validated, the new password will be automatically updated on your account. 
 .. thumbnail:: ../_images/setup/password/change-password-notification.png
    :title: The **Change password** interface.
    :group: setup_password
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

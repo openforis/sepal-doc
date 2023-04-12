@@ -196,6 +196,3 @@ This will bring up a list of apps you can run in SEPAL. More information about e
 -   **Mountain Green Cover Index:** Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale.
 -   **SMFM Biota:** Calculate biomass change over time using ALOS Palsar data.
 -   Many more that can be found in the section :doc:`../modules/index` of the documentation.
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

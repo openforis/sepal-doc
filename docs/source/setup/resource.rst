@@ -98,6 +98,3 @@ Once validated, the request is sent to the SEPAL team, who will take measures in
 .. thumbnail:: ../_images/setup/resource/notification.png
    :title: The **Resource management** notification communicating that your resource request is being processed.
    :group: setup_resource
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.

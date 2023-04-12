@@ -59,7 +59,6 @@ html_context = {
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css", "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"]
 html_js_files = ["https://unpkg.com/leaflet@1.7.1/dist/leaflet.js", "js/custom.js"]
-html_extra_path = ["browserconfig.xml"]
 
 # -- Option for Latex output ---------------------------------------------------
 
@@ -84,7 +83,7 @@ html_theme_options = {
     "header_links_before_dropdown": 7,
     "navigation_with_keys": False,
     "show_nav_level": 1,
-    "show_prev_next": False,
+    "show_prev_next": True,
     "icon_links": [
         {
             "name": "GitHub",
@@ -102,48 +101,24 @@ html_theme_options = {
             "icon": "fa-brands fa-linkedin",
         },
         {
-            "name": "GIS Stackexchange",
-            "url": "https://gis.stackexchange.com/questions/tagged/sepal",
-            "icon": "fa-brands fa-stack-exchange",
-        },
-        {
             "name": "Youtube",
             "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
             "icon": "fa-brands fa-youtube",
         },
-        {
-            "name": "Google forum",
-            "url": "https://groups.google.com/g/sepal-users",
-            "icon": "fa-brands fa-google",
-        },
     ],
     "use_edit_page_button": True,
-    "footer_start": ["copyright", "sphinx-version", "last-updated"],
-    "footer_end": ["licence", "map"],
+    "article_footer_items": ["last-updated"],
+    "footer_start": ["copyright", "map", "sphinx-version", "licence"],
+    "footer_end": ["community", "issue-tracker", "e-learning", "stackexchange"],
 }
 
 # -- option for the favicon extention ------------------------------------------
 
 favicons = [
-    {
-        "rel": "apple-touch-icon",
-        "size": "180x180",
-        "static-file": "apple-touch-icon.png",
-    },
-    {
-        "rel": "icon",
-        "type": "image/png",
-        "size": "32x32",
-        "static-file": "favicon-32x32.png",
-    },
-    {
-        "rel": "icon",
-        "type": "image/png",
-        "size": "16x16",
-        "static-file": "favicon-16x16.png",
-    },
-    {"rel": "mask-icon", "static-file": "safari-pinned-tab.svg", "color": "#186691"},
-    {"rel": "manifest", "static-file": "/site.webmanifest"},
+    {"rel": "apple-touch-icon", "href": "apple-touch-icon.png"},
+    {"href": "favicon-32x32.png"},
+    {"href": "favicon-16x16.png"},
+    {"rel": "mask-icon", "href": "safari-pinned-tab.svg", "color": "#186691"},
 ]
 
 # -- Options for images --------------------------------------------------------

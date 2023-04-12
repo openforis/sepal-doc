@@ -476,6 +476,3 @@ The data are stored in a folder using the name of the optical mosaic as it was c
 .. important::
 
     Now that you have downloaded the MO to your SEPAL and/or GEE account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows.
-
-
-For support, `ask the community <https://groups.google.com/g/sepal-users>`__.
