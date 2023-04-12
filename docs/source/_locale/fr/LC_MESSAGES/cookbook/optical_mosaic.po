@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:07\n"
+"PO-Revision-Date: 2023-04-12 07:58\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -433,7 +433,7 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:275
 msgid "Composing method"
-msgstr ""
+msgstr "Méthode de composition"
 
 #: ../../source/cookbook/optical_mosaic.rst:277
 msgid "After filtering the stack of pixels, SEPAL will compute the median value on the different bands of the image. The composing method will define how the final pixel value is extracted."
@@ -449,7 +449,7 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:283
 msgid "Analysis"
-msgstr ""
+msgstr "Analyse"
 
 #: ../../source/cookbook/optical_mosaic.rst:285
 msgid "After selecting the parameters, you can start interacting with the scenes and begin the analysis. In the upper-right corner, three tabs are available. They will allow you to customize the mosaic scene selection and export the final result."
