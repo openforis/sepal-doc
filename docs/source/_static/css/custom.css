@@ -148,10 +148,7 @@ footer.bd-footer-article {
   flex-grow: 1;
 }
 
-.community {
-  text-align: right;
-}
-
-.last-updated {
+.bd-footer-article .last-updated {
   color: var(--pst-color-text-muted);
+  text-align: right;
 }
