@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-08 00:54+0000\n"
-"PO-Revision-Date: 2023-04-08 00:59\n"
+"PO-Revision-Date: 2023-04-12 06:59\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +136,7 @@ msgstr "Le contenu de SEPAL est également accessible via un protocole de transf
 
 #: ../../source/setup/filezilla.rst:90
 msgid "You must request user resources in order for any FTP solution to connect to SEPAL. Follow the steps described in :doc:`./resource` for more information."
-msgstr ""
+msgstr "Vous devez demander des ressources utilisateur pour qu'une solution FTP se connecte à SEPAL. Suivez les étapes décrites dans :doc:`./resource` pour plus d'informations."
 
 #: ../../source/setup/filezilla.rst:92
 msgid "If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example."
@@ -232,7 +232,7 @@ msgstr "Pour plus d'informations sur l'utilisation de FileZilla, allez sur leur 
 
 #: ../../source/setup/filezilla.rst:149
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
+msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
