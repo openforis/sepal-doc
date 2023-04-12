@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:07\n"
+"POT-Creation-Date: 2023-04-08 00:54+0000\n"
+"PO-Revision-Date: 2023-04-08 00:59\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -134,99 +134,103 @@ msgstr ""
 msgid "SEPAL content can also be accessed via a Secure Shell (SSH) File Transfer Protocol (FTP)."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:88
-msgid "If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example."
+#: ../../source/setup/filezilla.rst:90
+msgid "You must request user resources in order for any FTP solution to connect to SEPAL. Follow the steps described in :doc:`./resource` for more information."
 msgstr ""
 
 #: ../../source/setup/filezilla.rst:92
+msgid "If you don't know what an FTP solution is and/or don't have an FTP solution installed on your computer, you can learn more by reading this section, where FileZilla is used as an example."
+msgstr ""
+
+#: ../../source/setup/filezilla.rst:96
 msgid "An FTP client is software that allows you to connect to an FTP server in order to exchange files. Once connected, you can upload, download, copy or delete files on either the remote computer or your local computer."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:95
+#: ../../source/setup/filezilla.rst:99
 msgid "FileZilla®"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:97
+#: ../../source/setup/filezilla.rst:101
 msgid "FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:99
+#: ../../source/setup/filezilla.rst:103
 msgid "The FileZilla Client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:103
+#: ../../source/setup/filezilla.rst:107
 msgid "To download the software, go to `<https://FileZilla-project.org/download.php?type=client>`_."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:106
+#: ../../source/setup/filezilla.rst:110
 msgid "Connect your FTP client to SEPAL"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:108
+#: ../../source/setup/filezilla.rst:112
 msgid "Accessing files in SEPAL is easy using FileZilla."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:110
+#: ../../source/setup/filezilla.rst:114
 msgid "To use FileZilla, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** >> **New Site**."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:112
+#: ../../source/setup/filezilla.rst:116
 msgid "Use the screenshot below as a guide for filling out the form:"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:114
+#: ../../source/setup/filezilla.rst:118
 msgid "**Host:** ssh.sepal.io"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:115
+#: ../../source/setup/filezilla.rst:119
 msgid "**Port:** 443"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:116
+#: ../../source/setup/filezilla.rst:120
 msgid "**Protocol:** SFTP – SSH File Transfer Protocol"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:117
+#: ../../source/setup/filezilla.rst:121
 msgid "**Logon Type:** Normal"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:118
+#: ../../source/setup/filezilla.rst:122
 msgid "**User:** <your SEPAL username>"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:119
+#: ../../source/setup/filezilla.rst:123
 msgid "**Password:** <your SEPAL password>"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:123
+#: ../../source/setup/filezilla.rst:127
 msgid "For **User** and **Password**, enter the credentials you use to connect to the platform."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:127
+#: ../../source/setup/filezilla.rst:131
 msgid "By selecting **Connect**, your SEPAL drive will appear in the right pane."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:129
+#: ../../source/setup/filezilla.rst:133
 msgid "In the left pane, you can find files and folders on your computer."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:132
+#: ../../source/setup/filezilla.rst:136
 msgid "Use the FTP client to interact with SEPAL"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:134
+#: ../../source/setup/filezilla.rst:138
 msgid "Familiarize yourself with FileZilla's window layout by following this overview:"
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:136
+#: ../../source/setup/filezilla.rst:140
 msgid "Below the **Toolbar** (1) and **Quick connect bar** (2), the **Message log** (3) displays messages related to transfers and connection. Below, you can find the file listings. The left column (**Local pane**, 4) displays the local files and directories (e.g. content on the PC you're using FileZilla on). The right column (**Remote pane**, 5) displays the files and directories on the server you are connected to. Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom. You can easily navigate either of the trees and lists by clicking around, like you would in any other file manager. In the lower section of the window, the **Transfer queue** (6) lists the status of to-be-tranferred or already transfered files."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:142
+#: ../../source/setup/filezilla.rst:146
 msgid "For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
 msgstr ""
 
-#: ../../source/setup/filezilla.rst:145
+#: ../../source/setup/filezilla.rst:149
 msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 

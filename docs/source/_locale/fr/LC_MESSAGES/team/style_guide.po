@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-03-30 01:14\n"
+"PO-Revision-Date: 2023-04-12 06:59\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../source/team/style_guide.rst:2
 msgid "documentation style guide"
-msgstr ""
+msgstr "guide de style de la documentation"
 
 #: ../../source/team/style_guide.rst:4
 msgid "Help us maintain useful, clear, concise, consistent and fluid writing across the documentation by following the SEPAL documentation style guide."
-msgstr ""
+msgstr "Aidez-nous à maintenir une écriture utile, claire, concise, cohérente et fluide à travers la documentation en suivant le guide de style de la documentation SEPAL."
 
 #: ../../source/team/style_guide.rst:6
 msgid "Learn the basics of SEPAL documentation style and ensure that your contributions are as useful as possible for the community."
-msgstr ""
+msgstr "Apprenez les bases du style de la documentation SEPAL et assurez-vous que vos contributions sont aussi utiles que possible pour la communauté."
 
 #: ../../source/team/style_guide.rst:9
 msgid "Goals and principles"
-msgstr ""
+msgstr "Objectifs et principes"
 
 #: ../../source/team/style_guide.rst:11
 msgid "The goal of SEPAL documentation is to guide users through the SEPAL interface. As an external contributor or a member of the SEPAL team, think of yourself as a tour guide for users. To achieve this goal, the SEPAL team ensures that writing is:"
-msgstr ""
+msgstr "L'objectif de la documentation SEPAL est de guider les utilisateurs à travers l'interface SEPAL. En tant que contributeur externe ou membre de l'équipe SEPAL, considérez vous comme un guide touristique pour les utilisateurs. Pour atteindre cet objectif, l'équipe SEPAL s'assure que l'écriture est :"
 
 #: ../../source/team/style_guide.rst:14
 msgid "useful"
-msgstr ""
+msgstr "utile"
 
 #: ../../source/team/style_guide.rst:15 ../../source/team/style_guide.rst:90
 msgid "clear"
-msgstr ""
+msgstr "claire"
 
 #: ../../source/team/style_guide.rst:16
 msgid "concise"
-msgstr ""
+msgstr "concise"
 
 #: ../../source/team/style_guide.rst:17
 msgid "consistent"
-msgstr ""
+msgstr "cohérente"
 
 #: ../../source/team/style_guide.rst:18
 msgid "fluid"
-msgstr ""
+msgstr "fluide"
 
 #: ../../source/team/style_guide.rst:21
 msgid "Style tips"
-msgstr ""
+msgstr "Conseils de style"
 
 #: ../../source/team/style_guide.rst:23
 msgid "Here are some basic guidelines for following SEPAL documentation style."
-msgstr ""
+msgstr "Voici quelques lignes directrices de base pour suivre le style de la documentation SEPAL."
 
 #: ../../source/team/style_guide.rst:26
 msgid "Focus on user needs"
-msgstr ""
+msgstr "Se concentrer sur les besoins des utilisateurs"
 
 #: ../../source/team/style_guide.rst:28
 msgid "Consider users’ questions and goals when writing SEPAL documentation. For every article, make sure users’ questions have been addressed and answered, allowing them to achieve their goals."
-msgstr ""
+msgstr "Considérez les questions et les objectifs des utilisateurs lors de la rédaction de la documentation SEPAL. Pour chaque article, assurez-vous que les questions des utilisateurs ont été traitées et répondues, ce qui leur permet d’atteindre leurs objectifs."
 
 #: ../../source/team/style_guide.rst:31
 msgid "Be simple and direct"
-msgstr ""
+msgstr "Soyez simple et direct"
 
 #: ../../source/team/style_guide.rst:33
 msgid "Keep language clear, concise and fluid. Use numbered and bulleted lists, instead of long paragraphs, whenever possible."
-msgstr ""
+msgstr "Gardez un langage clair, concis et fluide. Utilisez des listes numérotées et à puces au lieu de paragraphes longs, dans la mesure du possible."
 
 #: ../../source/team/style_guide.rst:36
 msgid "Use direct tone"
-msgstr ""
+msgstr "Utiliser un ton direct"
 
 #: ../../source/team/style_guide.rst:38
 msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood."
