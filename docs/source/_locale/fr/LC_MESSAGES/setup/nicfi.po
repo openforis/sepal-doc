@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-12 00:56+0000\n"
-"PO-Revision-Date: 2023-04-12 00:58\n"
+"PO-Revision-Date: 2023-04-12 06:59\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -84,19 +84,19 @@ msgstr "La première étape consiste à vous assurer que vous avez un compte GEE
 
 #: ../../source/setup/nicfi.rst:36
 msgid "Sign up for NICFI Planet data access using the same email address associated with your GEE account. To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_."
-msgstr ""
+msgstr "Inscrivez-vous pour accéder aux données de NICFI Planet en utilisant la même adresse e-mail associée à votre compte GEE. Pour vous inscrire pour accéder au programme de données NICFI, allez à `<https://www.planet.com/nicfi/>`_."
 
 #: ../../source/setup/nicfi.rst:43
 msgid "Click on the **Sign up** button and fill in the form."
-msgstr ""
+msgstr "Cliquez sur le bouton **Sign up** et remplissez le formulaire."
 
 #: ../../source/setup/nicfi.rst:50
 msgid "After submitting the form, an email will be sent with a link to activate your account. Please check your email for an invitation to complete the sign up process."
-msgstr ""
+msgstr "Après avoir envoyé le formulaire, un e-mail sera envoyé avec un lien pour activer votre compte. Veuillez consulter votre e-mail pour une invitation à compléter le processus d'inscription."
 
 #: ../../source/setup/nicfi.rst:53
 msgid "Click on the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account."
-msgstr ""
+msgstr "Cliquez sur le lien et un nouveau formulaire apparaîtra. Remplissez le formulaire et vous recevrez un message de succès avec une nouvelle page pour vous connecter à votre compte."
 
 #: ../../source/setup/nicfi.rst:61
 msgid "If you are already a NICFI user and would like to access the basemaps in GEE, go to `<www.planet.com/nicfi/?gee=show>`_ to apply for access."
