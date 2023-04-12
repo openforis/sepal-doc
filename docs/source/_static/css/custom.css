@@ -137,6 +137,7 @@ footer {
 footer.bd-footer-article {
   background-color: transparent;
   border-top: 1px solid var(--pst-color-border);
+  margin-top: 2em;
 }
 
 .bd-footer-article .footer-article-items {
