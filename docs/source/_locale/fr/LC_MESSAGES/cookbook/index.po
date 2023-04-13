@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-30 08:19\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -77,10 +77,6 @@ msgstr "Sélectionnez une recette dans le menu principal pour l'afficher dans un
 #: ../../source/cookbook/index.rst:99
 msgid "Recipes"
 msgstr "Recettes"
-
-#: ../../source/cookbook/index.rst:114
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "Harness high performance cloud-based "
@@ -197,5 +193,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ " downloaded to your computer using "
 #~ "the following name: "
 #~ ":code:`<name_of_the_recipe>.json.zip`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
