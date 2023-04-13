@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -819,10 +819,6 @@ msgstr ""
 
 #: ../../source/cookbook/classification.rst:643
 msgid "The full folder with a consistent tree folder is required to read the `.vrt`."
-msgstr ""
-
-#: ../../source/cookbook/classification.rst:646
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -1741,5 +1737,10 @@ msgstr ""
 #~ "spinner>` buttons, depending on the "
 #~ "loading status), you will see the "
 #~ "list of different loading tasks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
