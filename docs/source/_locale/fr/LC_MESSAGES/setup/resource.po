@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-04-06 13:39\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -130,10 +130,6 @@ msgstr "Fournissez une explication détaillée pour expliquer pourquoi vous avez
 msgid "Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details."
 msgstr "Une fois validée, la demande est envoyée à l'équipe SEPAL qui prendra des mesures dans les prochains jours pour mettre à jour votre profil, qui peuvent comprendre de vous contacter directement pour plus de détails."
 
-#: ../../source/setup/resource.rst:103
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
-
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
 #~ " or contact the SEPAL team at "
@@ -152,5 +148,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ " to see your current instance "
 #~ "consumption: :btn:`<fas fa-dollar-sign> "
 #~ "x.xx/h`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
