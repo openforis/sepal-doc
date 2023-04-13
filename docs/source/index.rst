@@ -152,8 +152,8 @@ SEPAL is a cloud computing-based platform for autonomous land monitoring using r
 
 .. line-break::
 
-Suporting institutions
-----------------------
+Supporting institutions
+-----------------------
 
 SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO).
 
