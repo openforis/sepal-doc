@@ -1,10 +1,4 @@
 {
-  "fao": {
-    "html": "http://www.fao.org",
-    "dark": "dark/fao.png",
-    "light": "light/fao.png",
-    "size": "xxl"
-  },
   "openforis": {
     "html": "http://www.openforis.org",
     "light": "light/openforis.png",
