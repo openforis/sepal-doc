@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -993,12 +993,6 @@ msgid ""
 "<../setup.filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
 
-#: ../../source/cookbook/optical_mosaic.rst:481
-msgid ""
-"For support, `ask the community <https://groups.google.com/g/sepal-"
-"users>`__."
-msgstr ""
-
 #~ msgid "Optical mosaic"
 #~ msgstr ""
 
@@ -1615,5 +1609,10 @@ msgstr ""
 #~ " the task progress and it will "
 #~ "display an error if the exportation "
 #~ "has failed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
