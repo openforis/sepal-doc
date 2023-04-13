@@ -1540,7 +1540,7 @@ We will use the SEPAL SAE-Design tool. You will upload your classified map and s
 
 Uploading files to SEPAL
 """"""""""""""""""""""""
-If your classification is not stored in SEPAL (e.g. a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL's stratified random sample tool. Several options are described in this `page <../setup/FileZilla.html>`_ of the documentation.
+If your classification is not stored in SEPAL (e.g. a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL's stratified random sample tool. Several options are described in :doc:`../setup/filezilla`.
 
 .. _Section 4.1.2:
 
