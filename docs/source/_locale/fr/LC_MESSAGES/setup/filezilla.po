@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-08 00:54+0000\n"
-"PO-Revision-Date: 2023-04-12 06:59\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -230,10 +230,6 @@ msgstr "Sous la **Barre d'outils** (1) et la **Barre de connexion rapide** (2), 
 msgid "For more information on using FileZilla, go to their `wiki page <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
 msgstr "Pour plus d'informations sur l'utilisation de FileZilla, allez sur leur `page wiki <https://wiki.FileZilla-project.org/FileZilla_Client_Tutorial_(en)>`__."
 
-#: ../../source/setup/filezilla.rst:149
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
-
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
 #~ " or contact the SEPAL team at "
@@ -243,5 +239,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
