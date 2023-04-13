@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:08\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 01:00\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -671,10 +671,6 @@ msgstr ""
 msgid "Now that you have downloaded the MO to your SEPAL and/or GEE account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
 
-#: ../../source/cookbook/optical_mosaic.rst:481
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr ""
-
 #~ msgid "Optical mosaic"
 #~ msgstr ""
 
@@ -1291,5 +1287,10 @@ msgstr ""
 #~ " the task progress and it will "
 #~ "display an error if the exportation "
 #~ "has failed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 
