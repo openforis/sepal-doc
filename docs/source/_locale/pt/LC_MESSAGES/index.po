@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 01:00+0000\n"
-"PO-Revision-Date: 2023-03-31 01:05\n"
+"POT-Creation-Date: 2023-04-14 00:55+0000\n"
+"PO-Revision-Date: 2023-04-14 00:58\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -18,115 +18,167 @@ msgstr ""
 "X-Crowdin-File-ID: 87\n"
 "Language: pt_PT\n"
 
-#: ../../source/index.rst:31 ../../source/index.rst:73
+#: ../../source/index.rst:20 ../../source/index.rst:54
 msgid "Getting started"
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:20
 msgid "Cookbook"
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:20
 msgid "CLI"
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:20
 msgid "Workflows"
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:20
 msgid "Features"
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:20
 msgid " "
 msgstr ""
 
-#: ../../source/index.rst:29
+#: ../../source/index.rst:14
 msgid "Documentation"
 msgstr ""
 
-#: ../../source/index.rst:49
+#: ../../source/index.rst:36
 msgid "SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge."
 msgstr ""
 
-#: ../../source/index.rst:64
+#: ../../source/index.rst:47
 msgid "Learn how to use the platform with SEPAL documentation"
 msgstr ""
 
-#: ../../source/index.rst:66
+#: ../../source/index.rst:49
 msgid "The SEPAL team developed this GitHub page to help users get the most out of the interface."
 msgstr ""
 
-#: ../../source/index.rst:81
+#: ../../source/index.rst:59
+msgid "Register to SEPAL"
+msgstr ""
+
+#: ../../source/index.rst:62
 msgid "Set up your SEPAL account and request additional resources."
 msgstr ""
 
-#: ../../source/index.rst:86
+#: ../../source/index.rst:64
+msgid "Connect to GEE"
+msgstr ""
+
+#: ../../source/index.rst:67
 msgid "Register with Google Earth Engine (GEE) and connect your account to SEPAL."
 msgstr ""
 
-#: ../../source/index.rst:91
+#: ../../source/index.rst:69
+msgid "Connect to NICFI PlanetLab imagery"
+msgstr ""
+
+#: ../../source/index.rst:72
 msgid "Sign up to use Norway’s International Climate and Forests Initiative (NICFI) – PlanetLab data and connect your account to GEE."
 msgstr ""
 
-#: ../../source/index.rst:98
+#: ../../source/index.rst:77
 msgid "Recipes and modules"
 msgstr ""
 
-#: ../../source/index.rst:106
+#: ../../source/index.rst:82
+msgid "Start a recipe."
+msgstr ""
+
+#: ../../source/index.rst:85
 msgid "Run analysis with recipes, the foundation of SEPAL processes."
 msgstr ""
 
-#: ../../source/index.rst:111
+#: ../../source/index.rst:87
+msgid "Start a module."
+msgstr ""
+
+#: ../../source/index.rst:90
 msgid "Run integrated workflows with modules – no need of coding experience required."
 msgstr ""
 
-#: ../../source/index.rst:116
+#: ../../source/index.rst:92
+msgid "Use the se.plan module."
+msgstr ""
+
+#: ../../source/index.rst:95
 msgid "Compute your restoration index with se.plan, a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders."
 msgstr ""
 
-#: ../../source/index.rst:123
+#: ../../source/index.rst:100
 msgid "Other resources"
 msgstr ""
 
-#: ../../source/index.rst:131
+#: ../../source/index.rst:105
+msgid "SEPAL website"
+msgstr ""
+
+#: ../../source/index.rst:108
 msgid "Discover the impact of the project."
 msgstr ""
 
-#: ../../source/index.rst:136
+#: ../../source/index.rst:110
+msgid "SEPAL platform"
+msgstr ""
+
+#: ../../source/index.rst:113
 msgid "Learn more about the interface."
 msgstr ""
 
-#: ../../source/index.rst:141
+#: ../../source/index.rst:115
+msgid "Open Foris"
+msgstr ""
+
+#: ../../source/index.rst:118
 msgid "Browse the Suite of Tools."
 msgstr ""
 
-#: ../../source/index.rst:148
+#: ../../source/index.rst:123
 msgid "SEPAL is always improving."
 msgstr ""
 
-#: ../../source/index.rst:150
+#: ../../source/index.rst:125
 msgid "Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation."
 msgstr ""
 
-#: ../../source/index.rst:176
+#: ../../source/index.rst:132
+msgid "For general support, ask the Google Group community."
+msgstr ""
+
+#: ../../source/index.rst:135
+msgid "For documentation improvement, use the GitHub Issue Tracker."
+msgstr ""
+
+#: ../../source/index.rst:138
+msgid "For usage questions, ask the GIS StackExchange community."
+msgstr ""
+
+#: ../../source/index.rst:141
+msgid "For training, register for an online facilitated course from the FAO elearning Academy."
+msgstr ""
+
+#: ../../source/index.rst:147
 msgid "About the platform"
 msgstr ""
 
-#: ../../source/index.rst:178
+#: ../../source/index.rst:149
 msgid "SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program."
 msgstr ""
 
-#: ../../source/index.rst:180
+#: ../../source/index.rst:151
 msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
 msgstr ""
 
-#: ../../source/index.rst:187
-msgid "Suporting institutions"
+#: ../../source/index.rst:156
+msgid "Supporting institutions"
 msgstr ""
 
-#: ../../source/index.rst:189
+#: ../../source/index.rst:158
 msgid "SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO)."
 msgstr ""
 
@@ -329,5 +381,8 @@ msgstr ""
 #~ " Department of the United Nations "
 #~ "Food and Agriculture Organization (FAO) "
 #~ "funded by the Government of Norway."
+#~ msgstr ""
+
+#~ msgid "Suporting institutions"
 #~ msgstr ""
 
