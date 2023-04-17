@@ -57,20 +57,6 @@ For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclud
     :group: workflows-drivers
     :width: 24%
 
-.. thumbnail:: ../_images/workflows/drivers/source.png
-    :title: Select the Landsat sources for a mosaic.
-    :group: workflows-drivers
-    :width: 24%
-
-.. thumbnail:: ../_images/workflows/drivers/scenes.png
-    :title: Use all the available images to build the mosaic.
-    :group: workflows-drivers
-    :width: 24%
-
-.. thumbnail:: ../_images/workflows/drivers/composite.png
-    :title: The suggested set of compositing options.
-    :group: workflows-drivers
-    :width: 24%
 
 You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`
 
