@@ -3,7 +3,7 @@ Direct Drivers Assessment
 
 .. note::
 
-    This documentation have been produced in the framework of the CAFI project, thus the CAFI area is used as an example but this methodology is not limited to the central African region and any other area can be used instead.
+    This documentation has been produced in the framework of the Global CAFI Deforestation and Degradation Drivers project, which is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area.
 
 Creating cloud-free mosaics
 ---------------------------
