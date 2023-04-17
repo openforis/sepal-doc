@@ -40,7 +40,7 @@ In the :btn:`DAT` section you can select the dates of interest.
 
 For later years (after 2018), the sensor coverage is good so you can safely select all images of a single year.
 
-For earlier eras, e.g. 2015 use the advance option to add images from prior years on a targeted season (in this case the full year). This will help to fill the gaps in cloudy areas.
+For earlier eras, e.g. 2015 use the advanced option to add images from prior years from a targeted season (in this case the full year). This will help to fill the gaps in cloudy areas.
 
 .. thumbnail:: ../_images/workflows/drivers/season_selection.png
     :title: Select images from 3 year prior on the targeted season (full year) to improve the quality of the mosaic.
