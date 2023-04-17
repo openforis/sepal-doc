@@ -84,9 +84,6 @@ If you are only working with Landsat (or only with Sentinel), you can manually s
 
 For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:
 
-    :group: workflows-drivers
-    :width: 24%
-
 
 You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`
 
