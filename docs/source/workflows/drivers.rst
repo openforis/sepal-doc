@@ -34,7 +34,7 @@ The coverage of Landsat over time is shown below. The western part of the study 
 
 To create our optical mosaic, we will use the SEPAL optical mosaic recipe. To know more about the different available parameters please read :doc:`../cookbook/optical_mosaic`.
 
-Within the recipe, select an AOI. In this example we will use and custom asset from GEE: :code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. It includes an ISO column to select countries. See :doc:`../feature/aoi_selector` for more AOI selection methods.
+In this example we will use a  custom asset from GEE for the :btn:`AOI` parameter: :code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. It includes an ISO column to select Congo Basin countries according to their three digit code. See :doc:`../feature/aoi_selector` for more AOI selection methods.
 
 In the :btn:`DAT` section you can select the dates of interest.
 
