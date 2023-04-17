@@ -48,7 +48,7 @@ For earlier eras, e.g. 2015 use the advanced option to add images from prior yea
     :group: workflows-drivers
 
 
-For data sources, more is generally better. Select all Landsat options for a consistent mosaic. If you like, Sentinel-2 can be added for more data but as the tiling system of the 2 agencies are different you will be force to use all available images.
+For data sources, more is generally better. Select all Landsat options for a consistent mosaic. If you like, Sentinel-2 can be added for more data, but as the tiling system of the 2 sensors are different you will be forced to use all available images - the option to select images will not be available.
 
 If you are only working with Landsat (or only with Sentinel), you can manually select scenes if you want to tailor your mosaic and you have a lot of time to devote. :btn:`USE ALL SCENES` is the quicker and simpler approach.
 
