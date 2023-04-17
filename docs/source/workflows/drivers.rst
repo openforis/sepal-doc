@@ -43,7 +43,7 @@ For later years (after 2018), the sensor coverage is good so you can safely sele
 For earlier eras, e.g. 2015 use the advanced option to add images from prior years from a targeted season (in this case the full year). This will help to fill the gaps in cloudy areas.
 
 .. thumbnail:: ../_images/workflows/drivers/season_selection.png
-    :title: Select images from 3 year prior on the targeted season (full year) to improve the quality of the mosaic.
+    :title: For the 2015, we will need to select images from 3 year prior on the targeted season (full year) to improve the quality of the mosaic and produce a nearly cloud-free result.
     :align: center
     :group: workflows-drivers
 
