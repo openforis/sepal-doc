@@ -54,7 +54,6 @@ If you are only working with Landsat (or only with Sentinel), you can manually s
 
 For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:
 
-    :title: Select a custom AOI from a EE Table
     :group: workflows-drivers
     :width: 24%
 
