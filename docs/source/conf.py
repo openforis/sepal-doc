@@ -29,6 +29,7 @@ extensions = [
     "sphinxcontrib.btn",
     "sphinxcontrib.email",
     "sphinxcontrib.youtube",
+    "sphinxcontrib.bibtex",
     "sphinx_design",
     "sphinx_togglebutton",
     "sphinx_favicon",
@@ -124,3 +125,8 @@ favicons = [
 # -- Options for images --------------------------------------------------------
 
 images_config = {"download": False}
+
+# -- Options for bibtex --------------------------------------------------------
+
+bibtex_bibfiles = ["_bib/workflows/drivers.bib"]
+bibtex_reference_style = "author_year"
