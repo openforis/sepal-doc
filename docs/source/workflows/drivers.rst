@@ -52,7 +52,7 @@ For data sources, more is generally better. Select all Landsat options for a con
 
 If you are only working with Landsat (or only with Sentinel), you can manually select scenes if you want to tailor your mosaic and you have a lot of time to devote to your mosaic. :btn:`USE ALL SCENES` is the quicker and simpler approach and recommended for large areas.
 
-For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the options as shown in the following figures.
+For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:
 
     :title: Select a custom AOI from a EE Table
     :group: workflows-drivers
