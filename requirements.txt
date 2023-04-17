@@ -12,3 +12,4 @@ sphinx-favicon>=1.0.1
 sphinx-intl
 sphinxcontrib-email
 sphinx-last-updated-by-git
+sphinxcontrib-bibtex
