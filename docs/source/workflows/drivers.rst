@@ -60,7 +60,7 @@ For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclud
 
 You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`
 
-Once the exportation is finished, you can view the asset in Google Earth Engine. Here is an example using all of the above parameters:
+Once the export is finished, you can view the asset in Google Earth Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the above parameters:
 
 .. thumbnail:: ../_images/workflows/drivers/final_mosaic.png
     :title: The produced mosaic on the CAFI region for the year 2015 (using images from 2012 onward).
