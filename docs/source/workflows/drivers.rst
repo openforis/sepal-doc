@@ -72,7 +72,7 @@ ALOS Palsar mosaics
 
 Radar imagery has the added benefit of being cloud-free by design as active sensors are not influenced by clouds.
 
-Alos Palsar is a L-band radar that gives good results for monitoring forestry. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL is providing an application to select and download them to your user space.
+Alos Palsar is a L-band radar that gives good results for monitoring forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL provides an application to select, process and download them to your user space pr Google Earth Engine Account.
 
 For more information about the parameters, Please see :doc:`../module/dwn/alos_mosaic`.
 
