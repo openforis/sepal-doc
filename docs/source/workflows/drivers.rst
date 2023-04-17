@@ -33,6 +33,11 @@ The methodology uses FAO’s OpenForis suite of tools including the SEPAL platfo
 
 #. :ref:`workflows:drivers:quantification`: The quantification of direct drivers by forest types, fragmentation class
 
+.. thumbnail:: ../_images/workflows/drivers/workflow.png
+    :title: sensor time coverage
+    :align: center
+    :group: workflows-drivers
+
 .. _workflows:drivers:mosaic:
 
 Creating cloud-free mosaics
