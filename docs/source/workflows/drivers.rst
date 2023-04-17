@@ -104,7 +104,7 @@ For the dates you can enter a year, a date range, or a single date. When you add
 For the best results in the Congo Basin the following parameters are proposed:
 
 -   Both :btn:`ascending` and :btn:`descending` orbits will ensure complete coverage of the AOI
--   The terrain correction will mask any errors due to topography, or terrain “shadows”
+-   The :btn:`terrain` correction will mask any errors due to topography, or terrain “shadows”
 -   We don’t need to apply a speckle filter
 -   Moderate outlier removal will provide the most consistent results
 
