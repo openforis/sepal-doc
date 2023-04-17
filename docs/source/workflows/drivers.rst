@@ -101,7 +101,7 @@ You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus radar d
 The aoi selection is the same as for the optical mosaic.
 For the dates you can enter a year, a date range, or a single date. When you add a year or date range, SEPAL will provide a “time-scan” composite which includes bands which are statistical metrics of the range of data including phase and amplitude which assess the phenology and variations within the time period.
 
-For the options the following are proposed:
+For the best results in the Congo Basin the following parameters are proposed:
 
 -   Both ascending and descending will ensure complete coverage of the AOI
 -   The terrain correction will mask any errors due to topography, or terrain “shadows”
