@@ -70,7 +70,7 @@ Once the export is finished, you can view the asset in Google Earth Engine or SE
 ALOS Palsar mosaics
 ^^^^^^^^^^^^^^^^^^^
 
-Radar imagery has the added benefit of being cloud-free by design as the active sensors is not influenced by the clouds.
+Radar imagery has the added benefit of being cloud-free by design as active sensors are not influenced by clouds.
 
 Alos Palsar is a L-band radar that gives good results for monitoring forestry. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL is providing an application to select and download them to your user space.
 
