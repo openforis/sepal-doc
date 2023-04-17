@@ -106,7 +106,8 @@ For the best results in the Congo Basin the following parameters are proposed:
 -   We don’t need to apply a speckle filter
 -   :btn:`moderate` outlier removal will provide the most consistent results
 
-Select which bands to export in the retrieve window
+Select which bands to export in the retrieve window, you may select all of them depending on the space available in your GEE repository or SEPAL workspace.
+Resolution can also be selected accordingly - you can choose :btn:`30` to be at the same scale as the optical mosaic, which will be classified in the next step.
 
 
 
