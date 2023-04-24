@@ -3,7 +3,7 @@ Direct Drivers Assessment
 
 .. note::
 
-    This documentation has been produced in the framework of the Global CAFI Deforestation and Degradation Drivers project, which is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area.
+    This documentation has been produced in the framework of the global project entitled: Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__,. This project, known as the Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area.
 
 Background
 ----------
