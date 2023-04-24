@@ -96,7 +96,7 @@ Deforestation is recognizable in images by a permanent change in forest cover. I
 Example of degradation
 """"""""""""""""""""""
 
-Degradation is more difficult to determine because it is more subtle changes, sometimes a few trees removed, and the tree cover remains above the national definition. It is therefore necessary to look at the whole time series and make sure that the changes are not deforestation. Degradation is also not the same everywhere and will differ by forest type and environmental and human context.
+Degradation is more difficult to determine because changes are more subtle, sometimes a few trees removed, and the tree cover remains above the national definition. It is therefore necessary to look at the whole time series and make sure that the changes are not deforestation. Degradation is also not the same everywhere and will differ by forest type and environmental and human context.
 
 .. thumbnail:: ../_images/workflows/drivers/degradation_example.png
     :title: example of degradation
