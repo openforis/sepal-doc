@@ -23,6 +23,13 @@ definitions
 
 A robust methodology uses consistent definitions. The following terms and definitions are applied throughout the workflow.
 
+Area of interest
+^^^^^^^^^^^^^^^^
+
+The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo.
+
+Because of consistency issues between border datasets, at national / regional / global levels, it was decided to take one global dataset, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__.
+
 Forest definitions
 ^^^^^^^^^^^^^^^^^^
 
@@ -102,13 +109,6 @@ Degradation is more difficult to determine because changes are more subtle, some
     :title: example of degradation
     :align: center
     :group: workflows-drivers
-
-Area of interest
-^^^^^^^^^^^^^^^^
-
-The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo.
-
-Because of consistency issues between border datasets, at national / regional / global levels, it was decided to take one global dataset, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__.
 
 Date convention
 ^^^^^^^^^^^^^^^
