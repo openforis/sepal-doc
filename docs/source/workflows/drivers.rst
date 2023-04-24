@@ -26,7 +26,7 @@ A robust methodology uses consistent definitions. The following terms and defini
 Forest definitions
 ^^^^^^^^^^^^^^^^^^
 
-There are a total of 4 different national forest definitions in the study region. These are applied at country level using information on canopy height, tree cover and pixel area.
+There are a total of four different national forest definitions in the six countries of the study region. These are applied at country level using information on canopy height, tree cover and pixel area.
 
 .. csv-table::
     :header: Scale, Source, Date, MMU (ha), Tree height (m), Canopy cover (%), Comment
