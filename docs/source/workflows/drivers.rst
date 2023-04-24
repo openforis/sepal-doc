@@ -18,6 +18,170 @@ In this context, FAO has developed a robust methodology to assess the recent tre
 
 The FAO, in partnership with the Central African Forest Initiative (CAFI), and a coalition of donor and partner countries have developed a global, standard, large-scale methodology to assess forest dynamics using cloud-computing solutions and open-source tools. The approach maps disturbances (both deforestation and degradation) and quantifies the contribution of multiple associated direct drivers. The methodology is used to assess deforestation and forest degradation trends and their associated current and historical direct drivers in six Central Africa countries as part of an international effort to mitigate climate change, support sustainable development goals, and protect biodiversity. The project builds on a collaborative approach, in which national experts, global research institutes and civil society work together, join resources and data to provide technical evidence and reach a common view on the current and historical trends, and direct drivers of forest disturbances.
 
+definitions
+-----------
+
+A robust methodology uses consistent definitions. The following terms and definitions are applied throughout the workflow.
+
+Area of interest
+^^^^^^^^^^^^^^^^
+
+The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo.
+
+Because of consistency issues between border datasets, at national / regional / global levels, it was decided to take one global dataset, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__.
+
+Forest definitions
+^^^^^^^^^^^^^^^^^^
+
+There are a total of four different national forest definitions in the six countries of the study region. These are applied at country level using information on canopy height, tree cover and pixel area.
+
+.. csv-table::
+    :header: Scale, Source, Date, MMU (ha), Tree height (m), Canopy cover (%), Comment
+
+    Cameroon, "REDD+ National Strategy (MINEP, 2008)", 2018, 0.5, 3, 10%, "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas victims of natural disturbances which are likely to recover their past status."
+    Central African Republic, FRA, 2020, 0.5, 5, 10%,
+    Gabon, "Sannier et al., 2016", 2020, 0.5, 5, 30%, Functional definition used by national monitoring system (AGEOS)
+    Democratic Republic of Congo, "FREL 2018 (Ministère de l’Environnement et Développemnt Durable, 2018)", 2018, 0.5, 3, 30%, "A canopy cover criterion of around 50% for an area of 0.09 ha was used during the interpretation of the samples."
+    Republic of Congo, "FREL (Coordination Nationale REDD, 2017)", 2017, 0.5, 5, 30%, "Exclusion of agricultural activities, in particular palm groves in production."
+
+Regional Land Cover
+^^^^^^^^^^^^^^^^^^^
+
+The baseline map for the regional forest cover was first derived from a common classification system that was validated by the project technical committee and included land cover classes reference in national system.  The land cover classification has also been published in the `FAO Land Cover Registry <https://www.fao.org/hih-geospatial-platform/resources/projects/land-cover-legend-registry/en>`__.
+
+
+.. note::
+
+    In Central African Republic and Cameroun, shrub savannas were identified as forest, in adherence to the national forest definitions of >10% tree cover
+
+.. csv-table::
+    :header: Code, Forest/non-Forest, English, French, Spanish, Description
+
+    1, Forest, Dense Forest, Forêt Dense, Bosque denso, "Dense humid primary evergreen forest on terra firme, >60% tree cover"
+    2, Forest, Dense Dry Forest, Forêt Dense Sèche, Bosque denso seco, "Dense dry forest, >60% tree cover, with dry seasons"
+    3, Forest, Secondary Forest, Forêt Secondaire, Bosque secundario, "Open forest, 30-60% tree cover, degraded or secondary"
+    4, Forest, Dry Open Forest, Forêt Claire Sèche, Bosque claro Seco, "Dry open forest, 30-60% tree cover, with dry seasons"
+    5, Forest, Sub-Montane Forest, Forêt Sub-Montagnarde, Bosque sub-montañoso, "Forest >30% tree cover, 1100-1750m altitude"
+    6, Forest, Montane Forest, Forêt Montagnarde, Bosque montañoso, "Forest >30% tree cover  >1750m altitude"
+    7, Forest, Mangrove, Mangrove, Manglar, "Forest >30% tree cover on saline waterlogged soils"
+    8, Forest, Swamp Forest, Forêt Marécageuse, Bosque pantanoso, "Swamp mixed foret, >30% tree cover, flooded > 9 months"
+    9, Forest, Gallery Forest, Forêt Galerie, Bosque en galería, Riparian forest in valleys or along river edges
+    10, Forest, Mature Forest Plantation, Plantation Forestière Mature, Plantación forestal madura, "Tree cover >15%, cultivated or managed"
+    11, Forest, Woodland Savanna, Savane Arborée, Sabana arbórea, "Woodland savanna 15-30%, tree cover > national forest definition"
+    12, "Forest*", Shrubland Savanna, Savane Arbustive, Sabana arbustiva, Shrubland savanna >15% shrub cover > national forest definition
+    13, Non-Forest, Herbaceous Savanna, Savane Herbacée, Sabana herbácea, Grassland savanna <15% tree cover
+    14, Non-Forest, Aquatic grassland, Prairie Aquatique, Pradera acuática, Regularly flooded grassland
+    15, Non-Forest, Bare Land, Sols Nus - Végétation Éparse, Suelo desnudo-Vegetación escasa, <15% vegetation cover
+    16, Non-Forest, Cultivated Areas, Terres Cultivées, Tierras cultivadas, Cultivated vegetation >15% vegetation cover
+    17, Non-Forest, Developed Areas, Zones Bâties, Zonas edifiadas, Human dominated and artificial surfaces
+    18, Non-Forest, Water, Eau, Agua, Water > 50%
+    19, Non-Forest, Shrubland Savanna, Savane Arbustive, Sabana arbustiva, Shrubland savanna >15% tree cover < national forest definition
+
+Definitions of deforestation and degradation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In order to properly discern between deforestation and degradation, we require specific and operational definitions that can be identified from satellite image analysis.
+
+.. csv-table::
+    :header: Deforestation, Degradation
+
+    "Permanent reduction of forest cover below the forest definition", "A temporary or permanent reduction of forest cover that remains above the forest definition"
+    "**Conversion of forest** to other land use: agriculture, pasture, mineral exploitation, development, etc...", "Includes areas where timber is exploited, or trees removes and where forest may be expected to regenerate naturally or with silvicultural methods."
+    "Excludes areas of planned deforestation, such as timber extraction, or in areas where the forest is expected to regenerate naturally or with silvicultural methods.",
+    "Includes areas where impacts, over exploitation or environmental conditions prohibit regeneration above the forest cover definition",
+
+Example of deforestation
+""""""""""""""""""""""""
+
+Deforestation is recognizable in images by a permanent change in forest cover. In high-resolution images, we can often see bare ground, felled trees, and sometimes the beginning of agricultural or other driving activities.
+
+.. thumbnail:: ../_images/workflows/drivers/deforestation_example.png
+    :title: example of deforestation
+    :align: center
+    :group: workflows-drivers
+
+Example of degradation
+""""""""""""""""""""""
+
+Degradation is more difficult to determine because changes are more subtle, sometimes a few trees removed, and the tree cover remains above the national definition. It is therefore necessary to look at the whole time series and make sure that the changes are not deforestation. Degradation is also not the same everywhere and will differ by forest type and environmental and human context.
+
+.. thumbnail:: ../_images/workflows/drivers/degradation_example.png
+    :title: example of degradation
+    :align: center
+    :group: workflows-drivers
+
+Date convention
+^^^^^^^^^^^^^^^
+
+The time period for this pilot study is 2015-2022, with an assessment of changes encompassing 31/12/2015 to 31/12/2022. The year 2015 was used as the baseline, with the detection of annual changes in deforestation and degradation starting in 2016 through 2022. This fits with the availability of Sentinel satellite imagery in 2015 (although incomplete for that year), as well as new monthly high-resolution mosaics available for the tropics from Planet, which are available from 2015 and are used for additional validation.
+
+The following date convention was adopted:
+
+A product for the year YYYY is considered as of 31/12/YYYY.
+
+This convention allows a consistent approach to assessing change products. A change map from year1 to year2 will be consistent with both year1 and year2 maps. The status of the year takes into account any changes that occurred during the year.
+
+Direct Driver definitions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A total of eight direct drivers were defined by their specific characteristics identifiable in high resolution satellite imagery from Planet.
+
+.. list-table::
+    :header-rows: 1
+
+    * - Driver
+      - example
+      - characteristics
+    * - Artisanal agriculture
+      - .. thumbnail:: ../_images/workflows/drivers/artisanal_agriculture.png
+            :group: workflows-drivers
+      - Small-scale agriculture is composed of small, informal, unstructured and irregular agricultural plots covering an area of less than 5ha. The presence of fires (slash-and-burn agriculture) can be observed, and the land is often soil cover in various stages of cultivation.
+    * - Industrial agriculture
+      - .. thumbnail:: ../_images/workflows/drivers/industrial_agriculture.png
+            :group: workflows-drivers
+      - Industrial agriculture is characterized by agricultural areas larger than 5 ha that tend to be homogeneous and often consist of a single crop. In some cases, agriculture may be more varied and consist of many fields closely packed together. Therefore, large areas consisting of many small fields cultivated at the same time are also considered industrial agriculture under the definition.
+    * - Infrastructure
+      - .. thumbnail:: ../_images/workflows/drivers/infrastructure.png
+            :group: workflows-drivers
+      - Roads are visible in the images with linear features and are identified as motorized when they are wide enough (5m) to carry vehicle traffic. Small irregular paths through vegetation are not included. Roads can be large highways, or logging trails, and are most often found with other engines such as villages, mining facilities.
+    * - Settlements
+      - .. thumbnail:: ../_images/workflows/drivers/settlements.png
+            :group: workflows-drivers
+      - Villages and settlements can be hard or soft roofed, they can be buildings or huts, and they are often accompanied by roads and other drivers such as small-scale agriculture. This engine can be an urban area (left image), or a small isolated village in a forest stand (right image).
+    * - Artisanal forestry
+      - .. thumbnail:: ../_images/workflows/drivers/artisanal_forestry.png
+            :group: workflows-drivers
+      - Small-scale or artisanal logging is characterized by the selective extraction of trees in an irregular manner, leaving a tree cover. These are areas that are not visibly cultivated. These areas are often found in places accessible by small roads or villages.
+    * - Industrial forestry
+      - .. thumbnail:: ../_images/workflows/drivers/industrial_forestry.png
+            :group: workflows-drivers
+      - Large-scale or industrial forestry is recognizable by the presence of logging roads, along which selective logging degradation occurs. These roads may be recent or old, and the canopy can quickly cover them, so all years of imagery acquired over the entire study period are evaluated.
+    * - Artisanal mine
+      - .. thumbnail:: ../_images/workflows/drivers/artisanal_mine.png
+            :group: workflows-drivers
+      - Small-scale mining is characterized by muddy clearings, and usually ponds or water catchments and may feature turbid water. Artisanal in nature, the clearings are generally small, isolated, and often located along streams.
+    * - Industrial mine
+      - .. thumbnail:: ../_images/workflows/drivers/industrial_mine.png
+            :group: workflows-drivers
+      - Large-scale mining is characterized by large ponds, open pits and clearings, as well as extensive infrastructure and roads.
+
+To address the overlap of drivers in the same location and interpret local context, our approach identifies archetypes, or common driver combinations which represent realities and processes on the ground. The most common archetype consists of four drivers, which include artisanal agriculture, artisanal forestry, roads and settlements, which is representative of the agricultural mosaic, or so-called “rural complex” commonly observed in the region\ :footcite:`molinario:2020`.
+
+The observed combinations of drivers are grouped into thematic classes or archetypes.
+
+.. csv-table::
+    :header: Deforestation, Degradation
+
+    Rural complex, "Artisanal agriculture with roads and settlements, with or without artisanal forestry, and no industrial drivers"
+    Artisanal forestry, "Artisanal forestry with or without “other” driver, or with settlements or roads without any artisanal agriculture"
+    Industrial Agriculture,	"Industrial agriculture and other non-industrial drivers"
+    Industrial forestry, "Industrial forestry and other non-industrial drivers"
+    Industrial Forestry and Agriculture, "Industrial Forestry and Agriculture identified together"
+    Industrial mining, "Presence of industrial mining without other industrial drivers"
+    Artisanal mining, "No more than 2 drivers, including artisanal mining, no industrial drivers present"
+    Human infrastructure, "Roads, settlements observed alone or together, no other drivers present"
+    Infrastructure related agriculture, "Infrastructure and artisanal agriculture observed together"
+
 Methodology
 -----------
 
