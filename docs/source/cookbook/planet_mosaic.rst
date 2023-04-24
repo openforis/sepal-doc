@@ -187,6 +187,10 @@ Once all the parameters have been set, the mosaic will be rendered on the fly. M
 Retrieve
 --------
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Click the :btn:`<fa-solid fa-cloud-arrow-down>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/retrieve.png

@@ -13,6 +13,10 @@ A SEPAL recipe is a record of the steps and parameters used to make a dataset (e
 
 With recipes, you can access the Google Earth Engine (GEE) multi-petabyte catalog of satellite imagery and utilize their planetary-scale analysis capabilities without writing a single line of code, simply by linking your Google and SEPAL accounts.
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Gallery
 -------
 

@@ -97,6 +97,10 @@ Analysis
 Export
 ^^^^^^
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Clicking on the :icon:`fa-solid fa-cloud-arrow-down` tab will open the retrieve panel where the you can select the exportation parameters.
 
 .. thumbnail:: ../_images/cookbook/class_change/export.png

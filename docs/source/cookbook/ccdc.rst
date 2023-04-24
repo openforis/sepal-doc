@@ -376,6 +376,10 @@ On the main graph, the orange lines shows the CCDC modelled time-series. Each of
 Export
 ------
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 
