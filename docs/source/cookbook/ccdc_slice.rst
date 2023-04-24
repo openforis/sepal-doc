@@ -148,6 +148,10 @@ The plotting area cover all the CCDC asset range, in red (4) the user will see t
 Export
 ------
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 

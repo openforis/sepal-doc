@@ -572,6 +572,10 @@ This analysis can also be conducted class by class using the built-in :code:`<cl
 Export
 ------
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Start download
 ^^^^^^^^^^^^^^
 
