@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-13 00:55+0000\n"
-"PO-Revision-Date: 2023-04-13 00:59\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:23\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -42,39 +42,43 @@ msgstr ""
 msgid "With recipes, you can access the Google Earth Engine (GEE) multi-petabyte catalog of satellite imagery and utilize their planetary-scale analysis capabilities without writing a single line of code, simply by linking your Google and SEPAL accounts."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:17
+#: ../../source/cookbook/index.rst:18
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/index.rst:21
 msgid "Gallery"
 msgstr ""
 
-#: ../../source/cookbook/index.rst:70
+#: ../../source/cookbook/index.rst:74
 msgid "Start a recipe"
 msgstr ""
 
-#: ../../source/cookbook/index.rst:74
+#: ../../source/cookbook/index.rst:78
 msgid "Connect your SEPAL account to your GEE account to read and write GEE assets. If your accounts are not linked, you will only be able to download data to your SEPAL workspace."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:76
+#: ../../source/cookbook/index.rst:80
 msgid "To start a recipe, go to the **Process** tab :icon:`fa-solid fa-globe`, where you'll see the list of all saved recipes in your SEPAL account."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:81
+#: ../../source/cookbook/index.rst:85
 msgid "Select the green :icon:`fa-solid fa-circle-plus` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:87
+#: ../../source/cookbook/index.rst:91
 msgid "Save a recipe"
 msgstr ""
 
-#: ../../source/cookbook/index.rst:91
+#: ../../source/cookbook/index.rst:95
 msgid "Using saved recipes is the recommended method for sharing parameters to developers when debugging."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:93
+#: ../../source/cookbook/index.rst:97
 msgid "Select a recipe in the main menu to display it in a tab. Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`. The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`."
 msgstr ""
 
-#: ../../source/cookbook/index.rst:99
+#: ../../source/cookbook/index.rst:103
 msgid "Recipes"
 msgstr ""
 
