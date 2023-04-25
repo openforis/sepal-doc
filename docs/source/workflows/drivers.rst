@@ -38,7 +38,7 @@ There are a total of four different national forest definitions in the six count
 .. csv-table::
     :header: Scale, Source, Date, MMU (ha), Tree height (m), Canopy cover (%), Comment
 
-    Cameroon, "REDD+ National Strategy (MINEP, 2008)", 2018, 0.5, 3, 10%, "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas victims of natural disturbances which are likely to recover their past status."
+    Cameroon, "REDD+ National Strategy (MINEP, 2008)", 2018, 0.5, 3, 10%, "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas subjected to natural disturbances which are likely to recover their past status."
     Central African Republic, FRA, 2020, 0.5, 5, 10%,
     Gabon, "Sannier et al., 2016", 2020, 0.5, 5, 30%, Functional definition used by national monitoring system (AGEOS)
     Democratic Republic of Congo, "FREL 2018 (Ministère de l’Environnement et Développemnt Durable, 2018)", 2018, 0.5, 3, 30%, "A canopy cover criterion of around 50% for an area of 0.09 ha was used during the interpretation of the samples."
