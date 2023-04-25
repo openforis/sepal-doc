@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:08\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:23\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -222,115 +222,119 @@ msgstr ""
 msgid "Retrieve"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:190
+#: ../../source/cookbook/planet_mosaic.rst:192
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:194
 msgid "Click the :btn:`<fa-solid fa-cloud-arrow-down>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:198
+#: ../../source/cookbook/planet_mosaic.rst:202
 msgid "Bands"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:200
+#: ../../source/cookbook/planet_mosaic.rst:204
 msgid "You need to select the band(s) to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:204
+#: ../../source/cookbook/planet_mosaic.rst:208
 msgid "There is no fixed rule to the band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:207
+#: ../../source/cookbook/planet_mosaic.rst:211
 msgid "Raw bands"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:209
+#: ../../source/cookbook/planet_mosaic.rst:213
 msgid ":guilabel:`blue`: blue"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:210
+#: ../../source/cookbook/planet_mosaic.rst:214
 msgid ":guilabel:`green`: green"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:211
+#: ../../source/cookbook/planet_mosaic.rst:215
 msgid ":guilabel:`red`: red"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:212
+#: ../../source/cookbook/planet_mosaic.rst:216
 msgid ":guilabel:`nir`: near infrared"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:216
+#: ../../source/cookbook/planet_mosaic.rst:220
 msgid "Indexes"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:218
+#: ../../source/cookbook/planet_mosaic.rst:222
 msgid ":guilabel:`NDVI`: `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:219
+#: ../../source/cookbook/planet_mosaic.rst:223
 msgid ":guilabel:`NDMI`: `Normalized Difference Moisture Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:220
+#: ../../source/cookbook/planet_mosaic.rst:224
 msgid ":guilabel:`NDWI`: `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:221
+#: ../../source/cookbook/planet_mosaic.rst:225
 msgid ":guilabel:`EVI`: `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:222
+#: ../../source/cookbook/planet_mosaic.rst:226
 msgid ":guilabel:`EVI2`: Two-band EVI (Enhanced vegetation index)"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:223
+#: ../../source/cookbook/planet_mosaic.rst:227
 msgid ":guilabel:`SAVI`: `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:226
+#: ../../source/cookbook/planet_mosaic.rst:230
 msgid "Scale"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:228
+#: ../../source/cookbook/planet_mosaic.rst:232
 msgid "You can set a custom scale for exportation by changing the value in the :code:`scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, just its size so keep in mind that PlanetLab data's native resolution is 3 - 4.1 m (altitude dependent Ground Sample Distance,  `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__)."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:231
+#: ../../source/cookbook/planet_mosaic.rst:235
 msgid "Destination"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:233
+#: ../../source/cookbook/planet_mosaic.rst:237
 msgid "You can export the mosaic composition to :guilabel:`sepal workspace` or to :guilabel: GEE as an `asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` SEPAL folder, in the second one the image will be exported to your GEE account asset list."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:237
+#: ../../source/cookbook/planet_mosaic.rst:241
 msgid "If :guilabel:`google earth engine asset` is not displayed, it means that your GEE account is not connected to SEPAL, please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:239
+#: ../../source/cookbook/planet_mosaic.rst:243
 msgid "Click on :btn:`<fa-solid fa-check> apply` to start the download process."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:242
+#: ../../source/cookbook/planet_mosaic.rst:246
 msgid "Access"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:244
+#: ../../source/cookbook/planet_mosaic.rst:248
 msgid "Once the download process is done, you can access the data in your SEPAL folders. The data will be stored in the :code:`downloads` folder using the following format:"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:259
+#: ../../source/cookbook/planet_mosaic.rst:263
 msgid "Understanding how images are stored in a Planet Mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:261
+#: ../../source/cookbook/planet_mosaic.rst:265
 msgid "The data are stored in a folder using the name of the Planet mosaic as it was set in the first section of this document. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`<PM name>_<gee tile id>.vrt` file."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:265
+#: ../../source/cookbook/planet_mosaic.rst:269
 msgid "The full folder with a consistent tree hierarchy is required to read the :code:`.vrt`"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:269
+#: ../../source/cookbook/planet_mosaic.rst:273
 msgid "Now that you have downloaded the Planet Mosaic to your SEPAL or/and GEE account, it can be retrieved to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
 
