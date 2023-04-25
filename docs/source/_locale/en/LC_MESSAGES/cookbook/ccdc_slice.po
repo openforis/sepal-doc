@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,11 +330,18 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:152
+#: ../../source/cookbook/ccdc_slice.rst:153
+msgid ""
+"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
+"small computation quota. If you are a new user see "
+":doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:156
 msgid "Trigger the export task"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:154
+#: ../../source/cookbook/ccdc_slice.rst:158
 msgid ""
 "Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the "
 "export dialogue. Here you can select the bands to retrieve and the scale "
@@ -342,7 +349,7 @@ msgid ""
 "exported to Google Earth Engine as well as your SEPAL workspace."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:156
+#: ../../source/cookbook/ccdc_slice.rst:160
 msgid ""
 "you can export this asset as a :code:`.tif` image to your SEPAL workspace"
 " or as an *Image* in GEE. The scale parameter depends on the data "
@@ -352,11 +359,11 @@ msgid ""
 "meter resolution."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:160
+#: ../../source/cookbook/ccdc_slice.rst:164
 msgid "Bands"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:162
+#: ../../source/cookbook/ccdc_slice.rst:166
 msgid ""
 "In the CCDC slice exportation you can select any band that was available "
 "in the initial CCDC asset. the result will be the evaluated values of the"
@@ -364,11 +371,11 @@ msgid ""
 "range."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:165
+#: ../../source/cookbook/ccdc_slice.rst:169
 msgid "Band type"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:167
+#: ../../source/cookbook/ccdc_slice.rst:171
 msgid ""
 "For each selected band, the user can select which output from the model "
 "he want to export. For display the value is sufficient but for another "
@@ -377,11 +384,11 @@ msgid ""
 "quality of the output information."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:170
+#: ../../source/cookbook/ccdc_slice.rst:174
 msgid "Segment bands"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:172
+#: ../../source/cookbook/ccdc_slice.rst:176
 msgid ""
 "User can also export the specific **segment bands**. These bands are "
 "relative to the segment intercepted by the slice (if the slice is in a "
@@ -390,11 +397,11 @@ msgid ""
 "observations etc..."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:180
+#: ../../source/cookbook/ccdc_slice.rst:184
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:182
+#: ../../source/cookbook/ccdc_slice.rst:186
 msgid ""
 "Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-"
 "list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the "
@@ -406,14 +413,14 @@ msgid ""
 "<https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:186
+#: ../../source/cookbook/ccdc_slice.rst:190
 msgid ""
 "This operation is running between GEE and SEPAL servers in the "
 "background, you can thus close the SEPAL page without killing the "
 "process."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:188
+#: ../../source/cookbook/ccdc_slice.rst:192
 msgid ""
 "When the task is finished the frame will be displayed in green as shown "
 "on the second image."

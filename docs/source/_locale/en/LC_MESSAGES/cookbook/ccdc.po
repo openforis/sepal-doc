@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -765,11 +765,18 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:380
+#: ../../source/cookbook/ccdc.rst:381
+msgid ""
+"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
+"small computation quota. If you are a new user see "
+":doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/ccdc.rst:384
 msgid "Trigger the export task"
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:382
+#: ../../source/cookbook/ccdc.rst:386
 msgid ""
 "Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the "
 "export dialogue. Here you can select the bands to retrieve and the scale "
@@ -778,7 +785,7 @@ msgid ""
 "created in your personal Earth Engine repository."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:384
+#: ../../source/cookbook/ccdc.rst:388
 msgid ""
 "If the area covered is relatively small and you have enough storage quota"
 " left, you can generously select most of the bands relevant for land "
@@ -787,7 +794,7 @@ msgid ""
 "which the below figure on the right is a suggested starting point."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:386
+#: ../../source/cookbook/ccdc.rst:390
 msgid ""
 "The scale parameter depends on the data selected and the level of detail "
 "you will need for your further analysis. Landsat based assets are usually"
@@ -795,11 +802,11 @@ msgid ""
 " 9 times more space as compared to 30 meter resolution."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:400
+#: ../../source/cookbook/ccdc.rst:404
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:402
+#: ../../source/cookbook/ccdc.rst:406
 msgid ""
 "Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-"
 "list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the "
@@ -811,14 +818,14 @@ msgid ""
 "<https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:406
+#: ../../source/cookbook/ccdc.rst:410
 msgid ""
 "This operation is running between GEE and SEPAL servers in the "
 "background, you can thus close the SEPAL page without killing the "
 "process."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:408
+#: ../../source/cookbook/ccdc.rst:412
 msgid ""
 "When the task is finished the frame will be displayed in green as shown "
 "on the second image."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:46
-#: ../../source/cookbook/time_series.rst:201
+#: ../../source/cookbook/time_series.rst:205
 msgid "Parameters"
 msgstr ""
 
@@ -393,13 +393,20 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:202
 msgid ""
+"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
+"small computation quota. If you are a new user see "
+":doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/time_series.rst:206
+msgid ""
 "Select :btn:`<fa-solid fa-cloud-arrow-down>` to open the **Download "
 "parameters** window. You will be able to select the measure to use on "
 "each observation of the time-series. This measure can be selected in the "
 "list of available bands presented above in a previous section."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:206
+#: ../../source/cookbook/time_series.rst:210
 msgid ""
 "There is no fixed rule to the measure selection. Each index is more "
 "adapted to a set of analyses in a defined biome. The knowledge of the "
@@ -407,14 +414,14 @@ msgid ""
 "adapted measure will improve the quality of the downstream analysis."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:208
+#: ../../source/cookbook/time_series.rst:212
 msgid ""
 "You can set a custom scale for exportation by changing the value of the "
 "slider in meters (m). Keep in mind that Sentinel data native resolution "
 "is 10 m and Landsat is 30 m."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:210
+#: ../../source/cookbook/time_series.rst:214
 msgid ""
 "When all the data is selected, select the :btn:`<fa-solid fa-check> "
 "apply` button. Notice that the task tab in the lower-left corner of the "
@@ -422,11 +429,11 @@ msgid ""
 "solid fa-spinner>`, meaning that the tasks are loading."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:218
+#: ../../source/cookbook/time_series.rst:222
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:220
+#: ../../source/cookbook/time_series.rst:224
 msgid ""
 "By selecting the task tab (bottom left corner using the :btn:`<fa-solid "
 "fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the"
@@ -438,37 +445,37 @@ msgid ""
 "<https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:224
+#: ../../source/cookbook/time_series.rst:228
 msgid ""
 "This operation is running between GEE and SEPAL servers in the "
 "background, so you can close the SEPAL page without ending the process."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:226
+#: ../../source/cookbook/time_series.rst:230
 msgid ""
 "When the task is finished, the frame will be displayed in green, as shown"
 " in the second image."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:239
+#: ../../source/cookbook/time_series.rst:243
 msgid "Access"
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:241
+#: ../../source/cookbook/time_series.rst:245
 msgid ""
 "Once the downloading process is done, you can access the data in your "
 "SEPAL folders. The data will be stored in the :code:`Downloads` folder "
 "using the following format:"
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:266
+#: ../../source/cookbook/time_series.rst:270
 msgid ""
 "Understanding how images are stored in a Time series is only required if "
 "you want to manually use them. The SEPAL applications are bound to this "
 "tiling system and can digest this information for you."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:268
+#: ../../source/cookbook/time_series.rst:272
 msgid ""
 "The data are stored in a folder using the name of the time series as it "
 "was labeled in the first section of this document. The SEPAL team was "
@@ -478,7 +485,7 @@ msgid ""
 "reassembled in a :code:`stack.vrt` file."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:270
+#: ../../source/cookbook/time_series.rst:274
 msgid ""
 "The AOI provided by the user will be divided into multiple SEPAL tiles. "
 "The AOI is a :code:`ee.FeatureCollection`; each feature is downloaded in "
@@ -487,7 +494,7 @@ msgid ""
 "maximum 2° size. The tiles are identified by their :code:`<tile_number>`."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:272
+#: ../../source/cookbook/time_series.rst:276
 msgid ""
 "To limit the size of the downloaded images, in each SEPAL tile, the time "
 "period is divided into **Chunks** of 3 months. They are identified by "
@@ -500,7 +507,7 @@ msgid ""
 "The bands are named with the date."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:274
+#: ../../source/cookbook/time_series.rst:278
 msgid ""
 "To gather all these rasters together, a first agregation on time is "
 "performed. One :code:`stack.vrt` is created per GEE tile, meaning that "
@@ -510,35 +517,35 @@ msgid ""
 "called :code:`tile-<gee tiling id>`."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:276
+#: ../../source/cookbook/time_series.rst:280
 msgid ""
 "Finally, information is gathered spatially at the SEPAL tile level in the"
 " main :code:`stack.vrt` file."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:278
+#: ../../source/cookbook/time_series.rst:282
 msgid ""
 "The last file: :code:`date.csv` gathers all the observation dates in "
 "chronological order."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:282
+#: ../../source/cookbook/time_series.rst:286
 msgid ""
 "The dates contained in :code:`date.csv` can differ from one SEPAL tile to"
 " another, due to data availability and preprocessing filters."
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:286
+#: ../../source/cookbook/time_series.rst:290
 msgid ""
 "The full folder with a consistent treefolder is required to read the "
 "`.vrt`"
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:288
+#: ../../source/cookbook/time_series.rst:292
 msgid "Here is an example of a real TS folder:"
 msgstr ""
 
-#: ../../source/cookbook/time_series.rst:313
+#: ../../source/cookbook/time_series.rst:317
 msgid ""
 "Now that you have downloaded the TS to your SEPAL account, it can be "
 "downloaded to your computer using `FileZilla <../setup.filezilla.html>`__"
