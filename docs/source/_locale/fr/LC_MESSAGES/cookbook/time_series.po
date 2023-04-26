@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:22\n"
+"PO-Revision-Date: 2023-04-26 12:36\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -177,11 +177,11 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:119
 msgid "**Cloud detection**"
-msgstr ""
+msgstr "**Détection des nuages**"
 
 #: ../../source/cookbook/time_series.rst:121
 msgid ":guilabel:`QA bands`: Use previously created QA bands from datasets."
-msgstr ""
+msgstr ":guilabel:`Bandes QA`: Utilisez les bandes QA précédemment créées à partir de jeux de données."
 
 #: ../../source/cookbook/time_series.rst:122
 msgid ":guilabel:`Cloud score`: Use a cloud-scoring algorithm."
