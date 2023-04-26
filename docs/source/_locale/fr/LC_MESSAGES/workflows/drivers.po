@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-26 00:57+0000\n"
-"PO-Revision-Date: 2023-04-26 15:46\n"
+"PO-Revision-Date: 2023-04-26 16:44\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:13
 msgid "However, these studies (as well as existing national studies on the drivers of deforestation and forest degradation in the Central African region) are generally based on data acquired up to 2014 and do not consider the recent trends in observed tree cover loss. They also do not take into account the importance of the spatial fragmentation of forests and the role played by degradation induced by forest exploitation :footcite:`molinario:2015`. Furthermore, they simplify causes of deforestation into a single driver, which does not adequately reflect the complex local context and interacting causes, decisions that lead to anthropogenic forest disturbance at local scales :footcite:`ferrer-velasco:2020`."
-msgstr ""
+msgstr "Cependant, ces études (ainsi que les études nationales existantes sur les moteurs de la déforestation et de la dégradation des forêts dans la région d'Afrique centrale) sont généralement basées sur des données acquises avant 2014 et ne tiennent pas compte des tendances récentes de la perte de couverture forestière. Ils ne tiennent pas non plus compte de l'importance de la fragmentation spatiale des forêts et du rôle joué par la dégradation induite par l'exploitation forestière :footcite:`molinario:2015`. En outre, elles simplifient les causes de la déforestation en un seul moteur, ce qui ne reflète pas de manière adéquate le contexte local complexe et les causes d'interaction, décisions qui conduisent à des perturbations anthropiques de la forêt à l'échelle locale :footcite:`ferrer-velasco:2020`."
 
 #: ../../source/workflows/drivers.rst:15
 msgid "These recent trends and the lack of updated studies result in little consensus on the main drivers and agents of forest change at regional scales. There is a pressing need to systematically quantify the direct causes of deforestation and degradation via a systematic and comprehensive approach. An updated assessment should provide validated evidence on the role and weight of different drivers of forest loss and support decision making to address related challenges. A spatially explicit approach should also facilitate the assessment of the efficiency of policies and actions in different contexts. Improved spatial data on deforestation and forest degradation, and an improved understanding of the drivers will support land use planning approaches in two pilot areas where the regional analysis indicated clear opportunity for supporting land use decision making and planning."
@@ -53,11 +53,11 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:22
 msgid "definitions"
-msgstr ""
+msgstr "définitions"
 
 #: ../../source/workflows/drivers.rst:24
 msgid "A robust methodology uses consistent definitions. The following terms and definitions are applied throughout the workflow."
-msgstr ""
+msgstr "Une méthodologie robuste utilise des définitions cohérentes. Les termes et définitions suivants sont appliqués tout au long du workflow."
 
 #: ../../source/workflows/drivers.rst:27
 msgid "Area of interest"
@@ -65,11 +65,11 @@ msgstr "Zone de l'étude"
 
 #: ../../source/workflows/drivers.rst:29
 msgid "The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo."
-msgstr ""
+msgstr "La zone d'étude pilote comprend les frontières nationales des six pays du Bassin du Congo : Cameroun, République centrafricaine, Guinée équatoriale, Gabon, République du Congo et République démocratique du Congo."
 
 #: ../../source/workflows/drivers.rst:31
 msgid "Because of consistency issues between border datasets, at national / regional / global levels, it was decided to take one global dataset, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__."
-msgstr ""
+msgstr "En raison de problèmes de cohérence entre les données frontalières aux niveaux national / régional / mondial, il a été décidé de prendre un jeu de données global, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__."
 
 #: ../../source/workflows/drivers.rst:34
 msgid "Forest definitions"
@@ -182,7 +182,7 @@ msgstr "Un critère de couverture de canopée d'environ 50% pour une superficie 
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Republic of Congo"
-msgstr ""
+msgstr "République du Congo"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "FREL (Coordination Nationale REDD, 2017)"
@@ -198,7 +198,7 @@ msgstr "Exclusion des activités agricoles, en particulier des palmiers en produ
 
 #: ../../source/workflows/drivers.rst:48
 msgid "Regional Land Cover"
-msgstr ""
+msgstr "Couverture du sol régionale"
 
 #: ../../source/workflows/drivers.rst:50
 msgid "The baseline map for the regional forest cover was first derived from a common classification system that was validated by the project technical committee and included land cover classes reference in national system.  The land cover classification has also been published in the `FAO Land Cover Registry <https://www.fao.org/hih-geospatial-platform/resources/projects/land-cover-legend-registry/en>`__."
@@ -206,11 +206,11 @@ msgstr "La carte de base pour la cartographie de couvert forestier régional a d
 
 #: ../../source/workflows/drivers.rst:55
 msgid "In Central African Republic and Cameroun, shrub savannas were identified as forest, in adherence to the national forest definitions of >10% tree cover"
-msgstr ""
+msgstr "En République centrafricaine et au Cameroun, les savanes d'arbustes ont été identifiées comme forêts, conformément aux définitions forestières nationales de > 10% de couverture arborée"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest/non-Forest"
@@ -242,7 +242,7 @@ msgstr "Forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dense Forest"
-msgstr ""
+msgstr "Dense Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Dense"
@@ -250,11 +250,11 @@ msgstr "Forêt Dense"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque denso"
-msgstr ""
+msgstr "Bosque denso"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dense humid primary evergreen forest on terra firme, >60% tree cover"
-msgstr ""
+msgstr "Forêt dense, humide et feuilles persistantes sur terre ferme, >60% couvert d'arbres"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "2"
@@ -262,404 +262,404 @@ msgstr "2"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dense Dry Forest"
-msgstr ""
+msgstr "Dense Dry Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Dense Sèche"
-msgstr ""
+msgstr "Forêt Dense Sèche"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque denso seco"
-msgstr ""
+msgstr "Bosque denso seco"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dense dry forest, >60% tree cover, with dry seasons"
-msgstr ""
+msgstr "Forêt sèche dense, couverture arborée >60% avec saisons sèches"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Secondary Forest"
-msgstr ""
+msgstr "Secondary Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Secondaire"
-msgstr ""
+msgstr "Bosque denso seco"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque secundario"
-msgstr ""
+msgstr "Bosque secundario"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Open forest, 30-60% tree cover, degraded or secondary"
-msgstr ""
+msgstr "Forêt à canopée ouverte, 30 à 60 % de couverture arborée, dégradée ou secondaire"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dry Open Forest"
-msgstr ""
+msgstr "Dry Open Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Claire Sèche"
-msgstr ""
+msgstr "Forêt Claire Sèche"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque claro Seco"
-msgstr ""
+msgstr "Bosque claro Seco"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dry open forest, 30-60% tree cover, with dry seasons"
-msgstr ""
+msgstr "Forêt sèche ouverte, 30 à 60 % de couverture arborée, avec saisons sèches"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sub-Montane Forest"
-msgstr ""
+msgstr "Sub-Montane Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Sub-Montagnarde"
-msgstr ""
+msgstr "Forêt Sub-Montagnarde"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque sub-montañoso"
-msgstr ""
+msgstr "Bosque sub-montañoso"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest >30% tree cover, 1100-1750m altitude"
-msgstr ""
+msgstr "Forêt >30% couverture arborée >1750 m d'altitude"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Montane Forest"
-msgstr ""
+msgstr "Montane Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Montagnarde"
-msgstr ""
+msgstr "Forêt Montagnarde"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque montañoso"
-msgstr ""
+msgstr "Bosque montañoso"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest >30% tree cover  >1750m altitude"
-msgstr ""
+msgstr "Forêt >30% couverture arborée >1750 m d'altitude"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Mangrove"
-msgstr ""
+msgstr "Mangrove"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Manglar"
-msgstr ""
+msgstr "Manglar"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest >30% tree cover on saline waterlogged soils"
-msgstr ""
+msgstr "Forêt >30% de couverture arborée, sur les sols salins humides"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Swamp Forest"
-msgstr ""
+msgstr "Swamp Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Marécageuse"
-msgstr ""
+msgstr "Forêt Marécageuse"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque pantanoso"
-msgstr ""
+msgstr "Bosque pantanoso"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Swamp mixed foret, >30% tree cover, flooded > 9 months"
-msgstr ""
+msgstr "Forêt marécageuse, couverture arborée > 30%, inondé > 9 mois"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Gallery Forest"
-msgstr ""
+msgstr "Gallery Forest"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Galerie"
-msgstr ""
+msgstr "Forêt Galerie"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque en galería"
-msgstr ""
+msgstr "Bosque en galería"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Riparian forest in valleys or along river edges"
-msgstr ""
+msgstr "Forêt riparienne dans les vallées ou le long des bords de la rivière"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Mature Forest Plantation"
-msgstr ""
+msgstr "Mature Forest Plantation"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Plantation Forestière Mature"
-msgstr ""
+msgstr "Plantation Forestière Mature"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Plantación forestal madura"
-msgstr ""
+msgstr "Plantación forestal madura"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Tree cover >15%, cultivated or managed"
-msgstr ""
+msgstr "Couverture arborée >15%, cultivée ou sous gestion"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Woodland Savanna"
-msgstr ""
+msgstr "Woodland Savanna"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Savane Arborée"
-msgstr ""
+msgstr "Savane Arborée"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sabana arbórea"
-msgstr ""
+msgstr "Sabana arbórea"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Woodland savanna 15-30%, tree cover > national forest definition"
-msgstr ""
+msgstr "Savane arborée 15-30%, couverture des arbres > définition nationale forêstière"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest*"
-msgstr ""
+msgstr "Forêt*"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Shrubland Savanna"
-msgstr ""
+msgstr "Shrubland Savanna"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Savane Arbustive"
-msgstr ""
+msgstr "Savane Arbustive"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sabana arbustiva"
-msgstr ""
+msgstr "Sabana arbustiva"
 
 #: ../../source/workflows/drivers.rst:1
 #, python-format
 msgid "Shrubland savanna >15% shrub cover > national forest definition"
-msgstr ""
+msgstr "Savane arbustive, >15-%, couverture d'arbustes, > définition nationale forestière"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Non-Forest"
-msgstr ""
+msgstr "Non-Forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Herbaceous Savanna"
-msgstr ""
+msgstr "Herbaceous Savanna"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Savane Herbacée"
-msgstr ""
+msgstr "Savane Herbacée"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sabana herbácea"
-msgstr ""
+msgstr "Sabana herbácea"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Grassland savanna <15% tree cover"
-msgstr ""
+msgstr "Savane herbeuse <15% de couverture arborée"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Aquatic grassland"
-msgstr ""
+msgstr "Herbaceous Savanna"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Prairie Aquatique"
-msgstr ""
+msgstr "Prairie Aquatique"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Pradera acuática"
-msgstr ""
+msgstr "Pradera acuática"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Regularly flooded grassland"
-msgstr ""
+msgstr "Regularly flooded grassland"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bare Land"
-msgstr ""
+msgstr "Bare Land"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sols Nus - Végétation Éparse"
-msgstr ""
+msgstr "Sols Nus - Végétation Éparse"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Suelo desnudo-Vegetación escasa"
-msgstr ""
+msgstr "Suelo desnudo-Vegetación escasa"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "<15% vegetation cover"
-msgstr ""
+msgstr "Couverture végétale de <15%"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Cultivated Areas"
-msgstr ""
+msgstr "Cultivated Areas"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Terres Cultivées"
-msgstr ""
+msgstr "Terres Cultivées"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Tierras cultivadas"
-msgstr ""
+msgstr "Tierras cultivadas"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Cultivated vegetation >15% vegetation cover"
-msgstr ""
+msgstr "Végétation cultivée >15% de couverture végétale"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Developed Areas"
-msgstr ""
+msgstr "Developed Areas"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Zones Bâties"
-msgstr ""
+msgstr "Zones Bâties"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Zonas edifiadas"
-msgstr ""
+msgstr "Zonas edifiadas"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Human dominated and artificial surfaces"
-msgstr ""
+msgstr "Surfaces artificielles"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Water"
-msgstr ""
+msgstr "Water"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Eau"
-msgstr ""
+msgstr "Eau"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Agua"
-msgstr ""
+msgstr "Agua"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Water > 50%"
-msgstr ""
+msgstr "Eau > 50%"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Shrubland savanna >15% tree cover < national forest definition"
-msgstr ""
+msgstr "Savane arbustive, >15-%, couverture d'arbustes, < définition nationale forestière"
 
 #: ../../source/workflows/drivers.rst:81
 msgid "Definitions of deforestation and degradation"
-msgstr ""
+msgstr "Définitions de déforestation et de dégradation"
 
 #: ../../source/workflows/drivers.rst:83
 msgid "In order to properly discern between deforestation and degradation, we require specific and operational definitions that can be identified from satellite image analysis."
-msgstr ""
+msgstr "Afin de bien discerner entre la déforestation et la dégradation, nous avons besoin de définitions spécifiques et opérationnelles qui puissent être identifiées à partir de l'analyse des images satellites."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Deforestation"
-msgstr ""
+msgstr "Déforestation"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Degradation"
-msgstr ""
+msgstr "Dégradation"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Permanent reduction of forest cover below the forest definition"
-msgstr ""
+msgstr "Réduction permanente du couvert forestier en dessous de la définition de la forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "A temporary or permanent reduction of forest cover that remains above the forest definition"
-msgstr ""
+msgstr "Une réduction temporaire ou permanente du couvert forestier qui reste au-dessus de la définition de la forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "**Conversion of forest** to other land use: agriculture, pasture, mineral exploitation, development, etc..."
-msgstr ""
+msgstr "**Conversion de forêt** à une autre utilisation des terres : agriculture, pâturage, exploitation minière, développement, etc..."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Includes areas where timber is exploited, or trees removes and where forest may be expected to regenerate naturally or with silvicultural methods."
-msgstr ""
+msgstr "Inclut les zones où le bois est exploité ou où les arbres sont enlevés et où la forêt peut être appelée à se régénérer naturellement ou avec des méthodes sylvicoles."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Excludes areas of planned deforestation, such as timber extraction, or in areas where the forest is expected to regenerate naturally or with silvicultural methods."
-msgstr ""
+msgstr "Exclut les zones de déforestation planifiée, comme l'extraction de bois, ou dans les zones où la forêt est censée se régénérer naturellement ou avec des méthodes sylvicoles."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Includes areas where impacts, over exploitation or environmental conditions prohibit regeneration above the forest cover definition"
-msgstr ""
+msgstr "Inclut les zones où les impacts, la surexploitation ou les conditions environnementales empêchent la régénération au-dessus de la définition du couvert forestier"
 
 #: ../../source/workflows/drivers.rst:94
 msgid "Example of deforestation"
-msgstr ""
+msgstr "Exemple de déforestation"
 
 #: ../../source/workflows/drivers.rst:96
 msgid "Deforestation is recognizable in images by a permanent change in forest cover. In high-resolution images, we can often see bare ground, felled trees, and sometimes the beginning of agricultural or other driving activities."
-msgstr ""
+msgstr "La déforestation est reconnaissable en images par un changement permanent de couverture forestière. Dans les images à haute résolution, nous pouvons souvent voir des sols nus, des arbres abattus et parfois le début des activités agricoles ou d'autres facteurs."
 
 #: ../../source/workflows/drivers.rst:104
 msgid "Example of degradation"
-msgstr ""
+msgstr "Exemple de dégradation"
 
 #: ../../source/workflows/drivers.rst:106
 msgid "Degradation is more difficult to determine because changes are more subtle, sometimes a few trees removed, and the tree cover remains above the national definition. It is therefore necessary to look at the whole time series and make sure that the changes are not deforestation. Degradation is also not the same everywhere and will differ by forest type and environmental and human context."
-msgstr ""
+msgstr "La dégradation est plus difficile à déterminer parce que les changements sont plus subtils, parfois quelques arbres abatus, et la couverture arborée reste au-dessus de la définition nationale. Il est donc nécessaire d'examiner toute la série temporelle et de veiller à ce que les changements ne soient pas finalement de la déforestation. La dégradation n'est pas non plus la même partout et elle sera différente par type de forêt et par contexte environnemental et humain."
 
 #: ../../source/workflows/drivers.rst:114
 msgid "Date convention"
-msgstr ""
+msgstr "Convention de dates"
 
 #: ../../source/workflows/drivers.rst:116
 msgid "The time period for this pilot study is 2015-2022, with an assessment of changes encompassing 31/12/2015 to 31/12/2022. The year 2015 was used as the baseline, with the detection of annual changes in deforestation and degradation starting in 2016 through 2022. This fits with the availability of Sentinel satellite imagery in 2015 (although incomplete for that year), as well as new monthly high-resolution mosaics available for the tropics from Planet, which are available from 2015 and are used for additional validation."
@@ -667,71 +667,71 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:118
 msgid "The following date convention was adopted:"
-msgstr ""
+msgstr "Cette convention de date a été adoptée :"
 
 #: ../../source/workflows/drivers.rst:120
 msgid "A product for the year YYYY is considered as of 31/12/YYYY."
-msgstr ""
+msgstr "Un produit pour l'année YYYY est considéré comme le 31/12/YYYY."
 
 #: ../../source/workflows/drivers.rst:122
 msgid "This convention allows a consistent approach to assessing change products. A change map from year1 to year2 will be consistent with both year1 and year2 maps. The status of the year takes into account any changes that occurred during the year."
-msgstr ""
+msgstr "Cette convention permet une approche cohérente pour évaluer les produits de changement. Une carte de changement de l'année 1 à l'année 2 sera compatible avec les cartes de l'année 1 et 2. Le statut de l'année tient compte des changements survenus au cours de l'année."
 
 #: ../../source/workflows/drivers.rst:125
 msgid "Direct Driver definitions"
-msgstr ""
+msgstr "Définitions de Moteurs Direct"
 
 #: ../../source/workflows/drivers.rst:127
 msgid "A total of eight direct drivers were defined by their specific characteristics identifiable in high resolution satellite imagery from Planet."
-msgstr ""
+msgstr "Un total de huit moteurs directs ont été définis par leurs caractéristiques spécifiques identifiables dans l'imagerie satellite de haute résolution de Planet."
 
 #: ../../source/workflows/drivers.rst:132
 msgid "Driver"
-msgstr ""
+msgstr "Moteur"
 
 #: ../../source/workflows/drivers.rst:133
 msgid "example"
-msgstr ""
+msgstr "exemple"
 
 #: ../../source/workflows/drivers.rst:134
 msgid "characteristics"
-msgstr ""
+msgstr "caractéristiques"
 
 #: ../../source/workflows/drivers.rst:135
 msgid "Artisanal agriculture"
-msgstr ""
+msgstr "Agriculture artisanale"
 
 #: ../../source/workflows/drivers.rst:138
 msgid "Small-scale agriculture is composed of small, informal, unstructured and irregular agricultural plots covering an area of less than 5ha. The presence of fires (slash-and-burn agriculture) can be observed, and the land is often soil cover in various stages of cultivation."
-msgstr ""
+msgstr "L'agriculture à petite échelle est composée de petites parcelles agricoles informelles, non structurées et irrégulières couvrant une superficie de moins de 5 ha. On peut souvent observer la présence d'incendies (agriculture à brulis) et la terre est souvent recouverte de sols à diverses étapes de culture."
 
 #: ../../source/workflows/drivers.rst:139
 msgid "Industrial agriculture"
-msgstr ""
+msgstr "Agriculture Industrielle"
 
 #: ../../source/workflows/drivers.rst:142
 msgid "Industrial agriculture is characterized by agricultural areas larger than 5 ha that tend to be homogeneous and often consist of a single crop. In some cases, agriculture may be more varied and consist of many fields closely packed together. Therefore, large areas consisting of many small fields cultivated at the same time are also considered industrial agriculture under the definition."
-msgstr ""
+msgstr "L'agriculture industrielle est caractérisée par des zones agricoles de plus de 5 ha qui tendent à être homogènes, composées d'une seule culture. Dans certains cas, l'agriculture peut être plus variée et se composer de nombreux champs étroitement remplis ensemble. Par conséquent, les grandes superficies constituées de nombreux petits champs cultivés en même temps sont également considérées comme une agriculture industrielle dans le cadre de la définition."
 
 #: ../../source/workflows/drivers.rst:143
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastructure"
 
 #: ../../source/workflows/drivers.rst:146
 msgid "Roads are visible in the images with linear features and are identified as motorized when they are wide enough (5m) to carry vehicle traffic. Small irregular paths through vegetation are not included. Roads can be large highways, or logging trails, and are most often found with other engines such as villages, mining facilities."
-msgstr ""
+msgstr "Les routes sont visibles dans les images avec des caractéristiques linéaires et sont identifiées comme motorisées quand elles sont assez larges (5m) pour transporter le trafic automobile. Les petits chemins irréguliers à travers la végétation ne sont pas inclus. Les routes peuvent être de grandes autoroutes, ou des sentiers forestiers, et sont le plus souvent trouvées avec d'autres moteurs tels que les villages, agriculture, les installations minières."
 
 #: ../../source/workflows/drivers.rst:147
 msgid "Settlements"
-msgstr ""
+msgstr "Villages et Peuplements"
 
 #: ../../source/workflows/drivers.rst:150
 msgid "Villages and settlements can be hard or soft roofed, they can be buildings or huts, and they are often accompanied by roads and other drivers such as small-scale agriculture. This engine can be an urban area (left image), or a small isolated village in a forest stand (right image)."
-msgstr ""
+msgstr "Les villages et les villages peuvent avoir des toits durs ou souples, ils peuvent être des bâtiments ou des cabanes, et ils sont souvent accompagnés par des routes et d'autres moteurs comme l'agriculture à petite échelle. Ce moteur peut être en zone urbaine (image de gauche), ou un petit village isolé dans un stand forestier (image à droite)."
 
 #: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:151
 msgid "Artisanal forestry"
-msgstr ""
+msgstr "Foresterie artisanale"
 
 #: ../../source/workflows/drivers.rst:154
 msgid "Small-scale or artisanal logging is characterized by the selective extraction of trees in an irregular manner, leaving a tree cover. These are areas that are not visibly cultivated. These areas are often found in places accessible by small roads or villages."
@@ -739,7 +739,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:155
 msgid "Industrial forestry"
-msgstr ""
+msgstr "Foresterie industrielle"
 
 #: ../../source/workflows/drivers.rst:158
 msgid "Large-scale or industrial forestry is recognizable by the presence of logging roads, along which selective logging degradation occurs. These roads may be recent or old, and the canopy can quickly cover them, so all years of imagery acquired over the entire study period are evaluated."
@@ -747,19 +747,19 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:159
 msgid "Artisanal mine"
-msgstr ""
+msgstr "Mine artisanale"
 
 #: ../../source/workflows/drivers.rst:162
 msgid "Small-scale mining is characterized by muddy clearings, and usually ponds or water catchments and may feature turbid water. Artisanal in nature, the clearings are generally small, isolated, and often located along streams."
-msgstr ""
+msgstr "Les mines à petite échelle sont caractérisées par des défrichements boueux, généralement des étangs ou des bassins d’eau et peuvent contenir de l’eau turbide. Artisanal par nature, les dégagements sont généralement petits, isolés et souvent situés le long des ruisseaux."
 
 #: ../../source/workflows/drivers.rst:163
 msgid "Industrial mine"
-msgstr ""
+msgstr "Mine industrielle"
 
 #: ../../source/workflows/drivers.rst:166
 msgid "Large-scale mining is characterized by large ponds, open pits and clearings, as well as extensive infrastructure and roads."
-msgstr ""
+msgstr "L'exploitation minière à grande échelle est caractérisée par de grands étangs, des fosses ouvertes et des défrichements, ainsi que par de vastes infrastructures et routes."
 
 #: ../../source/workflows/drivers.rst:168
 msgid "To address the overlap of drivers in the same location and interpret local context, our approach identifies archetypes, or common driver combinations which represent realities and processes on the ground. The most common archetype consists of four drivers, which include artisanal agriculture, artisanal forestry, roads and settlements, which is representative of the agricultural mosaic, or so-called “rural complex” commonly observed in the region\\ :footcite:`molinario:2020`."
@@ -767,79 +767,79 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:170
 msgid "The observed combinations of drivers are grouped into thematic classes or archetypes."
-msgstr ""
+msgstr "Les combinaisons de moteurs souvent observées ensemble sont organisées en groupes thématiques ou archétypes."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Rural complex"
-msgstr ""
+msgstr "Complexe rural"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Artisanal agriculture with roads and settlements, with or without artisanal forestry, and no industrial drivers"
-msgstr ""
+msgstr "Agriculture artisanale avec routes et villages, avec ou sans foresterie artisanale, et sans moteurs industriels"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Artisanal forestry with or without “other” driver, or with settlements or roads without any artisanal agriculture"
-msgstr ""
+msgstr "Foresterie artisanale avec ou sans moteur « autre », ou avec des villages, ou des routes sans présence d'agriculture artisanale"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial Agriculture"
-msgstr ""
+msgstr "Agriculture Industrielle"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial agriculture and other non-industrial drivers"
-msgstr ""
+msgstr "L'agriculture industrielle et d'autres moteurs non industriels"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial forestry and other non-industrial drivers"
-msgstr ""
+msgstr "La foresterie industrielle et d'autres moteurs non industriels"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial Forestry and Agriculture"
-msgstr ""
+msgstr "Foresterie et Agriculture Industrielle"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial Forestry and Agriculture identified together"
-msgstr ""
+msgstr "Foresterie et Agriculture Industrielle sont présents ensemble"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Industrial mining"
-msgstr ""
+msgstr "Mine industrielle"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Presence of industrial mining without other industrial drivers"
-msgstr ""
+msgstr "Présence de mines industrielles sans autres moteurs industriels"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Artisanal mining"
-msgstr ""
+msgstr "Mine artisanale"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "No more than 2 drivers, including artisanal mining, no industrial drivers present"
-msgstr ""
+msgstr "Pas plus de 2 moteurs, y compris les mines artisanales, aucun moteur industriel présent"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Human infrastructure"
-msgstr ""
+msgstr "Infrastructures humaines"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Roads, settlements observed alone or together, no other drivers present"
-msgstr ""
+msgstr "Routes, villages observées seules ou ensemble, aucun autre moteur présent"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Infrastructure related agriculture"
-msgstr ""
+msgstr "Agriculture liée à l'infrastructure"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Infrastructure and artisanal agriculture observed together"
-msgstr ""
+msgstr "Les infrastructures et l'agriculture artisanale sont observées ensemble"
 
 #: ../../source/workflows/drivers.rst:186
 msgid "Methodology"
-msgstr ""
+msgstr "Méthodologie"
 
 #: ../../source/workflows/drivers.rst:188
 msgid "The major components of this this methodology include the generation of wall-to-wall geospatial data on forest cover types, changes, and discerning areas of deforestation from degradation for the entire Central African region. Next, these products are validated via visual interpretation and the presence of various direct drivers are identified to evaluate the direct causes of disturbance, and interpreted in the context of strategic investments for climate change mitigation and support for national efforts for emissions reduction."
-msgstr ""
+msgstr "Les principales composantes de cette méthodologie comprennent la génération de données géospatiales mur à mur sur les types de couverture forestière, les changements et la distinction entre les zones de déforestation et de dégradation pour l'ensemble de la région d'Afrique centrale. Ensuite, ces produits sont validés par une interprétation visuelle et la présence de divers facteurs directs est identifiée pour évaluer les causes directes des perturbations, et interprétée dans le contexte des investissements stratégiques pour l'atténuation du changement climatique et le soutien aux efforts nationaux de réduction des émissions. données géospatiales sur les types de couverture forestière, les changements, et la distinction entre les zones de déforestation et de dégradation pour l'ensemble de la région d'Afrique centrale. Ensuite, ces produits sont validés par une interprétation visuelle et la présence de divers facteurs directs est identifiée pour évaluer les causes directes des perturbations, et interprétée dans le contexte des investissements stratégiques pour l'atténuation du changement climatique et le soutien aux efforts nationaux de réduction des émissions."
 
 #: ../../source/workflows/drivers.rst:190
 msgid "The methodology uses FAO’s OpenForis suite of tools including the SEPAL platform for satellite data analysis, Collect Earth Online and Google Earth Engine. The approach analyses dense satellite time-series to generate geospatial data on forest changes which are then validated and interpreted for direct drivers in 5 major steps:"
@@ -863,19 +863,19 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:208
 msgid "Creating cloud-free mosaics"
-msgstr ""
+msgstr "Création de mosaïques sans nuages"
 
 #: ../../source/workflows/drivers.rst:210
 msgid "To accurately determine disturbances within forest ecosystems and distinguish from other dynamics occurring in non-forest areas, a baseline forest mask is required. This is achieved by classifying cloud-free image mosaics, which are created using the optical and radar mosaic recipes."
-msgstr ""
+msgstr "Pour déterminer avec précision les perturbations au sein des écosystèmes forestiers et les distinguer d'autres dynamiques se produisant dans des zones non forestières, il est nécessaire de disposer d'un masque forestier de référence. Pour ce faire, on classifie des mosaïques d'images sans nuages, créées à l'aide des recettes de mosaïques optiques et radar."
 
 #: ../../source/workflows/drivers.rst:212
 msgid "As you can see in this `online animation <https://drive.google.com/file/d/1H5Br82CoE1QJnri0cBl1Pf2tRJV3kW96/view>`__, clouds are persistent in the Congo Basin region. For this reason we will produce mosaics of optical cloud-free imagery, and radar (cloud independent) composites for the best observations of the study region."
-msgstr ""
+msgstr "Comme vous pouvez le voir dans cette `animation en ligne <https://drive.google.com/file/d/1H5Br82CoE1QJnri0cBl1Pf2tRJV3kW96/view>`__, les nuages sont persistants dans la région du Bassin du Congo. C'est pourquoi nous produirons des mosaïques d'images optiques sans nuages et des composites radar (non affectés par les nuages) pour les meilleures observations de la région étudiée."
 
 #: ../../source/workflows/drivers.rst:215
 msgid "Optical cloud-free composite"
-msgstr ""
+msgstr "Mosaïque optique sans nuages"
 
 #: ../../source/workflows/drivers.rst:217
 msgid "Multi-temporal image mosaics are compiled from data collected over several months or years. Cloud-free pixels from multiple images are integrated into an image with fewer clouds, haze and shadows using the pixel quality band provided with image metadata."
@@ -891,23 +891,23 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:234
 msgid "To create our optical mosaic, we will use the SEPAL optical mosaic recipe. To learn more about the different available parameters and how to use the recipe, please see :doc:`../cookbook/optical_mosaic`."
-msgstr ""
+msgstr "Pour créer notre mosaïque optique, nous utiliserons la recette de mosaïque optique SEPAL. Pour en savoir plus sur les différents paramètres disponibles et sur l'utilisation de la recette, veuillez consulter :doc:`../cookbook/optical_mosaic`."
 
 #: ../../source/workflows/drivers.rst:236
 msgid "In this example we will use a  custom asset from GEE for the :btn:`AOI` parameter: :code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. It includes an ISO column to select Congo Basin countries according to their three digit code. See :doc:`../feature/aoi_selector` for more AOI selection methods."
-msgstr ""
+msgstr "Dans cet exemple, nous utiliserons une ressource personnalisée de GEE pour le paramètre :btn:`AOI` : :code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. Il inclut une colonne ISO pour sélectionner les pays du Bassin du Congo selon leur code à trois caractères. Voir :doc:`../feature/aoi_selector` pour plus de méthodes de sélection AOI."
 
 #: ../../source/workflows/drivers.rst:238
 msgid "In the :btn:`DAT` section you can select the dates of interest."
-msgstr ""
+msgstr "Dans la section :btn:`DAT', vous pouvez sélectionner les dates qui vous intéressent."
 
 #: ../../source/workflows/drivers.rst:240
 msgid "For later years (after 2018), the sensor coverage is good so you can safely select all images of a single year."
-msgstr ""
+msgstr "Pour les années ultérieures (après 2018), la couverture du capteur est bonne et vous pouvez donc sélectionner en toute sécurité toutes les images d'une seule année."
 
 #: ../../source/workflows/drivers.rst:242
 msgid "For earlier eras, e.g. 2015 use the advanced option to add images from prior years from a targeted season (in this case the full year). This will help to fill the gaps in cloudy areas."
-msgstr ""
+msgstr "Pour les époques antérieures, par exemple 2015, utilisez l'option avancée pour ajouter des images des années précédentes d'une saison ciblée (dans ce cas, l'année entière). Cela permettra de combler les lacunes dans les zones nuageuses."
 
 #: ../../source/workflows/drivers.rst:250
 msgid "For data sources, more is generally better. Select all Landsat options for a consistent mosaic. If you like, Sentinel-2 can be added for more data, but as the tiling system of the 2 sensors are different you will be forced to use all available images - the option to select images will not be available."
@@ -927,11 +927,11 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:259
 msgid "Once the export is finished, you can view the asset in Google Earth Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the above parameters:"
-msgstr ""
+msgstr "Une fois l'export est terminé, vous pouvez visualiser l'asset dans Google Earth Engine ou SEPAL. Voici la mosaïque 2015 du Bassin du Congo en utilisant les paramètres ci-dessus :"
 
 #: ../../source/workflows/drivers.rst:267
 msgid "ALOS Palsar mosaics"
-msgstr ""
+msgstr "Mosaïques ALOS Palsar"
 
 #: ../../source/workflows/drivers.rst:269
 msgid "Radar imagery has the added benefit of being cloud-free by design as active sensors are not influenced by clouds."
@@ -943,11 +943,11 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:273
 msgid "For more information about the parameters, Please see :doc:`../modules/dwn/alos_mosaics`."
-msgstr ""
+msgstr "Pour plus d'informations sur les paramètres, veuillez consulter :doc:`../modules/dwn/alos_mosaics`."
 
 #: ../../source/workflows/drivers.rst:277
 msgid "Sentinel-1 mosaics"
-msgstr ""
+msgstr "Mosaïques Sentinel-1"
 
 #: ../../source/workflows/drivers.rst:279
 msgid "You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus radar data."
@@ -959,7 +959,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:284
 msgid "For the best results in the Congo Basin the following parameters are proposed:"
-msgstr ""
+msgstr "Pour les meilleurs résultats dans le bassin du Congo, les paramètres suivants sont proposés :"
 
 #: ../../source/workflows/drivers.rst:286
 msgid "Both :btn:`ascending` and :btn:`descending` orbits will ensure complete coverage of the AOI"
@@ -967,37 +967,37 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:287
 msgid "The :btn:`terrain` correction will mask any errors due to topography, or terrain “shadows”"
-msgstr ""
+msgstr "La correction géométrique :btn:'relief' masquera toutes les erreurs des « ombres » dues à la topographie"
 
 #: ../../source/workflows/drivers.rst:288
 msgid "We don’t need to apply a speckle filter"
-msgstr ""
+msgstr "Nous n'avons pas besoin d'appliquer un filtre"
 
 #: ../../source/workflows/drivers.rst:289
 msgid ":btn:`moderate` outlier removal will provide the most consistent results"
-msgstr ""
+msgstr ":btn:`modérée` fournira les résultats les plus cohérents"
 
 #: ../../source/workflows/drivers.rst:291
 msgid "Select which bands to export in the retrieve window, you may select all of them depending on the space available in your GEE repository or SEPAL workspace. Resolution can also be selected accordingly - you can choose :btn:`30` to be at the same scale as the optical mosaic, which will be classified in the next step."
-msgstr ""
+msgstr "Sélectionnez les bandes à exporter dans l'onglet récupération, vous pouvez sélectionner toutes les bandes en fonction de l'espace disponible dans votre référentiel GEE ou dans votre espace de travail SEPAL. La résolution peut également être sélectionnée en conséquence - vous pouvez choisir :btn:`30` pour rester à la même échelle que la mosaïque optique, qui seront classés à l'étape suivante."
 
 #: ../../source/workflows/drivers.rst:297
 msgid "Time-series analysis"
-msgstr ""
+msgstr "Analyse des séries temporelles"
 
 #: ../../source/workflows/drivers.rst:301
 #: ../../source/workflows/drivers.rst:310
 #: ../../source/workflows/drivers.rst:319
 msgid "This part of the documentation is still under construction."
-msgstr ""
+msgstr "Cette partie de la documentation est encore en cours de construction."
 
 #: ../../source/workflows/drivers.rst:306
 msgid "Sample Stratification"
-msgstr ""
+msgstr "Stratification et échantillonnage"
 
 #: ../../source/workflows/drivers.rst:315
 msgid "Quantify Direct Drivers"
-msgstr ""
+msgstr "Analyse de moteurs directs"
 
 #~ msgid ""
 #~ "This documentation has been produced in"
