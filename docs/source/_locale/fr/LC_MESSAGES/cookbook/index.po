@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-30 08:19\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:22\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -42,45 +42,45 @@ msgstr "Une recette SEPAL est un enregistrement des étapes et des paramètres u
 msgid "With recipes, you can access the Google Earth Engine (GEE) multi-petabyte catalog of satellite imagery and utilize their planetary-scale analysis capabilities without writing a single line of code, simply by linking your Google and SEPAL accounts."
 msgstr "Avec des recettes, vous pouvez accéder au catalogue Google Earth Engine (GEE) multi-petabyte d'imagerie satellite et utiliser leurs capacités d'analyse planétaire sans écrire une seule ligne de code, simplement en liant vos comptes Google et SEPAL."
 
-#: ../../source/cookbook/index.rst:17
+#: ../../source/cookbook/index.rst:18
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/index.rst:21
 msgid "Gallery"
 msgstr "Galerie"
 
-#: ../../source/cookbook/index.rst:70
+#: ../../source/cookbook/index.rst:74
 msgid "Start a recipe"
 msgstr "Commencer une recette"
 
-#: ../../source/cookbook/index.rst:74
+#: ../../source/cookbook/index.rst:78
 msgid "Connect your SEPAL account to your GEE account to read and write GEE assets. If your accounts are not linked, you will only be able to download data to your SEPAL workspace."
 msgstr "Connectez votre compte SEPAL à votre compte GEE pour lire et écrire des assets GEE. Si vos comptes ne sont pas liés, vous ne pourrez télécharger que des données dans votre espace de travail SEPAL."
 
-#: ../../source/cookbook/index.rst:76
+#: ../../source/cookbook/index.rst:80
 msgid "To start a recipe, go to the **Process** tab :icon:`fa-solid fa-globe`, where you'll see the list of all saved recipes in your SEPAL account."
 msgstr "Pour commencer une recette, allez dans l'onglet **Processus** :icon:`fa-solid fa-globe`, où vous verrez la liste de toutes les recettes enregistrées dans votre compte SEPAL."
 
-#: ../../source/cookbook/index.rst:81
+#: ../../source/cookbook/index.rst:85
 msgid "Select the green :icon:`fa-solid fa-circle-plus` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage."
 msgstr "Sélectionnez le bouton vert :icon:`fa-solid fa-circle-plus` dans le coin inférieur droit pour ouvrir la fenêtre pop-up **Type de recettes**. Sélectionnez l'un des types de recettes disponibles et suivez nos tutoriels pour en savoir plus sur l'utilisation de chaque type."
 
-#: ../../source/cookbook/index.rst:87
+#: ../../source/cookbook/index.rst:91
 msgid "Save a recipe"
 msgstr "Enregistrer une recette"
 
-#: ../../source/cookbook/index.rst:91
+#: ../../source/cookbook/index.rst:95
 msgid "Using saved recipes is the recommended method for sharing parameters to developers when debugging."
 msgstr "Utiliser des recettes sauvegardées est la méthode recommandée pour partager les paramètres avec les développeurs lors du débogage."
 
-#: ../../source/cookbook/index.rst:93
+#: ../../source/cookbook/index.rst:97
 msgid "Select a recipe in the main menu to display it in a tab. Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`. The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`."
 msgstr "Sélectionnez une recette dans le menu principal pour l'afficher dans un onglet. Ensuite, sélectionnez :btn:`<fa-solid fa-bars>` dans le coin supérieur droit et sélectionnez :btn:`recette d'exportation`. Le fichier sera téléchargé sur votre ordinateur en utilisant le nom suivant : :code:`<name_of_the_recipe>.json.zip`."
 
-#: ../../source/cookbook/index.rst:99
+#: ../../source/cookbook/index.rst:103
 msgid "Recipes"
 msgstr "Recettes"
-
-#: ../../source/cookbook/index.rst:114
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
 
 #~ msgid ""
 #~ "Harness high performance cloud-based "
@@ -197,5 +197,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ " downloaded to your computer using "
 #~ "the following name: "
 #~ ":code:`<name_of_the_recipe>.json.zip`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 

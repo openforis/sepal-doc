@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:22\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -753,76 +753,76 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:576
-msgid "Start download"
-msgstr ""
-
-#: ../../source/cookbook/classification.rst:578
-msgid "Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve** panel where you can select the exportation parameters (1)."
+#: ../../source/cookbook/classification.rst:577
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:580
-msgid "You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output."
+msgid "Start download"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:582
-msgid "You can set a custom scale for exportation (3) by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.)"
+msgid "Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve** panel where you can select the exportation parameters (1)."
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:584
-msgid "You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Earth Engine Asset` list. The same image will be exported, but in the first case you will find it in :code:`.tif` format in the :code:`Downloads` folder; in the second case, the image will be exported to your GEE account asset list."
+msgid "You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:586
+msgid "You can set a custom scale for exportation (3) by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.)"
 msgstr ""
 
 #: ../../source/cookbook/classification.rst:588
+msgid "You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Earth Engine Asset` list. The same image will be exported, but in the first case you will find it in :code:`.tif` format in the :code:`Downloads` folder; in the second case, the image will be exported to your GEE account asset list."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:592
 msgid "If :btn:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:590
+#: ../../source/cookbook/classification.rst:594
 msgid "Select :btn:`<fa-solid fa-check> Apply` to start the download process."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:597
+#: ../../source/cookbook/classification.rst:601
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:599
+#: ../../source/cookbook/classification.rst:603
 msgid "By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:601
+#: ../../source/cookbook/classification.rst:605
 msgid "The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:605
+#: ../../source/cookbook/classification.rst:609
 msgid "This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without ending the process."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:607
+#: ../../source/cookbook/classification.rst:611
 msgid "When the task is finished, the frame will be displayed in green, as shown in the second image."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:620
+#: ../../source/cookbook/classification.rst:624
 msgid "Access"
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:622
+#: ../../source/cookbook/classification.rst:626
 msgid "Once the download process is done, you can access the data in your SEPAL folders. The data will be stored in the :code:`Downloads` folder using the following format:"
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:637
+#: ../../source/cookbook/classification.rst:641
 msgid "Understanding how images are stored in an optical mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:639
+#: ../../source/cookbook/classification.rst:643
 msgid "The data are stored in a folder using the name of the optical mosaic as it was created in the first section of this article. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file."
 msgstr ""
 
-#: ../../source/cookbook/classification.rst:643
+#: ../../source/cookbook/classification.rst:647
 msgid "The full folder with a consistent tree folder is required to read the `.vrt`."
-msgstr ""
-
-#: ../../source/cookbook/classification.rst:646
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #~ msgid ""
@@ -1741,5 +1741,10 @@ msgstr ""
 #~ "spinner>` buttons, depending on the "
 #~ "loading status), you will see the "
 #~ "list of different loading tasks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 

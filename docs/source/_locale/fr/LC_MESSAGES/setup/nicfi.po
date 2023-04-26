@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 00:56+0000\n"
-"PO-Revision-Date: 2023-04-12 06:59\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -158,10 +158,6 @@ msgstr "Autoriser SEPAL à accéder à vos données GEE et à votre compte Googl
 msgid "For additional information that may help when processing the NICFI/Planet high-resolution imagery in SEPAL, please refer to `the section of Planet Academy <https://university.planet.com/path/nicfi>`__ dedicated to NICFI imagery."
 msgstr "Pour des informations supplémentaires qui peuvent aider lors du traitement de l'imagerie haute résolution NICFI/Planet dans SEPAL, veuillez vous référer à `la section de la Planet Academy <https://university.planet.com/path/nicfi>`__ dédiée à l'imagerie NICFI."
 
-#: ../../source/setup/nicfi.rst:120
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
-
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
 #~ " or contact the SEPAL team at "
@@ -183,5 +179,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ "**What is your GEE identity?**, enter"
 #~ " the email address that has access"
 #~ " to GEE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 

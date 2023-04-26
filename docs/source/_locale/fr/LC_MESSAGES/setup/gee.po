@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-05 00:48+0000\n"
-"PO-Revision-Date: 2023-04-06 14:52\n"
+"POT-Creation-Date: 2023-04-13 00:55+0000\n"
+"PO-Revision-Date: 2023-04-13 00:57\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -306,10 +306,6 @@ msgstr "Pour trouver le nom de l'asset, retournez à **Assets** dans le volet **
 msgid "If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. Alternatively, you can select **Share** in the pop-up window and choose between the different sharing options."
 msgstr "Si vous sélectionnez **Copy link**, le lien sera copié dans le presse-papiers et vous pouvez le coller dans SEPAL ou l'envoyer à quelqu'un pour un usage autorisé. Vous pouvez également sélectionner **Share** dans la fenêtre pop-up et choisir entre les différentes options de partage."
 
-#: ../../source/setup/gee.rst:255
-msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
-msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.google.com/g/sepal-users>`__."
-
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
 #~ " or contact the SEPAL team at "
@@ -350,5 +346,10 @@ msgstr "Pour obtenir de l'aide, `demandez à la communauté <https://groups.goog
 #~ msgid ""
 #~ "For support, :doc:`ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
 #~ msgstr ""
 

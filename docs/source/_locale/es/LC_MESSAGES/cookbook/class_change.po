@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:07\n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:22\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -118,55 +118,59 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:100
+#: ../../source/cookbook/class_change.rst:102
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/class_change.rst:104
 msgid "Clicking on the :icon:`fa-solid fa-cloud-arrow-down` tab will open the retrieve panel where the you can select the exportation parameters."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:108
+#: ../../source/cookbook/class_change.rst:112
 msgid "Bands"
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:110
+#: ../../source/cookbook/class_change.rst:114
 msgid "You need to select the band to export in the recipe. You will have access to :guilabel:`transition` which is the new class change values and :guilabel:`confidence` if you selected **classification recipe** assets."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:113
+#: ../../source/cookbook/class_change.rst:117
 msgid "Scale"
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:115
+#: ../../source/cookbook/class_change.rst:119
 msgid "You can set a custom scale for exportation by changing the value of the slider (m). Requesting a smaller resolution than images native resolution will not improve the quality of the output, just its size so keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:118
+#: ../../source/cookbook/class_change.rst:122
 msgid "Destination"
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:120
+#: ../../source/cookbook/class_change.rst:124
 msgid "You can export the image to :guilabel:`sepal workspace` or to ;guilabel:`google earth engine asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` folder, in the second one the image will be exported to your GEE account asset list."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:124
+#: ../../source/cookbook/class_change.rst:128
 msgid "If :guilabel:`google earth engine asset` is not displayed, it means that your GEE account is not connected to SEPAL, please refer to :doc:`../setup/gee`."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:126
+#: ../../source/cookbook/class_change.rst:130
 msgid "Click on :guilabel:`apply` to start the download process."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:129
+#: ../../source/cookbook/class_change.rst:133
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:131
+#: ../../source/cookbook/class_change.rst:135
 msgid "Going to the task tab (bottom left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:135
+#: ../../source/cookbook/class_change.rst:139
 msgid "This operation is running between GEE and SEPAL servers in the background, you can thus close the SEPAL page without killing the process."
 msgstr ""
 
-#: ../../source/cookbook/class_change.rst:137
+#: ../../source/cookbook/class_change.rst:141
 msgid "When the task is finished the frame will be displayed in green as shown on the second image."
 msgstr ""
 

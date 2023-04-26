@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-04-12 06:59\n"
+"PO-Revision-Date: 2023-04-12 07:58\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -88,107 +88,107 @@ msgstr "Utiliser un ton direct"
 
 #: ../../source/team/style_guide.rst:38
 msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood."
-msgstr ""
+msgstr "Utilisez une voix active, le présent de l'impératif et un point de vue à la seconde personne."
 
 #: ../../source/team/style_guide.rst:40
 msgid "In simpler terms: Tell the user what to do in the moment they are reading the documentation (e.g. Open the SEPAL interface and enter your email address.). Avoid addressing the audience directly, when possible. In other words, limit the use of the words “you” and “your” (e.g. To sign up for a Google account, go to accounts.google.com/servicelogin.). When addressing the audience is necessary, use the word “you” or “your” (e.g. To reset your password, go to docs.sepal.io/en/latest/setup/password.html.)."
-msgstr ""
+msgstr "En termes plus simples : Dites à l'utilisateur ce qu'il faut faire au moment où il lit la documentation (ex. Ouvrez l'interface SEPAL et entrez votre adresse e-mail.). Éviter de s'adresser directement à l’auditoire, lorsque c’est possible, c’est-à-dire de limiter l’utilisation des mots « vous » et « votre » (ex. Pour vous inscrire à un compte Google, allez sur accounts.google.com/servicelogin.). Lorsque vous vous adressez au public, utilisez le mot « vous » ou « votre » (ex. Pour réinitialiser votre mot de passe, allez dans docs.sepal.io/en/latest/setup/password.html.)."
 
 #: ../../source/team/style_guide.rst:45
 msgid "Word list"
-msgstr ""
+msgstr "Liste de mots"
 
 #: ../../source/team/style_guide.rst:47
 msgid "Here is a list of common words used in SEPAL documentation."
-msgstr ""
+msgstr "Voici une liste de mots communs utilisés dans la documentation SEPAL."
 
 #: ../../source/team/style_guide.rst:50
 msgid "Key terminology"
-msgstr ""
+msgstr "Terminologie"
 
 #: ../../source/team/style_guide.rst:52
 msgid "Use the following terms, when possible."
-msgstr ""
+msgstr "Utilisez les termes suivants, si possible."
 
 #: ../../source/team/style_guide.rst:55
 msgid "The SEPAL team"
-msgstr ""
+msgstr "L'équipe SEPAL"
 
 #: ../../source/team/style_guide.rst:57
 msgid "The authors of the documentation should be referred to as “the SEPAL team” (e.g. The SEPAL team maintains the documentation to guide users through the SEPAL interface.). If the term, “the SEPAL team” has been overused, use the words “we” or “us” instead."
-msgstr ""
+msgstr "Les auteurs de la documentation devraient être appelés « l'équipe SEPAL » (par ex. L'équipe SEPAL maintient la documentation pour guider les utilisateurs à travers l'interface SEPAL.). Si le terme « l’équipe SEPAL » a été surutilisé, utilisez plutôt les mots « nous » ou « nous »."
 
 #: ../../source/team/style_guide.rst:61
 msgid "The SEPAL interface"
-msgstr ""
+msgstr "L'interface SEPAL"
 
 #: ../../source/team/style_guide.rst:63
 msgid "The interface should be referred to as the “SEPAL interface” (e.g. Open the SEPAL interface and enter your email address.)."
-msgstr ""
+msgstr "L’interface devrait être appelée « l’interface SEPAL » (par exemple, ouvrez l’interface SEPAL et entrez votre adresse e-mail)."
 
 #: ../../source/team/style_guide.rst:66
 msgid "SEPAL documentation"
-msgstr ""
+msgstr "Documentation SEPAL"
 
 #: ../../source/team/style_guide.rst:68
 msgid "The website where SEPAL documentation is located should be referred to as either “SEPAL documentation” or simply, “the documentation” (e.g. Learn more about SEPAL documentation by reading this article.)."
-msgstr ""
+msgstr "Le site Web où se trouve la documentation SEPAL doit être appelé « documentation SEPAL » ou simplement « la documentation » (ex. En savoir plus sur la documentation SEPAL en lisant cet article.)."
 
 #: ../../source/team/style_guide.rst:71
 msgid "A section of SEPAL documentation"
-msgstr ""
+msgstr "Une section de la documentation SEPAL"
 
 #: ../../source/team/style_guide.rst:73
 msgid "A section of the documentation should be referred to as a “section of SEPAL documentation” or a “section of the documentation”, as necessary (e.g. Discover how to register for SEPAL in the “Getting started” section of the documentation.)."
-msgstr ""
+msgstr "Une section de la documentation doit être appelée « section de la documentation SEPAL » ou « section de la documentation », si nécessaire (ex. Découvrez comment vous inscrire à SEPAL dans la section « Commencer » de la documentation)."
 
 #: ../../source/team/style_guide.rst:76
 msgid "An article within SEPAL documentation"
-msgstr ""
+msgstr "Un article dans la documentation SEPAL"
 
 #: ../../source/team/style_guide.rst:78
 msgid "A page within the documentation should be referred to as an “article” (e.g. Learn more about the SEPAL interface in the article, “Introduction to SEPAL” in the “Getting started with SEPAL” section.)."
-msgstr ""
+msgstr "Une page de la documentation devrait être appelée « article » (p. ex. Pour en savoir plus sur l’interface SEPAL dans l’article, « Introduction à SEPAL » dans la section « Commencer avec SEPAL ».)."
 
 #: ../../source/team/style_guide.rst:81
 msgid "Describing interactions with the interface"
-msgstr ""
+msgstr "Décrire les interactions avec l'interface"
 
 #: ../../source/team/style_guide.rst:83
 msgid "Here is a list of common words used to describe actions in the SEPAL interface."
-msgstr ""
+msgstr "Voici une liste de mots communs utilisés pour décrire les actions dans l'interface SEPAL."
 
 #: ../../source/team/style_guide.rst:85
 msgid "open"
-msgstr ""
+msgstr "ouvrir"
 
 #: ../../source/team/style_guide.rst:86
 msgid "close"
-msgstr ""
+msgstr "fermer"
 
 #: ../../source/team/style_guide.rst:87
 msgid "leave"
-msgstr ""
+msgstr "quitter"
 
 #: ../../source/team/style_guide.rst:88
 msgid "go to"
-msgstr ""
+msgstr "aller à"
 
 #: ../../source/team/style_guide.rst:89
 msgid "select"
-msgstr ""
+msgstr "sélectionner"
 
 #: ../../source/team/style_guide.rst:91
 msgid "choose"
-msgstr ""
+msgstr "choisir"
 
 #: ../../source/team/style_guide.rst:92
 msgid "enter"
-msgstr ""
+msgstr "entrer"
 
 #: ../../source/team/style_guide.rst:93
 msgid "sign in, sign out"
-msgstr ""
+msgstr "se connecter, se déconnecter"
 
 #: ../../source/team/style_guide.rst:94
 msgid "switch, turn on, turn off"
@@ -196,101 +196,101 @@ msgstr ""
 
 #: ../../source/team/style_guide.rst:95
 msgid "zoom, zoom in, zoom out"
-msgstr ""
+msgstr "zoomer, agrandir, réduire"
 
 #: ../../source/team/style_guide.rst:98
 msgid "Directional terminology"
-msgstr ""
+msgstr "Terminologie directionnelle"
 
 #: ../../source/team/style_guide.rst:100
 msgid "Here is a list of common words to describe location in the SEPAL interface. Indicate location in relation to objects within the interface, whenever possible."
-msgstr ""
+msgstr "Voici une liste de mots communs décrivant l'emplacement dans l'interface SEPAL. Indiquez l'emplacement par rapport aux objets de l'interface, chaque fois que possible."
 
 #: ../../source/team/style_guide.rst:102
 msgid "upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of"
-msgstr ""
+msgstr "en haut à gauche (nom), supérieur gauche (adjectif), à gauche (adjectif), sur le côté gauche de"
 
 #: ../../source/team/style_guide.rst:103
 msgid "lower right (noun), lower-right (adjective), rightmost (adjectives), on the right side of"
-msgstr ""
+msgstr "en bas à droite (nom), inférieur droit (adjectif), à droite (adjectifs), sur le côté droit de"
 
 #: ../../source/team/style_guide.rst:104
 msgid "pane (instead of panel)"
-msgstr ""
+msgstr "panneau"
 
 #: ../../source/team/style_guide.rst:107
 msgid "Other things to consider"
-msgstr ""
+msgstr "Autres éléments à prendre en considération"
 
 #: ../../source/team/style_guide.rst:109
 msgid "Here are some other basic guidelines to follow when writing SEPAL documentation."
-msgstr ""
+msgstr "Voici quelques lignes directrices de base à suivre en rédigeant la documentation SEPAL."
 
 #: ../../source/team/style_guide.rst:112
 msgid "Sentence structure"
-msgstr ""
+msgstr "Structure de phrase"
 
 #: ../../source/team/style_guide.rst:114
 msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood, whenever possible (e.g. Open the SEPAL interface and enter your email address.)."
-msgstr ""
+msgstr "Utilisez une voix active, le présent de l'impératif, un point de vue à la seconde personne, chaque fois que possible (e. . Ouvrez l'interface SEPAL et entrez votre adresse e-mail.)."
 
 #: ../../source/team/style_guide.rst:117
 msgid "Capitalization"
-msgstr ""
+msgstr "Majuscules"
 
 #: ../../source/team/style_guide.rst:119
 msgid "Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper names), except when mirroring appearance of text in the SEPAL interface.)."
-msgstr ""
+msgstr "Respecter la ponctuation (c.-à-d. les majuscules uniquement pour la lettre initiale de la phrase et Les noms appropriés), sauf lorsque le texte est en miroir dans l'interface SEPAL."
 
 #: ../../source/team/style_guide.rst:122
 msgid "Quotation marks"
-msgstr ""
+msgstr "Guillemets"
 
 #: ../../source/team/style_guide.rst:124
 msgid "Use double quotation marks for titles of articles and sections (e.g. The “Getting started” section.). Use double quotation marks for direct quotes (e.g. for the text displayed in an error message.)."
-msgstr ""
+msgstr "Utiliser des guillemets doubles pour les titres des articles et des sections (par exemple, la section « Commencer ».). Utilisez les guillemets doubles pour les guillemets directs (par exemple, pour le texte affiché dans un message d'erreur)."
 
 #: ../../source/team/style_guide.rst:127
 msgid "Bold"
-msgstr ""
+msgstr "Gras"
 
 #: ../../source/team/style_guide.rst:128
 msgid "Use bold formatting for the names of buttons, checkboxes, panes, drop-down menus, and other options (e.g. Select Export.)."
-msgstr ""
+msgstr "Utiliser le formatage en gras pour les noms des boutons, des cases à cocher, des panneaux, des menus déroulants et d'autres options (par exemple, Select Export.)."
 
 #: ../../source/team/style_guide.rst:131
 msgid "Italic"
-msgstr ""
+msgstr "Italique"
 
 #: ../../source/team/style_guide.rst:133
 msgid "Use italicized text for introducing key terminology (only italics only at first mention) (e.g. There is formal QA/QC and informal QA/QC.)."
-msgstr ""
+msgstr "Utilisez du texte en italique pour introduire la terminologie clé (uniquement en italique à la première mention) (par exemple, il y a un QA/QC formel et un QA/QC informel)."
 
 #: ../../source/team/style_guide.rst:136
 msgid "Further reading"
-msgstr ""
+msgstr "Pour en savoir plus"
 
 #: ../../source/team/style_guide.rst:138
 msgid "To find answers to questions not available in the SEPAL documentation style guide, go to the following links:"
-msgstr ""
+msgstr "Pour trouver des réponses aux questions qui ne sont pas disponibles dans le guide de style de la documentation SEPAL, allez sur les liens suivants :"
 
 #: ../../source/team/style_guide.rst:140
 msgid "`FAOSTYLE (2022) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (for general style guidelines according to FAO)"
-msgstr ""
+msgstr "`FAOSTYLE (2022) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (pour les directives générales de style selon la FAO)"
 
 #: ../../source/team/style_guide.rst:141
 msgid "`GitHub documentation <https://docs.github.com/en>`__ (for exemplary documentation)"
-msgstr ""
+msgstr "`Documentation GitHub <https://docs.github.com/en>`__ (pour une documentation exemplaire)"
 
 #: ../../source/team/style_guide.rst:142
 msgid "`Microsoft style guide <https://learn.microsoft.com/en-us/docs/>`__ (for an exemplary style guide, specifically for documentation)"
-msgstr ""
+msgstr "`Guide de style Microsoft <https://learn.microsoft.com/en-us/docs/>`__ (pour un guide de style exemplaire, spécifiquement pour la documentation)"
 
 #: ../../source/team/style_guide.rst:144
 msgid "`“Procedures and instructions” <https://docs.microsoft.com/en-us/style-guide/procedures-instructions/>`__ (for a guide on writing these elements)"
-msgstr ""
+msgstr "`\"Procédures et instructions\" <https://docs.microsoft.com/en-us/style-guide/procedures-instructions/>`__ (pour un guide sur l'écriture de ces éléments)"
 
 #: ../../source/team/style_guide.rst:145
 msgid "`“Describing interactions with UI” <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__ (for a guide on writing these elements)"
-msgstr ""
+msgstr "`\"Décrire les interactions avec l'interface utilisateur\" <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__ (pour un guide sur l'écriture de ces éléments)"
 
