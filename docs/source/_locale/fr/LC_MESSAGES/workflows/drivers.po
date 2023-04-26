@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-26 00:57+0000\n"
-"PO-Revision-Date: 2023-04-26 01:06\n"
+"PO-Revision-Date: 2023-04-26 15:46\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:2
 msgid "Direct Drivers Assessment"
-msgstr ""
+msgstr "Évaluation des facteurs directs de déforestation et dégradation"
 
 #: ../../source/workflows/drivers.rst:6
 msgid "This documentation has been produced in the framework of the global project entitled: Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__. This project, known as the Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area."
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:27
 msgid "Area of interest"
-msgstr ""
+msgstr "Zone de l'étude"
 
 #: ../../source/workflows/drivers.rst:29
 msgid "The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo."
@@ -73,19 +73,19 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:34
 msgid "Forest definitions"
-msgstr ""
+msgstr "Définitions des forêts"
 
 #: ../../source/workflows/drivers.rst:36
 msgid "There are a total of four different national forest definitions in the six countries of the study region. These are applied at country level using information on canopy height, tree cover and pixel area."
-msgstr ""
+msgstr "Il existe au total quatre définitions forestières nationales différentes dans les six pays de la région de l'étude. Celles-ci sont appliquées au niveau du pays en utilisant des informations sur la hauteur de la canopée, la couverture arborée et la taille des pixels."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Source"
-msgstr ""
+msgstr "Source"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Date"
@@ -93,43 +93,43 @@ msgstr "Date"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "MMU (ha)"
-msgstr ""
+msgstr "Unité Cartographique Minimale (ha)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Tree height (m)"
-msgstr ""
+msgstr "Hauteur des arbres (m)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Canopy cover (%)"
-msgstr ""
+msgstr "Couverture arborée (%)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Comment"
-msgstr ""
+msgstr "Commentaires"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Cameroon"
-msgstr ""
+msgstr "Cameroun"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "REDD+ National Strategy (MINEP, 2008)"
-msgstr ""
+msgstr "Stratégie nationale REDD+ (MINEP, 2008)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "2018"
-msgstr ""
+msgstr "2018"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "0.5"
-msgstr ""
+msgstr "0.5"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "10%"
-msgstr ""
+msgstr "10%"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas subjected to natural disturbances which are likely to recover their past status."
@@ -137,48 +137,48 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Central African Republic"
-msgstr ""
+msgstr "République centrafricaine"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "FRA"
-msgstr ""
+msgstr "FRA"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "2020"
-msgstr ""
+msgstr "2020"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Gabon"
-msgstr ""
+msgstr "Gabon"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Sannier et al., 2016"
-msgstr ""
+msgstr "Sannier et al., 2016"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "30%"
-msgstr ""
+msgstr "30 %"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Functional definition used by national monitoring system (AGEOS)"
-msgstr ""
+msgstr "Définition fonctionnelle utilisée par le système national de surveillance (AGEOS)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Democratic Republic of Congo"
-msgstr ""
+msgstr "République démocratique du Congo"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "FREL 2018 (Ministère de l’Environnement et Développemnt Durable, 2018)"
-msgstr ""
+msgstr "FREL 2018 (Ministère de l’Environnement et Développement Durable, 2018)"
 
 #: ../../source/workflows/drivers.rst:1
 #, python-format
 msgid "A canopy cover criterion of around 50% for an area of 0.09 ha was used during the interpretation of the samples."
-msgstr ""
+msgstr "Un critère de couverture de canopée d'environ 50% pour une superficie de 0,09 ha a été utilisé lors de l'interprétation des échantillons."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Republic of Congo"
@@ -186,15 +186,15 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
 msgid "FREL (Coordination Nationale REDD, 2017)"
-msgstr ""
+msgstr "FREL (Coordination Nationale REDD, 2017)"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "2017"
-msgstr ""
+msgstr "2017"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Exclusion of agricultural activities, in particular palm groves in production."
-msgstr ""
+msgstr "Exclusion des activités agricoles, en particulier des palmiers en production."
 
 #: ../../source/workflows/drivers.rst:48
 msgid "Regional Land Cover"
@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:50
 msgid "The baseline map for the regional forest cover was first derived from a common classification system that was validated by the project technical committee and included land cover classes reference in national system.  The land cover classification has also been published in the `FAO Land Cover Registry <https://www.fao.org/hih-geospatial-platform/resources/projects/land-cover-legend-registry/en>`__."
-msgstr ""
+msgstr "La carte de base pour la cartographie de couvert forestier régional a d'abord été dérivée d'un système de classification commun qui a été validé par le comité technique du projet et inclus les classes du système national. La classification de la couverture du sol a également été publiée dans le `Registre de couverture terrestre de la FAO <https://www.fao.org/hih-geospatial-platform/resources/projects/land-cover-legend-registry/en>`__."
 
 #: ../../source/workflows/drivers.rst:55
 msgid "In Central African Republic and Cameroun, shrub savannas were identified as forest, in adherence to the national forest definitions of >10% tree cover"
@@ -214,19 +214,19 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest/non-Forest"
-msgstr ""
+msgstr "Forêt/non-Forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "English"
-msgstr ""
+msgstr "Anglais"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "French"
-msgstr ""
+msgstr "Français"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Spanish"
-msgstr ""
+msgstr "Espagnol"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Description"
@@ -238,7 +238,7 @@ msgstr "1"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forest"
-msgstr ""
+msgstr "Forêt"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Dense Forest"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Forêt Dense"
-msgstr ""
+msgstr "Forêt Dense"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Bosque denso"
