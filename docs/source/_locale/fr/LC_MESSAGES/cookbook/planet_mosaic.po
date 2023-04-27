@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:22\n"
+"PO-Revision-Date: 2023-04-27 11:46\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/cookbook/planet_mosaic.rst:7
 msgid "A mosaic is a process of combining spatially overlapping images into an individual image. In SEPAL, you can create a composited dataset from Planet images taken at different times. The process can be done using different techniques, for example, you can choose to keep only the pixel value from the first or last image, combine the values of the overlapped pixels using a weighting algorithm, average, or use the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds/shadows, snow, etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create Planet mosaics within any area of interest."
@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:163
 msgid "Analysis"
-msgstr ""
+msgstr "Analyse"
 
 #: ../../source/cookbook/planet_mosaic.rst:165
 msgid "Once all the parameters have been set, the mosaic will be rendered on the fly. Multiple color combinations can be displayed, see next figures."
@@ -292,7 +292,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:230
 msgid "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: ../../source/cookbook/planet_mosaic.rst:232
 msgid "You can set a custom scale for exportation by changing the value in the :code:`scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, just its size so keep in mind that PlanetLab data's native resolution is 3 - 4.1 m (altitude dependent Ground Sample Distance,  `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__)."
