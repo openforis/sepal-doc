@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-26 00:57+0000\n"
-"PO-Revision-Date: 2023-04-26 16:44\n"
+"PO-Revision-Date: 2023-04-27 12:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -24,7 +24,7 @@ msgstr "Évaluation des facteurs directs de déforestation et dégradation"
 
 #: ../../source/workflows/drivers.rst:6
 msgid "This documentation has been produced in the framework of the global project entitled: Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__. This project, known as the Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area."
-msgstr ""
+msgstr "Cette documentation a été produite dans le cadre du projet global intitulé : Estimation de la déforestation et de la dégradation des forêts et des facteurs directs actuels et historiques associés à ces processus à l’aide de SEPAL, financé par l'Initiative pour la forêt de l'Afrique Centrale `(CAFI) <https://cafi.org>`__. Ce projet, connu sous le nom de projet CAFIDDD, est une méthodologie globale développée et pilotée dans la région d’Afrique centrale. La zone du bassin du Congo est utilisée comme exemple mais cette méthodologie peut être appliquée à toute autre zone géographique."
 
 #: ../../source/workflows/drivers.rst:9
 msgid "Background"
@@ -33,7 +33,7 @@ msgstr "Contexte"
 #: ../../source/workflows/drivers.rst:11
 #, python-format
 msgid "Deforestation and forest degradation (DD) are complex processes that have many underlying causes. A comprehensive understanding of forest conversion to other land uses is instrumental for the development of policies and actions aiming to reduce the loss of forests and its associated carbon emission. It is important to understand recurring patterns and correlations that can help countries tailor their efforts towards reducing forest loss. The causes of deforestation and forest degradation vary both regionally and temporally\\ :footcite:`curtis:2018`.  Different studies refer to agricultural expansion (cropland and pasture) as the largest direct cause of global deforestation\\ :footcite:`fra:2022,gibbs:2010,hosonuma:2012,kissinger:2012,sandker:2017`. Commercial agriculture is estimated to be responsible for around 70-90% of the worldwide deforestation, while in Africa, both commercial and subsistence agriculture may account for similar importance in terms of forest loss, while fuel wood collection, charcoal production, and, to a lesser extent, livestock grazing in forests are the most important drivers of degradation."
-msgstr ""
+msgstr "La déforestation et la dégradation des forêts (DD) sont des processus complexes qui ont de nombreuses causes sous-jacentes. Une compréhension globale de la conversion des forêts en d’autres utilisations de la terre est essentielle au développement de politiques et d’actions visant à réduire la perte de forêts et les émissions de carbone qui y sont associées. Il est important de comprendre les modèles récurrents et les corrélations qui peuvent aider les pays à adapter leurs efforts pour réduire la perte de forêts. Les causes de la déforestation et de la dégradation des forêts varient à la fois sur le plan régional et temporelle\\ :footcite:`curtis:2018`. Différentes études font référence à l'expansion agricole (culture et pâturage) comme la plus grande cause directe de la déforestation mondiale\\ :footcite:`fra:2022,gibbs:2010,hosonuma:2012,kissinger:2012,sandker:2017`.On estime que l'agriculture industrielle est responsable d'environ 70 à 90 % de la déforestation mondiale. En Afrique, l'agriculture industrielle et l'agriculture de subsistance peuvent avoir une importance similaire en termes de perte de forêts. En effet, la collecte de bois de chauffage, la production de charbon de bois et, dans une moindre mesure, le pâturage du bétail dans les forêts sont les principaux moteurs de la dégradation."
 
 #: ../../source/workflows/drivers.rst:13
 msgid "However, these studies (as well as existing national studies on the drivers of deforestation and forest degradation in the Central African region) are generally based on data acquired up to 2014 and do not consider the recent trends in observed tree cover loss. They also do not take into account the importance of the spatial fragmentation of forests and the role played by degradation induced by forest exploitation :footcite:`molinario:2015`. Furthermore, they simplify causes of deforestation into a single driver, which does not adequately reflect the complex local context and interacting causes, decisions that lead to anthropogenic forest disturbance at local scales :footcite:`ferrer-velasco:2020`."
@@ -41,15 +41,15 @@ msgstr "Cependant, ces études (ainsi que les études nationales existantes sur 
 
 #: ../../source/workflows/drivers.rst:15
 msgid "These recent trends and the lack of updated studies result in little consensus on the main drivers and agents of forest change at regional scales. There is a pressing need to systematically quantify the direct causes of deforestation and degradation via a systematic and comprehensive approach. An updated assessment should provide validated evidence on the role and weight of different drivers of forest loss and support decision making to address related challenges. A spatially explicit approach should also facilitate the assessment of the efficiency of policies and actions in different contexts. Improved spatial data on deforestation and forest degradation, and an improved understanding of the drivers will support land use planning approaches in two pilot areas where the regional analysis indicated clear opportunity for supporting land use decision making and planning."
-msgstr ""
+msgstr "Ces tendances récentes et le manque d'études actualisées font qu'il n'y a guère de consensus sur les principaux moteurs et agents du changement forestier à l'échelle régionale. Il est urgent de quantifier systématiquement les causes directes de la déforestation et de la dégradation au moyen d'une approche systématique et globale. Une évaluation actualisée devrait fournir des preuves validées sur le rôle et le poids des différents facteurs de déforestation de dégradation et soutenir la prise de décision pour relever les défis qui en découlent. Une approche spatialement explicite devrait également faciliter l'évaluation de l'efficacité des politiques et des actions dans différents contextes. L'amélioration des données spatiales sur la déforestation et la dégradation des forêts, ainsi qu'une meilleure compréhension des facteurs, soutiendront les approches de planification de l'utilisation des terres dans deux zones pilotes où l'analyse régionale a indiqué une opportunité claire de soutenir la prise de décision et la planification de l'utilisation des terres."
 
 #: ../../source/workflows/drivers.rst:17
 msgid "In this context, FAO has developed a robust methodology to assess the recent trends and drivers of deforestation and forest degradation via collaborative approaches in which national experts, research institutes and civil society work together and join resources and data to reach a common view on the current and future causes and drivers of anthropogenic forest disturbances. These tools generate improved information for decision making and land use planning in the relevant management context."
-msgstr ""
+msgstr "Dans ce contexte, La FAO a développé une méthodologie robuste pour évaluer les tendances et les moteurs récents de la déforestation et de la dégradation des forêts. Ceci est executé par le biais d'approches collaboratives dans lesquelles les experts nationaux les instituts de recherche et la société civile travaillent ensemble et unissent leurs ressources et leurs données pour atteindre une vision commune des causes actuelles et futures et des facteurs des perturbations anthropiques des forêts. Ces outils génèrent des informations améliorées pour la prise de décisions et l'aménagement du territoire dans le contexte de gestion pertinent."
 
 #: ../../source/workflows/drivers.rst:19
 msgid "The FAO, in partnership with the Central African Forest Initiative (CAFI), and a coalition of donor and partner countries have developed a global, standard, large-scale methodology to assess forest dynamics using cloud-computing solutions and open-source tools. The approach maps disturbances (both deforestation and degradation) and quantifies the contribution of multiple associated direct drivers. The methodology is used to assess deforestation and forest degradation trends and their associated current and historical direct drivers in six Central Africa countries as part of an international effort to mitigate climate change, support sustainable development goals, and protect biodiversity. The project builds on a collaborative approach, in which national experts, global research institutes and civil society work together, join resources and data to provide technical evidence and reach a common view on the current and historical trends, and direct drivers of forest disturbances."
-msgstr ""
+msgstr "La FAO, en partenariat avec l'Initiative pour la Forêt d'Afrique Centrale (CAFI), une coalition de pays donateurs et partenaires ont développé un plan mondial, ont développé une méthodologie standard et à grande échelle pour évaluer la dynamique forestière à l’aide de solutions d’informatique dans \"le cloud\" et d’outils open-source. L'approche évalue les perturbations (déforestation et dégradation) et quantifie la contribution de multiples moteurs directs associés. La méthodologie est utilisée pour évaluer les tendances de la déforestation et de la dégradation des forêts et leurs moteurs directs actuels et historiques associés dans six pays d'Afrique centrale dans le cadre d'un effort international visant à atténuer le changement climatique. soutenir les objectifs de développement durable et protéger la biodiversité. Le projet repose sur une approche collaborative, dans laquelle les experts nationaux, les instituts de recherche mondiaux et la société civile collaborent unir ressources et données pour fournir des preuves techniques et atteindre un point de vue commun sur les tendances actuelles et historiques, et les facteurs directs des perturbations forestières."
 
 #: ../../source/workflows/drivers.rst:22
 msgid "definitions"
@@ -133,7 +133,7 @@ msgstr "10%"
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas subjected to natural disturbances which are likely to recover their past status."
-msgstr ""
+msgstr "Exclusion des plantations agro-industrielles monospécifiques à utilisation purement économique et appliquant principalement des techniques de gestion agricole. Ce sont toujours considérés comme la forêt les zones soumises à des perturbations naturelles qui sont susceptibles de retrouver leur statut passé."
 
 #: ../../source/workflows/drivers.rst:1
 msgid "Central African Republic"
@@ -663,7 +663,7 @@ msgstr "Convention de dates"
 
 #: ../../source/workflows/drivers.rst:116
 msgid "The time period for this pilot study is 2015-2022, with an assessment of changes encompassing 31/12/2015 to 31/12/2022. The year 2015 was used as the baseline, with the detection of annual changes in deforestation and degradation starting in 2016 through 2022. This fits with the availability of Sentinel satellite imagery in 2015 (although incomplete for that year), as well as new monthly high-resolution mosaics available for the tropics from Planet, which are available from 2015 and are used for additional validation."
-msgstr ""
+msgstr "La période pour cette étude pilote est de 2015-2022, avec une évaluation des changements qui englobent le 31/12/2015 à 31/12/2022. L'année 2015 a été utilisée comme ligne de base, avec la détection de changements annuels dans la déforestation et la dégradation à partir de 2016 à 2022. Cela correspond à la disponibilité de l'imagerie Sentinels en 2015 (bien que incomplète pour cette année), ainsi que de nouvelles mosaïques mensuelles à haute résolution disponibles pour les tropiques de Planet, qui sont disponibles à partir de 2015 et sont utilisées pour une validation supplémentaire."
 
 #: ../../source/workflows/drivers.rst:118
 msgid "The following date convention was adopted:"
@@ -735,7 +735,7 @@ msgstr "Foresterie artisanale"
 
 #: ../../source/workflows/drivers.rst:154
 msgid "Small-scale or artisanal logging is characterized by the selective extraction of trees in an irregular manner, leaving a tree cover. These are areas that are not visibly cultivated. These areas are often found in places accessible by small roads or villages."
-msgstr ""
+msgstr "L'exploitation forestière artisanale ou á petite échelle est caractérisée par l'extraction sélective des arbres de manière irrégulière, laissant une couverture arborée . Il s'agit de zones qui ne sont pas visiblement cultivées, souvent situées dans des endroits accessibles par de petites routes ou villages."
 
 #: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:155
 msgid "Industrial forestry"
@@ -743,7 +743,7 @@ msgstr "Foresterie industrielle"
 
 #: ../../source/workflows/drivers.rst:158
 msgid "Large-scale or industrial forestry is recognizable by the presence of logging roads, along which selective logging degradation occurs. These roads may be recent or old, and the canopy can quickly cover them, so all years of imagery acquired over the entire study period are evaluated."
-msgstr ""
+msgstr "La forestrie à grande échelle ou industrielle est reconnaissable par la présence de routes forestières, le long desquelles se produit une dégradation sélective de l'exploitation forestière. Ces routes peuvent être récentes ou anciennes, et la canopée peut rapidement les couvrir, de sorte que toute la série temporelle d'images acquises au cours de la période d'études sont évaluées."
 
 #: ../../source/workflows/drivers.rst:159
 msgid "Artisanal mine"
@@ -763,7 +763,7 @@ msgstr "L'exploitation minière à grande échelle est caractérisée par de gra
 
 #: ../../source/workflows/drivers.rst:168
 msgid "To address the overlap of drivers in the same location and interpret local context, our approach identifies archetypes, or common driver combinations which represent realities and processes on the ground. The most common archetype consists of four drivers, which include artisanal agriculture, artisanal forestry, roads and settlements, which is representative of the agricultural mosaic, or so-called “rural complex” commonly observed in the region\\ :footcite:`molinario:2020`."
-msgstr ""
+msgstr "Pour traiter le chevauchement des moteurs dans la même zone et interpréter le contexte local, notre approche identifie les archétypes, ou groupements communs de moteurs qui représentent les réalités et les processus sur le terrain. L'archétype le plus commun se compose de quatre moteurs, qui comprennent l'agriculture artisanale, la foresterie artisanale, les routes et les villages, qui est représentatif de la mosaïque agricole, ou ce qu'on appelle le \"complexe rural\" frequemment observé dans la région\\ :footcite:`molinario:2020`."
 
 #: ../../source/workflows/drivers.rst:170
 msgid "The observed combinations of drivers are grouped into thematic classes or archetypes."
@@ -843,23 +843,23 @@ msgstr "Les principales composantes de cette méthodologie comprennent la géné
 
 #: ../../source/workflows/drivers.rst:190
 msgid "The methodology uses FAO’s OpenForis suite of tools including the SEPAL platform for satellite data analysis, Collect Earth Online and Google Earth Engine. The approach analyses dense satellite time-series to generate geospatial data on forest changes which are then validated and interpreted for direct drivers in 5 major steps:"
-msgstr ""
+msgstr "La méthodologie utilise la suite d'outils OpenForis de la FAO, y compris la plateforme SEPAL pour l'analyse des données satellitaires, Collect Earth Online et Google Earth Engine. L'approche consiste à analyser des séries temporelles denses de données satellitaires pour générer des données géospatiales sur les changements forestiers, qui sont ensuite validées et interprétées en fonction des facteurs directs en cinq étapes principales :"
 
 #: ../../source/workflows/drivers.rst:192
 msgid ":ref:`workflows:drivers:mosaic`: processing of optical (Landsat 4/5/7/8) and radar (Sentinel 1/ALOS PALSAR) satellite images to create mosaics for the classification of wall-to-wall maps of vegetation types, recoded to a binary forest mask (following national forest definitions), and forest fragmentation assessment for the baseline year 2015"
-msgstr ""
+msgstr ":ref:`workflows:drivers:mosaic` : traitement d'images satellites optiques (Landsat 4/5/7/8) et radar (Sentinel 1/ALOS PALSAR) afin de créer des mosaïques pour la classification de cartes mur à mur des types de végétation, recodées en un masque forestier binaire (suivant les définitions des forêts nationales), et l'évaluation de la fragmentation forestière pour l'année de référence 2015."
 
 #: ../../source/workflows/drivers.rst:194
 msgid ":ref:`workflows:drivers:series`: processing of optical satellite (Landsat 4/5/7/8) time series data covering 2012-2020 (2012-2015 is the historical time period, monitoring is from 2016-2020), using seasonal models and break detection algorithms to produce a forest change map for 2015-2020 at regional scale identifying areas of both deforestation and degradation."
-msgstr ""
+msgstr ":ref:`workflows:drivers:series` : traitement de données de séries temporelles de satellites optiques (Landsat 4/5/7/8) couvrant la période 2012-2020 (2012-2015 est la période historique, la surveillance s'étend de 2016 à 2020), en utilisant des modèles saisonniers et des algorithmes de détection des ruptures pour produire une carte des changements forestiers pour 2015-2020 à l'échelle régionale, identifiant les zones de déforestation et de dégradation."
 
 #: ../../source/workflows/drivers.rst:196
 msgid ":ref:`workflows:drivers:stratification`: Stratified random sampling is conducted on the change map from step 2. Systematic validation for all points identified as change, plus a sample of stable points is conducted in Collect Earth Online, evaluating land cover types, changes and dates of change and the identification of the presence of direct drivers."
-msgstr ""
+msgstr ":ref:`workflows:drivers:stratification` : Un échantillonnage aléatoire stratifié est réalisé sur la carte des changements à l'étape 2. La validation systématique de tous les points identifiés comme ayant changé, ainsi qu'un échantillon de points stables, est effectuée dans Collect Earth Online, en évaluant les types d'occupation du sol, les changements et les dates de changement, ainsi que l'identification de la présence de facteurs directs."
 
 #: ../../source/workflows/drivers.rst:198
 msgid ":ref:`workflows:drivers:quantification`: The quantification of direct drivers by forest types, fragmentation class"
-msgstr ""
+msgstr ":ref:`workflows:drivers:quantification` : La quantification des facteurs directs par type de forêt, classe de fragmentation, etc"
 
 #: ../../source/workflows/drivers.rst:208
 msgid "Creating cloud-free mosaics"
@@ -879,15 +879,15 @@ msgstr "Mosaïque optique sans nuages"
 
 #: ../../source/workflows/drivers.rst:217
 msgid "Multi-temporal image mosaics are compiled from data collected over several months or years. Cloud-free pixels from multiple images are integrated into an image with fewer clouds, haze and shadows using the pixel quality band provided with image metadata."
-msgstr ""
+msgstr "Les mosaïques d'images multitemporelles sont compilées à partir de données collectées sur plusieurs mois ou années. Les pixels sans nuages provenant de plusieurs images sont intégrés dans une image avec un minimum de nuages, de brume et d'ombres en utilisant la bande de qualité des pixels fournie avec les métadonnées de l'image."
 
 #: ../../source/workflows/drivers.rst:219
 msgid "We evaluated the availability of Landsat 4,5,7 and 8 images for the creation of optical mosaics for the baseline year or 2015. As you can see from the figure below, only certain sensors are available for certain time periods – from 2003 onwards the Landsat 7 sensor experienced a malfunction which results in data gaps in strips. This sensor should be only included when necessary, i.e. when not enough imagery is available. Luckily in SEPAL the selection of sensors is automatic based on the selected date and only provides the available options."
-msgstr ""
+msgstr "Nous avons évalué la disponibilité des images Landsat 4, 5, 7 et 8 pour la création de mosaïques optiques pour l'année de référence 2015. Comme vous pouvez le voir sur la figure ci-dessous, seuls certains capteurs sont disponibles pour certaines périodes - à partir de 2003, le capteur Landsat 7 a connu un dysfonctionnement qui a entraîné des lacunes dans les données des bandes. Ce capteur ne devrait être utilisé qu'en cas de nécessité, c'est-à-dire lorsqu'il n'y a pas assez d'images disponibles. Heureusement, dans SEPAL, la sélection des capteurs est automatique en fonction de la date sélectionnée et ne propose que les options disponibles."
 
 #: ../../source/workflows/drivers.rst:227
 msgid "The coverage of Landsat over time is shown below. The western part of the study region along the coast, results in cloudy or data gaps in Gabon, Equatorial Guinea and Cameroon."
-msgstr ""
+msgstr "La couverture de Landsat dans le temps est présentée ci-dessous. La partie occidentale de la région étudiée, le long de la côte, se traduit par des nuages ou des lacunes dans les données au Gabon, en Guinée équatoriale et au Cameroun."
 
 #: ../../source/workflows/drivers.rst:234
 msgid "To create our optical mosaic, we will use the SEPAL optical mosaic recipe. To learn more about the different available parameters and how to use the recipe, please see :doc:`../cookbook/optical_mosaic`."
@@ -911,19 +911,19 @@ msgstr "Pour les époques antérieures, par exemple 2015, utilisez l'option avan
 
 #: ../../source/workflows/drivers.rst:250
 msgid "For data sources, more is generally better. Select all Landsat options for a consistent mosaic. If you like, Sentinel-2 can be added for more data, but as the tiling system of the 2 sensors are different you will be forced to use all available images - the option to select images will not be available."
-msgstr ""
+msgstr "Pour les sources de données, plus il y en a, mieux c'est. Sélectionnez toutes les options Landsat pour obtenir une mosaïque cohérente. Si vous le souhaitez, vous pouvez ajouter Sentinel-2 pour obtenir plus de données, mais comme le système de mosaïque des deux capteurs est différent, vous serez obligé d'utiliser toutes les images disponibles - l'option de sélection des images ne sera pas disponible."
 
 #: ../../source/workflows/drivers.rst:252
 msgid "If you are only working with Landsat (or only with Sentinel), you can manually select scenes if you want to tailor your mosaic and you have a lot of time to devote to your mosaic. :btn:`USE ALL SCENES` is the quicker and simpler approach and recommended for large areas."
-msgstr ""
+msgstr "Si vous ne travaillez qu'avec Landsat (ou seulement avec Sentinel), vous pouvez sélectionner manuellement des scènes si vous voulez adapter votre mosaïque et vous avez beaucoup de temps à consacrer à votre mosaïque. :btn:`UTILISEZ TOUS LES SCENES` est l'approche la plus rapide et la plus simple et recommandée pour de grandes surfaces."
 
 #: ../../source/workflows/drivers.rst:254
 msgid "For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:"
-msgstr ""
+msgstr "Pour les options composites, nous recommandons :btn:`SR` et :btn:`BRDF`, vous pouvez exclure les pixels à faible NDVI (en particulier si vous avez une longue période de temps) et sélectionner les options suivantes :"
 
 #: ../../source/workflows/drivers.rst:257
 msgid "You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`"
-msgstr ""
+msgstr "Vous pouvez ensuite récupérer la mosaïque en tant que ressource Google à une résolution de 30 m. Nous sélectionnons les bandes originales car tous les autres indices peuvent être recalculés ultérieurement. Nous sélectionnons les bandes originales car tous les autres indices peuvent être recalculés ultérieurement : :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`"
 
 #: ../../source/workflows/drivers.rst:259
 msgid "Once the export is finished, you can view the asset in Google Earth Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the above parameters:"
@@ -935,11 +935,11 @@ msgstr "Mosaïques ALOS Palsar"
 
 #: ../../source/workflows/drivers.rst:269
 msgid "Radar imagery has the added benefit of being cloud-free by design as active sensors are not influenced by clouds."
-msgstr ""
+msgstr "L'imagerie radar présente l'avantage supplémentaire d'être exempte de nuages, car les capteurs actifs ne sont pas affectés par les nuages."
 
 #: ../../source/workflows/drivers.rst:271
 msgid "Alos Palsar is a L-band radar that gives good results for monitoring forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL provides an application to select, process and download them to your user space pr Google Earth Engine Account."
-msgstr ""
+msgstr "Alos Palsar est un radar en bande L qui donne de bons résultats pour la surveillance des écosystèmes forestiers. Les données sont fournies par l'Initiative Kyoto & Carbone de l'Agence spatiale japonaise (JAXA) pour l'année 2015 et les suivantes. SEPAL fournit une application pour les sélectionner, les traiter et les télécharger sur votre espace utilisateur ou votre compte Google Earth Engine."
 
 #: ../../source/workflows/drivers.rst:273
 msgid "For more information about the parameters, Please see :doc:`../modules/dwn/alos_mosaics`."
@@ -951,11 +951,11 @@ msgstr "Mosaïques Sentinel-1"
 
 #: ../../source/workflows/drivers.rst:279
 msgid "You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus radar data."
-msgstr ""
+msgstr "Vous pouvez utiliser la recette de mosaïque radar pour créer une mosaïque à partir des données radar de l'ESA Copernicus."
 
 #: ../../source/workflows/drivers.rst:281
 msgid "The aoi selection is the same as for the optical mosaic. For the dates you can enter a year, a date range, or a single date. When you add a year or date range, SEPAL will provide a “time-scan” composite which includes bands which are statistical metrics of the range of data including phase and amplitude which assess the phenology and variations within the time period."
-msgstr ""
+msgstr "La sélection de l'aoi est la même que pour la mosaïque optique. Pour les dates, vous pouvez saisir une année, une plage de dates ou une date unique. Lorsque vous ajoutez une année ou une plage de dates, SEPAL fournit un composite \"time-scan\" qui comprend des bandes qui sont des mesures statistiques de la plage de données, y compris la phase et l'amplitude qui évaluent la phénologie et les variations au sein de la période de temps."
 
 #: ../../source/workflows/drivers.rst:284
 msgid "For the best results in the Congo Basin the following parameters are proposed:"
@@ -963,7 +963,7 @@ msgstr "Pour les meilleurs résultats dans le bassin du Congo, les paramètres s
 
 #: ../../source/workflows/drivers.rst:286
 msgid "Both :btn:`ascending` and :btn:`descending` orbits will ensure complete coverage of the AOI"
-msgstr ""
+msgstr "Les orbites :btn:`ascendant` et :btn:`descendant` assureront une couverture complète de la zone d'intérêt"
 
 #: ../../source/workflows/drivers.rst:287
 msgid "The :btn:`terrain` correction will mask any errors due to topography, or terrain “shadows”"
