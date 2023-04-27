@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:22\n"
+"PO-Revision-Date: 2023-04-27 11:46\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "Présentation"
 
 #: ../../source/cookbook/time_series.rst:10
 msgid "A Satellite Image Time Series (SITS) is a set of satellite images taken of the same scene at different times. A SITS makes use of different satellite sources to obtain a larger data series with a short time interval between two images. In this case, it is fundamental to observe the spatial resolution and registration constraints."
-msgstr ""
+msgstr "Une Satellite Image Time Series (SITS) est un ensemble d'images satellites prises de la même scène à différents moments. Un SITS utilise différentes sources satellites pour obtenir une plus grande série de données avec un bref intervalle de temps entre deux images. Dans ce cas, il est fondamental de respecter la résolution spatiale et les contraintes d'enregistrement."
 
 #: ../../source/cookbook/time_series.rst:12
 msgid "Satellite observations offer opportunities for understanding how the Earth is changing, determining the causes of these changes, and predicting future changes. Remotely-sensed data, combined with information from ecosystem models, offers an opportunity for predicting and understanding the behavior of Earth's ecosystem. Sensors with high spatial and temporal resolutions make the observation of precise spatio-temporal structures in dynamic scenes more accessible. Temporal components integrated with spectral and spatial dimensions allow the identification of complex patterns concerning applications connected with environmental monitoring and analysis of land cover dynamics."
@@ -169,31 +169,31 @@ msgstr "**Correction**"
 
 #: ../../source/cookbook/time_series.rst:116
 msgid ":guilabel:`Surface reflectance`: Use scenes' atmospherically corrected surface reflectance."
-msgstr ""
+msgstr ":guilabel:`Réflexion de surface`: Utiliser des scènes avec la réflexion de surface corrigée pour les effets atmosphériques."
 
 #: ../../source/cookbook/time_series.rst:117
 msgid ":guilabel:`BRDF correction`: Correct for bidirectional reflectance distribution function (BRDF) effects."
-msgstr ""
+msgstr ":guilabel:`Correction BRDF`Corriger les effets de réflectance bidirectionnelle de distribution (BRDF)."
 
 #: ../../source/cookbook/time_series.rst:119
 msgid "**Cloud detection**"
-msgstr ""
+msgstr "**Détection des nuages**"
 
 #: ../../source/cookbook/time_series.rst:121
 msgid ":guilabel:`QA bands`: Use previously created QA bands from datasets."
-msgstr ""
+msgstr ":guilabel:`Bandes QA`: Utilisez les bandes QA précédemment créées à partir de jeux de données."
 
 #: ../../source/cookbook/time_series.rst:122
 msgid ":guilabel:`Cloud score`: Use a cloud-scoring algorithm."
-msgstr ""
+msgstr ":guilabel:`Score Cloud`: Utilisez un algorithme avec un score de couverture nuageuse."
 
 #: ../../source/cookbook/time_series.rst:124
 msgid "**Cloud masking**"
-msgstr ""
+msgstr "**Masquage des nuages**"
 
 #: ../../source/cookbook/time_series.rst:126
 msgid ":guilabel:`Moderate`: Rely only on image source QA bands for cloud masking."
-msgstr ""
+msgstr ":guilabel:`Modéré`: Ne comptez que sur les bandes QA des images sources pour le masquage des nuages."
 
 #: ../../source/cookbook/time_series.rst:127
 msgid ":guilabel:`Aggressive`: Rely on image source QA bands and a cloud-scoring algorithm for cloud masking. This will probably \"mask\" some built-up areas and other bright features."
@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../../source/cookbook/time_series.rst:149
 msgid "Analysis"
-msgstr ""
+msgstr "Analyse"
 
 #: ../../source/cookbook/time_series.rst:151
 msgid "Once all of the parameters are set, you can generate data from the recipe. Some can be directly generated on-the-fly from the interface; the rest require retrieving the data from SEPAL folders."

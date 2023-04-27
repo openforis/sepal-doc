@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:22\n"
+"PO-Revision-Date: 2023-04-27 11:46\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/cookbook/class_change.rst:2
 msgid "Class change"
-msgstr ""
+msgstr "Changement de classe"
 
 #: ../../source/cookbook/class_change.rst:5
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../source/cookbook/class_change.rst:7
 msgid "Very often we want to build the class change map between 2 categorical map sharing the same legend. If the 2 images are taken at different time it will help us understand how the vegetation classification has evolved between these 2 dates. It can be a tidious exercise to build the new legend (forest -> forest, forest -> urban, ...) and to manually write the rules to identify each class. Sepal will automatically build the legend of the rsulting categorical map from the initail legend and compute all the pixels automatically."
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../source/cookbook/class_change.rst:80
 msgid "options"
-msgstr ""
+msgstr "options"
 
 #: ../../source/cookbook/class_change.rst:82
 msgid "If the selected asset is from a SEPAL classification, it will embed a probability value for each classified pixel. SEPAL will proposed clever map transitionning based on these values."
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../source/cookbook/class_change.rst:95
 msgid "Analysis"
-msgstr ""
+msgstr "Analyse"
 
 #: ../../source/cookbook/class_change.rst:98
 msgid "Export"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../source/cookbook/class_change.rst:112
 msgid "Bands"
-msgstr ""
+msgstr "Bandes"
 
 #: ../../source/cookbook/class_change.rst:114
 msgid "You need to select the band to export in the recipe. You will have access to :guilabel:`transition` which is the new class change values and :guilabel:`confidence` if you selected **classification recipe** assets."
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../source/cookbook/class_change.rst:117
 msgid "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: ../../source/cookbook/class_change.rst:119
 msgid "You can set a custom scale for exportation by changing the value of the slider (m). Requesting a smaller resolution than images native resolution will not improve the quality of the output, just its size so keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:22\n"
+"PO-Revision-Date: 2023-04-27 11:46\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -609,7 +609,7 @@ msgstr ""
 
 #: ../../source/cookbook/optical_mosaic.rst:416
 msgid "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: ../../source/cookbook/optical_mosaic.rst:418
 msgid "You can set a custom scale for exportation by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.)"

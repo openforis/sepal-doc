@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-14 00:55+0000\n"
-"PO-Revision-Date: 2023-04-14 00:58\n"
+"PO-Revision-Date: 2023-04-27 11:46\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -2197,7 +2197,7 @@ msgstr ""
 
 #: ../../source/workflows/area_estimation.rst:1
 msgid "Scale"
-msgstr ""
+msgstr "Échelle"
 
 #: ../../source/workflows/area_estimation.rst:1
 msgid "-s"
