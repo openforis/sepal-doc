@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:44\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/other.po\n"
+"X-Crowdin-File-ID: 209\n"
+
+#: ../../source/modules/other.rst:2
+msgid "Other"
+msgstr ""
+
+#: ../../source/modules/other.rst:4
+msgid "List of the modules gathered under the Other tag:"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/alert_module`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Retrieve any type of alert on a selected AOI"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/alos_mosaics`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Create and manipulate ALOS K&C Mosaics"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/coverage_analysis`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Check per-pixel data availability"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/fcdm`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/geo_processing`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "..."
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/gfc_wrapper_python`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Combine the GFC layers to produce a forest change map"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/gfc_wrapper_R`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/gwl_analysis`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/vector_manager`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Tool to manage vector files in SEPAL (upload, download, export to GEE and grid generation)"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/sae_analysis`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/sae_design`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/tmf`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Wrapper for TMF"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/zonal-analysis`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/gee-source`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Extract source code from any GEE app URL"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/weplan`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Explore restoration planning solution provided by WePlan - Forests"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid ":doc:`dwn/basin-river`"
+msgstr ""
+
+#: ../../source/modules/other.rst:1
+msgid "Get Forest Cover Change by upstream sub-catchment"
+msgstr ""
+
