@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:44\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/vector_manager.po\n"
+"X-Crowdin-File-ID: 199\n"
+
+#: ../../source/modules/dwn/vector_manager.rst:2
+msgid "Vector file manager"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:4
+msgid "This module have been designed on top of the interactive framework `sepal_ui <https://github.com/12rambau/sepal_ui>`_. it allows the upload files from its local computer and transform them into assets in Google Earth Engine. On top of any AOI the module can also be used to produce a grid coresponding to our best product (NICFI 2,5m resolution10x10km grid)."
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:8
+msgid "both operations will end with a dialog window with the ID of your asset. Copy-paste it to use this asset in other SEPAL tools"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:11
+msgid "Upload file in SEPAL and GEE"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:13
+msgid "Using the first avalaibale tile you can upload any file from your local computer to SEPAL."
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:17
+msgid "Once the file is available in your SEPAL folders use it in the AOI selector. This selector have been customized to only allow selection through:"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:19
+msgid ":guilabel:`admin level 2`: select an administrative level 2"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:20
+msgid ":guilabel:`draw a shape`: manually draw a shape on the map"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:21
+msgid ":guilabel:`Upload file`: Use a shapefile as an asset"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:22
+msgid ":guilabel:`Use point file`: Use a :code:`.csv` file as an aoi asset. Point file need to have at least 3 columns (id, lattitude and longitude) but you can use any custom names"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:24
+msgid "By validating the selection a task will be launched on GEE to transform your table into a GEE asset. please go to your earthengine task list if you want to monitor the evolution of your upload."
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:29
+msgid "Create Grid over AOI"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:31
+msgid "The second drawer will allow you to create a grid on top of any AOI. THe grid is corresponding to the Planet Lab Grid to fit the needs of our best product in term of resolution (2.5m)."
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:35
+msgid "the planet grid is constructing a 2048x2048 grid of SQUARES. The latitude extends is bigger (20048966.10m VS 20026376.39) so to ensure the \"squariness\" Planet lab have based the numerotation and extends of it square grid on the longitude only. the extreme -90 and +90 bands are thus exlucded but there are no so relevant cells for forestry observation"
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:37
+msgid "An extra column is added to the grid called \"batch\" you can select the size of the batch by changing the width of the batch usin the initial grid cell as unit. E.g. by setting :guilabel:`grid size` to 10 you'll create grid batch of 10x10 cells. The naming will be set automatically according to your AOI name and the batch size."
+msgstr ""
+
+#: ../../source/modules/dwn/vector_manager.rst:39
+msgid "By validating, you will create a geojson file that will live in :code:`module_results/aoi/<asset_name>.geojson` and launch the creation of the same grid in your GEE assets."
+msgstr ""
+
