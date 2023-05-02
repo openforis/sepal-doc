@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:43\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/gee-source.po\n"
+"X-Crowdin-File-ID: 161\n"
+
+#: ../../source/modules/dwn/gee-source.rst:2
+msgid "Earthengine app reader"
+msgstr ""
+
+#: ../../source/modules/dwn/gee-source.rst:4
+msgid "This application allows the user to display the source code of any Google Earth Engine based application. THe code is parsed and display in the most readable way using the Pygments code highlighter"
+msgstr ""
+
+#: ../../source/modules/dwn/gee-source.rst:8
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../../source/modules/dwn/gee-source.rst:10
+msgid "Provide the url of the application you want to analyse (e.g.: https://glad.earthengine.app/view/s2-forest-alerts) and click on :btn:`<fa-solid fa-check> Apply`."
+msgstr ""
+
+#: ../../source/modules/dwn/gee-source.rst:12
+msgid "Once the code is displayed on your screen you can save it in you SEPAL folders by clicking on :btn:`<fa-solid fa-floppy-disk> Save`."
+msgstr ""
+
+#: ../../source/modules/dwn/gee-source.rst:14
+msgid "Here is an example computing the `GLAD_S2 application <https://glad.earthengine.app/view/s2-forest-alerts#lon=-64.29861048809664;lat=-9.85129363173061;zoom=13>`__."
+msgstr ""
+
