@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:44\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,21 +20,21 @@ msgstr ""
 
 #: ../../source/modules/inventories.rst:2
 msgid "Inventories"
-msgstr ""
+msgstr "Inventaires"
 
 #: ../../source/modules/inventories.rst:4
 msgid "List of the modules gathered under the Inventories tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Inventaires:"
 
 #: ../../source/modules/inventories.rst:1
 msgid ":doc:`dwn/bootstrap_sampling_simulator`"
-msgstr ""
+msgstr ":doc:`dwn/bootstrap_sampling_simulator`"
 
 #: ../../source/modules/inventories.rst:1
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../../source/modules/inventories.rst:1
 msgid ":doc:`dwn/plot_generator`"
-msgstr ""
+msgstr ":doc:`dwn/plot_generator`"
 
