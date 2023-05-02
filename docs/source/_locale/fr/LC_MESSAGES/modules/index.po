@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:44\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/modules/index.rst:2
 msgid "SEPAL applications"
-msgstr ""
+msgstr "Applications SEPAL"
 
 #: ../../source/modules/index.rst:5
 msgid "Access complex workflows without the need of digital programming skills with SEPAL applications"
-msgstr ""
+msgstr "Accédez à des workflows complexes sans avoir besoin de compétences en programmation numérique avec des applications SEPAL"
 
 #: ../../source/modules/index.rst:10
 msgid "Overview"
@@ -40,23 +40,23 @@ msgstr ""
 
 #: ../../source/modules/index.rst:17
 msgid "Start applications"
-msgstr ""
+msgstr "Lancement des applications"
 
 #: ../../source/modules/index.rst:19
 msgid "To start a SEPAL application, go to the dashboard of the application by selecting the wrench icon on the left side of the window [(1) on the following image], which  will bring up a list of apps you can run in SEPAL. More information about each app is found by selecting the **i** on the right side."
-msgstr ""
+msgstr "Pour démarrer une application SEPAL, aller au tableau de bord des applications en sélectionnant l'icône de clé sur le côté gauche de la fenêtre [(1) sur l'image suivante], qui affichera une liste des applications que vous pouvez exécuter dans SEPAL. Plus d'informations sur chaque application sont trouvées en sélectionnant le **i** du côté droit."
 
 #: ../../source/modules/index.rst:21
 msgid "Note: The top three apps (2) are code editors, not apps:"
-msgstr ""
+msgstr "Remarque : Les trois premières applications (2) sont des éditeurs de code, pas des applications:"
 
 #: ../../source/modules/index.rst:23
 msgid "R Studio: Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder."
-msgstr ""
+msgstr "R Studio: Fournit un accès à l'environnement R où vous pouvez exécuter des scripts de traitement et téléverser des données dans votre dossier SEPAL."
 
 #: ../../source/modules/index.rst:24
 msgid "Jupyter Notebook: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text (supports Kernels in many different languages, including R, Python and NodesJS)."
-msgstr ""
+msgstr "Jupyter Notebook : Une application web open-source qui vous permet de créer et de partager des documents qui contiennent du code en direct. équations, visualisations et textes narratifs (supporte les noyaux dans de nombreux langages, y compris R, Python et NodesJS)."
 
 #: ../../source/modules/index.rst:25
 msgid "JupyterLab: A web-based interactive development environment for Jupyter notebooks, code and data."
