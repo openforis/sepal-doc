@@ -1,45 +1,37 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:48\n"
+"Last-Translator: \n"
+"Language: sv\n"
+"Language-Team: Swedish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/coverage_analysis.po\n"
+"X-Crowdin-File-ID: 153\n"
 
 #: ../../source/modules/dwn/coverage_analysis.rst:2
 msgid "Coverage analysis tool for optical data"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:4
-msgid ""
-"Module using the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ "
-"framework and an interactive **Voila** dashboard to create maps of cloud-"
-"free observations for major optical satellites as available on Google's "
-"Earth Engine Platform."
+msgid "Module using the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ framework and an interactive **Voila** dashboard to create maps of cloud-free observations for major optical satellites as available on Google's Earth Engine Platform."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:6
-msgid ""
-"The framework follows the logic of bfasts' countObs and summaryBrick "
-"functions as described `here "
-"<http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_."
+msgid "The framework follows the logic of bfasts' countObs and summaryBrick functions as described `here <http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:8
-msgid ""
-"For bfast specific requirements check `Schultz et al. 2013 "
-"<http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_ for further background."
+msgid "For bfast specific requirements check `Schultz et al. 2013 <http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_ for further background."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:10
@@ -51,11 +43,7 @@ msgid "Select an AOI"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:15
-msgid ""
-"Using the provided AOI selector, select an AOI of your choice between the"
-" different methods available in the tool. We provide 3 administration "
-"descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on "
-"the map, asset or shapefile)."
+msgid "Using the provided AOI selector, select an AOI of your choice between the different methods available in the tool. We provide 3 administration descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on the map, asset or shapefile)."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:19
@@ -63,9 +51,7 @@ msgid "aoi selector"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:23
-msgid ""
-"If a custom aoi from shape or drawing is selected, you will be able to "
-"use it directly and the upload to GEE will be launched in the background"
+msgid "If a custom aoi from shape or drawing is selected, you will be able to use it directly and the upload to GEE will be launched in the background"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:26
@@ -73,9 +59,7 @@ msgid "Select dataset parameters"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:28
-msgid ""
-"To perform the bfast preanalysis you need to provide the tool with key "
-"parameters:"
+msgid "To perform the bfast preanalysis you need to provide the tool with key parameters:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:30
@@ -83,27 +67,19 @@ msgid "**date range**: The start and end date of your analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:31
-msgid ""
-"**sensors**: The list of sensors you want to use (Landsat missions & "
-"Sentinel-2)"
+msgid "**sensors**: The list of sensors you want to use (Landsat missions & Sentinel-2)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:32
-msgid ""
-"**Tier 2**: Tier 2 images of the Landsat missions (this might lead to "
-"wrong results)"
+msgid "**Tier 2**: Tier 2 images of the Landsat missions (this might lead to wrong results)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:33
-msgid ""
-"**SR**: whether to use Surface Reflectance images (SR). default to Top of"
-" atmosphere (TOA)"
+msgid "**SR**: whether to use Surface Reflectance images (SR). default to Top of atmosphere (TOA)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:35
-msgid ""
-"Once all your parameters are selected you need to click on the button to "
-"make your selection effective"
+msgid "Once all your parameters are selected you need to click on the button to make your selection effective"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:40
@@ -111,10 +87,7 @@ msgid "Display dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:42
-msgid ""
-"After having selected your parameters you can move to the Visualization "
-"tile. Select one of the statistical measures to display in the following "
-"list:"
+msgid "After having selected your parameters you can move to the Visualization tile. Select one of the statistical measures to display in the following list:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:45
@@ -134,9 +107,7 @@ msgid "NDVI Std. Dev."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:50
-msgid ""
-"You can also decide to produce stats on yearly basis using the provided "
-"switch"
+msgid "You can also decide to produce stats on yearly basis using the provided switch"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:56
@@ -148,11 +119,7 @@ msgid "Export dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:61
-msgid ""
-"Once you're happy with the information displayed then can be exported to "
-"be further used in a GIS software or in a GEE process. The tool provides "
-"2 main exportation options, as an asset(in GEE) or as a Tif file in "
-"SEPAL."
+msgid "Once you're happy with the information displayed then can be exported to be further used in a GIS software or in a GEE process. The tool provides 2 main exportation options, as an asset(in GEE) or as a Tif file in SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:63
@@ -196,8 +163,6 @@ msgid "scale: the resolution (in meters) to us in GEE exported file"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:83
-msgid ""
-"When the image is exported to SEPAL, you cannot quit the application "
-"until the downloading is finished."
+msgid "When the image is exported to SEPAL, you cannot quit the application until the downloading is finished."
 msgstr ""
 
