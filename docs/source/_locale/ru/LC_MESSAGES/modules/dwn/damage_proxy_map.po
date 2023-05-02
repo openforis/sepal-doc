@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:47\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/damage_proxy_map.po\n"
+"X-Crowdin-File-ID: 157\n"
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:2
 msgid "Damage Proxy Maps"
@@ -26,24 +27,15 @@ msgid "**Damage Proxy Maps based on Coherence Change Detection**"
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:6
-msgid ""
-"This module provides a fully-automated workflow for the creation of "
-"Damage Proxy Maps based on the method of Coherent Change Detection (CCD) "
-"with Sentinel-1 SLC data as described by `Tay et al. 2020 "
-"<https://www.nature.com/articles/s41597-020-0443-5>`_."
+msgid "This module provides a fully-automated workflow for the creation of Damage Proxy Maps based on the method of Coherent Change Detection (CCD) with Sentinel-1 SLC data as described by `Tay et al. 2020 <https://www.nature.com/articles/s41597-020-0443-5>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:8
-msgid ""
-"The output data files consist of the Damage Proxy Map as GeoTiff "
-"(*dmp_...tif*) and KMZ (*dmp_...kmz*) file, as well as the raw CCD values"
-" in GeoTiff (*CCD_...tif*) and GeoJSON (*CCD_...geojson*) format."
+msgid "The output data files consist of the Damage Proxy Map as GeoTiff (*dmp_...tif*) and KMZ (*dmp_...kmz*) file, as well as the raw CCD values in GeoTiff (*CCD_...tif*) and GeoJSON (*CCD_...geojson*) format."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:10
-msgid ""
-"The files are found within a **newly created folder**. The folder name is"
-" based on the name of your AOI and the event date."
+msgid "The files are found within a **newly created folder**. The folder name is based on the name of your AOI and the event date."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:14
@@ -67,11 +59,7 @@ msgid "Select an AOI"
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:24
-msgid ""
-"Using the provided AOI selector, select an AOI of your choice between the"
-" different methods available in the tool. We provide 3 administration "
-"descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on "
-"the map or ogr compatible files)."
+msgid "Using the provided AOI selector, select an AOI of your choice between the different methods available in the tool. We provide 3 administration descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on the map or ogr compatible files)."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:28
@@ -87,32 +75,18 @@ msgid "Disaster event date: Pick the date where the disaster event happened."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:34
-msgid ""
-"copernicus credentials: Provide your scihub credentials for search and "
-"download of the relevant Sentinel-1 scenes. If you do not have an "
-"account, go to `Copernicus Scihub <https://scihub.copernicus.eu/>`_ and "
-"register."
+msgid "copernicus credentials: Provide your scihub credentials for search and download of the relevant Sentinel-1 scenes. If you do not have an account, go to `Copernicus Scihub <https://scihub.copernicus.eu/>`_ and register."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:36
-msgid ""
-"Clicking this button will trigger the full workflow. Some of the steps "
-"may take a while (e.g. download, processing), so be patient. If you "
-"suffer from an instable internet connection, make sure to set the minimum"
-" runtime of your instance to 2 hours. Otherwise make sure to keep the "
-"connection to the SEPAL website (i.e. do not close browser or browser "
-"tab)."
+msgid "Clicking this button will trigger the full workflow. Some of the steps may take a while (e.g. download, processing), so be patient. If you suffer from an instable internet connection, make sure to set the minimum runtime of your instance to 2 hours. Otherwise make sure to keep the connection to the SEPAL website (i.e. do not close browser or browser tab)."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:40
-msgid ""
-"If the processing did not finish, you can re-run the module with the same"
-" parameters, and the processing will continue from where it stopped."
+msgid "If the processing did not finish, you can re-run the module with the same parameters, and the processing will continue from where it stopped."
 msgstr ""
 
 #: ../../source/modules/dwn/damage_proxy_map.rst:42
-msgid ""
-"Once the computation is finished the result files will be stored in the "
-":code:`module_results/Damage_proxy_map/<aoi name>_<event date>/` folder."
+msgid "Once the computation is finished the result files will be stored in the :code:`module_results/Damage_proxy_map/<aoi name>_<event date>/` folder."
 msgstr ""
 
