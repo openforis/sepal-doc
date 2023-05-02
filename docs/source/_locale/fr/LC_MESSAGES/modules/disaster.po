@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:43\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,17 +20,17 @@ msgstr ""
 
 #: ../../source/modules/disaster.rst:2
 msgid "Disaster"
-msgstr ""
+msgstr "Catastrophe"
 
 #: ../../source/modules/disaster.rst:4
 msgid "List of the modules gathered under the Disaster tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise catastrophe :"
 
 #: ../../source/modules/disaster.rst:1
 msgid ":doc:`dwn/damage_proxy_map`"
-msgstr ""
+msgstr ":doc:`dwn/damage_proxy_map`"
 
 #: ../../source/modules/disaster.rst:1
 msgid "Damage estimation from Sentinel-1"
-msgstr ""
+msgstr "Estimation des dégâts via Sentinel-1"
 
