@@ -1,0 +1,320 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:43\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/clip-time-series.po\n"
+"X-Crowdin-File-ID: 151\n"
+
+#: ../../source/modules/dwn/clip-time-series.rst:2
+msgid "Clip time series"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:6
+msgid "This documentation should explain every step to execute the module. If any question or bug remains, please consider post it on the `bug report page <https://github.com/openforis/clip-time-series/issues/new>`_."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:8
+msgid "This module allows the user to download as a :code:`.pdf` an auto generated time series from customizable dates. Each mosaic will be represented in a square of custom size from **500x500m** to **1000x10000km** around the point of interest using the band combination selected by the user."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:13
+msgid "Select file"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:15
+msgid "First the user needs to select a file. This file will be the main input of the module and each page of the final :code:`.pdf` will match a geometry of the input. The user can use 2 types of input:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:17
+msgid "Table file (:code:`.csv`, :code:`.txt`) containing at least coordinates and ID columns"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:18
+msgid "Shapes (:code:`.geojson`, :code:`.shp`, :code:`.geopackage`) with at least geometry and Id column"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:21
+msgid "Table"
+msgstr "Table"
+
+#: ../../source/modules/dwn/clip-time-series.rst:23
+msgid "Select the :guilabel:`point` radio button."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:25
+msgid "The table file can be :code:`.csv` or :code:`.txt`. It needs to have at least 3 columns including the latitude coordinates, the longitude coordinates and an Id. the name of the columns can be anything."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:29
+msgid "The table coordinates need to remain unprojected, i.e. in EPSG:4326"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:31
+msgid "Select the file by clicking :guilabel:`Table file`. Only the matching file type will be displayed. User can navigate through its SEPAL folders to find the appropriate table."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:33
+msgid "One a file is selected, the widget will try to autopopulate the id, latitude and longitude columns. If columns are wrongly set of if data are missing the user need to select one of the file column to completely describe the points (x, y, id)."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:21
+msgid "input table"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:40
+msgid "Click on :guilabel:`load your pts file` to load the points as a geodataframe in the app model and display them on a map. The points will be represented as marker clusters and the map will automatically zoom on them. click on any cluster to zoom in."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:21
+msgid "map table"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:50
+msgid "Click on :guilabel:` download test dataset` will automatically download and validate a set of point in the app. Use it to discover the module functionalities."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:53
+msgid "Shape"
+msgstr "Forme"
+
+#: ../../source/modules/dwn/clip-time-series.rst:55
+msgid "Select the :guilabel:`shape` radio button."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:57
+msgid "The table file can be any file type digested by the :code:`fiona` librairy. The file need to have at least 1 column to describe the Id."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:59
+msgid "The Id column will be used to name the points in the final pdf. Select it in the updated dropdown menu \"Id column\"."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:63
+msgid "if you use names for `id` make sure that they are all unique."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:53
+msgid "input_shape"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:70
+msgid "Click on :guilabel:`load your pts file` to load the shapes as a geodataframe in the app model and display them on a map. The map will be updated with the selected shapes and zoom on the area of interes."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:53
+msgid "map_shape"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:78
+msgid "Select time serie parameters"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:80
+msgid "In this second step, the user is asked to select the parameters of its time series."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:83
+msgid "drivers"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:85
+msgid "2 drivers are available in this module. You can select either a GEE based computation (images will be retreived from GEE) or planet (images will be retreived from planet servers using the user API key)."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:87
+msgid "If the user selects :guilabel:`gee`, the panel will ask you to select the satellites you want to use for the thumbnails. you can select any satellites imagery from landsat family and Sentinel program."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:89
+msgid "The best available image is then selected using the following hierarchy order:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:91
+msgid "Sentinel 2"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:92
+msgid "Landsat 8"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:93
+msgid "landsat 5"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:94
+msgid "landsat 7"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:96
+msgid "If the user select :guilabel:`planet`, the panel will ask for the Planet API key."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:99
+msgid "points"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:101
+msgid "The number of points a user wants to display can vary. If the user select all then all the available points in the provided file will be used. It's also possible to select a subset of them using there **id** names."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:104
+msgid "bands"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:106
+msgid "multiple band combination can be selected:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:108
+msgid "Using the :code:`gee` driver:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:110
+msgid "Red, Green, Blue"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:111
+msgid "Nir, Red, Green"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:112
+msgid "Nir, Swir1, Red"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:113
+msgid "Swir2, Nir, Red"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:114
+msgid "Swir2, Swir1, Red"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:115
+msgid "Swir2, Nir, Green"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:117
+msgid "Using the :code:`planet` driver:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:119
+msgid "rgb"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:120
+msgid "cir"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:123
+msgid "mosaics"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:125
+msgid "Each selected mosaics will be represented by a thumbnail in the final :code:`pdf`."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:129
+msgid "User can select as many mosaics as he wants but note:"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:131
+msgid "The page will remain in A4 format so the thumbnails will become smaller and smaller proportionnaly to the number of mosaics."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:132
+msgid "Each image needs to be downloaded to SEPAL so many images => longer compuation time"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:134
+msgid "Using the :code:`gee` driver, mosaics are yearly cloudless mosaics build on the best found satellites as described in the previous section."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:136
+msgid "Using the :code:`planet` driver, 3 types of mosaics can be selected (and mixed together):"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:138
+msgid "NICFI bianual mosaics"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:139
+msgid "NICFI monthly mosaics"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:140
+msgid "Other (any other mosaics associated to the user API key)"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:143
+msgid "thumbnails"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:145
+msgid "Select a thumbnail size. This will be the minimal size of the thumbnail used. If the shape defined in the first panel is bigger then the software will try to fint he smallest square around the shape centered on the centroid of the shape."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:149
+msgid "if the final outter square of a shape is bigger than **10000x10000km**, gee and planet will refuse to export your data. Remember that this module is not meant to export national time series but thumbnails."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:152
+msgid "square size"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:154
+msgid "In the middle of the final image, the software will display a small square to visually represent the point. User can select the size of this square depending on the size of its thumbnails."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:156
+msgid "If the used dataset is shapefile then the square will be replace by the shape geometry."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:160
+msgid "When you click on the validation button, the module gives you a sum up of the download your about to perform. It's a warning step to avoid the download of huge number of points on wrongly defined parameters."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:152
+msgid "viz"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:170
+msgid "Export data"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:172
+msgid "Only one single button here. Click on it and the downloading of your images will be send to earthengine or planet."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:176
+msgid "The build of the :code:`.pdf` file can consume lots of computation resources and in particular RAM. if you're module freezes more than 2-3 minutes you certainly ran out of memory and the Python kernel have died. Restart the process with a bigger instance."
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:170
+msgid "process_loading"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:185
+msgid "The images will be removed from your gdrive after the creation of the pdf to save space"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:187
+msgid "Then the module will give you a clickable link in the green button and a preview of the first page of the :code:`pdf`"
+msgstr ""
+
+#: ../../source/modules/dwn/clip-time-series.rst:170
+msgid "results"
+msgstr ""
+
