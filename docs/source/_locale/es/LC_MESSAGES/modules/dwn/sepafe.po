@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:44\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/sepafe.po\n"
+"X-Crowdin-File-ID: 185\n"
+
+#: ../../source/modules/dwn/sepafe.rst:2
+msgid "SEPAFE"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:4
+msgid "The Sepal Planet Active Fires Explorer (SEPAFE) is a module developed on the SEPAL platform based on the `Fire Information for Resource Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms>`_ and using Planet Scope imagery from Planet Labs."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:6
+msgid "SEPAFE aims to provide users with a quick way to get and validate fire alerts from the FIRMS program by using daily planet imagery."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:13
+msgid "Settings panel"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:15
+msgid "The settings panel is composed of three tabs: :code:`Planet Imagery`, :code:`Area of Interest` and :code:`Alerts`, each of them is a necessary step to get the fire alerts."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:17
+msgid "The settings panel can be open/closed by clicking on the settings :btn:`<fa-solid fa-bars>` button."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:20
+msgid "Connect your Planet API Key"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:22
+msgid "This step is optional but highly recommended. Although you can go through the next tabs and get the fire alerts from the different satellite sources, to get the most advantage of the module, you will need a Planet API Key with access to daily imagery."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:24
+msgid "Validate your Planet API Key: provide a valid API Key in the input box and click over the validation button, the module will check whether the key is valid or not and the messages of its connection will be displayed directly into the alerts widget. Once your validation is done, you can open the advanced settings expansion panel and modify its inputs."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:26
+msgid "use the planet state bar located in the top-left corner to get useful messages related with planet imagery, such as problems with the key or number of images loaded."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:28
+msgid "Open the Advanced settings panel"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:30
+msgid ":code:`Max number of images`: maximum number of planet images to be displayed at once in each alert."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:31
+msgid ":code:`Search up to 'x' days before`: the number of days before the fire alert date to look up for the best image available."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:32
+msgid ":code:`Search up to 'x' days after`: the number of days after the fire alert date to look up for the best image available."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:33
+msgid ":code:`Cloud cover threshold`: maximum cloud cover threshold accepted in the images (based on the planet metadata)."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:40
+msgid "Select area of interest (AOI)"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:42
+msgid "The module has two options to select an area of interest to filter alerts."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:44
+msgid "Draw a shape: when this option is selected, three drawing tools will be displayed in the top-left map corner, you can select a `square`, `circle`, and a `polygon` and draw them on the map."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:45
+msgid "Select a country: type the name of the country directly into the search box or navigate through it by using the scroll bar, and select the desired country. Once the country is selected, it will be displayed in the map view."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:50
+msgid "Get fire alerts"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:52
+msgid "Recent: the products to be downloaded are coming from the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) for the last 24, 28 hours, and the last 7 days."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:54
+msgid "Historical: for the historical products, you will be able to download alerts from 2000 until the last finished year from the MODIS satellite. Click over the historical button and filter by the dates."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:56
+msgid "After clicking over the `get alerts` button, the module will start the download process and will clip the alerts to the given AOI. The alerts will be displayed on the map according to a color map for the alert confidence, ranging from green, orange, to red for the confidence values high, nominal and low (for VIIRS) and >80, >70 < 80, <50 for MODIS."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:58
+msgid "depending on the sensor source and whether your alert request is recent or historical, the download/clip process could take more time. This module is intended to get a quick and fast validation of fire alerts, if you are requesting an area with more than 10,000 fire alerts, you will be asked if you want to display all the alerts on the map —which could highly affect the performance of the tool— or if you want to download them to your desktop/SEPAL environment."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:61
+msgid "Navigate through alerts"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:63
+msgid "Once the alerts are being displayed on the map, you will be able to navigate through each of them by using the :code:`navigation widget`. Click :code:`next` and :code:`prev` buttons to navigate over the fire alerts, and use the :code:`confidence` dropdown to filter the alerts by its confidence (`What is the detection confidence? <https://earthdata.nasa.gov/faq/firms-faq>`_)."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:65
+msgid "The confidence value was added to help users gauge the quality of individual fire pixels is included in the Level 2 fire product. The confidence field should be used with caution; it will likely vary in meaning in different parts of the world. Nevertheless, some of our end users have found such a field to be useful in excluding false-positive occurrences of fire. They are different for MODIS and VIIRS."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:70
+msgid "You can activate/deactivate the firee navigation widget by clicking over the fires :btn:`<fa-solid fa-fire>` button."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:72
+msgid "Planet parameters can be changed at any time, to refresh the results from the current alert click over the refresh :btn:`<fa-solid fa-rotate>` icon."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:75
+msgid "Manually load planet imagery"
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:77
+msgid "Click over any point in the map and use the refresh icon :btn:`<fa-solid fa-rotate>` to retrieve planet imagery using the parameters set in the step 1, the module will use the current acquisition alert date to search the images. This option is useful when you want to explore surrounding areas close to the alert point but without alerts to display."
+msgstr ""
+
+#: ../../source/modules/dwn/sepafe.rst:79
+msgid "For use this option you will require a valid planet level 2 key, otherwise you will get an error message displayed in the state bar."
+msgstr ""
+
