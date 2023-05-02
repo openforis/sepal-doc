@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:44\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,115 +20,115 @@ msgstr ""
 
 #: ../../source/modules/other.rst:2
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 #: ../../source/modules/other.rst:4
 msgid "List of the modules gathered under the Other tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Autre :"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/alert_module`"
-msgstr ""
+msgstr ":doc:`dwn/alert_module`"
 
 #: ../../source/modules/other.rst:1
 msgid "Retrieve any type of alert on a selected AOI"
-msgstr ""
+msgstr "Récupérer n'importe quel type d'alerte sur un AOI sélectionné"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/alos_mosaics`"
-msgstr ""
+msgstr ":doc:`dwn/alos_mosaics`"
 
 #: ../../source/modules/other.rst:1
 msgid "Create and manipulate ALOS K&C Mosaics"
-msgstr ""
+msgstr "Créer et manipuler les Mosaïques ALOS K&C"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/coverage_analysis`"
-msgstr ""
+msgstr ":doc:`dwn/coverage_analysis`"
 
 #: ../../source/modules/other.rst:1
 msgid "Check per-pixel data availability"
-msgstr ""
+msgstr "Vérifier la disponibilité des données par pixel"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/fcdm`"
-msgstr ""
+msgstr ":doc:`dwn/fcdm`"
 
 #: ../../source/modules/other.rst:1
 msgid "Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests"
-msgstr ""
+msgstr "Cartographier tous les types de perturbations de la canopie (induites par des humains ou naturels) dans les forêts (semi-)vertes"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/geo_processing`"
-msgstr ""
+msgstr ":doc:`dwn/geo_processing`"
 
 #: ../../source/modules/other.rst:1
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gfc_wrapper_python`"
-msgstr ""
+msgstr ":doc:`dwn/gfc_wrapper_python`"
 
 #: ../../source/modules/other.rst:1
 msgid "Combine the GFC layers to produce a forest change map"
-msgstr ""
+msgstr "Combiner les couches du GFC pour produire une carte du changement de forêt"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gfc_wrapper_R`"
-msgstr ""
+msgstr ":doc:`dwn/gfc_wrapper_R`"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gwl_analysis`"
-msgstr ""
+msgstr ":doc:`dwn/gwl_analyis`"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/vector_manager`"
-msgstr ""
+msgstr ":doc:`dwn/vector_manager`"
 
 #: ../../source/modules/other.rst:1
 msgid "Tool to manage vector files in SEPAL (upload, download, export to GEE and grid generation)"
-msgstr ""
+msgstr "Outil pour gérer les fichiers vectoriels dans SEPAL (téléchargement, exportation vers GEE et génération de grille)"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/sae_analysis`"
-msgstr ""
+msgstr ":doc:`dwn/sae_analyis`"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/sae_design`"
-msgstr ""
+msgstr ":doc:`dwn/sae_design`"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/tmf`"
-msgstr ""
+msgstr ":doc:`dwn/tmf`"
 
 #: ../../source/modules/other.rst:1
 msgid "Wrapper for TMF"
-msgstr ""
+msgstr "Explorateur pour TMF"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/zonal-analysis`"
-msgstr ""
+msgstr ":doc:`dwn/zonal-analyis`"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gee-source`"
-msgstr ""
+msgstr ":doc:`dwn/gee-source`"
 
 #: ../../source/modules/other.rst:1
 msgid "Extract source code from any GEE app URL"
-msgstr ""
+msgstr "Extraire le code source de n'importe quelle URL d'application GEE"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/weplan`"
-msgstr ""
+msgstr ":doc:`dwn/weplan`"
 
 #: ../../source/modules/other.rst:1
 msgid "Explore restoration planning solution provided by WePlan - Forests"
-msgstr ""
+msgstr "Explorez la solution de planification de restauration offerte par WePlan - Forêts"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/basin-river`"
-msgstr ""
+msgstr ":doc:`dwn/basin-river`"
 
 #: ../../source/modules/other.rst:1
 msgid "Get Forest Cover Change by upstream sub-catchment"
