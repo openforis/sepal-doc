@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:47\n"
+"Last-Translator: \n"
+"Language: pt\n"
+"Language-Team: Portuguese\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/sae_analysis.po\n"
+"X-Crowdin-File-ID: 177\n"
 
 #: ../../source/modules/dwn/sae_analysis.rst:2
 msgid "Stratified Area Estimation (SAE) – Analysis"
@@ -26,35 +27,19 @@ msgid "Analyse results from a stratified sampling design for area estimates"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:7
-msgid ""
-"The aim of this stratified sampling design tool is to analyse results "
-"from a stratified sampling design that can be used for area estimates by "
-"combining a map (used as a stratification of the landscape of interest) "
-"with a visual map interpretation of samples to produce an area "
-"estimation."
+msgid "The aim of this stratified sampling design tool is to analyse results from a stratified sampling design that can be used for area estimates by combining a map (used as a stratification of the landscape of interest) with a visual map interpretation of samples to produce an area estimation."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:9
-msgid ""
-"The concept is derived from map accuracy assessment principles. "
-"Characterized frequency of errors (i.e. omission and commission) for each"
-" map class may be used to compute area estimates and estimate the "
-"uncertainties (i.e. confidence intervals) for the areas on each class."
+msgid "The concept is derived from map accuracy assessment principles. Characterized frequency of errors (i.e. omission and commission) for each map class may be used to compute area estimates and estimate the uncertainties (i.e. confidence intervals) for the areas on each class."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:11
-msgid ""
-"First, open the tool by selecting **Stratified Area Estimator - "
-"Analysis** in the **Apps** window."
+msgid "First, open the tool by selecting **Stratified Area Estimator - Analysis** in the **Apps** window."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:13
-msgid ""
-"You will land on the **Introduction** page which allows you to choose "
-"your language and provides background information on the tool. Note that "
-"**Reference and Documents** are in the same place as the **Design** tool."
-" The pages that contain the necessary steps for the workflow are on the "
-"left side of the screen and need to be completed sequentially."
+msgid "You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that **Reference and Documents** are in the same place as the **Design** tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -62,41 +47,23 @@ msgid "The stratified estimator analysis tool."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:19
-msgid ""
-"Select the **Inputs** page on the left side of the screen. You will see "
-"two data requirements under the **Select input files** section."
+msgid "Select the **Inputs** page on the left side of the screen. You will see two data requirements under the **Select input files** section."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:21
-msgid ""
-"**Reference data**:  This refers to the table that you classified and "
-"exported in the previous section. It will contain a column that "
-"identifies the map output class for each point, as well as a column for "
-"the value from the image interpreter (i.e. validation classification)."
+msgid "**Reference data**:  This refers to the table that you classified and exported in the previous section. It will contain a column that identifies the map output class for each point, as well as a column for the value from the image interpreter (i.e. validation classification)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:23
-msgid ""
-"For projects completed in Collect Earth Online (CEO): Select the "
-"**Reference data** button and navigate to the .csv file you downloaded "
-"from CEO and uploaded to SEPAL."
+msgid "For projects completed in Collect Earth Online (CEO): Select the **Reference data** button and navigate to the .csv file you downloaded from CEO and uploaded to SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:24
-msgid ""
-"For projects completed in the CEO-SEPAL bridge: -   Check that you are "
-"logged out of the CEO website. -   Paste the URL from your CEO-SEPAL "
-"bridge project into the field marked **CEO url**, or simply select the "
-"**Paste CEO url from clipboard** button. -   Select :code:`Import CEO "
-"project`, which will populate the input file for the **Reference data** "
-"as well as the column names."
+msgid "For projects completed in the CEO-SEPAL bridge: -   Check that you are logged out of the CEO website. -   Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO url**, or simply select the **Paste CEO url from clipboard** button. -   Select :code:`Import CEO project`, which will populate the input file for the **Reference data** as well as the column names."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:29
-msgid ""
-"**Area data**:  This is a .csv file that was automatically created during"
-" the Stratified Area Estimator – Design workflow. It contains area values"
-" for each mapped land cover class."
+msgid "**Area data**:  This is a .csv file that was automatically created during the Stratified Area Estimator – Design workflow. It contains area values for each mapped land cover class."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:31
@@ -104,11 +71,7 @@ msgid "Select the **Area data** button."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:32
-msgid ""
-"Open the folder starting with :code:`sae_design_`. As a reminder, if you "
-"exported your classification to the SEPAL workspace, the file will be in "
-"your SEPAL **Downloads** folder.  Within this folder, select "
-"**area_rast.csv** (see image below)."
+msgid "Open the folder starting with :code:`sae_design_`. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL **Downloads** folder.  Within this folder, select **area_rast.csv** (see image below)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -116,11 +79,7 @@ msgid "Adding the classification"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:39
-msgid ""
-"Next, you will need to adjust some parameters so that the tool recognizes"
-" the column names for your reference data and area data that contain the "
-"necessary information for your accuracy assessment. You should now see a "
-"populated **Required input** panel on the right side of the screen."
+msgid "Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** panel on the right side of the screen."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:41
@@ -128,10 +87,7 @@ msgid "Choose the column with the reference data information."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:45
-msgid ""
-"For projects completed in CEO: This will either be your question name or "
-"the new column name you created in Part 2 above. Here, it is "
-"COLLECTED_CLASS following the directions."
+msgid "For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here, it is COLLECTED_CLASS following the directions."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:46
@@ -155,18 +111,11 @@ msgid "Select the map area column from the area file—map_area."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:57
-msgid ""
-"Choose the class column from the area **file—map_code** or "
-"**map_edited_class** (the **map_code** has the numeric class codes, while"
-" the **map_edited_class** has the names you entered manually during the "
-"design phase)."
+msgid "Choose the class column from the area **file—map_code** or **map_edited_class** (the **map_code** has the numeric class codes, while the **map_edited_class** has the names you entered manually during the design phase)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:61
-msgid ""
-"For projects completed in CEO: Use **map_code** if you have a column in "
-"your reference data. If you use **map_edited_class** you must make sure "
-"that capitalization is correct."
+msgid "For projects completed in CEO: Use **map_code** if you have a column in your reference data. If you use **map_edited_class** you must make sure that capitalization is correct."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:62
@@ -174,11 +123,7 @@ msgid "For projects completed in CEO-SEPAL, use **map_code**."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:64
-msgid ""
-"You can add a **Display data** column to enable validation on-the-fly. "
-"You can choose any column from your CEO or CEO-SEPAL project. We "
-"recommend either your map class (e.g. PL_MAP_CLASS) or your reference "
-"data class (e.g. question name column). This example uses a CEO project."
+msgid "You can add a **Display data** column to enable validation on-the-fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column). This example uses a CEO project."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -186,13 +131,7 @@ msgid "The required input fields."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:71
-msgid ""
-"Once you have set these input parameters, select :code:`Check` on the "
-"left side of the window. This page will plot your samples on a world map."
-" Fix the location of your plots by specifying the correct columns to use "
-"as the X and Y coordinates in the map. Select the dropdown menus and "
-"choose the appropriate coordinate columns for X and Y coordinates (the X "
-"coordinate should be LON; the Y coordinate should be LAT)."
+msgid "Once you have set these input parameters, select :code:`Check` on the left side of the window. This page will plot your samples on a world map. Fix the location of your plots by specifying the correct columns to use as the X and Y coordinates in the map. Select the dropdown menus and choose the appropriate coordinate columns for X and Y coordinates (the X coordinate should be LON; the Y coordinate should be LAT)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:73
@@ -200,19 +139,11 @@ msgid "Next, select the :code:`Results` page on the left side of the screen."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:75
-msgid ""
-"The **Results** page will display a few different accuracy statistics, "
-"including a **Confusion matrix**, **Area estimates**, and a **Graph** of "
-"area estimates with confidence intervals. The **Confusion matrix** "
-"enables you to assess the agreement of the map and validation data sets."
+msgid "The **Results** page will display a few different accuracy statistics, including a **Confusion matrix**, **Area estimates**, and a **Graph** of area estimates with confidence intervals. The **Confusion matrix** enables you to assess the agreement of the map and validation data sets."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:77
-msgid ""
-"The rows represent your assignments while the columns represent the map "
-"classifiers. The diagonal represents the number of samples that are in "
-"agreement, while the off-diagonal cells represent points that were not "
-"mapped correctly (or potentially not interpreted correctly)."
+msgid "The rows represent your assignments while the columns represent the map classifiers. The diagonal represents the number of samples that are in agreement, while the off-diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -220,41 +151,23 @@ msgid "The Confusion matrix output by SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:84
-msgid ""
-"Typically you would have to create the confusion table yourself and "
-"calculate the accuracies; however, the SAE-Analysis tool does this for "
-"you."
+msgid "Typically you would have to create the confusion table yourself and calculate the accuracies; however, the SAE-Analysis tool does this for you."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:88
-msgid ""
-"If you completed previous sections, how does the SAE-Analysis tool's "
-"calculations compare with your own?"
+msgid "If you completed previous sections, how does the SAE-Analysis tool's calculations compare with your own?"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:89
-msgid ""
-"You can download confusion matrices as tabular data (.csv) using the "
-"button."
+msgid "You can download confusion matrices as tabular data (.csv) using the button."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:91
-msgid ""
-"Under **Area estimates**, the table shows you the area estimates, as well"
-" as producers' and users' accuracies, all of which were calculated from "
-"the error matrix and the class areas (sample weights) from the map "
-"product you are assessing."
+msgid "Under **Area estimates**, the table shows you the area estimates, as well as producers' and users' accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:93
-msgid ""
-"Estimations are broken up into simple and stratified estimates, each of "
-"which has its own confidence interval. In this exercise, we collected "
-"validation data using a stratified sample, so the values we need to use "
-"are the stratified random values. Note that all area estimates are in map"
-" units. You can change your desired **confidence interval** using the "
-"slider at the top of the panel. You can download area estimates as "
-"tabular data (.csv) using the button."
+msgid "Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise, we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** using the slider at the top of the panel. You can download area estimates as tabular data (.csv) using the button."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -262,25 +175,15 @@ msgid "The Area estimates screen in SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:99
-msgid ""
-"The **Graph** plots area estimates based on map pixel count, stratified "
-"random sample, simple random sample, unbiased stratified random, and "
-"direct estimate stratified random."
+msgid "The **Graph** plots area estimates based on map pixel count, stratified random sample, simple random sample, unbiased stratified random, and direct estimate stratified random."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:101
-msgid ""
-"In this exercise, we collected validation data using a stratified sample,"
-" so the values we need to use are the stratified random values. We also "
-"need to define unbiased stratified random and direct estimate stratified "
-"random."
+msgid "In this exercise, we collected validation data using a stratified sample, so the values we need to use are the stratified random values. We also need to define unbiased stratified random and direct estimate stratified random."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:105
-msgid ""
-"Note that the **Map pixel count** value differs from these stratified "
-"random sample estimates. This shows how using a map pixel count is a poor"
-" estimation of actual area."
+msgid "Note that the **Map pixel count** value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
@@ -288,9 +191,6 @@ msgid "A graph of the area estimates based on different sample designs."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:112
-msgid ""
-"For support, :doc:`ask the community <https://groups.google.com/g/sepal-"
-"users>`. .. custom-edit:: https://raw.githubusercontent.com/openforis"
-"/accuracy-assessment/master/aa_analysis/doc.rst"
+msgid "For support, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
