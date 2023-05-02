@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:44\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/disaster.po\n"
+"X-Crowdin-File-ID: 135\n"
+
+#: ../../source/modules/disaster.rst:2
+msgid "Disaster"
+msgstr ""
+
+#: ../../source/modules/disaster.rst:4
+msgid "List of the modules gathered under the Disaster tag:"
+msgstr ""
+
+#: ../../source/modules/disaster.rst:1
+msgid ":doc:`dwn/damage_proxy_map`"
+msgstr ""
+
+#: ../../source/modules/disaster.rst:1
+msgid "Damage estimation from Sentinel-1"
+msgstr ""
+
