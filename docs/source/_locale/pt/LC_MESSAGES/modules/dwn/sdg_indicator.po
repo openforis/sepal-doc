@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/modules/dwn/sdg_indicator.rst:2
 msgid "SDG 15.3.1"
@@ -23,18 +23,27 @@ msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:4
 msgid ""
-"SDG Indicator 15.3.1 measures the proportion of land that is degraded "
-"over the total land area. It is part of the SDG 15 which promotes “Life "
-"on Land” and target 15.3 states: ‘By 2030, combat desertification, "
-"restore degraded land and soil, including land affected by "
-"desertification, drought and floods, and strive to achieve a land "
-"degradation–neutral world.’"
+"The amount of degraded land relative to the total amount of land is "
+"measured by SDG Indicator 15.3.1. Target 15.3 of SDG 15 promotes \"Life "
+"on Land\" and reads as follows: Combat desertification by 2030, restore "
+"degraded land and soil, including those damaged by droughts, floods, and "
+"desertification, and work towards a world free of land degradation. To "
+"help achieve Target 15.3 of the Sustainable Development Goals, "
+"governments, international organisations, and civil society must take "
+"action to combat desertification and restore degraded land. Sustainable "
+"land management can be a significant measure that has a positive impact "
+"on degraded land. By taking such actions, we can ensure the preservation "
+"of biodiversity, promote sustainable land use, and create a sustainable "
+"future for generations to come. These actions can help improve the health"
+" of the environment and boost agricultural production in these areas, "
+"which will in turn ensure food security, reduce poverty, and promote "
+"social welfare."
 msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:6
 msgid ""
 "This module allows generating data for reporting on SDG indicator 15.3.1."
-" The SEPAL SDG indicator module follows SDG `good practice guidance "
+" The SEPAL SDG indicator module follows UNCCD `good practice guidance "
 "version 2 <https://www.unccd.int/sites/default/files/documents/2021-09"
 "/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__."
 msgstr ""
@@ -57,74 +66,82 @@ msgstr ""
 msgid "What is Land degradation?"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:16
+#: ../../source/modules/dwn/sdg_indicator.rst:15
 msgid ""
-"UNCCD defines land degradation as “\\ *the reduction or loss of the "
-"biological or economic productivity and complexity of rain-fed cropland, "
-"irrigated cropland, or range, pasture, forest and woodlands resulting "
-"from a combination of pressures, including land use and management "
-"practices”* (`UNCCD 1994, Article 1 "
-"<https://www.unccd.int/sites/default/files/relevant-"
-"links/2017-01/UNCCD_Convention_ENG_0.pdf>`__). This definition was "
-"adopted for the SDG 15.3.1"
+"The United Nations Convention to Combat Desertification (UNCCD) defines "
+"land degradation as \"\\ *the reduction or loss of the biological or "
+"economic productivity and complexity of rain-fed cropland, irrigated "
+"cropland, or range, pasture, forest, and woodlands resulting from a "
+"combination of pressures, including land use and management practises\"* "
+"(`UNCCD 1994, Article 1 <https://www.unccd.int/sites/default/files"
+"/relevant-links/2017-01/UNCCD_Convention_ENG_0.pdf>`__). This definition "
+"was adopted for the SDG 15.3.1"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:25
+#: ../../source/modules/dwn/sdg_indicator.rst:20
 msgid "UNCCD Good Practice Guidelines"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:27
+#: ../../source/modules/dwn/sdg_indicator.rst:22
 msgid ""
-"UNCCD published the first version of the `good practice guidance (GPG) "
-"<https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`__"
-" in 2017. A revised version of the `GPG "
+"In 2017, the UNCCD released the first version of the  `good practice "
+"guidance (GPG) "
+"<https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`__."
+" In 2021, a revised version of the `GPG "
 "<https://www.unccd.int/sites/default/files/documents/2021-09"
-"/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ was published in "
-"2021. The module is based on the latest version (version 2) of the GPG."
+"/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ was published. The "
+"module is based on the most recent version of the GPG (version 2). The "
+"GPG outlines a comprehensive approach to land degradation and suggests "
+"methods for restoring degraded land by providing guidance for "
+"governments, businesses, local communities, and other stakeholders."
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:26
+msgid "Approach"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:28
+msgid ""
+"The amount of land degradation for SDG Indicator 15.3.1 is measured using"
+" a combination of three sub-indicators. The results of the sub-indicators"
+" are put together using the one-out-all-out statistical principle to make"
+" a binary indicator that says the land in question is either \"degraded\""
+" or \"not degraded.\""
 msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:30
-msgid "Approach"
+msgid ""
+"The transition of land cover over time provides important insights into "
+"how land characteristics have changed."
 msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:32
 msgid ""
-"Under the definition adopted by UNCCD, the extent of land degradation for"
-" reporting on SDG Indicator 15.3.1 is calculated as a binary - "
-"degraded/not degraded - quantification using its three sub-indicators:"
+"Trends in land productivity measure important changes in productivity "
+"over time, whether they are positive, negative, or stay the same."
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:34
+msgid ""
+"Changes in above- and below-ground carbon stocks, which are currently "
+"shown by soil organic carbon (SOC) stocks."
 msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:36
-msgid "Trends in land cover"
-msgstr ""
-
-#: ../../source/modules/dwn/sdg_indicator.rst:38
-msgid "Trends in land productivity, and"
-msgstr ""
-
-#: ../../source/modules/dwn/sdg_indicator.rst:40
 msgid ""
-"Trends in carbon stocks (above and below ground), currently represented "
-"by soil organic carbon (SOC) stocks"
+"Any significant decrease or negative change in one of the three sub-"
+"indicators is regarded as land degradation."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:43
-msgid ""
-"Essentially, any significant reduction or negative change in one of the "
-"three sub-indicators is considered to comprise land degradation. That "
-"means the results of the sub-indicators are integrated using the one out "
-"all out statistical principle."
-msgstr ""
-
-#: ../../source/modules/dwn/sdg_indicator.rst:49
+#: ../../source/modules/dwn/sdg_indicator.rst:39
 msgid "Sub-indicators"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:52
+#: ../../source/modules/dwn/sdg_indicator.rst:42
 msgid "Productivity"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:54
+#: ../../source/modules/dwn/sdg_indicator.rst:44
 msgid ""
 "The land productivity sub-indicator measures the changes in land "
 "productivity. A continuous decrease in productivity for a long time "
@@ -132,15 +149,15 @@ msgid ""
 "used to detect such changes in productivity:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:57
+#: ../../source/modules/dwn/sdg_indicator.rst:47
 msgid "**Productivity trend**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:60
+#: ../../source/modules/dwn/sdg_indicator.rst:50
 msgid "It measures the trajectory of changes in productivity over time."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:62
+#: ../../source/modules/dwn/sdg_indicator.rst:52
 msgid ""
 "The `Mann–Kendall "
 "<https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>`__ "
@@ -148,39 +165,37 @@ msgid ""
 "(increasing or decreasing) of the productivity for a given time period."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:66
+#: ../../source/modules/dwn/sdg_indicator.rst:56
 msgid ""
 "To identify the scale and direction of the trend a five-level scale is "
 "proposed:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:69
+#: ../../source/modules/dwn/sdg_indicator.rst:59
 msgid ""
-"Z score < -1.96 ============= Degrading, as indicated by a significant "
-"decreasing trend"
+"Z score < -1.96 = Degrading, as indicated by a significant decreasing "
+"trend"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:72
-msgid "Z score < -1.28 AND ≥ -1.96 ============= Potentially Degrading"
+#: ../../source/modules/dwn/sdg_indicator.rst:62
+msgid "Z score < -1.28 AND ≥ -1.96 = Potentially Degrading"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:74
-#: ../../source/modules/dwn/sdg_indicator.rst:119
-msgid "Z score ≥ -1.28 AND ≤ 1.28 ============= No significant change"
+#: ../../source/modules/dwn/sdg_indicator.rst:64
+#: ../../source/modules/dwn/sdg_indicator.rst:109
+msgid "Z score ≥ -1.28 AND ≤ 1.28 = No significant change"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:76
-msgid "Z score > 1.28 AND ≤ 1.96 ============= Potentially Improving, or"
+#: ../../source/modules/dwn/sdg_indicator.rst:66
+msgid "Z score > 1.28 AND ≤ 1.96 = Potentially Improving, or"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:78
-msgid ""
-"Z score > 1.96 ============= Improving, as indicated by a significant "
-"increasing trend"
+#: ../../source/modules/dwn/sdg_indicator.rst:68
+msgid "Z score > 1.96 = Improving, as indicated by a significant increasing trend"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:81
-#: ../../source/modules/dwn/sdg_indicator.rst:128
+#: ../../source/modules/dwn/sdg_indicator.rst:71
+#: ../../source/modules/dwn/sdg_indicator.rst:118
 msgid ""
 "The area of the lowest negative z-score level (< -1.96) is considered "
 "degraded, the area between z-score -1.96 to 1.96 is considered stable and"
@@ -192,134 +207,211 @@ msgstr ""
 msgid "trend z score"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:88
+#: ../../source/modules/dwn/sdg_indicator.rst:78
 msgid "**Productivity state**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:91
+#: ../../source/modules/dwn/sdg_indicator.rst:81
 msgid ""
 "The state represents the current level of productivity in a land unit "
 "compared to the historical observations of productivity for that land "
 "unit over time. It is measured as follows:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:95
+#: ../../source/modules/dwn/sdg_indicator.rst:85
 msgid ""
-"\\mu ============= \\frac{\\sum_{n-15}^{n-3}x_n}{13} \\\\\n"
+"\\mu = \\frac{\\sum_{n-15}^{n-3}x_n}{13} \\\\\n"
 "\n"
-"\\sigma ============= \\sqrt{\\frac{\\sum_{n-15}^{n-3}(x_n-\\mu)^2}{13}}"
+"\\sigma = \\sqrt{\\frac{\\sum_{n-15}^{n-3}(x_n-\\mu)^2}{13}}"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:101
+#: ../../source/modules/dwn/sdg_indicator.rst:91
 msgid "Where, :math:`x` is the productivity and n is the year of analysis."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:103
+#: ../../source/modules/dwn/sdg_indicator.rst:93
 msgid "The mean productivity of the current period is given as:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:105
+#: ../../source/modules/dwn/sdg_indicator.rst:95
 msgid ""
-"\\bar{x} ============= \\frac{\\sum_{n-2}^nx_n}{3}\n"
+"\\bar{x} = \\frac{\\sum_{n-2}^nx_n}{3}\n"
 "\n"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:107
+#: ../../source/modules/dwn/sdg_indicator.rst:97
 msgid "and the :math:`z` score is given as"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:109
+#: ../../source/modules/dwn/sdg_indicator.rst:99
 msgid ""
-"z =============\\frac{\\bar{x}-\\mu}{\\frac{\\sigma}{\\sqrt{3}}}\n"
+"z =\\frac{\\bar{x}-\\mu}{\\frac{\\sigma}{\\sqrt{3}}}\n"
 "\n"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:111
+#: ../../source/modules/dwn/sdg_indicator.rst:101
 msgid "The five-level stats are as follows:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:113
-msgid "Z score < -1.96 ============= Degraded, showing a significantly"
+#: ../../source/modules/dwn/sdg_indicator.rst:103
+msgid "Z score < -1.96 = Degraded, showing a significantly"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:115
+#: ../../source/modules/dwn/sdg_indicator.rst:105
 msgid "lower mean in the recent years compared to the longer term"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:117
-msgid "Z score < -1.28 AND ≥ -1.96 ============= At risk of degrading"
+#: ../../source/modules/dwn/sdg_indicator.rst:107
+msgid "Z score < -1.28 AND ≥ -1.96 = At risk of degrading"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:121
-msgid "Z score > 1.28 AND ≤ 1.96 ============= Potentially Improving"
+#: ../../source/modules/dwn/sdg_indicator.rst:111
+msgid "Z score > 1.28 AND ≤ 1.96 = Potentially Improving"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:123
+#: ../../source/modules/dwn/sdg_indicator.rst:113
 msgid ""
-"Z score > 1.96 ============= Improving, as indicated by a significantly "
-"higher mean in recent years compared to the longer term."
+"Z score > 1.96 = Improving, as indicated by a significantly higher mean "
+"in recent years compared to the longer term."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:132
+#: ../../source/modules/dwn/sdg_indicator.rst:122
 msgid "Productivity performance"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:135
+#: ../../source/modules/dwn/sdg_indicator.rst:125
 msgid ""
 "Productivity performance indicates the level of local land productivity "
 "relative to other regions with similar productivity potential."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:138
+#: ../../source/modules/dwn/sdg_indicator.rst:128
 msgid ""
 "The maximum productivity index, :math:`NPP_{max}` value (90 :sup:`th` "
 "percentile) observed within the simillar ecoregion is campared the "
 "observed productivty value (observed NPP). It is given as:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:142
+#: ../../source/modules/dwn/sdg_indicator.rst:132
 msgid ""
-"\\text{performance} ============= \\frac{NPP_{observed}}{NPP_{max}}\n"
+"\\text{performance} = \\frac{NPP_{observed}}{NPP_{max}}\n"
 "\n"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:144
+#: ../../source/modules/dwn/sdg_indicator.rst:134
 msgid ""
 "The pixels with an NPP (vegetation index) less than 0.5 of the "
 ":math:`NPP_{max}` is considered as degraded."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:147
+#: ../../source/modules/dwn/sdg_indicator.rst:137
 msgid ""
 "Either of the following look-up tables can be used to calculate the sub-"
 "indicator:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:149
+#: ../../source/modules/dwn/sdg_indicator.rst:139
 msgid "Look-up table to combine productivity metrics"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:142
+msgid "Trend"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:142
+msgid "State"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:142
+msgid "Performance"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:142
+msgid "Productivity sub-indicator GPG v1        | GPG v 2"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:145
+#: ../../source/modules/dwn/sdg_indicator.rst:147
+#: ../../source/modules/dwn/sdg_indicator.rst:149
+#: ../../source/modules/dwn/sdg_indicator.rst:151
+#: ../../source/modules/dwn/sdg_indicator.rst:153
+#: ../../source/modules/dwn/sdg_indicator.rst:155
+#: ../../source/modules/dwn/sdg_indicator.rst:157
+#: ../../source/modules/dwn/sdg_indicator.rst:159
+#: ../../source/modules/dwn/sdg_indicator.rst:161
+#: ../../source/modules/dwn/sdg_indicator.rst:171
+msgid "Degrdaded"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:147
+#: ../../source/modules/dwn/sdg_indicator.rst:151
+#: ../../source/modules/dwn/sdg_indicator.rst:155
+#: ../../source/modules/dwn/sdg_indicator.rst:159
+#: ../../source/modules/dwn/sdg_indicator.rst:171
+msgid "Not degrdaded"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:149
+#: ../../source/modules/dwn/sdg_indicator.rst:151
+#: ../../source/modules/dwn/sdg_indicator.rst:157
+#: ../../source/modules/dwn/sdg_indicator.rst:159
+#: ../../source/modules/dwn/sdg_indicator.rst:161
+#: ../../source/modules/dwn/sdg_indicator.rst:163
+#: ../../source/modules/dwn/sdg_indicator.rst:165
+#: ../../source/modules/dwn/sdg_indicator.rst:167
+#: ../../source/modules/dwn/sdg_indicator.rst:173
+#: ../../source/modules/dwn/sdg_indicator.rst:175
+msgid "Stable"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:153
+#: ../../source/modules/dwn/sdg_indicator.rst:155
+#: ../../source/modules/dwn/sdg_indicator.rst:165
+#: ../../source/modules/dwn/sdg_indicator.rst:167
+#: ../../source/modules/dwn/sdg_indicator.rst:169
+#: ../../source/modules/dwn/sdg_indicator.rst:171
+#: ../../source/modules/dwn/sdg_indicator.rst:173
+#: ../../source/modules/dwn/sdg_indicator.rst:175
+#: ../../source/modules/dwn/sdg_indicator.rst:177
+#: ../../source/modules/dwn/sdg_indicator.rst:179
+msgid "Improved"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:163
+#: ../../source/modules/dwn/sdg_indicator.rst:167
+#: ../../source/modules/dwn/sdg_indicator.rst:175
+#: ../../source/modules/dwn/sdg_indicator.rst:179
+msgid "Not degraded"
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:165
+#: ../../source/modules/dwn/sdg_indicator.rst:169
+#: ../../source/modules/dwn/sdg_indicator.rst:173
+#: ../../source/modules/dwn/sdg_indicator.rst:177
+msgid "Degraded"
 msgstr ""
 
 #: ../../source/modules/dwn/sdg_indicator.rst:-1
 msgid "Look up table"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:197
+#: ../../source/modules/dwn/sdg_indicator.rst:187
 msgid "Available Dataset:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:200
+#: ../../source/modules/dwn/sdg_indicator.rst:190
 msgid "Sensors : MODIS, Landsat 4, 5, 7 and 8, Sentinel 2"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:202
+#: ../../source/modules/dwn/sdg_indicator.rst:192
 msgid "NPP metric: NDVI, EVI and MSVI, Terra NPP"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:205
+#: ../../source/modules/dwn/sdg_indicator.rst:195
 msgid "Land cover"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:207
+#: ../../source/modules/dwn/sdg_indicator.rst:197
 msgid ""
 "The land cover sub-indicator is based on transitions of land cover from "
 "the initial year to the final year. A transition matrix is used to mark "
@@ -329,22 +421,22 @@ msgid ""
 "local context and  settings."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:209
+#: ../../source/modules/dwn/sdg_indicator.rst:199
 msgid "Default land cover dataset: ESA CCI land cover (1992 - 2020)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:212
+#: ../../source/modules/dwn/sdg_indicator.rst:202
 msgid "**Transition matrix for custom land cover legends**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:214
+#: ../../source/modules/dwn/sdg_indicator.rst:204
 msgid ""
 "A custom transition matrix can be used in combination with the custom "
 "land cover legend. The matrix needs to be a comma-separated value(.csv) "
 "file in the following form:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:216
+#: ../../source/modules/dwn/sdg_indicator.rst:206
 msgid ""
 "The first two columns, excluding the first two cells "
 "(:math:`a_{31}...a_{n1} \\text{and } a_{32}...a_{n2}` ), must contain "
@@ -360,9 +452,9 @@ msgid ""
 "for degraded transitions."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:219
+#: ../../source/modules/dwn/sdg_indicator.rst:209
 msgid ""
-"\\mathbf{A} ============= \\left[ \\begin{matrix}%\n"
+"\\mathbf{A} = \\left[ \\begin{matrix}%\n"
 "a_{11}&a_{12}&a_{13}&\\cdots&a_{1n}\\\\\n"
 "a_{21}&a_{22}&a_{23}&\\cdots&a_{2n}\\\\\n"
 "a_{31}&a_{32}&a_{33}&\\cdots&a_{3n}\\\\\n"
@@ -371,7 +463,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:228
+#: ../../source/modules/dwn/sdg_indicator.rst:218
 msgid "An example of a custom transition matrix:"
 msgstr ""
 
@@ -379,33 +471,33 @@ msgstr ""
 msgid "custom transition matrix"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:234
+#: ../../source/modules/dwn/sdg_indicator.rst:224
 msgid "Soil Organic Carbon"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:236
+#: ../../source/modules/dwn/sdg_indicator.rst:226
 msgid "Based on the IPCC methodology (Chapter 6)."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:240
+#: ../../source/modules/dwn/sdg_indicator.rst:230
 msgid "Final indicator"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:242
+#: ../../source/modules/dwn/sdg_indicator.rst:232
 msgid ""
 "The final indicator is calculated based on the one out all out the "
 "principle."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:245
+#: ../../source/modules/dwn/sdg_indicator.rst:235
 msgid "Users Guide"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:248
+#: ../../source/modules/dwn/sdg_indicator.rst:238
 msgid "Select AOI"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:250
+#: ../../source/modules/dwn/sdg_indicator.rst:240
 msgid ""
 "SDG indicator 15.3.1 will be calculated based on the user inputs. The "
 "first mandatory input is the Area Of Interest (AOI). In this step you’ll "
@@ -413,45 +505,45 @@ msgid ""
 "layers or use your own datasets, the available options are:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:252
+#: ../../source/modules/dwn/sdg_indicator.rst:242
 msgid "**Predefined layers**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:254
+#: ../../source/modules/dwn/sdg_indicator.rst:244
 msgid "Country/province"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:255
+#: ../../source/modules/dwn/sdg_indicator.rst:245
 msgid "Administrative level 1"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:256
+#: ../../source/modules/dwn/sdg_indicator.rst:246
 msgid "Administrative level 2"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:258
+#: ../../source/modules/dwn/sdg_indicator.rst:248
 msgid "**Custom layers**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:260
+#: ../../source/modules/dwn/sdg_indicator.rst:250
 msgid "Vector file"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:261
+#: ../../source/modules/dwn/sdg_indicator.rst:251
 msgid "Drawn shapes on the map"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:262
+#: ../../source/modules/dwn/sdg_indicator.rst:252
 msgid "Google Earth Engine Asset"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:264
+#: ../../source/modules/dwn/sdg_indicator.rst:254
 msgid ""
 "After selecting the desired area, click over :guilabel:`Select these "
 "inputs` and the map shows up your selection."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:268
+#: ../../source/modules/dwn/sdg_indicator.rst:258
 msgid ""
 "You can only select one area of interest. In some cases, depending on the"
 " input data you could run out of resources in GEE."
@@ -461,11 +553,11 @@ msgstr ""
 msgid "AOI selection"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:274
+#: ../../source/modules/dwn/sdg_indicator.rst:264
 msgid "Parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:276
+#: ../../source/modules/dwn/sdg_indicator.rst:266
 msgid ""
 "To run the computation of SDG 15.3.1, several parameters need to be set. "
 "Please read the `Good practice guidelines "
@@ -479,19 +571,28 @@ msgstr ""
 msgid "parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:282
+#: ../../source/modules/dwn/sdg_indicator.rst:272
 msgid "Mandatory parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:284
+#: ../../source/modules/dwn/sdg_indicator.rst:274
 msgid ""
-"**Dates**: They are set in years and need to be in the correct order. The"
-" **end date** that you select will change the list of available sensors. "
-"You won't be able to choose sensors that were not launched by the **end "
-"date**"
+"**Assessment period**: are set in years and must be in the correct order."
+" The **Starting year** that you select will update the list of available "
+"sensors. You won't be able to choose sensors that were not launched by "
+"the **Ending year**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:286
+#: ../../source/modules/dwn/sdg_indicator.rst:277
+msgid ""
+"In a strictly technical sense, the productivity state metric assessment "
+"period should be longer than four years (historical plus the last three "
+"years). However, the assessment time frame for each of the sub-indicators"
+" and metrics is customizable in the :ref:`sdg-advanced-parameters` "
+"section."
+msgstr ""
+
+#: ../../source/modules/dwn/sdg_indicator.rst:279
 msgid ""
 "**Sensors**: After selecting the dates, all the available sensors within "
 "the timeframe will be available. You can deselect or re-select any sensor"
@@ -499,64 +600,64 @@ msgid ""
 "available within the selected timeframe."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:290
+#: ../../source/modules/dwn/sdg_indicator.rst:283
 msgid ""
 "Some of the sensors are incompatible with each other. Thus selecting "
 "Landsat, MODIS or Sentinel dataset in the **sensors** dropdown will "
 "deselect the others."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:292
+#: ../../source/modules/dwn/sdg_indicator.rst:285
 msgid ""
 "**Vegetation index**: The vegetation index will be used to compute the "
 "trend trajectory, default to *NDVI*."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:294
+#: ../../source/modules/dwn/sdg_indicator.rst:287
 msgid ""
 "**trajectory**: There are 3 options available to calculate the "
 "productivity trend that describes the trajectory of change, default to "
 "*productivity (VI) trend*."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:296
+#: ../../source/modules/dwn/sdg_indicator.rst:289
 msgid ""
 "**land ecosystem functional unit**: default to *Global Agro-Environmental"
 " Stratification (GAES)*, other available options are:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:298
+#: ../../source/modules/dwn/sdg_indicator.rst:291
 msgid ""
 "`Global Agro Ecological Zones (GAEZ), historical AEZ with 53 classes "
 "<https://gaez.fao.org/>`__"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:299
+#: ../../source/modules/dwn/sdg_indicator.rst:292
 msgid "`World Ecosystem <https://doi.org/10.1016/j.gecco.2019.e00860>`__"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:300
+#: ../../source/modules/dwn/sdg_indicator.rst:293
 msgid ""
 "`Global Homogeneous Response Units "
 "<https://doi.pangaea.de/10.1594/PANGAEA.775369>`__"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:301
+#: ../../source/modules/dwn/sdg_indicator.rst:294
 msgid ""
 "Calculate based on the land cover (`ESA CCI "
 "<https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-"
-"cover?tab=============overview>`__) and soil texture (`ISRIC "
+"cover?tab=overview>`__) and soil texture (`ISRIC "
 "<https://www.isric.org/explore/soilgrids>`__)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:303
+#: ../../source/modules/dwn/sdg_indicator.rst:296
 msgid ""
 "**climate regime**: default to *Per pixel based on global climate data* "
 "but you can also use a fixed value everywhere using a predefined climate "
 "regime in the dropdown menu or select a custom value on the slider"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:306
+#: ../../source/modules/dwn/sdg_indicator.rst:302
 msgid "Advanced parameters"
 msgstr ""
 
@@ -564,23 +665,26 @@ msgstr ""
 msgid "advanced parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:312
+#: ../../source/modules/dwn/sdg_indicator.rst:308
 msgid "Productivity parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:314
+#: ../../source/modules/dwn/sdg_indicator.rst:310
 msgid ""
 "Assessment periods for all the metrics can be specified individually. "
 "Keep them blank to use the Start and End dates for the respective metric."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:318
+#: ../../source/modules/dwn/sdg_indicator.rst:314
 msgid ""
-"If you only specify either the start or the end year of a particular "
-"metric, the module will ignore the value."
+"If the Starting  and Ending years you've chosen for your assessment "
+"period aren't at least four years apart, then you'll also need to choose "
+"an assessment period for the productivity state that's longer than that. "
+"The module will disregard the value of a particular metric if you only "
+"specify the start or end year."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:320
+#: ../../source/modules/dwn/sdg_indicator.rst:316
 msgid ""
 "The default productivity look-up table is set to GPG version 2. You could"
 " also select GPG version 1. Please refer to the approach section for the "
@@ -594,15 +698,15 @@ msgstr ""
 msgid "productivity parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:327
+#: ../../source/modules/dwn/sdg_indicator.rst:323
 msgid "Land cover parameters:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:329
+#: ../../source/modules/dwn/sdg_indicator.rst:325
 msgid "**Water body data**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:331
+#: ../../source/modules/dwn/sdg_indicator.rst:327
 msgid ""
 "The default water body data is set to JRC water body seasonality data "
 "with a seasonality of 8 months. An :code:`ee.Image` can be used for the "
@@ -617,7 +721,7 @@ msgstr ""
 msgid "water body"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:338
+#: ../../source/modules/dwn/sdg_indicator.rst:334
 msgid ""
 "The default land cover is set to the ESA CCI land cover data. The tool "
 "will use the CCI land cover system of the **start date** and the **end "
@@ -629,15 +733,15 @@ msgid ""
 "computation with the specified land cover data."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:342
+#: ../../source/modules/dwn/sdg_indicator.rst:338
 msgid ""
 "If you would like to use the default land cover transition matrix, the "
 "custom dataset needs to be classified in the UNCCD land cover categories."
-" Please refer to :ref:`sdg_reclassify` to know how to reclassify the "
+" Please refer to :ref:`sdg-reclassify` to know how to reclassify the "
 "local dataset into different classification systems."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:344
+#: ../../source/modules/dwn/sdg_indicator.rst:340
 msgid ""
 "To compute the land cover sub-indicator with the UNCCD land cover "
 "categories, the user can modify the default transition matrix. Based on "
@@ -647,17 +751,17 @@ msgid ""
 "change in terms of land condition (S)."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:346
+#: ../../source/modules/dwn/sdg_indicator.rst:342
 msgid ""
 "The rows stand for the initial classes and the columns for the final "
 "classes."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:353
+#: ../../source/modules/dwn/sdg_indicator.rst:349
 msgid "**Custom land cover transition matrix**"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:355
+#: ../../source/modules/dwn/sdg_indicator.rst:351
 msgid ""
 "If you would like to use a custom land cover transition matrix, select "
 "the :guilabel:`Yes` radio button and select the CSV file. Use `this "
@@ -666,7 +770,7 @@ msgid ""
 "prepare a matrix for your land cover map."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:359
+#: ../../source/modules/dwn/sdg_indicator.rst:355
 msgid ""
 "The module varifies the land cover pixel values with the values mentioned"
 " in the transition matrix. If there is/are missing class/es in your land "
@@ -674,15 +778,15 @@ msgid ""
 "exact matching of pixel values."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:362
+#: ../../source/modules/dwn/sdg_indicator.rst:358
 msgid "SOC parameters:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:365
+#: ../../source/modules/dwn/sdg_indicator.rst:361
 msgid "Launch the computation"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:367
+#: ../../source/modules/dwn/sdg_indicator.rst:363
 msgid ""
 "Once all the parameters are set you can run the analysis by clicking on "
 ":guilabel:`Load the indicators`. It takes time to calculate all the sub-"
@@ -694,11 +798,11 @@ msgstr ""
 msgid "validate data"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:375
+#: ../../source/modules/dwn/sdg_indicator.rst:371
 msgid "Results"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:377
+#: ../../source/modules/dwn/sdg_indicator.rst:373
 msgid ""
 "The results are displayed to the end user in the next panel. On the left,"
 " the user will find the transition and the distribution charts on the "
@@ -706,13 +810,13 @@ msgid ""
 "displayed."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:379
+#: ../../source/modules/dwn/sdg_indicator.rst:375
 msgid ""
 "Click on the :guilabel:`donwload` button to export all the layers, charts"
 " and tables to your SEPAL folder."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:381
+#: ../../source/modules/dwn/sdg_indicator.rst:377
 msgid ""
 "The results are gathered in the :code:`module_results/sdg_indicators/` "
 "folder. In this folder a folder is set for each AOI (e.g. :code:`SGP/` "
@@ -722,14 +826,14 @@ msgid ""
 "index>_<lc units>_<custom LC>_<climate>`."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:385
+#: ../../source/modules/dwn/sdg_indicator.rst:381
 msgid ""
 "As an example for computation used in this documentation, the results "
 "were saved in : "
 ":code:`module_results/sdg_indicator/SGP/2015_2019_modis_ndvi_calculate_default_cr0/`"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:392
+#: ../../source/modules/dwn/sdg_indicator.rst:388
 msgid ""
 "The results are interactive, don't hesitate to interact with both the "
 "charts and the map layers using the widgets."
@@ -739,11 +843,11 @@ msgstr ""
 msgid "result interaction"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:398
+#: ../../source/modules/dwn/sdg_indicator.rst:394
 msgid "Transition graph"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:400
+#: ../../source/modules/dwn/sdg_indicator.rst:396
 msgid ""
 "This chart is the `Sankey diagram "
 "<https://en.wikipedia.org/wiki/Sankey_diagram>`__ of the land cover "
@@ -755,11 +859,11 @@ msgstr ""
 msgid "transition graph"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:408
+#: ../../source/modules/dwn/sdg_indicator.rst:404
 msgid "Distribution graph"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:410
+#: ../../source/modules/dwn/sdg_indicator.rst:406
 msgid ""
 "This chart displays the distribution of the SDG 15.3.1 indicator by land "
 "cover classes."
@@ -769,39 +873,39 @@ msgstr ""
 msgid "distribution chart"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:418
+#: ../../source/modules/dwn/sdg_indicator.rst:414
 msgid "Interactive map"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:420
+#: ../../source/modules/dwn/sdg_indicator.rst:416
 msgid "Following layers are available on the interactive map:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:422
+#: ../../source/modules/dwn/sdg_indicator.rst:418
 msgid "Final indicator SDG 15.3.1"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:423
+#: ../../source/modules/dwn/sdg_indicator.rst:419
 msgid "land cover sub-indicator"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:424
+#: ../../source/modules/dwn/sdg_indicator.rst:420
 msgid "Productivity sub-indicator"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:425
+#: ../../source/modules/dwn/sdg_indicator.rst:421
 msgid "Land cover sub-indicator"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:426
+#: ../../source/modules/dwn/sdg_indicator.rst:422
 msgid "SOC sub-indicator"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:427
+#: ../../source/modules/dwn/sdg_indicator.rst:423
 msgid "Land cover maps, and"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:428
+#: ../../source/modules/dwn/sdg_indicator.rst:424
 msgid "AOI"
 msgstr ""
 
@@ -809,11 +913,11 @@ msgstr ""
 msgid "lc_map"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:440
+#: ../../source/modules/dwn/sdg_indicator.rst:436
 msgid "Reclassify"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:444
+#: ../../source/modules/dwn/sdg_indicator.rst:440
 msgid ""
 "To reclassify a land cover data, it needs to be available to the user as "
 "a :code:`ee.Image` in GEE."
@@ -823,58 +927,58 @@ msgstr ""
 msgid "reclassification"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:450
+#: ../../source/modules/dwn/sdg_indicator.rst:446
 msgid ""
 "In order to use a custom land cover map, the user needs to first "
 "reclassify to a classification system."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:452
+#: ../../source/modules/dwn/sdg_indicator.rst:448
 msgid ""
 "First, select the asset in the combobox. It will be part of the dropdown "
 "value if the asset is part of the user's asset list. If that's not the "
 "case simply set the name of the asset in the TextField."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:455
+#: ../../source/modules/dwn/sdg_indicator.rst:451
 msgid "Then select the band that will be reclassified."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:457
+#: ../../source/modules/dwn/sdg_indicator.rst:453
 msgid ""
 "For the default UNCCD land cover categories,  values between 10 to 70 are"
 " used to describe the following land cover classes:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:459
+#: ../../source/modules/dwn/sdg_indicator.rst:455
 msgid "Tree-covered areas (10)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:460
+#: ../../source/modules/dwn/sdg_indicator.rst:456
 msgid "Grassland (20)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:461
+#: ../../source/modules/dwn/sdg_indicator.rst:457
 msgid "Cropland (30)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:462
+#: ../../source/modules/dwn/sdg_indicator.rst:458
 msgid "Wetland (40)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:463
+#: ../../source/modules/dwn/sdg_indicator.rst:459
 msgid "Artificial surface (50)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:464
+#: ../../source/modules/dwn/sdg_indicator.rst:460
 msgid "Other lands (60)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:465
+#: ../../source/modules/dwn/sdg_indicator.rst:461
 msgid "Water bodies (70)"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:467
+#: ../../source/modules/dwn/sdg_indicator.rst:463
 msgid ""
 "These categories are specified in the default UNCCD classification "
 "system. For a custom legend/classification system, upload a matrix with "
@@ -882,189 +986,189 @@ msgid ""
 "colour code HEX format. An example is given below:"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:470
+#: ../../source/modules/dwn/sdg_indicator.rst:466
 msgid "21"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:470
+#: ../../source/modules/dwn/sdg_indicator.rst:466
 msgid "Rural settlement"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:470
+#: ../../source/modules/dwn/sdg_indicator.rst:466
 msgid "#005CE6"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:472
+#: ../../source/modules/dwn/sdg_indicator.rst:468
 msgid "22"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:472
+#: ../../source/modules/dwn/sdg_indicator.rst:468
 msgid "Mixed plantation"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:472
+#: ../../source/modules/dwn/sdg_indicator.rst:468
 msgid "#FFFFBE"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:474
+#: ../../source/modules/dwn/sdg_indicator.rst:470
 msgid "23"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:474
+#: ../../source/modules/dwn/sdg_indicator.rst:470
 msgid "Urban settlement"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:474
+#: ../../source/modules/dwn/sdg_indicator.rst:470
 msgid "#FFAA00"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:476
+#: ../../source/modules/dwn/sdg_indicator.rst:472
 msgid "24"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:476
+#: ../../source/modules/dwn/sdg_indicator.rst:472
 msgid "Mines"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:476
+#: ../../source/modules/dwn/sdg_indicator.rst:472
 msgid "#F2D9BF"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:478
+#: ../../source/modules/dwn/sdg_indicator.rst:474
 msgid "25"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:478
+#: ../../source/modules/dwn/sdg_indicator.rst:474
 msgid "Bare soil"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:478
+#: ../../source/modules/dwn/sdg_indicator.rst:474
 msgid "#E6E600"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:480
+#: ../../source/modules/dwn/sdg_indicator.rst:476
 msgid "26"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:480
+#: ../../source/modules/dwn/sdg_indicator.rst:476
 msgid "Rivers"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:480
+#: ../../source/modules/dwn/sdg_indicator.rst:476
 msgid "#2699CC"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:482
+#: ../../source/modules/dwn/sdg_indicator.rst:478
 msgid "27"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:482
+#: ../../source/modules/dwn/sdg_indicator.rst:478
 msgid "Lake"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:482
+#: ../../source/modules/dwn/sdg_indicator.rst:478
 msgid "#40B3FF"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:484
+#: ../../source/modules/dwn/sdg_indicator.rst:480
 msgid "28"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:484
+#: ../../source/modules/dwn/sdg_indicator.rst:480
 msgid "Mangrove"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:484
+#: ../../source/modules/dwn/sdg_indicator.rst:480
 msgid "#5C8944"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:486
+#: ../../source/modules/dwn/sdg_indicator.rst:482
 msgid "29"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:486
+#: ../../source/modules/dwn/sdg_indicator.rst:482
 msgid "Forest"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:486
+#: ../../source/modules/dwn/sdg_indicator.rst:482
 msgid "#B3FF80"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:488
+#: ../../source/modules/dwn/sdg_indicator.rst:484
 msgid "30"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:488
+#: ../../source/modules/dwn/sdg_indicator.rst:484
 msgid "Cropland"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:488
+#: ../../source/modules/dwn/sdg_indicator.rst:484
 msgid "#704489"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:490
+#: ../../source/modules/dwn/sdg_indicator.rst:486
 msgid "31"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:490
+#: ../../source/modules/dwn/sdg_indicator.rst:486
 msgid "Grassland"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:490
+#: ../../source/modules/dwn/sdg_indicator.rst:486
 msgid "#99FF00"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:492
+#: ../../source/modules/dwn/sdg_indicator.rst:488
 msgid "32"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:492
+#: ../../source/modules/dwn/sdg_indicator.rst:488
 msgid "Orchard"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:492
+#: ../../source/modules/dwn/sdg_indicator.rst:488
 msgid "#1DBD9C"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:498
+#: ../../source/modules/dwn/sdg_indicator.rst:494
 msgid ""
 "This band need to be a categorical band, the reclassification sytem won't"
 " work with continuous values."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:500
+#: ../../source/modules/dwn/sdg_indicator.rst:496
 msgid ""
 "Click on :guilabel:`get table`. This will generate a table with all the "
 "categorical values of the asset. In the second column the user can set "
 "the destination value."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:504
+#: ../../source/modules/dwn/sdg_indicator.rst:500
 msgid ""
 "If the destination class is not set, the class will be interpreded as "
 "no_ata i.e. 0;"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:505
+#: ../../source/modules/dwn/sdg_indicator.rst:501
 msgid ""
 "click on :guilabel:`save` to save the reclassification matrix. It's "
 "useful when the baseline and target map are in the same classification "
 "system;"
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:506
+#: ../../source/modules/dwn/sdg_indicator.rst:502
 msgid ""
 "click on :guilabel:`import` to import a previously saved reclassification"
 " matrix."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:509
+#: ../../source/modules/dwn/sdg_indicator.rst:505
 msgid ""
 "Click on :guilabel:`reclassify` to export the map in GEE using the IPCC "
 "classification system. The export can be monitored in GEE."
 msgstr ""
 
-#: ../../source/modules/dwn/sdg_indicator.rst:511
+#: ../../source/modules/dwn/sdg_indicator.rst:507
 msgid ""
 "The following GIF will show you the full reclassification process with an"
 " simple example."
@@ -1073,4 +1177,193 @@ msgstr ""
 #: ../../source/modules/dwn/sdg_indicator.rst:-1
 msgid "reclassification demo"
 msgstr ""
+
+#~ msgid ""
+#~ "SDG Indicator 15.3.1 measures the "
+#~ "proportion of land that is degraded "
+#~ "over the total land area. It is"
+#~ " part of the SDG 15 which "
+#~ "promotes “Life on Land” and target "
+#~ "15.3 states: ‘By 2030, combat "
+#~ "desertification, restore degraded land and "
+#~ "soil, including land affected by "
+#~ "desertification, drought and floods, and "
+#~ "strive to achieve a land "
+#~ "degradation–neutral world.’"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module allows generating data for"
+#~ " reporting on SDG indicator 15.3.1. "
+#~ "The SEPAL SDG indicator module follows"
+#~ " SDG `good practice guidance version "
+#~ "2 <https://www.unccd.int/sites/default/files/documents/2021-09"
+#~ "/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "UNCCD defines land degradation as “\\"
+#~ " *the reduction or loss of the "
+#~ "biological or economic productivity and "
+#~ "complexity of rain-fed cropland, "
+#~ "irrigated cropland, or range, pasture, "
+#~ "forest and woodlands resulting from a"
+#~ " combination of pressures, including land"
+#~ " use and management practices”* (`UNCCD "
+#~ "1994, Article 1 "
+#~ "<https://www.unccd.int/sites/default/files/relevant-"
+#~ "links/2017-01/UNCCD_Convention_ENG_0.pdf>`__). This "
+#~ "definition was adopted for the SDG "
+#~ "15.3.1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "UNCCD published the first version of "
+#~ "the `good practice guidance (GPG) "
+#~ "<https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`__"
+#~ " in 2017. A revised version of "
+#~ "the `GPG "
+#~ "<https://www.unccd.int/sites/default/files/documents/2021-09"
+#~ "/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ was "
+#~ "published in 2021. The module is "
+#~ "based on the latest version (version "
+#~ "2) of the GPG."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Under the definition adopted by UNCCD,"
+#~ " the extent of land degradation for"
+#~ " reporting on SDG Indicator 15.3.1 is"
+#~ " calculated as a binary - "
+#~ "degraded/not degraded - quantification using"
+#~ " its three sub-indicators:"
+#~ msgstr ""
+
+#~ msgid "Trends in land cover"
+#~ msgstr ""
+
+#~ msgid "Trends in land productivity, and"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Trends in carbon stocks (above and "
+#~ "below ground), currently represented by "
+#~ "soil organic carbon (SOC) stocks"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Essentially, any significant reduction or "
+#~ "negative change in one of the "
+#~ "three sub-indicators is considered to"
+#~ " comprise land degradation. That means "
+#~ "the results of the sub-indicators "
+#~ "are integrated using the one out "
+#~ "all out statistical principle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Z score < -1.96 ============= Degrading,"
+#~ " as indicated by a significant "
+#~ "decreasing trend"
+#~ msgstr ""
+
+#~ msgid "Z score < -1.28 AND ≥ -1.96 ============= Potentially Degrading"
+#~ msgstr ""
+
+#~ msgid "Z score ≥ -1.28 AND ≤ 1.28 ============= No significant change"
+#~ msgstr ""
+
+#~ msgid "Z score > 1.28 AND ≤ 1.96 ============= Potentially Improving, or"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Z score > 1.96 ============= Improving,"
+#~ " as indicated by a significant "
+#~ "increasing trend"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\\mu ============= \\frac{\\sum_{n-15}^{n-3}x_n}{13} \\\\\n"
+#~ "\n"
+#~ "\\sigma ============= "
+#~ "\\sqrt{\\frac{\\sum_{n-15}^{n-3}(x_n-\\mu)^2}{13}}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\\bar{x} ============= \\frac{\\sum_{n-2}^nx_n}{3}\n"
+#~ "\n"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "z =============\\frac{\\bar{x}-\\mu}{\\frac{\\sigma}{\\sqrt{3}}}\n"
+#~ "\n"
+#~ msgstr ""
+
+#~ msgid "Z score < -1.96 ============= Degraded, showing a significantly"
+#~ msgstr ""
+
+#~ msgid "Z score < -1.28 AND ≥ -1.96 ============= At risk of degrading"
+#~ msgstr ""
+
+#~ msgid "Z score > 1.28 AND ≤ 1.96 ============= Potentially Improving"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Z score > 1.96 ============= Improving,"
+#~ " as indicated by a significantly "
+#~ "higher mean in recent years compared "
+#~ "to the longer term."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\\text{performance} ============= \\frac{NPP_{observed}}{NPP_{max}}\n"
+#~ "\n"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\\mathbf{A} ============= \\left[ \\begin{matrix}%\n"
+#~ "a_{11}&a_{12}&a_{13}&\\cdots&a_{1n}\\\\\n"
+#~ "a_{21}&a_{22}&a_{23}&\\cdots&a_{2n}\\\\\n"
+#~ "a_{31}&a_{32}&a_{33}&\\cdots&a_{3n}\\\\\n"
+#~ "\\vdots&\\vdots&\\vdots&\\ddots&\\vdots\\\\\n"
+#~ "a_{n1}&a_{n2}&a_{n3}&\\cdots&a_{nn}\\end{matrix}\\right]\n"
+#~ "\n"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Dates**: They are set in years "
+#~ "and need to be in the correct "
+#~ "order. The **end date** that you "
+#~ "select will change the list of "
+#~ "available sensors. You won't be able "
+#~ "to choose sensors that were not "
+#~ "launched by the **end date**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Calculate based on the land cover "
+#~ "(`ESA CCI "
+#~ "<https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-"
+#~ "land-cover?tab=============overview>`__) and soil "
+#~ "texture (`ISRIC "
+#~ "<https://www.isric.org/explore/soilgrids>`__)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you only specify either the "
+#~ "start or the end year of a "
+#~ "particular metric, the module will "
+#~ "ignore the value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you would like to use the "
+#~ "default land cover transition matrix, "
+#~ "the custom dataset needs to be "
+#~ "classified in the UNCCD land cover "
+#~ "categories. Please refer to "
+#~ ":ref:`sdg_reclassify` to know how to "
+#~ "reclassify the local dataset into "
+#~ "different classification systems."
+#~ msgstr ""
 

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/modules/dwn/sepafe.rst:2
 msgid "SEPAFE"
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:17
 msgid ""
-"The settings panel can be open/closed by clicking on the settings "
-":btn:`<fas fa-bars>` button."
+"The settings panel can be open/closed by clicking on the settings :btn"
+":`<fa-solid fa-bars>` button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:20
@@ -198,13 +198,14 @@ msgstr ""
 #: ../../source/modules/dwn/sepafe.rst:70
 msgid ""
 "You can activate/deactivate the firee navigation widget by clicking over "
-"the fires :btn:`<fas fa-fire>` button."
+"the fires :btn:`<fa-solid fa-fire>` button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:72
 msgid ""
 "Planet parameters can be changed at any time, to refresh the results from"
-" the current alert click over the refresh :btn:`<fas fa-sync-alt>` icon."
+" the current alert click over the refresh :btn:`<fa-solid fa-rotate>` "
+"icon."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:75
@@ -213,8 +214,8 @@ msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:77
 msgid ""
-"Click over any point in the map and use the refresh icon :btn:`<fas fa-"
-"sync-alt>` to retrieve planet imagery using the parameters set in the "
+"Click over any point in the map and use the refresh icon :btn:`<fa-solid "
+"fa-rotate>` to retrieve planet imagery using the parameters set in the "
 "step 1, the module will use the current acquisition alert date to search "
 "the images. This option is useful when you want to explore surrounding "
 "areas close to the alert point but without alerts to display."
@@ -225,4 +226,37 @@ msgid ""
 "For use this option you will require a valid planet level 2 key, "
 "otherwise you will get an error message displayed in the state bar."
 msgstr ""
+
+#~ msgid ""
+#~ "The settings panel can be open/closed"
+#~ " by clicking on the settings "
+#~ ":btn:`<fas fa-bars>` button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can activate/deactivate the firee "
+#~ "navigation widget by clicking over the"
+#~ " fires :btn:`<fas fa-fire>` button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Planet parameters can be changed at "
+#~ "any time, to refresh the results "
+#~ "from the current alert click over "
+#~ "the refresh :btn:`<fas fa-sync-alt>` "
+#~ "icon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click over any point in the map"
+#~ " and use the refresh icon :btn:`<fas"
+#~ " fa-sync-alt>` to retrieve planet "
+#~ "imagery using the parameters set in "
+#~ "the step 1, the module will use"
+#~ " the current acquisition alert date "
+#~ "to search the images. This option "
+#~ "is useful when you want to explore"
+#~ " surrounding areas close to the alert"
+#~ " point but without alerts to display."
+#~ msgstr ""
 

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/modules/dwn/clip-time-series.rst:2
 msgid "Clip time series"
@@ -293,8 +293,8 @@ msgstr ""
 
 #: ../../source/modules/dwn/clip-time-series.rst:132
 msgid ""
-"Each image needs to be downloaded to SEPAL so many images "
-"================> longer compuation time"
+"Each image needs to be downloaded to SEPAL so many images => longer "
+"compuation time"
 msgstr ""
 
 #: ../../source/modules/dwn/clip-time-series.rst:134
@@ -405,4 +405,10 @@ msgstr ""
 #: ../../source/modules/dwn/clip-time-series.rst:170
 msgid "results"
 msgstr ""
+
+#~ msgid ""
+#~ "Each image needs to be downloaded "
+#~ "to SEPAL so many images "
+#~ "================> longer compuation time"
+#~ msgstr ""
 

@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2023, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/modules/restoration.rst:2
+msgid "Restoration"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:4
+msgid "List of the modules gathered under the Restoration tag:"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/bfast_gpu`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid "GPU implementation of the BFAST algorithm to analyse time series"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/clip-time-series`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid "Generate a .pdf file containing time series clip on a given set of points"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/cusum`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ""
+"Spatially cumulative sum algorithm for change detection within univariate"
+" time-series (GPU powered)"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/gwb`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid "A suite of various geospatial image analysis tools"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/sdg_indicator`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid "Monitor SDG indicators at plot level"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/sepal_mgci`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ""
+"Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-"
+"regional scale"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/sepal_pysmm`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ""
+"Tool for mapping surface soil moisture based on Copernicus Sentinel-1 "
+"intensity data."
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid ":doc:`dwn/seplan`"
+msgstr ""
+
+#: ../../source/modules/restoration.rst:1
+msgid "Restoration planning tool using a weighted-sum approach"
+msgstr ""
+

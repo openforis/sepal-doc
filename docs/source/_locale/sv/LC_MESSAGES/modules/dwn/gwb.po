@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/modules/dwn/gwb.rst:2
 msgid "GuidosToolbox Workbench"
@@ -101,14 +101,15 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:41
 msgid ""
 "On the left side you will find a navigation drawer that you can open and "
-"close using :btn:`<fas fa-ellipsis-v>` (topleft side of the window)."
+"close using :btn:`<fa-solid fa-ellipsis-vertical>` (topleft side of the "
+"window)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:45
 msgid ""
 "On small devices such as tablet or phones, the navigation drawer will be "
-"hidden by default. Click on :btn:`<fas fa-ellipsis-v>` (topleft side of "
-"the window) to show the full extent of the app."
+"hidden by default. Click on :btn:`<fa-solid fa-ellipsis-vertical>` "
+"(topleft side of the window) to show the full extent of the app."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:57
@@ -792,7 +793,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:642 ../../source/modules/dwn/gwb.rst:885
-msgid "obs_scale === (pixres * kdim)^2 / 10000"
+msgid "obs_scale = (pixres * kdim)^2 / 10000"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:646 ../../source/modules/dwn/gwb.rst:889
@@ -920,8 +921,8 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:773
 msgid ""
 "Select if you want to show transition pixels, where connecting pathways "
-"go through edges/perforations (transition===1 (true), default) or not "
-"(transition===0)."
+"go through edges/perforations (transition=1 (true), default) or not "
+"(transition=0)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:776
@@ -931,7 +932,7 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:778
 msgid ""
 "Select if you want to distinguish MSPA classes and Holes laying within "
-"Core objects (intext===1 (true), default) or not (intext===0)."
+"Core objects (intext=1 (true), default) or not (intext=0)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:781
@@ -941,9 +942,9 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:783
 #, python-format
 msgid ""
-"Select if you want to process with minimum RAM usage (disk===0 (false), "
-"default) or not (disk===1 (true) requires 20% less RAM but +40% "
-"processing time)."
+"Select if you want to process with minimum RAM usage (disk=0 (false), "
+"default) or not (disk=1 (true) requires 20% less RAM but +40% processing "
+"time)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:786
@@ -952,8 +953,8 @@ msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:788
 msgid ""
-"Select if you want to calculate summary statistics (statistics===0 "
-"(false), default) or (statistics===1 (true) +10% processing time)"
+"Select if you want to calculate summary statistics (statistics=0 (false),"
+" default) or (statistics=1 (true) +10% processing time)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:799
@@ -1052,7 +1053,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:916
-msgid "For all output types, :math:`rounded byte === (float precision * 254) + 1`"
+msgid "For all output types, :math:`rounded byte = (float precision * 254) + 1`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:918
@@ -1474,4 +1475,59 @@ msgid ""
 "Here is the result of the computation using SPA2 (2 classes) on the "
 ":code:`example.tif` file."
 msgstr ""
+
+#~ msgid ""
+#~ "On the left side you will find "
+#~ "a navigation drawer that you can "
+#~ "open and close using :btn:`<fas fa-"
+#~ "ellipsis-v>` (topleft side of the "
+#~ "window)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On small devices such as tablet or"
+#~ " phones, the navigation drawer will "
+#~ "be hidden by default. Click on "
+#~ ":btn:`<fas fa-ellipsis-v>` (topleft side "
+#~ "of the window) to show the full"
+#~ " extent of the app."
+#~ msgstr ""
+
+#~ msgid "obs_scale === (pixres * kdim)^2 / 10000"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select if you want to show "
+#~ "transition pixels, where connecting pathways"
+#~ " go through edges/perforations (transition===1"
+#~ " (true), default) or not (transition===0)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select if you want to distinguish "
+#~ "MSPA classes and Holes laying within "
+#~ "Core objects (intext===1 (true), default) "
+#~ "or not (intext===0)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select if you want to process with"
+#~ " minimum RAM usage (disk===0 (false), "
+#~ "default) or not (disk===1 (true) "
+#~ "requires 20% less RAM but +40% "
+#~ "processing time)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select if you want to calculate "
+#~ "summary statistics (statistics===0 (false), "
+#~ "default) or (statistics===1 (true) +10% "
+#~ "processing time)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For all output types, :math:`rounded "
+#~ "byte === (float precision * 254) +"
+#~ " 1`"
+#~ msgstr ""
 
