@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:44\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,73 +20,73 @@ msgstr ""
 
 #: ../../source/modules/restoration.rst:2
 msgid "Restoration"
-msgstr ""
+msgstr "Restauration"
 
 #: ../../source/modules/restoration.rst:4
 msgid "List of the modules gathered under the Restoration tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Restauration :"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/bfast_gpu`"
-msgstr ""
+msgstr ":doc:`dwn/bfast_gpu`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "GPU implementation of the BFAST algorithm to analyse time series"
-msgstr ""
+msgstr "Implémentation GPU de l'algorithme BFAST pour analyser la série temporelle"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/clip-time-series`"
-msgstr ""
+msgstr ":doc:`dwn/clip-time-series`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Generate a .pdf file containing time series clip on a given set of points"
-msgstr ""
+msgstr "Générer un fichier .pdf contenant des vignettes de la série temporelle sur un ensemble de points donné"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/cusum`"
-msgstr ""
+msgstr ":doc:`dwn/cusum`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Spatially cumulative sum algorithm for change detection within univariate time-series (GPU powered)"
-msgstr ""
+msgstr "Algorithme de somme cumulative spatiale pour la détection des changements dans les séries chronologiques univariées (GPU)"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/gwb`"
-msgstr ""
+msgstr ":doc:`dwn/gwb`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "A suite of various geospatial image analysis tools"
-msgstr ""
+msgstr "Une suite d'outils d'analyse d'images géospatiales"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/sdg_indicator`"
-msgstr ""
+msgstr ":doc:`dwn/sdg_indicator`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Monitor SDG indicators at plot level"
-msgstr ""
+msgstr "Surveiller les indicateurs SDG au niveau du tracé"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/sepal_mgci`"
-msgstr ""
+msgstr ":doc:`dwn/sepal_mgci`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale"
-msgstr ""
+msgstr "Calcule le SDG 15.4.2 : Indice de couverture verte des montagnes à l'échelle nationale/sous-régionale"
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/sepal_pysmm`"
-msgstr ""
+msgstr ":doc:`dwn/sepal_pysmm`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Tool for mapping surface soil moisture based on Copernicus Sentinel-1 intensity data."
-msgstr ""
+msgstr "Outil de cartographie de l'humidité des sols en fonction des données d'intensité de Copernicus Sentinel-1."
 
 #: ../../source/modules/restoration.rst:1
 msgid ":doc:`dwn/seplan`"
-msgstr ""
+msgstr ":doc:`dwn/seplan`"
 
 #: ../../source/modules/restoration.rst:1
 msgid "Restoration planning tool using a weighted-sum approach"
-msgstr ""
+msgstr "Outil de planification de la restauration en utilisant une approche pondérée"
 
