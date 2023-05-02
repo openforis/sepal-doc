@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 00:55+0000\n"
-"PO-Revision-Date: 2023-04-26 16:44\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:42\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +25,10 @@ msgstr "Premiers pas"
 #: ../../source/index.rst:20
 msgid "Cookbook"
 msgstr "Recettes"
+
+#: ../../source/index.rst:20
+msgid "Modules"
+msgstr ""
 
 #: ../../source/index.rst:20
 msgid "CLI"
