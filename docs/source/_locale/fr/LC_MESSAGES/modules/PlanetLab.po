@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:43\n"
+"PO-Revision-Date: 2023-05-02 14:41\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,25 +20,25 @@ msgstr ""
 
 #: ../../source/modules/PlanetLab.rst:2
 msgid "Planetlab"
-msgstr ""
+msgstr "Planetlab"
 
 #: ../../source/modules/PlanetLab.rst:4
 msgid "List of the modules gathered under the Planetlab tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Planetlab :"
 
 #: ../../source/modules/PlanetLab.rst:1
 msgid ":doc:`dwn/planet_order`"
-msgstr ""
+msgstr ":doc:`dwn/planet_order`"
 
 #: ../../source/modules/PlanetLab.rst:1
 msgid "Order imagery from PlanetLab mosaics"
-msgstr ""
+msgstr "Commander des images à partir de mosaïques PlanetLab"
 
 #: ../../source/modules/PlanetLab.rst:1
 msgid ":doc:`dwn/sepafe`"
-msgstr ""
+msgstr ":doc:`dwn/sepafe`"
 
 #: ../../source/modules/PlanetLab.rst:1
 msgid "..."
-msgstr ""
+msgstr "..."
 
