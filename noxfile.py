@@ -45,7 +45,7 @@ def i18n(session):
         "docs/build/gettext",
         "--locale-dir",
         "docs/source/_locale",
-        *[f"-l {i}" for i in supported_languages],
+        *[f"-l={i}" for i in supported_languages],
     )
 
 
