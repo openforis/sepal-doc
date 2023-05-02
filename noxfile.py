@@ -6,13 +6,19 @@ The nox run are build in isolated environment that will be stored in .nox. to fo
 import nox
 
 
+@nox.session
+def compile(session):
+    """Build the modules files from the module documentation"""
+    session.install("-r", "requirements.txt")
+    session.run("python", "docs/source/_script/modules.py")
+    session.run("python", "docs/source/_script/environment.py")
+
+
 @nox.session(name="docs", reuse_venv=True)
 def docs(session):
     """Build the documentation."""
     builder = session.posargs[0] if len(session.posargs) > 0 else "html"
     session.install("-r", "requirements.txt")
-    session.run("python", "docs/source/_script/modules.py")
-    session.run("python", "docs/source/_script/environment.py")
     session.run(
         "sphinx-build",
         "-b",

@@ -22,14 +22,15 @@ jobs:
           python-version: "3.8"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: python -m pip install nox
+
+      - name: update module files
+        run: nox -s compile
 
       - name: generate .po files
-        run: |
-          sphinx-build -b gettext docs/source docs/build/gettext
-          sphinx-intl update -p docs/build/gettext --locale-dir docs/source/_locale
+        run: nox -s i18n
 
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automatic translation update
+          commit_message: Automatic compilation update
