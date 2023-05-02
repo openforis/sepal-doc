@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-05-02 13:48\n"
+"Last-Translator: \n"
+"Language: sv\n"
+"Language-Team: Swedish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/sepal_pysmm.po\n"
+"X-Crowdin-File-ID: 189\n"
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:2
 msgid "Soil Moisture Mapping"
@@ -30,9 +31,7 @@ msgid "Open SEPAL and Login"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:9
-msgid ""
-"If SEPAL is not already open, click the following link to open SEPAL in "
-"your browser: `<https://sepal.io/>`_"
+msgid "If SEPAL is not already open, click the following link to open SEPAL in your browser: `<https://sepal.io/>`_"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:10
@@ -40,9 +39,7 @@ msgid "Connect SEPAL to Google account"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:12
-msgid ""
-"Make sure SEPAL is connected to your google account as described in the "
-"section Connecting to Google Earth Engine"
+msgid "Make sure SEPAL is connected to your google account as described in the section Connecting to Google Earth Engine"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:14
@@ -50,9 +47,7 @@ msgid "Upload your area of interest (AOI) shapefile as a GEE asset"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:16
-msgid ""
-"Instructions for uploading a shapefile as an asset can be found here: "
-"`<https://developers.google.com/earth-engine/importing>`_"
+msgid "Instructions for uploading a shapefile as an asset can be found here: `<https://developers.google.com/earth-engine/importing>`_"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:18
@@ -68,23 +63,15 @@ msgid "Open and launch Soil Moisture Mapping application"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:25
-msgid ""
-"To access the module, click on the Apps tab in SEPAL. Then use the search"
-" box and write “SOIL MOISTURE MAPPING” or use bottom pagination and find "
-"it manually."
+msgid "To access the module, click on the Apps tab in SEPAL. Then use the search box and write “SOIL MOISTURE MAPPING” or use bottom pagination and find it manually."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:30
-msgid ""
-"The application will be launched and displayed over a new tab in the "
-"SEPAL panel."
+msgid "The application will be launched and displayed over a new tab in the SEPAL panel."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:35
-msgid ""
-"The module has 5 main steps that can be selected in the left panel: \"AOI"
-" selection\", \"download\", \"closing filter\", \"calculate statistics\","
-" and \"display map\"."
+msgid "The module has 5 main steps that can be selected in the left panel: \"AOI selection\", \"download\", \"closing filter\", \"calculate statistics\", and \"display map\"."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:36
@@ -92,41 +79,27 @@ msgid "Click over the AOI selection step and follow the next 4 sub-steps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:37
-msgid ""
-"In the AOI selection step, choose ‘Use GEE asset’, paste your GEE Asset "
-"ID into the box and click on the “Use asset” button to select that as "
-"your AOI."
+msgid "In the AOI selection step, choose ‘Use GEE asset’, paste your GEE Asset ID into the box and click on the “Use asset” button to select that as your AOI."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:38
-msgid ""
-"Two new select dropdowns will appear, choose your variable, field, and "
-"wait until the polygon is loaded into the map."
+msgid "Two new select dropdowns will appear, choose your variable, field, and wait until the polygon is loaded into the map."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:43
-msgid ""
-"The next step in this process is to select the date range of the data "
-"that you want to process through GEE, there are three options:"
+msgid "The next step in this process is to select the date range of the data that you want to process through GEE, there are three options:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:45
-msgid ""
-"**Single date**: will process one soil moisture closest to the date "
-"selected"
+msgid "**Single date**: will process one soil moisture closest to the date selected"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:46
-msgid ""
-"**Range**: will process all Sentinel-1 data to create a time series of "
-"soil moisture maps for the date range selected"
+msgid "**Range**: will process all Sentinel-1 data to create a time series of soil moisture maps for the date range selected"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:47
-msgid ""
-"**All-time series**: will process all available Sentinel-1 data, since "
-"the launch of the satellite in 2015, to create a time series of soil "
-"moisture maps."
+msgid "**All-time series**: will process all available Sentinel-1 data, since the launch of the satellite in 2015, to create a time series of soil moisture maps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:52
@@ -138,43 +111,27 @@ msgid "After the filters are selected, go to the “Run Process” tab."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:55
-msgid ""
-"Once the “Start” button is clicked, the availability of Sentinel-1 data "
-"is assessed and the command is sent to Earth Engine to run the "
-"classification of soil moisture."
+msgid "Once the “Start” button is clicked, the availability of Sentinel-1 data is assessed and the command is sent to Earth Engine to run the classification of soil moisture."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:56
-msgid ""
-"This process could take a long time depending on the dimensions of the "
-"feature and on the number of images to be processed."
+msgid "This process could take a long time depending on the dimensions of the feature and on the number of images to be processed."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:57
-msgid ""
-"If the selected dates are not available, the system will display a "
-"message with the closest images to the input dates."
+msgid "If the selected dates are not available, the system will display a message with the closest images to the input dates."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:59
-msgid ""
-"The most recent image available depends on the GLDAS product, which has a"
-" delay of 1 to 2 months."
+msgid "The most recent image available depends on the GLDAS product, which has a delay of 1 to 2 months."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:61
-msgid ""
-"The green Processing bar shows the name of the task that is sent to GEE. "
-"When the processing reaches 100% all the tasks have been sent to GEE and "
-"the classification of soil moisture will continue there."
+msgid "The green Processing bar shows the name of the task that is sent to GEE. When the processing reaches 100% all the tasks have been sent to GEE and the classification of soil moisture will continue there."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:62
-msgid ""
-"After all the tasks are sent to GEE the module can be closed. The "
-"processing will continue uninterrupted in GEE. In GEE the processing can "
-"take hours or days depending on the size of the AOI and the date range "
-"selected."
+msgid "After all the tasks are sent to GEE the module can be closed. The processing will continue uninterrupted in GEE. In GEE the processing can take hours or days depending on the size of the AOI and the date range selected."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:67
@@ -186,16 +143,11 @@ msgid "A way to check on the status of each task is to go to the GEE code editor
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:74
-msgid ""
-"Click on the ‘Tasks’ tab in the section on the right. You should see the "
-"process running with the spinning gear."
+msgid "Click on the ‘Tasks’ tab in the section on the right. You should see the process running with the spinning gear."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:79
-msgid ""
-"When the download completes you will see a blue checkmark. Check "
-"periodically on your download to make sure all the dates specified are "
-"being downloaded."
+msgid "When the download completes you will see a blue checkmark. Check periodically on your download to make sure all the dates specified are being downloaded."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:82
@@ -207,24 +159,15 @@ msgid "Check if the processing is complete in GEE"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:86
-msgid ""
-"Check on the status of each task in the GEE code editor. Click on the "
-"‘Tasks’ tab in the section on the right. You should see blue checkmarks "
-"next to all the tasks."
+msgid "Check on the status of each task in the GEE code editor. Click on the ‘Tasks’ tab in the section on the right. You should see blue checkmarks next to all the tasks."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:87
-msgid ""
-"The soil moisture maps for each date have been downloaded to your Google "
-"Drive. The next step will automatically move those images from your "
-"Google account to your SEPAL account."
+msgid "The soil moisture maps for each date have been downloaded to your Google Drive. The next step will automatically move those images from your Google account to your SEPAL account."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:92
-msgid ""
-"You can start downloading the images while they are being processed in "
-"GEE, but we recommend waiting until all or part of the images has been "
-"processed in GEE."
+msgid "You can start downloading the images while they are being processed in GEE, but we recommend waiting until all or part of the images has been processed in GEE."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:94
@@ -240,10 +183,7 @@ msgid "Select the download task file"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:103
-msgid ""
-"The file structure for downloading and managing the soil moisture data "
-"follows this structure: "
-":code:`home/username/pysmm_downloads/0_raw/asset_name/row_name`"
+msgid "The file structure for downloading and managing the soil moisture data follows this structure: :code:`home/username/pysmm_downloads/0_raw/asset_name/row_name`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:105
@@ -251,74 +191,47 @@ msgid "All downloads can always be found in the pysmm_downloads folder"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:106
-msgid ""
-"Each time a different asset is used to derive soil moisture, a new folder"
-" for the asset will be created"
+msgid "Each time a different asset is used to derive soil moisture, a new folder for the asset will be created"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:107
-msgid ""
-"For each polygon that is used from the asset, selected by specifying the "
-"column and row field names, a unique folder with the row field name will "
-"contain the task download file."
+msgid "For each polygon that is used from the asset, selected by specifying the column and row field names, a unique folder with the row field name will contain the task download file."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:112
-msgid ""
-"The task download file can be found in the folder `home/user/ "
-"pysmm_downloads/0_raw/assetname/rowname/`"
+msgid "The task download file can be found in the folder `home/user/ pysmm_downloads/0_raw/assetname/rowname/`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:113
-msgid ""
-"The task download file naming convention is: "
-"task_datedownloadinitiated_code.txt"
+msgid "The task download file naming convention is: task_datedownloadinitiated_code.txt"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:114
-msgid ""
-"Use the three dropdown lists to select the desired task text file is by "
-"clicking on the folder names."
+msgid "Use the three dropdown lists to select the desired task text file is by clicking on the folder names."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:115
-msgid ""
-"There are options to overwrite duplicates already downloaded into SEPAL "
-"and to remove the downloaded images from Google Drive. Once the images "
-"are removed from Google Drive the task download file will no longer "
-"function because those images will not be stored in Google Drive."
+msgid "There are options to overwrite duplicates already downloaded into SEPAL and to remove the downloaded images from Google Drive. Once the images are removed from Google Drive the task download file will no longer function because those images will not be stored in Google Drive."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:117
-msgid ""
-"Overwrite SEPAL images: In case you previously have downloaded an image "
-"in the same path folder, the module will overwrite the images with the "
-"same name."
+msgid "Overwrite SEPAL images: In case you previously have downloaded an image in the same path folder, the module will overwrite the images with the same name."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:118
-msgid ""
-"Remove Google Drive images: Mark this option if you want to download the "
-"images to your SEPAL account and delete the files from your Google Drive "
-"account."
+msgid "Remove Google Drive images: Mark this option if you want to download the images to your SEPAL account and delete the files from your Google Drive account."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:120
-msgid ""
-"Click on the DOWNLOAD button to download the soil moisture maps from your"
-" Google Drive account to SEPAL."
+msgid "Click on the DOWNLOAD button to download the soil moisture maps from your Google Drive account to SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:121
-msgid ""
-"The images will download one by one, leave the application open while the"
-" download is running."
+msgid "The images will download one by one, leave the application open while the download is running."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:122
-msgid ""
-"After the data download completes you can use tools available in SEPAL to"
-" process and analyze these soil moisture maps."
+msgid "After the data download completes you can use tools available in SEPAL to process and analyze these soil moisture maps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:125
@@ -326,10 +239,7 @@ msgid "Post-process and analyze soil moisture time-series data"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:127
-msgid ""
-"After the download is complete, we can apply a robust methodology for "
-"image filtering to fill no-data gaps and assess trends in the time series"
-" of soil moisture maps."
+msgid "After the download is complete, we can apply a robust methodology for image filtering to fill no-data gaps and assess trends in the time series of soil moisture maps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:129
@@ -345,41 +255,23 @@ msgid "Run the post-processing section of the module"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:138
-msgid ""
-"Navigate to the folder where the images are stored. This module will "
-"process a folder with many images, going through each of the images. "
-"Therefore, the input should be the folder in which are the raw images are"
-" stored. The module will automatically display two select menus, select "
-"the desired options."
+msgid "Navigate to the folder where the images are stored. This module will process a folder with many images, going through each of the images. Therefore, the input should be the folder in which are the raw images are stored. The module will automatically display two select menus, select the desired options."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:143
-msgid ""
-"The raw imagery is stored in the same folder that the task download file "
-"is located."
+msgid "The raw imagery is stored in the same folder that the task download file is located."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:144
-msgid ""
-"Click on START button to run a data-filling algorithm on each of the soil"
-" moisture maps."
+msgid "Click on START button to run a data-filling algorithm on each of the soil moisture maps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:145
-msgid ""
-"Due to speckle in the Sentinel-1 imagery the soil moisture maps contain "
-"some noise and no-data values which are corrected for to some extent "
-"using grayscale morphological operation from ORFEO toolbox, a free and "
-"open-source image processing tool. To read more about the "
-"parameterization of the Orfeo toolbox tool, read: https://www.orfeo-"
-"toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html."
+msgid "Due to speckle in the Sentinel-1 imagery the soil moisture maps contain some noise and no-data values which are corrected for to some extent using grayscale morphological operation from ORFEO toolbox, a free and open-source image processing tool. To read more about the parameterization of the Orfeo toolbox tool, read: https://www.orfeo-toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:146
-msgid ""
-"This process is done by the SEPAL instance, the time will depend on the "
-"number of images and the dimension, after finishing all the images, the "
-"progress bar will be green colored."
+msgid "This process is done by the SEPAL instance, the time will depend on the number of images and the dimension, after finishing all the images, the progress bar will be green colored."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:148
@@ -391,19 +283,11 @@ msgid "In the left panel select the “Calculate statistics” tab."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:155
-msgid ""
-"After the data is filtered, a time series analysis of the soil moisture "
-"maps can be performed. Several statistics can be applied whether to the "
-"entire time series or to a specified range, statistics as median, mean, "
-"standard deviation, or linear trend (slope of the line) are available to "
-"process the selected data."
+msgid "After the data is filtered, a time series analysis of the soil moisture maps can be performed. Several statistics can be applied whether to the entire time series or to a specified range, statistics as median, mean, standard deviation, or linear trend (slope of the line) are available to process the selected data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:156
-msgid ""
-"This module uses the Stack Composed python module, which is a module that"
-" computes a specific statistic for all valid pixel values across the time"
-" series using a parallel process."
+msgid "This module uses the Stack Composed python module, which is a module that computes a specific statistic for all valid pixel values across the time series using a parallel process."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:157
@@ -419,26 +303,15 @@ msgid "All-time series: runs the analysis for all the images in the folder"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:165
-msgid ""
-"Range:  runs the analysis for all the images within the time frame "
-"selected"
+msgid "Range:  runs the analysis for all the images within the time frame selected"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:166
-msgid ""
-"Season:  the user can define a season by selecting months. The analysis "
-"is run for only the months selected within the years selected. For "
-"example, if January, February, and 2016, 2017, 2018 are selected, then "
-"the analysis would run for January 2016, January 2017, January 2018,  "
-"February 2016, February 2017, and February 2018. You can also select only"
-" one year or month, so it will process all the years/months in the "
-"selection."
+msgid "Season:  the user can define a season by selecting months. The analysis is run for only the months selected within the years selected. For example, if January, February, and 2016, 2017, 2018 are selected, then the analysis would run for January 2016, January 2017, January 2018,  February 2016, February 2017, and February 2018. You can also select only one year or month, so it will process all the years/months in the selection."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:169
-msgid ""
-"There are different options for the statistics that can be calculated. "
-"The options are:"
+msgid "There are different options for the statistics that can be calculated. The options are:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:171
@@ -474,67 +347,35 @@ msgid "Linear trend"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:180
-msgid ""
-"The ‘Valid pixels’ option will create a new image representing only the "
-"count of the valid pixels from the stack."
+msgid "The ‘Valid pixels’ option will create a new image representing only the count of the valid pixels from the stack."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:181
-msgid ""
-"The Median, Mean, Geometric Mean, Max, Min, Standard Deviation and Valid "
-"pixels, are statistics that do not require much computing requirements, "
-"so the time to perform those task it’s relatively quick, depending on the"
-" extent of the image."
+msgid "The Median, Mean, Geometric Mean, Max, Min, Standard Deviation and Valid pixels, are statistics that do not require much computing requirements, so the time to perform those task it’s relatively quick, depending on the extent of the image."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:182
-msgid ""
-"The advanced settings are intended to be used to improve the time and "
-"manage the system resources. Normally this is optimized automatically but"
-" can be modified by the user. This setting controls the number of "
-"processors you use for parallel processing, allowing you to optimize the "
-"time by processing a huge image by using several processors at the same "
-"time. Automatically all available processors will be used. Note that the "
-"more CPUs available in the instance you selected in the terminal, the "
-"faster the processing will be."
+msgid "The advanced settings are intended to be used to improve the time and manage the system resources. Normally this is optimized automatically but can be modified by the user. This setting controls the number of processors you use for parallel processing, allowing you to optimize the time by processing a huge image by using several processors at the same time. Automatically all available processors will be used. Note that the more CPUs available in the instance you selected in the terminal, the faster the processing will be."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:184
-msgid ""
-"**Processors**: by default, the module will display the number of "
-"processors that are active in the current instance session and will "
-"perform the stack-composed with all of them, however, in order to test "
-"the best benchmark to the specific stack, this number could be changed "
-"within the advanced settings tab."
+msgid "**Processors**: by default, the module will display the number of processors that are active in the current instance session and will perform the stack-composed with all of them, however, in order to test the best benchmark to the specific stack, this number could be changed within the advanced settings tab."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:185
-msgid ""
-"**Chunks**: the number in the chunk specifies the shape of the array that"
-" will be processed in parallel over the different processors. i.e., if "
-"180 is the specified number of chunks, then the stack-composed module "
-"will divide the input image into several small square pieces of 180 "
-"pixels with its shape, for more information about how to select the best "
-"chunk shape, follow the dask documentation."
+msgid "**Chunks**: the number in the chunk specifies the shape of the array that will be processed in parallel over the different processors. i.e., if 180 is the specified number of chunks, then the stack-composed module will divide the input image into several small square pieces of 180 pixels with its shape, for more information about how to select the best chunk shape, follow the dask documentation."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:190
-msgid ""
-"Once the settings are specified, click on the ‘Calculate statistics’ "
-"button."
+msgid "Once the settings are specified, click on the ‘Calculate statistics’ button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:191
-msgid ""
-"After selecting the temporal range to run the analysis and parameter to "
-"calculate, the images that are processed are listed, along with the date "
-"of the imagery."
+msgid "After selecting the temporal range to run the analysis and parameter to calculate, the images that are processed are listed, along with the date of the imagery."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:196
-msgid ""
-"The processed images can be found in the folder: "
-"`home/user/pysmm_downloads/1_processed/assetname/rowname/stats`"
+msgid "The processed images can be found in the folder: `home/user/pysmm_downloads/1_processed/assetname/rowname/stats`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:199
@@ -546,45 +387,26 @@ msgid "In the left panel select the “Display map” tab."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:206
-msgid ""
-"The map visualization tab will allow you to display any monoband image in"
-" your SEPAL account, not only the downloaded data."
+msgid "The map visualization tab will allow you to display any monoband image in your SEPAL account, not only the downloaded data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:211
-msgid ""
-"Click over the “Search file” button and navigate over the dropdown list, "
-"search the desired image, and click on the “Display image” button."
+msgid "Click over the “Search file” button and navigate over the dropdown list, search the desired image, and click on the “Display image” button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:216
-msgid ""
-"Wait until the image is rendered in the map and explore the general "
-"output."
+msgid "Wait until the image is rendered in the map and explore the general output."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:217
-msgid ""
-"Mark the “Inspector” checkbox and click over any coordinate inside the "
-"image to explore the pixel values, you will see an output box in the "
-"bottom right corner with the data."
+msgid "Mark the “Inspector” checkbox and click over any coordinate inside the image to explore the pixel values, you will see an output box in the bottom right corner with the data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:222
-msgid ""
-"Open-source data from Sentinel 1 operates using C-band synthetic aperture"
-" radar imaging. C-band type has a wavelength of 3.8 – 7.5 cm and thus it "
-"has limited penetration into dense forest canopies. Therefore, forested "
-"areas should be excluded from the analysis. L-band data should be used "
-"instead of such areas."
+msgid "Open-source data from Sentinel 1 operates using C-band synthetic aperture radar imaging. C-band type has a wavelength of 3.8 – 7.5 cm and thus it has limited penetration into dense forest canopies. Therefore, forested areas should be excluded from the analysis. L-band data should be used instead of such areas."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_pysmm.rst:224
-msgid ""
-"It is recommended that densely vegetated areas are excluded from analysis"
-" due to the limitation of C-band radar to penetrate dense canopy cover. "
-"Use a forest map to exclude dense forest areas from the analysis. .. "
-"custom-edit:: https://raw.githubusercontent.com/sepal-"
-"contrib/sepal_pysmm/release/doc/en.rst"
+msgid "It is recommended that densely vegetated areas are excluded from analysis due to the limitation of C-band radar to penetrate dense canopy cover. Use a forest map to exclude dense forest areas from the analysis."
 msgstr ""
 
