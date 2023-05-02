@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:43\n"
+"PO-Revision-Date: 2023-05-02 14:41\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,25 +20,25 @@ msgstr ""
 
 #: ../../source/modules/SMFM.rst:2
 msgid "Smfm"
-msgstr ""
+msgstr "Smfm"
 
 #: ../../source/modules/SMFM.rst:4
 msgid "List of the modules gathered under the Smfm tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Smfm :"
 
 #: ../../source/modules/SMFM.rst:1
 msgid ":doc:`dwn/smfm_biota`"
-msgstr ""
+msgstr ":doc:`dwn/smfm_biota`"
 
 #: ../../source/modules/SMFM.rst:1
 msgid "Calculate biomass change over time using ALOS Palsar data"
-msgstr ""
+msgstr "Calculer le changement de biomasse au fil du temps en utilisant les données ALOS Palsar"
 
 #: ../../source/modules/SMFM.rst:1
 msgid ":doc:`dwn/smfm_deforest`"
-msgstr ""
+msgstr ":doc:`dwn/smfm_deforest`"
 
 #: ../../source/modules/SMFM.rst:1
 msgid "Detect deforestation using a time-series of forest probabilities"
-msgstr ""
+msgstr "Détecter la déforestation à l'aide d'une série temporelle de probabilités forestières"
 
