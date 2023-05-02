@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-15 01:02+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06\n"
+"PO-Revision-Date: 2023-05-02 15:49\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -145,7 +145,7 @@ msgstr "Rôle ReST pour inclure les icônes en ligne dans la documentation (gén
 
 #: ../../source/team/contribute.rst:116
 msgid "I'm a folder icon: :icon:`fa-solid fa-folder`"
-msgstr ""
+msgstr "Je suis une icône de dossier : :icon:`fa-solid fa-folder`"
 
 #: ../../source/team/contribute.rst:119
 msgid "btn"
@@ -157,7 +157,7 @@ msgstr "Rest rôle pour inclure des bouttons dans la documentation. Vous pouvez 
 
 #: ../../source/team/contribute.rst:129
 msgid "I'm a apply btn: :btn:`<fa-solid fa-check> apply`"
-msgstr ""
+msgstr "Je suis un btn appliquer : :btn:`<fa-solid fa-check> appliquer`"
 
 #: ../../source/team/contribute.rst:131
 msgid "I'm the app btn: :btn:`<fa-solid fa-wrench>`"
@@ -229,7 +229,7 @@ msgstr "Supprimer la branche une fois que la PR est acceptée par les responsabl
 
 #: ../../source/team/contribute.rst:179
 msgid "Module edit"
-msgstr ""
+msgstr "Édition d'un module"
 
 #: ../../source/team/contribute.rst:181
 msgid "If you find a error in a **module** page, the edit button will not work as the files are dynamically retrieve from each module repository. If the documentation is well written, their should be a link at the very bottom to make modification to the source file in the module repository following the same procedure mentioned above."
@@ -245,43 +245,43 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:190
 msgid "Major change"
-msgstr ""
+msgstr "Changement majeur"
 
 #: ../../source/team/contribute.rst:192
 msgid "Major changes include:"
-msgstr ""
+msgstr "Les changements majeurs incluent :"
 
 #: ../../source/team/contribute.rst:194
 msgid "new documentation page"
-msgstr ""
+msgstr "nouvelle page de documentation"
 
 #: ../../source/team/contribute.rst:195
 msgid "multiple image modification"
-msgstr ""
+msgstr "modification de plusieurs images"
 
 #: ../../source/team/contribute.rst:196
 msgid "new section"
-msgstr ""
+msgstr "nouvelle section"
 
 #: ../../source/team/contribute.rst:197
 msgid "new modules"
-msgstr ""
+msgstr "nouveaux modules"
 
 #: ../../source/team/contribute.rst:198
 msgid "new class on Google classroom"
-msgstr ""
+msgstr "nouvelle classe dans Google classroom"
 
 #: ../../source/team/contribute.rst:200
 msgid "For these major changes, the simple GitHub edit process cannot work. You need to follow another workflow that will allows you to modify multiple files at the same time and use the PR system to avoid publishing new pages without validation."
-msgstr ""
+msgstr "Pour ces changements majeurs, le processus d'édition simple de GitHub ne peut pas fonctionner. Vous devez suivre un autre flux de travail qui vous permettra de modifier plusieurs fichiers en même temps et d'utiliser le système de PR (pull request) pour éviter de publier de nouvelles pages sans validation."
 
 #: ../../source/team/contribute.rst:202
 msgid "In this section will will present the full process to include major changes to the documentation."
-msgstr ""
+msgstr "Dans cette section présentera le processus complet pour inclure les changements majeurs à la documentation."
 
 #: ../../source/team/contribute.rst:205
 msgid "Fork project"
-msgstr ""
+msgstr "Créer un fork"
 
 #: ../../source/team/contribute.rst:207
 msgid "To work on multiple files at the same time, you cannot work directly from GitHub and you need to install a local version of the source. You don't have the rights (even the maintainer doesn't have the right) to directly push to master to avoid the publication of bad quality documentation page. The first step will then be to fork the project in your own account. To do so click on the :code:`fork` button at the top right side of the `Github page of the doc <https://github.com/openforis/sepal-doc>`_:"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:212
 msgid "github fork"
-msgstr ""
+msgstr "GitHub fork"
 
 #: ../../source/team/contribute.rst:212
 msgid "The fork button on GitHub"
@@ -325,27 +325,27 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:235
 msgid "Local installation"
-msgstr ""
+msgstr "Installation locale"
 
 #: ../../source/team/contribute.rst:237
 msgid "You want to install the forked project locally to make you modifications. In your computer go to a terminal and run the following command."
-msgstr ""
+msgstr "Vous voulez installer le projet forked localement pour faire des modifications. Dans votre ordinateur, allez dans un terminal et exécutez la commande suivante."
 
 #: ../../source/team/contribute.rst:241
 msgid "don't forget to change :code:`<your account>` by the account name where you forked the project."
-msgstr ""
+msgstr "n'oubliez pas de changer :code:`<your account>` par le nom du compte où vous avez forker le projet."
 
 #: ../../source/team/contribute.rst:247
 msgid "now that the code is installed on your computer, you need to install the packages that are required to build the doc. run the following command:"
-msgstr ""
+msgstr "maintenant que le code est installé sur votre ordinateur, vous devez installer les paquets nécessaires à la compilation du doc. exécutez la commande suivante :"
 
 #: ../../source/team/contribute.rst:253
 msgid "lets check that the doc can be build without error, go to the doc folder and run the following command:"
-msgstr ""
+msgstr "permet de vérifier que le doc peut être compilé sans erreur, allez dans le dossier doc et exécutez la commande suivante :"
 
 #: ../../source/team/contribute.rst:262
 msgid "we try our best to avoid warning in the master branch. If some are still displayed just ignore them the maintainers will take care of them."
-msgstr ""
+msgstr "nous faisons de notre mieux pour éviter les avertissements dans la branche principale. Si certains sont toujours affichés, il suffit de les ignorer, les responsables s'occuperont d'eux."
 
 #: ../../source/team/contribute.rst:264
 msgid "now a new folder :code:`build` have been created in your sepal-doc folder. double-click on :code:`sepal-doc/docs/build/html/index.html`. Your computer will open a browser page which should be the landing page of the documentation. you can then navigate wherever you fancy. the URL at the top of the browser should not be starting with **https:://** but **file:///** meaning that it's a local html page. Another tip that you are displaying a local page is that there is no advertisement in the side bar."
@@ -377,15 +377,15 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:287
 msgid "Also if you make a lot of modification don't hesitate to create multiple commits (from :code:`sepal-doc/docs/` folder). Always use a clear and synthetic commit message, if you cannot find an appropriate one, it means that you have done too many things and you should consider committing more often."
-msgstr ""
+msgstr "Également si vous faites beaucoup de modifications, n'hésitez pas à créer plusieurs commits (depuis le dossier :code:`sepal-doc/docs/`). Toujours utiliser un message de commit clair et synthétique, si vous ne trouvez pas un message approprié, cela signifie que vous avez fait trop de choses et que vous devriez envisager de commit plus souvent."
 
 #: ../../source/team/contribute.rst:295
 msgid "Once you are done with your modifications, simply push the repository to GitHub and jump to the next section:"
-msgstr ""
+msgstr "Une fois que vous avez terminé vos modifications, il vous suffit de push le dépôt sur GitHub et de passer à la section suivante :"
 
 #: ../../source/team/contribute.rst:302
 msgid "New page"
-msgstr ""
+msgstr "Nouvelle page"
 
 #: ../../source/team/contribute.rst:304
 msgid "Open the :code:`sepal-doc` folder in your favorite IDE it will be easier for modification."
@@ -393,7 +393,7 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:308
 msgid "Any TextEdit software can do the trick it's just less user friendly"
-msgstr ""
+msgstr "N'importe quel logiciel d'édition de text peut faire l'affaire, il sera juste moins facile à utiliser"
 
 #: ../../source/team/contribute.rst:310
 msgid "As explained in the beginning the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ we are using to build the final doc. The first step will be to identify the section you want your page to be included. The following sections are currently available:"
