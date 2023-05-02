@@ -130,12 +130,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# module documentation files
-docs/source/modules/*.rst
-docs/source/_locale/en/LC_MESSAGES/modules
-docs/source/_locale/fr/LC_MESSAGES/modules
-docs/source/_locale/es/LC_MESSAGES/modules
-
 # visual studio code
 .vscode/
 
@@ -148,4 +142,3 @@ docs/source/_locale/es/LC_MESSAGES/modules
 # environment files
 docs/source/_data/python_lib.txt
 docs/source/_data/r_packages.sh
-docs/source/modules/dwn/
