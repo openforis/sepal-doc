@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:44\n"
+"PO-Revision-Date: 2023-05-02 14:42\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,45 +20,45 @@ msgstr ""
 
 #: ../../source/modules/time-series.rst:2
 msgid "Time-series"
-msgstr ""
+msgstr "Séries temporelles"
 
 #: ../../source/modules/time-series.rst:4
 msgid "List of the modules gathered under the Time-series tag:"
-msgstr ""
+msgstr "Liste des modules rassemblés sous la balise Série Temporelles :"
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/bfast_explorer`"
-msgstr ""
+msgstr ":doc:`dwn/bfast_explorer`"
 
 #: ../../source/modules/time-series.rst:1
 msgid "Performs analysis of Landsat Surface Reflectance time series pixel data using the BFAST algorithm."
-msgstr ""
+msgstr "Effectue l'analyse des données de la série temporelle de la surface Landsat à l'aide de l'algorithme BFAST."
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/bfast_gpu`"
-msgstr ""
+msgstr ":doc:`dwn/bfast_gpu`"
 
 #: ../../source/modules/time-series.rst:1
 msgid "GPU implementation of the BFAST algorithm to analyse time series"
-msgstr ""
+msgstr "Implémentation GPU de l'algorithme BFAST pour analyser la série temporelle"
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/bfast_r`"
-msgstr ""
+msgstr ":doc:`dwn/bfast_r`"
 
 #: ../../source/modules/time-series.rst:1
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/cusum`"
-msgstr ""
+msgstr ":doc:`dwn/cusum`"
 
 #: ../../source/modules/time-series.rst:1
 msgid "Spatially cumulative sum algorithm for change detection within univariate time-series (GPU powered)"
-msgstr ""
+msgstr "Algorithme de somme cumulative spatiale pour la détection des changements dans les séries chronologiques univariées (GPU)"
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/sar_time_series`"
-msgstr ""
+msgstr ":doc:`dwn/sar_time_series`"
 
