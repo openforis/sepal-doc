@@ -138,7 +138,3 @@ dmypy.json
 
 # mac os files
 .DS_Store
-
-# environment files
-docs/source/_data/python_lib.txt
-docs/source/_data/r_packages.sh
