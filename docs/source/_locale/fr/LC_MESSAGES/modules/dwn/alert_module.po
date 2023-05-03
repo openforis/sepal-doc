@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:43\n"
+"PO-Revision-Date: 2023-05-03 06:11\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../source/modules/dwn/alert_module.rst:2
 msgid "Deforestation alert analysis"
-msgstr ""
+msgstr "Analyse des alertes de déforestation"
 
 #: ../../source/modules/dwn/alert_module.rst:6
 msgid "To use this module, you must at least register to the NICFI PlanetLab program and link your GEE account to it. More information can be found at :doc:`../../setup/nicfi`."
-msgstr ""
+msgstr "Pour utiliser ce module, vous devez au moins vous inscrire au programme NICFI PlanetLab et lier votre compte GEE à celui-ci. Plus d'informations peuvent être trouvées sur :doc:`../../setup/nicfi`."
 
 #: ../../source/modules/dwn/alert_module.rst:10
 msgid "Set up"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../source/modules/dwn/alert_module.rst:12
 msgid "From the SEPAL app dashboard (purple :icon:`fa-solid fa-wrench` on the left side), search for and click on **deforestation alert analysis**."
@@ -81,7 +81,7 @@ msgstr ""
 #: ../../source/modules/dwn/alert_module.rst:45
 #: ../../source/modules/dwn/alert_module.rst:341
 msgid "Parameters"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../source/modules/dwn/alert_module.rst:47
 msgid "The settings need to be fully validated to load the alerts on the map. It has 3 sections that need to be filled in order:"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../source/modules/dwn/alert_module.rst:65
 msgid "Alert"
-msgstr ""
+msgstr "Alerte"
 
 #: ../../source/modules/dwn/alert_module.rst:67
 msgid "The user then needs to select the alert system to use. Various drivers are available in the module and the documentation will reflects any changes or addition made by the SEPAL team."
