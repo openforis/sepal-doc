@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-05-02 13:43\n"
+"PO-Revision-Date: 2023-05-03 06:11\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:4
 msgid "This dasboard application based on the `sepal-ui <https://sepal-ui.readthedocs.io/en/latest/>`_ framework, provide the user with a friendly interface to explore and download Planet Labs images."
-msgstr ""
+msgstr "Cette application de dasboard basée sur le framework `sepal-ui <https://sepal-ui.readthedocs.io/en/latest/>`_ fournit à l'utilisateur une interface conviviale pour explorer et télécharger les images de Planet Labs."
 
 #: ../../source/modules/dwn/planet_order.rst:11
 msgid "in order to start this module, you need to have register on the planet NICFI contract (`Register NICFI PlanetLab <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_) and connect your GEE account to SEPAL (`connect GEE to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_)."
@@ -48,31 +48,31 @@ msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:34
 msgid "Select an AOI"
-msgstr ""
+msgstr "Sélectionnez une AOI"
 
 #: ../../source/modules/dwn/planet_order.rst:36
 msgid "The application use the same AOI selector that you will find in lots of other application in SEPAL. It is using GEE to provide several options of data selection."
-msgstr ""
+msgstr "L'application utilise le même sélecteur d'AOI que vous trouverez dans beaucoup d'autres applications en SEPAL. Il utilise GEE pour fournir plusieurs options de sélection de données."
 
 #: ../../source/modules/dwn/planet_order.rst:38
 msgid "In this application multiple selection methods are available by selecting options in the first dropdown menu:"
-msgstr ""
+msgstr "Dans cette application, plusieurs méthodes de sélection sont disponibles en sélectionnant des options dans le premier menu déroulant :"
 
 #: ../../source/modules/dwn/planet_order.rst:45
 msgid "Administrative"
-msgstr ""
+msgstr "Administratif"
 
 #: ../../source/modules/dwn/planet_order.rst:47
 msgid "Using one of the administrative options (:code:`country`, :code:`first administrative layer` or :code:`second administrative layer`), It will retreive information from the FAO GAUL 2015 GEE dataset. This isnformation will be used along the app to define your AOI"
-msgstr ""
+msgstr "Utiliser une des options administratives (:code:`country`, :code:`first administrative layer` ou :code:`second administrative layer`), Il récupérera les informations du jeu de données GAUL 2015 de la FAO. Cette information sera utilisée dans l'application pour définir votre AOI"
 
 #: ../../source/modules/dwn/planet_order.rst:50
 msgid "Customs"
-msgstr ""
+msgstr "Personnalisés"
 
 #: ../../source/modules/dwn/planet_order.rst:52
 msgid "Several options are availalbe to select custom AOI including : `gee assets`, `draw a shape`, `upload a shapefile`."
-msgstr ""
+msgstr "Plusieurs options sont disponibles pour sélectionner une AOI personnalisée, y compris : `gee assets`, `draw a shape`, `upload a shapefile`."
 
 #: ../../source/modules/dwn/planet_order.rst:56
 msgid ":code:`upload a shapelfile` will upload a shapefile that already exist in your SEPAL folder to GEE. If you want to us a shapefile that comes from your computer you need to upload it to SEPAL first using the `Vector file manager <https://docs.sepal.io/en/latest/modules/dwn/import_to_gee.html>`_."
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:89
 msgid "Select Mosaic"
-msgstr ""
+msgstr "Sélectionner la Mosaïque"
 
 #: ../../source/modules/dwn/planet_order.rst:91
 msgid "Now you can select any mosaic in the mosaic dropdown on top of the map. using the :code:`next` or :code:`prev` button will jump to the next/prev mosaic in the list (they are in chronological order)"
@@ -128,31 +128,31 @@ msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:101
 msgid "**rbg** (red, blue, green)"
-msgstr ""
+msgstr "**rbg** (rouge, bleu, vert)"
 
 #: ../../source/modules/dwn/planet_order.rst:102
 msgid "**cir** (nir, red, green)"
-msgstr ""
+msgstr "**cir** (nir, rouge, vert)"
 
 #: ../../source/modules/dwn/planet_order.rst:103
 msgid "**ndvi** a viridis representation of the ndvi index ((nir-red)/(nir+red)) see `wikipedia <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`_"
-msgstr ""
+msgstr "**ndvi** une représentation viridis de l'index ndvi (nir-rouge)/(nir+rouge)) voir `wikipedia <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`_"
 
 #: ../../source/modules/dwn/planet_order.rst:112
 msgid "Download Data"
-msgstr ""
+msgstr "Télécharger les Données"
 
 #: ../../source/modules/dwn/planet_order.rst:114
 msgid "Once you are satisfied with your mosaic selection, you can click on the :code:`download image` button. This will launch the downloading process of your images from Planet server to you SEPAL folder."
-msgstr ""
+msgstr "Une fois que vous êtes satisfait de votre sélection de mosaïques, vous pouvez cliquer sur le bouton :code:`télécharger l'image`. Cela lancera le processus de téléchargement de vos images depuis le serveur Planet vers votre dossier SEPAL."
 
 #: ../../source/modules/dwn/planet_order.rst:116
 msgid "The images will be stored in the following folder : :code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/<mosaic_name>/`."
-msgstr ""
+msgstr "Les images seront stockées dans le dossier suivant : :code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/<mosaic_name>/`."
 
 #: ../../source/modules/dwn/planet_order.rst:120
 msgid "In the parent folder (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`) you will find a .geojson file of the planet grid. This can be useful for other tools."
-msgstr ""
+msgstr "Dans le dossier parent (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`) vous trouverez le fichier .geojson de la grille planétaire. Cela peut être utile pour d'autres outils."
 
 #: ../../source/modules/dwn/planet_order.rst:124
 msgid "If the requested image is not available (the grid point to water area, the image was to cloudy so filtered by Planet, you don't have the rights to download it.. etc) the image will fail. If the image already exist in your folder it will be skipped. This behaviour allow you to restart a process if your SEPAL conection crashed without restarting all the downloads."
