@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-27 11:46\n"
+"PO-Revision-Date: 2023-05-15 10:28\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:2
 msgid "Planet mosaic"
-msgstr ""
+msgstr "Mosaïque Planet"
 
 #: ../../source/cookbook/planet_mosaic.rst:5
 msgid "Overview"
@@ -28,23 +28,23 @@ msgstr "Aperçu"
 
 #: ../../source/cookbook/planet_mosaic.rst:7
 msgid "A mosaic is a process of combining spatially overlapping images into an individual image. In SEPAL, you can create a composited dataset from Planet images taken at different times. The process can be done using different techniques, for example, you can choose to keep only the pixel value from the first or last image, combine the values of the overlapped pixels using a weighting algorithm, average, or use the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds/shadows, snow, etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create Planet mosaics within any area of interest."
-msgstr ""
+msgstr "Une mosaïque est un processus qui consiste à combiner, dans une image individuelle, des images qui se chevauchent spatialement . Dans SEPAL, vous pouvez créer un jeu de données composites à partir d'images Planet prises à différents moments. Le processus peut être fait en utilisant des techniques différentes, par exemple, vous pouvez choisir de ne conserver que la valeur du pixel de la première ou de la dernière image, combiner les valeurs des pixels chevauchés en utilisant un algorithme de pondération, une moyenne ou utiliser la valeur maximale ou minimale. De plus, certaines tâches de prétraitement peuvent être appliquées aux nuages/ombres masques, à la neige, etc. Ces opérations sont complexes et répétitives. SEPAL vous offre un moyen interactif et intuitif de créer des mosaïques Planet dans n'importe quel domaine d'intérêt."
 
 #: ../../source/cookbook/planet_mosaic.rst:15
 msgid "You won't be able to retrieve the images if your SEPAL and GEE accounts are not connected. Follow `Connect SEPAL to GEE <../setup/gee.html>`__ to know more."
-msgstr ""
+msgstr "Vous ne pourrez pas récupérer les images si vos comptes SEPAL et GEE ne sont pas connectés. Suivez `Connectez SEPAL à GEE <../setup/gee.html>`__ pour en savoir plus."
 
 #: ../../source/cookbook/planet_mosaic.rst:17
 msgid "You also need to connect your GEE account with Planet. Follow `Use NICFI - Planet Lab data <../setup/nicfi.html>`__."
-msgstr ""
+msgstr "Vous devez également connecter votre compte GEE à au programme NICFI Planet. Suivez `Use NICFI - Planet Lab data <../setup/nicfi.html>`__."
 
 #: ../../source/cookbook/planet_mosaic.rst:20
 msgid "Start"
-msgstr ""
+msgstr "Commencer"
 
 #: ../../source/cookbook/planet_mosaic.rst:22
 msgid "Once the :code:`planet mosaic` recipe is selected, SEPAL will show up the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2)."
-msgstr ""
+msgstr "Une fois la recette :code:`mosaïque de planète` sélectionnée, SEPAL affichera le processus de recette dans un nouvel onglet (1) et la fenêtre de sélection AOI s'ouvrira en bas à droite (2)."
 
 #: ../../source/cookbook/planet_mosaic.rst:28
 msgid "The first step is to change the name of the recipe. This name will be used to name your files and recipes in the SEPAL folders. Use the best-suited convention for your need. Simply double-click the tab and write a new name. It will default to :code:`Planet_mosaic_<start_date>_<end_date>`."
@@ -300,7 +300,7 @@ msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:235
 msgid "Destination"
-msgstr ""
+msgstr "Récupérer vers"
 
 #: ../../source/cookbook/planet_mosaic.rst:237
 msgid "You can export the mosaic composition to :guilabel:`sepal workspace` or to :guilabel: GEE as an `asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` SEPAL folder, in the second one the image will be exported to your GEE account asset list."
