@@ -162,4 +162,4 @@ SEPAL is a project funded by the Government of Norway from the Forestry Departme
 .. logos:: funders
 
 .. logos:: institutions
-
+blablabla
