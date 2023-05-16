@@ -1,56 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 00:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-05-16 01:05\n"
+"Last-Translator: \n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
+"Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/planet_order.po\n"
+"X-Crowdin-File-ID: 173\n"
 
 #: ../../source/modules/dwn/planet_order.rst:2
 msgid "Planet order"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:4
-msgid ""
-"This dasboard application based on the `sepal-ui <https://sepal-"
-"ui.readthedocs.io/en/latest/>`_ framework, provide the user with a "
-"friendly interface to explore and download Planet Labs images."
-msgstr ""
+msgid "This dasboard application based on the `sepal-ui <https://sepal-ui.readthedocs.io/en/latest/>`_ framework, provide the user with a friendly interface to explore and download Planet Labs images."
+msgstr "Cette application de dasboard basée sur le framework `sepal-ui <https://sepal-ui.readthedocs.io/en/latest/>`_ fournit à l'utilisateur une interface conviviale pour explorer et télécharger les images de Planet Labs."
 
 #: ../../source/modules/dwn/planet_order.rst:11
-msgid ""
-"in order to start this module, you need to have register on the planet "
-"NICFI contract (`Register NICFI PlanetLab "
-"<https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-"
-"lab-data>`_) and connect your GEE account to SEPAL (`connect GEE to SEPAL"
-" <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-"
-"and-sepal>`_)."
+msgid "in order to start this module, you need to have register on the planet NICFI contract (`Register NICFI PlanetLab <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_) and connect your GEE account to SEPAL (`connect GEE to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_)."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:14
-msgid ""
-"In the landing page of our module at the bottom left of the window, "
-"you'll find 3 buttons:"
+msgid "In the landing page of our module at the bottom left of the window, you'll find 3 buttons:"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:16
-msgid ""
-"The :btn:`<fa-solid fa-file-code>` will open in a new tab the GitHub "
-"repository that is used to create this module. our code is open-source "
-"and distributed under the MIT License."
+msgid "The :btn:`<fa-solid fa-file-code>` will open in a new tab the GitHub repository that is used to create this module. our code is open-source and distributed under the MIT License."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:17
@@ -58,11 +43,7 @@ msgid "The :btn:`<fa-solid fa-book-open>` button will lead you to the wiki page"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:18
-msgid ""
-"The :btn:`<fa-solid fa-bug>` will open in a new tab the isse tracker of "
-"our GitHub repository. You can write here if you experience bugs or if "
-"you have any feature request. Our maintainer will answer as fast as "
-"possible."
+msgid "The :btn:`<fa-solid fa-bug>` will open in a new tab the isse tracker of our GitHub repository. You can write here if you experience bugs or if you have any feature request. Our maintainer will answer as fast as possible."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:21
@@ -74,9 +55,7 @@ msgid "In the lower right corner, 2 tabs are available:"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:25
-msgid ""
-":btn:`<fa-solid fa-map-marker-alt>` the Area of interest selection "
-"PlanetLab"
+msgid ":btn:`<fa-solid fa-map-marker-alt>` the Area of interest selection PlanetLab"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:26
@@ -84,9 +63,7 @@ msgid ":btn:`<fa-solid fa-globe>` The planet authentification PlanetLab"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:28
-msgid ""
-"In the top left corner, 3 other tbas will allow you ton interact with the"
-" data:"
+msgid "In the top left corner, 3 other tbas will allow you ton interact with the data:"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:30
@@ -103,14 +80,10 @@ msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:35
 msgid "Select an AOI"
-msgstr ""
+msgstr "Sélectionnez une AOI"
 
 #: ../../source/modules/dwn/planet_order.rst:37
-msgid ""
-"The application use the same AOI selector that you will find in lots of "
-"other application in SEPAL. Go to the `Module AOI section "
-"<https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__"
-" for more information."
+msgid "The application use the same AOI selector that you will find in lots of other application in SEPAL. Go to the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__ for more information."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:40
@@ -118,20 +91,11 @@ msgid "Planet Lab authentication"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:42
-msgid ""
-"To authenticate the user, feel the form in the second tab with either "
-"your credentials or a planet API key. you can find it in your Planet "
-"profile page in the settings section. Once the values are set click on "
-":btn:`validate`. If your Planet credentials are valid, the :btn:`NICFI` "
-"button should turn green. You can now select a mosaic in the provided "
-"list."
+msgid "To authenticate the user, feel the form in the second tab with either your credentials or a planet API key. you can find it in your Planet profile page in the settings section. Once the values are set click on :btn:`validate`. If your Planet credentials are valid, the :btn:`NICFI` button should turn green. You can now select a mosaic in the provided list."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:49
-msgid ""
-"If you're not yet register to Planet please follow our `documentation "
-"<https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-"
-"lab-data>`_"
+msgid "If you're not yet register to Planet please follow our `documentation <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:52
@@ -139,11 +103,7 @@ msgid "Manage orders"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:54
-msgid ""
-"In the top-left section, the planet order selector is now activated. You "
-"can select any mosaic in the mosaic dropdown on top of the map. using the"
-" :btn:`next` or :btn:`prev` button will jump to the next/prev mosaic in "
-"the list (they are in chronological order)."
+msgid "In the top-left section, the planet order selector is now activated. You can select any mosaic in the mosaic dropdown on top of the map. using the :btn:`next` or :btn:`prev` button will jump to the next/prev mosaic in the list (they are in chronological order)."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:56
@@ -155,9 +115,7 @@ msgid "Manage color combination"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:64
-msgid ""
-"Click on :btn:`<fa-solid fa-palette>` on the top-left side of the map. "
-"This button will expand and show the different color combo available:"
+msgid "Click on :btn:`<fa-solid fa-palette>` on the top-left side of the map. This button will expand and show the different color combo available:"
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:66
@@ -197,44 +155,27 @@ msgid "Selecting one will update the displayed basemap."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:79
-msgid ""
-"More information about the band combination can be found on `Planet "
-"documentation page <https://developers.planet.com/docs/basemaps/tile-"
-"services/indices/>`__."
+msgid "More information about the band combination can be found on `Planet documentation page <https://developers.planet.com/docs/basemaps/tile-services/indices/>`__."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:114
 msgid "Download Data"
-msgstr ""
+msgstr "Télécharger les Données"
 
 #: ../../source/modules/dwn/planet_order.rst:116
-msgid ""
-"Once you are satisfied with your mosaic selection, you can click on the "
-":btn:`<fa-solid fa-cloud-arrow-down>` button. This will launch the "
-"downloading process of your images from Planet server to your folders."
+msgid "Once you are satisfied with your mosaic selection, you can click on the :btn:`<fa-solid fa-cloud-arrow-down>` button. This will launch the downloading process of your images from Planet server to your folders."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:118
-msgid ""
-"The images will be stored in the following folder : "
-":code:`~/module_results/planet-order/<aoi_name>/<mosaic_name>/`."
+msgid "The images will be stored in the following folder : :code:`~/module_results/planet-order/<aoi_name>/<mosaic_name>/`."
 msgstr ""
 
 #: ../../source/modules/dwn/planet_order.rst:125
-msgid ""
-"In the parent folder (:code:`/home/<sepalID>/module_results/planet-"
-"order/<aoi_name>/`) you will find a .geojson file of the planet grid. "
-"This can be useful for other tools."
-msgstr ""
+msgid "In the parent folder (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`) you will find a .geojson file of the planet grid. This can be useful for other tools."
+msgstr "Dans le dossier parent (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`) vous trouverez le fichier .geojson de la grille planétaire. Cela peut être utile pour d'autres outils."
 
 #: ../../source/modules/dwn/planet_order.rst:129
-msgid ""
-"If the requested image is not available (the grid point to water area, "
-"the image was to cloudy so filtered by Planet, you don't have the rights "
-"to download it.. etc) the image will fail. If the image already exist in "
-"your folder it will be skipped. This behaviour allow you to restart a "
-"process if your SEPAL conection crashed without restarting all the "
-"downloads."
+msgid "If the requested image is not available (the grid point to water area, the image was to cloudy so filtered by Planet, you don't have the rights to download it.. etc) the image will fail. If the image already exist in your folder it will be skipped. This behaviour allow you to restart a process if your SEPAL conection crashed without restarting all the downloads."
 msgstr ""
 
 #~ msgid ""
