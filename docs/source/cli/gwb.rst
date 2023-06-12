@@ -1,7 +1,7 @@
-GuidosToolbox Workbench – GWB
-=============================
+GuidosToolbox Workbench
+=======================
 
-The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers.
+The GuidosToolbox Workbench (**GWB**)  is a subset of the desktop software package GuidosToolbox (GTB), designed as a command-line application for Linux 64bit servers (see `GWB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_or `GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_).
 
 Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
 
@@ -9,10 +9,10 @@ Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps fo
 
     The current version available on SEPAL is 1.9.0
 
-available commands
+Available commands
 ------------------
 
-The complete documentation of the GWB commands can be found on the `GWB manual <https://gwbdoc.readthedocs.io>`__
+The complete documentation of GWB commands can be found in the `GWB manual <https://gwbdoc.readthedocs.io>`__
 
 .. code-block:: console
 
@@ -20,11 +20,11 @@ The complete documentation of the GWB commands can be found on the `GWB manual <
     $ GWB_DIST       # Distance
     $ GWB_FRAG       # Fragmentation
     $ GWB_GSC        # GraySpatCon
-    $ GWB_LM         # Landscape Mosaic
+    $ GWB_LM         # Landscape mosaic
     $ GWB_MSPA       # Morphology
     $ GWB_PARC       # Parcellation
     $ GWB_REC        # Recoding
-    $ GWB_RSS        # Restoration Status Summary
+    $ GWB_RSS        # Restoration status summary
     $ GWB_SC         # SpatCon
-    $ GWB_SPA        # Simplified Pattern Analysis
+    $ GWB_SPA        # Simplified pattern analysis
     $ GWB_SPLITLUMP  # Cut/process/merge
