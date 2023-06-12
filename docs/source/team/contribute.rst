@@ -3,9 +3,9 @@
 Contribute
 ==========
 
-We are always happy to receive feedback on SEPAL documentation from users, partners, and colleagues. 
+We are always happy to receive feedback on SEPAL documentation from users, partners, and colleagues.
 
-Before contributing, please review the SEPAL `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_. 
+Before contributing, please review the SEPAL `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_.
 
 Then, communicate your proposed contributions to the SEPAL team by asking the community or reporting an issue on Github.
 
@@ -68,7 +68,7 @@ The following custom directives were added to help build our documentation: vide
 Videos
 """"""
 
-There are two ReST directives for embedding videos from Youtube (:code:`youtube`) and Vimeo (:code:`vimeo`). 
+There are two ReST directives for embedding videos from Youtube (:code:`youtube`) and Vimeo (:code:`vimeo`).
 
 The video ID must be included.
 
@@ -106,7 +106,7 @@ Here is an example:
 Graphviz
 """"""""
 
-There is also a directive to embed Graphviz code. The input code for dot is given as the content. 
+There is also a directive to embed Graphviz code. The input code for dot is given as the content.
 
 To better understand graphviz, see `Graphviz documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_.
 
@@ -129,7 +129,7 @@ Here is an example:
 Icons
 """""
 
-There is a ReST role to include in-line icons in documentation (usualy when referencing a btn). 
+There is a ReST role to include in-line icons in documentation (usualy when referencing a btn).
 
 You can find the icon you're looking for in the Font Awesome `library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
@@ -142,7 +142,7 @@ Folder icon: :icon:`fa-solid fa-folder`
 Buttons
 """""""
 
-There is a ReSt role to include a button in the documentation (with or without text). 
+There is a ReSt role to include a button in the documentation (with or without text).
 
 You can find the icon you're looking for in the Font Awesome `library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
@@ -185,7 +185,7 @@ When you are finished modifying the file in the Github editor, select :code:`pro
 
         When correcting anything, create a branch.
 
-Once you've finished, a PR will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real PR but an adjustment (normally the title will automatically be set with the name of your commit). 
+Once you've finished, a PR will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real PR but an adjustment (normally the title will automatically be set with the name of your commit).
 
 Select :code:`Create pull request`.
 
@@ -262,7 +262,7 @@ We are now ready for a local installation.
 Local installation
 ^^^^^^^^^^^^^^^^^^
 
-Install the forked project locally to make your modifications. 
+Install the forked project locally to make your modifications.
 
 In your computer, go to a terminal and run the following command.
 
@@ -291,7 +291,7 @@ To check that the doc can be built without error, go to the doc folder and run t
 
     We try our best to avoid warnings in the master branch; however, if some are still displayed, ignore them – the SEPAL team will eventually take care of them.
 
-A new folder, :code:`build`, has been created in your sepal-doc folder. 
+A new folder, :code:`build`, has been created in your sepal-doc folder.
 
 Double-click on :code:`sepal-doc/docs/build/html/index.html`. Your browser should open and lead to the landing page of SEPAL documentation. (Note: It's a local .html page. The URL at the top of the browser should start with **file:///** rather than **https:://**. There should be no advertisements in the side bar.)
 
@@ -343,11 +343,11 @@ Open the :code:`sepal-doc` folder in your favorite IDE.
 
 As previously explained, the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ that we are using to build the final doc.
 
-The first step will be to identify the section you would like to store your page. 
+The first step will be to identify the section you would like to store your page.
 
 The following sections are currently available:
 
--   **Getting started** – everything you need to know to use SEPAL. 
+-   **Getting started** – everything you need to know to use SEPAL.
 
     Located in the :code:`sepal-doc/docs/source/setup/` folder.
 
@@ -379,7 +379,7 @@ The following sections are currently available:
 
         .. include:: disclaimer.rst
 
-Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this page. 
+Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this page.
 
 To maintain consistency across folders and help with image maintenance, the images you use should be stored in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`.
 
@@ -450,7 +450,7 @@ To add a new section you need to create a new folder in :code:`sepal-doc/docs/so
         :maxdepth: 1
         :hidden:
 
-This section page should be added to the documentation index. 
+This section page should be added to the documentation index.
 
 Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, as follows. Replace "Section name" with the name you would like to see in the the navigation bar and "<section>" with the folder name.
 
@@ -470,9 +470,9 @@ Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, as follo
 New modules
 """""""""""
 
-Have you created a new module (Shiny or Python-based) and have been asked to add it to the app dashboard of SEPAL (following the issue template)? 
+Have you created a new module (Shiny or Python-based) and have been asked to add it to the app dashboard of SEPAL (following the issue template)?
 
-One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. To maintain consistency across modules, we decided to store the documentation in the module's original repository. 
+One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. To maintain consistency across modules, we decided to store the documentation in the module's original repository.
 
 To create the actual documentation page, follow the instructions provided in the `sepal_ui doc <https://sepal-ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-documentation>`_.
 
@@ -504,19 +504,19 @@ Go to your Google Classroom page and select the **Share** link. On the next page
 
     Google Classroom sharing links.
 
-You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.csv`: 
+You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.csv`:
 
--   replace "<type>" with the type of your class (**general** for a reusable piece of documentation and **project** if linked to a FAO activity), and 
--   replace "<local>" with the language of your class (only English [en], Spanish [es] and French [fr] are available). 
+-   replace "<type>" with the type of your class (**general** for a reusable piece of documentation and **project** if linked to a FAO activity), and
+-   replace "<local>" with the language of your class (only English [en], Spanish [es] and French [fr] are available).
 -   add one extra line at the bottom, as such:
 
 .. code-block::
 
     <title>, `<ID> <<link>>`_, <modification date>
 
--   replace "<ID>" with the number of the class; 
--   replace "<link>" with the invitation link; 
--   replace "<title>" by the title of the classroom; and 
+-   replace "<ID>" with the number of the class;
+-   replace "<link>" with the invitation link;
+-   replace "<title>" by the title of the classroom; and
 -   add the latest "<modification date>" in "YYYY-MM-DD" format.
 
 Create a pull request (PR)
@@ -526,7 +526,7 @@ Create a pull request (PR)
 
     This page of SEPAL documentation, **Contribute**, was requested in the GitHub Issue Tracker as `issue #19 <https://github.com/openforis/sepal-doc/issues/19>`_. It was then added to SEPAL documentation through `PR #24 <https://github.com/openforis/sepal-doc/pull/24>`_.
 
-Now that you have finished your modifications and pushed them to GitHub, we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`). 
+Now that you have finished your modifications and pushed them to GitHub, we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`).
 
 First, select the :code:`Pull requests` button:
 
