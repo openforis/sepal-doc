@@ -18,7 +18,7 @@ Getting Started
 Create Recipe
 ^^^^^^^^^^^^^^
 
-Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC slice, which opens a new SEPAL recipe tab.
+Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa-solid fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC slice, which opens a new SEPAL recipe tab.
 
 .. thumbnail:: ../_images/cookbook/ccdc_slice/recipe_selection.png
     :group: recipe-ccdc-slice
@@ -115,13 +115,13 @@ The first parameter is the number of **harmonics** used to extract the modelled 
 
 Then you need to select the **Break analysis band**. As the slice is including a range of observation, the model can include multiple segments and thus multiple breaks. this parameter will select the band used by SEPAL to select the break that will be kept in the slice output.
 
-Breaks identified by the CCDC asset at the end of the time period are usually errors. if your slicing is ending at the same date as your CCDC asset, you should consider masking the end break. 
+Breaks identified by the CCDC asset at the end of the time period are usually errors. if your slicing is ending at the same date as your CCDC asset, you should consider masking the end break.
 
 SEPAL offers 4 ways of selecting the remaining break:
 
 - :guilabel:`first`: the first break within the slice date range
 - :guilabel:`last`: the last break within the slice date range
-- :guilabel:`magnitude`: the break with the highest magnitude of change 
+- :guilabel:`magnitude`: the break with the highest magnitude of change
 - :guilabel:`confidence`: the break with the highest confidence value (see :doc:`ccdc` for mor information about confidence computation)
 
 By selecting a specific breack direction, the break sekection will only take into acount the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default we consider :guilabel:`any` break direction.
@@ -131,9 +131,9 @@ By moving the slider, you will ignore the break with a low confidence from the a
 Visualization
 -------------
 
-Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window.
+Click on the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa-solid fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window.
 
-The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :ref:`ccdc_pixel_analys` for a complete description.
+The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :doc:`ccdc` for a complete description.
 
 The plotting area cover all the CCDC asset range, in red (4) the user will see the slice. It will be a sector of the plot if date range is selected and a red line if single date is selected.
 
@@ -148,10 +148,14 @@ The plotting area cover all the CCDC asset range, in red (4) the user will see t
 Export
 ------
 
-Trigger the export task
-^^^^^^^^^^^^^^^^^^^^^^
+.. important::
 
-Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace.
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
+Trigger the export task
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace.
 
 you can export this asset as a :code:`.tif` image to your SEPAL workspace or as an *Image* in GEE.
 The scale parameter depends on the data selected and the level of detail you will need for your further analysis. Landsat based assets are usually created at 30 meters. Sentinel-1 and 2 can be at 10 meter, but will need 9 times more space as compared to 30 meter resolution.
@@ -179,7 +183,7 @@ User can also export the specific **segment bands**. These bands are relative to
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 

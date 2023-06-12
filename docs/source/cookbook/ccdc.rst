@@ -25,7 +25,7 @@ Getting Started
 Create Recipe
 ^^^^^^^^^^^^^^
 
-Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
+Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa-solid fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC, which opens a new SEPAL recipe tab.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/recipe_selection.png
     :group: ccdc-recipe-selection
@@ -73,7 +73,7 @@ The data exported by the recipe will be cut to the bounds of the AOI. There are 
 -   EE Tables
 -   Drawn polygons
 
-they are extensively described in our documentation. Please read :doc:`feature/aoi_selector` to know more.
+they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/aoi.png
     :title: Select AOI based on administrative layers
@@ -82,7 +82,7 @@ they are extensively described in our documentation. Please read :doc:`feature/a
 Date Range
 ^^^^^^^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa fa-check> apply` button.
+In the :guilabel:`DAT` tab, you will be asked to select the starting date and the ending date of the time series. Click on the date tex field to open a date picker popup. Click on the :btn:`<fa-solid fa-check> Select` button to validate a date. When both dates are selected click on :btn:`<fa-solid fa-check> apply` button.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/dates.png
     :title: Select AOI based on EE table
@@ -353,7 +353,7 @@ Those are the iterations for the maximum number of runs for LASSO regression con
 On-the-fly Pixel analysis
 -------------------------
 
-Click on the :btn:`<fa fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
+Click on the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa-solid fa-plus` (2). Click anywhere in the AOI to plot data for this specific location in the following popup window.
 
 The plotting area (3) is dynamic and can be customized by the user.
 
@@ -376,10 +376,14 @@ On the main graph, the orange lines shows the CCDC modelled time-series. Each of
 Export
 ------
 
+.. important::
+
+    You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more.
+
 Trigger the export task
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Click on the :btn:`<fas fa-cloud-download-alt>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
+Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the asset. CCDC Assets are only compatible with Google Earth Engine, for which a new asset will be created in your personal Earth Engine repository.
 
 If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications as shown in the below figure on the left. If you are more constrained by storage you will need ot decide on a subset of bands, for which the below figure on the right is a suggested starting point.
 
@@ -399,7 +403,7 @@ The scale parameter depends on the data selected and the level of detail you wil
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the task tab (bottom left corner using the :btn:`<fa fa-tasks>` or :btn:`<fa fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 

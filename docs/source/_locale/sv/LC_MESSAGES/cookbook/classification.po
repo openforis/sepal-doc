@@ -1,0 +1,1750 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 00:58+0000\n"
+"PO-Revision-Date: 2023-04-25 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/classification.po\n"
+"X-Crowdin-File-ID: 65\n"
+"Language: sv_SE\n"
+
+#: ../../source/cookbook/classification.rst:2
+msgid "Classification"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:5
+msgid "Build supervised classifications of mosaic images to create easy-to-use user interfaces with the Classification recipe"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:8
+msgid "Overview"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:10
+msgid "With this recipe, SEPAL will help users build a supervised classification of any mosaic image. It is built on top of the most advanced tools available on Google Earth Engine (GEE) (including the classifiers CART, RandomForest, NaiveBayes and SVM), allowing users to create an easy-to-use user interface to:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:12
+msgid "select the image to classify;"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:13
+msgid "define the class table; and"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:14
+msgid "add training data from external sources and on-the-fly selection."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:16
+msgid "In combination with the other tools of SEPAL, the classification recipe can help you provide accurate land-use maps, without writing a single line of code."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:19
+msgid "Start"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:21
+msgid "Once the classification recipe is selected, SEPAL will show the recipe process in a new tab (1) and the **Image selection** window will appear in the lower-right (2)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:27
+msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and enter a new name. It will default to :code:`Classification_<timestamp>`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:39
+msgid "The SEPAL team recommends using the following naming convention: :code:`<image_name>_<classification>_<measures>`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:42
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:44
+msgid "In the lower-right corner, the following five tabs are available, allowing you to customize the time series to your needs:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:46
+msgid ":guilabel:`IMG`: The image to classify."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:47
+msgid ":guilabel:`LEG`: The legend of the classification system."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:48
+msgid ":guilabel:`TRN`: The training data of the model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:49
+msgid ":guilabel:`AUX`: The auxiliary global dataset to use in the model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:50
+msgid ":guilabel:`CLS`: The classifier configuration."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:57
+msgid "Image selection"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:59
+msgid "The first step consists of selecting the image bands on which to apply the classifier. The number of selected bands (i.e. images) is not limited."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:63
+msgid "Keep in mind that increasing the number of bands to analyse will improve the model but slow down the rendering of the final image."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:67
+msgid "If multiple images are selected, each selected image should overlap each other. If masked pixels are found in one of the bands, the classifier will mask them."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:69
+msgid "Select :btn:`<fa-solid fa-plus> Add`. The following screen should be displayed:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:76
+msgid "Image type"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:78
+msgid "Users can select images coming from an **Existing recipe** or an exported **GEE asset** (see advantages and disadvantages below). Both should be an :code:`ee.Image`, rather than a :code:`Time series` or :code:`ee.ImageCollection`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:80
+msgid "**Existing recipe**:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:82
+#: ../../source/cookbook/classification.rst:93
+msgid "Advantages:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:84
+msgid "All of the computed bands from SEPAL can be used."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:85
+msgid "Any modification to the existing recipe will be propagated in the final classification."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:87
+#: ../../source/cookbook/classification.rst:98
+msgid "Disadvantages:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:89
+msgid "The initial recipe will be computed at each rendering step, slowing down the classification process and potentially breaking on-the-fly rendering due to GEE timeout errors."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:91
+msgid "**GEE asset**:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:95
+msgid "Can be shared with other users."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:96
+msgid "The computation will be faster, as the image has already been exported."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:100
+msgid "Only the exported bands will be available."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:101
+msgid "The :code:`Image` needs to be re-exported to propagate changes."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:103
+msgid "Both methods behave the same way in the interface."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:106
+msgid "Select bands"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:110
+msgid "For this example, we will use a public asset created with the optical mosaic tool from SEPAL. It's a Sentinel-2 mosaic of Eastern Province in Zambia during the dry season from 2012 to 2020. Multiple bands are available."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:112
+msgid "Use the following asset name if you want to reproduce our workflow: :code:`projects/sepal-cookbook/assets/classification/zmb-eastern_2012_2021`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:115
+msgid "Image bands"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:117
+msgid "Once an asset has been selected, SEPAL will load its bands in the interface. You can use any band that is native to the image as input for the classification process. Simply click on the band name to select them. The selected bands are summarized in the expansion panel title (1) and displayed in gold in the panel content (2)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:119
+msgid "In this example, we selected the following:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:121
+msgid ":code:`red`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:122
+msgid ":code:`nir`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:123
+msgid ":code:`swir`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:124
+msgid ":code:`green`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:131
+msgid "Derived bands"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:133
+msgid "The analysis is not limited to natively available bands. SEPAL can also build additional derived bands on-the-fly."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:135
+msgid "Select :btn:`<fa-solid fa-plus> Derived bands` at the bottom of the pop-up window and select the deriving method to. This will add a a new panel to the expansion panel with the selected method name (1). The selected method will be applied to the selected bands."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:139
+msgid "If more than two bands are selected, the operation will be applied to the Cartesian product of the bands. If you select bands :math:`A`, :math:`B` and :math:`C`, and apply the :code:`Difference` derived bands, you'll add three bands to your analysis:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:141
+msgid ":math:`A - B`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:142
+msgid ":math:`A - C`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:143
+msgid ":math:`B - C`"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:151
+msgid "You should notice that in the figure, we compute the normalized difference between :code:`nir` and :code:`red` (i.e. the NDVI). It is also precomputed in the :code:`Indexes` derived bands."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:153
+msgid "Once the image selection is done, select :btn:`<fa-solid fa-check> Apply` and the pop-up window will close. The images and bands will be displayed in the :guilabel:`IMG` panel on the lower-right corner of the screen. By selecting the :btn:`<fa-solid fa-trash>` button, you will remove the image and its band from the analysis altogether."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:159
+msgid "From there, select :btn:`<fa-solid fa-chevron-right> Next` to continue to the next step."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:162
+msgid "Legend setup"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:164
+msgid "In this step, the user will specify the legend that should be used in the output classified image. Any categorical classification that associates integer value to a class name will work. SEPAL provides multiple ways to create and customize a legend."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:172
+msgid "Legends created here are fully compatible with other functionalities of SEPAL, including applications."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:175
+msgid "Manual legend"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:177
+msgid "The first and most natural way of building a legend is to do it from scratch."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:179
+msgid "Select :btn:`<fa-solid fa-plus> Add` to add a new class to your legend."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:181
+msgid "A class is defined by three key elements:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:183
+msgid "Color (1): Select the small color square to open the color selector and choose any color (color[s] must be unique)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:184
+msgid "Value (2): Select any integer value (value must be unique)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:185
+msgid "Class (3): Insert a class description (cannot be empty)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:187
+msgid "Select the :btn:`<fa-solid fa-plus> Add` button again to add an extra class line. The :btn:`<fa-solid fa-trash>` button can be used to remove a specific line."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:191
+msgid "Select :btn:`HEX` (4) to display the hexadecimal value of the selected color. It can also be used to insert a known color palette by utilizing its values."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:193
+msgid "If multiple classes are created and you are not sure which one to use, you can apply colors to them by selecting a preselected color-map (5). They are provided by the `gee community <https://github.com/gee-community/ee-palettes>`__ and will be applied to every existing class in your panel."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:200
+msgid "Import legend"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:202
+msgid "If you already have a file describing your legend, you can use it, rather than identifying every legend item individually. Your legend needs to be saved in .csv format and contain the following information:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:204
+msgid "color (stored as a hexadecimal value [e.g. \"#FFFF00\"] or in three columns [red, blue, green]);"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:205
+msgid "value (stored as an integer); and"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:206
+msgid "class (stored as a string)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:210
+msgid "The column names will help SEPAL predict information, but are not compulsory."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:212
+msgid "For example, a .csv file containing the following information is fully qualified to be used in SEPAL:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:229
+msgid "This one is the same using RGB-defined colors:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:246
+msgid "Once the fully qualified legend file has been prepared on your computer, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Import from CSV`, which will open a pop-up window where you can drag and drop the file or select it manually from your computer files."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:248
+msgid "As shown on the next image, you can then select the columns that are defining your .csv file (select :btn:`Single column` for hexadecimal-defined colors and :btn:`multiple columns` for RGB-defined colors)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:254
+msgid "Select :btn:`<fa-solid fa-check> Apply` to validate your selection. The classes will be added to the legend panel and you'll be able to modify the legend using the parameters presented in the previous section."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:260
+msgid "Select :btn:`<fa-solid fa-check> Done` to validate this step."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:262
+msgid "Every panel should be closed and the colors of the legend are now displayed at the bottom of the map. No classification is performed, as we didn't provide any training data. Nevertheless, this step is the last mandatory step for setting parameters. Training data can be added using the on-the-fly training functionality."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:265
+msgid "Export legend"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:267
+msgid "Once your legend is validated, select the :btn:`<fa-solid fa-chevron-up>` and then :code:`Export as CSV`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:269
+msgid "A file will be downloaded to you computer named :code:`<recipe_name>_legend.csv`, which will contain the legend information in the following format:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:279
+msgid "Select training data"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:283
+msgid "This step is not mandatory."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:285
+msgid "Two inputs are required to create the classification output:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:287
+msgid "pixel values (e.g. bands) to classify; and"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:288
+msgid "training data to set up the classification model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:290
+msgid "This menu will help the user manage the training data of the model used. To open it, select :btn:`TRN` in the lower-right side of the window."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:297
+msgid "Collected reference data"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:299
+msgid "Collected reference data are data selected on-the-fly by the user. The workflow will be explained later in the documentation. In this panel, this type of data can be managed by the user."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:301
+msgid "The data appear as a pair, associating coordinates to a class value, which will be used to create training data in the classification model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:303
+msgid "If you're satisfied with the current selection and you want to share the data with others, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Export reference data to csv`. A file will be created named: :code:`<recipe_name>_reference_data.csv` and sent to your computer. It will embed all of the gathered point data using the following convention:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:311
+msgid "If you are not satisfied with the selected data, select :btn:`<fa-solid fa-chevron-up>` and then :code:`Clear collected reference data` to remove all collected data from the analysis."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:315
+msgid "A confirmation pop-up window should prevent you from accidentally deleting everything."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:318
+msgid "Existing training data"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:320
+msgid "Instead of collecting all of the data by hand, SEPAL provides numerous ways to include already existing training data into your analysis. The data can be from multiple formats and will be included in the model to improve the quality of the final map."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:324
+msgid "The imported files can use an extended version of the legend provided in the previous step, but to avoid unexpected behaviour, at least one of the classes of your legend and the provided training data need to match."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:328
+msgid "If the added training data are outside of the image to classify, they will have no impact on the final result (with the exception of the SEPAL recipe)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:330
+msgid "To add new data, select :btn:`<fa-solid fa-plus> Add` and choose the type of data to import:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:337
+msgid "CSV"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:339
+msgid "By selecting :btn:`csv file`, SEPAL will request a file from your computer in :code:`.csv` format. The file needs to include two pieces of information: geographic coordinates and class value."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:341
+msgid "This can be done using coordinates in :code:`EPSG:4326` latitude and longitude, as well as a `GeoJSON <https://geojson.org>`__ compatible point object. The file can embed other multiple columns that will not be considered during the analysis."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:343
+msgid "The following table is compatible with SEPAL:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:351
+msgid "The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fa-solid fa-chevron-left> Next` once every column is filled."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:359
+msgid "If your file contains a GeoJSON column instead of coordinates, select :btn:`geojson column` to switch the interface to one column selection."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:361
+msgid "Now that you have set up the coordinates of your points, SEPAL will request the columns specifying the class value (not the name) in a second frame. Only the single column is supported so far. Select the column from your file that embeds the class values."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:365
+msgid "Using the :code:`row filter expression` text field, one can filter out some lines of the table. Refer to the `features <#>`__ section to learn more."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:371
+msgid "Select :btn:`<fa-solid fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:373
+msgid "Selecting the :btn:`<fa-solid fa-check> Done` button will complete the uploading procedure."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:380
+msgid "GEE table"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:382
+msgid "By selecting :btn:`Earth Engine Table`, SEPAL will request a file from your computer in :code:`.csv` format. The file needs to provide two pieces of information: geographic coordinates and class value."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:384
+msgid "The process is nearly the same as found in the documentation above discussing .csv tables. The only difference should be the geometry column, as GEE assets usually embed a :code:`.goejson` column by default. If this column exists, it will be autodetected by SEPAL."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:386
+msgid "For the other steps, please reproduce what was presented in the .csv section above."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:394
+msgid "To build the documentation example, you can use this public asset: :code:`projects/sepal-cookbook/assets/classification/zmb_eastern_esa_2012_2021_reference_data`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:397
+msgid "Sample classification"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:399
+msgid "Instead of providing dataset points, SEPAL can also extract reference data from an already existing classification. It's a good way to improve an already existing classification system using an image with a better resolution."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:401
+msgid "To sample data, SEPAL will randomly select a number of points in each class and extract the class value using the provided resolution."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:403
+msgid "Start by selecting btn:`Sample classification` in the opened pop-up window, where all of the the parameters can be set:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:405
+msgid "**Sample per class**: The number of samples per class of the provided image. The more samples you request, the more accurate the model will be (if too many samples are selected though, on-the-fly visualization will never render; default to: :code:`1000`)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:406
+msgid "**Scale to sample in**: The scale used to create the sample in the provided image (it should match the image to classify resolution; default to: :code:`30 m`)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:407
+msgid "**EE asset ID**: The ID of the classification to sample (it should be an :code:`ee.Image` accessible to the user)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:408
+msgid "**Class band**: The class to use for classification value (the dropdown menu will be filled with the bands found in the provided asset)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:412
+msgid "To reproduce this example, use the following asset as an image to sample: :code:`projects/sepal-cookbook/assets/classification/zmb_copernicus_landcover`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:420
+msgid "When all of the parameters are selected, it can take time, as SEPAL builds the sampling values on-the-fly. They will only be displayed once the sampling is validated."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:422
+msgid "Select :btn:`<fa-solid fa-chevron-right> Next` to display the sampling summary. In this panel, SEPAL displays each class of the legend (as defined in the previous section) and the number of samples created for it."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:424
+msgid "Select the :btn:`<fa-solid fa-plus>` (1) buttons to change the number of samples in a specific class. By default, SEPAL ignores the samples with a :code:`Null` value. One can select :btn:`Default` (2) for any of the classes, so that these points end up in this default class instead of being ignored."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:431
+msgid "SEPAL recipe"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:433
+msgid "SEPAL is also able to dirrectly apply a model built in another recipe as training data. In this case, we are not importing the points, but all of the model from the external recipe. It will not add points to the map. It's useful when the same classification needs to be applied on the same area for multiple years. The classification work can be carried out only in the first year and then applied recursively on all the others."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:435
+msgid "Select :btn:`Saved SEPAL recipe` to open the pop-up window. In the dropdown menu, select one of the recipes saved in your SEPAL account."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:439
+msgid "The imported recipe needs to be a classification recipe. If none are found, the dropdown menu will be empty."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:441
+msgid "This recipe cannot come from another SEPAL account."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:448
+msgid "Use auxiliary datasets"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:450
+msgid "Some information that could be useful to the classification model is not always included in your image bands. A common example is **Elevation**. In order to improve the quality of the classification, SEPAL can provide some extra datasets to add auxiliary bands to the classification model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:452
+msgid "Select :btn:`AUX` to open the **Auxiliaries** tab. Three sources are currently implemented in the platform (any number of them can be selected):"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:454
+msgid "**Latitude**: On-the-fly latitude dataset built from the coordinates of each pixel's center."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:455
+msgid "**Terrain**: From the `NASA SRTM Digital Elevation 30 m <https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003>`__ dataset, SEPAL will use the :code:`Elevation`, :code:`Slope` and :code:`Aspect` bands. It will also add an :code:`Eastness` and :code:`Northness` band derived from :code:`Aspect`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:456
+msgid "**Water**: From the `JRC Global Surface Water Mapping Layers, v1.3 <https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_3_GlobalSurfaceWater>`__ dataset, SEPAL will add the following bands: :code:`occurrence`, :code:`change_abs`, :code:`change_norm`, :code:`seasonality`, :code:`max_extent`, :code:`water_occurrence`, :code:`water_change_abs`, :code:`water_change_norm`, :code:`water_seasonality` and :code:`water_max_extent`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:463
+msgid "Classifier configuration"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:467
+msgid "Customizing the classifier is a section designed for advanced users. Make sure that you thoroughly understand how the classifier you're using works before changing its parameters."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:471
+msgid "The default value is a **Random Forest** classifier using 25 trees."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:473
+msgid "The classification tool used in SEPAL is based on the `Smile - Statistical Machine Intelligence and Learning Engine Javascript <https://haifengl.github.io/classification.html>`__ library. Please refer to their documentation for specific descriptions of each model."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:475
+msgid "Select :btn:`CLS` to open the classification parameter menu. SEPAL supports 7 classifiers:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:477
+msgid "Random Forest"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:478
+msgid "Gradient tree boost"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:479
+msgid "cart"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:480
+msgid "Naive Bayes"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:481
+msgid "SVM"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:482
+msgid "Min distance"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:483
+msgid "Decision Tree"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:485
+msgid "For each of them, the workflow is the same:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:487
+msgid "Select the classifier by clicking on the corresponding name. SEPAL will display some of the parameters available."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:488
+msgid "Select :btn:`More` on the lower left side of the panel to fully customize your classifier. The classification results will be updated on-the-fly."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:501
+msgid "On the fly training"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:505
+msgid "This process requires a good understanding of the visualization feature of SEPAL. Please refer to the `feature <#>`__ section for more information."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:507
+msgid "Once all of the parameters are set, the user is free to add extra training data in the web interface and the new points will be added to the final model, improving the quality of the classification."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:510
+msgid "Set up the view"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:512
+msgid "In order to improve the classification, one must set up the view to display all of the information. While these guidelines could be modified and extended, they are still useful as an introductory resource."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:514
+msgid "In the following image, we displayed:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:516
+msgid "The current recipe (1) using the class colors in categorical mode."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:517
+msgid "The current image (what you are classifying) (2) using the NIR,RED,SWIR band combination."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:518
+msgid "The extra visual dataset NICFI PlaneLab data (3) from 2021."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:520
+msgid "The number (4) indicates a cluster of existing training points. Zoom-in and they will be displayed as markers using the color of the class they mark (5)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:524
+msgid "This initial classification has been set using sampled data. Since they are sampled from a larger image, some are out of the image. They will have no impact on the classification as they are applied to masked pixels (6)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:532
+msgid "Select points"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:534
+msgid "To start adding points, open the training interface by selecting :btn:`<fa-solid fa-location-dot>` in the upper-right of the screen (1). Once selected, the background color becomes darker and the pointer of the mouse becomes a :icon:`fa-solid fa-plus`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:536
+msgid "The process to add new training data is as follows:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:538
+msgid "**Click on the map to select a point**: You can click in any of the panels (this is not restricted to the recipe panel), but to be useful, the point needs to be within the border of the AOI. If it's not already the case, the class selection panel will appear in the upper-right of the window (2)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:539
+msgid "**Select the class value**: The previous class value is preselected, but you can change it to any other class value from the defined legend. The legend is displayed as :code:`<legend_classname> (<legend_value>)`."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:541
+msgid "You can now click elsewhere on the map to add another point. If you are satisfied with the classification, select :btn:`<fa-solid fa-xmark> Close` (3) and select :btn:`<fa-solid fa-location-dot>` again to stop editing the points. Every time a new point is added, the classification map is recomputed and rendered in the left window."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:548
+msgid "Modify existing points"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:550
+msgid "To modify existing points, select the :btn:`<fa-solid fa-location-dot>` to open the point editing interface and follow the following steps:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:552
+msgid "**Select a point**: To select a point, click on an existing marker. It will appear bolder than the others. If it's not already the case, the class selection panel will appear in the upper-right of the window."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:553
+msgid "**Change the class value**: The point class will be selected in the editing menu with a :icon:`fa-solid fa-check`. Select any other class value to change it."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:556
+msgid "Check the validity"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:558
+msgid "SEPAL embeds information to help the user understand if the amount of training data is sufficient to produce an accurate classification model. In the recipe window, change the band combination to :code:`Class probability`. The user now sees the probability of the model (i.e. the confidence level of the level with output class for each pixel). If the value is high (>80%), then the pixel can be considered valid; if the value is low (<80%), the model needs more training data or extra bands to improve the analysis."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:560
+msgid "In the example image, the lake is classified as a \"permanent water body\" with a confidence of 65%, which is higher than the rest of the vegetation around it."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:566
+#, python-format
+msgid "This analysis can also be conducted class by class using the built-in :code:`<class_name> %` bands. Select the one corresponding to the class you want to assess (as you can see in the following image) and you'll get the % of confidence for each pixel to be in the sub-mentioned class."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:573
+msgid "Export"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:577
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:580
+msgid "Start download"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:582
+msgid "Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve** panel where you can select the exportation parameters (1)."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:584
+msgid "You need to select the band to export (2). There is no maximum number of bands; however, exporting useless bands will only increase the size and time of the output."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:586
+msgid "You can set a custom scale for exportation (3) by changing the value of the slider in meters (m). (Note: Requesting a smaller resolution than images' native resolution will not improve the quality of the output – just its size; keep in mind that the native resolution of Sentinel data is 10 m, while Landsat is 30 m.)"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:588
+msgid "You can export the image to the :btn:`SEPAL workspace` or to the :btn:`Google Earth Engine Asset` list. The same image will be exported, but in the first case you will find it in :code:`.tif` format in the :code:`Downloads` folder; in the second case, the image will be exported to your GEE account asset list."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:592
+msgid "If :btn:`Google Earth Engine Asset` is not displayed, it means that your GEE account is not connected to SEPAL. Please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:594
+msgid "Select :btn:`<fa-solid fa-check> Apply` to start the download process."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:601
+msgid "Exportation status"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:603
+msgid "By going to the **Task** tab (in the lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:605
+msgid "The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:609
+msgid "This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without ending the process."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:611
+msgid "When the task is finished, the frame will be displayed in green, as shown in the second image."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:624
+msgid "Access"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:626
+msgid "Once the download process is done, you can access the data in your SEPAL folders. The data will be stored in the :code:`Downloads` folder using the following format:"
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:641
+msgid "Understanding how images are stored in an optical mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:643
+msgid "The data are stored in a folder using the name of the optical mosaic as it was created in the first section of this article. As the number of data is spatially too big to be exported at once, the data are divided into smaller pieces and brought back together in a :code:`<MO name>_<gee tile id>.vrt` file."
+msgstr ""
+
+#: ../../source/cookbook/classification.rst:647
+msgid "The full folder with a consistent tree folder is required to read the `.vrt`."
+msgstr ""
+
+#~ msgid ""
+#~ "With this recipe, SEPAL will help "
+#~ "users build a supervised classification "
+#~ "of any mosaic image. It is built"
+#~ " on top of the most advanced "
+#~ "tools available on Google Earth Engine"
+#~ " (including the classifiers CART, "
+#~ "RandomForest, NaiveBayes and SVM), allowing"
+#~ " users to create an easy-to-use"
+#~ " user interface to:"
+#~ msgstr ""
+
+#~ msgid "select the image to classify"
+#~ msgstr ""
+
+#~ msgid "add training data from external sources and on the fly selection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the classification recipe is "
+#~ "selected, SEPAL will show the recipe "
+#~ "process in a new tab (1) and "
+#~ "the image selection window will appear"
+#~ " on the lower-right side (2)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first step is to change the"
+#~ " name of the recipe. This name "
+#~ "will be used to identify your "
+#~ "files and recipes in SEPAL folders. "
+#~ "Use the best-suited convention for "
+#~ "your needs. Simply double-click the "
+#~ "tab and write a new name. It "
+#~ "will default to :code:`Classification_<timestamp>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fas fa-plus> Add`. "
+#~ "The following screen should be "
+#~ "displayed:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Users can select images coming from "
+#~ "an **Existing recipe** (all computed "
+#~ "bands will be available or an "
+#~ "exported **GEE asset**. Both should be"
+#~ " :code:`ee.Image` (no :code:`Time series`, "
+#~ "no :code:`ee.ImageCollection`)."
+#~ msgstr ""
+
+#~ msgid "Defaults:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The initial recipe will be computed "
+#~ "at each rendering step, slowing down "
+#~ "the classification process and potentially "
+#~ "breaking on the fly rendering due "
+#~ "to GEE timeout errors."
+#~ msgstr ""
+
+#~ msgid "The computation will be faster as the image is already exported."
+#~ msgstr ""
+
+#~ msgid "The :code:`Image` needs to be reexported to propagate changes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this example, we will use a"
+#~ " public asset created with the "
+#~ "optical mosaic tool from SEPAL. It's "
+#~ "a Sentinel 2 mosaic of the Eastern"
+#~ " Province of Zambia in the dry "
+#~ "season from 2012 to 2020. Multiple "
+#~ "bands are available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this example, we selected the "
+#~ "following: :code:`red`, :code:`nir`, :code:`swir`,"
+#~ " and :code:`green`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The analysis is not limited to "
+#~ "natively-available bands. SEPAL can also"
+#~ " build additional derived bands on "
+#~ "the fly. Click :btn:`<fas fa-plus> "
+#~ "Derived bands` at the bottom of "
+#~ "the pop-up window and select the"
+#~ " deriving method. A new panel is "
+#~ "added to the expansion panel with "
+#~ "the selected method name (1). The "
+#~ "selected method will be applied to "
+#~ "the selected bands."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If more than two bands are "
+#~ "selected, the operation will be applied"
+#~ " to the Cartesian product of the "
+#~ "bands. If you select bands :math:`A`,"
+#~ " :math:`B` and :math:`C` and apply "
+#~ "the :code:`Difference` derived bands, you'll"
+#~ " add three bands to your analysis:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You should notice that in the "
+#~ "figure, we compute the normalized "
+#~ "difference between :code:`nir` and "
+#~ ":code:`red`, which is the NDVI. It "
+#~ "is also precomputed in the "
+#~ ":code:`Indexes` derived bands."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the image selection is done, "
+#~ "you can click :btn:`<fas fa-check> "
+#~ "Apply` and the pop-up window will"
+#~ " close. The images and bands will "
+#~ "be displayed in the :guilabel:`IMG` "
+#~ "panel on the lower-right corner of"
+#~ " the screen. By clicking on the "
+#~ ":btn:`<fas fa-trash>` button, you will"
+#~ " remove the image and its band "
+#~ "from the analysis altogether."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From there, click on :btn:`<fas fa-"
+#~ "chevron-right> Next` to jump to "
+#~ "the next step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first and most natural way of"
+#~ " building a legend is to do it"
+#~ " from scratch. Click on :btn:`<fas "
+#~ "fa-plus> Add` to add a new "
+#~ "class to your legend."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Color (1): Click on the small "
+#~ "color square to open the color "
+#~ "selector and choose any color (color[s]"
+#~ " must be unique)."
+#~ msgstr ""
+
+#~ msgid "Value (2): Select any integer value. This value must be unique."
+#~ msgstr ""
+
+#~ msgid "Class (3): Insert a class description. It cannot be empty."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click again on the :btn:`<fas fa-"
+#~ "plus> Add` button to add an extra"
+#~ " class line. The :btn:`<fas fa-"
+#~ "trash>` button can be used to "
+#~ "remove a specific line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`HEX` (4) to display "
+#~ "the hexadecimal value of the selected"
+#~ " color. It can also be used to"
+#~ " insert a known color palette by "
+#~ "utilizing its values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you already have a file "
+#~ "describing your legend, you can use "
+#~ "it, rather than identifying every legend"
+#~ " item individually. Your legend needs "
+#~ "to be saved in csv format and "
+#~ "contain the following information:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Color: Stored as a hexadecimal value "
+#~ "(e.g. \"#FFFF00\") or in three columns"
+#~ " (red, blue, green)."
+#~ msgstr ""
+
+#~ msgid "Value: Stored as an integer."
+#~ msgstr ""
+
+#~ msgid "Class: Stored as a string."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, a csv containing the "
+#~ "following information is fully qualified "
+#~ "to be used in SEPAL:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the fully-qualified legend file "
+#~ "has been prepared on your computer, "
+#~ "click on :btn:`<fas fa-chevron-up>` "
+#~ "and then on :code:`Import from CSV`. "
+#~ "It will open a pop-up window "
+#~ "where you can drag and drop the"
+#~ " file or select it manually from "
+#~ "your computer files. As shown on "
+#~ "the next image, you can then "
+#~ "select the columns that are defining "
+#~ "your csv. Click on :btn:`Single column`"
+#~ " for hexadecimal-defined colors and "
+#~ ":btn:`multiple columns` for RGB-defined "
+#~ "colors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fas fa-check> Apply` "
+#~ "to validate your selection. The classes"
+#~ " will be added to the legend "
+#~ "panel and you'll be able to modify"
+#~ " the legend using the parameters "
+#~ "presented in the previous section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fas fa-check> Done` "
+#~ "to validate this step. Every panel "
+#~ "should be closed and the colors of"
+#~ " the legend are now displayed at "
+#~ "the bottom of the map. No "
+#~ "classification is performed, as we "
+#~ "didn't provide any training data. "
+#~ "Nevertheless, this step is the last "
+#~ "mandatory step for setting parameters. "
+#~ "Training data can be added using "
+#~ "the on the fly training functionality."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once your legend is validated, click "
+#~ "again on the :btn:`<fas fa-chevron-"
+#~ "up>` and then on :code:`Export as "
+#~ "CSV`. A file will be downloaded to"
+#~ " you computer named "
+#~ ":code:`<recipe_name>_legend.csv`, which will contain"
+#~ " the legend information in the "
+#~ "following format:"
+#~ msgstr ""
+
+#~ msgid "Select Training data"
+#~ msgstr ""
+
+#~ msgid "Pixel values (e.g. bands) to classify."
+#~ msgstr ""
+
+#~ msgid "Training data to set up the classification model."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This menu will help the user "
+#~ "manage the training data of the "
+#~ "model used. To open it, simply "
+#~ "click on :btn:`TRN` in the lower-"
+#~ "right side of the window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Collected reference data are data "
+#~ "selected on the fly by the user."
+#~ " The workflow will be explained later"
+#~ " in the documentation. In this panel,"
+#~ " this type of data can be "
+#~ "managed by the user."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The data appear as a pair, "
+#~ "associating coordinates to a class "
+#~ "value, which will be used to "
+#~ "create training data in the "
+#~ "classification model. If you're satisfied "
+#~ "with the current selection and you "
+#~ "want to share the data with "
+#~ "others, click on :btn:`<fas fa-"
+#~ "chevron-up>` and then on :code:`Export "
+#~ "reference data to csv`. A file "
+#~ "will be created named: "
+#~ ":code:`<recipe_name>_reference_data.csv` and sent to"
+#~ " your computer. It will embed all "
+#~ "of the gathered point data using "
+#~ "the following convention:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On the other hand, if you are "
+#~ "not satisfied with the selected data,"
+#~ " click on :btn:`<fas fa-chevron-up>`"
+#~ " and then on :code:`Clear collected "
+#~ "reference data` to remove all collected"
+#~ " data from the analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A confirmation pop-up should prevent "
+#~ "you from accidentally deleting everything."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Instead of collecting all of the "
+#~ "data by hand, SEPAL provides numerous"
+#~ " ways to include already-existing "
+#~ "training data into your analysis. The"
+#~ " data can be from multiple formats"
+#~ " and will be included in the "
+#~ "model to improve the quality of "
+#~ "the final map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the added training data are "
+#~ "outside of the image to classify, "
+#~ "they will have no impact on the"
+#~ " final result (with the exception of"
+#~ " the \"SEPAL recipe\")."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To add new data, click :btn:`<fas "
+#~ "fa-plus> Add` and choose the type "
+#~ "of data to import:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The columns used to define the X"
+#~ " (longitude) and Y (latitude) coordinates"
+#~ " are manually set up in the "
+#~ "pop-up window. Click on :btn:`<fas "
+#~ "fa-chevron-left> Next` once every "
+#~ "column is filled."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your file contains a GeoJSON "
+#~ "column instead of coordinates, click on"
+#~ " :btn:`geojson column` to switch the "
+#~ "interface to one column selection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fas fa-chevron-left> "
+#~ "next` to add the data to the "
+#~ "model. SEPAL will provide a summary "
+#~ "of the classes in the legend of"
+#~ " the classification and the number of"
+#~ " training points added by your file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :btn:`<fas fa-check> Done` button"
+#~ " will finish the uploading procedures."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The process is nearly the same as"
+#~ " found in the documentation above "
+#~ "discussing csv tables. The only "
+#~ "difference should be the geometry "
+#~ "column, as GEE assets usually embed "
+#~ "a :code:`.goejson` column by default. If"
+#~ " this column exists, it will be "
+#~ "autodetected by SEPAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the other steps, please reproduce"
+#~ " what was presented in the CSV "
+#~ "section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Instead of providing dataset points, "
+#~ "SEPAL can also extract reference data"
+#~ " from an already-existing classification."
+#~ " It's a good way to improve an"
+#~ " already-existing classification system "
+#~ "using an image with a better "
+#~ "resolution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Start by selecting btn:`Sample classification`"
+#~ " in the opened popup window, where"
+#~ " all of the the parameters can "
+#~ "be set."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Sample per class**: The number of "
+#~ "samples per class of the provided "
+#~ "image. The more samples you request, "
+#~ "the more accurate the model will "
+#~ "be. If too many samples are "
+#~ "selected though, on the fly "
+#~ "visualization will never render. Default "
+#~ "to: :code:`1000`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Scale to sample in**: The scale "
+#~ "used to create the sample in the"
+#~ " provided image. It should match the"
+#~ " image to classify resolution. Default "
+#~ "to: :code:`30 m`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**EE asset ID**: The ID of the "
+#~ "classification to sample. It should be"
+#~ " an :code:`ee.Image` accessible to the "
+#~ "user."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Class band**: The class to use "
+#~ "for classification value. The dropdown "
+#~ "menu will be filled with the bands"
+#~ " found in the provided asset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When all of the parameters are "
+#~ "selected, it can take time, as "
+#~ "SEPAL builds the sampling values on "
+#~ "the fly. They will only be "
+#~ "displayed once the sampling is "
+#~ "validated."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fas fa-chevron-right>"
+#~ " Next` to display the sampling "
+#~ "summary. In this panel, SEPAL displays"
+#~ " each class of the legend (as "
+#~ "defined in the previous section) and "
+#~ "the number of samples created for "
+#~ "it. Click on the :btn:`<fas fa-"
+#~ "plus>` (1) buttons to change the "
+#~ "number of samples in a specific "
+#~ "class. By default, SEPAL ignores the "
+#~ "samples with a :code:`Null` value. One"
+#~ " can select :btn:`Default` (2) for "
+#~ "any of the classes, so that these"
+#~ " points end up in this default "
+#~ "class instead of being ignored."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`Saved SEPAL recipe` to"
+#~ " open the pop-up window. In the"
+#~ " dropdown menu, select one of the "
+#~ "recipes saved in your SEPAL account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The imported recipe needs to be a"
+#~ " classification recipe. If none are "
+#~ "found, the dropdown menu will be "
+#~ "empty. This recipe cannot come from "
+#~ "another SEPAL account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some information that could be useful"
+#~ " to the classification model is not"
+#~ " always included in your image bands."
+#~ " A common example is Elevation. In"
+#~ " order to improve the quality of "
+#~ "the classification, SEPAL can provide "
+#~ "some extra-datasets to add auxiliary "
+#~ "bands to the classification model."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`AUX` to open the "
+#~ "Auxiliaries tab. Three sources are "
+#~ "currently implemented in the platform "
+#~ "(any number of them can be "
+#~ "selected):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Latitude**: On the fly latitude "
+#~ "dataset built from the coordinates of"
+#~ " each pixel's center."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Water**: from the `JRC Global Surface"
+#~ " Water Mapping Layers, v1.3 "
+#~ "<https://developers.google.com/earth-"
+#~ "engine/datasets/catalog/JRC_GSW1_3_GlobalSurfaceWater>`__ "
+#~ "dataset, SEPAL will add the following"
+#~ " bands:  :code:`occurrence`, :code:`change_abs`, "
+#~ ":code:`change_norm`, :code:`seasonality`, "
+#~ ":code:`max_extent`, :code:`water_occurrence`, "
+#~ ":code:`water_change_abs`, :code:`water_change_norm`, "
+#~ ":code:`water_seasonality` and :code:`water_max_extent`"
+#~ msgstr ""
+
+#~ msgid "The default value is a Random Forest classifier using 25 trees."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`CLS` to open the "
+#~ "classification parameter menu. SEPAL supports"
+#~ " 7 classifiers:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For each of them, the workflow is"
+#~ " the same. First select the "
+#~ "classifier by clicking on the "
+#~ "corresponding name then SEPAL will "
+#~ "display some of the parameters "
+#~ "available. Click on :btn:`More` at the"
+#~ " bottom left side of the panel "
+#~ "to fully customize your classifier. The"
+#~ " classification results will be updated "
+#~ "on the fly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In order to improve the classification,"
+#~ " one must set up the view to"
+#~ " display all of the information. "
+#~ "These guidelines could be modified and"
+#~ " extended, but can still be used "
+#~ "as an introductory resource."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start adding points, open the "
+#~ "training interface by clicking on "
+#~ ":btn:`<fas fa-map-marker>` in the "
+#~ "upper-right side of the screen (1)."
+#~ " Once clicked, the background color "
+#~ "becomes darker and the pointer of "
+#~ "the mouse becomes a :icon:`fas fa-"
+#~ "plus`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Click on the map to select a "
+#~ "point**: You can click in any of"
+#~ " the panels (this is not restricted"
+#~ " to the recipe panel), but to "
+#~ "be useful, the point needs to be"
+#~ " within the border of the AOI. "
+#~ "If it's not already the case, the"
+#~ " class selection panel will appear in"
+#~ " the upper-right side of the "
+#~ "window (2)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can now click elsewhere on the"
+#~ " map to add another point. If "
+#~ "you are satisfied with the "
+#~ "classification, click on :btn:`<fas fa-"
+#~ "times> Close` (3) and click again "
+#~ "on :btn:`<fas fa-map-marker>` to "
+#~ "stop editing the points. Every time "
+#~ "a new point is added, the "
+#~ "classification map is recomputed and "
+#~ "rendered in the left window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To modify existing points, click the "
+#~ ":btn:`<fas fa-map-marker>` to open "
+#~ "the point editing interface and follow"
+#~ " the following steps:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Select a point**: To select a "
+#~ "point, click on an existing marker. "
+#~ "It will appear bolder than the "
+#~ "others. If it's not already the "
+#~ "case, the class selection panel will "
+#~ "appear in the upper-right side of"
+#~ " the window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Change the class value**: The point"
+#~ " class will be selected in the "
+#~ "editing menu with a :icon:`fas fa-"
+#~ "check`. Click on any other class "
+#~ "value to change it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL embeds information to help the "
+#~ "user understand if the amount of "
+#~ "training data is sufficient to produce"
+#~ " an accurate classification model. In "
+#~ "the recipe window, change the band "
+#~ "combination to :code:`Class probability`. The"
+#~ " user now sees the probability of "
+#~ "the model (e.g. the confidence level "
+#~ "of the level with output class for"
+#~ " each pixel). If the value is "
+#~ "high (>80%), then the pixel can be"
+#~ " considered valid. If the value is"
+#~ " low (<80%), the model needs more "
+#~ "training data or extra bands to "
+#~ "improve the analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Clicking on the :icon:`fas fa-cloud-"
+#~ "download-alt` tab will open the "
+#~ "retrieve panel where you can select "
+#~ "the exportation parameters (1)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to select the band to "
+#~ "export (2). There is no maximum "
+#~ "number of bands, however, exporting "
+#~ "useless bands will only increase the "
+#~ "size and time of the output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can set a custom scale for "
+#~ "exportation (3) by changing the value"
+#~ " of the slider in meters (m). "
+#~ "Requesting a smaller resolution than the"
+#~ " image's native resolution will not "
+#~ "improve the quality of the output, "
+#~ "just its size, so keep in mind "
+#~ "that Sentinel data native resolution is"
+#~ " 10 m and Landsat is 30 m."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can export the image to the"
+#~ " :btn:`SEPAL workspace` or to :btn:`Google"
+#~ " Earth Engine Asset`. The same image"
+#~ " will be exported, but in the "
+#~ "first case you will find it in "
+#~ ":code:`.tif` format in the :code:`Downloads`"
+#~ " folder; in the second case, the "
+#~ "image will be exported to your GEE"
+#~ " account asset list."
+#~ msgstr ""
+
+#~ msgid "Click on :btn:`<fas fa-check> Apply` to start the download process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Going to the task tab (lower-left"
+#~ " corner using the :btn:`<fa fa-"
+#~ "tasks>` or :btn:`<fa fa-spinner>` "
+#~ "buttons (depending on the loading "
+#~ "status), you will see the list of"
+#~ " different loading tasks. The interface "
+#~ "will provide you with information about"
+#~ " the task progress and it will "
+#~ "display an error if the exportation "
+#~ "has failed. If you are unsatisfied "
+#~ "with the way we present information, "
+#~ "the task can also be monitored "
+#~ "using the `GEE task manager "
+#~ "<https://code.earthengine.google.com/tasks>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Understanding how images are stored in"
+#~ " a Classification output is only "
+#~ "required if you want to manually "
+#~ "use them. The SEPAL applications are "
+#~ "bound to this tiling system and "
+#~ "can digest this information for you."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The data are stored in a folder"
+#~ " using the name of the Classification"
+#~ " as it was set in the first "
+#~ "section of this documentation. As the"
+#~ " amount of data is spatially too "
+#~ "large to be exported at once, the"
+#~ " data are cut into small pieces "
+#~ "and brought back together in a "
+#~ ":code:`<CLASSIF name>_<gee tile id>.vrt` file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The full folder with a consistent "
+#~ "tree folder is required to read "
+#~ "the `.vrt`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, :doc:`ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-plus> Add`. The "
+#~ "following screen should be displayed:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-plus> Derived "
+#~ "bands` at the bottom of the "
+#~ "pop-up window and select the deriving"
+#~ " method to. This will add a a"
+#~ " new panel to the expansion panel "
+#~ "with the selected method name (1). "
+#~ "The selected method will be applied "
+#~ "to the selected bands."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the image selection is done, "
+#~ "select :btn:`<fas fa-check> Apply` and"
+#~ " the pop-up window will close. "
+#~ "The images and bands will be "
+#~ "displayed in the :guilabel:`IMG` panel "
+#~ "on the lower-right corner of the"
+#~ " screen. By selecting the :btn:`<fas "
+#~ "fa-trash>` button, you will remove "
+#~ "the image and its band from the"
+#~ " analysis altogether."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From there, select :btn:`<fas fa-"
+#~ "chevron-right> Next` to continue to "
+#~ "the next step."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-plus> Add` to add a new class to your legend."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the :btn:`<fas fa-plus> Add` "
+#~ "button again to add an extra class"
+#~ " line. The :btn:`<fas fa-trash>` "
+#~ "button can be used to remove a "
+#~ "specific line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the fully qualified legend file "
+#~ "has been prepared on your computer, "
+#~ "select :btn:`<fas fa-chevron-up>` and"
+#~ " then :code:`Import from CSV`, which "
+#~ "will open a pop-up window where"
+#~ " you can drag and drop the file"
+#~ " or select it manually from your "
+#~ "computer files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-check> Apply` to"
+#~ " validate your selection. The classes "
+#~ "will be added to the legend panel"
+#~ " and you'll be able to modify "
+#~ "the legend using the parameters "
+#~ "presented in the previous section."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-check> Done` to validate this step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once your legend is validated, select"
+#~ " the :btn:`<fas fa-chevron-up>` and"
+#~ " then :code:`Export as CSV`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're satisfied with the current "
+#~ "selection and you want to share "
+#~ "the data with others, select :btn:`<fas"
+#~ " fa-chevron-up>` and then "
+#~ ":code:`Export reference data to csv`. A"
+#~ " file will be created named: "
+#~ ":code:`<recipe_name>_reference_data.csv` and sent to"
+#~ " your computer. It will embed all "
+#~ "of the gathered point data using "
+#~ "the following convention:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are not satisfied with the"
+#~ " selected data, select :btn:`<fas fa-"
+#~ "chevron-up>` and then :code:`Clear "
+#~ "collected reference data` to remove all"
+#~ " collected data from the analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To add new data, select :btn:`<fas "
+#~ "fa-plus> Add` and choose the type"
+#~ " of data to import:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The columns used to define the X"
+#~ " (longitude) and Y (latitude) coordinates"
+#~ " are manually set up in the "
+#~ "pop-up window. Select :btn:`<fas fa-"
+#~ "chevron-left> Next` once every column "
+#~ "is filled."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-chevron-left> next`"
+#~ " to add the data to the model."
+#~ " SEPAL will provide a summary of "
+#~ "the classes in the legend of the"
+#~ " classification and the number of "
+#~ "training points added by your file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Selecting the :btn:`<fas fa-check> Done`"
+#~ " button will complete the uploading "
+#~ "procedure."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :btn:`<fas fa-chevron-right> "
+#~ "Next` to display the sampling summary."
+#~ " In this panel, SEPAL displays each"
+#~ " class of the legend (as defined "
+#~ "in the previous section) and the "
+#~ "number of samples created for it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the :btn:`<fas fa-plus>` (1) "
+#~ "buttons to change the number of "
+#~ "samples in a specific class. By "
+#~ "default, SEPAL ignores the samples with"
+#~ " a :code:`Null` value. One can select"
+#~ " :btn:`Default` (2) for any of the"
+#~ " classes, so that these points end"
+#~ " up in this default class instead "
+#~ "of being ignored."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start adding points, open the "
+#~ "training interface by selecting :btn:`<fas "
+#~ "fa-map-marker>` in the upper-right"
+#~ " of the screen (1). Once selected,"
+#~ " the background color becomes darker "
+#~ "and the pointer of the mouse "
+#~ "becomes a :icon:`fas fa-plus`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can now click elsewhere on the"
+#~ " map to add another point. If "
+#~ "you are satisfied with the "
+#~ "classification, select :btn:`<fas fa-times>"
+#~ " Close` (3) and select :btn:`<fas "
+#~ "fa-map-marker>` again to stop editing"
+#~ " the points. Every time a new "
+#~ "point is added, the classification map"
+#~ " is recomputed and rendered in the"
+#~ " left window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To modify existing points, select the"
+#~ " :btn:`<fas fa-map-marker>` to open"
+#~ " the point editing interface and "
+#~ "follow the following steps:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Change the class value**: The point"
+#~ " class will be selected in the "
+#~ "editing menu with a :icon:`fas fa-"
+#~ "check`. Select any other class value "
+#~ "to change it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Selecting the :icon:`fas fa-cloud-"
+#~ "download-alt` tab will open the "
+#~ "**Retrieve** panel where you can select"
+#~ " the exportation parameters (1)."
+#~ msgstr ""
+
+#~ msgid "Select :btn:`<fas fa-check> Apply` to start the download process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By going to the **Task** tab (in"
+#~ " the lower-left corner using the "
+#~ ":btn:`<fa fa-tasks>` or :btn:`<fa fa-"
+#~ "spinner>` buttons, depending on the "
+#~ "loading status), you will see the "
+#~ "list of different loading tasks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For support, `ask the community "
+#~ "<https://groups.google.com/g/sepal-users>`__."
+#~ msgstr ""
+

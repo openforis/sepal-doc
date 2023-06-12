@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-02-22 17:00\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/otb.po\n"
+"X-Crowdin-File-ID: 53\n"
+"Language: fr_FR\n"
+
+#: ../../source/cli/otb.rst:2
+msgid "Orfeo Toolbox"
+msgstr "Orfeo Toolbox"
+
+#: ../../source/cli/otb.rst:4
+msgid "Orfeo ToolBox (OTB) is an open-source project for state-of-the-art remote sensing. Built on the shoulders of the open-source geospatial community, it can process high resolution optical, multispectral and radar images at the terabyte scale. A wide variety of applications are available: from ortho-rectification or pansharpening, all the way to classification, SAR processing, and much more!"
+msgstr "Orfeo ToolBox (OTB) est un projet open-source pour la télédétection de pointe. Construit sur les épaules de la communauté géospatiale open-source, il peut traiter les images optiques, multispectrales et radar de haute résolution à l'échelle du téraoctet. De l'ortho-rectification ou de la pannette, à la classification, au traitement SAR et bien plus encore !"
+
+#: ../../source/cli/otb.rst:6
+msgid "OTB ships with more than 100 ready to use applications for remote sensing tasks. They usually expose existing processing functions from the underlying C++ library, or integrate them into high level pipelines. OTB applications allow the user to:"
+msgstr "OTB est livré avec plus de 100 applications prêtes à être utilisées pour des tâches de télédétection. Ils exposent généralement les fonctions de traitement existantes de la bibliothèque C++ sous-jacente, ou les intègrent dans des pipelines de haut niveau. Les applications OTB permettent à l'utilisateur de :"
+
+#: ../../source/cli/otb.rst:8
+msgid "Combine two or more functions from the Orfeo ToolBox,"
+msgstr "Combiner deux ou plusieurs fonctions d'Orfeo ToolBox"
+
+#: ../../source/cli/otb.rst:9
+msgid "Provide a high level interface to handle: input and output data, definition of parameters and communication with the user."
+msgstr "Fournir une interface de haut niveau pour gérer : données d'entrée et de sortie, définition des paramètres et communication avec l'utilisateur."
+
+#: ../../source/cli/otb.rst:11
+msgid "The complete list of applications is described in the `All Applications page <https://www.orfeo-toolbox.org/CookBook/Applications.html#apprefdoc>`__."
+msgstr "La liste complète des applications est décrite dans la `page Toutes les applications <https://www.orfeo-toolbox.org/CookBook/Applications.html#apprefdoc>`__."
+
+#: ../../source/cli/otb.rst:13
+msgid "All standard applications share the same implementation and automatically expose generated interfaces. However they are accessed in a slightly different way: the command-line interface is prefixed by :code:`otbcli\\_`."
+msgstr "Toutes les applications standards partagent la même implémentation et exposent automatiquement les interfaces générées. Cependant ils sont accédés d'une manière légèrement différente : l'interface en ligne de commande est préfixée par :code:`otbcli\\_`."
+

@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 16:19\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/404.po\n"
+"X-Crowdin-File-ID: 39\n"
+"Language: fr_FR\n"
+
+#: ../../source/404.rst:4
+msgid "404 not found"
+msgstr "404 introuvable"
+
+#: ../../source/404.rst:11
+msgid "UH OH! You're lost."
+msgstr "Attention ! Vous vous êtes égaré."
+
+#: ../../source/404.rst:13
+msgid "The page you are looking for does not exist. How you got here is a mystery. But you can click the SEPAL button on top of the page to go back to the homepage."
+msgstr "La page que vous cherchez n'existe pas. La façon dont vous êtes arrivé ici est un mystère. Mais vous pouvez cliquer sur le bouton SEPAL en haut de la page pour revenir à la page d'accueil."
+
+#: ../../source/404.rst:18
+msgid "Recently the module/recipes lists have been refactored to reflect the tag structure of SEPAL so if you landed here following a link, please press :guilabel:`ctrl` + :guilabel:`k` and type the name of your module."
+msgstr "Récemment, les listes de module/recettes ont été refactorisées pour refléter la structure des balises SEPAL donc si vous avez atterri ici en suivant un lien, appuyez sur :guilabel:`ctrl` + :guilabel:`k` et tapez le nom de votre module."
+

@@ -1,0 +1,6952 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-30 01:00+0000\n"
+"PO-Revision-Date: 2023-03-30 01:14\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: it\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/ofgt.po\n"
+"X-Crowdin-File-ID: 51\n"
+"Language: it_IT\n"
+
+#: ../../source/cli/ofgt.rst:2
+msgid "Open Foris Geospatial Toolkit"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:4
+msgid "OFGT - Open Foris Geospatial Toolkit is a a collection of prototype command-line utilities for processing of geographical data. The tools can be divided into stand-alone programs and scripts and they have been tested mainly in Ubuntu Linux environment although can be used with other linux distros, Mac OS, and MS Windows (Cywgin) as well. Most of the stand-alone programs use GDAL libraries and many of the scripts rely heavily on GDAL command-line utilities."
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:6
+msgid "The OFGT project started under the Open Foris Initiative to develop, share and support software tools and methods for multi-purpose forest assessment, monitoring and reporting http://openforis.org. The Initiative develops and supports innovative, easy-to-use tools needed to produce reliable, timely information on the state of forest resources and their uses. The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction and other image processing analysis."
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:10
+msgid "The current version availalble on SEPAL is : :code:`1.25.4`"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:13
+msgid "available commands"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:15
+msgid "The complete documentation of the OFGT commands can be found on the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:19
+msgid "General Tools"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:47
+msgid "Image Manipulation"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:66
+msgid "Statistics"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:81
+msgid "Classification"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:94
+msgid "Segmentation"
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:102
+msgid "Projection"
+msgstr ""
+
+#~ msgid "Version 1.25.4 October 2014"
+#~ msgstr ""
+
+#~ msgid "Introduction"
+#~ msgstr ""
+
+#~ msgid "About this manual"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The user manual is developed to "
+#~ "help getting into spatial analysis using"
+#~ " the Open Foris Geospatial Toolkit. "
+#~ "It gives basic explanations of how "
+#~ "OFGT functions. It is not attempted "
+#~ "to explain the theoretical background on"
+#~ " how to do geospatial analysis using"
+#~ " remote sensing or GIS, but rather"
+#~ " will guide you through hands-on "
+#~ "examples for each tool, next to "
+#~ "some general areas, such as the "
+#~ "installation. Further, the manual will "
+#~ "link to relevant man pages and "
+#~ "other documentation. In addition, the "
+#~ "user manual is written in a way"
+#~ " that it can be understood by "
+#~ "people who are experienced Windows or"
+#~ " Mac users, but have not used "
+#~ "Linux or OFGT much before. Sources "
+#~ "and documentation for OFGT can be "
+#~ "obtained here: http://openforis.org/tools/geospatial-"
+#~ "toolkit.html"
+#~ msgstr ""
+
+#~ msgid "What is OFGT?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFGT - Open Foris Geospatial Toolkit "
+#~ "is a a collection of prototype "
+#~ "command- line utilities for processing "
+#~ "of geographical data. The tools can "
+#~ "be divided into stand-alone programs "
+#~ "and scripts and they have been "
+#~ "tested mainly in Ubuntu Linux "
+#~ "environment although can be used with"
+#~ " other linux distros, Mac OS, and "
+#~ "MS Windows (Cywgin) as well. Most "
+#~ "of the stand-alone programs use "
+#~ "GDAL libraries and many of the "
+#~ "scripts rely heavily on GDAL command-"
+#~ "line utilities. The OFGT project started"
+#~ " under the Open Foris Initiative to"
+#~ " develop, share and support software "
+#~ "tools and methods for multi-purpose "
+#~ "forest assessment, monitoring and reporting"
+#~ " http://openforis.org. The Initiative develops"
+#~ " and supports innovative, easy-to-use"
+#~ " tools needed to produce reliable, "
+#~ "timely information on the state of "
+#~ "forest resources and their uses. The "
+#~ "command-line tools aim to simplify "
+#~ "the complex process of transforming raw"
+#~ " satellite imagery for automatic image "
+#~ "processing to produce valuable information."
+#~ " These tools contain radiometric "
+#~ "harmonization, image segmentation and image"
+#~ " arithmetic, as well as image "
+#~ "statistics, feature extraction and other "
+#~ "image processing analysis. Overview of "
+#~ "OFGT versions currently available:"
+#~ msgstr ""
+
+#~ msgid "OFGT 1.25.4 - continuously updated"
+#~ msgstr ""
+
+#~ msgid "OFGT 1.0 -"
+#~ msgstr ""
+
+#~ msgid "The great potential of OFGT"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The toolkit comes to its own when"
+#~ " dealing with large data sets: -"
+#~ "   The **processing itself takes a "
+#~ "fraction** of time than with "
+#~ "conventional software. -   **Automatised data"
+#~ " processing makes applications repeatable**, "
+#~ "which is of high advantage for "
+#~ "many projects. -   All tools and "
+#~ "methods developed under the Initiative "
+#~ "are open-source."
+#~ msgstr ""
+
+#~ msgid "First time users"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First time users, the terminal is "
+#~ "your friend: The Open Foris Geospatial"
+#~ " Toolkit tutorial is aiming to "
+#~ "provide straight forward guidelines and "
+#~ "examples to help first time users "
+#~ "to familiarize themselves with the Open"
+#~ " Foris Geospatial Toolkit. This includes"
+#~ " the installation of Ubuntu, various "
+#~ "geospatial tools and, in particular, the"
+#~ " installation and application of the "
+#~ "Open Foris Geospatial Toolkit. You do"
+#~ " not need to be an expert, we"
+#~ " just would like you to be "
+#~ "curious to try things out. Do not"
+#~ " be afraid of using the command-"
+#~ "line! We know that the terminal "
+#~ "window is for many users a barrier"
+#~ " of being afraid ruining everything "
+#~ "and having to start from scratch. "
+#~ "These days the terminal is not "
+#~ "exclusively for advanced computer enthusiasts."
+#~ " Give it a try and just start"
+#~ " playing around following the tutorials "
+#~ "and instructions you can find in "
+#~ "the wiki."
+#~ msgstr ""
+
+#~ msgid "License"
+#~ msgstr ""
+
+#~ msgid "Open Foris Geospatial Toolkit is released under GNU GPLv3 license."
+#~ msgstr ""
+
+#~ msgid "Get Info"
+#~ msgstr ""
+
+#~ msgid "You can check the current version info with the following command:"
+#~ msgstr ""
+
+#~ msgid "OFGT - Tools documentation"
+#~ msgstr ""
+
+#~ msgid "GENERAL TOOLS"
+#~ msgstr ""
+
+#~ msgid "CsvToPolygon.py"
+#~ msgstr ""
+
+#~ msgid "NAME"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "CsvToPolygon.py - converts CSV file from"
+#~ " GExml2csv.bash into a shapefile"
+#~ msgstr ""
+
+#~ msgid "SYNOPSIS"
+#~ msgstr ""
+
+#~ msgid "DESCRIPTION"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "CsvToPolygon.py is written in Python and"
+#~ " creates shapefile polygons from a "
+#~ "text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The program is modified form the "
+#~ "one by Chris Garrard: "
+#~ "`<http://www.gis.usu.edu/~chrisg/python/2009/lectures/ospy_hw2a.py>`_"
+#~ msgstr ""
+
+#~ msgid "The input is a text file of the following format:"
+#~ msgstr ""
+
+#~ msgid ":code:`Polygon id`"
+#~ msgstr ""
+
+#~ msgid ":code:`land cover class`"
+#~ msgstr ""
+
+#~ msgid ":code:`land cover subclass`"
+#~ msgstr ""
+
+#~ msgid ":code:`tree cover class`"
+#~ msgstr ""
+
+#~ msgid ":code:`resolution of the image` in GE (Google Earth)"
+#~ msgstr ""
+
+#~ msgid ":code:`year and month of image in GE`"
+#~ msgstr ""
+
+#~ msgid "After the \":\" mark there are corner coordinates in WGS84 system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This input data can be output from"
+#~ " another script, :code:`GExml2csv.bash` and "
+#~ "originally derives from a training data"
+#~ " collection tool created for GE."
+#~ msgstr ""
+
+#~ msgid "EXAMPLE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: CsvToPolygon.py Open your working"
+#~ " directory using:"
+#~ msgstr ""
+
+#~ msgid "An example of the beginning of input data is following:"
+#~ msgstr ""
+
+#~ msgid "106"
+#~ msgstr ""
+
+#~ msgid "OWL"
+#~ msgstr ""
+
+#~ msgid "OWL Open"
+#~ msgstr ""
+
+#~ msgid "2"
+#~ msgstr ""
+
+#~ msgid "Coarse"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "2002/1:-5.47450324983224 32.54081338469396,-5.47450324983224 "
+#~ "32.5417154317423,-5.47540856036825 "
+#~ "32.5417154317423,-5.47540856036825 32.54081338469396"
+#~ msgstr ""
+
+#~ msgid "107"
+#~ msgstr ""
+
+#~ msgid "Grassland"
+#~ msgstr ""
+
+#~ msgid "Grassland Bushed"
+#~ msgstr ""
+
+#~ msgid "1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "2002/1:-5.47456561893842 32.63108751846197,-5.47456561893842 "
+#~ "32.63198971163985,-5.47547080384603 "
+#~ "32.63198971163985,-5.47547080384603 32.63108751846197"
+#~ msgstr ""
+
+#~ msgid "108"
+#~ msgstr ""
+
+#~ msgid "Bushland"
+#~ msgstr ""
+
+#~ msgid "Bushland Thicket"
+#~ msgstr ""
+
+#~ msgid "Medium"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "2002/10:-5.47461439045748 32.72136258245697,-5.47461439045748"
+#~ " 32.72226491949511,-5.47551944746972 "
+#~ "32.72226491949511,-5.47551944746972 32.72136258245697"
+#~ msgstr ""
+
+#~ msgid "This is how you run the command:"
+#~ msgstr ""
+
+#~ msgid "genericCsvToPolygon.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`genericCsvToPolygon.py` - Program for "
+#~ "creating polygons from text files"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`genericCsvToPolygon.py` is a program "
+#~ "for creating polygons from text files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The input file is a text file "
+#~ "of the following format: :code:`Polygon "
+#~ "id:corner coordinates in WGS84 system`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Coordinate pairs are separated from "
+#~ "others with a space and x,y with"
+#~ " a comma"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This input data is output from "
+#~ "another script, :code:`genericGEkml2csv.bash` and"
+#~ " originally comes from Google Earth "
+#~ "(self-digitized polygon kml’s)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The input file is a text file "
+#~ "of the following format: -   "
+#~ ":code:`Polygon id:corner coordinates in WGS84"
+#~ " system`"
+#~ msgstr ""
+
+#~ msgid "Then run the actual command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output shp is in geographic "
+#~ "WGS84, but does not carry that "
+#~ "information. You can transform it e.g."
+#~ " into UTM 36S WGS84 with the "
+#~ "following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Where EPSG:4326 stands for WGS84 (source"
+#~ " system) and EPSG:32736 for UTM 36S"
+#~ " WGS84 (target system). You can "
+#~ "select any target system and find "
+#~ "the EPSG code, see "
+#~ "`<http://spatialreference.org/ref/epsg/>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`genericCsvToPolygon.py`, "
+#~ ":code:`genericGEkml2csv.bash`, :code:`ogr2ogr`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This script performs conversion from a"
+#~ " set of generic .kml format polygons"
+#~ " created in Google Earth (GE) into"
+#~ " one combined textfile. This textfile "
+#~ "can then be converted into a "
+#~ "shapefile using script "
+#~ ":code:`genericCsvToPolygon.py`."
+#~ msgstr ""
+
+#~ msgid "How to create polygons in Google Earth and save them as .kml files"
+#~ msgstr ""
+
+#~ msgid "Then open your working directory using"
+#~ msgstr ""
+
+#~ msgid "The procedure is:"
+#~ msgstr ""
+
+#~ msgid "Put the kml’s into one folder"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Launch :code:`genericGEkml2csv.bash` in that "
+#~ "kml-folder. This creates a csv file"
+#~ " \"output.csv\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Launch :code:`genericCsvToPolygon.py` in the "
+#~ "same folder, with parameters as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The shapefile name can be as you"
+#~ " wish (e.g. settlements168063.shp). The "
+#~ "shapefile is in geographic WGS84, but"
+#~ " does not carry that information. You"
+#~ " can transform it e.g. into UTM "
+#~ "36S WGS84 with the following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Where EPSG:4326 stands for WGS84 (source"
+#~ " system) and EPSG:32736 for UTM 36S"
+#~ " WGS84 (target system). You can "
+#~ "select any target system and find "
+#~ "the EPSG code, see "
+#~ "`<http://spatialreference.org/ref/epsg/>`_"
+#~ msgstr ""
+
+#~ msgid "genericGEkml2csv.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`genericGEkml2csv.bash` - converts separate"
+#~ " kml files from Google Earth into "
+#~ "one CSV file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`genericGEkml2csv.bash` converts separate kml"
+#~ " files from Google Earth (GE) into"
+#~ " one CSV file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This script performs conversion from a"
+#~ " set of generic .kml format polygons"
+#~ " created in GE into one combined "
+#~ "textfile."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All kml files need to be in "
+#~ "one folder from where the script "
+#~ "needs to be launched"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output textfile of "
+#~ ":code:`genericGEkml2csv.bash` can then be "
+#~ "converted into a shapefile using script"
+#~ " :code:`genericCsvToPolygon.py`."
+#~ msgstr ""
+
+#~ msgid "Put all kml files into one folder"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Look into your working directory and "
+#~ "see if output.csv was created. Take "
+#~ "a closer look at its first lines:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Conversion of output.csv into a "
+#~ "shapefile: Launch :code:`genericCsvToPolygon.py` in"
+#~ " the same folder, with parameters as"
+#~ " follows:"
+#~ msgstr ""
+
+#~ msgid "The shp name can be as you wish (e.g. settlements168063.shp)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The shapefile is in geographic WGS84,"
+#~ " but does not carry that information."
+#~ " You can transform it e.g. into "
+#~ "UTM 36S WGS84 with the following "
+#~ "command:"
+#~ msgstr ""
+
+#~ msgid "GExml2csv.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`GExml2csv.bash` - converts xml files"
+#~ " from Google Earth training data "
+#~ "collection tool into one CSV file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`GExml2csv.bash` converts single files "
+#~ "originating from Google Earth (GE) "
+#~ "training data collection tool into a "
+#~ "combined CSV file."
+#~ msgstr ""
+
+#~ msgid "The script is to be launched in a directory containing the target xml’s"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`GExml2csv.bash`"
+#~ msgstr ""
+
+#~ msgid "Open your working directory where you stored you xml files using"
+#~ msgstr ""
+
+#~ msgid "Then simply run following command:"
+#~ msgstr ""
+
+#~ msgid "oft-addattr.py"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-addattr.py` - adds one integer attribute in a shape file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-addattr.py` adds one integer "
+#~ "attribute in a shape file. It "
+#~ "reads a space separated text file "
+#~ "and uses the first and second "
+#~ "columns to construct a lookup table "
+#~ "which is used to add a new "
+#~ "attribute in an existing shapefile. Each"
+#~ " time the value in the first "
+#~ "column is found in the JoinAttributeName"
+#~ " field of the shapefile, the value"
+#~ " in the second column is added "
+#~ "in the field NewAttrName. In case "
+#~ "the corresponding value is not present"
+#~ " in the textfile, the NewAttrName "
+#~ "value for that record becomes -9999."
+#~ msgstr ""
+
+#~ msgid "The values need to be in integer!"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-addattr.py`"
+#~ msgstr ""
+
+#~ msgid "Open your working directory using"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first lines of the attribute "
+#~ "table of :code:`landuse.shp` look like "
+#~ "this:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this exercise we create a space"
+#~ " separated text file as a lookup "
+#~ "table. You can create it in any"
+#~ " text editor, such as :code:`gedit` "
+#~ "or :code:`kate` and save the file "
+#~ "as lookup.txt in your working directory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first column contains the ID "
+#~ "linking the lookup table to your "
+#~ "shapefile and the second column contains"
+#~ " the values you want to add to"
+#~ " the new column of your shapefile."
+#~ msgstr ""
+
+#~ msgid "Now run the script in the command line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each time the value in the first"
+#~ " column of :code:`lookup.txt` is found "
+#~ "in the JoinAttributeName of the "
+#~ ":code:`landuse.shp`, field in our case "
+#~ "called **id**. The value in the "
+#~ "second column is added in the "
+#~ "field NewAttrName, here called **newcol**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Load :code:`landuse.shp` in QGIS and "
+#~ "look at your attribute table. You "
+#~ "should now find the new column "
+#~ "called newcol with it values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Take a look at the ID 7. The"
+#~ " newcol value in :code:`landuse.shp` is "
+#~ "-9999. This is due to the fact "
+#~ "that there was no value 7 in "
+#~ "the first column of the lookup "
+#~ "table. In that case the corresponding"
+#~ " value is not present in the "
+#~ "lookup table, therefore the newcol value"
+#~ " for that record becomes -9999."
+#~ msgstr ""
+
+#~ msgid "final shp attributes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Attribute table of :code:`landuse.shp` "
+#~ "containing the new column called newcol"
+#~ " with values"
+#~ msgstr ""
+
+#~ msgid "How to change the data type in QGIS ?"
+#~ msgstr ""
+
+#~ msgid "Add plugin Table Manager:"
+#~ msgstr ""
+
+#~ msgid "Click on the top bar’Plugins’ ->click ’Fetch Python Plugins’."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Type in the filter ’Manager’ ->then "
+#~ "you should find ’Table Manager - "
+#~ "Manages the attribute table structure’."
+#~ msgstr ""
+
+#~ msgid "Install it. Close and re-open QGIS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On top bar click ’Plugin’ ->click "
+#~ "’Manage Plugins’ ->tick box for ’Table"
+#~ " Manager’."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On top bar click ’Plugin’ ->you "
+#~ "should now see ’Table’ some- where "
+#~ "under ’Manage Plugins’, click it and "
+#~ "the option ’Table Manager’ can be "
+#~ "chosen."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "From there you can edit your "
+#~ "attribute table, add a new column "
+#~ "and choose the data type."
+#~ msgstr ""
+
+#~ msgid "oft-addpct.py"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-addpct.py` - adds pseudo color table to an image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-addpct.py` adds a pseudo "
+#~ "color table to an image keeps the"
+#~ " original values of the image, but"
+#~ " ensures that classes are shown in"
+#~ " pre-defined colors, no matter which"
+#~ " application is used to open the "
+#~ "image. After defining the first line,"
+#~ " the command will ask for the "
+#~ "text file containing the color table:"
+#~ " Give LUT file name: <colortable> "
+#~ "Where:"
+#~ msgstr ""
+
+#~ msgid "<inputfile> is an image file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<outputfile> is an image file (if "
+#~ "it is the same as <inputfile>, "
+#~ "<inputfile>will be overwritten)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<colortable> is a text file with 4"
+#~ " or 5 columns containing the color"
+#~ " table in the following format: -"
+#~ "   1:sup:`st` column: class value -   "
+#~ "2:sup:`nd` - 4:sup:`th` column: RGB "
+#~ "values -   optional: 5:sup:`th` column "
+#~ "for alpha, if not set, it is "
+#~ "assumed to be 255"
+#~ msgstr ""
+
+#~ msgid "The <colortable> must NOT contain any empty lines!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "see `Wikipedia "
+#~ "<https://en.wikipedia.org/wiki/RGBA_color_model>`_ for "
+#~ "more information on RGBA color space."
+#~ msgstr ""
+
+#~ msgid "The <colortable> could look like this:"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-addpct.py`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create the colortable for the file "
+#~ ":code:`images/forestc.tif`. If you do not "
+#~ "know which classes are present in "
+#~ ":code:`images/forestc.tif`, you could use "
+#~ ":code:`oft-stat` with i:code:`mages/forestc.tif` "
+#~ "both as input and mask file. The"
+#~ " first column of the mask file "
+#~ "shows all present classes (besides 0)."
+#~ " Create a text file called "
+#~ ":code:`txt/coltable.txt`, with the first "
+#~ "column indicating all possible classes. "
+#~ "It could look like this:"
+#~ msgstr ""
+
+#~ msgid "Make sure that the text file does not contain any empty lines."
+#~ msgstr ""
+
+#~ msgid "Run the following command:"
+#~ msgstr ""
+
+#~ msgid "The command will ask you about the colortable file:"
+#~ msgstr ""
+
+#~ msgid "Enter the path to your color table file and hit enter:"
+#~ msgstr ""
+
+#~ msgid "You can visualize the result in QGIS:"
+#~ msgstr ""
+
+#~ msgid "color added to an image"
+#~ msgstr ""
+
+#~ msgid "Example of using :code:`oft-addpct.py` to define the colour table."
+#~ msgstr ""
+
+#~ msgid "oft-admin-mask.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "oft-admin-mask.bash - this script "
+#~ "prepares a mask of administrative areas"
+#~ " within a satellite image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If no ID is given the script "
+#~ "just clips and re-projects (if "
+#~ "needed) the admin image to match "
+#~ "the Landsat image mask"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If an ID is given, the admin "
+#~ "area with this ID is added to "
+#~ "the base mask and other areas are"
+#~ " set to 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The input administrative image does not"
+#~ " need to be of the same size"
+#~ " and projection (script utilizes :code"
+#~ ":`oft-clip.pl` for clipping and re- "
+#~ "projecting)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-admin-mask.bash`, :code"
+#~ ":`oft-shptif.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In a first step we need to "
+#~ "prepare an image with administrative "
+#~ "areas using :code:`oft-shptif.bash`. For "
+#~ "exercise purpose we simply use "
+#~ ":code:`landuse.shp` as an input for "
+#~ "hypothetical admin areas."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run :code:`oft-admin-mask.bash` "
+#~ "now using :code:`landuse_raster.tif`."
+#~ msgstr ""
+
+#~ msgid "The output is automatically called :code:`landsat_t1_adm.tif`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Verify in QGIS using a contrast "
+#~ "enhancement if the pixel values of "
+#~ ":code:`landsat_t1_adm.tif` are correctly processed."
+#~ msgstr ""
+
+#~ msgid "oft-bb"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-bb` - is a a bounding box calculator t."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-bb` studies every pixel of"
+#~ " the input file and reports minimum"
+#~ " and maximum pixels coordinates of "
+#~ "pixels having the given value. The "
+#~ "minimum coordinates are 1,1."
+#~ msgstr ""
+
+#~ msgid "<value> is the value you want to query"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-um` use mask file. It will "
+#~ "consider only pixels which have mask "
+#~ "value > 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-bb`, :code:`gdal_translate`"
+#~ msgstr ""
+
+#~ msgid "Open your working directory using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Find the bounding box of the "
+#~ "Forest tree cover file :code:`forestc.tif` "
+#~ "with value \"33\""
+#~ msgstr ""
+
+#~ msgid "It should provide the following result :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can visualize the result by "
+#~ "sub-setting the image to these "
+#~ "extents using :code:`gdal_translate`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The parameters for the size of the"
+#~ " box are calculated as :code:`xmax-"
+#~ "xmin` and :code:`ymax-ymin`."
+#~ msgstr ""
+
+#~ msgid "Visualize the results in QGIS:"
+#~ msgstr ""
+
+#~ msgid "bounding box for 33 value"
+#~ msgstr ""
+
+#~ msgid "Example of using oft-bb output bb 33.tif."
+#~ msgstr ""
+
+#~ msgid "oft-classvalues-compare.bash"
+#~ msgstr ""
+
+#~ msgid "To be tested"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-classvalues-compare.bash` - creates"
+#~ " comparison plots of classes based on"
+#~ " result of previous script oft-"
+#~ "classvalues-plot.bash."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-classvalues-compare.bash` This "
+#~ "script is meant to be used after"
+#~ " script :code:`oft-classvalues-plot.bash`. "
+#~ "It plots 2-5 classes in the same"
+#~ " figure and the distinction of "
+#~ "class-wise point clouds can be "
+#~ "evaluated."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is launched in the folder "
+#~ "containing class-wise plots and text "
+#~ "files produced by the above mentioned"
+#~ " script."
+#~ msgstr ""
+
+#~ msgid "OPTION"
+#~ msgstr ""
+
+#~ msgid "Additional classes that can be plotted in the same figure:"
+#~ msgstr ""
+
+#~ msgid "[class3]"
+#~ msgstr ""
+
+#~ msgid "[class4]"
+#~ msgstr ""
+
+#~ msgid "[class5]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Look at :code:`oft-classvalues-plot.bash`, "
+#~ "which computes input data for this "
+#~ "tool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-classvalues-plot.bash` -"
+#~ " Input data deriving from exercise "
+#~ ":code:`oft-classvalues-plot.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change your working directory to the "
+#~ "one of the previous exercise :code"
+#~ ":`oft-classvalues-plot.bash`: .. code-"
+#~ "block:: console"
+#~ msgstr ""
+
+#~ msgid "cd ~"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use :code:`oft-classvalues-compare` to "
+#~ "create a comparison plot of **band2**"
+#~ " and **band3**. Output to be found"
+#~ " in folder :code:`plots_LT52_CUB00.tif_bands_3_4` "
+#~ "created after running :code:`oft-"
+#~ "classvalues-plot.bash`."
+#~ msgstr ""
+
+#~ msgid "Comparaison bewteen band 1 and 3"
+#~ msgstr ""
+
+#~ msgid "Now compare **band1**, **band2** and **band3**:"
+#~ msgstr ""
+
+#~ msgid "Comparaison bewteen band 1 to 3"
+#~ msgstr ""
+
+#~ msgid "oft-classvalues-plot.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-classvalues-plot.bash` - creates"
+#~ " scatterplots of pixels within training "
+#~ "classes (given in a shapefile)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-classvalues-plot.bash` creates "
+#~ "scatterplots of image grey values in "
+#~ "different classes of training data. Also"
+#~ " figures of class means and standard"
+#~ " deviations are provided."
+#~ msgstr ""
+
+#~ msgid "Training areas need to be in shapefiles."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The figures of class means and "
+#~ "std’s for both required bands are "
+#~ "created in the launching folder (.png"
+#~ " format)."
+#~ msgstr ""
+
+#~ msgid "It also puts the class means and standard deviations into text files."
+#~ msgstr ""
+
+#~ msgid "Pixel-by-pixel values are stored in a separate text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The pixel plots are created in a"
+#~ " folder named :code:`plots_imagename_band1_band2`."
+#~ msgstr ""
+
+#~ msgid "They are for all classes, .png image files. And same as text files."
+#~ msgstr ""
+
+#~ msgid "Make sure that you have installed GNUPLOT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A further script :code:`oft-classvalues-"
+#~ "compare.bash` can then be used to "
+#~ "compare up to 5 classes in one "
+#~ "view."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-classvalues-plot.bash` "
+#~ "Input data: download for this exercise"
+#~ " the Landsat imagery Landsat :code:`t1.tif`"
+#~ " and the shapefile: :code:`landuse.shp`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run :code:`oft-classvalues-plot.bash` with "
+#~ "input: satellite image ∥ shapefile ∥ "
+#~ "Attribute column for ID in this "
+#~ "case **name** | **band3** | **band4**;"
+#~ " Input image: :code:`landsat_t1.tif`, input "
+#~ "shapefile: :code:`landuse.shp`."
+#~ msgstr ""
+
+#~ msgid "the output is automatically processed."
+#~ msgstr ""
+
+#~ msgid "**Output:**"
+#~ msgstr ""
+
+#~ msgid ":code:`pixelvalueslandsat_t1.tif_bands_3_4.txt`:"
+#~ msgstr ""
+
+#~ msgid "Pixel ID"
+#~ msgstr ""
+
+#~ msgid "X"
+#~ msgstr ""
+
+#~ msgid "Y"
+#~ msgstr ""
+
+#~ msgid "class (from attribute name)"
+#~ msgstr ""
+
+#~ msgid "Pixelvalue_Bandnr3"
+#~ msgstr ""
+
+#~ msgid "Pixelvalue_Bandnr4"
+#~ msgstr ""
+
+#~ msgid "1.00"
+#~ msgstr ""
+
+#~ msgid "771870.00"
+#~ msgstr ""
+
+#~ msgid "-2402010.00"
+#~ msgstr ""
+
+#~ msgid "6.00"
+#~ msgstr ""
+
+#~ msgid "22.00"
+#~ msgstr ""
+
+#~ msgid "47.00"
+#~ msgstr ""
+
+#~ msgid "2.00"
+#~ msgstr ""
+
+#~ msgid "771900.00"
+#~ msgstr ""
+
+#~ msgid "53.00"
+#~ msgstr ""
+
+#~ msgid "3.00"
+#~ msgstr ""
+
+#~ msgid "771930.00"
+#~ msgstr ""
+
+#~ msgid "23.00"
+#~ msgstr ""
+
+#~ msgid "55.00"
+#~ msgstr ""
+
+#~ msgid "4.00"
+#~ msgstr ""
+
+#~ msgid "771960.00"
+#~ msgstr ""
+
+#~ msgid "5.00"
+#~ msgstr ""
+
+#~ msgid "771990.00"
+#~ msgstr ""
+
+#~ msgid "21.00"
+#~ msgstr ""
+
+#~ msgid ":code:`classvalues_landsat_t1.tif_band_3.txt`:"
+#~ msgstr ""
+
+#~ msgid "Classvalue"
+#~ msgstr ""
+
+#~ msgid "Bandnr3"
+#~ msgstr ""
+
+#~ msgid "std"
+#~ msgstr ""
+
+#~ msgid "7"
+#~ msgstr ""
+
+#~ msgid "27.224344"
+#~ msgstr ""
+
+#~ msgid "2.480986"
+#~ msgstr ""
+
+#~ msgid "13"
+#~ msgstr ""
+
+#~ msgid "28.945946"
+#~ msgstr ""
+
+#~ msgid "1.679205"
+#~ msgstr ""
+
+#~ msgid "8"
+#~ msgstr ""
+
+#~ msgid "28.140811"
+#~ msgstr ""
+
+#~ msgid "2.322499"
+#~ msgstr ""
+
+#~ msgid "9"
+#~ msgstr ""
+
+#~ msgid "29.036641"
+#~ msgstr ""
+
+#~ msgid "2.258223"
+#~ msgstr ""
+
+#~ msgid "12"
+#~ msgstr ""
+
+#~ msgid "27.879464"
+#~ msgstr ""
+
+#~ msgid "1.288049"
+#~ msgstr ""
+
+#~ msgid "11"
+#~ msgstr ""
+
+#~ msgid "27.423695"
+#~ msgstr ""
+
+#~ msgid "1.199933"
+#~ msgstr ""
+
+#~ msgid ":code:`classvalues_landsat_t1.tif_band_4.txt`"
+#~ msgstr ""
+
+#~ msgid "Bandnr4"
+#~ msgstr ""
+
+#~ msgid "48.176611"
+#~ msgstr ""
+
+#~ msgid "2.622561"
+#~ msgstr ""
+
+#~ msgid "45.385749"
+#~ msgstr ""
+
+#~ msgid "1.525189"
+#~ msgstr ""
+
+#~ msgid "49.842482"
+#~ msgstr ""
+
+#~ msgid "2.397968"
+#~ msgstr ""
+
+#~ msgid "52.786260"
+#~ msgstr ""
+
+#~ msgid "3.513642"
+#~ msgstr ""
+
+#~ msgid "49.943452"
+#~ msgstr ""
+
+#~ msgid "2.232350"
+#~ msgstr ""
+
+#~ msgid "48.779116"
+#~ msgstr ""
+
+#~ msgid "1.172885"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Folder plots :code:`landsat_t1.tif` bands 3"
+#~ " 4 contains the classes to be "
+#~ "used for :code:`oft-classvalues-compare.bash`."
+#~ msgstr ""
+
+#~ msgid "oft-combine-masks.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "oft-combine-masks.bash - combines "
+#~ "several masks (raster and shape- files)"
+#~ " to one mask file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-combine-masks.bash` is a UNIX"
+#~ " bash script that allows the user "
+#~ "to use both mask images and mask"
+#~ " shapefiles as input and the script"
+#~ " combines them into one mask file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first inputfile is the base "
+#~ "and it must be an image not "
+#~ "shapefile - The following input files"
+#~ " will be written on only if "
+#~ "there is nodata (user-defined value)"
+#~ msgstr ""
+
+#~ msgid "The extent is defined by the first input image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the projection is not given by"
+#~ " the user, all files are assumed "
+#~ "to be in same projection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Concerning the shapefiles, the last "
+#~ "field is assumed to be the one "
+#~ "containing the mask values"
+#~ msgstr ""
+
+#~ msgid "At least 2 files and nodata value are needed"
+#~ msgstr ""
+
+#~ msgid "The projection can be defined by the user using the [EPSG code] option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-combine-masks.bash`, "
+#~ ":code:`oft-calc`, :code:`gdal_rasterize`."
+#~ msgstr ""
+
+#~ msgid "**STEP 1: CREATE MASKS**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To run :code:`oft-combine-masks.bash` we"
+#~ " need to create some mask files. "
+#~ "To do so, we burn the attribute"
+#~ " values of the column mask from "
+#~ "the shapefile :code:`landuse.shp` into the "
+#~ "raster :code:`forestc.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Verify in QGIS if your pixel "
+#~ "values of :code:`forestc.tif` match the "
+#~ "polygon values of :code:`landuse.shp`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if the raster output is black, "
+#~ "click on it’s Properties -> Style "
+#~ "-> Color Map and chose Pseudo "
+#~ "Color"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Left: Attribute table of :code:`landuse.shp`."
+#~ " Right: Zoom of output raster "
+#~ ":code:`forestc.tif` in QGIS using the "
+#~ "colourmap **Pseudocolour**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`Forestc.tif` is the base raster "
+#~ "to create some masks files by "
+#~ "extracting those pixels that contain "
+#~ "values which were previously in the "
+#~ "shapefile and then burned into the "
+#~ "raster:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Again, check in QGIS if the masks"
+#~ " contain the extracted value for the"
+#~ " same location of the corresponding "
+#~ "polygon in :code:`landuse.shp`."
+#~ msgstr ""
+
+#~ msgid "In the final step we run the command :code:`oft-combine-masks.bash`."
+#~ msgstr ""
+
+#~ msgid "Output file is automatically processed called combined-mask.img"
+#~ msgstr ""
+
+#~ msgid "**STEP 2: COMBINE MASKS USING RASTER AND SHAPE-FILE**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run :code:`oft-combine-masks.bash`: Input: "
+#~ ":code:`mask1.tif`, :code:`mask2.tif`, :code:`mask3.tif`,"
+#~ " :code:`mask4.tif`, :code:`mask5.tif` and the "
+#~ "additional shapefile :code:`clouds.shp` In the"
+#~ " shapefile the values of the last "
+#~ "column are picked up for processing; "
+#~ "output is automatically processed: "
+#~ "combined-masks.img"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "copy your combined-mask.img output from"
+#~ " the first exercise as it will "
+#~ "be overwritten running :code:`oft-combine-"
+#~ "masks.bash` again."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Verify in QGIS if :code:`combined-"
+#~ "masks.img` contains all mask values, and"
+#~ " if the additional polygon of "
+#~ ":code:`clouds.shp` has the values 99 "
+#~ "(look into attribute table of clouds.shp"
+#~ " under the last column)."
+#~ msgstr ""
+
+#~ msgid "Combined masks including the larger polygon from clouds.shp."
+#~ msgstr ""
+
+#~ msgid "oft-compare-overlap.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "oft-compare-overlap.bash - This script"
+#~ " compares overlapping areas of 2 "
+#~ "images and produces between-band "
+#~ "correlations."
+#~ msgstr ""
+
+#~ msgid "Give the spacing in meters (1000 = 1 km)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Give the last parameter in format "
+#~ "EPSG:32637 (replace number with your "
+#~ "own, this is for UTM 37 N)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Meant for evaluation of the brdf "
+#~ "correction of 2 images, but other "
+#~ "imagery can be compared as well"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The second image is projected to "
+#~ "the same projection as the first, "
+#~ "if the projections differ"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In that case, user gives the "
+#~ "projection of first image ad EPGS "
+#~ "code. And both images need to have"
+#~ " a projection defined (although it "
+#~ "differs)"
+#~ msgstr ""
+
+#~ msgid "Similar number of bands must exist"
+#~ msgstr ""
+
+#~ msgid "Masks must be given for both images to exclude cloud/shadow areas"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "They must be of same size and "
+#~ "in same projection as their "
+#~ "corresponding images"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only areas where mask has value 2"
+#~ " are used in comparison (you may "
+#~ "give a mask full of 2 if "
+#~ "needed)"
+#~ msgstr ""
+
+#~ msgid "User gives the spacing of the sampling points as well"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-compare-overlap.bash`, "
+#~ ":code:`oft-calc`, :code:`gdal_translate`, :code"
+#~ ":`oft-trim-mask.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Convert :code:`landsat_t1.tif` into 6 bands"
+#~ " as both need to have same "
+#~ "number of bands."
+#~ msgstr ""
+
+#~ msgid "Create mask for :code:`landsat_t1_6bands.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the mask value to be used is "
+#~ "2, so conversion of mask from "
+#~ "value 1 to 2: input:"
+#~ msgstr ""
+
+#~ msgid "Create mask for :code:`landsat_t2.tif`:"
+#~ msgstr ""
+
+#~ msgid "Convert mask value to 2:"
+#~ msgstr ""
+
+#~ msgid "Run :code:`oft-compare-overlap.bash`:"
+#~ msgstr ""
+
+#~ msgid "Print the result on screen:"
+#~ msgstr ""
+
+#~ msgid "329.00"
+#~ msgstr ""
+
+#~ msgid "732285.00"
+#~ msgstr ""
+
+#~ msgid "-2447885.00"
+#~ msgstr ""
+
+#~ msgid "100.00"
+#~ msgstr ""
+
+#~ msgid "3166.00"
+#~ msgstr ""
+
+#~ msgid "25.00"
+#~ msgstr ""
+
+#~ msgid "27.00"
+#~ msgstr ""
+
+#~ msgid "48.00"
+#~ msgstr ""
+
+#~ msgid "71.00"
+#~ msgstr ""
+
+#~ msgid "131.00"
+#~ msgstr ""
+
+#~ msgid "66.00"
+#~ msgstr ""
+
+#~ msgid "60.00"
+#~ msgstr ""
+
+#~ msgid "88.00"
+#~ msgstr ""
+
+#~ msgid "98.00"
+#~ msgstr ""
+
+#~ msgid "69.00"
+#~ msgstr ""
+
+#~ msgid "330.00"
+#~ msgstr ""
+
+#~ msgid "-2446885.00"
+#~ msgstr ""
+
+#~ msgid "3133.00"
+#~ msgstr ""
+
+#~ msgid "54.00"
+#~ msgstr ""
+
+#~ msgid "128.00"
+#~ msgstr ""
+
+#~ msgid "61.00"
+#~ msgstr ""
+
+#~ msgid "51.00"
+#~ msgstr ""
+
+#~ msgid "77.00"
+#~ msgstr ""
+
+#~ msgid "49.00"
+#~ msgstr ""
+
+#~ msgid "331.00"
+#~ msgstr ""
+
+#~ msgid "-2445885.00"
+#~ msgstr ""
+
+#~ msgid "3100.00"
+#~ msgstr ""
+
+#~ msgid "56.00"
+#~ msgstr ""
+
+#~ msgid "29.00"
+#~ msgstr ""
+
+#~ msgid "73.00"
+#~ msgstr ""
+
+#~ msgid "67.00"
+#~ msgstr ""
+
+#~ msgid "95.00"
+#~ msgstr ""
+
+#~ msgid "89.00"
+#~ msgstr ""
+
+#~ msgid "65.00"
+#~ msgstr ""
+
+#~ msgid "332.00"
+#~ msgstr ""
+
+#~ msgid "-2444885.00"
+#~ msgstr ""
+
+#~ msgid "3066.00"
+#~ msgstr ""
+
+#~ msgid "46.00"
+#~ msgstr ""
+
+#~ msgid "19.00"
+#~ msgstr ""
+
+#~ msgid "17.00"
+#~ msgstr ""
+
+#~ msgid "40.00"
+#~ msgstr ""
+
+#~ msgid "41.00"
+#~ msgstr ""
+
+#~ msgid "124.00"
+#~ msgstr ""
+
+#~ msgid "44.00"
+#~ msgstr ""
+
+#~ msgid "36.00"
+#~ msgstr ""
+
+#~ msgid "80.00"
+#~ msgstr ""
+
+#~ msgid "333.00"
+#~ msgstr ""
+
+#~ msgid "-2443885.00"
+#~ msgstr ""
+
+#~ msgid "3033.00"
+#~ msgstr ""
+
+#~ msgid "20.00"
+#~ msgstr ""
+
+#~ msgid "18.00"
+#~ msgstr ""
+
+#~ msgid "39.00"
+#~ msgstr ""
+
+#~ msgid "45.00"
+#~ msgstr ""
+
+#~ msgid "43.00"
+#~ msgstr ""
+
+#~ msgid "35.00"
+#~ msgstr ""
+
+#~ msgid "81.00"
+#~ msgstr ""
+
+#~ msgid "26.00"
+#~ msgstr ""
+
+#~ msgid "334.00"
+#~ msgstr ""
+
+#~ msgid "-2442885.00"
+#~ msgstr ""
+
+#~ msgid "3000.00"
+#~ msgstr ""
+
+#~ msgid "42.00"
+#~ msgstr ""
+
+#~ msgid "125.00"
+#~ msgstr ""
+
+#~ msgid "Output of oft-compare-overlap.bash visualized in QGIS."
+#~ msgstr ""
+
+#~ msgid "oft-crop.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "oft-crop.bash - crops a raster "
+#~ "image to the extent of a certain"
+#~ " pixel value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[ value / -all ]: [value] = "
+#~ "is the value of the inputfile it"
+#~ " should be cropped to -all = if"
+#~ " image should be cropped to every "
+#~ "unique pixel value; output will be "
+#~ "named accordingly"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[nodata-value]: for this value no "
+#~ "cropping will be done; if not "
+#~ "provided, it is assumed to be 0"
+#~ " (only applicable for option -all)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-crop.bash` crops a raster "
+#~ "image to the extent of a certain"
+#~ " pixel value. This can be useful "
+#~ "when, for example, one wants to "
+#~ "produce a separate raster image for "
+#~ "every district of a country."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input image is a raster image with"
+#~ " unique pixel values for each region"
+#~ " of interest."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the output image, the value for"
+#~ " the region of interest is kept. "
+#~ "All other pixels are set to 0."
+#~ msgstr ""
+
+#~ msgid "The user can choose to either:"
+#~ msgstr ""
+
+#~ msgid "do the cropping for one single pixel value"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "do the cropping for all occurring "
+#~ "pixel values besides the nodata- value."
+#~ " The nodata-value can be specified"
+#~ " with the [nodata] option. If not "
+#~ "specified, it is assumed to be 0."
+#~ " In this case, output files will "
+#~ "carry the value they have been "
+#~ "cropped to in their name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-crop.bash`, "
+#~ ":code:`gdal_rasterize`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You will need for this exercise "
+#~ "the file :code:`landuse.shp`, digitized "
+#~ "manually with QGIS. Then Create a "
+#~ "raster file that has the landuse "
+#~ "class attribute of the :code:`landuse.shp` "
+#~ "file:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Extract one particular class (in that"
+#~ " case the zone that has the "
+#~ "label 2000):"
+#~ msgstr ""
+
+#~ msgid "oft-cuttile.pl"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-cuttile.pl` - Cuts image "
+#~ "tiles on the basis of a given "
+#~ "list of locations."
+#~ msgstr ""
+
+#~ msgid "OPTIONS"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<coord list> is a text file "
+#~ "containing the coordinates of the center"
+#~ " of the tiles. It must arranged "
+#~ "as :code:`id`, :code:`x`and :code:`y`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<CRS file> is a text file "
+#~ "containing the projection definitions of "
+#~ "the dataset in **PROJ4** format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<input dir> is the directory containing"
+#~ " the image. Image must be in "
+#~ "geotiff format, extension must be "
+#~ "**.TIF** with **capitals**."
+#~ msgstr ""
+
+#~ msgid "<output basename>is the base name of the tiles that will be generated"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-cuttile.pl` cuts image tiles "
+#~ "on the basis of a given list "
+#~ "of locations."
+#~ msgstr ""
+
+#~ msgid "Converts the point locations into the projection of the image"
+#~ msgstr ""
+
+#~ msgid "Cuts a set of 20 km x 20 km tiles around the locations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Converts the tiles to the coordinate "
+#~ "system of the points (20 km x "
+#~ "20 km)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-cuttile.pl`, "
+#~ ":code:`gdal_translate`, :code:`cs2cs`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First, we need to convert the "
+#~ "imagery into **.TIF** format. You can"
+#~ " use the :code:`gdal_translate` function to"
+#~ " convert your input imagery from any"
+#~ " GDAL supported format to TIF using"
+#~ " the option [-of GTiff]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the next step we take a "
+#~ "closer look at our additional input "
+#~ "data :code:`coordinates.txt` and :code:`proj.txt`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`coordinates.txt` is a space separated"
+#~ " text file of 3 columns: :code:`ID`,"
+#~ " :code:`X` and :code:`Y`."
+#~ msgstr ""
+
+#~ msgid "Then copy paste the following list and save your file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`proj.txt` must contain one line "
+#~ "with the projection definition of the"
+#~ " tiles coordinates and one line with"
+#~ " the projection definition of the "
+#~ "imagery. Here it is UTM zone 20,"
+#~ " for both, with the following Proj4"
+#~ " format:"
+#~ msgstr ""
+
+#~ msgid "Create the file:"
+#~ msgstr ""
+
+#~ msgid "Paste the projection definition twice, as two separate lines and save."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you do not have it, you "
+#~ "can get the PROJ4 format of an "
+#~ "image by using the function "
+#~ ":code:`cs2cs`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you don’t know the EPSG code"
+#~ " of your image use :code:`gdalinfo` "
+#~ "for your imagery:"
+#~ msgstr ""
+
+#~ msgid "Now we run the actual script to create the tiles in the terminal."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The four tiles overlayed on base "
+#~ "image, displayed with differing band "
+#~ "composition to base imagery."
+#~ msgstr ""
+
+#~ msgid "oft-filter"
+#~ msgstr ""
+
+#~ msgid "oft-filter - moving window filters"
+#~ msgstr ""
+
+#~ msgid "[-x dim] Window size in x-direction (default=3)"
+#~ msgstr ""
+
+#~ msgid "[-y dim] Window size in y-direction (default=3)"
+#~ msgstr ""
+
+#~ msgid "[-c const] Constant used to multiply the resulting value"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[-n value] Input NoData value, ignored"
+#~ " in calculation (Def. from input "
+#~ "file)"
+#~ msgstr ""
+
+#~ msgid "[-v] Verbose"
+#~ msgstr ""
+
+#~ msgid "[-f filter] Type of statistics to be computed (default=1):"
+#~ msgstr ""
+
+#~ msgid "mean"
+#~ msgstr ""
+
+#~ msgid "standard deviation"
+#~ msgstr ""
+
+#~ msgid "variance"
+#~ msgstr ""
+
+#~ msgid "skewness"
+#~ msgstr ""
+
+#~ msgid "rank"
+#~ msgstr ""
+
+#~ msgid "coefficient of variation: 100 * std/mean"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-filter` computes local statistics"
+#~ " on values of a raster within "
+#~ "the zones of a moving window."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-filter`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create the standard deviation for the"
+#~ " moving window using the default "
+#~ "window size and default statistics "
+#~ "(without defining -f). The output image"
+#~ " is called std.tif:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we go through an example "
+#~ "calculating the coefficient of variation "
+#~ "(100*std/mean) using the option -f 5:"
+#~ msgstr ""
+
+#~ msgid "Calculation of the mean using the option -f 0:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Load your computed rasters in QGIS "
+#~ "and verify your output statistics using"
+#~ " Identify Results."
+#~ msgstr ""
+
+#~ msgid "Example of the computed mean.tif"
+#~ msgstr ""
+
+#~ msgid "oft-gengrid.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-gengrid.bash` - generates a "
+#~ "systematic grid over a raster image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-gengrid.bash` generates a grid "
+#~ "of points over an image (text "
+#~ "file), with user-defined spacing in "
+#~ "x and y directions. Output is a"
+#~ " text file with the coordinates of"
+#~ " the points. - Generates a text "
+#~ "file with 3 entries for each "
+#~ "point: ID Xcoord Ycoord - <input "
+#~ "img> is a geo-referenced input "
+#~ "image"
+#~ msgstr ""
+
+#~ msgid "<DX> is the distance between the points in X direction"
+#~ msgstr ""
+
+#~ msgid "<DY> is the distance between the points in Y direction"
+#~ msgstr ""
+
+#~ msgid "Steps:"
+#~ msgstr ""
+
+#~ msgid "Prints the average, RMSE and bias on screen."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Saves original value, estimate and "
+#~ "difference in an output file. If "
+#~ "id or x and y are given, "
+#~ "they are printed out as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the id is indicated in the "
+#~ "command line, the id’s of 10 "
+#~ "nearest neighbors are printed into the"
+#~ " output file."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-gengrid.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run the command line for generating "
+#~ "the grid of 1000 x 1000 m "
+#~ "distance between the points in X "
+#~ "and Y directions on the input "
+#~ "image :code:`landsat_t1.tif` with an output"
+#~ " text file consisting of three "
+#~ "columns for :code:`ID`, :code:`X` and "
+#~ ":code:`Y`:"
+#~ msgstr ""
+
+#~ msgid "Look at the first ten lines of your result:"
+#~ msgstr ""
+
+#~ msgid "730785"
+#~ msgstr ""
+
+#~ msgid "-2456134"
+#~ msgstr ""
+
+#~ msgid "-2455134"
+#~ msgstr ""
+
+#~ msgid "3"
+#~ msgstr ""
+
+#~ msgid "-2454134"
+#~ msgstr ""
+
+#~ msgid "4"
+#~ msgstr ""
+
+#~ msgid "-2453134"
+#~ msgstr ""
+
+#~ msgid "5"
+#~ msgstr ""
+
+#~ msgid "-2452134"
+#~ msgstr ""
+
+#~ msgid "6"
+#~ msgstr ""
+
+#~ msgid "-2451134"
+#~ msgstr ""
+
+#~ msgid "-2450134"
+#~ msgstr ""
+
+#~ msgid "-2449134"
+#~ msgstr ""
+
+#~ msgid "-2448134"
+#~ msgstr ""
+
+#~ msgid "10"
+#~ msgstr ""
+
+#~ msgid "-2447134"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Load the data in QGIS using ’Add"
+#~ " Delimited Text Layer’ and see if "
+#~ "it overlays on your Landsat image."
+#~ msgstr ""
+
+#~ msgid "Zoom of the result overlayed on the original Landsat image in QGIS."
+#~ msgstr ""
+
+#~ msgid "oft-getcorners.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-getcorners.bash` - gets the "
+#~ "coordinates of corners of a raster "
+#~ "image or OGR vector layer ."
+#~ msgstr ""
+
+#~ msgid "<inputfile> is a GDAL raster layer or OGR vector layer"
+#~ msgstr ""
+
+#~ msgid "ul_lr = ulx uly lrx lry (default)"
+#~ msgstr ""
+
+#~ msgid "min_max = xmin ymin xmax ymax (ulx lry lrx uly)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-getcorners.bash` outputs the corner"
+#~ " coordinates for a GDAL raster layer"
+#~ " or OGR vector layer. The user "
+#~ "can choose the order of the "
+#~ "output:"
+#~ msgstr ""
+
+#~ msgid "ulx: upper left x-coordinate"
+#~ msgstr ""
+
+#~ msgid "uly: upper left y-coordinate"
+#~ msgstr ""
+
+#~ msgid "lrx: lower right x-coordinate"
+#~ msgstr ""
+
+#~ msgid "lry: lower right y-coordinate"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-getcorners.bash`"
+#~ msgstr ""
+
+#~ msgid "Run the :code:`oft-getcorners.bash`:"
+#~ msgstr ""
+
+#~ msgid "..code-block:: console"
+#~ msgstr ""
+
+#~ msgid "oft-getcorners.bash images/landsat_t1.tif"
+#~ msgstr ""
+
+#~ msgid "You should get the following output:"
+#~ msgstr ""
+
+#~ msgid "oft-polygonize.bash"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-polygonize.bash` - a wrapper for :code:`gdal_polygonize`."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-polygonize.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run :code:`oft-polygonize.bash` using"
+#~ " the input image :code:`landsat_t1.tif` to"
+#~ " create the output :code:`oft-"
+#~ "polygonize.shp`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Take a look at your shapefile in"
+#~ " QGIS on go on properties of "
+#~ "the .shp ->Labels ->tick Display Labels,"
+#~ " set Field Containing Label to DN "
+#~ "->Press OK. The DN of each polygon"
+#~ " in :code:`oft-polygonize.shp` should be"
+#~ " the same as the pixel value of"
+#~ " :code:`landsat_t1.tif` for the same "
+#~ "location."
+#~ msgstr ""
+
+#~ msgid "Zoomed view of oft-polygonize.shp"
+#~ msgstr ""
+
+#~ msgid "oft-sample-within-polys.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-sample-within-polys.bash` - "
+#~ "samples pixels within polygons and "
+#~ "generates training data for knn."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-sample-within-polys.bash` samples"
+#~ " pixel values from an image within"
+#~ " areas determined by training data "
+#~ "polygons (shapefile). Output is named "
+#~ "sample shapefile basename.txt"
+#~ msgstr ""
+
+#~ msgid "Specifications:"
+#~ msgstr ""
+
+#~ msgid "Sample size (NBR of pixels) is given by the user"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The sample is distributed within classes"
+#~ " in relation to class frequencies"
+#~ msgstr ""
+
+#~ msgid "Output is a text file to be used e.g. in knn"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A histogram is also printed out, "
+#~ "sample size per class is shown in"
+#~ " last column"
+#~ msgstr ""
+
+#~ msgid "The image and the shapefile need to be in the same projection"
+#~ msgstr ""
+
+#~ msgid "[-sample only]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is possible to pick a new "
+#~ "sample by running the script with "
+#~ "option -sample only (do not delete "
+#~ "grey-values shapefile basename.txt if "
+#~ "you are going to re-run)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "At this point the image and the"
+#~ " shapefile need to be in the "
+#~ "same projection"
+#~ msgstr ""
+
+#~ msgid "Also look at :code:`oft-knn`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-oft-sample-within-"
+#~ "polys.bash` Open your working directory "
+#~ "using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now run the script in the command"
+#~ " line within input-raster "
+#~ ":code:`landsat_t1.tif` and input-shapefile "
+#~ ":code:`landuse.shp`; ’name’ refers to the "
+#~ "shapefile ID. If you look at the"
+#~ " attribute table of :code:`landuse.shp` you"
+#~ " see, that you could also use "
+#~ "the column **id**. Here we chose "
+#~ "name to make it more transparent. "
+#~ "100 is the sample size chosen for"
+#~ " this exercise."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the command line the extension "
+#~ ".shp of the shapefile is not "
+#~ "included!"
+#~ msgstr ""
+
+#~ msgid "Output are three text files:"
+#~ msgstr ""
+
+#~ msgid "grey-values :code:`greyvals_landuse.txt`"
+#~ msgstr ""
+
+#~ msgid "histogram :code:`histogramlanduse.txt`"
+#~ msgstr ""
+
+#~ msgid "sample output :code:`sample_landuse.txt`"
+#~ msgstr ""
+
+#~ msgid "Here you can see an extract of sample :code:`landuse.txt`:"
+#~ msgstr ""
+
+#~ msgid "pixel id"
+#~ msgstr ""
+
+#~ msgid "x"
+#~ msgstr ""
+
+#~ msgid "y"
+#~ msgstr ""
+
+#~ msgid "class"
+#~ msgstr ""
+
+#~ msgid "band1"
+#~ msgstr ""
+
+#~ msgid "band2"
+#~ msgstr ""
+
+#~ msgid "band3"
+#~ msgstr ""
+
+#~ msgid "band4"
+#~ msgstr ""
+
+#~ msgid "band5"
+#~ msgstr ""
+
+#~ msgid "band6"
+#~ msgstr ""
+
+#~ msgid "band7"
+#~ msgstr ""
+
+#~ msgid "10557.00"
+#~ msgstr ""
+
+#~ msgid "772650.00"
+#~ msgstr ""
+
+#~ msgid "-2404770.00"
+#~ msgstr ""
+
+#~ msgid "28.00"
+#~ msgstr ""
+
+#~ msgid "94788.00"
+#~ msgstr ""
+
+#~ msgid "773490.00"
+#~ msgstr ""
+
+#~ msgid "-2431680.00"
+#~ msgstr ""
+
+#~ msgid "24.00"
+#~ msgstr ""
+
+#~ msgid "127.00"
+#~ msgstr ""
+
+#~ msgid "33.00"
+#~ msgstr ""
+
+#~ msgid "201536.00"
+#~ msgstr ""
+
+#~ msgid "774750.00"
+#~ msgstr ""
+
+#~ msgid "-2439390.00"
+#~ msgstr ""
+
+#~ msgid "50.00"
+#~ msgstr ""
+
+#~ msgid "130.00"
+#~ msgstr ""
+
+#~ msgid "88531.00"
+#~ msgstr ""
+
+#~ msgid "771450.00"
+#~ msgstr ""
+
+#~ msgid "-2431110.00"
+#~ msgstr ""
+
+#~ msgid "37.00"
+#~ msgstr ""
+
+#~ msgid "126.00"
+#~ msgstr ""
+
+#~ msgid "123374.00"
+#~ msgstr ""
+
+#~ msgid "774150.00"
+#~ msgstr ""
+
+#~ msgid "-2433990.00"
+#~ msgstr ""
+
+#~ msgid "30.00"
+#~ msgstr ""
+
+#~ msgid "75.00"
+#~ msgstr ""
+
+#~ msgid "132.00"
+#~ msgstr ""
+
+#~ msgid "oft-shptif.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-shptif.bash` - Rasterizes a "
+#~ "shapefile to the resolution of a "
+#~ "reference image"
+#~ msgstr ""
+
+#~ msgid "input files:"
+#~ msgstr ""
+
+#~ msgid "shapefile that is supposed to be rasterized"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "reference raster image - the shapefile"
+#~ " will be rasterized to the same "
+#~ "extent and resolution of this image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[field name]: the field name of "
+#~ "the attribute of the shapefile that "
+#~ "is supposed to be rasterized"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If no field name is specified, "
+#~ "every polygon will be assigned an "
+#~ "arbitrary, but unique ID."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-shptif.bash`. Open your"
+#~ " working directory using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We are going to rasterize the "
+#~ "shapefile :code:`landuse.shp` with "
+#~ ":code:`landsat_t1.tif` as a reference image."
+#~ " We are interested in the landuse "
+#~ "specified in the shapefile, so we "
+#~ "choose landuse as field name."
+#~ msgstr ""
+
+#~ msgid "Run oft-shptif.bash:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open the output :code:`results/raster_landuse.tif`"
+#~ " in QGIS, or use it for further"
+#~ " calculations. For all areas without "
+#~ "landuse information in the shapefile, "
+#~ "value 0 will be recorded in the"
+#~ " output image."
+#~ msgstr ""
+
+#~ msgid "oft-sigshp.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-sigshp.bash` - creates a "
+#~ "signature file of an image based "
+#~ "on training area polygons."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-sigshp.bash` creates a signature"
+#~ " file of an image, e.g. Landsat, "
+#~ "based on training area polygons in "
+#~ "shapefile format. This file can be "
+#~ "used in knn-classification with stand"
+#~ " alone program oft-nn."
+#~ msgstr ""
+
+#~ msgid "do not put .shp into the second parameter (basename)!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The training areas and the image "
+#~ "must be in the same projection "
+#~ "**OR** you may give the projections "
+#~ "in the command line as EPSG codes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the projections are not defined "
+#~ "(for both or one of the inputs),"
+#~ " or the program does not recognize"
+#~ " it, the script will warn. This "
+#~ "is not dangerous if the files "
+#~ "really are similarly aligned."
+#~ msgstr ""
+
+#~ msgid "The ID’s must fit into a 16-bit Unsigned image ( 65500)."
+#~ msgstr ""
+
+#~ msgid "The class values may be either numerical or verbal (e.g. \"bushland\")"
+#~ msgstr ""
+
+#~ msgid "Minimum parameters needed:"
+#~ msgstr ""
+
+#~ msgid "image-file"
+#~ msgstr ""
+
+#~ msgid "shapefile"
+#~ msgstr ""
+
+#~ msgid "field name storing ids in shape"
+#~ msgstr ""
+
+#~ msgid "field name storing numeric class values in shape"
+#~ msgstr ""
+
+#~ msgid "output signature filename"
+#~ msgstr ""
+
+#~ msgid "Parameters:"
+#~ msgstr ""
+
+#~ msgid "projection of image file"
+#~ msgstr ""
+
+#~ msgid "projection of shapefile"
+#~ msgstr ""
+
+#~ msgid "This script can also be used after :code:`oft-nn`."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-sigshp.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The script :code:`oft-sigshp.bash` is "
+#~ "able to create a signature file "
+#~ "for both data types, numerical and "
+#~ "factorial, depending on the stored data"
+#~ " in your shapefile. In the next "
+#~ "steps we will lead you through an"
+#~ " example exercises for each data "
+#~ "type:"
+#~ msgstr ""
+
+#~ msgid "Attribute table of polyN20.shp"
+#~ msgstr ""
+
+#~ msgid "creating signature file with numerical values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First, we run in the command line"
+#~ " :code:`oft-sigshp.bash` with the input "
+#~ "raster :code:`landsat_t1.tif` and your input"
+#~ " shapefile :code:`landuse.shp`. **id** stands "
+#~ "for the shapefile id field name; "
+#~ "**newcol** refers to the shapefile "
+#~ "cover-class field name. If you look"
+#~ " at the attribute table of your "
+#~ ":code:`landuse.shp` you will see that "
+#~ "under **newcol**, numerical data is "
+#~ "stored. Output: :code:`sig_newcol.txt`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the extension .shp of your shapefile "
+#~ "is not included in the command "
+#~ "line - only the basename!"
+#~ msgstr ""
+
+#~ msgid "Run in terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets take a look at the first "
+#~ "lines of our output :code:`signewcol.txt`:"
+#~ msgstr ""
+
+#~ msgid "ID"
+#~ msgstr ""
+
+#~ msgid "newcol"
+#~ msgstr ""
+
+#~ msgid "52.097317"
+#~ msgstr ""
+
+#~ msgid "23.696463"
+#~ msgstr ""
+
+#~ msgid "24.919711"
+#~ msgstr ""
+
+#~ msgid "45.321753"
+#~ msgstr ""
+
+#~ msgid "65.427785"
+#~ msgstr ""
+
+#~ msgid "129.033459"
+#~ msgstr ""
+
+#~ msgid "32.060358"
+#~ msgstr ""
+
+#~ msgid "22"
+#~ msgstr ""
+
+#~ msgid "54.157159"
+#~ msgstr ""
+
+#~ msgid "25.348832"
+#~ msgstr ""
+
+#~ msgid "28.176561"
+#~ msgstr ""
+
+#~ msgid "48.805278"
+#~ msgstr ""
+
+#~ msgid "72.468158"
+#~ msgstr ""
+
+#~ msgid "129.166550"
+#~ msgstr ""
+
+#~ msgid "34.397944"
+#~ msgstr ""
+
+#~ msgid "44"
+#~ msgstr ""
+
+#~ msgid "53.864419"
+#~ msgstr ""
+
+#~ msgid "25.231642"
+#~ msgstr ""
+
+#~ msgid "27.932243"
+#~ msgstr ""
+
+#~ msgid "51.411361"
+#~ msgstr ""
+
+#~ msgid "71.957973"
+#~ msgstr ""
+
+#~ msgid "129.559346"
+#~ msgstr ""
+
+#~ msgid "33.277298"
+#~ msgstr ""
+
+#~ msgid "55"
+#~ msgstr ""
+
+#~ msgid "54.367835"
+#~ msgstr ""
+
+#~ msgid "25.734659"
+#~ msgstr ""
+
+#~ msgid "28.453136"
+#~ msgstr ""
+
+#~ msgid "53.725893"
+#~ msgstr ""
+
+#~ msgid "74.190155"
+#~ msgstr ""
+
+#~ msgid "130.886716"
+#~ msgstr ""
+
+#~ msgid "36.174309"
+#~ msgstr ""
+
+#~ msgid "66"
+#~ msgstr ""
+
+#~ msgid "50.987633"
+#~ msgstr ""
+
+#~ msgid "23.044892"
+#~ msgstr ""
+
+#~ msgid "23.452312"
+#~ msgstr ""
+
+#~ msgid "52.655091"
+#~ msgstr ""
+
+#~ msgid "65.861426"
+#~ msgstr ""
+
+#~ msgid "128.754701"
+#~ msgstr ""
+
+#~ msgid "29.121125"
+#~ msgstr ""
+
+#~ msgid "-9999"
+#~ msgstr ""
+
+#~ msgid "52.926014"
+#~ msgstr ""
+
+#~ msgid "24.353222"
+#~ msgstr ""
+
+#~ msgid "77.276850"
+#~ msgstr ""
+
+#~ msgid "132.054893"
+#~ msgstr ""
+
+#~ msgid "38.276850"
+#~ msgstr ""
+
+#~ msgid "88"
+#~ msgstr ""
+
+#~ msgid "54.133652"
+#~ msgstr ""
+
+#~ msgid "25.214797"
+#~ msgstr ""
+
+#~ msgid "74.985680"
+#~ msgstr ""
+
+#~ msgid "131.004773"
+#~ msgstr ""
+
+#~ msgid "37.408115"
+#~ msgstr ""
+
+#~ msgid "99"
+#~ msgstr ""
+
+#~ msgid "54.772519"
+#~ msgstr ""
+
+#~ msgid "25.961832"
+#~ msgstr ""
+
+#~ msgid "78.035115"
+#~ msgstr ""
+
+#~ msgid "130.658015"
+#~ msgstr ""
+
+#~ msgid "39.607634"
+#~ msgstr ""
+
+#~ msgid "1000"
+#~ msgstr ""
+
+#~ msgid "51.588723"
+#~ msgstr ""
+
+#~ msgid "23.134328"
+#~ msgstr ""
+
+#~ msgid "24.255390"
+#~ msgstr ""
+
+#~ msgid "45.487562"
+#~ msgstr ""
+
+#~ msgid "68.208955"
+#~ msgstr ""
+
+#~ msgid "130.310116"
+#~ msgstr ""
+
+#~ msgid "33.121061"
+#~ msgstr ""
+
+#~ msgid "1111"
+#~ msgstr ""
+
+#~ msgid "53.236948"
+#~ msgstr ""
+
+#~ msgid "24.644578"
+#~ msgstr ""
+
+#~ msgid "68.943775"
+#~ msgstr ""
+
+#~ msgid "131.594378"
+#~ msgstr ""
+
+#~ msgid "33.905622"
+#~ msgstr ""
+
+#~ msgid "creating signature file with factorial values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let's run the script using the id"
+#~ " column called colour, which stores "
+#~ "factorial values. Output: :code:`sig_colour.txt`."
+#~ " Run in terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Again let’s take a closer look at"
+#~ " the first lines of the output "
+#~ "file :code:`sig_colour.txt`:"
+#~ msgstr ""
+
+#~ msgid "factorial"
+#~ msgstr ""
+
+#~ msgid "red"
+#~ msgstr ""
+
+#~ msgid "green"
+#~ msgstr ""
+
+#~ msgid "orange"
+#~ msgstr ""
+
+#~ msgid "pink"
+#~ msgstr ""
+
+#~ msgid "blue"
+#~ msgstr ""
+
+#~ msgid "0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In comparison to the output of "
+#~ ":code:`sig_newcol.txt` we can now see "
+#~ "that col2 of :code:`sig_colour.txt` contains"
+#~ " the factorial data."
+#~ msgstr ""
+
+#~ msgid "PointsToSquares.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "PointsToSquares.py - converts XY-locations "
+#~ "into 100 x 100 m squares in "
+#~ "a kml-file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`PointsToSquares.py` Conversion of user-"
+#~ "defined plot center points in a "
+#~ "text file into squares of 100 x"
+#~ " 100 m in .kml format. These "
+#~ "squares are training data collection "
+#~ "locations, meant to be used with a"
+#~ " specific tool made for Google Earth."
+#~ " Input textfile projection needs to "
+#~ "be UTM South WGS84 zones. Output "
+#~ ".kml is in LatLon WGS84."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`PointsToSquares.py`, :code:`gdalinfo`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Either use your own .txt file "
+#~ "consisting of three columns: :code:`ID`, "
+#~ ":code:`X-field` and :code:`Y-field` or "
+#~ "Generate it by using :code:`oft-"
+#~ "gengrid.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this exercise we use the .txt"
+#~ " file derived from :code:`oft-gengrid.bash`"
+#~ " called :code:`training.txt`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the projection is UTM "
+#~ "South WGS84 zones. In our case it"
+#~ " is UTM Zone 20S."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "How to find out? Before running "
+#~ ":code:`oft-gengrid.bash`, check the projection"
+#~ " of the input image (:code:`landsat_t1.tif`"
+#~ " ), which is the base to "
+#~ "calculate :code:`training.txt` using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After generating :code:`training.txt` run the"
+#~ " command line for calculating your "
+#~ "points to 100 x 100x meter "
+#~ "squares, creating an kml outputfile "
+#~ "called :code:`Points2Squares_training.kml`:"
+#~ msgstr ""
+
+#~ msgid "IMAGE MANIPULATION"
+#~ msgstr ""
+
+#~ msgid "multifillerThermal.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`multifillerThermal.bash` - is a script"
+#~ " which utilizes several Landsat scenes "
+#~ "to build a multi-temporal image "
+#~ "composite using the warmest pixel "
+#~ "-method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The aim is to have one good "
+#~ "image so called anchor with as few"
+#~ " problematic areas as possible and "
+#~ "then another which is from same "
+#~ "season (as close a date as "
+#~ "possible) and has clouds in different"
+#~ " locations so called filler."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`multifillerThermal.bash`"
+#~ msgstr ""
+
+#~ msgid "Then run:"
+#~ msgstr ""
+
+#~ msgid "oft-calc"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-calc` - is a raster image calculator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-calc` based on an input "
+#~ "raster file, :code:`oft-calc` creates an"
+#~ " output raster file as result of "
+#~ "a simple calculation between the "
+#~ "original bands. The bands used for "
+#~ "the calculation must be all stacked "
+#~ "in the input raster file."
+#~ msgstr ""
+
+#~ msgid "After defining the first line, following parameters will be asked:"
+#~ msgstr ""
+
+#~ msgid "Number of output bands"
+#~ msgstr ""
+
+#~ msgid "Input postfix equations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Band 1: The equation for output "
+#~ "band 1 has to be specified. The"
+#~ " input bands are referred to with "
+#~ ":code:`#`. The implemented operators between"
+#~ " input bands include:"
+#~ msgstr ""
+
+#~ msgid ":code:`+` addition"
+#~ msgstr ""
+
+#~ msgid ":code:`-` subtraction"
+#~ msgstr ""
+
+#~ msgid ":code:`/` division"
+#~ msgstr ""
+
+#~ msgid ":code:`∗` multiplication"
+#~ msgstr ""
+
+#~ msgid ":code:`=` equals to"
+#~ msgstr ""
+
+#~ msgid ":code:`<` less than"
+#~ msgstr ""
+
+#~ msgid ":code:`>` larger than"
+#~ msgstr ""
+
+#~ msgid ":code:`!` not equal to"
+#~ msgstr ""
+
+#~ msgid ":code:`?` if clause"
+#~ msgstr ""
+
+#~ msgid ":code:`M` maximum of two values m minimum of two values"
+#~ msgstr ""
+
+#~ msgid ":code:`m` minimum of two values"
+#~ msgstr ""
+
+#~ msgid ":code:`B` bit level operator"
+#~ msgstr ""
+
+#~ msgid ":code:`e` natural logarithm"
+#~ msgstr ""
+
+#~ msgid ":code:`c` pixel column coordinate"
+#~ msgstr ""
+
+#~ msgid ":code:`r` pixel row coordinate"
+#~ msgstr ""
+
+#~ msgid ":code:`ˆ` power"
+#~ msgstr ""
+
+#~ msgid ":code:`x` base-e exponential function"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-inv` the notation of the "
+#~ "equations has changed in version 2.0."
+#~ " In case you want to use the"
+#~ " old notations, please use the "
+#~ ":code:`-inv` option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-of` format. Any GDAL output "
+#~ "format can be specified. If not "
+#~ "specified, output format will be tif."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-ot` output data type. If not "
+#~ "specified, output data type will be "
+#~ "the same as input data type. - "
+#~ "[Byte/Int16/UInt16/UInt32/Int32/Float32/Float64] - output"
+#~ " data type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[Z/M/Q/C/L/X/M] - try to speed up "
+#~ "the processing by reading **n** lines"
+#~ " at the time (Z=2000 M=1000 Q=500 "
+#~ "L=50 X=10)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-um` mask. If a raster file "
+#~ "is provided as a mask, only pixels"
+#~ " with value different than 0 in "
+#~ "the mask will be used for the "
+#~ "calculation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The notation of the equations has "
+#~ "changed in version 2.0. In case "
+#~ "you want to use the old notations,"
+#~ " please use the :code:`-inv` option."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-calc`"
+#~ msgstr ""
+
+#~ msgid "OPERATORS"
+#~ msgstr ""
+
+#~ msgid "Addition Simple band addition: band1 + band2"
+#~ msgstr ""
+
+#~ msgid "Division band1 / band2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Equals to If pixel value of band1"
+#~ " equals 0 then set it to 0, "
+#~ "otherwise to 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Boolean You can also use boolean "
+#~ "\"larger than\" operator to determine if"
+#~ " #1 >#2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The usage of the IF clause if "
+#~ "band1 ¿ 50, output=1 else output=0. "
+#~ "This also creates a simple mask "
+#~ "containing 1 for pixels of interest "
+#~ "and 0 for background"
+#~ msgstr ""
+
+#~ msgid "APPLICATIONS"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NDVI Calculate the NDVI for your "
+#~ "Landsat image (band3 = Red band, "
+#~ "band4 = NIR Band)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the band4 in the input layer-stack"
+#~ " image should be the NIR band "
+#~ "and the band 3, the Red band. "
+#~ "Note also that the output data "
+#~ "type should be specified as Float32 "
+#~ "in order to have output values "
+#~ "from -1 to 1. :code:`oft-ndvi.bash` "
+#~ "also creates a NDVI image using "
+#~ "(NIR-VIS) / (NIR + VIS)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NBR - Normalised Burn Ratio NBR "
+#~ "highlights areas that have burned using"
+#~ " Landsat TM. Calculate the NBR for"
+#~ " your Landsat image:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dNBR In addition, the difference NBR "
+#~ "(dNBR) technique is a form of "
+#~ "Change Detection which is used to "
+#~ "index the severity of a fire. "
+#~ "Calculate the difference (or delta) dNBR"
+#~ " for NBR pre-fire - NBR "
+#~ "post-fire:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "as you can’t have two separate "
+#~ "input files, one for NBR pre-fire"
+#~ " and a second for NBR post-"
+#~ "fire, you need to combine the two"
+#~ " output bands into one file before"
+#~ " applying the equation (band 1 (#1)"
+#~ " containing information on NBR pre-"
+#~ "fire and band 2 (#2) containing "
+#~ "info on NBR post-fire):"
+#~ msgstr ""
+
+#~ msgid "Average of bands Compute an average of bands 1,2 and 3 of an image:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Build a mask from LEDAPS QA layer"
+#~ " Bit level operators: does the first"
+#~ " bit of band 2 equals to 1?"
+#~ msgstr ""
+
+#~ msgid "to build a mask from LEDAPS QA layer:"
+#~ msgstr ""
+
+#~ msgid "which becomes"
+#~ msgstr ""
+
+#~ msgid "Now, what happens in practice, is the following:"
+#~ msgstr ""
+
+#~ msgid "Check bit 1 and record 0 if its is false and 1 if it is true"
+#~ msgstr ""
+
+#~ msgid "Check bits 2,4,8,9 and 12 and return their sum"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if output of 2) is larger than "
+#~ "zero (second line above) return 1 "
+#~ "else return 2"
+#~ msgstr ""
+
+#~ msgid "if output of 1) is 1 return 1 else return output of 3)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Creating a mask file Create a "
+#~ "simple mask containing 1 for pixels "
+#~ "of interest and 0 for background: "
+#~ "The equation in words: if your "
+#~ "pixel value equals 0 then set it"
+#~ " to 0, otherwise to 1"
+#~ msgstr ""
+
+#~ msgid "Including a mask file"
+#~ msgstr ""
+
+#~ msgid "oft-chdet.bash"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-chdet.bash` - automated change detection."
+#~ msgstr ""
+
+#~ msgid "<input1> Input raster 1 (with extension)."
+#~ msgstr ""
+
+#~ msgid "<input2> Input raster 2 (with extension)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<output> A raster consisting of binary"
+#~ " values (0 or 1) indicating pixels"
+#~ " of likely change between the two "
+#~ "dates. Values of 1 indicate change. "
+#~ "Values of 0 indicate no-change."
+#~ msgstr ""
+
+#~ msgid "<nodata value> Value indicating no-data within the image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[threshold] Default 0.99. Specifies the "
+#~ "threshold value of the cumulative "
+#~ "frequency distribution (of the resulting "
+#~ "Chi-square layer...see Reference below) "
+#~ "above which pixels are identified as "
+#~ "changed. Higher threshold values indicate "
+#~ "more stringent limits for detecting "
+#~ "changes and, thus, produce less changed"
+#~ " area than lower thresholds. Threshold "
+#~ "values must be specified as a "
+#~ "proportion using 0.XX notation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tool performs automated change "
+#~ "detection between 2 input images. The"
+#~ " script uses the Iteratively Re-"
+#~ "weighted Multivariate Alteration Detection "
+#~ "(MAD) algorithm (Canty and Nielsen, "
+#~ "2008). Input imagery must have the "
+#~ "same format, extent, resolution, number "
+#~ "of bands and type of data."
+#~ msgstr ""
+
+#~ msgid "REFERENCE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Canty and A. A. Nielsen (2008), "
+#~ "Automatic radiometric normalization of "
+#~ "multitemporal satellite imagery with the "
+#~ "iteratively re-weighted MAD transformation "
+#~ "RSE 112(3), 1025-1036."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To automatically find changes between a"
+#~ " Landsat image from year 2000 and "
+#~ "2005 using a threshold of 0.85:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-chdet.bash` Identify "
+#~ "changed areas between year 2000 and "
+#~ "2012 using Landsat imagery using "
+#~ ":code:`landsat_t1.tif` and :code:`landsat_t2.tif`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Unpack the data. Now we run :code"
+#~ ":`oft-chdet.bash` to do the automated "
+#~ "change detection using the input Landsat"
+#~ " data:"
+#~ msgstr ""
+
+#~ msgid "Output includes the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A file beginning with :code:`imad-[name "
+#~ "of outfile].tif`. This file contains the"
+#~ " raw results of the IMAD process, "
+#~ "one for each input band and the"
+#~ " chi-squared layer (see Reference)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The specified output file: This file "
+#~ "contains 1’s and 0’s; 1’s indicate "
+#~ "areas of change and 0’s indicate "
+#~ "areas of no change."
+#~ msgstr ""
+
+#~ msgid "oft-clip.pl"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "oft-clip.pl - subsets an input "
+#~ "image using the extent, pixels size "
+#~ "and projection of a reference image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The straight forward tool :code:`oft-"
+#~ "clip.pl` subsets an input image using"
+#~ " the extension, pixel size and "
+#~ "projection of the reference image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-clip.pl` Open your "
+#~ "working directory using"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Reproject, clip and re-sample the "
+#~ "MODIS image (resolution 230 m, lat/long)"
+#~ " to the projection, extent and pixel"
+#~ " size of the Landsat tile (resolution"
+#~ " 30m, UTM 35)"
+#~ msgstr ""
+
+#~ msgid "Visualize the results in QGIS"
+#~ msgstr ""
+
+#~ msgid "oft-combine-images.bash"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-combine-images.bash` - combines 2 images into one."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-a` First image = Better image,"
+#~ " whose area is used whenever possible"
+#~ msgstr ""
+
+#~ msgid ":code:`-b` Second image = Image to be used elsewhere"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-m` First image mask = 0/1 "
+#~ "mask indicating bad areas on first "
+#~ "image with 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-s` Second mask = 0/1 mask "
+#~ "indicating bad areas on second image "
+#~ "with 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Can be used to merge same-day "
+#~ "Landsat images (adjacent) or two gap-"
+#~ "fill results (stack)"
+#~ msgstr ""
+
+#~ msgid "Takes as input the images and their masks"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Masks for same-day can be prepared"
+#~ " with :code:`oft-trim-mask.bash` and "
+#~ "for gap-fill with :code:`oft-prepare-"
+#~ "images-for-gapfill.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All ok areas are taken from image"
+#~ " 1, and image 2 is used "
+#~ "elsewhere - Also produces a mask "
+#~ "that indicates ok areas of the "
+#~ "resulting combined image with 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All material needs to be in same"
+#~ " projection - Works with 6 or 7"
+#~ " band images"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-combine-images.bash`, "
+#~ ":code:`gdal_translate`, :code:`trim`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In a first step we need to "
+#~ "adjust the NR of bands of "
+#~ ":code:`landsat_t1.tif` (7 bands) to the "
+#~ "NR of bands of our second image"
+#~ " (6 bands):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then we need to prepare our mask"
+#~ " files for each Landsat image using"
+#~ " :code:`oft-trim`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we can run :code:`oft-combine-"
+#~ "images.bash`. The output is automatically "
+#~ "processed, in this case it is "
+#~ "called stack :code:`landsat_t1_6bands_landsat_t2.tif`"
+#~ msgstr ""
+
+#~ msgid "oft-gapfill"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-gapfill` - regression based gap and cloud filler."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-gapfill` fills the gaps in"
+#~ " an input image using locally built"
+#~ " regression models. The models can be"
+#~ " built:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "separately for every gap pixel using "
+#~ "a local model built using its "
+#~ "adjacent pixels"
+#~ msgstr ""
+
+#~ msgid "for a given number of Large Area subsets"
+#~ msgstr ""
+
+#~ msgid "using both of these methods"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the case 2), the option "
+#~ ":code:`-la` followed by the number of"
+#~ " requested Large Area (LA) subsets in"
+#~ " X direction should be given. The "
+#~ "total number of LA subsets is the"
+#~ " square of the given parameter. If"
+#~ " the user wants to use only "
+#~ "Large Area models, the option "
+#~ ":code:`-nolocal` should be used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Maskfile, inputfile and outputfile are "
+#~ "all required inputs. They may be "
+#~ "in any of the formats understood "
+#~ "by GDAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The input image is a stack of "
+#~ "the Anchor image and the Filler "
+#~ "image. The output values for Anchor "
+#~ "are computed using Filler and the "
+#~ "model. The input image bands should "
+#~ "be organized as follows:"
+#~ msgstr ""
+
+#~ msgid "band 1 to NBR bands/2 = Anchor image"
+#~ msgstr ""
+
+#~ msgid "bands NBR bands/2 + 1 to NBR bands = Filler image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The mask file shows the locations "
+#~ "of the gaps, areas which are "
+#~ "suitable for collecting training data, "
+#~ "and areas which should not be "
+#~ "processed. The mask values are as "
+#~ "follows:"
+#~ msgstr ""
+
+#~ msgid "do nothing (image margins)"
+#~ msgstr ""
+
+#~ msgid "fill these pixels (unusable data in anchor , good data in filler)"
+#~ msgstr ""
+
+#~ msgid "Collect training data for regression model (good data in both images)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Do nothing, i.e., use the original "
+#~ "values (2 cases: good in anchor ,"
+#~ " bad in filler OR non-good in"
+#~ " both images)"
+#~ msgstr ""
+
+#~ msgid "The program performs 2 passes over the image:"
+#~ msgstr ""
+
+#~ msgid "collect the data to build the model"
+#~ msgstr ""
+
+#~ msgid "fill the gaps with Large Area models."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-la` (NbrLargeAreaWindows) = number of"
+#~ " LA windows in X direction. The "
+#~ "total number of LA windows will be"
+#~ " the square of this parameter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-da` (Do4allpixels) = use to "
+#~ "built model to predict output value "
+#~ "for every pixel of the anchor "
+#~ "using the built models and the "
+#~ "values of the Filler."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-sd` (sampling density) = sampling "
+#~ "density used to build the LargeArea "
+#~ "model. Value two, for example, would "
+#~ "force the algorithm to collect every "
+#~ "other valid pixel within the scene "
+#~ "to be used in building the model."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-ws` (WindowSize) = size of the"
+#~ " neighborhood from which the data for"
+#~ " local model construction is collected"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The input image can be produced "
+#~ "from 2 image stacks (for in- "
+#~ "stance, 2 Erdas imagine composites "
+#~ "consisting of 7 bands). The script "
+#~ "stack2images.bash produces the composite. It"
+#~ " can also be produced from HDF-"
+#~ "images that are stored in folders. "
+#~ "The script :code:`stack2images_hdf.bash` is "
+#~ "for that purpose."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The model may be very sensitive to"
+#~ " outliers. Therefore it is important "
+#~ "that the mask value 2 is present"
+#~ " only in location where both Anchor"
+#~ " and Filler have valid data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The stack and the mask must have"
+#~ " been reprojected to the same "
+#~ "geographical window and they do must "
+#~ "have the same number of rows and"
+#~ " cols"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-gapfill`, "
+#~ ":code:`gdal_translate`, :code:`oft-stack`, :code"
+#~ ":`oft-calc`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As :code:`oft-gapfill` only allows even"
+#~ " number of bands, first, we need "
+#~ "to adjust the number of bands of"
+#~ " :code:`landsat_t1.tif` (7 bands) "
+#~ ":code:`landsat_t2.tif` (6 bands):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-gapfill` takes as input an"
+#~ " image stack of the **anchor** "
+#~ "(:code:`landsat_t2.tif`) and the **filler** "
+#~ "(:code:`landsat_t1.tif`):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gapfilling with mask of the scan-"
+#~ "line using a simple mask created "
+#~ "with :code:`oft-calc` in two steps "
+#~ "following these rules:"
+#~ msgstr ""
+
+#~ msgid "if band1 or band6 are 0 put 1 (fill)"
+#~ msgstr ""
+
+#~ msgid "if band7 or band12 are 0 put 3 (do nothing)"
+#~ msgstr ""
+
+#~ msgid "else put 2 (collect training data for regression models)"
+#~ msgstr ""
+
+#~ msgid "**Step 1:**"
+#~ msgstr ""
+
+#~ msgid "**Step 2:**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now, use :code:`oft-gapfill` to fill "
+#~ "the areas indicated as \"1\" in "
+#~ "the mask: Output automatically processed: "
+#~ ":code:`filled_la1_sd2_simplemask.tif`"
+#~ msgstr ""
+
+#~ msgid "Original Landsat image."
+#~ msgstr ""
+
+#~ msgid "Landsat imager after gap fill"
+#~ msgstr ""
+
+#~ msgid "oft-ndvi.bash"
+#~ msgstr ""
+
+#~ msgid "oft-ndvi.bash - computes ndvi images."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-ndvi.bash` creates an NDVI "
+#~ "image using (NIR-VIS) / (NIR + "
+#~ "VIS)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input data is an image stack. User"
+#~ " gives the location of Red and "
+#~ "NIR band (in regular Landsat TM/ETM "
+#~ "3 and 4). The Number of bands "
+#~ "is not restricted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[mask]` include a mask image into"
+#~ " this process by using this option"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-ndvi.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run the command line for calculating "
+#~ "the NDVI for your satellite image "
+#~ "where :code:`landsat_t1.tif` is your input "
+#~ "image and NDVI :code:`landsat_t1.tif` will "
+#~ "be your NDVI output image. The "
+#~ "numbers :code:`3` and :code:`4` refer to"
+#~ " the band numbers for the VIS "
+#~ "and NIR bands."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "LoadNDVI :code:`landsat_t1.tif` in QGIS and"
+#~ " Check that all pixels of your "
+#~ "NDVI image have the expected values "
+#~ "between -1 and 1."
+#~ msgstr ""
+
+#~ msgid "Here is an example of how the result looks like:"
+#~ msgstr ""
+
+#~ msgid "Zoomed view of the original Landsat image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Zoomed view of the NDVI-result "
+#~ "using the ’freak out’ colour map "
+#~ "in QGIS."
+#~ msgstr ""
+
+#~ msgid "oft-prepare-images-for-gapfill.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-prepare-images-for-gapfill.bash`"
+#~ " - prepares images and masks for "
+#~ ":code:`oft-gapfill`"
+#~ msgstr ""
+
+#~ msgid ":code:`-a` Anchor = Better image, whose gaps are to be filled"
+#~ msgstr ""
+
+#~ msgid ":code:`-f` Filler = Filler image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-m` Anchor mask = 0/1 mask "
+#~ "indicating bad areas on anchor image "
+#~ "with 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-s` Second mask = 0/1 mask "
+#~ "indicating bad areas on filler image "
+#~ "with 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-n` ndvi threshold = If images"
+#~ " differ a lot, NDVI can be used"
+#~ " to select only vegetated areas for"
+#~ " mask"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Values like 0.4 or 0.5 are useful"
+#~ " at some location on the world, "
+#~ "check your particular situation yourself!"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-prepare-images-for-gapfill.bash`:"
+#~ msgstr ""
+
+#~ msgid "Takes the anchor and filler images as input"
+#~ msgstr ""
+
+#~ msgid "Also their 0/1 masks indicating clouds and gaps are needed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NDVI can be used to threshold "
+#~ "areas with low vegetation off from "
+#~ "the models"
+#~ msgstr ""
+
+#~ msgid "At this point, bands 3 and 4 are used for NDVI computation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Otherwise, NBR of bands is not "
+#~ "fixed, but must be equal in the"
+#~ " input images"
+#~ msgstr ""
+
+#~ msgid "All material needs to be in same projection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-prepare-images-for-"
+#~ "gapfill.bash`. Open your working directory "
+#~ "using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As :code:`landsat_t1.tif` and :code:`landsat_t2.tif`"
+#~ " differ in their number of bands "
+#~ "we need to exclude band 7 from "
+#~ ":code:`landsat_t1.tif` by carrying out "
+#~ "following procedure:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run :code:`oft-prepare-images-"
+#~ "for-gapfill.bash` using following input:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Two output images mask are automatically"
+#~ " processed: :code:`gapmask_landsat_t1_6bands_landsat_t2.tif`"
+#~ " and :code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`."
+#~ msgstr ""
+
+#~ msgid ":code:`gapmask_landsat_t1_6bands_landsat_t2.tif`"
+#~ msgstr ""
+
+#~ msgid ":code:`goodarea_mask_landsat_t1_6bands_landsat_t2.tif`"
+#~ msgstr ""
+
+#~ msgid "oft-reclass"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-reclass` - is a reclassification program."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-reclass` changes pixel values "
+#~ "to alternative values given in a "
+#~ "text file. The :code:`maxval` parameter "
+#~ "is used to allocate memory for the"
+#~ " reclassification table. If it is not"
+#~ " given in the command line, it "
+#~ "will be asked interactively. The "
+#~ "reclassification text file should consist "
+#~ "of records with input value (column "
+#~ "1) and one or more space separated"
+#~ " output values. Thus, the structure "
+#~ "could be:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The program asks, how many output "
+#~ "values the user wants to produce "
+#~ "for each input band. With the "
+#~ "given example reclassification file, the "
+#~ "user could produce a 3 band RGB"
+#~ " image from a single band input "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ":code:`-um` <maskfile>"
+#~ msgstr ""
+
+#~ msgid ":code:`-oi` <output image>"
+#~ msgstr ""
+
+#~ msgid ":code:`-maxval` <maximum pixel value in input file>"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-reclass`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise we use a single"
+#~ " band image :code:`images/forestc.tif` and "
+#~ "a segmented image :code:`images/segments.tif` "
+#~ "which you can also create yourself "
+#~ "using code:`oft-seg`."
+#~ msgstr ""
+
+#~ msgid "Example 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First you need to create a text"
+#~ " file called input :code:`reclass.txt` that"
+#~ " should look like this:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-reclass` with "
+#~ "Input: :code:`image/forestc.tif` and "
+#~ ":code:`text/input_reclass.txt`; Output: "
+#~ "code:`results/reclassforestc.img`:"
+#~ msgstr ""
+
+#~ msgid "Then tool will ask you then for further information:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open QGIS and load your the "
+#~ "original imagery :code:`image/forestc.tif` (Colour"
+#~ " map: **Pseudocolour**) and the result "
+#~ ":code:`results/reclassforestc.img`. Click with the"
+#~ " **Identify Features** Tool over the "
+#~ "the different classes and see how "
+#~ "they have changed after the "
+#~ "reclassification:"
+#~ msgstr ""
+
+#~ msgid "Original input image :code:`forestc.tif`."
+#~ msgstr ""
+
+#~ msgid "Reclassified output raster :code:`reclassforestc.img`."
+#~ msgstr ""
+
+#~ msgid "Example 2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets run :code:`oft-reclass` again with"
+#~ " a different input image: Input: "
+#~ ":code:`landsat_t1_min50.tif`, input :code:`reclass.txt`;"
+#~ " Output: :code:`reclass_min50.img`:"
+#~ msgstr ""
+
+#~ msgid "Again the tool will ask you for further information:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open QGIS and load your result "
+#~ "image :code:`reclass_min50.img` and zoom into"
+#~ " the top left corner. You can "
+#~ "see that the original classes 1-6 "
+#~ "and 99 of :code:`landsat_t1_min50.tif` were"
+#~ " reclassified the way we defined it"
+#~ " in the lookup table input "
+#~ ":code:`reclass.txt`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Zoom into the top left corner of"
+#~ " our final result :code:`reclass_min50.img`."
+#~ msgstr ""
+
+#~ msgid "oft-shrink"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-shrink` - to be combined with :code:`oft-trim`."
+#~ msgstr ""
+
+#~ msgid "oft-stack"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-stack` - Create a multi-band image stack."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-o` outputfile - The name of "
+#~ "the output file to be created ("
+#~ " include extension)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "input_files - A set of input files"
+#~ " (include extension) , each separated "
+#~ "by a space."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-stack` builds image stack "
+#~ "from input files in the order of"
+#~ " appearance."
+#~ msgstr ""
+
+#~ msgid "The output format of the first input file is used."
+#~ msgstr ""
+
+#~ msgid "The images need to have exactly the same size (rows x cols)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-stack` builds an image stack"
+#~ " from input files in the order "
+#~ "of appearance. By default, the output"
+#~ " format and type of the first "
+#~ "input file is used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-ot` The output image type. By"
+#~ " default, the first input image type"
+#~ " is used."
+#~ msgstr ""
+
+#~ msgid ":code:`-um` A mask file used to restrict the extent of the processing."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To create a 6-band stack of "
+#~ "Landsat data from individual input "
+#~ "rasters in .TIF format using wildcard:"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-stack`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-stack` using "
+#~ "two input images :code:`landsat_t1.tif` and"
+#~ " :code:`landsat_t2.tif` to create the "
+#~ "output stack image called :code:`stack.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Take a closer look at your output"
+#~ " in QGIS and you will see that"
+#~ " :code:`stack.tif` has 13 bands "
+#~ "(:code:`landsat_t1.tif` contains 7 bands and"
+#~ " :code:`landsat_t2.tif` 6 bands). Or print"
+#~ " the raster information on your "
+#~ "screen by typing in your terminal:"
+#~ msgstr ""
+
+#~ msgid "oft-trim"
+#~ msgstr ""
+
+#~ msgid "oft-trim - erosion filter producing binary output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-trim` analyses the content of"
+#~ " the spatial neighborhood of each "
+#~ "pixel. If all the pixels within "
+#~ "the window are less or equal to"
+#~ " zero, output is zero. Else, output"
+#~ " is one."
+#~ msgstr ""
+
+#~ msgid ":code:`-um` mask file"
+#~ msgstr ""
+
+#~ msgid ":code:`-ws` window size"
+#~ msgstr ""
+
+#~ msgid ":code:`-origval` original value"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-trim`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets run :code:`oft-trim` with the "
+#~ "input file :code:`landsat_t1.tif` with the "
+#~ "option :code:`-ws` set to 3 to "
+#~ "create the output file :code:`trim.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Verify in QGIS that all the values"
+#~ " of your output image are all "
+#~ "trimmed to 1"
+#~ msgstr ""
+
+#~ msgid "oft-trim-maks.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-trim-maks.bash` - This script"
+#~ " makes a 0/1 mask of a 6 "
+#~ "or 7 band (Landsat) image."
+#~ msgstr ""
+
+#~ msgid ":code:`oft-trim-maks.bash`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "detects the margins and Landsat 7 "
+#~ "missing scan lines, and trims the "
+#~ "edges"
+#~ msgstr ""
+
+#~ msgid "accepts 6 or 7 band image"
+#~ msgstr ""
+
+#~ msgid "all values ¡= 0 are considered nodata"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output of :code:`oft-trim-maks.bash`"
+#~ " can be further used for :code"
+#~ ":`oft-combine-images.bash`"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-trim-mask.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets run :code:`oft-trim-mask.bash` "
+#~ "using :code:`landsat_t2.tif`. Automatically "
+#~ "processed output: :code:`landsat_t2_mask.tif`:"
+#~ msgstr ""
+
+#~ msgid "Verify in QGIS your our result if the mask pixel values are 1 or 0."
+#~ msgstr ""
+
+#~ msgid "Original image :code:`landsat_t2.tif` with visible gaps in QGIS"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Output :code:`landsat_t2_mask.tif` using the "
+#~ "Pseudo-colour colour map in QGIS"
+#~ msgstr ""
+
+#~ msgid "STATISTICS"
+#~ msgstr ""
+
+#~ msgid "oft-ascstat.awk"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-ascstat.awk` - computes basic "
+#~ "statistics for a space separated text"
+#~ " file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-ascstat.awk` computes basic "
+#~ "statistics for a given input file "
+#~ "or :code:`stdin`."
+#~ msgstr ""
+
+#~ msgid "Please not that the data must be provided as space separated!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-ascstat.awk` Open your"
+#~ " working directory using"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The script :code:`oft-ascstat.awk` computes"
+#~ " basic statistics for our space "
+#~ "separate input file :code:`sample_landuse.txt`:"
+#~ msgstr ""
+
+#~ msgid "head sample_landuse.txt"
+#~ msgstr ""
+
+#~ msgid "8531.00"
+#~ msgstr ""
+
+#~ msgid "97345.00"
+#~ msgstr ""
+
+#~ msgid "776220.00"
+#~ msgstr ""
+
+#~ msgid "-2431950.00"
+#~ msgstr ""
+
+#~ msgid "52.00"
+#~ msgstr ""
+
+#~ msgid "199041.00"
+#~ msgstr ""
+
+#~ msgid "773190.00"
+#~ msgstr ""
+
+#~ msgid "-2439120.00"
+#~ msgstr ""
+
+#~ msgid "58.00"
+#~ msgstr ""
+
+#~ msgid "144276.00"
+#~ msgstr ""
+
+#~ msgid "775860.00"
+#~ msgstr ""
+
+#~ msgid "-2435400.00"
+#~ msgstr ""
+
+#~ msgid "59.00"
+#~ msgstr ""
+
+#~ msgid "180961.00"
+#~ msgstr ""
+
+#~ msgid "772680.00"
+#~ msgstr ""
+
+#~ msgid "-2437890.00"
+#~ msgstr ""
+
+#~ msgid "185386.00"
+#~ msgstr ""
+
+#~ msgid "772410.00"
+#~ msgstr ""
+
+#~ msgid "-2438190.00"
+#~ msgstr ""
+
+#~ msgid "Lets run :code:`oft-ascstat.awk`:"
+#~ msgstr ""
+
+#~ msgid "Result is printed on screen:"
+#~ msgstr ""
+
+#~ msgid "oft-avg"
+#~ msgstr ""
+
+#~ msgid "oft-avg - computes zone/segment averages and standard deviations."
+#~ msgstr ""
+
+#~ msgid ":code:`oft-avg` computes zone/segment averages and standard deviations."
+#~ msgstr ""
+
+#~ msgid "It produces two output files: an output image and a text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "input image file (-i option), the "
+#~ "output image (-o) and the mask "
+#~ "file (-um)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the output image, each pixel "
+#~ "gets assigned the average/standard deviation"
+#~ " for the zone/segment it belonged to."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output format in the text file"
+#~ " is: ID number pixels avgband1...avgbandN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-std]` - The program computes "
+#~ "and prints out also the std’s (as"
+#~ " extra bands in the output image "
+#~ "and extra columns in the text "
+#~ "file)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-ot Byte/Int16/UInt16/UInt32/Int32/Float32/Float64]` "
+#~ "- output data type"
+#~ msgstr ""
+
+#~ msgid ":code:`[-h help]`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the benefit of users that are"
+#~ " running scripts using the older "
+#~ "version based on order of data "
+#~ "files instead of options :code:`-i`, "
+#~ ":code:`-o` and :code:`-um`, the program "
+#~ "can still be used that way"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-avg`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-avg` with "
+#~ "input: :code:`images/landsat_t1.tif`, output: "
+#~ ":code:`results/oftavg.tif`, mask: "
+#~ ":code:`images/segments.tif`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output text file will be named"
+#~ " as the output image plus \".txt\""
+#~ " (in this case :code:`oftavg.tif.txt`)."
+#~ msgstr ""
+
+#~ msgid "Print the first 10 lines of the output text file in terminal:"
+#~ msgstr ""
+
+#~ msgid "Nb Pixels"
+#~ msgstr ""
+
+#~ msgid "Avg Band1"
+#~ msgstr ""
+
+#~ msgid "Avg Band2"
+#~ msgstr ""
+
+#~ msgid "Avg Band3"
+#~ msgstr ""
+
+#~ msgid "Avg Band4"
+#~ msgstr ""
+
+#~ msgid "Avg Band5"
+#~ msgstr ""
+
+#~ msgid "Avg Band6"
+#~ msgstr ""
+
+#~ msgid "Avg Band7"
+#~ msgstr ""
+
+#~ msgid "135"
+#~ msgstr ""
+
+#~ msgid "49.051852"
+#~ msgstr ""
+
+#~ msgid "20.081481"
+#~ msgstr ""
+
+#~ msgid "18.370370"
+#~ msgstr ""
+
+#~ msgid "36.785185"
+#~ msgstr ""
+
+#~ msgid "46.674074"
+#~ msgstr ""
+
+#~ msgid "126.059259"
+#~ msgstr ""
+
+#~ msgid "20.192593"
+#~ msgstr ""
+
+#~ msgid "54"
+#~ msgstr ""
+
+#~ msgid "49.351852"
+#~ msgstr ""
+
+#~ msgid "20.370370"
+#~ msgstr ""
+
+#~ msgid "18.407407"
+#~ msgstr ""
+
+#~ msgid "37.500000"
+#~ msgstr ""
+
+#~ msgid "46.555556"
+#~ msgstr ""
+
+#~ msgid "125.925926"
+#~ msgstr ""
+
+#~ msgid "19.870370"
+#~ msgstr ""
+
+#~ msgid "76"
+#~ msgstr ""
+
+#~ msgid "48.578947"
+#~ msgstr ""
+
+#~ msgid "19.828947"
+#~ msgstr ""
+
+#~ msgid "17.710526"
+#~ msgstr ""
+
+#~ msgid "36.657895"
+#~ msgstr ""
+
+#~ msgid "43.881579"
+#~ msgstr ""
+
+#~ msgid "125.907895"
+#~ msgstr ""
+
+#~ msgid "18.881579"
+#~ msgstr ""
+
+#~ msgid "194"
+#~ msgstr ""
+
+#~ msgid "49.005155"
+#~ msgstr ""
+
+#~ msgid "20.077320"
+#~ msgstr ""
+
+#~ msgid "18.268041"
+#~ msgstr ""
+
+#~ msgid "37.530928"
+#~ msgstr ""
+
+#~ msgid "46.000000"
+#~ msgstr ""
+
+#~ msgid "125.670103"
+#~ msgstr ""
+
+#~ msgid "19.721649"
+#~ msgstr ""
+
+#~ msgid "221"
+#~ msgstr ""
+
+#~ msgid "49.090498"
+#~ msgstr ""
+
+#~ msgid "20.176471"
+#~ msgstr ""
+
+#~ msgid "18.574661"
+#~ msgstr ""
+
+#~ msgid "37.542986"
+#~ msgstr ""
+
+#~ msgid "47.565611"
+#~ msgstr ""
+
+#~ msgid "125.728507"
+#~ msgstr ""
+
+#~ msgid "20.339367"
+#~ msgstr ""
+
+#~ msgid "82"
+#~ msgstr ""
+
+#~ msgid "48.878049"
+#~ msgstr ""
+
+#~ msgid "20.304878"
+#~ msgstr ""
+
+#~ msgid "18.695122"
+#~ msgstr ""
+
+#~ msgid "37.243902"
+#~ msgstr ""
+
+#~ msgid "48.097561"
+#~ msgstr ""
+
+#~ msgid "125.597561"
+#~ msgstr ""
+
+#~ msgid "20.780488"
+#~ msgstr ""
+
+#~ msgid "53"
+#~ msgstr ""
+
+#~ msgid "48.886792"
+#~ msgstr ""
+
+#~ msgid "20.056604"
+#~ msgstr ""
+
+#~ msgid "18.339623"
+#~ msgstr ""
+
+#~ msgid "37.207547"
+#~ msgstr ""
+
+#~ msgid "45.698113"
+#~ msgstr ""
+
+#~ msgid "125.698113"
+#~ msgstr ""
+
+#~ msgid "19.396226"
+#~ msgstr ""
+
+#~ msgid "120"
+#~ msgstr ""
+
+#~ msgid "48.991667"
+#~ msgstr ""
+
+#~ msgid "20.216667"
+#~ msgstr ""
+
+#~ msgid "18.583333"
+#~ msgstr ""
+
+#~ msgid "36.908333"
+#~ msgstr ""
+
+#~ msgid "47.200000"
+#~ msgstr ""
+
+#~ msgid "126.041667"
+#~ msgstr ""
+
+#~ msgid "20.283333"
+#~ msgstr ""
+
+#~ msgid "154"
+#~ msgstr ""
+
+#~ msgid "48.980519"
+#~ msgstr ""
+
+#~ msgid "19.993506"
+#~ msgstr ""
+
+#~ msgid "18.389610"
+#~ msgstr ""
+
+#~ msgid "32.474026"
+#~ msgstr ""
+
+#~ msgid "45.000000"
+#~ msgstr ""
+
+#~ msgid "125.987013"
+#~ msgstr ""
+
+#~ msgid "20.337662"
+#~ msgstr ""
+
+#~ msgid "150"
+#~ msgstr ""
+
+#~ msgid "49.540000"
+#~ msgstr ""
+
+#~ msgid "20.220000"
+#~ msgstr ""
+
+#~ msgid "18.853333"
+#~ msgstr ""
+
+#~ msgid "32.260000"
+#~ msgstr ""
+
+#~ msgid "47.233333"
+#~ msgstr ""
+
+#~ msgid "125.973333"
+#~ msgstr ""
+
+#~ msgid "21.433333"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open the output file "
+#~ ":code:`results/oftavg.tif` in QGIS. Use "
+#~ "Identify Features that can be chosen "
+#~ "form the top bar and click on "
+#~ "the image. The window Identify Results"
+#~ " should pop up and with the "
+#~ "average value for each band for "
+#~ "that zone/segment: Band1 49 Band2 21 "
+#~ "Band3 20 Band4 41 Band5 50 Band6"
+#~ " 126 Band7 22"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you also choose to output "
+#~ "standard deviations, the columns of the"
+#~ " output files will be as follows:"
+#~ msgstr ""
+
+#~ msgid "ID (value for zone/segment)"
+#~ msgstr ""
+
+#~ msgid "Number of pixels"
+#~ msgstr ""
+
+#~ msgid "3-9. Average value of band1, band2, ... band7"
+#~ msgstr ""
+
+#~ msgid "10-16. Standard deviation of band1, band2, ... band7"
+#~ msgstr ""
+
+#~ msgid "For the raster file:"
+#~ msgstr ""
+
+#~ msgid "band1 - band7: average for band1, band2, ... band7"
+#~ msgstr ""
+
+#~ msgid "band8 - band14: standard deviation for band1, band2, ... band7"
+#~ msgstr ""
+
+#~ msgid "oft-countpix.pl"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-countpix.pl` - counts number "
+#~ "of pixel with, below or above a"
+#~ " specific value."
+#~ msgstr ""
+
+#~ msgid "input> is a raster image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<value> is an real number. If not"
+#~ " precised, :code:`oft-countpix.pl` gives "
+#~ "the total number of pixels. If "
+#~ "value is below the min or above"
+#~ " the max of the image, a "
+#~ "warning is given"
+#~ msgstr ""
+
+#~ msgid ":code:`-v` count all pixels with value value (default)"
+#~ msgstr ""
+
+#~ msgid ":code:`-b` count all pixels below value"
+#~ msgstr ""
+
+#~ msgid ":code:`-a` count all pixels above value"
+#~ msgstr ""
+
+#~ msgid ":code:`[band]` number of the band. Default is Band 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-countpix.pl` counts the number "
+#~ "of pixels within an image with "
+#~ "(default), below or above (options) a"
+#~ " specific value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-avg` Open your "
+#~ "working directory using"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Usage of :code:`oft-countpix.pl` using "
+#~ "the input image :code:`forestc.tif` with "
+#~ "pixel value of 33:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Usage of :code:`oft-countpix.pl` using "
+#~ "the input image :code:`landsat_t1.tif` with"
+#~ " value 50, counting all pixels below,"
+#~ " in band 4:"
+#~ msgstr ""
+
+#~ msgid "oft-crossvalidate"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-crossvalidate` - computes RMSE "
+#~ "and bias estimates for knn via "
+#~ "leave-one-out cross-validation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-crossvalidate` is a Program "
+#~ "for carrying out a leave-one-out"
+#~ " cross-validation using nearest neighbor"
+#~ " estimation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "data file, number of neighbors (k), "
+#~ "the column for your variable and "
+#~ "NBR of bands."
+#~ msgstr ""
+
+#~ msgid "Bands must be located after all other variables."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Program is terminated if the spatial "
+#~ "neighborhood restriction leaves too few "
+#~ "(less than k) potential neighbors"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A possible order of data is: id,"
+#~ " variable, x-coordinate, y-coordinate, "
+#~ "feature1...featureN."
+#~ msgstr ""
+
+#~ msgid "Values must be separated with a space or tab."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-dw]` - weight the nearest "
+#~ "neighbor data with: 1.  equal (default)"
+#~ " 2.  inverse distance 3.  squared "
+#~ "inverse distance weights."
+#~ msgstr ""
+
+#~ msgid ":code:`[-x]` - column for x-coordinate"
+#~ msgstr ""
+
+#~ msgid ":code:`[-y]` - column for y-coordinate"
+#~ msgstr ""
+
+#~ msgid ":code:`[-id]` - column for id"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-norm]` - normalize the image "
+#~ "features (default is no normalization)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-mindist]` - use a minimum "
+#~ "spatial distance (e.g. 1000). Observations "
+#~ "closer than that, based on the x"
+#~ " and y-coordinates are not allowed as"
+#~ " neighbors (default is no restriction)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-maxdist]` - use a maximum "
+#~ "spatial distance (e.g. 50000). Observations"
+#~ " outside that radius are not allowed"
+#~ " as neighbors (default is no "
+#~ "restriction)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-dem]` - column and threshold "
+#~ "value (e.g. 1000) for restriction of "
+#~ "neighbors in vertical direction (default "
+#~ "is no restriction)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[-lu]` - column used for "
+#~ "stratification of the data. If given,"
+#~ " separate RMSEs are computed for each"
+#~ " class indicated in the column "
+#~ "(default is no stratification)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input data: download for this exercise"
+#~ " :code:`sample_landuse.txt`. You might have "
+#~ "created it already in exercise :code"
+#~ ":`oft-sample-within-polys.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The script :code:`oft-crossvalidate` prints"
+#~ " the average, RMSE and bias on "
+#~ "screen using the input data file "
+#~ ":code:`sample_landuse.txt`. Lets take a closer"
+#~ " look at the input file (space "
+#~ "or tab separate):"
+#~ msgstr ""
+
+#~ msgid "pixel_id"
+#~ msgstr ""
+
+#~ msgid "c"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets run :code:`oft-crossvalidate` defining"
+#~ " our inputfile with :code:`-i` in "
+#~ "front, number of neighbors :code:`-k` "
+#~ "10, :code:`-v` defines the column of "
+#~ "the variable we want use - only"
+#~ " to exemplify the tool we use "
+#~ "column 1 containing the IDs as our"
+#~ " input data has no additional column"
+#~ " with values, :code:`-bands` defines the"
+#~ " number of bands, :code:`-x` defines "
+#~ "to look up the x coordinates in"
+#~ " column 2 and :code:`-y` defines to"
+#~ " look up the y coordinates in "
+#~ "column 3:"
+#~ msgstr ""
+
+#~ msgid "Result is printed on screen: .. code-block:: console"
+#~ msgstr ""
+
+#~ msgid "k = 10 normalize = 0 RMSE = 62255.181 Bias = 1367.027 Avg = 116318.433"
+#~ msgstr ""
+
+#~ msgid "Further, an output file :code:`sample_landuse_out.txt` is created:"
+#~ msgstr ""
+
+#~ msgid "estimate"
+#~ msgstr ""
+
+#~ msgid "difference (col3 - col4)"
+#~ msgstr ""
+
+#~ msgid "772650.000"
+#~ msgstr ""
+
+#~ msgid "-2404770.000"
+#~ msgstr ""
+
+#~ msgid "103566.30"
+#~ msgstr ""
+
+#~ msgid "-93009.30"
+#~ msgstr ""
+
+#~ msgid "773490.000"
+#~ msgstr ""
+
+#~ msgid "-2431680.000"
+#~ msgstr ""
+
+#~ msgid "128938.00"
+#~ msgstr ""
+
+#~ msgid "-34150.00"
+#~ msgstr ""
+
+#~ msgid "774750.000"
+#~ msgstr ""
+
+#~ msgid "-2439390.000"
+#~ msgstr ""
+
+#~ msgid "110055.80"
+#~ msgstr ""
+
+#~ msgid "91480.20"
+#~ msgstr ""
+
+#~ msgid "771450.000"
+#~ msgstr ""
+
+#~ msgid "-2431110.000"
+#~ msgstr ""
+
+#~ msgid "127395.30"
+#~ msgstr ""
+
+#~ msgid "-38864.30"
+#~ msgstr ""
+
+#~ msgid "774150.000"
+#~ msgstr ""
+
+#~ msgid "-2433990.000"
+#~ msgstr ""
+
+#~ msgid "102471.90"
+#~ msgstr ""
+
+#~ msgid "20902.10"
+#~ msgstr ""
+
+#~ msgid "776220.000"
+#~ msgstr ""
+
+#~ msgid "-2431950.000"
+#~ msgstr ""
+
+#~ msgid "123907.80"
+#~ msgstr ""
+
+#~ msgid "-26562.80"
+#~ msgstr ""
+
+#~ msgid "773190.000"
+#~ msgstr ""
+
+#~ msgid "-2439120.000"
+#~ msgstr ""
+
+#~ msgid "105271.30"
+#~ msgstr ""
+
+#~ msgid "93769.70"
+#~ msgstr ""
+
+#~ msgid "775860.000"
+#~ msgstr ""
+
+#~ msgid "-2435400.000"
+#~ msgstr ""
+
+#~ msgid "130783.50"
+#~ msgstr ""
+
+#~ msgid "13492.50"
+#~ msgstr ""
+
+#~ msgid "772680.000"
+#~ msgstr ""
+
+#~ msgid "-2437890.000"
+#~ msgstr ""
+
+#~ msgid "127426.40"
+#~ msgstr ""
+
+#~ msgid "53534.60"
+#~ msgstr ""
+
+#~ msgid "772410.000"
+#~ msgstr ""
+
+#~ msgid "-2438190.000"
+#~ msgstr ""
+
+#~ msgid "126411.20"
+#~ msgstr ""
+
+#~ msgid "58974.80"
+#~ msgstr ""
+
+#~ msgid "oft-extr"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-extr` - extracts pixel values"
+#~ " from an image into a text "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-extr` computes zone/segment "
+#~ "averages and standard deviations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "input image file (:code:`-i` option), "
+#~ "the output image (:code:`-o`) and the"
+#~ " maskfile (:code:`-um`)."
+#~ msgstr ""
+
+#~ msgid ":code:`-nomd` do not print metadata"
+#~ msgstr ""
+
+#~ msgid ":code:`-mm` extract min and max values"
+#~ msgstr ""
+
+#~ msgid ":code:`-avg` extract average values"
+#~ msgstr ""
+
+#~ msgid ":code:`-var` extract variances"
+#~ msgstr ""
+
+#~ msgid ":code:`-ws` size (n) of extraction window (odd)"
+#~ msgstr ""
+
+#~ msgid ":code:`-o` output file name"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please note that the default behavior"
+#~ " is to extract window’s center pixel"
+#~ " values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-extr` Open your "
+#~ "working directory using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run :code:`oft-extr` using the "
+#~ "input image :code:`landsat_t1.tif` with the"
+#~ " point text file :code:`training.txt`. "
+#~ "Output: :code:`extr.txt` with no extra "
+#~ "option:"
+#~ msgstr ""
+
+#~ msgid "You will be asked:"
+#~ msgstr ""
+
+#~ msgid "Now we take a closer look at our result:"
+#~ msgstr ""
+
+#~ msgid "col coord"
+#~ msgstr ""
+
+#~ msgid "row coord"
+#~ msgstr ""
+
+#~ msgid "bands1"
+#~ msgstr ""
+
+#~ msgid "bands2"
+#~ msgstr ""
+
+#~ msgid "bands3"
+#~ msgstr ""
+
+#~ msgid "bands4"
+#~ msgstr ""
+
+#~ msgid "bands5"
+#~ msgstr ""
+
+#~ msgid "bands6"
+#~ msgstr ""
+
+#~ msgid "bands7"
+#~ msgstr ""
+
+#~ msgid "730785.00"
+#~ msgstr ""
+
+#~ msgid "-2456134.00"
+#~ msgstr ""
+
+#~ msgid "3441.00"
+#~ msgstr ""
+
+#~ msgid "-2455134.00"
+#~ msgstr ""
+
+#~ msgid "3408.00"
+#~ msgstr ""
+
+#~ msgid "34.00"
+#~ msgstr ""
+
+#~ msgid "82.00"
+#~ msgstr ""
+
+#~ msgid "-2454134.00"
+#~ msgstr ""
+
+#~ msgid "3374.00"
+#~ msgstr ""
+
+#~ msgid "57.00"
+#~ msgstr ""
+
+#~ msgid "-2453134.00"
+#~ msgstr ""
+
+#~ msgid "3341.00"
+#~ msgstr ""
+
+#~ msgid "72.00"
+#~ msgstr ""
+
+#~ msgid "129.00"
+#~ msgstr ""
+
+#~ msgid "-2452134.00"
+#~ msgstr ""
+
+#~ msgid "3308.00"
+#~ msgstr ""
+
+#~ msgid "87.00"
+#~ msgstr ""
+
+#~ msgid "-2451134.00"
+#~ msgstr ""
+
+#~ msgid "3274.00"
+#~ msgstr ""
+
+#~ msgid "7.00"
+#~ msgstr ""
+
+#~ msgid "-2450134.00"
+#~ msgstr ""
+
+#~ msgid "3241.00"
+#~ msgstr ""
+
+#~ msgid "38.00"
+#~ msgstr ""
+
+#~ msgid "123.00"
+#~ msgstr ""
+
+#~ msgid "8.00"
+#~ msgstr ""
+
+#~ msgid "-2449134.00"
+#~ msgstr ""
+
+#~ msgid "3208.00"
+#~ msgstr ""
+
+#~ msgid "84.00"
+#~ msgstr ""
+
+#~ msgid "9.00"
+#~ msgstr ""
+
+#~ msgid "-2448134.00"
+#~ msgstr ""
+
+#~ msgid "3174.00"
+#~ msgstr ""
+
+#~ msgid "10.00"
+#~ msgstr ""
+
+#~ msgid "-2447134.00"
+#~ msgstr ""
+
+#~ msgid "3141.00"
+#~ msgstr ""
+
+#~ msgid "Let's use the option :code:`-mm` and :code:`-ws`:"
+#~ msgstr ""
+
+#~ msgid "min1"
+#~ msgstr ""
+
+#~ msgid "min2"
+#~ msgstr ""
+
+#~ msgid "min3"
+#~ msgstr ""
+
+#~ msgid "min4"
+#~ msgstr ""
+
+#~ msgid "min5"
+#~ msgstr ""
+
+#~ msgid "min6"
+#~ msgstr ""
+
+#~ msgid "min7"
+#~ msgstr ""
+
+#~ msgid "max1"
+#~ msgstr ""
+
+#~ msgid "max2"
+#~ msgstr ""
+
+#~ msgid "max3"
+#~ msgstr ""
+
+#~ msgid "max4"
+#~ msgstr ""
+
+#~ msgid "max5"
+#~ msgstr ""
+
+#~ msgid "max6"
+#~ msgstr ""
+
+#~ msgid "maw7"
+#~ msgstr ""
+
+#~ msgid "center1"
+#~ msgstr ""
+
+#~ msgid "center2"
+#~ msgstr ""
+
+#~ msgid "center3"
+#~ msgstr ""
+
+#~ msgid "center4"
+#~ msgstr ""
+
+#~ msgid "center("
+#~ msgstr ""
+
+#~ msgid "center6"
+#~ msgstr ""
+
+#~ msgid "center7"
+#~ msgstr ""
+
+#~ msgid "64.00"
+#~ msgstr ""
+
+#~ msgid "70.00"
+#~ msgstr ""
+
+#~ msgid "32.00"
+#~ msgstr ""
+
+#~ msgid "31.00"
+#~ msgstr ""
+
+#~ msgid "90.00"
+#~ msgstr ""
+
+#~ msgid "68.00"
+#~ msgstr ""
+
+#~ msgid "76.00"
+#~ msgstr ""
+
+#~ msgid "Using option :code:`-csv` and :code:`-ws`:"
+#~ msgstr ""
+
+#~ msgid "1.000000"
+#~ msgstr ""
+
+#~ msgid "730785.000000"
+#~ msgstr ""
+
+#~ msgid "-2456134.000000"
+#~ msgstr ""
+
+#~ msgid "50.000000"
+#~ msgstr ""
+
+#~ msgid "3441.000000"
+#~ msgstr ""
+
+#~ msgid "..."
+#~ msgstr ""
+
+#~ msgid "2.000000"
+#~ msgstr ""
+
+#~ msgid "-2455134.000000"
+#~ msgstr ""
+
+#~ msgid "3408.000000"
+#~ msgstr ""
+
+#~ msgid "3.000000"
+#~ msgstr ""
+
+#~ msgid "-2454134.000000"
+#~ msgstr ""
+
+#~ msgid "3374.000000"
+#~ msgstr ""
+
+#~ msgid "4.000000"
+#~ msgstr ""
+
+#~ msgid "-2453134.000000"
+#~ msgstr ""
+
+#~ msgid "3341.000000"
+#~ msgstr ""
+
+#~ msgid "5.000000"
+#~ msgstr ""
+
+#~ msgid "-2452134.000000"
+#~ msgstr ""
+
+#~ msgid "3308.000000"
+#~ msgstr ""
+
+#~ msgid "6.000000"
+#~ msgstr ""
+
+#~ msgid "-2451134.000000"
+#~ msgstr ""
+
+#~ msgid "3274.000000"
+#~ msgstr ""
+
+#~ msgid "oft-his"
+#~ msgstr ""
+
+#~ msgid "oft-his - computes image histogram by segments."
+#~ msgstr ""
+
+#~ msgid ":code:`-i` specify input image file"
+#~ msgstr ""
+
+#~ msgid ":code:`-o` specify output text file"
+#~ msgstr ""
+
+#~ msgid ":code:`-um` specify mask file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-hr` use human readable output "
+#~ "format -compact = use compact output "
+#~ "format"
+#~ msgstr ""
+
+#~ msgid ":code:`-maxval` give maximum input value"
+#~ msgstr ""
+
+#~ msgid ":code:`-h` print out more help"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-his` extracts histograms for "
+#~ "the different bands of an input "
+#~ "image to an output text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "input image file :code:`-i` option and"
+#~ " the output file :code:`-o`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Typically, you also give a mask "
+#~ "file :code:`-um`. Each mask value gets"
+#~ " own histogram, except 0 which is "
+#~ "treated as nodata"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If no mask file is given, a "
+#~ "common histogram is computed for whole"
+#~ " image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Maximum input value needs to be "
+#~ "given to allocate enough memory for "
+#~ "the histogram table. If the "
+#~ ":code:`maxval` parameter is not given in"
+#~ " the command line, it will be "
+#~ "asked. For example, for a 8 Bit"
+#~ " Landsat image, the maximum value "
+#~ "parameter would be 255"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output format is: mask value, "
+#~ "frequency of mask value and number "
+#~ "of band."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The rest of the columns values are"
+#~ " frequencies for each image pixel "
+#~ "value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the benefit of users running "
+#~ "scripts using the older version based"
+#~ " on order of data files instead "
+#~ "of options :code:`-i`, :code:`-o` and "
+#~ ":code:`-um`, the program can still be"
+#~ " used that way."
+#~ msgstr ""
+
+#~ msgid "typical parameter setting"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output file will contain NBR "
+#~ "bands lines for every input mask "
+#~ "value. The output format is: mask "
+#~ "value, frequency of mask value and "
+#~ "number of band; the rest of the"
+#~ " columns values are frequencies for "
+#~ "each image pixel values."
+#~ msgstr ""
+
+#~ msgid "For example, in the following output:"
+#~ msgstr ""
+
+#~ msgid ":code:`1` is the mask value"
+#~ msgstr ""
+
+#~ msgid ":code:`657846` is the frequency of mask value 1"
+#~ msgstr ""
+
+#~ msgid ":code:`1` is the number of band"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Every following value is the frequency"
+#~ " of value :code:`x` in input image"
+#~ " masked with mask value :code:`1`. "
+#~ "Here :code:`x` is in [0, 255]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An alternative output format is provided"
+#~ " by the :code:`-compact` option:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Every following value is a consists "
+#~ "of value-frequency pairs. That is, "
+#~ "entry :code:`12 1` means that 1 "
+#~ "pixel of value 12 was found within"
+#~ " the region determined by mask value"
+#~ " 1."
+#~ msgstr ""
+
+#~ msgid "oft-mm"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-mm` - computes minimum and"
+#~ " maximum values for each band of "
+#~ "the input file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the input image, the command "
+#~ "provides inline minimum and maximum "
+#~ "values per band."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[um maskfile]` - zero values in"
+#~ " the maskfile will be excluded in "
+#~ "the calculation (maskfile extent must "
+#~ "match inputfile extent)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-mm`, :code:`grep`."
+#~ msgstr ""
+
+#~ msgid "Now we run :code:`oft-mm` with input: :code:`images/landsat_t1.tif`:"
+#~ msgstr ""
+
+#~ msgid "oft-mm images/landsat-t1.tif"
+#~ msgstr ""
+
+#~ msgid "The output will be printed in the terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are only interested in the"
+#~ " min and max values for a "
+#~ "certain band, you can use the "
+#~ ":code:`grep` command. Example for band "
+#~ "1:"
+#~ msgstr ""
+
+#~ msgid "Will return"
+#~ msgstr ""
+
+#~ msgid "oft-segstat"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-segstat` - output segments "
+#~ "shape and spectral statistics in a "
+#~ "text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-segstat` Extracts segment level "
+#~ "shape (size, bounding box, # edge "
+#~ "pixels) and spectral (averages and "
+#~ "standard deviations) to a text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Maskfile is an image consisting of "
+#~ "pixels with integer values. Pixels "
+#~ "having value 0 are not processed. "
+#~ "For all other mask values the "
+#~ "statistics are reported separately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output: The basic usage outputs "
+#~ "the following space separated columns:"
+#~ msgstr ""
+
+#~ msgid "Segment ID"
+#~ msgstr ""
+
+#~ msgid "Size"
+#~ msgstr ""
+
+#~ msgid "(3+n) Segment averages pixel values for all n input image bands"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-std` adds standard deviations for "
+#~ "all input bands in the end of "
+#~ "each record."
+#~ msgstr ""
+
+#~ msgid ":code:`-shape` changes the output format to following:"
+#~ msgstr ""
+
+#~ msgid "# of neighbors"
+#~ msgstr ""
+
+#~ msgid "xmin"
+#~ msgstr ""
+
+#~ msgid "xmax"
+#~ msgstr ""
+
+#~ msgid "ymin"
+#~ msgstr ""
+
+#~ msgid "ymax"
+#~ msgstr ""
+
+#~ msgid "# edge pixels"
+#~ msgstr ""
+
+#~ msgid "(9 + n) Segment averages pixel values for all n input image bands"
+#~ msgstr ""
+
+#~ msgid "This script can also be used after :code:`oft-seg`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-segstat`. For this "
+#~ "exercise we use the Landsat imagery "
+#~ ":code:`landsat_t1.tif`, :code:`landuse.shp`. Further "
+#~ "you need to run :code:`oft-seg` in"
+#~ " a first step to calculated the "
+#~ "segmentation file :code:`landsat_t1.tif`."
+#~ msgstr ""
+
+#~ msgid "Regular use"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-segstat` with "
+#~ "Input: :code:`landsat_t1.tif`, "
+#~ ":code:`landsat_t1_min50.tif`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The tool will ask you now to "
+#~ "define the NoData value which we "
+#~ "will set to 0:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets take a look at the first "
+#~ "10 lines of our result "
+#~ ":code:`segstats.txt`:"
+#~ msgstr ""
+
+#~ msgid "Explanation of the values of each column:"
+#~ msgstr ""
+
+#~ msgid "Col1: Segment ID"
+#~ msgstr ""
+
+#~ msgid "Col2: Size"
+#~ msgstr ""
+
+#~ msgid "Col3 - Coln: Segment average pixel values of band3 - bandN"
+#~ msgstr ""
+
+#~ msgid "including -std"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lets run :code:`oft-segstat` including "
+#~ "the option of adding the standard "
+#~ "deviation: Input: :code:`landsat_t1.tif`, "
+#~ ":code:`landsat_t1_min50.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Again, lets take a look at the "
+#~ "first 10 lines of our result "
+#~ ":code:`segstats_std.txt`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Col3 - Col9: Segment average pixel "
+#~ "values of band3 - band9 - Col10"
+#~ " - Col16: standard deviation value "
+#~ "for each band"
+#~ msgstr ""
+
+#~ msgid "including option -shape"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise we want to "
+#~ "create in a first step a mask "
+#~ "file that is needed to define "
+#~ "which pixels of the satellite image "
+#~ "will be included in the calculation. "
+#~ "In this case we exclude all pixels"
+#~ " that were 0. Input: "
+#~ ":code:`landsat_t1.tif`, Output: "
+#~ ":code:`landsat_t1_mask.tif`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run the segmentation statistic"
+#~ " not with the segmentation file we"
+#~ " created before using :code:`oft-seg`, "
+#~ "but using a shapefile instead:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input: :code:`landuse.shp`, :code:`landsat_t1_mask.tif`,"
+#~ " :code:`landsat_t1.tif`"
+#~ msgstr ""
+
+#~ msgid "Output: :code:`segstats_shp.txt`"
+#~ msgstr ""
+
+#~ msgid "Again, lets take a look at our result :code:`segstats_shp.txt`:"
+#~ msgstr ""
+
+#~ msgid "Col1 : Segment ID"
+#~ msgstr ""
+
+#~ msgid "Col2 : Size"
+#~ msgstr ""
+
+#~ msgid "Col3 : #of neighbors Col4 : xmin"
+#~ msgstr ""
+
+#~ msgid "Col5 : xmax"
+#~ msgstr ""
+
+#~ msgid "Col6 : ymin"
+#~ msgstr ""
+
+#~ msgid "Col7 : ymax"
+#~ msgstr ""
+
+#~ msgid "Col8 : # edge pixels"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Col9: Segment average pixel values of"
+#~ " band1 Col10: Segment average pixel "
+#~ "value of band2"
+#~ msgstr ""
+
+#~ msgid "Coln: Segment average pixels valued of bandN"
+#~ msgstr ""
+
+#~ msgid "oft-stat"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-stat` - computes segment statistics in a text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-stat` extracts segment level "
+#~ "image statistics into a text file."
+#~ msgstr ""
+
+#~ msgid "Computes image statistics at segment level and outputs a text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output format in the text file"
+#~ " is: ID #pixels avgband1 ...avgbandN "
+#~ "stdband1 ...stdbandN"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "input image file (:code:`-i` option) and"
+#~ " the output file (:code:`-o`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Normally, you give also a maskfile "
+#~ "(:code:`-um` maskfile) which is an image"
+#~ " consisting of pixels with integer "
+#~ "values:"
+#~ msgstr ""
+
+#~ msgid "Pixels having value 0 are not processed."
+#~ msgstr ""
+
+#~ msgid "For all other mask values the statistics are reported separately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the :code:`-um` option is not "
+#~ "used, statistics are a summary of "
+#~ "all pixels in the image"
+#~ msgstr ""
+
+#~ msgid ":code:`-noavg` = program does not compute the averages"
+#~ msgstr ""
+
+#~ msgid ":code:`-nostd` = program does not compute the std’s"
+#~ msgstr ""
+
+#~ msgid ":code:`-mm` = program computes and prints out also minimum and maximum"
+#~ msgstr ""
+
+#~ msgid ":code:`-h` = prints out help"
+#~ msgstr ""
+
+#~ msgid "NOTE"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For benefit of users running scripts "
+#~ "using the older version based on "
+#~ "order of data files instead of "
+#~ "options :code:`-i`, :code:`-o` and "
+#~ ":code:`-um`, the program can still be"
+#~ " used that way."
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-stat`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-stat` with "
+#~ "input: :code:`images/landsat-t1.tif`, output: "
+#~ ":code:`results/stats.txt`:"
+#~ msgstr ""
+
+#~ msgid "Print the output in terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Explanation of values for each column:"
+#~ " -   Col1: ID -   Col2: Number "
+#~ "of pixels -   Col3: Average value "
+#~ "of band1 -   Col4 - col9: Average"
+#~ " value of band2 - band7 -   "
+#~ "Col10 - col16: Standard deviation of "
+#~ "band1 - band7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-stat` with "
+#~ "input: :code:`images/landsat_t1.tif`, output: "
+#~ ":code:`results/stats_mm.txt`, and the option "
+#~ ":code:`-mm` to produce also minimum and"
+#~ " maximum values:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Explanation of values for each column:"
+#~ " -   Col1: ID (in this case one"
+#~ " as no mask file has been "
+#~ "given) - Col2: Number of pixels -"
+#~ "   Col3: Minimum value of band1 -"
+#~ "   Col4 - col9: Minimum value of "
+#~ "band2 - band7 -   Col10 - col16:"
+#~ " Maximum value of band1 - band7 "
+#~ "-   Col17 - col23: Average value "
+#~ "of band1 - band7 -   Col24 - "
+#~ "col30: Standard deviation of band1 - "
+#~ "band7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run oft-stat with input:"
+#~ " :code:`images/landsat_t1.tif`, output: "
+#~ ":code:`results/stats_mask.txt`; optional mask: "
+#~ ":code:`images/segments.tif`:"
+#~ msgstr ""
+
+#~ msgid "Print the first 10 lines of the output in terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output is basically the same "
+#~ "as in step 4. However, now average"
+#~ " and standard deviation are not given"
+#~ " for the whole image, but for "
+#~ "each zone/segment value of the mask "
+#~ "file (exception: value 0 that is "
+#~ "not processed)."
+#~ msgstr ""
+
+#~ msgid "Explanation of values for each column:"
+#~ msgstr ""
+
+#~ msgid "Col1: ID (in this case one as no mask file has been given)"
+#~ msgstr ""
+
+#~ msgid "Col2: Number of pixels"
+#~ msgstr ""
+
+#~ msgid "Col3: Average value of band1"
+#~ msgstr ""
+
+#~ msgid "Col4 - col9: Average value of band2 - band7"
+#~ msgstr ""
+
+#~ msgid "Col10 - col16: Standard deviation of band1 - band7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Depending on the purpose, you can "
+#~ "now try the different options: -   "
+#~ ":code:`-mm` if you want to compute "
+#~ "minimum and maximum values as well "
+#~ "-   :code:`-noavg` if you do not "
+#~ "want to output the average -   "
+#~ ":code:`-nostd` if you do not want "
+#~ "to compute the standard deviation."
+#~ msgstr ""
+
+#~ msgid "The output will always be in the following order:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "ID, number of pixels, [minimum if "
+#~ ":code:`-mm` is chosen], [maximum if "
+#~ ":code:`-mm` is chosen], average, standard "
+#~ "deviation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the input image has several "
+#~ "bands, the parameters are given for "
+#~ "all bands."
+#~ msgstr ""
+
+#~ msgid "CLASSIFICATION"
+#~ msgstr ""
+
+#~ msgid "oft-cluster.bash"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-cluster.bash` - clusters raster images."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-cluster.bash` clusters input image"
+#~ " into a given number of clusters. "
+#~ "The clustering process is as follows:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generate a systematic sample using the"
+#~ " given sample density and covering "
+#~ "the area of input.img. For more "
+#~ "details, please have a look at "
+#~ ":code:`oft-gengrid.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "extract spectral (or other) information "
+#~ "for every point of the grid using"
+#~ " :code:`oft-extr`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "cluster the grid points into given "
+#~ "number of clusters using kmeans "
+#~ "algorithm :code:`oft-kmeans`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "classify each image pixel in one "
+#~ "of the generated clusters using NN "
+#~ "classification with Euclidean distance in "
+#~ "the feature space"
+#~ msgstr ""
+
+#~ msgid "The mask values are: -   0 = do not classify -   1 = classify"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[mask]` - use maskfile and "
+#~ "process only areas having mask value "
+#~ ">0"
+#~ msgstr ""
+
+#~ msgid "If you’re using LEDAPS input, you can generate the mask using:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-cluster.bash`, :code:`oft-"
+#~ "clump`, :code:`gdal- polygonize` to compute"
+#~ " clusters and convert them into "
+#~ "polygons."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run :code:`oft-cluster` with "
+#~ "Input: :code:`landsat_t1.tif` ; Output: "
+#~ ":code:`cluster50.tif` for 50 classes and "
+#~ "10 percent"
+#~ msgstr ""
+
+#~ msgid "it takes some time computing, so be patient."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Load the result in QGIS and see"
+#~ " that all the pixel values are "
+#~ "between 1 and 50 corresponding to "
+#~ "the 50 classes we defined in the"
+#~ " command line."
+#~ msgstr ""
+
+#~ msgid "Cluster50.tif"
+#~ msgstr ""
+
+#~ msgid "oft-clump.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we will run :code:`oft-clump`. "
+#~ "This tool is meant for separating "
+#~ "uniform regions in a class image. "
+#~ "Get detailed information under :code:`oft-"
+#~ "clump`:"
+#~ msgstr ""
+
+#~ msgid "Input: :code:`cluster50.tif`"
+#~ msgstr ""
+
+#~ msgid "Output: :code:`clump_clus50.tif`"
+#~ msgstr ""
+
+#~ msgid "gdal_polygonize.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the last step we want to "
+#~ "create polygons using the Input: "
+#~ ":code:`clump_clus50.tif` Output: :code:`clump_clus50.shp`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Left: Zoom into the cluster image "
+#~ "Cluster50.tif. Right: Corresponding zoom into"
+#~ " the shapefile clump clus50.shp."
+#~ msgstr ""
+
+#~ msgid "oft-kmeans"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-kmeans` - for kmeans clustering"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-kmeans` carries out unsupervised"
+#~ " classification with k-means algorithm."
+#~ msgstr ""
+
+#~ msgid "By default, the program asks user to input two parameters:"
+#~ msgstr ""
+
+#~ msgid "input text file"
+#~ msgstr ""
+
+#~ msgid "number of classes"
+#~ msgstr ""
+
+#~ msgid "The input text file is a collection of signatures from the input file."
+#~ msgstr ""
+
+#~ msgid "It contains at minimum the grey values of each band"
+#~ msgstr ""
+
+#~ msgid "It can be done with :code:`oft-gengrid.bash` and :code:`oft-extr`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The program uses it to establish "
+#~ "the cluster centers and proceeds by "
+#~ "assigning each pixel the Class ID "
+#~ "of the closest cluster center."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The proximity of the cluster centers "
+#~ "is computed using Euclidean distance in"
+#~ " the spectral feature space."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the :code:`-auto` option is used, "
+#~ "the program divides the data "
+#~ "automatically and the number of clusters"
+#~ " is not requested."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the :code:`-aw` option is used, "
+#~ "the programs asks user to provide "
+#~ "weight for each of the input "
+#~ "bands."
+#~ msgstr ""
+
+#~ msgid ":code:`[-ot]` - { Byte/Int16/UInt16/UInt32/Int32/Float32/Float64}"
+#~ msgstr ""
+
+#~ msgid ":code:`[-um]` - specify mask band"
+#~ msgstr ""
+
+#~ msgid ":code:`[-auto]` - automated division of data"
+#~ msgstr ""
+
+#~ msgid ":code:`[-aw]` - ask weights for input bands"
+#~ msgstr ""
+
+#~ msgid ":code:`[-h]` - print out more help"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the benefit of users running "
+#~ "scripts using the older version based"
+#~ " on order of files instead of "
+#~ "option :code:`-i`, the program can still"
+#~ " be used that way."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-kmeans`, :code:`oft-"
+#~ "gengrid.bash`, :code:`oft-extr`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The exercise is divided into two "
+#~ "step: first we prepare the input "
+#~ "signature text file which is need "
+#~ "for :code:`oft-kmeans`, then we will "
+#~ "run the classification tool itself:"
+#~ msgstr ""
+
+#~ msgid "Creation of input signature text file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We want to generate a grid of "
+#~ "points over our image :code:`landsat_t1.tif`"
+#~ " using :code:`oft-gengrid.bash` with "
+#~ "user-defined spacing in x and y "
+#~ "directions, in this case 5000 x "
+#~ "5000 m distance between the points "
+#~ "in X and Y directions. The output"
+#~ " file :code:`gengrid.txt` contains information"
+#~ " on the created grid: **ID**, **x**"
+#~ " and  **y**"
+#~ msgstr ""
+
+#~ msgid "Lets see the results"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To extract the values from our "
+#~ "input image :code:`landsat_t1.tif` f for "
+#~ "those pixels that lay on our grid"
+#~ " we created in the previous step "
+#~ "we run :code:`oft-extr`. Output: "
+#~ ":code:`my_extr.txt`"
+#~ msgstr ""
+
+#~ msgid "Unsupervised classification"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-kmeans` with "
+#~ "Input::code:`landsat_t1.tif` and Output: "
+#~ ":code:`my_kmeans.tif`"
+#~ msgstr ""
+
+#~ msgid "The program will ask you for:"
+#~ msgstr ""
+
+#~ msgid "Load your result my kmeans.tif in QGIS:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "shows the classified image my kmeans.tif"
+#~ " with pixel values between 1 and "
+#~ "25."
+#~ msgstr ""
+
+#~ msgid "oft-nn"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-nn` - is a nearest neighbor classifier."
+#~ msgstr ""
+
+#~ msgid ":code:`-h` = help"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-ot` "
+#~ "{Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/CInt16/CInt32/CFloat32/CFloat64}"
+#~ " = define output type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-um` <maskfile> = only areas "
+#~ "having mask value larger than 0 "
+#~ "are processed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-dem` <demfile> = use given DEM"
+#~ " and vertical distance rules prompted "
+#~ "by the program"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-hrules` = use horizontal distance "
+#~ "rules (prompted by the program) to "
+#~ "restrict the search in horizontal "
+#~ "direction"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-segme` = use segments in the "
+#~ "mask file. If this option is used,"
+#~ " the processing is done at the "
+#~ "segment level."
+#~ msgstr ""
+
+#~ msgid ":code:`-speed` = approximate knn, asks for speed parameter."
+#~ msgstr ""
+
+#~ msgid "Experimental"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-or` <output text file> = save"
+#~ " weights for training data records "
+#~ "for later calculations of large area "
+#~ "statistics"
+#~ msgstr ""
+
+#~ msgid ":code:`-aw` = ask weights for the input bands"
+#~ msgstr ""
+
+#~ msgid ":code:`-dw` {1/2/3} = weight the nearest neighbor data with:"
+#~ msgstr ""
+
+#~ msgid "equal"
+#~ msgstr ""
+
+#~ msgid "inverse distance"
+#~ msgstr ""
+
+#~ msgid "inverse distance squared (default) weights"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-norm` = normalize the image "
+#~ "features and the training data features"
+#~ " to mean 0 and std 1 (default"
+#~ " is no normalization)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-lu <image>` = use given land "
+#~ "use image for stratification of the "
+#~ "reference data."
+#~ msgstr ""
+
+#~ msgid "NOT IMPLEMENTED YET"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-adm <image>` = use given "
+#~ "administrative borders to collect weights "
+#~ "for field plots by administrative unit"
+#~ " (e.g. county). This enables you to"
+#~ " compute statistics for each administrative"
+#~ " unit separately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-nn` carries out nearest "
+#~ "neighbor estimation or classification of "
+#~ "an image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-nn` classifies or estimates "
+#~ "an output value for every image "
+#~ "analysis unit using given training data"
+#~ " set and k nearest neighbor "
+#~ "algorithm. Nearest neighbors are determined"
+#~ " based on Euclidean distances in the"
+#~ " feature space."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In a classification, the output is "
+#~ "the class having the largest sum "
+#~ "of weights. In estimation, the output"
+#~ " value is computed as straight or "
+#~ "weighted average of the k nearest "
+#~ "neighbors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to give at least the "
+#~ "input image file (:code:`-i` option) and"
+#~ " the output image (:code:`-o` option) "
+#~ "OR the output text file (:code:`-or` "
+#~ "option)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the program will ask for the "
+#~ "data-file, number and location of "
+#~ "target variables, NBR of neighbors (k)"
+#~ " and data type (continuous or class)."
+#~ " Other parameters are asked when "
+#~ "needed, if you use extra options "
+#~ "specified under OPTIONS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Last columns of the training data "
+#~ "set are used as the feature space."
+#~ " In other words, if the input "
+#~ "image has four bands, last four "
+#~ "columns of the training data set "
+#~ "should correspond to the values for "
+#~ "training observations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In cases of :code:`-dem` or :code:`-lu`"
+#~ " you need to have a corresponding "
+#~ "column in your field data text "
+#~ "file (prompted by the program)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case of DEM is used, we "
+#~ "use absolute difference: if you want "
+#~ "to reject observations >500 m above "
+#~ "or below the target pixel, give "
+#~ "500"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case of :code:`-norm`, the "
+#~ "normalization parameters are computed from "
+#~ "the field data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "you may also normalize your features "
+#~ "(image and training data) BEFORE using"
+#~ " :code:`oft-nn`, Just be sure that"
+#~ " the values come from the same "
+#~ "distribution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case of :code:`-or` the output "
+#~ "text file contains the target variable"
+#~ " and collected weight for each "
+#~ "training data observation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the :code:`-lu` option is given, "
+#~ "only observations from the same land "
+#~ "use category/class will be used for "
+#~ "estimation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-nn`, :code:`oft-"
+#~ "sigshp.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You will need for this exercise "
+#~ "the following data: :code:`landsat_t1.tif` and"
+#~ " :code:`landuse.shp` which was digitized "
+#~ "manually in QGIS."
+#~ msgstr ""
+
+#~ msgid "Create the signature file using :code:`oft-sigshp.bash`:"
+#~ msgstr ""
+
+#~ msgid "Take a look at the input signature file :code:`sig_landuse.txt`:"
+#~ msgstr ""
+
+#~ msgid "Explanation of columns:"
+#~ msgstr ""
+
+#~ msgid "col 1: ID of the polygon"
+#~ msgstr ""
+
+#~ msgid "col 2: landuse class of the polygon"
+#~ msgstr ""
+
+#~ msgid "col 3-9: pixel values of band1-band7 of the Landsat imagery"
+#~ msgstr ""
+
+#~ msgid "Now run :code:`oft-nn` with"
+#~ msgstr ""
+
+#~ msgid "Following variables will be asked:"
+#~ msgstr ""
+
+#~ msgid "Load your result my :code:`knn.tif` in QGIS:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can see the polygons labeled "
+#~ "corresponding to their landuse-class on"
+#~ " top of our result :code:`my_knn.tif`, "
+#~ "of which the pixel values vary "
+#~ "between 1-5 (e.g. 1.78283) as there "
+#~ "are 5 landuse-classes (1,2,3,4,5)."
+#~ msgstr ""
+
+#~ msgid "Result :code:`my_knn.tif` overlayed with :code:`landuse.shp`"
+#~ msgstr ""
+
+#~ msgid "oft-nn-training-data.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-nn-training-data.bash` - "
+#~ "Script for preparing a training data "
+#~ "text file for :code:`oft-nn` analysis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-i` = give the Landsat image "
+#~ "where grey values are to be picked"
+#~ " for the field plot locations"
+#~ msgstr ""
+
+#~ msgid ":code:`-f` = give the field data text file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-x` = give the column where "
+#~ "x-coordinate resides in the text file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-y` = give the column where "
+#~ "y-coordinate resides in the text file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-m` = give a mask with "
+#~ "values 0 and 1, where 0 tells "
+#~ "that \"this location is not to be"
+#~ " picked if a field plot falls "
+#~ "here\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-d` = give a digital elevation"
+#~ " model file from which the elevations"
+#~ " at field plot locations are to "
+#~ "be added to the training data"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-lu` = give a land-use, "
+#~ "land cover etc image file from "
+#~ "which this information is to be "
+#~ "added to the training data"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Picks field data in a text file"
+#~ " based on the extent of given "
+#~ "image - Image may contain 6 or "
+#~ "7 bands"
+#~ msgstr ""
+
+#~ msgid "Extracts image values based on field data locations"
+#~ msgstr ""
+
+#~ msgid "If a mask is given, pixels with mask value 0 are dropped"
+#~ msgstr ""
+
+#~ msgid "At this point the materials must to be in the same projection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The text file is preserved as "
+#~ "such. Image grey values are added "
+#~ "to the end of each row. If "
+#~ ":code:`lu` and/or :code:`dem` are given, "
+#~ "they appear between the original field"
+#~ " data and grey values (:code:`lu` "
+#~ "before :code:`dem` in case of both)"
+#~ msgstr ""
+
+#~ msgid "Checking of the result is obligatory!!!!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-nn-training-data.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The script :code:`oft-nn-training-"
+#~ "data.bash` extracts image values based "
+#~ "on field data locations using input "
+#~ "image :code:`landsat_t1.tif` and for the "
+#~ "field data we are using "
+#~ ":code:`training.txt`."
+#~ msgstr ""
+
+#~ msgid "Let’s take a closer look at our output values for **nn**:"
+#~ msgstr ""
+
+#~ msgid "Col1: pixel ID"
+#~ msgstr ""
+
+#~ msgid "Col2: x-coordinates"
+#~ msgstr ""
+
+#~ msgid "Col3: y-coordinates"
+#~ msgstr ""
+
+#~ msgid "Col4: pixel ID"
+#~ msgstr ""
+
+#~ msgid "Col5: x-coordinates"
+#~ msgstr ""
+
+#~ msgid "Col6: y-coordinates"
+#~ msgstr ""
+
+#~ msgid "Col7 - Col13: center pixel value for bands 1-7"
+#~ msgstr ""
+
+#~ msgid "oft-normalize.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-normalize.bash` - Script for "
+#~ "preparing a training data text file "
+#~ "for :code:`oft-nn` analysis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-i` image = give the Landsat "
+#~ "image with 6 or 7 bands to "
+#~ "be normalized"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-t` training data = give a "
+#~ "text file containing ground truth and"
+#~ " image bands (in last columns)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-f` 1/2 = normalization will be"
+#~ " based on the distribution present in"
+#~ " the image (1) or the training "
+#~ "data file (2)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-m` mask = give a mask file"
+#~ " showing areas to be processed with"
+#~ " 1 and others with 0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Image grey values in both files "
+#~ "are converted to mean 0 and std"
+#~ " 1 based on the selected source "
+#~ "of distribution (image or training data"
+#~ " file)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Procedure for converting each grey value"
+#~ " on each band in the image "
+#~ "and/or training data file is (value "
+#~ "- average)/std"
+#~ msgstr ""
+
+#~ msgid "It is possible to"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Normalize just the image based on "
+#~ "it’s grey value distribution on each "
+#~ "band"
+#~ msgstr ""
+
+#~ msgid "Normalize also the training data text file using the same distribution"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Normalize both files using the grey "
+#~ "value distribution obtained from the "
+#~ "training data file"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-normalize.bash`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let’s run a simple exercise using "
+#~ ":code:`landsat_t1.tif` as the only input:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Automatic output: :code:`landsat_t1_norm.tif` and"
+#~ " :code:`stat_landsat_t1.txt`"
+#~ msgstr ""
+
+#~ msgid "Now we run it including the training data option values for nn:"
+#~ msgstr ""
+
+#~ msgid "oft-prepare-image-for-nn.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-prepare-image-for-nn.bash` -"
+#~ " for preparing a Landsat image for"
+#~ " nn-analysis with :code:`oft-nn`"
+#~ msgstr ""
+
+#~ msgid "Re-projects and shifts an image if needed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prepares a 0/1 mask of nodata in"
+#~ " image, all values ¡= 0 are "
+#~ "considered nodata"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Image = Landsat image with 6 or"
+#~ " 7 bands to be prepared for "
+#~ ":code:`oft-nn`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Baseimage = Image already in correct "
+#~ "grid, meaning pixel size and pixel "
+#~ "locations (Target projection in EPSG, "
+#~ "e.g. EPSG:32736)"
+#~ msgstr ""
+
+#~ msgid "Shapefile = additional mask areas to be added to the base mask, e.g."
+#~ msgstr ""
+
+#~ msgid "clouds = If target projection is given, also shapefile is re-projected"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Attribute = name of attribute field "
+#~ "to be used in shapefile. Field "
+#~ "must contain 0 in regions to be"
+#~ " masked off"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-prepare-image-for-"
+#~ "nn.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise we will use "
+#~ ":code:`landsat_t1.tif` as image file and "
+#~ ":code:`landsat_t2.tif` as the base image "
+#~ "file, :code:`landuse.shp` is the input "
+#~ "shapefile of which we define "
+#~ ":code:`landuse` as the attribute to be"
+#~ " used:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The output image is automatically "
+#~ "processed: :code:`landsat_t1_mask.tif` Check in "
+#~ "QGIS the values of your output-"
+#~ "mask"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Output of :code:`oft-prepare-image-"
+#~ "for-nn.bash` is :code:`landsat_t1_mask.tif`"
+#~ msgstr ""
+
+#~ msgid "oft-unique-mask-for-nn.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-unique-mask-for-nn.bash` -"
+#~ " creates a unique mask for :code"
+#~ ":`oft-nn` analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Unique means here, that same pixel "
+#~ "is not classified from several images."
+#~ msgstr ""
+
+#~ msgid "It is needed in 2 cases:"
+#~ msgstr ""
+
+#~ msgid "take an adjacent image into account or"
+#~ msgstr ""
+
+#~ msgid "use the new image to fill a cloud etc. on nn-classified base image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As input you need a mask of "
+#~ "the main image and a preliminary "
+#~ "mask of the new image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A preliminary mask for the new "
+#~ "image can be run with oft-trim-"
+#~ " mask.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you need to add clouds or "
+#~ "water, do that before or after "
+#~ "this unique mask script"
+#~ msgstr ""
+
+#~ msgid "The new image must be in the same projection and grid (pixel locations)"
+#~ msgstr ""
+
+#~ msgid "In all masks, 0=do not use, 1=use"
+#~ msgstr ""
+
+#~ msgid "To take several images into account, re-run"
+#~ msgstr ""
+
+#~ msgid "Script produces also an accumulated mask, showing common ok areas"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-unique-mask-for-"
+#~ "nn.bash`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise we will use "
+#~ ":code:`mask.tif` as mask of the base "
+#~ "image (produced by :code:`oft-trim-"
+#~ "mask.bash` and :code:`landsat_t2_mask.tif` as "
+#~ "the mask of the new image:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Two output images are automatically "
+#~ "processed: -   :code:`landsat_t2_mask_unique_mask.tif` "
+#~ "-   :code:`landsat_t2_mask_accumulated_mask.tif`"
+#~ msgstr ""
+
+#~ msgid "Mask of base image: :code:`mask.tif`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here you will get the Mask of "
+#~ "new image: :code:`landsat_t2_mask.tif` (left) "
+#~ "and the Output: "
+#~ ":code:`landsat_t2_mask_unique_mask.tif` (right)."
+#~ msgstr ""
+
+#~ msgid "SEGMENTATION"
+#~ msgstr ""
+
+#~ msgid "oft-clump"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-clump` - connected component labeling."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-clump` Add spatial coherency "
+#~ "to existing classes by combining "
+#~ "adjacent similar classified areas."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-clump` is meant for "
+#~ "separating uniform regions in a class"
+#~ " image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You may obtain such a class image"
+#~ " by using e.g. :code:`oft-cluster.bash`,"
+#~ " :code:`oft-kmeans` or :code:`oft-nn`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The program looks for similar and "
+#~ "adjacent class values in the input "
+#~ "image and gives each area an own"
+#~ " id."
+#~ msgstr ""
+
+#~ msgid ":code:`[-b band]` - use determined band of the image"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`[- um maskfile]` - use maskfile"
+#~ " and process only areas having mask"
+#~ " value >0"
+#~ msgstr ""
+
+#~ msgid ":code:`[-h help]` - opens the help manual in the terminal"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the benefit of users running "
+#~ "the script using the older version, "
+#~ "where the data files are based on"
+#~ " the file order instead of options"
+#~ " :code:`-i` and :code:`-o`, the program "
+#~ "can still be used that way."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After clumping: pixels with identical "
+#~ "class values, but are not spatially "
+#~ "connected, will have different id"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-clump`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To run the :code:`oft-clump` we "
+#~ "use the Input: :code:`landsat_t1.tif`, Output:"
+#~ " :code:`clump.tif`:"
+#~ msgstr ""
+
+#~ msgid "oft-seg"
+#~ msgstr ""
+
+#~ msgid ":code:`oft-seg` - Image segmentation tool."
+#~ msgstr ""
+
+#~ msgid ":code:`-aw` = Ask input band weights."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-automax` = Use automatically computed"
+#~ " maximum distance threshold"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-4n` = Describes the pixel "
+#~ "connectivity . Default is :code:`-8n`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-automin` = Use automatically computed"
+#~ " minimum distance threshold -"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-region` = Use \"Segmentation with "
+#~ "directed trees\" -method for initial "
+#~ "segmentation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-th` threshold = give a user "
+#~ "defined threshold value for above "
+#~ "mentioned initial segmentation"
+#~ msgstr ""
+
+#~ msgid ":code:`-ttest` = use t-value based merging criteria"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If :code:`-4n` is indicated, the "
+#~ "neighborhood is reduced to consider only"
+#~ " top, bottom, left and right pixels."
+#~ msgstr ""
+
+#~ msgid "Additional Options upon Execution"
+#~ msgstr ""
+
+#~ msgid ":code:`-Min. segment size ?`: Minimum segment size in pixels."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`Min. spec . dist . btw segs"
+#~ " ?`: Not asked if :code:`-automin` is"
+#~ " specified above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-Max. spec. dist. btw segs?`: Not"
+#~ " asked if :code:`-automax` is specified "
+#~ "above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`-Use size weighting ?`: 0 "
+#~ "indicates no size weighting , 1 "
+#~ "indicates use size weighting."
+#~ msgstr ""
+
+#~ msgid ":code:`oft-seg` region merging segmentation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-seg` uses a simple iterative"
+#~ " region merging algorithm to merge "
+#~ "each segment with its spectrally nearest"
+#~ " adjacent segment. The spectral distance"
+#~ " (D) between the segments is computed"
+#~ " using all input bands and Euclidean"
+#~ " distance or t-value. In the latter"
+#~ " case the t-value is computed using"
+#~ " the equation for equal or unequal"
+#~ " sample sizes, unequal variances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The algorithm is controlled by three "
+#~ "parameters: minimum segment size in "
+#~ "pixels (MinSize), and minimum required "
+#~ "(MinDist) and maximum allowed (MaxDist) "
+#~ "spectral distances in the feature space."
+#~ " The conditional merging is done in"
+#~ " two phases. First, all segments "
+#~ "which are 1) smaller than MinSize "
+#~ "and 2) have a neighboring segment "
+#~ "to which the spectral distance is "
+#~ "<MaxDist are merged. This step is "
+#~ "iterated until no such segments exist."
+#~ " After that, all segments which have"
+#~ " an adjacent segment with D <MinDist"
+#~ " are merged with their spectrally "
+#~ "nearest neighbor."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In addition, the user can choose "
+#~ "to weight the distance computation with"
+#~ " the size (pixels) of the neighboring"
+#~ " segment."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The tool can also compute the "
+#~ "MinDist and MaxDist thresholds automatically."
+#~ " To do that, use :code:`-automin` "
+#~ "and/or :code:`-automax` options. Otherwise the"
+#~ " tool will ask for user input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you do not want to use "
+#~ "MinDist or MaxDist parameters or size"
+#~ " weighting, reply 0 when the "
+#~ "parameter is asked."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the given MinSize is 0 and "
+#~ "the program is being run without "
+#~ ":code:`-region` option, an image with "
+#~ "unique labels for every pixel is "
+#~ "produced. Otherwise using MinSize 0 will"
+#~ " output initial segments produced using "
+#~ "the other method."
+#~ msgstr ""
+
+#~ msgid "If a mask is given, initial segments are read from the mask."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To do a hierarchical segmentation, the"
+#~ " user should run the first iteration"
+#~ " without a mask. In the subsequent"
+#~ " iterations the resulting output of "
+#~ "the previous segmentation step should be"
+#~ " fed to the process using :code:`-um`"
+#~ " option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case the input image is large"
+#~ " and computing resources are low, an"
+#~ " alternative method can be used. The"
+#~ " initial segmentation can be produced "
+#~ "using :code:`oft-cluster.bash` :code:`oft-"
+#~ "clump` and the final removal of "
+#~ "undesired small segments with :code:`oft-"
+#~ "seg`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A further tool :code:`oft-segstat` can"
+#~ " then be used to extract segment "
+#~ "level shape (size, bounding box, # "
+#~ "edge pixels) and spectral statistics "
+#~ "(averages and standard deviations) to a"
+#~ " text file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For this exercise following tools are"
+#~ " used: :code:`oft-seg`, "
+#~ ":code:`gdal_polygonize.py`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now we run :code:`oft-seg` to do"
+#~ " the hierarchical segmentation with Input:"
+#~ " :code:`landsat_t1.tif` ; Output: "
+#~ ":code:`landsat_t1_min50.tif`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The tool will ask you now further"
+#~ " details which we will define in "
+#~ "this exercise as followed:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the next step we create a "
+#~ "shapefile where pixels of the same "
+#~ "value, with other words of the "
+#~ "same segment, combined into one polygon."
+#~ " Input: :code:`landsat_t1_min50.tif`, Output: "
+#~ ":code:`landsat_t1_min50.shp`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open your file :code:`landsat_t1_min50.tif` in"
+#~ " QGIS and overlay it with "
+#~ ":code:`landsat_t1_min50.shp`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Right click of the shapefile "
+#~ "->Properties->Label->tick display label and "
+#~ "under Field containing label chose DN"
+#~ msgstr ""
+
+#~ msgid "Right click of the shapefile ->Properties->Style->Transparency e.g. 50%"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now zoom in and will see something"
+#~ " similar to the image displayed, "
+#~ "depending on the area you are "
+#~ "zooming in, where each polygon refers"
+#~ " to one segment and the displayed "
+#~ "number is the corresponding ID."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "some segments have the same ID, "
+#~ "but they still belong to the same"
+#~ " segment as they are connect through"
+#~ " neighboring corner pixels."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The segmentation image :code:`landsat_t1_min50.tif`"
+#~ " can be used in a further step"
+#~ " for :code:`oft-segstat`."
+#~ msgstr ""
+
+#~ msgid "The segmentation image :code:`landsat_t1_min50.tif`"
+#~ msgstr ""
+
+#~ msgid "PROJECTION"
+#~ msgstr ""
+
+#~ msgid "oft-getproj.bash"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-getproj.bash` - fetches projection"
+#~ " definition files for UTM zones."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`oft-getproj.bash` fetches projection "
+#~ "definition files for UTM zones: - "
+#~ "Downloads OGC WKT projection definition "
+#~ "files for user-defined UTM S or"
+#~ " N zones (in WGS84) from "
+#~ "`<http://spatialreference.org/ref/epsg/>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Creates directory :code:`∼/ogcwkt` if does "
+#~ "not exist, otherwise uses the existing"
+#~ msgstr ""
+
+#~ msgid "Copies the downloaded files there and can be viewed with a text editor"
+#~ msgstr ""
+
+#~ msgid "For this exercise following tools are used: :code:`oft-getproj.bash`"
+#~ msgstr ""
+
+#~ msgid "Run the :code:`oft-getproj.bash` for the UTM zone 20N:"
+#~ msgstr ""
+
+#~ msgid "Fetching the projection definition for several zones:"
+#~ msgstr ""
+
+#~ msgid "Change your working directory to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here you can find the downloaded "
+#~ "projection definition file for the UTM"
+#~ " zone 20N (:code:`WGS84_UTM_20N.ogcwkt`). Open"
+#~ " it with any text editor program, "
+#~ "such as :code:`gedit`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The complete documentation of the GDAL"
+#~ " commands can be found on the "
+#~ "`OFGT manual "
+#~ "<https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
+#~ msgstr ""
+

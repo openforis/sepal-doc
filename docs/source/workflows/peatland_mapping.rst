@@ -1,4 +1,4 @@
-Peatland mapping 
+Peatland mapping
 ================
 
 .. warning::

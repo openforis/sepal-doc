@@ -4,7 +4,7 @@ R code
 Usage
 -----
 
-SEPAL instances run on :code:`focal` ubuntu machines and provide a fully functional :code:`R 4.1.2` environment. This environment is accecible Rstudio, Jupyterlab or the terminal: 
+SEPAL instances run on :code:`focal` ubuntu machines and provide a fully functional :code:`R 4.1.2` environment. This environment is accecible Rstudio, Jupyterlab or the terminal:
 
 .. thumbnail:: ../_images/cli/r/rstudio_example.png
     :title: a code run in Rstudio
@@ -29,8 +29,8 @@ The SEPAL :code:`R` environment is not empty and embed numerous packages:
 .. literalinclude:: ../_data/r_packages.sh
     :language: sh
     :emphasize-lines: 32-298
-    
-To check the availability of a specific package: 
+
+To check the availability of a specific package:
 
 -   Open RStudio
 -   Navigate to :guilabel:`Help` -> :guilabel:`R Help` (from the menu above)
@@ -51,7 +51,7 @@ The SEPAL environment can be customized to user needs using any third-party pack
 
         install.packages("vioplot")
 
-.. note:: 
+.. note::
 
     If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
 

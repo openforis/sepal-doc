@@ -16,40 +16,40 @@ On this page, you will be introduced to the SEPAL interface and learn how to acc
 
     -   Internet access
     -   SEPAL account (see "Getting Started")
-            
+
 
 Access SEPAL
 ------------
 
-Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
+Navigate to `sepal.io <https://sepal.io/>`_ to open SEPAL, use the log-in form and fill your username and password and, click the :btn:`Login` button.
 
-Type in your **Username** and **Password** and click **Login**.
-
-.. image:: ../_images/setup/presentation/sepal_login.png
-   :alt: SEPAL login page
+.. thumbnail:: ../_images/setup/presentation/sepal_login.png
+   :title: SEPAL login page
+   :width: 70%
    :align: center
 
 .. tip::
    When working in SEPAL, do not click your browser's back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. In some instances, you may find an arrow in the upper-left or upper-right corner of the SEPAL interface to navigate to a previous window.
 
-Set up the locale
-----------------
+Set up language
+---------------
+
+The first step to create a SEPAL environment is to set up the language you want to use, follow the instructions in the video below.
 
 .. youtube:: Lv0HwPDQx50
 
-The first step to create a SEPAL environment is to set up the language you want to use. 
 
 .. note::
 
     You can always change your language preference from SEPAL's launch page.
 
-SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language: 
+SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language:
 
 - fr: Français
 - en: English
 - es: Español
 
-The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools. 
+The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools.
 
 SEPAL interface
 ---------------
@@ -59,9 +59,10 @@ Home
 
 Once you are logged in, you will see the following screen. Notice that your username is displayed in the lower-right.
 
-.. image:: ../_images/setup/presentation/sepal_home.png
-   :alt: SEPAL home screen
-   :align: center
+.. thumbnail:: ../_images/setup/presentation/sepal_home.png
+    :title: SEPAL home screen
+    :align: center
+    :width: 70%
 
 There are four main navigation tabs in the dock on the left side of the screen:
 
@@ -74,7 +75,7 @@ On the lower-left is the red :code:`Tasks` tab. Clicking on this brings up a lis
 
 **Account Information** can be found on the lower-right side of the webpage by clicking the Username button. This opens an overlay that displays important user account information.
 
-You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent. 
+You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent.
 
 .. note::
 
@@ -94,24 +95,25 @@ Linking your GEE and SEPAL accounts will allow you to read and write from your G
 
 Next to **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`, which displays the status (used / available) of your processing and storage resources. Instance spending refers to the resources used / available to start and run cloud computers. Storage space and spending refers to the resources used / available for storage in your SEPAL workspace. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: ../_images/setup/presentation/user_report_panel.png
-   :alt: User Report panel.
+.. thumbnail:: ../_images/setup/presentation/user_report_panel.png
+   :title: User Report panel.
    :width: 350px
    :align: center
-   
+
 .. note::
 
    SEPAL is not to be used for long-term data storage. This is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage.
-   
+
 
 Process Tab
 ^^^^^^^^^^^
 
 Click the :code:`Process` tab on the left side of the window.
 
-.. image:: ../_images/setup/presentation/process_tab_location.png
-   :alt: Arrow pointing out the process tab location.
+.. thumbnail:: ../_images/setup/presentation/process_tab_location.png
+   :title: Arrow pointing out the process tab location.
    :align: center
+   :width: 70%
 
 You should now see many options in the center of the screen:
 
@@ -135,10 +137,10 @@ Click the green :code:`Files` tab on the left side of the window. This will disp
 
 For example, click the :code:`Downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty.
 
-.. image:: ../_images/setup/presentation/files_menu.png
-   :alt: The files menu.
-   :align: center
-   :width: 350
+.. thumbnail:: ../_images/setup/presentation/files_menu.png
+    :title: The files menu.
+    :align: center
+    :width: 50%
 
 Notice that there are four buttons on the upper-right side of the window. The three rightmost buttons will be inactive until you select a file.
 
@@ -156,7 +158,7 @@ This links you to the Linux command line that you can use in a variety of ways t
 
 When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize.
 
-One of the most important features of the Terminal is the ability to start and stop instances. 
+One of the most important features of the Terminal is the ability to start and stop instances.
 
 To start an instance, use the following steps as a guide:
 
@@ -170,8 +172,8 @@ To stop an instance, type "exit" in the command line. You can then refresh the t
 
 Once an instance has stopped, you can follow the instance startup steps again to select a larger instance, if necessary.
 
-.. image:: ../_images/setup/presentation/terminal.png
-   :alt: The terminal page, including an example of changing the instance.
+.. thumbnail:: ../_images/setup/presentation/terminal.png
+   :title: The terminal page, including an example of changing the instance.
    :align: center
    :width: 450
 
@@ -180,15 +182,17 @@ Apps Tab
 
 Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL. Applications are pre-programmed (typically using R or Python) to perform specific, useful tasks. Applications make use of instances and running an application will use your SEPAL computing resources.
 
-.. image:: ../_images/setup/presentation/apps_interface.png
-   :alt: The Apps interface.
-   :align: center
+.. thumbnail:: ../_images/setup/presentation/apps_interface.png
+    :title: The Apps interface.
+    :align: center
+    :width: 70%
 
 This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
 -   **R Studio:** Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder.
--   **Stratified Area Estimator- Design:** Tool for creating stratified designs to estimate areas. We will use this tool in Module 4.
--   **Stratified Area Estimator- Analysis:** Tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.
--   **Geo Processing- Beta:** Offers a selection of easy-to-use change detection and segmentation tools.
--   **BFAST Explorer:** Tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
--   Many more that can be found in the section `Modules <../modules/index.html>`_ of the documentation.
+-   **JupyterLab:** Provides access to the Python environement where you can run complex data workflows.
+-   **BFAST GPU:** GPU implementation of the BFAST algorithm to analyse time series.
+-   **Deforestation alert analysis:** Retrieve any type of alert on a selected AOI.
+-   **Mountain Green Cover Index:** Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale.
+-   **SMFM Biota:** Calculate biomass change over time using ALOS Palsar data.
+-   Many more that can be found in the section :doc:`../modules/index` of the documentation.

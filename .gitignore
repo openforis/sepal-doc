@@ -71,6 +71,7 @@ instance/
 # Sphinx documentation
 docs/build/
 docs/source/_build/
+warnings.txt
 
 # PyBuilder
 target/
@@ -129,19 +130,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# module documentation files
-docs/source/modules/dwn/*
-docs/source/modules/*.rst
-
 # visual studio code
 .vscode/
 
 # pycharm idea folder
 .idea/
 
-# mac os files 
-.DS_Store 
-
-# environment files
-docs/source/_data/python_lib.txt
-docs/source/_data/r_packages.sh
+# mac os files
+.DS_Store

@@ -1,0 +1,216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"PO-Revision-Date: 2023-03-15 01:07\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: it\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/feature/project.po\n"
+"X-Crowdin-File-ID: 83\n"
+"Language: it_IT\n"
+
+#: ../../source/feature/project.rst:2
+msgid "SEPAL recipies' projects"
+msgstr ""
+
+#: ../../source/feature/project.rst:4
+msgid "When interacting with SEPAL processes, a user will create \"recipes\". These recipes can be interconnected and work together inside a single project e.g. the :code:`Mosaics` used in a :code:`Classification`. To help users deal with these interconnections SEPAL is providing a :code:`Project` system that will help them to organize their works."
+msgstr ""
+
+#: ../../source/feature/project.rst:7
+msgid "Overview"
+msgstr ""
+
+#: ../../source/feature/project.rst:9
+msgid "Go to the processes interface of SEPAL (:btn:`<fa-solid fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases."
+msgstr ""
+
+#: ../../source/feature/project.rst:16
+msgid "the following intercation are available on this page:"
+msgstr ""
+
+#: ../../source/feature/project.rst:18
+msgid "add a recipe"
+msgstr ""
+
+#: ../../source/feature/project.rst:19
+msgid "manage the project"
+msgstr ""
+
+#: ../../source/feature/project.rst:20
+msgid "select a project"
+msgstr ""
+
+#: ../../source/feature/project.rst:21
+msgid "order recipies by name or update date"
+msgstr ""
+
+#: ../../source/feature/project.rst:22
+msgid "edit recipes"
+msgstr ""
+
+#: ../../source/feature/project.rst:24
+msgid "In the next section we'll present how one can create a new project and manage the existing projects in its SEPAL account."
+msgstr ""
+
+#: ../../source/feature/project.rst:27
+msgid "Project"
+msgstr ""
+
+#: ../../source/feature/project.rst:31
+msgid "Projets are personnal, they cannot be shared and they are not visible to other users."
+msgstr ""
+
+#: ../../source/feature/project.rst:35
+msgid "For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed."
+msgstr ""
+
+#: ../../source/feature/project.rst:37
+msgid "To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list."
+msgstr ""
+
+#: ../../source/feature/project.rst:49
+msgid "To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well."
+msgstr ""
+
+#: ../../source/feature/project.rst:57
+msgid "Recipes"
+msgstr ""
+
+#: ../../source/feature/project.rst:59
+msgid "When entering in the process interface by default no projects are selected, meaning that the user will see all the recipes available in its SEPAL account. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`."
+msgstr ""
+
+#: ../../source/feature/project.rst:66
+msgid "From this page the user can customize and manage recipes."
+msgstr ""
+
+#: ../../source/feature/project.rst:69
+msgid "Filter recipies"
+msgstr ""
+
+#: ../../source/feature/project.rst:71
+msgid "click on (3) to filter the recipes according to their project. Once selected, only the recipes included in this project will be displayed. The field is clearable meaning that you can go back to the unfiltered state and select another project. :code:`[no project]` can also be selected."
+msgstr ""
+
+#: ../../source/feature/project.rst:78
+msgid "Once a project is selected it will appear as \"current project\" in the project list:"
+msgstr ""
+
+#: ../../source/feature/project.rst:85
+msgid "Once a project is selected and a recipe is created, it will belong to the selected project."
+msgstr ""
+
+#: ../../source/feature/project.rst:89
+msgid "If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fa-solid fa-plus> Add recipe`."
+msgstr ""
+
+#: ../../source/feature/project.rst:92
+msgid "Edit recipies"
+msgstr ""
+
+#: ../../source/feature/project.rst:94
+msgid "Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the edition interface."
+msgstr ""
+
+#: ../../source/feature/project.rst:101
+msgid "from this interface you can:"
+msgstr ""
+
+#: ../../source/feature/project.rst:103
+msgid ":btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s)."
+msgstr ""
+
+#: ../../source/feature/project.rst:104
+msgid ":btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project."
+msgstr ""
+
+#: ../../source/feature/project.rst:105
+msgid ":btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently."
+msgstr ""
+
+#: ../../source/feature/project.rst:109
+msgid "Before deleting individual recipes make sure that they are not used as inputs in others."
+msgstr ""
+
+#: ../../source/feature/project.rst:112
+msgid "connect recipes"
+msgstr ""
+
+#: ../../source/feature/project.rst:114
+msgid "When creating recipes, like :code:`Classification` users can use other recipe as input for the process. To avoid flooding the dropdown with to many values only the recipes from the same projet will be displayed (left). If one still want to see all the recipes in the dropdown, click on :btn:`All` and all the recipes will be exposed using project names as headers (right)."
+msgstr ""
+
+#~ msgid ""
+#~ "Once a project is selected, any "
+#~ "newly created recipe will fallback to"
+#~ " the current project."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Go to the processes interface of "
+#~ "SEPAL (:btn:`<fas fa-globe>`) you should"
+#~ " see the following, completed by a"
+#~ " list of existing recipes if you've"
+#~ " already created some in the previous"
+#~ " releases."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To create a project, click on "
+#~ ":btn:`<fas fa-folder-tree> Projects`. It"
+#~ " will open the following interface. "
+#~ "then click on :btn:`<fas fa-pencil-"
+#~ "alt> Add` to create a new project."
+#~ " Simply fill the name and press "
+#~ ":btn:`<fas fa-check> Apply` to validate"
+#~ " it. The newly created project will"
+#~ " apear in the list."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To remove a project, click on the"
+#~ " :btn:`<fas fa-trash>` icon next to"
+#~ " its name. All the recipes included"
+#~ " in the process will be destroyed "
+#~ "as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you don't want your recipe to"
+#~ " be associated with any project, "
+#~ "unfilter the list before clicking on "
+#~ ":btn:`<fas fa-plus> Add recipe`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Recipe behavior can be edited directly"
+#~ " from this view. Click the :btn:`<fas"
+#~ " fa-edit> Edit` button to open "
+#~ "the edition interface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-check> Select`: Select/unselect"
+#~ " all the recipes shown on screen. "
+#~ "Any other edition operation will be "
+#~ "only applied on the selected recipe(s)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`<fas fa-random> Move`: Move the"
+#~ " selected recipe(s) to another project."
+#~ msgstr ""
+
+#~ msgid ":btn:`<fas fa-trash> Remove`: Delete the recipe permanently."
+#~ msgstr ""
+

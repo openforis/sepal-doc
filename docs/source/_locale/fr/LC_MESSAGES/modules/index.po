@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2023, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/modules/index.rst:2
+msgid "SEPAL applications"
+msgstr ""
+
+#: ../../source/modules/index.rst:5
+msgid ""
+"Access complex workflows without the need of digital programming skills "
+"with SEPAL applications"
+msgstr ""
+
+#: ../../source/modules/index.rst:10
+msgid "Overview"
+msgstr ""
+
+#: ../../source/modules/index.rst:12
+msgid ""
+"SEPAL applications are tools provided by the SEPAL team from the Food and"
+" Agriculture Organization of the United Nations (FAO) or other "
+"developers. These tools are based on advanced geographic information "
+"system (GIS) libraries and complement the functionalities of SEPAL "
+"recipes, providing the end user with access to complex workflows without "
+"requiring knowledge of digital programming. These applications are served"
+" in SEPAL with attractive user interfaces to ensure the best possible "
+"user experience."
+msgstr ""
+
+#: ../../source/modules/index.rst:14
+msgid ""
+"They run on various shells – from pure HTML and Shiny-based R apps to "
+"Jupyter-powered Python kernels. This flexibility and variety of tools "
+"allows developers to integrate workflows and make them available for "
+"SEPAL users. Review the module documentation below to learn more about "
+"its usage."
+msgstr ""
+
+#: ../../source/modules/index.rst:17
+msgid "Start applications"
+msgstr ""
+
+#: ../../source/modules/index.rst:19
+msgid ""
+"To start a SEPAL application, go to the dashboard of the application by "
+"selecting the wrench icon on the left side of the window [(1) on the "
+"following image], which  will bring up a list of apps you can run in "
+"SEPAL. More information about each app is found by selecting the **i** on"
+" the right side."
+msgstr ""
+
+#: ../../source/modules/index.rst:21
+msgid "Note: The top three apps (2) are code editors, not apps:"
+msgstr ""
+
+#: ../../source/modules/index.rst:23
+msgid ""
+"R Studio: Provides access to the R environment where you can run "
+"processing scripts and upload data to your SEPAL folder."
+msgstr ""
+
+#: ../../source/modules/index.rst:24
+msgid ""
+"Jupyter Notebook: An open-source web application that allows you to "
+"create and share documents that contain live code, equations, "
+"visualizations and narrative text (supports Kernels in many different "
+"languages, including R, Python and NodesJS)."
+msgstr ""
+
+#: ../../source/modules/index.rst:25
+msgid ""
+"JupyterLab: A web-based interactive development environment for Jupyter "
+"notebooks, code and data."
+msgstr ""
+
+#: ../../source/modules/index.rst:30
+msgid ""
+"To find the application you're looking for, you can navigate through the "
+"different app pages (3), use tags (4), or utilize the search bar (5)."
+msgstr ""
+
+#: ../../source/modules/index.rst:32
+msgid ""
+"Once the desired application is found, select it to initiate the process."
+" This will start the smallest instance to run the SEPAL sandbox "
+"(:code:`t1`)."
+msgstr ""
+
+#: ../../source/modules/index.rst:34
+msgid "Refer to the next section to start a specific instance manually."
+msgstr ""
+
+#: ../../source/modules/index.rst:38
+msgid ""
+"Applications that include a :icon:`fa-solid fa-google` in their "
+"descriptor require a connection to Google Earth Engine (GEE) to run. For "
+"more information, see :doc:`../setup/gee`."
+msgstr ""
+
+#: ../../source/modules/index.rst:42
+msgid ""
+"An application relies on numerous tools and systems to run. Since it can "
+"take up to five minutes to start, stay patient and avoid rushing. If the "
+"application doesn't start after five minutes, it could simply be an issue"
+" with the Amazon cloud connection; we recommend closing the tab and "
+"starting again. In the event of a major bug or crash, please report the "
+"issue in the specific app issue tracker or directly in SEPAL."
+msgstr ""
+
+#: ../../source/modules/index.rst:46
+msgid ""
+"To avoid disturbances in the application workflow, avoid stopping "
+"instances manually and disconnecting from SEPAL. While completed work "
+"will be available in SEPAL folders, you will need to restart the process "
+"in order to finish."
+msgstr ""
+
+#: ../../source/modules/index.rst:49
+msgid "Start instance manually"
+msgstr ""
+
+#: ../../source/modules/index.rst:51
+msgid ""
+"Some applications require more powerful instances than the default "
+":code:`t1`. If the app documentation requires the user to start a "
+"specific instance type (e.g. a GPU machine :code:`g4` or :code:`g8`), "
+"follow these steps prior to initiating the application:"
+msgstr ""
+
+#: ../../source/modules/index.rst:53
+msgid "Go to the SEPAL terminal and wait for the instance selector to start."
+msgstr ""
+
+#: ../../source/modules/index.rst:58
+msgid ""
+"Type the instance name suggested in the documentation of your app and "
+"press :kbd:`Enter`."
+msgstr ""
+
+#: ../../source/modules/index.rst:60
+msgid "Wait for the instance to finish loading."
+msgstr ""
+
+#: ../../source/modules/index.rst:65
+msgid ""
+"Go back to the dashboard of the application to launch your app. It will "
+"automatically be using the instance you opened and won't restart a "
+":code:`t1`."
+msgstr ""
+

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-20 01:05+0000\n"
+"PO-Revision-Date: 2023-02-22 15:51\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/python.po\n"
+"X-Crowdin-File-ID: 55\n"
+"Language: fr_FR\n"
+
+#: ../../source/cli/python.rst:2
+msgid "Python"
+msgstr "Python"
+
+#: ../../source/cli/python.rst:5
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../../source/cli/python.rst:7
+msgid "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible through Jupyter Notebook, JupyterLab or the terminal:"
+msgstr "Les instances SEPAL fonctionnent sur des machines Ubuntu :code:`focal` et fournissent donc un environnement :code:`Python 3.8` fonctionnel. Cet environnement est accessible via Jupyter Notebook, JupyterLab ou le terminal :"
+
+#: ../../source/cli/python.rst:25
+msgid "Description"
+msgstr "Description"
+
+#: ../../source/cli/python.rst:27
+msgid "The SEPAL python environment is not empty and embed numerous librairies. They are listed here:"
+msgstr "L'environnement Python de SEPAL n'est pas vide et intègre de nombreuses librairies. Elles sont listées ici :"
+
+#: ../../source/cli/python.rst:32
+msgid "Run :code:`pip show <name of your lib>` to check if it's already installed."
+msgstr "Exécutez :code:`pip show <name of your lib>` pour vérifier si elle est déjà installée."
+
+#: ../../source/cli/python.rst:36
+msgid "Customization"
+msgstr "Personnalisation"
+
+#: ../../source/cli/python.rst:38
+msgid "The SEPAL environment can be customized to user needs using any third-party librairies and pip. By default installation will be run in :code:`--user` mode and won't affect other SEPAL users."
+msgstr "L'environnement SEPAL peut être personnalisé en fonction des besoins des utilisateurs en utilisant n'importe quelle librairie tierce et pip. Par défaut, l'installation sera exécutée en mode :code:`--user` et n'affectera pas les autres utilisateurs de SEPAL."
+
+#: ../../source/cli/python.rst:46
+msgid "If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+msgstr "Si vous rencontrez des problèmes de compatibilité lors de la personnalisation de votre environnement SEPAL, veuillez nous le faire savoir dans le `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+
+#: ../../source/cli/python.rst:49
+msgid "Virtual environment"
+msgstr "Environnement virtuel"
+
+#: ../../source/cli/python.rst:53
+msgid "SEPAL does not support conda environments, if you need to install compiled librairies, please the SEPAL team via the  `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+msgstr "SEPAL ne prend pas en charge les environnements conda, si vous avez besoin d'installer des librairies compilées, veuillez contacter l'équipe SEPAL via le `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+
+#: ../../source/cli/python.rst:55
+msgid "SEPAL supports python venv creation. in this section we'll explain how you can create a venv and link it to Jupyter so you can run your processes on the associated kernel."
+msgstr "SEPAL supporte la création de Python venv. dans cette section, nous allons vous expliquer comment vous pouvez créer un venv et le lier à Jupyter afin que vous puissiez exécuter vos processus sur le noyau associé."
+
+#: ../../source/cli/python.rst:57
+msgid "By design Jupyter is runnnig on the Python Kernel described in the previous section. you can also use the kernel associated to our applications (they start with :code:`venv`). If your work rely on very specific version numbers it might be good to run everything on a dedicated environment."
+msgstr "Par design Jupyter est executer sur le noyau Python décrit dans la section précédente. vous pouvez également utiliser le noyau associé à nos applications (elles commencent par :code:`venv`). Si votre travail repose sur des numéros de version très spécifiques, il est peut-être bon de tout exécuter sur un environnement dédié."
+
+#: ../../source/cli/python.rst:59
+msgid "If not existing, create a directory to host your virtual environments. From the root directory, run the following line:"
+msgstr "S'il n'existe pas, créez un répertoire pour héberger vos environnements virtuels. À partir du répertoire racine, exécutez la ligne suivante :"
+
+#: ../../source/cli/python.rst:65
+msgid "And then, copy and paste the following lines in your terminal:"
+msgstr "Ensuite, copiez/collez les lignes suivantes dans votre terminal :"
+
+#: ../../source/cli/python.rst:76
+msgid "Now this venv will be available as a kernel inside your Jupyter workspace. This kernel will be automatically removed if you destroy the venv directory."
+msgstr "Maintenant ce venv sera disponible en tant que noyau dans votre espace de travail Jupyter, ce noyau sera automatiquement supprimé si vous détruisez le répertoire venv."
+
+#: ../../source/cli/python.rst:78
+msgid "Note that If you want to install libs inside this venv you need first to activate it:"
+msgstr "Notez que si vous voulez installer des libs à l'intérieur de ce venv, vous devez d'abord l'activer :"
+
+#~ msgid ""
+#~ "SEPAL instances run on :code:`focal` "
+#~ "ubuntu machines and thus provide a "
+#~ "fully functional :code:`Pyhton 3.8` "
+#~ "environment. This environment is accecible "
+#~ "though Jupyter Notebook, JupyterLab or "
+#~ "the terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run :code:`pip freeze | grep <name "
+#~ "of your lib>` to check if it's "
+#~ "already installed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If not existing, create a directory "
+#~ "to host your virtual environments. From"
+#~ " the root directory run:"
+#~ msgstr ""
+
+#~ msgid "in this folder create a virtual environment:"
+#~ msgstr ""
+
+#~ msgid "Now create a Jupyter Kernel linked to this venv:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to install libs inside"
+#~ " this venv you need first to "
+#~ "activate it:"
+#~ msgstr ""
+

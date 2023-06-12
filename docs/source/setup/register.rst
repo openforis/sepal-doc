@@ -1,78 +1,146 @@
-Register with SEPAL
-===================
+Register to SEPAL and other key platforms
+=========================================
 
-Request access to the interface and sign up for other services 
---------------------------------------------------------------
+Set up your accounts and request additional resources
+-----------------------------------------------------
 
-The first step to using SEPAL is requesting access to the platform on the project website. To unlock the full potential of the interface, you can register with Google Earth Engine (GEE) and Collect Earth Online (CEO), both available free of charge.
+In this article, you can learn how to:
 
-Sign up for SEPAL
------------------
+- :ref:`Create a SEPAL account <create>` (Mandatory)
+- :ref:`Request additional SEPAL resources <request>` (Recommended)
+- :ref:`Register and connect with Google Earth Engine <GEE>` (Recommended)
+- :ref:`Register to Collect Earth Online (CEO) <ceo>` (Optional)
 
-.. note::
+.. _create:
 
-    Registration with SEPAL is required to use the platform.
+Create a SEPAL account
+----------------------
+(Mandatory)
 
-.. image:: ../_images/setup/register/sepal_splash_page.png
-   :alt: Sepal splash page.
-   :align: center
+1.  Go to `sepal.io <https://sepal.io/>`__.
+2.  Select :guilabel:`Launch` > :guilabel:`Sign up`.
 
-You can request access to SEPAL by visiting `sepal.io <sepal.io>`_, clicking :code:`Sign up`, and completing the Google Form. You will be asked to provide:
+.. thumbnail:: ../_images/setup/register/sepal_landing.png
+    :width: 49%
+    :group: landing
+    :title: sepal.io landing page.
 
--   your email address
--   your name
--   your institution
--   your country
--   a brief explanation of what you intend to do with the platform
+.. thumbnail:: ../_images/setup/register/sepal_splash_page.png
+    :width: 49%
+    :group: landing
+    :title: sepal.io splash page.
 
-Once submitted, platform administrators will review your application. If approved, you will receive notification within approximately 1 to 3 days.
+3.  Enter your information into the form.
 
-.. note::
+.. thumbnail:: ../_images/setup/register/sepal_sign_up.png
+    :width: 60%
+    :align: center
+    :group: register
+    :title: Sign-up form.
 
-    Applications are evaluated by the administrators to prevent bots and malicious users from accessing the platform. Incomplete registration forms will be refused. 
+4.  Select :btn:`<fa-solid fa-envelope> Sign up`.
 
-.. image:: ../_images/setup/register/request_sepal.png
-   :alt: Request access to sepal.io
-   :align: center
+.. thumbnail:: ../_images/setup/register/sepal_sent_message.png
+    :width: 40%
+    :align: center
+    :group: register
+    :title: Sign-up form.
 
-.. tip:: 
+5.  Complete email verification.
+6.  Create a password.
 
-    Once you sign up for SEPAL, you can request access to the Sepal Users Google Group by following this `link <https://groups.google.com/g/sepal-users>`_ and clicking on the button, :guilabel:`Ask to join group`. 
-    If you need help, navigate to the `GIS.StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`_ platform and ask a question to the community using the :guilabel:`sepal` tag. Your question might be useful to others! 
+.. thumbnail:: ../_images/setup/register/sepal_confirmation_email.png
+    :width: 80%
+    :align: center
+    :group: register
+    :title: Confirmation email.
+
+.. tip::
+
+    After completing registration, you can request access to the **SEPAL Users Google Group**.
+
+    Go to https://groups.google.com/g/sepal-users and select **Ask to join group**.
+
+    For support, go to the `Geographic Information Systems StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__ and ask a question to the community using the **SEPAL** tag.
+
+.. note:: With your new account, you can perform basic operations, such as visualizing and processing satellite imagery, saving recipes, and navigating through the platform; however, some SEPAL features are not fully available (e.g. in the **Tabs** bar on the left, **Terminal** and **Tools** are deactivated because these functions require an instance and a quota). To get full access, go to the :ref:`request access section <request>`.
+
+    .. thumbnail:: ../_images/setup/register/sepal_recent_disabled_buttons.png
+        :width: 30%
+        :align: center
+        :group: register
+        :title: Newly registered account with disabled options.
+
+.. _request:
+
+Request additional SEPAL resources
+----------------------------------
+(Recommended)
+
+To use SEPAL modules and acesss the command line terminal and development tools like Jupyter or RStudio, you will need to request processing resources.
+
+1.  Select **Quota** > :btn:`<fa-solid fa-pencil> Request additional resources`.
+2.  Complete the form and select :btn:`<fa-solid fa-check> Apply`.
+
+If you do not know how many resources you will use, go to the `resource management <resource>` section for more information.
+
+.. thumbnail:: ../_images/setup/register/sepal_request_button.png
+    :width: 61%
+    :group: request
+    :title: Request additional resources.
+
+.. thumbnail:: ../_images/setup/register/sepal_request_form.png
+    :width: 38%
+    :group: request
+    :title: Request form.
+
+.. note::  Applications are evaluated by the SEPAL team to prevent bots and malicious users from accessing the platform.
+
+.. _gee:
 
 Sign up for Google Earth Engine (GEE)
 -------------------------------------
+(Recommended)
 
 .. note::
 
-    This step is not required. SEPAL can run computation on its own GEE account on your behalf. However, we highly recommend signing up for this service to improve your experience.
+    While SEPAL can run computation on its own GEE account on your behalf, the SEPAL team highly recommends signing up for GEE to improve your experience.
 
-You will need to have a Google email address to sign up for GEE. If you don't have one already, you can sign up here: http://mail.google.com/mail/sign-up. 
-
-With your Google email address, you can request a GEE account by visiting https://earthengine.google.com/new_signup/.
+If you already have a Google email address, go to https://earthengine.google.com/new_signup/ to sign up for a GEE account.
 
 .. image:: ../_images/setup/register/gee_landing.png
    :alt: Request access to Google Earth Engine (GEE).
    :align: center
 
-Once you have a GEE account, you can access the interface here: https://code.earthengine.google.com/.
+If you don't have a Google email address, go to http://mail.google.com/mail/sign-up to sign up.
+
+Once you have a GEE account, go to https://code.earthengine.google.com/ to access the interface.
 
 .. image:: ../_images/setup/register/gee_code.png
-   :alt: GEE code editor
+   :alt: Google Earth Enging (GEE) code editor.
    :align: center
 
 .. tip::
 
-    If you experience problems registering with GEE, contact the SEPAL team for assistance.
+    If you experience problems registering with GEE, contact the SEPAL team at :email:`sepal@fao.org`.
+
+.. _ceo:
 
 Sign up for Collect Earth Online (CEO)
 --------------------------------------
+(Optional)
 
 .. note::
 
-    This step is not required. However, to get the most out of our classification and validation tools, we highly recommend using CEO for collecting point-based training and validation data.
+    To get the most out of the SEPAL platform's **Classification** and **Validation** tools, the SEPAL team highly suggests using CEO for collecting point-based training and validation data.
 
-You can access CEO in Google Chrome, Mozilla Firefox or Microsoft Edge by navigating to https://collect.earth/ and clicking on :code:`Login/Register` in the upper-right corner. After clicking on :code:`Register a new account` and following the instructions, you can log in with your **email** and **password**.
+To create a new account:
+
+1.  Open your browser (Google Chrome, Microsoft Edge, or Mozilla Firefox).
+2.  Go to https://collect.earth.
+3.  Select **Register**.
+4.  Complete the form and Select **Register**.
+5.  Log in with your **Email** and **Password**.
 
 .. image:: ../_images/setup/register/ceo_landing.png
    :alt: CEO landing page
@@ -80,4 +148,4 @@ You can access CEO in Google Chrome, Mozilla Firefox or Microsoft Edge by naviga
 
 .. tip::
 
-    If you forget your password, click on :code:`Forgot your password?` and follow the instructions.
+    If you forget your password, select **Forgot your password?** and follow the instructions.

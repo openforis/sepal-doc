@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sepal-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"PO-Revision-Date: 2023-01-21 16:21\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/r.po\n"
+"X-Crowdin-File-ID: 57\n"
+"Language: ar_SA\n"
+
+#: ../../source/cli/r.rst:2
+msgid "R code"
+msgstr ""
+
+#: ../../source/cli/r.rst:5
+msgid "Usage"
+msgstr ""
+
+#: ../../source/cli/r.rst:7
+msgid "SEPAL instances run on :code:`focal` ubuntu machines and provide a fully functional :code:`R 4.1.2` environment. This environment is accecible Rstudio, Jupyterlab or the terminal:"
+msgstr ""
+
+#: ../../source/cli/r.rst:25
+msgid "Description"
+msgstr ""
+
+#: ../../source/cli/r.rst:27
+msgid "The SEPAL :code:`R` environment is not empty and embed numerous packages:"
+msgstr ""
+
+#: ../../source/cli/r.rst:33
+msgid "To check the availability of a specific package:"
+msgstr ""
+
+#: ../../source/cli/r.rst:35
+msgid "Open RStudio"
+msgstr ""
+
+#: ../../source/cli/r.rst:36
+msgid "Navigate to :guilabel:`Help` -> :guilabel:`R Help` (from the menu above)"
+msgstr ""
+
+#: ../../source/cli/r.rst:37
+msgid "You will see the help panel opened."
+msgstr ""
+
+#: ../../source/cli/r.rst:38
+msgid "Then follow, :code:`Reference` --> :code:`Packages`"
+msgstr ""
+
+#: ../../source/cli/r.rst:46
+msgid "Customization"
+msgstr ""
+
+#: ../../source/cli/r.rst:48
+msgid "The SEPAL environment can be customized to user needs using any third-party packages and CRAN in **Rstudio**:"
+msgstr ""
+
+#: ../../source/cli/r.rst:56
+msgid "If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+msgstr ""
+

@@ -1,123 +1,55 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""Configuration file for the Sphinx documentation builder.
 
-# -- Path setup --------------------------------------------------------------
+This file only contains a selection of the most common options. For a full
+list see the documentation:
+https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-import os
+# -- Path setup ----------------------------------------------------------------
+
 import sys
 from datetime import datetime
 from pathlib import Path
-sys.path.insert(0, os.path.abspath('.'))
 
-from _script import environment
-from _script import modules
+sys.path.append(str(Path(".").resolve()))
 
+# -- Project information -------------------------------------------------------
 
-# -- Project information -----------------------------------------------------
-
-project = 'SEPAL'
+project = "SEPAL"
 copyright = f"2020-{datetime.now().year}, the SEPAL development team"
-author = 'Pierrick Rambaud'
+author = "Pierrick Rambaud"
 
+# -- General configuration -----------------------------------------------------
 
-# -- General configuration ---------------------------------------------------
-
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
 extensions = [
-    'sphinx.ext.napoleon',
-    'sphinx.ext.graphviz',
-    'sphinxcontrib.spelling',
-    'sphinxcontrib.images',
-    'sphinxcontrib.icon',
-    'sphinxcontrib.btn',
-    'sphinxcontrib.youtube',
-    'sphinx_design',
-    'sphinx_togglebutton',
-    'sphinx-favicon',
-    'notfound.extension',
-    '_extentions.line_break',
-    '_extentions.custom_edit',
-    '_extentions.logos',
+    "sphinx.ext.napoleon",
+    "sphinx.ext.graphviz",
+    "sphinxcontrib.images",
+    "sphinxcontrib.icon",
+    "sphinxcontrib.btn",
+    "sphinxcontrib.email",
+    "sphinxcontrib.youtube",
+    "sphinxcontrib.bibtex",
+    "sphinx_design",
+    "sphinx_togglebutton",
+    "sphinx_favicon",
+    "sphinx_last_updated_by_git",
+    "notfound.extension",
+    "_extentions.line_break",
+    "_extentions.custom_edit",
+    "_extentions.logos",
 ]
-
-# spelling options
-spelling_lang='en_US'
-spelling_show_suggestions=True
-spelling_exclude_patterns=['modules/dwn/*.rst']
-spelling_filters = ['_filters.Names']
-spelling_word_list_filename=[str(Path(__file__).expanduser().parent/'_data'/'spelling'/'en_US.txt')]
-spelling_verbose = False
-
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
+templates_path = ["_templates"]
 exclude_patterns = ["**.ipynb_checkpoints"]
+locale_dirs = ["_locale/"]
+gettext_compact = False
+language = "en"
 
+# -- Options for HTML output ---------------------------------------------------
 
-# -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.
-html_theme = 'pydata_sphinx_theme'
-html_last_updated_fmt = ''
+html_theme = "pydata_sphinx_theme"
+html_last_updated_fmt = None
 html_sidebars = {"index": []}
-html_theme_options = {
-    "logo": {
-        "image_light": "sepal_light.png",
-        "image_dark": "sepal_dark.png",
-    },
-    "header_links_before_dropdown": 7,
-    "navigation_with_keys": False,
-    "show_nav_level": 1,
-    "show_prev_next": False,
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/openforis/sepal",
-            "icon": "fab fa-github"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/OpenForis",
-            "icon": "fab fa-twitter"
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/open-foris/",
-            "icon": "fab fa-linkedin"
-        },
-        {
-            "name": "GIS Stackexchange",
-            "url": "https://gis.stackexchange.com/questions/tagged/sepal",
-            "icon": "fab fa-stack-exchange"
-        },
-        {
-            "name": "Youtube",
-            "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
-            "icon": "fab fa-youtube"
-        },
-        {
-            "name": "Google forum",
-            "url": "https://groups.google.com/g/sepal-users",
-            "icon": "fab fa-google"
-        },
-    ],
-    "use_edit_page_button": True,
-    "footer_items": ["copyright", "sphinx-version", "licence", "map"],
-    "left_sidebar_end": ["sidebar-ethical-ads.html"],
-}
-
 html_context = {
     "github_user": "openforis",
     "github_repo": "sepal-doc",
@@ -125,76 +57,76 @@ html_context = {
     "doc_path": "docs/source",
     "default_mode": "auto",
 }
-
-favicons = [
-    {
-        "rel": "apple-touch-icon",
-        "size": "180x180",
-        "static-file": "apple-touch-icon.png"
-    },
-    {
-        "rel": "icon",
-        "type": "image/png",
-        "size": "32x32",
-        "static-file": "favicon-32x32.png"
-    },
-    {
-        "rel": "icon",
-        "type": "image/png",
-        "size": "16x16",
-        "static-file": "favicon-16x16.png"
-    },
-    {
-        "rel": "mask-icon",
-        "static-file": "safari-pinned-tab.svg",
-        "color": "#186691"
-    },
-    {
-        "rel": "manifest",
-        "static-file": "/site.webmanifest"
-    }
-]
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
-html_css_files = [
-    "css/custom.css",
-    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-]
-
-html_js_files = [
-    "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js",
-    "js/custom.js"
-]
-
-html_extra_path = ["browserconfig.xml"]
-
-# -- Options for images -------------------------------------------------------
-
-images_config = {
-    "download": False
-}
-
-# -- Copy the modules documentation ------------------------------------------
-
-modules.get_index()
-modules.get_modules()
-modules.get_tags()
-    
-#  -- copy the requirements of the R and Python environment to data ------------
-
-environment.get_R()
-environment.get_python()
+html_css_files = ["css/custom.css", "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"]
+html_js_files = ["https://unpkg.com/leaflet@1.7.1/dist/leaflet.js", "js/custom.js"]
 
 # -- Option for Latex output ---------------------------------------------------
 
-# create a custom sphinx output for the youtube and vimeo video
-youtube_cmd = r"\newcommand{\sphinxcontribyoutube}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}" + "\n"
-vimeo_cmd = r"\newcommand{\sphinxcontribvimeo}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}" + "\n"
+youtube_cmd = (
+    r"\newcommand{\sphinxcontribyoutube}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}"
+    + "\n"
+)
+vimeo_cmd = (
+    r"\newcommand{\sphinxcontribvimeo}[3]{\begin{figure}\sphinxincludegraphics{{#2}.jpg}\caption{\url{#1#2#3}}\end{figure}}"
+    + "\n"
+)
 
 latex_elements = {"preamble": youtube_cmd + vimeo_cmd}
+
+# -- Option for the pydata-sphinx-theme ----------------------------------------
+
+html_theme_options = {
+    "logo": {
+        "image_light": "_static/sepal_light.png",
+        "image_dark": "_static/sepal_dark.png",
+    },
+    "header_links_before_dropdown": 7,
+    "navigation_with_keys": False,
+    "show_nav_level": 1,
+    "show_prev_next": True,
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/openforis/sepal",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/OpenForis",
+            "icon": "fa-brands fa-twitter",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/open-foris/",
+            "icon": "fa-brands fa-linkedin",
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCtpxScciUj0fjMmhpYsAZbA/featured",
+            "icon": "fa-brands fa-youtube",
+        },
+    ],
+    "use_edit_page_button": True,
+    "article_footer_items": ["last-updated"],
+    "footer_start": ["copyright", "map", "sphinx-version", "licence"],
+    "footer_end": ["community", "issue-tracker", "e-learning", "stackexchange"],
+}
+
+# -- option for the favicon extention ------------------------------------------
+
+favicons = [
+    {"rel": "apple-touch-icon", "href": "apple-touch-icon.png"},
+    {"href": "favicon-32x32.png"},
+    {"href": "favicon-16x16.png"},
+    {"rel": "mask-icon", "href": "safari-pinned-tab.svg", "color": "#186691"},
+]
+
+# -- Options for images --------------------------------------------------------
+
+images_config = {"download": False}
+
+# -- Options for bibtex --------------------------------------------------------
+
+bibtex_bibfiles = ["_bib/workflows/drivers.bib"]
+bibtex_reference_style = "author_year"

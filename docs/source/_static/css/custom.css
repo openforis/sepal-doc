@@ -2,94 +2,153 @@
 *   custom elements
 *
 **/
-.main-logo {max-width: 500px;}
-.bd-header-article {background-color: transparent !important;}
-.bd-content .sd-card {background-color: var(--pst-color-background);}
-@media (min-width: 959.98px){.bd-sidebar-primary {background-color: transparent;}}
-@media (min-width: 1199.98px){.bd-sidebar-secondary {background-color: transparent;}}
+.main-logo {
+  max-width: 500px;
+}
+.bd-header-article {
+  background-color: transparent !important;
+}
+.bd-content .sd-card {
+  background-color: var(--pst-color-background);
+}
+@media (min-width: 959.98px) {
+  .bd-sidebar-primary {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1199.98px) {
+  .bd-sidebar-secondary {
+    background-color: transparent;
+  }
+}
 
 /*******************************************************************************
-*   prevent pydata from adding extra background colors to my images 
-*   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879 
+*   prevent pydata from adding extra background colors to my images
+*   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879
 *   will be solved
 *
 **/
-html[data-theme=dark] .bd-content img:not(.only-dark):not(.dark-light) {
-   background: transparent;
-   border-radius: 0;
+html[data-theme="dark"] .bd-content img:not(.only-dark):not(.dark-light) {
+  background: transparent;
+  border-radius: 0;
 }
 
 /*******************************************************************************
 *   custom colors
 *
 **/
-html[data-theme=dark]{--pst-color-primary: rgb(24, 102, 145);}
-html[data-theme=light]{--pst-color-primary: rgb(24, 102, 145);}
+html[data-theme="dark"] {
+  --pst-color-primary: rgb(24, 102, 145);
+}
+html[data-theme="light"] {
+  --pst-color-primary: rgb(24, 102, 145);
+}
 
 /*******************************************************************************
 *   text justification
 *
 **/
-p {text-align: justify;}
+p {
+  text-align: justify;
+}
 
 /*******************************************************************************
 *   logo coloring
 *
 **/
-span .fa-twitter:hover {color: #1da1f2;}
-span .fa-youtube:hover {color: #ff0000;}
-span .fa-github:hover {color: #333;}
-span .fa-stack-exchange:hover {color: #1e5397;}
-span .fa-google:hover {color: #34a853;}
-span .fa-linkedin:hover {color: #0072b1;}
+span .fa-twitter:hover {
+  color: #1da1f2;
+}
+span .fa-youtube:hover {
+  color: #ff0000;
+}
+span .fa-github:hover {
+  color: #333;
+}
+span .fa-stack-exchange:hover {
+  color: #1e5397;
+}
+span .fa-google:hover {
+  color: #34a853;
+}
+span .fa-linkedin:hover {
+  color: #0072b1;
+}
 
 /*******************************************************************************
 *   change the lightbox cursor
 *
 **/
-a[data-lightbox] {cursor: zoom-in;}
-a[data-lightbox] img {padding: .25em;}
-
-/*******************************************************************************
-*  make the footer inlined
-*
-**/
-.footer-item {display: inline-block;}
-.footer-item:not(:last-child) {
-   border-right: 1px solid var(--pst-color-text-base);
-   margin-right: .5em;
-   padding-right: .5em;
- }
+a[data-lightbox] {
+  cursor: zoom-in;
+}
+a[data-lightbox] img {
+  padding: 0.25em;
+}
 
 /*******************************************************************************
 *  add some images rules
 *
 **/
-html[data-theme=dark]{filter: none;}
-@media (max-width: 576px) {.only-big {display: none !important;}}
-.only-small {max-height: 200px;}
-@media (min-width: 576px) {.only-small {display: none !important;}}
-
+html[data-theme="dark"] img:not(.only-dark):not(.dark-light) {
+  filter: none;
+}
 
 /*******************************************************************************
 * characteristic of the map
 *
 **/
-#map, #map-overlay { 
-   position: fixed;
-   top: 0;
-   left: 0;
-   margin: 0;
-   padding: 0; 
-   height: 100vh;
-   width: 100vw;
+#map,
+#map-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-#map {z-index: -2;}
-#map-overlay {z-index: -1;}
-html[data-theme=light] #map-overlay {background-color: rgba(255, 255, 255, .8);}
-html[data-theme=dark] #map-overlay {background-color: rgba(18, 18, 18, .3);}
-.leaflet-container {background: var(--pst-color-background) !important;}
-.lb-outerContainer {background-color: var(--pst-color-background);}
-footer {background-color: var(--pst-color-background);}
+#map {
+  z-index: -2;
+}
+#map-overlay {
+  z-index: -1;
+}
+html[data-theme="light"] #map-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+html[data-theme="dark"] #map-overlay {
+  background-color: rgba(18, 18, 18, 0.3);
+}
+.leaflet-container {
+  background: var(--pst-color-background) !important;
+}
+.lb-outerContainer {
+  background-color: var(--pst-color-background);
+}
+footer {
+  background-color: var(--pst-color-background);
+}
 
+/*******************************************************************************
+* custom article footer rendering
+*/
+footer.bd-footer-article {
+  background-color: transparent;
+  border-top: 1px solid var(--pst-color-border);
+  margin-top: 2em;
+}
+
+.bd-footer-article .footer-article-items {
+  flex-direction: row;
+}
+
+.bd-footer-article .footer-article-items .footer-article-item {
+  flex-grow: 1;
+}
+
+.bd-footer-article .last-updated {
+  color: var(--pst-color-text-muted);
+  text-align: right;
+}

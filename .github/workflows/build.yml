@@ -3,15 +3,31 @@ name: Build
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 0 * * *'
-  
-env:
-  RDT_URL: ${{ secrets.RDT_URL }}
-  RDT_TOKEN: ${{ secrets.RDT_TOKEN }}
+    - cron: "0 0 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: trigger RDT build 
-        run: curl -X POST -d "branches=main" -d "token=$RDT_TOKEN" $RDT_URL
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: python -m pip install nox
+
+      - name: update module files
+        run: nox -s compile
+
+      - name: generate .po files
+        run: nox -s i18n
+
+      - name: push the files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic compilation update

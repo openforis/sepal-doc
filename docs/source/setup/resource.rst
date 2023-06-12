@@ -1,19 +1,26 @@
-Resource management
-===================
+Manage your resources
+=====================
 
-SEPAL provides free access to computation resources that are shared among our users. To prevent exportation mistakes, new users are granted few resources that are sufficient for discovering the functionalities and running sub-regional analysis. By default, instances are closed automatically when they are not being used.
+Monitor usage and request resources
+-----------------------------------
+
+In this article, you can learn how to:
+
+-Understand your **User report**
+-Manage instances
+-Request resources
+
+SEPAL provides free access to computation resources that are shared among registered users. To prevent exportation mistakes, new users are granted few resources that are sufficient for discovering the functionalities and running sub-regional analysis. By default, instances are closed automatically when they are not being used.
 
 .. note::
-    
+
     The SEPAL user starter pack includes:
-    
-    - 1 USD/month of instance spending
-    - 1 USD/month of storage spending
-    - 20 Gb of storage    
 
-Some actions or projects may require more storage to perform province- or country-analysis; other actions or projects may require more instances to perform heavier computation processes. 
+    - 0 USD/month of instance spending
+    - 0 USD/month of storage spending
+    - 0 Gb of storage
 
-If you need more storage or instances, you can submit a request to our administrators.
+Some actions or projects may require more storage to perform analysis at the province or country level; other actions or projects may require more instances to perform heavier computation processes. If you need more storage or instances, you can submit a quota request to the SEPAL team by following the instructions below.
 
 .. important::
 
@@ -22,39 +29,47 @@ If you need more storage or instances, you can submit a request to our administr
 User report
 -----------
 
-Click on the User report button located on the lower-right side of the window in Terminal, Applications, or Recipes, and you will see the current instance consumption: :btn:`<fas fa-dollar-sign> x.xx/h`.
+In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`.
 
 .. thumbnail:: ../_images/setup/resource/button_from_recipe.png
-   :title: The User report button from a recipe.
+   :title: The **User report** button from a **Recipe**.
    :width: 30%
    :group: setup_resource
 
 .. thumbnail:: ../_images/setup/resource/button_from_app.png
-   :title: The user report button from an app.
+   :title: The **User report** button from an **Application**.
    :width: 30%
    :group: setup_resource
 
 .. thumbnail:: ../_images/setup/resource/button_from_terminal.png
-   :title: The user report button from a terminal.
+   :title: The **User report** button from a **Terminal**.
    :width: 30%
    :group: setup_resource
 
-After clicking on this button, the Resource management pop-up will appear, displaying the current consumption of all of your resources (1) expressed in percentages. A full bar indicates that you reached one of your monthly quotas. The second section describes instances that are currently running (2); the green button allows you to request extra resources.
+After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2).
+
+You can request additional resources by selecting the green button.
 
 .. thumbnail:: ../_images/setup/resource/resource_management.png
-   :title: The user report popup window.
+   :title: The **User report** pop-up window.
    :group: setup_resource
 
-Manage instances 
+Manage instances
 ----------------
 
-Amazon Web Services (AWS) instances can be managed from this interface as well. In the User report pop-up, each line represents a different instance. You can see its technical features and the hourly quota consumption. Click on :btn:`fas fa-trash` to stop it. 
+Amazon Web Services (AWS) instances can be managed from this interface as well.
+
+In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and the hourly quota consumption.
+
+You can select the **Trashcan** icon to stop an instance.
 
 .. thumbnail:: ../_images/setup/resource/edit_instance.png
    :title: Edit the instance list by removing or increasing the lifespan of any of them.
    :group: setup_resource
 
-If the process you launched is a long computation (e.g. the BFAST application or any change detection algorithm), you probably don't want to keep the SEPAL window open for the entire time. To make sure that the process is running in the background, you simply need click on :btn:`<fas fa-edit>` to open the instance pop-up, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab.
+If the process you launched is a long computation (e.g. the **BFAST application** or any **Change detection algorithm**) and you want to close the SEPAL window, you can run the process in the background.
+
+Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab.
 
 .. attention::
 
@@ -67,17 +82,19 @@ If the process you launched is a long computation (e.g. the BFAST application or
 Request resources
 -----------------
 
-From the Resource manager, click on :btn:`<fas fa-pencil-alt> Request additional resources`, which will open the request interface. All of the following fields must be completed if you want your request to be considered: 
+From the **Resource manager**, select **Request additional resources**.
+
+In order for your request to be considered, you must:
 
 - Change the quota to values that meet your needs (e.g. more storage and fewer instances). The values entered are suggestions that the administrator will be able to change, if needed. (1)
-- Give an extensive explanation for why you need these resources, as well as the following information: the project name, the type of analysis, and the area of interest (AOI). (2)
+- Provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI). (2)
 
 .. thumbnail:: ../_images/setup/resource/request.png
-   :title: The Resource management request form.
+   :title: The **Resource management** request form.
    :group: setup_resource
 
-Once validated, the request is sent to the administrators, who will take measures in the coming days to update your profile. They may also contact you directly if they need any extra details.
+Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details.
 
 .. thumbnail:: ../_images/setup/resource/notification.png
-   :title: The Resource management notification communicating that your resource request is being processed.
+   :title: The **Resource management** notification communicating that your resource request is being processed.
    :group: setup_resource
