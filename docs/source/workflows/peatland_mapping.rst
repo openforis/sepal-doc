@@ -1,10 +1,10 @@
 Peatland mapping
 ================
 
-.. warning::
+.. attention::
 
     The documentation of this functionality is under construction.
 
 .. tip::
 
-    For specific help, please open an issue on our repository by clicking on this `link <https://github.com/openforis/sepal-doc/issues/new?assignees=&labels=&template=documentation-needed.md>`__.
+    For specific help, `open an issue in our repository <https://github.com/openforis/sepal-doc/issues/new?assignees=&labels=&template=documentation-needed.md>`__.
