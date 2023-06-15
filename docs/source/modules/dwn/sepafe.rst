@@ -1,10 +1,9 @@
-SEPAFE
-======
+SEPAL Planet Active Fires Explorer
+==================================
 
-The Sepal Planet Active Fires Explorer (SEPAFE) is a module developed on the SEPAL platform based on the `Fire Information for Resource Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms>`_ and using Planet Scope imagery from Planet Labs.
+The SEPAL Planet Active Fires Explorer (SEPAFE) is a module developed on the SEPAL platform based on the `Fire Information for Resource Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms>`_ using Planet Scope imagery from Planet Labs.
 
-SEPAFE aims to provide users with a quick way to get and validate fire alerts from the FIRMS program by using daily planet imagery.
-
+SEPAFE aims to provide users with a quick way to receive and validate fire alerts from the FIRMS programme by using daily Planet imagery.
 
 .. image:: https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/img/sepal_active_fires_home.png
 
@@ -12,70 +11,68 @@ SEPAFE aims to provide users with a quick way to get and validate fire alerts fr
 Settings panel
 --------------
 
-The settings panel is composed of three tabs: :code:`Planet Imagery`, :code:`Area of Interest` and :code:`Alerts`, each of them is a necessary step to get the fire alerts.
+The **Settings** panel is composed of three tabs, including :code:`Planet imagery`, :code:`Area of interest` and :code:`Alerts` (each of them is necessary to receive fire alerts).
 
-.. tip:: The settings panel can be open/closed by clicking on the settings :btn:`<fa-solid fa-bars>` button.
+.. tip:: The **Settings** panel can be opened or closed by selecting the :btn:`<fa-solid fa-bars>` button.
 
-Connect your Planet API Key
+Connect your Planet API key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: This step is optional but highly recommended. Although you can go through the next tabs and get the fire alerts from the different satellite sources, to get the most advantage of the module, you will need a Planet API Key with access to daily imagery. 
+.. note:: This step is optional but highly recommended. Although you can go through the next tabs and receive fire alerts from the different satellite sources, to leverage the potential of the module, you will need a Planet API key with access to daily imagery. 
 
-- Validate your Planet API Key: provide a valid API Key in the input box and click over the validation button, the module will check whether the key is valid or not and the messages of its connection will be displayed directly into the alerts widget. Once your validation is done, you can open the advanced settings expansion panel and modify its inputs. 
+- Validate your Planet API key: provide a valid API key in the input box and click over the validation button, the module will check whether the key is valid or not, and the messages of its connection will be displayed directly in the **Alerts** widget. Once your validation is done, you can open the **Advanced settings** panel and modify its inputs. 
 
-.. tip:: use the planet state bar located in the top-left corner to get useful messages related with planet imagery, such as problems with the key or number of images loaded.
+.. tip:: Use the **Planet status** bar located in the upper-left corner to receive useful messages related to Planet imagery, such as problems with the key or number of images loaded.
 
-- Open the Advanced settings panel
+- Open the **Advanced settings** panel, which displays:
 
-  - :code:`Max number of images`: maximum number of planet images to be displayed at once in each alert.
-  - :code:`Search up to 'x' days before`: the number of days before the fire alert date to look up for the best image available.
-  - :code:`Search up to 'x' days after`: the number of days after the fire alert date to look up for the best image available.
-  - :code:`Cloud cover threshold`: maximum cloud cover threshold accepted in the images (based on the planet metadata).
-   
- 
+  - :code:`Max number of images`: The maximum number of Planet images to be simulatenously displayed in each alert.
+  - :code:`Search up to 'x' days before`: The number of days before the fire alert date to search for the best image available.
+  - :code:`Search up to 'x' days after`: The number of days after the fire alert date to search for the best image available.
+  - :code:`Cloud cover threshold`: The maximum cloud cover threshold accepted in the images (based on Planet metadata).
+    
 .. image:: https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/planet.gif
    :align: center
 
 Select area of interest (AOI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The module has two options to select an area of interest to filter alerts.
+The module has two options to select an AOI to filter alerts.
 
-- Draw a shape: when this option is selected, three drawing tools will be displayed in the top-left map corner, you can select a `square`, `circle`, and a `polygon` and draw them on the map.
-- Select a country: type the name of the country directly into the search box or navigate through it by using the scroll bar, and select the desired country. Once the country is selected, it will be displayed in the map view.
+- Draw a shape: When this option is selected, three drawing tools will be displayed in the upper-left corner of the map (you can select `square`, `circle`, or `polygon`, and draw them on the map).
+- Select a country: Enter the name of the country directly into the search box, or navigate through it by using the scroll bar to select the desired country. Once the country is selected, it will be displayed in the map view.
   
 .. image:: https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/aoi.gif
    
-Get fire alerts
-^^^^^^^^^^^^^^^
+Receive fire alerts
+^^^^^^^^^^^^^^^^^^^
 
-- Recent: the products to be downloaded are coming from the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) for the last 24, 28 hours, and the last 7 days.
+- Recent: The products to be downloaded come from the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) within the last 24 hours, 28 hours, and 7 days.
 
-- Historical: for the historical products, you will be able to download alerts from 2000 until the last finished year from the MODIS satellite. Click over the historical button and filter by the dates.
+- Historical: For historical products, you will be able to download alerts from 2000 until the most recent completed year from the MODIS satellite. Use the historical button to filter by date.
 
-After clicking over the `get alerts` button, the module will start the download process and will clip the alerts to the given AOI. The alerts will be displayed on the map according to a color map for the alert confidence, ranging from green, orange, to red for the confidence values high, nominal and low (for VIIRS) and >80, >70 < 80, <50 for MODIS.
+After selecting the **Get alerts** button, the module will start the download process and clip the alerts to the given AOI. The alerts will be displayed on the map according to a color map for alert confidence, ranging from green, orange, and red, for the confidence values high, nominal and low (for VIIRS) and >80, >70 < 80, <50 for MODIS.
 
-.. warning:: depending on the sensor source and whether your alert request is recent or historical, the download/clip process could take more time. This module is intended to get a quick and fast validation of fire alerts, if you are requesting an area with more than 10,000 fire alerts, you will be asked if you want to display all the alerts on the map —which could highly affect the performance of the tool— or if you want to download them to your desktop/SEPAL environment.
+.. attention:: Depending on the sensor source and whether your alert request is recent or historical, the download/clip process could take more time. This module is intended to receive quick validation of fire alerts. If you are requesting an area with more than 10000 fire alerts, you will be asked if you want to display all of the alerts on the map (which could highly affect the performance of the tool) or if you want to download them to your desktop or SEPAL environment.
 
 Navigate through alerts
 -----------------------
 
-Once the alerts are being displayed on the map, you will be able to navigate through each of them by using the :code:`navigation widget`. Click :code:`next` and :code:`prev` buttons to navigate over the fire alerts, and use the :code:`confidence` dropdown to filter the alerts by its confidence (`What is the detection confidence? <https://earthdata.nasa.gov/faq/firms-faq>`_).
+Once the alerts are being displayed on the map, you will be able to navigate through each of them by using the :code:`Navigation widget`. Use the :code:`Next` and :code:`Prev` buttons to navigate through the fire alerts; use the :code:`Confidence` dropdown menu to filter the alerts by confidence (for more information, see `What is the detection confidence? <https://earthdata.nasa.gov/faq/firms-faq>`_).
 
-  The confidence value was added to help users gauge the quality of individual fire pixels is included in the Level 2 fire product. The confidence field should be used with caution; it will likely vary in meaning in different parts of the world. Nevertheless, some of our end users have found such a field to be useful in excluding false-positive occurrences of fire. They are different for MODIS and VIIRS.
-
+The confidence value was added to help users gauge the quality of individual fire pixels included in the Level 2 fire product. The confidence field should be used with caution; it will likely vary in meaning in different parts of the world. Nevertheless, some of our end users have found such a field to be useful in excluding false-positive occurrences of fire. They are different for MODIS and VIIRS.
 
 .. image:: https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/alerts_navigation.gif
 
-.. tip:: You can activate/deactivate the firee navigation widget by clicking over the fires :btn:`<fa-solid fa-fire>` button.
+.. tip:: You can activate or deactivate the **Fire navigation** widget by selecting the :btn:`<fa-solid fa-fire>` button.
 
-.. tip:: Planet parameters can be changed at any time, to refresh the results from the current alert click over the refresh :btn:`<fa-solid fa-rotate>` icon. 
+.. tip:: Planet parameters can be changed at any time. To refresh the results from the current alert, select the :btn:`<fa-solid fa-rotate>` icon
 
 Manually load planet imagery
 ----------------------------
 
-Click over any point in the map and use the refresh icon :btn:`<fa-solid fa-rotate>` to retrieve planet imagery using the parameters set in the step 1, the module will use the current acquisition alert date to search the images. This option is useful when you want to explore surrounding areas close to the alert point but without alerts to display.
+Select any point on the map and use the refresh icon :btn:`<fa-solid fa-rotate>` to retrieve Planet imagery using the parameters set in Step 1. The module will use the current acquisition alert date to search images. This option is useful when you want to explore surrounding areas close to the alert point but without alerts to display.
 
-.. warning:: For use this option you will require a valid planet level 2 key, otherwise you will get an error message displayed in the state bar.
+.. attention:: To use this option, you will need a valid Planet Level 2 key. Otherwise, you will get an error message displayed in the status bar.
 
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/master/doc/en.rst
