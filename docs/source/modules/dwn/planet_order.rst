@@ -1,59 +1,58 @@
 Planet order
 ============
 
-This dasboard application based on the `sepal-ui <https://sepal-ui.readthedocs.io/en/latest/>`_ framework, provide the user with a friendly interface to explore and download Planet Labs images.
+This dasboard application, based on the `SEPAL-UI <https://sepal-ui.readthedocs.io/en/latest/>`_ framework, provides users with an interface to explore and download Planet Lab images.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/demo.png
     :group: planet-order
 
-.. warning::
+.. attention::
 
-    in order to start this module, you need to have register on the planet NICFI contract (`Register NICFI PlanetLab <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_) and connect your GEE account to SEPAL (`connect GEE to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_).
+    To start this module, you need to (`sign up for NICFI <https://docs.sepal.io/en/latest/setup/nicfi.html#access-nicfi-through-gee>`_) and (`connect your GEE account to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_).
 
+On the landing page of our module, on the lower left of the window, you will find three buttons:
 
-In the landing page of our module at the bottom left of the window, you'll find 3 buttons:
-
--   The :btn:`<fa-solid fa-file-code>` will open in a new tab the GitHub repository that is used to create this module. our code is open-source and distributed under the MIT License.
--   The :btn:`<fa-solid fa-book-open>` button will lead you to the wiki page
--   The :btn:`<fa-solid fa-bug>` will open in a new tab the isse tracker of our GitHub repository. You can write here if you experience bugs or if you have any feature request. Our maintainer will answer as fast as possible.
+-   :btn:`<fa-solid fa-file-code>`: Opens the GitHub repository that is used to create this module in a new tab (our code is open-source and distributed under the MIT license).
+-   :btn:`<fa-solid fa-book-open>`: Leads to the wiki page.
+-   :btn:`<fa-solid fa-bug>`: Opens the isse tracker of our GitHub repository in a new tab (you can write here if you experience bugs or if you have any feature requests; the SEPAL team will answer as quickly as possible).
 
 Parameters
 ----------
 
-In the lower right corner, 2 tabs are available:
+In the lower-right corner, two tabs are available:
 
--   :btn:`<fa-solid fa-map-marker-alt>` the Area of interest selection PlanetLab
--   :btn:`<fa-solid fa-globe>` The planet authentification PlanetLab
+-   :btn:`<fa-solid fa-map-marker-alt>`: Planet Lab area of interest (AOI) selection 
+-   :btn:`<fa-solid fa-globe>`: Planet Lab authentification
 
-In the top left corner, 3 other tbas will allow you ton interact with the data:
+In the upper-left corner, three other tabs will allow you to interact with the data:
 
--   :btn:`<fa-solid fa-magnifying-glass>` the Planet order manager
--   :btn:`<fa-solid fa-palette>` The color management
--   :btn:`<fa-solid fa-cloud-arrow-down>` the Download panel
+-   :btn:`<fa-solid fa-magnifying-glass>`: the Planet order manager
+-   :btn:`<fa-solid fa-palette>`: color management
+-   :btn:`<fa-solid fa-cloud-arrow-down>`: download panel
 
 Select an AOI
 -------------
 
-The application use the same AOI selector that you will find in lots of other application in SEPAL. Go to the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__ for more information.
+The application uses the same AOI selector that you will find in many other SEPAL applications (see the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__ for more information).
 
 Planet Lab authentication
 -------------------------
 
-To authenticate the user, feel the form in the second tab with either your credentials or a planet API key. you can find it in your Planet profile page in the settings section. Once the values are set click on :btn:`validate`. If your Planet credentials are valid, the :btn:`NICFI` button should turn green. You can now select a mosaic in the provided list.
+To authenticate the user, complete the form in the second tab with either your credentials or a Planet API key, which you can find in the settings section in your Planet profile page. Once the values are set, select :btn:`Validate`. If your Planet credentials are valid, the :btn:`NICFI` button should turn green. You can now select a mosaic from the provided list.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/planet_auth.png
     :group: planet-order
 
 .. note::
 
-    If you're not yet register to Planet please follow our `documentation <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_
+    If you're not yet registered to Planet, please follow `the documentation for signing up for Planet Lab data <https://docs.sepal.io/en/latest/setup/register.html#sign-up-for-planet-lab-data>`_.
 
 Manage orders
 -------------
 
-In the top-left section, the planet order selector is now activated. You can select any mosaic in the mosaic dropdown on top of the map. using the :btn:`next` or :btn:`prev` button will jump to the next/prev mosaic in the list (they are in chronological order).
+In the upper-left section, the Planet order selector is now activated. You can select any mosaic in the mosaic dropdown list above the map. Using the :btn:`next` or :btn:`prev` button to go to the next or previous mosaic in the list (they are in chronological order).
 
-Once a mosaic is selected the module will display the basemaps on the map.
+Once a mosaic is selected, the module will display the basemaps on the map.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/mosaic_select.png
     :group: planet-order
@@ -61,22 +60,22 @@ Once a mosaic is selected the module will display the basemaps on the map.
 Manage color combination
 ------------------------
 
-Click on :btn:`<fa-solid fa-palette>` on the top-left side of the map. This button will expand and show the different color combo available:
+Select :btn:`<fa-solid fa-palette>` on the upper-left side of the map, which will show the different color combinations available, including:
 
--   Red-Green-Blue (RGB)
+-   Red-green-blue (RGB)
 -   Color-infrared (CIR)
--   Normalized Difference Vegetation Index (NDVI)
--   Normalized Difference Water Index (NDWI)
--   Visual Atmosphere Resistance Index (VARI)
--   Modified Soil-adjusted Vegetation Index (MSAVI2)
--   Modified Triangular Vegetation Index (MTVI2)
--   Triangular Greenness Index (TGI)
+-   Normalized difference vegetation index (NDVI)
+-   Normalized difference water index (NDWI)
+-   Visual atmosphere resistance index (VARI)
+-   Modified soil-adjusted vegetation index (MSAVI2)
+-   Modified triangular vegetation index (MTVI2)
+-   Triangular greenness index (TGI)
 
 Selecting one will update the displayed basemap.
 
 .. note::
 
-    More information about the band combination can be found on `Planet documentation page <https://developers.planet.com/docs/basemaps/tile-services/indices/>`__.
+    More information about band combination can be found on `the Planet documentation page <https://developers.planet.com/docs/basemaps/tile-services/indices/>`__.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/mosaic_select_rgb.png
     :group: planet-order
@@ -110,25 +109,24 @@ Selecting one will update the displayed basemap.
     :group: planet-order
     :width: 32%
 
-Download Data
+Download data
 -------------
 
-Once you are satisfied with your mosaic selection, you can click on the :btn:`<fa-solid fa-cloud-arrow-down>` button. This will launch the downloading process of your images from Planet server to your folders.
+Once you are satisfied with your mosaic selection, you can select the :btn:`<fa-solid fa-cloud-arrow-down>` button, which will launch the downloading process of your images from the Planet server to your folders.
 
-The images will be stored in the following folder : :code:`~/module_results/planet-order/<aoi_name>/<mosaic_name>/`.
+The images will be stored in the following folder: :code:`~/module_results/planet-order/<aoi_name>/<mosaic_name>/`.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/download.png
     :group: planet-order
 
 .. tip::
 
-    In the parent folder (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`) you will find a .geojson file of the planet grid. This can be useful for other tools.
+    In the parent folder (:code:`/home/<sepalID>/module_results/planet-order/<aoi_name>/`), you will find a .geojson file of the Planet grid, which can be useful for other tools.
 
 .. note::
 
-    If the requested image is not available (the grid point to water area, the image was to cloudy so filtered by Planet, you don't have the rights to download it.. etc) the image will fail.
-    If the image already exist in your folder it will be skipped. This behaviour allow you to restart a process if your SEPAL conection crashed without restarting all the downloads.
+    If the requested image is not available (e.g. the grid points to water area, the image was too cloudy and filtered by Planet, you don't have the rights to download it, etc.) the image will fail.
 
-
+    If the image already exists in your folder, it will be skipped. This behaviour allows you to restart a process if your SEPAL connection crashes without needing to restart all the downloads.
 
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/planet-order/release/doc/en.rst
