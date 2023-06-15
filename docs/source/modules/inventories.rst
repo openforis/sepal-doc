@@ -1,7 +1,7 @@
 Inventories
 ===========
 
-List of the modules gathered under the Inventories tag:
+Modules gathered under the Inventories tag include:
 
 .. toctree::
     :maxdepth: 1
