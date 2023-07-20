@@ -18,7 +18,7 @@ In this context, FAO has developed a robust methodology to assess the recent tre
 
 The FAO, in partnership with the Central African Forest Initiative (CAFI), and a coalition of donor and partner countries have developed a global, standard, large-scale methodology to assess forest dynamics using cloud-computing solutions and open-source tools. The approach maps disturbances (both deforestation and degradation) and quantifies the contribution of multiple associated direct drivers. The methodology is used to assess deforestation and forest degradation trends and their associated current and historical direct drivers in six Central Africa countries as part of an international effort to mitigate climate change, support sustainable development goals, and protect biodiversity. The project builds on a collaborative approach, in which national experts, global research institutes and civil society work together, join resources and data to provide technical evidence and reach a common view on the current and historical trends, and direct drivers of forest disturbances.
 
-definitions
+Definitions
 -----------
 
 A robust methodology uses consistent definitions. The following terms and definitions are applied throughout the workflow.
@@ -311,11 +311,21 @@ Sample Stratification
 
 .. _workflows:drivers:quantification:
 
-Quantify Direct Drivers
------------------------
+Identification of Direct Drivers
+---------------------------------
+Direct drivers of forest change and disturbance are multiple, overlapping and interacting – as deforestation and degradation cannot be reduced to one single cause. Therefore, the assessment specifically analyses the various combinations of overlapping drivers, providing context and richness. 
 
-.. warning::
+The scope of the assessment is to identify the multiple direct drivers of deforestation and degradation in areas of forest disturbance. As a result, this assessment can:
 
-    This part of the documentation is still under construction.
+•	Determine where direct drivers are present and overlap in areas of forest disturbance
+•	Assess the relative contribution of direct drivers in the region, country
+•	Determine direct drivers relative to forest type and fragmentation class
+•	Determine the relative weight of direct drivers over time (in relation to the date of detected disturbance)
+
+The analysis performed is a drivers assessment, and not a land cover change analysis. A land cover change map or fate of land post disturbance, where forest loss is measured in terms of area of land cover or use is produced though different approaches than employed here. Furthermore, a land cover or pixel-level analysis simply does not consider driver context. Finally, land cover maps do not address the drivers of forest degradation (where disturbance occurs, but the land cover is still forest) which is a crucial element of this study. 
+
+The project technical committee agreed upon nine unique direct drivers and their characteristics to be used in the context of the project, and piloting in Central Africa. The definitions were based on what is potentially visible and recognizable in high resolution satellite imagery mosaics from Planet which are available over the entire study period (2015-2020). Each driver and its definition and characteristics are described here :doc:`../modules/drivers/direct-driver-definitions`.
+
+In order to identify direct drivers, an survey form is developed in the Collect Earth Online (CEO) web platform to enable visual interpretation and identification of the presence or absence of forest, the land cover type in 2015, the type of change (deforestation or degradation) and the year of change (2015-2022), along with one ore more observed direct drivers within a 2km wide square plot around the sample point.
 
 .. footbibliography::
