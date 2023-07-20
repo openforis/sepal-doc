@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 15:44+0000\n"
+"POT-Creation-Date: 2023-07-20 20:51+0000\n"
 "PO-Revision-Date: 2023-04-26 01:06+0000\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -813,34 +813,34 @@ msgid ""
 "changes that occurred during the year."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:125
+#: ../../source/workflows/drivers.rst:127
 msgid "Direct Driver definitions"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:127
+#: ../../source/workflows/drivers.rst:129
 msgid ""
 "A total of eight direct drivers were defined by their specific "
 "characteristics identifiable in high resolution satellite imagery from "
 "Planet."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:132
+#: ../../source/workflows/drivers.rst:134
 msgid "Driver"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:133
+#: ../../source/workflows/drivers.rst:135
 msgid "example"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:134
+#: ../../source/workflows/drivers.rst:136
 msgid "characteristics"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:135
+#: ../../source/workflows/drivers.rst:137
 msgid "Artisanal agriculture"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:138
+#: ../../source/workflows/drivers.rst:140
 msgid ""
 "Small-scale agriculture is composed of small, informal, unstructured and "
 "irregular agricultural plots covering an area of less than 5ha. The "
@@ -848,11 +848,11 @@ msgid ""
 "land is often soil cover in various stages of cultivation."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:139
+#: ../../source/workflows/drivers.rst:141
 msgid "Industrial agriculture"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:142
+#: ../../source/workflows/drivers.rst:144
 msgid ""
 "Industrial agriculture is characterized by agricultural areas larger than"
 " 5 ha that tend to be homogeneous and often consist of a single crop. In "
@@ -862,11 +862,11 @@ msgid ""
 "agriculture under the definition."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:143
+#: ../../source/workflows/drivers.rst:145
 msgid "Infrastructure"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:146
+#: ../../source/workflows/drivers.rst:148
 msgid ""
 "Roads are visible in the images with linear features and are identified "
 "as motorized when they are wide enough (5m) to carry vehicle traffic. "
@@ -875,11 +875,11 @@ msgid ""
 "engines such as villages, mining facilities."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:147
+#: ../../source/workflows/drivers.rst:149
 msgid "Settlements"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:150
+#: ../../source/workflows/drivers.rst:152
 msgid ""
 "Villages and settlements can be hard or soft roofed, they can be "
 "buildings or huts, and they are often accompanied by roads and other "
@@ -888,11 +888,11 @@ msgid ""
 "image)."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:151
+#: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:153
 msgid "Artisanal forestry"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:154
+#: ../../source/workflows/drivers.rst:156
 msgid ""
 "Small-scale or artisanal logging is characterized by the selective "
 "extraction of trees in an irregular manner, leaving a tree cover. These "
@@ -900,11 +900,11 @@ msgid ""
 " places accessible by small roads or villages."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:155
+#: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:157
 msgid "Industrial forestry"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:158
+#: ../../source/workflows/drivers.rst:160
 msgid ""
 "Large-scale or industrial forestry is recognizable by the presence of "
 "logging roads, along which selective logging degradation occurs. These "
@@ -912,11 +912,11 @@ msgid ""
 " years of imagery acquired over the entire study period are evaluated."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:159
+#: ../../source/workflows/drivers.rst:161
 msgid "Artisanal mine"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:162
+#: ../../source/workflows/drivers.rst:164
 msgid ""
 "Small-scale mining is characterized by muddy clearings, and usually ponds"
 " or water catchments and may feature turbid water. Artisanal in nature, "
@@ -924,17 +924,17 @@ msgid ""
 "streams."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:163
+#: ../../source/workflows/drivers.rst:165
 msgid "Industrial mine"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:166
+#: ../../source/workflows/drivers.rst:168
 msgid ""
 "Large-scale mining is characterized by large ponds, open pits and "
 "clearings, as well as extensive infrastructure and roads."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:168
+#: ../../source/workflows/drivers.rst:170
 msgid ""
 "To address the overlap of drivers in the same location and interpret "
 "local context, our approach identifies archetypes, or common driver "
@@ -945,7 +945,7 @@ msgid ""
 "commonly observed in the region\\ :footcite:`molinario:2020`."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:170
+#: ../../source/workflows/drivers.rst:172
 msgid ""
 "The observed combinations of drivers are grouped into thematic classes or"
 " archetypes."
@@ -1021,11 +1021,11 @@ msgstr ""
 msgid "Infrastructure and artisanal agriculture observed together"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:186
+#: ../../source/workflows/drivers.rst:188
 msgid "Methodology"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:188
+#: ../../source/workflows/drivers.rst:190
 msgid ""
 "The major components of this this methodology include the generation of "
 "wall-to-wall geospatial data on forest cover types, changes, and "
@@ -1037,7 +1037,7 @@ msgid ""
 "support for national efforts for emissions reduction."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:190
+#: ../../source/workflows/drivers.rst:192
 msgid ""
 "The methodology uses FAO’s OpenForis suite of tools including the SEPAL "
 "platform for satellite data analysis, Collect Earth Online and Google "
@@ -1046,7 +1046,7 @@ msgid ""
 "interpreted for direct drivers in 5 major steps:"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:192
+#: ../../source/workflows/drivers.rst:194
 msgid ""
 ":ref:`workflows:drivers:mosaic`: processing of optical (Landsat 4/5/7/8) "
 "and radar (Sentinel 1/ALOS PALSAR) satellite images to create mosaics for"
@@ -1055,7 +1055,7 @@ msgid ""
 "fragmentation assessment for the baseline year 2015"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:194
+#: ../../source/workflows/drivers.rst:196
 msgid ""
 ":ref:`workflows:drivers:series`: processing of optical satellite (Landsat"
 " 4/5/7/8) time series data covering 2012-2020 (2012-2015 is the "
@@ -1065,7 +1065,7 @@ msgid ""
 "degradation."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:196
+#: ../../source/workflows/drivers.rst:198
 msgid ""
 ":ref:`workflows:drivers:stratification`: Stratified random sampling is "
 "conducted on the change map from step 2. Systematic validation for all "
@@ -1074,17 +1074,17 @@ msgid ""
 "of change and the identification of the presence of direct drivers."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:198
+#: ../../source/workflows/drivers.rst:200
 msgid ""
 ":ref:`workflows:drivers:quantification`: The quantification of direct "
 "drivers by forest types, fragmentation class"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:208
+#: ../../source/workflows/drivers.rst:210
 msgid "Creating cloud-free mosaics"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:210
+#: ../../source/workflows/drivers.rst:212
 msgid ""
 "To accurately determine disturbances within forest ecosystems and "
 "distinguish from other dynamics occurring in non-forest areas, a baseline"
@@ -1093,7 +1093,7 @@ msgid ""
 "recipes."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:212
+#: ../../source/workflows/drivers.rst:214
 msgid ""
 "As you can see in this `online animation "
 "<https://drive.google.com/file/d/1H5Br82CoE1QJnri0cBl1Pf2tRJV3kW96/view>`__,"
@@ -1102,11 +1102,11 @@ msgid ""
 "independent) composites for the best observations of the study region."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:215
+#: ../../source/workflows/drivers.rst:217
 msgid "Optical cloud-free composite"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:217
+#: ../../source/workflows/drivers.rst:219
 msgid ""
 "Multi-temporal image mosaics are compiled from data collected over "
 "several months or years. Cloud-free pixels from multiple images are "
@@ -1114,7 +1114,7 @@ msgid ""
 "pixel quality band provided with image metadata."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:219
+#: ../../source/workflows/drivers.rst:221
 msgid ""
 "We evaluated the availability of Landsat 4,5,7 and 8 images for the "
 "creation of optical mosaics for the baseline year or 2015. As you can see"
@@ -1126,21 +1126,21 @@ msgid ""
 "selected date and only provides the available options."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:227
+#: ../../source/workflows/drivers.rst:229
 msgid ""
 "The coverage of Landsat over time is shown below. The western part of the"
 " study region along the coast, results in cloudy or data gaps in Gabon, "
 "Equatorial Guinea and Cameroon."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:234
+#: ../../source/workflows/drivers.rst:236
 msgid ""
 "To create our optical mosaic, we will use the SEPAL optical mosaic "
 "recipe. To learn more about the different available parameters and how to"
 " use the recipe, please see :doc:`../cookbook/optical_mosaic`."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:236
+#: ../../source/workflows/drivers.rst:238
 msgid ""
 "In this example we will use a  custom asset from GEE for the :btn:`AOI` "
 "parameter: "
@@ -1150,24 +1150,24 @@ msgid ""
 "selection methods."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:238
+#: ../../source/workflows/drivers.rst:240
 msgid "In the :btn:`DAT` section you can select the dates of interest."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:240
+#: ../../source/workflows/drivers.rst:242
 msgid ""
 "For later years (after 2018), the sensor coverage is good so you can "
 "safely select all images of a single year."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:242
+#: ../../source/workflows/drivers.rst:244
 msgid ""
 "For earlier eras, e.g. 2015 use the advanced option to add images from "
 "prior years from a targeted season (in this case the full year). This "
 "will help to fill the gaps in cloudy areas."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:250
+#: ../../source/workflows/drivers.rst:252
 msgid ""
 "For data sources, more is generally better. Select all Landsat options "
 "for a consistent mosaic. If you like, Sentinel-2 can be added for more "
@@ -1176,7 +1176,7 @@ msgid ""
 "not be available."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:252
+#: ../../source/workflows/drivers.rst:254
 msgid ""
 "If you are only working with Landsat (or only with Sentinel), you can "
 "manually select scenes if you want to tailor your mosaic and you have a "
@@ -1184,14 +1184,14 @@ msgid ""
 "quicker and simpler approach and recommended for large areas."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:254
+#: ../../source/workflows/drivers.rst:256
 msgid ""
 "For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can"
 " exclude pixels with low NDVI (particularly if you have a long time "
 "period) and select the following options:"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:257
+#: ../../source/workflows/drivers.rst:259
 msgid ""
 "You can then retrieve the mosaic as a Google asset at 30m resolution. We "
 "select the original bands as all other indices can be recalculated later:"
@@ -1199,24 +1199,24 @@ msgid ""
 ":btn:`SWIR2`, :btn:`THERMAL`"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:259
+#: ../../source/workflows/drivers.rst:261
 msgid ""
 "Once the export is finished, you can view the asset in Google Earth "
 "Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the "
 "above parameters:"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:267
+#: ../../source/workflows/drivers.rst:269
 msgid "ALOS Palsar mosaics"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:269
+#: ../../source/workflows/drivers.rst:271
 msgid ""
 "Radar imagery has the added benefit of being cloud-free by design as "
 "active sensors are not influenced by clouds."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:271
+#: ../../source/workflows/drivers.rst:273
 msgid ""
 "Alos Palsar is a L-band radar that gives good results for monitoring "
 "forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from"
@@ -1225,23 +1225,23 @@ msgid ""
 " space pr Google Earth Engine Account."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:273
+#: ../../source/workflows/drivers.rst:275
 msgid ""
 "For more information about the parameters, Please see "
 ":doc:`../modules/dwn/alos_mosaics`."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:277
+#: ../../source/workflows/drivers.rst:279
 msgid "Sentinel-1 mosaics"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:279
+#: ../../source/workflows/drivers.rst:281
 msgid ""
 "You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus "
 "radar data."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:281
+#: ../../source/workflows/drivers.rst:283
 msgid ""
 "The aoi selection is the same as for the optical mosaic. For the dates "
 "you can enter a year, a date range, or a single date. When you add a year"
@@ -1251,33 +1251,33 @@ msgid ""
 "period."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:284
+#: ../../source/workflows/drivers.rst:286
 msgid ""
 "For the best results in the Congo Basin the following parameters are "
 "proposed:"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:286
+#: ../../source/workflows/drivers.rst:288
 msgid ""
 "Both :btn:`ascending` and :btn:`descending` orbits will ensure complete "
 "coverage of the AOI"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:287
+#: ../../source/workflows/drivers.rst:289
 msgid ""
 "The :btn:`terrain` correction will mask any errors due to topography, or "
 "terrain “shadows”"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:288
+#: ../../source/workflows/drivers.rst:290
 msgid "We don’t need to apply a speckle filter"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:289
+#: ../../source/workflows/drivers.rst:291
 msgid ":btn:`moderate` outlier removal will provide the most consistent results"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:291
+#: ../../source/workflows/drivers.rst:293
 msgid ""
 "Select which bands to export in the retrieve window, you may select all "
 "of them depending on the space available in your GEE repository or SEPAL "
@@ -1286,24 +1286,24 @@ msgid ""
 "classified in the next step."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:297
+#: ../../source/workflows/drivers.rst:299
 msgid "Time-series analysis"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:301
-#: ../../source/workflows/drivers.rst:310
+#: ../../source/workflows/drivers.rst:303
+#: ../../source/workflows/drivers.rst:312
 msgid "This part of the documentation is still under construction."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:306
+#: ../../source/workflows/drivers.rst:308
 msgid "Sample Stratification"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:315
+#: ../../source/workflows/drivers.rst:317
 msgid "Identification of Direct Drivers"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:316
+#: ../../source/workflows/drivers.rst:318
 msgid ""
 "Direct drivers of forest change and disturbance are multiple, overlapping"
 " and interacting – as deforestation and degradation cannot be reduced to "
@@ -1312,34 +1312,34 @@ msgid ""
 "richness."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:318
+#: ../../source/workflows/drivers.rst:320
 msgid ""
 "The scope of the assessment is to identify the multiple direct drivers of"
 " deforestation and degradation in areas of forest disturbance. As a "
 "result, this assessment can:"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:320
+#: ../../source/workflows/drivers.rst:322
 msgid ""
 "Determine where direct drivers are present and overlap in areas of forest"
 " disturbance"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:321
+#: ../../source/workflows/drivers.rst:323
 msgid "Assess the relative contribution of direct drivers in the region, country"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:322
+#: ../../source/workflows/drivers.rst:324
 msgid "Determine direct drivers relative to forest type and fragmentation class"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:323
+#: ../../source/workflows/drivers.rst:325
 msgid ""
 "Determine the relative weight of direct drivers over time (in relation to"
 " the date of detected disturbance)"
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:325
+#: ../../source/workflows/drivers.rst:327
 msgid ""
 "The analysis performed is a drivers assessment, and not a land cover "
 "change analysis. A land cover change map or fate of land post "
@@ -1351,7 +1351,7 @@ msgid ""
 "cover is still forest) which is a crucial element of this study."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:327
+#: ../../source/workflows/drivers.rst:329
 msgid ""
 "The project technical committee agreed upon nine unique direct drivers "
 "and their characteristics to be used in the context of the project, and "
@@ -1359,10 +1359,10 @@ msgid ""
 "potentially visible and recognizable in high resolution satellite imagery"
 " mosaics from Planet which are available over the entire study period "
 "(2015-2020). Each driver and its definition and characteristics are "
-"described here :doc:`../modules/drivers/direct-driver-definitions`."
+"described in :ref:`workflows:drivers:drivers`."
 msgstr ""
 
-#: ../../source/workflows/drivers.rst:329
+#: ../../source/workflows/drivers.rst:331
 msgid ""
 "In order to identify direct drivers, an survey form is developed in the "
 "Collect Earth Online (CEO) web platform to enable visual interpretation "
@@ -1398,5 +1398,21 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Quantify Direct Drivers"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The project technical committee agreed "
+#~ "upon nine unique direct drivers and "
+#~ "their characteristics to be used in "
+#~ "the context of the project, and "
+#~ "piloting in Central Africa. The "
+#~ "definitions were based on what is "
+#~ "potentially visible and recognizable in "
+#~ "high resolution satellite imagery mosaics "
+#~ "from Planet which are available over "
+#~ "the entire study period (2015-2020). "
+#~ "Each driver and its definition and "
+#~ "characteristics are described here "
+#~ ":doc:`../modules/drivers/direct-driver-definitions`."
 #~ msgstr ""
 
