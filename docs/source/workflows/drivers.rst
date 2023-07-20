@@ -315,7 +315,7 @@ Sample Stratification
 
 Identification of Direct Drivers
 ---------------------------------
-Direct drivers of forest change and disturbance are multiple, overlapping and interacting – as deforestation and degradation cannot be reduced to one single cause. Therefore, the assessment specifically analyses the various combinations of overlapping drivers, providing context and richness. 
+Direct drivers of forest change and disturbance are multiple, overlapping and interacting – as deforestation and degradation cannot be reduced to one single cause. Therefore, the assessment specifically analyses the various combinations of overlapping drivers, providing context and richness.
 
 The scope of the assessment is to identify the multiple direct drivers of deforestation and degradation in areas of forest disturbance. As a result, this assessment can:
 
@@ -324,7 +324,7 @@ The scope of the assessment is to identify the multiple direct drivers of defore
 •	Determine direct drivers relative to forest type and fragmentation class
 •	Determine the relative weight of direct drivers over time (in relation to the date of detected disturbance)
 
-The analysis performed is a drivers assessment, and not a land cover change analysis. A land cover change map or fate of land post disturbance, where forest loss is measured in terms of area of land cover or use is produced though different approaches than employed here. Furthermore, a land cover or pixel-level analysis simply does not consider driver context. Finally, land cover maps do not address the drivers of forest degradation (where disturbance occurs, but the land cover is still forest) which is a crucial element of this study. 
+The analysis performed is a drivers assessment, and not a land cover change analysis. A land cover change map or fate of land post disturbance, where forest loss is measured in terms of area of land cover or use is produced though different approaches than employed here. Furthermore, a land cover or pixel-level analysis simply does not consider driver context. Finally, land cover maps do not address the drivers of forest degradation (where disturbance occurs, but the land cover is still forest) which is a crucial element of this study.
 
 The project technical committee agreed upon nine unique direct drivers and their characteristics to be used in the context of the project, and piloting in Central Africa. The definitions were based on what is potentially visible and recognizable in high resolution satellite imagery mosaics from Planet which are available over the entire study period (2015-2020). Each driver and its definition and characteristics are described in :ref:`workflows:drivers:drivers`.
 
