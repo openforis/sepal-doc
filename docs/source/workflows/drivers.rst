@@ -121,6 +121,8 @@ A product for the year YYYY is considered as of 31/12/YYYY.
 
 This convention allows a consistent approach to assessing change products. A change map from year1 to year2 will be consistent with both year1 and year2 maps. The status of the year takes into account any changes that occurred during the year.
 
+.. _workflows:drivers:drivers:
+
 Direct Driver definitions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -324,7 +326,7 @@ The scope of the assessment is to identify the multiple direct drivers of defore
 
 The analysis performed is a drivers assessment, and not a land cover change analysis. A land cover change map or fate of land post disturbance, where forest loss is measured in terms of area of land cover or use is produced though different approaches than employed here. Furthermore, a land cover or pixel-level analysis simply does not consider driver context. Finally, land cover maps do not address the drivers of forest degradation (where disturbance occurs, but the land cover is still forest) which is a crucial element of this study. 
 
-The project technical committee agreed upon nine unique direct drivers and their characteristics to be used in the context of the project, and piloting in Central Africa. The definitions were based on what is potentially visible and recognizable in high resolution satellite imagery mosaics from Planet which are available over the entire study period (2015-2020). Each driver and its definition and characteristics are described here :doc:`../modules/drivers/direct-driver-definitions`.
+The project technical committee agreed upon nine unique direct drivers and their characteristics to be used in the context of the project, and piloting in Central Africa. The definitions were based on what is potentially visible and recognizable in high resolution satellite imagery mosaics from Planet which are available over the entire study period (2015-2020). Each driver and its definition and characteristics are described in :ref:`workflows:drivers:drivers`.
 
 In order to identify direct drivers, an survey form is developed in the Collect Earth Online (CEO) web platform to enable visual interpretation and identification of the presence or absence of forest, the land cover type in 2015, the type of change (deforestation or degradation) and the year of change (2015-2022), along with one ore more observed direct drivers within a 2km wide square plot around the sample point.
 

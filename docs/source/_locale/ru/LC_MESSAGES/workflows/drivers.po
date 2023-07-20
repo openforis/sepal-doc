@@ -1,29 +1,35 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-26 00:57+0000\n"
-"PO-Revision-Date: 2023-04-26 01:06\n"
+"POT-Creation-Date: 2023-07-20 15:44+0000\n"
+"PO-Revision-Date: 2023-04-26 01:06+0000\n"
 "Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
+"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
+">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ru\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/workflows/drivers.po\n"
-"X-Crowdin-File-ID: 125\n"
 
 #: ../../source/workflows/drivers.rst:2
 msgid "Direct Drivers Assessment"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:6
-msgid "This documentation has been produced in the framework of the global project entitled: Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__. This project, known as the Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area."
+msgid ""
+"This documentation has been produced in the framework of the global "
+"project entitled: Assessment of deforestation and forest degradation and "
+"related direct drivers using SEPAL, supported by the Central African "
+"Forest Initiative `(CAFI) <https://cafi.org>`__. This project, known as "
+"the Deforestation and Degradation Drivers (DDD) project is a global "
+"methodology developed and piloted in the Central African region. The "
+"Congo Basin  area is used as an example but this methodology can be "
+"applied to any other geographic area."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:9
@@ -32,31 +38,97 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:11
 #, python-format
-msgid "Deforestation and forest degradation (DD) are complex processes that have many underlying causes. A comprehensive understanding of forest conversion to other land uses is instrumental for the development of policies and actions aiming to reduce the loss of forests and its associated carbon emission. It is important to understand recurring patterns and correlations that can help countries tailor their efforts towards reducing forest loss. The causes of deforestation and forest degradation vary both regionally and temporally\\ :footcite:`curtis:2018`.  Different studies refer to agricultural expansion (cropland and pasture) as the largest direct cause of global deforestation\\ :footcite:`fra:2022,gibbs:2010,hosonuma:2012,kissinger:2012,sandker:2017`. Commercial agriculture is estimated to be responsible for around 70-90% of the worldwide deforestation, while in Africa, both commercial and subsistence agriculture may account for similar importance in terms of forest loss, while fuel wood collection, charcoal production, and, to a lesser extent, livestock grazing in forests are the most important drivers of degradation."
+msgid ""
+"Deforestation and forest degradation (DD) are complex processes that have"
+" many underlying causes. A comprehensive understanding of forest "
+"conversion to other land uses is instrumental for the development of "
+"policies and actions aiming to reduce the loss of forests and its "
+"associated carbon emission. It is important to understand recurring "
+"patterns and correlations that can help countries tailor their efforts "
+"towards reducing forest loss. The causes of deforestation and forest "
+"degradation vary both regionally and temporally\\ "
+":footcite:`curtis:2018`.  Different studies refer to agricultural "
+"expansion (cropland and pasture) as the largest direct cause of global "
+"deforestation\\ "
+":footcite:`fra:2022,gibbs:2010,hosonuma:2012,kissinger:2012,sandker:2017`."
+" Commercial agriculture is estimated to be responsible for around 70-90% "
+"of the worldwide deforestation, while in Africa, both commercial and "
+"subsistence agriculture may account for similar importance in terms of "
+"forest loss, while fuel wood collection, charcoal production, and, to a "
+"lesser extent, livestock grazing in forests are the most important "
+"drivers of degradation."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:13
-msgid "However, these studies (as well as existing national studies on the drivers of deforestation and forest degradation in the Central African region) are generally based on data acquired up to 2014 and do not consider the recent trends in observed tree cover loss. They also do not take into account the importance of the spatial fragmentation of forests and the role played by degradation induced by forest exploitation :footcite:`molinario:2015`. Furthermore, they simplify causes of deforestation into a single driver, which does not adequately reflect the complex local context and interacting causes, decisions that lead to anthropogenic forest disturbance at local scales :footcite:`ferrer-velasco:2020`."
+msgid ""
+"However, these studies (as well as existing national studies on the "
+"drivers of deforestation and forest degradation in the Central African "
+"region) are generally based on data acquired up to 2014 and do not "
+"consider the recent trends in observed tree cover loss. They also do not "
+"take into account the importance of the spatial fragmentation of forests "
+"and the role played by degradation induced by forest exploitation "
+":footcite:`molinario:2015`. Furthermore, they simplify causes of "
+"deforestation into a single driver, which does not adequately reflect the"
+" complex local context and interacting causes, decisions that lead to "
+"anthropogenic forest disturbance at local scales :footcite:`ferrer-"
+"velasco:2020`."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:15
-msgid "These recent trends and the lack of updated studies result in little consensus on the main drivers and agents of forest change at regional scales. There is a pressing need to systematically quantify the direct causes of deforestation and degradation via a systematic and comprehensive approach. An updated assessment should provide validated evidence on the role and weight of different drivers of forest loss and support decision making to address related challenges. A spatially explicit approach should also facilitate the assessment of the efficiency of policies and actions in different contexts. Improved spatial data on deforestation and forest degradation, and an improved understanding of the drivers will support land use planning approaches in two pilot areas where the regional analysis indicated clear opportunity for supporting land use decision making and planning."
+msgid ""
+"These recent trends and the lack of updated studies result in little "
+"consensus on the main drivers and agents of forest change at regional "
+"scales. There is a pressing need to systematically quantify the direct "
+"causes of deforestation and degradation via a systematic and "
+"comprehensive approach. An updated assessment should provide validated "
+"evidence on the role and weight of different drivers of forest loss and "
+"support decision making to address related challenges. A spatially "
+"explicit approach should also facilitate the assessment of the efficiency"
+" of policies and actions in different contexts. Improved spatial data on "
+"deforestation and forest degradation, and an improved understanding of "
+"the drivers will support land use planning approaches in two pilot areas "
+"where the regional analysis indicated clear opportunity for supporting "
+"land use decision making and planning."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:17
-msgid "In this context, FAO has developed a robust methodology to assess the recent trends and drivers of deforestation and forest degradation via collaborative approaches in which national experts, research institutes and civil society work together and join resources and data to reach a common view on the current and future causes and drivers of anthropogenic forest disturbances. These tools generate improved information for decision making and land use planning in the relevant management context."
+msgid ""
+"In this context, FAO has developed a robust methodology to assess the "
+"recent trends and drivers of deforestation and forest degradation via "
+"collaborative approaches in which national experts, research institutes "
+"and civil society work together and join resources and data to reach a "
+"common view on the current and future causes and drivers of anthropogenic"
+" forest disturbances. These tools generate improved information for "
+"decision making and land use planning in the relevant management context."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:19
-msgid "The FAO, in partnership with the Central African Forest Initiative (CAFI), and a coalition of donor and partner countries have developed a global, standard, large-scale methodology to assess forest dynamics using cloud-computing solutions and open-source tools. The approach maps disturbances (both deforestation and degradation) and quantifies the contribution of multiple associated direct drivers. The methodology is used to assess deforestation and forest degradation trends and their associated current and historical direct drivers in six Central Africa countries as part of an international effort to mitigate climate change, support sustainable development goals, and protect biodiversity. The project builds on a collaborative approach, in which national experts, global research institutes and civil society work together, join resources and data to provide technical evidence and reach a common view on the current and historical trends, and direct drivers of forest disturbances."
+msgid ""
+"The FAO, in partnership with the Central African Forest Initiative "
+"(CAFI), and a coalition of donor and partner countries have developed a "
+"global, standard, large-scale methodology to assess forest dynamics using"
+" cloud-computing solutions and open-source tools. The approach maps "
+"disturbances (both deforestation and degradation) and quantifies the "
+"contribution of multiple associated direct drivers. The methodology is "
+"used to assess deforestation and forest degradation trends and their "
+"associated current and historical direct drivers in six Central Africa "
+"countries as part of an international effort to mitigate climate change, "
+"support sustainable development goals, and protect biodiversity. The "
+"project builds on a collaborative approach, in which national experts, "
+"global research institutes and civil society work together, join "
+"resources and data to provide technical evidence and reach a common view "
+"on the current and historical trends, and direct drivers of forest "
+"disturbances."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:22
-msgid "definitions"
+msgid "Definitions"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:24
-msgid "A robust methodology uses consistent definitions. The following terms and definitions are applied throughout the workflow."
+msgid ""
+"A robust methodology uses consistent definitions. The following terms and"
+" definitions are applied throughout the workflow."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:27
@@ -64,11 +136,18 @@ msgid "Area of interest"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:29
-msgid "The pilot study area includes the national boundaries of the six Congo Basin countries: Cameroun, Central African Republic, Equatorial Guinea, Gabon, Republic of Congo and the Democratic Republic of the Congo."
+msgid ""
+"The pilot study area includes the national boundaries of the six Congo "
+"Basin countries: Cameroun, Central African Republic, Equatorial Guinea, "
+"Gabon, Republic of Congo and the Democratic Republic of the Congo."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:31
-msgid "Because of consistency issues between border datasets, at national / regional / global levels, it was decided to take one global dataset, `Large Scale International Boundaries (LSIB), from the U.S. Department of State <https://geonode.state.gov/layers/geonode%3ALSIB>`__."
+msgid ""
+"Because of consistency issues between border datasets, at national / "
+"regional / global levels, it was decided to take one global dataset, "
+"`Large Scale International Boundaries (LSIB), from the U.S. Department of"
+" State <https://geonode.state.gov/layers/geonode%3ALSIB>`__."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:34
@@ -76,7 +155,10 @@ msgid "Forest definitions"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:36
-msgid "There are a total of four different national forest definitions in the six countries of the study region. These are applied at country level using information on canopy height, tree cover and pixel area."
+msgid ""
+"There are a total of four different national forest definitions in the "
+"six countries of the study region. These are applied at country level "
+"using information on canopy height, tree cover and pixel area."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -132,7 +214,11 @@ msgid "10%"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Exclusion of monospecific agro-industrial plantations with a purely economic vocation and using mainly agricultural management techniques. Are always considered as forest the areas subjected to natural disturbances which are likely to recover their past status."
+msgid ""
+"Exclusion of monospecific agro-industrial plantations with a purely "
+"economic vocation and using mainly agricultural management techniques. "
+"Are always considered as forest the areas subjected to natural "
+"disturbances which are likely to recover their past status."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -177,7 +263,9 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
 #, python-format
-msgid "A canopy cover criterion of around 50% for an area of 0.09 ha was used during the interpretation of the samples."
+msgid ""
+"A canopy cover criterion of around 50% for an area of 0.09 ha was used "
+"during the interpretation of the samples."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -193,7 +281,9 @@ msgid "2017"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Exclusion of agricultural activities, in particular palm groves in production."
+msgid ""
+"Exclusion of agricultural activities, in particular palm groves in "
+"production."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:48
@@ -201,11 +291,20 @@ msgid "Regional Land Cover"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:50
-msgid "The baseline map for the regional forest cover was first derived from a common classification system that was validated by the project technical committee and included land cover classes reference in national system.  The land cover classification has also been published in the `FAO Land Cover Registry <https://www.fao.org/hih-geospatial-platform/resources/projects/land-cover-legend-registry/en>`__."
+msgid ""
+"The baseline map for the regional forest cover was first derived from a "
+"common classification system that was validated by the project technical "
+"committee and included land cover classes reference in national system.  "
+"The land cover classification has also been published in the `FAO Land "
+"Cover Registry <https://www.fao.org/hih-geospatial-"
+"platform/resources/projects/land-cover-legend-registry/en>`__."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:55
-msgid "In Central African Republic and Cameroun, shrub savannas were identified as forest, in adherence to the national forest definitions of >10% tree cover"
+msgid ""
+"In Central African Republic and Cameroun, shrub savannas were identified "
+"as forest, in adherence to the national forest definitions of >10% tree "
+"cover"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -606,7 +705,10 @@ msgid "Definitions of deforestation and degradation"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:83
-msgid "In order to properly discern between deforestation and degradation, we require specific and operational definitions that can be identified from satellite image analysis."
+msgid ""
+"In order to properly discern between deforestation and degradation, we "
+"require specific and operational definitions that can be identified from "
+"satellite image analysis."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -622,23 +724,35 @@ msgid "Permanent reduction of forest cover below the forest definition"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "A temporary or permanent reduction of forest cover that remains above the forest definition"
+msgid ""
+"A temporary or permanent reduction of forest cover that remains above the"
+" forest definition"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "**Conversion of forest** to other land use: agriculture, pasture, mineral exploitation, development, etc..."
+msgid ""
+"**Conversion of forest** to other land use: agriculture, pasture, mineral"
+" exploitation, development, etc..."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Includes areas where timber is exploited, or trees removes and where forest may be expected to regenerate naturally or with silvicultural methods."
+msgid ""
+"Includes areas where timber is exploited, or trees removes and where "
+"forest may be expected to regenerate naturally or with silvicultural "
+"methods."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Excludes areas of planned deforestation, such as timber extraction, or in areas where the forest is expected to regenerate naturally or with silvicultural methods."
+msgid ""
+"Excludes areas of planned deforestation, such as timber extraction, or in"
+" areas where the forest is expected to regenerate naturally or with "
+"silvicultural methods."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Includes areas where impacts, over exploitation or environmental conditions prohibit regeneration above the forest cover definition"
+msgid ""
+"Includes areas where impacts, over exploitation or environmental "
+"conditions prohibit regeneration above the forest cover definition"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:94
@@ -646,7 +760,11 @@ msgid "Example of deforestation"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:96
-msgid "Deforestation is recognizable in images by a permanent change in forest cover. In high-resolution images, we can often see bare ground, felled trees, and sometimes the beginning of agricultural or other driving activities."
+msgid ""
+"Deforestation is recognizable in images by a permanent change in forest "
+"cover. In high-resolution images, we can often see bare ground, felled "
+"trees, and sometimes the beginning of agricultural or other driving "
+"activities."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:104
@@ -654,7 +772,13 @@ msgid "Example of degradation"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:106
-msgid "Degradation is more difficult to determine because changes are more subtle, sometimes a few trees removed, and the tree cover remains above the national definition. It is therefore necessary to look at the whole time series and make sure that the changes are not deforestation. Degradation is also not the same everywhere and will differ by forest type and environmental and human context."
+msgid ""
+"Degradation is more difficult to determine because changes are more "
+"subtle, sometimes a few trees removed, and the tree cover remains above "
+"the national definition. It is therefore necessary to look at the whole "
+"time series and make sure that the changes are not deforestation. "
+"Degradation is also not the same everywhere and will differ by forest "
+"type and environmental and human context."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:114
@@ -662,7 +786,15 @@ msgid "Date convention"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:116
-msgid "The time period for this pilot study is 2015-2022, with an assessment of changes encompassing 31/12/2015 to 31/12/2022. The year 2015 was used as the baseline, with the detection of annual changes in deforestation and degradation starting in 2016 through 2022. This fits with the availability of Sentinel satellite imagery in 2015 (although incomplete for that year), as well as new monthly high-resolution mosaics available for the tropics from Planet, which are available from 2015 and are used for additional validation."
+msgid ""
+"The time period for this pilot study is 2015-2022, with an assessment of "
+"changes encompassing 31/12/2015 to 31/12/2022. The year 2015 was used as "
+"the baseline, with the detection of annual changes in deforestation and "
+"degradation starting in 2016 through 2022. This fits with the "
+"availability of Sentinel satellite imagery in 2015 (although incomplete "
+"for that year), as well as new monthly high-resolution mosaics available "
+"for the tropics from Planet, which are available from 2015 and are used "
+"for additional validation."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:118
@@ -674,7 +806,11 @@ msgid "A product for the year YYYY is considered as of 31/12/YYYY."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:122
-msgid "This convention allows a consistent approach to assessing change products. A change map from year1 to year2 will be consistent with both year1 and year2 maps. The status of the year takes into account any changes that occurred during the year."
+msgid ""
+"This convention allows a consistent approach to assessing change "
+"products. A change map from year1 to year2 will be consistent with both "
+"year1 and year2 maps. The status of the year takes into account any "
+"changes that occurred during the year."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:125
@@ -682,7 +818,10 @@ msgid "Direct Driver definitions"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:127
-msgid "A total of eight direct drivers were defined by their specific characteristics identifiable in high resolution satellite imagery from Planet."
+msgid ""
+"A total of eight direct drivers were defined by their specific "
+"characteristics identifiable in high resolution satellite imagery from "
+"Planet."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:132
@@ -702,7 +841,11 @@ msgid "Artisanal agriculture"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:138
-msgid "Small-scale agriculture is composed of small, informal, unstructured and irregular agricultural plots covering an area of less than 5ha. The presence of fires (slash-and-burn agriculture) can be observed, and the land is often soil cover in various stages of cultivation."
+msgid ""
+"Small-scale agriculture is composed of small, informal, unstructured and "
+"irregular agricultural plots covering an area of less than 5ha. The "
+"presence of fires (slash-and-burn agriculture) can be observed, and the "
+"land is often soil cover in various stages of cultivation."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:139
@@ -710,7 +853,13 @@ msgid "Industrial agriculture"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:142
-msgid "Industrial agriculture is characterized by agricultural areas larger than 5 ha that tend to be homogeneous and often consist of a single crop. In some cases, agriculture may be more varied and consist of many fields closely packed together. Therefore, large areas consisting of many small fields cultivated at the same time are also considered industrial agriculture under the definition."
+msgid ""
+"Industrial agriculture is characterized by agricultural areas larger than"
+" 5 ha that tend to be homogeneous and often consist of a single crop. In "
+"some cases, agriculture may be more varied and consist of many fields "
+"closely packed together. Therefore, large areas consisting of many small "
+"fields cultivated at the same time are also considered industrial "
+"agriculture under the definition."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:143
@@ -718,7 +867,12 @@ msgid "Infrastructure"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:146
-msgid "Roads are visible in the images with linear features and are identified as motorized when they are wide enough (5m) to carry vehicle traffic. Small irregular paths through vegetation are not included. Roads can be large highways, or logging trails, and are most often found with other engines such as villages, mining facilities."
+msgid ""
+"Roads are visible in the images with linear features and are identified "
+"as motorized when they are wide enough (5m) to carry vehicle traffic. "
+"Small irregular paths through vegetation are not included. Roads can be "
+"large highways, or logging trails, and are most often found with other "
+"engines such as villages, mining facilities."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:147
@@ -726,7 +880,12 @@ msgid "Settlements"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:150
-msgid "Villages and settlements can be hard or soft roofed, they can be buildings or huts, and they are often accompanied by roads and other drivers such as small-scale agriculture. This engine can be an urban area (left image), or a small isolated village in a forest stand (right image)."
+msgid ""
+"Villages and settlements can be hard or soft roofed, they can be "
+"buildings or huts, and they are often accompanied by roads and other "
+"drivers such as small-scale agriculture. This engine can be an urban area"
+" (left image), or a small isolated village in a forest stand (right "
+"image)."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:151
@@ -734,7 +893,11 @@ msgid "Artisanal forestry"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:154
-msgid "Small-scale or artisanal logging is characterized by the selective extraction of trees in an irregular manner, leaving a tree cover. These are areas that are not visibly cultivated. These areas are often found in places accessible by small roads or villages."
+msgid ""
+"Small-scale or artisanal logging is characterized by the selective "
+"extraction of trees in an irregular manner, leaving a tree cover. These "
+"are areas that are not visibly cultivated. These areas are often found in"
+" places accessible by small roads or villages."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1 ../../source/workflows/drivers.rst:155
@@ -742,7 +905,11 @@ msgid "Industrial forestry"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:158
-msgid "Large-scale or industrial forestry is recognizable by the presence of logging roads, along which selective logging degradation occurs. These roads may be recent or old, and the canopy can quickly cover them, so all years of imagery acquired over the entire study period are evaluated."
+msgid ""
+"Large-scale or industrial forestry is recognizable by the presence of "
+"logging roads, along which selective logging degradation occurs. These "
+"roads may be recent or old, and the canopy can quickly cover them, so all"
+" years of imagery acquired over the entire study period are evaluated."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:159
@@ -750,7 +917,11 @@ msgid "Artisanal mine"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:162
-msgid "Small-scale mining is characterized by muddy clearings, and usually ponds or water catchments and may feature turbid water. Artisanal in nature, the clearings are generally small, isolated, and often located along streams."
+msgid ""
+"Small-scale mining is characterized by muddy clearings, and usually ponds"
+" or water catchments and may feature turbid water. Artisanal in nature, "
+"the clearings are generally small, isolated, and often located along "
+"streams."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:163
@@ -758,15 +929,26 @@ msgid "Industrial mine"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:166
-msgid "Large-scale mining is characterized by large ponds, open pits and clearings, as well as extensive infrastructure and roads."
+msgid ""
+"Large-scale mining is characterized by large ponds, open pits and "
+"clearings, as well as extensive infrastructure and roads."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:168
-msgid "To address the overlap of drivers in the same location and interpret local context, our approach identifies archetypes, or common driver combinations which represent realities and processes on the ground. The most common archetype consists of four drivers, which include artisanal agriculture, artisanal forestry, roads and settlements, which is representative of the agricultural mosaic, or so-called “rural complex” commonly observed in the region\\ :footcite:`molinario:2020`."
+msgid ""
+"To address the overlap of drivers in the same location and interpret "
+"local context, our approach identifies archetypes, or common driver "
+"combinations which represent realities and processes on the ground. The "
+"most common archetype consists of four drivers, which include artisanal "
+"agriculture, artisanal forestry, roads and settlements, which is "
+"representative of the agricultural mosaic, or so-called “rural complex” "
+"commonly observed in the region\\ :footcite:`molinario:2020`."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:170
-msgid "The observed combinations of drivers are grouped into thematic classes or archetypes."
+msgid ""
+"The observed combinations of drivers are grouped into thematic classes or"
+" archetypes."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -774,11 +956,15 @@ msgid "Rural complex"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Artisanal agriculture with roads and settlements, with or without artisanal forestry, and no industrial drivers"
+msgid ""
+"Artisanal agriculture with roads and settlements, with or without "
+"artisanal forestry, and no industrial drivers"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "Artisanal forestry with or without “other” driver, or with settlements or roads without any artisanal agriculture"
+msgid ""
+"Artisanal forestry with or without “other” driver, or with settlements or"
+" roads without any artisanal agriculture"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -814,7 +1000,9 @@ msgid "Artisanal mining"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
-msgid "No more than 2 drivers, including artisanal mining, no industrial drivers present"
+msgid ""
+"No more than 2 drivers, including artisanal mining, no industrial drivers"
+" present"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:1
@@ -838,27 +1026,58 @@ msgid "Methodology"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:188
-msgid "The major components of this this methodology include the generation of wall-to-wall geospatial data on forest cover types, changes, and discerning areas of deforestation from degradation for the entire Central African region. Next, these products are validated via visual interpretation and the presence of various direct drivers are identified to evaluate the direct causes of disturbance, and interpreted in the context of strategic investments for climate change mitigation and support for national efforts for emissions reduction."
+msgid ""
+"The major components of this this methodology include the generation of "
+"wall-to-wall geospatial data on forest cover types, changes, and "
+"discerning areas of deforestation from degradation for the entire Central"
+" African region. Next, these products are validated via visual "
+"interpretation and the presence of various direct drivers are identified "
+"to evaluate the direct causes of disturbance, and interpreted in the "
+"context of strategic investments for climate change mitigation and "
+"support for national efforts for emissions reduction."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:190
-msgid "The methodology uses FAO’s OpenForis suite of tools including the SEPAL platform for satellite data analysis, Collect Earth Online and Google Earth Engine. The approach analyses dense satellite time-series to generate geospatial data on forest changes which are then validated and interpreted for direct drivers in 5 major steps:"
+msgid ""
+"The methodology uses FAO’s OpenForis suite of tools including the SEPAL "
+"platform for satellite data analysis, Collect Earth Online and Google "
+"Earth Engine. The approach analyses dense satellite time-series to "
+"generate geospatial data on forest changes which are then validated and "
+"interpreted for direct drivers in 5 major steps:"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:192
-msgid ":ref:`workflows:drivers:mosaic`: processing of optical (Landsat 4/5/7/8) and radar (Sentinel 1/ALOS PALSAR) satellite images to create mosaics for the classification of wall-to-wall maps of vegetation types, recoded to a binary forest mask (following national forest definitions), and forest fragmentation assessment for the baseline year 2015"
+msgid ""
+":ref:`workflows:drivers:mosaic`: processing of optical (Landsat 4/5/7/8) "
+"and radar (Sentinel 1/ALOS PALSAR) satellite images to create mosaics for"
+" the classification of wall-to-wall maps of vegetation types, recoded to "
+"a binary forest mask (following national forest definitions), and forest "
+"fragmentation assessment for the baseline year 2015"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:194
-msgid ":ref:`workflows:drivers:series`: processing of optical satellite (Landsat 4/5/7/8) time series data covering 2012-2020 (2012-2015 is the historical time period, monitoring is from 2016-2020), using seasonal models and break detection algorithms to produce a forest change map for 2015-2020 at regional scale identifying areas of both deforestation and degradation."
+msgid ""
+":ref:`workflows:drivers:series`: processing of optical satellite (Landsat"
+" 4/5/7/8) time series data covering 2012-2020 (2012-2015 is the "
+"historical time period, monitoring is from 2016-2020), using seasonal "
+"models and break detection algorithms to produce a forest change map for "
+"2015-2020 at regional scale identifying areas of both deforestation and "
+"degradation."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:196
-msgid ":ref:`workflows:drivers:stratification`: Stratified random sampling is conducted on the change map from step 2. Systematic validation for all points identified as change, plus a sample of stable points is conducted in Collect Earth Online, evaluating land cover types, changes and dates of change and the identification of the presence of direct drivers."
+msgid ""
+":ref:`workflows:drivers:stratification`: Stratified random sampling is "
+"conducted on the change map from step 2. Systematic validation for all "
+"points identified as change, plus a sample of stable points is conducted "
+"in Collect Earth Online, evaluating land cover types, changes and dates "
+"of change and the identification of the presence of direct drivers."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:198
-msgid ":ref:`workflows:drivers:quantification`: The quantification of direct drivers by forest types, fragmentation class"
+msgid ""
+":ref:`workflows:drivers:quantification`: The quantification of direct "
+"drivers by forest types, fragmentation class"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:208
@@ -866,11 +1085,21 @@ msgid "Creating cloud-free mosaics"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:210
-msgid "To accurately determine disturbances within forest ecosystems and distinguish from other dynamics occurring in non-forest areas, a baseline forest mask is required. This is achieved by classifying cloud-free image mosaics, which are created using the optical and radar mosaic recipes."
+msgid ""
+"To accurately determine disturbances within forest ecosystems and "
+"distinguish from other dynamics occurring in non-forest areas, a baseline"
+" forest mask is required. This is achieved by classifying cloud-free "
+"image mosaics, which are created using the optical and radar mosaic "
+"recipes."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:212
-msgid "As you can see in this `online animation <https://drive.google.com/file/d/1H5Br82CoE1QJnri0cBl1Pf2tRJV3kW96/view>`__, clouds are persistent in the Congo Basin region. For this reason we will produce mosaics of optical cloud-free imagery, and radar (cloud independent) composites for the best observations of the study region."
+msgid ""
+"As you can see in this `online animation "
+"<https://drive.google.com/file/d/1H5Br82CoE1QJnri0cBl1Pf2tRJV3kW96/view>`__,"
+" clouds are persistent in the Congo Basin region. For this reason we will"
+" produce mosaics of optical cloud-free imagery, and radar (cloud "
+"independent) composites for the best observations of the study region."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:215
@@ -878,23 +1107,47 @@ msgid "Optical cloud-free composite"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:217
-msgid "Multi-temporal image mosaics are compiled from data collected over several months or years. Cloud-free pixels from multiple images are integrated into an image with fewer clouds, haze and shadows using the pixel quality band provided with image metadata."
+msgid ""
+"Multi-temporal image mosaics are compiled from data collected over "
+"several months or years. Cloud-free pixels from multiple images are "
+"integrated into an image with fewer clouds, haze and shadows using the "
+"pixel quality band provided with image metadata."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:219
-msgid "We evaluated the availability of Landsat 4,5,7 and 8 images for the creation of optical mosaics for the baseline year or 2015. As you can see from the figure below, only certain sensors are available for certain time periods – from 2003 onwards the Landsat 7 sensor experienced a malfunction which results in data gaps in strips. This sensor should be only included when necessary, i.e. when not enough imagery is available. Luckily in SEPAL the selection of sensors is automatic based on the selected date and only provides the available options."
+msgid ""
+"We evaluated the availability of Landsat 4,5,7 and 8 images for the "
+"creation of optical mosaics for the baseline year or 2015. As you can see"
+" from the figure below, only certain sensors are available for certain "
+"time periods – from 2003 onwards the Landsat 7 sensor experienced a "
+"malfunction which results in data gaps in strips. This sensor should be "
+"only included when necessary, i.e. when not enough imagery is available. "
+"Luckily in SEPAL the selection of sensors is automatic based on the "
+"selected date and only provides the available options."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:227
-msgid "The coverage of Landsat over time is shown below. The western part of the study region along the coast, results in cloudy or data gaps in Gabon, Equatorial Guinea and Cameroon."
+msgid ""
+"The coverage of Landsat over time is shown below. The western part of the"
+" study region along the coast, results in cloudy or data gaps in Gabon, "
+"Equatorial Guinea and Cameroon."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:234
-msgid "To create our optical mosaic, we will use the SEPAL optical mosaic recipe. To learn more about the different available parameters and how to use the recipe, please see :doc:`../cookbook/optical_mosaic`."
+msgid ""
+"To create our optical mosaic, we will use the SEPAL optical mosaic "
+"recipe. To learn more about the different available parameters and how to"
+" use the recipe, please see :doc:`../cookbook/optical_mosaic`."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:236
-msgid "In this example we will use a  custom asset from GEE for the :btn:`AOI` parameter: :code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. It includes an ISO column to select Congo Basin countries according to their three digit code. See :doc:`../feature/aoi_selector` for more AOI selection methods."
+msgid ""
+"In this example we will use a  custom asset from GEE for the :btn:`AOI` "
+"parameter: "
+":code:`projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple`. It "
+"includes an ISO column to select Congo Basin countries according to their"
+" three digit code. See :doc:`../feature/aoi_selector` for more AOI "
+"selection methods."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:238
@@ -902,31 +1155,55 @@ msgid "In the :btn:`DAT` section you can select the dates of interest."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:240
-msgid "For later years (after 2018), the sensor coverage is good so you can safely select all images of a single year."
+msgid ""
+"For later years (after 2018), the sensor coverage is good so you can "
+"safely select all images of a single year."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:242
-msgid "For earlier eras, e.g. 2015 use the advanced option to add images from prior years from a targeted season (in this case the full year). This will help to fill the gaps in cloudy areas."
+msgid ""
+"For earlier eras, e.g. 2015 use the advanced option to add images from "
+"prior years from a targeted season (in this case the full year). This "
+"will help to fill the gaps in cloudy areas."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:250
-msgid "For data sources, more is generally better. Select all Landsat options for a consistent mosaic. If you like, Sentinel-2 can be added for more data, but as the tiling system of the 2 sensors are different you will be forced to use all available images - the option to select images will not be available."
+msgid ""
+"For data sources, more is generally better. Select all Landsat options "
+"for a consistent mosaic. If you like, Sentinel-2 can be added for more "
+"data, but as the tiling system of the 2 sensors are different you will be"
+" forced to use all available images - the option to select images will "
+"not be available."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:252
-msgid "If you are only working with Landsat (or only with Sentinel), you can manually select scenes if you want to tailor your mosaic and you have a lot of time to devote to your mosaic. :btn:`USE ALL SCENES` is the quicker and simpler approach and recommended for large areas."
+msgid ""
+"If you are only working with Landsat (or only with Sentinel), you can "
+"manually select scenes if you want to tailor your mosaic and you have a "
+"lot of time to devote to your mosaic. :btn:`USE ALL SCENES` is the "
+"quicker and simpler approach and recommended for large areas."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:254
-msgid "For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:"
+msgid ""
+"For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can"
+" exclude pixels with low NDVI (particularly if you have a long time "
+"period) and select the following options:"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:257
-msgid "You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`"
+msgid ""
+"You can then retrieve the mosaic as a Google asset at 30m resolution. We "
+"select the original bands as all other indices can be recalculated later:"
+" :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, "
+":btn:`SWIR2`, :btn:`THERMAL`"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:259
-msgid "Once the export is finished, you can view the asset in Google Earth Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the above parameters:"
+msgid ""
+"Once the export is finished, you can view the asset in Google Earth "
+"Engine or SEPAL. Here is the 2015 mosaic of the Congo Basin using the "
+"above parameters:"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:267
@@ -934,15 +1211,24 @@ msgid "ALOS Palsar mosaics"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:269
-msgid "Radar imagery has the added benefit of being cloud-free by design as active sensors are not influenced by clouds."
+msgid ""
+"Radar imagery has the added benefit of being cloud-free by design as "
+"active sensors are not influenced by clouds."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:271
-msgid "Alos Palsar is a L-band radar that gives good results for monitoring forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL provides an application to select, process and download them to your user space pr Google Earth Engine Account."
+msgid ""
+"Alos Palsar is a L-band radar that gives good results for monitoring "
+"forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from"
+" the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL "
+"provides an application to select, process and download them to your user"
+" space pr Google Earth Engine Account."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:273
-msgid "For more information about the parameters, Please see :doc:`../modules/dwn/alos_mosaics`."
+msgid ""
+"For more information about the parameters, Please see "
+":doc:`../modules/dwn/alos_mosaics`."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:277
@@ -950,23 +1236,37 @@ msgid "Sentinel-1 mosaics"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:279
-msgid "You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus radar data."
+msgid ""
+"You can use the Sentinel-1 recipe to create a mosaic from ESA Copernicus "
+"radar data."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:281
-msgid "The aoi selection is the same as for the optical mosaic. For the dates you can enter a year, a date range, or a single date. When you add a year or date range, SEPAL will provide a “time-scan” composite which includes bands which are statistical metrics of the range of data including phase and amplitude which assess the phenology and variations within the time period."
+msgid ""
+"The aoi selection is the same as for the optical mosaic. For the dates "
+"you can enter a year, a date range, or a single date. When you add a year"
+" or date range, SEPAL will provide a “time-scan” composite which includes"
+" bands which are statistical metrics of the range of data including phase"
+" and amplitude which assess the phenology and variations within the time "
+"period."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:284
-msgid "For the best results in the Congo Basin the following parameters are proposed:"
+msgid ""
+"For the best results in the Congo Basin the following parameters are "
+"proposed:"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:286
-msgid "Both :btn:`ascending` and :btn:`descending` orbits will ensure complete coverage of the AOI"
+msgid ""
+"Both :btn:`ascending` and :btn:`descending` orbits will ensure complete "
+"coverage of the AOI"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:287
-msgid "The :btn:`terrain` correction will mask any errors due to topography, or terrain “shadows”"
+msgid ""
+"The :btn:`terrain` correction will mask any errors due to topography, or "
+"terrain “shadows”"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:288
@@ -978,7 +1278,12 @@ msgid ":btn:`moderate` outlier removal will provide the most consistent results"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:291
-msgid "Select which bands to export in the retrieve window, you may select all of them depending on the space available in your GEE repository or SEPAL workspace. Resolution can also be selected accordingly - you can choose :btn:`30` to be at the same scale as the optical mosaic, which will be classified in the next step."
+msgid ""
+"Select which bands to export in the retrieve window, you may select all "
+"of them depending on the space available in your GEE repository or SEPAL "
+"workspace. Resolution can also be selected accordingly - you can choose "
+":btn:`30` to be at the same scale as the optical mosaic, which will be "
+"classified in the next step."
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:297
@@ -987,7 +1292,6 @@ msgstr ""
 
 #: ../../source/workflows/drivers.rst:301
 #: ../../source/workflows/drivers.rst:310
-#: ../../source/workflows/drivers.rst:319
 msgid "This part of the documentation is still under construction."
 msgstr ""
 
@@ -996,7 +1300,76 @@ msgid "Sample Stratification"
 msgstr ""
 
 #: ../../source/workflows/drivers.rst:315
-msgid "Quantify Direct Drivers"
+msgid "Identification of Direct Drivers"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:316
+msgid ""
+"Direct drivers of forest change and disturbance are multiple, overlapping"
+" and interacting – as deforestation and degradation cannot be reduced to "
+"one single cause. Therefore, the assessment specifically analyses the "
+"various combinations of overlapping drivers, providing context and "
+"richness."
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:318
+msgid ""
+"The scope of the assessment is to identify the multiple direct drivers of"
+" deforestation and degradation in areas of forest disturbance. As a "
+"result, this assessment can:"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:320
+msgid ""
+"Determine where direct drivers are present and overlap in areas of forest"
+" disturbance"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:321
+msgid "Assess the relative contribution of direct drivers in the region, country"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:322
+msgid "Determine direct drivers relative to forest type and fragmentation class"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:323
+msgid ""
+"Determine the relative weight of direct drivers over time (in relation to"
+" the date of detected disturbance)"
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:325
+msgid ""
+"The analysis performed is a drivers assessment, and not a land cover "
+"change analysis. A land cover change map or fate of land post "
+"disturbance, where forest loss is measured in terms of area of land cover"
+" or use is produced though different approaches than employed here. "
+"Furthermore, a land cover or pixel-level analysis simply does not "
+"consider driver context. Finally, land cover maps do not address the "
+"drivers of forest degradation (where disturbance occurs, but the land "
+"cover is still forest) which is a crucial element of this study."
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:327
+msgid ""
+"The project technical committee agreed upon nine unique direct drivers "
+"and their characteristics to be used in the context of the project, and "
+"piloting in Central Africa. The definitions were based on what is "
+"potentially visible and recognizable in high resolution satellite imagery"
+" mosaics from Planet which are available over the entire study period "
+"(2015-2020). Each driver and its definition and characteristics are "
+"described here :doc:`../modules/drivers/direct-driver-definitions`."
+msgstr ""
+
+#: ../../source/workflows/drivers.rst:329
+msgid ""
+"In order to identify direct drivers, an survey form is developed in the "
+"Collect Earth Online (CEO) web platform to enable visual interpretation "
+"and identification of the presence or absence of forest, the land cover "
+"type in 2015, the type of change (deforestation or degradation) and the "
+"year of change (2015-2022), along with one ore more observed direct "
+"drivers within a 2km wide square plot around the sample point."
 msgstr ""
 
 #~ msgid ""
@@ -1019,5 +1392,11 @@ msgstr ""
 #~ " as forest the areas victims of "
 #~ "natural disturbances which are likely to"
 #~ " recover their past status."
+#~ msgstr ""
+
+#~ msgid "definitions"
+#~ msgstr ""
+
+#~ msgid "Quantify Direct Drivers"
 #~ msgstr ""
 
