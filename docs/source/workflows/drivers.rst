@@ -312,7 +312,7 @@ Sample Stratification
 .. _workflows:drivers:quantification:
 
 Identification of Direct Drivers
------------------------
+---------------------------------
 Direct drivers of forest change and disturbance are multiple, overlapping and interacting – as deforestation and degradation cannot be reduced to one single cause. Therefore, the assessment specifically analyses the various combinations of overlapping drivers, providing context and richness. 
 
 The scope of the assessment is to identify the multiple direct drivers of deforestation and degradation in areas of forest disturbance. As a result, this assessment can:
