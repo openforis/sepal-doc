@@ -1,30 +1,29 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 15:44+0000\n"
-"PO-Revision-Date: 2023-01-21 16:20+0000\n"
+"PO-Revision-Date: 2023-07-21 06:32\n"
 "Last-Translator: \n"
-"Language: ru_RU\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
-"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
-">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/gdrive.po\n"
+"X-Crowdin-File-ID: 43\n"
+"Language: ru_RU\n"
 
 #: ../../source/cli/gdrive.rst:2
 msgid "Google Drive"
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:4
-msgid ""
-"The **Drive** CLI is a utility that allows managing a Google Drive "
-"account from the SEPAL console (for more information, see the Readme file"
-" directly in the GitHub repository https://github.com/odeke-em/drive)."
+msgid "The **Drive** CLI is a utility that allows managing a Google Drive account from the SEPAL console (for more information, see the Readme file directly in the GitHub repository https://github.com/odeke-em/drive)."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:7
@@ -36,24 +35,15 @@ msgid "Initialize drive connection"
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:12
-msgid ""
-"Before running any of the **Drive** commands, start a session by running "
-"the following line:"
+msgid "Before running any of the **Drive** commands, start a session by running the following line:"
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:18
-msgid ""
-"Copy the URL that is displayed in the terminal and paste it into your "
-"browser. Log in to your Google account and \"trust the connection\" by "
-"selecting the \"allow\" button. An authorization code will be displayed; "
-"copy and paste it into the SEPAL terminal. You are now ready to use the "
-":code:`Drive` CLI tool."
+msgid "Copy the URL that is displayed in the terminal and paste it into your browser. Log in to your Google account and \"trust the connection\" by selecting the \"allow\" button. An authorization code will be displayed; copy and paste it into the SEPAL terminal. You are now ready to use the :code:`Drive` CLI tool."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:22
-msgid ""
-"Since the authorization token will expire every session, this process has"
-" to be repeated each time you want to use the :code:`Drive` command tool."
+msgid "Since the authorization token will expire every session, this process has to be repeated each time you want to use the :code:`Drive` command tool."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:25
@@ -61,9 +51,7 @@ msgid "Upload files"
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:27
-msgid ""
-"You can upload files from your SEPAL environment by using the "
-":code:`Push` command."
+msgid "You can upload files from your SEPAL environment by using the :code:`Push` command."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:38
@@ -71,15 +59,11 @@ msgid "Download files"
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:40
-msgid ""
-"To download files, use the :code:`Pull` command. This command will create"
-" files that don't exist locally but do remotely."
+msgid "To download files, use the :code:`Pull` command. This command will create files that don't exist locally but do remotely."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:50
-msgid ""
-"This command will syncronize the files that are not present in your SEPAL"
-" session but are present in your Google Drive account folder."
+msgid "This command will syncronize the files that are not present in your SEPAL session but are present in your Google Drive account folder."
 msgstr ""
 
 #: ../../source/cli/gdrive.rst:53
