@@ -1,25 +1,25 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 15:44+0000\n"
-"PO-Revision-Date: 2023-03-15 01:06+0000\n"
+"PO-Revision-Date: 2023-07-21 06:32\n"
 "Last-Translator: \n"
-"Language: ar_SA\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/team/contribute.po\n"
+"X-Crowdin-File-ID: 107\n"
+"Language: ar_SA\n"
 
 #: ../../source/_templates/disclaimer.rst:3
-msgid ""
-"This section is intended for the Sepal team members only. If you ended up"
-" here there is no need to read this documentation, You'll not have access"
-" to the referred tools"
+msgid "This section is intended for the Sepal team members only. If you ended up here there is no need to read this documentation, You'll not have access to the referred tools"
 msgstr ""
 
 #: ../../source/team/contribute.rst:4
@@ -27,22 +27,15 @@ msgid "Contribute"
 msgstr ""
 
 #: ../../source/team/contribute.rst:6
-msgid ""
-"We are always happy to receive feedback on SEPAL documentation from "
-"users, partners, and colleagues."
+msgid "We are always happy to receive feedback on SEPAL documentation from users, partners, and colleagues."
 msgstr ""
 
 #: ../../source/team/contribute.rst:8
-msgid ""
-"Before contributing, please review the SEPAL `code of conduct "
-"<https://github.com/openforis/sepal-"
-"doc/blob/master/CODE_OF_CONDUCT.md>`_."
+msgid "Before contributing, please review the SEPAL `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_."
 msgstr ""
 
 #: ../../source/team/contribute.rst:10
-msgid ""
-"Then, communicate your proposed contributions to the SEPAL team by asking"
-" the community or reporting an issue on Github."
+msgid "Then, communicate your proposed contributions to the SEPAL team by asking the community or reporting an issue on Github."
 msgstr ""
 
 #: ../../source/team/contribute.rst:13
@@ -50,19 +43,11 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../source/team/contribute.rst:15
-msgid ""
-"The :code:`sepal-doc` repository has a fixed structure that needs to be "
-"respected to follow Sphinx builder requirements. All modifications should"
-" be made in the folder, :code:`sepal-doc/docs/source/`. Images associated"
-" with a page should be stored in the corresponding folder, :code:`sepal-"
-"doc/docs/source/_images/`. If files are misplaced, their build into .html"
-" pages cannot be guaranteed."
+msgid "The :code:`sepal-doc` repository has a fixed structure that needs to be respected to follow Sphinx builder requirements. All modifications should be made in the folder, :code:`sepal-doc/docs/source/`. Images associated with a page should be stored in the corresponding folder, :code:`sepal-doc/docs/source/_images/`. If files are misplaced, their build into .html pages cannot be guaranteed."
 msgstr ""
 
 #: ../../source/team/contribute.rst:17
-msgid ""
-"Please carefully review the following instructions before contributing to"
-" SEPAL documentation."
+msgid "Please carefully review the following instructions before contributing to SEPAL documentation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:20
@@ -70,11 +55,7 @@ msgid "Tools"
 msgstr ""
 
 #: ../../source/team/contribute.rst:22
-msgid ""
-"The :code:`sepal-doc` repository creates and organizes .rst files by "
-"leveraging the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ "
-"library to create the build and the `ReadTheDoc "
-"<https://readthedocs.org>`_ website to distribute the build."
+msgid "The :code:`sepal-doc` repository creates and organizes .rst files by leveraging the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build and the `ReadTheDoc <https://readthedocs.org>`_ website to distribute the build."
 msgstr ""
 
 #: ../../source/team/contribute.rst:26
@@ -82,15 +63,11 @@ msgid "To work on this project you will need the following:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:28
-msgid ""
-"basic knowledge of any lightweight markup language (e.g. markdown, latex,"
-" etc.), which will help you understand .rst files;"
+msgid "basic knowledge of any lightweight markup language (e.g. markdown, latex, etc.), which will help you understand .rst files;"
 msgstr ""
 
 #: ../../source/team/contribute.rst:29
-msgid ""
-"the `Sphinx directives documentation <https://www.sphinx-"
-"doc.org/en/master/usage/restructuredtext/directives.html>`_;"
+msgid "the `Sphinx directives documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_;"
 msgstr ""
 
 #: ../../source/team/contribute.rst:30
@@ -106,21 +83,15 @@ msgid "Guidelines"
 msgstr ""
 
 #: ../../source/team/contribute.rst:36
-msgid ""
-"There are only two guidelines to follow that are not directly specified "
-"in the .rst documentation or template:"
+msgid "There are only two guidelines to follow that are not directly specified in the .rst documentation or template:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:38
-msgid ""
-"respect the following indentation: :code:`4 spaces` (this includes "
-"directives [option and content] and bullet points); and"
+msgid "respect the following indentation: :code:`4 spaces` (this includes directives [option and content] and bullet points); and"
 msgstr ""
 
 #: ../../source/team/contribute.rst:39
-msgid ""
-"use the following symbols for section headings (from heading 1 to heading"
-" 6) :code:`=`, :code:`-`, :code:`^`, :code:`\"`, :code:`#`, :code:`+`"
+msgid "use the following symbols for section headings (from heading 1 to heading 6) :code:`=`, :code:`-`, :code:`^`, :code:`\"`, :code:`#`, :code:`+`"
 msgstr ""
 
 #: ../../source/team/contribute.rst:64
@@ -128,9 +99,7 @@ msgid "Custom"
 msgstr ""
 
 #: ../../source/team/contribute.rst:66
-msgid ""
-"The following custom directives were added to help build our "
-"documentation: videos, line breaks, Graphviz, icons, and buttons."
+msgid "The following custom directives were added to help build our documentation: videos, line breaks, Graphviz, icons, and buttons."
 msgstr ""
 
 #: ../../source/team/contribute.rst:69
@@ -138,9 +107,7 @@ msgid "Videos"
 msgstr ""
 
 #: ../../source/team/contribute.rst:71
-msgid ""
-"There are two ReST directives for embedding videos from Youtube "
-"(:code:`youtube`) and Vimeo (:code:`vimeo`)."
+msgid "There are two ReST directives for embedding videos from Youtube (:code:`youtube`) and Vimeo (:code:`vimeo`)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:73
@@ -148,10 +115,7 @@ msgid "The video ID must be included."
 msgstr ""
 
 #: ../../source/team/contribute.rst:75
-msgid ""
-"While the default height is **281**, the default width is **500**, and "
-"the default alignment is **left**, both directives can be customized by "
-"specifying the following:"
+msgid "While the default height is **281**, the default width is **500**, and the default alignment is **left**, both directives can be customized by specifying the following:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:77
@@ -176,9 +140,7 @@ msgid "Line breaks"
 msgstr ""
 
 #: ../../source/team/contribute.rst:96
-msgid ""
-"The ReST directive for creating a line break in your documentation does "
-"note require any argument."
+msgid "The ReST directive for creating a line break in your documentation does note require any argument."
 msgstr ""
 
 #: ../../source/team/contribute.rst:107
@@ -186,15 +148,11 @@ msgid "Graphviz"
 msgstr ""
 
 #: ../../source/team/contribute.rst:109
-msgid ""
-"There is also a directive to embed Graphviz code. The input code for dot "
-"is given as the content."
+msgid "There is also a directive to embed Graphviz code. The input code for dot is given as the content."
 msgstr ""
 
 #: ../../source/team/contribute.rst:111
-msgid ""
-"To better understand graphviz, see `Graphviz documentation <https://www"
-".sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_."
+msgid "To better understand graphviz, see `Graphviz documentation <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_."
 msgstr ""
 
 #: ../../source/team/contribute.rst:130
@@ -202,15 +160,11 @@ msgid "Icons"
 msgstr ""
 
 #: ../../source/team/contribute.rst:132
-msgid ""
-"There is a ReST role to include in-line icons in documentation (usualy "
-"when referencing a btn)."
+msgid "There is a ReST role to include in-line icons in documentation (usualy when referencing a btn)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:134 ../../source/team/contribute.rst:147
-msgid ""
-"You can find the icon you're looking for in the Font Awesome `library "
-"<https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__."
+msgid "You can find the icon you're looking for in the Font Awesome `library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__."
 msgstr ""
 
 #: ../../source/team/contribute.rst:140
@@ -222,9 +176,7 @@ msgid "Buttons"
 msgstr ""
 
 #: ../../source/team/contribute.rst:145
-msgid ""
-"There is a ReSt role to include a button in the documentation (with or "
-"without text)."
+msgid "There is a ReSt role to include a button in the documentation (with or without text)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:155
@@ -244,10 +196,7 @@ msgid "Page edit"
 msgstr ""
 
 #: ../../source/team/contribute.rst:165
-msgid ""
-"If you want to make modifications to an existing page of documentation "
-"because you've seen a typo or would like to improve an explanation, "
-"select the :code:`Edit on Github` button on the right side of the screen."
+msgid "If you want to make modifications to an existing page of documentation because you've seen a typo or would like to improve an explanation, select the :code:`Edit on Github` button on the right side of the screen."
 msgstr ""
 
 #: ../../source/team/contribute.rst:170
@@ -259,12 +208,7 @@ msgid "The edit page button on the landing page."
 msgstr ""
 
 #: ../../source/team/contribute.rst:172
-msgid ""
-"When you are finished modifying the file in the Github editor, select "
-":code:`propose change` at the bottom of the page. This will create a pull"
-" request (PR) that includes your modifications, which will be reviewed "
-"and evaluated by the SEPAL team before being published in the "
-"documentation."
+msgid "When you are finished modifying the file in the Github editor, select :code:`propose change` at the bottom of the page. This will create a pull request (PR) that includes your modifications, which will be reviewed and evaluated by the SEPAL team before being published in the documentation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:177
@@ -272,12 +216,7 @@ msgid "Edit a page directly in GitHub"
 msgstr ""
 
 #: ../../source/team/contribute.rst:181
-msgid ""
-"To make sure that your modifications are well understood, change the "
-"title of the commit by completing the first field. For example, you could"
-" use \"typo\", \"change image\", \"code-block error\", etc. – anything "
-"that concisely describes your modifications (this name cannot be "
-"changed)."
+msgid "To make sure that your modifications are well understood, change the title of the commit by completing the first field. For example, you could use \"typo\", \"change image\", \"code-block error\", etc. – anything that concisely describes your modifications (this name cannot be changed)."
 msgstr ""
 
 #: ../../source/team/contribute.rst
@@ -289,11 +228,7 @@ msgid "When correcting anything, create a branch."
 msgstr ""
 
 #: ../../source/team/contribute.rst:188
-msgid ""
-"Once you've finished, a PR will automatically be created in the OpenForis"
-" repository. Remove all comments, as you're not making a real PR but an "
-"adjustment (normally the title will automatically be set with the name of"
-" your commit)."
+msgid "Once you've finished, a PR will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real PR but an adjustment (normally the title will automatically be set with the name of your commit)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:190
@@ -309,9 +244,7 @@ msgid "For minor modifications, create an automatic PR."
 msgstr ""
 
 #: ../../source/team/contribute.rst:199
-msgid ""
-"Once your PR is accepted, you will be notified. Please consider deleting "
-"your branch."
+msgid "Once your PR is accepted, you will be notified. Please consider deleting your branch."
 msgstr ""
 
 #: ../../source/team/contribute.rst
@@ -327,25 +260,15 @@ msgid "Module edit"
 msgstr ""
 
 #: ../../source/team/contribute.rst:209
-msgid ""
-"If you find an error in a **Module** page, the edit button will not work,"
-" as the files are retrieved from each module repository. If the "
-"documentation is well written, their should be a link at the very bottom "
-"of the page to make modifications to the source file in the module "
-"repository following the same procedure mentioned above."
+msgid "If you find an error in a **Module** page, the edit button will not work, as the files are retrieved from each module repository. If the documentation is well written, their should be a link at the very bottom of the page to make modifications to the source file in the module repository following the same procedure mentioned above."
 msgstr ""
 
 #: ../../source/team/contribute.rst:211
-msgid ""
-"Once you've finished, notify the SEPAL team, which will need to rebuild "
-"the documentation manually to retrieve the latest version of the file you"
-" modified."
+msgid "Once you've finished, notify the SEPAL team, which will need to rebuild the documentation manually to retrieve the latest version of the file you modified."
 msgstr ""
 
 #: ../../source/team/contribute.rst:215
-msgid ""
-"If you want to add a new module to the documentation, see the section, "
-"**Major changes**."
+msgid "If you want to add a new module to the documentation, see the section, **Major changes**."
 msgstr ""
 
 #: ../../source/team/contribute.rst:218
@@ -377,17 +300,11 @@ msgid "new class on Google classroom"
 msgstr ""
 
 #: ../../source/team/contribute.rst:228
-msgid ""
-"For these major changes, the simple GitHub edit process does not work. "
-"You need to follow another workflow that allows you to modify multiple "
-"files at the same time and use the PR system to avoid publishing new "
-"pages without validation."
+msgid "For these major changes, the simple GitHub edit process does not work. You need to follow another workflow that allows you to modify multiple files at the same time and use the PR system to avoid publishing new pages without validation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:230
-msgid ""
-"In this section, we will present the full process to make major changes "
-"to the documentation."
+msgid "In this section, we will present the full process to make major changes to the documentation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:233
@@ -395,14 +312,7 @@ msgid "Fork project"
 msgstr ""
 
 #: ../../source/team/contribute.rst:235
-msgid ""
-"To work on multiple files at the same time, you cannot work directly from"
-" GitHub. Rather, you need to install a local version of the source. To "
-"avoid the publication of low quality documentation, SEPAL users don't "
-"have the rights to directly push edits to master files. Instead, they "
-"must fork the project into their own accounts by selecting the "
-":code:`fork` button in the upper-right side of the `Github page of the "
-"documentation <https://github.com/openforis/sepal-doc>`_:"
+msgid "To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source. To avoid the publication of low quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, they must fork the project into their own accounts by selecting the :code:`fork` button in the upper-right side of the `Github page of the documentation <https://github.com/openforis/sepal-doc>`_:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:240
@@ -426,17 +336,11 @@ msgid "Select the acount to fork."
 msgstr ""
 
 #: ../../source/team/contribute.rst:249
-msgid ""
-"In the upper-left side of the following page, you can see your location. "
-"This repository is stored in your account, but it's a fork of the "
-"original :code:`openforis/sepal-doc` file."
+msgid "In the upper-left side of the following page, you can see your location. This repository is stored in your account, but it's a fork of the original :code:`openforis/sepal-doc` file."
 msgstr ""
 
 #: ../../source/team/contribute.rst:253
-msgid ""
-"To know more about the forking system in GitHub, see this `link "
-"<https://docs.github.com/en/github/getting-started-with-"
-"github/fork-a-repo>`_"
+msgid "To know more about the forking system in GitHub, see this `link <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_"
 msgstr ""
 
 #: ../../source/team/contribute.rst:258
@@ -464,28 +368,19 @@ msgid "In your computer, go to a terminal and run the following command."
 msgstr ""
 
 #: ../../source/team/contribute.rst:271
-msgid ""
-"Don't forget to change :code:`<your account>` to the account name where "
-"you forked the project."
+msgid "Don't forget to change :code:`<your account>` to the account name where you forked the project."
 msgstr ""
 
 #: ../../source/team/contribute.rst:277
-msgid ""
-"Once the code is installed on your computer, install the packages that "
-"are required to build the doc by running the following command:"
+msgid "Once the code is installed on your computer, install the packages that are required to build the doc by running the following command:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:283
-msgid ""
-"To check that the doc can be built without error, go to the doc folder "
-"and run the following command:"
+msgid "To check that the doc can be built without error, go to the doc folder and run the following command:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:292
-msgid ""
-"We try our best to avoid warnings in the master branch; however, if some "
-"are still displayed, ignore them – the SEPAL team will eventually take "
-"care of them."
+msgid "We try our best to avoid warnings in the master branch; however, if some are still displayed, ignore them – the SEPAL team will eventually take care of them."
 msgstr ""
 
 #: ../../source/team/contribute.rst:294
@@ -493,12 +388,7 @@ msgid "A new folder, :code:`build`, has been created in your sepal-doc folder."
 msgstr ""
 
 #: ../../source/team/contribute.rst:296
-msgid ""
-"Double-click on :code:`sepal-doc/docs/build/html/index.html`. Your "
-"browser should open and lead to the landing page of SEPAL documentation. "
-"(Note: It's a local .html page. The URL at the top of the browser should "
-"start with **file:///** rather than **https:://**. There should be no "
-"advertisements in the side bar.)"
+msgid "Double-click on :code:`sepal-doc/docs/build/html/index.html`. Your browser should open and lead to the landing page of SEPAL documentation. (Note: It's a local .html page. The URL at the top of the browser should start with **file:///** rather than **https:://**. There should be no advertisements in the side bar.)"
 msgstr ""
 
 #: ../../source/team/contribute.rst:301
@@ -514,16 +404,11 @@ msgid "We can now start to code our modifications."
 msgstr ""
 
 #: ../../source/team/contribute.rst:307
-msgid ""
-"This procedure can also be performed in the SEPAL platform by starting a "
-":code:`t1` instance and executing the exact same process."
+msgid "This procedure can also be performed in the SEPAL platform by starting a :code:`t1` instance and executing the exact same process."
 msgstr ""
 
 #: ../../source/team/contribute.rst:309
-msgid ""
-"To open the .html page, you will need to use JupyterLab, as it is able to"
-" load .html content. (JupyterLab is also be an excellent IDE to make "
-"modifications, since it recognizes the **.rst** format.)"
+msgid "To open the .html page, you will need to use JupyterLab, as it is able to load .html content. (JupyterLab is also be an excellent IDE to make modifications, since it recognizes the **.rst** format.)"
 msgstr ""
 
 #: ../../source/team/contribute.rst:312
@@ -531,31 +416,19 @@ msgid "Modify the doc"
 msgstr ""
 
 #: ../../source/team/contribute.rst:314
-msgid ""
-"Each type of modification will be treated separately, since they don't "
-"imply the same code structure. While doing local modifications, don't "
-"hesitate to regularly run the following command in the :code:`sepal-"
-"doc/doc/` folder to check the page that you're modifying, as it will help"
-" you see typos and mistakes with directives:"
+msgid "Each type of modification will be treated separately, since they don't imply the same code structure. While doing local modifications, don't hesitate to regularly run the following command in the :code:`sepal-doc/doc/` folder to check the page that you're modifying, as it will help you see typos and mistakes with directives:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:320
-msgid ""
-"If you would like to make many modifications, you should create multiple "
-"commits (from the :code:`sepal-doc/docs/` folder)."
+msgid "If you would like to make many modifications, you should create multiple commits (from the :code:`sepal-doc/docs/` folder)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:322
-msgid ""
-"When making modifications, always include clear, concise commit messages."
-" (If you cannot find the appropriate commit message, you have done too "
-"many things and should consider creating multiple commits instead)."
+msgid "When making modifications, always include clear, concise commit messages. (If you cannot find the appropriate commit message, you have done too many things and should consider creating multiple commits instead)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:329
-msgid ""
-"Once you are done with your modifications, push the repository to GitHub "
-"and jump to the next section:"
+msgid "Once you are done with your modifications, push the repository to GitHub and jump to the next section:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:336
@@ -571,17 +444,11 @@ msgid "Any TextEdit software will work, even though it's less user friendly."
 msgstr ""
 
 #: ../../source/team/contribute.rst:344
-msgid ""
-"As previously explained, the folder has a specific structure "
-"corresponding to the `Sphinx template <https://pydata-sphinx-"
-"theme.readthedocs.io/en/latest/>`_ that we are using to build the final "
-"doc."
+msgid "As previously explained, the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_ that we are using to build the final doc."
 msgstr ""
 
 #: ../../source/team/contribute.rst:346
-msgid ""
-"The first step will be to identify the section you would like to store "
-"your page."
+msgid "The first step will be to identify the section you would like to store your page."
 msgstr ""
 
 #: ../../source/team/contribute.rst:348
@@ -621,9 +488,7 @@ msgid "Located in the :code:`sepal-doc/docs/source/cli/` folder."
 msgstr ""
 
 #: ../../source/team/contribute.rst:366
-msgid ""
-"**Team** – a hidden section only available to team members, which helps "
-"them contribute to the platform."
+msgid "**Team** – a hidden section only available to team members, which helps them contribute to the platform."
 msgstr ""
 
 #: ../../source/team/contribute.rst:368
@@ -631,47 +496,27 @@ msgid "Located in the :code:`sepal-doc/docs/source/team/` folder."
 msgstr ""
 
 #: ../../source/team/contribute.rst:372
-msgid ""
-"In the :code:`Module` section, only the :code:`index.rst` file should be "
-"modified, as the others are all downloaded from their repository (see the"
-" section **New module** below)."
+msgid "In the :code:`Module` section, only the :code:`index.rst` file should be modified, as the others are all downloaded from their repository (see the section **New module** below)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:376
-msgid ""
-"If you create a team page, the first line of your .rst file should always"
-" be:"
+msgid "If you create a team page, the first line of your .rst file should always be:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:382
-msgid ""
-"Now that you have selected a section, you can create a new documentation "
-"page :code:`<my_page>.rst` using all the available `rst directives "
-"<https://www.sphinx-"
-"doc.org/en/master/usage/restructuredtext/basics.html>`_ that are "
-"available in Sphinx, as well as the directives presented in the first "
-"section of this page."
+msgid "Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this page."
 msgstr ""
 
 #: ../../source/team/contribute.rst:384
-msgid ""
-"To maintain consistency across folders and help with image maintenance, "
-"the images you use should be stored in the following folder: :code"
-":`sepal-doc/docs/source/_images/<section>/<page>/`."
+msgid "To maintain consistency across folders and help with image maintenance, the images you use should be stored in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`."
 msgstr ""
 
 #: ../../source/team/contribute.rst:386
-msgid ""
-"Add the page you've created to the :code:`toctree` (Table of contents) "
-"directive in the :code:`<section>/index.rst` file by adding your "
-"filename, without the extension, respecting the following indentation:"
+msgid "Add the page you've created to the :code:`toctree` (Table of contents) directive in the :code:`<section>/index.rst` file by adding your filename, without the extension, respecting the following indentation:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:399
-msgid ""
-"The title of your page should appear as a link in the **Section "
-"navigation** panel on the left side of your browser. If you forget to "
-"link your page, you will see the following message:"
+msgid "The title of your page should appear as a link in the **Section navigation** panel on the left side of your browser. If you forget to link your page, you will see the following message:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:408
@@ -683,38 +528,23 @@ msgid "Modify images"
 msgstr ""
 
 #: ../../source/team/contribute.rst:413
-msgid ""
-"Images for each page are saved in the mirror folder, :code:`sepal-"
-"doc/docs/source/_images/`, which reproduces the structure of :code"
-":`sepal-doc/docs/source`."
+msgid "Images for each page are saved in the mirror folder, :code:`sepal-doc/docs/source/_images/`, which reproduces the structure of :code:`sepal-doc/docs/source`."
 msgstr ""
 
 #: ../../source/team/contribute.rst:415
-msgid ""
-"Open the page you want to modify and search for the :code:`.. image` or "
-":code:`.. figure` directive for the image you want to modify. You just "
-"need to change the image in the :code:`_images/` folder and continue "
-"using the same name."
+msgid "Open the page you want to modify and search for the :code:`.. image` or :code:`.. figure` directive for the image you want to modify. You just need to change the image in the :code:`_images/` folder and continue using the same name."
 msgstr ""
 
 #: ../../source/team/contribute.rst:417
-msgid ""
-"If you think an image is missing, you can add one to any page by placing "
-"the image in the appropriate folder, and then naming it using one of the "
-"following directives. (Note: Never forget the :code:`alt` option; it will"
-" be the only information displayed if your image fails to load)."
+msgid "If you think an image is missing, you can add one to any page by placing the image in the appropriate folder, and then naming it using one of the following directives. (Note: Never forget the :code:`alt` option; it will be the only information displayed if your image fails to load)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:419
-msgid ""
-"The :code:`figure` directive adds a nice padding at the bottom of the "
-"image and allows you to add a caption."
+msgid "The :code:`figure` directive adds a nice padding at the bottom of the image and allows you to add a caption."
 msgstr ""
 
 #: ../../source/team/contribute.rst:428
-msgid ""
-"The :code:`image` directive is easier to manipulate, but has fewer "
-"functionalities."
+msgid "The :code:`image` directive is easier to manipulate, but has fewer functionalities."
 msgstr ""
 
 #: ../../source/team/contribute.rst:436
@@ -722,18 +552,11 @@ msgid "New section"
 msgstr ""
 
 #: ../../source/team/contribute.rst:440
-msgid ""
-"Normally, the documentation does not require any new section; however if "
-"you really feel that something needs to be modified, please let us know "
-"first in the `GitHub Issue Tracker <https://github.com/openforis/sepal-"
-"doc/issues>`_"
+msgid "Normally, the documentation does not require any new section; however if you really feel that something needs to be modified, please let us know first in the `GitHub Issue Tracker <https://github.com/openforis/sepal-doc/issues>`_"
 msgstr ""
 
 #: ../../source/team/contribute.rst:442
-msgid ""
-"To add a new section you need to create a new folder in :code:`sepal-"
-"doc/docs/source/`. This folder should contain at least one page that "
-"contains the following code:"
+msgid "To add a new section you need to create a new folder in :code:`sepal-doc/docs/source/`. This folder should contain at least one page that contains the following code:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:453
@@ -741,10 +564,7 @@ msgid "This section page should be added to the documentation index."
 msgstr ""
 
 #: ../../source/team/contribute.rst:455
-msgid ""
-"Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, "
-"as follows. Replace \"Section name\" with the name you would like to see "
-"in the the navigation bar and \"<section>\" with the folder name."
+msgid "Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, as follows. Replace \"Section name\" with the name you would like to see in the the navigation bar and \"<section>\" with the folder name."
 msgstr ""
 
 #: ../../source/team/contribute.rst:471
@@ -752,43 +572,27 @@ msgid "New modules"
 msgstr ""
 
 #: ../../source/team/contribute.rst:473
-msgid ""
-"Have you created a new module (Shiny or Python-based) and have been asked"
-" to add it to the app dashboard of SEPAL (following the issue template)?"
+msgid "Have you created a new module (Shiny or Python-based) and have been asked to add it to the app dashboard of SEPAL (following the issue template)?"
 msgstr ""
 
 #: ../../source/team/contribute.rst:475
-msgid ""
-"One of the requirements to have your module accepted by the SEPAL team is"
-" to create a documentation file. To maintain consistency across modules, "
-"we decided to store the documentation in the module's original "
-"repository."
+msgid "One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. To maintain consistency across modules, we decided to store the documentation in the module's original repository."
 msgstr ""
 
 #: ../../source/team/contribute.rst:477
-msgid ""
-"To create the actual documentation page, follow the instructions provided"
-" in the `sepal_ui doc <https://sepal-"
-"ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-"
-"documentation>`_."
+msgid "To create the actual documentation page, follow the instructions provided in the `sepal_ui doc <https://sepal-ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-documentation>`_."
 msgstr ""
 
 #: ../../source/team/contribute.rst:479
-msgid ""
-"Then, you need to only modify one file in sepal-doc to make your "
-"documentation available."
+msgid "Then, you need to only modify one file in sepal-doc to make your documentation available."
 msgstr ""
 
 #: ../../source/team/contribute.rst:481
-msgid ""
-"Modify the :code:`sepal-doc/docs/source/data/modules/en.json` file by "
-"adding a new line with the following shape:"
+msgid "Modify the :code:`sepal-doc/docs/source/data/modules/en.json` file by adding a new line with the following shape:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:489
-msgid ""
-"This file will be pulled at each build of the documentation in the :code"
-":`sepal-doc/docs/source/modules/dwn` folder."
+msgid "This file will be pulled at each build of the documentation in the :code:`sepal-doc/docs/source/modules/dwn` folder."
 msgstr ""
 
 #: ../../source/team/contribute.rst:492
@@ -796,16 +600,11 @@ msgid "New class on Google Classroom"
 msgstr ""
 
 #: ../../source/team/contribute.rst:494
-msgid ""
-"Have you have created a new class under the Google Classroom repository "
-"following the :doc:`classroom` doc and would now like to add this class "
-"to the appropriate class table?"
+msgid "Have you have created a new class under the Google Classroom repository following the :doc:`classroom` doc and would now like to add this class to the appropriate class table?"
 msgstr ""
 
 #: ../../source/team/contribute.rst:496
-msgid ""
-"Go to your Google Classroom page and select the **Share** link. On the "
-"next page, copy and paste the following information:"
+msgid "Go to your Google Classroom page and select the **Share** link. On the next page, copy and paste the following information:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:498
@@ -829,22 +628,15 @@ msgid "Google Classroom sharing links."
 msgstr ""
 
 #: ../../source/team/contribute.rst:507
-msgid ""
-"You now have one single file to modify :code:`sepal-"
-"doc/docs/data/<type>/<locale>.csv`:"
+msgid "You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.csv`:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:509
-msgid ""
-"replace \"<type>\" with the type of your class (**general** for a "
-"reusable piece of documentation and **project** if linked to a FAO "
-"activity), and"
+msgid "replace \"<type>\" with the type of your class (**general** for a reusable piece of documentation and **project** if linked to a FAO activity), and"
 msgstr ""
 
 #: ../../source/team/contribute.rst:510
-msgid ""
-"replace \"<local>\" with the language of your class (only English [en], "
-"Spanish [es] and French [fr] are available)."
+msgid "replace \"<local>\" with the language of your class (only English [en], Spanish [es] and French [fr] are available)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:511
@@ -872,18 +664,11 @@ msgid "Create a pull request (PR)"
 msgstr ""
 
 #: ../../source/team/contribute.rst:527
-msgid ""
-"This page of SEPAL documentation, **Contribute**, was requested in the "
-"GitHub Issue Tracker as `issue #19 <https://github.com/openforis/sepal-"
-"doc/issues/19>`_. It was then added to SEPAL documentation through `PR "
-"#24 <https://github.com/openforis/sepal-doc/pull/24>`_."
+msgid "This page of SEPAL documentation, **Contribute**, was requested in the GitHub Issue Tracker as `issue #19 <https://github.com/openforis/sepal-doc/issues/19>`_. It was then added to SEPAL documentation through `PR #24 <https://github.com/openforis/sepal-doc/pull/24>`_."
 msgstr ""
 
 #: ../../source/team/contribute.rst:529
-msgid ""
-"Now that you have finished your modifications and pushed them to GitHub, "
-"we can go back to the web interface of our forked repository "
-"(:code:`https://github.com/<your account>/sepal-doc`)."
+msgid "Now that you have finished your modifications and pushed them to GitHub, we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:531
@@ -899,9 +684,7 @@ msgid "Open the **Pull request** interface."
 msgstr ""
 
 #: ../../source/team/contribute.rst:538
-msgid ""
-"In the **Pull requests** interface, select the :code:`New pull request` "
-"button:"
+msgid "In the **Pull requests** interface, select the :code:`New pull request` button:"
 msgstr ""
 
 #: ../../source/team/contribute.rst:543
@@ -913,14 +696,7 @@ msgid "Create a new pull request."
 msgstr ""
 
 #: ../../source/team/contribute.rst:545
-msgid ""
-"Select what is going to be pushed and where. If you've followed this "
-"entire documentation page, you have not created any branch in your fork. "
-"On the left side, leave :code:`openforis/sepal-doc/master`; on the right "
-"side, leave :code:`<account>/sepal-doc/master` (1). Some extra "
-"information on the commit that will be added to master are displayed in "
-"(2). If everything is set properly (normally you don't have to change "
-"anything), select the :code:`Create pull request` button."
+msgid "Select what is going to be pushed and where. If you've followed this entire documentation page, you have not created any branch in your fork. On the left side, leave :code:`openforis/sepal-doc/master`; on the right side, leave :code:`<account>/sepal-doc/master` (1). Some extra information on the commit that will be added to master are displayed in (2). If everything is set properly (normally you don't have to change anything), select the :code:`Create pull request` button."
 msgstr ""
 
 #: ../../source/team/contribute.rst:-1
@@ -928,29 +704,15 @@ msgid "Compare branches"
 msgstr ""
 
 #: ../../source/team/contribute.rst:550
-msgid ""
-"Finally, enter the title and description of the PR (1) by filling the "
-"title area and respecting the template provided (as shown on the "
-"following image). As explained at the beginning of this documentation "
-"page, you started your modifications to address an issue reported in the "
-"GitHub issue tracker, which should be referenced in your PR message in "
-"line 2 using the :code:`#<issue number>`. This will help the SEPAL team, "
-"who will review your PR, by ensuring that they understand what you are "
-"adding to the documentation."
+msgid "Finally, enter the title and description of the PR (1) by filling the title area and respecting the template provided (as shown on the following image). As explained at the beginning of this documentation page, you started your modifications to address an issue reported in the GitHub issue tracker, which should be referenced in your PR message in line 2 using the :code:`#<issue number>`. This will help the SEPAL team, who will review your PR, by ensuring that they understand what you are adding to the documentation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:554
-msgid ""
-"You can click on the preview button to see what your PR looks like with "
-"links."
+msgid "You can click on the preview button to see what your PR looks like with links."
 msgstr ""
 
 #: ../../source/team/contribute.rst:556
-msgid ""
-"The :code:`Allow edits by maintainers` checkbox needs to always be "
-"checked (default behavior) (2). This will allow the SEPAL team to make "
-"modifications to your PR files (e.g. if you made a mistake in a .rst "
-"directive)."
+msgid "The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (2). This will allow the SEPAL team to make modifications to your PR files (e.g. if you made a mistake in a .rst directive)."
 msgstr ""
 
 #: ../../source/team/contribute.rst:558
@@ -966,9 +728,7 @@ msgid "Validate the creation of the PR."
 msgstr ""
 
 #: ../../source/team/contribute.rst:565
-msgid ""
-"An automatic check will be performed to see if your PR can be built with "
-"ReadTheDoc and distributed in https://docs.sepal.io."
+msgid "An automatic check will be performed to see if your PR can be built with ReadTheDoc and distributed in https://docs.sepal.io."
 msgstr ""
 
 #: ../../source/team/contribute.rst:570
@@ -980,16 +740,11 @@ msgid "Continous integration will run in Github."
 msgstr ""
 
 #: ../../source/team/contribute.rst:572
-msgid ""
-"Once submitted, the SEPAL team will review your PR and make the "
-"appropriate modifications, if needed. The PR will then be accepted and "
-"the new page will be available in the main documentation."
+msgid "Once submitted, the SEPAL team will review your PR and make the appropriate modifications, if needed. The PR will then be accepted and the new page will be available in the main documentation."
 msgstr ""
 
 #: ../../source/team/contribute.rst:576
-msgid ""
-"Once the PR has been validated, please consider deleting your fork in "
-"order to avoid merging previous issues when making later modifications."
+msgid "Once the PR has been validated, please consider deleting your fork in order to avoid merging previous issues when making later modifications."
 msgstr ""
 
 #: ../../source/team/contribute.rst
@@ -1009,9 +764,7 @@ msgid "The pop-up window to delete the fork used in the closed PR."
 msgstr ""
 
 #: ../../source/team/contribute.rst:590
-msgid ""
-"If you are the owner of :code:`openforis`, do not delete :code:`openforis"
-"/sepal-doc`."
+msgid "If you are the owner of :code:`openforis`, do not delete :code:`openforis/sepal-doc`."
 msgstr ""
 
 #~ msgid "I'm a folder icon: :icon:`fa fa-folder`"
