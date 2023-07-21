@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 09:55+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"PO-Revision-Date: 2023-07-21 08:05\n"
+"Last-Translator: \n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/fcdm.po\n"
+"X-Crowdin-File-ID: 159\n"
 
 #: ../../source/modules/dwn/fcdm.rst:2
 msgid "FCDM"
@@ -34,30 +35,11 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:14
-msgid ""
-"The FCDM tool supports the detection of forest canopy disturbance from "
-"satellite remote sensing and can provide indication on forest degradation"
-" processes. Reporting on forest degradation is required by many tropical "
-"countries participating in the REDD+ (Reducing Emissions from "
-"Deforestation and Degradation) program. However, compared to "
-"deforestation, the mapping of \"forest degradation\" has proven to be "
-"technically much more challenging and the signal of a forest canopy "
-"disturbance is less prominent, as it does not result in a change of land "
-"cover."
+msgid "The FCDM tool supports the detection of forest canopy disturbance from satellite remote sensing and can provide indication on forest degradation processes. Reporting on forest degradation is required by many tropical countries participating in the REDD+ (Reducing Emissions from Deforestation and Degradation) program. However, compared to deforestation, the mapping of \"forest degradation\" has proven to be technically much more challenging and the signal of a forest canopy disturbance is less prominent, as it does not result in a change of land cover."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:18
-msgid ""
-"The FCDM tool has been developed at the Joint Research Centre (JRC) "
-"within the ReCaREDD Project and uses a change detection approach based on"
-" the difference (delta) of the self-referenced \"Normalized Burn Ratio\" "
-"index (Delta-rNBR; `Langner et al. 2018 "
-"<https://doi.org/10.3390/rs10040544>`__) to detect forest canopy change "
-"over defined periods at pixel and sub-pixel level. The underlying Delta-"
-"rNBR index allows the detection of forest canopy disturbance within "
-"tropical (semi-)evergreen forest canopies (\"forest remaining forest\"), "
-"resulting for instance from tree removal, felling damages or from logging"
-" trails and leading."
+msgid "The FCDM tool has been developed at the Joint Research Centre (JRC) within the ReCaREDD Project and uses a change detection approach based on the difference (delta) of the self-referenced \"Normalized Burn Ratio\" index (Delta-rNBR; `Langner et al. 2018 <https://doi.org/10.3390/rs10040544>`__) to detect forest canopy change over defined periods at pixel and sub-pixel level. The underlying Delta-rNBR index allows the detection of forest canopy disturbance within tropical (semi-)evergreen forest canopies (\"forest remaining forest\"), resulting for instance from tree removal, felling damages or from logging trails and leading."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:27
@@ -65,15 +47,11 @@ msgid "General Purpose"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:29
-msgid ""
-"Detection of all kind of tree canopy disturbances (natural or human "
-"induced) within evergreen and semi-evergreen forests"
+msgid "Detection of all kind of tree canopy disturbances (natural or human induced) within evergreen and semi-evergreen forests"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:30
-msgid ""
-"In order to separate natural from human disturbances we recommend manual "
-"screening of the data by an experienced human interpreter"
+msgid "In order to separate natural from human disturbances we recommend manual screening of the data by an experienced human interpreter"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:31
@@ -85,19 +63,11 @@ msgid "Citation"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:36
-msgid ""
-"Publications, models and data products that make use of this tool must "
-"include proper acknowledgement, including citing datasets and the journal"
-" article as in the following citation:"
+msgid "Publications, models and data products that make use of this tool must include proper acknowledgement, including citing datasets and the journal article as in the following citation:"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:39
-msgid ""
-"`Langner A, Miettinen J, Kukkonen M, Vancutsem C, Simonetti D, "
-"Vieilledent G, Verhegghen A, Gallego J, Stibig H-J (2018). Towards "
-"Operational Monitoring of Forest Canopy Disturbance in Evergreen Rain "
-"Forests: A Test Case in Continental Southeast Asia. Remote Sensing. 10, "
-"4, 544, `doi:10.3390/rs10040544 <https://doi.org/10.3390/rs10040544>`__"
+msgid "`Langner A, Miettinen J, Kukkonen M, Vancutsem C, Simonetti D, Vieilledent G, Verhegghen A, Gallego J, Stibig H-J (2018). Towards Operational Monitoring of Forest Canopy Disturbance in Evergreen Rain Forests: A Test Case in Continental Southeast Asia. Remote Sensing. 10, 4, 544, `doi:10.3390/rs10040544 <https://doi.org/10.3390/rs10040544>`__"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:42
@@ -105,15 +75,11 @@ msgid "Contact"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:44
-msgid ""
-"> **Original algorithm** > Author:  Andreas Langner (SvBuF) > Email:  "
-"andi.langner@gmail.com, andreas-johannes.langner@ec.europa.eu"
+msgid "> **Original algorithm** > Author:  Andreas Langner (SvBuF) > Email:  andi.langner@gmail.com, andreas-johannes.langner@ec.europa.eu"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:48
-msgid ""
-"> **sepal adaptation** > Author: Pierrick Rambaud (FAO) > Email: "
-"Pierrick.rambaud@fao.org"
+msgid "> **sepal adaptation** > Author: Pierrick Rambaud (FAO) > Email: Pierrick.rambaud@fao.org"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:54
@@ -125,11 +91,7 @@ msgid "Select AOI"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:59
-msgid ""
-"The *delta-rNBR* will be calculated based on the user inputs. The first "
-"mandatory input is the Area Of Interest (AOI). In this step you’ll have "
-"the possibility to choose from a predefined list of administrative layers"
-" or use your own datasets, the available options are:"
+msgid "The *delta-rNBR* will be calculated based on the user inputs. The first mandatory input is the Area Of Interest (AOI). In this step you’ll have the possibility to choose from a predefined list of administrative layers or use your own datasets, the available options are:"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:61
@@ -165,15 +127,11 @@ msgid "Google Earth Engine Asset"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:73
-msgid ""
-"After selecting the desired area, click over the :code:`Select these "
-"inputs` button and the map shows up your selection."
+msgid "After selecting the desired area, click over the :code:`Select these inputs` button and the map shows up your selection."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:77
-msgid ""
-"You can only select one area of interest. In some cases, depending on the"
-" input data you could run out of resources in GEE."
+msgid "You can only select one area of interest. In some cases, depending on the input data you could run out of resources in GEE."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:84
@@ -181,10 +139,7 @@ msgid "Workflow parameters"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:86
-msgid ""
-"Click on :guilabel:`process` to display the process panel. In this "
-"section we'll describe each parameter you can set in the app to customize"
-" your analysis."
+msgid "Click on :guilabel:`process` to display the process panel. In this section we'll describe each parameter you can set in the app to customize your analysis."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:89
@@ -192,20 +147,11 @@ msgid "Select Time periods"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:91
-msgid ""
-"The selected time periods are the periods that will be used as "
-"**reference** and **analysis** period. Simply click on the different "
-":code:`datepicker` to select the start date end end date of this time "
-"periods."
+msgid "The selected time periods are the periods that will be used as **reference** and **analysis** period. Simply click on the different :code:`datepicker` to select the start date end end date of this time periods."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:100
-msgid ""
-"As suggested in the article, the FCDM analysis performs better with time "
-"periods smaller or equal to a year. Longer periods tend to accumulate "
-"noise. As an example the following parameters are fitting: -   reference "
-"period: :code:`2019-01-01 2019-12-31` -   analysis period: "
-":code:`2020-01-01 2020-12-31`"
+msgid "As suggested in the article, the FCDM analysis performs better with time periods smaller or equal to a year. Longer periods tend to accumulate noise. As an example the following parameters are fitting: -   reference period: :code:`2019-01-01 2019-12-31` -   analysis period: :code:`2020-01-01 2020-12-31`"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:110
@@ -217,16 +163,11 @@ msgid "Sensors"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:117
-msgid ""
-"The sensor list is updated with the available satellites dataset for the "
-"selected time periods. User is thus forced to select the dates first."
+msgid "The sensor list is updated with the available satellites dataset for the selected time periods. User is thus forced to select the dates first."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:119
-msgid ""
-"The sensors can be selected in the dropdown menu. This list is only "
-"showing the satellites datasets that are available for the selected time "
-"period. The user needs to select at least 1."
+msgid "The sensors can be selected in the dropdown menu. This list is only showing the satellites datasets that are available for the selected time period. The user needs to select at least 1."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:123
@@ -238,10 +179,7 @@ msgid "Threshold for landsat 7"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:133
-msgid ""
-"Value of the threshold applied on Landsat 7 data. This is a correction "
-"parameter to remove some of the effects of SLC issue. Default set to "
-":code:`0.08`."
+msgid "Value of the threshold applied on Landsat 7 data. This is a correction parameter to remove some of the effects of SLC issue. Default set to :code:`0.08`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:136
@@ -249,9 +187,7 @@ msgid "Cloud buffer"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:138
-msgid ""
-"Value of the cloud buffering used in the cloud masking operation of the "
-"FCDM process in meters. Default set to :code:`500`."
+msgid "Value of the cloud buffering used in the cloud masking operation of the FCDM process in meters. Default set to :code:`500`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:141
@@ -259,32 +195,19 @@ msgid "Basemap"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:143
-msgid ""
-"The FCDM process need to create a forest non-forest mask to produce the "
-"results. This mask is derivated from data provided by the user. Three "
-"default datasets can be selected:"
+msgid "The FCDM process need to create a forest non-forest mask to produce the results. This mask is derivated from data provided by the user. Three default datasets can be selected:"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:146
-msgid ""
-"Global forest cover: This mask will be based on the `global forest cover "
-"<https://earthenginepartners.appspot.com/science-2013-global-forest>`__ "
-"product from University of Maryland. The user will also need to provide "
-"the year to use and the treecover level to diferenciate forest from the "
-"rest."
+msgid "Global forest cover: This mask will be based on the `global forest cover <https://earthenginepartners.appspot.com/science-2013-global-forest>`__ product from University of Maryland. The user will also need to provide the year to use and the treecover level to diferenciate forest from the rest."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:150 ../../source/modules/dwn/fcdm.rst:156
-msgid ""
-"The year is automatically set to the start year of the **reference** "
-"period."
+msgid "The year is automatically set to the start year of the **reference** period."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:152
-msgid ""
-"TMF: This mask will be based on the `Tropical Moist Forest "
-"<https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/>`__ product from JRC. "
-"The user will also need to provide the year of analysis."
+msgid "TMF: This mask will be based on the `Tropical Moist Forest <https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/>`__ product from JRC. The user will also need to provide the year of analysis."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:158
@@ -292,11 +215,7 @@ msgid "No forest map: there will be no forest masking"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:160
-msgid ""
-"The user can also use any GEE asset by setting it's value in the "
-":code:`textfield` or selecting an image in the raster list. The image "
-"needs to be a mask with values of the first band set to: -   0 for non-"
-"forest -   1 for forest"
+msgid "The user can also use any GEE asset by setting it's value in the :code:`textfield` or selecting an image in the raster list. The image needs to be a mask with values of the first band set to: -   0 for non-forest -   1 for forest"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:171
@@ -304,9 +223,7 @@ msgid "Advanced parameters"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:173
-msgid ""
-"These parameters are advanced parameters of the FCDM process please read "
-"the article carefully to get a good understanding of their objectives."
+msgid "These parameters are advanced parameters of the FCDM process please read the article carefully to get a good understanding of their objectives."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:176
@@ -314,11 +231,7 @@ msgid "Self-referencing"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:178
-msgid ""
-"For the self referencing kernel you simply need to set 1 single "
-"parameter: **Radius of circular kernel** that will define in meter the "
-"buffer used for the self-referencing operation. default set to: "
-"code:`150`."
+msgid "For the self referencing kernel you simply need to set 1 single parameter: **Radius of circular kernel** that will define in meter the buffer used for the self-referencing operation. default set to: code:`150`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:181
@@ -334,24 +247,15 @@ msgid "Here, 3 parameters need to be set:"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:189
-msgid ""
-"**Threshold for filtering**: The threshold of change magnitude that will "
-"be considered as intermediate disturbance result. Default to "
-":code:`0.035`."
+msgid "**Threshold for filtering**: The threshold of change magnitude that will be considered as intermediate disturbance result. Default to :code:`0.035`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:190
-msgid ""
-"**Radius of circular kernel for filtering**: in meter, the radius of the "
-"buffer. Default to: code:`80`."
+msgid "**Radius of circular kernel for filtering**: in meter, the radius of the buffer. Default to: code:`80`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:191
-msgid ""
-"**Min number of intermediate disturbance events per cleaning kernel**: "
-"the threshold number of intermediate disturbance events within a kernel "
-"to consider the kernel center pixel to be kept or discarded (irrespective"
-" of pixel value). Default set to :code:`3`."
+msgid "**Min number of intermediate disturbance events per cleaning kernel**: the threshold number of intermediate disturbance events within a kernel to consider the kernel center pixel to be kept or discarded (irrespective of pixel value). Default set to :code:`3`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:198
@@ -359,15 +263,11 @@ msgid "Compute"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:200
-msgid ""
-"Click on :guilabel:`Run FCDM Computation` to launch the process in GEE. "
-"The layers will automatically be displayed on the visualisation map."
+msgid "Click on :guilabel:`Run FCDM Computation` to launch the process in GEE. The layers will automatically be displayed on the visualisation map."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:204
-msgid ""
-"This operation takes no time as the actual computation is done when the "
-"map refreshes itself."
+msgid "This operation takes no time as the actual computation is done when the map refreshes itself."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:211
@@ -391,19 +291,11 @@ msgid "the AOI (in light blue)"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:221
-msgid ""
-"When the map is fully zoomed out, the disturbances are not visible "
-"because of GEE pyramiding policy. Zoom in 2 to 3 times to see the "
-"disturbances."
+msgid "When the map is fully zoomed out, the disturbances are not visible because of GEE pyramiding policy. Zoom in 2 to 3 times to see the disturbances."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:225
-msgid ""
-"Every time the user zoom in, GEE will recompute all the values on the "
-"fly. This opreation is time consuming so be patient. The forest mask is a"
-" simple image, when the delta-rNBR finishes its refresh, it's perfectly "
-"aligned with it. As long as it's blurry, it means that GEE is still "
-"computing."
+msgid "Every time the user zoom in, GEE will recompute all the values on the fly. This opreation is time consuming so be patient. The forest mask is a simple image, when the delta-rNBR finishes its refresh, it's perfectly aligned with it. As long as it's blurry, it means that GEE is still computing."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:233
@@ -411,26 +303,15 @@ msgid "Download images"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:235
-msgid ""
-"Click on the cloud in the top left corner of the map, it will open the "
-"following popup where the user will be able to customize exportation "
-"parameters."
+msgid "Click on the cloud in the top left corner of the map, it will open the following popup where the user will be able to customize exportation parameters."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:243
-msgid ""
-"**filename prefix**: the prefix that will be used to described the file "
-"in SEPAL or the asset in GEE. Default to :code:`<aoi_anme>_<referenced "
-"perdiod year>_<analysis_period_year``. It can be customize in anything "
-"but every non UTF8 character will automatically be changed in \"_\"."
+msgid "**filename prefix**: the prefix that will be used to described the file in SEPAL or the asset in GEE. Default to :code:`<aoi_anme>_<referenced perdiod year>_<analysis_period_year``. It can be customize in anything but every non UTF8 character will automatically be changed in \"_\"."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:244
-msgid ""
-"**select dataset**: the user can export any of the following datasets: "
-":code:`Delta-rNBR`, :code:`Delta-rNBR wihthout DDR`, :code:`anaysis "
-"rNBR`, :code:`reference rNBR` and :code:`forest mask`. default to only "
-":code:`Delta-rNBR`."
+msgid "**select dataset**: the user can export any of the following datasets: :code:`Delta-rNBR`, :code:`Delta-rNBR wihthout DDR`, :code:`anaysis rNBR`, :code:`reference rNBR` and :code:`forest mask`. default to only :code:`Delta-rNBR`."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:245
@@ -442,10 +323,7 @@ msgid "**select export method**: as a SEPAL file or as a GEE asset"
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:250
-msgid ""
-"if you select :code:`as a SEPAL file`, then the application cannot be "
-"closed before the end of the exportation. On the other hand GEE export "
-"can be monitored from the GEE task manager."
+msgid "if you select :code:`as a SEPAL file`, then the application cannot be closed before the end of the exportation. On the other hand GEE export can be monitored from the GEE task manager."
 msgstr ""
 
 #: ../../source/modules/dwn/fcdm.rst:253
