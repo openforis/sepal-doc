@@ -1,31 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-07-21 08:06\n"
+"Last-Translator: \n"
+"Language: it\n"
+"Language-Team: Italian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: it\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/gee-source.po\n"
+"X-Crowdin-File-ID: 161\n"
 
 #: ../../source/modules/dwn/gee-source.rst:2
 msgid "Earthengine app reader"
 msgstr ""
 
 #: ../../source/modules/dwn/gee-source.rst:4
-msgid ""
-"This application allows the user to display the source code of any Google"
-" Earth Engine based application. THe code is parsed and display in the "
-"most readable way using the Pygments code highlighter"
+msgid "This application allows the user to display the source code of any Google Earth Engine based application. THe code is parsed and display in the most readable way using the Pygments code highlighter"
 msgstr ""
 
 #: ../../source/modules/dwn/gee-source.rst:8
@@ -33,43 +31,14 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/modules/dwn/gee-source.rst:10
-msgid ""
-"Provide the url of the application you want to analyse (e.g.: "
-"https://glad.earthengine.app/view/s2-forest-alerts) and click on :btn"
-":`<fa-solid fa-check> Apply`."
+msgid "Provide the url of the application you want to analyse (e.g.: https://glad.earthengine.app/view/s2-forest-alerts) and click on :btn:`<fa-solid fa-check> Apply`."
 msgstr ""
 
 #: ../../source/modules/dwn/gee-source.rst:12
-msgid ""
-"Once the code is displayed on your screen you can save it in you SEPAL "
-"folders by clicking on :btn:`<fa-solid fa-floppy-disk> Save`."
+msgid "Once the code is displayed on your screen you can save it in you SEPAL folders by clicking on :btn:`<fa-solid fa-floppy-disk> Save`."
 msgstr ""
 
 #: ../../source/modules/dwn/gee-source.rst:14
-msgid ""
-"Here is an example computing the `GLAD_S2 application "
-"<https://glad.earthengine.app/view/s2-forest-"
-"alerts#lon=-64.29861048809664;lat=-9.85129363173061;zoom=13>`__."
+msgid "Here is an example computing the `GLAD_S2 application <https://glad.earthengine.app/view/s2-forest-alerts#lon=-64.29861048809664;lat=-9.85129363173061;zoom=13>`__."
 msgstr ""
-
-#~ msgid ""
-#~ "Provide the url of the application "
-#~ "you want to analyse (e.g.: "
-#~ "https://glad.earthengine.app/view/s2-forest-alerts) and"
-#~ " click on :btn:`<fas fa-check>Apply`."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once the code is displayed on your"
-#~ " screen you can save it in you"
-#~ " SEPAL folders by clicking on "
-#~ ":btn:`<fas fa-save>Save`."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Here is an example computing the "
-#~ "`GLAD_S2 application <https://glad.earthengine.app/view/s2"
-#~ "-forest-"
-#~ "alerts#lon==========-64.29861048809664;lat==========-9.85129363173061;zoom==========13>`__."
-#~ msgstr ""
 
