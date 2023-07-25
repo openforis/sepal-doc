@@ -55,5 +55,5 @@ Requirements
 2. Forest Mask (optional, but recommended)
 3. Planet API key (optional, only for Planet daily imagery)
 
-Under this `link <https://docs.google.com/presentation/d/1gVb8Ewevp_fQNChSQT-wGRdSIM79x0II/edit?usp=sharing&ouid=107111160061452891127&rtpof=true&sd=true>`_ you can download a PowerPoint Presentation that provides a step-by-step guide for the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia. Once you are more familiar, it will help to read further to understand the underlying logic of the workflow.
+From this `link <https://docs.google.com/presentation/d/1gVb8Ewevp_fQNChSQT-wGRdSIM79x0II/edit?usp=sharing&ouid=107111160061452891127&rtpof=true&sd=true>`_ you can download a PowerPoint Presentation that provides a step-by-step guide for the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia. Once you are more familiar, it will help to read further to understand the underlying logic of the workflow.
 
