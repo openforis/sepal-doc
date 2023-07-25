@@ -26,4 +26,3 @@ Table of content
     BayTS NRT Monitoring<bayts>
     drivers
     peatland_mapping
-    
