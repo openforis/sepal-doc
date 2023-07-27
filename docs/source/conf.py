@@ -53,7 +53,7 @@ html_sidebars = {"index": []}
 html_context = {
     "github_user": "openforis",
     "github_repo": "sepal-doc",
-    "github_version": "master",
+    "github_version": "main",
     "doc_path": "docs/source",
     "default_mode": "auto",
 }
