@@ -1,24 +1,24 @@
 Google Earth Engine
 ===================
 
-The **earthengine** tool is a utility program that allows you to manage Google Earth Engine (GEE) assets and tasks from the command line. It is installed automatically when you install the Python API. To check whether the tool is installed and functioning correctly, type the following in a command line:
+The **earthengine** tool is a utility program that allows you to manage Google Earth Engine (GEE) assets and tasks from the command line. It is installed automatically when you install the Python API. To check whether the tool is installed and functioning correctly, enter the following in a command line:
 
 .. code-block:: console
 
     $ earthengine
 
-If the tool is properly installed then it will print out a short summary of available commands. To get help on a specific command, use:
+If the tool is properly installed, it will print out a short summary of available commands. To get help on a specific command, use:
 
 .. code-block:: console
 
     $ earthengine command -h
 
-When you first install the Python API, you will need to log in using the :code:`Authenticate` command described below.
+When you first install the Python API, you will need to login using the :code:`Authenticate` command described below.
 
 Available commands
 ------------------
 
-More information on the available command can be found on `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__.
+More information on the available command can be found on the `Google API website <https://developers.google.com/earth-engine/guides/command_line>`__.
 
 .. code-block:: bash
 
