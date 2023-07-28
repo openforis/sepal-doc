@@ -1,13 +1,13 @@
 Open Foris Geospatial Toolkit
 =============================
 
-The Open Foris Geospatial Toolkit (OFGT) is a collection of prototype command-line utilities for the processing of geographical data. The tools can be divided into stand-alone programmes and scripts. They have been tested mainly in Ubuntu Linux environment, although they can be used with other Linux distros, macOS, and MS Windows (Cywgin) as well. Most of the stand-alone programmes use GDAL libraries and many of the scripts rely heavily on GDAL command-line utilities.
+The Open Foris Geospatial Toolkit (OFGT) is a collection of prototype command-line utilities for the processing of geographical data. The tools can be divided into stand-alone programmes and scripts. They have been tested mainly in the Ubuntu Linux environment, although they can be used with other Linux distros, macOS, and MS Windows (Cywgin) as well. Most of the stand-alone programmes use GDAL libraries and many of the scripts rely heavily on GDAL command-line utilities.
 
-The OFGT project started under the Open Foris Initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting http://openforis.org. The initiative develops and supports innovative, easy-to-use tools needed to produce reliable, timely information on the state of forest resources and their uses. The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction, and other image processing analysis.
+The OFGT project started under the Open Foris initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting (see `Open Foris <http://openforis.org>`__. The initiative develops and supports innovative, easy-to-use tools needed to produce reliable, up-to-date information on the state of forest resources and their uses. The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction, and other image processing analysis.
 
 .. note::
 
-    The current version availalble on SEPAL is :code:`1.25.4`
+    The current version available in SEPAL is :code:`1.25.4`
 
 Available commands
 ------------------
@@ -21,22 +21,22 @@ General tools
 .. code-block:: console
 
     $ CsvToPolygon.py              # Creates shapefile polygons from a text file.
-    $ genericCsvToPolygon.py       # Creating polygons from text files.
+    $ genericCsvToPolygon.py       # Creates polygons from text files.
     $ genericGEkml2csv.bash        # Converts separate KML files into one CSV file.
-    $ GExml2csv.bash               # Converts XML files from GEE training data collection tool into one CSV file.
+    $ GExml2csv.bash               # Converts XML files from the GEE training data collection tool into one CSV file.
     $ oft-addattr.py               # Adds one integer attribute in a shape file.
     $ oft-addpct.py                # Adds pseudo color table to an image.
     $ oft-admin-mask.bash          # Prepares a mask of administrative areas within a satellite image.
     $ oft-bb                       # Is a Bounding Box calculator t.
     $ oft-classvalues-compare.bash # Creates comparison plots of classes based on results of previous script oft-classvalues-plot.bash.
     $ oft-classvalues-plot.bash    # Creates scatterplots of pixels within training classes.
-    $ oft-combine-masks.bash       # Combines several masks to one mask file.
+    $ oft-combine-masks.bash       # Combines several masks into one mask file.
     $ oft-compare-overlap.bash     # Compares overlapping areas of two images and produces between-band correlations.
     $ oft-crop.bash                # Crops a raster image to the extent of a certain pixel value.
     $ oft-cuttile.pl               # Cuts image tiles on the basis of a given list of locations.
     $ oft-filter                   # Moving window filters.
     $ oft-gengrid.bash             # Generates a systematic grid over a raster image.
-    $ oft-getcorners.bash          # Gets the coordinates of corners of a raster image or OGR vector layer.
+    $ oft-getcorners.bash          # Retrieves coordinates of corners of a raster image or OGR vector layer.
     $ oft-polygonize.bash          # A wrapper for gdal_polygonize.
     $ oft-sample-within-polys.bash # Samples pixels within polygons and generates training data for knn.
     $ oft-shptif.bash              # Rasterizes a shapefile to the resolution of a reference image.
@@ -85,9 +85,9 @@ Classification
     $ oft-cluster.bash             # Clusters raster images.
     $ oft-kmeans                   # For k-means clustering.
     $ oft-nn                       # Nearest neighbor classifier.
-    $ oft-nn-training-data.bash    # Prepare a training data text file for oft-nn analysis.
-    $ oft-normalize.bash           # Prepare a training data text file for oft-nn analysis.
-    $ oft-prepare-image-for-nn.bash # Prepare a Landsat image for nn-analysis with oft-nn.
+    $ oft-nn-training-data.bash    # Prepares a training data text file for oft-nn analysis.
+    $ oft-normalize.bash           # Prepares a training data text file for oft-nn analysis.
+    $ oft-prepare-image-for-nn.bash # Prepares a Landsat image for nn-analysis with oft-nn.
     $ oft-unique-mask-for-nn.bash  # Creates a unique mask for oft-nn analysis.
 
 Segmentation
