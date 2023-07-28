@@ -1,39 +1,39 @@
-BayTS based Near-Real-Time Forest Disturbance Alerts
-====================================================
+BayTS-based near-real-time (NRT) forest disturbance alerts
+==========================================================
 
 Background
 ----------
 
-Near-Real-Time Forest Disturbance Monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time-series and target the generation of recent disturbance events in forested areas. The main objective is to detect those changes as early as possible. This priotization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time-series, which are then classified as disturbance events.
+Near-real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series, targeting the generation of recent disturbance events in forested areas. The main objective is to detect those changes as early as possible. This prioritization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time series, which are then classified as disturbance events.
 
-This page provides background information and a detailed **HOW-TO** for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of near-real-time alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to strucutral elements of the vegetation cover.
-
+This page provides background information and a detailed how-to guide for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of NRT alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to structural elements of the vegetation cover.
 
 Methodology
 -----------
-To detect forest cover loss in near-real-time in dense Sentinel-1 time-series a pixel-based approach is applied. In a first step a historic reference is created by claculating the mean and standard deviation of the backscatter values for each pixel. The reference is then used to calculate the probability of a pixel being in a disturbed state. The probability is calculated using the Bayes Theorem. The Bayes Theorem is a statistical approach that allows to calculate the probability of an event based on prior knowledge of conditions that might be related to the event. In this case the event is a forest disturbance and the conditions are the backscatter values of the pixel.
+To detect forest cover loss in NRT in dense Sentinel-1 time series, a pixel-based approach is applied. First, a historic reference is created by calculating the mean and standard deviation of the backscatter values for each pixel. The reference is then used to calculate the probability of a pixel being in a disturbed state using the Bayes Theorem, a statistical approach that allows for the calculation of the probability of an event based on prior knowledge of conditions that might be related to the event. In this case, the event is a forest disturbance and the conditions are the backscatter values of the pixel.
 
-The method works without any training data, as a probabality of being forest is derived from its historic reference expressed by the mean and standard deviation, from which a probability density function is derived. The non-forest state is assumed to have the same probability density function centered at 4 dB backscatter below the forested one. Once the probability of being non-forest exceeds a user defined threshhold(0.6 by default), Bayesian Updating is applied until the alert either gets confirmed or rejected. Therefore the updating is repeated until the probability of being a change is above a high confidence threshhold (0.975 by default). If the alert is not confirmed within a certain time-range (90 days by default), the alert is rejected.
+The method works without any training data, as a probability of being forest is derived from its historic reference expressed by the mean and standard deviation, from which a probability density function is derived. The non-forest state is assumed to have the same probability density function centered at 4 decibel (dB) backscatter below the forested one. Once the probability of being non-forest exceeds a user-defined threshold (0.6 by default), Bayesian Updating is applied until the alert either gets confirmed or rejected. Therefore, the updating is repeated until the probability of being a change is above a high-confidence threshold (0.975 by default). If the alert is not confirmed within a certain time range (90 days by default), the alert is rejected.
 
-The method capitalizes on both, VV and VH polarized channels, whereas the highest non-forest probability is considered for the updating. Also, initial alerts from one orbit, can only be confirmed by another orbit, as the image geometry changes, so that small scale changes might be invisible in one orbit, but visible in the other.
+The method capitalizes on both VV and VH polarized channels, whereas the highest non-forest probability is considered for the updating. Initial alerts from one orbit can only be confirmed by another orbit, as the image geometry changes, so that small-scale changes might be invisible in one orbit but visible in the other.
 
 .. figure:: ../_images/workflows/bayts/bayts_pdfs.png
-   :alt: A single-pixel time-series with apparent change and the forest and non-forest probability to the right.
+   :alt: A single-pixel time series with apparent change, and the forest and non-forest probability to the right.
    :width: 800
    :align: center
 
-SEPAL allows to display different stages of confidence, which is the initial one (where an alert is triggerd by the probability of being non-forest above 0.6), low confidence alerts (probability of being change > 0.85) and high confidence alerts (probability of being change > 0.975). In addition, the thresholds can be changed.
+SEPAL allows for the displaying of different stages of confidence, which is the initial one (where an alert is triggered by the probability of being non-forest above 0.6), low-confidence alerts (where the probability of change being > 0.85) and high-confidence alerts (where the probability of change being > 0.975). In addition, the thresholds can be changed.
 
-The main sensitivity parameter affects the difference of the forest and non-forest probability functions. By default it is 4 dB, a low sensitivy multiplies the 4 dB by a factor of 1.2, while a higher sensitivity is achieved by decreasing the 4 dB range by a factor of 0.8, resulting in a 4.8 or 3.2 dB difference, respectively. This will affect both, detectability of change as well as timeliness.
+The main sensitivity parameter affects the difference of the forest and non-forest probability functions. By default, it is 4 dB; a low-sensitivy multiplies the 4 dB by a factor of 1.2, while a higher sensitivity is achieved by decreasing the 4 dB range by a factor of 0.8, resulting in a 4.8 dB or 3.2 dB difference, respectively. This will affect both detectability of change and timeliness.
 
-It is further possible to normalize the images over time. It should be noted that ths operation is quite compute intense and might hamper the algorithm to work on the fly, so that exporting is mandatory.
+It is also possible to normalize the images over time, though this operation is computationally demanding and might hamper the algorithm to work on the fly, making exporting mandatory.
 
 How-to
 ------
 
 Requirements
 """"""""""""
-1. Area of Interest (EE table, Country/Regional boundaries, self-drawn polygon)
-2. Forest Mask (optional, but recommended)
 
-From this `link <https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`_ you can download a PowerPoint Presentation that provides a step-by-step guide for the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia. Once you are more familiar, it will help to read further to understand the underlying logic of the workflow.
+1. Area of interest (AOI) (EE table, country/regional boundaries, self-drawn polygon)
+2. Forest mask (optional, but recommended)
+
+For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download `this presentation <https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`. To understand the underlying logic of the workflow, read further.
