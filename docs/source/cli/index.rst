@@ -4,7 +4,7 @@ SEPAL environment
 CLI tools
 ---------
 
-The SEPAL platform includes a variety of useful command-line interface (CLI) utilities to help resolve specific problems, including, but not limited to:
+The SEPAL platform includes a variety of useful command-line interface (CLI) utilities to help resolve specific problems such as:
 
 -   Geospatial Data Abstraction Library (GDAL)
 -   Google Drive (Drive)
@@ -28,11 +28,11 @@ These tools can be called directly from the terminal or any programming language
 
 .. tip::
 
-    If you're running actions from multiple directories or instances, you can open multiple terminal tabs and name them as you see fit.
+    If you're running actions from multiple directories or instances, you can open multiple **Terminal** tabs and name them as you see fit.
 
 .. tip::
 
-    If the code you want to execute is taking time, please consider running it in the background using :code:`nohup`.
+    If the code you want to execute is taking time, consider running it in the background using :code:`nohup`.
 
     .. code-block:: console
 
