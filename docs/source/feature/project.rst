@@ -1,7 +1,7 @@
 SEPAL recipe projects
 =====================
 
-When interacting with SEPAL processes, a user will create "recipes", which can be interconnected and work together inside a single project (e.g. the :code:`Mosaics` used in a :code:`Classification`). To help with these interconnections, the SEPAL platform provides a :code:`Project` system to organize users' work.
+When interacting with SEPAL processes, a user creates *recipes*, which can work together and be interconnected inside a single project (e.g. :code:`Mosaics` used in a :code:`Classification`). To help with these interconnections, the SEPAL platform provides a :code:`Project` system to organize users' work.
 
 Overview
 --------
@@ -9,7 +9,7 @@ Overview
 Go to the **Processes** interface of SEPAL (:btn:`<fa-solid fa-globe>`) (you should see the following; if you've already created recipes in previous releases, you will see a list of existing recipes).
 
 .. thumbnail:: ../_images/feature/project/project-landing.png
-    :title: Landing page for Processes, exposing the project interface
+    :title: Landing page for **Processes** showing the project interface
     :group: recipe-process
     :align: center
 
@@ -50,7 +50,7 @@ The newly created project will now apear in the list.
     :group: recipe-process
     :width: 49%
 
-To remove a project, select the :btn:`<fa-solid fa-trash>` icon (located next to its name). (Note: all recipes included in the process will be destroyed as well).
+To remove a project, select the :btn:`<fa-solid fa-trash>` icon (located beside its name). (Note: all recipes included in the process will be destroyed as well.)
 
 .. thumbnail:: ../_images/feature/project/project-list.png
     :title: The list of projects available in your SEPAL account
@@ -60,10 +60,10 @@ To remove a project, select the :btn:`<fa-solid fa-trash>` icon (located next to
 Recipes
 -------
 
-When entering the process interface, no projects are selected by default, meaning that users will see all of the recipes available in their SEPAL accounts. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`.
+When entering the **Process** interface, no projects are selected by default, meaning that users will see all of the recipes available in their SEPAL accounts. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`.
 
 .. thumbnail:: ../_images/feature/project/all-recipes.png
-    :title: All of the recipes available in one account
+    :title: All recipes available in one account
     :group: recipe-process
     :align: center
 
@@ -72,10 +72,10 @@ From this page, the user can customize and manage recipes.
 Filter recipes
 ^^^^^^^^^^^^^^
 
-Select (3) to filter recipes according to your project. Once selected, only the recipes included in the project will be displayed. The field is clearable, meaning you can go back to the unfiltered state and select another project. :code:`[no project]` can also be selected.
+Select (3) to filter recipes according to your project. Once selected, only the recipes included in the project will be displayed. The field is "clearable", meaning you can go back to the unfiltered state and select another project. Also, :code:`[no project]` can be selected.
 
 .. thumbnail:: ../_images/feature/project/filtered-recipes.png
-    :title: The filtered recipes inclued in the "foo 2" project
+    :title: The filtered recipes included in the "foo 2" project
     :group: recipe-process
     :align: center
 
@@ -93,9 +93,9 @@ Once a project is selected and a recipe is created, it will belong to the select
     If you don't want your recipe to be associated with any project, unfilter the list before selecting :btn:`<fa-solid fa-plus> Add recipe`.
 
 Edit recipes
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
-Recipe behaviour can be edited directly from this view. Select the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the editing interface.
+Recipe behaviour can be edited directly from this view. Select the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the **Editing** interface.
 
 .. thumbnail:: ../_images/feature/project/edit-recipes.png
     :title: The recipe editing interface
@@ -104,7 +104,7 @@ Recipe behaviour can be edited directly from this view. Select the :btn:`<fa-sol
 
 From this interface, you can:
 
--   :btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on-screen. Any other editing operation will only be applied on the selected recipe(s).
+-   :btn:`<fa-solid fa-check> Select`: Select/unselect all recipes shown on the screen. Any other editing operation will only be applied to the selected recipe(s).
 -   :btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project.
 -   :btn:`<fa-solid fa-trash> Remove`: Delete the recipe(s) permanently.
 
@@ -115,7 +115,7 @@ From this interface, you can:
 Connect recipes
 ^^^^^^^^^^^^^^^
 
-When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see figure on left). If one still wants to see all of the recipes in the dropdown list, select :btn:`All` and all of the recipes will be displayed using project names as headers (see figure on right).
+When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see following figure on the left). If one still wants to see all of the recipes in the dropdown list, select :btn:`All` and all of the recipes will be displayed using project names as headers (see following figure on right).
 
 .. thumbnail:: ../_images/feature/project/connected-project-only.png
     :title: Dropdown list that only shows recipes from the same project
@@ -123,12 +123,6 @@ When creating recipes such as :code:`Classification`, users can use other recipe
     :width: 49%
 
 .. thumbnail:: ../_images/feature/project/connected-all-recipes.png
-    :title: Dropdown that shows all of the recipes
+    :title: Dropdown list that shows all recipes
     :group: recipe-process
     :width: 49%
-
-
-
-
-
-
