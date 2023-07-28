@@ -1,19 +1,19 @@
-Near real time forest disturbance mapping (CCDC-based)
+Near real-time forest disturbance mapping (CCDC-based)
 ======================================================
 
 Background
 ----------
 
-Near real time forest disturbance mapping (NRT-FDM) can be useful for a variety of applications, especially policy enforcement. In this workflow description, we provide a step-by-step guide on how to set-up an NRT-FDM on SEPAL by using the advanced functionality of the CCDC algorithm.
+Near real-time forest disturbance mapping (NRT-FDM) can be useful for a variety of applications, especially policy enforcement. In this workflow description, we provide a step-by-step guide on how to set up an NRT-FDM on SEPAL by using the advanced functionality of the CCDC algorithm.
 
 Requirements
 ------------
 
-1. Area of interest
+1. Area of interest (AOI)
 2. Forest mask and/or training data for forest/non-forest
-3. Data Science for Food and Agricultural Systems (DSFAS)
+3. Data science for food and agricultural systems (DSFAS)
 
-Main Steps
+Main steps
 ----------
 
 1. Create CCDC asset for historical period (-3 + 1 year around forest mask year).
@@ -34,4 +34,4 @@ Main Steps
 
 .. tip::
 
-    For specific help, `open an issue in our repository <https://github.com/openforis/sepal-doc/issues/new?assignees=&labels=&template=documentation-needed.md>`__.
+    For support, open an issue in our `repository <https://github.com/openforis/sepal-doc/issues/new?assignees=&labels=&template=documentation-needed.md>`__.
