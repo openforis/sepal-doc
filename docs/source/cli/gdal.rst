@@ -1,16 +1,16 @@
 Geospatial Data Abstraction Library
 ===================================
 
-GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT Style Open Source `License <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. As a library, it presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command line utilities for data translation and processing. The `NEWS <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page describes the latest release.
+GDAL is a translator library for raster and vector geospatial data formats that is released under an  `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. As a library, it presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command-line utilities for data translation and processing. The `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page describes the latest release.
 
 .. note::
 
-    The current version availalble on SEPAL is : :code:`3.4.3`
+    The current version available on SEPAL is : :code:`3.4.3`
 
 Available commands
 ------------------
 
-The complete documentation of the GDAL commands can be found on the `GDAL website <https://gdal.org/programs/index.html>`__.
+The complete documentation of GDAL commands can be found on the `GDAL website <https://gdal.org/programs/index.html>`__.
 
 Raster programmes
 ^^^^^^^^^^^^^^^^^
@@ -24,7 +24,7 @@ Raster programmes
     $ gdaltindex         # Builds an OGR-supported dataset as a raster tileindex.
     $ gdalbuildvrt       # Builds a VRT from a list of datasets.
     $ gdal_contour       # Builds vector contour lines from a raster elevation model.
-    $ gdaldem            # Tools to analyze and visualize DEMs.
+    $ gdaldem            # Tools to analyse and visualize DEMs.
     $ rgb2pct.py         # Convert a 24bit RGB image to 8bit paletted.
     $ pct2rgb.py         # Convert an 8bit paletted image to 24bit RGB.
     $ gdalattachpct.py   # Attach a color table to a raster file from an input file.
@@ -34,8 +34,8 @@ Raster programmes
     $ gdal_rasterize     # Burns vector geometries into a raster.
     $ gdaltransform      # Transforms coordinates.
     $ nearblack          # Converts nearly black/white borders to black.
-    $ gdal_retile.py     # Retiles a set of tiles and/or build tiled pyramid levels.
-    $ gdal_grid          # Creates regular grid from the scattered data.
+    $ gdal_retile.py     # Retiles a set of tiles and/or builds tiled pyramid levels.
+    $ gdal_grid          # Creates regular grid from scattered data.
     $ gdal_proximity.py  # Produces a raster proximity map.
     $ gdal_polygonize.py # Produces a polygon feature layer from a raster.
     $ gdal_sieve.py      # Removes small raster polygons.
@@ -44,14 +44,13 @@ Raster programmes
     $ gdalsrsinfo        # Lists info about a given SRS in a number of formats (WKT, PROJ.4, etc.).
     $ gdalmove.py        # Transforms georeferencing of raster file in place.
     $ gdal_edit.py       # Edit in place various information of an existing GDAL dataset.
-    $ gdal_calc.py       # Command line raster calculator with NumPy syntax.
+    $ gdal_calc.py       # Command-line raster calculator with NumPy syntax.
     $ gdal_pansharpen.py # Performs a pansharpen operation.
     $ gdal-config (Unix) # Determines various information about a GDAL installation.
     $ gdalmanage         # Identifies, deletes, renames and copies raster data files.
     $ gdalcompare.py     # Compares two images.
     $ gdal_viewshed      # Computes a visibility mask for a raster.
     $ gdal_create        # Creates a raster file (without source dataset).
-
 
 Multidimensional raster programmes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
