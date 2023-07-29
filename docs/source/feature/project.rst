@@ -1,52 +1,56 @@
-SEPAL recipies' projects
-========================
+SEPAL recipe projects
+=====================
 
-When interacting with SEPAL processes, a user will create "recipes". These recipes can be interconnected and work together inside a single project e.g. the :code:`Mosaics` used in a :code:`Classification`. To help users deal with these interconnections SEPAL is providing a :code:`Project` system that will help them to organize their works.
+When interacting with SEPAL processes, a user creates *recipes*, which can work together and be interconnected inside a single project (e.g. :code:`Mosaics` used in a :code:`Classification`). To help with these interconnections, the SEPAL platform provides a :code:`Project` system to organize users' work.
 
 Overview
 --------
 
-Go to the processes interface of SEPAL (:btn:`<fa-solid fa-globe>`) you should see the following, completed by a list of existing recipes if you've already created some in the previous releases.
+Go to the **Processes** interface of SEPAL (:btn:`<fa-solid fa-globe>`) (you should see the following; if you've already created recipes in previous releases, you will see a list of existing recipes).
 
 .. thumbnail:: ../_images/feature/project/project-landing.png
-    :title: Landing page of the processes exposing the project interface
+    :title: Landing page for **Processes** showing the project interface
     :group: recipe-process
     :align: center
 
-the following intercation are available on this page:
+The following interactions are available on this page:
 
-#.   add a recipe
-#.   manage the project
-#.   select a project
-#.   order recipies by name or update date
-#.   edit recipes
+#.   Add a recipe
+#.   Manage a project
+#.   Select a project
+#.   Order recipes by name, or update date
+#.   Edit recipes
 
-In the next section we'll present how one can create a new project and manage the existing projects in its SEPAL account.
+Read the following section to understand how users can create a new project and manage existing projects in the SEPAL platform.
 
 Project
 -------
 
 .. note::
 
-    Projets are personnal, they cannot be shared and they are not visible to other users.
+    Projects are personal. They cannot be shared and they are not visible to other users.
 
 .. tip::
 
-    For every user a :code:`[no project]` project is created at registration step. This project will be the fallback for every recipes that was created before the publication of the feature. It cannot be deleted or renamed.
+    For every user, a :code:`[no project]` project is created during registration. This project will be the fallback for every recipe that was created before the publication of the feature. It cannot be deleted or renamed.
 
-To create a project, click on :btn:`<fa-solid fa-folder-tree> Projects`. It will open the following interface. then click on :btn:`<fa-solid fa-pencil> Add` to create a new project. Simply fill the name and press :btn:`<fa-solid fa-check> Apply` to validate it. The newly created project will apear in the list.
+To create a project, select :btn:`<fa-solid fa-folder-tree> Projects`, which opens the following interface (see figure below).
+
+Then, select :btn:`<fa-solid fa-pencil> Add` to create a new project. Enter the name and select :btn:`<fa-solid fa-check> Apply`.
+
+The newly created project will now apear in the list.
 
 .. thumbnail:: ../_images/feature/project/new-project.png
-    :title: project management popup windows
+    :title: Project management pop-up windows
     :group: recipe-process
     :width: 49%
 
 .. thumbnail:: ../_images/feature/project/project-create.png
-    :title: Create project popup windows
+    :title: Create project pop-up windows
     :group: recipe-process
     :width: 49%
 
-To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its name. All the recipes included in the process will be destroyed as well.
+To remove a project, select the :btn:`<fa-solid fa-trash>` icon (located beside its name). (Note: all recipes included in the process will be destroyed as well.)
 
 .. thumbnail:: ../_images/feature/project/project-list.png
     :title: The list of projects available in your SEPAL account
@@ -56,29 +60,29 @@ To remove a project, click on the :btn:`<fa-solid fa-trash>` icon next to its na
 Recipes
 -------
 
-When entering in the process interface by default no projects are selected, meaning that the user will see all the recipes available in its SEPAL account. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`.
+When entering the **Process** interface, no projects are selected by default, meaning that users will see all of the recipes available in their SEPAL accounts. All recipes are displayed using the following prototype: :code:`<project name> / <recipe name>`.
 
 .. thumbnail:: ../_images/feature/project/all-recipes.png
-    :title: All the recipies available in one account
+    :title: All recipes available in one account
     :group: recipe-process
     :align: center
 
-From this page the user can customize and manage recipes.
+From this page, the user can customize and manage recipes.
 
-Filter recipies
-^^^^^^^^^^^^^^^
+Filter recipes
+^^^^^^^^^^^^^^
 
-click on (3) to filter the recipes according to their project. Once selected, only the recipes included in this project will be displayed. The field is clearable meaning that you can go back to the unfiltered state and select another project. :code:`[no project]` can also be selected.
+Select (3) to filter recipes according to your project. Once selected, only the recipes included in the project will be displayed. The field is "clearable", meaning you can go back to the unfiltered state and select another project. Also, :code:`[no project]` can be selected.
 
 .. thumbnail:: ../_images/feature/project/filtered-recipes.png
-    :title: The filtered recipes inclued in the "foo 2" project
+    :title: The filtered recipes included in the "foo 2" project
     :group: recipe-process
     :align: center
 
-Once a project is selected it will appear as "current project" in the project list:
+Once a project is selected, it will appear as "current project" in the project list (see figure below).
 
 .. thumbnail:: ../_images/feature/project/change-project.png
-    :title: The list of project showing the currently selected project
+    :title: The list of projects, showing the currently selected project
     :group: recipe-process
     :align: center
 
@@ -86,45 +90,39 @@ Once a project is selected and a recipe is created, it will belong to the select
 
 .. tip::
 
-    If you don't want your recipe to be associated with any project, unfilter the list before clicking on :btn:`<fa-solid fa-plus> Add recipe`.
+    If you don't want your recipe to be associated with any project, unfilter the list before selecting :btn:`<fa-solid fa-plus> Add recipe`.
 
-Edit recipies
-^^^^^^^^^^^^^
+Edit recipes
+^^^^^^^^^^^^
 
-Recipe behavior can be edited directly from this view. Click the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the edition interface.
+Recipe behaviour can be edited directly from this view. Select the :btn:`<fa-solid fa-pen-to-square> Edit` button to open the **Editing** interface.
 
 .. thumbnail:: ../_images/feature/project/edit-recipes.png
-    :title: The recipe edit interface
+    :title: The recipe editing interface
     :group: recipe-process
     :align: center
 
-from this interface you can:
+From this interface, you can:
 
--   :btn:`<fa-solid fa-check> Select`: Select/unselect all the recipes shown on screen. Any other edition operation will be only applied on the selected recipe(s).
+-   :btn:`<fa-solid fa-check> Select`: Select/unselect all recipes shown on the screen. Any other editing operation will only be applied to the selected recipe(s).
 -   :btn:`<fa-solid fa-shuffle> Move`: Move the selected recipe(s) to another project.
--   :btn:`<fa-solid fa-trash> Remove`: Delete the recipe permanently.
+-   :btn:`<fa-solid fa-trash> Remove`: Delete the recipe(s) permanently.
 
-.. warning::
+.. attention::
 
-    Before deleting individual recipes make sure that they are not used as inputs in others.
+    Before deleting individual recipes, make sure that they are not used as inputs in others.
 
-connect recipes
+Connect recipes
 ^^^^^^^^^^^^^^^
 
-When creating recipes, like :code:`Classification` users can use other recipe as input for the process. To avoid flooding the dropdown with to many values only the recipes from the same projet will be displayed (left). If one still want to see all the recipes in the dropdown, click on :btn:`All` and all the recipes will be exposed using project names as headers (right).
+When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see following figure on the left). If one still wants to see all of the recipes in the dropdown list, select :btn:`All` and all of the recipes will be displayed using project names as headers (see following figure on right).
 
 .. thumbnail:: ../_images/feature/project/connected-project-only.png
-    :title: dropdown that only shows the recipes from the same project
+    :title: Dropdown list that only shows recipes from the same project
     :group: recipe-process
     :width: 49%
 
 .. thumbnail:: ../_images/feature/project/connected-all-recipes.png
-    :title: dropdown that shows all the recipes
+    :title: Dropdown list that shows all recipes
     :group: recipe-process
     :width: 49%
-
-
-
-
-
-
