@@ -25,7 +25,7 @@ Once the :code:`Planet mosaic` recipe is selected, SEPAL will show the recipe pr
     :group: planet-mosaic-recipe
     :title: The landing page of the Planet mosaic recipe
 
-The first step is to change the name of the recipe, which will be used to name your files and recipes in the SEPAL folders. 
+The first step is to change the name of the recipe, which will be used to name your files and recipes in the SEPAL folders.
 
 Double-click the tab and enter a new name (it will default to :code:`Planet_mosaic_<start_date>_<end_date>`).
 
@@ -58,7 +58,7 @@ In the lower right, four tabs are available, allowing you to customize the plane
 AOI selection
 ^^^^^^^^^^^^^
 
-The data exported by the recipe will be cut to the bounds of the AOI. 
+The data exported by the recipe will be cut to the bounds of the AOI.
 
 There are multiple ways to select the AOI in SEPAL:
 
@@ -94,10 +94,10 @@ Sources
 
 SEPAL can use multiple data sources to create your mosaics/composites, as long as they are Planet-related datasets.
 
-Three options are available: 
+Three options are available:
 
--   :guilabel:`NICFI basemaps` 
--   :guilabel:`Custom basemaps` 
+-   :guilabel:`NICFI basemaps`
+-   :guilabel:`Custom basemaps`
 -   :guilabel:`Daily imagery`
 
 Select :btn:`<fa-solid fa-check> Done` to finish the process.
@@ -144,7 +144,7 @@ Options
 
     This step is not mandatory since Planet mosaics are already sanitized.
 
-SEPAL provides options to customize images used to create the compositing mosaic; the selected parameter will be automatically applied to the analysis. 
+SEPAL provides options to customize images used to create the compositing mosaic; the selected parameter will be automatically applied to the analysis.
 
 Select the :btn:`<fa-solid fa-xmark> Close` button to complete customization.
 
@@ -243,7 +243,7 @@ You can set a custom scale for exportation by changing the value in the :code:`S
 Destination
 ^^^^^^^^^^^
 
-You can export the mosaic composition to the :guilabel:`SEPAL workspace` or to :guilabel: GEE as an `Asset`. 
+You can export the mosaic composition to the :guilabel:`SEPAL workspace` or to :guilabel: GEE as an `Asset`.
 
 In both cases, the same image will be exported; however, for the former, the image will be exported in :code:`.tif` format to the :code:`Downloads` SEPAL folder; for the latter, the image will be exported to your GEE account **Assets** list.
 
@@ -256,7 +256,7 @@ Select :btn:`<fa-solid fa-check> Apply` to start the download process.
 Access
 ^^^^^^
 
-Once the download process is complete, access the data in your SEPAL folders. 
+Once the download process is complete, access the data in your SEPAL folders.
 
 The data will be stored in the :code:`Downloads` folder using the following format:
 
