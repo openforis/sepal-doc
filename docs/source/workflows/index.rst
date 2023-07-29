@@ -4,25 +4,27 @@ Workflows
 Overview
 --------
 
-SEPAL is gathering numerous tools and recipes to help users perform data analysis. These tools can be combined in a modular way to execute more complex workflows.
+SEPAL leverages numerous tools and recipes to help users perform data analysis.
 
-This section is presenting some workflows that involve the usage of multiple SEPAL tools (modules and/or recipes).
+These tools can even be combined in a modular way to execute more complex workflows.
+
+This section presents some workflows that involve using multiple SEPAL tools (modules and/or recipes).
 
 .. note::
 
-    If your workflow is not described here and you think it would make sense to have it in the main SEPAL documentation, please send us a message in our `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__.
+    If your workflow is not described here and you would like for it to be included in SEPAL documentation, contact the SEPAL team in the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__.
 
-Table of content
-----------------
+Table of contents
+-----------------
 
 .. toctree::
     :maxdepth: 1
     :glob:
 
-    Sample Based Area estimation<area_estimation>
-    Standard Operating Procedures<sop_template>
-    coded
-    CCDC NRT Monitoring<nrt>
+    Sample-based area estimation<area_estimation>
+    Standard operating procedures<sop_template>
+    Continuous degradation detection<coded>
+    Near real-time forest disturbance mapping (CCDC-based)<nrt>
     BayTS NRT Monitoring<bayts>
-    drivers
+    Direct drivers assessment<drivers>
     peatland_mapping
