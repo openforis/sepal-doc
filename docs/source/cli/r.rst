@@ -28,7 +28,7 @@ The SEPAL :code:`R` environment is not empty; there are numerous embedded packag
 
 .. literalinclude:: ../_data/r_packages.sh
     :language: sh
-    :emphasize-lines: 32-298
+    :emphasize-lines: 20-297
 
 To check the availability of a specific package:
 
