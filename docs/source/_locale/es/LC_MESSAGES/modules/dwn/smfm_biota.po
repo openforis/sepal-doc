@@ -1,38 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-07-21 08:04\n"
+"Last-Translator: \n"
 "Language: es\n"
-"Language-Team: es <LL@li.org>\n"
+"Language-Team: Spanish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/smfm_biota.po\n"
+"X-Crowdin-File-ID: 193\n"
 
 #: ../../source/modules/dwn/smfm_biota.rst:2
 msgid "SMFM Biota"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:4
-msgid ""
-"The BIOTA tool is part of the Satellite Monitoring for Forest Management "
-"(SMFM) project by the World Bank, and it was developed by `LTS "
-"International <https://ltsi.co.uk/>`_ and the `University of Edinburgh "
-"<https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL "
-"platform developed by the SEPAL developer team. The tool relies on the "
-"use of JAXA's `ALOS PALSAR "
-"<https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics and "
-"it allows you to produce outputs of:"
+msgid "The BIOTA tool is part of the Satellite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics and it allows you to produce outputs of:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:6
@@ -60,10 +51,7 @@ msgid "More information can be found online at https://www.smfm-project.com/."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:14
-msgid ""
-"In this exercise, you will learn how to use the BIOmass Tool for Alos "
-"(BIOTA) to calculate above-ground biomass in dry forests and savannas, as"
-" well as change maps."
+msgid "In this exercise, you will learn how to use the BIOmass Tool for Alos (BIOTA) to calculate above-ground biomass in dry forests and savannas, as well as change maps."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:19
@@ -71,9 +59,7 @@ msgid "**objectives**:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:21
-msgid ""
-"Generate maps of above-ground biomass (AGB), Gamma0 backscatter, forest "
-"cover, AGB change, deforestation risk, and change type."
+msgid "Generate maps of above-ground biomass (AGB), Gamma0 backscatter, forest cover, AGB change, deforestation risk, and change type."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:25
@@ -85,17 +71,11 @@ msgid "SEPAL account"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:29
-msgid ""
-"Navigate to the **Apps** menu by clicking on the wrench icon and typing "
-"\"SMFM\" into the search field. Select \"SMFM Biota\"."
+msgid "Navigate to the **Apps** menu by clicking on the wrench icon and typing \"SMFM\" into the search field. Select \"SMFM Biota\"."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:33
-msgid ""
-"Sometimes the tool takes a few minutes to load. Wait until you see the "
-"tool's interface. In case the tool fails to load properly, as seen below,"
-" please close the tab and repeat the above steps. If this does not work, "
-"reload SEPAL."
+msgid "Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, as seen below, please close the tab and repeat the above steps. If this does not work, reload SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst
@@ -103,12 +83,7 @@ msgid "Failure of the BIOTA tool."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:41
-msgid ""
-"If none of these steps work, you might need to start another instance. "
-"Please see `Introduction to SEPAL "
-"<https://docs.sepal.io/en/latest/setup/presentation.html#terminal-tab>`_ "
-"for steps on how to use the terminal to start a higher instance. A 'm4' "
-"instance should be enough."
+msgid "If none of these steps work, you might need to start another instance. Please see `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html#terminal-tab>`_ for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:43
@@ -120,9 +95,7 @@ msgid "The SMFM BIOTA interface."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:52
-msgid ""
-"Depending on your computer screen size, sometimes the left column will be"
-" on top of the content, as seen below:"
+msgid "Depending on your computer screen size, sometimes the left column will be on top of the content, as seen below:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst
@@ -142,10 +115,7 @@ msgid "Example of how to adjust the zoom level on Google Chrome."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:68
-msgid ""
-"Keep the zoom level but click outside of the column to hide it. Then, to "
-"open it again, you will need to click on the three dots located at the "
-"top right side."
+msgid "Keep the zoom level but click outside of the column to hide it. Then, to open it again, you will need to click on the three dots located at the top right side."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst
@@ -157,22 +127,11 @@ msgid "Downloading the ALOS mosaics"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:78
-msgid ""
-"The first step is to select the parameters for accessing data from ALOS "
-"(JAXA). The data is delivered in either 1x1 degree tiles or 5x5 degree "
-"collections of tile into SEPAL."
+msgid "The first step is to select the parameters for accessing data from ALOS (JAXA). The data is delivered in either 1x1 degree tiles or 5x5 degree collections of tile into SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:80
-msgid ""
-"Under :code:`Required Inputs` you need the define Latitude and Longitude "
-"coordinates. To do so, click on your point of interest on the map that is"
-" shown on the right side - this will be the upper-left coordinate of the "
-"tiles. The default values are -75 degrees for Longitude and 0 degrees for"
-" Latitude. For this exercise, we will demonstrate the steps for Tanzania "
-"(Latitude -2.54, and Longitude 31.04 - a point in-between the Moyowosi "
-"Game Reserve and the Kigosi Game Reserve, next to the border of the Getta"
-" and Kigoma regions)."
+msgid "Under :code:`Required Inputs` you need the define Latitude and Longitude coordinates. To do so, click on your point of interest on the map that is shown on the right side - this will be the upper-left coordinate of the tiles. The default values are -75 degrees for Longitude and 0 degrees for Latitude. For this exercise, we will demonstrate the steps for Tanzania (Latitude -2.54, and Longitude 31.04 - a point in-between the Moyowosi Game Reserve and the Kigosi Game Reserve, next to the border of the Getta and Kigoma regions)."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -180,32 +139,19 @@ msgid "Selecting a point on the map."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:89
-msgid ""
-"The BIOTA tool was designed for woodlands and dry forests as it uses a "
-"generic equation to calibrate Gamma0 backscatter to forest AGB developed "
-"using forest plot data from Mozambique, Tanzania, and Malawi, in southern"
-" Africa. For global applicability, the tool supports the calibration of "
-"country-specific backscatter-AGB relationships through determined "
-"parameters that will be explained later."
+msgid "The BIOTA tool was designed for woodlands and dry forests as it uses a generic equation to calibrate Gamma0 backscatter to forest AGB developed using forest plot data from Mozambique, Tanzania, and Malawi, in southern Africa. For global applicability, the tool supports the calibration of country-specific backscatter-AGB relationships through determined parameters that will be explained later."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:91
-msgid ""
-"Next, we define the two years of interest. For this exercise, we will "
-"leave the default values, 2016 for Year 1 and 2017 for Year 2. Year 2 is "
-"used for calculating changes."
+msgid "Next, we define the two years of interest. For this exercise, we will leave the default values, 2016 for Year 1 and 2017 for Year 2. Year 2 is used for calculating changes."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:93
-msgid ""
-"The tool gives you the option to choose either 1x1 or 5x5 degree tile "
-"size. We will select 1x1 tile size for time purposes."
+msgid "The tool gives you the option to choose either 1x1 or 5x5 degree tile size. We will select 1x1 tile size for time purposes."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:95
-msgid ""
-"Before selecting :code:`Download Images`, we will look into the "
-":code:`Optional Inputs` tab."
+msgid "Before selecting :code:`Download Images`, we will look into the :code:`Optional Inputs` tab."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -213,11 +159,7 @@ msgid "Location of the optional inputs tab."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:102
-msgid ""
-"Different parameters can be changed here. These include the parameters "
-"that should be calibrated according to your area of interest and specific"
-" forest characteristics. Default values are specific to southern African "
-"forests."
+msgid "Different parameters can be changed here. These include the parameters that should be calibrated according to your area of interest and specific forest characteristics. Default values are specific to southern African forests."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -233,9 +175,7 @@ msgid "Lee filter"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"Applies a Lee filter to the data. This reduces inherent speckle noise in "
-"SAR imagery. Uncheck if you do not want the filter applied."
+msgid "Applies a Lee filter to the data. This reduces inherent speckle noise in SAR imagery. Uncheck if you do not want the filter applied."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -251,9 +191,7 @@ msgid "Downsample factor"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"Applies downsampling to inputs by specifying an integer factor to "
-"downsample by. Defaults to 1 - no downsampling."
+msgid "Applies downsampling to inputs by specifying an integer factor to downsample by. Defaults to 1 - no downsampling."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -261,9 +199,7 @@ msgid "Forest threshold"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"A forest AGB threshold (in tonnes per hectare) to separate forest from "
-"non-forest (specific to your location). Defaults to 10 tC/ha."
+msgid "A forest AGB threshold (in tonnes per hectare) to separate forest from non-forest (specific to your location). Defaults to 10 tC/ha."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -271,9 +207,7 @@ msgid "Area threshold"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"A minimum area threshold (in hectares) to be counted as forest (e.g. a "
-"forest patch must be greater than 1 ha in size). Defaults to 0 ha."
+msgid "A minimum area threshold (in hectares) to be counted as forest (e.g. a forest patch must be greater than 1 ha in size). Defaults to 0 ha."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -281,10 +215,7 @@ msgid "Change area threshold"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"A threshold for a minimum change in forest area required to be flagged as"
-" a change. Defaults to 2 ha. This is for users who aim to produce change "
-"maps."
+msgid "A threshold for a minimum change in forest area required to be flagged as a change. Defaults to 2 ha. This is for users who aim to produce change maps."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -292,10 +223,7 @@ msgid "Change magnitude threshold"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"The minimum absolute change in biomass (in tonnes per hectare) to be "
-"flagged as a change. Defaults to 15 tC/ha.This is for users who aim to "
-"produce change maps."
+msgid "The minimum absolute change in biomass (in tonnes per hectare) to be flagged as a change. Defaults to 15 tC/ha.This is for users who aim to produce change maps."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -303,11 +231,7 @@ msgid "Contiguity"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"The criterion of contiguity between two spatial units. The rook criterion"
-" defines neighbors by the existence of a common edge between two spatial "
-"units. The queen criterion is somewhat more encompassing and defines "
-"neighbors as spatial units sharing a common edge or a common vertex."
+msgid "The criterion of contiguity between two spatial units. The rook criterion defines neighbors by the existence of a common edge between two spatial units. The queen criterion is somewhat more encompassing and defines neighbors as spatial units sharing a common edge or a common vertex."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -327,17 +251,11 @@ msgid "Optional parameters screen."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:125
-msgid ""
-"Now, go back to the :code:`Required Inputs` tab and click :code:`Download"
-" Images` at the bottom. This will download all ALOS data tiles into your "
-"SEPAL account."
+msgid "Now, go back to the :code:`Required Inputs` tab and click :code:`Download Images` at the bottom. This will download all ALOS data tiles into your SEPAL account."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:129
-msgid ""
-"Depending on your point coordinates, it may take a significant amount of "
-"time before your data finish downloading. For the point in Tanzania, it "
-"should take about 5 minutes."
+msgid "Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 5 minutes."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:131
@@ -349,10 +267,7 @@ msgid "Status about the download."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:138
-msgid ""
-"Once the downloads are finalized for both years, you are able to see the "
-"downloaded files under the SEPAL :code:`Files`. Go to "
-":code:`module_results` > :code:`smfm` > :code:`data`."
+msgid "Once the downloads are finalized for both years, you are able to see the downloaded files under the SEPAL :code:`Files`. Go to :code:`module_results` > :code:`smfm` > :code:`data`."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -370,9 +285,7 @@ msgid "Processing the data and producing outputs"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:154
-msgid ""
-"Now that the download finished, we can process the data to produce the "
-"desired outputs."
+msgid "Now that the download finished, we can process the data to produce the desired outputs."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:156
@@ -384,13 +297,7 @@ msgid "BIOTA Process window."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:163
-msgid ""
-"For Year 1, we will choose \"Forest property\" - this will automatically "
-"check all outputs available (\"Gamma0\", \"Biomass\", \"Forest Cover\"). "
-"For Year 2 we will choose \"Forest Change\" (changes between 2016 and "
-"2017), which will also select all available outputs (\"Biomass change\", "
-"\"Change type\", \"Deforestation risk\"). These will be explained later. "
-"Now, click on :code:`Get Outputs` to start the processes."
+msgid "For Year 1, we will choose \"Forest property\" - this will automatically check all outputs available (\"Gamma0\", \"Biomass\", \"Forest Cover\"). For Year 2 we will choose \"Forest Change\" (changes between 2016 and 2017), which will also select all available outputs (\"Biomass change\", \"Change type\", \"Deforestation risk\"). These will be explained later. Now, click on :code:`Get Outputs` to start the processes."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -398,18 +305,11 @@ msgid "Select outputs and start the process by clicking on \"Get outputs\"."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:172
-msgid ""
-"Depending on your point coordinates, it may take a significant amount of "
-"time before your data finish downloading. For the point in Tanzania, it "
-"should take about 2 minutes."
+msgid "Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 2 minutes."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:174
-msgid ""
-"Similarly to before, the tool will show the process status at the bottom."
-" You will also note a change of color from white to yellow next to each "
-"output. White means not started, Yellow means processing and Green means "
-"finalized."
+msgid "Similarly to before, the tool will show the process status at the bottom. You will also note a change of color from white to yellow next to each output. White means not started, Yellow means processing and Green means finalized."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -417,9 +317,7 @@ msgid "Status of outputs."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:181
-msgid ""
-"Once done, you will see a message similar to the one below, and all "
-"outputs will have a green \"light\"."
+msgid "Once done, you will see a message similar to the one below, and all outputs will have a green \"light\"."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -435,15 +333,11 @@ msgid "With the outputs processed, we can now visualize the results."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:199
-msgid ""
-"On the same window, under :code:`Display Outputs`, you can select the "
-"process to display by clicking on the dropdown 'Select process' option."
+msgid "On the same window, under :code:`Display Outputs`, you can select the process to display by clicking on the dropdown 'Select process' option."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:201
-msgid ""
-"First select Biomass. Then press :code:`Display`. You will see the map "
-"pop up on your screen:"
+msgid "First select Biomass. Then press :code:`Display`. You will see the map pop up on your screen:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -451,17 +345,11 @@ msgid "Biomass map."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:208
-msgid ""
-"This is showing above-ground biomass in tonnes per hectare (tC/ha) for "
-"the 1x1 degree tile in Tanzania. To go back to the interface and select "
-"the other outputs, you can click anywhere on the screen outside of the "
-"map and do the same for the other results."
+msgid "This is showing above-ground biomass in tonnes per hectare (tC/ha) for the 1x1 degree tile in Tanzania. To go back to the interface and select the other outputs, you can click anywhere on the screen outside of the map and do the same for the other results."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:210
-msgid ""
-"If you followed these exact steps, your outputs should look similar to "
-"the ones below:"
+msgid "If you followed these exact steps, your outputs should look similar to the ones below:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -529,9 +417,7 @@ msgid "Risk of deforestation from Low (1) to High (3)"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:229
-msgid ""
-"There are 7 change types described in the BIOTA tool, each of which is "
-"defined as a number 0 to 6 and color-coded on the map. Change types are:"
+msgid "There are 7 change types described in the BIOTA tool, each of which is defined as a number 0 to 6 and color-coded on the map. Change types are:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -575,9 +461,7 @@ msgid "3"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"A loss of AGB that does not cross the ``change_area_threshold`` or "
-"``change_magnitude_threshold``."
+msgid "A loss of AGB that does not cross the ``change_area_threshold`` or ``change_magnitude_threshold``."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -589,9 +473,7 @@ msgid "4"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
-msgid ""
-"A gain of AGB that does not cross the ``change_area_threshold`` or "
-"``change_magnitude_threshold``."
+msgid "A gain of AGB that does not cross the ``change_area_threshold`` or ``change_magnitude_threshold``."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:1
@@ -631,10 +513,7 @@ msgid "Below ``forest_threshold`` in both images."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:242
-msgid ""
-"You can also use the :code:`Write Raster` option to save this map into "
-"your SEPAL account. Once you click on `Write Raster` you should see a "
-"message in green informing that your export has been completed."
+msgid "You can also use the :code:`Write Raster` option to save this map into your SEPAL account. Once you click on `Write Raster` you should see a message in green informing that your export has been completed."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -642,11 +521,7 @@ msgid "Map export complete for the Change type output."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:249
-msgid ""
-"Then, the file will be located in your SEPAL Files. You can download this"
-" map by selecting it and clicking on the Download button at the top right"
-" corner. This will download the output as a TIF file that can be used in "
-"a GIS software."
+msgid "Then, the file will be located in your SEPAL Files. You can download this map by selecting it and clicking on the Download button at the top right corner. This will download the output as a TIF file that can be used in a GIS software."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1
@@ -662,22 +537,15 @@ msgid "On the left side, you can access:"
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:267
-msgid ""
-"Source code: this takes you to the source code of the tool, which is a "
-"GitHub repository."
+msgid "Source code: this takes you to the source code of the tool, which is a GitHub repository."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:268
-msgid ""
-"Wiki: the \"README\" file of the tool, you can find additional "
-"information and instructions about how to use the tool."
+msgid "Wiki: the \"README\" file of the tool, you can find additional information and instructions about how to use the tool."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:269
-msgid ""
-"Bug report: in case you notice a bug or have issues using the tool, use "
-"this option to report the bug or issue. This will take you to an issue "
-"creation page on the GitHub repository of the tool."
+msgid "Bug report: in case you notice a bug or have issues using the tool, use this option to report the bug or issue. This will take you to an issue creation page on the GitHub repository of the tool."
 msgstr ""
 
 #: ../../source/modules/dwn/smfm_biota.rst:-1

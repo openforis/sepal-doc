@@ -22,6 +22,7 @@ Table of content
     Sample Based Area estimation<area_estimation>
     Standard Operating Procedures<sop_template>
     coded
-    peatland_mapping
-    nrt
+    CCDC NRT Monitoring<nrt>
+    BayTS NRT Monitoring<bayts>
     drivers
+    peatland_mapping
