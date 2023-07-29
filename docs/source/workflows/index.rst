@@ -21,9 +21,10 @@ Table of contents
     :maxdepth: 1
     :glob:
 
-    Sample-based area estimation <area_estimation>
-    Standard operating procedures <sop_template>
-    Continuous degradation detection (CODED)
-    Peatland mapping
-    Near real-time forest disturbance mapping (CCDC-based)
-    Direct drivers assessment
+    area_estimation
+    sop_template
+    coded
+    nrt
+    bayts
+    drivers
+    peatland_mapping
