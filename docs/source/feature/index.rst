@@ -1,8 +1,9 @@
 Features
 ========
 
-SEPAL provide handy features to analyse, combine and visualize different types of data. As this features can be access via many different recipes or module, they are described exausthively in this section of the documentation.
+The SEPAL platform provides useful features to analyse, combine and visualize different types of data.
 
+Since these features can be accessed across various recipes and modules, they are described extensively in this section of the documentation.
 
 .. toctree::
     :maxdepth: 1
