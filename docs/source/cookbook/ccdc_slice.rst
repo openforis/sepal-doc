@@ -62,9 +62,9 @@ Selection of CCDC asset source
 
 CCDC slices are created out of CCDC assets. Here you have the choice to select the base asset that will be used to generate the slice.
 
-Two options are provided: 
+Two options are provided:
 
--    Option 1 is to directly point to an existing SEPAL recipe. Note that in this case, the CCDC asset needs to be regenerated on the fly based on the parameter settings of the CCDC asset. In most cases this is computationally demanding and may lead to time-out errors. Therefore, it is rather recommended to opt for Option 2. 
+-    Option 1 is to directly point to an existing SEPAL recipe. Note that in this case, the CCDC asset needs to be regenerated on the fly based on the parameter settings of the CCDC asset. In most cases this is computationally demanding and may lead to time-out errors. Therefore, it is rather recommended to opt for Option 2.
 -    Option 2 is where an existing CCDC asset is selected from GEE. In this case, the CCDC asset needs to be exported first, so you can point to its location within GEE directly. This usually allows for instant visualization, as the slicing procedure does not require lots of computing power.
 
 Date (range) selection
@@ -131,9 +131,9 @@ By moving the slider, you will ignore the break with a low confidence from the a
 Visualization
 -------------
 
-Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). 
+Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1).
 
-Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus`. 
+Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus`.
 
 Click anywhere in the AOI to plot data for this specific location in the pop-up window that appears.
 
@@ -187,7 +187,7 @@ Users can also export the specific **Segment bands**. These bands are relative t
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-In the **Task** tab (lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. 
+In the **Task** tab (lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
