@@ -81,11 +81,11 @@ These are described in our documentation (see :doc:`../feature/aoi_selector`).
 Date range
 ^^^^^^^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the start date and end date of the time series. 
+In the :guilabel:`DAT` tab, you will be asked to select the start date and end date of the time series.
 
-Select the **Date** text field to open the **Date selection** pop-up menu. 
+Select the **Date** text field to open the **Date selection** pop-up menu.
 
-Choose the :btn:`<fa-solid fa-check> Select` button to choose a date. 
+Choose the :btn:`<fa-solid fa-check> Select` button to choose a date.
 
 When both dates have been chosen, select the :btn:`<fa-solid fa-check> Apply` button.
 
@@ -102,10 +102,10 @@ When both dates have been chosen, select the :btn:`<fa-solid fa-check> Apply` bu
 Sensor selection
 ^^^^^^^^^^^^^^^^
 
-After selecting the :guilabel:`Next` button in the **Date selection** pop-up menu, the **Sensor selection** pop-up menu will automatically open (1), where you need to specify the sensor(s) and the bands used for breakpoint detection: 
+After selecting the :guilabel:`Next` button in the **Date selection** pop-up menu, the **Sensor selection** pop-up menu will automatically open (1), where you need to specify the sensor(s) and the bands used for breakpoint detection:
 
 -   :guilabel:`OPTICAL` (including the Landsat and Sentinel-2 missions);
--   :guilabel:`RADAR` (including the Sentinel-1 mission); and 
+-   :guilabel:`RADAR` (including the Sentinel-1 mission); and
 -   :guilabel:`PLANET`, where both daily imagery or monthly basemaps can be used as data inputs (if you have a valid Planet API key).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_overview.png
@@ -359,9 +359,9 @@ The iterations for the maximum number of runs for LASSO regression convergence. 
 On-the-fly pixel analysis
 -------------------------
 
-Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). 
+Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1).
 
-Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus` (2). 
+Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus` (2).
 
 Click anywhere in the AOI to plot data for this specific location in the pop-up window that appears. The plotting area (3) is dynamic and can be customized by the user.
 
@@ -410,7 +410,7 @@ The scale parameter depends on the data selected and the level of detail you wil
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the **Task** tab (lower-left corner using :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress; it will display an error if the exportation has failed. 
+Going to the **Task** tab (lower-left corner using :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress; it will display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
