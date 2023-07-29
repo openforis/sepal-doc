@@ -8,3 +8,5 @@ Since these features can be accessed across various recipes and modules, they ar
 .. toctree::
     :maxdepth: 1
     :glob:
+    
+    *
