@@ -4,7 +4,7 @@ Workflows
 Overview
 --------
 
-SEPAL leverages numerous tools and recipes to help users perform data analysis. 
+SEPAL leverages numerous tools and recipes to help users perform data analysis.
 
 These tools can even be combined in a modular way to execute more complex workflows.
 
@@ -21,10 +21,10 @@ Table of contents
     :maxdepth: 1
     :glob:
 
-    area_estimation
-    sop_template
-    coded
-    nrt
-    bayts
-    drivers
+    Sample-based area estimation<area_estimation>
+    Standard operating procedures<sop_template>
+    Continuous degradation detection<coded>
+    Near real-time forest disturbance mapping (CCDC-based)<nrt>
+    BayTS NRT Monitoring<bayts>
+    Direct drivers assessment<drivers>
     peatland_mapping
