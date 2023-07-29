@@ -13,7 +13,7 @@ Often, we want to build the class change map between two categorical maps that s
 Start
 -----
 
-Once the class change recipe is selected, SEPAL will present the **Process** in a new tab (1). 
+Once the class change recipe is selected, SEPAL will present the **Process** in a new tab (1).
 
 The **Parameters** will open in the lower-right side of your screen (2).
 
@@ -133,7 +133,7 @@ Select :guilabel:`apply` to start the download process.
 Exportation status
 """"""""""""""""""
 
-In the **Task** tab (lower-left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress and display an error if the exportation has failed. 
+In the **Task** tab (lower-left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress and display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
