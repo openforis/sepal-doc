@@ -1,85 +1,81 @@
 .. include:: ../_templates/disclaimer.rst
 
-Google classroom
+Google Classroom
 ================
 
 Usage
 -----
 
-Google classroom
-^^^^^^^^^^^^^^^^
+To provide consistent, up-to-date training materials, the SEPAL team uses the Google Classroom platform.
 
-To provide the team with consistent and up to date formation material, we decided to use the Google classroom platform. It will allow everyone to share and update the presentations and material that will be used by the whole team.
-
-First open your professional Google account and go to the `Google Classroom page <https://classroom.google.com/u/0/h>`_:
-
-You should see something like the following image, minus the classes :
+To access Google Classroom for SEPAL, open your professional Google account and go to `the SEPAL project's Google Classroom page <https://classroom.google.com/u/0/h>`_ (you should see something like the following image, except for the classes).
 
 .. image:: ../_images/team/classroom/dashboard.png
 
-each class is composed by several :code:`topics` and each topic can embed different kind of material including : :code:`exercices`, :code:`exams` and :code:`material` as presented in the image below:
+Each class is composed of several :code:`Topics`. Each topic can include different types of content, including: :code:`exercices`, :code:`exams`, and :code:`material` (see following image).
 
 .. image:: ../_images/team/classroom/stream.png
 
 .. seealso::
 
-    If you have any question about the classrooms of the team and how to use them don't hesitate to contact the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`) they will answer as soon as possible.
+    If you need support with the Google Classroom for SEPAL, contact :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`.
 
 Creating a classroom
 ^^^^^^^^^^^^^^^^^^^^
 
-If you need material for a webinar you can either directly reuse one of the general classroom or create your own. You can follow the steps presented in the following tutorial to create a class of your own.
+If you need material for a webinar, you can either reuse one of the general classrooms or create your own by following the steps presented in the following tutorial.
 
 .. youtube:: pl-tBjAM9g4
 
 .. tip::
 
-    If you create your own course as a combination of different modules, invite :email:`sepal.classrom@gmail.com` as a teacher, and then make this account owner of the classroom. As a teacher you will still be able to do everything but the content will resides in a communal account.
+    If you create your own course as a combination of different modules, invite :email:`sepal.classrom@gmail.com` as a teacher and make this account the owner of the classroom. You will still be able to do everything as a teacher, but the content will be stored in a communal account.
 
-When creating basic content, you can re-use posts from classes were you are teaching as shown in the following image:
+When creating basic content, you can reuse posts from other classes that you are teaching (see following image).
 
 .. image:: ../_images/team/classroom/new-post.png
 
-.. warning::
+.. attention::
 
-    Don't forget to be add as teacher on any class you want to reuse. ask it via mail to the maintainer of the gmail account (:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`).
+    If you want to reuse material from other classes, you will need to be added as a teacher for these classes by contacting :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`.
 
-.. danger::
+.. attention::
 
-    To avoid duplicate copies of content, do NOT click the option to copy all attachments
+    To avoid duplicate copies of content, do not select the option to **Create new copies of all attachments**.
 
     .. image:: ../_images/team/classroom/no-duplicate.png
 
-Use the general content
-^^^^^^^^^^^^^^^^^^^^^^^
+Use general content
+^^^^^^^^^^^^^^^^^^^
 
-To use the general content in your classrooms you need to add the general content folder to your drive. The command has disappeared in 2018 from Google drive. Now Google only offer the opportunity to create shortcut to other drives which is not sufficient in our case. As there were too many complains the reintegrated the feature.
+To use general content in your classrooms, add the general content folder to your Google Drive account. (Note: Google only allows users to create shortcuts to other Google Drive accounts, which is not sufficient.)
 
-In your drive got to the “share with me" section and click on the “General Class Content” folder.
+Open Google Drive and go to the **Share with me** section. 
+
+Select the **General class content** folder.
 
 .. note::
 
-    If the content has not been shared with you ask for it to any of your colleague
+    If the content has not yet been shared with you, ask your colleagues to do so.
 
 .. image:: ../_images/team/classroom/shared-with-me.png
 
-
-Then press :code:`maj+Z`. You should see the following pop-up window. By clicking on add the folder will be wired to your own google drive.
+Enter :code:`maj+Z`. Select **Add** to connect the folder your own Google Drive account (see following image).
 
 .. image:: ../_images/team/classroom/pop-up.png
 
-In a classroom to reuse a file from this folder, edit the classroom content:
+To reuse a file from this folder, **Edit** classroom content (see following image).
 
 .. image:: ../_images/team/classroom/edit.png
 
-Then add a file from Gdrive (to make sure that you're reusing an already existing file):
+Then, add a file from Google Drive (to make sure that you're reusing an already existing file):
 
 .. image:: ../_images/team/classroom/add-file.png
 
 .. note::
 
-    The file you're using is made for general purpose and it's not supposed to be adapted to the specific needs of your formation. If the modification you're making are improving the quality of the presentation it's perfect but if you adapt it to your formation specific need, you should consider copy it to you drive.
+    The file you're using is made for general purposes and should not be adapted to your specific needs. If you're improving the quality of the presentation, making modifications to the original is permitted; however, any other modifications should be made in another version, which you can create by copying the original to your Google Drive account.
 
-.. danger::
+.. attention::
 
-    All the team members have the right to edit this file, mistakes will impact all of us and all the already existing classrooms that use this file.
+    Since everyone on the SEPAL team can edit this file, mistakes could impact all members and all existing classrooms that use this file. Please exercise caution.
