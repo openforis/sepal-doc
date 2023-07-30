@@ -1,7 +1,7 @@
 Disaster
 ========
 
-List of the modules gathered under the Disaster tag:
+Modules with the Disaster tag include:
 
 .. toctree::
     :maxdepth: 1
