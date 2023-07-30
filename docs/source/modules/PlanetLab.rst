@@ -1,7 +1,7 @@
-Planetlab
-=========
+Planet Lab
+==========
 
-List of the modules gathered under the Planetlab tag:
+Modules gathered under the Planet Lab tag include:
 
 .. toctree::
     :maxdepth: 1
@@ -14,4 +14,3 @@ List of the modules gathered under the Planetlab tag:
 
     :doc:`dwn/planet_order`,"Order imagery from PlanetLab mosaics"
     :doc:`dwn/sepafe`,"..."
-
