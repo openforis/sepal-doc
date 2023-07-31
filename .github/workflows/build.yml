@@ -30,6 +30,6 @@ jobs:
       - name: push the files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch: l18n_main
+          branch: l18n_main_cron
           create_branch: true
           commit_message: Automatic compilation update
