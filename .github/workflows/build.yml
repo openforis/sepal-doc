@@ -33,3 +33,10 @@ jobs:
           branch: l18n_main_cron
           create_branch: true
           commit_message: Automatic compilation update
+
+      - name: Run the Action
+        uses: devops-infra/action-pull-request@v0.5.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: l18_main_branch
+          target_branch: main
