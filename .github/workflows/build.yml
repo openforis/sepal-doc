@@ -33,6 +33,7 @@ jobs:
           branch: l18n_main_cron
           create_branch: true
           commit_message: Automatic compilation update
+          push_options: "--force"
 
       - name: Run the Action
         uses: devops-infra/action-pull-request@v0.5.5
