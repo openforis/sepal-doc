@@ -1,33 +1,33 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-01-17 17:46+0000\n"
+"PO-Revision-Date: 2023-07-31 07:18\n"
 "Last-Translator: \n"
-"Language: es_ES\n"
 "Language-Team: Spanish\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/feature/index.po\n"
+"X-Crowdin-File-ID: 81\n"
+"Language: es_ES\n"
 
 #: ../../source/feature/index.rst:2
 msgid "Features"
 msgstr ""
 
 #: ../../source/feature/index.rst:4
-msgid ""
-"The SEPAL platform provides useful features to analyse, combine and "
-"visualize different types of data."
+msgid "The SEPAL platform provides useful features to analyse, combine and visualize different types of data."
 msgstr ""
 
 #: ../../source/feature/index.rst:6
-msgid ""
-"Since these features can be accessed across various recipes and modules, "
-"they are described extensively in this section of the documentation."
+msgid "Since these features can be accessed across various recipes and modules, they are described extensively in this section of the documentation."
 msgstr ""
 
 #~ msgid ""
