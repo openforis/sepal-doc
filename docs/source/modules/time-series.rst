@@ -1,7 +1,7 @@
-Time-series
+Time series
 ===========
 
-Modules related to the **Time-series** tag include:
+Modules with the **Time-series** tag include:
 
 .. toctree::
     :maxdepth: 1
