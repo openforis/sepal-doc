@@ -1,22 +1,20 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
-"PO-Revision-Date: 2023-01-21 16:21\n"
+"POT-Creation-Date: 2023-07-31 05:56+0000\n"
+"PO-Revision-Date: 2023-01-21 16:21+0000\n"
 "Last-Translator: \n"
-"Language-Team: Russian\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ru\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/index.po\n"
-"X-Crowdin-File-ID: 49\n"
 "Language: ru_RU\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
+"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
+">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/cli/index.rst:2
 msgid "SEPAL environment"
@@ -27,35 +25,40 @@ msgid "CLI tools"
 msgstr ""
 
 #: ../../source/cli/index.rst:7
-msgid "SEPAL platform includes a variety of useful Command Line Interface utilities to help resolve specific problems, some of them are listed below:"
+msgid ""
+"The SEPAL platform includes a variety of useful command-line interface "
+"(CLI) utilities to help resolve specific problems such as:"
 msgstr ""
 
 #: ../../source/cli/index.rst:9
-msgid "gdal"
+msgid "Geospatial Data Abstraction Library (GDAL)"
 msgstr ""
 
 #: ../../source/cli/index.rst:10
-msgid "gdrive"
+msgid "Google Drive (Drive)"
 msgstr ""
 
 #: ../../source/cli/index.rst:11
-msgid "gee"
+msgid "Google Earth Engine (GEE)"
 msgstr ""
 
 #: ../../source/cli/index.rst:12
-msgid "gwb"
+msgid "GuidosToolbox Workbench (GWB)"
 msgstr ""
 
 #: ../../source/cli/index.rst:13
-msgid "ofgt"
+msgid "Open Foris Geospatial Toolkit (OFGT)"
 msgstr ""
 
 #: ../../source/cli/index.rst:14
-msgid "otb"
+msgid "Orfeo Toolbox (OTB)"
 msgstr ""
 
 #: ../../source/cli/index.rst:16
-msgid "These tools can be called directly from the terminal or any programming language sending commands to the kernel including R and Python (installed by default on any SEPAL account)."
+msgid ""
+"These tools can be called directly from the terminal or any programming "
+"language sending commands to the kernel, including R and Python "
+"(installed by default on any SEPAL account)."
 msgstr ""
 
 #: ../../source/cli/index.rst:23
@@ -63,23 +66,34 @@ msgid "The code executed previously on an existing :code:`example.tif` file."
 msgstr ""
 
 #: ../../source/cli/index.rst:31
-msgid "If you're running actions from multiple directories or multiple instances, you can open multiple terminal tabs and name them as you see fit."
+msgid ""
+"If you're running actions from multiple directories or instances, you can"
+" open multiple **Terminal** tabs and name them as you see fit."
 msgstr ""
 
 #: ../../source/cli/index.rst:35
-msgid "If the code you want to execute is taking time, please consider running it in the background using :code:`nohup`."
+msgid ""
+"If the code you want to execute is taking time, consider running it in "
+"the background using :code:`nohup`."
 msgstr ""
 
 #: ../../source/cli/index.rst:41
-msgid "All the console outputs will be redirected to a :code:`nohup.out` in your home directory but the execution will be running in the background. Thus you will be able to safely close the terminal or even the browser window without killing your process. more information about :code:`nohup` can be found `here <https://en.wikipedia.org/wiki/Nohup>`__."
+msgid ""
+"All the console outputs will be redirected to a :code:`nohup.out` in your"
+" home directory, but the execution will be running in the background. "
+"Thus, you will be able to safely close the terminal or even the browser "
+"window without killing your process (for more information about "
+":code:`nohup`, see `here <https://en.wikipedia.org/wiki/Nohup>`__."
 msgstr ""
 
 #: ../../source/cli/index.rst:45
-msgid "coding tools"
+msgid "Coding tools"
 msgstr ""
 
 #: ../../source/cli/index.rst:47
-msgid "In the app section, you'll find at the top of the list 3 coding tools:"
+msgid ""
+"In the **App** section, you'll find three coding tools at the top of the "
+"list:"
 msgstr ""
 
 #: ../../source/cli/index.rst:49
@@ -91,10 +105,93 @@ msgid "JupyterNotebook"
 msgstr ""
 
 #: ../../source/cli/index.rst:51
-msgid "Rstudio"
+msgid "RStudio"
 msgstr ""
 
 #: ../../source/cli/index.rst:56
-msgid "They will allow the user to code wokflows in any of the available languages using the coresponding environment built-in in SEPAL. These environments are fully customizables, click on the :code:`Python` or :code:`R` section to know more."
+msgid ""
+"They will allow the user to code wokflows in any of the available "
+"languages using the coresponding environment in SEPAL. These environments"
+" are fully customizable (select the :code:`Python` or :code:`R` section "
+"to know more)."
 msgstr ""
+
+#~ msgid ""
+#~ "SEPAL platform includes a variety of "
+#~ "useful Command Line Interface utilities "
+#~ "to help resolve specific problems, some"
+#~ " of them are listed below:"
+#~ msgstr ""
+
+#~ msgid "gdal"
+#~ msgstr ""
+
+#~ msgid "gdrive"
+#~ msgstr ""
+
+#~ msgid "gee"
+#~ msgstr ""
+
+#~ msgid "gwb"
+#~ msgstr ""
+
+#~ msgid "ofgt"
+#~ msgstr ""
+
+#~ msgid "otb"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "These tools can be called directly "
+#~ "from the terminal or any programming "
+#~ "language sending commands to the kernel"
+#~ " including R and Python (installed by"
+#~ " default on any SEPAL account)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're running actions from multiple"
+#~ " directories or multiple instances, you "
+#~ "can open multiple terminal tabs and "
+#~ "name them as you see fit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the code you want to execute"
+#~ " is taking time, please consider "
+#~ "running it in the background using "
+#~ ":code:`nohup`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All the console outputs will be "
+#~ "redirected to a :code:`nohup.out` in "
+#~ "your home directory but the execution"
+#~ " will be running in the background."
+#~ " Thus you will be able to "
+#~ "safely close the terminal or even "
+#~ "the browser window without killing your"
+#~ " process. more information about "
+#~ ":code:`nohup` can be found `here "
+#~ "<https://en.wikipedia.org/wiki/Nohup>`__."
+#~ msgstr ""
+
+#~ msgid "coding tools"
+#~ msgstr ""
+
+#~ msgid "In the app section, you'll find at the top of the list 3 coding tools:"
+#~ msgstr ""
+
+#~ msgid "Rstudio"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "They will allow the user to code"
+#~ " wokflows in any of the available "
+#~ "languages using the coresponding environment"
+#~ " built-in in SEPAL. These "
+#~ "environments are fully customizables, click"
+#~ " on the :code:`Python` or :code:`R` "
+#~ "section to know more."
+#~ msgstr ""
 

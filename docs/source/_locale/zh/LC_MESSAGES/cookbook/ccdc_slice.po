@@ -1,25 +1,21 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:23\n"
+"POT-Creation-Date: 2023-07-31 05:56+0000\n"
+"PO-Revision-Date: 2023-04-25 01:23+0000\n"
 "Last-Translator: \n"
+"Language: zh_CN\n"
 "Language-Team: Chinese Simplified\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/ccdc_slice.po\n"
-"X-Crowdin-File-ID: 61\n"
-"Language: zh_CN\n"
 
 #: ../../source/cookbook/ccdc_slice.rst:2
-msgid "CCDC Slice"
+msgid "CCDC slice"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:5
@@ -27,39 +23,67 @@ msgid "Background"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:7
-msgid "Powered by the API of Google's `Earth Engine <https://earthengine.google.com/>`_, SEPAL facilitates the workflow for applying the Continuous Change Detection and Classification (CCDC) approach as proposed by `Zhu & Woodcock 2014 <https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
+msgid ""
+"Powered by the application programming interface (API) of `Google Earth "
+"Engine (GEE) <https://earthengine.google.com/>`_, SEPAL facilitates the "
+"workflow for applying the Continuous Change Detection and Classification "
+"(CCDC) approach, as proposed by `Zhu and Woodcock (2014) "
+"<https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:9
-msgid "CCDC is a holistic methodological framework that encompasses various aspects of space-borne, multi-temporal land mapping and monitoring using multi-temporal satellite imagery. The core of the method is a **temporal segmentation** algorithm applied at **pixel-level**."
+msgid ""
+"CCDC is a holistic methodological framework that encompasses various "
+"aspects of space-borne, multitemporal land mapping and monitoring using "
+"multitemporal satellite imagery. The core aspect of the method is a "
+"*temporal segmentation* algorithm applied at *pixel-level*."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:11
-msgid "Before creating a CCDC slice, a CCDC asset needs to be created (as described in :doc:`ccdc`). The asset holds all parameters that are needed to re-produce the modelled time-series of the underlying data. As those parameters are stored at pixel-level we retain the possibility to extract each pixel's modelled reflectance at any given point in time, or for a time-span of the underlying time-series. This is what is meant by **slicing**."
+msgid ""
+"Before creating a CCDC slice, a CCDC asset needs to be created (as "
+"described in :doc:`ccdc`). The asset holds all parameters that are needed"
+" to reproduce the modelled time series of the underlying data. As those "
+"parameters are stored at pixel-level, we retain the possibility to "
+"extract each pixel's modelled reflectance at any given point in time, or "
+"for a timespan of the underlying time series (i.e. *slicing*)."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:13
-msgid "In addition, we can access the parameters describing the model of the temporally intersecting segment. Those can be used in as input features for subsequent classification tasks and generally improve class separability."
+msgid ""
+"In addition, we can access the parameters describing the model of the "
+"temporally intersecting segment. Those can be used as input features for "
+"subsequent classification tasks and generally improve class separability."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:16
-msgid "Getting Started"
+msgid "Getting started"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:19
-msgid "Create Recipe"
+msgid "Create recipe"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:21
-msgid "Once logged into SEPAL, open the recipe menu by clicking on the orange :btn:`<fa-solid fa-globe>` button at the top left of the SEPAL start screen. Within the recipe menu (*see figure below*), select CCDC slice, which opens a new SEPAL recipe tab."
+msgid ""
+"Once logged into the SEPAL interface, open the **Recipe** menu by "
+"selecting the orange :btn:`<fa-solid fa-globe>` button in the upper left "
+"of the SEPAL **Start** screen. Within the **Recipe** menu (see following "
+"figure), select **CCDC slice**, which opens a new **Recipe** tab."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:30
-msgid "Rename Recipe"
+msgid "Rename recipe"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:32
-msgid "The first step one should do is to change the name of the recipe by double-clicking on tab on the top of the map. This will have the effect that your recipe will be automatically saved and is visible in the list of created recipes. Furthermore, the given name will be used for exported files, both locally and on Earth Engine. We suggest to use the following convention: :code:`CCDC-slice_<aoi>_<sensor(s)>_<date>`."
+msgid ""
+"The first step is to change the name of the recipe by double-clicking on "
+"the tab at the top of the map. This will automatically save your recipe "
+"and make it visible in the list of created recipes. Furthermore, the "
+"given name will be used for exported files, both locally and on GEE. We "
+"suggest using the following convention: :code:`CCDC-"
+"slice_<aoi>_<sensor(s)>_<date>`."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:43
@@ -67,7 +91,9 @@ msgid "Parameter selection"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:45
-msgid "The following steps describe the parameter selection that can be found on the lower right of the screen."
+msgid ""
+"The following steps describe parameter selection, which can be found in "
+"the lower right of the screen."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:53
@@ -83,7 +109,7 @@ msgid ":guilabel:`DAT` Date or date range selection"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:57
-msgid ":guilabel:`OPT` CCDC Slicing Parameters"
+msgid ":guilabel:`OPT` CCDC slicing parameters"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:61
@@ -91,108 +117,179 @@ msgid "Selection of CCDC asset source"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:63
-msgid "CCDC slices are created out of CCDC assets. Here you have the choice to select the base asset that will be used to generate the slice."
+msgid ""
+"CCDC slices are created out of CCDC assets. Here you have the choice to "
+"select the base asset that will be used to generate the slice."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:65
-msgid "Two options are provided, one is to directly point to an existing Sepal recipe. Note that in this case, the CCDC asset needs to be re-generated on the fly based on the parameter settings of the CCDC asset. In most cases this is very compute intense and may lead to time-out errors."
+msgid "Two options are provided:"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:67
-msgid "Therefore it is rather recommended to opt for option 2, where an existing CCDC asset is selected from Earth Engine. In this case, the CCDC asset needs to be exported first, so that we can then point to its asset location within Earth Engine directly. This usually allows for instant visualization as the slicing procedure does not require lots of computing power."
+msgid ""
+"Option 1 is to directly point to an existing SEPAL recipe. Note that in "
+"this case, the CCDC asset needs to be regenerated on the fly based on the"
+" parameter settings of the CCDC asset. In most cases this is "
+"computationally demanding and may lead to time-out errors. Therefore, it "
+"is rather recommended to opt for Option 2."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:68
+msgid ""
+"Option 2 is where an existing CCDC asset is selected from GEE. In this "
+"case, the CCDC asset needs to be exported first, so you can point to its "
+"location within GEE directly. This usually allows for instant "
+"visualization, as the slicing procedure does not require lots of "
+"computing power."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:71
-msgid "Date (Range) selection"
+msgid "Date (range) selection"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:73
-msgid "As described above, the slicing procedure cuts out the model parameters of a specific date in order to generate the expected reflectance at that given point in time. This can be either a concrete date :btn:`single date`, or a date range :btn:`date range`. For the latter, the median value of the selected time period over the modelled time-series is calculated."
+msgid ""
+"As described above, the slicing procedure cuts out the model parameters "
+"of a specific date in order to generate the expected reflectance at that "
+"given point in time. This can be either a concrete date :btn:`single "
+"date`, or a date range :btn:`date range`. For the latter, the median "
+"value of the selected time period over the modelled time series is "
+"calculated."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:75
-msgid "In addition, it is possible to display the detected breaks for the intersecting temporal segments. Note that for date ranges, more than 1 break can fall within the specific time-period. This needs to be considered in the next parameter setting, the CCDC slicing parameters."
+msgid ""
+"In addition, it is possible to display the detected breaks for the "
+"intersecting temporal segments. Note that for date ranges, more than one "
+"break can fall within the specific time-period. This needs to be "
+"considered in the next parameter setting: the CCDC slicing parameters."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:82
-msgid "CCDC Slicing Parameters"
+msgid "CCDC slicing parameters"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:85
-msgid "Specific Date"
+msgid "Specific date"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:87
-msgid "In case a single date has been selected, the slicing parameters will look as shown in the Figure below."
+msgid ""
+"In case a single date has been selected, the **Slicing parameters** will "
+"appear as shown in the following figure."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:94
 #: ../../source/cookbook/ccdc_slice.rst:114
-msgid "The first parameter is the number of **harmonics** used to extract the modelled reflectance at the given point in time. 3 harmonic terms are set by default. lowering this number will result in a smoothed time-series that does not depict intra-annual periodicity. Setting this value to 1 will only capture the inter-annual periodicity, i.e. annual seasonality, while a value of 0 results in the mean value over the segments time period."
+msgid ""
+"The first parameter is the number of **Harmonics** used to extract the "
+"modelled reflectance at the given point in time. Three harmonic terms are"
+" set by default. Lowering this number will result in a smooth time series"
+" that does not depict intra-annual periodicity. Setting this value to 1 "
+"will only capture the inter-annual periodicity (i.e. annual seasonality),"
+" while a value of 0 results in the mean value over the segment's time "
+"period."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:96
-msgid "The **Gap Strategy** relates to the presence of gaps between 2 temporal segments, i.e. the presence of a break. After a detected break, CCDC re-initializes a new model (i.e. new segment) only after a couple of observations. In between, no model is available from which to extract the data. In order to avoid masked pixels the user has the possibility to:"
+msgid ""
+"The **Gap strategy** relates to the presence of gaps between two temporal"
+" segments (i.e. the presence of a break). After a detected break, CCDC "
+"reinitializes a new model (i.e. new segment) only after a couple of "
+"observations. In between, no model is available from which to extract the"
+" data. In order to avoid masked pixels, the user has the possibility to:"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:98
-msgid ":btn:`Interpolate` - use a temporally weighted mean between the previous and the subsequent model for the given data"
+msgid ""
+":btn:`Interpolate` – Use a temporally weighted mean between the previous "
+"and subsequent model for the given data."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:99
-msgid ":btn:`Extrapolate` - use the extrapolated value of the closest, previous, or next model for the given date"
+msgid ""
+":btn:`Extrapolate` – Use the extrapolated value of the closest, previous,"
+" or next model for the given data."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:100
-msgid ":btn:`Mask` - mask the value as no data"
+msgid ":btn:`Mask` – Mask the value as *no data*."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:102
-msgid "In case of extrapolation the additional option **Segment to Extrapolate** allows to choose either the model parameters from the previous, next or closest segment with respect to the selected data. Furthermore, the **Max Days to Extrapolate** setting allows to limit the number of days until this procedure is considered valid. If the difference between the selected date and the segment's valid time period is greater than this threshold value, the pixel will be automatically masked."
+msgid ""
+"In case of extrapolation, the additional option, **Segment to "
+"extrapolate**, allows you to choose either the model parameters from the "
+"previous, next or closest segment with respect to the selected data. "
+"Furthermore, the **Max days to extrapolate** setting allows you to limit "
+"the number of days until this procedure is considered valid. If the "
+"difference between the selected date and the segment's valid time period "
+"is greater than this threshold value, the pixel will be automatically "
+"masked."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:105
-msgid "Date Range"
+msgid "Date range"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:107
-msgid "In case a date range has been selected, the slicing parameters will look as shown in the Figure below."
+msgid ""
+"In case a date range has been selected, the **Slicing parameters** will "
+"appear as seen in the figure below."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:116
-msgid "Then you need to select the **Break analysis band**. As the slice is including a range of observation, the model can include multiple segments and thus multiple breaks. this parameter will select the band used by SEPAL to select the break that will be kept in the slice output."
+msgid ""
+"Then, select the **Break analysis band**. As the slice includes a range "
+"of observation, the model can include multiple segments and thus multiple"
+" breaks. This parameter will select the band used by SEPAL to select the "
+"break that will be kept in the slice output."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:118
-msgid "Breaks identified by the CCDC asset at the end of the time period are usually errors. if your slicing is ending at the same date as your CCDC asset, you should consider masking the end break."
+msgid ""
+"Breaks identified by the CCDC asset at the end of the time period are "
+"usually errors. If your slicing ends at the same date as your CCDC asset,"
+" you should consider masking the end break."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:120
-msgid "SEPAL offers 4 ways of selecting the remaining break:"
+msgid "SEPAL offers four ways of selecting the remaining break:"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:122
-msgid ":guilabel:`first`: the first break within the slice date range"
+msgid ":guilabel:`First`: The first break within the **Slice date** range."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:123
-msgid ":guilabel:`last`: the last break within the slice date range"
+msgid ":guilabel:`Last`: The last break within the **Slice date** range."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:124
-msgid ":guilabel:`magnitude`: the break with the highest magnitude of change"
+msgid ":guilabel:`Magnitude`: The break with the highest magnitude of change."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:125
-msgid ":guilabel:`confidence`: the break with the highest confidence value (see :doc:`ccdc` for mor information about confidence computation)"
+msgid ""
+":guilabel:`Confidence`: The break with the highest confidence value (see "
+":doc:`ccdc` for more information about confidence computation)."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:127
-msgid "By selecting a specific breack direction, the break sekection will only take into acount the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default we consider :guilabel:`any` break direction."
+msgid ""
+"By selecting a specific break direction, the break selection will only "
+"take into acount the break with a :guilabel:`decrease` or "
+":guilabel:`increase` magnitude. By default, we consider :guilabel:`Any` "
+"break direction."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:129
-msgid "By moving the slider, you will ignore the break with a low confidence from the anlysis. You can exclude break up to 50%. If no break respects the requested confidence, the highest available will be selected."
+msgid ""
+"By moving the slider, you will ignore the break with a low confidence "
+"from the analysis. You can exclude a break up to 50 percent. If no break "
+"respects the requested confidence, the highest available will be "
+"selected."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:132
@@ -200,79 +297,151 @@ msgid "Visualization"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:134
-msgid "Click on the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1). Move the pointer to the main map, the pointer will be transformed into a :icon:`fa-solid fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following popup window."
+msgid ""
+"Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting "
+"tool (1)."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:136
-msgid "The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustment to the slicing operation. Refer to :doc:`ccdc` for a complete description."
+msgid ""
+"Move the pointer to the main map; the pointer will be transformed into "
+":icon:`fa-solid fa-plus`."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:138
-msgid "The plotting area cover all the CCDC asset range, in red (4) the user will see the slice. It will be a sector of the plot if date range is selected and a red line if single date is selected."
+msgid ""
+"Click anywhere in the AOI to plot data for this specific location in the "
+"pop-up window that appears."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:146
-msgid "The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected pre-processing parameters. If the popup window displays a spinning wheel, wait up to 2 min to see the data displayed."
+#: ../../source/cookbook/ccdc_slice.rst:140
+msgid ""
+"The plotting area (3) is the same as the one presented in the CCDC recipe"
+" with small adjustments to the slicing operation. Refer to :doc:`ccdc` "
+"for a complete description."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:149
-msgid "Export"
+#: ../../source/cookbook/ccdc_slice.rst:142
+msgid ""
+"The plotting area covers all of the CCDC asset range (4); the user will "
+"see the slice in red (it will be a sector of the plot if a date range is "
+"selected and a red line if a single date is selected)."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:150
+msgid ""
+"The plot feature is retrieving information from GEE on the fly and "
+"serving it in an interactive window. This operation can take time, "
+"depending on the number of available observations and the complexity of "
+"the selected preprocessing parameters. If the pop-up window displays a "
+"spinning wheel, wait up to two minutes to see the data displayed."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:153
-msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
+msgid "Export"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:156
-msgid "Trigger the export task"
-msgstr ""
-
-#: ../../source/cookbook/ccdc_slice.rst:158
-msgid "Click on the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialogue. Here you can select the bands to retrieve and the scale at which you would like to save the slice. CCDC slices can be both exported to Google Earth Engine as well as your SEPAL workspace."
+#: ../../source/cookbook/ccdc_slice.rst:157
+msgid ""
+"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
+"small computation quota (if you are a new user, see "
+":doc:`../setup/resource`)."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:160
-msgid "you can export this asset as a :code:`.tif` image to your SEPAL workspace or as an *Image* in GEE. The scale parameter depends on the data selected and the level of detail you will need for your further analysis. Landsat based assets are usually created at 30 meters. Sentinel-1 and 2 can be at 10 meter, but will need 9 times more space as compared to 30 meter resolution."
+msgid "Trigger the export task"
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:162
+msgid ""
+"Select the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the "
+"export dialogue. Here you can select the bands to retrieve and the scale "
+"at which you would like to save the slice. CCDC slices can be both "
+"exported to GEE and your SEPAL workspace."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:164
-msgid "Bands"
+msgid ""
+"You can export this asset as a :code:`.tif` image to your SEPAL workspace"
+" or as an image in GEE."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:166
-msgid "In the CCDC slice exportation you can select any band that was available in the initial CCDC asset. the result will be the evaluated values of the model at the slice date for single date and the mean value for date range."
+msgid ""
+"The scale parameter depends on the data selected and the level of detail "
+"you will need for further analysis. Landsat-based assets are usually "
+"created at 30 m. Sentinel-1 and Sentinel-2 can be at 10 m, but will need "
+"nine times more space as compared to 30 m resolution."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:169
-msgid "Band type"
+msgid "Bands"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:171
-msgid "For each selected band, the user can select which output from the model he want to export. For display the value is sufficient but for another analysis like classification, it's very important to add information relative to the model itself (amplitude, error, phase) to increase the quality of the output information."
+msgid ""
+"In the CCDC slice exportation, you can select any band that was available"
+" in the initial CCDC asset. The result will be the evaluated values of "
+"the model at the slice date for a single date and the mean value for a "
+"date range."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:174
-msgid "Segment bands"
+msgid "Band type"
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:176
-msgid "User can also export the specific **segment bands**. These bands are relative to the segment intercepted by the slice (if the slice is in a break the previous segment is selected). this is where you'll find the dates of the breaks and information about confidence, number of observations etc..."
+msgid ""
+"For each selected band, the user can select which output from the model "
+"to export. For displaying, the value is sufficient, but for another "
+"analysis like classification, it's very important to add information "
+"relative to the model itself (amplitude, error, phase) to increase the "
+"quality of the output information."
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:184
+#: ../../source/cookbook/ccdc_slice.rst:179
+msgid "Segment bands"
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:181
+msgid ""
+"Users can also export the specific **Segment bands**. These bands are "
+"relative to the segment intercepted by the slice (if the slice is in a "
+"break, the previous segment is selected). This is where you'll find the "
+"dates of the breaks and information about confidence, number of "
+"observations, etc."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:188
 msgid "Exportation status"
 msgstr ""
 
-#: ../../source/cookbook/ccdc_slice.rst:186
-msgid "Going to the task tab (bottom left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons —depending on the loading status—), you will see the list of the different loading tasks. The interface will provide you with information about the task progress and it will display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
-msgstr ""
-
 #: ../../source/cookbook/ccdc_slice.rst:190
-msgid "This operation is running between GEE and SEPAL servers in the background, you can thus close the SEPAL page without killing the process."
+msgid ""
+"In the **Task** tab (lower-left corner using the :btn:`<fa-solid fa-list-"
+"check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading"
+" status), you will see the list of different loading tasks. The interface"
+" will provide you with information about the task progress and it will "
+"display an error if the exportation has failed."
 msgstr ""
 
 #: ../../source/cookbook/ccdc_slice.rst:192
-msgid "When the task is finished the frame will be displayed in green as shown on the second image."
+msgid ""
+"If you are unsatisfied with the way we present information, the task can "
+"also be monitored using the `GEE task manager "
+"<https://code.earthengine.google.com/tasks>`__."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:196
+msgid ""
+"Since this operation is running between GEE and SEPAL servers in the "
+"background, you can close the SEPAL page without stopping the process."
+msgstr ""
+
+#: ../../source/cookbook/ccdc_slice.rst:198
+msgid ""
+"When the task is finished, the frame will be displayed in green (see "
+"second image below)."
 msgstr ""
 
 #~ msgid ""
@@ -342,5 +511,438 @@ msgstr ""
 #~ "present information, the task can also"
 #~ " be monitored using the `GEE task "
 #~ "manager <https://code.earthengine.google.com/tasks>`__."
+#~ msgstr ""
+
+#~ msgid "CCDC Slice"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Powered by the API of Google's "
+#~ "`Earth Engine <https://earthengine.google.com/>`_, "
+#~ "SEPAL facilitates the workflow for "
+#~ "applying the Continuous Change Detection "
+#~ "and Classification (CCDC) approach as "
+#~ "proposed by `Zhu & Woodcock 2014 "
+#~ "<https://www.sciencedirect.com/science/article/pii/S0034425714000248>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "CCDC is a holistic methodological "
+#~ "framework that encompasses various aspects "
+#~ "of space-borne, multi-temporal land "
+#~ "mapping and monitoring using multi-"
+#~ "temporal satellite imagery. The core of"
+#~ " the method is a **temporal "
+#~ "segmentation** algorithm applied at "
+#~ "**pixel-level**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Before creating a CCDC slice, a "
+#~ "CCDC asset needs to be created (as"
+#~ " described in :doc:`ccdc`). The asset "
+#~ "holds all parameters that are needed "
+#~ "to re-produce the modelled time-"
+#~ "series of the underlying data. As "
+#~ "those parameters are stored at pixel-"
+#~ "level we retain the possibility to "
+#~ "extract each pixel's modelled reflectance "
+#~ "at any given point in time, or "
+#~ "for a time-span of the underlying"
+#~ " time-series. This is what is "
+#~ "meant by **slicing**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In addition, we can access the "
+#~ "parameters describing the model of the"
+#~ " temporally intersecting segment. Those can"
+#~ " be used in as input features "
+#~ "for subsequent classification tasks and "
+#~ "generally improve class separability."
+#~ msgstr ""
+
+#~ msgid "Getting Started"
+#~ msgstr ""
+
+#~ msgid "Create Recipe"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once logged into SEPAL, open the "
+#~ "recipe menu by clicking on the "
+#~ "orange :btn:`<fa-solid fa-globe>` button"
+#~ " at the top left of the SEPAL"
+#~ " start screen. Within the recipe menu"
+#~ " (*see figure below*), select CCDC "
+#~ "slice, which opens a new SEPAL "
+#~ "recipe tab."
+#~ msgstr ""
+
+#~ msgid "Rename Recipe"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first step one should do is"
+#~ " to change the name of the "
+#~ "recipe by double-clicking on tab "
+#~ "on the top of the map. This "
+#~ "will have the effect that your "
+#~ "recipe will be automatically saved and"
+#~ " is visible in the list of "
+#~ "created recipes. Furthermore, the given "
+#~ "name will be used for exported "
+#~ "files, both locally and on Earth "
+#~ "Engine. We suggest to use the "
+#~ "following convention: :code:`CCDC-"
+#~ "slice_<aoi>_<sensor(s)>_<date>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following steps describe the "
+#~ "parameter selection that can be found"
+#~ " on the lower right of the "
+#~ "screen."
+#~ msgstr ""
+
+#~ msgid ":guilabel:`OPT` CCDC Slicing Parameters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Two options are provided, one is "
+#~ "to directly point to an existing "
+#~ "Sepal recipe. Note that in this "
+#~ "case, the CCDC asset needs to be"
+#~ " re-generated on the fly based "
+#~ "on the parameter settings of the "
+#~ "CCDC asset. In most cases this is"
+#~ " very compute intense and may lead"
+#~ " to time-out errors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Therefore it is rather recommended to"
+#~ " opt for option 2, where an "
+#~ "existing CCDC asset is selected from "
+#~ "Earth Engine. In this case, the "
+#~ "CCDC asset needs to be exported "
+#~ "first, so that we can then point"
+#~ " to its asset location within Earth"
+#~ " Engine directly. This usually allows "
+#~ "for instant visualization as the slicing"
+#~ " procedure does not require lots of"
+#~ " computing power."
+#~ msgstr ""
+
+#~ msgid "Date (Range) selection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As described above, the slicing "
+#~ "procedure cuts out the model parameters"
+#~ " of a specific date in order to"
+#~ " generate the expected reflectance at "
+#~ "that given point in time. This can"
+#~ " be either a concrete date "
+#~ ":btn:`single date`, or a date range "
+#~ ":btn:`date range`. For the latter, the"
+#~ " median value of the selected time"
+#~ " period over the modelled time-series"
+#~ " is calculated."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In addition, it is possible to "
+#~ "display the detected breaks for the "
+#~ "intersecting temporal segments. Note that "
+#~ "for date ranges, more than 1 break"
+#~ " can fall within the specific "
+#~ "time-period. This needs to be "
+#~ "considered in the next parameter "
+#~ "setting, the CCDC slicing parameters."
+#~ msgstr ""
+
+#~ msgid "CCDC Slicing Parameters"
+#~ msgstr ""
+
+#~ msgid "Specific Date"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case a single date has been "
+#~ "selected, the slicing parameters will "
+#~ "look as shown in the Figure below."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first parameter is the number "
+#~ "of **harmonics** used to extract the "
+#~ "modelled reflectance at the given point"
+#~ " in time. 3 harmonic terms are "
+#~ "set by default. lowering this number "
+#~ "will result in a smoothed time-"
+#~ "series that does not depict intra-"
+#~ "annual periodicity. Setting this value "
+#~ "to 1 will only capture the "
+#~ "inter-annual periodicity, i.e. annual "
+#~ "seasonality, while a value of 0 "
+#~ "results in the mean value over the"
+#~ " segments time period."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The **Gap Strategy** relates to the "
+#~ "presence of gaps between 2 temporal "
+#~ "segments, i.e. the presence of a "
+#~ "break. After a detected break, CCDC "
+#~ "re-initializes a new model (i.e. "
+#~ "new segment) only after a couple "
+#~ "of observations. In between, no model"
+#~ " is available from which to extract"
+#~ " the data. In order to avoid "
+#~ "masked pixels the user has the "
+#~ "possibility to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`Interpolate` - use a temporally "
+#~ "weighted mean between the previous and"
+#~ " the subsequent model for the given"
+#~ " data"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":btn:`Extrapolate` - use the extrapolated "
+#~ "value of the closest, previous, or "
+#~ "next model for the given date"
+#~ msgstr ""
+
+#~ msgid ":btn:`Mask` - mask the value as no data"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case of extrapolation the additional"
+#~ " option **Segment to Extrapolate** allows"
+#~ " to choose either the model "
+#~ "parameters from the previous, next or"
+#~ " closest segment with respect to the"
+#~ " selected data. Furthermore, the **Max "
+#~ "Days to Extrapolate** setting allows to"
+#~ " limit the number of days until "
+#~ "this procedure is considered valid. If"
+#~ " the difference between the selected "
+#~ "date and the segment's valid time "
+#~ "period is greater than this threshold"
+#~ " value, the pixel will be "
+#~ "automatically masked."
+#~ msgstr ""
+
+#~ msgid "Date Range"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case a date range has been "
+#~ "selected, the slicing parameters will "
+#~ "look as shown in the Figure below."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then you need to select the "
+#~ "**Break analysis band**. As the slice"
+#~ " is including a range of observation,"
+#~ " the model can include multiple "
+#~ "segments and thus multiple breaks. this"
+#~ " parameter will select the band used"
+#~ " by SEPAL to select the break "
+#~ "that will be kept in the slice "
+#~ "output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Breaks identified by the CCDC asset "
+#~ "at the end of the time period "
+#~ "are usually errors. if your slicing "
+#~ "is ending at the same date as "
+#~ "your CCDC asset, you should consider "
+#~ "masking the end break."
+#~ msgstr ""
+
+#~ msgid "SEPAL offers 4 ways of selecting the remaining break:"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`first`: the first break within the slice date range"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`last`: the last break within the slice date range"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`magnitude`: the break with the highest magnitude of change"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`confidence`: the break with the "
+#~ "highest confidence value (see :doc:`ccdc` "
+#~ "for mor information about confidence "
+#~ "computation)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By selecting a specific breack "
+#~ "direction, the break sekection will only"
+#~ " take into acount the break with "
+#~ "a :guilabel:`decrease` or :guilabel:`increase` "
+#~ "magnitude. By default we consider "
+#~ ":guilabel:`any` break direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By moving the slider, you will "
+#~ "ignore the break with a low "
+#~ "confidence from the anlysis. You can "
+#~ "exclude break up to 50%. If no "
+#~ "break respects the requested confidence, "
+#~ "the highest available will be selected."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on the :btn:`<fa-solid fa-"
+#~ "chart-area>` button to start the "
+#~ "plotting tool (1). Move the pointer "
+#~ "to the main map, the pointer will"
+#~ " be transformed into a :icon:`fa-"
+#~ "solid fa-plus`. Click anywhere in "
+#~ "the AOI to plot data for this "
+#~ "specific location in the following popup"
+#~ " window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The plotting area (3) is the same"
+#~ " as the one presented in the "
+#~ "CCDC recipe with small adjustment to "
+#~ "the slicing operation. Refer to "
+#~ ":doc:`ccdc` for a complete description."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The plotting area cover all the "
+#~ "CCDC asset range, in red (4) the"
+#~ " user will see the slice. It "
+#~ "will be a sector of the plot "
+#~ "if date range is selected and a"
+#~ " red line if single date is "
+#~ "selected."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The plot feature is retrieving "
+#~ "information from GEE on the fly "
+#~ "and serving it in an interactive "
+#~ "window. This operation can take time "
+#~ "depending on the number of available "
+#~ "observations and the complexity of the"
+#~ " selected pre-processing parameters. If "
+#~ "the popup window displays a spinning "
+#~ "wheel, wait up to 2 min to "
+#~ "see the data displayed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You cannot export a recipe as an"
+#~ " asset or a :code:`.tiff` file "
+#~ "without a small computation quota. If"
+#~ " you are a new user see "
+#~ ":doc:`../setup/resource` to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on the :btn:`<fa-solid fa-"
+#~ "cloud-arrow-down>` button to open the"
+#~ " export dialogue. Here you can select"
+#~ " the bands to retrieve and the "
+#~ "scale at which you would like to"
+#~ " save the slice. CCDC slices can "
+#~ "be both exported to Google Earth "
+#~ "Engine as well as your SEPAL "
+#~ "workspace."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "you can export this asset as a "
+#~ ":code:`.tif` image to your SEPAL "
+#~ "workspace or as an *Image* in GEE."
+#~ " The scale parameter depends on the"
+#~ " data selected and the level of "
+#~ "detail you will need for your "
+#~ "further analysis. Landsat based assets "
+#~ "are usually created at 30 meters. "
+#~ "Sentinel-1 and 2 can be at 10 "
+#~ "meter, but will need 9 times more"
+#~ " space as compared to 30 meter "
+#~ "resolution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the CCDC slice exportation you "
+#~ "can select any band that was "
+#~ "available in the initial CCDC asset. "
+#~ "the result will be the evaluated "
+#~ "values of the model at the slice"
+#~ " date for single date and the "
+#~ "mean value for date range."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For each selected band, the user "
+#~ "can select which output from the "
+#~ "model he want to export. For "
+#~ "display the value is sufficient but "
+#~ "for another analysis like classification, "
+#~ "it's very important to add information"
+#~ " relative to the model itself "
+#~ "(amplitude, error, phase) to increase "
+#~ "the quality of the output information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "User can also export the specific "
+#~ "**segment bands**. These bands are "
+#~ "relative to the segment intercepted by"
+#~ " the slice (if the slice is in"
+#~ " a break the previous segment is "
+#~ "selected). this is where you'll find "
+#~ "the dates of the breaks and "
+#~ "information about confidence, number of "
+#~ "observations etc..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Going to the task tab (bottom left"
+#~ " corner using the :btn:`<fa-solid "
+#~ "fa-list-check>` or :btn:`<fa-solid "
+#~ "fa-spinner>` buttons —depending on the "
+#~ "loading status—), you will see the "
+#~ "list of the different loading tasks. "
+#~ "The interface will provide you with "
+#~ "information about the task progress and"
+#~ " it will display an error if "
+#~ "the exportation has failed. If you "
+#~ "are unsatisfied with the way we "
+#~ "present information, the task can also"
+#~ " be monitored using the `GEE task "
+#~ "manager <https://code.earthengine.google.com/tasks>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This operation is running between GEE"
+#~ " and SEPAL servers in the background,"
+#~ " you can thus close the SEPAL "
+#~ "page without killing the process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the task is finished the "
+#~ "frame will be displayed in green "
+#~ "as shown on the second image."
 #~ msgstr ""
 
