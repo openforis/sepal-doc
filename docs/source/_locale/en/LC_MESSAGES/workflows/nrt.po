@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 17:25+0100\n"
+"POT-Creation-Date: 2023-07-31 05:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/workflows/nrt.rst:2
-msgid "Near-Real-Time Forest Disturbance Mapping (CCDC based)"
+msgid "CCDC-based Near-Real-Time Forest Disturbance Alerts"
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:5
@@ -27,83 +27,229 @@ msgstr ""
 
 #: ../../source/workflows/nrt.rst:6
 msgid ""
-"Near-Real-Time Forest Disturbance Mapping (NRT-FDM) can be useful for a "
-"variety of applications, foremost policy enforcement. In this workflow "
-"description we provide a step-by-step guide on how to set-up a NRT-FDM on"
-" SEPAL by using advanced functionality of the CCDC algorithm."
+"Near-Real-Time Forest Disturbance Monitoring (NRT-FDM) entails remote "
+"sensing techniques that are based on dense time-series and target the "
+"generation of recent disturbance events in forested areas. The main "
+"objective is to detect those changes as early as possible. This "
+"priotization usually comes at the cost of accuracy, as the methods are "
+"optimized for speed and timeliness. They are therefore not suited for "
+"area estimations (such as for MRV) where accuracy is the main objective."
 msgstr ""
 
-#: ../../source/workflows/nrt.rst:9
-msgid "Requirements"
+#: ../../source/workflows/nrt.rst:8
+msgid ""
+"NRT-FDM is a rapidly evolving field of research and many different "
+"approaches have been proposed. The most common ones are based on the "
+"detection of abrupt changes in the time-series, which are then classified"
+" as disturbance events."
 msgstr ""
 
-#: ../../source/workflows/nrt.rst:11
-msgid "Area of Interest"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:12
-msgid "Forest Mask and/or Training data for Forest/Non-forest"
+#: ../../source/workflows/nrt.rst:10
+msgid ""
+"This page provides background information and and a detailed **HOW-TO** "
+"for a customised implementation of the CCDC algorithm on the SEPAL "
+"platform that is optimized for the generation of near-real-time alerts. "
+"It supports various sensor types and satellites, such as medium to very "
+"high resolution optical and radar data from Landsat, Sentinel 1 and 2 as "
+"well as Planet Labs daily data."
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:13
-msgid "dsfas"
+msgid "Methodology"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:14
+msgid ""
+"Originally, the CCDC algorithm is a well-established pixel-based method "
+"for the detection of changes in dense time-series and is usually applied "
+"for mapping changes of land use and land cover over longer periods of "
+"time. The algorithm is based on the assumption that the time-series can "
+"be modelled by a harmonic function. The harmonic function is fitted to "
+"the time-series and the modelled values are compared to the observations."
+" If the difference between the modelled and the observed values exceeds a"
+" certain threshold, a break is added, and a new segment is created based "
+"on the subsequent observations, fitting a new harmonic model. The "
+"threshold for a break is defined as a multiple of the Root-Mean-Square-"
+"Error (RMSE) of the harmonic model. You can find more details in the "
+"`original article "
+"<https://www.sciencedirect.com/science/article/abs/pii/S0034425714000248>`_."
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:16
-msgid "Main Steps"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:18
 msgid ""
-"Create CCDC Asset for historical period (-3 + 1 year around forest mask "
-"year)"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:19
-msgid "Create CCDC Slice at coinciding forest mask date of the historical period"
+"The method implemented in SEPAL is a customised version of that "
+"technique, which is optimized for near-real-time alert generation. It "
+"consists of 2 elements: 1. A historic reference in the form of a CCDC "
+"asset, containing past segments 2. A pixel-wise change detection applied "
+"to current imagery and the modelled value of the CCDC asset from 1 year "
+"before."
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:20
 msgid ""
-"Provide/Generate Training Data for the end of the historical period for "
-"Forest/Non-Forest"
+"The harmonic model of the historic CCDC asset allows to intersect the "
+"observations and retrieve a modelled reflectance at any given point in "
+"time, a process also called slicing. This information is used for "
+"comparison to newly incoming imagery. The observed value from a newly "
+"incoming image is compared to the modelled value from exactly 1 year "
+"before. This shall ensure that the comparison is always based on the same"
+" phenological stage. If the observed value deviates to a certain degree "
+"from the historic value, the pixel is flagged as disturbance."
 msgstr ""
 
-#: ../../source/workflows/nrt.rst:21
-msgid "Classify CCDC Slice from Step 2"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:22
-msgid "Generate new CCDC Asset utilizing the classification from Step 4"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:23
-msgid "Generate CCDC slice with latest valid date"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:24
-msgid "Classify new"
-msgstr ""
-
-#: ../../source/workflows/nrt.rst:26
-msgid "Create mosaic for latest period"
+#: ../../source/workflows/nrt.rst:-1
+msgid ""
+"A plotted time-series (white) and CCDC model (yellow), with highlughted "
+"calibration and monitoring period."
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:27
-msgid "Compare index to probability change"
+msgid ""
+"The degree of deviation is defined as a multiple of the RMSE originating "
+"from the harmonic model fitting the observations from a year earlier. "
+"Going above that threshhold means a change is initially detected. This "
+"value defines the sensitivity of the detection and is expressed as "
+"confidence."
 msgstr ""
 
 #: ../../source/workflows/nrt.rst:29
 msgid ""
-"--> not issue at the end of time-series - not compare it to last image, "
-"but to last year?"
+"A disturbance event counts as confirmed a number of subsequent "
+"observations adhere to the same criteria. This is to avoid false "
+"positives. The number of observations in a row is defined by the user. "
+"The default is 3."
 msgstr ""
 
-#: ../../source/workflows/nrt.rst:34
-msgid "The documentation of this functionality is under construction."
+#: ../../source/workflows/nrt.rst:31
+msgid ""
+"The logic of using a comparison to the modelled value from 1 year before "
+"has some important implications. A typical user of a NRT-FDM is usually "
+"interested in a monitoring period the spans last days to weeks, but not "
+"in the entire year (the default value of the monitoring period is 2 "
+"months). Changes that happen within the year, but before the monitoring "
+"period, would be included. The method therefore introduces a calibration "
+"period that directly precedes the monitoring period. Confirmed changes "
+"that already happened before or during the calibration period are not "
+"included in the final output by default. This is to ensure that the user "
+"only receives alerts for changes that happened during the monitoring "
+"period. The length of the calibration period is defined by the user. The "
+"default is 3 months. The advanced options allow to turn this behaviour "
+"off."
 msgstr ""
 
-#: ../../source/workflows/nrt.rst:38
-msgid "For specific help, please open an issue on our repository by clicking"
+#: ../../source/workflows/nrt.rst:33
+msgid ""
+"Another advanced option regards the handling of regrowth. Small "
+"disturbances from selective logging in tropical forests usually result in"
+" a quick canopy closure. By default the algorithms removes those changes "
+"as they could originate as well from image artifacts such as re-occuring "
+"haze."
 msgstr ""
+
+#: ../../source/workflows/nrt.rst:50
+msgid "How-to"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:53
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:54
+msgid ""
+"Area of Interest (EE table, Country/Regional boundaries, self-drawn "
+"polygon)"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:55
+msgid "Forest Mask (optional, but recommended)"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:56
+msgid "Planet API key (optional, only for Planet daily imagery)"
+msgstr ""
+
+#: ../../source/workflows/nrt.rst:58
+msgid ""
+"From this `link <https://docs.google.com/presentation/d"
+"/1gVb8Ewevp_fQNChSQT-"
+"wGRdSIM79x0II/edit?usp=sharing&ouid=107111160061452891127&rtpof=true&sd=true>`_"
+" you can download a PowerPoint Presentation that provides a step-by-step "
+"guide for the use of a combination of Landsat and Sentinel-2 imagery over"
+" an area in Bolivia. Once you are more familiar, it will help to read "
+"further to understand the underlying logic of the workflow."
+msgstr ""
+
+#~ msgid "Near-Real-Time Forest Disturbance Mapping (CCDC based)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Near-Real-Time Forest Disturbance "
+#~ "Mapping (NRT-FDM) can be useful "
+#~ "for a variety of applications, foremost"
+#~ " policy enforcement. In this workflow "
+#~ "description we provide a step-by-"
+#~ "step guide on how to set-up "
+#~ "a NRT-FDM on SEPAL by using "
+#~ "advanced functionality of the CCDC "
+#~ "algorithm."
+#~ msgstr ""
+
+#~ msgid "Area of Interest"
+#~ msgstr ""
+
+#~ msgid "Forest Mask and/or Training data for Forest/Non-forest"
+#~ msgstr ""
+
+#~ msgid "dsfas"
+#~ msgstr ""
+
+#~ msgid "Main Steps"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create CCDC Asset for historical period"
+#~ " (-3 + 1 year around forest "
+#~ "mask year)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create CCDC Slice at coinciding forest"
+#~ " mask date of the historical period"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Provide/Generate Training Data for the "
+#~ "end of the historical period for "
+#~ "Forest/Non-Forest"
+#~ msgstr ""
+
+#~ msgid "Classify CCDC Slice from Step 2"
+#~ msgstr ""
+
+#~ msgid "Generate new CCDC Asset utilizing the classification from Step 4"
+#~ msgstr ""
+
+#~ msgid "Generate CCDC slice with latest valid date"
+#~ msgstr ""
+
+#~ msgid "Classify new"
+#~ msgstr ""
+
+#~ msgid "Create mosaic for latest period"
+#~ msgstr ""
+
+#~ msgid "Compare index to probability change"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "--> not issue at the end of "
+#~ "time-series - not compare it to "
+#~ "last image, but to last year?"
+#~ msgstr ""
+
+#~ msgid "The documentation of this functionality is under construction."
+#~ msgstr ""
+
+#~ msgid "For specific help, please open an issue on our repository by clicking"
+#~ msgstr ""
 
