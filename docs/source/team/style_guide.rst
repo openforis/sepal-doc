@@ -45,8 +45,7 @@ Be simple and direct
 Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered lists to sentences and pargarphs. When sentences or paragraphs are necessary, prefer short sentences and paragraphs to long sentences and paragraphs. Use section headings to organize articles.
 
     **Example**
-    Reset password
-    """"""""""""""
+    **Reset password**
     If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign-in forms.
 
     The password reset process can be performed in three steps:
@@ -63,7 +62,7 @@ For simple step-by-step instructions, use right angle brackets.
 For step-by-step instructions for complex procedures, use numbered and bulleted lists, instead of paragraphs, when possible.
 
     **Example**
-    To create an account
+    **To create an account**
 
     1.   Go to sepal.io
     2.   Select **Launch** > **Sign up**.
@@ -73,12 +72,12 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
     6.   Create password.
 
     **Example**
-    To start an instance
+    **To start an instance**
 
-    #    Examine the **Available instance types** table to choose an instance type.
-    #    Enter your chosen instance type.
-    #    Press **Enter**.
-    #    Wait for the instance to start.
+    1.   Examine the **Available instance types** table to choose an instance type.
+    2.   Enter your chosen instance type.
+    3.   Press **Enter**.
+    4.   Wait for the instance to start.
 
 Use a direct tone
 ^^^^^^^^^^^^^^^^^
@@ -95,7 +94,7 @@ In other words, tell the user what to do in the moment they are reading the docu
     **Example**
     Open the SEPAL interface and enter your email address.
 
-Avoid addressing the audience directly, when possible (i.e. limit the use of the words **you** and **your**). 
+Avoid addressing the audience directly, when possible (i.e. limit the use of the words **you** and **your**).
 
     **Example**
     To sign up for a Google account, go to `<https://accounts.google.com/servicelogin>`__
@@ -103,7 +102,7 @@ Avoid addressing the audience directly, when possible (i.e. limit the use of the
 When addressing the audience is necessary, use the word **you** or **your**.
 
     **Example**
-    e.g. To reset your password, go to `<https://docs.sepal.io/en/latest/setup/password.html>`__
+    To reset your password, go to `<https://docs.sepal.io/en/latest/setup/password.html>`__
 
 
 Key terminology
@@ -158,8 +157,8 @@ A section of the documentation should be referred to as **a section of SEPAL doc
     **Example**
     Discover how to register for SEPAL in the section, `Getting started <https://docs.sepal.io/en/latest/setup/index.html>`__. 
 
-An article within SEPAL documentation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Article within SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A page within the documentation should be referred to as **an article**. The titles of articles should appear sentence case.
 
@@ -201,7 +200,9 @@ Elements
 
 Common words used to describe elements in the **SEPAL interface** include:
 
+-    terminal
 -    tab
+-    bar
 -    pane
 -    form
 -    field 
@@ -211,7 +212,23 @@ Common words used to describe elements in the **SEPAL interface** include:
 -    window
 -    dropdown menu
 -    pop-up window
+-    pop-up menu
 -    status bar
+-    icon
+-    apps
+-    recipes
+-    modules
+-    workflows
+-    features
+-    tutorials
+-    filters
+-    tiles
+-    map
+-    bands
+-    options
+-    pointer
+-    parameters
+
 
 Directional terminology
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -228,10 +245,13 @@ Other things to consider
 
 Other basic guidelines to follow when writing SEPAL documentation include:
 
--    prefer sentence case over lowercase or all caps, except for acronyms which should be in all caps;
--    use double quotation marks for direct quotes;
--    use bold for elements of the SEPAL interface; and
--    use italics for introducing new terminology.
+-    prefer sentence case over lowercase or all caps;
+-    use bold for elements of the SEPAL interface, or emphasis (sparingly);
+-    use italics for introducing new terminology, or emphasis (sparingly);
+-    use punctuation to improve clarity and fluidity;
+-    introduce acronyms at first use;
+-    present highlighted information strategically and accurately; 
+-    format file names with lowercase letters and a full stop.
 
 Capitalization
 ^^^^^^^^^^^^^^
@@ -239,22 +259,13 @@ Capitalization
 Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the SEPAL interface.
 
     **Example**
-    Area of interest selection
-    """"""""""""""""""""""""""
+    **Area of interest selection**
     The area of interest (AOI) is the first mandatory input in the majority of SEPAL modules.
-
-Quotation marks
-^^^^^^^^^^^^^^^
-
-Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
-
-    **Example**
-    If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
 
 Bold
 ^^^^
 
-Use bold formatting for the names of elements in the SEPAL interface.
+Use bold formatting for the names of elements in the SEPAL interface, or emphasis.
 
     **Example**
     Select **Export**.
@@ -262,18 +273,131 @@ Use bold formatting for the names of elements in the SEPAL interface.
 Italics
 ^^^^^^^
 
-Use italicized text for introducing key terminology at first mention.
+Use italicized text for introducing key terminology at first mention, or emphasis.
 
     **Example**
     There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ..., while informal QA/QC refers to ...
+
+Punctuation
+^^^^^^^^^^^
+
+Quotation marks
+"""""""""""""""
+
+Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
+
+    **Example**
+    If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
+
+Colons
+""""""
+Use colons to introduce lists, definitions, explanations or quotations.
+
+    **Example**
+    In this section of SEPAL documentation, you can learn how to:
+    -   Register to SEPAL
+    -   Use Google Earth Engine (GEE) with SEPAL
+    -   Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data
+    -   Exchange files with SEPAL
+    -   Manage your resources
+    -   Reset your password
+
+Semicolons
+""""""""""
+
+Use semicolons to separate independent clauses that have different subjects and are not connected by a conjunction; in long sentences comprising a series of complex clauses, at least one of which contains a comma, semicolons may replace commas.
+
+    **Example**
+    These overlay areas can be managed in various ways. For example, you can choose to:
+    -   keep only the raster data from the first or last dataset;
+    -   combine the values of the overlay cells using a weighting algorithm;
+    -   average the values of the overlay cells; or
+    -   take the maximum or minimum value.
+
+Commas
+""""""
+
+A comma may separate two independent clauses before a conjunction, separate two independent clauses before a conjunction, set off complementary information, be used before the final "and" in a list to avoid ambiguity, or be used where a sentence comprises a complex series of phrases.
+
+    **Example**
+    By default, SEPAL is in English, but is also available in other languages, such as French and Spanish.
+
+En-dashes
+"""""""""
+
+En-dashes can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values, and ranges of dates.
+
+    **Example**
+    2016–2020
+
+Hyphens
+"""""""
+
+Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc. 
+
+    **Example**
+    High-quality data for 15 year-old forests.
+
+Full stops
+""""""""""
+
+Use full stops at the end of sentences, but not in headings.
+
+    **Example**
+    **Set up your accounts and request additional resources**
+    In this article, you can learn how to create a SEPAL account.
+
+Abbreviations
+^^^^^^^^^^^^^
+
+At first mention, acronyms should be written out, followed by the abbreviation in parentheses. It may then be used alone.
+
+   **Example**
+   The project is from the Food and Agriculture Organization of the United Nations (FAO).
+
+Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
+
+   **Example**
+   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
+
+Highlights
+^^^^^^^^^^
+
+Common terms for showcasing information include:
+
+-   Tip
+-   Note
+-   Attention
+-   Important
+
+File names
+^^^^^^^^^^
+
+Format file names with a full stop and lowercase file type.
+
+   **Example**
+   .tiff
+
+Numbers
+^^^^^^^
+
+To avoid confusion, format numbers with neither spaces nor punctuation, except for a full stop for decimals.
+
+   **Example**
+   10000 hectares
+
+   **Example**
+   0.175 m
 
 
 A note on SEPALSTYLE
 ^^^^^^^^^^^^^^^^^^^^
 
-**SEPALSTYLE** was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience.
+**SEPALSTYLE** was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience. 
 
-For style-related questions or concerns not addressed in **SEPALSTYLE**, see:
+This style guide can be considered exemplary documentation (i.e. a model text for writing articles and presenting information).
+
+For style-related questions or concerns not addressed in *SEPALSTYLE*, see:
 
 -    `FAOSTYLE (2023) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__
 -    `FAO Term Portal <https://www.fao.org/faoterm>`__
@@ -282,3 +406,11 @@ For style-related questions or concerns not addressed in **SEPALSTYLE**, see:
 For GitHub-related questions or concerns related to making contributions to SEPAL documentation, see
 
 -    `SEPAL team documentation <https://docs.sepal.io/en/latest/team/index.html>`__
+-    `Writing on GitHub <https://docs.github.com/en/get-started/writing-on-github>`__
+
+For further guidance, see:
+
+-    `Microsoft Documentation <https://learn.microsoft.com/en-us/docs/>`__
+   -    `Procedures and instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/>`__
+   -    `Writing step-by-step instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions>`__
+   -    `Describing interactions with UI <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__
