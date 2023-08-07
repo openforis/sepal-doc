@@ -3,7 +3,7 @@ Forest Canopy Disturbance Monitoring (FCDM)
 
 .. note::
 
-    Former Delta-rNBR, Version 2.4
+    Formerly Delta-rNBR, Version 2.4
 
 FCDM Tool
 ---------
