@@ -27,9 +27,9 @@ Style tips
 
 Basic guidelines for following *SEPALSTYLE* include:
 
--    Focus on user needs
--    Be simple and direct
--    Use a direct tone
+-    focus on user needs
+-    be simple and direct
+-    use a direct tone
 
 Focus on user needs
 ^^^^^^^^^^^^^^^^^^^
