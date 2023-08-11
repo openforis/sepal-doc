@@ -22,7 +22,6 @@ To help users achieve their goals, writing should be:
 -    consistent
 -    fluid
 
-
 Style tips
 ----------
 
@@ -42,7 +41,7 @@ Ensure user goals are kept in mind when planning, drafting, and finalizing conte
 Be simple and direct
 ^^^^^^^^^^^^^^^^^^^^
 
-Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered lists to sentences and pargarphs. When sentences or paragraphs are necessary, prefer short sentences and paragraphs to long sentences and paragraphs. Use section headings to organize articles.
+Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered lists to sentences and paragraphs. When sentences or paragraphs are necessary, prefer short sentences and paragraphs to long sentences and paragraphs. Use section headings to organize articles.
 
     **Example**
     **Reset password**
@@ -174,25 +173,31 @@ Actions
 
 Common words used to describe actions in the **SEPAL interface** include:
 
--    open
--    close
--    leave
--    go to
--    clear
 -    choose
--    enter
--    pan
--    swipe
--    hover
--    switch
--    select
--    select and hold
+-    clear
+-    click (prefer **select**, except when not appropriate)
+-    click and hold
+-    close
 -    copy
 -    copy and paste
--    click
--    click and hold
+-    enter
+-    fill out
+-    go to
+-    hover
+-    leave
+-    log in, log out
+-    open
+-    pan
+-    save
+-    select (use instead of *click*, except when not appropriate)
+-    select and hold
 -    sign in, sign out
+-    submit
+-    swipe
+-    switch
 -    turn on, turn off
+-    use
+-    view
 -    zoom, zoom in, zoom out
 
 Elements
@@ -200,35 +205,38 @@ Elements
 
 Common words used to describe elements in the **SEPAL interface** include:
 
--    terminal
--    tab
+-    app
+-    band
 -    bar
--    pane
--    form
--    field 
 -    button
--    folder
--    menu
--    window
+-    checkbox
+-    dash
+-    drawer
 -    dropdown menu
+-    feature
+-    field
+-    filter
+-    folder
+-    form
+-    icon
+-    map
+-    module
+-    menu
+-    option
+-    pane
+-    parameter
+-    pointer
 -    pop-up window
 -    pop-up menu
+-    recipe
+-    settings
 -    status bar
--    icon
--    apps
--    recipes
--    modules
--    workflows
--    features
--    tutorials
--    filters
--    tiles
--    map
--    bands
--    options
--    pointer
--    parameters
-
+-    tab
+-    terminal
+-    tile
+-    tutorial
+-    window
+-    workflow
 
 Directional terminology
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -251,43 +259,56 @@ Other basic guidelines to follow when writing SEPAL documentation include:
 -    use punctuation to improve clarity and fluidity;
 -    introduce acronyms at first use;
 -    present highlighted information strategically and accurately; 
--    format file names with lowercase letters and a full stop.
+-    format file names with lowercase letters and a full stop;
+-    format numbers with neither spaces nor punctuation, except for a full stop for decimals;
+-    use the author–date system for referencing;
+-    introduce lists with an opening phrase ending with a colon, and use consistent capitalization and punctuation; and
+-    use the International System of Units.
 
-Capitalization
-^^^^^^^^^^^^^^
+Abbreviations
+^^^^^^^^^^^^^
 
-Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the SEPAL interface.
+At first mention, acronyms should be written out, followed by the abbreviation in parentheses. It may then be used alone.
 
-    **Example**
-    **Area of interest selection**
-    The area of interest (AOI) is the first mandatory input in the majority of SEPAL modules.
+   **Example**
+   The project is from the Food and Agriculture Organization of the United Nations (FAO).
+
+Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
+
+   **Example**
+   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
+
+Font
+^^^^
 
 Bold
-^^^^
+""""
 
 Use bold formatting for the names of elements in the SEPAL interface, or emphasis.
 
     **Example**
     Select **Export**.
 
+Capitalization
+""""""""""""""
+
+Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the SEPAL interface. For proper nouns, follow initial capitalization.
+
+    **Example**
+    **Area of interest selection**
+    The area of interest (AOI) is the first mandatory input in the majority of SEPAL modules.
+
 Italics
-^^^^^^^
+"""""""
 
 Use italicized text for introducing key terminology at first mention, or emphasis.
 
     **Example**
     There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ..., while informal QA/QC refers to ...
 
+
 Punctuation
 ^^^^^^^^^^^
-
-Quotation marks
-"""""""""""""""
-
-Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
-
-    **Example**
-    If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
 
 Colons
 """"""
@@ -301,18 +322,6 @@ Use colons to introduce lists, definitions, explanations or quotations.
     -   Exchange files with SEPAL
     -   Manage your resources
     -   Reset your password
-
-Semicolons
-""""""""""
-
-Use semicolons to separate independent clauses that have different subjects and are not connected by a conjunction; in long sentences comprising a series of complex clauses, at least one of which contains a comma, semicolons may replace commas.
-
-    **Example**
-    These overlay areas can be managed in various ways. For example, you can choose to:
-    -   keep only the raster data from the first or last dataset;
-    -   combine the values of the overlay cells using a weighting algorithm;
-    -   average the values of the overlay cells; or
-    -   take the maximum or minimum value.
 
 Commas
 """"""
@@ -330,14 +339,6 @@ En-dashes can be used in pairs – leaving a space on either side – to set off
     **Example**
     2016–2020
 
-Hyphens
-"""""""
-
-Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc. 
-
-    **Example**
-    High-quality data for 15 year-old forests.
-
 Full stops
 """"""""""
 
@@ -347,18 +348,41 @@ Use full stops at the end of sentences, but not in headings.
     **Set up your accounts and request additional resources**
     In this article, you can learn how to create a SEPAL account.
 
-Abbreviations
-^^^^^^^^^^^^^
+Hyphens
+"""""""
 
-At first mention, acronyms should be written out, followed by the abbreviation in parentheses. It may then be used alone.
+Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc. 
+
+    **Example**
+    High-quality data for 15 year-old forests.
+
+Quotation marks
+"""""""""""""""
+
+Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
+
+    **Example**
+    If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
+
+Semicolons
+""""""""""
+
+Use semicolons to separate independent clauses that have different subjects and are not connected by a conjunction; in long sentences comprising a series of complex clauses, at least one of which contains a comma, semicolons may replace commas.
+
+    **Example**
+    These overlay areas can be managed in various ways. For example, you can choose to:
+    -   keep only the raster data from the first or last dataset;
+    -   combine the values of the overlay cells using a weighting algorithm;
+    -   average the values of the overlay cells; or
+    -   take the maximum or minimum value.
+
+File names
+^^^^^^^^^^
+
+Format file names with a full stop and lowercase file type.
 
    **Example**
-   The project is from the Food and Agriculture Organization of the United Nations (FAO).
-
-Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
-
-   **Example**
-   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
+   .tiff
 
 Highlights
 ^^^^^^^^^^
@@ -369,14 +393,6 @@ Common terms for showcasing information include:
 -   Note
 -   Attention
 -   Important
-
-File names
-^^^^^^^^^^
-
-Format file names with a full stop and lowercase file type.
-
-   **Example**
-   .tiff
 
 Numbers
 ^^^^^^^
@@ -389,11 +405,67 @@ To avoid confusion, format numbers with neither spaces nor punctuation, except f
    **Example**
    0.175 m
 
+Generally, numbers from one to ten are written in text as words; numbers from 11 upward are written as numerals. Use arabic numerals for dates, percentages, money, measurements, ages, ratios and scales. Write out any number that begins a sentence. Use numerals where a number accompanies a unit.
 
-A note on SEPALSTYLE
-^^^^^^^^^^^^^^^^^^^^
+Paragraph
+^^^^^^^^^
 
-**SEPALSTYLE** was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience. 
+Lists
+"""""
+
+When presenting bulleted and numbered lists, introduce them with an opening phrase ending with a colon.
+
+For very short entries, the list items are lower case with no punctuation.
+
+   **Example**
+   Select one of the following categories:
+   -   background
+   -   foreground
+   -   special background 1
+
+For longer entries, the list items are lower case and end with a semi-colon; the final entry should end with a semicolon and the word "and".
+
+   **Example**
+   To open an account:
+   -   go to the website;
+   -   enter your credentials; and
+   -   complete email verification.
+
+For entries that are complete sentences, the list items are sentence case and end with a full stop.
+
+   **Example**
+   Keep the following in mind:
+
+   -   The transition of land cover over time provides important insights into how land characteristics have changed.
+   -   Trends in land productivity measure important changes in productivity over time.
+   -   Changes in above ground and below ground carbon stocks are currently shown by soil organic carbon (SOC) stocks.
+
+Referencing
+^^^^^^^^^^^
+
+When referencing source material, use the author–date system, which includes in-text citations and a reference list with all sources at the end of the article.
+
+   **Example**
+   In 2008, GuidosToolbox was developed as a graphical user interface (GUI) to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille and Vogt 2009).
+
+   **Example**
+   **References**
+   Soille, P. and Vogt, P. 2009. Morphological segmentation of binary patterns. *Pattern Recognition Letters*, 30(4): 456–459. https://doi.org/10.1016/j.patrec.2008.10.015
+
+Units
+^^^^^
+
+Use the International System of Units. Do not use punctuation or letter spacing; however, always insert a space between the unit and the number. If using symbols, introduce at first use in parentheses.
+
+   **Example**
+   Information is gathered every 5 metres (m). Every 50 m, a report is generated.
+
+
+
+A note on *SEPALSTYLE*
+^^^^^^^^^^^^^^^^^^^^^^
+
+*SEPALSTYLE* was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience. 
 
 This style guide can be considered exemplary documentation (i.e. a model text for writing articles and presenting information).
 
