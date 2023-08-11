@@ -10,7 +10,7 @@ SEPAL documentation style guide
 Goals and principles
 --------------------
 
-The goal of SEPAL documentation is to guide users through the **SEPAL interface** and help users achieve their goals.
+The goal of **SEPAL documentation** is to guide users through the **SEPAL interface** and help users achieve their goals.
 
 When contributing to **SEPAL documentation**, think of yourself as a tour guide for SEPAL users.
 
@@ -34,7 +34,7 @@ Basic guidelines for following *SEPALSTYLE* include:
 Focus on user needs
 ^^^^^^^^^^^^^^^^^^^
 
-Consider user goals and questions when contributing to SEPAL documentation. Define these goals and identify these questions before, during and after making contributions, so that articles can be useful and clear for users.
+Consider user goals and questions when contributing to **SEPAL documentation**. Define these goals and identify these questions before, during and after making contributions, so that articles can be useful and clear for users.
 
 Ensure user goals are kept in mind when planning, drafting, and finalizing content. Ensure user questions are addressed and answered in the documentation, minimizing confusion and allowing users to achieve their goals.
 
@@ -107,7 +107,7 @@ When addressing the audience is necessary, use the word **you** or **your**.
 Key terminology
 ---------------
 
-Common terms used in SEPAL documentation include:
+Common terms used in **SEPAL documentation** include:
 
 -    SEPAL team
 -    SEPAL interface
