@@ -10,9 +10,9 @@ SEPAL documentation style guide
 Goals and principles
 --------------------
 
-The goal of SEPAL documentation is to guide users through the SEPAL interface and help users achieve their goals.
+The goal of SEPAL documentation is to guide users through the **SEPAL interface** and help users achieve their goals.
 
-When contributing to SEPAL documentation, think of yourself as a tour guide for SEPAL users.
+When contributing to **SEPAL documentation**, think of yourself as a tour guide for SEPAL users.
 
 To help users achieve their goals, writing should be:
 
@@ -91,7 +91,7 @@ When writing an article, utilize:
 In other words, tell the user what to do in the moment they are reading the documentation.
 
     **Example**
-    Open the SEPAL interface and enter your email address.
+    Open the **SEPAL interface** and enter your email address.
 
 Avoid addressing the audience directly, when possible (i.e. limit the use of the words **you** and **your**).
 
@@ -121,7 +121,7 @@ SEPAL team
 The authors of the documentation should be referred to as **the SEPAL team**.
 
     **Example**
-    The SEPAL team maintains the documentation to guide users through the SEPAL interface.
+    The SEPAL team maintains the documentation to guide users through the **SEPAL interface**.
 
 If the term, **the SEPAL team** has been overused, use "the authors of the documentation", or **we** or **us** instead.
 
@@ -146,7 +146,7 @@ SEPAL documentation
 The website where SEPAL documentation is located should be referred to as either **SEPAL documentation** or simply, **the documentation**.
 
     **Example**
-    Learn more about SEPAL documentation by reading this article.
+    Learn more about **SEPAL documentation** by reading this article.
 
 Section of SEPAL documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -162,7 +162,7 @@ Article within SEPAL documentation
 A page within the documentation should be referred to as **an article**. The titles of articles should appear sentence case.
 
     **Example**
-    Learn more about the SEPAL interface in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__. 
+    Learn more about the **SEPAL interface** in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__. 
 
 
 Describing interactions with the SEPAL interface
@@ -241,7 +241,7 @@ Common words used to describe elements in the **SEPAL interface** include:
 Directional terminology
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Common words to describe location in the SEPAL interface (indicate location in relation to objects within the interface, if possible):
+Common words to describe location in the **SEPAL interface** (indicate location in relation to objects within the interface, if possible):
 
 -    upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of
 -    lower right (noun), lower-right (adjective), rightmost (adjective), on the right side of
@@ -251,10 +251,10 @@ Common words to describe location in the SEPAL interface (indicate location in r
 Other things to consider
 ------------------------
 
-Other basic guidelines to follow when writing SEPAL documentation include:
+Other basic guidelines to follow when writing **SEPAL documentation** include:
 
 -    prefer sentence case over lowercase or all caps;
--    use bold for elements of the SEPAL interface, or emphasis (sparingly);
+-    use bold for elements of the **SEPAL interface**, or emphasis (sparingly);
 -    use italics for introducing new terminology, or emphasis (sparingly);
 -    use punctuation to improve clarity and fluidity;
 -    introduce acronyms at first use;
@@ -284,7 +284,7 @@ Font
 Bold
 """"
 
-Use bold formatting for the names of elements in the SEPAL interface, or emphasis.
+Use bold formatting for the names of elements in the **SEPAL interface**, or emphasis.
 
     **Example**
     Select **Export**.
@@ -292,7 +292,7 @@ Use bold formatting for the names of elements in the SEPAL interface, or emphasi
 Capitalization
 """"""""""""""
 
-Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the SEPAL interface. For proper nouns, follow initial capitalization.
+Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the **SEPAL interface**. For proper nouns, follow initial capitalization.
 
     **Example**
     **Area of interest selection**
@@ -315,7 +315,7 @@ Colons
 Use colons to introduce lists, definitions, explanations or quotations.
 
     **Example**
-    In this section of SEPAL documentation, you can learn how to:
+    In this section of **SEPAL documentation**, you can learn how to:
     -   Register to SEPAL
     -   Use Google Earth Engine (GEE) with SEPAL
     -   Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data
