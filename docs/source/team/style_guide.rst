@@ -44,6 +44,7 @@ Be simple and direct
 Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered lists to sentences and paragraphs. When sentences or paragraphs are necessary, prefer short sentences and paragraphs to long sentences and paragraphs. Use section headings to organize articles.
 
     **Example**
+    
     **Reset password**
     If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign-in forms.
 
