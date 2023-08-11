@@ -67,7 +67,7 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
     
     **To create an account**
 
-    1.   Go to sepal.io
+    1.   Go to https://sepal.io 
     2.   Select **Launch** > **Sign up**.
     3.   Fill out the form.
     4.   Select **Sign up**.
@@ -277,7 +277,7 @@ Other basic guidelines to follow when writing **SEPAL documentation** include:
 -    format numbers with neither spaces nor punctuation, except for a full stop for decimals;
 -    use the author–date system for referencing;
 -    introduce lists with an opening phrase ending with a colon, and use consistent capitalization and punctuation; and
--    use the International System of Units.
+-    use the `International System of Units <https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__.
 
 Abbreviations
 ^^^^^^^^^^^^^
