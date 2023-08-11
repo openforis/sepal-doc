@@ -46,6 +46,7 @@ Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered
     **Example**
     
     **Reset password**
+    
     If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign-in forms.
 
     The password reset process can be performed in three steps:
