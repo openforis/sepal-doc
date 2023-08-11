@@ -58,11 +58,13 @@ Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered
 For simple step-by-step instructions, use right angle brackets.
 
     **Example**
+    
     Select **Launch** > **Sign up**
 
 For step-by-step instructions for complex procedures, use numbered and bulleted lists, instead of paragraphs, when possible.
 
     **Example**
+    
     **To create an account**
 
     1.   Go to sepal.io
@@ -73,6 +75,7 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
     6.   Create password.
 
     **Example**
+    
     **To start an instance**
 
     1.   Examine the **Available instance types** table to choose an instance type.
@@ -83,7 +86,7 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
 Use a direct tone
 ^^^^^^^^^^^^^^^^^
 
-When writing an article, utilize: 
+When writing an article, use: 
 
 -    an active voice 
 -    the present tense
@@ -93,16 +96,19 @@ When writing an article, utilize:
 In other words, tell the user what to do in the moment they are reading the documentation.
 
     **Example**
+
     Open the **SEPAL interface** and enter your email address.
 
 Avoid addressing the audience directly, when possible (i.e. limit the use of the words **you** and **your**).
 
     **Example**
+
     To sign up for a Google account, go to `<https://accounts.google.com/servicelogin>`__
 
 When addressing the audience is necessary, use the word **you** or **your**.
 
     **Example**
+
     To reset your password, go to `<https://docs.sepal.io/en/latest/setup/password.html>`__
 
 
@@ -123,6 +129,7 @@ SEPAL team
 The authors of the documentation should be referred to as **the SEPAL team**.
 
     **Example**
+
     The SEPAL team maintains the documentation to guide users through the **SEPAL interface**.
 
 If the term, **the SEPAL team** has been overused, use "the authors of the documentation", or **we** or **us** instead.
@@ -135,11 +142,13 @@ SEPAL interface
 The interface should be referred to as the **SEPAL interface**.
 
     **Example**
+
     Open the **SEPAL interface** and enter your email address.
 
 Elements of the interface should be formatted in bold and sentence case. 
 
     **Example**
+
     Select the **Area of interest** button.
 
 SEPAL documentation
@@ -148,6 +157,7 @@ SEPAL documentation
 The website where SEPAL documentation is located should be referred to as either **SEPAL documentation** or simply, **the documentation**.
 
     **Example**
+
     Learn more about **SEPAL documentation** by reading this article.
 
 Section of SEPAL documentation
@@ -156,6 +166,7 @@ Section of SEPAL documentation
 A section of the documentation should be referred to as **a section of SEPAL documentation** or **a section of the documentation**. The titles of sections should appear in sentence case.
 
     **Example**
+
     Discover how to register for SEPAL in the section, `Getting started <https://docs.sepal.io/en/latest/setup/index.html>`__. 
 
 Article within SEPAL documentation
@@ -164,6 +175,7 @@ Article within SEPAL documentation
 A page within the documentation should be referred to as **an article**. The titles of articles should appear sentence case.
 
     **Example**
+
     Learn more about the **SEPAL interface** in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__. 
 
 
@@ -273,11 +285,13 @@ Abbreviations
 At first mention, acronyms should be written out, followed by the abbreviation in parentheses. It may then be used alone.
 
    **Example**
+
    The project is from the Food and Agriculture Organization of the United Nations (FAO).
 
 Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
 
    **Example**
+
    Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
 
 Font
@@ -289,6 +303,7 @@ Bold
 Use bold formatting for the names of elements in the **SEPAL interface**, or emphasis.
 
     **Example**
+
     Select **Export**.
 
 Capitalization
@@ -297,7 +312,9 @@ Capitalization
 Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the **SEPAL interface**. For proper nouns, follow initial capitalization.
 
     **Example**
+
     **Area of interest selection**
+
     The area of interest (AOI) is the first mandatory input in the majority of SEPAL modules.
 
 Italics
@@ -306,8 +323,8 @@ Italics
 Use italicized text for introducing key terminology at first mention, or emphasis.
 
     **Example**
-    There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ..., while informal QA/QC refers to ...
 
+    There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ..., while informal QA/QC refers to ...
 
 Punctuation
 ^^^^^^^^^^^
@@ -317,7 +334,9 @@ Colons
 Use colons to introduce lists, definitions, explanations or quotations.
 
     **Example**
+
     In this section of **SEPAL documentation**, you can learn how to:
+
     -   Register to SEPAL
     -   Use Google Earth Engine (GEE) with SEPAL
     -   Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data
@@ -331,6 +350,7 @@ Commas
 A comma may separate two independent clauses before a conjunction, separate two independent clauses before a conjunction, set off complementary information, be used before the final "and" in a list to avoid ambiguity, or be used where a sentence comprises a complex series of phrases.
 
     **Example**
+
     By default, SEPAL is in English, but is also available in other languages, such as French and Spanish.
 
 En-dashes
@@ -339,6 +359,7 @@ En-dashes
 En-dashes can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values, and ranges of dates.
 
     **Example**
+
     2016–2020
 
 Full stops
@@ -347,7 +368,9 @@ Full stops
 Use full stops at the end of sentences, but not in headings.
 
     **Example**
+
     **Set up your accounts and request additional resources**
+
     In this article, you can learn how to create a SEPAL account.
 
 Hyphens
@@ -356,6 +379,7 @@ Hyphens
 Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc. 
 
     **Example**
+
     High-quality data for 15 year-old forests.
 
 Quotation marks
@@ -364,6 +388,7 @@ Quotation marks
 Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
 
     **Example**
+
     If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
 
 Semicolons
@@ -372,7 +397,9 @@ Semicolons
 Use semicolons to separate independent clauses that have different subjects and are not connected by a conjunction; in long sentences comprising a series of complex clauses, at least one of which contains a comma, semicolons may replace commas.
 
     **Example**
+
     These overlay areas can be managed in various ways. For example, you can choose to:
+
     -   keep only the raster data from the first or last dataset;
     -   combine the values of the overlay cells using a weighting algorithm;
     -   average the values of the overlay cells; or
@@ -384,6 +411,7 @@ File names
 Format file names with a full stop and lowercase file type.
 
    **Example**
+
    .tiff
 
 Highlights
@@ -402,9 +430,11 @@ Numbers
 To avoid confusion, format numbers with neither spaces nor punctuation, except for a full stop for decimals.
 
    **Example**
+
    10000 hectares
 
    **Example**
+
    0.175 m
 
 Generally, numbers from one to ten are written in text as words; numbers from 11 upward are written as numerals. Use arabic numerals for dates, percentages, money, measurements, ages, ratios and scales. Write out any number that begins a sentence. Use numerals where a number accompanies a unit.
@@ -420,7 +450,9 @@ When presenting bulleted and numbered lists, introduce them with an opening phra
 For very short entries, the list items are lower case with no punctuation.
 
    **Example**
+
    Select one of the following categories:
+
    -   background
    -   foreground
    -   special background 1
@@ -428,14 +460,17 @@ For very short entries, the list items are lower case with no punctuation.
 For longer entries, the list items are lower case and end with a semi-colon; the final entry should end with a semicolon and the word "and".
 
    **Example**
-   To open an account:
-   -   go to the website;
-   -   enter your credentials; and
-   -   complete email verification.
+
+   A variety of audiovisual equipment is available to staff members, including:
+
+   -    radios, for communicating between locations;
+   -    televisions, for screening content; and
+   -    cameras, for recording events.
 
 For entries that are complete sentences, the list items are sentence case and end with a full stop.
 
    **Example**
+
    Keep the following in mind:
 
    -   The transition of land cover over time provides important insights into how land characteristics have changed.
@@ -445,13 +480,16 @@ For entries that are complete sentences, the list items are sentence case and en
 Referencing
 ^^^^^^^^^^^
 
-When referencing source material, use the author–date system, which includes in-text citations and a reference list with all sources at the end of the article.
+When referencing source material, use the author–date system, which includes in-text citations and a reference list with all sources at the end of the article. Use `FAOSTYLE <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ and `Zotero <https://www.zotero.org/>`__ to format reference list entries.
 
    **Example**
+
    In 2008, GuidosToolbox was developed as a graphical user interface (GUI) to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille and Vogt 2009).
 
    **Example**
+
    **References**
+
    Soille, P. and Vogt, P. 2009. Morphological segmentation of binary patterns. *Pattern Recognition Letters*, 30(4): 456–459. https://doi.org/10.1016/j.patrec.2008.10.015
 
 Units
@@ -460,6 +498,7 @@ Units
 Use the International System of Units. Do not use punctuation or letter spacing; however, always insert a space between the unit and the number. If using symbols, introduce at first use in parentheses.
 
    **Example**
+
    Information is gathered every 5 metres (m). Every 50 m, a report is generated.
 
 
