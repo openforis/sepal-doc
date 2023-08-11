@@ -4,7 +4,7 @@ SEPALSTYLE
 SEPAL documentation style guide
 -------------------------------
 
-*Learn the basics of SEPALSTYLE to help maintain useful, clear, concise, consistent and fluid writing.*
+*Learn the basics of* SEPALSTYLE *to help maintain useful, clear, concise, consistent and fluid writing.*
 
 
 Goals and principles
