@@ -484,7 +484,7 @@ When referencing source material, use the author–date system, which includes i
 
    **Example**
 
-   In 2008, GuidosToolbox was developed as a graphical user interface (GUI) to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille and Vogt 2009).
+   In 2008, GuidosToolbox was developed as a graphical user interface (GUI) to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille and Vogt, 2009).
 
    **Example**
 
