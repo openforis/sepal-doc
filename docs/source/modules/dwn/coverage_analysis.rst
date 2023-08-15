@@ -10,7 +10,7 @@ The three-step process is described in the following sections.
 Select an area of interest (AOI)
 --------------------------------
 
-Using the provided AOI selector, select an AOI from the available methods. We provide three administration descriptions (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile).
+Using the provided **AOI** selector, select an AOI from the available methods. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile).
 
 .. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/aoi_select.png 
     
@@ -25,10 +25,10 @@ Select dataset parameters
 
 To perform BFAST pre-analysis, provide the tool with key parameters:
 
--   **date range**: the start and end date of your analysis
--   **sensors**: the list of sensors you want to use (Landsat missions and Sentinel-2)
--   **Tier 2**: Tier 2 images of the Landsat missions (this might lead to incorrect results)
--   **SR**: whether to use surface reflectance (SR) images; default to top of atmosphere (TOA)
+-   **Date range**: the start and end date of your analysis
+-   **Sensors**: the list of sensors you want to use (Landsat missions and Sentinel-2)
+-   **Tier 2**: Tier 2 images of the Landsat missions (note: this might lead to incorrect results)
+-   **SR**: whether to use surface reflectance (SR) images (by default, top of atmosphere [TOA])
 
 Once all parameters have been chosen, select the button.
 
@@ -52,9 +52,9 @@ You can also produce stats on a yearly basis using the provided switch.
 
 .. note::
 
-    The image will be dynamically re-evaluated and recentered upon each change.
+    The image will be dynamically re-evaluated and recentred upon each change.
 
-Export dataset 
+Export dataset
 --------------
 
 When you're satisifed with the displayed information, it can be exported for further use in GIS software or a GEE process. The tool provides two main exportation options: as an asset (in GEE) or a .tif file (in SEPAL).
@@ -73,7 +73,7 @@ Both use the GEE export system and share the same set of parameters:
     -   full timespan calculation(s)
     -   annual calculation(s)
 
--   scale: the resolution (in meters) to use in the exported GEE file
+-   scale: the resolution (in metres) to use in the exported GEE file
 
 .. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/export.png 
 
