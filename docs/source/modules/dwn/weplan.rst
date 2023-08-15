@@ -3,29 +3,29 @@ WePlan - Forests
 
 *Forest restoration planning tool*
 
-Overview 
+Overview
 --------
 
 WePlan - Forests is a decision-support platform for tropical and subtropical forest ecosystem restoration planning that aims to optimize the benefits arising from forest restoration.
 
 It is an initiative of the International Institute for Sustainability Australia, in partnership with the International Institute for Sustainability Rio and the Convention on Biological Diversity (CBD), with the support of the Korea Forest Service via the Forest Ecosystem Restoration Initiative (FERI).
 
-The project provides quantitative, spatial, evidence-based planning support to developing countries party to the CBD in order to facilitate the realization of forest restoration pledges and targets.
+The project provides quantitative, spatial, evidence-based planning support to developing countries that are parties to the CBD in order to facilitate the realization of forest restoration pledges and targets.
 
-WePlan - Forests is a spatially explicit, forest restoration planning tool that uses linear programming to evaluate a range of alternative scenarios for restoration, reporting the benefits, costs and spatial distribution of national restoration priorities for each. 
+WePlan - Forests is a spatially explicit, forest restoration planning tool that uses linear programming to evaluate a range of alternative scenarios for restoration, reporting the benefits, costs and spatial distribution of national restoration priorities for each.
 
-The current version (2.0) considers two objectives: 
+The current version (2.0) considers two objectives:
 
--    climate change mitigation benefit (estimated as the change in carbon sequestration that would arise from forest restoration), and
--    biodiversity conservation benefit (estimated as the average reduction in local [national] extinction risk among all forest-associated species).
+-    **climate change mitigation benefit** (estimated as the change in carbon sequestration that would arise from forest restoration), and
+-    **biodiversity conservation benefit** (estimated as the average reduction in local [national] extinction risk among all forest-associated species).
 
 The analysis also considers (as constraints) the opportunity and implementation costs of forest restoration, accounting for the potential for natural regeneration to reduce implementation costs. 
 
-Analyses occur at a 1 km^2 resolution on a national basis, for countries containing tropical and subtropical forests within +/- 25 degrees latitude. Scenarios are offered in five levels of restoration targets, ranging from 10 percent to 50 percent of the areas available for restoration. 
+Analyses occur at a 1 km^2 resolution on a national basis, for countries containing tropical and subtropical forests within +/- 25 degrees latitude. Scenarios are offered in five levels of restoration targets, ranging from 10 percent to 50 percent of the areas available for restoration.
 
-Results for WePĺan - Forests, as well as more information about the project, input data, and methodology, can be found on the `platform's website <http://weplan-forests.org>`.
+Results for WePĺan - Forests, as well as more information about the project, input data and methodology, can be found on the `platform's website <http://weplan-forests.org>`.
 
-The platform in SEPAL consists of a user-friendly SEPAL-based interface to retreive and manipulate the Geospatial data resulting from the WePlan - Forests optimisation for each pre-computed scenario.
+The platform in SEPAL consists of a user-friendly SEPAL-based interface to retreive and manipulate the geospatial data resulting from WePlan - Forests optimisation for each pre-computed scenario.
 
 Usage
 -----
@@ -37,7 +37,7 @@ Usage
 Output
 ------
 
-The output will be found in the user SEPAL files under :code:`module_results/weplan/<iso_code>` with :code:`iso_code` being the `ISO 3166-1 alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__ code of the downloaded country (e.g. "UGA" for Uganda).
+The output will be found in your **SEPAL files** under :code:`module_results/weplan/<iso_code>` with :code:`iso_code` being the `ISO 3166-1 alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__ code of the downloaded country (e.g. "UGA" for Uganda).
 
 Every file is in :code:`.tif` format with one single band expressing the variable described. It will display the version of the WePlan - Forests computation (here "v002", called :code:`<version>` from now on).
 
