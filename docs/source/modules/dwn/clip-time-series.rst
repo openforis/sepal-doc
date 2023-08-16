@@ -3,7 +3,7 @@ Clip time series
 
 .. tip::
 
-    This article should explain every step to execute the module. However, if you do encounter a problem, please `report it <https://github.com/openforis/clip-time-series/issues/new>`_.
+    This article should explain every step to execute the module. However, if you encounter a problem, please `report it <https://github.com/openforis/clip-time-series/issues/new>`_.
 
 This module allows users to download an automatically generated time series from customizable dates as a :code:`.pdf`.
 
@@ -15,7 +15,7 @@ Select file
 First the user needs to select a file, which will be the main input of the module; each page of the final :code:`.pdf` will match a geometric shape of the input. The user can use two types of inputs:
 
 -   Table file (:code:`.csv`, :code:`.txt`), containing at least coordinates and ID columns
--   Shapes (:code:`.geojson`, :code:`.shp`, :code:`.geopackage`), with at least geometry and ID column
+-   Shapes (:code:`.geojson`, :code:`.shp`, :code:`.geopackage`), with at least geometry and ID columns
 
 Table
 *****
@@ -28,7 +28,7 @@ The table file can be a :code:`.csv` or :code:`.txt` file. It needs to have at l
 
     The table coordinates need to remain unprojected (i.e. in EPSG:4326)
     
-Select :guilabel:`Table file`. Only the matching file type will be displayed. Navigate through your SEPAL folders to find the appropriate table. 
+Select :guilabel:`Table file`. Only the matching file type will be displayed. Navigate through your **SEPAL folders** to find the appropriate table.
 
 Once a file is selected, the widget will try to autopopulate the ID, latitude, and longitude columns. If columns are incorrectly set or if data are missing, select one of the file columns to completely describe the points (x, y, ID).
 
@@ -61,7 +61,7 @@ The ID column will be used to name the points in the final .pdf. Select it in th
 
 .. attention::
 
-    If you use names for ID, make sure they are unique.
+    If you use names for IDs, make sure they are unique.
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_shape.png
     :alt: input_shape
@@ -72,7 +72,7 @@ Select :guilabel:`load your pts file` to load the shapes as a geodataframe in th
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/map_shape.png
     :alt: map_shape
-    :title: Input map after selecting a shapefile dataset.
+    :title: Input map after selecting a shapefile dataset
     :group: clip-time-serie
 
 Select time series parameters
@@ -86,7 +86,7 @@ Drivers
 Two drivers are available in this module. You can select either:
 
 -    a GEE-based computation (images will be retreived from GEE), or 
--    Planet (images will be retreived from Planet servers using the user API key).
+-    Planet (images will be retrieved from Planet servers using the user API key).
 
 If the user selects :guilabel:`gee`, the panel will ask you to select the satellites to use for thumbnails. Select any satellite imagery from the Landsat family and Sentinel programme.
 
@@ -123,10 +123,10 @@ Multiple band combinations can be selected:
     -   rgb
     -   cir
 
-mosaics
+Mosaics
 *******
 
-Each selected mosaics will be represented by a thumbnail in the final :code:`pdf`. 
+Each selected mosaic will be represented by a thumbnail in the final :code:`pdf`. 
 
 .. attention::
 
@@ -146,7 +146,7 @@ Using the :code:`planet` driver, three types of mosaics can be selected (and mix
 Thumbnails
 **********
 
-Select a thumbnail size, which will be the minimal size of the thumbnail used. If the shape defined in the first panel is bigger, the software will try to find the smallest square around the shape, centered on its centroid.
+Select a thumbnail size, which will be the minimal size of the thumbnail used. If the shape defined in the first panel is bigger, the software will try to find the smallest square around the shape, centred on its centroid.
 
 .. attention::
 
@@ -164,12 +164,12 @@ When selecting the validation button, the module provides a summary of the downl
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/viz_gee.png
     :alt: viz
     :group: clip-time-series
-    :title: An example set of parameter to create a .pdf file. Data summary can be found in the orange rectangle
+    :title: An example set of parameters to create a .pdf file; data summary can be found in the orange rectangle
 
 Export data
 -----------
 
-Select the only button available to send your images to GEE or Planet.
+Select the only available button to send your images to GEE or Planet.
 
 .. attention::
 
