@@ -268,7 +268,7 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     :header: Element, Action, Example
 
     "app","select, open","Select the **Apps** icon."
-    "band","select, choose, apply","Select the **Break analysis** band.
+    "band","select, choose, apply","Select the **Break analysis** band."
     "bar","go to, view, select, monitor","View the **Status bar** to monitor the download progress."               
     "button","select","Select the **Terminal** button."                                         
     "checkbox","select","Select the **Display map** checkbox."                                    
