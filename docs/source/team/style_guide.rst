@@ -264,8 +264,7 @@ Elements and actions
 Common words used to describe **elements** *and* **actions** in the **SEPAL interface** include:
 
 .. csv-table::
-
-    :header: Element, Action, Example
+    :header: "Element", "Action", "Example"
 
     "app","select, open","Select the **Apps** icon."
     "band","select, choose, apply","Select the **Break analysis** band."
