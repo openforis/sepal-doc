@@ -400,7 +400,7 @@ A comma may separate two independent clauses before a conjunction, separate two 
 
     By default, SEPAL is in English, but is also available in other languages, such as French and Spanish.
 
-En-dashes
+En-dashes 
 """""""""
 
 En-dashes can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values, and ranges of dates.
