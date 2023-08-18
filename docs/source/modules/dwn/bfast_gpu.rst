@@ -19,7 +19,7 @@ The full documentation of the :code:`bfast` package can be found `on this page <
 Usage
 -----
 
-.. prerequisite::
+.. important::
 
     Before launching the BFAST module, you need to have at least one time series in your SEPAL folders.
     

@@ -975,7 +975,7 @@ Parcellation (PARC)
 
 This module will conduct the **Parcellation** analysis, providing a statistical summary file (.txt/.csv format) with details for each unique class found in the image, as well as the full image content: class value, total number of objects, total area, and degree of parcellation.
 
-Details on the methodology and input/output options can be found in the `Parcellation product sheet<https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_.
+Details on the methodology and input/output options can be found in the `Parcellation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_.
 
 Set up the input image
 """"""""""""""""""""""
@@ -1066,7 +1066,7 @@ This module will conduct the **Restoration status summary** analysis, which will
 
 The results are tabular summary statistics. 
 
-Details on the methodology and input/output options can be found in the `Restoration Planner product sheet<https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_.
+Details on the methodology and input/output options can be found in the `Restoration Planner product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_.
 
 Set up the input image
 """"""""""""""""""""""
@@ -1167,7 +1167,7 @@ The results are spatially explicit maps and tabular summary statistics.
 
 :code:`GWB_SPA` is a simpler version of :code:`GWB_MSPA`. 
 
-Details on the methodology and input/output options can be found in the `Morphology product sheet<https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_.
+Details on the methodology and input/output options can be found in the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_.
 
 Set up the input image
 """"""""""""""""""""""

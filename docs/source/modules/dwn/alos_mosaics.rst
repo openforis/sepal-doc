@@ -38,7 +38,7 @@ In the **Process** tile, set the different parameters of your mosaic:
 -   **Year**: the year of interest 
 -   **Speckle filter**: the speckle filter to use during the process    
     -   no filter
-    -   refined lee: speckle noise removal technique based on the Lee Filter (for more information, see `A.S. Yommy et al.<https://doi.org/10.1109/IHMSC.2015.236>`_
+    -   refined lee: speckle noise removal technique based on the Lee Filter (for more information, see `A.S. Yommy et al. <https://doi.org/10.1109/IHMSC.2015.236>`_).
     -   Quegan filter: See `Quegan et al. <https://doi.org/10.1109/36.964973>`_
 -   **Shadow masking**: activate or deactivate shadow masking
 -   **Db**: whether or not to scale the output to Db
