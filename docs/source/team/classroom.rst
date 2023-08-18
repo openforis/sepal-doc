@@ -50,7 +50,7 @@ Use general content
 
 To use general content in your classrooms, add the general content folder to your Google Drive account. (Note: Google only allows users to create shortcuts to other Google Drive accounts, which is not sufficient.)
 
-Open Google Drive and go to the **Share with me** section. 
+Open Google Drive and go to the **Share with me** section.
 
 Select the **General class content** folder.
 
