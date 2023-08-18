@@ -1,10 +1,10 @@
-BayTS-based near real-time (NRT) forest disturbance alerts
+BayTS-based near-real-time (NRT) forest disturbance alerts
 ==========================================================
 
 Background
 ----------
 
-Near real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series, targeting the generation of recent disturbance events in forested areas. The main objective is to detect those changes as early as possible. This prioritization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time series, which are then classified as disturbance events.
+Near-real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series, targeting the generation of recent disturbance events in forested areas. The main objective is to detect those changes as early as possible. This prioritization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time series, which are then classified as disturbance events.
 
 This page provides background information and a detailed how-to guide for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of NRT alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to structural elements of the vegetation cover.
 
@@ -12,9 +12,9 @@ Methodology
 -----------
 To detect forest cover loss in NRT in dense Sentinel-1 time series, a pixel-based approach is applied. First, a historic reference is created by calculating the mean and standard deviation of the backscatter values for each pixel. The reference is then used to calculate the probability of a pixel being in a disturbed state using the Bayes Theorem, a statistical approach that allows for the calculation of the probability of an event based on prior knowledge of conditions that might be related to the event. In this case, the event is a forest disturbance and the conditions are the backscatter values of the pixel.
 
-The method works without any training data, as a probability of being forest is derived from its historic reference expressed by the mean and standard deviation, from which a probability density function is derived. The non-forest state is assumed to have the same probability density function centered at a 4 decibel (dB) backscatter below the forested one. Once the probability of being non-forest exceeds a user-defined threshold (0.6 by default), Bayesian Updating is applied until the alert either gets confirmed or rejected. Therefore, the updating is repeated until the probability of being a change is above a high-confidence threshold (0.975 by default). If the alert is not confirmed within a certain time range (90 days by default), the alert is rejected.
+The method works without any training data, as a probability of being forest is derived from its historic reference expressed by the mean and standard deviation, from which a probability density function is derived. The non-forest state is assumed to have the same probability density function centered at 4 decibel (dB) backscatter below the forested one. Once the probability of being non-forest exceeds a user-defined threshold (0.6 by default), Bayesian Updating is applied until the alert either gets confirmed or rejected. Therefore, the updating is repeated until the probability of being a change is above a high-confidence threshold (0.975 by default). If the alert is not confirmed within a certain time range (90 days by default), the alert is rejected.
 
-The method capitalizes on both VV and VH polarized channels, whereas the highest non-forest probability is considered for updating. Initial alerts from one orbit can only be confirmed by another orbit, as the image geometry changes, so that small-scale changes might be invisible in one orbit but visible in the other.
+The method capitalizes on both VV and VH polarized channels, whereas the highest non-forest probability is considered for the updating. Initial alerts from one orbit can only be confirmed by another orbit, as the image geometry changes, so that small-scale changes might be invisible in one orbit but visible in the other.
 
 .. figure:: ../_images/workflows/bayts/bayts_pdfs.png
    :alt: A single-pixel time series with apparent change, and the forest and non-forest probability to the right.
@@ -27,8 +27,8 @@ The main sensitivity parameter affects the difference of the forest and non-fore
 
 It is also possible to normalize the images over time, though this operation is computationally demanding and might hamper the algorithm to work on the fly, making exporting mandatory.
 
-How-to guide
-------------
+How-to
+------
 
 Requirements
 """"""""""""

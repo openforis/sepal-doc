@@ -1,7 +1,7 @@
 Inventories
 ===========
 
-Modules with the Inventories tag include:
+List of the modules gathered under the Inventories tag:
 
 .. toctree::
     :maxdepth: 1
@@ -14,3 +14,4 @@ Modules with the Inventories tag include:
 
     :doc:`dwn/bootstrap_sampling_simulator`,"..."
     :doc:`dwn/plot_generator`,"..."
+

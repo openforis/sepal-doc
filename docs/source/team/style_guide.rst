@@ -1,42 +1,31 @@
-SEPALSTYLE
-==========
+documentation style guide
+=========================
 
-SEPAL documentation style guide
--------------------------------
+    Help us maintain useful, clear, concise, consistent and fluid writing across the documentation by following the SEPAL documentation style guide.
 
-*Learn the basics of* SEPALSTYLE *to help maintain useful, clear, concise, consistent and fluid writing.*
-
+Learn the basics of SEPAL documentation style and ensure that your contributions are as useful as possible for the community.
 
 Goals and principles
 --------------------
 
-The goal of **SEPAL documentation** is to guide users through the **SEPAL interface** and help users achieve their goals.
+The goal of SEPAL documentation is to guide users through the SEPAL interface. As an external contributor or a member of the SEPAL team, think of yourself as a tour guide for users.
+To achieve this goal, the SEPAL team ensures that writing is:
 
-When contributing to **SEPAL documentation**, think of yourself as a tour guide for SEPAL users.
-
-To help users achieve their goals, writing should be:
-
--    useful
--    clear
--    concise
--    consistent
--    fluid
+-   useful
+-   clear
+-   concise
+-   consistent
+-   fluid
 
 Style tips
 ----------
 
-Basic guidelines for following *SEPALSTYLE* include:
-
--    focus on user needs
--    be simple and direct
--    use a direct tone
+Here are some basic guidelines for following SEPAL documentation style.
 
 Focus on user needs
 ^^^^^^^^^^^^^^^^^^^
 
-Consider user goals and questions when contributing to **SEPAL documentation**. Define these goals and identify these questions before, during and after making contributions, so that articles can be useful and clear for users.
-
-Ensure user goals are kept in mind when planning, drafting, and finalizing content. Ensure user questions are addressed and answered in the documentation, minimizing confusion and allowing users to achieve their goals.
+Consider users’ questions and goals when writing SEPAL documentation. For every article, make sure users’ questions have been addressed and answered, allowing them to achieve their goals.
 
 Be simple and direct
 ^^^^^^^^^^^^^^^^^^^^
@@ -105,49 +94,50 @@ Avoid addressing the audience directly, when possible (i.e. limit the use of the
 
     To sign up for a Google account, go to `<https://accounts.google.com/servicelogin>`__
 
-When addressing the audience is necessary, use the word **you** or **your**.
+Use an active voice, the present tense, the second-person point of view, and the imperative mood.
 
-    **Example**
+In simpler terms: Tell the user what to do in the moment they are reading the documentation (e.g. Open the SEPAL interface and enter your email address.).
+Avoid addressing the audience directly, when possible. In other words, limit the use of the words “you” and “your” (e.g. To sign up for a Google account, go to accounts.google.com/servicelogin.).
+When addressing the audience is necessary, use the word “you” or “your” (e.g. To reset your password, go to docs.sepal.io/en/latest/setup/password.html.).
 
-    To reset your password, go to `<https://docs.sepal.io/en/latest/setup/password.html>`__
+Word list
+---------
 
+Here is a list of common words used in SEPAL documentation.
 
 Key terminology
----------------
-
-Common terms used in **SEPAL documentation** include:
-
--    SEPAL team
--    SEPAL interface
--    SEPAL documentation
--    section of SEPAL documentation
--    article within SEPAL documentation
-
-SEPAL team
-^^^^^^^^^^
-
-The authors of the documentation should be referred to as **the SEPAL team**.
-
-    **Example**
-
-    The SEPAL team maintains the documentation to guide users through the **SEPAL interface**.
-
-If the term, **the SEPAL team** has been overused, use "the authors of the documentation", or **we** or **us** instead.
-
-**SEPAL documentation contributors** can be used for external contributors to the documentation.
-
-SEPAL interface
 ^^^^^^^^^^^^^^^
 
-The interface should be referred to as the **SEPAL interface**.
+Use the following terms, when possible.
 
-    **Example**
+The SEPAL team
+^^^^^^^^^^^^^^
 
-    Open the **SEPAL interface** and enter your email address.
+The authors of the documentation should be referred to as “the SEPAL team” (e.g. The SEPAL team maintains the documentation to guide users through the SEPAL interface.).
+If the term, “the SEPAL team” has been overused, use the words “we” or “us” instead.
+
+The SEPAL interface
+^^^^^^^^^^^^^^^^^^^
+
+The interface should be referred to as the “SEPAL interface” (e.g. Open the SEPAL interface and enter your email address.).
+
+SEPAL documentation
+^^^^^^^^^^^^^^^^^^^
+
+The website where SEPAL documentation is located should be referred to as either “SEPAL documentation” or simply, “the documentation” (e.g. Learn more about SEPAL documentation by reading this article.).
+
+A section of SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A section of the documentation should be referred to as a “section of SEPAL documentation” or a “section of the documentation”, as necessary (e.g. Discover how to register for SEPAL in the “Getting started” section of the documentation.).
+
+An article within SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Elements of the interface should be formatted in bold and sentence case.
 
-    **Example**
+Describing interactions with the interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Select the **Area of interest** button.
 
@@ -298,16 +288,26 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     "tile","open, go to, select, view","View the **Visualization** tile."
     "window","open, close, view, select","Open your browser window."
 
+-   open
+-   close
+-   leave
+-   go to
+-   select
+-   clear
+-   choose
+-   enter
+-   sign in, sign out
+-   switch, turn on, turn off
+-   zoom, zoom in, zoom out
 
 Directional terminology
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Common words to describe location in the **SEPAL interface** (indicate location in relation to objects within the interface, if possible):
+Here is a list of common words to describe location in the SEPAL interface. Indicate location in relation to objects within the interface, whenever possible.
 
--    upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of
--    lower right (noun), lower-right (adjective), rightmost (adjective), on the right side of
--    beside, next to
--    corner
+-   upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of
+-   lower right (noun), lower-right (adjective), rightmost (adjectives), on the right side of
+-   pane (instead of panel)
 
 Other things to consider
 ------------------------
@@ -337,68 +337,13 @@ At first mention, acronyms should be written out, followed by the abbreviation i
 
 Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
 
-   **Example**
+Sentence structure
+^^^^^^^^^^^^^^^^^^
 
-   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
-
-Font
-^^^^
-
-Bold
-""""
-
-Use bold formatting for the names of elements in the **SEPAL interface**, or emphasis.
-
-    **Example**
-
-    Select **Export**.
+Use an active voice, the present tense, the second-person point of view, and the imperative mood, whenever possible (e.g. Open the SEPAL interface and enter your email address.).
 
 Capitalization
-""""""""""""""
-
-Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper nouns), except when mirroring appearance of text in the **SEPAL interface**. For proper nouns, follow initial capitalization.
-
-    **Example**
-
-    **Area of interest selection**
-
-    The area of interest (AOI) is the first mandatory input in the majority of SEPAL modules.
-
-Italics
-"""""""
-
-Use italicized text for introducing key terminology at first mention, or emphasis.
-
-    **Example**
-
-    There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ..., while informal QA/QC refers to ...
-
-Punctuation
-^^^^^^^^^^^
-
-Colons
-""""""
-Use colons to introduce lists, definitions, explanations or quotations.
-
-    **Example**
-
-    In this section of **SEPAL documentation**, you can learn how to:
-
-    -   Register to SEPAL
-    -   Use Google Earth Engine (GEE) with SEPAL
-    -   Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data
-    -   Exchange files with SEPAL
-    -   Manage your resources
-    -   Reset your password
-
-Commas
-""""""
-
-A comma may separate two independent clauses before a conjunction, separate two independent clauses before a conjunction, set off complementary information, be used before the final "and" in a list to avoid ambiguity, or be used where a sentence comprises a complex series of phrases.
-
-    **Example**
-
-    By default, SEPAL is in English, but is also available in other languages, such as French and Spanish.
+^^^^^^^^^^^^^^
 
 En-dashes
 """""""""
@@ -430,145 +375,30 @@ Hyphens can be used: for compound adjectives, when describing ages, amounts or l
     High-quality data for 15 year-old forests.
 
 Quotation marks
-"""""""""""""""
-
-Use double quotation marks for direct quotes (e.g. for the text displayed in an error message).
-
-    **Example**
-
-    If the following error message is displayed, continue to Step 2: "Can't open file. No such file or directory."
-
-Semicolons
-""""""""""
-
-Use semicolons to separate independent clauses that have different subjects and are not connected by a conjunction; in long sentences comprising a series of complex clauses, at least one of which contains a comma, semicolons may replace commas.
-
-    **Example**
-
-    These overlay areas can be managed in various ways. For example, you can choose to:
-
-    -   keep only the raster data from the first or last dataset;
-    -   combine the values of the overlay cells using a weighting algorithm;
-    -   average the values of the overlay cells; or
-    -   take the maximum or minimum value.
-
-File names
-^^^^^^^^^^
-
-Format file names with a full stop and lowercase file type.
-
-   **Example**
-
-   .tiff
-
-Highlights
-^^^^^^^^^^
-
-Common terms for showcasing information include:
-
--   Tip
--   Note
--   Attention
--   Important
-
-Numbers
-^^^^^^^
-
-To avoid confusion, format numbers with neither spaces nor punctuation, except for a full stop for decimals.
-
-   **Example**
-
-   10000 hectares
-
-   **Example**
-
-   0.175 m
-
-Generally, numbers from one to ten are written in text as words; numbers from 11 upward are written as numerals. Use arabic numerals for dates, percentages, money, measurements, ages, ratios and scales. Write out any number that begins a sentence. Use numerals where a number accompanies a unit.
-
-Paragraph
-^^^^^^^^^
-
-Lists
-"""""
-
-When presenting bulleted and numbered lists, introduce them with an opening phrase ending with a colon.
-
-For very short entries, the list items are lower case with no punctuation.
-
-   **Example**
-
-   Select one of the following categories:
-
-   -   background
-   -   foreground
-   -   special background 1
-
-For longer entries, the list items are lower case and end with a semi-colon; the final entry should end with a semicolon and the word "and".
-
-   **Example**
-
-   A variety of audiovisual equipment is available to staff members, including:
-
-   -    radios, for communicating between locations;
-   -    televisions, for screening content; and
-   -    cameras, for recording events.
-
-For entries that are complete sentences, the list items are sentence case and end with a full stop.
-
-   **Example**
-
-   Keep the following in mind:
-
-   -   The transition of land cover over time provides important insights into how land characteristics have changed.
-   -   Trends in land productivity measure important changes in productivity over time.
-   -   Changes in above ground and below ground carbon stocks are currently shown by soil organic carbon (SOC) stocks.
-
-Referencing
-^^^^^^^^^^^
-
-When referencing source material, use the author–date system, which includes in-text citations and a reference list with all sources at the end of the article. Use `FAOSTYLE <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ and `Zotero <https://www.zotero.org/>`__ to format reference list entries.
-
-   **Example**
-
-   In 2008, GuidosToolbox was developed as a graphical user interface (GUI) to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille and Vogt, 2009).
-
-   **Example**
-
-   **References**
-
-   Soille, P. and Vogt, P. 2009. Morphological segmentation of binary patterns. *Pattern Recognition Letters*, 30(4): 456–459. https://doi.org/10.1016/j.patrec.2008.10.015
-
-Units
-^^^^^
-
-Use the International System of Units. Do not use punctuation or letter spacing; however, always insert a space between the unit and the number. If using symbols, introduce at first use in parentheses.
-
-   **Example**
-
-   Information is gathered every 5 metres (m). Every 50 m, a report is generated.
-
-
-
-A note on *SEPALSTYLE*
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 *SEPALSTYLE* was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience.
 
-This style guide can be considered exemplary documentation (i.e. a model text for writing articles and presenting information).
+Bold
+^^^^
+Use bold formatting for the names of buttons, checkboxes, panes, drop-down menus, and other options (e.g. Select Export.).
 
-For style-related questions or concerns not addressed in *SEPALSTYLE*, see:
+Italic
+^^^^^^
 
 - `FAOSTYLE (2023) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`_
 - `FAO Term Portal <https://www.fao.org/faoterm>`_
 - `Names of Countries and Territories <https://www.fao.org/nocs/en/?>`_
 
-For GitHub-related questions or concerns related to making contributions to SEPAL documentation, see
+Further reading
+^^^^^^^^^^^^^^^
 
 - `SEPAL team documentation <https://docs.sepal.io/en/latest/team/index.html>`_
 - `Writing on GitHub <https://docs.github.com/en/get-started/writing-on-github>`_
 
-For further guidance, see:
+-   `FAOSTYLE (2022) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (for general style guidelines according to FAO)
+-   `GitHub documentation <https://docs.github.com/en>`__ (for exemplary documentation)
+-   `Microsoft style guide <https://learn.microsoft.com/en-us/docs/>`__ (for an exemplary style guide, specifically for documentation)
 
 - `Microsoft Documentation <https://learn.microsoft.com/en-us/docs/>`_
     - `Procedures and instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/>`_

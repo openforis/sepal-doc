@@ -1,7 +1,7 @@
 Disaster
 ========
 
-Modules with the Disaster tag include:
+List of the modules gathered under the Disaster tag:
 
 .. toctree::
     :maxdepth: 1
@@ -12,3 +12,4 @@ Modules with the Disaster tag include:
 .. csv-table::
 
     :doc:`dwn/damage_proxy_map`,"Damage estimation from Sentinel-1"
+
