@@ -44,9 +44,9 @@ Be simple and direct
 Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered lists to sentences and paragraphs. When sentences or paragraphs are necessary, prefer short sentences and paragraphs to long sentences and paragraphs. Use section headings to organize articles.
 
     **Example**
-    
+
     **Reset password**
-    
+
     If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign-in forms.
 
     The password reset process can be performed in three steps:
@@ -58,16 +58,16 @@ Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered
 For simple step-by-step instructions, use right angle brackets.
 
     **Example**
-    
+
     Select **Launch** > **Sign up**
 
 For step-by-step instructions for complex procedures, use numbered and bulleted lists, instead of paragraphs, when possible.
 
     **Example**
-    
+
     **To create an account**
 
-    1.   Go to https://sepal.io 
+    1.   Go to https://sepal.io
     2.   Select **Launch** > **Sign up**.
     3.   Fill out the form.
     4.   Select **Sign up**.
@@ -75,7 +75,7 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
     6.   Create password.
 
     **Example**
-    
+
     **To start an instance**
 
     1.   Examine the **Available instance types** table to choose an instance type.
@@ -86,9 +86,9 @@ For step-by-step instructions for complex procedures, use numbered and bulleted 
 Use a direct tone
 ^^^^^^^^^^^^^^^^^
 
-When writing an article, use: 
+When writing an article, use:
 
--    an active voice 
+-    an active voice
 -    the present tense
 -    the second-person point of view
 -    the imperative mood
@@ -145,7 +145,7 @@ The interface should be referred to as the **SEPAL interface**.
 
     Open the **SEPAL interface** and enter your email address.
 
-Elements of the interface should be formatted in bold and sentence case. 
+Elements of the interface should be formatted in bold and sentence case.
 
     **Example**
 
@@ -167,7 +167,7 @@ A section of the documentation should be referred to as **a section of SEPAL doc
 
     **Example**
 
-    Discover how to register for SEPAL in the section, `Getting started <https://docs.sepal.io/en/latest/setup/index.html>`__. 
+    Discover how to register for SEPAL in the section, `Getting started <https://docs.sepal.io/en/latest/setup/index.html>`__.
 
 Article within SEPAL documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,7 +176,7 @@ A page within the documentation should be referred to as **an article**. The tit
 
     **Example**
 
-    Learn more about the **SEPAL interface** in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__. 
+    Learn more about the **SEPAL interface** in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__.
 
 
 Describing interactions with the SEPAL interface
@@ -319,7 +319,7 @@ Other basic guidelines to follow when writing **SEPAL documentation** include:
 -    use italics for introducing new terminology, or emphasis (sparingly);
 -    use punctuation to improve clarity and fluidity;
 -    introduce acronyms at first use;
--    present highlighted information strategically and accurately; 
+-    present highlighted information strategically and accurately;
 -    format file names with lowercase letters and a full stop;
 -    format numbers with neither spaces nor punctuation, except for a full stop for decimals;
 -    use the author–date system for referencing;
@@ -400,7 +400,7 @@ A comma may separate two independent clauses before a conjunction, separate two 
 
     By default, SEPAL is in English, but is also available in other languages, such as French and Spanish.
 
-En-dashes 
+En-dashes
 """""""""
 
 En-dashes can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values, and ranges of dates.
@@ -423,7 +423,7 @@ Use full stops at the end of sentences, but not in headings.
 Hyphens
 """""""
 
-Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc. 
+Hyphens can be used: for compound adjectives, when describing ages, amounts or lengths of time, separating a prefix from a date, etc.
 
     **Example**
 
@@ -553,7 +553,7 @@ Use the International System of Units. Do not use punctuation or letter spacing;
 A note on *SEPALSTYLE*
 ^^^^^^^^^^^^^^^^^^^^^^
 
-*SEPALSTYLE* was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience. 
+*SEPALSTYLE* was developed during copy-editing to improve the presentation of information in the documentation and enhance user experience.
 
 This style guide can be considered exemplary documentation (i.e. a model text for writing articles and presenting information).
 

@@ -9,7 +9,7 @@ Before contributing, please review the SEPAL `Code of conduct <https://github.co
 
 Then, communicate your proposed contributions to the SEPAL team by:
 
--    `asking the community <https://groups.google.com/g/sepal-users>`_ or 
+-    `asking the community <https://groups.google.com/g/sepal-users>`_ or
 -    `reporting an issue on Github <https://github.com/openforis/sepal/issues>`_.
 
 Introduction

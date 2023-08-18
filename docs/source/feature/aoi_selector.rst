@@ -1,7 +1,7 @@
 Area of interest selection
 ==========================
 
-In most SEPAL modules, the first mandatory input is the area of interest (AOI), used as a boundary to cut the processes and its outputs. 
+In most SEPAL modules, the first mandatory input is the area of interest (AOI), used as a boundary to cut the processes and its outputs.
 
 If you are using the default :btn:`<fa-solid fa-globe>` **Process recipes** or :btn:`<fa-solid fa-wrench>` custom **Applications**, you will find different user interfaces.
 
@@ -238,7 +238,7 @@ Once the table is loaded, the system will try to automatically identify the :gui
 GEE asset
 #########
 
-Use this method to load a custom feature collection available as an asset in GEE. 
+Use this method to load a custom feature collection available as an asset in GEE.
 
 Select :guilabel:`GEE asset name` in the dropdown method list. Two widgets will appear by default: an asset selector (1), a dropdown list containing the columns of the selected asset (2), and unique column fields, which are optional (3).
 
