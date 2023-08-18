@@ -268,35 +268,35 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
 
     "app","select, open","Select the **Apps** icon."
     "band","select, choose, apply","Select the **Break analysis** band."
-    "bar","go to, view, select, monitor","View the **Status bar** to monitor the download progress."               
-    "button","select","Select the **Terminal** button."                                         
-    "checkbox","select","Select the **Display map** checkbox."                                    
-    "dash","go to","Go to the **SEPAL dash**."                                               
-    "dock","select","Select the **Files** tab in the dock."                                   
-    "drawer","open, close","Open the **Navigation** drawer."                                         
-    "drowdown menu","open, select, choose","Select **Vector file** from the dropdown menu."                          
-    "field","enter","Enter your credentials into the **Username** and **Password fields."     
-    "files","go to, search, nagivate through, save to","Select the **Files** icon to open your SEPAL folders."                   
-    "filter","apply, turn on, turn off","Apply the **Cloud detection** filter."                                   
-    "folder","open, save to","Save to your **SEPAL folders**."                                         
-    "form","fill out, submit","Fill out the **Reset password** form."                                   
-    "icon","select","Select the **Apps** icon."                                               
-    "interface","log in, log out","Log in to the **SEPAL interface**."                                      
-    "map","click, click and hold, hover, zoom in, zoom out, pan","Click on the map to select a point."                                     
-    "menu","open, close","Open the **Recipe** menu."                                               
-    "option","choose, select, use","Select the **Daily imagery** option."                                    
-    "pane","go to, view","View the **Recipe** pane."                                               
-    "parameter","select","Select the **Exportation** parameters."                                  
-    "pointer","use, click, click and hold, move","Move the pointer to the map."                                            
-    "pop-up menu","view, select, choose, close","Select the checkboxes in the pop-up menu."                               
-    "pop-up window","view, select, choose, close","View your options in the **User report** pop-up window."                 
-    "recipe","open, go to, select, save, export, edit","Select the **Time series** recipe."                                      
-    "settings","open, go to, select, turn on, turn off","Open **Settings**."                                                      
-    "status bar","view, monitor","Monitor the download progress in the **Status bar**."                    
-    "tab","select, view","Select the **Process** tab in the dock on the left side of the screen."  
-    "terminal","open, go to, select","Go to the **SEPAL terminal**."                                           
-    "tile","open, go to, select, view","View the **Visualization** tile."                                        
-    "window","open, close, view, select","Open your browser window."                                               
+    "bar","go to, view, select, monitor","View the **Status bar** to monitor the download progress."
+    "button","select","Select the **Terminal** button."
+    "checkbox","select","Select the **Display map** checkbox."
+    "dash","go to","Go to the **SEPAL dash**."
+    "dock","select","Select the **Files** tab in the dock."
+    "drawer","open, close","Open the **Navigation** drawer."
+    "drowdown menu","open, select, choose","Select **Vector file** from the dropdown menu."
+    "field","enter","Enter your credentials into the **Username** and **Password fields**."
+    "files","go to, search, nagivate through, save to","Select the **Files** icon to open your SEPAL folders."
+    "filter","apply, turn on, turn off","Apply the **Cloud detection** filter."
+    "folder","open, save to","Save to your **SEPAL folders**."
+    "form","fill out, submit","Fill out the **Reset password** form."
+    "icon","select","Select the **Apps** icon."
+    "interface","log in, log out","Log in to the **SEPAL interface**."
+    "map","click, click and hold, hover, zoom in, zoom out, pan","Click on the map to select a point."
+    "menu","open, close","Open the **Recipe** menu."
+    "option","choose, select, use","Select the **Daily imagery** option."
+    "pane","go to, view","View the **Recipe** pane."
+    "parameter","select","Select the **Exportation** parameters."
+    "pointer","use, click, click and hold, move","Move the pointer to the map."
+    "pop-up menu","view, select, choose, close","Select the checkboxes in the pop-up menu."
+    "pop-up window","view, select, choose, close","View your options in the **User report** pop-up window."
+    "recipe","open, go to, select, save, export, edit","Select the **Time series** recipe."
+    "settings","open, go to, select, turn on, turn off","Open **Settings**."
+    "status bar","view, monitor","Monitor the download progress in the **Status bar**."
+    "tab","select, view","Select the **Process** tab in the dock on the left side of the screen."
+    "terminal","open, go to, select","Go to the **SEPAL terminal**."
+    "tile","open, go to, select, view","View the **Visualization** tile."
+    "window","open, close, view, select","Open your browser window."
 
 
 Directional terminology
@@ -559,18 +559,18 @@ This style guide can be considered exemplary documentation (i.e. a model text fo
 
 For style-related questions or concerns not addressed in *SEPALSTYLE*, see:
 
--    `FAOSTYLE (2023) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__
--    `FAO Term Portal <https://www.fao.org/faoterm>`__
--    `Names of Countries and Territories <https://www.fao.org/nocs/en/?>`__
+- `FAOSTYLE (2023) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`_
+- `FAO Term Portal <https://www.fao.org/faoterm>`_
+- `Names of Countries and Territories <https://www.fao.org/nocs/en/?>`_
 
 For GitHub-related questions or concerns related to making contributions to SEPAL documentation, see
 
--    `SEPAL team documentation <https://docs.sepal.io/en/latest/team/index.html>`__
--    `Writing on GitHub <https://docs.github.com/en/get-started/writing-on-github>`__
+- `SEPAL team documentation <https://docs.sepal.io/en/latest/team/index.html>`_
+- `Writing on GitHub <https://docs.github.com/en/get-started/writing-on-github>`_
 
 For further guidance, see:
 
--    `Microsoft Documentation <https://learn.microsoft.com/en-us/docs/>`__
-   -    `Procedures and instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/>`__
-   -    `Writing step-by-step instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions>`__
-   -    `Describing interactions with UI <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__
+- `Microsoft Documentation <https://learn.microsoft.com/en-us/docs/>`_
+    - `Procedures and instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/>`_
+    - `Writing step-by-step instructions <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions>`_
+    - `Describing interactions with UI <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`_
