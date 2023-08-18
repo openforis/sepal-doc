@@ -957,8 +957,10 @@ PARC
 This module will conduct the **parcellation** analysis. This module provides a statistical summary file (txt/csv- format) with details for each unique class found in the image as well as the full image content: class value, total number of objects, total area, degree of parcellation.
 Details on the methodology and input/output options can be found in the `Parcellation <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_ product sheet.
 
-Setup the input image
-"""""""""""""""""""""
+Details on the methodology and input/output options can be found in the `Parcellation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_.
+
+Set up the input image
+""""""""""""""""""""""
 
 .. tip::
 
@@ -1046,8 +1048,10 @@ RSS
 
 This module will conduct the **Restoration Status Summary analysis**. It will calculate key attributes of the current network status, composed of foreground (forest) patches and it provides the normalized degree of network coherence. The result are tabular summary statistics. Details on the methodology and input/output options can be found in the `Restoration Planner <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_ product sheet.
 
-Setup the input image
-"""""""""""""""""""""
+Details on the methodology and input/output options can be found in the `Restoration Planner product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_.
+
+Set up the input image
+""""""""""""""""""""""
 
 .. tip::
 
@@ -1142,8 +1146,14 @@ SPA
 
 This module will conduct the **Simplified Pattern Analysis**. SPA analyses shape and conducts a segmentation of foreground patches into 2, 3, 5, or 6 feature classes. The result are spatially explicit maps and tabular summary statistics. :code:`GWB_SPA` is a simpler version of :code:`GWB_MSPA`. Details on the methodology and input/output options can be found in the `Morphology <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_ product sheet.
 
-Setup the input image
-"""""""""""""""""""""
+The results are spatially explicit maps and tabular summary statistics. 
+
+:code:`GWB_SPA` is a simpler version of :code:`GWB_MSPA`. 
+
+Details on the methodology and input/output options can be found in the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_.
+
+Set up the input image
+""""""""""""""""""""""
 
 .. tip::
 

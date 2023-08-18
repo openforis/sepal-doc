@@ -15,9 +15,9 @@ The FCDM tool supports the detection of forest canopy disturbance from satellite
 However, compared to deforestation, the mapping of "forest degradation" has proven to be technically much more challenging and the signal of a forest canopy 
 disturbance is less prominent, as it does not result in a change of land cover.
 
-The FCDM tool has been developed at the Joint Research Centre (JRC) within the ReCaREDD Project and uses a change detection approach based on the difference (delta) of the self-referenced "Normalized Burn Ratio" index (Delta-rNBR; `Langner et al. 2018 <https://doi.org/10.3390/rs10040544>`__) to detect forest canopy change over defined periods at pixel and sub-pixel level. 
-The underlying Delta-rNBR index allows the detection of forest canopy disturbance within tropical (semi-)evergreen forest canopies ("forest remaining forest"), 
-resulting for instance from tree removal, felling damages or from logging trails and leading.
+Reporting on forest degradation is required by many tropical countries participating in the programme, Reducing Emissions from Deforestation and Forest Degradation and the role of conservation, sustainable management of forests and enhancement of forest carbon stocks in developing countries (REDD+). However, compared to deforestation, the mapping of forest degradation has proven to be much more challenging technically. In particular, signs of a forest canopy disturbance is less prominent, as it does not result in a change of land cover.
+
+The FCDM tool has been developed at the Joint Research Centre (JRC) within the ReCaREDD Project. It uses a change detection approach based on the difference (delta) of the self-referenced "Normalized Burn Ratio" index (Delta-rNBR) (`Langner et al. [2018] <https://doi.org/10.3390/rs10040544>`_), in order to detect forest canopy change over defined periods at the pixel and sub-pixel level. The underlying Delta-rNBR index allows the detection of forest canopy disturbance within tropical (semi-)evergreen forest canopies ("forest remaining forest"), resulting from certain actions, such as tree removal, felling damages, logging trails, and leading.
 
 .. thumbnail:: https://forobs.jrc.ec.europa.eu/iforce/images/fcdm_process.jpg
     :title: Processing steps of the FCDM tool
@@ -143,14 +143,16 @@ Basemap
 The FCDM process need to create a forest non-forest mask to produce the results. This mask is derivated from data provided by the user.
 Three default datasets can be selected: 
 
--   Global forest cover: This mask will be based on the `global forest cover <https://earthenginepartners.appspot.com/science-2013-global-forest>`__ product from University of Maryland. The user will also need to provide the year to use and the treecover level to diferenciate forest from the rest.
-    
+-   **Global forest cover**: This mask will be based on the `global forest cover product from University of Maryland <https://earthenginepartners.appspot.com/science-2013-global-forest>`_. The user will also need to provide the year to use and the tree cover level to differentiate forest from the rest.
+
     .. tip::
 
         The year is automatically set to the start year of the **reference** period.
     
 -   TMF: This mask will be based on the `Tropical Moist Forest <https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/>`__ product from JRC. The user will also need to provide the year of analysis.
     
+-   **TMF**: This mask will be based on the `Tropical Moist Forest product from the JRC<https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/>`. The user will also need to provide the year of analysis.
+
     .. tip::
 
         The year is automatically set to the start year of the **reference** period.

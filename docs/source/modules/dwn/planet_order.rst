@@ -22,8 +22,8 @@ Parameters
 
 In the lower right corner, 2 tabs are available:
 
--   :btn:`<fa-solid fa-map-marker-alt>` the Area of interest selection PlanetLab
--   :btn:`<fa-solid fa-globe>` The planet authentification PlanetLab
+-   :btn:`<fa-solid fa-location-dot>`: Planet Lab area of interest (AOI) selection
+-   :btn:`<fa-solid fa-globe>`: Planet Lab authentification
 
 In the top left corner, 3 other tbas will allow you ton interact with the data:
 

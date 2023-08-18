@@ -1,7 +1,7 @@
 SMFM Biota
 ==========
 
-The BIOTA tool is part of the Satellite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics and it allows you to produce outputs of:
+The Biomass Tool for ALOS (BIOTA tool) is part of the World Bank's project, `Satellite Monitoring for Forest Management (SMFM) project <https://www.smfm-project.com>`_. It was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team. 
 
 -   Calibrated Gamma0 backscatter
 -   Forest cover

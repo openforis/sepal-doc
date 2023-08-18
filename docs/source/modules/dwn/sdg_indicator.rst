@@ -5,21 +5,27 @@ The amount of degraded land relative to the total amount of land is measured by 
 
 This module allows generating data for reporting on SDG indicator 15.3.1. The SEPAL SDG indicator module follows UNCCD `good practice guidance version 2 <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__. 
 
-The methodology for SDG 15.3.1 module for GPG v1 (`good practice guidance from UNCCD on SDG 15.3.1 <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`__) was implemented in consultation with the `trends.earth <https://trends.earth/docs/en/index.html>`__ team and `Conservation International <https://www.conservation.org>`__.
+To help achieve Target 15.3 of the SDGs, governments, international organizations, and civil society must take action to combat desertification and restore degraded land. Sustainable land management can be a significant measure that has a positive impact on degraded land. By taking such actions, we can ensure the preservation of biodiversity, promote sustainable land use, and create a sustainable future for generations to come. These actions can help improve the health of the environment and boost agricultural production in these areas, which will in turn ensure food security, reduce poverty and promote social welfare.
+
+This module provides guidance for generating data for reporting on SDG Indicator 15.3.1. It follows `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_. 
+
+The methodology for the module (`Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area [Version 1.0] <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_) was implemented in consultation with the `Trends.Earth <https://trends.earth/docs/en/index.html>`_ team and `Conservation International <https://www.conservation.org>`_.
 
 Methodology
 -----------
 
 What is Land degradation?
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-The United Nations Convention to Combat Desertification (UNCCD) defines land degradation as "\ *the reduction or loss of the biological or economic productivity and complexity of rain-fed cropland, irrigated cropland, or range, pasture, forest, and woodlands resulting from a combination of pressures, including land use and management practises"* (`UNCCD 1994, Article
-1 <https://www.unccd.int/sites/default/files/relevant-links/2017-01/UNCCD_Convention_ENG_0.pdf>`__).
-This definition was adopted for the SDG 15.3.1
+
+The United Nations Convention to Combat Desertification (UNCCD) defines land degradation as "the reduction or loss of the biological or economic productivity and complexity of rain-fed cropland, irrigated cropland, or range, pasture, forest, and woodlands resulting from a combination of pressures, including land use and management practises" ([`UNCCD, 1994, Article
+1] <https://www.unccd.int/sites/default/files/relevant-links/2017-01/UNCCD_Convention_ENG_0.pdf>`_). This definition was adopted for SDG Indicator 15.3.1.
 
 UNCCD Good Practice Guidelines
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In 2017, the UNCCD released the first version of the  `good practice guidance (GPG) <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`__. In 2021, a revised version of the `GPG <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ was published. The module is based on the most recent version of the GPG (version 2). The GPG outlines a comprehensive approach to land degradation and suggests methods for restoring degraded land by providing guidance for governments, businesses, local communities, and other stakeholders.
+In 2017, the UNCCD released `the first version of their guidance <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_.
+
+In 2021, `a revised version <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_ was published. 
 
 
 Approach
@@ -49,9 +55,7 @@ Three matrices are used to detect such changes in productivity:
 
 It measures the trajectory of changes in productivity over time.
 
-The `Mann–Kendall <https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>`__ trend test is used to describe the monotonic trend or
-trajectory (increasing or decreasing) of the productivity for a given
-time period.
+The `Mann–Kendall trend test <https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>`_ is used to describe the monotonic trend or trajectory (increasing or decreasing) of the productivity for a given time period.
 
 To identify the scale and direction of the trend a five-level scale is
 proposed:
@@ -131,8 +135,7 @@ productivty value (observed NPP). It is given as:
 
 .. math:: \text{performance} = \frac{NPP_{observed}}{NPP_{max}}
 
-The pixels with an NPP (vegetation index) less than 0.5 of the :math:`NPP_{max}`
-is considered as degraded.
+The pixels with an NPP (vegetation index) less than 0.5 of the :math:`NPP_{max}` is considered **degraded**.
 
 Either of the following look-up tables can be used to calculate the sub-indicator:
 
@@ -179,6 +182,8 @@ Look-up table to combine productivity metrics
 | Improved   |  Improved  |  Not degraded  | Improved      |  Improved     |
 +------------+------------+----------------+---------------+---------------+
 
+\*     Refers to `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 1.0) <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_
+\**    Refers to `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/look-up-table.svg
     :alt: Look up table
@@ -263,7 +268,9 @@ After selecting the desired area, click over :guilabel:`Select these inputs` and
 Parameters
 """"""""""
 
-To run the computation of SDG 15.3.1, several parameters need to be set. Please read the `Good practice guidelines <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ to better understand the parameters required to calculate SDG 15.3.1 indicator and it's sub-indicators.
+To run the computation of SDG Indicator 15.3.1, several parameters need to be set. 
+
+To better understand the parameters required to calculate the SDG 15.3.1 Indicator and its sub-indicators, see `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_.
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/parameters.png
     :alt: parameters
@@ -288,12 +295,10 @@ Mandatory parameters
 
 -   **land ecosystem functional unit**: default to *Global Agro-Environmental Stratification (GAES)*, other available options are:
 
-    - `Global Agro Ecological Zones (GAEZ), historical AEZ with 53 classes <https://gaez.fao.org/>`__ 
-    - `World Ecosystem <https://doi.org/10.1016/j.gecco.2019.e00860>`__
-    - `Global Homogeneous Response Units <https://doi.pangaea.de/10.1594/PANGAEA.775369>`__
-    - Calculate based on the land cover (`ESA CCI <https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover?tab=overview>`__) and soil texture (`ISRIC <https://www.isric.org/explore/soilgrids>`__)
-
--   **climate regime**: default to *Per pixel based on global climate data* but you can also use a fixed value everywhere using a predefined climate regime in the dropdown menu or select a custom value on the slider
+    - `Global Agro Ecological Zones (GAEZ), historical AEZ with 53 classes <https://gaez.fao.org/>`_;
+    - `World Ecosystem <https://doi.org/10.1016/j.gecco.2019.e00860>`_;
+    - `Global Homogeneous Response Units <https://doi.pangaea.de/10.1594/PANGAEA.775369>`_; and
+    - Calculate based on the land cover (`ESA CCI <https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover?tab=overview>`_) and soil texture (`ISRIC <https://www.isric.org/explore/soilgrids>`_).
 
 
 .. _sdg-advanced-parameters:
@@ -313,7 +318,7 @@ Assessment periods for all the metrics can be specified individually. Keep them 
     
      If the Starting  and Ending years you've chosen for your assessment period aren't at least four years apart, then you'll also need to choose an assessment period for the productivity state that's longer than that. The module will disregard the value of a particular metric if you only specify the start or end year.
 
-The default productivity look-up table is set to GPG version 2. You could also select GPG version 1. Please refer to the approach section for the tables.  Please read section 4.2.5 of the `GPG version 2 <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`__ to know more about the look-up table.
+The default productivity "look-up" table is set to the second version of the good practice guidance, but you can also select the first version (to learn more about the "look-up" table, see the approach section for the tables and Section 4.2.5 of the `the second version of the good practice guidance <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_).
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/prod_params.png
     :alt: productivity parameters
@@ -348,7 +353,7 @@ The rows stand for the initial classes and the columns for the final classes.
     
 **Custom land cover transition matrix**
 
-If you would like to use a custom land cover transition matrix, select the :guilabel:`Yes` radio button and select the CSV file. Use `this matrix <https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/utils/ipccsx_matrix.csv>`__ as a template to prepare a matrix for your land cover map.
+If you would like to use a custom land cover transition matrix, select the :guilabel:`Yes` radio button and the .csv file. Use `this matrix <https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/utils/ipccsx_matrix.csv>`_ as a template to prepare a matrix for your land cover map.
 
 .. tip::
 
@@ -393,7 +398,7 @@ The results are gathered in the :code:`module_results/sdg_indicators/` folder. I
 Transition graph 
 ^^^^^^^^^^^^^^^^
 
-This chart is the `Sankey diagram <https://en.wikipedia.org/wiki/Sankey_diagram>`__ of the land cover transition between baseline and target year. The colour is corresponding to the initial class.
+This chart is the `Sankey diagram <https://en.wikipedia.org/wiki/Sankey_diagram>`_ of the land cover transition between the baseline and target year. The colour corresponds to the initial class.
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/transition_graph.png
     :alt: transition graph

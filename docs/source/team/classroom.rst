@@ -55,7 +55,9 @@ Use the general content
 
 To use the general content in your classrooms you need to add the general content folder to your drive. The command has disappeared in 2018 from Google drive. Now Google only offer the opportunity to create shortcut to other drives which is not sufficient in our case. As there were too many complains the reintegrated the feature.
 
-In your drive got to the “share with me" section and click on the “General Class Content” folder.
+Open Google Drive and go to the **Share with me** section.
+
+Select the **General class content** folder.
 
 .. note::
 

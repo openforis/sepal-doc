@@ -1,7 +1,7 @@
 Area of Interest Selection
 ==========================
 
-In the majority of SEPAL modules, the first mandatory input, is the area of interest (AOI), this input will be used as a boundary to cut the processes and its outputs. Depending on if you are using the default :btn:`<fa-solid fa-globe>` process recipes or the :btn:`<fa-solid fa-wrench>` custom applications you will find different user interfaces.
+In most SEPAL modules, the first mandatory input is the area of interest (AOI), used as a boundary to cut the processes and its outputs.
 
 .. _recipe_aoi:
 
@@ -239,7 +239,9 @@ Once the table is loaded, the system will try to automatically identify the :gui
 GEE asset
 #########
 
-Use this method to load a custom feature collection available as an asset in GEE. Select :guilabel:`GEE asset name` in the dropdown method list. Two widgets will appear by default: an Asset selector (1), a dropdown list containing the columns of the selected asset (2) and optionally the column unique fields (3).
+Use this method to load a custom feature collection available as an asset in GEE.
+
+Select :guilabel:`GEE asset name` in the dropdown method list. Two widgets will appear by default: an asset selector (1), a dropdown list containing the columns of the selected asset (2), and unique column fields, which are optional (3).
 
 .. thumbnail:: ../_images/feature/aoi_selector/method_asset.png
    :title: Map drawers

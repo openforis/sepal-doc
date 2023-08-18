@@ -7,7 +7,10 @@ We are always happy to receive feedback on SEPAL documentation from users, partn
 
 Before contributing, please review the SEPAL `code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_.
 
-Then, communicate your proposed contributions to the SEPAL team by asking the community or reporting an issue on Github.
+Then, communicate your proposed contributions to the SEPAL team by:
+
+-    `asking the community <https://groups.google.com/g/sepal-users>`_ or
+-    `reporting an issue on Github <https://github.com/openforis/sepal/issues>`_.
 
 Introduction
 ------------

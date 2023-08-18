@@ -3,7 +3,9 @@ Direct Drivers Assessment
 
 .. note::
 
-    This documentation has been produced in the framework of the global project entitled: Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__. This project, known as the Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in the Central African region. The Congo Basin  area is used as an example but this methodology can be applied to any other geographic area.
+    This documentation has been produced in the framework of the global project, Assessment of deforestation and forest degradation and related direct drivers using SEPAL, supported by the Central African Forest Initiative `(CAFI) <https://cafi.org>`__.
+
+    The Deforestation and Degradation Drivers (DDD) project is a global methodology developed and piloted in central Africa. While the Congo Basin is used as an example, this methodology can be applied to any geographic area.
 
 Background
 ----------
@@ -255,6 +257,7 @@ If you are only working with Landsat (or only with Sentinel), you can manually s
 
 For the composite options we recommend :btn:`SR` and :btn:`BRDF`, you can exclude pixels with low NDVI (particularly if you have a long time period) and select the following options:
 
+For composite options, we recommend :btn:`SR` and :btn:`BRDF`; you can exclude pixels with low NDVI (particularly if you have a long time period) and select options presented in the following paragraph.
 
 You can then retrieve the mosaic as a Google asset at 30m resolution. We select the original bands as all other indices can be recalculated later: :btn:`BLUE`, :btn:`GREEN`, :btn:`RED`, :btn:`NIR`, :btn:`SWIR1`, :btn:`SWIR2`, :btn:`THERMAL`
 

@@ -33,11 +33,10 @@ Then in the process tile, you need to set the different parameters of your mosai
 -   **speckle filter**: the speckle filter to use during the process
     
     -   no filter
-    -   refined lee: speckle noise removal technique based on the well-knwown Lee Filter. More information in `A. S. Yommy et. Al <https://doi.org/10.1109/IHMSC.2015.236>`_.
-    -   Quegan filter: `S. Quegan et. Al <https://doi.org/10.1109/36.964973>`_
-    
--   **shadow masking**: activate or deactivate the shadow masking
--   **Db**: wether or not to scale the output to Db
+    -   refined lee: speckle noise removal technique based on the Lee Filter (for more information, see `A.S. Yommy et al. <https://doi.org/10.1109/IHMSC.2015.236>`_).
+    -   Quegan filter: See `Quegan et al. <https://doi.org/10.1109/36.964973>`_
+-   **Shadow masking**: activate or deactivate shadow masking
+-   **Db**: whether or not to scale the output to Db
 
 Once you are happy with your parameters, you can click on the button. The dataset will be automatically send to the vizualization tile.
 

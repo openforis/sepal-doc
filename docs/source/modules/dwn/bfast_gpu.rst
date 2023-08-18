@@ -17,7 +17,7 @@ The implementation is based on `OpenCL <https://www.khronos.org/opencl/>`_ and a
 Usage
 -----
 
-.. warning::
+.. important::
 
     **prerequist**: before launching the bfast module, you need to have at least 1 time series in SEPAL folders
     
