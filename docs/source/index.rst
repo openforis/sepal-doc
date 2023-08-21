@@ -138,7 +138,7 @@ Encounter a problem? See an issue? Need help? Take one of the following actions 
     .. grid-item-card:: :fab:`stack-exchange` For usage questions, ask the GIS StackExchange community.
         :link: https://gis.stackexchange.com/questions/tagged/sepal
 
-    .. grid-item-card:: :fas:`book-open` For training, register for the SEPAL Forest and Land Monitoring for Climate Action course.
+    .. grid-item-card:: :fas:`book-open` For training, register for the SEPAL Forest and Land Monitoring for Climate Action e-learning course.
         :link: https://www.fao.org/in-action/sepal/resources/certified-course/en
 
 .. line-break::
