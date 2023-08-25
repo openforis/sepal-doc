@@ -10,7 +10,7 @@
   "bfast_explorer": {
     "description": "Performs analysis of Landsat Surface Reflectance time series pixel data using the BFAST algorithm.",
     "tag": ["time-series"],
-    "url": "https://raw.githubusercontent.com/12rambau/bfast-explorer/master/md/tutorial.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/bfast-explorer/master/md/tutorial.rst"
   },
   "bfast_gpu": {
     "description": "GPU implementation of the BFAST algorithm to analyse time series",
