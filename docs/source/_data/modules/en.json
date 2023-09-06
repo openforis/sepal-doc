@@ -19,7 +19,7 @@
   },
   "bfast_r": {
     "tag": ["time-series"],
-    "url": "https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/tutorial.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/bfastspatial/master/www/tutorial/tutorial.rst"
   },
   "bootstrap_sampling_simulator": {
     "tag": ["inventories"]
