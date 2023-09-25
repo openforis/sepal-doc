@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-07-31 07:17\n"
+"PO-Revision-Date: 2023-09-25 11:06\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Utilisation"
 
 #: ../../source/cli/r.rst:7
 msgid "SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully functional :code:`R 4.1.2` environment that is accessible in RStudio, Jupyterlab or the terminal."
-msgstr ""
+msgstr "Les instances SEPAL fonctionnent sur des machines Ubuntu :code:`focal`, fournissant un environnement :code:`R 4.1.2` entièrement fonctionnel qui est accessible dans RStudio, Jupyterlab ou le terminal."
 
 #: ../../source/cli/r.rst:25
 msgid "Description"
@@ -36,7 +36,7 @@ msgstr "Description"
 
 #: ../../source/cli/r.rst:27
 msgid "The SEPAL :code:`R` environment is not empty; there are numerous embedded packages."
-msgstr ""
+msgstr "L'environnement SEPAL :code:`R` n'est pas vide ; il y a de nombreux paquets intégrés."
 
 #: ../../source/cli/r.rst:33
 msgid "To check the availability of a specific package:"
@@ -44,19 +44,19 @@ msgstr "Pour vérifier la disponibilité d'un package spécifique :"
 
 #: ../../source/cli/r.rst:35
 msgid "Open RStudio."
-msgstr ""
+msgstr "Ouvrir RStudio."
 
 #: ../../source/cli/r.rst:36
 msgid "Go to :guilabel:`Help` > :guilabel:`R Help` (from the menu above)."
-msgstr ""
+msgstr "Allez dans :guilabel:`Aide` > :guilabel:`Aide R` (à partir du menu ci-dessus)."
 
 #: ../../source/cli/r.rst:37
 msgid "You will see the **Help** panel opened."
-msgstr ""
+msgstr "Vous verrez le panneau **Aide** ouvert."
 
 #: ../../source/cli/r.rst:38
 msgid "Select :code:`Reference` > :code:`Packages`"
-msgstr ""
+msgstr "Sélectionnez :code:`Référence` > :code:`Packages`"
 
 #: ../../source/cli/r.rst:45
 msgid "Customization"
@@ -64,11 +64,11 @@ msgstr "Personnalisation"
 
 #: ../../source/cli/r.rst:47
 msgid "The SEPAL environment can be customized to user needs by utilizing third-party packages and CRAN in **RStudio**."
-msgstr ""
+msgstr "L'environnement SEPAL peut être personnalisé en fonction des besoins des utilisateurs en utilisant des paquets tiers et CRAN dans **RStudio**."
 
 #: ../../source/cli/r.rst:55
 msgid "If you face compatibility issues when customizing your SEPAL environment, contact the SEPAL team in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
-msgstr ""
+msgstr "Si vous rencontrez des problèmes de compatibilité lors de la personnalisation de votre environnement SEPAL, contactez l'équipe SEPAL dans le `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 
 #~ msgid ""
 #~ "SEPAL instances run on :code:`focal` "
