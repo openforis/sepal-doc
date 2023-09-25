@@ -39,3 +39,43 @@ More information on the available command can be found on the `Google API websit
     $ upload                # Uploads assets to GEE.
     $ upload_manifest       # Uploads an image to GEE using the given manifest file.
     $ upload_table_manifest # Uploads a table to GEE using the given manifest file.
+
+Use Google Earth Engine in the Jupyter interface
+------------------------------------------------
+
+We highly suggest to work directly from the Python interface of Google Earth Engine as the Pythonhas been extended by the community (gee_tools, geemap, ipygee, sepal_ui etc.) and is more user-friendly.
+It's also the best way to prototype a script before using it in a SEPAL application as the translation from Python to Javascript is not always straightforward.
+
+The main advantages of the GEE code editor are:
+- the access to a live map
+- the value inspector
+
+SEPAL and Jupyter lab can help you bring this to the next level by providing both tools in a Python notebook, allowing you to also access all the Python geospatil tools created by the Eart obseervation community.
+
+First open a JupyterLab instance and start a notebook. In the first cell create a map and place it the sidecar by running the following code:
+
+.. code-block:: python
+
+    from sidecar import Sidecar
+    from sepal_ui import mapping as sm
+
+    m = sm.SepalMap()
+
+    with Sidecar(title='Map'):
+        display(m)
+
+.. thumbnail:: ../_images/cli/gee/create_a_sidecar.png
+    :title: Some code that will be run in the sidecar
+
+As displayed in the previous image, the list of available sidecars is displayed on the right side of the frame. You can create as many sidecars as you want and display any widget in it. We chose to use the sepal_ui mappping widget as it's including key features such as:
+- GEE full compatibility
+- an extended layer manager
+- a value inspector
+
+From now the map will be displayed in a sidecar next to thenotebook. The map is running live so in any cell you can add extra layers to it. It's more powerful than the Code editor map as you don't need to run all your cells again to get the map updated.
+
+.. thumbnail:: ../_images/cli/gee/sidecar_with_data.png
+    :title: The map displayed in the sidecar
+
+Now you are all set to create your own GEE script. You can use the GEE Python API documentation to get started.
+
