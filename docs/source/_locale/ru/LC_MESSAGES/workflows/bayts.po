@@ -1,24 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2023, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-07-31 07:20\n"
+"Last-Translator: \n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/workflows/bayts.po\n"
+"X-Crowdin-File-ID: 215\n"
 
 #: ../../source/workflows/bayts.rst:2
 msgid "BayTS-based near-real-time (NRT) forest disturbance alerts"
@@ -29,25 +27,11 @@ msgid "Background"
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:7
-msgid ""
-"Near-real-time forest disturbance monitoring (NRT-FDM) entails remote "
-"sensing techniques that are based on dense time series, targeting the "
-"generation of recent disturbance events in forested areas. The main "
-"objective is to detect those changes as early as possible. This "
-"prioritization usually comes at the cost of accuracy, as the methods are "
-"optimized for speed and timeliness. NRT-FDM is a rapidly evolving field "
-"of research and many different approaches have been proposed. The most "
-"common ones are based on the detection of abrupt changes in the time "
-"series, which are then classified as disturbance events."
+msgid "Near-real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series, targeting the generation of recent disturbance events in forested areas. The main objective is to detect those changes as early as possible. This prioritization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time series, which are then classified as disturbance events."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:9
-msgid ""
-"This page provides background information and a detailed how-to guide for"
-" the implementation of the BayTS algorithm on the SEPAL platform that is "
-"optimized for the generation of NRT alerts using Sentinel-1 radar data. "
-"The advantage of using radar data is its independence from cloud cover "
-"and sensitivity to structural elements of the vegetation cover."
+msgid "This page provides background information and a detailed how-to guide for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of NRT alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to structural elements of the vegetation cover."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:12
@@ -55,73 +39,31 @@ msgid "Methodology"
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:13
-msgid ""
-"To detect forest cover loss in NRT in dense Sentinel-1 time series, a "
-"pixel-based approach is applied. First, a historic reference is created "
-"by calculating the mean and standard deviation of the backscatter values "
-"for each pixel. The reference is then used to calculate the probability "
-"of a pixel being in a disturbed state using the Bayes Theorem, a "
-"statistical approach that allows for the calculation of the probability "
-"of an event based on prior knowledge of conditions that might be related "
-"to the event. In this case, the event is a forest disturbance and the "
-"conditions are the backscatter values of the pixel."
+msgid "To detect forest cover loss in NRT in dense Sentinel-1 time series, a pixel-based approach is applied. First, a historic reference is created by calculating the mean and standard deviation of the backscatter values for each pixel. The reference is then used to calculate the probability of a pixel being in a disturbed state using the Bayes Theorem, a statistical approach that allows for the calculation of the probability of an event based on prior knowledge of conditions that might be related to the event. In this case, the event is a forest disturbance and the conditions are the backscatter values of the pixel."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:15
-msgid ""
-"The method works without any training data, as a probability of being "
-"forest is derived from its historic reference expressed by the mean and "
-"standard deviation, from which a probability density function is derived."
-" The non-forest state is assumed to have the same probability density "
-"function centered at 4 decibel (dB) backscatter below the forested one. "
-"Once the probability of being non-forest exceeds a user-defined threshold"
-" (0.6 by default), Bayesian Updating is applied until the alert either "
-"gets confirmed or rejected. Therefore, the updating is repeated until the"
-" probability of being a change is above a high-confidence threshold "
-"(0.975 by default). If the alert is not confirmed within a certain time "
-"range (90 days by default), the alert is rejected."
+msgid "The method works without any training data, as a probability of being forest is derived from its historic reference expressed by the mean and standard deviation, from which a probability density function is derived. The non-forest state is assumed to have the same probability density function centered at 4 decibel (dB) backscatter below the forested one. Once the probability of being non-forest exceeds a user-defined threshold (0.6 by default), Bayesian Updating is applied until the alert either gets confirmed or rejected. Therefore, the updating is repeated until the probability of being a change is above a high-confidence threshold (0.975 by default). If the alert is not confirmed within a certain time range (90 days by default), the alert is rejected."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:17
-msgid ""
-"The method capitalizes on both VV and VH polarized channels, whereas the "
-"highest non-forest probability is considered for the updating. Initial "
-"alerts from one orbit can only be confirmed by another orbit, as the "
-"image geometry changes, so that small-scale changes might be invisible in"
-" one orbit but visible in the other."
+msgid "The method capitalizes on both VV and VH polarized channels, whereas the highest non-forest probability is considered for the updating. Initial alerts from one orbit can only be confirmed by another orbit, as the image geometry changes, so that small-scale changes might be invisible in one orbit but visible in the other."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:-1
-msgid ""
-"A single-pixel time series with apparent change, and the forest and non-"
-"forest probability to the right."
+msgid "A single-pixel time series with apparent change, and the forest and non-forest probability to the right."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:24
-msgid ""
-"SEPAL allows for the displaying of different stages of confidence, which "
-"is the initial one (where an alert is triggered by the probability of "
-"being non-forest above 0.6), low-confidence alerts (where the probability"
-" of change being > 0.85) and high-confidence alerts (where the "
-"probability of change being > 0.975). In addition, the thresholds can be "
-"changed."
+msgid "SEPAL allows for the displaying of different stages of confidence, which is the initial one (where an alert is triggered by the probability of being non-forest above 0.6), low-confidence alerts (where the probability of change being > 0.85) and high-confidence alerts (where the probability of change being > 0.975). In addition, the thresholds can be changed."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:26
-msgid ""
-"The main sensitivity parameter affects the difference of the forest and "
-"non-forest probability functions. By default, it is 4 dB; a low-sensitivy"
-" multiplies the 4 dB by a factor of 1.2, while a higher sensitivity is "
-"achieved by decreasing the 4 dB range by a factor of 0.8, resulting in a "
-"4.8 dB or 3.2 dB difference, respectively. This will affect both "
-"detectability of change and timeliness."
+msgid "The main sensitivity parameter affects the difference of the forest and non-forest probability functions. By default, it is 4 dB; a low-sensitivy multiplies the 4 dB by a factor of 1.2, while a higher sensitivity is achieved by decreasing the 4 dB range by a factor of 0.8, resulting in a 4.8 dB or 3.2 dB difference, respectively. This will affect both detectability of change and timeliness."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:28
-msgid ""
-"It is also possible to normalize the images over time, though this "
-"operation is computationally demanding and might hamper the algorithm to "
-"work on the fly, making exporting mandatory."
+msgid "It is also possible to normalize the images over time, though this operation is computationally demanding and might hamper the algorithm to work on the fly, making exporting mandatory."
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:31
@@ -133,9 +75,7 @@ msgid "Requirements"
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:36
-msgid ""
-"Area of interest (AOI) (EE table, country/regional boundaries, self-drawn"
-" polygon)"
+msgid "Area of interest (AOI) (EE table, country/regional boundaries, self-drawn polygon)"
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:37
@@ -143,10 +83,6 @@ msgid "Forest mask (optional, but recommended)"
 msgstr ""
 
 #: ../../source/workflows/bayts.rst:39
-msgid ""
-"For a step-by-step guide of the use of a combination of Landsat and "
-"Sentinel-2 imagery over an area in Bolivia, download `this presentation "
-"<https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`."
-" To understand the underlying logic of the workflow, read further."
+msgid "For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download `this presentation <https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`. To understand the underlying logic of the workflow, read further."
 msgstr ""
 

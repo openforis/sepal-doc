@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-01-21 16:21+0000\n"
+"PO-Revision-Date: 2023-07-31 07:20\n"
 "Last-Translator: \n"
-"Language: sv_SE\n"
 "Language-Team: Swedish\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/index.po\n"
+"X-Crowdin-File-ID: 49\n"
+"Language: sv_SE\n"
 
 #: ../../source/cli/index.rst:2
 msgid "SEPAL environment"
@@ -23,9 +27,7 @@ msgid "CLI tools"
 msgstr ""
 
 #: ../../source/cli/index.rst:7
-msgid ""
-"The SEPAL platform includes a variety of useful command-line interface "
-"(CLI) utilities to help resolve specific problems such as:"
+msgid "The SEPAL platform includes a variety of useful command-line interface (CLI) utilities to help resolve specific problems such as:"
 msgstr ""
 
 #: ../../source/cli/index.rst:9
@@ -53,10 +55,7 @@ msgid "Orfeo Toolbox (OTB)"
 msgstr ""
 
 #: ../../source/cli/index.rst:16
-msgid ""
-"These tools can be called directly from the terminal or any programming "
-"language sending commands to the kernel, including R and Python "
-"(installed by default on any SEPAL account)."
+msgid "These tools can be called directly from the terminal or any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account)."
 msgstr ""
 
 #: ../../source/cli/index.rst:23
@@ -64,24 +63,15 @@ msgid "The code executed previously on an existing :code:`example.tif` file."
 msgstr ""
 
 #: ../../source/cli/index.rst:31
-msgid ""
-"If you're running actions from multiple directories or instances, you can"
-" open multiple **Terminal** tabs and name them as you see fit."
+msgid "If you're running actions from multiple directories or instances, you can open multiple **Terminal** tabs and name them as you see fit."
 msgstr ""
 
 #: ../../source/cli/index.rst:35
-msgid ""
-"If the code you want to execute is taking time, consider running it in "
-"the background using :code:`nohup`."
+msgid "If the code you want to execute is taking time, consider running it in the background using :code:`nohup`."
 msgstr ""
 
 #: ../../source/cli/index.rst:41
-msgid ""
-"All the console outputs will be redirected to a :code:`nohup.out` in your"
-" home directory, but the execution will be running in the background. "
-"Thus, you will be able to safely close the terminal or even the browser "
-"window without killing your process (for more information about "
-":code:`nohup`, see `here <https://en.wikipedia.org/wiki/Nohup>`__."
+msgid "All the console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. Thus, you will be able to safely close the terminal or even the browser window without killing your process (for more information about :code:`nohup`, see `here <https://en.wikipedia.org/wiki/Nohup>`__."
 msgstr ""
 
 #: ../../source/cli/index.rst:45
@@ -89,9 +79,7 @@ msgid "Coding tools"
 msgstr ""
 
 #: ../../source/cli/index.rst:47
-msgid ""
-"In the **App** section, you'll find three coding tools at the top of the "
-"list:"
+msgid "In the **App** section, you'll find three coding tools at the top of the list:"
 msgstr ""
 
 #: ../../source/cli/index.rst:49
@@ -107,11 +95,7 @@ msgid "RStudio"
 msgstr ""
 
 #: ../../source/cli/index.rst:56
-msgid ""
-"They will allow the user to code wokflows in any of the available "
-"languages using the coresponding environment in SEPAL. These environments"
-" are fully customizable (select the :code:`Python` or :code:`R` section "
-"to know more)."
+msgid "They will allow the user to code wokflows in any of the available languages using the coresponding environment in SEPAL. These environments are fully customizable (select the :code:`Python` or :code:`R` section to know more)."
 msgstr ""
 
 #~ msgid ""
