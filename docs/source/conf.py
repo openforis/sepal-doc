@@ -109,8 +109,9 @@ html_theme_options = {
     ],
     "use_edit_page_button": True,
     "article_footer_items": ["last-updated"],
-    "footer_start": ["copyright", "map", "sphinx-version", "licence"],
-    "footer_end": ["community", "issue-tracker", "e-learning", "stackexchange"],
+    "footer_start": ["copyright", "sphinx-version", "licence"],
+    "footer_center": ["community", "issue-tracker"],
+    "footer_end": ["e-learning", "stackexchange"],
 }
 
 # -- option for the favicon extention ------------------------------------------
