@@ -1,16 +1,18 @@
-GuidosToolbox Workbench
-=======================
+GWB
+===
 
-The GuidosToolbox Workbench (**GWB**) is a subset of the desktop software package GuidosToolbox (GTB), designed as a command-line application for Linux 64bit servers (see `GWB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_ or `GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_). Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
+**GuidosToolbox Workbench (GWB)** is a subset of the desktop software package GuidosToolbox (GTB), designed as a command-line application for Linux 64bit servers (see `GWB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_ or `GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_). 
+
+Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
 
 .. note::
 
-    The current version available on SEPAL is 1.9.0
+    The current version available in SEPAL is 1.9.0
 
 Available commands
 ------------------
 
-The complete documentation of GWB commands can be found in the `GWB manual <https://gwbdoc.readthedocs.io>`__
+The complete documentation of GWB commands can be found in the `GWB manual <https://gwbdoc.readthedocs.io>`__.
 
 .. code-block:: console
 
