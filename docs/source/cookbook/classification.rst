@@ -294,7 +294,7 @@ This menu will help the user manage the training data of the model used. To open
 Collected reference data
 """"""""""""""""""""""""
 
-Collected reference data are data selected on the fly by the user. The workflow will be explained later in the documentation. 
+Collected reference data are data selected on the fly by the user. The workflow will be explained later in the documentation.
 
 In this pane, this type of data can be managed by the user. The data appear as a pair, associating coordinates to a class value, which will be used to create training data in the classification model.
 
@@ -553,9 +553,9 @@ To modify existing points, select the :btn:`<fa-solid fa-location-dot>` to open 
 Check the validity
 ^^^^^^^^^^^^^^^^^^
 
-SEPAL embeds information to help the user understand if the amount of training data is sufficient to produce an accurate classification model. In the **Recipe** window, change the **Band combination** to :code:`Class probability`. 
+SEPAL embeds information to help the user understand if the amount of training data is sufficient to produce an accurate classification model. In the **Recipe** window, change the **Band combination** to :code:`Class probability`.
 
-The user now sees the probability of the model (i.e. the confidence level of the level with output class for each pixel). 
+The user now sees the probability of the model (i.e. the confidence level of the level with output class for each pixel).
 
 If the value is high (> 80 percent), then the pixel can be considered valid; if the value is low (< 80 percent), the model needs more training data or extra bands to improve the analysis.
 

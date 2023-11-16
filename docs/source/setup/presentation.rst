@@ -41,9 +41,9 @@ Choose a language for your SEPAL environment by following the instructions in th
 
 The default language in SEPAL is English; however, other languages are available (currently French and Spanish).
 
-To change the language to either French or Spanish: 
+To change the language to either French or Spanish:
 
-1.  Go to http://sepal.io.  
+1.  Go to http://sepal.io.
 2.  Select :code:`Launch`.
 3.  In the upper-right corner, select **en**, **es** or **fr** (English, Spanish and French, respectively).
 
@@ -67,7 +67,7 @@ On the left, there are four main navigation buttons in the vertical **Tabs** bar
 -   **Terminal**: Access the command line for the LINUX server.
 -   **Apps**: Follow links to a variety of preloaded tools.
 
-Below the vertical **Tabs** bar – on the left – is another button: 
+Below the vertical **Tabs** bar – on the left – is another button:
 
 -   **Tasks*: View a list of currently running tasks.
 
@@ -78,12 +78,12 @@ In the lower-right corner there are four buttons (from right to left):
 -   **User report** (displayed as "$ 0/h")
 -   **User messages** (displayed as a bell)
 
-In the **User details** pop-up window, you can: 
+In the **User details** pop-up window, you can:
 
 -   view and edit user account information (e.g. name, password, email, organization; username can not be edited); and
-–   link your GEE and SEPAL accounts by selecting **Use my own Google account** and following the instructions. 
+–   link your GEE and SEPAL accounts by selecting **Use my own Google account** and following the instructions.
 
-If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace). 
+If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace).
 
 If your GEE and SEPAL accounts are not linked, data downloads to your SEPAL workspace will still be possible and the data will pass through SEPAL's Google Drive account.
 
@@ -97,9 +97,9 @@ Linking your GEE and SEPAL accounts will allow you to read and write from your G
 
    Link your SEPAL and GEE accounts in order to read and write to GEE assets from SEPAL.
 
-In the **User report** pop-up window, you can view the status (used/available) of your processing and storage resources: 
--   **Instance spending** refers to the resources used/available to start and run cloud computers. 
--   **Storage spending** and **Storage space** refer to the resources used/available for storage in your SEPAL workspace. 
+In the **User report** pop-up window, you can view the status (used/available) of your processing and storage resources:
+-   **Instance spending** refers to the resources used/available to start and run cloud computers.
+-   **Storage spending** and **Storage space** refer to the resources used/available for storage in your SEPAL workspace.
 -   **Sessions** refers to any processes in your current session, if you are running any.
 
 .. thumbnail:: ../_images/setup/presentation/user_report_panel.png
@@ -174,9 +174,9 @@ To start an instance:
 3.  Next to **Select (t1):**, enter **t2** (or your chosen instance type).
 4.  Press **Enter** on your keyboard and wait for the instance to start, which will take several minutes.
 
-To stop an instance: 
+To stop an instance:
 
--   enter **exit** into the command line (you can then refresh the terminal page to start a new instance; or 
+-   enter **exit** into the command line (you can then refresh the terminal page to start a new instance; or
 -   open your **User report** by selecting the "$ 0/h" icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
 
 Once an instance has stopped, you can follow the instance start-up steps again to select a larger instance, if necessary.
@@ -191,7 +191,7 @@ Apps
 
 In the vertical **Tabs** bar on the left, select the **Apps** button to display applications accessible through SEPAL (for more information about each app, select the rightmost **i** button).
 
-Applications are preprogrammed (typically using R or Python) to perform specific useful tasks. 
+Applications are preprogrammed (typically using R or Python) to perform specific useful tasks.
 
 Applications make use of instances; running them will use your SEPAL computing resources.
 
