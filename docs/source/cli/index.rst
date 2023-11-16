@@ -1,22 +1,23 @@
-SEPAL environment
-=================
+CLI utilities and coding tools
+==============================
+*Use command-line interface (CLI) utilities and coding tools in SEPAL*
 
 CLI tools
 ---------
 
-The SEPAL platform includes a variety of useful command-line interface (CLI) utilities to help resolve specific problems such as:
+The SEPAL platform includes a variety of useful command-line interface (CLI) utilities to help resolve specific problems, such as:
 
--   Geospatial Data Abstraction Library (GDAL)
--   Google Drive (Drive)
--   Google Earth Engine (GEE)
--   GuidosToolbox Workbench (GWB)
--   Open Foris Geospatial Toolkit (OFGT)
--   Orfeo Toolbox (OTB)
+-   **Geospatial Data Abstraction Library (GDAL)**
+-   **Google Drive (Drive)**
+-   **Google Earth Engine (GEE)**
+-   **GuidosToolbox Workbench (GWB)**
+-   **Open Foris Geospatial Toolkit (OFGT)**
+-   **Orfeo Toolbox (OTB)**
 
-These tools can be called directly from the terminal or any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account).
+These tools can be called directly from the terminal or via any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account).
 
 .. thumbnail:: ../_images/cli/index/cli_gdalinfo.gif
-    :title: How to use the gdalinfo command in a SEPAL terminal
+    :title: How to use the **gdalinfo** command in the SEPAL terminal
 
 .. note::
 
@@ -38,25 +39,24 @@ These tools can be called directly from the terminal or any programming language
 
         nohup gdalinfo example.tif
 
-    All the console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. Thus, you will be able to safely close the terminal or even the browser window without killing your process (for more information about :code:`nohup`, see `here <https://en.wikipedia.org/wiki/Nohup>`__.
-
+    All console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. Thus, you will be able to safely close the terminal or even the browser window without killing your process (for more information about :code:`nohup`, see `this article <https://en.wikipedia.org/wiki/Nohup>`__.
 
 Coding tools
 ------------
 
-In the **App** section, you'll find three coding tools at the top of the list:
+In the **Apps** section, there are three coding tools at the top of the list:
 
 -   JupyterLab
 -   JupyterNotebook
 -   RStudio
 
 .. thumbnail:: ../_images/cli/index/code_editor.png
-    :title: The three code editor in the SEPAL environment
+    :title: The three code editors in the SEPAL environment
 
 They will allow the user to code wokflows in any of the available languages using the coresponding environment in SEPAL. These environments are fully customizable (select the :code:`Python` or :code:`R` section to know more).
 
 .. thumbnail:: ../_images/cli/index/jupyter_example.png
-    :title: Example of rasterio code running in SEPAL JupyterLab (code extracted from rasterio documentation: https://rasterio.readthedocs.io/en/latest/topics/plotting.html)
+    :title: Example of **rasterio** code running in SEPAL JupyterLab (code extracted from **rasterio** documentation: https://rasterio.readthedocs.io/en/latest/topics/plotting.html)
 
 .. toctree::
     :hidden:
