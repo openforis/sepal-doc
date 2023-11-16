@@ -1,55 +1,51 @@
 Introduction to SEPAL
 =====================
+*Become familiar with the platform and learn how to access features to facilitate remote sensing exercises*
 
-On this page, you will be introduced to the SEPAL interface and learn how to access SEPAL's features to facilitate the remote sensing exercises found in the rest of the documentation.
+In this article, learn to:
 
-.. note::
+-   navigate the interface
+-   use the functionalities of the platform
 
-    **Objectives**
+Prequisities include:
 
-    -   Navigate the SEPAL interface
-    -   Learn about the functionalities of SEPAL
-
-.. note::
-
-    **Prerequisites**
-
-    -   Internet access
-    -   SEPAL account (see "Getting Started")
-
+-   internet access
+-   SEPAL account (see **Register to SEPAL and other key platforms** section)
 
 Access SEPAL
 ------------
 
-Navigate to `sepal.io <https://sepal.io/>`_ to open SEPAL, use the log-in form and fill your username and password and, click the :btn:`Login` button.
+1.  Go to `sepal.io <https://sepal.io/>`_.
+2.  Select **Launch**.
+3.  Enter your username and password.
+4.  Select :btn:`Login`.
 
 .. thumbnail:: ../_images/setup/presentation/sepal_login.png
-   :title: SEPAL login page
+   :title: SEPAL log-in page
    :width: 70%
    :align: center
 
 .. tip::
-   When working in SEPAL, do not click your browser's back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. In some instances, you may find an arrow in the upper-left or upper-right corner of the SEPAL interface to navigate to a previous window.
+   When working in SEPAL, do not use your browser's **Back** function. Instead, use the buttons within the SEPAL interface to navigate to previous pages. In some instances, you may find an arrow in the upper-left or upper-right corner of the interface to navigate to a previous window.
 
-Set up language
----------------
+Select language preference
+--------------------------
 
-The first step to create a SEPAL environment is to set up the language you want to use, follow the instructions in the video below.
+Choose a language for your SEPAL environment by following the instructions in the video below.
 
 .. youtube:: Lv0HwPDQx50
 
-
 .. note::
 
-    You can always change your language preference from SEPAL's launch page.
+   Language preferences can always be changed from the platform's launch page (http://sepal.io).
 
-SEPAL is by default in English, but is also available in other languages, such as French and Spanish. To use these languages in SEPAL, return to the launch page (you may be required to logout). On this page, click on :code:`Launch`, which will provide you with access to the login page. In the upper-right side of this panel, click on the button corresponding to your language:
+The default language in SEPAL is English; however, other languages are available (currently French and Spanish).
 
-- fr: Français
-- en: English
-- es: Español
+To change the language to either French or Spanish:
 
-The SEPAL launch page should reload itself and the language you selected will be used by the platform for all of its tools.
+1.  Go to http://sepal.io.
+2.  Select :code:`Launch`.
+3.  In the upper-right corner, select **en**, **es** or **fr** (English, Spanish and French, respectively).
 
 SEPAL interface
 ---------------
@@ -57,142 +53,160 @@ SEPAL interface
 Home
 ^^^^
 
-Once you are logged in, you will see the following screen. Notice that your username is displayed in the lower-right.
+After logging in, you will see the following screen.
 
 .. thumbnail:: ../_images/setup/presentation/sepal_home.png
     :title: SEPAL home screen
     :align: center
     :width: 70%
 
-There are four main navigation tabs in the dock on the left side of the screen:
+On the left, there are four main navigation buttons in the vertical **Tabs** bar (from top to bottom):
 
--   **Process:** Select imagery and create mosaics.
--   **Files:** Navigate through your personal SEPAL folders. This is where you can download, delete, and visualize data (using the Data Visualization link).
--   **Terminal:** Access the command line for the LINUX server.
--   **Apps:** Follow links to a variety of pre-loaded tools.
+-   **Process**: Select imagery and create mosaics.
+-   **Files**: Navigate through your personal SEPAL folders, where you can download, delete and visualize data using the **Data visualization** link.
+-   **Terminal**: Access the command line for the LINUX server.
+-   **Apps**: Follow links to a variety of preloaded tools.
 
-On the lower-left is the red :code:`Tasks` tab. Clicking on this brings up a list of currently-running tasks.
+Below the vertical **Tabs** bar – on the left – is another button:
 
-**Account Information** can be found on the lower-right side of the webpage by clicking the Username button. This opens an overlay that displays important user account information.
+-   **Tasks**: View a list of currently running tasks.
 
-You can edit your user account info, including Name, Password, Email and Organization here. Click :code:`Save` to make those changes permanent.
+In the lower-right corner there are four buttons (from right to left):
 
-.. note::
+-   **Log-out from SEPAL** (displayed as a door with an arrow)
+-   **User details** (displayed as your username)
+-   **User report** (displayed as "$ 0/h")
+-   **User messages** (displayed as a bell)
 
-    You cannot edit your Username in this interface.
+In the **User details** pop-up window, you can:
 
-Link your Google Earth Engine (GEE) account with your SEPAL account by clicking **Use my own Google Account** and following the instructions. If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace). If your GEE and SEPAL accounts are not linked, data downloads to your SEPAL workspace will still be possible and the data will pass through SEPAL's Google Drive account.
+-   view and edit user account information (e.g. name, password, email, organization; username can not be edited); and
+-   link your GEE and SEPAL accounts by selecting **Use my own Google account** and following the instructions.
+
+If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace).
+
+If your GEE and SEPAL accounts are not linked, data downloads to your SEPAL workspace will still be possible and the data will pass through SEPAL's Google Drive account.
 
 .. tip::
 
    Unlinking your GEE and SEPAL accounts for downloading to SEPAL workspace may help if you do not have sufficient space available in your personal Google Drive.
 
-Linking your GEE and SEPAL accounts will allow you to read and write from your GEE Assets. To save data created in SEPAL as a GEE Asset or to use your existing GEE Assets in classifications or further processing in SEPAL, you will need to have your GEE and SEPAL accounts linked.
+Linking your GEE and SEPAL accounts will allow you to read and write from your GEE assets. To save data created in SEPAL as a GEE asset or to use your existing GEE assets in classifications or further processing in SEPAL, you will need to have your GEE and SEPAL accounts linked.
 
 .. tip::
 
-   Link your SEPAL and GEE accounts in order to read and write to GEE Assets from SEPAL.
+   Link your SEPAL and GEE accounts in order to read and write to GEE assets from SEPAL.
 
-Next to **Account Information** is a section called **User Report**, represented by the :code:`$ X/h`, which displays the status (used / available) of your processing and storage resources. Instance spending refers to the resources used / available to start and run cloud computers. Storage space and spending refers to the resources used / available for storage in your SEPAL workspace. If you are running any processes in your current session, they will show up here under Sessions.
+In the **User report** pop-up window, you can view the status (used/available) of your processing and storage resources:
+-   **Instance spending** refers to the resources used/available to start and run cloud computers.
+-   **Storage spending** and **Storage space** refer to the resources used/available for storage in your SEPAL workspace.
+-   **Sessions** refers to any processes in your current session, if you are running any.
 
 .. thumbnail:: ../_images/setup/presentation/user_report_panel.png
-   :title: User Report panel.
+   :title: **User report** panel
    :width: 350px
    :align: center
 
 .. note::
 
-   SEPAL is not to be used for long-term data storage. This is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage.
+   SEPAL should not be used for long-term data storage, as this is costly. The platform is best used by storing only the data necessary for processing. After processing and producing a product, data should be downloaded to your personal computer and deleted from SEPAL storage.
 
 
-Process Tab
-^^^^^^^^^^^
+Process
+^^^^^^^
 
-Click the :code:`Process` tab on the left side of the window.
+In the vertical **Tabs** bar on the left, select the :code:`Process` button.
 
 .. thumbnail:: ../_images/setup/presentation/process_tab_location.png
-   :title: Arrow pointing out the process tab location.
+   :title: Arrow pointing to the process tab location
    :align: center
    :width: 70%
 
 You should now see many options in the center of the screen:
 
--   **Optical Mosaic** Create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
--   **Radar Mosaic** Create a mosaic using Sentinel 1 data.
--   **Planet Mosaic** Create a mosaic using NICFI / Planet basemaps (if you have permission from NICFI / Planet).
--   **Classification** Use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.
--   **Time Series** Download time series information to your SEPAL storage.
--   **CCDC** Create a CCDC asset from a time series.
--   **CCDC Slice** Create a slice of a CCDC asset for a specific date or date range.
--   **Class Change** Create a class change map from two categorical images (either SEPAL recipes or GEE assets).
--   **Index Change** Create an index change map from two single-band images (either SEPAL recipes or GEE assets).
--   **Remapping** Remap categorical or continuous image bands into new categories.
+-   **Optical mosaic**: Create a mosaic using Landsat and/or Sentinel-2 data (for guidance, see **Exercise 1.2**).
+-   **Radar mosaic**: Create a mosaic using Sentinel-1 data.
+-   **Planet mosaic**: Create a mosaic using NICFI–Planet basemaps (if you have permission from NICFI-Planet).
+-   **Classification**: Use a random forest model to classify images from SEPAL or GEE (for guidance, see **Module 2**).
+-   **Time series**: Download time-series information to your SEPAL storage.
+-   **CCDC**: Create a Continuous Change Detection and Classicfication (CCDC) asset from a time series.
+-   **CCDC slice**: Create a slice of a CCDC asset for a specific date or date range.
+-   **Class change**: Create a class change map from two categorical images (either SEPAL recipes or GEE assets).
+-   **Index change**: Create an index change map from two single-band images (either SEPAL recipes or GEE assets).
+-   **Remapping**: Remap categorical or continuous image bands into new categories.
 
-When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.
+When you select one of these options, a new tab will open with the graphical user interface (GUI) interface that allows you to specify your desired options.
 
-Files Tab
-^^^^^^^^^
+Files
+^^^^^
 
-Click the green :code:`Files` tab on the left side of the window. This will display all of your files stored in your SEPAL workspace.
+In the vertical **Tabs** bar on the left, select the :code:`Files` button to display all files stored in your SEPAL workspace.
 
-For example, click the :code:`Downloads` folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty.
+For example, select the :code:`Downloads` folder to display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty.
 
 .. thumbnail:: ../_images/setup/presentation/files_menu.png
-    :title: The files menu.
+    :title: The **Files** menu
     :align: center
     :width: 50%
 
-Notice that there are four buttons on the upper-right side of the window. The three rightmost buttons will be inactive until you select a file.
+In the upper right, there are four buttons (the three right-most buttons will be inactive until you select a file). From left to right:
 
--   The left button will show hidden files (files and folder names starting with ‘.').
+-   The first button will show hidden files (files and folder names starting with ".").
 -   The second button will download selected data to your local computer.
 -   The third button will delete the selected folder or file.
 -   The last button will clear your selection.
 
-Terminal Tab
-^^^^^^^^^^^^
+Terminal
+^^^^^^^^
 
-Click the :code:`Terminal` tab on the left side of the screen.
+In the vertical **Tabs** bar on the left, select the :code:`Terminal` button.
 
-This links you to the Linux command line that you can use in a variety of ways to manage data, load data from an outside location, or process data using a series of commands.
+This links you to the Linux command line that you can use in a variety of ways to manage data, load data from an outside location or process data using a series of commands.
 
-When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize.
+When you initially load the **Terminal**, you will see information about your usage and the available types of instances you can initialize.
 
-One of the most important features of the Terminal is the ability to start and stop instances.
+One of the most important features of the **Terminal** is the ability to start and stop instances.
 
-To start an instance, use the following steps as a guide:
+To start an instance:
 
--   First examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.
--   Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost-effective.
--   Next to the “Select (t1):” text, type in "t2" or your chosen instance type.
--   Press Enter on your keyboard.
--   Wait for the new instance to start. This will take several minutes.
+1.  Examine the **Available instance types** table (updated periodically; see example from September 2020 below).
+2.  Choose an **Instance type** that fits your needs (normally, a **t2** instance or **m2** instance is sufficient and cost-effective).
+3.  Next to **Select (t1):**, enter **t2** (or your chosen instance type).
+4.  Press **Enter** on your keyboard and wait for the instance to start, which will take several minutes.
 
-To stop an instance, type "exit" in the command line. You can then refresh the terminal page to start a new instance. You can also stop an instance by clicking on your username on the right side of the screen and accessing your account information. Under "Sessions" click on the trashcan icon to shut down your instances.
+To stop an instance:
 
-Once an instance has stopped, you can follow the instance startup steps again to select a larger instance, if necessary.
+-   enter **exit** into the command line (you can then refresh the terminal page to start a new instance; or
+-   open your **User report** by selecting the "$ 0/h" icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
+
+Once an instance has stopped, you can follow the instance start-up steps again to select a larger instance, if necessary.
 
 .. thumbnail:: ../_images/setup/presentation/terminal.png
-   :title: The terminal page, including an example of changing the instance.
+   :title: The **Terminal** page, including an example of changing the instance
    :align: center
    :width: 450
 
-Apps Tab
-^^^^^^^^
+Apps
+^^^^
 
-Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL. Applications are pre-programmed (typically using R or Python) to perform specific, useful tasks. Applications make use of instances and running an application will use your SEPAL computing resources.
+In the vertical **Tabs** bar on the left, select the **Apps** button to display applications accessible through SEPAL (for more information about each app, select the rightmost **i** button).
+
+Applications are preprogrammed (typically using R or Python) to perform specific useful tasks.
+
+Applications make use of instances; running them will use your SEPAL computing resources.
 
 .. thumbnail:: ../_images/setup/presentation/apps_interface.png
-    :title: The Apps interface.
+    :title: The **Apps** interface
     :align: center
     :width: 70%
 
-This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
+Some of the apps include:
 
--   **R Studio:** Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder.
--   **JupyterLab:** Provides access to the Python environement where you can run complex data workflows.
--   **BFAST GPU:** GPU implementation of the BFAST algorithm to analyse time series.
--   **Deforestation alert analysis:** Retrieve any type of alert on a selected AOI.
--   **Mountain Green Cover Index:** Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale.
--   **SMFM Biota:** Calculate biomass change over time using ALOS Palsar data.
--   Many more that can be found in the section :doc:`../modules/index` of the documentation.
+-   **R Studio**: Provides access to the R environment, where you can run processing scripts and upload data to your SEPAL folder.
+-   **JupyterLab**: Provides access to the Python environment where you can run complex data workflows.
+-   **BFAST GPU**: Graphics processing unit (GPU) implementation of the Breaks for Additive Season and Trend (BFAST) algorithm to analyse time series.
+-   **Deforestation alert analysis**: Retrieve any type of alert on a selected area of interest (AOI).
+-   **Mountain Green Cover Index**: Calculates Sustainable Development Goal (SDG) 15.4.2: Mountain Green Cover Index at national/subregional scale.
+-   **SMFM Biota**: Calculate biomass change over time using ALOS PALSAR data (SMFM refers to Satellite Monitoring for Forest Management).
+
+For more information on available apps, see the :doc:`../modules/index` section of the documentation.

@@ -1,5 +1,7 @@
 CCDC asset creation
-=====================
+===================
+*Facilitate the workflow for applying the Continuous Change Detection and Classification approach with SEPAL*
+
 
 Background
 ----------
@@ -57,10 +59,10 @@ The following steps describe the parameter selection that can be found in the lo
 
 The buttons open the following dialogues:
 
--   :guilabel:`AOI` Area of interest (AOI)
--   :guilabel:`DAT` Time of Interest (TOI), i.e. the time-span for the underlying time series
--   :guilabel:`SRC` Selection of sensor(s)
--   :guilabel:`PRC` Preprocessing parameters
+-   :guilabel:`AOI` area of interest (AOI)
+-   :guilabel:`DAT` time of interest (TOI) (i.e. the timespan for the underlying time series)
+-   :guilabel:`SRC` selection of sensor(s)
+-   :guilabel:`PRC` pre-processing parameters
 -   :guilabel:`OPT` CCDC parameters
 
 AOI
@@ -81,7 +83,7 @@ These are described in our documentation (see :doc:`../feature/aoi_selector`).
 Date range
 ^^^^^^^^^^
 
-In the :guilabel:`DAT` tab, you will be asked to select the start date and end date of the time series.
+In the :guilabel:`DAT` tab, select the start date and end date of the time series.
 
 Select the **Date** text field to open the **Date selection** pop-up menu.
 
@@ -102,11 +104,11 @@ When both dates have been chosen, select the :btn:`<fa-solid fa-check> Apply` bu
 Sensor selection
 ^^^^^^^^^^^^^^^^
 
-After selecting the :guilabel:`Next` button in the **Date selection** pop-up menu, the **Sensor selection** pop-up menu will automatically open (1), where you need to specify the sensor(s) and the bands used for breakpoint detection:
+After selecting the :guilabel:`Next` button in the **Date selection** pop-up menu, the **Sensor selection** pop-up menu will automatically open (see **1** in figure below), where you need to specify the sensor(s) and bands used for breakpoint detection:
 
 -   :guilabel:`OPTICAL` (including the Landsat and Sentinel-2 missions);
 -   :guilabel:`RADAR` (including the Sentinel-1 mission); and
--   :guilabel:`PLANET`, where both daily imagery or monthly basemaps can be used as data inputs (if you have a valid Planet API key).
+-   :guilabel:`PLANET` (where both daily imagery or monthly basemaps can be used as data inputs – if you have a valid Planet API key).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_overview.png
     :title: Sensor selection
@@ -120,22 +122,24 @@ CCDC is originally tested on optical *Landsat* satellites. In SEPAL, you have th
 
 .. attention::
 
-    The inclusion of *Tier 2* products and *Landsat 7* may introduce artifacts due to the reduced quality of data. For recent, short-term time series, it might be better to either select the Landsat-8 or Sentinel-2 mission, which deliver imagery from 2013 and 2015, respectively; however, this will reduce the density of observations for the underlying time series.
+    The inclusion of *Tier 2* products and *Landsat 7* may introduce artefacts due to the reduced quality of data. For recent, short-term time series, it might be better to either select the Landsat-8 or Sentinel-2 mission, which deliver imagery from 2013 and 2015, respectively; however, this will reduce the density of observations for the underlying time series.
 
 .. attention::
 
-    For cloud-prone regions, it is also possible to combine *Landsat* data with *Sentinel-2* data to densify the underlying time series (due to differences in the sensors – although band names are equal – and overpass time, artifacts may be introduced that will affect breakpoint detection).
+    For cloud-prone regions, it is also possible to combine *Landsat* data with *Sentinel-2* data to densify the underlying time series (due to differences in the sensors – although band names are equal – and overpass time, artefacts may be introduced that will affect breakpoint detection).
 
-Breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of CCDC breakpoint detection. Unfortunately, there does not seem to be a one-size-fits-all preset for all kinds of applications. Scientific evidence suggests using all color bands but blue (`Zhu *et al.* [2020] <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_). According to the study, the selection of additional ratio bands does not add any improvement. However, it should be noted that this assumption is based on the detection of all types of land-cover changes and that the study uses a modified version of CCDC (named *COLD*), where the change in bands are weighted differently than in the original version used in SEPAL (respectively GEE).
-
-.. tip::
-
-    Use of the color bands allows you to later select the :code:`Green` and :code:`Swir1` band as TMASK bands for CCDC's internal, multitemporal cloud removal (you can find this in the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`.
-
-If the creation of the CCDC asset is aimed at the detection of both forest degradation and deforestation, the **Normalized difference fraction index** (:code:`NDFI`) might be another suitable choice as applied by `Bullock *et al.* (2020) <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. (This article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or color bands. For instance, one can consider the **Normalized difference moisture index** [:code:`NDMI`] when looking at mangrove forests.)
+Breakpoint detection is at the heart of CCDC. The respective selection of bands can considerably affect the outcome of CCDC breakpoint detection. Unfortunately, there does not seem to be a one-size-fits-all preset for all kinds of applications. Scientific evidence suggests using all color bands but blue (`Zhu et al.,2020 <https://www.sciencedirect.com/science/article/pii/S0034425719301002>`_). According to the study, the selection of additional ratio bands does not add any improvement. However, it should be noted that this assumption is based on the detection of all types of land-cover changes and that the study uses a modified version of CCDC (named *COLD*), where the change in bands are weighted differently than in the original version used in SEPAL.
 
 .. tip::
-    If in doubt, use the default option (all of the color bands except blue).
+
+    Use of the color bands allows you to later select the :code:`Green` and :code:`Swir1` band as TMASK bands for CCDC's internal, multitemporal cloud removal (see the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`).
+
+If the creation of the CCDC asset is aimed at the detection of both forest degradation and deforestation, the **Normalized difference fraction index** (:code:`NDFI`) might be another suitable choice as applied by `Bullock et al. (2020) <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_.
+
+(This article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or color bands. For instance, one can consider the **Normalized difference moisture index** [:code:`NDMI`] when looking at mangrove forests.)
+
+.. tip::
+    If in doubt, use the default option (all color bands except blue).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/sensor_selection_color_breakbands.png
     :title: Sensor selection – color breakpoint bands
@@ -183,16 +187,15 @@ In case you want to use *NICFI Level-1 basemaps*, use already existing assets wi
 
     For data ordered through the Planet API (i.e. daily imagery or custom basemaps other than NICFI Level 1 data), you can specify GEE as the download location.
 
-Using CCDC with Planet has not been explored widely, so the optimal selection of the breakpoint bands depends on testing it out. However, in accordance with Landsat-based analysis, we suggest using the green, red and NIR bands to get started.
+Using CCDC with Planet has not been explored widely, so the optimal selection of the breakpoint bands depends on testing it out. However, in accordance with Landsat-based analysis, we suggest using the green, red and near-infrared (NIR) bands to get started.
 
-Preprocessing options
-^^^^^^^^^^^^^^^^^^^^^
-
+Pre-processing options
+^^^^^^^^^^^^^^^^^^^^^^
 
 Optical data
 """"""""""""
 
-.. attention::
+.. note::
 
     This section is optional (as these parameters are set by default).
 
@@ -201,11 +204,11 @@ Optical data
     -   Cloud masking: :guilabel:`Moderate`
     -   Snow masking: :guilabel:`On`
 
-Multiple preprocessing parameters can be set to improve the quality of provided images. SEPAL has gathered four of them in the form of these interactive buttons. If you think others should be added, contact the SEPAL team via the `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
+Multiple pre-processing parameters can be set to improve the quality of provided images. SEPAL has gathered four of them in the form of these interactive buttons. If you think others should be added, contact the SEPAL team via the `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
 
 **Correction**
 
--   :guilabel:`Surface reflectance`: Use scenes' atmospherically corrected surface reflectance.
+-   :guilabel:`Surface reflectance`: Use scenes' atmospherically corrected surface reflectance
 -   :guilabel:`BRDF correction`: Correct for *bidirectional reflectance distribution function* (BRDF) effects.
 
 **Cloud detection**
@@ -221,12 +224,11 @@ Multiple preprocessing parameters can be set to improve the quality of provided 
 **Snow masking**
 
 -   :guilabel:`On`: Mask snow (this tends to leave some pixels with shadowy snow).
--   :guilabel:`Off`: Don't mask snow (some clouds might get misclassified as snow; therefore, disabling snow masking might lead to cloud artifacts).
+-   :guilabel:`Off`: Don't mask snow (some clouds might get misclassified as snow; therefore, disabling snow masking might lead to cloud artefacts).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/pre_processing.png
-    :title: The preprocessing panel to select extra filtering processes that will improve the quality of provided images
+    :title: The **Pre-processing** pane to select extra filtering processes that will improve the quality of provided images
     :group: time-series-recipe
-
 
 Radar data
 """"""""""
@@ -247,9 +249,9 @@ The default parameters (see following figure on the left) are optimized for perf
 
 **Orbit selection**
 
-The orbit selection for radar satellites refers to the flight direction of the satellite (different for the sun-adverted and sun-facing sides of the planet). One distinguishes the ascending direction (from south pole towards north pole) and one distinguishes the descending direction (from north pole to south pole). Being independent from sunlight, radar satellites can acquire data during both day and night; however, they do not acquire data constantly.
+The orbit selection for radar satellites refers to the flight direction of the satellite (different for the sun-adverted and sun-facing sides of the planet). One distinguishes the ascending direction (from South Pole towards North Pole) and one distinguishes the descending direction (from North Pole to South Pole). Being independent from sunlight, radar satellites can acquire data during both day and night; however, they do not acquire data constantly.
 
-In the case of the Sentinel-1 mission, areas outside of Europe are usually only covered by either one or the other (see following figure to determine which orbit direction your AOI is covered by).
+In the case of the Sentinel-1 mission, areas outside Europe are usually only covered by either one or the other (see following figure to determine which orbit direction your AOI is covered by).
 
 .. image:: https://sentinels.copernicus.eu/documents/247904/3944045/Sentinel-1-Revisit-Coverage-Frequency-Geometry-2019.jpeg
     :alt: Sentinel-1 observation scenario
@@ -262,7 +264,7 @@ In the case of the Sentinel-1 mission, areas outside of Europe are usually only 
 
 **Geometric correction**
 
-Setting the **Geometric correction** to :guilabel:`TERRAIN` will correct for distortions of the radar backscatter signal along slopes. This is crucial for all types of land cover or biogeophysical parameter retrieval, and is therefore *highly recommended*.
+Setting the **Geometric correction** to :guilabel:`TERRAIN` will correct for distortions of the radar backscatter signal along slopes. This is crucial for all types of land cover or bio-geophysical parameter retrieval, and is therefore *highly recommended*.
 
 **Speckle-filtering**
 
@@ -270,12 +272,12 @@ Speckle filtering is a common step in radar remote sensing; it reduces the rando
 
 **Outlier removal**
 
-Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them with multitemporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artifacts. More aggressive filtering might include actual change events, and is therefore not recommended.
+Sentinel-1 data is prone to some rare artifacts, such as interferences from other radio wave sources or heavy rainfall events. SEPAL offers the option to exclude them with multitemporal outlier detection. By default, a :guilabel:`MODERATE` reduction is appropriate to remove such artefacts. More aggressive filtering might include actual change events, and is therefore not recommended.
 
 Planet data
 """""""""""
 
-Preprocessing parameters of Planet data are similar to the Landsat/Sentinel-2 options. The default parameters reflect a quite aggressive approach to cloud removal (see following figure).
+Pre-processing parameters of Planet data are similar to the Landsat/Sentinel-2 options. The default parameters reflect a quite aggressive approach to cloud removal (see following figure).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/prc_planet_default.png
     :title: PRC selection – Planet default
@@ -287,7 +289,7 @@ Preprocessing parameters of Planet data are similar to the Landsat/Sentinel-2 op
 
 **Histogram matching**
 
-Histogram matching is disabled by default. This is ok when dealing with already preprocessed monthly basemaps; however, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option, as it will harmonize the radiometry between each single image.
+Histogram matching is disabled by default. This is ok when dealing with already pre-processed monthly basemaps; however, if the collection is composed of daily imagery, it is highy recommended to :guilabel:`ENABLE` this option, as it will harmonize the radiometry between each single image.
 
 CCDC parameters
 ^^^^^^^^^^^^^^^
@@ -332,7 +334,7 @@ This option allows saving the dates in various formats (by default, SEPAL deals 
 
 **TMASK BANDS**
 
-The bands selected here are used for additional multitemporal filtering of cloud-affected pixels that have not been identified as such throughout the preprocessing of single images. For optical data from Landsat and Sentinel-2, the :guilabel:`GREEN` and :guilabel:`SWIR1` bands are recommended.
+The bands selected here are used for additional multitemporal filtering of cloud-affected pixels that have not been identified as such throughout the pre-processing of single images. For optical data from Landsat and Sentinel-2, the :guilabel:`GREEN` and :guilabel:`SWIR1` bands are recommended.
 
 **Min observations**
 
@@ -348,7 +350,7 @@ This parameter determines the minimum length of any inner-temporal segment.
 
 **LAMBDA**
 
-The LAMBDA parameter is part of the LASSO regression used for modelling the time-series. It is used to generalize the model, thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might even result in the annulation of some parameters. In practical terms, an initial third-order harmonic model might shrink to a first-order harmonic, if this provides the best generalized fit. Setting LAMBDA to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalized model. If LAMBDA is set too high, the model will underfit, which is not desired. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither overfitting nor underfitting will be around this number.
+The LAMBDA parameter is part of the LASSO regression used for modelling the time series. It is used to generalize the model, thereby improving its predictive power. More specifically, it is controlling the weight of each of the parameters, and might even result in the annulation of some parameters. In practical terms, an initial third-order harmonic model might shrink to a first-order harmonic, if this provides the best generalized fit. Setting LAMBDA to 0 will lead to a regular Ordinary-Least-Square regression, not providing any generalization. Instead, a higher value will provide a more generalized model. If LAMBDA is set too high, the model will underfit, which is not desired. Since a value of 20 has been found to provide a generally good performance, the sweet spot of neither overfitting nor underfitting will be around this number.
 
 **Max iterations**
 
@@ -359,17 +361,17 @@ The iterations for the maximum number of runs for LASSO regression convergence. 
 On-the-fly pixel analysis
 -------------------------
 
-Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1).
+Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (**1**).
 
-Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus` (2).
+Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus` (**2**).
 
-Click anywhere in the AOI to plot data for this specific location in the pop-up window that appears. The plotting area (3) is dynamic and can be customized by the user.
+Click anywhere in the AOI to plot data for this specific location in the pop-up window that appears. The plotting area (**3**) is dynamic and can be customized by the user.
 
-Select the observation feature by selecting one of the available measures in the dropdown selector in the upper-left corner (4). The available bands are the same as those previously described.
+Select the observation feature by selecting one of the available measures in the dropdown selector in the upper-left corner (**4**). The available bands are the same as those previously described.
 
-Using the slider (5), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series.
+Using the slider (**5**), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series.
 
-On the main graph, the orange lines show the CCDC-modelled time series. Each of the blue points represents an actual observation. You can hover over the point or the line to let the tooltip describe the value and date of the observation, as well as the model values and the temporal extent of the specific segment.
+On the main graph, the orange lines show the CCDC-modelled time series. Each of the blue points represents an actual observation. Hover over the point or line to let the tooltip describe the value and date of the observation, as well as the model values and temporal extent of the specific segment.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_pixel_analysis.png
     :title: Pixel analysis
@@ -378,7 +380,7 @@ On the main graph, the orange lines show the CCDC-modelled time series. Each of 
 
 .. attention::
 
-    The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected preprocessing parameters. If the pop-up window displays a spinning wheel, wait up to two minutes to see the data displayed.
+    The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time depending on the number of available observations and the complexity of the selected pre-processing parameters. If the pop-up window displays a spinning wheel, wait up to two minutes to see the data displayed.
 
 Export
 ------
@@ -394,7 +396,7 @@ Select the :btn:`<fa-solid fa-cloud-arrow-down>` button to open the export dialo
 
 If the area covered is relatively small and you have enough storage quota left, you can generously select most of the bands relevant for land applications (see following figure on the left). If you are more constrained by storage, you will need to decide on a subset of bands (see following figure on the right for a suggested starting point).
 
-The scale parameter depends on the data selected and the level of detail you will need for further analysis. Landsat-based assets are usually created at 30 m. Sentinel-1 and 2 can be at 10 m, but will need nine times more space compared to 30 m resolution.
+The scale parameter depends on the data selected and the level of detail you will need for further analysis. Landsat-based assets are usually created at 30 m. Sentinel-1 and Sentinel-2 can be at 10 m, but will need nine times more space compared to 30 m resolution.
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/ccdc_export_full.png
     :title: Export CCDC asset – full band selection
@@ -406,26 +408,25 @@ The scale parameter depends on the data selected and the level of detail you wil
     :width: 49%
     :group: ccdc-asset-recipe
 
-
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the **Task** tab (lower-left corner using :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress; it will display an error if the exportation has failed.
+Going to the **Tasks** tab (lower-left corner using :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress; it will display an error if the exportation has failed.
 
 If you are unsatisfied with the way we present information, the task can also be monitored using `GEE task manager <https://code.earthengine.google.com/tasks>`__.
 
 .. tip::
 
-    This operation is running between GEE and SEPAL servers in the background; you can thus close the SEPAL page without stopping the process.
+    This operation is running between GEE and SEPAL servers in the background; you can close the SEPAL page without stopping the process.
 
 When the task is finished, the frame will be displayed in green (see second image below).
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/download.png
     :width: 49%
-    :title: Evolution of the downloading process of the recipe displayed in the **Task manager** of SEPAL.
+    :title: Evolution of the downloading process of the recipe displayed in the **Task manager** of SEPAL
     :group: ccdc-asset-recipe
 
 .. thumbnail:: ../_images/cookbook/ccdc_asset/download_complete.png
     :width: 49%
-    :title: Completed downloading process of the recipe displayed in the **Task manager** of SEPAL.
+    :title: Completed downloading process of the recipe displayed in the **Task manager** of SEPAL
     :group: ccdc-asset-recipe
