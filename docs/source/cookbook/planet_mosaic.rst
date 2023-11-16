@@ -1,10 +1,13 @@
 Planet mosaic
 =============
+*Create a composite dataset from Planet images taken at different times*
 
 Overview
 --------
 
-A mosaic is a process of combining spatially overlapping images into an individual image. In the SEPAL platform, you can create a composite dataset from Planet images taken at different times by using different techniques. For example, you can choose to keep only the pixel value from the first or last image, or combine the values of the overlapping pixels using a weighting algorithm, the average, or the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds, shadows, snow, etc. These operations are complex and repetitive. SEPAL offers an interactive and intuitive way to create Planet mosaics within any area of interest (AOI).
+A mosaic is a process of combining spatially overlapping images into an individual image. 
+
+In the SEPAL platform, you can create a composite dataset from Planet images taken at different times by using different techniques. For example, you can choose to keep only the pixel value from the first or last image, or combine the values of the overlapping pixels using a weighting algorithm, the average, or the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds, shadows, snow, etc. These operations are complex and repetitive. SEPAL offers an interactive and intuitive way to create Planet mosaics within any area of interest (AOI).
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/time-series.png
     :group: planet-mosaic-recipe
@@ -19,13 +22,13 @@ A mosaic is a process of combining spatially overlapping images into an individu
 Start
 -----
 
-Once the :code:`Planet mosaic` recipe is selected, SEPAL will show the recipe process in a new tab (1) and the AOI selection window will appear in the lower right (2).
+Once the :code:`Planet mosaic` recipe is selected, SEPAL will show the recipe process in a new tab (see **1** in the image below) and the AOI selection window will appear in the lower right (**2**).
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/landing.png
     :group: planet-mosaic-recipe
     :title: The landing page of the Planet mosaic recipe
 
-The first step is to change the name of the recipe, which will be used to name your files and recipes in the SEPAL folders.
+The first step is to change the name of the recipe, which will be used to name your files and recipes in SEPAL folders.
 
 Double-click the tab and enter a new name (it will default to :code:`Planet_mosaic_<start_date>_<end_date>`).
 
@@ -105,7 +108,7 @@ Select :btn:`<fa-solid fa-check> Done` to finish the process.
 NICFI basemaps
 """"""""""""""
 
-The NICFI basemap uses Level 1 NICFI data provided by SEPAL.
+The NICFI basemap uses Level 1 NICFI data provided by SEPAL (NICFI refers to Norway’s International Climate and Forests Initiative).
 
 .. note::
 
@@ -180,7 +183,7 @@ Once all of the parameters have been set, the mosaic will be rendered on the fly
     :width: 49%
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/mosaic_nrg.png
-    :title: Displayed on-the-fly rendered mosaic using nir, red, and green bands
+    :title: Displayed on-the-fly rendered mosaic using near-infrared (NIR), red, and green bands
     :group: planet-mosaic-recipe
     :width: 49%
 
@@ -190,7 +193,7 @@ Once all of the parameters have been set, the mosaic will be rendered on the fly
     :width: 49%
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/mosaic_savi.png
-    :title: Displayed on-the-fly rendered mosaic using SAVI in false colors
+    :title: Displayed on-the-fly rendered mosaic using soil-adjusted vegetation index (SAVI) in false colors
     :group: planet-mosaic-recipe
     :width: 49%
 
@@ -201,10 +204,10 @@ Retrieve
 
     You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota (if you are a new user, see :doc:`../setup/resource`).
 
-Select the :btn:`<fa-solid fa-cloud-arrow-down>` tab, which will display the **Retrieve** panel, where you can select which bands or indexes to download, as well as specify the output scale and destination.
+Select the :btn:`<fa-solid fa-cloud-arrow-down>` tab, which will display the **Retrieve** pane, where you can select which bands or indexes to download, as well as specify the output scale and destination.
 
 .. thumbnail:: ../_images/cookbook/planet_mosaic/retrieve.png
-    :title: The last panel of the Planet mosaic: exportation
+    :title: The last pane of the Planet mosaic: exportation
     :group: planet-mosaic-recipe
 
 Bands
@@ -214,7 +217,7 @@ Select the band(s) to export in the mosaic. There is no maximum number; however,
 
 .. tip::
 
-    There is no fixed rule to band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, evolution expected, and careful selection of an adapted band combination will improve the quality of downstream analysis.
+    There is no fixed rule to band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, evolution expected and careful selection of an adapted band combination will improve the quality of downstream analysis.
 
 Raw bands
 """""""""
@@ -222,7 +225,7 @@ Raw bands
 -   :guilabel:`blue`: blue
 -   :guilabel:`green`: green
 -   :guilabel:`red`: red
--   :guilabel:`nir`: near infrared
+-   :guilabel:`nir`: near-infrared
 
 
 Indexes
@@ -238,7 +241,7 @@ Indexes
 Scale
 ^^^^^
 
-You can set a custom scale for exportation by changing the value in the :code:`Scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, only its size (note: PlanetLab data's native resolution is 3.0 m – 4.1 m [altitude-dependent ground sample distance; `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__]).
+You can set a custom scale for exportation by changing the value in the :code:`Scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, only its size (note that PlanetLab data's native resolution is 3.0–4.1 m [altitude-dependent ground sample distance; `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__]).
 
 Destination
 ^^^^^^^^^^^
@@ -256,9 +259,7 @@ Select :btn:`<fa-solid fa-check> Apply` to start the download process.
 Access
 ^^^^^^
 
-Once the download process is complete, access the data in your SEPAL folders.
-
-The data will be stored in the :code:`Downloads` folder using the following format:
+Once the download process is complete, access the data in your SEPAL folders, stored in :code:`Downloads` in the following format:
 
 .. code-block::
 
@@ -275,7 +276,7 @@ The data will be stored in the :code:`Downloads` folder using the following form
 
     Understanding how images are stored in a Planet mosaic is only required if you want to use them manually. SEPAL applications are bound to this tiling system and can digest this information for you.
 
-The data are stored in a folder using the previously chosen name of the Planet mosaic (as described in the "Start" section of this page of the documentation). Since the data is spatially too big to be exported at once, the data is divided into smaller pieces and reassembled in a :code:`<PM name>_<gee tile id>.vrt` file.
+The data are stored in a folder using the previously chosen name of the Planet mosaic (as described in the **Start** section of this article). Since the data is spatially too big to be exported at once, it is divided into smaller pieces and reassembled in a :code:`<PM name>_<gee tile id>.vrt` file.
 
 .. tip::
 
