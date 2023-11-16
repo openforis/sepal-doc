@@ -79,7 +79,7 @@ To use SEPAL modules and acesss the command line terminal and development tools 
 
 1.  Select the **User report** button in the lower-right corner (i.e. **$ 0/h**).
 2.  Select :btn:`<fa-solid fa-pencil> Request additional resources`.
-2.  Complete the form and select :btn:`<fa-solid fa-check> Apply`.
+3.  Complete the form and select :btn:`<fa-solid fa-check> Apply`.
 
 If you do not know how many resources you will use, go to the `Resource management <resource>` section for more information.
 

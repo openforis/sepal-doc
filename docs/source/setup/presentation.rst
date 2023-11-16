@@ -69,7 +69,7 @@ On the left, there are four main navigation buttons in the vertical **Tabs** bar
 
 Below the vertical **Tabs** bar – on the left – is another button:
 
--   **Tasks*: View a list of currently running tasks.
+-   **Tasks**: View a list of currently running tasks.
 
 In the lower-right corner there are four buttons (from right to left):
 
@@ -81,7 +81,7 @@ In the lower-right corner there are four buttons (from right to left):
 In the **User details** pop-up window, you can:
 
 -   view and edit user account information (e.g. name, password, email, organization; username can not be edited); and
-–   link your GEE and SEPAL accounts by selecting **Use my own Google account** and following the instructions.
+-   link your GEE and SEPAL accounts by selecting **Use my own Google account** and following the instructions.
 
 If your GEE and SEPAL accounts are connected, SEPAL uses your Google Drive as a temporary storage space for data downloaded to your SEPAL workspace (e.g. any imagery tiles or mosaics that you “retrieve to SEPAL workspace” will first be saved to your Google Drive account before being saved in your SEPAL workspace).
 
