@@ -1,13 +1,11 @@
 GDAL
 ====
 
-Geospatial Data Abstraction Library (GDAL) is a translator library for raster and vector geospatial data formats that is released under an `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. 
+**Geospatial Data Abstraction Library (GDAL)** is a translator library for raster and vector geospatial data formats that is released under an `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. 
 
-As a library, GDAL presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. 
+As a library, **GDAL** presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command-line utilities for data translation and processing. 
 
-It also comes with a variety of useful command-line utilities for data translation and processing. 
-
-The `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page describes the latest release.
+For information on the newest release of **GDAL**, see `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__.
 
 .. note::
 
@@ -16,7 +14,7 @@ The `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page descr
 Available commands
 ------------------
 
-The complete documentation of GDAL commands can be found on the `GDAL website <https://gdal.org/programs/index.html>`__.
+The complete documentation of **GDAL** commands can be found on the `GDAL website <https://gdal.org/programs/index.html>`__.
 
 Raster programmes
 ^^^^^^^^^^^^^^^^^
