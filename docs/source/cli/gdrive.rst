@@ -1,12 +1,12 @@
-Google Drive
-============
+Drive
+=====
 
-The **Drive** CLI is a utility that allows managing a Google Drive account from the SEPAL console (for more information, see the Readme file directly in the GitHub repository https://github.com/odeke-em/drive).
+The **Google Drive (Drive)** CLI is a utility that allows managing a Google Drive account from the SEPAL console (for more information, see `the Readme file in the GitHub repository <https://github.com/odeke-em/drive>`__.
 
 Usage
 -----
 
-Initialize drive connection
+Initialize Drive connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Before running any of the **Drive** commands, start a session by running the following line:
@@ -15,7 +15,7 @@ Before running any of the **Drive** commands, start a session by running the fol
 
     $ drive init
 
-Copy the URL that is displayed in the terminal and paste it into your browser. Log in to your Google account and "trust the connection" by selecting the "allow" button. An authorization code will be displayed; copy and paste it into the SEPAL terminal. You are now ready to use the :code:`Drive` CLI tool.
+Copy the URL that is displayed in the terminal and paste it into your browser. Log in to your Google account and "trust the connection" by selecting the **Allow** button. An authorization code will be displayed; copy and paste it into the SEPAL terminal. You are now ready to use the :code:`Drive` CLI tool.
 
 .. note::
 
@@ -37,7 +37,7 @@ You can upload files from your SEPAL environment by using the :code:`Push` comma
 Download files
 --------------
 
-To download files, use the :code:`Pull` command. This command will create files that don't exist locally but do remotely.
+To download files, use the :code:`Pull` command, which will create files that don't exist locally (but do remotely).
 
 .. code-block:: bash
 
