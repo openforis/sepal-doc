@@ -34,7 +34,7 @@ The first step is to change the name of the recipe. This name will be used to id
     :width: 49%
 
 .. thumbnail:: ../_images/cookbook/time_series/title.png
-    :title: Time series modified title 
+    :title: Time series modified title
     :width: 49%
 
 .. note::

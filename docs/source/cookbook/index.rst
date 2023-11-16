@@ -92,9 +92,9 @@ Save a recipe
 
     Using saved recipes is the recommended method for sharing parameters to developers when debugging.
 
-Select a recipe in the main menu to display it in a tab. 
+Select a recipe in the main menu to display it in a tab.
 
-Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`. 
+Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`.
 
 The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`.
 

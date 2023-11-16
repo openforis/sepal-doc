@@ -134,7 +134,7 @@ Breakpoint detection is at the heart of CCDC. The respective selection of bands 
 
     Use of the color bands allows you to later select the :code:`Green` and :code:`Swir1` band as TMASK bands for CCDC's internal, multitemporal cloud removal (see the :guilabel:`OPT` button pop-up menu under :guilabel:`MORE`).
 
-If the creation of the CCDC asset is aimed at the detection of both forest degradation and deforestation, the **Normalized difference fraction index** (:code:`NDFI`) might be another suitable choice as applied by `Bullock et al. (2020) <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_. 
+If the creation of the CCDC asset is aimed at the detection of both forest degradation and deforestation, the **Normalized difference fraction index** (:code:`NDFI`) might be another suitable choice as applied by `Bullock et al. (2020) <https://www.sciencedirect.com/science/article/pii/S0034425718305200>`_.
 
 (This article and the NDFI are specifically tested over tropical rainforest of the Brazilian Amazon. Changes in other forest types might be better captured by different ratios or color bands. For instance, one can consider the **Normalized difference moisture index** [:code:`NDMI`] when looking at mangrove forests.)
 

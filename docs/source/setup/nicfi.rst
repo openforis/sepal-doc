@@ -26,14 +26,14 @@ In support of NICFI’s mission, you can use this data for a number of purposes,
 
 The NICFI and Planet Basemaps for Tropical Forest Monitoring are now available in Google Earth Engine (GEE) and SEPAL for easy processing. In a few simple steps, you can create your own custom mosaics using Planet basemaps.
 
-The first step is to make sure you have a GEE account. 
+The first step is to make sure you have a GEE account.
 
 If you don’t have a GEE account, register by following `this tutorial <setup/register.html#sign-up-to-gee>`__.
 
 Sign up for NICFI imagery
 -------------------------
 
-Sign up for NICFI – Planet Lab data access using the same email address associated with your GEE account. 
+Sign up for NICFI – Planet Lab data access using the same email address associated with your GEE account.
 
 To sign up for access to the NICFI data program, go to `<https://www.planet.com/nicfi/>`_.
 
@@ -68,7 +68,7 @@ Select the link and a new form will appear. Complete the form and you will recei
 Access NICFI through GEE
 ------------------------
 
-NICFI – Planet Lab data can also be accessed from GEE, allowing you to use Planet Lab imagery in SEPAL recipes, such as **Classification** or **Time series**. 
+NICFI – Planet Lab data can also be accessed from GEE, allowing you to use Planet Lab imagery in SEPAL recipes, such as **Classification** or **Time series**.
 
 To authorize your GEE account to access Planet Lab data:
 

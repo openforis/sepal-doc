@@ -12,17 +12,17 @@ In this article, learn how to:
 GEE and SEPAL
 -------------
 
-SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform. 
+SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform.
 
-SEPAL can: 
+SEPAL can:
 
--   access data stored in the GEE data catalog; 
--   use GEE for processing large datasets; and 
--   read and write data to GEE assets. 
+-   access data stored in the GEE data catalog;
+-   use GEE for processing large datasets; and
+-   read and write data to GEE assets.
 
 A large part of SEPAL's existing code is based on the JavaScript GEE application programming interface (API).
 
-All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code. 
+All SEPAL recipes are based on GEE and run scripts written by SEPAL team members to enable access to state-of-the-art processing algorithms without having to write code.
 
 In the SEPAL **Apps** list, the applications tagged with the Google logo (:icon:`fa-brands fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations.
 
@@ -110,7 +110,7 @@ The page is subdivided into three zones and a map:
     :align: center
     :width: 50%
 
-4. When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the **Asset** tree. 
+4. When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the **Asset** tree.
 
 In our example, we used **galatheetest**:
 
@@ -187,11 +187,11 @@ If you want to change accounts or disconnect your GEE and SEPAL accounts:
 Upload files to GEE
 -------------------
 
-When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters (:code:`ee.Image`) or vectors (:code:`ee.FeatureCollection`) to the core GEE-based algorithm. 
+When you use SEPAL recipes and modules, you'll be asked to use GEE assets to provide rasters (:code:`ee.Image`) or vectors (:code:`ee.FeatureCollection`) to the core GEE-based algorithm.
 
 These assets can be either:
 
--   public assets that someone shared with you; or 
+-   public assets that someone shared with you; or
 -   assets that you created yourself and would like to use.
 
 .. tip::
@@ -262,6 +262,6 @@ To find the asset name, go back to **Assets** in the **Zone 1** pane and select 
     :align: center
     :width: 80%
 
-If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use. 
+If you select **Copy link**, the link will be copied to the clipboard and you can paste it into SEPAL or send it to someone for authorized use.
 
 Alternatively, you can select **Share** and choose between the different sharing options.

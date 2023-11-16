@@ -5,7 +5,7 @@ Planet mosaic
 Overview
 --------
 
-A mosaic is a process of combining spatially overlapping images into an individual image. 
+A mosaic is a process of combining spatially overlapping images into an individual image.
 
 In the SEPAL platform, you can create a composite dataset from Planet images taken at different times by using different techniques. For example, you can choose to keep only the pixel value from the first or last image, or combine the values of the overlapping pixels using a weighting algorithm, the average, or the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds, shadows, snow, etc. These operations are complex and repetitive. SEPAL offers an interactive and intuitive way to create Planet mosaics within any area of interest (AOI).
 

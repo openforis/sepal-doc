@@ -53,7 +53,7 @@ The first step is to select the two images to compare. Since :guilabel:`FRM` and
 
 Select a categorical image, which can be a classification recipe or any categorical asset from your Google Earth Engine (GEE) account. In both cases, you'll need to select the band to use for the transition and the legend.
 
-If the selected asset/recipe is a **Classification** recipe (or its export), the legend will be automatically generated with the metadata of the file. If it's not, you'll need to upload it manually. 
+If the selected asset/recipe is a **Classification** recipe (or its export), the legend will be automatically generated with the metadata of the file. If it's not, you'll need to upload it manually.
 
 Select :btn:`fa-solid fa-pen-to-square` to open the **Legend editing** tool. It's the same as the one described in the **Classification** recipe (see :doc:`classification`).
 

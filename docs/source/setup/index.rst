@@ -13,7 +13,7 @@ In this section of the documentation, learn how to:
 
 Navigate to other articles in each section by selecting links in the **Section navigation** pane on the left.
 
-Navigate to other subsections of each article by selecting links in the **On this page** pane on the right. 
+Navigate to other subsections of each article by selecting links in the **On this page** pane on the right.
 
 Make contributions to the documentation by selecting :icon:`fa-solid fa-pencil` **Edit on GitHub** in the **On this page** pane on the right.
 
