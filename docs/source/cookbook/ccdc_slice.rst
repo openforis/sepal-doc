@@ -1,5 +1,6 @@
 CCDC slice
 ==========
+*Create CCDC slices out of CCDC assets*
 
 Background
 ----------
@@ -22,7 +23,7 @@ Once logged into the SEPAL interface, open the **Recipe** menu by selecting the 
 
 .. thumbnail:: ../_images/cookbook/ccdc_slice/recipe_selection.png
     :group: recipe-ccdc-slice
-    :title: Selection menu for SEPAL recipes
+    :title: **Selection menu** for **SEPAL recipes**
     :width: 60%
     :align: center
 
@@ -52,9 +53,9 @@ The following steps describe parameter selection, which can be found in the lowe
 
 The buttons open the following dialogues:
 
--   :guilabel:`SRC` Selection of CCDC asset source
--   :guilabel:`DAT` Date or date range selection
--   :guilabel:`OPT` CCDC slicing parameters
+-   :guilabel:`SRC`: Selection of CCDC asset source
+-   :guilabel:`DAT`: Date or date range selection
+-   :guilabel:`OPT`: CCDC slicing parameters
 
 
 Selection of CCDC asset source
@@ -64,8 +65,8 @@ CCDC slices are created out of CCDC assets. Here you have the choice to select t
 
 Two options are provided:
 
--    Option 1 is to directly point to an existing SEPAL recipe. Note that in this case, the CCDC asset needs to be regenerated on the fly based on the parameter settings of the CCDC asset. In most cases this is computationally demanding and may lead to time-out errors. Therefore, it is rather recommended to opt for Option 2.
--    Option 2 is where an existing CCDC asset is selected from GEE. In this case, the CCDC asset needs to be exported first, so you can point to its location within GEE directly. This usually allows for instant visualization, as the slicing procedure does not require lots of computing power.
+-    **Option 1** is to directly point to an existing SEPAL recipe. Note that in this case, the CCDC asset needs to be regenerated on the fly based on the parameter settings of the CCDC asset. In most cases, this is computationally demanding and may lead to timeout errors. Therefore, it is recommended to opt for Option 2.
+-    **Option 2** is where an existing CCDC asset is selected from GEE. In this case, the CCDC asset needs to be exported first, so you can point to its location within GEE directly. This usually allows for instant visualization, as the slicing procedure does not require much computing power.
 
 Date (range) selection
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -84,20 +85,20 @@ CCDC slicing parameters
 Specific date
 """""""""""""
 
-In case a single date has been selected, the **Slicing parameters** will appear as shown in the following figure.
+In case a single date has been selected, the **Slicing parameters** will appear, as shown in the following figure.
 
 .. thumbnail:: ../_images/cookbook/ccdc_slice/ccdc_slice_date_parameters.png
     :group: recipe-ccdc-slice
-    :title: Selection menu for CCDC slicing parameters
+    :title: **Selection menu** for **CCDC slicing parameters**
     :align: center
 
 The first parameter is the number of **Harmonics** used to extract the modelled reflectance at the given point in time. Three harmonic terms are set by default. Lowering this number will result in a smooth time series that does not depict intra-annual periodicity. Setting this value to 1 will only capture the inter-annual periodicity (i.e. annual seasonality), while a value of 0 results in the mean value over the segment's time period.
 
 The **Gap strategy** relates to the presence of gaps between two temporal segments (i.e. the presence of a break). After a detected break, CCDC reinitializes a new model (i.e. new segment) only after a couple of observations. In between, no model is available from which to extract the data. In order to avoid masked pixels, the user has the possibility to:
 
--   :btn:`Interpolate` – Use a temporally weighted mean between the previous and subsequent model for the given data.
--   :btn:`Extrapolate` – Use the extrapolated value of the closest, previous, or next model for the given data.
--   :btn:`Mask` – Mask the value as *no data*.
+-   :btn:`Interpolate`: Use a temporally weighted mean between the previous and subsequent model for the given data.
+-   :btn:`Extrapolate`: Use the extrapolated value of the closest, previous or next model for the given data.
+-   :btn:`Mask`: Mask the value as *No data*.
 
 In case of extrapolation, the additional option, **Segment to extrapolate**, allows you to choose either the model parameters from the previous, next or closest segment with respect to the selected data. Furthermore, the **Max days to extrapolate** setting allows you to limit the number of days until this procedure is considered valid. If the difference between the selected date and the segment's valid time period is greater than this threshold value, the pixel will be automatically masked.
 
@@ -108,7 +109,7 @@ In case a date range has been selected, the **Slicing parameters** will appear a
 
 .. thumbnail:: ../_images/cookbook/ccdc_slice/ccdc_slice_date_range_parameters.png
     :group: recipe-ccdc-slice
-    :title: Selection menu for CCDC slice parameters – date range
+    :title: **Selection menu** for **CCDC slice parameters – date range**
     :align: center
 
 The first parameter is the number of **Harmonics** used to extract the modelled reflectance at the given point in time. Three harmonic terms are set by default. Lowering this number will result in a smooth time series that does not depict intra-annual periodicity. Setting this value to 1 will only capture the inter-annual periodicity (i.e. annual seasonality), while a value of 0 results in the mean value over the segment's time period.
@@ -122,7 +123,7 @@ SEPAL offers four ways of selecting the remaining break:
 - :guilabel:`First`: The first break within the **Slice date** range.
 - :guilabel:`Last`: The last break within the **Slice date** range.
 - :guilabel:`Magnitude`: The break with the highest magnitude of change.
-- :guilabel:`Confidence`: The break with the highest confidence value (see :doc:`ccdc` for more information about confidence computation).
+- :guilabel:`Confidence`: The break with the highest confidence value (for more information about confidence computation, see :doc:`ccdc`).
 
 By selecting a specific break direction, the break selection will only take into acount the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default, we consider :guilabel:`Any` break direction.
 
@@ -131,15 +132,15 @@ By moving the slider, you will ignore the break with a low confidence from the a
 Visualization
 -------------
 
-Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (1).
+Select the :btn:`<fa-solid fa-chart-area>` button to start the plotting tool (**1**).
 
 Move the pointer to the main map; the pointer will be transformed into :icon:`fa-solid fa-plus`.
 
 Click anywhere in the AOI to plot data for this specific location in the pop-up window that appears.
 
-The plotting area (3) is the same as the one presented in the CCDC recipe with small adjustments to the slicing operation. Refer to :doc:`ccdc` for a complete description.
+The plotting area (**3**) is the same as the one presented in the CCDC recipe with small adjustments to the slicing operation. Refer to :doc:`ccdc` for a complete description.
 
-The plotting area covers all of the CCDC asset range (4); the user will see the slice in red (it will be a sector of the plot if a date range is selected and a red line if a single date is selected).
+The plotting area covers all of the CCDC asset range (**4**); the user will see the slice in red (it will be a sector of the plot if a date range is selected and a red line if a single date is selected).
 
 .. thumbnail:: ../_images/cookbook/ccdc_slice/pixel_analysis.png
     :title: Pixel analysis of a date range slice of a CCDC asset
@@ -147,7 +148,7 @@ The plotting area covers all of the CCDC asset range (4); the user will see the 
 
 .. attention::
 
-    The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time, depending on the number of available observations and the complexity of the selected preprocessing parameters. If the pop-up window displays a spinning wheel, wait up to two minutes to see the data displayed.
+    The plot feature is retrieving information from GEE on the fly and serving it in an interactive window. This operation can take time, depending on the number of available observations and the complexity of the selected pre-processing parameters. If the pop-up window displays a spinning wheel, wait up to two minutes to see the data displayed.
 
 Export
 ------
