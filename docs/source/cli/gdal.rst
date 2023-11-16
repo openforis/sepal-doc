@@ -1,7 +1,13 @@
-Geospatial Data Abstraction Library
-===================================
+GDAL
+====
 
-GDAL is a translator library for raster and vector geospatial data formats that is released under an  `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. As a library, it presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command-line utilities for data translation and processing. The `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page describes the latest release.
+Geospatial Data Abstraction Library (GDAL) is a translator library for raster and vector geospatial data formats that is released under an `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__. 
+
+As a library, GDAL presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. 
+
+It also comes with a variety of useful command-line utilities for data translation and processing. 
+
+The `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__ page describes the latest release.
 
 .. note::
 
@@ -28,7 +34,7 @@ Raster programmes
     $ rgb2pct.py         # Convert a 24bit RGB image to 8bit paletted.
     $ pct2rgb.py         # Convert an 8bit paletted image to 24bit RGB.
     $ gdalattachpct.py   # Attach a color table to a raster file from an input file.
-    $ gdal_merge.py      # Mosaicks a set of images.
+    $ gdal_merge.py      # Mosaics a set of images.
     $ gdal2tiles.py      # Generates directory with TMS tiles, KMLs and simple web viewers.
     $ gdal2xyz.py        # Translates a raster file into xyz format.
     $ gdal_rasterize     # Burns vector geometries into a raster.
@@ -76,5 +82,5 @@ Geographic network programmes
 
 .. code-block:: bash
 
-    $ gnmmanage  # Manages networks
-    $ gnmanalyse # Analyses networks
+    $ gnmmanage  # Manages networks.
+    $ gnmanalyse # Analyses networks.
