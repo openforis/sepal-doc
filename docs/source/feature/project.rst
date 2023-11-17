@@ -1,7 +1,7 @@
 Recipe projects
 ===============
 
-When interacting with SEPAL processes, a user creates **Recipes**, which can work together and be interconnected inside a single project (e.g. :code:`Mosaics` used in a :code:`Classification`). 
+When interacting with SEPAL processes, a user creates **Recipes**, which can work together and be interconnected inside a single project (e.g. :code:`Mosaics` used in a :code:`Classification`).
 
 To help with these interconnections, the SEPAL platform provides a :code:`Project` system to organize users' work.
 
@@ -119,7 +119,7 @@ From this interface, you can:
 Connect recipes
 ^^^^^^^^^^^^^^^
 
-When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see following figure on the left). 
+When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see following figure on the left).
 
 If one still wants to see all of the recipes in the dropdown list, select :btn:`All` and all recipes will be displayed using project names as headers (see following figure on right).
 

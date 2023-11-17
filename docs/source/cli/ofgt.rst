@@ -3,9 +3,9 @@ OFGT
 
 The **Open Foris Geospatial Toolkit (OFGT)** is a collection of prototype command-line utilities for processing geographical data. The tools can be divided into stand-alone programmes and scripts. They have been tested mainly in the Ubuntu Linux environment, although they can be used with other Linux distros, macOS, and Microsoft Windows (Cywgin) as well. Most of the stand-alone programmes use **GDAL libraries** and many of the scripts rely heavily on **GDAL command-line utilities**.
 
-The **OFGT** project started under the Open Foris initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting (see `Open Foris <http://openforis.org>`__. 
+The **OFGT** project started under the Open Foris initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting (see `Open Foris <http://openforis.org>`__.
 
-The Open Foris initiative develops and supports innovative, easy-to-use tools needed to produce reliable, up-to-date information on the state of forest resources and their uses. 
+The Open Foris initiative develops and supports innovative, easy-to-use tools needed to produce reliable, up-to-date information on the state of forest resources and their uses.
 
 The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction and other image processing analysis.
 

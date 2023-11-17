@@ -1,7 +1,7 @@
 GEE
 ===
 
-The **Google Earth Engine (GEE)** tool is a utility program that allows you to manage Google Earth Engine (GEE) assets and tasks from the command line. 
+The **Google Earth Engine (GEE)** tool is a utility program that allows you to manage Google Earth Engine (GEE) assets and tasks from the command line.
 
 The tool is installed automatically when you install the Python API. To check whether it is installed and functioning correctly, enter the following in a command line:
 
@@ -56,7 +56,7 @@ The main advantages of the **GEE code editor** are:
 
 SEPAL and JupyterLab can help you bring this to the next level by providing both tools in a Python notebook, allowing you to also access all Python geospatial tools created by the Earth observation community.
 
-First, open a JupyterLab instance and start a notebook. 
+First, open a JupyterLab instance and start a notebook.
 
 In the first cell, create a map and place it the sidecar by running the following code:
 
