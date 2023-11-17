@@ -4,7 +4,7 @@ R code
 Usage
 -----
 
-SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully functional :code:`R 4.1.2` environment that is accessible in RStudio, Jupyterlab or the terminal.
+SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully functional :code:`R 4.1.2` environment that is accessible in RStudio, JupyterLab or the terminal.
 
 .. thumbnail:: ../_images/cli/r/rstudio_example.png
     :title: A code run in RStudio
@@ -17,7 +17,7 @@ SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully function
     :width: 32%
 
 .. thumbnail:: ../_images/cli/r/terminal_example.png
-    :title: A code run in the terminal
+    :title: A code run in the SEPAL terminal
     :group: r_environment
     :width: 32%
 
@@ -32,19 +32,18 @@ The SEPAL :code:`R` environment is not empty; there are numerous embedded packag
 
 To check the availability of a specific package:
 
--   Open RStudio.
--   Go to :guilabel:`Help` > :guilabel:`R Help` (from the menu above).
--   You will see the **Help** panel opened.
--   Select :code:`Reference` > :code:`Packages`
+#   Open RStudio.
+#   Go to :guilabel:`Help` > :guilabel:`R Help`.
+#   In the open **Help** pane, select :code:`Reference` > :code:`Packages`.
 
 .. thumbnail:: ../_images/cli/r/package_list.png
-    :title: How to display R packages in **RStudio**
+    :title: How to display R packages in RStudio
     :group: r_environment
 
 Customization
 -------------
 
-The SEPAL environment can be customized to user needs by utilizing third-party packages and CRAN in **RStudio**.
+The SEPAL environment can be customized to user needs by utilizing third-party packages and CRAN in RStudio.
 
 .. code-block:: r
 

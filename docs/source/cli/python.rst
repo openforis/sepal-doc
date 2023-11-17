@@ -4,52 +4,51 @@ Python
 Usage
 -----
 
-SEPAL instances run on :code:`focal` Ubuntu machines and thus provide a fully functional :code:`Python 3.8` environment. This environment is accessible through Jupyter Notebook, JupyterLab or the terminal:
+SEPAL instances run on :code:`focal` Ubuntu machines and thus provide a fully functional :code:`Python 3.8` environment, which is accessible through Jupyter Notebook, JupyterLab or the terminal:
 
 .. thumbnail:: ../_images/cli/python/jupyter_example.png
-    :title: A code run in Jupyterlab
+    :title: A code run in JupyterLab
     :group: python_environment
     :width: 32%
 
 .. thumbnail:: ../_images/cli/python/notebook_example.png
-    :title: a code run in Jupyter Notebook
+    :title: A code run in Jupyter Notebook
     :group: python_environment
     :width: 32%
 
 .. thumbnail:: ../_images/cli/python/terminal_example.png
-    :title: A code run in the terminal
+    :title: A code run in the SEPAL terminal
     :group: python_environment
     :width: 32%
 
 Description
 -----------
 
-The SEPAL Python environment is not empty; there are numerous embedded librairies (see figure below).
+The SEPAL Python environment is not empty; there are numerous embedded libraries (see figure below).
 
 .. literalinclude:: ../_data/python_lib.txt
     :language: sh
 
-Run :code:`pip show <name of your lib>` to check if it's already installed.
+To check if it's already installed, run :code:`pip show <name of your lib>`.
 
 Customization
 -------------
 
-The SEPAL environment can be customized to user needs using any third-party librairies and pip. By default installation will be run in :code:`--user` mode and won't affect other SEPAL users.
-
+The SEPAL environment can be customized to user needs using any third-party libraries and pip. By default, installation will be run in :code:`--user` mode and won't affect other SEPAL users.
 
 .. thumbnail:: ../_images/cli/python/install_sphinx.gif
     :title: A code run in the terminal
 
 .. note::
 
-    If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
+    If you face compatibility issues when customizing your SEPAL environment, let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
 
 Virtual environment
 -------------------
 
 .. attention::
 
-    SEPAL does not support conda environments. If you need to install compiled libraries, please contact the SEPAL team via the  `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
+    SEPAL does not support conda environments. If you need to install compiled libraries, contact the SEPAL team via the  `GitHub issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__.
 
 SEPAL supports Python venv creation. In this section, we'll explain how to create a venv and link it to Jupyter, so you can run your processes on the associated kernel.
 

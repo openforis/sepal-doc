@@ -1,7 +1,7 @@
-Area of interest selection
-==========================
+AOI selection
+=============
 
-In most SEPAL modules, the first mandatory input is the area of interest (AOI), used as a boundary to cut the processes and its outputs.
+In most SEPAL modules, the first mandatory input is the area of interest (AOI), which is used as a boundary to cut the processes and its outputs.
 
 If you are using the default :btn:`<fa-solid fa-globe>` **Process recipes** or :btn:`<fa-solid fa-wrench>` custom **Applications**, you will find different user interfaces.
 
@@ -12,10 +12,14 @@ Recipe AOI
 
 Recipes are accessible through the orange :btn:`<fa-solid fa-globe>` globe icon located on the left side of the SEPAL interface.
 
-For many recipes, an AOI has to be selected. Locate the AOI selection button in the lower-right corner. Select the :guilabel:`AOI` button to open the selection window.
+For many recipes, an AOI has to be selected.
+
+Locate the **AOI selection** button in the lower-right corner.
+
+Select the :guilabel:`AOI` button to open the selection window.
 
 .. thumbnail:: ../_images/feature/aoi_selector/no_parameters.png
-    :title: The five tabs to set up SEPAL optical mosaic parameters
+    :title: The five tabs to set up SEPAL **Optical mosaic** parameters
     :group: feature_aoi
     :align: center
     :width: 700
@@ -23,7 +27,7 @@ For many recipes, an AOI has to be selected. Locate the AOI selection button in 
 There are multiple methods for selecting AOIs in SEPAL process recipes:
 
 -   Country/province (administrative boundaries)
--   EE Tables (Google Earth Engine [GEE])
+-   EE Tables (GEE)
 -   Drawn polygons
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_landing.png
@@ -39,13 +43,17 @@ There are multiple methods for selecting AOIs in SEPAL process recipes:
 Administrative boundaries
 """""""""""""""""""""""""
 
-You can select administrative layers as AOIs. These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__. To use them, select the :guilabel:`Select country/province` method in the dropdown list.
+You can select administrative layers as AOIs.
+
+These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__.
+
+To use them, select the :guilabel:`Select country/province` method in the dropdown list.
 
 .. note::
 
     Since GEE does not support non-Latin characters, accents and special characters have been removed from country and province names.
 
-In the first dropdown menu, you will be able to select a country (Administrative layer 0) from the country list. Optionally, you can select a province (Administrative level 1) within the country selected. The dropdown list is updated on the fly with the first administrative level boundaries being based on the country selection. If nothing is selected, the whole country will be considered.
+In the first dropdown menu, you will be able to select a country (**Administrative layer 0**) from the country list. Optionally, you can select a province (**Administrative level 1**) within the country selected. The dropdown list is updated on the fly with the first administrative level boundaries being based on the country selection. If nothing is selected, the whole country will be considered.
 
 A buffer can be applied to AOI boundaries by defining its size (km) using the provided slider. By default, it is set to 0 and is therefore disabled.
 
@@ -53,7 +61,11 @@ A buffer can be applied to AOI boundaries by defining its size (km) using the pr
 
     The AOI and preview will take longer to display when buffering is enabled.
 
-Once all parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
+Once all parameters are selected, the AOI will be previewed in the small map at the bottom of the frame.
+
+To validate it, select the :btn:`<fa-solid fa-check> Apply` button.
+
+Once validated, the map will zoom in on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_administrative.png
     :title: Select AOI based on administrative layers
@@ -64,7 +76,11 @@ Once all parameters are selected, the AOI will be previewed in the small map at 
 EE table
 """"""""
 
-You can use custom AOI defined by shapes. These shapes need to be ingested in GEE as a :code:`ee.FeatureCollection` (see `How to upload custom assets to GEE <../setup/gee.html#upload-files-to-gee>`__). To use this method, select :guilabel:`EE table`.
+You can use custom AOI defined by shapes.
+
+These shapes need to be ingested in GEE as a :code:`ee.FeatureCollection` (see `How to upload custom assets to GEE <../setup/gee.html#upload-files-to-gee>`__).
+
+To use this method, select :guilabel:`EE table`.
 
 In the first dropdown list, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`).
 
@@ -81,7 +97,11 @@ A buffer can be applied to these boundaries by defining its size (km) using the 
 
     The AOI and the preview will take longer to display when buffering is enabled.
 
-Once all of the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame. To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
+Once all of the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame.
+
+To validate it, select the :btn:`<fa-solid fa-check> Apply` button.
+
+Once validated, the map will zoom in on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_table.png
     :title: Select AOI based on EE table
@@ -92,11 +112,17 @@ Once all of the parameters are selected, the AOI will be previewed in the small 
 Draw polygon
 """"""""""""
 
-You can use a custom AOI defined by a drawn shape, which will be converted into a :code:`ee.FeatureCollection` on the fly. Select :guilabel:`Draw a polygon` to use this method.
+You can use a custom AOI defined by a drawn shape, which will be converted into a :code:`ee.FeatureCollection` on the fly.
 
-The pointer on the map will be converted into a :icon:`fa-solid fa-plus`. Click successively on the map to draw a polygon.
+Select :guilabel:`Draw a polygon` to use this method.
 
-Once the geometric shape is closed, the AOI will be previewed in the small map at the bottom of the frame. To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
+The pointer on the map will be converted into a :icon:`fa-solid fa-plus`.
+
+Click successively on the map to draw a polygon.
+
+Once the geometric shape is closed, the AOI will be previewed in the small map at the bottom of the frame.
+
+To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map.
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_polygon.png
     :title: Select AOI based on drawn polygon
@@ -107,9 +133,18 @@ Once the geometric shape is closed, the AOI will be previewed in the small map a
 Module AOI
 ^^^^^^^^^^
 
-The module AOI selector is available in some SEPAL-contributor modules. To access an app, select the purple wrench :btn:`<fa-solid fa-wrench>` located on the left side of the SEPAL platform, then use the app's dashboard to search and open a module.
+The **Module AOI selector** is available in some contributor modules.
 
-An AOI selector module is composed of two main sections: (1) the available methods, and (2) the map. Although we will mention all features and methods available, some might not be available in the context of the module you are working on.
+To access an app, select the purple wrench :btn:`<fa-solid fa-wrench>`, located on the left side of the SEPAL platform.
+
+Then, use the app's dashboard to search and open a module.
+
+A **Module AOI selector** is composed of two main sections:
+
+1.   the available methods; and
+2.   the map.
+
+Although we will mention all features and methods available, some might not be available in the context of the module you are working on.
 
 .. thumbnail:: ../_images/feature/aoi_selector/module_aoi_overview.png
    :title: Module AOI selector
@@ -119,18 +154,25 @@ An AOI selector module is composed of two main sections: (1) the available metho
 Available methods
 """""""""""""""""
 
-There are two types of processes that require different AOI inputs, depending on the way the module is created and where the core processes are done: directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__ or in GEE. Although both interfaces appear to be the same, the methods and internal data sources may vary, such as administrative definitions.
+There are two types of processes that require different AOI inputs, depending on the way the module is created and where the core processes are done:
+
+1.   directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__; or
+2.   in GEE.
+
+Although both interfaces appear to be the same, the methods and internal data sources may vary, such as administrative definitions.
 
 Administrative definitions
 """"""""""""""""""""""""""
 
-Similar to the previously mentioned :ref:`Recipe AOI selector <recipe_aoi>`, the module AOI uses `FAO GAUL GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ boundaries for GEE and `GADM 3.6 <https://gadm.org/data.html>`__ features for local processes. However, in this case, the tool allows you to recurse at a maximum second administrative level. The available sources are the following:
+Similar to the previously mentioned :ref:`Recipe AOI selector <recipe_aoi>`, the module AOI uses `FAO GAUL GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ boundaries for GEE and `GADM 3.6 <https://gadm.org/data.html>`__ features for local processes.
+
+However, in this case, the tool allows you to recurse at a maximum second administrative level. The available sources are the following:
 
 GEE
 ###
 
-- Country/province (level 0): Countries or provinces at level 0, available at `FAO GAUL GEE level 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__
-- Admin level 1: First administrative level, `FAO GAUL GEE level 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__.
+- Country/province (level 0): Countries or provinces at level 0, available at `FAO GAUL GEE level 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__;
+- Admin level 1: First administrative level, `FAO GAUL GEE level 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__; and
 - Admin level 2: Second administrative level, `FAO GAUL GEE level 2 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2>`__.
 
 Local
@@ -138,7 +180,11 @@ Local
 
 - All administrative levels are accessible from the `GADM website <https://gadm.org/data.html>`__.
 
-Use the :guilabel:`AOI selection method` dropdown list to select the target administrative level. A new dropdown will load with all corresponding boundaries to the next administrative level that is linked with the base level (i.e. select :code:`Admin level 2` as the method, choose :code:`Colombia` as the country, select the :code:`Amazonas` department as the next level, and finally select the :code:`Leticia` municipality).
+Use the :guilabel:`AOI selection method` dropdown list to select the target administrative level.
+
+A new dropdown list will load with all corresponding boundaries to the next administrative level that is linked with the base level.
+
+For example, select :code:`Admin level 2` as the method, choose :code:`Colombia` as the country, select the :code:`Amazonas` department as the next level, and finally select the :code:`Leticia` municipality.
 
 .. thumbnail:: ../_images/feature/aoi_selector/administrative_selection.png
    :title: Administrative selection
@@ -148,7 +194,7 @@ Use the :guilabel:`AOI selection method` dropdown list to select the target admi
 Custom geometries
 """""""""""""""""
 
-When you are looking for a more specific AOI, the module AOI selector has the following options:
+When you are looking for a more specific AOI, the **Module AOI selector** has the following options:
 
 - Vector file
 - Drawn shape
@@ -158,13 +204,20 @@ When you are looking for a more specific AOI, the module AOI selector has the fo
 Vector file
 ###########
 
-Use this option to upload a custom vector file. Select the :guilabel:`Vector file` method in the dropdown list. A file manager widget (1) will be displayed below, allowing you to search and select a vector file stored in your SEPAL environment (see `How to exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_). The dropdown list, :guilabel:`Column` (2), is useful to filter features of the vector file. The default option is :guilabel:`Use all features`, meaning any filter is used. To filter the collection, select a column and a :guilabel:`Value` (3) in the corresponding dropdown list, then select the :guilabel:`Select AOI` button.
+Use this option to upload a custom vector file.
+
+Select the :guilabel:`Vector file` method in the dropdown list.
+
+A file manager widget (see **1** in the following figure) will be displayed below, allowing you to search and select a vector file stored in your SEPAL environment (see `How to exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_).
+
+The dropdown list, :guilabel:`Column` (**2**), is useful to filter features of the vector file. The default option is :guilabel:`Use all features`, meaning any filter is used.
+
+To filter the collection, select a column and a :guilabel:`Value` (**3**) in the corresponding dropdown list, then select the :guilabel:`Select AOI` button.
 
 .. thumbnail:: ../_images/feature/aoi_selector/method_vector_file.png
    :title: Module vector file
    :align: center
    :width: 600
-
 
 .. note::
 
@@ -175,7 +228,11 @@ Use this option to upload a custom vector file. Select the :guilabel:`Vector fil
 Drawn shape
 ###########
 
-Use this option to manually draw geometric shapes on the map. Select the :guilabel:`Drawn shapes` method in the dropdown list, and create a name for your drawing, if desired (if not provided, the tool will assign a unique name containing the following structure:
+Use this option to manually draw geometric shapes on the map.
+
+Select the :guilabel:`Drawn shapes` method in the dropdown list.
+
+Then, create a name for your drawing, if desired. If not provided, the tool will assign a unique name containing the following structure:
 
 :code:`Manual_aoi_YYYY-MM-DD_HH-MM-SS`
 
@@ -190,7 +247,7 @@ Three geometric shapes will appear in the upper-left corner of the map: :btn:`<f
 
 .. tip::
 
-    To draw, zoom in on your AOI by using the mouse wheel or the :btn:`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` buttons located in the upper-right corner.
+    To draw, zoom in on your AOI by using the mouse wheel button, or the :btn:`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` buttons located in the upper-right corner.
 
 - :btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry on the map. To close and finish your geometry, click the first vertex or select the :guilabel:`finish` button. Note that once you select the polygon geometric shape, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`.
 
@@ -201,19 +258,21 @@ Three geometric shapes will appear in the upper-left corner of the map: :btn:`<f
 Point file
 ##########
 
-Use this method to load a single point or multipoint dataset. Select :guilabel:`Point file` in the dropdown **Method** list. Four new widgets will appear, including a File selector (1), and three dropdown lists: ID (2), Longitude (3), and Latitude (4).
+Use this method to load a single point or multipoint datasets. Select :guilabel:`Point file` in the **Method** dropdown list. Four new widgets will appear, including a File selector (**1**), and three dropdown lists: ID (**2**), Longitude (**3**), and Latitude (**4**).
 
 .. thumbnail:: ../_images/feature/aoi_selector/method_point_file.png
    :title: Map shapes
    :align: center
    :width: 600
 
-Use the file selector widget to navigate through your SEPAL environment and search for a table file (:code:`.csv` or :code:`.txt`) containing the coordinates of your points. Make sure the file uses the following structure:
+Use the file selector widget to navigate through your SEPAL environment and search for a table file (:code:`.csv` or :code:`.txt`) containing the coordinates of your points.
 
-- at least three columns
-- one providing an ID (unique point identifier)
-- one providing longitude coordinates
-- one providing latitude coordinates
+Make sure the file uses the following structure:
+
+- at least three columns;
+- one providing an ID (unique point identifier);
+- one providing longitude coordinates; and
+- one providing latitude coordinates.
 
 .. attention::
 
@@ -233,14 +292,20 @@ Here is an example of a compatible point file:
 
 Once the table is loaded, the system will try to automatically identify the :guilabel:`Id`, :guilabel:`Longitude` and :guilabel:`Latitude` columns. When this is not possible, the fields will remain empty and you will have to manually match them.
 
-.. note:: The columns don't have to be named with any specific structure; the only requirement is that your dataset has to be composed of columns for ID, Longitude and Latitude.
+.. note:: The columns don't have to be named with any specific structure; the only requirement is that your dataset has to be composed of columns for ID, longitude and latitude.
 
 GEE asset
 #########
 
 Use this method to load a custom feature collection available as an asset in GEE.
 
-Select :guilabel:`GEE asset name` in the dropdown method list. Two widgets will appear by default: an asset selector (1), a dropdown list containing the columns of the selected asset (2), and unique column fields, which are optional (3).
+Select :guilabel:`GEE asset name` in the **Method** dropdown list.
+
+The following widgets will appear by default:
+
+-   an asset selector (**1**);
+-   a dropdown list containing the columns of the selected asset (**2**); and
+-   unique column fields, which are optional (**3**).
 
 .. thumbnail:: ../_images/feature/aoi_selector/method_asset.png
    :title: Map shapes
@@ -249,10 +314,10 @@ Select :guilabel:`GEE asset name` in the dropdown method list. Two widgets will 
 
 The file selector widget will search for all :code:`Table` assets (i.e. Feature collection) stored in your GEE account. You can also copy and paste a custom third-party asset into the text field; however, be sure that you have access permission – otherwise, the module won't be able to use that source and an error message will be displayed.
 
-Once you have selected a valid asset, the module will query all available columns in your provided asset and display them in the column dropdown widget. By default, all features in the dataset will be selected (:guilabel:`Use all features`); however, if you are interested in using a specific geometry, select a column to filter your dataset, and a new dropdown list will load all of the unique values for that specific column – select one.
+Once you have selected a valid asset, the module will query all available columns in your provided asset and display them in the **Column** dropdown widget. By default, all features in the dataset will be selected (:guilabel:`Use all features`); however, if you are interested in using a specific geometry, select a column to filter your dataset; a new dropdown list will load all of the unique values for that specific column – select one.
 
 .. note:: This method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa-solid fa-google` icon at the right side of the shapes.
 
-.. note:: All of the modules do not have all of the mentioned methods. Their availability will depend on the module context (i.e. some apps require polygons, while others require points).
+.. note:: All of the modules do not have all of the mentioned methods. Their availability will depend on the module context (e.g. some apps require polygons, while others require points).
 
 Finally, select the :guilabel:`Select AOI` button. If all inputs are correct, you will see a success message and your AOI will be displayed in green on the map. Otherwise, an indicative error message will be displayed.
