@@ -3,32 +3,41 @@
 Contribute
 ==========
 
-We are always happy to receive feedback on SEPAL documentation from users, partners, and colleagues.
+The SEPAL team values user feedback and contributions to SEPAL documentation.
 
 Before contributing, please review the SEPAL `Code of conduct <https://github.com/openforis/sepal-doc/blob/master/CODE_OF_CONDUCT.md>`_.
 
-Then, communicate your proposed contributions to the SEPAL team by:
+Then, communicate feedback or proposed contributions via:
 
--    `asking the community <https://groups.google.com/g/sepal-users>`_ or
--    `reporting an issue on Github <https://github.com/openforis/sepal/issues>`_.
+-    `the SEPAL Google Group community <https://groups.google.com/g/sepal-users>`_; or
+-    `the SEPAL GitHub Issue Tracker <https://github.com/openforis/sepal/issues>`_.
 
 Introduction
 ------------
 
-The :code:`sepal-doc` repository has a fixed structure that needs to be respected to follow Sphinx builder requirements. All modifications should be made in the folder, :code:`sepal-doc/docs/source/`. Images associated with a page should be stored in the corresponding folder, :code:`sepal-doc/docs/source/_images/`. If files are misplaced, their build into .html pages cannot be guaranteed.
+The :code:`sepal-doc` repository has a fixed structure that needs to be respected to follow Sphinx builder requirements. 
 
-Please carefully review the following instructions before contributing to SEPAL documentation.
+All modifications should be made in the folder, :code:`sepal-doc/docs/source/`. 
+
+Images associated with a page should be stored in the corresponding folder, :code:`sepal-doc/docs/source/_images/`. 
+
+If files are misplaced, their build into .html pages cannot be guaranteed.
+
+**Please carefully review the following instructions before contributing to SEPAL documentation.**
 
 Tools
 ^^^^^
 
-The :code:`sepal-doc` repository creates and organizes .rst files by leveraging the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build, and the `ReadTheDoc <https://readthedocs.org>`_ website to distribute the build.
+The :code:`sepal-doc` repository creates and organizes .rst files by leveraging: 
+
+-    the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build; and 
+-    the `ReadTheDoc <https://readthedocs.org>`_ website to distribute the build.
 
 .. attention::
 
-    To work on this project you will need the following:
+    To contribute to SEPAL documentation, you will need:
 
-    - basic knowledge of any lightweight markup language (e.g. markdown, latex, etc.), which will help you understand .rst files;
+    - basic knowledge of any lightweight markup language (e.g. markdown, latex), which will help you understand .rst files;
     - the `Sphinx directives documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_;
     - a GitHub account; and
     - a basic understanding of terminal commands.
@@ -38,12 +47,12 @@ Guidelines
 
 There are only two guidelines to follow that are not directly specified in the .rst documentation or template:
 
--    respect the following indentation: :code:`4 spaces` (this includes directives [option and content] and bullet points); and
--    use the following symbols for section headings (from heading 1 to heading 6) :code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, and :code:`+`.
+-    **Indentation**: Insert :code:`4 spaces` for directives (options and content) and bullet points; and
+-    **Headings**: Use the appropriate symbols for section heading formatting (:code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, and :code:`+`).
 
 .. code-block:: rst
 
-    **Section headings**
+    Headings
 
     Heading 1
     =========
@@ -66,12 +75,12 @@ There are only two guidelines to follow that are not directly specified in the .
 Custom
 ^^^^^^
 
-The following custom directives were added to help build our documentation.
+The following custom directives were added to help build the documentation.
 
 Videos
 """"""
 
-There are two ReST directives for embedding videos from Youtube (:code:`youtube`) and Vimeo (:code:`vimeo`).
+There are two ReST directives for embedding videos from YouTube (:code:`youtube`) and Vimeo (:code:`vimeo`).
 
 The video ID must be included.
 
@@ -134,7 +143,7 @@ Icons
 
 There is a ReST role to include in-line icons in documentation (usualy when referencing a button [btn]).
 
-You can find the icon you're looking for in the  `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
+You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
 .. code-block:: rst
 
@@ -145,7 +154,7 @@ Folder icon: :icon:`fa-solid fa-folder`
 Buttons
 """""""
 
-There is a ReSt role to include a button in the documentation (with or without text).
+There is a ReST role to include a button in the documentation (with or without text).
 
 You can find the icon you're looking for in the Font Awesome `library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
@@ -165,51 +174,53 @@ Minor change
 Page edit
 ^^^^^^^^^
 
-If you want to make modifications to an existing page of documentation because you've seen a typo or would like to improve an explanation, select the :code:`Edit on Github` button on the right side of the screen.
+If you would like to make modifications to an existing article in the documentation because you've seen a typo or would like to improve an explanation, select the :code:`Edit on GitHub` button in the pane on the right side of your browser window (if the button isn't available, use your browser's **Zoom out** function or open the pane using the hamburger button [the button in the upper-right corner with three lines]).
 
 .. figure:: ../_images/team/contribute/edit_page.png
     :alt: Edit page button
 
-    The **Edit page** button on the landing page.
+    The **Edit on GitHub** button on the landing page.
 
-When you are finished modifying the file in the GitHub editor, select :code:`propose change` at the bottom of the page. This will create a pull request (PR) that includes your modifications, which will be reviewed and evaluated by the SEPAL team before being published in the documentation.
+When you are finished modifying the file in the **GitHub editor**, select :code:`propose change` at the bottom of the page. 
+
+This will create a **Pull request (PR)** that includes your modifications, which will be reviewed and evaluated by the SEPAL team before being published.
 
 .. figure:: ../_images/team/contribute/edit_github.png
     :alt: Edit a page directly in GitHub
 
-    Edit a page directly in GitHub
+    Edit a page directly in GitHub.
 
 .. tip::
 
-    To make sure that your modifications are well understood, change the title of the commit by completing the first field. For example, you could use "typo", "change image", "code-block error", etc. – anything that concisely describes your modifications (this name cannot be changed).
+    To ensure that your modifications are clear, change the title of the **Commit** by completing the first field (e.g. "typo", "change image", "code-block error") – anything that concisely describes your modifications (note that this name cannot be changed).
 
     .. figure:: ../_images/team/contribute/create_branch.png
         :alt: Create a branch
 
-        When correcting anything, create a branch.
+        When correcting anything, create a **Branch**.
 
-Once you've finished, a PR will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real PR but an adjustment (normally the title will automatically be set with the name of your commit).
+Once you've finished, a **PR** will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real **PR**, but an adjustment (normally the title will automatically be set with the name of your **Commit**).
 
 Select :code:`Create pull request`.
 
 .. figure:: ../_images/team/contribute/typo_pr.png
     :alt: typo pr
 
-    For minor modifications, create an automatic PR.
+    For minor modifications, create an **Automatic PR**.
 
 .. note::
 
-    Once your PR is accepted, you will be notified. Please consider deleting your branch.
+    Once your **PR** is accepted, you will be notified. Please consider deleting your **Branch**.
 
     .. figure:: ../_images/team/contribute/delete_branch.png
-        :alt: delete branch
+        :alt: Delete branch
 
-        Once the PR is accepted by the SEPAL team, delete the branch.
+        Once the **PR** is accepted by the SEPAL team, delete the **Branch**.
 
 Module edit
 ^^^^^^^^^^^
 
-If you find an error in a **Module** page, the edit button will not work, as the files are retrieved from each module repository. If the documentation is well written, their should be a link at the very bottom of the page to make modifications to the source file in the module repository following the same procedure mentioned above.
+If you find an error in a **Module** page, the edit button will not work, as the files are retrieved from each module's repository. Instead, their should be a link at the very bottom of the page to make modifications to the source file in the module repository following the same procedure mentioned above.
 
 Once you've finished, notify the SEPAL team, who will need to rebuild the documentation manually to retrieve the latest version of the file you modified.
 
@@ -222,25 +233,27 @@ Major changes
 
 Major changes include:
 
--   new documentation page
--   multiple image modification
--   new section
--   new modules
--   new class on Google Classroom
+-   creating new documentation pages;
+-   modifying multiple images;
+-   making new sections;
+-   building new modules; and
+-   adding new classes on Google Classroom.
 
-For these major changes, the simple GitHub edit process does not work. You need to follow another workflow that allows you to modify multiple files at the same time and use the PR system to avoid publishing new pages without validation.
+For these major changes, the simple GitHub edit process does not work. Rather, you need to follow another workflow that allows you to modify multiple files at the same time and use the **PR** system to avoid publishing new pages without validation.
 
 In this section, we will present the full process to make major changes to the documentation.
 
 Fork project
 ^^^^^^^^^^^^
 
-To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source. To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, they must fork the project into their own accounts by selecting the :code:`fork` button in the upper-right side of the `Github page of the documentation <https://github.com/openforis/sepal-doc>`_:
+To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source. 
+
+To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into their own accounts by selecting the :code:`fork` button in the upper-right side of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
 
 .. figure:: ../_images/team/contribute/fork.png
     :alt: GitHub fork
 
-    The fork button on GitHub.
+    The **Fork** button on GitHub.
 
 In the fork pop-up window, select the account you want to use:
 
@@ -253,14 +266,14 @@ In the upper-left side of the following page, you can see your location. This re
 
 .. note::
 
-    To know more about the forking system in GitHub, see `this link <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_
+    To learn more about the forking system in GitHub, see `this article <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_
 
 .. figure:: ../_images/team/contribute/fork_landing.png
     :alt: Landing page of the forked project
 
     Landing page of the forked project.
 
-We are now ready for a local installation.
+We are now ready for local installation.
 
 Local installation
 ^^^^^^^^^^^^^^^^^^
@@ -269,7 +282,7 @@ Install the forked project locally to make your modifications.
 
 On your computer, go to a terminal and run the following command.
 
-.. Attention::
+.. attention::
 
     Don't forget to change :code:`<your account>` to the account name where you forked the project.
 
@@ -283,7 +296,7 @@ Once the code is installed on your computer, install the packages that are requi
 
     pip install -U -r sepal-doc/requirements.txt
 
-To check that the doc can be built without error, go to the doc folder and run the following command:
+To check that the doc can be built without error, go to the **doc folder** and run the following command:
 
 .. code-block:: console
 
@@ -292,11 +305,13 @@ To check that the doc can be built without error, go to the doc folder and run t
 
 .. note::
 
-    We try our best to avoid warnings in the master branch; however, if some are still displayed, ignore them – the SEPAL team will eventually take care of them.
+    We try our best to avoid warnings in the master branch; however, if some are displayed, ignore them – the SEPAL team will eventually address these warnings.
 
-A new folder, :code:`build`, has been created in your sepal-doc folder.
+A new folder, :code:`build`, has been created in your **sepal-doc** folder.
 
-Double-click on :code:`sepal-doc/docs/build/html/index.html`. Your browser should open and lead to the landing page of SEPAL documentation. (Note: It's a local .html page. The URL at the top of the browser should start with **file://** rather than **https://**. There should be no advertisements in the side bar.)
+Double-click on :code:`sepal-doc/docs/build/html/index.html`. 
+
+Your browser should open and lead to the landing page of SEPAL documentation (Note that it's a local .html page. The URL at the top of the browser should start with **file://** rather than **https://**. There should be no advertisements in the side bar.)
 
 .. figure:: ../_images/team/contribute/local_landing.png
     :alt: local landing
@@ -309,7 +324,7 @@ We can now start to code our modifications.
 
     This procedure can also be performed in the SEPAL platform by starting a :code:`t1` instance and executing the exact same process.
 
-    To open the .html page, you will need to use JupyterLab, as it is able to load .html content (JupyterLab is also be an excellent IDE to make modifications, since it recognizes the **.rst** format).
+    To open the .html page, use JupyterLab, since it is able to load .html content (JupyterLab is also an excellent integrated development environment [IDE] to make modifications, since it recognizes .rst format).
 
 Modify the doc
 ^^^^^^^^^^^^^^
@@ -342,7 +357,7 @@ Open the :code:`sepal-doc` folder in your preferred IDE.
 
 .. note::
 
-    Any TextEdit software will work, even though it's less user friendly.
+    Any **TextEdit** software will work, even though it's less user friendly.
 
 As previously explained, the folder has a specific structure corresponding to the `Sphinx template <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_, which we are using to build the final doc.
 
@@ -358,7 +373,7 @@ The following sections are currently available:
 
     Located in the :code:`sepal-doc/docs/source/cookbook/` folder.
 
--   **Modules** – The modules that are available in the app dashboard.
+-   **Modules** – The modules that are available in the **App** dashboard.
 
     Located in the :code:`sepal-doc/docs/source/modules/` folder.
 
@@ -382,11 +397,11 @@ The following sections are currently available:
 
         .. include:: disclaimer.rst
 
-Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this page.
+Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this article.
 
 To maintain consistency across folders and help with image maintenance, the images you use should be stored in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`.
 
-Add the page you've created to the :code:`toctree` (table of contents) directive in the :code:`<section>/index.rst` file by adding your filename, without the extension, respecting the following indentation:
+Add the page you've created to the :code:`toctree` (Table of contents) directive in the :code:`<section>/index.rst` file by adding your filename, without the extension, respecting the following indentation:
 
 .. code-block:: rst
 
@@ -399,7 +414,9 @@ Add the page you've created to the :code:`toctree` (table of contents) directive
         my_page
         page3
 
-The title of your page should appear as a link in the **Section navigation** panel on the left side of your browser. If you forget to link your page, you will see the following message:
+The title of your page should appear as a link in the **Section navigation** pane on the left side of your browser. 
+
+If you forget to link your page, you will see the following message:
 
 .. code-block:: red
 
@@ -408,7 +425,7 @@ The title of your page should appear as a link in the **Section navigation** pan
 
 .. tip::
 
-    If you are struggling with .rst, contact the SEPAL team for support.
+    If you are struggling with .rst, get support by `asking the community <https://groups.google.com/g/sepal-users>`__.
 
 Modify images
 """""""""""""
@@ -442,7 +459,7 @@ New section
 
     Normally, the documentation does not require any new section; however, if you really feel that something needs to be added, please let us know first in the `GitHub Issue Tracker <https://github.com/openforis/sepal-doc/issues>`_.
 
-To add a new section you need to create a new folder in :code:`sepal-doc/docs/source/`. This folder should contain at least one page that contains the following code:
+To add a new section, create a new folder in :code:`sepal-doc/docs/source/`. This folder should contain at least one page that contains the following code:
 
 .. code-block:: rst
 
@@ -453,9 +470,9 @@ To add a new section you need to create a new folder in :code:`sepal-doc/docs/so
         :maxdepth: 1
         :hidden:
 
-This section page should be added to the documentation index.
+This section page should be added to the **Documentation index**.
 
-Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, as follows. Replace "Section name" with the name you would like to see in the the navigation bar and "<section>" with the folder name.
+Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html` as follows: Replace **Section name** with the name you would like to see in the the navigation bar and **<section>** with the folder name.
 
 .. code-block:: rst
 
@@ -473,13 +490,15 @@ Modify the :code:`toctree` of :code:`sepal-doc/docs/source/index.html`, as follo
 New modules
 """""""""""
 
-Have you created a new module (Shiny or Python-based) and have been asked to add it to the app dashboard of SEPAL (following the issue template)?
+Have you created a new module (Shiny or Python-based) and have been asked to add it to the **App** dashboard of SEPAL (following the issue template)?
 
-One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. To maintain consistency across modules, we decided to store the documentation in the module's original repository.
+One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. 
+
+To maintain consistency across modules, we store the documentation in the module's original repository.
 
 To create the actual documentation page, follow the instructions provided in the `sepal_ui doc <https://sepal-ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-documentation>`_.
 
-Then, you need to only modify one file in sepal-doc to make your documentation available.
+Then, you need to only modify one file in **sepal-doc** to make your documentation available.
 
 1.  Modify the :code:`sepal-doc/docs/source/data/modules/en.json` file by adding a new line with the following shape:
 
@@ -496,7 +515,7 @@ New class on Google Classroom
 
 Have you have created a new class under the Google Classroom repository following the :doc:`classroom` doc and would now like to add this class to the appropriate class table?
 
-Go to your Google Classroom page and select the **Share** link. On the next page, copy and paste the following information:
+Go to your **Google Classroom** page and select the **Share** link. On the next page, copy and paste the following information:
 
 -   the number of the class
 -   the title of the class
@@ -509,18 +528,18 @@ Go to your Google Classroom page and select the **Share** link. On the next page
 
 You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.csv`:
 
--   replace "<type>" with the type of your class (**general** for a reusable piece of documentation and **project** if linked to a FAO activity)
--   replace "<local>" with the language of your class (only English [en], Spanish [es] and French [fr] are available)
+-   replace **<type>** with the type of your class (**general** for a reusable piece of documentation and **project** if linked to a FAO activity)
+-   replace **<local>** with the language of your class (only English [en], French [fr] and Spanish [es] are available)
 -   add one extra line at the bottom, as such:
 
 .. code-block::
 
     <title>, `<ID> <<link>>`_, <modification date>
 
--   replace "<ID>" with the number of the class;
--   replace "<link>" with the invitation link;
--   replace "<title>" by the title of the classroom; and
--   add the latest "<modification date>" in "YYYY-MM-DD" format.
+-   replace **<ID>** with the number of the class;
+-   replace **<link>** with the invitation link;
+-   replace **<title>** by the title of the classroom; and
+-   add the latest **<modification date>** in **YYYY-MM-DD** format.
 
 Create a pull request (PR)
 --------------------------
@@ -545,20 +564,30 @@ In the **Pull request** interface, select the :code:`New pull request` button:
 
     Create a new pull request.
 
-Select what is going to be pushed and where. If you've followed this entire documentation page, you have not created any branch in your fork. On the left side, leave :code:`openforis/sepal-doc/master`; on the right side, leave :code:`<account>/sepal-doc/master` (1). Some extra information on the commit that will be added to the master are displayed in (2). If everything is set properly (normally you don't have to change anything), select the :code:`Create pull request` button.
+Select what is going to be pushed and where. 
+
+If you've followed this article of the documentation, you have not created any branch in your fork. 
+
+On the left side, leave :code:`openforis/sepal-doc/master`. 
+
+On the right side, leave :code:`<account>/sepal-doc/master` (see **1** in the following image; some extra information on the commit that will be added to the master is displayed in **2**). 
+
+If everything is set properly (normally you don't have to change anything), select the :code:`Create pull request` button.
 
 .. figure:: ../_images/team/contribute/compare_pr.png
     :alt: Compare branches
 
-Finally, enter the title and description of the PR (1) by filling in the title area and respecting the template provided (as shown in the following image). As explained at the beginning of this documentation page, you started your modifications to address an issue reported in the GitHub Issue Tracker, which should be referenced in your PR message (in line 2 using the :code:`#<issue number>`). This will help the SEPAL team, who will review your PR, by ensuring that they understand what you are adding to the documentation.
+Finally, enter the **title** and **description** of the PR (**1**) (please respect the template provided, as shown in the following image). 
+
+As explained at the beginning of this article, you started your modifications to address an issue reported in the **GitHub Issue Tracker**, which should be referenced in your **PR message** (in Line 2 using the :code:`#<issue number>`). This will help the SEPAL team, who will review your PR, by ensuring that they understand what you are adding to the documentation.
 
 .. note::
 
     You can select the preview button to see what your PR looks like with links.
 
-The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (2). This will allow the SEPAL team to make modifications to your PR files (e.g. if you made a mistake in a .rst directive).
+The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (**2**). This will allow the SEPAL team to make modifications to your PR files (e.g. if you made a mistake in a .rst directive).
 
-When everything is complete, select :code:`Create pull request` (3).
+When everything is complete, select :code:`Create pull request` (**3**).
 
 .. figure:: ../_images/team/contribute/valid_pr.png
     :alt: Valid PR
@@ -576,7 +605,7 @@ Once submitted, the SEPAL team will review your PR and make the appropriate modi
 
 .. tip::
 
-    Once the PR has been validated, please consider deleting your fork in order to avoid merging previous issues when making later modifications.
+    Once the PR has been validated, please delete your fork in order to avoid merging previous issues when making later modifications.
 
     .. figure:: ../_images/team/contribute/delete_fork.png
         :alt: Delete fork
@@ -588,6 +617,6 @@ Once submitted, the SEPAL team will review your PR and make the appropriate modi
 
         The pop-up window to delete the fork used in the closed PR.
 
-.. attention::
+.. important::
 
     If you are the owner of :code:`openforis`, do not delete :code:`openforis/sepal-doc`.
