@@ -4,7 +4,7 @@ SEPALSTYLE
 SEPAL documentation style guide
 -------------------------------
 
-*Learn the basics of* SEPALSTYLE *to help maintain useful, clear, concise, consistent and fluid writing.*
+*Learn the basics of* SEPALSTYLE *to help maintain writing that is useful, clear, concise, consistent and fluid*
 
 
 Goals and principles
@@ -59,7 +59,7 @@ For simple step-by-step instructions, use right angle brackets.
 
     **Example**
 
-    Select **Launch** > **Sign up**
+    Select **Launch** > **Sign up**.
 
 For step-by-step instructions for complex procedures, use numbered and bulleted lists, instead of paragraphs, when possible.
 
@@ -117,14 +117,15 @@ Key terminology
 
 Common terms used in **SEPAL documentation** include:
 
--    SEPAL team
--    SEPAL interface
+-    the SEPAL team
+-    the SEPAL interface
 -    SEPAL documentation
--    section of SEPAL documentation
--    article within SEPAL documentation
+-    a section of SEPAL documentation
+-    an article within SEPAL documentation
+-    a subsection of an article within SEPAL documentation
 
-SEPAL team
-^^^^^^^^^^
+The SEPAL team
+^^^^^^^^^^^^^^
 
 The authors of the documentation should be referred to as **the SEPAL team**.
 
@@ -134,10 +135,10 @@ The authors of the documentation should be referred to as **the SEPAL team**.
 
 If the term, **the SEPAL team** has been overused, use "the authors of the documentation", or **we** or **us** instead.
 
-**SEPAL documentation contributors** can be used for external contributors to the documentation.
+**Contributors to SEPAL documentation** can be used for external contributors to the documentation.
 
-SEPAL interface
-^^^^^^^^^^^^^^^
+The SEPAL interface
+^^^^^^^^^^^^^^^^^^^
 
 The interface should be referred to as the **SEPAL interface**.
 
@@ -151,8 +152,8 @@ Elements of the interface should be formatted in bold and sentence case.
 
     Select the **Area of interest** button.
 
-SEPAL documentation
-^^^^^^^^^^^^^^^^^^^
+The SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The website where SEPAL documentation is located should be referred to as either **SEPAL documentation** or simply, **the documentation**.
 
@@ -160,8 +161,8 @@ The website where SEPAL documentation is located should be referred to as either
 
     Learn more about **SEPAL documentation** by reading this article.
 
-Section of SEPAL documentation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A section of SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A section of the documentation should be referred to as **a section of SEPAL documentation** or **a section of the documentation**. The titles of sections should appear in sentence case.
 
@@ -169,15 +170,25 @@ A section of the documentation should be referred to as **a section of SEPAL doc
 
     Discover how to register for SEPAL in the section, `Getting started <https://docs.sepal.io/en/latest/setup/index.html>`__.
 
-Article within SEPAL documentation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+An article within SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A page within the documentation should be referred to as **an article**. The titles of articles should appear sentence case.
+A page within the documentation should be referred to as **an article**. The titles of articles should appear in sentence case.
 
     **Example**
 
     Learn more about the **SEPAL interface** in the article, `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__.
 
+A subsection of an article within SEPAL documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A subsection within an article of the documentation should be referred to as **a subsection of an article**. When referring to subsections, their titles should appear in sentence case.
+
+**Example**
+
+    For more information, see the **Set up your GEE account** subsection of this article.
+
+However, when formatting titles of subsections, the appropriate symbols should be used (i.e. from Heading 1 to Heading 6: =, -, ^, ", #, +). For further guidance, see the `Guidelines subsection of the Contribute article <https://docs.sepal.io/en/latest/team/contribute.html#guidelines>`_.
 
 Describing interactions with the SEPAL interface
 ------------------------------------------------
@@ -274,9 +285,9 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     "dash","go to","Go to the **SEPAL dash**."
     "dock","select","Select the **Files** tab in the dock."
     "drawer","open, close","Open the **Navigation** drawer."
-    "drowdown menu","open, select, choose","Select **Vector file** from the dropdown menu."
-    "field","enter","Enter your credentials into the **Username** and **Password fields**."
-    "files","go to, search, nagivate through, save to","Select the **Files** icon to open your SEPAL folders."
+    "dropdown menu","open, select, choose","Select **Vector file** from the dropdown menu."
+    "field","enter","Enter your credentials into the **Username** and **Password** fields."
+    "files","go to, search, navigate through, save to","Select the **Files** icon to open your SEPAL folders."
     "filter","apply, turn on, turn off","Apply the **Cloud detection** filter."
     "folder","open, save to","Save to your **SEPAL folders**."
     "form","fill out, submit","Fill out the **Reset password** form."
@@ -287,7 +298,7 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     "option","choose, select, use","Select the **Daily imagery** option."
     "pane","go to, view","View the **Recipe** pane."
     "parameter","select","Select the **Exportation** parameters."
-    "pointer","use, click, click and hold, move","Move the pointer to the map."
+    "pointer","use, click, click and hold, hover, move","Move the pointer to the map."
     "pop-up menu","view, select, choose, close","Select the checkboxes in the pop-up menu."
     "pop-up window","view, select, choose, close","View your options in the **User report** pop-up window."
     "recipe","open, go to, select, save, export, edit","Select the **Time series** recipe."
@@ -384,17 +395,17 @@ Use colons to introduce lists, definitions, explanations or quotations.
 
     In this section of **SEPAL documentation**, you can learn how to:
 
-    -   Register to SEPAL
-    -   Use Google Earth Engine (GEE) with SEPAL
-    -   Use Norway’s International Climate and Forests Initiative (NICFI) - Planet Lab data
-    -   Exchange files with SEPAL
-    -   Manage your resources
-    -   Reset your password
+    -    register to SEPAL
+    -    use GEE with SEPAL
+    -    use NICFI - Planet Lab data
+    -    exchange files with SEPAL
+    -    manage your resources
+    -    reset your password
 
 Commas
 """"""
 
-A comma may separate two independent clauses before a conjunction, separate two independent clauses before a conjunction, set off complementary information, be used before the final "and" in a list to avoid ambiguity, or be used where a sentence comprises a complex series of phrases.
+A comma may separate two independent clauses before a conjunction, set off complementary information, be used before the final "and" in a list to avoid ambiguity, or be used where a sentence comprises a complex series of phrases.
 
     **Example**
 
@@ -403,7 +414,7 @@ A comma may separate two independent clauses before a conjunction, separate two 
 En-dashes
 """""""""
 
-En-dashes can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values, and ranges of dates.
+En-dashes (–) are longer than hyphens (-). They can be used in pairs – leaving a space on either side – to set off an element that is not part of the main sentence. Ideally, they should not be used more than once per paragraph. An en-dash can be used alone to add a phrase elaborating what has gone before – leaving a space on either side. En-dashes are used for relationships, ranges of values and ranges of dates.
 
     **Example**
 
@@ -447,10 +458,10 @@ Use semicolons to separate independent clauses that have different subjects and 
 
     These overlay areas can be managed in various ways. For example, you can choose to:
 
-    -   keep only the raster data from the first or last dataset;
-    -   combine the values of the overlay cells using a weighting algorithm;
-    -   average the values of the overlay cells; or
-    -   take the maximum or minimum value.
+    -    keep only the raster data from the first or last dataset;
+    -    combine the values of the overlay cells using a weighting algorithm;
+    -    average the values of the overlay cells; or
+    -    take the maximum or minimum value.
 
 File names
 ^^^^^^^^^^
@@ -466,10 +477,12 @@ Highlights
 
 Common terms for showcasing information include:
 
--   Tip
--   Note
--   Attention
--   Important
+-    Tip
+-    Note
+-    Attention
+-    Important
+
+Avoid "Warning" and "Danger".
 
 Numbers
 ^^^^^^^
@@ -494,15 +507,15 @@ Lists
 
 When presenting bulleted and numbered lists, introduce them with an opening phrase ending with a colon.
 
-For very short entries, the list items are lower case with no punctuation.
+For very short entries, the list items are lowercase with no punctuation.
 
    **Example**
 
    Select one of the following categories:
 
-   -   background
-   -   foreground
-   -   special background 1
+   -    background
+   -    foreground
+   -    special background 1
 
 For longer entries, the list items are lower case and end with a semi-colon; the final entry should end with a semicolon and the word "and".
 
@@ -542,7 +555,7 @@ When referencing source material, use the author–date system, which includes i
 Units
 ^^^^^
 
-Use the International System of Units. Do not use punctuation or letter spacing; however, always insert a space between the unit and the number. If using symbols, introduce at first use in parentheses.
+Use the `International System of Units <https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__. Do not use punctuation or letter spacing; however, always insert a space between the unit and the number. If using symbols, introduce at first use in parentheses.
 
    **Example**
 
