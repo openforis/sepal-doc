@@ -10,7 +10,7 @@ The main objective is to detect those changes as early as possible. This priorit
 
 NRT-FDM is a rapidly evolving field of research and many different approaches have been proposed. The most common ones are based on the detection of abrupt changes in the time series, which are then classified as disturbance events.
 
-This page provides background information and a detailed how-to guide for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of NRT alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to structural elements of vegetation cover.
+This page provides background information and a detailed **How-to guide** (see below) for the implementation of the BayTS algorithm on the SEPAL platform that is optimized for the generation of NRT alerts using Sentinel-1 radar data. The advantage of using radar data is its independence from cloud cover and sensitivity to structural elements of vegetation cover.
 
 Methodology
 -----------
