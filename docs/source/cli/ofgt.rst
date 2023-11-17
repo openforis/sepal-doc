@@ -1,9 +1,13 @@
-Open Foris Geospatial Toolkit
-=============================
+OFGT
+====
 
-The Open Foris Geospatial Toolkit (OFGT) is a collection of prototype command-line utilities for the processing of geographical data. The tools can be divided into stand-alone programmes and scripts. They have been tested mainly in the Ubuntu Linux environment, although they can be used with other Linux distros, macOS, and MS Windows (Cywgin) as well. Most of the stand-alone programmes use GDAL libraries and many of the scripts rely heavily on GDAL command-line utilities.
+The **Open Foris Geospatial Toolkit (OFGT)** is a collection of prototype command-line utilities for processing geographical data. The tools can be divided into stand-alone programmes and scripts. They have been tested mainly in the Ubuntu Linux environment, although they can be used with other Linux distros, macOS, and Microsoft Windows (Cywgin) as well. Most of the stand-alone programmes use **GDAL libraries** and many of the scripts rely heavily on **GDAL command-line utilities**.
 
-The OFGT project started under the Open Foris initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting (see `Open Foris <http://openforis.org>`__. The initiative develops and supports innovative, easy-to-use tools needed to produce reliable, up-to-date information on the state of forest resources and their uses. The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction, and other image processing analysis.
+The **OFGT** project started under the Open Foris initiative in an effort to develop, share and support software tools and methods for multipurpose forest assessment, monitoring and reporting (see `Open Foris <http://openforis.org>`__. 
+
+The Open Foris initiative develops and supports innovative, easy-to-use tools needed to produce reliable, up-to-date information on the state of forest resources and their uses. 
+
+The command-line tools aim to simplify the complex process of transforming raw satellite imagery for automatic image processing to produce valuable information. These tools contain radiometric harmonization, image segmentation and image arithmetic, as well as image statistics, feature extraction and other image processing analysis.
 
 .. note::
 
@@ -12,7 +16,7 @@ The OFGT project started under the Open Foris initiative in an effort to develop
 Available commands
 ------------------
 
-The complete documentation of the OFGT commands can be found in the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__.
+The complete documentation of the **OFGT** commands can be found in the `OFGT manual <https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__.
 
 
 General tools
@@ -23,7 +27,7 @@ General tools
     $ CsvToPolygon.py              # Creates shapefile polygons from a text file.
     $ genericCsvToPolygon.py       # Creates polygons from text files.
     $ genericGEkml2csv.bash        # Converts separate KML files into one CSV file.
-    $ GExml2csv.bash               # Converts XML files from the GEE training data collection tool into one CSV file.
+    $ GExml2csv.bash               # Converts XML files from the GEE training data collection tool into one .csv file.
     $ oft-addattr.py               # Adds one integer attribute in a shape file.
     $ oft-addpct.py                # Adds pseudo color table to an image.
     $ oft-admin-mask.bash          # Prepares a mask of administrative areas within a satellite image.
@@ -41,7 +45,7 @@ General tools
     $ oft-sample-within-polys.bash # Samples pixels within polygons and generates training data for knn.
     $ oft-shptif.bash              # Rasterizes a shapefile to the resolution of a reference image.
     $ oft-sigshp.bash              # Creates a signature file of an image based on training area polygons.
-    $ PointsToSquares.py           # Converts XY-locations into 100 m x 100 m squares in a KML file.
+    $ PointsToSquares.py           # Converts XY-locations into 100 m x 100 m squares in a .kml file.
 
 Image manipulation
 ^^^^^^^^^^^^^^^^^^
@@ -51,7 +55,7 @@ Image manipulation
     $ multifillerThermal.bash      # Utilizes several Landsat scenes to build a multitemporal image composite using the warmest pixel method.
     $ oft-calc                     # Raster image calculator.
     $ oft-chdet.bash               # Automated change detection.
-    $ oft-clip.pl                  # Subsets an input image using the extent, pixel size, and projection of a reference image.
+    $ oft-clip.pl                  # Subsets an input image using the extent, pixel size and projection of a reference image.
     $ oft-combine-images.bash      # Combines two images into one.
     $ oft-gapfill                  # Regression-based gap and cloud filler.
     $ oft-ndvi.bash                # Computes NDVI images.
@@ -60,16 +64,16 @@ Image manipulation
     $ oft-shrink                   # To be combined with oft-trim.
     $ oft-stack                    # Creates a multiband image stack.
     $ oft-trim                     # Erosion filter producing binary output.
-    $ oft-trim-maks.bash           # Makes a 0/1 mask of a 6 or 7 band Landsat image.
+    $ oft-trim-maks.bash           # Makes a 0/1 mask of a 6- or 7-band Landsat image.
 
 Statistics
 ^^^^^^^^^^
 
 .. code-block:: console
 
-    $ oft-ascstat.awk              # Computes basic statistics for a space separated text file.
+    $ oft-ascstat.awk              # Computes basic statistics for a space-separated text file.
     $ oft-avg                      # Computes zone/segment averages and standard deviations.
-    $ oft-countpix.pl              # Counts number of pixels with, below, or above a specific value.
+    $ oft-countpix.pl              # Counts number of pixels with, below or above a specific value.
     $ oft-crossvalidate            # Computes RMSE and bias estimates for knn via leave-one-out cross-validation.
     $ oft-extr                     # Extracts pixel values from an image into a text file.
     $ oft-his                      # Computes image histogram by segments.
