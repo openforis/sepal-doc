@@ -52,4 +52,4 @@ Requirements
 1. Area of interest (AOI) (EE table, country/regional boundaries, self-drawn polygon)
 2. Forest mask (optional, but recommended)
 
-For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download `this presentation <https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`. To understand the underlying logic of the workflow, read further.
+For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download `this presentation <https://docs.google.com/presentation/d/1g_RbSuBL0DyScOja2ppZHhj8PcTWs0op?rtpof=true&usp=drive_fs>`_. To understand the underlying logic of the workflow, read further.
