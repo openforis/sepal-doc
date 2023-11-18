@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-20 01:05+0000\n"
-"PO-Revision-Date: 2023-02-20 01:19\n"
+"POT-Creation-Date: 2023-07-21 10:24+0000\n"
+"PO-Revision-Date: 2023-07-21 15:37\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: sepal-doc\n"
 "X-Crowdin-Project-ID: 562097\n"
@@ -27,7 +27,7 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/cli/python.rst:7
-msgid "SEPAL instances run on :code:`focal` ubuntu machines and thus provide a fully functional :code:`Pyhton 3.8` environment. This environment is accecible through Jupyter Notebook, JupyterLab or the terminal:"
+msgid "SEPAL instances run on :code:`focal` Ubuntu machines and thus provide a fully functional :code:`Python 3.8` environment. This environment is accessible through Jupyter Notebook, JupyterLab or the terminal:"
 msgstr ""
 
 #: ../../source/cli/python.rst:25
@@ -35,55 +35,55 @@ msgid "Description"
 msgstr ""
 
 #: ../../source/cli/python.rst:27
-msgid "The SEPAL python environment is not empty and embed numerous librairies. They are listed here:"
+msgid "The SEPAL Python environment is not empty; there are numerous embedded librairies (see figure below)."
 msgstr ""
 
 #: ../../source/cli/python.rst:32
 msgid "Run :code:`pip show <name of your lib>` to check if it's already installed."
 msgstr ""
 
-#: ../../source/cli/python.rst:36
+#: ../../source/cli/python.rst:35
 msgid "Customization"
 msgstr ""
 
-#: ../../source/cli/python.rst:38
+#: ../../source/cli/python.rst:37
 msgid "The SEPAL environment can be customized to user needs using any third-party librairies and pip. By default installation will be run in :code:`--user` mode and won't affect other SEPAL users."
 msgstr ""
 
-#: ../../source/cli/python.rst:46
+#: ../../source/cli/python.rst:45
 msgid "If you face compatibility issues when customizing your SEPAL environment, please let us know in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 msgstr ""
 
-#: ../../source/cli/python.rst:49
+#: ../../source/cli/python.rst:48
 msgid "Virtual environment"
 msgstr ""
 
-#: ../../source/cli/python.rst:53
-msgid "SEPAL does not support conda environments, if you need to install compiled librairies, please the SEPAL team via the  `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+#: ../../source/cli/python.rst:52
+msgid "SEPAL does not support conda environments. If you need to install compiled libraries, please contact the SEPAL team via the  `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
 msgstr ""
 
-#: ../../source/cli/python.rst:55
-msgid "SEPAL supports python venv creation. in this section we'll explain how you can create a venv and link it to Jupyter so you can run your processes on the associated kernel."
+#: ../../source/cli/python.rst:54
+msgid "SEPAL supports Python venv creation. In this section, we'll explain how to create a venv and link it to Jupyter, so you can run your processes on the associated kernel."
 msgstr ""
 
-#: ../../source/cli/python.rst:57
-msgid "By design Jupyter is runnnig on the Python Kernel described in the previous section. you can also use the kernel associated to our applications (they start with :code:`venv`). If your work rely on very specific version numbers it might be good to run everything on a dedicated environment."
+#: ../../source/cli/python.rst:56
+msgid "By design, Jupyter is running on the Python Kernel described in the previous section. You can also use the kernel associated with our applications (they start with :code:`venv`). If your work relies on very specific version numbers, it might be good to run everything in a dedicated environment."
 msgstr ""
 
-#: ../../source/cli/python.rst:59
+#: ../../source/cli/python.rst:58
 msgid "If not existing, create a directory to host your virtual environments. From the root directory, run the following line:"
 msgstr ""
 
-#: ../../source/cli/python.rst:65
-msgid "And then, copy and paste the following lines in your terminal:"
+#: ../../source/cli/python.rst:64
+msgid "Then, copy and paste the following lines in your terminal:"
 msgstr ""
 
-#: ../../source/cli/python.rst:76
-msgid "Now this venv will be available as a kernel inside your Jupyter workspace. This kernel will be automatically removed if you destroy the venv directory."
+#: ../../source/cli/python.rst:75
+msgid "Now, this venv will be available as a kernel inside your Jupyter workspace. It will be automatically removed if you destroy the venv directory."
 msgstr ""
 
-#: ../../source/cli/python.rst:78
-msgid "Note that If you want to install libs inside this venv you need first to activate it:"
+#: ../../source/cli/python.rst:77
+msgid "Note that if you want to install libs inside of this venv, you first need to activate it:"
 msgstr ""
 
 #~ msgid ""
@@ -117,5 +117,65 @@ msgstr ""
 #~ "If you want to install libs inside"
 #~ " this venv you need first to "
 #~ "activate it:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL instances run on :code:`focal` "
+#~ "ubuntu machines and thus provide a "
+#~ "fully functional :code:`Pyhton 3.8` "
+#~ "environment. This environment is accecible "
+#~ "through Jupyter Notebook, JupyterLab or "
+#~ "the terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SEPAL python environment is not "
+#~ "empty and embed numerous librairies. "
+#~ "They are listed here:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL does not support conda "
+#~ "environments, if you need to install "
+#~ "compiled librairies, please the SEPAL "
+#~ "team via the  `Github issue tracker "
+#~ "<https://github.com/openforis/sepal/issues/new/choose>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL supports python venv creation. in"
+#~ " this section we'll explain how you"
+#~ " can create a venv and link it"
+#~ " to Jupyter so you can run your"
+#~ " processes on the associated kernel."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By design Jupyter is runnnig on "
+#~ "the Python Kernel described in the "
+#~ "previous section. you can also use "
+#~ "the kernel associated to our "
+#~ "applications (they start with :code:`venv`)."
+#~ " If your work rely on very "
+#~ "specific version numbers it might be "
+#~ "good to run everything on a "
+#~ "dedicated environment."
+#~ msgstr ""
+
+#~ msgid "And then, copy and paste the following lines in your terminal:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now this venv will be available as"
+#~ " a kernel inside your Jupyter "
+#~ "workspace. This kernel will be "
+#~ "automatically removed if you destroy the"
+#~ " venv directory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that If you want to install"
+#~ " libs inside this venv you need "
+#~ "first to activate it:"
 #~ msgstr ""
 

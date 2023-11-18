@@ -3,119 +3,118 @@ BFAST Explorer
 
 .. note::
 
-  This tutorial comprehends the BFAST Explorer v0.0.1. Notice that if you are using a newer version, some features might be different.
+  This tutorial was created using BFAST Explorer v0.0.1. If you are using a newer version, some features might differ.
 
 Description
 -----------
 
-**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, developed using R and Python, designed for the analysis of *Landsat Surface Reflectance* time series pixel data.
+**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, developed using R and Python, designed for the analysis of Landsat surface reflectance time-series pixel data.
 
-Three change detection algorithms - **bfastmonitor**, **bfast01** and **bfast** - are used in order to investigate temporal changes in trend and seasonal components, via breakpoint detection.
+Three change detection algorithms – **bfastmonitor**, **bfast01** and **bfast** – are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection.
 
-If you encounter any bugs, please send a message to almeida.xan@gmail.com, or create an issue on the `GitHub page <https://github.com/almeidaxan/bfast-explorer/>`__.
+If you encounter any problems, please send a message to almeida.xan@gmail.com or create an issue on `GitHub <https://github.com/almeidaxan/bfast-explorer/>`__.
 
 Tutorial
 --------
 
-Albeit very simple, please follow this short usage guide to learn how to properly use the tool.
+Follow this short tutorial to learn how to properly use the tool.
 
-Map Tab 
+Map tab 
 *******
 
-This is the starting tab, which we first see when we run the tool. The tab is composed of an interactive map (rendered using Google Maps engine) and a navigation toolbar. Feel free to zoom and pan the map.
+The **Map** tab is the starting tab that is initially displayed when running the tool. It is composed of an interactive map (rendered using the Google Maps engine) and a navigation toolbar. Explore the map by zooming in and panning around.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-01.jpg
   :group: bfast-explorer
 
-If we wish, we can also use the *search field* located on the top of the toolbar to search for a location. Then, the map automatically zooms to the desired location, similar to how Google Maps works. In the example, we searched for :code:`unicamp campinas`, which is the University of Campinas.
+Users can also use the **Search** field located at the top of the toolbar to search for a location. The map automatically zooms in on the desired location, similarly to Google Maps. In this example, we searched for :code:`unicamp campinas` (the University of Campinas).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-02.jpg
   :group: bfast-explorer
 
-Now, let's zoom out all the way back and place a marker at the north of Brazil, as shown. To *place* a marker, simply click on the map. If we want to, we can also place multiple markers.
+Now, let's zoom out all the way and place a marker in the north of Brazil, as shown in the example. To place a marker, simply click on the map. Multiple markers can be placed, if desired.
 
-We may also wish to clear all the placed markers. To do that, click on the |trash-icon| red button on the left side of the toolbar.
+To clear all placed markers, select the red |trash-icon| button on the left side of the toolbar.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-03.jpg
   :group: bfast-explorer
 
-After that, we need to *select* one of the markers in order download its Landsat pixel data. To do that, simply click on an already placer marker, and it will be highlighted. Only one marker may be selected at a time.
+Next, select one of the markers to download its Landsat pixel data by selecting an already placed marker (it will be highlighted; only one marker may be selected at a time).
 
-By selecting a marker, we can now choose a combination of which satellites to download from using the drop-down menu, located on the bottom of the toolbar. For instance, let's choose all the available satellites products: Landsat 5, 7 and 8 SR.
+By selecting a marker, you can now choose a combination of which satellites to download from using the dropdown menu, located on the bottom of the toolbar. In the example, we have choosen all of the available satellites products: Landsat 5, 7 and 8 SR.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-04.jpg
   :group: bfast-explorer
 
-Then, we press the |download-icon| :guilabel:`Get Data` blue button, located on the right side of the toolbar. By pressing that button, the download will start. We can keep track of the download progress by looking to the lower right corner. All the historical data available are downloaded, which should take less than 10 seconds for the three productsselected.
+Then, press the blue |download-icon| :guilabel:`Get data` button, located on the right side of the toolbar, which will initiate the download of all historical data available. The download progress is displayed in the lower-right corner; it should take less than ten seconds for the three selected products.
 
-.. note:: 
+.. note::
     
-    As of the writing of this guide, not all Surface Reflectance data are availble from GEE. So, depending on where we place our markers, we may face a message indicating that *'No data available for the chosen satellite(s) and/or region... Please change your query and try again.'*. 
-    Since we rely heavily on GEE to download the data, there's nothing we can do yet. We're sorry for that.
+    At the time of writing this documentation page, all surface reflectance data were not available from GEE. Depending on where you place your markers, you may receive the following message: "No data available for the chosen satellite(s) and/or region...Please change your query and try again." Since the SEPAL platform relies on GEE to download data, the SEPAL team can not help with this issue. 
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-05.jpg
   :group: bfast-explorer
 
-If the download is successful, we'll receive a message directing to the |chart-icon| :guilabel:`Analysis` tab.
+If the download is successful, you'll receive a message directing you to the |chart-icon| :guilabel:`Analysis` tab.
 
-Analysis Tab
+Analysis tab
 ************
 
-In this tab, we can analyze the downloaded data and, then, locally save the results as files.
+In the **Analysis** tab, we can analyse the downloaded data and  save the results locally as files.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-06.jpg
   :group: bfast-explorer
 
-First, let's choose which satellite time series date to visualize. Note that, even though we downloaded data from Landsat 5, 7 and 8 SR, we're can still analyze them separately. However, let's proceed by choosing all of them.
+First, choose which satellite time series date to visualize. Even though data was downloaded from Landsat 5, 7 and 8 SR, they can't be analyzed separately. However, let's proceed by choosing all of them.
 
-As we can see, the time series of the first spectral band (:code:`b1`) is plotted for all satellites. A colored legend distinguishes the
-different sources.
+The time series of the first spectral band (:code:`b1`) is plotted for all satellites. A legend distinguishes the different sources.
 
 .. note::
     
-    be careful when comparing *spectral bands* data from different satellites, as they may not correspond to the same wavelength range! Read more about this `here <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__.
+    Use caution when comparing **Spectral bands** data from different satellites, as they may not correspond to the same wavelength range (see `here <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-07.jpg
   :group: bfast-explorer
 
-Apart from the spectral bands, there are also four spectral-bands-derived indexes available: NDVI, NDMI, EVI and EVI2. Let's check, for example, the NDVI time series.
+Apart from the spectral bands, there are also four spectral-bands-derived indexes available: NDVI, NDMI, EVI and EVI2. As an example, let's check the NDVI time series.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-08.jpg
   :group: bfast-explorer
 
-If we want to, we can also download *all* the time series data as a file. To do that, press the |download-icon| :guilabel:`Data` blue button. All the data will be downloaded as a .CSV, ordered by the acquisiton date. Also, an additional column is included, in order to distinguish the satellite sources.
+All time-series data can be downloaded as a file by selecting the blue |download-icon| :guilabel:`Data` button. All data will be downloaded as a CSV file, ordered by the acquisiton date. An additional column is included in order to distinguish the satellite sources.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-09.jpg
   :group: bfast-explorer
 
-We may download the time series plot as an image, by pressing the |download-icon| :guilabel:`Plot` blue button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
+The time series plot can be downloaded as an image by selecting the blue |download-icon| :guilabel:`Plot` button. A window will appear offering some raster (JPEG, PNG) and a vectorial (SVG) image output formats.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-10.jpg
   :group: bfast-explorer
 
-Next, we select the *change detection algorithm*. Three options are available: **bfastmonitor**, **bfast01** and **bfast**. More information about these algorithms can be found `here <http://bfast.r-forge.r-project.org/>`__.
+Next, select the **Change detection algorithm**. Three options are available: **bfastmonitor**, **bfast01** and **bfast** (for more information, go to `this page <http://bfast.r-forge.r-project.org/>`__).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-11.jpg
   :group: bfast-explorer
 
-By selecting **bfastmonitor**, we are able to tweak four parameters on the left side-bar: :code:`formula`, :code:`history period type`, :code:`harmonic order`, and :code:`start of monitoring`. These parameters have different impacts on the results, which can be verified on the right side plot. Here, we set the maximum value of the :code:`harmonic order` to 9 to avoid some problems.
+By selecting **bfastmonitor**, you can tweak four parameters in the left sidebar: :code:`formula`, :code:`history period type`, :code:`harmonic order`, and :code:`start of monitoring`. These parameters have different impacts on results, which can be verified on the right side plot. Here, we set the maximum value of the :code:`harmonic order` to 9 to avoid problems.
 
-Similar to the time series, we can also download the *results* of the change detection algorithms as .RDS data files, by clicking on the |download-icon| :guilabel:`Results` blue button. If we wish to download the plot, we can press the |download-icon| :guilabel:`Plot` blue button.
+Similar to the time series, the results of the change detection algorithms as .RDS data files can also be downloaded by selecting the blue |download-icon| :guilabel:`Results` button. To download the plot, select the blue |download-icon| :guilabel:`Plot` button.
 
-For more information on how to load .RDS files on R, please check this `link <http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/>`__.
+For more information on how to load RDS files on R, see `this page <http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/>`__.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-12.jpg
   :group: bfast-explorer
 
-By selecting **bfast01**, we can tweak two parameters: :code:`formula`, and :code:`harmonic order`.
+By selecting **bfast01**, you can tweak two parameters: :code:`formula` and :code:`harmonic order`.
 
-Here, the maximum value of the :code:`harmonic order` is dynamically set depending on the time series data length and the choice of the :code:`formula` parameter.
+Here, the maximum value of the :code:`harmonic order` is set dynamically, depending on the time series data length and the choice of the :code:`formula` parameter.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-13.jpg
   :group: bfast-explorer
 
-Finally, by selecting **bfast**, we may tweak two parameters: :code:`h` (minimal segment size), and :code:`season type`. Please note that, since **bfast** can
-detect multiple breakpoints, it may take a couple of seconds to process, in comparison to the previous two algorithms.
+Finally, by selecting **bfast**, you can tweak two parameters: :code:`h` (minimal segment size) and :code:`season type`. 
+
+Since **bfast** can detect multiple breakpoints, it may take a couple of seconds to process, in comparison to the previous two algorithms.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-14.jpg
   :group: bfast-explorer

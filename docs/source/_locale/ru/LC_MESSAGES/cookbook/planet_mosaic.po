@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 00:58+0000\n"
-"PO-Revision-Date: 2023-04-25 01:23\n"
+"POT-Creation-Date: 2023-07-31 05:56+0000\n"
+"PO-Revision-Date: 2023-07-31 07:19\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -27,15 +27,15 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:7
-msgid "A mosaic is a process of combining spatially overlapping images into an individual image. In SEPAL, you can create a composited dataset from Planet images taken at different times. The process can be done using different techniques, for example, you can choose to keep only the pixel value from the first or last image, combine the values of the overlapped pixels using a weighting algorithm, average, or use the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds/shadows, snow, etc. These operations are complex and repetitive. SEPAL offers you an interactive and intuitive way to create Planet mosaics within any area of interest."
+msgid "A mosaic is a process of combining spatially overlapping images into an individual image. In the SEPAL platform, you can create a composite dataset from Planet images taken at different times by using different techniques. For example, you can choose to keep only the pixel value from the first or last image, or combine the values of the overlapping pixels using a weighting algorithm, the average, or the maximum or minimum value. In addition, certain preprocessing tasks can be applied to mask clouds, shadows, snow, etc. These operations are complex and repetitive. SEPAL offers an interactive and intuitive way to create Planet mosaics within any area of interest (AOI)."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:15
-msgid "You won't be able to retrieve the images if your SEPAL and GEE accounts are not connected. Follow `Connect SEPAL to GEE <../setup/gee.html>`__ to know more."
+msgid "You won't be able to retrieve images if your SEPAL and Google Earth Engine (GEE) accounts are not connected (see `Connect SEPAL to GEE <../setup/gee.html>`__)."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:17
-msgid "You also need to connect your GEE account with Planet. Follow `Use NICFI - Planet Lab data <../setup/nicfi.html>`__."
+msgid "You also need to connect your GEE account with Planet (see `Use NICFI - Planet Lab data <../setup/nicfi.html>`__)."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:20
@@ -43,299 +43,331 @@ msgid "Start"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:22
-msgid "Once the :code:`planet mosaic` recipe is selected, SEPAL will show up the recipe process in a new tab (1) and the AOI selection window will open itself on the bottom right side (2)."
+msgid "Once the :code:`Planet mosaic` recipe is selected, SEPAL will show the recipe process in a new tab (1) and the AOI selection window will appear in the lower right (2)."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:28
-msgid "The first step is to change the name of the recipe. This name will be used to name your files and recipes in the SEPAL folders. Use the best-suited convention for your need. Simply double-click the tab and write a new name. It will default to :code:`Planet_mosaic_<start_date>_<end_date>`."
+msgid "The first step is to change the name of the recipe, which will be used to name your files and recipes in the SEPAL folders."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:40
+#: ../../source/cookbook/planet_mosaic.rst:30
+msgid "Double-click the tab and enter a new name (it will default to :code:`Planet_mosaic_<start_date>_<end_date>`)."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:42
 msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<dates>_<measure>`."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:43
+#: ../../source/cookbook/planet_mosaic.rst:45
 msgid "Parameters"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:45
-msgid "On the bottom right corner, 4 tabs are available. They will allow you to customize the planet mosaic to your needs."
-msgstr ""
-
 #: ../../source/cookbook/planet_mosaic.rst:47
-msgid ":guilabel:`AOI`: the Area of interest (AOI)"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:48
-msgid ":guilabel:`DAT`: the dates of the time series"
+msgid "In the lower right, four tabs are available, allowing you to customize the planet mosaic to your needs."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:49
-msgid ":guilabel:`SRC`: the time series dataset source"
+msgid ":guilabel:`AOI`: Area of interest (AOI)"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:50
-msgid ":guilabel:`OPT`: the filtering options"
+msgid ":guilabel:`DAT`: Dates of time series"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:57
-msgid "AOI Selection"
+#: ../../source/cookbook/planet_mosaic.rst:51
+msgid ":guilabel:`SRC`: Time series dataset source"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:52
+msgid ":guilabel:`OPT`: Filtering options"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:59
-msgid "The data exported by the recipe will be cut to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
+msgid "AOI selection"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:61
-msgid "Administrative boundaries"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:62
-msgid "EE Tables"
+msgid "The data exported by the recipe will be cut to the bounds of the AOI."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:63
-msgid "Drawn polygons"
+msgid "There are multiple ways to select the AOI in SEPAL:"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:65
-msgid "they are extensively described in our documentation. Please read :doc:`../feature/aoi_selector` to know more."
+msgid "administrative boundaries"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:72
+#: ../../source/cookbook/planet_mosaic.rst:66
+msgid "EE Tables"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:67
+msgid "drawn polygons"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:69
+msgid "These are extensively described in our documentation (see :doc:`../feature/aoi_selector`)."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:76
 msgid "Date"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:74
-msgid "In the :guilabel:`DAT` tab, you will be asked to select the dates of the time series used to build the composited image. You need to provide a start and an end date."
+#: ../../source/cookbook/planet_mosaic.rst:78
+msgid "In the :guilabel:`DAT` tab, select the dates of the time series used to build the composited image (i.e. start date and end date)."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:80
-msgid "Click the :btn:`<fa-solid fa-calendar-days>` to display the Date picker and select your date."
+#: ../../source/cookbook/planet_mosaic.rst:84
+msgid "Select :btn:`<fa-solid fa-calendar-days>` to choose your date."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:86
-msgid "When the selection is done click :btn:`<fa-solid fa-chevron-right> next` button."
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:89
-msgid "Sources"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:91
-msgid "SEPAL can use multiple data sources to create your mosaics/composites as long as they are Planet related datasets."
+#: ../../source/cookbook/planet_mosaic.rst:90
+msgid "Then, select the :btn:`<fa-solid fa-chevron-right> Next` button."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:93
-msgid "3 options are available: :guilabel:`NICFI basemaps`, :guilabel:`Custom basemaps`, :guilabel:`Daily imagery`"
+msgid "Sources"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:95
-msgid "Once you are finished, click on :btn:`<fa-solid fa-check> done` to finish the process."
+msgid "SEPAL can use multiple data sources to create your mosaics/composites, as long as they are Planet-related datasets."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:98
-msgid "NICFI basemaps"
+#: ../../source/cookbook/planet_mosaic.rst:97
+msgid "Three options are available:"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:99
+msgid ":guilabel:`NICFI basemaps`"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:100
-msgid "The NICFI basemap uses the level 1 NICFI data provided by SEPAL."
+msgid ":guilabel:`Custom basemaps`"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:104
-msgid "provided data are monthly mosaics, which means that your time range needs to be longer than 1 month. Otherwise, only one image will be used."
+#: ../../source/cookbook/planet_mosaic.rst:101
+msgid ":guilabel:`Daily imagery`"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:111
+#: ../../source/cookbook/planet_mosaic.rst:103
+msgid "Select :btn:`<fa-solid fa-check> Done` to finish the process."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:106
+msgid "NICFI basemaps"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:108
+msgid "The NICFI basemap uses Level 1 NICFI data provided by SEPAL."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:112
+msgid "Since the data provided consists of monthly mosaics, your time range needs to be longer than one month (otherwise, only one image will be used)."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:119
 msgid "Custom basemaps"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:113
-msgid "You can provide a custom :code:`ImageCollection` Planet asset (such as NICFI level 1 data provided to registered users)."
+#: ../../source/cookbook/planet_mosaic.rst:121
+msgid "You can provide a custom :code:`ImageCollection` Planet asset (such as NICFI Level 1 data provided to registered users)."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:120
+#: ../../source/cookbook/planet_mosaic.rst:128
 msgid "Daily imagery"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:124
-msgid "Only users with granted access to NICFI level 2 data can use this option."
+#: ../../source/cookbook/planet_mosaic.rst:132
+msgid "Only users with access to NICFI Level 2 data can use this option."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:126
+#: ../../source/cookbook/planet_mosaic.rst:134
 msgid "Choose this option to provide custom Planet daily :code:`ImageCollection` imagery."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:133
+#: ../../source/cookbook/planet_mosaic.rst:141
 msgid "Options"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:137
-msgid "This step is not mandatory due to Planet mosaics are already sanitized."
+#: ../../source/cookbook/planet_mosaic.rst:145
+msgid "This step is not mandatory since Planet mosaics are already sanitized."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:139
-msgid "SEPAL provides you with options to customize the images used to create the compositing mosaic. The selected parameter will be automatically applied to the analysis, click the :btn:`<fa-solid fa-xmark> close` button to finish the customization."
+#: ../../source/cookbook/planet_mosaic.rst:147
+msgid "SEPAL provides options to customize images used to create the compositing mosaic; the selected parameter will be automatically applied to the analysis."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:146
-msgid "Cloud masking"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:148
-msgid "Planet composites already remove clouds. Setting this parameter to a value greater than zero (0) will remove additional clouds using a Google Earth Engine (GEE) algorithm."
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:151
-msgid "Shadow masking"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:153
-msgid "Planet composites already remove shadows. Setting this parameter to a greater value than zero (0) will remove additional shadows using a GEE algorithm."
+#: ../../source/cookbook/planet_mosaic.rst:149
+msgid "Select the :btn:`<fa-solid fa-xmark> Close` button to complete customization."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:156
-msgid "Cloud buffering"
+msgid "Cloud masking"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:158
-msgid ":guilabel:`none`: Only mask clouds. It might leave hazy pixels around masked clouds but will minimize the amount of maxed pixels in the mosaic."
+msgid "Planet composites already remove clouds. Setting this parameter to a value greater than zero (0) will remove additional clouds using a GEE algorithm."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:159
-msgid ":guilabel:`moderate`: Mask an additional 120m around each larger cloud. This helps prevent hazy pixels at the border of clouds to be included in the mosaic."
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:160
-msgid ":guilabel:`aggressive`: Mask an additional 600m around each larger cloud. This helps prevent hazy pixels at the border of clouds to be included in the mosaic."
+#: ../../source/cookbook/planet_mosaic.rst:161
+msgid "Shadow masking"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:163
+msgid "Planet composites already remove shadows. Setting this parameter to a greater value than zero (0) will remove additional shadows using a GEE algorithm."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:166
+msgid "Cloud buffering"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:168
+msgid ":guilabel:`none`: Only mask clouds. It might leave hazy pixels around masked clouds but will minimize the amount of masked pixels in the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:169
+msgid ":guilabel:`moderate`: Mask an additional 120 m around each larger cloud. This helps prevent hazy pixels at the border of clouds from being included in the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:170
+msgid ":guilabel:`aggressive`: Mask an additional 600 m around each larger cloud. This helps prevent hazy pixels at the borders of clouds from being included in the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:173
 msgid "Analysis"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:165
-msgid "Once all the parameters have been set, the mosaic will be rendered on the fly. Multiple color combinations can be displayed, see next figures."
+#: ../../source/cookbook/planet_mosaic.rst:175
+msgid "Once all of the parameters have been set, the mosaic will be rendered on the fly. Multiple color combinations can be displayed (see the following figures)."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:188
+#: ../../source/cookbook/planet_mosaic.rst:198
 msgid "Retrieve"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:192
-msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user see :doc:`../setup/resource` to know more."
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:194
-msgid "Click the :btn:`<fa-solid fa-cloud-arrow-down>` tab, the retrieve panel will be displayed, you can select which bands or indexes to download, specify the output scale, and destination."
-msgstr ""
-
 #: ../../source/cookbook/planet_mosaic.rst:202
-msgid "Bands"
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota (if you are a new user, see :doc:`../setup/resource`)."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:204
-msgid "You need to select the band(s) to export in the mosaic. There is no max number of bands, however, exporting useless bands will only increase the size and the time of the output."
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:208
-msgid "There is no fixed rule to the band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, the evolution expected and the careful selection of an adapted band combination will improve the quality of the downstream analysis."
+msgid "Select the :btn:`<fa-solid fa-cloud-arrow-down>` tab, which will display the **Retrieve** panel, where you can select which bands or indexes to download, as well as specify the output scale and destination."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:211
-msgid "Raw bands"
+msgid "Bands"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:213
-msgid ":guilabel:`blue`: blue"
+msgid "Select the band(s) to export in the mosaic. There is no maximum number; however, exporting useless bands will increase the size and time of the output."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:214
-msgid ":guilabel:`green`: green"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:215
-msgid ":guilabel:`red`: red"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:216
-msgid ":guilabel:`nir`: near infrared"
+#: ../../source/cookbook/planet_mosaic.rst:217
+msgid "There is no fixed rule to band selection. Every index will be more useful to the type of analysis you are performing. The knowledge of the study area, evolution expected, and careful selection of an adapted band combination will improve the quality of downstream analysis."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:220
-msgid "Indexes"
+msgid "Raw bands"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:222
-msgid ":guilabel:`NDVI`: `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__"
+msgid ":guilabel:`blue`: blue"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:223
-msgid ":guilabel:`NDMI`: `Normalized Difference Moisture Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__"
+msgid ":guilabel:`green`: green"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:224
-msgid ":guilabel:`NDWI`: `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__"
+msgid ":guilabel:`red`: red"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:225
-msgid ":guilabel:`EVI`: `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__"
+msgid ":guilabel:`nir`: near infrared"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:226
-msgid ":guilabel:`EVI2`: Two-band EVI (Enhanced vegetation index)"
+#: ../../source/cookbook/planet_mosaic.rst:229
+msgid "Indexes"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:227
-msgid ":guilabel:`SAVI`: `Soil-Adjusted Vegetation Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__"
-msgstr ""
-
-#: ../../source/cookbook/planet_mosaic.rst:230
-msgid "Scale"
+#: ../../source/cookbook/planet_mosaic.rst:231
+msgid ":guilabel:`NDVI`: `Normalized difference vegetation index <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`__"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:232
-msgid "You can set a custom scale for exportation by changing the value in the :code:`scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, just its size so keep in mind that PlanetLab data's native resolution is 3 - 4.1 m (altitude dependent Ground Sample Distance,  `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__)."
+msgid ":guilabel:`NDMI`: `Normalized difference moisture index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:233
+msgid ":guilabel:`NDWI`: `Normalized difference water index <https://en.wikipedia.org/wiki/Normalized_difference_water_index>`__"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:234
+msgid ":guilabel:`EVI`: `Enhanced vegetation index <doi:10.1016/S0034-4257(02)00096-2>`__"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:235
-msgid "Destination"
+msgid ":guilabel:`EVI2`: Two-band EVI (Enhanced vegetation index)"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:237
-msgid "You can export the mosaic composition to :guilabel:`sepal workspace` or to :guilabel: GEE as an `asset`. The same image will be exported but in the first case you will find it in :code:`.tif` format in the :code:`downloads` SEPAL folder, in the second one the image will be exported to your GEE account asset list."
+#: ../../source/cookbook/planet_mosaic.rst:236
+msgid ":guilabel:`SAVI`: `Soil-adjusted vegetation index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:239
+msgid "Scale"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:241
-msgid "If :guilabel:`google earth engine asset` is not displayed, it means that your GEE account is not connected to SEPAL, please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
+msgid "You can set a custom scale for exportation by changing the value in the :code:`Scale` field. Requesting a smaller resolution than the image's native resolution will not improve the quality of the output, only its size (note: PlanetLab data's native resolution is 3.0 m – 4.1 m [altitude-dependent ground sample distance; `see more info <https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__])."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:243
-msgid "Click on :btn:`<fa-solid fa-check> apply` to start the download process."
+#: ../../source/cookbook/planet_mosaic.rst:244
+msgid "Destination"
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:246
-msgid "Access"
+msgid "You can export the mosaic composition to the :guilabel:`SEPAL workspace` or to :guilabel: GEE as an `Asset`."
 msgstr ""
 
 #: ../../source/cookbook/planet_mosaic.rst:248
-msgid "Once the download process is done, you can access the data in your SEPAL folders. The data will be stored in the :code:`downloads` folder using the following format:"
+msgid "In both cases, the same image will be exported; however, for the former, the image will be exported in :code:`.tif` format to the :code:`Downloads` SEPAL folder; for the latter, the image will be exported to your GEE account **Assets** list."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:263
-msgid "Understanding how images are stored in a Planet Mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
+#: ../../source/cookbook/planet_mosaic.rst:252
+msgid "If :guilabel:`GEE Asset` is not displayed, your GEE account is not connected to SEPAL (see `Connect SEPAL to GEE <../setup/gee.html>`__)."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:265
-msgid "The data are stored in a folder using the name of the Planet mosaic as it was set in the first section of this document. As the number of data is spatially too big to be exported at once, the data are cut into small pieces and brought back together in a :code:`<PM name>_<gee tile id>.vrt` file."
+#: ../../source/cookbook/planet_mosaic.rst:254
+msgid "Select :btn:`<fa-solid fa-check> Apply` to start the download process."
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:269
-msgid "The full folder with a consistent tree hierarchy is required to read the :code:`.vrt`"
+#: ../../source/cookbook/planet_mosaic.rst:257
+msgid "Access"
 msgstr ""
 
-#: ../../source/cookbook/planet_mosaic.rst:273
-msgid "Now that you have downloaded the Planet Mosaic to your SEPAL or/and GEE account, it can be retrieved to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
+#: ../../source/cookbook/planet_mosaic.rst:259
+msgid "Once the download process is complete, access the data in your SEPAL folders."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:261
+msgid "The data will be stored in the :code:`Downloads` folder using the following format:"
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:276
+msgid "Understanding how images are stored in a Planet mosaic is only required if you want to use them manually. SEPAL applications are bound to this tiling system and can digest this information for you."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:278
+msgid "The data are stored in a folder using the previously chosen name of the Planet mosaic (as described in the \"Start\" section of this page of the documentation). Since the data is spatially too big to be exported at once, the data is divided into smaller pieces and reassembled in a :code:`<PM name>_<gee tile id>.vrt` file."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:282
+msgid "The full folder with consistent tree hierarchy is required to read the :code:`.vrt` file."
+msgstr ""
+
+#: ../../source/cookbook/planet_mosaic.rst:286
+msgid "Now that you have downloaded the Planet mosaic to your SEPAL account and/or GEE account, it can be retrieved to your computer using `FileZilla <../setup.filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
 
 #~ msgid ""
@@ -382,5 +414,352 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Click on :btn:`<fas fa-check> apply` to start the download process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A mosaic is a process of combining"
+#~ " spatially overlapping images into an "
+#~ "individual image. In SEPAL, you can "
+#~ "create a composited dataset from Planet"
+#~ " images taken at different times. The"
+#~ " process can be done using different"
+#~ " techniques, for example, you can "
+#~ "choose to keep only the pixel "
+#~ "value from the first or last "
+#~ "image, combine the values of the "
+#~ "overlapped pixels using a weighting "
+#~ "algorithm, average, or use the maximum"
+#~ " or minimum value. In addition, "
+#~ "certain preprocessing tasks can be "
+#~ "applied to mask clouds/shadows, snow, "
+#~ "etc. These operations are complex and"
+#~ " repetitive. SEPAL offers you an "
+#~ "interactive and intuitive way to create"
+#~ " Planet mosaics within any area of"
+#~ " interest."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You won't be able to retrieve the"
+#~ " images if your SEPAL and GEE "
+#~ "accounts are not connected. Follow "
+#~ "`Connect SEPAL to GEE <../setup/gee.html>`__"
+#~ " to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You also need to connect your GEE"
+#~ " account with Planet. Follow `Use "
+#~ "NICFI - Planet Lab data "
+#~ "<../setup/nicfi.html>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the :code:`planet mosaic` recipe is"
+#~ " selected, SEPAL will show up the "
+#~ "recipe process in a new tab (1)"
+#~ " and the AOI selection window will"
+#~ " open itself on the bottom right "
+#~ "side (2)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first step is to change the"
+#~ " name of the recipe. This name "
+#~ "will be used to name your files"
+#~ " and recipes in the SEPAL folders."
+#~ " Use the best-suited convention for"
+#~ " your need. Simply double-click the"
+#~ " tab and write a new name. It"
+#~ " will default to "
+#~ ":code:`Planet_mosaic_<start_date>_<end_date>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On the bottom right corner, 4 tabs"
+#~ " are available. They will allow you"
+#~ " to customize the planet mosaic to"
+#~ " your needs."
+#~ msgstr ""
+
+#~ msgid ":guilabel:`AOI`: the Area of interest (AOI)"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`DAT`: the dates of the time series"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`SRC`: the time series dataset source"
+#~ msgstr ""
+
+#~ msgid ":guilabel:`OPT`: the filtering options"
+#~ msgstr ""
+
+#~ msgid "AOI Selection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The data exported by the recipe "
+#~ "will be cut to the bounds of "
+#~ "the AOI. There are multiple ways "
+#~ "to select the AOI in SEPAL:"
+#~ msgstr ""
+
+#~ msgid "Administrative boundaries"
+#~ msgstr ""
+
+#~ msgid "Drawn polygons"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "they are extensively described in our"
+#~ " documentation. Please read "
+#~ ":doc:`../feature/aoi_selector` to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the :guilabel:`DAT` tab, you will "
+#~ "be asked to select the dates of"
+#~ " the time series used to build "
+#~ "the composited image. You need to "
+#~ "provide a start and an end date."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click the :btn:`<fa-solid fa-"
+#~ "calendar-days>` to display the Date "
+#~ "picker and select your date."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the selection is done click "
+#~ ":btn:`<fa-solid fa-chevron-right> next`"
+#~ " button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL can use multiple data sources "
+#~ "to create your mosaics/composites as "
+#~ "long as they are Planet related "
+#~ "datasets."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "3 options are available: :guilabel:`NICFI "
+#~ "basemaps`, :guilabel:`Custom basemaps`, "
+#~ ":guilabel:`Daily imagery`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you are finished, click on "
+#~ ":btn:`<fa-solid fa-check> done` to "
+#~ "finish the process."
+#~ msgstr ""
+
+#~ msgid "The NICFI basemap uses the level 1 NICFI data provided by SEPAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "provided data are monthly mosaics, which"
+#~ " means that your time range needs "
+#~ "to be longer than 1 month. "
+#~ "Otherwise, only one image will be "
+#~ "used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can provide a custom "
+#~ ":code:`ImageCollection` Planet asset (such as"
+#~ " NICFI level 1 data provided to "
+#~ "registered users)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only users with granted access to "
+#~ "NICFI level 2 data can use this"
+#~ " option."
+#~ msgstr ""
+
+#~ msgid "This step is not mandatory due to Planet mosaics are already sanitized."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL provides you with options to "
+#~ "customize the images used to create "
+#~ "the compositing mosaic. The selected "
+#~ "parameter will be automatically applied "
+#~ "to the analysis, click the :btn:`<fa-"
+#~ "solid fa-xmark> close` button to "
+#~ "finish the customization."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Planet composites already remove clouds. "
+#~ "Setting this parameter to a value "
+#~ "greater than zero (0) will remove "
+#~ "additional clouds using a Google Earth"
+#~ " Engine (GEE) algorithm."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`none`: Only mask clouds. It "
+#~ "might leave hazy pixels around masked"
+#~ " clouds but will minimize the amount"
+#~ " of maxed pixels in the mosaic."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`moderate`: Mask an additional 120m"
+#~ " around each larger cloud. This helps"
+#~ " prevent hazy pixels at the border"
+#~ " of clouds to be included in "
+#~ "the mosaic."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`aggressive`: Mask an additional "
+#~ "600m around each larger cloud. This "
+#~ "helps prevent hazy pixels at the "
+#~ "border of clouds to be included in"
+#~ " the mosaic."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all the parameters have been "
+#~ "set, the mosaic will be rendered "
+#~ "on the fly. Multiple color combinations"
+#~ " can be displayed, see next figures."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You cannot export a recipe as an"
+#~ " asset or a :code:`.tiff` file "
+#~ "without a small computation quota. If"
+#~ " you are a new user see "
+#~ ":doc:`../setup/resource` to know more."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click the :btn:`<fa-solid fa-cloud-"
+#~ "arrow-down>` tab, the retrieve panel "
+#~ "will be displayed, you can select "
+#~ "which bands or indexes to download, "
+#~ "specify the output scale, and "
+#~ "destination."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to select the band(s) to"
+#~ " export in the mosaic. There is "
+#~ "no max number of bands, however, "
+#~ "exporting useless bands will only "
+#~ "increase the size and the time of"
+#~ " the output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There is no fixed rule to the "
+#~ "band selection. Every index will be "
+#~ "more useful to the type of "
+#~ "analysis you are performing. The "
+#~ "knowledge of the study area, the "
+#~ "evolution expected and the careful "
+#~ "selection of an adapted band combination"
+#~ " will improve the quality of the "
+#~ "downstream analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`NDMI`: `Normalized Difference Moisture"
+#~ " Index <http://dx.doi.org/10.1016/S0034-4257(01)00318-2>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`SAVI`: `Soil-Adjusted Vegetation "
+#~ "Index <http://dx.doi.org/10.1016/0034-4257(88)90106-X>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can set a custom scale for "
+#~ "exportation by changing the value in "
+#~ "the :code:`scale` field. Requesting a "
+#~ "smaller resolution than the image's "
+#~ "native resolution will not improve the"
+#~ " quality of the output, just its "
+#~ "size so keep in mind that "
+#~ "PlanetLab data's native resolution is 3"
+#~ " - 4.1 m (altitude dependent Ground"
+#~ " Sample Distance,  `see more info "
+#~ "<https://assets.planet.com/docs/Planet_Combined_Imagery_Product_Specs_letter_screen.pdf>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can export the mosaic composition"
+#~ " to :guilabel:`sepal workspace` or to "
+#~ ":guilabel: GEE as an `asset`. The "
+#~ "same image will be exported but in"
+#~ " the first case you will find "
+#~ "it in :code:`.tif` format in the "
+#~ ":code:`downloads` SEPAL folder, in the "
+#~ "second one the image will be "
+#~ "exported to your GEE account asset "
+#~ "list."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If :guilabel:`google earth engine asset` "
+#~ "is not displayed, it means that "
+#~ "your GEE account is not connected "
+#~ "to SEPAL, please refer to `Connect "
+#~ "SEPAL to GEE <../setup/gee.html>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on :btn:`<fa-solid fa-check> "
+#~ "apply` to start the download process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the download process is done, "
+#~ "you can access the data in your"
+#~ " SEPAL folders. The data will be "
+#~ "stored in the :code:`downloads` folder "
+#~ "using the following format:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Understanding how images are stored in"
+#~ " a Planet Mosaic is only required "
+#~ "if you want to manually use them."
+#~ " The SEPAL applications are bound to"
+#~ " this tiling system and can digest"
+#~ " this information for you."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The data are stored in a folder"
+#~ " using the name of the Planet "
+#~ "mosaic as it was set in the "
+#~ "first section of this document. As "
+#~ "the number of data is spatially "
+#~ "too big to be exported at once,"
+#~ " the data are cut into small "
+#~ "pieces and brought back together in "
+#~ "a :code:`<PM name>_<gee tile id>.vrt` "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The full folder with a consistent "
+#~ "tree hierarchy is required to read "
+#~ "the :code:`.vrt`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now that you have downloaded the "
+#~ "Planet Mosaic to your SEPAL or/and "
+#~ "GEE account, it can be retrieved "
+#~ "to your computer using `FileZilla "
+#~ "<../setup.filezilla.html>`__ or used in other"
+#~ " SEPAL workflows."
 #~ msgstr ""
 

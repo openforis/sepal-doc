@@ -1,7 +1,7 @@
 Restoration
 ===========
 
-List of the modules gathered under the Restoration tag:
+Modules with the **Restoration** tag include:
 
 .. toctree::
     :maxdepth: 1
@@ -24,4 +24,3 @@ List of the modules gathered under the Restoration tag:
     :doc:`dwn/sepal_mgci`,"Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale"
     :doc:`dwn/sepal_pysmm`,"Tool for mapping surface soil moisture based on Copernicus Sentinel-1 intensity data."
     :doc:`dwn/seplan`,"Restoration planning tool using a weighted-sum approach"
-

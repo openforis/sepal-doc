@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-03-30 07:20\n"
+"POT-Creation-Date: 2023-07-31 05:56+0000\n"
+"PO-Revision-Date: 2023-07-31 07:17\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -19,28 +19,24 @@ msgstr ""
 "Language: fr_FR\n"
 
 #: ../../source/cli/gwb.rst:2
-msgid "GuidosToolbox Workbench – GWB"
-msgstr "GuidosToolbox Workbench – GWB"
+msgid "GuidosToolbox Workbench"
+msgstr ""
 
 #: ../../source/cli/gwb.rst:4
-msgid "The GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is a subset of the desktop software package GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) designed as a cmd-line application for Linux 64bit servers."
-msgstr "Le GuidosToolbox Workbench (**GWB**, `homepage <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) est un sous-ensemble du logiciel de bureau GuidosToolbox (`GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) conçu comme une application en ligne de cmd pour les serveurs Linux 64 bits."
+msgid "The GuidosToolbox Workbench (**GWB**) is a subset of the desktop software package GuidosToolbox (GTB), designed as a command-line application for Linux 64bit servers (see `GWB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_or `GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_). Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_."
+msgstr ""
 
-#: ../../source/cli/gwb.rst:6
-msgid "Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_."
-msgstr "Référence: `GuidosToolbox Workbench: Analyse spatiale des cartes matricielles pour les applications écologiques <https://doi.org/10.1111/ecog.05864>`_."
-
-#: ../../source/cli/gwb.rst:10
+#: ../../source/cli/gwb.rst:8
 msgid "The current version available on SEPAL is 1.9.0"
 msgstr "La version actuelle disponible sur SEPAL est 1.9.0"
 
-#: ../../source/cli/gwb.rst:13
-msgid "available commands"
-msgstr "commandes disponibles"
+#: ../../source/cli/gwb.rst:11
+msgid "Available commands"
+msgstr ""
 
-#: ../../source/cli/gwb.rst:15
-msgid "The complete documentation of the GWB commands can be found on the `GWB manual <https://gwbdoc.readthedocs.io>`__"
-msgstr "La documentation complète des commandes GWB se trouve sur le `Manuel GWB <https://gwbdoc.readthedocs.io>`__"
+#: ../../source/cli/gwb.rst:13
+msgid "The complete documentation of GWB commands can be found in the `GWB manual <https://gwbdoc.readthedocs.io>`__"
+msgstr ""
 
 #~ msgid ""
 #~ "The GuidosToolbox Workbench (**GWB**, "
@@ -1145,5 +1141,35 @@ msgstr "La documentation complète des commandes GWB se trouve sur le `Manuel GW
 #~ "including the detection of connecting "
 #~ "pathways require using the full version"
 #~ " :code:`GWB_MSPA`."
+#~ msgstr ""
+
+#~ msgid "GuidosToolbox Workbench – GWB"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The GuidosToolbox Workbench (**GWB**, "
+#~ "`homepage "
+#~ "<https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) is"
+#~ " a subset of the desktop software "
+#~ "package GuidosToolbox (`GTB "
+#~ "<https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) "
+#~ "designed as a cmd-line application "
+#~ "for Linux 64bit servers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Citation reference: `GuidosToolbox Workbench: "
+#~ "Spatial analysis of raster maps for "
+#~ "ecological applications "
+#~ "<https://doi.org/10.1111/ecog.05864>`_."
+#~ msgstr ""
+
+#~ msgid "available commands"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The complete documentation of the GWB"
+#~ " commands can be found on the "
+#~ "`GWB manual <https://gwbdoc.readthedocs.io>`__"
 #~ msgstr ""
 

@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-04-26 16:44+0000\n"
+"PO-Revision-Date: 2023-07-21 08:02\n"
 "Last-Translator: \n"
-"Language: fr_FR\n"
 "Language-Team: French\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/index.po\n"
+"X-Crowdin-File-ID: 87\n"
+"Language: fr_FR\n"
 
 #: ../../source/index.rst:20 ../../source/index.rst:54
 msgid "Getting started"
@@ -47,31 +51,16 @@ msgid "Documentation"
 msgstr "Documentation"
 
 #: ../../source/index.rst:36
-msgid ""
-"SEPAL (System for Earth Observation Data Access, Processing and Analysis "
-"for Land Monitoring) is an open-source project and platform empowering "
-"people around the world to gain a better understanding of land cover "
-"dynamics by facilitating the efficient access and use of Earth "
-"observation data – without the need of coding knowledge."
-msgstr ""
-"SEPAL (Système d'accès aux données d'observation de la Terre, Le "
-"traitement et l'analyse de l'observation des terres) est un projet et une"
-" plate-forme open-source qui permet aux gens du monde entier de mieux "
-"comprendre la dynamique de la couverture terrestre en facilitant l'accès "
-"et l'utilisation efficaces des données d'observation de la Terre - sans "
-"avoir besoin de connaissances en codage."
+msgid "SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge."
+msgstr "SEPAL (Système d'accès aux données d'observation de la Terre, Le traitement et l'analyse de l'observation des terres) est un projet et une plate-forme open-source qui permet aux gens du monde entier de mieux comprendre la dynamique de la couverture terrestre en facilitant l'accès et l'utilisation efficaces des données d'observation de la Terre - sans avoir besoin de connaissances en codage."
 
 #: ../../source/index.rst:47
 msgid "Learn how to use the platform with SEPAL documentation"
 msgstr "Apprenez à utiliser la plateforme avec la documentation SEPAL"
 
 #: ../../source/index.rst:49
-msgid ""
-"The SEPAL team developed this GitHub page to help users get the most out "
-"of the interface."
-msgstr ""
-"L'équipe SEPAL a développé cette page GitHub pour aider les utilisateurs "
-"à tirer le meilleur parti de l'interface."
+msgid "The SEPAL team developed this GitHub page to help users get the most out of the interface."
+msgstr "L'équipe SEPAL a développé cette page GitHub pour aider les utilisateurs à tirer le meilleur parti de l'interface."
 
 #: ../../source/index.rst:59
 msgid "Register to SEPAL"
@@ -87,22 +76,15 @@ msgstr "Se connecter à GEE"
 
 #: ../../source/index.rst:67
 msgid "Register with Google Earth Engine (GEE) and connect your account to SEPAL."
-msgstr ""
-"Enregistrez-vous avec Google Earth Engine (GEE) et connectez votre compte"
-" à SEPAL."
+msgstr "Enregistrez-vous avec Google Earth Engine (GEE) et connectez votre compte à SEPAL."
 
 #: ../../source/index.rst:69
 msgid "Connect to NICFI PlanetLab imagery"
 msgstr "Se connecter aux images NICFI PlanetLab"
 
 #: ../../source/index.rst:72
-msgid ""
-"Sign up to use Norway’s International Climate and Forests Initiative "
-"(NICFI) – PlanetLab data and connect your account to GEE."
-msgstr ""
-"Inscrivez-vous pour utiliser les données de l’Initiative internationale "
-"sur le climat et les forêts de Norvège (NICFI) – PlanetLab et connecter "
-"votre compte à GEE."
+msgid "Sign up to use Norway’s International Climate and Forests Initiative (NICFI) – PlanetLab data and connect your account to GEE."
+msgstr "Inscrivez-vous pour utiliser les données de l’Initiative internationale sur le climat et les forêts de Norvège (NICFI) – PlanetLab et connecter votre compte à GEE."
 
 #: ../../source/index.rst:77
 msgid "Recipes and modules"
@@ -121,27 +103,16 @@ msgid "Start a module."
 msgstr "Démarrer un module."
 
 #: ../../source/index.rst:90
-msgid ""
-"Run integrated workflows with modules – no need of coding experience "
-"required."
-msgstr ""
-"Exécutez des workflows intégrés avec des modules – pas besoin "
-"d'expérience de développement numérique nécessaire."
+msgid "Run integrated workflows with modules – no need of coding experience required."
+msgstr "Exécutez des workflows intégrés avec des modules – pas besoin d'expérience de développement numérique nécessaire."
 
 #: ../../source/index.rst:92
 msgid "Use the se.plan module."
 msgstr "Utilisez le module se.plan."
 
 #: ../../source/index.rst:95
-msgid ""
-"Compute your restoration index with se.plan, a spatially explicit online "
-"tool designed to support forest restoration planning decisions by "
-"restoration stakeholders."
-msgstr ""
-"Calculez votre index de restauration avec se.plan, un outil en ligne "
-"spatialement explicite conçu pour soutenir les décisions de planification"
-" de la restauration forestière par les parties prenantes à la "
-"restauration."
+msgid "Compute your restoration index with se.plan, a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders."
+msgstr "Calculez votre index de restauration avec se.plan, un outil en ligne spatialement explicite conçu pour soutenir les décisions de planification de la restauration forestière par les parties prenantes à la restauration."
 
 #: ../../source/index.rst:100
 msgid "Other resources"
@@ -176,100 +147,44 @@ msgid "SEPAL is always improving."
 msgstr "SEPAL est en constante amélioration."
 
 #: ../../source/index.rst:125
-msgid ""
-"Encounter a problem? See an issue? Need help? Take one of the following "
-"actions to help our team members enhance user experience by improving the"
-" platform and its documentation."
-msgstr ""
-"Vous rencontrez un problème ? Vous avez besoin d'aide ? Prenez l'une des "
-"actions suivantes pour aider les membres de notre équipe à améliorer "
-"l'expérience utilisateur en améliorant la plate-forme et la "
-"documentation."
+msgid "Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation."
+msgstr "Vous rencontrez un problème ? Vous avez besoin d'aide ? Prenez l'une des actions suivantes pour aider les membres de notre équipe à améliorer l'expérience utilisateur en améliorant la plate-forme et la documentation."
 
 #: ../../source/index.rst:132
 msgid "For general support, ask the Google Group community."
-msgstr ""
-"Pour des questions d'utilisation, demandez à la communauté du Groupe "
-"Google."
+msgstr "Pour des questions d'utilisation, demandez à la communauté du Groupe Google."
 
 #: ../../source/index.rst:135
 msgid "For documentation improvement, use the GitHub Issue Tracker."
-msgstr ""
-"Pour améliorer la documentation, utilisez le gestionnaire de tickets "
-"GitHub."
+msgstr "Pour améliorer la documentation, utilisez le gestionnaire de tickets GitHub."
 
 #: ../../source/index.rst:138
 msgid "For usage questions, ask the GIS StackExchange community."
-msgstr ""
-"Pour des questions d'utilisation, posez des questions à la communauté SIG"
-" sur StackExchange."
+msgstr "Pour des questions d'utilisation, posez des questions à la communauté SIG sur StackExchange."
 
 #: ../../source/index.rst:141
-msgid ""
-"For training, register for an online facilitated course from the FAO "
-"elearning Academy."
-msgstr ""
-"Pour une formation, inscrivez-vous à un cours en ligne facilité par "
-"l’Académie d’elearning de la FAO."
+msgid "For training, register for an online facilitated course from the FAO elearning Academy."
+msgstr "Pour une formation, inscrivez-vous à un cours en ligne facilité par l’Académie d’elearning de la FAO."
 
 #: ../../source/index.rst:147
 msgid "About the platform"
 msgstr "À propos de la plateforme"
 
 #: ../../source/index.rst:149
-msgid ""
-"SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of "
-"Tools. The platform allows users to query and process satellite data "
-"quickly and efficiently, tailor their products for local needs, and "
-"produce sophisticated and relevant geospatial analyses. Harnessing cloud-"
-"based supercomputers and modern geospatial data infrastructures (e.g. "
-"GEE), the interface enables access and processing of historical satellite"
-" data as well as newer data from Landsat and higher-resolution data from "
-"Europe’s Copernicus program."
-msgstr ""
-"SEPAL fait partie de la suite d'outils `Open Foris "
-"<http://www.openforis.org>`__. La plateforme permet aux utilisateurs d' "
-"interroger et de traiter les données par satellite rapidement et "
-"efficacement, adapter leurs produits aux besoins locaux et produire des "
-"analyses géospatiales sophistiquées et pertinentes. Exploiter les "
-"superordinateurs dans le cloud et les infrastructures de données "
-"géospatiales modernes (p. ex. GEE), l’interface permet l’accès et le "
-"traitement des données historiques satellitaires ainsi que des données "
-"plus récentes provenant de Landsat et des données de plus haute "
-"résolution du programme Copernicus en Europe."
+msgid "SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program."
+msgstr "SEPAL fait partie de la suite d'outils `Open Foris <http://www.openforis.org>`__. La plateforme permet aux utilisateurs d' interroger et de traiter les données par satellite rapidement et efficacement, adapter leurs produits aux besoins locaux et produire des analyses géospatiales sophistiquées et pertinentes. Exploiter les superordinateurs dans le cloud et les infrastructures de données géospatiales modernes (p. ex. GEE), l’interface permet l’accès et le traitement des données historiques satellitaires ainsi que des données plus récentes provenant de Landsat et des données de plus haute résolution du programme Copernicus en Europe."
 
 #: ../../source/index.rst:151
-msgid ""
-"SEPAL is a cloud computing-based platform for autonomous land monitoring "
-"using remotely sensed data. It is a combination of GEE and open-source "
-"software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO "
-"Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. "
-"The platform allows users to access powerful cloud-computing resources to"
-" query, access and process satellite data quickly and efficiently for "
-"creating advanced analyses."
-msgstr ""
-"SEPAL est une plate-forme basée sur l'informatique dans le cloud pour la "
-"surveillance autonome des terres en utilisant des données à distance "
-"sensées. Il s'agit d'une combinaison de GEE et de logiciels open-source "
-"tels que GDAL, Jupyter, l'Open Foris Geospatial Toolkit, Boîte à outils "
-"ORFEO, Python, R, R Shiny Server, R Studio Server et SNAP Toolkit. La "
-"plateforme permet aux utilisateurs d'accéder rapidement et efficacement à"
-" des ressources informatiques puissantes pour interroger et traiter les "
-"données satellitaires afin de créer des analyses avancées."
+msgid "SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses."
+msgstr "SEPAL est une plate-forme basée sur l'informatique dans le cloud pour la surveillance autonome des terres en utilisant des données à distance sensées. Il s'agit d'une combinaison de GEE et de logiciels open-source tels que GDAL, Jupyter, l'Open Foris Geospatial Toolkit, Boîte à outils ORFEO, Python, R, R Shiny Server, R Studio Server et SNAP Toolkit. La plateforme permet aux utilisateurs d'accéder rapidement et efficacement à des ressources informatiques puissantes pour interroger et traiter les données satellitaires afin de créer des analyses avancées."
 
 #: ../../source/index.rst:156
 msgid "Supporting institutions"
 msgstr "Institutions partenaires"
 
 #: ../../source/index.rst:158
-msgid ""
-"SEPAL is a project funded by the Government of Norway from the Forestry "
-"Department of the Food and Agriculture Organization of the United Nations"
-" (FAO)."
-msgstr ""
-"SEPAL est un projet financé par le gouvernement norvégien du Département "
-"des forêts de l'Organisation des Nations Unies pour l'alimentation et "
-"l'agriculture (FAO)."
+msgid "SEPAL is a project funded by the Government of Norway from the Forestry Department of the Food and Agriculture Organization of the United Nations (FAO)."
+msgstr "SEPAL est un projet financé par le gouvernement norvégien du Département des forêts de l'Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)."
 
 #~ msgid "Modules"
 #~ msgstr ""
