@@ -1,4 +1,4 @@
-"""Logo extention to create a list of logos"""
+"""Logo extension to create a list of logos"""
 import json
 from pathlib import Path
 from typing import Dict, List
@@ -56,7 +56,7 @@ def visit_logo_node_html(translator: SphinxTranslator, node: logo_node) -> None:
 
     for v in node["logos"].values():
 
-        # get informations from the parameters
+        # get information from the parameters
         size = SIZES[v["size"]]
         link = v["html"]
         light_logo = f"_static/logos/{v['light']}"

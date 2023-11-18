@@ -42,7 +42,7 @@ To create a project, select :btn:`<fa-solid fa-folder-tree> Projects`, which ope
 
 Then, select :btn:`<fa-solid fa-pencil> Add` to create a new project. Enter the name and select :btn:`<fa-solid fa-check> Apply`.
 
-The newly created project will now apear in the list.
+The newly created project will now appear in the list.
 
 .. thumbnail:: ../_images/feature/project/new-project.png
     :title: Project management pop-up windows
@@ -119,7 +119,7 @@ From this interface, you can:
 Connect recipes
 ^^^^^^^^^^^^^^^
 
-When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same projet will be displayed (see following figure on the left).
+When creating recipes such as :code:`Classification`, users can use other recipes as inputs for the process. To avoid flooding the dropdown list with too many values, only the recipes from the same project will be displayed (see following figure on the left).
 
 If one still wants to see all of the recipes in the dropdown list, select :btn:`All` and all recipes will be displayed using project names as headers (see following figure on right).
 

@@ -178,7 +178,7 @@ Composite
 
 .. note::
 
-    This step is optional. SEPAL provides the folowing options by default:
+    This step is optional. SEPAL provides the following options by default:
 
     -   **Correction**: :guilabel:`SR`, :guilabel:`BRDF`
     -   **Pixel filters**: No filters

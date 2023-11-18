@@ -114,7 +114,7 @@ html_theme_options = {
     "footer_end": ["e-learning", "stackexchange"],
 }
 
-# -- option for the favicon extention ------------------------------------------
+# -- option for the favicon extension ------------------------------------------
 
 favicons = [
     {"rel": "apple-touch-icon", "href": "apple-touch-icon.png"},

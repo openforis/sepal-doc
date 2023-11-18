@@ -1,4 +1,4 @@
-"""Extention to dynamically change the value of the "edit this page btn"""
+"""Extension to dynamically change the value of the "edit this page btn"""
 
 from typing import Dict, List
 

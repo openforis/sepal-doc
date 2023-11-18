@@ -47,7 +47,7 @@ To download files, use the :code:`Pull` command, which will create files that do
     $ # check additional parameters by using -help flag
     $ drive pull -h
 
-This command will syncronize the files that are not present in your SEPAL session but are present in your Google Drive account folder.
+This command will synchronize the files that are not present in your SEPAL session but are present in your Google Drive account folder.
 
 Additional commands
 ^^^^^^^^^^^^^^^^^^^
