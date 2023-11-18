@@ -2,7 +2,7 @@ Exchange files with SEPAL
 =========================
 
 Use SEPAL's built-in tools and FTP solutions to exchange files
--------------------------------------------------------------
+--------------------------------------------------------------
 
 In this article, you can learn how to exchange files with SEPAL using:
 
