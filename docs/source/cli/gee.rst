@@ -73,7 +73,7 @@ In the first cell, create a map and place it the sidecar by running the followin
 .. thumbnail:: ../_images/cli/gee/create_a_sidecar.png
     :title: Some code that will be run in the sidecar
 
-As displayed in the previous image, the list of available sidecars is displayed on the right side of the frame. You can create as many sidecars as you want and display any widget in it. We chose to use the **sepal_ui mappping** widget as it includes key features, such as:
+As displayed in the previous image, the list of available sidecars is displayed on the right side of the frame. You can create as many sidecars as you want and display any widget in it. We chose to use the **sepal_ui mapping** widget as it includes key features, such as:
 
 - GEE full compatibility
 - an extended layer manager

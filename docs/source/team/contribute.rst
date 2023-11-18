@@ -141,7 +141,7 @@ Here is an example:
 Icons
 """""
 
-There is a ReST role to include in-line icons in documentation (usualy when referencing a button [btn]).
+There is a ReST role to include in-line icons in documentation (usually when referencing a button [btn]).
 
 You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
@@ -260,7 +260,7 @@ In the fork pop-up window, select the account you want to use:
 .. figure:: ../_images/team/contribute/fork_select.png
     :alt: Fork pop-up window.
 
-    Select the acount to fork.
+    Select the account to fork.
 
 In the upper-left side of the following page, you can see your location. This repository is stored in your account, but it's a fork of the original :code:`openforis/sepal-doc` file.
 
@@ -599,7 +599,7 @@ An automatic check will be performed to see if your PR can be built with ReadThe
 .. figure:: ../_images/team/contribute/ci_pr.png
     :alt: Continuous integration (CI) in PR
 
-    Continous integration will run in Github.
+    Continuous integration will run in Github.
 
 Once submitted, the SEPAL team will review your PR and make the appropriate modifications, if needed. The PR will then be accepted and the new page will be available in the main documentation.
 

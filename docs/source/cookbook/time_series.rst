@@ -273,7 +273,7 @@ The AOI provided by the user will be divided into multiple SEPAL tiles. The AOI 
 
 To limit the size of the downloaded images, in each SEPAL tile, the time period is divided into **Chunks** of 3 months. They are identified by their :code:`<chunk-<start>_<end>`. **Chunks** are image folders. As a SEPAL tile is still bigger than what GEE can download at once, the images are divided into GEE tiles. This tiling process uses its own identification system (000000xxxx-000000xxxx). Consequently, **Chunks** contain tile raster images. Each one of these images is composed of one band per observation date, with the value of the measure for each pixel. The bands are named with the date.
 
-To gather all these rasters together, a first agregation on time is performed. One :code:`stack.vrt` is created per GEE tile, meaning that each :code:`stack.vrt` file contains all the :code:`*<gee tiling id>.tif` contained in each **Chunk**, reconstituting the full time period on the smallest spatial unit: the GEE tile. Each file is stored in a folder called :code:`tile-<gee tiling id>`.
+To gather all these rasters together, a first aggregation on time is performed. One :code:`stack.vrt` is created per GEE tile, meaning that each :code:`stack.vrt` file contains all the :code:`*<gee tiling id>.tif` contained in each **Chunk**, reconstituting the full time period on the smallest spatial unit: the GEE tile. Each file is stored in a folder called :code:`tile-<gee tiling id>`.
 
 Finally, information is gathered spatially at the SEPAL tile level in the main :code:`stack.vrt` file.
 

@@ -31,7 +31,7 @@ There are multiple methods for selecting AOIs in SEPAL process recipes:
 -   Drawn polygons
 
 .. thumbnail:: ../_images/feature/aoi_selector/aoi_landing.png
-    :title: Three differents ways to select an AOI in SEPAL
+    :title: Three different ways to select an AOI in SEPAL
     :group: feature_aoi
     :align: center
     :width: 700

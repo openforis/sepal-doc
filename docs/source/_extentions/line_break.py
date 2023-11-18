@@ -1,4 +1,4 @@
-"""Line break extention to create elegant line breaks on demand"""
+"""Line break extension to create elegant line breaks on demand"""
 
 from typing import Dict, List
 

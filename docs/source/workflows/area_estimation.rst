@@ -40,7 +40,7 @@ These exercises include step-by-step directions and are built to facilitate lear
     digraph process {
            mosaic [label="Mosaic Image creation", href="#mosaic-generation-landsat-sentinel-2", shape=box];
            classif [label="Image classification", href="#image-classification", shape=box];
-           change [label="Two dates cange detection", href="#image-change-detection", shape=box];
+           change [label="Two dates change detection", href="#image-change-detection", shape=box];
            sample [label="Sample based area and error", href="#sample-based-estimation-of-area-and-accuracy", shape=box];
            doc [label="Documentation", href="#documentation-and-archiving", shape=box];
            mosaic -> classif;
@@ -1138,7 +1138,7 @@ Deforest tool
 
 The DEnse FOREst Time Series (deforest) tool is a method for detecting changes in forest cover in a time series of Earth observation data. As input, it takes a time series of forest probability measurements, producing a map of deforestation and an "early warning" map of unconfirmed changes. The method is based on the "Baysian time series" approach of `Reiche et al. (2018) <https://www.sciencedirect.com/science/article/abs/pii/S0034425717304959?via%3Dihub>`_.
 
-The tool was designed as part of the Satellite Monitoring for Forest Management (SMFM) project. The SMFM project (2017 - 2020) aimed to address global challenges relating to the monitoring of tropical dry forest ecosystems, and was conducted in partnership with teams in Mozambique, Namibia and Zambia. For more informaton, see https://www.smfm-project.com/.
+The tool was designed as part of the Satellite Monitoring for Forest Management (SMFM) project. The SMFM project (2017 - 2020) aimed to address global challenges relating to the monitoring of tropical dry forest ecosystems, and was conducted in partnership with teams in Mozambique, Namibia and Zambia. For more information, see https://www.smfm-project.com/.
 
 Full documentation is hosted at http://deforest.rtfd.io/.
 

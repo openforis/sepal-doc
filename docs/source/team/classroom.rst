@@ -31,7 +31,7 @@ If you need material for a webinar, you can either reuse one of the general clas
 
 .. tip::
 
-    If you create your own course as a combination of different modules, invite :email:`sepal.classrom@gmail.com` as a teacher and make this account the owner of the classroom. You will still be able to do everything as a teacher, but the content will be stored in a communal account.
+    If you create your own course as a combination of different modules, invite :email:`sepal.classroom@gmail.com` as a teacher and make this account the owner of the classroom. You will still be able to do everything as a teacher, but the content will be stored in a communal account.
 
 When creating basic content, you can reuse posts from other classes that you are teaching (see following image).
 

@@ -18,3 +18,11 @@ repos:
     rev: "v1.1.1"
     hooks:
       - id: doc8
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.4
+    hooks:
+      - id: codespell
+        stages: [commit]
+        additional_dependencies:
+          - tomli
