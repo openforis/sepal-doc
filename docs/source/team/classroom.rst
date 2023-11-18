@@ -12,7 +12,7 @@ To access Google Classroom for SEPAL, open your professional Google account and 
 
 .. image:: ../_images/team/classroom/dashboard.png
 
-Each class is composed of several :code:`Topics`. 
+Each class is composed of several :code:`Topics`.
 
 Each **Topic** can include different types of content, including: :code:`exercices`, :code:`exams`, and :code:`material` (see following image).
 
@@ -62,7 +62,7 @@ Select the **General class content** folder.
 
 .. image:: ../_images/team/classroom/shared-with-me.png
 
-Enter :code:`maj+Z`. 
+Enter :code:`maj+Z`.
 
 Select **Add** to connect the folder your own Google Drive account (see following image).
 

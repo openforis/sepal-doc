@@ -307,7 +307,7 @@ Lastly, you will need to revise the document in a methodical fashion. In these d
 * `AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps <https://smbyc.github.io/AcATaMa/>`_
 * `Collect Earth Online <https://collect.earth/support>`_
 * `Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>`_
-* `https://www.hsdl.org/?abstract&did=802131>`_ (generalized SOP guidelines for quality assurance for reporting all environmental data and procedures)
+* `<https://www.hsdl.org/?abstract&did=802131>`_ (generalized SOP guidelines for quality assurance for reporting all environmental data and procedures)
 
 **QA/QC Resources**:
 

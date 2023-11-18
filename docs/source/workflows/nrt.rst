@@ -3,7 +3,7 @@ CCDC NRT-FDM
 
 Background
 ----------
-Near real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series and target the generation of recent disturbance events in forested areas. 
+Near real-time forest disturbance monitoring (NRT-FDM) entails remote sensing techniques that are based on dense time series and target the generation of recent disturbance events in forested areas.
 
 The main objective is to detect those changes as early as possible. This priotization usually comes at the cost of accuracy, as the methods are optimized for speed and timeliness. They are therefore not suited for area estimations, such as for measurement, reporting and verification (MRV), where accuracy is the main objective.
 
@@ -13,11 +13,11 @@ This page provides background information and a detailed **How-to guide** (see b
 
 Methodology
 -----------
-The CCDC algorithm is a well-established pixel-based method for the detection of changes in dense time series, usually applied for mapping changes of land use and land cover over longer periods of time. 
+The CCDC algorithm is a well-established pixel-based method for the detection of changes in dense time series, usually applied for mapping changes of land use and land cover over longer periods of time.
 
-The algorithm is based on the assumption that the time series can be modelled by a harmonic function, which is fitted to the time series; the modelled values are compared to the observations. 
+The algorithm is based on the assumption that the time series can be modelled by a harmonic function, which is fitted to the time series; the modelled values are compared to the observations.
 
-If the difference between the modelled and observed values exceeds a certain threshold, a break is added, and a new segment is created based on the subsequent observations, fitting a new harmonic model. 
+If the difference between the modelled and observed values exceeds a certain threshold, a break is added, and a new segment is created based on the subsequent observations, fitting a new harmonic model.
 
 The threshold for a break is defined as a multiple of the root mean squared error (RMSE) of the harmonic model. (For more information, see `this article <https://www.sciencedirect.com/science/article/abs/pii/S0034425714000248>`_.)
 

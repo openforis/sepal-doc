@@ -15,11 +15,11 @@ Then, communicate feedback or proposed contributions via:
 Introduction
 ------------
 
-The :code:`sepal-doc` repository has a fixed structure that needs to be respected to follow Sphinx builder requirements. 
+The :code:`sepal-doc` repository has a fixed structure that needs to be respected to follow Sphinx builder requirements.
 
-All modifications should be made in the folder, :code:`sepal-doc/docs/source/`. 
+All modifications should be made in the folder, :code:`sepal-doc/docs/source/`.
 
-Images associated with a page should be stored in the corresponding folder, :code:`sepal-doc/docs/source/_images/`. 
+Images associated with a page should be stored in the corresponding folder, :code:`sepal-doc/docs/source/_images/`.
 
 If files are misplaced, their build into .html pages cannot be guaranteed.
 
@@ -28,9 +28,9 @@ If files are misplaced, their build into .html pages cannot be guaranteed.
 Tools
 ^^^^^
 
-The :code:`sepal-doc` repository creates and organizes .rst files by leveraging: 
+The :code:`sepal-doc` repository creates and organizes .rst files by leveraging:
 
--    the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build; and 
+-    the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build; and
 -    the `ReadTheDoc <https://readthedocs.org>`_ website to distribute the build.
 
 .. attention::
@@ -181,7 +181,7 @@ If you would like to make modifications to an existing article in the documentat
 
     The **Edit on GitHub** button on the landing page.
 
-When you are finished modifying the file in the **GitHub editor**, select :code:`propose change` at the bottom of the page. 
+When you are finished modifying the file in the **GitHub editor**, select :code:`propose change` at the bottom of the page.
 
 This will create a **Pull request (PR)** that includes your modifications, which will be reviewed and evaluated by the SEPAL team before being published.
 
@@ -246,7 +246,7 @@ In this section, we will present the full process to make major changes to the d
 Fork project
 ^^^^^^^^^^^^
 
-To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source. 
+To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source.
 
 To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into their own accounts by selecting the :code:`fork` button in the upper-right side of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
 
@@ -309,7 +309,7 @@ To check that the doc can be built without error, go to the **doc folder** and r
 
 A new folder, :code:`build`, has been created in your **sepal-doc** folder.
 
-Double-click on :code:`sepal-doc/docs/build/html/index.html`. 
+Double-click on :code:`sepal-doc/docs/build/html/index.html`.
 
 Your browser should open and lead to the landing page of SEPAL documentation (Note that it's a local .html page. The URL at the top of the browser should start with **file://** rather than **https://**. There should be no advertisements in the side bar.)
 
@@ -414,7 +414,7 @@ Add the page you've created to the :code:`toctree` (Table of contents) directive
         my_page
         page3
 
-The title of your page should appear as a link in the **Section navigation** pane on the left side of your browser. 
+The title of your page should appear as a link in the **Section navigation** pane on the left side of your browser.
 
 If you forget to link your page, you will see the following message:
 
@@ -492,7 +492,7 @@ New modules
 
 Have you created a new module (Shiny or Python-based) and have been asked to add it to the **App** dashboard of SEPAL (following the issue template)?
 
-One of the requirements to have your module accepted by the SEPAL team is to create a documentation file. 
+One of the requirements to have your module accepted by the SEPAL team is to create a documentation file.
 
 To maintain consistency across modules, we store the documentation in the module's original repository.
 
@@ -564,20 +564,20 @@ In the **Pull request** interface, select the :code:`New pull request` button:
 
     Create a new pull request.
 
-Select what is going to be pushed and where. 
+Select what is going to be pushed and where.
 
-If you've followed this article of the documentation, you have not created any branch in your fork. 
+If you've followed this article of the documentation, you have not created any branch in your fork.
 
-On the left side, leave :code:`openforis/sepal-doc/master`. 
+On the left side, leave :code:`openforis/sepal-doc/master`.
 
-On the right side, leave :code:`<account>/sepal-doc/master` (see **1** in the following image; some extra information on the commit that will be added to the master is displayed in **2**). 
+On the right side, leave :code:`<account>/sepal-doc/master` (see **1** in the following image; some extra information on the commit that will be added to the master is displayed in **2**).
 
 If everything is set properly (normally you don't have to change anything), select the :code:`Create pull request` button.
 
 .. figure:: ../_images/team/contribute/compare_pr.png
     :alt: Compare branches
 
-Finally, enter the **title** and **description** of the PR (**1**) (please respect the template provided, as shown in the following image). 
+Finally, enter the **title** and **description** of the PR (**1**) (please respect the template provided, as shown in the following image).
 
 As explained at the beginning of this article, you started your modifications to address an issue reported in the **GitHub Issue Tracker**, which should be referenced in your **PR message** (in Line 2 using the :code:`#<issue number>`). This will help the SEPAL team, who will review your PR, by ensuring that they understand what you are adding to the documentation.
 
