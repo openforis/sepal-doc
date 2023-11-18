@@ -12,13 +12,15 @@ To access Google Classroom for SEPAL, open your professional Google account and 
 
 .. image:: ../_images/team/classroom/dashboard.png
 
-Each class is composed of several :code:`Topics`. Each topic can include different types of content, including: :code:`exercices`, :code:`exams`, and :code:`material` (see following image).
+Each class is composed of several :code:`Topics`. 
+
+Each **Topic** can include different types of content, including: :code:`exercices`, :code:`exams`, and :code:`material` (see following image).
 
 .. image:: ../_images/team/classroom/stream.png
 
 .. seealso::
 
-    If you need support with the Google Classroom for SEPAL, contact :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`.
+    If you need support with Google Classroom for SEPAL, contact :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`.
 
 Creating a classroom
 ^^^^^^^^^^^^^^^^^^^^
@@ -41,7 +43,7 @@ When creating basic content, you can reuse posts from other classes that you are
 
 .. attention::
 
-    To avoid duplicate copies of content, do not select the option to **Create new copies of all attachments**.
+    To avoid duplicate copies of content, *do not* select the option to **Create new copies of all attachments**.
 
     .. image:: ../_images/team/classroom/no-duplicate.png
 
@@ -50,7 +52,7 @@ Use general content
 
 To use general content in your classrooms, add the general content folder to your Google Drive account. (Note: Google only allows users to create shortcuts to other Google Drive accounts, which is not sufficient.)
 
-Open Google Drive and go to the **Share with me** section.
+Open **Google Drive** and go to the **Share with me** section.
 
 Select the **General class content** folder.
 
@@ -60,7 +62,9 @@ Select the **General class content** folder.
 
 .. image:: ../_images/team/classroom/shared-with-me.png
 
-Enter :code:`maj+Z`. Select **Add** to connect the folder your own Google Drive account (see following image).
+Enter :code:`maj+Z`. 
+
+Select **Add** to connect the folder your own Google Drive account (see following image).
 
 .. image:: ../_images/team/classroom/pop-up.png
 
@@ -76,6 +80,6 @@ Then, add a file from Google Drive (to make sure that you're reusing an already 
 
     The file you're using is made for general purposes and should not be adapted to your specific needs. If you're improving the quality of the presentation, making modifications to the original is permitted; however, any other modifications should be made in another version, which you can create by copying the original to your Google Drive account.
 
-.. attention::
+.. important::
 
-    Since everyone on the SEPAL team can edit this file, mistakes could impact all members and all existing classrooms that use this file. Please exercise caution.
+    Since everyone on the SEPAL team can edit this file, mistakes could impact all members and existing classrooms that use this file. Please exercise caution.
