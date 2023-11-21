@@ -1,9 +1,13 @@
-ALOS Kyoto & Carbon Mosaics by JAXA
-===================================
+ALOS K&C mosaics
+================
 
-This module was adapted to the SEPAL environment from `this script by Vollrath <https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_.
+This module allows users to: 
 
-Designed on top of the interactive framework `sepal_ui <https://github.com/12rambau/sepal_ui>`_, this module allows users to extract ALOS K&C mosaics.
+-    extract ALOS Kyoto & Carbon (ALOS K&C) mosaics by JAXA;
+-    display the mosaics in interactive maps; and 
+-    export the mosaics as Google Earth Engine (GEE) assets and/or SEPAL .tif files. 
+
+Designed on top of the interactive framework `sepal_ui <https://github.com/12rambau/sepal_ui>`_, it was adapted to the SEPAL environment from `this script by Vollrath <https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_.
 
 Necessary inputs include:
 
@@ -11,9 +15,7 @@ Necessary inputs include:
 -    a year
 -    select filters
 
-The user will be able to display the mosaic in an interactive map and export it as a Google Earth Engine (GEE) asset and/or SEPAL .tif file.
-
-The three-step process is described in the sections below, as well as presented in the following video tutorial. 
+The three-step process is described in the subsections below, as well as presented in the following video tutorial. 
 
 .. youtube:: Asc8Nz0B1DI
 
@@ -28,7 +30,7 @@ Using the provided **AOI selector**, select an AOI of your choice between the di
     
 .. note::
 
-    If a custom AOI from a shape or drawing is selected, you will be able to use it directly. The upload to GEE will be launched in the background.
+    If a custom AOI from a shape or drawing is selected, you will be able to use it directly (the upload to GEE will be launched in the background).
 
 Process mosaic 
 --------------
@@ -43,7 +45,7 @@ In the **Process** tile, set the different parameters of your mosaic:
 -   **Shadow masking**: activate or deactivate shadow masking
 -   **Db**: whether or not to scale the output to Db
 
-After setting your parameters, select the button. The dataset will be automatically sent to the **Vizualization** tile.
+After setting your parameters, select the button (the dataset will be automatically sent to the **Vizualization** tile).
 
 .. figure:: https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/img/parameters.png
 
@@ -67,7 +69,10 @@ Choose from three diplay options:
 Export dataset
 --------------
 
-When you're satified with the information displayed, it can be exported for further use in GIS software or in a GEE process. The tool provides two main exportation options: as an asset (in GEE) or a .tif file (in SEPAL).
+When you're satified with the information displayed, it can be exported for further use in GIS software or in a GEE process. The tool provides two main exportation options: 
+
+-    an asset (in GEE), or 
+-    a .tif file (in SEPAL).
 
 Both use the GEE export system and share the same set of parameters:
 
@@ -80,7 +85,7 @@ Both use the GEE export system and share the same set of parameters:
 
 .. note:: 
 
-    The default export parameters include: 25 metre resolution with backscatter and RFDI.
+    The default export parameters include: 25 m resolution with backscatter and RFDI.
     
 .. figure:: https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/img/export.png
 
