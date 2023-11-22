@@ -53,7 +53,7 @@ In the **Apps** section, there are three coding tools at the top of the list:
 .. thumbnail:: ../_images/cli/index/code_editor.png
     :title: The three code editors in the SEPAL environment
 
-They will allow the user to code wokflows in any of the available languages using the coresponding environment in SEPAL. These environments are fully customizable (select the :code:`Python` or :code:`R` section to know more).
+They will allow the user to code wokflows in any of the available languages using the corresponding environment in SEPAL. These environments are fully customizable (select the :code:`Python` or :code:`R` section to know more).
 
 .. thumbnail:: ../_images/cli/index/jupyter_example.png
     :title: Example of **rasterio** code running in SEPAL JupyterLab (code extracted from **rasterio** documentation: https://rasterio.readthedocs.io/en/latest/topics/plotting.html)

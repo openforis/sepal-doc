@@ -37,7 +37,7 @@ pyperclip
 python-dateutil
 pytesmo
 Wand
-PyPDF2 # more recent version are avaiable (PyPDF4)
+PyPDF2 # more recent version are available (PyPDF4)
 rasterio
 openpyxl
 pre-commit

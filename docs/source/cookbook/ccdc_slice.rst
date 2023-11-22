@@ -125,7 +125,7 @@ SEPAL offers four ways of selecting the remaining break:
 - :guilabel:`Magnitude`: The break with the highest magnitude of change.
 - :guilabel:`Confidence`: The break with the highest confidence value (for more information about confidence computation, see :doc:`ccdc`).
 
-By selecting a specific break direction, the break selection will only take into acount the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default, we consider :guilabel:`Any` break direction.
+By selecting a specific break direction, the break selection will only take into account the break with a :guilabel:`decrease` or :guilabel:`increase` magnitude. By default, we consider :guilabel:`Any` break direction.
 
 By moving the slider, you will ignore the break with a low confidence from the analysis. You can exclude a break up to 50 percent. If no break respects the requested confidence, the highest available will be selected.
 

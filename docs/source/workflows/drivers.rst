@@ -268,7 +268,7 @@ ALOS PALSAR mosaics
 
 Radar imagery has the added benefit of being cloud-free by design, as active sensors are not influenced by clouds.
 
-The Advanced Land Observation Sattelite - Phased Array type L-band Synthetic Aperture Radar (ALOS PALSAR) is an L-band radar that gives good results for monitoring forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL provides an application to select; process and download them to your SEPAL workspace or GEE account.
+The Advanced Land Observation Satellite - Phased Array type L-band Synthetic Aperture Radar (ALOS PALSAR) is an L-band radar that gives good results for monitoring forest ecosystems. Data is provided by the Kyoto & Carbon Initiative from the Japanese Space Agency (JAXA) for the year 2015 onward. SEPAL provides an application to select; process and download them to your SEPAL workspace or GEE account.
 
 For more information about the parameters, please see :doc:`../modules/dwn/alos_mosaics`.
 
@@ -327,6 +327,6 @@ The analysis performed is a drivers assessment, and not a land cover change anal
 
 The project's technical committee agreed upon nine unique direct drivers and their characteristics to be used in the context of the project, as well as its piloting in Central Africa. The definitions were based on what is potentially visible and recognizable in high-resolution satellite imagery mosaics from Planet which are available over the entire study period (2015–2020). Each driver and its definition and characteristics are described in :ref:`workflows:drivers:drivers`.
 
-In order to identify direct drivers, a survey form is used in the Collect Earth Online (CEO) web platform to enable visual interpretation and identification of the presence or absence of forest, the land cover type in 2015, the type of change (deforestation or degradation) and the year of change (2015–2022), along with one ore more observed direct drivers within a 2 km wide square plot around the sample point.
+In order to identify direct drivers, a survey form is used in the Collect Earth Online (CEO) web platform to enable visual interpretation and identification of the presence or absence of forest, the land cover type in 2015, the type of change (deforestation or degradation) and the year of change (2015–2022), along with one or more observed direct drivers within a 2 km wide square plot around the sample point.
 
 .. footbibliography::

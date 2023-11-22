@@ -33,7 +33,7 @@ The harmonic model of the historic CCDC asset allows to intersect the observatio
    :width: 800
    :align: center
 
-The degree of deviation is defined as a multiple of the RMSE originating from the harmonic model fitting the observations from a year earlier. Going above that threshhold means a change is initially detected. This value defines the sensitivity of the detection and is expressed as confidence.
+The degree of deviation is defined as a multiple of the RMSE originating from the harmonic model fitting the observations from a year earlier. Going above that threshold means a change is initially detected. This value defines the sensitivity of the detection and is expressed as confidence.
 
 A disturbance event counts as confirmed when a number of subsequent observations adhere to the same criteria. This is to avoid false positives. The number of observations in a row is defined by the user. The default is three.
 
@@ -49,7 +49,7 @@ Optical sensors
 
 -    **Landsat/Sentinel-2**: Users can select both sensors; however, it is recommended to only use the combination of both in the **Change** recipe (see **How-to guide** below). For processing and storage efficiency, the historic reference can be based on a single sensor only. Even though Landsat has a lower resolution, it still provides a robust historical reference for the higher resolution Sentinel-2 data, while storage is reduced by a factor of 9.
 
--    **Planet**: It is possible to use daily Planet imagery to generate alerts at very high spatial and temporal resolution. Aside from some special arrangments, Planet daily imagery is not free. Regardless, it must be first accessed through the Planet API and ingested into Google Earth Engine (GEE) as an **Image collection** for both historical reference and monitoring. In an operational scenario, this **Image collection** is subseuqently populated over time with new, incoming images for the selected area.
+-    **Planet**: It is possible to use daily Planet imagery to generate alerts at very high spatial and temporal resolution. Aside from some special arrangements, Planet daily imagery is not free. Regardless, it must be first accessed through the Planet API and ingested into Google Earth Engine (GEE) as an **Image collection** for both historical reference and monitoring. In an operational scenario, this **Image collection** is subseuqently populated over time with new, incoming images for the selected area.
 
 Radar sensors
 """""""""""""
