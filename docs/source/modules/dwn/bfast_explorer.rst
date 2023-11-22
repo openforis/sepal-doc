@@ -3,16 +3,16 @@ BFAST Explorer
 
 .. note::
 
-  This tutorial was created using BFAST Explorer v0.0.1. If you are using a newer version, some features might differ.
+  This tutorial was created using **BFAST Explorer v0.0.1**. If you are using a newer version, some features might differ.
 
 Description
 -----------
 
-**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, developed using R and Python, designed for the analysis of Landsat surface reflectance time-series pixel data.
+**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, developed using R and Python, designed for the analysis of Landsat surface reflectance time series pixel data (BFAST refers to Breaks for Additive Seasonal and Trend).
 
-Three change detection algorithms – **bfastmonitor**, **bfast01** and **bfast** – are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection.
+Three change detection algorithms – **bfastmonitor**, **bfast01** and **bfast** – are used to investigate temporal changes in trend and seasonal components via breakpoint detection.
 
-If you encounter any problems, please send a message to almeida.xan@gmail.com or create an issue on `GitHub <https://github.com/almeidaxan/bfast-explorer/>`__.
+If you encounter any problems, please send a message to almeida.xan@gmail.com or `create an issue on GitHub <https://github.com/almeidaxan/bfast-explorer/>`__.
 
 Tutorial
 --------
@@ -27,7 +27,9 @@ The **Map** tab is the starting tab that is initially displayed when running the
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-01.jpg
   :group: bfast-explorer
 
-Users can also use the **Search** field located at the top of the toolbar to search for a location. The map automatically zooms in on the desired location, similarly to Google Maps. In this example, we searched for :code:`unicamp campinas` (the University of Campinas).
+Users can also use the **Search** field located at the top of the toolbar to search for a location. The map automatically zooms in on the desired location, similar to Google Maps. 
+
+In this example, we searched for :code:`unicamp campinas` (the University of Campinas).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-02.jpg
   :group: bfast-explorer
@@ -41,7 +43,7 @@ To clear all placed markers, select the red |trash-icon| button on the left side
 
 Next, select one of the markers to download its Landsat pixel data by selecting an already placed marker (it will be highlighted; only one marker may be selected at a time).
 
-By selecting a marker, you can now choose a combination of which satellites to download from using the dropdown menu, located on the bottom of the toolbar. In the example, we have choosen all of the available satellites products: Landsat 5, 7 and 8 SR.
+By selecting a marker, you can now choose a combination of which satellites to download from using the dropdown menu, located on the bottom of the toolbar. In the example, we have choosen all of the available satellite products: Landsat 5, 7 and 8 SR.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-04.jpg
   :group: bfast-explorer
@@ -50,7 +52,7 @@ Then, press the blue |download-icon| :guilabel:`Get data` button, located on the
 
 .. note::
     
-    At the time of writing this documentation page, all surface reflectance data were not available from GEE. Depending on where you place your markers, you may receive the following message: "No data available for the chosen satellite(s) and/or region...Please change your query and try again." Since the SEPAL platform relies on GEE to download data, the SEPAL team can not help with this issue. 
+    At the time of writing this article, all surface reflectance data were not available from GEE. Depending on where you place your markers, you may receive the following message: "No data available for the chosen satellite(s) and/or region...Please change your query and try again." Since the SEPAL platform relies on GEE to download data, the SEPAL team can not help with this issue. 
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-05.jpg
   :group: bfast-explorer
@@ -60,47 +62,47 @@ If the download is successful, you'll receive a message directing you to the |ch
 Analysis tab
 ************
 
-In the **Analysis** tab, we can analyse the downloaded data and  save the results locally as files.
+In the **Analysis** tab, we can analyse the downloaded data and save the results locally as files.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-06.jpg
   :group: bfast-explorer
 
-First, choose which satellite time series date to visualize. Even though data was downloaded from Landsat 5, 7 and 8 SR, they can't be analyzed separately. However, let's proceed by choosing all of them.
+First, choose which **Satellite time series date** to visualize. Even though data was downloaded from Landsat 5, 7 and 8 SR, they can't be analysed separately. However, let's proceed by choosing all of them.
 
 The time series of the first spectral band (:code:`b1`) is plotted for all satellites. A legend distinguishes the different sources.
 
 .. note::
     
-    Use caution when comparing **Spectral bands** data from different satellites, as they may not correspond to the same wavelength range (see `here <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__).
+    Use caution when comparing **Spectral bands** data from different satellites, as they may not correspond to the same wavelength range (for more information, see `this page <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-07.jpg
   :group: bfast-explorer
 
-Apart from the spectral bands, there are also four spectral-bands-derived indexes available: NDVI, NDMI, EVI and EVI2. As an example, let's check the NDVI time series.
+Apart from the spectral bands, there are also four spectral-bands-derived indexes available: **NDVI**, **NDMI**, **EVI** and **EVI2**. As an example, let's check the **NDVI time series**.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-08.jpg
   :group: bfast-explorer
 
-All time-series data can be downloaded as a file by selecting the blue |download-icon| :guilabel:`Data` button. All data will be downloaded as a CSV file, ordered by the acquisiton date. An additional column is included in order to distinguish the satellite sources.
+All time series data can be downloaded as a file by selecting the blue |download-icon| :guilabel:`Data` button. All data will be downloaded as a .csv file, ordered by the acquisiton date. An additional column is included in order to distinguish satellite sources.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-09.jpg
   :group: bfast-explorer
 
-The time series plot can be downloaded as an image by selecting the blue |download-icon| :guilabel:`Plot` button. A window will appear offering some raster (JPEG, PNG) and a vectorial (SVG) image output formats.
+The time series plot can be downloaded as an image by selecting the blue |download-icon| :guilabel:`Plot` button. A window will appear offering some raster (.jpeg, .png) and a vectorial (.svg) image output formats.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-10.jpg
   :group: bfast-explorer
 
-Next, select the **Change detection algorithm**. Three options are available: **bfastmonitor**, **bfast01** and **bfast** (for more information, go to `this page <http://bfast.r-forge.r-project.org/>`__).
+Next, select the **Change detection algorithm**. Three options are available: **bfastmonitor**, **bfast01** and **bfast** (for more information, see `this page <http://bfast.r-forge.r-project.org/>`__).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-11.jpg
   :group: bfast-explorer
 
-By selecting **bfastmonitor**, you can tweak four parameters in the left sidebar: :code:`formula`, :code:`history period type`, :code:`harmonic order`, and :code:`start of monitoring`. These parameters have different impacts on results, which can be verified on the right side plot. Here, we set the maximum value of the :code:`harmonic order` to 9 to avoid problems.
+By selecting **bfastmonitor**, you can tweak four parameters in the left sidebar: :code:`formula`, :code:`history period type`, :code:`harmonic order`, and :code:`start of monitoring`. These parameters have different impacts on results, which can be verified on the right side plot. Here, we set the maximum value of the :code:`harmonic order` to **9** to avoid problems.
 
-Similar to the time series, the results of the change detection algorithms as .RDS data files can also be downloaded by selecting the blue |download-icon| :guilabel:`Results` button. To download the plot, select the blue |download-icon| :guilabel:`Plot` button.
+Similar to the time series, the results of the change detection algorithms as .rds data files can also be downloaded by selecting the blue |download-icon| :guilabel:`Results` button. To download the plot, select the blue |download-icon| :guilabel:`Plot` button.
 
-For more information on how to load RDS files on R, see `this page <http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/>`__.
+For more information on how to load .rds files on R, see `this page <http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/>`__.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-12.jpg
   :group: bfast-explorer
@@ -114,7 +116,7 @@ Here, the maximum value of the :code:`harmonic order` is set dynamically, depend
 
 Finally, by selecting **bfast**, you can tweak two parameters: :code:`h` (minimal segment size) and :code:`season type`. 
 
-Since **bfast** can detect multiple breakpoints, it may take a couple of seconds to process, in comparison to the previous two algorithms.
+Since **bfast** can detect multiple breakpoints, it may take a couple of seconds to process in comparison to the previous two algorithms.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-14.jpg
   :group: bfast-explorer
