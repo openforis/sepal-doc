@@ -9,7 +9,7 @@ To help achieve Target 15.3 of the SDGs, governments, international organization
 
 This module provides guidance for generating data for reporting on SDG Indicator 15.3.1. It follows `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_. 
 
-The methodology for the module (`Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area [Version 1.0] <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_) was implemented in consultation with the `Trends.Earth <https://trends.earth/docs/en/index.html>`_ team and `Conservation International <https://www.conservation.org>`_.
+The methodology for the module, `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 1.0) <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_, was implemented in consultation with the `Trends.Earth <https://trends.earth/docs/en/index.html>`_ team and `Conservation International <https://www.conservation.org>`_.
 
 Methodology
 -----------
@@ -26,7 +26,7 @@ In 2017, the UNCCD released `the first version of their guidance <https://prais.
 
 In 2021, `a revised version <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_ was published. 
 
-The module is based on the most recent version of their guidance (Version 2), which outlines a comprehensive approach to land degradation and suggests methods for restoring degraded land by providing guidance for governments, businesses, local communities, and other stakeholders.
+The module is based on the most recent version of their guidance (Version 2), which outlines a comprehensive approach to land degradation and suggests methods for restoring degraded land by providing guidance for governments, businesses, local communities and other stakeholders.
 
 Approach
 """"""""
@@ -51,7 +51,7 @@ Three matrices are used to detect such changes in productivity:
 
 **Productivity trend**
 
-The *productivity trend* measures the trajectory of change in productivity over time.
+**Productivity trend** measures the trajectory of change in productivity over time.
 
 The `Mann–Kendall trend test <https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient>`_ is used to describe the monotonic trend or trajectory (increasing or decreasing) of the productivity for a given time period.
 
@@ -65,7 +65,7 @@ To identify the scale and direction of the trend, a five-level scale is proposed
 
 -  Z score > 1.28 AND ≤ 1.96 = **Potentially improving**, or
 
--  Z score > 1.96 = Improving, as indicated by a significant increasing trend
+-  Z score > 1.96 = **Improving**, as indicated by a significant increasing trend
 
 The area of the lowest negative Z score level (< -1.96) is considered **degraded**, the area between Z score -1.96 to 1.96 is considered **stable**, and the area above 1.96 is considered **improved** for calculating the sub-indicator.
 
@@ -84,7 +84,7 @@ It is measured as follows:
 
    \sigma = \sqrt{\frac{\sum_{n-15}^{n-3}(x_n-\mu)^2}{13}}
 
-where, :math:`x` is the productivity and :math:`n` is the year of analysis.
+where :math:`x` is the productivity and :math:`n` is the year of analysis.
 
 The mean productivity of the current period is given as:
 
@@ -106,9 +106,9 @@ The area of the lowest negative Z score level (< -1.96) is considered **degraded
 
 **Productivity performance**
            
-*Productivity performance* indicates the level of local land productivity relative to other regions with similar productivity potential.
+**Productivity performance** indicates the level of local land productivity relative to other regions with similar productivity potential.
 
-The maximum productivity index, :math:`NPP_{max}` value (90 :sup:`th` percentile) observed within the similar eco-region is compared to the observed productivity value (observed *NPP*). It is given as:
+The maximum productivity index, :math:`NPP_{max}` value (90:sup:`th` percentile) observed within the similar eco-region is compared to the observed productivity value (observed *NPP*). It is given as:
 
 .. math:: \text{performance} = \frac{NPP_{observed}}{NPP_{max}}
 
@@ -167,7 +167,7 @@ Either of the following "look-up" tables can be used to calculate the sub-indica
 
 Available Dataset: 
                   
-Sensors: MODIS; Landsat 4, 5, 7 and 8; Sentinel 2
+Sensors: MODIS; Landsat 4, 5, 7 and 8; Sentinel-2
 
 NPP metric: NDVI; EVI and MSVI; Terra NPP
 
@@ -180,7 +180,7 @@ Default land cover dataset: ESA CCI land cover (1992–2020)
 
 **Transition matrix for custom land cover legends**
 
-A custom transition matrix can be used in combination with the custom land cover legend. The matrix needs to be a comma-separated value (.csv) file in the following form:
+A custom transition matrix can be used in combination with the custom land cover legend. The matrix needs to be a .csv file in the following form:
 
 The first two columns, excluding the first two cells (:math:`a_{31}...a_{n1} \text{and } a_{32}...a_{n2}`), must contain class labels and pixel values for the initial land cover, respectively.
 
@@ -270,7 +270,7 @@ Mandatory parameters
         
 -   **Vegetation index**: The vegetation index will be used to compute the trend trajectory (by default: **NDVI**).
 
--   **Trajectory**: There are three options available to calculate the productivity trend that describe the trajectory of change (by default, **productivity (VI) trend**).
+-   **Trajectory**: There are three options available to calculate the productivity trend that describe the trajectory of change (by default, **Productivity (VI) trend**).
 
 -   **Land ecosystem functional unit**: Defaults to **Global Agro-Environmental Stratification (GAES)**; other available options include:
 
@@ -279,7 +279,7 @@ Mandatory parameters
     - `Global Homogeneous Response Units <https://doi.pangaea.de/10.1594/PANGAEA.775369>`_; and
     - Calculate based on the land cover (`ESA CCI <https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover?tab=overview>`_) and soil texture (`ISRIC <https://www.isric.org/explore/soilgrids>`_).
 
--   **climate regime**: Defaults to **Per pixel based on global climate data**; however, you can also use a fixed value everywhere using a predefined climate regime in the dropdown menu or select a custom value with the slider.
+-   **Climate regime**: Defaults to **Per pixel based on global climate data**; however, you can also use a fixed value everywhere using a predefined climate regime in the dropdown menu or select a custom value with the slider.
 
 .. _sdg-advanced-parameters:
 
