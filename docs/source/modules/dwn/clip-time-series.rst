@@ -1,36 +1,36 @@
 Clip time series
 ================
 
-.. tip::
-
-    This article should explain every step to execute the module. However, if you encounter a problem, please `report it <https://github.com/openforis/clip-time-series/issues/new>`_.
-
 This module allows users to download an automatically generated time series from customizable dates as a :code:`.pdf`.
 
 Each mosaic will be represented as a custom square around the point of interest using the band combination selected by the user (ranging in size from 500 m x 500 m to 1000 km x 10000 km).
 
+.. note::
+
+    This article should explain every step to execute the module. However, if you encounter a problem, please `report it <https://github.com/openforis/clip-time-series/issues/new>`_.
+
 Select file 
 -----------
 
-First the user needs to select a file, which will be the main input of the module; each page of the final :code:`.pdf` will match a geometric shape of the input. The user can use two types of inputs:
+First, select a file to be the main input of the module. Each page of the final :code:`.pdf` will match a geometric shape of the input. The user can use two types of inputs:
 
--   Table file (:code:`.csv`, :code:`.txt`), containing at least coordinates and ID columns
--   Shapes (:code:`.geojson`, :code:`.shp`, :code:`.geopackage`), with at least geometry and ID columns
+-   **Table file** (:code:`.csv`, :code:`.txt`) containing at least coordinates and ID columns
+-   **Shapes** (:code:`.geojson`, :code:`.shp`, :code:`.geopackage`) with at least geometry and ID columns
 
 Table
 *****
 
 Select the :guilabel:`point` radio button.
 
-The table file can be a :code:`.csv` or :code:`.txt` file. It needs to have at least three columns, including the latitude coordinates, the longitude coordinates, and an ID. There are no restrictions for column names.
+The table file can be a :code:`.csv` or :code:`.txt` file. It needs to have at least three columns, including the latitude coordinates, the longitude coordinates and an ID. There are no restrictions for column names.
 
 .. attention::
 
-    The table coordinates need to remain unprojected (i.e. in EPSG:4326)
+    The table coordinates need to remain unprojected (i.e. in EPSG:4326).
     
 Select :guilabel:`Table file`. Only the matching file type will be displayed. Navigate through your **SEPAL folders** to find the appropriate table.
 
-Once a file is selected, the widget will try to autopopulate the ID, latitude, and longitude columns. If columns are incorrectly set or if data are missing, select one of the file columns to completely describe the points (x, y, ID).
+Once a file is selected, the widget will try to autopopulate the ID, latitude and longitude columns. If columns are incorrectly set or if data are missing, select one of the **File columns** to completely describe the points (x, y, ID).
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_table.png
     :alt: input table
@@ -65,7 +65,7 @@ The ID column will be used to name the points in the final .pdf. Select it in th
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/input_shape.png
     :alt: input_shape
-    :title: Input selector using a shapefile dataset. "Name" has been selected as ID column.
+    :title: Input selector using a shapefile dataset; **Name** has been selected as ID column.
     :group: clip-time-serie
 
 Select :guilabel:`load your pts file` to load the shapes as a geodataframe in the app model and display them on a map. The map will be updated with the selected shapes and zoom in on the AOI.
@@ -85,8 +85,8 @@ Drivers
 
 Two drivers are available in this module. You can select either:
 
--    a GEE-based computation (images will be retreived from GEE), or 
--    Planet (images will be retrieved from Planet servers using the user API key).
+-    **GEE-based computation** (images will be retreived from GEE), or 
+-    **Planet** (images will be retrieved from Planet servers using the user API key).
 
 If the user selects :guilabel:`gee`, the panel will ask you to select the satellites to use for thumbnails. Select any satellite imagery from the Landsat family and Sentinel programme.
 
@@ -97,12 +97,12 @@ The best available image is then selected using the following hierarchical order
 - Landsat 5
 - Landsat 7
 
-If the user selects :guilabel:`planet`, the panel will ask for the Planet API key.
+If the user selects :guilabel:`planet`, the pane will ask for the **Planet API key**.
 
 Points
 ******
 
-The number of points a user wants to display can vary. If the user selects all, then all available points in the provided file will be used. It's also possible to select a subset of them using their ID names.
+The number of points a user wants to display can vary. If the user selects all, all available points in the provided file will be used. It's also possible to select a subset of them using their ID names.
 
 Bands
 *****
@@ -111,17 +111,17 @@ Multiple band combinations can be selected:
 
 -   Using the :code:`gee` driver:
 
-    -   Red, Green, Blue
-    -   Nir, Red, Green
-    -   Nir, Swir1, Red 
-    -   Swir2, Nir, Red 
-    -   Swir2, Swir1, Red
-    -   Swir2, Nir, Green
+    -   **Red, Green, Blue**
+    -   **Nir, Red, Green**
+    -   **Nir, Swir1, Red** 
+    -   **Swir2, Nir, Red** 
+    -   **Swir2, Swir1, Red**
+    -   **Swir2, Nir, Green**
     
 -   Using the :code:`planet` driver:
 
-    -   rgb
-    -   cir
+    -   **rgb**
+    -   **cir**
 
 Mosaics
 *******
@@ -139,14 +139,14 @@ Using the :code:`gee` driver, mosaics are yearly cloudless mosaics built on the 
 
 Using the :code:`planet` driver, three types of mosaics can be selected (and mixed together):
 
--   NICFI bianual mosaics
--   NICFI monthly mosaics
--   Other (any other mosaics associated with the user API key)
+-   **NICFI biannual mosaics**
+-   **NICFI monthly mosaics**
+-   **Other** (any other mosaics associated with the user API key)
 
 Thumbnails
 **********
 
-Select a thumbnail size, which will be the minimal size of the thumbnail used. If the shape defined in the first panel is bigger, the software will try to find the smallest square around the shape, centred on its centroid.
+Select a thumbnail size, which will be the minimum size of the thumbnail used. If the shape defined in the first pane is bigger, the software will try to find the smallest square around the shape, centred on its centroid.
 
 .. attention::
 
@@ -159,12 +159,12 @@ In the middle of the final image, the software will display a small square to vi
 
 If the used dataset is a shapefile, the square will be replaced by shape geometry.
 
-When selecting the validation button, the module provides a summary of the download, which is a warning step to avoid downloading massive numbers of points on incorrectly defined parameters.
+When selecting the **Validation** button, the module provides a summary of the download (a warning step to avoid downloading massive numbers of points on incorrectly defined parameters).
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/viz_gee.png
     :alt: viz
     :group: clip-time-series
-    :title: An example set of parameters to create a .pdf file; data summary can be found in the orange rectangle
+    :title: An example set of parameters to create a .pdf file; data summary can be found in the orange rectangle.
 
 Export data
 -----------
@@ -178,7 +178,7 @@ Select the only available button to send your images to GEE or Planet.
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/process_loading.png
     :alt: process_loading
     :group: clip-time-series
-    :title: The progress bar of a downloading process
+    :title: The **Progress** bar of a downloading process
 
 .. note:: 
 
