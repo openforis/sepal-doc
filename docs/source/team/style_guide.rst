@@ -1,8 +1,9 @@
 SEPALSTYLE
 ==========
 
-SEPAL documentation style guide
--------------------------------
+The SEPAL documentation style guide
+-----------------------------------
+
 
 *Learn the basics of* SEPALSTYLE *to help maintain writing that is useful, clear, concise, consistent and fluid*
 
@@ -215,6 +216,7 @@ Common words used to describe actions in the **SEPAL interface** include:
 -    open
 -    monitor
 -    pan
+-    press
 -    register
 -    save
 -    select (use instead of *click*, except when not appropriate)
@@ -240,6 +242,9 @@ Common words used to describe elements in the **SEPAL interface** include:
 -    button
 -    checkbox
 -    dash
+-    dashboard
+-    dialog
+-    dock
 -    drawer
 -    dropdown menu
 -    feature
@@ -282,7 +287,8 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     "bar","go to, view, select, monitor","View the **Status bar** to monitor the download progress."
     "button","select","Select the **Terminal** button."
     "checkbox","select","Select the **Display map** checkbox."
-    "dash","go to","Go to the **SEPAL dash**."
+    "dashboard", "go to", "Open the **Apps** dashboard."
+    "dialog", "view, select", "Select **Confirm** in the dialog."
     "dock","select","Select the **Files** tab in the dock."
     "drawer","open, close","Open the **Navigation** drawer."
     "dropdown menu","open, select, choose","Select **Vector file** from the dropdown menu."
@@ -440,6 +446,23 @@ Hyphens can be used: for compound adjectives, when describing ages, amounts or l
 
     High-quality data for 15 year-old forests.
 
+Parentheses and brackets
+""""""""""""""""""""""""
+
+Parentheses are used to include less important text in a sentence or to enclose descriptive information.
+
+When only part of a sentence is enclosed in parentheses, punctuation is placed outside.
+
+    **Example**
+
+    Open the **Optical mosaics** recipe (for more information, see figure below and https://docs.sepal.io/en/latest/cookbook/optical_mosaic.html).
+
+When a complete sentence is enclosed in parentheses, its punctuation is also enclosed.
+
+    **Example**
+
+    (You should see an interface like in the following figure.)
+
 Quotation marks
 """""""""""""""
 
@@ -477,10 +500,10 @@ Highlights
 
 Common terms for showcasing information include:
 
--    Tip
--    Note
--    Attention
--    Important
+-    **Attention**: To be used to showcase *extremely important* information.
+-    **Important**: To be used to showcase *moderately important* information.
+-    **Note**: To be used to showcase *important* information.
+-    **Tip**: To be used to showcase *helpful* information.
 
 Avoid "Warning" and "Danger".
 
