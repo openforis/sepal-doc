@@ -3,10 +3,11 @@ Soil moisture mapping
 
 Open SEPAL
 ----------
+*Tool for mapping surface soil moisture based on Copernicus Sentinel-1 intensity data*
 
 #.  Open SEPAL and log in.
    
-    #.  To open SEPAL in your browser, go to `<https://sepal.io/>`_
+    #.  To open SEPAL in your browser, go to `<https://sepal.io/>`_.
     #.  Connect SEPAL to your Google account.
 
 #.  Make sure SEPAL is connected to your Google account (see `Use GEE with SEPAL <https://docs.sepal.io/en/latest/setup/gee.html>`_).
@@ -22,17 +23,17 @@ Process Sentinel-1 time series data to generate maps of soil moisture
 
 #.  Open and launch the **Soil moisture mapping** application.
 
-    #.  To access the module, select the **Apps** tab in SEPAL. Then use the search box and enter “SOIL MOISTURE MAPPING” or find it manually.
+    #.  To access the module, select the **Apps** tab in SEPAL. Use the search box and enter “SOIL MOISTURE MAPPING”, or find it manually.
     
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.1.PNG
         :width: 500
         
-    #.  The application will be launched and displayed over a new tab in the SEPAL panel.
+    #.  The application will be launched and displayed over a new tab in the SEPAL pane.
     
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.1.2.PNG
         :width: 500
 
-    #.  The module has 5 main steps that can be selected in the left panel: **AOI selection**, **download**, **closing filter**, **calculate statistics**, and **display map**.
+    #.  The module has five main steps that can be selected in the left pane: **AOI selection**, **download**, **closing filter**, **calculate statistics**, and **display map**.
     #.  Select the **AOI selection** step and follow the next four sub-steps.
     #.  In the **AOI selection step**, choose **Use GEE asset**. Paste your **GEE asset ID** into the box and select the “Use asset” button to select your AOI.
     #.  Two new selection dropdown menus will appear. Choose your **variable** and **field**, then wait until the polygon is loaded onto the map.
@@ -56,10 +57,10 @@ Process Sentinel-1 time series data to generate maps of soil moisture
     #.  This process could take a long time depending on the dimensions of the feature and the number of images to be processed. 
     #.  If the selected dates are not available, the system will display a message with the closest images to the input dates. 
         
-        #.  The most recent image available depends on the GLDAS product, which has a delay of one to two months.
+        #.  The most recent image available depends on the Global Land Data Assimilation System (GLDAS) product, which has a delay of one to two months.
     
     #.  The green **Processing** bar shows the name of the task that is sent to GEE. When the processing reaches 100 percent, all tasks have been sent to GEE and the classification of soil moisture will continue there.
-    #.  After all tasks are sent to GEE, the module can be closed. The processing will continue uninterrupted in GEE, where the processing can take hours or days depending on the size of the AOI and the date range selected. 
+    #.  After all tasks are sent to GEE, the module can be closed. The processing will continue uninterrupted in GEE, where it can take hours or days depending on the size of the AOI and the date range selected. 
 
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/2.3.6.PNG
         :width: 500
@@ -93,7 +94,7 @@ Download soil moisture maps from GEE to SEPAL
 
 #.  Use the download step.
     
-    #. In the left panel, select the **Download** button.
+    #. In the left pane, select the **Download** button.
 
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/3.2.1.PNG
         :width: 180
@@ -112,7 +113,7 @@ Download soil moisture maps from GEE to SEPAL
     #.  The task download file can be found in the folder :code:`home/user/ pysmm_downloads/0_raw/assetname/rowname/`
     #.  The task download file naming convention is: task_datedownloadinitiated_code.txt
     #.  Use the three dropdown lists to choose the desired task text file by selecting the folder names.
-    #.  There are options to overwrite duplicates already downloaded into SEPAL and remove downloaded images from Google Drive. Once the images are removed from Google Drive the task download file will no longer function because those images will not be stored in Google Drive.
+    #.  There are options to overwrite duplicates already downloaded into SEPAL and remove downloaded images from Google Drive. Once the images are removed from Google Drive, the task download file will no longer function because those images will not be stored in Google Drive.
         
         #.  **Overwrite SEPAL images**: In case you previously have downloaded an image in the same path folder, the module will overwrite the images with the same name.
         #. **Remove Google Drive images**: Mark this option if you want to download the images to your SEPAL account and delete the files from your Google Drive account.
@@ -121,19 +122,19 @@ Download soil moisture maps from GEE to SEPAL
     #.  The images will download separately; leave the application open while the download is running. 
     #.  After the data download is complete, you can use tools available in SEPAL to process and analyse the soil moisture maps.
 
-Post-process and analyse soil moisture time-series data
+Post-process and analyse soil moisture time series data
 -------------------------------------------------------
 
 After the download is complete, apply a robust methodology for image filtering to fill no-data gaps and assess trends in the time series of soil moisture maps.
 
 #.  Select the **Closing filter** step.
     
-    #. In the left panel, select the **Closing filter** tab.
+    #. In the left pane, select the **Closing filter** tab.
 
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.1.1.PNG
         :width: 180
 
-#.  Run the post-processing section of the module 
+#.  Run the post-processing section of the module.
     
     #.  Navigate to the folder where the images are stored. This module will process a folder with many images, going through each of the images. Therefore, the input should be the folder in which the raw images are stored. The module will automatically display two selection menus; select the desired options.
 
@@ -142,12 +143,12 @@ After the download is complete, apply a robust methodology for image filtering t
 
     #.  The raw imagery is stored in the same folder that the task download file is located.
     #.  Select the **START** button to run a data-filling algorithm on each of the soil moisture maps. 
-    #.  Due to speckle in Sentinel-1 imagery, soil moisture maps contain some noise and no-data values which are corrected to some extent using grayscale morphological operation from ORFEO toolbox, a free and open-source image processing tool. To read more about the parameterization of the Orfeo toolbox tool, see `<https://www.orfeo-toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html>`_
-    #.  This process is done by the SEPAL instance; the time will depend on the number of images and dimensions. After finishing all images, the progress bar will turn green. 
+    #.  Due to speckle in Sentinel-1 imagery, soil moisture maps contain some noise and no-data values which are corrected to some extent using grayscale morphological operation from ORFEO toolbox, a free and open-source image processing tool (see `<https://www.orfeo-toolbox.org/CookBook/Applications/app_GrayScaleMorphologicalOperation.html>`_.
+    #.  This process is done by the SEPAL instance; the time will depend on the number of images and dimensions. After finishing all images, the **Progress** bar will turn green. 
 
-#.  Run the **Statistics** postprocess.
+#.  Run the **Statistics** post-process.
 
-    #. In the left panel select the **Calculate statistics** tab.
+    #. In the left pane, select the **Calculate statistics** tab.
 
     .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.1.PNG
         :width: 180
@@ -181,7 +182,7 @@ After the download is complete, apply a robust methodology for image filtering t
         #.  The **Median**, **Mean**, **Geometric Mean**, **Max**, **Min**, **Standard Deviation** and **Valid pixels** are statistics that do not require much computing requirements, so the time to perform those tasks is relatively quick, depending on the extent of the image.
         #.  The **Advanced settings** are intended to be used to improve the time and manage system resources. Normally, this is automatically optimized, but can be modified by the user. This setting controls the number of processors you use for parallel processing, allowing you to optimize the time by processing a huge image by using several processors at the same time (by default, all available processors will be used; note that the more CPUs available in the selected instance in the terminal, the faster the processing will be).
         
-            #.  **Processors**: By default, the module will display the number of processors that are active in the current instance session and will perform the stack-composed with all of them; however, in order to test the best benchmark to the specific stack, this number could be changed within the **Advanced settings** tab.
+            #.  **Processors**: By default, the module will display the number of processors that are active in the current instance session and will perform the stack composed with all of them; however, in order to test the best benchmark to the specific stack, this number could be changed within the **Advanced settings** tab.
             #.  **Chunks**: The number in the chunk specifies the shape of the array that will be processed in parallel over the different processors (i.e. if 180 is the specified number of chunks, then the stack-composed module will divide the input image into several small square pieces of 180 pixels with its shape). For more information about how to select the best chunk shape, follow the documentation.
 
         .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/4.3.5.7.PNG
@@ -198,7 +199,7 @@ After the download is complete, apply a robust methodology for image filtering t
 Visualizing imagery
 -------------------
 
-#.  In the left panel, select the **Display map** tab.
+#.  In the left pane, select the **Display map** tab.
 
 .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.1_.PNG
     :width: 180
@@ -219,7 +220,7 @@ Visualizing imagery
 .. figure:: https://raw.githubusercontent.com/openforis/sepal_pysmm/master/doc/img/wiki/5.4.PNG
     :width: 500
 
-Open-source data from Sentinel-1 operates using C-band synthetic aperture radar imaging. C-band type has a wavelength of 3.8 cm – 7.5 cm, and thus has limited penetration into dense forest canopies. Therefore, forested areas should be excluded from the analysis. L-band data should be used instead of such areas.
+Open-source data from Sentinel-1 operates using C-band synthetic aperture radar imaging. C-band type has a wavelength of 3.8–7.5 cm, and thus has limited penetration into dense forest canopies. Therefore, forested areas should be excluded from the analysis. L-band data should be used instead of such areas.
 
 It is recommended that densely vegetated areas are excluded from analysis due to the limitation of C-band radar to penetrate dense canopy cover. Use a **forest map** to exclude dense forest areas from the analysis.
 
