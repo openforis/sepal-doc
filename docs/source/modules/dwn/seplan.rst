@@ -1,7 +1,7 @@
 se.plan
 =======
 
-*Generate information on forest restoration potential to support forest restoration planning decisions with the spatially explicit online tool se.plan*
+*Generate information on forest restoration potential to support forest restoration planning decisions with se.plan*
 
 Introduction
 ------------
@@ -15,19 +15,19 @@ Part of `System for Earth Observation Data Access, Processing and Analysis for L
 
 As a decision-support tool, **se.plan** is intended to be used in combination with other information users may have that provides greater detail on planning areas and features of those areas that the tool might not adequately include. It offers users the option to replace its built-in data layers, which are based on publicly available global datasets, with users’ own customized layers (see :ref:`seplan-appendix-a` for a list of the tool’s built-in data layers and their sources).
 
-The following sections highlight key features of **se.plan**. Following the three steps below, the tool can be used to generate information on forest restoration potential.
+The following sections highlight key features of **se.plan**. 
+
+Following the three steps below, the tool can be used to generate information on forest restoration potential.
 
 .. rst-class:: center
 
-Users start by: 
+To generate maps and related information on restoration’s benefits, costs and risks for all suitable sites within the planning area:
 
-   1. selecting their geographical planning area; 
+   1. Select your geographical planning area. 
 
-   2. rating the relative importance of different restoration benefits from their perspective; and 
+   2. Rate the relative importance of different restoration benefits from your perspective. 
 
-   3. imposing constraints that limit restoration to only those sites they view as suitable, in view of ecological and socioeconomic risks. 
-
-**se.plan** then generates maps and related information on restoration’s benefits, costs and risks for all suitable sites within the planning area.
+   3. Impose constraints that limit restoration to only those sites viewed as suitable (related to ecological and socioeconomic risks).
 
 In addition to reading this article, the SEPAL team encourages users to watch the following video:
 
@@ -38,9 +38,9 @@ Geographical resolution and scope
 
 **se.plan** divides the Earth’s surface into grid cells with 30 arc-second resolution (approximately 1 km at the equator). 
 
-The tool only includes grid cells that satisfy the following four criteria (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Frest_pot_gt_treecoverfrac_mask_urban>`__)):
+The tool only includes grid cells that satisfy the following four criteria (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Frest_pot_gt_treecoverfrac_mask_urban>`__):
 
--   They are in countries or territories of Africa and the Near East, Asia and the Pacific, and Latin America and the Caribbean that the World Bank classified as *low- or middle-income countries* or territories (LMICs) during most years of the 2000–2020 period. There are 139 countries and territories in total and can be found in the section, :ref:`seplan-appendix-b`.
+-   They are in countries or territories of Africa and the Near East, Asia and the Pacific, and Latin America and the Caribbean that the World Bank classifies as *low- or middle-income countries* or territories (LMICs) during most years of the 2000–2020 period. There are 139 countries and territories in total and can be found in the section, :ref:`seplan-appendix-b`.
 -   They include areas where tree cover can potentially occur under current climatic conditions, as determined by `Bastin et al. (2019) <https://doi.org/10.1126/science.aax0848>`_.
 -   Their current tree cover, as measured by the European Space Agency’s Copernicus Programme (`Buchhorn et al. 2020 <https://doi.org/10.3390/rs12061044>`_), is less than their potential tree cover.
 -   They are not in urban use.
@@ -53,7 +53,7 @@ Methodology
 Selection of planning area
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**se.plan** offers users multiple ways to select their planning area, which the tool labels as **Area of interest (AOI)** as described in the :ref:`seplan-usage`.
+**se.plan** offers users multiple ways to select a planning area, which the tool labels as **Area of interest (AOI)** as described in the :ref:`seplan-usage`.
 
 Restoration benefits
 ^^^^^^^^^^^^^^^^^^^^
@@ -78,12 +78,12 @@ Forest restoration incurs two broad categories of costs, **opportunity cost** an
 
 **Implementation costs** refer to the expense of activities required to regenerate forests on cleared land, including both: 
 
-   1. initial expenses incurred in the first year of restoration (establishment costs), which are associated with such activities as site preparation, planting and fencing; and 
-   2. expenses associated with monitoring, protection and other activities during the subsequent three to five years that are required to enable the regenerated stand to reach the “free to grow” stage (operating costs).
+   1. initial expenses incurred in the first year of restoration (**Establishment costs**), which are associated with such activities as site preparation, planting and fencing; and 
+   2. expenses associated with monitoring, protection and other activities during the subsequent three to five years that are required to enable the regenerated stand to reach the “free to grow” stage (**Operating costs**).
 
 **se.plan** assumes that implementation costs include planting expenses on all sites. This assumption might not be valid on sites where natural regeneration is feasible. To account for this possibility, the tool includes a data layer that predicts the variability of natural regeneration success.
 
-**se.plan** calculates the overall restoration cost of each site by combining the corresponding estimates of the opportunity cost and implementation costs (see :ref:`seplan-appendix-e` for more information on the interpretation and generation of the data layers for opportunity and implementation costs).
+**se.plan** calculates the overall restoration cost of each site by combining the corresponding estimates of the **Opportunity cost** and **Implementation costs** (see :ref:`seplan-appendix-e` for more information on the interpretation and generation of the data layers for opportunity and implementation costs).
 
 Benefit–cost ratio
 ^^^^^^^^^^^^^^^^^^
@@ -98,20 +98,18 @@ Constraint
 **se.plan** allows users to impose constraints that limit restoration to only those sites they view as suitable, in view of ecological and socioeconomic risks. It groups the constraints into four categories:
 
 -   **Biophysical**, including elevation, slope, annual rainfall, baseline water stress and terrestrial ecoregion;
--   **Current land cover**, including shrub land, herbaceous vegetation, agricultural land, urban/built up, bare/sparse vegetation, snow and ice, herbaceous wetland, moss and lichen;
+-   **Current land cover**, including shrubland, herbaceous vegetation, agricultural land, urban/built up, bare/sparse vegetation, snow and ice, herbaceous wetland, and moss and lichen;
 -   **Forest change**, including deforestation rate, climate risk and natural regeneration variability; and
 -   **Socioeconomic**, including protected areas, population density, declining population, property rights protection, and accessibility to cities.
 
-**se.plan** enables the user to adjust the values that will be masked from the analysis for most of these constraints. Some of the constraints are binary variables, with a value of 1 if a site has the characteristic associated with the variable and 0 if it does not. For these constraints, users can choose if they want to keep zeros or ones.
-
-(See :ref:`seplan-appendix-f` for more information on the interpretation and generation of the data layers for the constraints.)
+**se.plan** enables the user to adjust the values that will be masked from the analysis for most of these constraints. Some of the constraints are binary variables, with a value of 1 if a site has the characteristic associated with the variable and 0 if it does not. For these constraints, users can choose if they want to keep zeros or ones. (See :ref:`seplan-appendix-f` for more information on the interpretation and generation of the data layers for the constraints.)
 
 Customization
 ^^^^^^^^^^^^^
 
-Constraints, costs and indicators are based on layers provided within the tools. These layers may not be cover the AOI selected by the user, or may provide less accurate/up-to-date data than national datasets available. To allow users to improve the quality of the analysis, **se.plan** provides the possiblity of replacing these datasets by any layer available with GEE.
+Constraints, costs and indicators are based on layers provided within the tools. These layers may not cover the AOI selected by the user, or may provide less accurate/up-to-date data than national datasets available. To allow users to improve the quality of the analysis, **se.plan** provides the possiblity of replacing these datasets by any layer available with GEE.
 
-(See :ref:`seplan-usage` section for more information on the customization process.)
+(See the :ref:`seplan-usage` section for more information on the customization process.)
 
 Output
 ^^^^^^
@@ -140,14 +138,14 @@ In this section, we will exaustively describe how to use the **se.plan** applica
 Open the app
 ^^^^^^^^^^^^
 
-To access the application, please connect to your SEPAL account by going to https://sepal.io
+To access the application, open your SEPAL account by going to https://sepal.io.
 
-Then, select the purple wrench on the right side of your screen to access the **Application** dashboard (https://sepal.io/app-launch-pad). All available SEPAL applications are displayed on this page.
+Then, select the purple wrench on the right side of your screen to access the **Apps** dashboard (https://sepal.io/app-launch-pad). All available SEPAL applications are displayed on this page.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/app_dashboard.png
-    :alt: App dashboard
+    :alt: Apps dashboard
 
-In the **App** dashboard, enter "se.plan" in the search bar. The list of applications should be reduced to one.
+In the **Apps** dashboard, enter **se.plan** in the search bar. The list of applications should be reduced to one.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/app_dashboard_filter.png
     :alt: app dashboard
@@ -161,14 +159,16 @@ Select the **se.plan** app and wait until the loading is finished. The applicati
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/landing_page.png
     :alt: landing_page
 
-Use the left side drawers to navigate through the application panels.
+Use the drawers on the left to navigate through the application panes.
 
 The next sections will guide you through each step of the **se.plan** process.
 
 Select AOI
 ^^^^^^^^^^
 
-The **Restoration suitability index** (hereinafter referred to as *Index*) will be calculated based on the user inputs. The first mandatory input is the AOI. In this step, you’ll have the possibility to choose from a predefined list of administrative layers or use your own datasets. Available options include:
+The **Restoration suitability index** (referred to as **Index**) will be calculated based on user inputs. 
+
+The first mandatory input is the AOI. In this step, you’ll have the possibility to choose from a predefined list of administrative layers or use your own datasets. Available options include:
 
 **Predefined layers**
 
@@ -182,7 +182,7 @@ The **Restoration suitability index** (hereinafter referred to as *Index*) will 
 -   Drawn shapes on map
 -   GEE asset
 
-After selecting the desired area, select the :code:`Select these inputs` button; the map will display your selection. Once you see the green confirmation message, select the **Questionnaire** panel to move to the next step.
+After selecting the desired area, select the :code:`Select these inputs` button; the map will display your selection. Once you see the green confirmation message, select the **Questionnaire** pane to move to the next step.
 
 .. note::
 
@@ -211,16 +211,16 @@ Select constraints
 
 .. attention::
 
-    This panel cannot be used prior to selecting an AOI.
+    This pane cannot be used prior to selecting an AOI.
 
 **se.plan** allows users to set constraints limiting restoration to only those sites they view as suitable, specifically in light of ecological and socioeconomic risks. The tool groups the constraints into four categories:
 
 -   **Biophysical constraints**, including elevation, slope, annual rainfall, baseline water stress and terrestrial ecoregion;
--   **Current land cover**, including shrubs, herbaceous vegetation, cultivated and managed vegetation/agriculture, urban/built up, bare/sparse vegetation, snow and ice, herbaceous wetland, moss and lichen;
+-   **Current land cover**, including shrubs, herbaceous vegetation, cultivated and managed vegetation/agriculture, urban/built up, bare/sparse vegetation, snow and ice, herbaceous wetland, and moss and lichen;
 -   **Forest change**: deforestation rate, climate risk and natural regeneration variability; and
 -   **Socioeconomic constraints**, including protected areas, population density, declining population, property rights protection and accessibility to cities.
 
-These categories are displayed to the user in expandable panels. Select a category to open its panel and choose the appropriate constraint name in the dropdown menu labeled **Criteria**. The customization of contraints will appear underneath.
+These categories are displayed to the user in expandable panes. Select a category to open its pane and choose the appropriate constraint name in the dropdown menu labeled **Criteria**. The customization of contraints will appear underneath.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/constraints.png
     :alt: constraints
@@ -229,7 +229,7 @@ Some constraints are numerical or categorical, for which **se.plan** enables the
 
 .. tip::
 
-    The values provided in the slider are computed on-the-fly over your AOI preventing the user from selecting a filter that would remove all pixels in your area.
+    The values provided in the slider are computed on the fly over your AOI preventing the selection of a filter that would remove all pixels in your area.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/slider.png
     :alt: binary
@@ -239,12 +239,12 @@ Other constraints are binary variables (a value of 1 if a site has the character
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/binaries.png
     :alt: binary
 
-Once the selection is finished, the chosen constraints will be displayed as small chips in the expandable panel title, allowing the user to see all the selected constraints at a glance.
+Once the selection is finished, the chosen constraints will be displayed as small chips in the expandable pane title, allowing the user to see all the selected constraints at a glance.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/chips.png
     :alt: Constraints chips
 
-Every selected constraint corresponds to a layer provided by **se.plan** (listed in the section, :ref:`seplan-appendix-f`). These layers can be customized in this panel to use national data or to provide information on areas that are not covered by the tool's default layers. You do not need to add constraints if there aren't any. In this case, default values will be used and you can simply proceed to the next steps.
+Every selected constraint corresponds to a layer provided by **se.plan** (listed in the section, :ref:`seplan-appendix-f`). These layers can be customized in this pane to use national data or to provide information on areas that are not covered by the tool's default layers. You do not need to add constraints if there aren't any. In this case, default values will be used and you can simply proceed to the next steps.
 
 .. note::
 
@@ -266,16 +266,15 @@ Once the modifications are finished, select :code:`save` to apply the changes to
 
 .. attention::
 
-    Don't forget to change the slider values after a layer customization. If your layer uses a different unit, all the pixels might be included in your filtering parameters.
+    Don't forget to change the slider values after a layer customization. If your layer uses a different unit, all pixels might be included in your filtering parameters.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/custom_constraints.gif
-    :alt: constraints customization
-
+    :alt: Constraints customization
 
 Select indicators
 *****************
 
-Users rate the relative importance of benefits from their standpoint (or the standpoint of stakeholders they represent); then, **se.plan** calculates an *index* that indicates each grid cell’s relative restoration value aggregated across all four benefit categories. To rate each indicator, the user simply ticks the corresponding checkbox.
+Users rate the relative importance of benefits from their standpoint (or the standpoint of stakeholders they represent); then, **se.plan** calculates an **Index** that indicates each grid cell’s relative restoration value aggregated across all four benefit categories. To rate each indicator, the user simply ticks the corresponding checkbox.
 
 .. attention::
 
@@ -286,7 +285,7 @@ Users rate the relative importance of benefits from their standpoint (or the sta
 
 .. tip::
 
-    Utilizing the pencil icon next to the indicator name, the user can customize the layer used by **se.plan** to compute its *Index* (the editing pop-up panel is the same as the one presented in the previous section).
+    Utilizing the pencil icon next to the indicator name, the user can customize the layer used by **se.plan** to compute its **Index** (the editing pop-up pane is the same as the one presented in the previous section).
 
     .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/indicator_custom.gif
         :alt: indicators custom
@@ -294,7 +293,7 @@ Users rate the relative importance of benefits from their standpoint (or the sta
 Select costs
 ************
 
-Users can customize the layers that will be used as **costs** in the weighted sum approach by going to the third tab of the questionnaire panel (**Costs**) and selecting the :icon:`fa-solid fa-pencil` to open the modification dialog interface (the editing pop-up panel is the same as the one presented in the previous section).
+Users can customize the layers that will be used as **Costs** in the weighted sum approach by going to the third tab of the questionnaire pane (**Costs**) and selecting the :icon:`fa-solid fa-pencil` to open the modification dialog interface (the editing pop-up pane is the same as the one presented in the previous section).
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/costs.png
     :alt: indicators
@@ -302,9 +301,9 @@ Users can customize the layers that will be used as **costs** in the weighted su
 Recipe
 ^^^^^^
 
-Next, go to the **Recipe** panel. 
+Next, go to the **Recipe** pane. 
 
-**Recipe** is the base information used by **se.plan** to compute the *Restoration suitability index*, which is a :code:`.json` serialized version of all user-provided inputs in the previous steps that can be shared and reused by other users. 
+**Recipe** is the base information used by **se.plan** to compute the **Restoration suitability index**, which is a :code:`.json` serialized version of all user-provided inputs in the previous steps that can be shared and reused by other users. 
 
 You need to validate your recipe before proceeding to the results. By selecting the **Save your recipe** button, customization completed in previous steps is recorded and validated.
 
@@ -323,25 +322,24 @@ First, the user should provide a name for the recipe. By default, **se.plan** us
 
 Once all required inputs are provided, the user can validate the recipe by selecting the :guilabel:`validate recipe` button.
 
-A :code:`.json` file will be created in the :code:`module_result/restoration_planning_module/` directory of your SEPAL workspace and a summary of your inputs wil be displayed in expandable panels.
+A :code:`.json` file will be created in the :code:`module_result/restoration_planning_module/` directory of your SEPAL workspace and a summary of your inputs wil be displayed in expandable panes.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/valid_recipe.png
     :alt: valid recipe
 
-In the **Benefits** section of the expandable panels, the user will find the list of indicators set in the questionnaire with the selected weights. If they do not match restoration priorities, they can still be modified in the **Questionnaire** section.
+In the **Benefits** section of the expandable panes, the user will find the list of indicators set in the **Questionnaire** with the selected weights. If they do not match restoration priorities, they can still be modified in the **Questionnaire** section.
 
 .. note::
 
-    Don't forget to validate the recipe every time a change is made in the prior sections (**AOI selector and/or **Quetionnaire**).
+    Don't forget to validate the recipe every time a change is made in the prior sections (**AOI selector** and/or **Quetionnaire**).
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/indicators_recipe.png
     :alt: Indicators recipe
 
-In the **Constraints** section of the expandable panels, the user will find the complete list of available constraints in the tool. The activated constraint will be displayed in blue; the constraint in red will be ignored in the computation of the *Restoration suitability index*.
+In the **Constraints** section of the expandable panes, the user will find the complete list of available constraints in the tool. The activated constraint will be displayed in blue; the constraint in red will be ignored in the computation of the **Restoration suitability index**.
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/constraints_recipe.png
     :alt: Constraints recipe
-
 
 Use existing recipe
 *******************
@@ -350,7 +348,7 @@ Use existing recipe
 
     Loading a recipe can be done without setting any **AOI** or **Questionnaire** answers.
 
-The recipe is a simple :code:`.json` file that is meant to be shared and reused. To do so, simply use the file selector of the **Recipe** panel and select a recipe from your **SEPAL workspace** folder.
+The recipe is a simple :code:`.json` file that is meant to be shared and reused. To do so, use the file selector of the **Recipe** pane and select a recipe from your **SEPAL workspace** folder.
 
 .. note::
 
@@ -373,9 +371,9 @@ Results map
 
     The recipe needs to be validated.
 
-Once the recipe is validated, the :guilabel:`compute the restoration map` button is released and the *Restoration suitability index* can be computed. Select the button to view the results map.
+Once the recipe is validated, the :guilabel:`compute the restoration map` button is released and the **Restoration suitability index** can be computed. Select the button to view the results map.
 
-The map will be centred on the selected AOI and the value of the *Index* will be displayed from 1 to 5 using a color-blind friendly color ramp – red being "not suitable" and blue "very suitable".
+The map will be centred on the selected AOI and the value of the **Index** will be displayed from 1 to 5 using a color-blind, friendly color ramp (red being "not suitable" and blue "very suitable").
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/restoration_map.png
     :alt: Restoration map
@@ -403,7 +401,7 @@ The sub-AOIs can be selected using a shapefile. The names of the sub-AOIs will b
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/load_shp.gif
     :alt: load shp
 
-The sub-AOIs can also be drawn directly on the map. There are three buttons under the cloud icon where you can choose to draw a polygon, rectangle or circle. Select any of them based on your needs. Each time a new geometry is drawn, a pop-up dialogue will ask the user to name it. This name will be used in the final report. You will need to select the compute dashboard button again to include all sub-AOIs in the report.
+The sub-AOIs can also be drawn directly on the map. There are three buttons under the cloud icon where you can choose to draw a polygon, rectangle or circle. Select any of them based on your needs. Each time a new geometry is drawn, a pop-up dialogue will ask the user to name it. This name will be used in the final report. You will need to select the **Compute dashboard** button again to include all sub-AOIs in the report.
 
 .. note::
 
@@ -419,7 +417,7 @@ The sub-AOIs can also be drawn directly on the map. There are three buttons unde
 Restoration dashboard
 *********************
 
-After selecting the :code:`compute dashboard` button, the report generated from the previous step is displayed in the panel.
+After selecting the :code:`compute dashboard` button, the report generated from the previous step is displayed in the pane.
 
 .. attention::
 
@@ -427,10 +425,10 @@ After selecting the :code:`compute dashboard` button, the report generated from 
 
 The dasboard has two sections:
 
-#.   Summary of restoration suitability by region
-#.   AOI - summary by sub-theme
+#.   **Summary of restoration suitability by region**
+#.   **AOI - summary by sub-theme**
 
-In the first section, the **Restoration suitability index** is given as proportion of the AOI and the sub-AOIs (note: ISO3 codes are used rather than country names. Select the **Details** panel to get the surfaces of each restoration value in MHa.
+In the first section, the **Restoration suitability index** is given as proportion of the AOI and the sub-AOIs (note: ISO3 codes are used rather than country names. Select the **Details** pane to get the surfaces of each restoration value in MHa.
 
 The names used for AOIs are the names selected on the map.
 
@@ -459,7 +457,7 @@ The sum of each cost over the AOI is displayed in bar charts in the same fashion
 
 **Constraints**
 
-The constraints are displayed in percentages. Each value represents the percentage of surface affected by the filter applied by this constraint over the AOI. Each color represents an AOI: gold for the main AOI and the automatically attributed colors of the sub-AOIs.
+The constraints are displayed in percentages. Each value represents the percentage of surface affected by the filter applied by this constraint over the AOI. Each color represents an AOI (gold for the main AOI and the automatically attributed colors of the sub-AOIs).
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/doc/img/dashboard_constraints.png
     :alt: Dashboard costs
@@ -481,7 +479,7 @@ For determining potential tree cover, data was used from:
 
 For determining current tree cover, data was used from:
 
-    Buchhorn, M., Lesiv, M., Tsendbazar, N.E., Herold, M., Bertels, L. and Smets, B. 2020, Copernicus Global Land Cover Layers—Collection 2. Remote Sensing, 12 Volume 108, 1044. doi:`10.3390/rs12061044 <https://www.mdpi.com/2072-4292/12/6/1044>`_
+    Buchhorn, M., Lesiv, M., Tsendbazar, N.E., Herold, M., Bertels, L. and Smets, B. 2020. Copernicus Global Land Cover Layers—Collection 2. *Remote Sensing*, 12(108): 1044. doi:`10.3390/rs12061044 <https://www.mdpi.com/2072-4292/12/6/1044>`_
 
 The team took data for the remaining spatial layers primarily from the sources presented in the following tables (for more information, see :ref:`seplan-appendix-c` [benefits], :ref:`seplan-appendix-e` [costs], and :ref:`seplan-appendix-f` [constraints]).
 
@@ -511,7 +509,7 @@ Benefits
    :header-rows: 1
 
     Spatial layer, Sub-theme, Data sources
-    Biodiversity intactness index, Biodiversity conservation, "Newbold, T., Hudson, L., Arnell, A. et al. 2016, Dataset: Global map of the Biodiversity Intactness Index. In: Newbold et al. 2016. Science: Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0009936"
+    Biodiversity intactness index, Biodiversity conservation, "Newbold, T., Hudson, L., Arnell, A. *et al.* 2016. Dataset: Global map of the Biodiversity Intactness Index. In: Newbold et al. 2016. Science: Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0009936"
     Endangered species, Biodiversity conservation, "Layer obtained from World Bank, which processed species range maps from: (i) IUCN. The IUCN Red List of Threatened Species. https://www.iucnredlist.org; and (ii) BirdLife International. Data Zone. http://datazone.birdlife.org/species/requestdis"
     Unrealized biomass potential, Carbon sequestration, "Walker, W.S., Gorelik, S.R., Cook-Patton, S.C. *et al.* 2022. The global potential for increased storage of carbon on land. *Proceedings of the National Academy of Sciences*, 119(23): e2111312119. https://doi.org/10.1073/pnas.2111312119"
     Forest employment, Local livelihoods, "Downscaled estimates generated using national data from: International Labour Organization. 2020. Employment by sex and economic activity - ISIC level 2 (thousands). Annual, ILOSTAT database. https://ilostat.ilo.org/data"
@@ -769,9 +767,9 @@ Data layers for benefits
 
 .. note::
 
-    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** panel. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 by your country number (listed in the **Country list** section in the rightmost column). If you want to export this layer, set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13) according to your need.
+    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** pane. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 by your country number (listed in the **Country list** section in the rightmost column). If you want to export this layer, set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13) according to your need.
     Hit the :guilabel:`run` button again to relaunch the computation.
-    Code used for this display can be found `here <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
+    Code used for this display can be found `on this page <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
 
 In its current form, **se.plan** provides information on four categories of potential benefits of forest restoration:
 
@@ -780,7 +778,9 @@ In its current form, **se.plan** provides information on four categories of pote
 - local livelihoods
 - wood production
 
-**se.plan** does not predict the levels of benefits that will occur if forests are restored. Instead, it uses data on benefit-related site characteristics to quantify the potential of a site to provide benefits if it is restored. To clarify this distinction, consider the case of species extinctions. For example, a predictive tool might estimate the number of extinctions avoided if restoration occurs. To do so, it would need to account for restoration scale and interdependencies across sites associated with distances and corridors between restored sites. **se.plan** takes a simpler approach: the tool includes information on the total number of critically endangered and endangered amphibians, reptiles, birds and mammals at each site. Sites with a larger number of critically endangered and endangered species have a greater potential number of avoided extinctions. Realizing the benefit of reduced extinctions depends on factors beyond simply restoring an individual site, including the type of forest that is restored (native tree species or introduced tree species, single tree species or multiple tree species, etc.) and the pattern of restoration in the rest of the landscape. Therefore, interpreting **se.plan** outputs in the context of additional, location-specific information available to a user is important.
+**se.plan** does not predict the levels of benefits that will occur if forests are restored. Instead, it uses data on benefit-related site characteristics to quantify the potential of a site to provide benefits if it is restored. To clarify this distinction, consider the case of species extinctions. For example, a predictive tool might estimate the number of extinctions avoided if restoration occurs. To do so, it would need to account for restoration scale and interdependencies across sites associated with distances and corridors between restored sites. 
+
+**se.plan** takes a simpler approach: the tool includes information on the total number of critically endangered and endangered amphibians, reptiles, birds and mammals at each site. Sites with a larger number of critically endangered and endangered species have a greater potential number of avoided extinctions. Realizing the benefit of reduced extinctions depends on factors beyond simply restoring an individual site, including the type of forest that is restored (native tree species or introduced tree species, single tree species or multiple tree species, etc.) and the pattern of restoration in the rest of the landscape. Therefore, interpreting **se.plan** outputs in the context of additional, location-specific information available to a user is important.
 
 Quantitative measures of potential benefits in **se.plan** should be viewed as averages for a grid cell. Potential benefits could be higher at some locations within a given grid cell and lower at others.
 
@@ -791,22 +791,22 @@ Quantitative measures of potential benefits in **se.plan** should be viewed as a
       - Description
       - Source
     * - Endangered species (biodiversity conservation) in **count**
-      - Total number of critically endangered and endangered amphibians, reptiles, birds and mammals whose ranges overlap a site. Rationale for including in **se.plan**: sites with a larger number of critically endangered and endangered species are ones where successful forest restoration can potentially contribute to reducing a larger number of extinctions. (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fterra-bio-div-image>`__)
+      - Total number of critically endangered and endangered amphibians, reptiles, birds and mammals whose ranges overlap a site. Rationale for including in **se.plan**: sites with a larger number of critically endangered and endangered species are ones where successful forest restoration can potentially contribute to reducing a larger number of extinctions (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fterra-bio-div-image>`__).
       - World Bank, which processed over 25 000 species range maps from: (i) IUCN. The IUCN Red List of Threatened Species. https://www.iucnredlist.org; and (ii) BirdLife International. Data Zone. http://datazone.birdlife.org/species/requestdis. Resolution of World Bank layer: 1 km. More information may be found at https://datacatalog.worldbank.org/dataset/terrestrial-biodiversity-indicators; data may be downloaded at http://wbg-terre-biodiv.s3.amazonaws.com/listing.html. See also: (i) Dasgupta, S. and Wheeler, D. 2016. Minimizing Ecological Damage from Road Improvement in Tropical Forests. Policy Research Working Paper: No. 7826. Washington, DC, World Bank; (ii) Danyo, S., Dasgupta, S. and Wheeler, D. 2018. Potential Forest Loss and Biodiversity Risks from Road Improvement in Lao PDR. World Bank Policy Research Working Paper 8569. Washington, DC, World Bank; (iii) Damania, R., Russ, J., Wheeler, D. and Barra, A.F. 2018. The Road to Growth: Measuring the Tradeoffs between Economic Growth and Ecological Destruction, World Development. Elsevier, 101(C): pp. 351–376.
-    * - Biodiversity intactness index (BII) gap (Biodiversity conservation) in **percent**
-      - The biodiversity intactness index describes the average abundance of a large and diverse set of organisms in a given geographical area, relative to the set of originally present species. **se.plan** subtracts the BII from 100 to measure the gap between full intactness and current intactness. Rationale for including in **se.plan**: sites with a larger BII gap are ones where successful forest restoration can potentially contribute to reducing a larger gap. (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fibii-4326>`__)
-      - Newbold, T., Hudson, L., Arnell, A. *et al.* 2016. Dataset: Global map of the Biodiversity Intactness Index. In: Newbold *et al.* 2016. Science. Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0009936. Resolution of Newbold *et al.* layer: 1 km; see also: (i) Scholes, R.J. and Biggs, R. 2005. A biodiversity intactness index. *Nature*, 434(7029), pp.45-49; (ii) Newbold, T., Hudson, L.N., Arnell, A.P., Contu, S., De Palma, A., Ferrier, S., Hill, S.L., Hoskins, A.J., Lysenko, I., Phillips, H.R. and Burton, V.J. 2016. Has land use pushed terrestrial biodiversity beyond the planetary boundary? A global assessment. *Science*, 353(6296), pp.288–291.
-    * - Unrealized biomass potential (Carbon sequestration) in **metric tonnes of carbon (C)/hectare**
-      - Unrealized potential above ground biomass, below ground biomass, and soil organic carbon combined density (megagrammes carbon per hectare) under baseline climate (see below). (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fee-amcmahon%2Fassets%2Fseplan%2Fseplan_layers%2FBase_Unr_AGB_BGB_SOC_MgCha_500m>`__)
+    * - Biodiversity Intactness Index (BII) gap (Biodiversity conservation) in **percent**
+      - The BII describes the average abundance of a large and diverse set of organisms in a given geographical area, relative to the set of originally present species. **se.plan** subtracts the BII from 100 to measure the gap between full intactness and current intactness. Rationale for including in **se.plan**: sites with a larger BII gap are ones where successful forest restoration can potentially contribute to reducing a larger gap (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fibii-4326>`__).
+      - Newbold, T., Hudson, L., Arnell, A. *et al.* 2016. Dataset: Global map of the Biodiversity Intactness Index. In: Newbold *et al.* 2016. Science. Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0009936. Resolution of Newbold *et al.* layer: 1 km; see also: (i) Scholes, R.J. and Biggs, R. 2005. A biodiversity intactness index. *Nature*, 434(7029): pp.45-49; (ii) Newbold, T., Hudson, L.N., Arnell, A.P., Contu, S., De Palma, A., Ferrier, S., Hill, S.L., Hoskins, A.J., Lysenko, I., Phillips, H.R. and Burton, V.J. 2016. Has land use pushed terrestrial biodiversity beyond the planetary boundary? A global assessment. *Science*, 353(6296), pp. 288–291.
+    * - Unrealized biomass potential (carbon sequestration) in **metric tonnes of carbon (C)/hectare**
+      - Unrealized potential above ground biomass, below ground biomass, and soil organic carbon combined density (mega grammes carbon per hectare) under baseline climate (see below) (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fee-amcmahon%2Fassets%2Fseplan%2Fseplan_layers%2FBase_Unr_AGB_BGB_SOC_MgCha_500m>`__).
       - Walker, W.S., Gorelik, S.R., Cook-Patton, S.C. *et al.* 2022. The global potential for increased storage of carbon on land. *Proceedings of the National Academy of Sciences*, 119(23): p. e2111312119. https://doi.org/10.1073/pnas.2111312119. Resolution of Walker *et al.* layer: 500 m.
     * - Forest employment (local livelihoods) in **count**
       - Number of forest-related jobs per ha of forest in 2015, combined across three economic activities: forestry, logging and related service activities; manufacture of wood and of products of wood and cork, except furniture; and manufacture of paper and paper products. Varies by country and, when data are sufficient for downscaling, first-level administrative subdivision (e.g. state or province). Rationale for including in **se.plan**: a higher level of forest employment implies the existence of attractive business conditions for labor-intensive wood harvesting and processing industries, which tends to make forest restoration more feasible when income for local households is a desired benefit. (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Femp_ha>`__)
       - Developed by the **se.plan** team by downscaling national data from: International Labour Organization. 2020. Employment by sex and economic activity - ISIC level 2 (thousands). Annual, ILOSTAT database. https://ilostat.ilo.org/data
-    * - Woodfuel harvest (local livelihoods) in **m<sup>3</sup>/hectare**
-      - Harvest of woodfuel per hectare of forest in 2015. Rationale for including in **se.plan**: a higher level of woodfuel harvest implies greater demand for woodfuel as an energy source, which tends to make forest restoration more feasible when supply of wood to meet local demands is a desired benefit. (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2FWoodfuel_gadm36_1_edited_image>`__)
+    * - Woodfuel harvest (local livelihoods) in m<sup>3</sup>/hectare
+      - Harvest of woodfuel per hectare of forest in 2015. Rationale for including in **se.plan**: a higher level of woodfuel harvest implies greater demand for woodfuel as an energy source, which tends to make forest restoration more feasible when supply of wood to meet local demands is a desired benefit (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2FWoodfuel_gadm36_1_edited_image>`__).
       - Developed by **se.plan** team by downscaling national data from: FAO. 2020. Forestry Production and Trade. In: *FAOSTAT*. http://www.fao.org/faostat/en/#data/FO
-    * - Plantation growth rate (wood production) in **dry metric tonnes of woody biomass/hectare/year**
-      - Potential annual production of woody biomass by fast-growing trees such as eucalypts, poplars and willows. Rationale for including in **se.plan**: faster growth of plantation trees tends to make forest restoration more feasible when desired benefits include income for landholders and wood supply to meet local and export demands. (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fyields-4326>`__)
+    * - Plantation growth rate (wood production) in **annual dry metric tonnes of woody biomass/hectare**
+      - Potential annual production of woody biomass by fast-growing trees such as eucalypts, poplars and willows. Rationale for including in **se.plan**: faster growth of plantation trees tends to make forest restoration more feasible when desired benefits include income for landholders and wood supply to meet local and export demands (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fyields-4326>`__).
       - Albanito, F., Beringer, T., Corstanje, R. *et al.* 2016. Carbon implications of converting cropland to bioenergy crops or forest for climate mitigation: a global assessment. *GCB Bioenergy*, 8: pp. 81–95, https://doi.org/10.1111/gcbb.12242; resolution of Albanito *et al.* layer: 55 km.
 
 .. _seplan-appendix-d:
@@ -831,21 +831,23 @@ Denote these benefits, respectively, by :math:`B_1`, :math:`B_2`, :math:`B_3`, a
 
 Where :math:`w_1`, :math:`w_2`, :math:`w_3`, and :math:`w_4` are the user ratings for the four corresponding benefits.
 
-The tool also includes numerical estimates of restoration cost, defined as the sum of opportunity cost and implementation cost expressed in USD per hectare for reference year 2017, for each potential restoration site. **se.plan** calculates an approximate benefit–cost ratio by dividing the restoration value index by the estimate of restoration cost:
+The tool also includes numerical estimates of restoration cost, defined as the sum of opportunity cost and implementation cost expressed in USD per hectare for reference year 2017 for each potential restoration site. 
+
+**se.plan** calculates an approximate benefit–cost ratio by dividing the restoration value index by the estimate of restoration cost:
 
 .. math::
 
 	Benefit\_cost\_ratio = Restoration\_value\_index / Restoration\_cost.
 
-The benefit-cost ratio in **se.plan** is approximate in several ways. In particular, the tool does not value potential restoration benefits in monetary terms, and it does not calculate the discounted sum of benefits over a multi-year time period that extends into the future; however, **se.plan's** cost estimates account for the future to a greater degree (see :ref:`seplan-appendix-e`). As a final step, the tool converts the benefit–cost ratio across all sites in the user’s AOI to a scale from 1 (low) to 5 (high), reporting this value as the *Restoration suitability index* on the map and dashboard.
+The benefit-cost ratio in **se.plan** is approximate in several ways. In particular, the tool does not value potential restoration benefits in monetary terms, and it does not calculate the discounted sum of benefits over a multi-year time period that extends into the future; however, **se.plan's** cost estimates account for the future to a greater degree (see :ref:`seplan-appendix-e`). As a final step, the tool converts the benefit–cost ratio across all sites in the user’s AOI to a scale from 1 (low) to 5 (high), reporting this value as the **Restoration suitability index** on the map and dashboard.
 
-As noted above, **se.plan** includes two indicators for benefits :math:`B_1` (biodiversity conservation) and :math:`B_3` (local livelihoods). For :math:`B_1`, the two indicators are the *Biodiversity intactness index* and *Number of endangered species*. Denote these two indicators by :math:`B_1a` and :math:`B_1b`. The tool converts each of these indicators to a 1–5 scale and then calculates the overall biodiversity benefit, :math:`B_1`, as their simple average:
+As noted above, **se.plan** includes two indicators for benefits :math:`B_1` (biodiversity conservation) and :math:`B_3` (local livelihoods). For :math:`B_1`, the two indicators are the **Biodiversity intactness index** and **Number of endangered species** (denote these two indicators by :math:`B_1a` and :math:`B_1b`). The tool converts each of these indicators to a 1–5 scale and then calculates the **Overall biodiversity benefit**, :math:`B_1`, as their simple average:
 
 .. math::
 
 	B_1 = (B_1a + B_1b) / 2
 
-**se.plan** calculates the overall local livelihoods benefit in the same way from its two constituent indicators, *Forest employment* and *Woodfuel harvest*.
+**se.plan** calculates the overall local livelihoods benefit in the same way from its two constituent indicators, **Forest employment** and **Woodfuel harvest**.
 
 .. _seplan-appendix-e:
 
@@ -856,20 +858,18 @@ In the case of benefits (:ref:`seplan-appendix-c`) and constraints (:ref:`seplan
 
 .. note::
 
-    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** panel. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 to your country number (listed in the **Country list** section). If you want to export this layer, please set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13) according to your need.
+    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** pane. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 to your country number (listed in the **Country list** section). If you want to export this layer, please set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13) according to your need.
     Select the :code:`run` button again to relaunch the computation.
-    Code used for this display can be found `here <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
+    Code used for this display can be found `on this page <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
 
 Opportunity cost
 ^^^^^^^^^^^^^^^^
 
-Opportunity cost in **se.plan** refers to the value of land if it is not restored to forest (i.e. the value of land in its current use). A higher opportunity cost tends to make restoration less feasible, although restoration can nevertheless be feasible on land with a high opportunity cost if it generates sufficiently large benefits. **se.plan** assumes that the alternative land use would be some form of agriculture (either cropland or pastureland). It sets the opportunity cost of potential restoration sites equal to the value of cropland for all sites where crops can be grown, with the opportunity cost for any remaining sites set equal to the value of pastureland.
+**Opportunity cost** in **se.plan** refers to the value of land if it is not restored to forest (i.e. the value of land in its current use). A higher opportunity cost tends to make restoration less feasible, although restoration can nevertheless be feasible on land with a high opportunity cost if it generates sufficiently large benefits. **se.plan** assumes that the alternative land use would be some form of agriculture (either cropland or pastureland). It sets the opportunity cost of potential restoration sites equal to the value of cropland for all sites where crops can be grown, with the opportunity cost for any remaining sites set equal to the value of pastureland.
 
 The value of land in agricultural use is defined as the portion of agricultural profit that is attributable to land as a production input. Economists label this portion “land rent”. Agricultural profit is the difference between the gross revenue a farmer receives from selling agricultural products (= product price × quantity sold) and the expenditures the farmer makes on variable inputs used in production, such as seeds and fertilizer. It is the return earned by fixed inputs, which include labor and capital (e.g. equipment, structures) in addition to land. These relationships imply that the **se.plan** team needed to sequentially estimate gross revenue, profit and land rent.
 
-Since the **se.plan** team assumed that forest restoration is intended to be permanent, it estimated land rent in perpetuity: the opportunity cost of forgoing agricultural use of a restored site forever, not just for a single year. The estimates of the long-run opportunity cost in the tool are expressed in USD per hectare for reference year 2017.
-
-(`view in gee <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fee-amcmahon%2Fassets%2Fseplan%2Fseplan_layers%2Ffeatures%2Fopportunity_cost_20221110>`__)
+Since the **se.plan** team assumed that forest restoration is intended to be permanent, it estimated land rent in perpetuity: the opportunity cost of forgoing agricultural use of a restored site forever, not just for a single year. The estimates of the long-run opportunity cost in the tool are expressed in USD per hectare for reference year 2017 (`view in gee <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fee-amcmahon%2Fassets%2Fseplan%2Fseplan_layers%2Ffeatures%2Fopportunity_cost_20221110>`__).
 
 Cropland
 ********
@@ -879,32 +879,20 @@ The workflow to develop cropland opportunity cost can be summarized as follows:
 #.  The **se.plan** team obtained gridded data on 2010 value of crop production per hectare (i.e. gross revenue per hectare) from the International Food Policy Research Institute’s MapSPAM project (International Food Policy Research Institute, 2019; Yu *et al.*, 2020). The resolution of this layer was 5 arc-minutes (approximately 10 km at the equator).
 #.  The team updated the MapSPAM data to 2017 using country-specific data on total cereal yield from FAOSTAT (FAO, 2020a) and the global producer price index for total cereals (also from FAOSTAT). The MapSPAM data reflect gross revenue from a much wider range of crops than cereals, but cereals are the dominant crops in most countries.
 #.  The team multiplied the data from Step 2 by an estimate of the share of crop revenue that was attributable to land (i.e. the land-rent share). The rent-share estimates differed across countries and, where data permitted, by first-level administrative subdivisions (e.g. states, provinces) within countries. The team developed the rent-share estimates through a two-step procedure:
-
-    #.  It used 229 859 annual survey observations spanning 2004–2017 from 196 327 unique farm households (FAO, 2020c) in 32 LMICs to statistically estimate a model that related profit from growing crops to fixed inputs. Table E1 shows the distribution of observations by country in the statistical model, and Table E2 shows the estimation results for the model. The dependent variable in the model was the natural logarithm of profit ("lnQuasiRent" in the table), and fixed inputs were represented by the natural logarithms of cultivated area ("lncultivated") and family labor ("lnfamlabor") and a binary (“dummy”) variable that indicated whether the farm was mechanized ("dmechuse"). The model also included year dummies and fixed effects for regions (countries or first-level subdivisions, depending on the survey), which controlled for unobserved factors that varied across time but not regions (the year dummies) and unobserved factors that varied across regions but not time (region-fixed effects). Post-estimation, the team calculated land rent for each observation by multiplying profit by 0.325, the estimated coefficient on the log cultivated area variable. This procedure assumes that the coefficients on inputs in the log–log profit model can be interpreted as profit shares. This assumption is valid if production has constant returns to scale (i.e. if the coefficients add up to 1, which they approximately do in the model).
-    #.  The team used sampling weights from the surveys to calculate mean values of crop revenue and land rent for each region in the sample. It then calculated the ratio of mean land rent to mean crop revenue (i.e. the land-rent share for each region); it also statistically related the rent shares to a set of spatial variables, which included: 
-
--   the region’s gross domestic product per capita in 2015 (Kummu *et al.*, 2018); 
--   its population density in 2015 (CIESIN, 2018); 
--   the strength of property rights in it (see discussion of this variable in Appendix F); 
--   area shares of terrestrial ecoregions in it (Olson and Dinerstein, 2002); and 
--   its classification by World Bank region. 
-
-Table E3 shows the estimation results for the rent-share model. The team used this model to predict rent shares for the LMICs spanned by **se.plan** and, where possible, first-level subdivisions within them.
-
+    #.  It used 229 859 annual survey observations spanning 2004–2017 from 196 327 unique farm households (FAO, 2020c) in 32 LMICs to statistically estimate a model that related profit from growing crops to fixed inputs. Table E1 shows the distribution of observations by country in the statistical model, and Table E2 shows the estimation results for the model. The dependent variable in the model was the natural logarithm of profit ("lnQuasiRent" in the table), and fixed inputs were represented by the natural logarithms of cultivated area ("lncultivated") and family labor ("lnfamlabor"); a binary (“dummy”) variable indicated whether the farm was mechanized ("dmechuse"). The model also included year dummies and fixed effects for regions (countries or first-level subdivisions, depending on the survey), which controlled for unobserved factors that varied across time but not regions (the year dummies) and unobserved factors that varied across regions but not time (region-fixed effects). Post-estimation, the team calculated land rent for each observation by multiplying profit by 0.325, the estimated coefficient on the log cultivated area variable. This procedure assumes that the coefficients on inputs in the log–log profit model can be interpreted as profit shares. This assumption is valid if production has constant returns to scale (i.e. if the coefficients add up to 1, which they approximately do in the model).
+    #.  The team used sampling weights from the surveys to calculate mean values of crop revenue and land rent for each region in the sample. It then calculated the ratio of mean land rent to mean crop revenue (i.e. the land-rent share for each region); it also statistically related the rent shares to a set of spatial variables, which included: the region’s gross domestic product (GDP) per capita in 2015 (Kummu *et al.*, 2018); its population density in 2015 (CIESIN, 2018); the strength of property rights in it (see discussion of this variable in Appendix F); area shares of terrestrial ecoregions in it (Olson and Dinerstein, 2002); and its classification by World Bank region. Table E3 shows the estimation results for the rent-share model. The team used this model to predict rent shares for the LMICs spanned by **se.plan** and, where possible, first-level subdivisions within them.
 #. The team estimated the value of cropland in perpetuity by dividing the annual land rent estimates from Step 3 by 0.07, under the assumption that the financial discount rate is 7 percent. It based this assumption on the mean value of real interest rates across the LMICs in the tool (World Bank, 2020).
 
 Pastureland
 ***********
 
-The **se.plan** team used similar procedures to estimate the value of pastureland. In place of cropland Step 1 and Step 2, it:
+The **se.plan** team used similar procedures to estimate the value of pastureland. In place of cropland in Step 1 and Step 2, it:
 
 #.  Predicted pastureland area in 2015 by first statistically relating pastureland percentage in 2000 (FAO, 2007; Van Velthuizen *et al.*, 2007) to a set of land cover variables for 2000 at 300 m resolution from the European Space Agency (ESA, 2017), then using the resulting statistical model and 2015 values of the land cover variables to predict 2015 pastureland area within each 300 m grid cell.
 #.  Calculated gross revenue from livestock around 2017 by multiplying gridded data on livestock numbers (buffaloes, cattle, goats, horses and sheep) in 2010 at 10 km resolution (FAO, 2018) by 2017 estimates of production value per animal, calculated by using country-specific data on stocks of animals and production value of livestock products from FAOSTAT (FAO, 2020b). It adjusted the resulting estimates of gross revenue per grid cell to include production only from grazing lands, not from feedlots, by using FAO estimates of national shares of meat production from grazing lands provided by the World Bank.
 #.  Calculated gross revenue per hectare around 2017 by dividing gross revenue from Step 2 by pastureland area from Step 1.
 
-Compared to cropland Step 3, household survey data on livestock production on pastureland (FAO, 2020c) were too limited to estimate land-rent shares that varied across countries or first-level subdivisions. Instead, the statistical rent-share estimate used in the tool, 6.1 percent of gross revenue, is identical across all countries and first-level subdivisions.
-
-Step 4 was the same as for cropland.
+Compared to cropland in Step 3, household survey data on livestock production on pastureland (FAO, 2020c) were too limited to estimate land-rent shares that varied across countries or first-level subdivisions. Instead, the statistical rent-share estimate used in the tool (6.1 percent of gross revenue) is identical across all countries and first-level subdivisions. Step 4 was the same as for cropland.
 
 Implementation costs
 ^^^^^^^^^^^^^^^^^^^^
@@ -917,7 +905,7 @@ Implementation costs refer to the expense of activities required to regenerate f
 
 **se.plan** does not report these two components of implementation costs separately. Instead, it reports the aggregate cost of restoring a site (in USD per hectare for reference year 2017) by adding up the estimates of opportunity costs and implementation costs. This aggregate cost is the cost variable that it includes in the benefit–cost ratio (Appendix D). The estimates of implementation costs vary by country and, for countries with sufficient data, by first-level subdivision.
 
-As previously discussed, **se.plan** assumes that current land use is some form of agriculture. It therefore also assumes that regeneration requires planting, as sources of propagules for natural regeneration are often not adequate on land that has been cleared for agriculture. However, the tool does not ignore natural regeneration as a restoration option, as it includes a constraint layer that predicts the variability of natural regeneration success (see :ref:`seplan-appendix-e`; `view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2FAfCost_ha>`__)
+As previously discussed, **se.plan** assumes that current land use is some form of agriculture. It therefore also assumes that regeneration requires planting, as sources of propagules for natural regeneration are often not adequate on land that has been cleared for agriculture. However, the tool does not ignore natural regeneration as a restoration option, as it includes a constraint layer that predicts the variability of natural regeneration success (see :ref:`seplan-appendix-e`; `view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2FAfCost_ha>`__).
 
 The **se.plan** team estimated implementation costs in three steps:
 
@@ -932,8 +920,8 @@ References
 ^^^^^^^^^^
 
 -   CIESIN (Center for International Earth Science Information Network). 2018. Gridded Population of the World, Version 4 (GPWv4): Population Density, Revision 11. NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/H49C6VHW
--   ESA. 2017. Land Cover CCI Product User Guide, Version2. maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf
--   International Food Policy Research Institute. 2019. Global Spatially-Disaggregated Crop Production Statistics Data for 2010 Version 2.0. Harvard Dataverse, V4. https://doi.org/10.7910/DVN/PRFF8V, 
+-   ESA (European Space Agency). 2017. Land Cover CCI Product User Guide, Version2. maps.elie.ucl.ac.be/CCI/viewer/download/ESACCI-LC-Ph2-PUGv2_2.0.pdf
+-   IFPRI (International Food Policy Research Institute). 2019. Global Spatially-Disaggregated Crop Production Statistics Data for 2010 Version 2.0. Harvard Dataverse, V4. https://doi.org/10.7910/DVN/PRFF8V 
 -   Kummu, M., Taka, M. and Guillaume, J. 2018. Gridded global datasets for Gross Domestic Product and Human Development Index over 1990–2015. *Scientific Data*, 5: 180004. https://doi.org/10.1038/sdata.2018.4
 -   Olson, D.M., and Dinerstein, E. 2002. The Global 200: Priority ecoregions for global conservation. *Annals of the Missouri Botanical Garden*, 89: 125–126. https://geospatial.tnc.org/datasets/7b7fb9d945544d41b3e7a91494c42930_0
 -   Van Velthuizen, H., Huddleston, B., Fischer, G., Salvatore, M., Ataman, E. *et al.* 2007. Mapping biophysical factors that influence agricultural production and rural vulnerability. Environment and Natural Resources Series No. 11. Rome, FAO.
@@ -956,9 +944,9 @@ Constraints data layers
 
 .. note::
 
-    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** panel. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 to your country number (listed in the *Country list** section). If you want to export this layer, please set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13), according to your need.
+    Every data layer presented in the following document can be displayed in GEE as an overview of our datasets. Select the provided link in the description to be redirected to the **GEE code editor** pane. The selected layer will be displayed over Uganda. To modify the country, change the :code:`fao_gaul` variable Line 7 to your country number (listed in the *Country list** section). If you want to export this layer, please set the value of :code:`to_export` (Line 10) and :code:`to_drive` (Line 13), according to your need.
     Select the :code:`run` button again to relaunch the computation.
-    Code used for this display can be found `here <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
+    Code used for this display can be found `on this page <https://github.com/12rambau/restoration_planning_module/blob/master/utils/code/display_layer.md>`__.
 
 Potential constraint
 ^^^^^^^^^^^^^^^^^^^^
@@ -1001,10 +989,10 @@ Biophysical constraints
     * - Annual rainfall
       - MM/YR
       - High-resolution estimates of total annual rainfall based on mean value from past 30 year measurements (`view in gee <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fera5_land_1993_2022>`__).
-      - "Muñoz Sabater, J. 2019. ERA5-Land monthly averaged data from 1981 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.68d2bb3"
+      - Muñoz Sabater, J. 2019. ERA5-Land monthly averaged data from 1981 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.68d2bb3
     * - Baseline water stress
       - Scale (0 to 5)
-      - Ratio of total water withdrawals (for consumptive and nonconsumptive domestic, industrial, irrigation and livestock uses) to available renewable supplies of surface water and groundwater, averaged across months of the year and converted to a numerical scale. Higher values of the scale indicate greater water stress (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fbws_score>`__).
+      - Ratio of total water withdrawals (for consumptive and non-consumptive domestic, industrial, irrigation and livestock uses) to available renewable supplies of surface water and groundwater, averaged across months of the year and converted to a numerical scale. Higher values of the scale indicate greater water stress (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fbws_score>`__).
       - World Resources Institute. 2021. Aqueduct Global Maps 3.0 Data. https://www.wri.org/data/aqueduct-global-maps-30-data
 
 Current land cover
@@ -1021,7 +1009,6 @@ Current land cover
       - Ecological zone labels
       - Classification of Earth’s land surface into 20 ecological zones, which have relatively homogeneous vegetation formations under natural conditions and similar physical features (e.g. climate) (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=COPERNICUS%2FLandcover%2F100m%2FProba-V-C3%2FGlobal%2F2019>`__).
       - FAO. 2012. Global ecological zones for fao forest reporting: 2010 Update. http://www.fao.org/3/ap861e/ap861e.pdf
-
 
 Forest change constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1059,7 +1046,7 @@ Socioeconomic constraints
     * - Protected areas
       - Binary (0 or 1)
       - Value of 1 indicates that a site is located in a protected area; value of 0 indicates it is not (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=projects%2Fjohn-ee-282116%2Fassets%2Ffao-restoration%2Ffeatures%2Fprotected_areas>`__).
-      - IUCN. World Database on Protected Areas. https://www.iucn.org/theme/protected-areas/our-work/world-database-protected-areas
+      - IUCN (International Union for Conservation of Nature). World Database on Protected Areas. https://www.iucn.org/theme/protected-areas/our-work/world-database-protected-areas
     * - Population density
       - Persons per km<sup>2</sup>
       - Modelled distribution of human population for 2020, based on census data for the most disaggregated administrative units available (`view in GEE <https://code.earthengine.google.com/bc5cc4ac63eedd0cd63e56b4b2e42fc7?#layer_id=CIESIN%2FGPWv411%2FGPW_Population_Density%2Fgpw_v4_population_density_rev11_2015_30_sec>`__).
