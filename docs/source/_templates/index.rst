@@ -9,7 +9,7 @@ Overview
 
 SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers. These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming. These applications are served in SEPAL with attractive user interfaces to ensure the best possible user experience.
 
-They run on various shells – from pure HTML and Shiny-based R apps to Jupyter-powered Python kernels. This flexibility and variety of tools allows developers to integrate workflows and make them available for SEPAL users. 
+They run on various shells – from pure HTML and Shiny-based R apps to Jupyter-powered Python kernels. This flexibility and variety of tools allows developers to integrate workflows and make them available for SEPAL users.
 
 Review the following subsections to learn more about SEPAL applications.
 
@@ -48,7 +48,7 @@ Refer to the next section to start a specific instance manually.
 Start instance manually
 -----------------------
 
-Some applications require more powerful instances than the default :code:`t1`. 
+Some applications require more powerful instances than the default :code:`t1`.
 
 If a particular app's documentation requires the user to start a specific instance type (e.g. a GPU machine :code:`g4` or :code:`g8`), follow these steps prior to initiating the application:
 
