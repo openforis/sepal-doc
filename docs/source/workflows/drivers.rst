@@ -10,7 +10,7 @@ Direct drivers assessment
 Background
 ----------
 
-Deforestation and forest degradation are complex processes that have many underlying causes. A comprehensive understanding of forest conversion to other land uses is instrumental for the development of policies and actions aiming to reduce the loss of forests and associated carbon emissions. It is important to understand recurring patterns and correlations that can help countries tailor their efforts toward reducing forest loss. 
+Deforestation and forest degradation are complex processes that have many underlying causes. A comprehensive understanding of forest conversion to other land uses is instrumental for the development of policies and actions aiming to reduce the loss of forests and associated carbon emissions. It is important to understand recurring patterns and correlations that can help countries tailor their efforts toward reducing forest loss.
 
 The causes of deforestation and forest degradation vary both regionally and temporally (Curtis, 2018). Different studies refer to agricultural expansion (cropland and pasture) as the largest direct cause of global deforestation (FAO, 2022; Gibbs, 2010; Hosonuma, 2012; Kissinger, 2012; Sandker, 2017). Commercial agriculture is estimated to be responsible for around 70–90 percent of worldwide deforestation. In Africa, both commercial and subsistence agriculture may account for similar importance in terms of forest loss, while fuelwood collection, charcoal production, and livestock grazing in forests (to a lesser extent), are the most important drivers of degradation.
 
