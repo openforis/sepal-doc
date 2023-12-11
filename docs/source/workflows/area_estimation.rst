@@ -1,12 +1,10 @@
 Perform area estimation analysis with SEPAL-CEO
 ===============================================
-
-Complete area estimation for land use/land cover and two-date change detection classifications
-----------------------------------------------------------------------------------------------
+**Complete area estimation for land use/land cover and two-date change detection classifications**
 
 .. note::
 
-    The SEPAL team would like to thank `SIG-GIS <https://sig-gis.com>`_ for this documentation material.
+    The SEPAL team would like to thank `SIG-GIS <https://sig-gis.com>`_ for this documentation material (SIG-GIS refers to the Spatial Informatics Group - Geographic Information System).
 
 .. important::
 
@@ -19,9 +17,7 @@ Complete area estimation for land use/land cover and two-date change detection c
 Introduction
 ------------
 
-Welcome to Area estimation with SEPAL and CEO!
-
-In this article, you will learn how to perform area estimation for land use/land cover and two-date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors (e.g. maps derived from land cover/land use classifications may have errors due to pixel mixing, or noise in the input data). Using pixel-counting methods will produce biased estimates of area; you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
+In this article, you will learn how to perform area estimation for land use/land cover and two-date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors (e.g. maps derived from land cover/land use classifications may have errors due to pixel mixing or noise in the input data). Using pixel-counting methods will produce biased estimates of area; you cannot tell whether these are overestimates or underestimates. Sample-based approaches create unbiased estimates of area and the error associated with your map.
 
 The goal of this article is to teach you how to perform these tasks so that you can conduct your own area estimation for land use/land cover or change detection classifications.
 
@@ -33,15 +29,15 @@ In this article, you will find four modules covering methods and one module cove
 * In `Module 4`_, you will learn how to calculate a sample-based estimate of area and error. You will learn how to use stratified random sampling and verification image analysis to calculate area and error estimates based on the classification you create in `Module 2`_. You will also learn about some key documentation steps in preparation for `Module 5`_.
 * In `Module 5`_, you will learn about documenting and archiving your area estimation project. The information in this step is required for your project to be replicated by yourself or your colleagues in the future (either for additional areas or points in time).
 
-These exercises include step-by-step directions and are built to facilitate learning through reading and by doing. This article will be accompanied by short videos, which will visually illustrate the steps described in the text.
+These exercises include step-by-step directions and are built to facilitate learning through reading and practice. This article will be accompanied by short videos, which will visually illustrate the steps described in the text.
 
 .. graphviz::
 
     digraph process {
-           mosaic [label="Mosaic Image creation", href="#mosaic-generation-landsat-sentinel-2", shape=box];
+           mosaic [label="Mosaic image creation", href="#mosaic-generation-landsat-sentinel-2", shape=box];
            classif [label="Image classification", href="#image-classification", shape=box];
-           change [label="Two dates change detection", href="#image-change-detection", shape=box];
-           sample [label="Sample based area and error", href="#sample-based-estimation-of-area-and-accuracy", shape=box];
+           change [label="Two-date change detection", href="#image-change-detection", shape=box];
+           sample [label="Sample-based area and error", href="#sample-based-estimation-of-area-and-accuracy", shape=box];
            doc [label="Documentation", href="#documentation-and-archiving", shape=box];
            mosaic -> classif;
            mosaic -> change;
@@ -50,49 +46,68 @@ These exercises include step-by-step directions and are built to facilitate lear
            sample -> doc;
         }
 
-The primary tool needed to complete this tutorial is the System for Earth Observation Data Access, Processing and Analysis for Land Monitoring (SEPAL). SEPAL is a web-based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs and more – all from your browser. Part of the Open Foris suite of tools, SEPAL was designed by the Food and Agricultural Organization of the United Nations (FAO) to aid in remote sensing applications in developing countries. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates Collect Earth Online (CEO) and Google Earth Engine (GEE).
+Required tools
+^^^^^^^^^^^^^^
 
-SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and inefficient for processing satellite imagery. It achieves this by utilizing a cloud-based supercomputer, which enables users to process, store and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
+SEPAL
+"""""
 
-Two other tools will also be needed to complete this tutorial: CEO and GEE.
+The primary tool needed to complete this tutorial is the System for Earth Observation Data Access, Processing and Analysis for Land Monitoring (SEPAL) – a web-based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs and more (all from your browser). Part of the Open Foris suite of tools, SEPAL was designed by the Food and Agricultural Organization of the United Nations (FAO) to aid in remote sensing applications in developing countries. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and RStudio; the platform also integrates GEE and CEO.
 
-CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
+SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and inefficient for processing satellite imagery. It achieves this by utilizing a cloud-based supercomputer, which enables users to process, store and interpret large amounts of data. (There are many advanced functions available in SEPAL, which we will not cover in this article.)
 
-GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the GEE JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements:
+CEO
+"""
+
+CEO is a free, open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use, enabling simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from GEE, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online; no desktop installation is necessary. CEO allows institutions to create projects and enables their teams to collect spatial data using remote sensing imagery. Use cases include historical and near real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
+
+GEE
+"""
+
+GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called **Code editor**) is a web-based IDE for the GEE JavaScript API; its features are designed to make developing complex geospatial workflows fast and easy. 
+
+The **Code editor** has the following elements:
 
     -   JavaScript code editor;
     -   a map display for visualizing geospatial datasets;
-    -   an API reference documentation (Docs tab);
-    -   Git-based Script Manager (Scripts tab);
-    -   Console output (Console tab);
-    -   Task Manager (Tasks tab) to handle long-running queries;
-    -   Interactive map query (Inspector tab);
+    -   an API reference documentation (**Docs** tab);
+    -   Git-based script manager (**Scripts** tab);
+    -   Console output (**Console** tab);
+    -   Task manager (**Tasks** tab) to handle long-running queries;
+    -   Interactive map query (**Inspector** tab);
     -   search of the data archive or saved scripts; and
     -   geometry drawing tools.
 
-.. seealso::
+.. Tip::
 
-    For more information, you can use the following resources:
+    For more information, see:
 
-    -   A previously published forest change detection manual for SEPAL: `Forest Cover Change Detection with SEPAL <https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing>`_
-    -   Olofsson et al 2014: `FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change <http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/>`_
-    -   CEO documentation: `https://collect.earth/support <https://collect.earth/support>`_
-    -   GEE documentation: `Earth Engine Code Editor from Google Earth Engine <https://developers.google.com/earth-engine/guides/playground>`_
-    -   REDD Compass: `Front Page - GFOI <https://reddcompass.org/frontpage>`_
-    -   Reporting and Verification: `Reporting and Verification - GFOI <https://reddcompass.org/reporting-verification>`_
+    -   `Forest Cover Change Detection with SEPAL (a previously published manual) <https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing>`_
+    -   `FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change (Olofsson et al., 2014) <http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/>`_
+    -   `CEO documentation <https://collect.earth/support>`_
+    -   `GEE documentation for the Code editor <https://developers.google.com/earth-engine/guides/playground>`_
+    -   `REDD Compass - GFOI <https://reddcompass.org/frontpage>`_
+    -   `Reporting and Verification - GFOI <https://reddcompass.org/reporting-verification>`_
 
-Project planning information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Project planning
+^^^^^^^^^^^^^^^^
 
-Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future. We encourage you to think about the following items to ensure that your resulting products will be relevant and that your chosen methods are well-documented and transparent.
+Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future. 
 
--   Descriptions and objectives of the project (issues and information needs). Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
+We encourage you to think about the following items to ensure that your resulting products will be relevant and that your chosen methods are well documented and transparent:
 
--   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? Do you need to know where different land cover types exist or do you just need an inventory of how much there is?
+-   Descriptions and objectives of the project (issues and information needs). 
+
+    -   Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
+
+-   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  
+
+    -   What type of information do you need (e.g. map, inventory, change product)? 
+    -   Do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 
 -   How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
 
--   Description of the project area/extent (e.g. national, subnational, specific forest, etc.)
+-   Description of the project area/extent (e.g. national, subnational, specific forest).
 
 -   Description of the features/classes to be modeled or mapped.
 
@@ -108,14 +123,14 @@ Project planning and methods documentation play a key role in any remote sensing
 
 -   Will you supplement your remote sensing project with existing data (local data on forest type, management intent, records of natural disturbance, etc.)?
 
--   Partnerships (vendors, agencies, bureaus, etc.)
+-   Partnerships (vendors, agencies, bureaus, etc.).
 
 .. _Module 1:
 
 Mosaic generation (Landsat & Sentinel 2)
 ----------------------------------------
 
-SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two-date change detection processes covered in `Module 2`_ and `Module 3`_ respectively. These mosaics can be downloaded locally or to your Google Drive account.
+SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two-date change detection processes covered in `Module 2`_ and `Module 3`_, respectively. These mosaics can be downloaded locally or to your Google Drive account.
 
 In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway.
 
@@ -123,9 +138,9 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 
     **Objectives**
 
-    -   Learn how to create an image mosaic.
-    -   Become familiar with a variety of options for selecting dates, sensors, mosaicking and download options.
-    -   Create a cloud-free mosaic for 2016.
+    -   learn how to create an image mosaic;
+    -   familiarize yourself with a variety of options for selecting dates, sensors, mosaicking and download options; and
+    -   create a cloud-free mosaic for 2016.
 
 .. note::
 
@@ -133,7 +148,7 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 
     -   SEPAL account registration
 
-Create a Landsat Mosaic
+Create a Landsat mosaic
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 If SEPAL is not already open, open your browser and go to: https://sepal.io/ . Log in to your SEPAL account.
@@ -142,7 +157,7 @@ Select the :code:`Processing` tab.
 
 Then, select :code:`Optical Mosaic`.
 
-When the Optical Mosaic tab opens, you will see an **Area of Interest** (AOI) window in the lower-right corner of your screen.
+When the **Optical mosaic** tab opens, you will see an **Area of interest (AOI)** window in the lower-right corner of your screen.
 
 There are three ways to choose your AOI. Open the menu by selecting the carrot on the right side of the window label.
 
@@ -151,17 +166,17 @@ There are three ways to choose your AOI. Open the menu by selecting the carrot o
 -   Draw a polygon
 
 .. figure:: ../_images/workflows/area_estimation/area_of_interest.png
-   :alt: The AOI menu.
+   :alt: The AOI menu
    :width: 350
    :align: center
 
 We will use the :code:`Select a country/province` option.
 
-In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of** (Note: There is also the Republic of Congo, which is not what we're looking for).
+In the list of countries, scroll down until you see the available options for **Congo, Dem Republic of** (note: There is also the Republic of Congo, which is not what we're looking for).
 
 .. note::
 
-    Under Province/Area, notice that there are many different options.
+    Under **Province/Area**, notice that there are many different options.
 
 Select :code:`Mai-Ndombe`.
 
@@ -172,21 +187,21 @@ Select :code:`Mai-Ndombe`.
 Select :code:`Next`.
 
 .. figure:: ../_images/workflows/area_estimation/country_province.png
-   :alt: The Country or Province selection screen.
+   :alt: The Country or Province selection screen
    :align: center
 
 In the :code:`Date` menu, you can choose the :code:`Year` you are interested in or select :code:`More`.
 
 -   This interface allows you to refine the dates or seasons you are interested in.
--   You can select a :code:`target date` (the date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
--   You can also include additional seasons from the past or the future by adjusting the :code:`Past Seasons` and :code:`Future Seasons` slider. This will include additional years' data of the same dates specified (if you're interested in August 2015, including one future season will also include data from August 2016). This is useful if you're interested in a specific time of year, but there is significant cloud cover.
+-   You can select a :code:`target date` (the date in which pixels in the mosaic should ideally come from), as well as adjust the start- and end-date flags.
+-   You can also include additional seasons from the past or the future by adjusting the :code:`Past Seasons` and :code:`Future Seasons` slider. This will include additional years' data of the same dates specified (if you're interested in August 2015, including one future season will also include data from August 2016). (This is useful if you're interested in a specific time of year, but there is significant cloud cover.)
 -   For this exercise, let's create imagery for the dry season of 2019.
 
     -   Select July 1 of 2019 as your target date (**2019-07-01**), and move your date flags to **May 1-September 30**.
     -   Select :code:`Apply`.
 
 .. figure:: ../_images/workflows/area_estimation/date_menu.png
-   :alt: The date menu.
+   :alt: The date menu
    :align: center
 
 Now select the :code:`Data Sources (SRC)` you'd like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected. Select :code:`Done`.
@@ -196,11 +211,9 @@ Now select the :code:`Data Sources (SRC)` you'd like. Here, select the **Landsat
 -   **L4-5 TM,** collected data from July 1982-May 2012.
 -   **Sentinel 2 A+B** began operating in June 2015.
 
-Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
+SEPAL will load a preview of your data. By default, it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
 
--   When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your AOI, you will need to adjust your parameters.
--   To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs (e.g. select :code:`Dat` to expand the date range).
--   The last two tabs are for :code:`Scene selection` and :code:`Composite`, which are more advanced filtering steps. We'll cover those now.
+When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your AOI, you will need to adjust your parameters. To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs (e.g. select :code:`Dat` to expand the date range). The last two tabs are for :code:`Scene selection` and :code:`Composite`, which are more advanced filtering steps. We'll cover those now.
 
 .. figure:: ../_images/workflows/area_estimation/mosaic_preview.png
    :alt: A preview of your mosaic.
@@ -209,10 +222,10 @@ Now SEPAL will load a preview of your data. By default it will show you where RG
 We're now going to go through the **Scene selection process**. This allows you to change which specific images to include in your mosaic.
 
 -   You can change the scenes that are selected using the :code:`SCN` button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by selecting :code:`Use All Scenes` and then :code:`Apply`.
--   Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
+-   Change the **Scenes** by selecting **Select scenes** with **Priority**: **Target date**
 
 .. figure:: ../_images/workflows/area_estimation/scene_selection.png
-   :alt: Selecting scenes for your mosaic.
+   :alt: Selecting scenes for your mosaic
    :align: center
 
 Select :code:`Apply`. The result should look like the image below.
@@ -222,27 +235,27 @@ Select :code:`Apply`. The result should look like the image below.
     Notice that the collection of circles over the **Mai Ndombe** study area are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven't selected the scenes yet.
 
 .. figure:: ../_images/workflows/area_estimation/scene_selection_zeros.png
-    :alt: Scene selection process showing zeros before selection.
+    :alt: Scene selection process showing zeros before selection
     :align: center
 
 Choose the :code:`Auto-Select` button to auto-select some scenes.
 
 .. figure:: ../_images/workflows/area_estimation/auto_select_scenes.png
-    :alt: Arrow showing the button for auto-selecting scenes.
+    :alt: Arrow showing the button for auto-selecting scenes
     :width: 550
     :align: center
 
 You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to **2** and the maximum to **100**. Choose :code:`Select Scenes`. If there is only one scene for an area, that will be the only one selected despite the minimum.
 
 .. figure:: ../_images/workflows/area_estimation/auto_select_scenes_menu.png
-    :alt: Menu for auto-selecting scenes.
+    :alt: Menu for auto-selecting scenes
     :width: 350
     :align: center
 
 You should now see imagery with overlaying circles, indicating how many scenes are selected.
 
 .. figure:: ../_images/workflows/area_estimation/imagery_number_scenes.png
-    :alt: Example of the imagery with the number of scenes selected.
+    :alt: Example of the imagery with the number of scenes selected
     :width: 450
     :align: center
 
@@ -251,7 +264,7 @@ You will notice that the circles that previously displayed a **O** now display a
 Hover over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Select that circle.
 
 .. figure:: ../_images/workflows/area_estimation/select_scenes_interface.png
-    :alt: The Select scenes interface showing **0** available and **4** selected scenes.
+    :alt: The **Select scenes** interface showing **0** available and **4** selected scenes
     :align: center
 
 In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
@@ -260,29 +273,29 @@ In the window that opens, you will see a list of selected scenes on the right si
 -   Percent cloud cover
 -   Number of days from the target date
 
-To expand the Landsat image, hover over one of the images and select :code:`Preview`. Click on the image to close the zoomed in graphic and return to the list of scenes.
+To expand the Landsat image, hover over one of the images and select :code:`Preview`. Click on the image to close the zoomed-in graphic and return to the list of scenes.
 
 To remove a scene from the composite, select the :code:`Remove` button when you hover over the selected scene.
 
 .. figure:: ../_images/workflows/area_estimation/remove_preview_scenes.png
-    :alt: Removing or previewing selected scenes.
+    :alt: Removing or previewing selected scenes
     :align: center
 
 .. figure:: ../_images/workflows/area_estimation/scene_preview.png
-    :alt: Scene preview screen.
+    :alt: Scene preview screen
     :align: center
 
-On the leftmost side, you will see **Available Scenes**, which are images that will not be included in the mosaic, but can be added to it. If you have removed an image and would like to re-add it, or if there are additional scenes you would like to add, hover over the image and select :code:`Add`.
+On the leftmost side, you will see **Available scenes**, which are images that will not be included in the mosaic, but can be added to it. If you have removed an image and would like to re-add it, or if there are additional scenes you would like to add, hover over the image and select :code:`Add`.
 
 -   Once you are satisfied with the selected imagery for a given area, select :code:`Close` in the lower-right corner.
 -   You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
 .. figure:: ../_images/workflows/area_estimation/select_scenes_1.png
-    :alt: Select scenes screen showing **1** available scene and **3** selected scenes.
+    :alt: Select scenes screen showing **1** available scene and **3** selected scenes
     :width: 450
     :align: center
 
-You can also change the composing method using the :code:`CMP` button on the lower right.
+You can also change the composing method using the :code:`CMP` button in the lower right.
 
 .. note::
 
@@ -291,43 +304,40 @@ You can also change the composing method using the :code:`CMP` button on the low
 For this exercise, we will leave these at their default settings. If you make changes, select :code:`Apply` after you're done.
 
 .. figure:: ../_images/workflows/area_estimation/composite.png
-    :alt: The composite menu.
+    :alt: The composite menu
     :width: 350px
     :align: center
 
 Now we'll explore the :code:`Bands` dropdown. Select :code:`Red|Green|Blue` at the bottom of the page.
 
 .. figure:: ../_images/workflows/area_estimation/arrow_bands.png
-    :alt: Arrow pointing at the red, green and blue bands.
+    :alt: Arrow pointing at the red, green and blue bands
     :align: center
 
 The dropdown menu will appear, as seen below.
 
 -   Select the **NIR, RED, GREEN** band combination (NIR stands for near infrared). This band combination displays vegetation as red (darker reds indicate dense vegetation); bare ground and urban areas appear grey or tan; water appears black.
 -   Once selected, the preview will automatically show what the composite will look like.
--   Use the scroll wheel on your mouse to zoom in on the mosaic and then click and move to pan around the image. This will help you assess the quality of the mosaic.
+-   Use the scroll wheel on your mouse to zoom in on the mosaic; then, click and move to pan around the image. This will help you assess the quality of the mosaic.
 
 .. figure:: ../_images/workflows/area_estimation/bands_menu.png
-    :alt: The band combinations menu.
+    :alt: The band combinations menu
     :width: 350px
     :align: center
 
-The map now shows the complete mosaic that incorporates all of the user-defined settings. Here is an example (yours may look different depending on which scenes you chose).
+The map now shows the complete mosaic that incorporates all user-defined settings. Here is an example (yours may look different depending on which scenes you chose).
 
 .. figure:: ../_images/workflows/area_estimation/completed_mosaic.png
-    :alt: The imagery preview with the completed mosaic shown.
+    :alt: The imagery preview with the completed mosaic shown
     :width: 450
     :align: center
 
-Using what you've learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
-
--   For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
--   The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
+Using what you've learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow). For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
 Name and save your recipe and mosaic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now, we will name the "recipe" for creating the mosaic and explore options for the recipe.
+Now, we will name the recipe for creating the mosaic and explore options.
 
 .. note::
     You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL's CEO.
@@ -336,7 +346,7 @@ Now, we will name the "recipe" for creating the mosaic and explore options for t
 
     You can make the recipe easier to find by naming it. Select the tab in the upper right and enter a new name. For this example, use *MiaNdombe_LS8_2019_Dry.*
 
-Let's explore options for the recipe. Select the three lines in the upper-right corner.
+Let's explore options for the recipe. Select the three lines in the upper-right corner:
 
 -   You can **Save the recipe** (SEPAL will do this automatically on retrieval) so that it is available later.
 -   You can also **Duplicate the recipe**. This is useful for creating two years of data, which we will do in `Module 3`_.
@@ -348,20 +358,20 @@ Select :code:`Save recipe….` This will also let you rename the mosaic, if you 
     :alt: Save, duplicate and export recipe menu.
     :align: center
 
-Now if you click on the three lines icon, you should see an additional option: **Revert to old revision...**
+If you click on the three lines icon, you should see an additional option: **Revert to old revision...**
 
 .. figure:: ../_images/workflows/area_estimation/revert_to_old_revision.png
-    :alt: After saving, the menu adds a Revert to old revision option.
+    :alt: After saving, the menu adds a **Revert to old revision** option.
     :align: center
 
 Choosing this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
 
 .. tip::
 
-    Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
+    Now, when you open SEPAL and click the **Search** option, you will see a row with this name that contains the parameters you just set.
 
 .. figure:: ../_images/workflows/area_estimation/revision_menu.png
-    :alt: Revisions menu dropdown.
+    :alt: Revisions menu dropdown
     :align: center
 
 Finally, we will save the mosaic itself. This is called "retrieving" the mosaic. This step is necessary to perform analysis on the imagery.
@@ -369,11 +379,11 @@ Finally, we will save the mosaic itself. This is called "retrieving" the mosaic.
 To download this imagery mosaic to your SEPAL account, select the :code:`Retrieve` button.
 
 .. figure:: ../_images/workflows/area_estimation/retrieve.png
-    :alt: The Retrieve button.
+    :alt: The **Retrieve** button
     :align: center
 
 .. figure:: ../_images/workflows/area_estimation/retrieve_menu.png
-    :alt: The Retrieve menu.
+    :alt: The **Retriev**e menu
     :align: center
 
 A window will appear with the following options:
@@ -381,39 +391,39 @@ A window will appear with the following options:
 -   **Bands to Retrieve:** select the desired bands you would like to include in the download.
 
     -   Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. This will show you visible and infrared data collected by Landsat.
-    -   Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
-    -   Metadata on Date, Day of Year, and Days from Target can also be selected.
+    -   Other bands that are available include **Aerosol**, **Thermal**, **Brightness**, **Greenness**, and **Wetness** (more information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission).
+    -   Metadata on **Date**, **Day of Year**, and **Days from Target** can also be selected.
 
--   **Scale:** The resolution of the mosaic. Landsat data is collected at 30 meter (m) resolution, so we will leave the slider there.
--   **Retrieve to:** SEPAL Workspace is the default option. Other options may appear, depending on your permissions.
+-   **Scale:** The resolution of the mosaic. Landsat data is collected at 30 metre (m) resolution, so we will leave the slider there.
+-   **Retrieve to:** The SEPAL workspace is the default option. Other options may appear depending on your permissions.
 
 When you have the desired bands selected, select :code:`Retrieve`.
 
-You will notice the :code:`Tasks` icon is now spinning. If you select it, you will see that the data retrieval is in process. This step will take some time.
+You will notice the :code:`Tasks` icon is now spinning. If you select it, you will see that data retrieval is in process. This step will take some time.
 
 .. figure:: ../_images/workflows/area_estimation/retrieval_task.png
-   :alt: Retrieval task being carried out.
+   :alt: Retrieval task being carried out
    :align: center
 
 .. note::
-   This will take approximately **25 minutes** to finish downloading; however, you can move on to the next exercise without waiting for the download to finish.
+   This will take approximately 25 minutes to finish downloading; however, you can move on to the next exercise without waiting for the download to finish.
 
 .. _Module 2:
 
 Image classification
 --------------------
 
-The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or an impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness). Learning to do image classification well is extremely important and requires experience. This module was designed to help you acquire some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class.
+The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or an impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness). 
 
-There are both supervised (uses human guidance, including training data) and unsupervised (does not use human guidance) classification methods. The "random forest approach" demonstrated here uses training data and is thus a supervised classification method.
+Learning to do image classification well is extremely important and requires experience. This module was designed to help you acquire some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class. There are both supervised (using human guidance, including training data) and unsupervised (not using human guidance) classification methods. The "random forest approach" demonstrated here uses training data and is thus a supervised classification method.
 
-There are a number of supervised classification algorithms that can be used to assign the pixels in the image to the various map classes. One way of performing a supervised classification is to utilize a machine learning (ML) algorithm. Machine learning algorithms utilize training data combined with image values to learn how to classify pixels. Using manually collected training data, these algorithms can train a classifier, and then use the relationships identified in the training process to classify the rest of the pixels in the map. The selection of image values (e.g. NDVI, elevation, etc.) used to train any statistical model should be well thought out and informed by your knowledge of the phenomenon of interest to classify your data (e.g. by forest, water, clouds, or other).
+There are a number of supervised classification algorithms that can be used to assign the pixels in the image to the various map classes. One way of performing a supervised classification is to utilize a machine learning (ML) algorithm. Machine learning algorithms utilize training data combined with image values to learn how to classify pixels. Using manually collected training data, these algorithms can train a classifier, and then use the relationships identified in the training process, to classify the rest of the pixels in the map. The selection of image values (e.g. NDVI, elevation) used to train any statistical model should be thoroughly thought out and informed by your knowledge of the phenomenon of interest to classify your data (e.g. by forest, water, clouds).
 
-In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user generated reference data set. This dataset is collected either in the field or manually through examination of remotely sensed data sources, such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in `Module 4`_.
+In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user-generated reference data set. This dataset is collected either in the field or manually through examination of remotely sensed data sources, such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in `Module 4`_.
 
-Before starting your classification, you will need to create a response design with details about each of the land covers/land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (in `Section 2.2`_ [we will use a region of Brazil]); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4, we will run the classification and examine our results.
+Before starting your classification, you will need to create a response design with details about each of the land covers/land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (`Section 2.2`; we use a region of Brazil); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4, we will run the classification and examine our results.
 
-The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis (BEEODA) in the Department of Earth & Environment at Boston University. To learn more about their materials and their work, visit their GitHub site at https://github.com/beeoda.
+The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at Boston Education in Earth Observation Data Analysis (BEEODA) in the Department of Earth & Environment at Boston University. To learn more about their materials and their work, visit their GitHub site at https://github.com/beeoda.
 
 At the end of this module, you will have a classified land use/land cover map.
 
@@ -427,60 +437,60 @@ At the end of this module, you will have a classified land use/land cover map.
 Response design for classification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating consistent labeling protocols is necessary for creating accurate training data and accurate sample-based estimates (see `Module 4`_). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover/land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
+Creating consistent labeling protocols is necessary for creating accurate training data and accurate sample-based estimates (see `Module 4`_). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover/land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection, laying out an objective procedure that interpreters can follow and that reduces interpreter bias.
 
-In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points (for more information about decision points, go to `Section 5.1`_).
+In this exercise, you will build a decision tree for your classification, as well as a significant amount of the other documentation and decision points (for more information about decision points, see `Section 5.1`_).
 
-.. note::
+    **Objective**: 
 
-    **Objective**: Learn how to create a classification scheme for land cover/land use classification mapping.
+    -   Learn how to create a classification scheme for land cover/land use classification mapping.
 
 
 Specify the classification scheme
 """""""""""""""""""""""""""""""""
 
-“Classification scheme” is the name used to describe the land cover and land-use classes adopted. It should cover all of the possible classes that occur in the AOI. Here, you will create a classification scheme with detailed definitions of the land cover and land-use classes to share with interpreters.
+“Classification scheme” is the name used to describe the land cover and land use classes adopted. It should cover all of the possible classes that occur in the AOI. Here, you will create a classification scheme with detailed definitions of the land cover and land use classes to share with interpreters.
 
-Create a decision tree for your land cover or land-use classes. There may be one already in use by your department. The tree should capture the most important classifications for your study. Here is an example:
+Create a decision tree for your land cover or land-use classes. There may be one already in use by your department. The tree should capture the most important classifications for your study (see following example).
 
 -   This example includes a hierarchical component. The green and red categories have multiple sub-categories, which might be multiple types of forest, crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
--   For this exercise, we'll use a simplified land cover and land-use classification as in this graph:
+-   For this exercise, we'll use a simplified land cover and land use classification, as in this graph:
 
 .. graphviz::
 
     digraph process {
            lc [label="Land cover", shape=box];
            f [label="Forest", shape=box, style="filled" color="darkgreen"];
-           nf [label="Non forest", shape=box, style="filled", color="grey"];
+           nf [label="Non-forest", shape=box, style="filled", color="grey"];
            lc -> f;
            lc -> nf;
         }
 
-When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CORINE land cover (CLC), or land cover and land use, landscape (LUCAS).
+When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land use categories, CORINE land cover (CLC), or land cover and land use, landscape (LUCAS).
 
--   If applicable, your classification scheme should be consistent with the national land cover and land-use definitions.
+-   If applicable, your classification scheme should be consistent with the national land cover and land use definitions.
 -   In cases where the classification scheme definition is different from the national definition, you will need to provide a reason.
 
-Create a detailed definition for each land cover and land-use change class included in the classification scheme. We recommend that you include measurable thresholds.
+Create a detailed definition for each land cover and land use change class included in the classification scheme. We recommend that you include measurable thresholds.
 
 Our classification will take place in an area of the Amazon rainforest undergoing deforestation in Brazil.
 
 -   We'll define Forest as an area containing more than 70% of tree cover.
-    We'll define Non-forest as areas with less than 70% of tree cover. This will capture urban areas, water and agricultural fields.
+-   We'll define Non-forest as areas with less than 70% of tree cover. This will capture urban areas, water and agricultural fields.
 
--   For creating your own classifications, here's some things to keep in mind:
+-   For creating your own classifications, here are some things to keep in mind:
 
     -   It is important to have definitions for each of the classes. A lack of clear definitions of the land cover classes can make the quality of the resulting maps difficult to assess and challenging for others to use. The definitions you come up with now will probably be working definitions that you find you need to modify as you move through the land cover classification process.
 
     .. note::
 
-        As you become more familiar with the landscape, data limitations, and the ability of the land cover classification methods to discriminate some classes better than others, you will undoubtedly need to update your definitions.
+        As you become more familiar with the landscape, data limitations and the ability of the land cover classification methods to discriminate some classes better than others, you will undoubtedly need to update your definitions.
 
-    -   As you develop your definitions, you should be relating back to your applications. Make sure that your definitions meet your project objectives (e.g. if you are creating a map to be used as part of your United Nations Framework Convention on Climate Change [UNFCCC] greenhouse gas reporting documents, you will need to make sure that your definition of forest meets the needs of this application.
+    -   As you develop your definitions, you should be relating back to your applications. Make sure that your definitions meet your project objectives. For example, if you are creating a map to be used as part of your United Nations Framework Convention on Climate Change [UNFCCC] greenhouse gas reporting documents, you will need to make sure that your definition of forest meets the needs of this application.
 
     .. note::
 
-        The above land cover tree is an excerpt of text from the Methods and Guidance from the Global Forest Observations Initiative (GFOI) document that describes the Intergovernmental Panel on Climate Change (IPCC) 2003 Good Practice Guidance (GPG) forest definition and suggestions to consider when drafting your forest definition. When creating your own decision tree, be sure to specify if your definitions follow a specific standard (e.g. using ISO standard Land Cover Meta-Language [LCML, ISO 19144-2] or similar).
+        The above land cover tree is an excerpt of text from the Methods and Guidance from the Global Forest Observations Initiative (GFOI) document that describes the IPCC Good Practice Guidance (GPG) forest definition and suggestions to consider when drafting your forest definition (2003). When creating your own decision tree, be sure to specify if your definitions follow a specific standard, such as using ISO standard Land Cover Meta-Language (LCML, ISO 19144-2) or similar.
 
     -   During this online training course, you will be mapping land cover across the landscape using the Landsat composite, a moderate resolution data set. You may develop definitions based on your knowledge from the field or from investigating high-resolution imagery; however, when deriving your land cover class definitions, it's also important to be aware of how the definitions relate to the data used to model the land cover.
 
@@ -488,7 +498,7 @@ Our classification will take place in an area of the Amazon rainforest undergoin
 
         You will continue to explore this relationship throughout the exercise. Will the spectral signatures between your land cover categories differ? If the spectral signatures are not substantially different between classes, is there additional data you can use to differentiate these categories? If not, you might consider modifying your definitions.
 
-For additional resources, go to http://www.ipcc.ch/ipccreports/tar/wg2/index.php?idp=132.
+For additional resources, see http://www.ipcc.ch/ipccreports/tar/wg2/index.php?idp=132
 
 .. _Section 2.2:
 
@@ -517,21 +527,21 @@ Creating and exporting a mosaic for a drawn AOI
 
 We will create a mosaic for an area in the Amazon basin. If any of the steps for creating a mosaic are unfamiliar, please revisit `Module 1`_.
 
-Navigate to the Process tab, then create a new optical mosaic by selecting Optical Mosaic on the Process menu.
+Navigate to the **Process** tab, then create a new optical mosaic by selecting **Optical mosaic** on the **Process** menu.
 
 Under :code:`Area of Interest`:
 
 -   Choose **Draw Polygon** from the dropdown list.
 
     .. figure:: ../_images/workflows/area_estimation/aoi_dropdown.png
-        :alt: Area of interest dropdown menu.
+        :alt: Area of interest dropdown menu
         :width: 450px
         :align: center
 
--   Navigate using the map to the State of Rondonia in Brazil. Draw a polygon around it or draw a polygon within the borders (Note: A smaller polygon will export faster).
+-   Navigate using the map to the State of Rondonia in Brazil. Draw a polygon around it or draw a polygon within the borders (note: a smaller polygon will export faster).
 
     .. figure:: ../_images/workflows/area_estimation/rondonia.png
-        :alt: A polygon drawn around the State of Rondonia.
+        :alt: A polygon drawn around the State of Rondonia
         :align: center
 
 Now use what you have learned in `Module 1`_ to create a mosaic with imagery from the year 2019 (the entire year of a part of the year).
@@ -540,26 +550,26 @@ Now use what you have learned in `Module 1`_ to create a mosaic with imagery fro
 
     Don't forget to consider which satellites and scenes you would like to include (all or some).
 
-Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
+Your preview should include imagery data across your entire AOI. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
 
 Name your mosaic for easy retrieval. Try **Module2_Amazon**.
 
-When you're satisfied with your mosaic, **Retrieve** it to Google Earth Engine. Be sure to include the red, green, blue, nir, swir1, and swir2 layers. You may choose to add greenness, etc. layers as well.
+When you're satisfied with your mosaic, retrieve it to GEE. Be sure to include the **red, green, blue, nir, swir1, and swir2** layers. You may choose to add other layers (e.g. greenness) as well.
 
-Finding your Earth Engine Asset
-"""""""""""""""""""""""""""""""
+Finding your GEE asset
+""""""""""""""""""""""
 
-For future exercises, you may need to know how to find your Earth Engine Asset.
+For future exercises, you may need to know how to find your GEE asset.
 
-1.  Go to https://code.earthengine.google.com/ and sign in.
+1.  Go to https://code.earthengine.google.com and sign in.
 2.  Select the **Assets** tab in the leftmost column.
 3.  Under **Assets,** look for the name of the mosaic you just exported.
 4.  Select the mosaic name.
-5.  A popup window will appear with information about your mosaic.
-6.  Select the two overlapping box icon to copy your asset's location.
+5.  A pop-up window will appear with information about your mosaic.
+6.  Select the two overlapping boxes icon to copy your asset's location.
 
 .. figure:: ../_images/workflows/area_estimation/mosaic_information.png
-    :alt: Your mosaic's information pane.
+    :alt: Your mosaic's information pane
     :align: center
 
 .. _Section 2.3:
@@ -569,17 +579,15 @@ Creating a classification and training data collection
 
 In this exercise, we will learn how to start a classification process and collect training data. These training data points will become the foundation of the classification in `Section 2.4`_. High-quality training data is necessary to get good land cover map results. In the most ideal situation, training data is collected in the field by visiting each of the land cover types to be mapped and collecting attributes. When field collection is not an option, the second best choice is to digitize training data from high-resolution imagery, or at the very least for the imagery to be classified.
 
-In general, there are multiple pathways for collecting training data. To create a layer of points, using desktop GIS, including QGIS and ArcGIS, is one common approach. Using GEE is another approach. You can also use CEO to create a project of random points to identify (see detailed directions in `Section 4.1.2`_). All of these pathways will create .csv or a GEE table that you can import into SEPAL to use as your training data set.
+In general, there are multiple pathways for collecting training data. To create a layer of points, using desktop GIS, including QGIS and ArcGIS, is one common approach. Using GEE is another approach. You can also use CEO to create a project of random points to identify (see detailed directions in `Section 4.1.2`_). All of these pathways will create a .csv file or a GEE table that you can import into SEPAL to use as your training data set.
 
-However, SEPAL has a built-in reference data collection tool in the classifier. In this exercise, we will use this tool to collect training data. Even if you use a .csv or GEE table in the future, this is a helpful feature to collect additional training data points to help refine your model.
+However, SEPAL has a built-in reference data collection tool in the classifier. In this exercise, we will use this tool to collect training data. Even if you use a .csv file or GEE table in the future, this is a helpful feature to collect additional training data points to help refine your model.
 
 In this assignment, you will create training data points using high-resolution imagery, including Planet NICFI data. These will be used to train the classifier in a supervised classification using SEPAL's random forests algorithm. The goal of training the classifier is to provide examples of the variety of spectral signatures associated with each class in the map.
 
-.. note::
+    **Objective**: 
 
-    **Objectives**: Create training data for your classes that can be used to train a machine learning algorithm.
-
-.. note::
+    -   Create training data for your classes that can be used to train a machine learning algorithm.
 
     **Prerequisites**:
 
@@ -590,26 +598,26 @@ In this assignment, you will create training data points using high-resolution i
 Set up your classification
 """"""""""""""""""""""""""
 
-In the **Process** menu, choose the green plus symbol and select **Classification.**
+In the **Process** menu, choose the green plus symbol and select **Classification**.
 
 Add the Amazon optical mosaic for classification:
 
--   Select :code:`+ Add` and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
+-   Select :code:`+ Add` and choose either **Saved SEPAL Recipe** or **Earth Engine Asset** (recommended).
 
-    -   If you choose **Saved Sepal Recipe**, simply select your `Module 2`_ Amazon recipe.
+    -   If you choose **Saved SEPAL Recipe**, select your `Module 2`_ Amazon recipe.
     -   If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Module2_Amazon”.
 
     .. tip::
 
-        Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine's Asset tab (`section 2.2`_).
+        Remember that you can find the link to your Earth Engine Asset ID via GEE's **Asset** tab (`section 2.2`_).
 
 -   Select bands: Blue, Green, Red, NIR, SWIR1 and SWIR2. You can add other bands as well if you included them in your mosaic.
--   You can also include **Derived bands** by clicking on the green button on the lower left.
+-   You can also include **Derived bands** by selecting the green button in the lower left.
 -   Select :code:`Apply`, then select :code:`Next`.
 
 .. attention::
 
-    Selecting **Saved Sepal Recipe** may cause the following error at the final stage of your classification:
+    Selecting **Saved SEPAL Recipe** may cause the following error at the final stage of your classification:
 
     .. code-block:: console
 
@@ -617,16 +625,16 @@ Add the Amazon optical mosaic for classification:
 
     This occurs because GEE gets overloaded. If you encounter this error, please retrieve your classification as described in `Section 2.2`_.
 
-In the Legend menu, choose :code:`+ Add` This will add a place for you to write your first class label.
+In the **Legend** menu, choose :code:`+ Add`, which creates a place for you to write your first class label.
 
 -   You will need two legend entries.
--   The first should have the number 1 and a Class label of Forest.
--   The second should have the number 2 and a Class label of Non-forest.
+-   The first should have the number 1 and a class label of Forest.
+-   The second should have the number 2 and a class label of Non-forest.
 -   Choose colors for each class as you see fit.
 -   Select :code:`Close`.
 
 .. figure:: ../_images/workflows/area_estimation/classification_legend.png
-    :alt: Classification legend.
+    :alt: Classification legend
     :align: center
 
 Collect training data points
@@ -642,11 +650,11 @@ In most cases, it is ideal to collect a large amount of training data points for
 
 Not all pixels in the same classes have the exact same values — there is some natural variability! Capturing this variation will strongly influence the results of your classification.
 
-First, let's become familiar with the SEPAL Interface. In the upper-right corner of the map is a stack of three rectangles. If you hover over this icon, it says "Select layers to view."
+First, let's become familiar with the SEPAL interface. In the upper-right corner of the map, there is a stack of three rectangles. If you hover over this icon, it says "Select layers to view."
 
 .. note::
 
-    Available base layers include SEPAL (Minimal dark SEPAL default layer), Google Satellite, and Planet NICFI composites.
+    Available base layers include SEPAL (minimal dark SEPAL default layer), Google Satellite, and Planet NICFI composites.
 
 We will use the Planet NICFI composites for this example. The composites are available in either RGB or false color infrared (CIR). Composites are available monthly after September 2020 and for every 6 months prior from 2015.
 
@@ -657,7 +665,7 @@ We will use the Planet NICFI composites for this example. The composites are ava
     You can also select "Show labels" to enable labels that can help you orient yourself in the landscape.
 
 .. figure:: ../_images/workflows/area_estimation/layer_view.png
-   :alt: The layers available.
+   :alt: The layers available
    :align: center
 
 Now select the point icon. When you hover over this icon, it says "Enable reference data collection."
@@ -668,33 +676,33 @@ Use the scroll wheel on your mouse to zoom in on the study area. You can drag to
 
 .. tip::
 
-    If you accidentally add a point, you can delete it by clicking on the red **Remove** button.
+    If you accidentally add a point, you can delete it by selecting the red **Remove** button.
 
 Now we will start collecting forest training data:
 
 -   Zoom into an area that is clearly forested. When you find an area that is completely forested, click it once.
 -   You have just placed a training data point!
--   Click the **Forest** button in the training data interface to classify the point.
+-   Select the **Forest** button in the training data interface to classify the point.
 
 .. tip::
 
     If you haven't classified the point yet, you can click somewhere else on the map instead of deleting the record.
 
 .. figure:: ../_images/workflows/area_estimation/collecting_forest_data.png
-    :alt: Collecting forest data in the SEPAL interface.
+    :alt: Collecting forest data in the SEPAL interface
     :align: center
 
 .. note::
 
-   Ideally you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. If you mistakenly classify a cloudy pixel as Forest, then the results will be impacted negatively in the event that your Landsat mosaic does have cloud-covered areas.
+   Ideally you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. If you mistakenly classify a cloudy pixel as **Forest**, then the results will be impacted negatively in the event that your Landsat mosaic does have cloud-covered areas.
 
-   However, this interface does not allow for switching between the Base Layer imagery and your exported mosaic. If you are using another training data collection method, keep this point in mind.
+   However, this interface does not allow for switching between the base layer imagery and your exported mosaic. If you are using another training data collection method, keep this point in mind.
 
 If you need to modify the classification of any of your data points, you can select the point to return to the classification (or delete) options.
 
 Begin collecting the rest of the 25 **Forest** training data points throughout other parts of the study area.
 
--   The study area contains an abundance of forested land, so it should be pretty easy to identify places that can be confidently classified as forest. If you'd like, use the charts function to ensure that there is a relatively high NDVI value for the point.
+-   The study area contains an abundance of forested land, so it should be pretty easy to identify places that can be confidently classified as forest. If you'd like, use the **Charts** function to ensure that there is a relatively high NDVI value for the point.
 -   Ensure you are placing data points within the extent of the mosaic (the state of Rondonia in Brazil).
 
 Collect about 25 points for the **Forest** land cover class.
@@ -706,34 +714,34 @@ Collect about 25 points for the **Forest** land cover class.
 After you collect your training data for **Forest**, you may see the classification preview appear.
 
 -   To disable the classification preview to continue to collect training data, return to the map layer selector.
--   Uncheck the "Classification" Overlay.
+-   Uncheck the "Classification" overlay.
 
 .. figure:: ../_images/workflows/area_estimation/classification_overlay.png
-    :alt: Disabling the classification overlay.
+    :alt: Disabling the classification overlay
     :width: 450
     :align: center
 
-Once you are satisfied with your forested training data points, move on to the **Non-Forest** training points.
+Once you are satisfied with your forested training data points, move on to the **Non-forest** training points.
 
 -   Since we are using a very basic set of land cover classes for this exercise, this should include agricultural areas, water, and buildings and roads. Therefore, it will be important that you focus on collecting a variety of points from different types of land cover throughout the study area.
 -   **Water** is one of the easiest classes to identify and the easiest to model, due to the distinct spectral signature of water.
 
     -   Look for bodies of water within Rondonia.
-    -   Collect 10-15 data points for Water and be sure to spread them throughout Lake Mai Ndombe, the water sources feeding into it, and a couple of the bodies of water bodies (including rivers) to the eastern side of the mosaic. Be sure to put 2-3 points on rivers.
+    -   Collect 10-15 data points for **Water** and be sure to spread them throughout Lake Mai Ndombe, the water sources feeding into it, and a couple of the bodies of water (including rivers) to the eastern side of the mosaic. Be sure to put 2-3 points on rivers.
     -   Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019 (Jun 2019 and Dec 2019).
 
 .. figure:: ../_images/workflows/area_estimation/data_points_water.png
-   :alt: Collecting data points in water.
+   :alt: Collecting data points in water
    :align: center
 
-Let's now collect some building and road non-forest Training Data.
+Let's now collect some building and road non-forest training data.
 
--   There are not very many residential areas in the region. However, if you look, you can find homes with dirt roads and some airports.
--   Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
--   Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
+-   There are not many residential areas in the region. However, if you look, you can find homes with dirt roads and some airports.
+-   Place a point or points within these areas and classify them as **Non-forest**. Do your best to avoid placing the points over areas of the town with lots of trees.
+-   Find some roads, and place points and classify as **Non-forest**. These may look like areas of bare soil. Both bare soil and roads are classified as **Non-forest**, so place some points on both.
 
 .. figure:: ../_images/workflows/area_estimation/data_points_residential.png
-   :alt: Collecting residential and other human settlement area data points.
+   :alt: Collecting residential and other human settlement area data points
    :align: center
 
 Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
@@ -746,11 +754,11 @@ Next, place several points in grassland/pasture, shrub, and agricultural areas a
    :align: center
 
 .. note::
-   If you are using QGIS etc. to collect training data, you should also collect **Cloud** training data in the **Non-forest** class, if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see that some of the edges of those clouds remain.
+   If you are using QGIS (or similar) to collect training data, you should also collect **Cloud** training data in the **Non-forest** class – if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see that some of the edges of those clouds remain.
 
    Note that you may not have any clouds in your Landsat imagery.
 
-Continue collecting Non-forest points. Again, be sure to spread the points out across the study area.
+Continue collecting **Non-forest** points. Again, be sure to spread the points out across the study area.
 
 When you are done collecting data for these categories, zoom out to the full extent of the study region.
 
@@ -764,26 +772,24 @@ Classification using machine learning algorithms (Random Forests)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../_images/workflows/area_estimation/random_forest_model_outcome.png
-   :alt: The outcome of a random forest model.
+   :alt: The outcome of a random forest model
    :align: center
 
-As mentioned in the Module introduction, the classification algorithm you will be using today is called random forest.  The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
+As mentioned in the module introduction, the classification algorithm you will be using today is called **Random forest**, which creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
 
-To complete the classification of our mosaiced image, you are going to use a random forests classifier contained within the easy to use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected (such as NDVI). There are likely additional data sets that can be used to help differentiate land cover classes, such as elevation data.
+To complete the classification of our mosaicked image, you are going to use a random forests classifier contained within the easy-to-use **Classification** tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected (such as NDVI). There are likely additional datasets that can be used to help differentiate land cover classes such as elevation data.
 
-After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object-based approaches opposed to pixel-based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last, but certainly not least, is to improve the quality of your training data. Be sure to log all of these decision points in order to recreate your analysis in the future.
+After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object-based approaches, opposed to pixel-based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last, but certainly not least, is to improve the quality of your training data. Be sure to log all of these decision points in order to recreate your analysis in the future.
 
-.. note::
+    **Objective**: 
 
-    **Objective**: Run SEPAL's classification tool.
-
-.. warning::
+    -   Run SEPAL's classification tool.
 
     **Prerequisites**:
 
-    -   Land cover categories defined in `Section 2.1`_
-    -   Mosaic created in `Section 2.2`_
-    -   Training data created in `Section 2.3`_
+    -   land cover categories defined in `Section 2.1`_;
+    -   mosaic created in `Section 2.2`_; and
+    -   training data created in `Section 2.3`_.
 
 Add training data collected outside of SEPAL
 """"""""""""""""""""""""""""""""""""""""""""
@@ -798,19 +804,19 @@ Select the green :code:`Add` button.
 
 -   Import your training data
     -   Upload a CSV file.
-    -   Select Earth Engine Table and enter the path to your Earth Engine asset in the EE Table ID field.
+    -   Select **Earth Engine Table** and enter the path to your Earth Engine asset in the **EE Table ID** field.
 
 -   Select :code:`Next`.
--   For **Location Type**, select "X/Y" coordinate columns" or "GEOJSON Column", depending on your data source. GEE assets will need the GEOJSON column option.
+-   For **Location Type**, select **X/Y" coordinate columns** or **GEOJSON Column**, depending on your data source. GEE assets will need the GEOJSON column option.
 -   Select :code:`Next`.
--   Leave the **Row filter expression** blank. For **Class format**, select "Single Column" or "Column per class" as your data dictates.
+-   Leave the **Row filter expression** blank. For **Class format**, select **Single Column** or **Column per class**, as your data dictates.
 -   In the **Class Column** field, select the column name that is associated with the class.
 -   Select :code:`Next`.
 
 Now you will be asked to confirm the link between the legend you entered previously and your classification. You should see a screen as follows. If you need to change anything, select the green plus buttons. Otherwise, select :code:`Done`, then select :code:`Close`.
 
 .. figure:: ../_images/workflows/area_estimation/link.png
-   :alt: Link between legend and classification.
+   :alt: Link between legend and classification
    :align: center
 
 Review additional classification options
@@ -820,27 +826,27 @@ Select :code:`AUX` to examine the auxiliary data sources available for the class
 
 Auxiliary inputs are optional layers which can be added to help aid the classification. There are three additional sources available:
 
--   Latitude: Includes the latitude of each pixel;
--   Terrain: Includes elevation of each pixel from SRTM data; and
--   Water: Includes information from the JRC Global Surface water Mapping layers
+-   **Latitude**: includes the latitude of each pixel;
+-   **Terrain**: includes elevation of each pixel from SRTM data; and
+-   **Water**: includes information from the JRC Global Surface Water Mapping layers
 
 Select :code:`Water` and :code:`Terrain` and then :code:`Apply`.
 
-Select on **CLS** to examine the classifier being used.
+Select **CLS** to examine the classifier being used.
 
--   The default is a random forest with 25 trees.
--   Other options include classification and regression trees (CART), Naive Bayes, support vector machine (SVM), minimum distance, and decision trees (requires a CSV file).
+-   The default is a **Random forest with 25 trees**.
+-   Other options include **classification and regression trees (CART), Naive Bayes, support vector machine (SVM), minimum distance,** and **decision trees** (requires a .csv file).
 -   Additional parameters for each of these can be specified by selecting the **More** button in the lower left.
--   For this example, we will use the default random forest with 25 trees.
+-   For this example, we will use the default, **Random forest with 25 trees**.
 
 If you turned off your classification preview previously to collect training data, now is the time to turn it back on.
 
--   Select the "Select layers to show" icon.
--   Select "Classification".
--   Make sure Classification now has a check mark next to it, indicating that the layer is now turned on.
+-   Select the **Select layers to show** icon.
+-   Select **Classification**.
+-   Make sure **Classification** now has a check mark next to it, indicating that the layer is now turned on.
 
 .. figure:: ../_images/workflows/area_estimation/classification_preview.png
-    :alt: A preview of a classification.
+    :alt: A preview of a classification
     :align: center
 
 Now we'll save our classification output.
@@ -848,18 +854,18 @@ Now we'll save our classification output.
 -   First, rename your classification by entering a new name in the tab.
 -   Select :code:`Retrieve classification` in the upper-right hand corner (cloud icon).
 -   Choose **30 m** resolution.
--   Select the Class, Class probability, Forest % and Non-forest % bands.
--   Retrieve to your **SEPAL Workspace.**
+-   Select the **Class, Class probability, Forest %** and **Non-forest %** bands.
+-   Retrieve to your **SEPAL workspace.**
 
     .. note::
 
-        You can also choose **Google Earth Engine Asset** if you would like to be able to share your results or perform additional analysis in GEE; however, with this option, you will need to download your map from GEE using the Export function.
+        You can also choose **Google Earth Engine Asset** if you would like to be able to share your results or perform additional analysis in GEE; however, with this option, you will need to download your map from GEE using the export function.
 
 -   Once the download begins, you will see the spinning wheel in the lower-left of the webpage in **Tasks**. Select the spinning wheel to observe the progress of your export.
--   When complete, if you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification name folder). If you chose GEE Asset, the file will be in your GEE Assets.
+-   When complete, if you chose **SEPAL workspace**, the file will be in your **SEPAL downloads** folder. (Browse > downloads > classification name folder). If you chose GEE Asset, the file will be in your GEE Assets.
 
 .. figure:: ../_images/workflows/area_estimation/retrieval_interface.png
-    :alt: The retrieval interface.
+    :alt: The retrieval interface
     :width: 450
     :align: center
 
@@ -875,27 +881,33 @@ Following analysis, you should spend some time looking at your change detection 
 With SEPAL, you can examine your classification and collect additional training data to improve the classification.
 
 .. figure:: ../_images/workflows/area_estimation/examine_classification_map.png
-    :alt: Examining your change detection map.
+    :alt: Examining your change detection map
     :align: center
 
-Turn on the imagery for your Classification; pan and zoom around the map. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect? If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in `Module 4`_.
+Turn on the imagery for your classification; pan and zoom around the map. Compare your classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect? If your results make sense, and you are happy with them, continue to formal QA/QC in `Module 4`_.
 
 .. note::
 
-    if you are not satisfied, collect additional points of training data where you see inaccuracies. Then, re-export the classification following the steps in `Section 2.3`_.
+    If you are not satisfied, collect additional points of training data where you see inaccuracies. Then, re-export the classification following the steps in `Section 2.3`_.
 
 .. _Module 3:
 
 Image change detection
 ----------------------
 
-Image change detection allows us to understand differences in the landscape as they appear in satellite images over time. There are many questions that change detection methods can help answer, including: “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”
+Image change detection allows us to understand differences in the landscape as they appear in satellite images over time. There are many questions that change detection methods can help answer, including: “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past five years?”
 
-Most methods for change detection use algorithms supported by statistical methods to extract and compare information in the satellite images. To conduct change detection, we need multiple mosaics or images, each one representing a point in time. In this section of SEPAL documentation, we will describe how to detect change between two dates using a simple model (Note: this theory can be expanded to include more dates as well). In addition, we'll describe time-series analysis, which generally looks at longer periods of time.
+Most methods for change detection use algorithms supported by statistical methods to extract and compare information in the satellite images. To conduct change detection, we need multiple mosaics or images, each one representing a point in time. 
 
-The objective of this module is to become associated with methods of detecting change for an AOI using the SEPAL platform. We will build upon and incorporate what we have covered in the previous modules, including: creating mosaics, creating training samples, and classifying imagery. This module is split into two exercises. The first addresses change detection using two dates; the second demonstrates more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. At the end of this module, you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
+In this section of SEPAL documentation, we will describe how to detect change between two dates using a simple model (note: this theory can be expanded to include more dates as well). In addition, we'll describe time series analysis, which generally looks at longer periods of time.
 
-This module should take you approximately 3 hours to complete.
+The objective of this module is to become associated with methods of detecting change for an AOI using the SEPAL platform. We will build upon and incorporate what we have covered in the previous modules, including: creating mosaics, creating training samples, and classifying imagery. 
+
+This module is split into two exercises: the first addresses change detection using two dates; the second demonstrates more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. 
+
+At the end of this module, you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
+
+This module should take you approximately three hours to complete.
 
 .. _Section 3.1:
 
@@ -910,19 +922,17 @@ In this example, you will create optical mosaics and classify them, building on 
 
 You may use two classifications from your own research area, if you prefer.
 
-.. note::
-
     **Objectives**:
 
-    -   Learn how to conduct a two-date change detection.
-    -   Build on skills learned in `Module 1`_ and `Module 2`_.
+    -   learn how to conduct a two-date change detection; and
+    -   build on skills learned in `Module 1`_ and `Module 2`_.
 
 .. note::
 
     **Prerequisites**:
 
-    -   SEPAL account.
-    -   Completion of `Module 1`_ and `Module 2`_, or familiarity with the skills covered in these modules.
+    -   SEPAL account; and
+    -   completion of `Module 1`_ and `Module 2`_ (familiarity with the skills covered in these modules).
 
 Create mosaics for change detection
 """""""""""""""""""""""""""""""""""
@@ -931,11 +941,11 @@ Before we can identify change, we first need to have images to compare.
 
 In this section, we will create two mosaics of Sri Lanka, generate training data, and then classify the mosaics. This is discussed in detail in `Module 1`_ and `Module 2`_.
 
-Open the :code:`Process` menu and select :code:`Optical mosaic`. Alternatively, select the **green plus symbol** to open the **Create recipe** menu; then, select :code:`Optical mosaic`.
+Open the :code:`Process` menu and select :code:`Optical mosaic`. Alternatively, select the green plus symbol to open the **Create recipe** menu; then, select :code:`Optical mosaic`.
 
 Use the following data:
 
--   Choose **Sri Lanka** for the area of interest (AOI).
+-   Choose **Sri Lanka** for the AOI.
 -   Select 2015 for the date (DAT).
 -   Select Landsat 8 (L8) as the source (SRC).
 -   In the **Composite** (CMP) menu, ensure that surface reflectance (**(SR) correction**) is selected, as well as **Median** as the compositing method.
@@ -944,10 +954,10 @@ Select :code:`Retrieve mosaic`; then select **Blue, Green, Red, NIR, SWIR1, SWIR
 
 .. note::
 
-   If you don't see the **Google Earth Engine Asset** option, you need to connect your Google account to SEPAL by selecting your username in the lower-right.
+   If you don't see the **Google Earth Engine Asset** option, you need to connect your Google account to SEPAL by selecting your username in the lower right.
 
 .. figure:: ../_images/workflows/area_estimation/retrieval_mosaic.png
-   :alt: The retrieval screen for mosaics.
+   :alt: The retrieval screen for mosaics
    :width: 450
    :align: center
 
@@ -960,21 +970,21 @@ Repeat previous steps, but change the **Date** parameter to 2020.
 Start the classification
 """"""""""""""""""""""""
 
-Now we will begin the classification, as we did in `Module 2`_. There are multiple pathways for collecting training data. To create a layer of points, using desktop GIS, including QGIS and ArcGIS, is one common approach. Using GEE is another approach. You can also use CEO to create a project of random points to identify (see detailed directions in `Section 4.1.2`_). All of these pathways will create a CSV file or a GEE table that you can import into SEPAL to use as your training data set.
+Now we will begin the classification, as we did in `Module 2`_. There are multiple pathways for collecting training data. To create a layer of points, using desktop GIS, including QGIS and ArcGIS, is one common approach. Using GEE is another approach. You can also use CEO to create a project of random points to identify (see detailed directions in `Section 4.1.2`_). All of these pathways will create a .csv file or a GEE table that you can import into SEPAL to use as your training data set.
 
-SEPAL has a built-in reference data collection tool in the classifier. This is the tool you used in `Module 2`_, and we will again use this tool to collect training data. Even if you use a CSV file or GEE table in the future, this is a helpful feature to collect additional training data points to help refine your model.
+SEPAL has a built-in reference data collection tool in the classifier. This is the tool you used in `Module 2`_, and we will again use this tool to collect training data. Even if you use a .csv file or GEE table in the future, this is a helpful feature to collect additional training data points to help refine your model.
 
 In the **Process** menu, select the green plus symbol and select :code:`Classification`.
-Add the two Sri Lanka optical mosaics for classification by selecting **+ Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
+Add the two Sri Lanka optical mosaics for classification by selecting **+ Add** and choose either **Saved SEPAL Recipe** or **Earth Engine Asset** (recommended).
 
--   If you choose **Saved Sepal Recipe**, simply select your `Module 2`_ Amazon recipe.
+-   If you choose **Saved SEPAL Recipe**, simply select your `Module 2`_ Amazon recipe.
 -   If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/SriLanka2015”.
 
 .. tip::
 
-    Remember that you can find the link to your Earth Engine Asset ID via the Google Earth Engine's Asset tab (see **Exercise 2.2 Part 2**).
+    Remember that you can find the link to your Earth Engine Asset ID via GEE's **Asset** tab (see **Exercise 2.2 Part 2**).
 
-Select bands: Blue, Green, Red, NIR, SWIR1, and SWIR2. You can add other bands as well, if you included them in your mosaic. You can also include **Derived bands** by selecting the green button on the lower left and selecting :code:`Apply`.
+Select bands: Blue, Green, Red, NIR, SWIR1, and SWIR2. You can add other bands as well, if you included them in your mosaic. You can also include **Derived bands** by selecting the green button in the lower left and selecting :code:`Apply`.
 
 Repeat the previous steps for your 2020 optical mosaic.
 
@@ -984,7 +994,7 @@ Repeat the previous steps for your 2020 optical mosaic.
 
 .. attention::
 
-    Selecting **Saved Sepal Recipe** may cause the following error at the final stage of your classification:
+    Selecting **Saved SEPAL recipe** may cause the following error at the final stage of your classification:
 
     .. code-block:: console
 
@@ -997,7 +1007,7 @@ Repeat the previous steps for your 2020 optical mosaic.
 Collect change classification training data
 """""""""""""""""""""""""""""""""""""""""""
 
-Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2020, there are four pathways: a pixel can be forest in 2015 and in 2020 (stable forest); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
+Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: **forest** and **non-forest**. Thinking about change detection, we will use three options: **stable forest, stable non-forest,** and **change**. That is, between 2015 and 2020, there are four pathways: a pixel can be forest in 2015 and in 2020 (**stable forest); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
 .. graphviz::
 
@@ -1023,30 +1033,30 @@ Now that we have the mosaics created, we will collect change training data. Whil
     }
 
 
-In the Legend menu, select :code:`+ Add`. This will add a place for you to write your first class label. You will need three legend entries:
+In the **Legend** menu, select :code:`+ Add`. This will add a place for you to write your first class label. You will need three legend entries:
 
--   The first should have the number 1 and a Class label of Forest.
--   The second should have the number 2 and a Class label of Non-forest.
--   The third should have the number 3 and a Class label of Change.
+-   The first should have the number **1** and a class label of **Forest**.
+-   The second should have the number **2** and a class label of **Non-forest**.
+-   The third should have the number **3** and a class label of **Change**.
 
 Choose colors for each class as you see fit and select :code:`Close`.
 
 .. figure:: ../_images/workflows/area_estimation/3_classes.png
-    :alt: Classification legend.
+    :alt: Classification legend
     :align: center
 
-Now, we'll create training data. First, let's pull up the correct imagery. Choose "Select layers to view". As a reminder, available base layers include:
+Now, we'll create training data. First, let's pull up the correct imagery. Choose **Select layers to view**. As a reminder, available base layers include:
 -   SEPAL (Minimal dark SEPAL default layer)
 -   Google Satellite
 -   Planet NICFI composites
 
-We will use the Planet NICFI composites for this example. The composites are available in either RGB or false color infrared (CIR). Composites are available monthly after September 2020 and for every 6 months prior through 2015. Select Dec 2015 (6 months). Both RGB and CIR will be useful, so choose whichever you prefer. You can also select "Show labels" to enable labels that can help you orient yourself in the landscape. You will need to switch between this **Dec 2015** data and the **Dec 2020** data to find stable areas and changed areas.
+We will use the Planet NICFI composites for this example. The composites are available in either RGB or false color infrared (CIR). Composites are available monthly after September 2020 and for every six months prior through 2015. Select **Dec 2015** (six months). Both RGB and CIR will be useful, so choose whichever you prefer. You can also select **Show labels** to enable labels that can help you orient yourself in the landscape. You will need to switch between this **Dec 2015** data and the **Dec 2020** data to find stable areas and changed areas.
 
 .. note::
 
-   If you have collected data in QGIS, CEO, or another program, you can skip the following steps. Simply select **TRN** in the lower right. Select **+ Add** then upload your data to SEPAL. Finally select the **CLS** button in the lower right and you can skip to `Section 3.1.4`_
+   If you have collected data in QGIS, CEO or another program, you can skip the following steps. Simply select **TRN** in the lower right. Select **+ Add**, then upload your data to SEPAL. Finally, select the **CLS** button in the lower right and you can skip to `Section 3.1.4`_
 
-Now select the point icon. When you hover over this icon, it says "Enable reference data collection".
+Now select the point icon. When you hover over this icon, it says **Enable reference data collection**.
 
 With reference data collection enabled, you can start adding points to your map.
 
@@ -1056,37 +1066,36 @@ Use the scroll wheel on your mouse to zoom in on the study area. You can drag to
 
    If you accidentally add a point, you can delete it by selecting the red :code:`Remove` button.
 
-Collect training data for the "Stable Forest" class. Place points where there is forest in both 2015 and 2020 imagery. Then collect training data for the "Stable Non-forest" class. Place points where there is not forest in either 2015 or 2020. You should include water, built-up areas, bare dirt, and agricultural areas in your points. Finally collect training data for the "Change" class.
+Collect training data for the **Stable forest** class. Place points where there is forest in both 2015 and 2020 imagery. Then collect training data for the **Stable Non-forest** class. Place points where there is not forest in either 2015 or 2020. You should include water, built-up areas, bare dirt, and agricultural areas in your points. Finally collect training data for the **Change** class.
 
 .. tip::
 
     If you are having a hard time finding areas of change, several tools can help you:
 
-    -   You can use the Google satellite imagery to help. Areas of forest loss often appear as black or dark purple patches on the landscape. Be sure to always check the 2015 and 2020 Planet imagery to verify Change.
+    -   You can use Google satellite imagery to help. Areas of forest loss often appear as black or dark purple patches on the landscape. Be sure to always check the 2015 and 2020 Planet imagery to verify Change.
     - The CIR (false color infrared) imagery from Planet can also be helpful in identifying areas of change.
-    - You can also use SEPAL's on the fly classification to help after collecting a few Change points.
-        -   If the classification does not appear after collecting the Stable Forest and Stable Non-forest classes, click on the "Select layers to view" icon.
-        -   Toggle the "Classification" option off, and then on again.
-        -   You may need to select "CLS" on the lower right of the screen, then select "Close" to get the classification map to appear.
-        -   With the Classification map created, you can find change pixels and confirm whether they are change or not by comparing 2015 and 2020 imagery.
+    - You can also use SEPAL's on-the-fly classification to help after collecting a few **Change** points.
+        -   If the classification does not appear after collecting the **Stable forest** and **Stable non-forest** classes, select the "Select layers to view" icon.
+        -   Toggle the **Classification** option off, and then on again.
+        -   You may need to select **CLS** on the lower right of the screen, then select **Close** to get the classification map to appear.
+        -   With the classification map created, you can find change pixels and confirm whether they are change or not by comparing 2015 and 2020 imagery.
 
-One trick for determining change is to place a "Change" point in an area of suspected change. Then you can compare 2015 and 2020 imagery without losing the place you were looking at. If it is not Change, you can switch which classification you have identified the point as.
+One trick for determining change is to place a **Change** point in an area of suspected change. Then you can compare 2015 and 2020 imagery without losing the place you were looking at. If it is not change, you can switch which classification you have identified the point as.
 
 .. figure:: ../_images/workflows/area_estimation/finding_change.png
-   :alt: Using Google imagery to examine areas for change.
+   :alt: Using Google imagery to examine areas for change
    :align: center
 
-Continue collecting points until you have approximately 25 points for Forest and Non-forest classes and about 5 points for the Change class. More is better. Try to have your points spread out across Sri Lanka.
+Continue collecting points until you have approximately 25 points for **Forest** and **Non-forest** classes and about 5 points for the **Change** class. More is better. Try to have your points spread out across Sri Lanka.
 
-If you need to modify classification of any of your data points, you can select the point to return to the classification options. You can also remove the point in this way.
+If you need to modify the classification of any of your data points, you can select the point to return to the classification options. You can also remove the point in this way.
 
 When you are happy with your data points, select the :code:`AUX` button in the lower right. Select **Terrain** and **Water**. This will add auxiliary data to the classification.
 
-Finally select the :code:`CLS` button in the bottom right. You can change your classification type to see how the output changes.
-8. If it has not already, SEPAL will now load a preview of your classification.
+Finally select the :code:`CLS` button in the lower right. You can change your classification type to see how the output changes. If it has not already, SEPAL will now load a preview of your classification.
 
 .. figure:: ../_images/workflows/area_estimation/change_detection_model_preview.png
-    :alt: A preview of the change detection model output.
+    :alt: A preview of the change detection model output
     :width: 450
     :align: center
 
@@ -1096,38 +1105,41 @@ Finally select the :code:`CLS` button in the bottom right. You can change your c
 
 .. _Section 3.1.4:
 
-Two date classification retrieval
+Two-date classification retrieval
 """""""""""""""""""""""""""""""""
 
 Now that the hard work of setting up the mosaics and creating and adding the training data is complete, all that is left to do is retrieve the classification.
 
-To retrieve your classification, click the cloud icon in the upper right to open the **Retrieve** pane.
+To retrieve your classification, select the cloud icon in the upper right to open the **Retrieve** pane.
 
 -   Select **Google Earth Engine Asset** if you would like to share your map or if you would like to use it for further analysis.
--   Select **SEPAL Workspace** if you would like to use the map internally only.
+-   Select **SEPAL workspace** if you would like to use the map internally only.
 
-Then use the following parameters:
+Then, use the following parameters:
+
 - **Resolution**: 30 m resolution
-- **Selected bands**:  the Class, Class probability, Forest % and Non-forest % bands.
+- **Selected bands**:  the **Class, Class probability, Forest %** and **Non-forest %** bands.
 
-Finally click :code:`Retrieve`.
+Finally, select :code:`Retrieve`.
 
 Quality assurance and quality control
 """""""""""""""""""""""""""""""""""""
 
 Quality assurance and quality control (QA/QC) is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area are described in `Module 4`_. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. Here we'll discuss one approach to informal QA/QC.
 
-Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in GEE or in another program, such as QGIS or ArcMAP.
+Following analysis, you should spend some time looking at your change detection in order to understand if the results make sense. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in GEE or in another program, such as QGIS or ArcMAP.
 
 With SEPAL, you can examine your classification and collect additional training data to improve the classification.
 
 .. figure:: ../_images/workflows/area_estimation/examine_change_detection_map.png
-   :alt: Examining your change detection map.
+   :alt: Examining your change detection map
    :align: center
 
-Turn on the imagery for your Classification and pan and zoom around the map.
-Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
-If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in `Module 4`_.
+Turn on the imagery for your classification; pan and zoom around the map.
+
+Compare your classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
+
+If your results make sense and you are happy with them, continue to formal QA/QC in `Module 4`_.
 
 .. note::
 
@@ -1136,68 +1148,64 @@ If your results make sense, and you are happy with them, great! Go on to the for
 Deforest tool
 ^^^^^^^^^^^^^
 
-The DEnse FOREst Time Series (deforest) tool is a method for detecting changes in forest cover in a time series of Earth observation data. As input, it takes a time series of forest probability measurements, producing a map of deforestation and an "early warning" map of unconfirmed changes. The method is based on the "Baysian time series" approach of `Reiche et al. (2018) <https://www.sciencedirect.com/science/article/abs/pii/S0034425717304959?via%3Dihub>`_.
+The **DEnse FOREst Time Series (deforest)** tool is a method for detecting changes in forest cover in a time series of Earth observation data. As input, it takes a time series of forest probability measurements, producing a map of deforestation and an "early warning" map of unconfirmed changes. The method is based on the "Baysian time series" approach of `Reiche et al. (2018) <https://www.sciencedirect.com/science/article/abs/pii/S0034425717304959?via%3Dihub>`_.
 
-The tool was designed as part of the Satellite Monitoring for Forest Management (SMFM) project. The SMFM project (2017 - 2020) aimed to address global challenges relating to the monitoring of tropical dry forest ecosystems, and was conducted in partnership with teams in Mozambique, Namibia and Zambia. For more information, see https://www.smfm-project.com/.
+The tool was designed as part of the Satellite Monitoring for Forest Management (SMFM) project, which aimed to address global challenges relating to the monitoring of tropical dry forest ecosystems. It was conducted in partnership with teams in Mozambique, Namibia and Zambia (for more information, see https://www.smfm-project.com).
 
-Full documentation is hosted at http://deforest.rtfd.io/.
+Full documentation is hosted at http://deforest.rtfd.io
 
-This module should take you approximately 1-2 hours to complete.
-
+This module should take you approximately one to two hours to complete.
 
 Data preparation
 """"""""""""""""
 
-For this exercise, we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create a time serries of forest probability using tools with the SEPAL platform.
+For this exercise, we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create a time series of forest probability using tools with the SEPAL platform.
 
 .. csv-table::
     :header: "Objectives","Prerequisites"
     :widths: 20, 20
 
     "Learn how to use the SMFM Deforest tool", "SEPAL account"
-    "","Completed SEPAL modules on mosaics, classification, & time series"
+    "","Completed SEPAL modules on mosaics, classification and time series"
 
 Jupyter notebook basics (optional)
 """"""""""""""""""""""""""""""""""
 
-If you are unfamiliar with Jupyter notebooks, this section is meant to get you acquainted enough with the system to successfully run the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
+If you are unfamiliar with Jupyter notebooks, this section is meant to get you acquainted enough with the system to successfully run the **SMFM** Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
 
 1. Cells
 
-    Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python.
-
+    Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either *markdown* or *code*. Markdown cells are the descriptive text and images that accompany the code to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool, we will be using Python.
 
 .. figure:: ../_images/workflows/area_estimation/smfm_notebook_cell.png
     :alt: Example of a Jupyter Notebook cell.
     :width: 450
     :align: center
 
-
-
 2. Running cells
 
-    To run a cell, select the cell, then locate and select the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
+    To run a cell, select the cell, then locate and select the **Run** button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 
 .. figure:: ../_images/workflows/area_estimation/smfm_notebook_run.png
-    :alt: Example running a Jupyter Notebook cell.
+    :alt: Example running a Jupyter Notebook cell
     :width: 450
     :align: center
 
 
 3. Kernel
 
-    The kernel is the computation engine that executes the code in the jupyter notebook. In this case it is a python 3 kernel. For this tutorial, you do not need to know much about this, but if notebook freezes or you need to reset for any reason, you can find kernel operations in the toolbar menu.
+    The kernel is the computation engine that executes the code in the Jupyter notebook. In this case, it is a Python 3 kernel. For this tutorial, you do not need to know much about this, but if the notebook freezes or you need to reset it for any reason, you can find kernel operations in the toolbar menu.
 
     Restarting the kernel:
-        a. Go to the toolbar at the top of the notebook and select *Kernel*.
-        b. From the dropdown menu, select *restart Kernel and Clear Outputs*
+
+        a. Go to the toolbar at the top of the notebook and select **Kernel**.
+        b. From the dropdown menu, select **Restart Kernel and clear outputs**.
 
 .. figure:: ../_images/workflows/area_estimation/smfm_notebook_kernel.png
     :alt: Example restarting Jupyter Notebook kernel.
     :width: 450
     :align: center
-
 
 Preparing your data
 """""""""""""""""""
@@ -1205,27 +1213,27 @@ Preparing your data
 For this exercise, we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create a time series of forest probability using tools with the SEPAL platform.
 
 .. attention::
-    SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL.
+    **SMFM Deforest** is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL.
 
-This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
+This tutorial will use the demo data that is packaged with the **SMFM Deforest** tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
 If you already have a time series of percent forest coverage, feel free to use that.
 
 A. Download demo data.
 
-   1. Go to your SEPAL **Terminal**.
+   1. Go to the SEPAL **Terminal**.
    2. Start a new instance or join your current instance.
-   3. Clone the deforest Github repository to your SEPAL account using the following command.
+   3. Clone the **deforest** GitHub repository to your SEPAL account using the following command.
 
    ``` git clone https://github.com/smfm-project/deforest ```
 
-B. Use SEPAL workflow to generate time series of forest probability images.
+B. Use the SEPAL workflow to generate time series of forest probability images.
 
-   1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Mosaic generation with SEPAL".
+   1. Create an optical mosaic for your AOI using the **Process** tab and selecting **Optical mosaic**. If this is unfamiliar to you, please see the tutorials on OpenMRV under the process, "Mosaic generation with SEPAL".
 
    2. Save the mosaic as a recipe.
 
-   3. Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".
+   3. Open a new classification and point to the **Optical mosaic** recipe as the image to classify. Use the **Process** tab and select the **Classification** process. If this is unfamiliar to you, please see the tutorials on OpenMRV under the process, "Classification".
 
       1. Select the bands you want to include in the classification.
       2. Add forest/non-forest training data.
@@ -1237,7 +1245,7 @@ B. Use SEPAL workflow to generate time series of forest probability images.
       4. Select the **%forest output**.
       5. Save the classification as a recipe.
 
-   1. Open a new time-series.
+   1. Open a new time series.
 
       1.  Select the same AOI as your mosaic.
       2.  Choose a date range for the time series.
@@ -1253,46 +1261,47 @@ Setup
 Go to the **Apps** menu by selecting the wrench icon and typing "SMFM" into the search field. Select "SMFM Deforest".
 
 .. note::
-   Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, please close the tab and repeat the steps above. If this does not work, reload SEPAL.
+   Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, close the tab and repeat the steps above. If this does not work, reload SEPAL.
 
 1. Click and run the first cell under the **Setup** header. This cell runs two commands: the first installs the deforest Python module and the second runs the **--help** switch to display some documentation on running the tool.
 
-   1. If the help text is output beneath the cell, move onto the 3rd step. If there is an error, continue to step 2. The error message might say:
+   1. If the help text is output beneath the cell, move onto Step 3. If there is an error, continue to Step 2. The error message might say:
 
 ``` python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory ```
 
 .. figure:: ../_images/workflows/area_estimation/smfm_notebook_1_setup.png
-    :alt: Successful setup.
+    :alt: Successful setup
     :width: 450
     :align: center
 
     Successful setup.
 
-2. Install the package via the SEPAL Terminal.
+2. Install the package via the SEPAL **Terminal**.
 
    1. Go to your SEPAL **Terminal**.
-   2. Type *1* to access the terminal of Session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account.
-   3. Clone the Deforest github repository to your SEPAL account.
+   2. Enter **1** to access the terminal of Session 1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account.
+   3. Clone the **Deforest** GitHub repository to your SEPAL account.
 
       .. code-block:: console
 
           git clone https://github.com/smfm-project/deforest
 
-   4. Return to the SMFM notebook and repeat step 1.
+   4. Return to the **SMFM notebook** and repeat Step 1.
 
 .. figure:: ../_images/workflows/area_estimation/smfm_clone_deforest.png
-    :alt: Cloning a repository via the SEPAL terminal.
+    :alt: Cloning a repository via the SEPAL terminal
     :width: 450
     :align: center
 
-3. Once you have successfully set up the tool, take a moment to read through the help document of the Deforest tool that is output below the Jupyter notebook cell you just ran. In the next part, we will explain in more detail some of the parameters.
+3. Once you have successfully set up the tool, take a moment to read through the help document of the **Deforest** tool that is output below the Jupyter notebook cell you just ran. In the next part, we will explain in more detail some of the parameters.
 
 Process the time series
 """""""""""""""""""""""
 
-Processing the time series imagery can be done with a single line of code using the Deforest change.py command line interface.
+Processing the time series imagery can be done with a single line of code using the **Deforest change.py** command line interface.
 
 1. To use the demo imagery, you do not need to change any of the inputs. However, if you are using a custom time series you will need to make some modifications. To change the command to point to a custom time series of percent forest images you will need to update the path to your time series.
+
 Original::
 
    !python3 ~/deforest/sepal/change.py ~/deforest/sepal/example_data/Time_series_2021-03-24_10-53-03/0/ -o ~/ -n sampleOutput -d 12-01 04-30 -t 0.999 -s 6000 -v
@@ -1311,11 +1320,11 @@ Example path to time series updated::
    :header: "Name","Switch","Description"
    :widths: 10, 10, 20
 
-   "Output location","-o","output location where images will be saved on SEPAL account"
+   "Output location","-o","output location where images will be saved to SEPAL account"
    "Output name","-n","Output file name prefix"
-   "Date range","-d","A date range filter. Dates need to be formatted as '-d MM-DD MM-DD' "
+   "Date range","-d","A date-range filter. Dates need to be formatted as '-d MM-DD MM-DD' "
    "Threshold","-t","Set a threshold probability to identify deforestation (between 0 and 1). High thresholds are more strict in the identification of deforestation. Defaults to 0.99."
-   "Scale","-s","Scale inputs by a factor of 6000. In a full-scale run, this should be set to 10000, here it's used to correct an inadequate classification."
+   "Scale","-s","Scale inputs by a factor of 6000. In a full-scale run, this should be set to 10000; here it's used to correct an inadequate classification."
    "Verbose","-v","Prints information to the console as the tool is run."
 
 If you would like to use a time frame other than the example, update the **date range** switch.
@@ -1325,57 +1334,57 @@ If you would like to use a time frame other than the example, update the **date 
    1. By default, the tool is set to use verbose (-v) output. With this option, as each image is processed, a message will be printed to inform us of the progress.
 
    This cell runs two commands:
-      a. The first line is running the SMFM Deforest change detection algorithm (change.py).
-      b. After processing the images we print them out to ensure the program runs successfully.
+      a. The first line is running the **SMFM Deforest change detection** algorithm (change.py).
+      b. After processing the images, we print them out to ensure the program runs successfully.
 
    .. note::
       The exclamation mark (**!**) is used to run commands using the underlying operating system. When we run *!ls* in the notebook, it is the same as running *ls* in the terminal.
 
-   The output deforestation image will be saved to the home directory of SEPAL account(home/username) by default. If you want to save your images in a different location it can be changed by adding the new path after the **-o** switch.
+   The output deforestation image will be saved to the home directory of SEPAL account (home/username) by default. If you want to save your images in a different location it can be changed by adding the new path after the **-o** switch.
 
    2. Download outputs to local computer (optional).
 
-      1. Navigate to the *Files* section of your SEPAL account.
-      2. Locate the output image to download and click to select it. In this case, the image is named *sampleOutput_confirmed*.
-      3. Click the download icon.
+      1. Navigate to the **Files** section of your SEPAL account.
+      2. Locate the output image to download and click to select it. In this case, the image is named **sampleOutput_confirmed**.
+      3. Select the download icon.
 
 Data visualization
 """"""""""""""""""
 
-Now that we have run the deforestation processing chain, we can visualize our output maps. The outputs of the SMFM tool are two images: **confirmed** and **warning**. We will look at the confirmed image first.
+Now that we have run the deforestation processing chain, we can visualize our output maps. The outputs of the **SMFM tool** are two images: **Confirmed** and **Warning**. We will look at the confirmed image first.
 
 1. Run the first **Data visualization** cell of the Jupyter notebook.
 
-   a. If you changed the name of your output file be sure to update the path on line 8 for the variable *confirmed*.
+   a. If you changed the name of your output file, be sure to update the path on Line 8 for the variable **confirmed**.
 
     .. figure:: ../_images/workflows/area_estimation/smfm_confirmations.png
-        :alt: Example of a Jupyter Notebook cell.
+        :alt: Example of a Jupyter Notebook cell
         :width: 450
         :align: center
 
-   The confirmed image shows the years of change that have been detected in the time series. Stable forest is colored green, non forest is colored yellow, and the change years colored by a blue gradient.
+   The confirmed image shows the years of change that have been detected in the time series. Stable forest is colored green, non-forest is colored yellow, and the change years colored by a blue gradient.
 
-   It is recommended that the user discards the first 2-3 years of change, or uses a very high quality forest baseline map to mask out locations that weren't forest at the start of the time series. This is needed since our input imagery is a forest probability time series which initially considers the landscape as forest.
+   It is recommended that the user discards the first two to three years of change, or uses a very high-quality forest baseline map to mask out locations that weren't forest at the start of the time series. This is needed since our input imagery is a forest probability time series which initially considers the landscape as forest.
 
 Next, we will check out the deforest warning output.
 
-1. Run the second **Data visualization** cell
+1. Run the second **Data visualization** cell.
 
     .. figure:: ../_images/workflows/area_estimation/smfm_warnings.png
-        :alt: Example of a Jupyter Notebook cell.
+        :alt: Example of a Jupyter Notebook cell
         :width: 450
         :align: center
 
 
    This image shows the combined probability of non-forest existing at the end of our time series in locations that have not yet been flagged as deforested. This can be used to provide information on locations that have not yet reached the threshold for confirmed changes, but are looking likely to be possible.
 
-   You can view a demonstration of the above steps on `YouTube <https://youtu.be/9BswdPlncfM>`_.
+   You can view a demonstration of the above steps in `this video <https://youtu.be/9BswdPlncfM>`_.
 
-Additional Resources
+Additional resources
 """"""""""""""""""""
 
--   Source code: The source code of the Deforest tool and Jupyter notebook can be found in the `GitHub repository <https://github.com/smfm-project/deforest>`_.
--   Bug report: in case you notice a bug or have issues using the tool, you can report an issue using the `Issues section <https://github.com/smfm-project/deforest/issues>`_ of the Github repository. This will take you to an issue creation page on the GitHub repository of the tool.
+-   Source code: The source code of the **Deforest** tool and Jupyter notebook can be found in the `GitHub repository <https://github.com/smfm-project/deforest>`_.
+-   Bug report: in case you notice a bug or have issues using the tool, you can report an issue using the `Issues section of the Github repository <https://github.com/smfm-project/deforest/issues>`_.
 
 Other approaches to time series analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1384,14 +1393,10 @@ In this exercise, you will learn more about time series analysis. SEPAL has the 
 
 TimeSync integration is coming to CEO in 2021.
 
-.. note::
-
     **Objectives**:
 
-    -   Learn the basics of BFAST explorer in SEPAL.
-    -   Learn about time series analysis options outside of SEPAL.
-
-.. note::
+    -   learn the basics of BFAST explorer in SEPAL; and
+    -   learn about time series analysis options outside of SEPAL.
 
     **Prerequisite**:
 
@@ -1400,45 +1405,46 @@ TimeSync integration is coming to CEO in 2021.
 BFAST Explorer
 """"""""""""""
 
-Breaks For Additive Seasonal and Trend (BFAST) is a change detection algorithm for time series which detects and characterizes changes. BFAST integrates the decomposition of time series into trend, seasonal, and remainder components with methods for detecting change within time series. BFAST iteratively estimates the time and number of changes, and characterizes change by its magnitude and direction (Verbesselt et al. 2009).
+Breaks For Additive Seasonal and Trend (BFAST) is a change detection algorithm for time series which detects and characterizes changes. BFAST integrates the decomposition of time series into trend, seasonal, and remainder components with methods for detecting change within time series. BFAST iteratively estimates the time and number of changes, and characterizes change by its magnitude and direction (Verbesselt *et al.*, 2009).
 
-BFAST Explorer is a Shiny app, developed using R and Python, designed for the analysis of Landsat Surface Reflectance time series pixel data. Three change detection algorithms - bfastmonitor, bfast01 and bfast - are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection. If you encounter any bugs, please send a message to :email:`almeida.xan@gmail.com`, or create an issue on the GitHub page.
+BFAST Explorer is a Shiny app, developed using R and Python, designed for the analysis of Landsat surface reflectance (SR) time series pixel data. Three change detection algorithms - bfastmonitor, bfast01 and bfast - are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection. 
 
-More information can be found online at http://bfast.r-forge.r-project.org/.
+More information can be found online at http://bfast.r-forge.r-project.org. If you encounter any bugs, please send a message to :email:`almeida.xan@gmail.com` or create an issue on the GitHub page.
 
-Go to the **Apps** menu by clicking on the wrench icon; enter “BFAST” into the search field and select BFAST Explorer.
+Go to the **Apps** menu by selecting the wrench icon. Then, enter “BFAST” into the search field and select **BFAST Explorer**.
 
-Find a location on the map that you would like to run BFAST on. Select a location to drop a marker, and then click the marker to select it. Select **Landsat 8 SR** from the select satellite products dropdown. Select :code:`Get Data` (Note: It may take a moment to download all the data for the point).
+Find a location on the map that you would like to run BFAST on. Select a location to drop a marker, and then click the marker to select it. Select **Landsat 8 SR** from the **Select satellite products** dropdown menu. Select :code:`Get Data` (note: it may take a moment to download all of the data for the point).
 
 .. figure:: ../_images/workflows/area_estimation/BFAST_explorer.png
-    :alt: The BFAST Explorer interface.
+    :alt: The BFAST Explorer interface
     :align: center
 
-Select the :code:`Analysis` button at the top next to the :code:`Map` button.
+Select the :code:`Analysis` button (at the top next to the :code:`Map` button).
 
--   **Satellite product**: Add your satellite data by selecting them from the Satellite products dropdown menu.
--   **Data**: The data to apply the BFAST algorithm to and plot. There are options for each band available as well as indices, such as NDVI, EVI, and NDMI. Here select **ndvi.**
+-   **Satellite product**: Add your satellite data by selecting them from the **Satellite products** dropdown menu.
+-   **Data**: The data to apply the BFAST algorithm to and plot. There are options for each band available as well as indices, such as **NDVI, EVI,** and **NDMI**. Select **ndvi.**
 -   **Change detection algorithm**: Holds three options of BFAST to calculate for the data series.
 
     -   **Bfastmonitor**: Monitoring the first break at the end of the time series.
     -   **Bfast01**: Checking for one major break in the time series.
-    -   **Bfast**: Time series decomposition and multiple breakpoint detection in tend and seasonal components.
+    -   **Bfast**: Time series decomposition and multiple breakpoint detection in trend and seasonal components.
 
-Each BFSAT algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest, then “Bfastmonitor” would be an appropriate choice. Bfast01 may be a good selection when trying to identify if a large disturbance event has occurred, and the full Bfast algorithm may be a good choice if there are multiple times in the time series when change has occurred.
+Each BFAST algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest, then **Bfastmonitor** would be an appropriate choice. **Bfast01** may be a good selection when trying to identify if a large disturbance event has occurred, and the full **Bfast** algorithm may be a good choice if there are multiple times in the time series when change has occurred.
 
 Select **bfastmonitor** as the algorithm.
 
 .. figure:: ../_images/workflows/area_estimation/BFAST_explorer_interface.png
-   :alt: The BFAST Explorer interface.
+   :alt: The BFAST Explorer interface
    :align: center
 
-You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
+You can explore different bands, such as spectral bands like b1, along with the different algorithms.
 
 .. figure:: ../_images/workflows/area_estimation/BFAST_visualization.png
    :align: center
 
-You can also download all the time series data by clicking the blue :code:`Data` button. All the data will be downloaded as a CSV file, ordered by the acquisition date.
-You can also download the time series plot as an image, by pressing the blue :code:`Plot` button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
+You can download all the time series data by selecting the blue :code:`Data` button. All the data will be downloaded as a .csv file, ordered by the acquisition date.
+
+You can also download the time series plot as an image by selecting the blue :code:`Plot` button. A window will appear offering some raster (.jpeg, .png) and a vectorial (.svg) image output formats.
 
 .. note::
 
@@ -1447,33 +1453,31 @@ You can also download the time series plot as an image, by pressing the blue :co
 TimeSync and LandTrendr
 """""""""""""""""""""""
 
-Here we will briefly review TimeSync and LandTrendr, two options available outside of SEPAL that may be useful to you in the future. It is outside of the scope of this manual to cover them in detail but if you're interested in learning more we've provided links to additional resources.
+Here we will briefly review TimeSync and LandTrendr, two options available outside of SEPAL that may be useful to you in the future. It is outside of the scope of this manual to cover them in detail, but if you're interested in learning more we've provided links to additional resources.
 
 TimeSync
 ++++++++
 
-TimeSync was created by Oregon State University, Pacific Northwest Research Station, the Forest Service Department of Agriculture, and the USFS Remote Sensing Applications Center.
-
-From the TimeSync User manual for version 3:
+TimeSync was created by Oregon State University, Pacific Northwest Research Station, the Forest Service Department of Agriculture, and the USFS Remote Sensing Applications Center. From the TimeSync User manual for Version 3:
 
     "TimeSync is an application that allows researchers and managers to characterize and quantify disturbance and landscape change by facilitating plot-level interpretation of Landsat time series stacks of imagery (a plot is commonly one Landsat pixel). TimeSync was created in response to research and management needs for time series visualization tools, fueled by rapid global change affecting ecosystems, major advances in remote sensing technologies and theory, and increased availability and use of remotely sensed imagery and data products..."
 
 TimeSync is a Landsat time series visualization tool (both as a web application and for desktops) that can be used to:
 
--   Characterize the quality of land cover map products derived from Landsat time series.
--   Derive independent plot-based estimates of change, including viewing change over time and estimating rates of change.
--   Validate change maps.
--   Explore the value of Landsat time series for understanding and visualizing change on the earth's surface.
+-   characterize the quality of land cover map products derived from Landsat time series;
+-   derive independent plot-based estimates of change, including viewing change over time and estimating rates of change;
+-   validate change maps; and
+-   explore the value of Landsat time series for understanding and visualizing change on the Earth's surface.
 
 TimeSync is a tool that researchers and managers can use to validate remotely sensed change data products and generate independent estimates of change and disturbance rates from remotely sensed imagery. TimeSync requires basic visual interpretation skills, such as aerial photo interpretation and Landsat satellite image interpretation.”
 
-From TimeSync's Introduction materials, here is an example output:
+Here is an example output from TimeSync's introduction materials:
 
 .. figure:: ../_images/workflows/area_estimation/TimeSync_example.png
-   :alt: An example from TimeSync.
+   :alt: An example from TimeSync
    :align: center
 
-For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: https://www.timesync.forestry.oregonstate.edu/tutorial.html. You can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here: http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf, and an introductory presentation here: https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf.
+For more information on TimeSync, including an online tutorial (for Version 2), see https://www.timesync.forestry.oregonstate.edu/tutorial.html. You can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for Version 3 at http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf, and an introductory presentation here: https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf.
 
 LandTrendr
 ++++++++++
@@ -1495,7 +1499,7 @@ From LandTrendr's documentation, here's an example output in the GUI. However, L
 Sample-based estimation of area and accuracy
 --------------------------------------------
 
-Once you have either a land use/land cover (LULC) map (`Module 2`_) or a change detection map (`Module 3`_), the next step is to estimate the area within each LULC type or change type and the error associated with your map (the current Module). All maps have errors (e.g. model output errors from pixels mixing or input data noise). Our objective is to create unbiased estimates of the area for each mapped category.
+Once you have either a land use/land cover (LULC) map (`Module 2`_) or a change detection map (`Module 3`_), the next step is to estimate the area within each LULC type or change type and the error associated with your map (the current module). All maps have errors (e.g. model output errors from pixels mixing or input data noise). Our objective is to create unbiased estimates of the area for each mapped category.
 
 To do this, we will use sample-based estimations of area and error instead of ‘pixel counting' approaches. Pixel counting approaches simply sum the area belonging to each different class. However, this doesn't account for classification errors (e.g. the probability that a pixel classified as wetland should be open water). Therefore, the pixel counting approach provides no quantification of sampling errors and no assurance that estimates are unbiased or that uncertainties are reduced (Stehman, 2005; GFOI, 2016).
 
