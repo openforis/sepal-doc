@@ -803,7 +803,7 @@ If you collected training data using QGIS, CEO, or another pathway, you will nee
 Select the green :code:`Add` button.
 
 -   Import your training data
-    -   Upload a CSV file.
+    -   Upload a .csv file.
     -   Select **Earth Engine Table** and enter the path to your Earth Engine asset in the **EE Table ID** field.
 
 -   Select :code:`Next`.
@@ -1482,13 +1482,13 @@ For more information on TimeSync, including an online tutorial (for Version 2), 
 LandTrendr
 ++++++++++
 
-LandTrendr has similar functionality to TimeSync, but runs in GEE. It was created by `Dr. Robert Kennedy <https://ceoas.oregonstate.edu/people/robert-kennedy>`_'s lab with funding from the US Forest Service Landscape Change Monitoring System, the NASA Carbon Monitoring System, a Google Foundation Grant, and U.S. National Park Service Cooperative Agreement. Recent contributors include David Miller, Jamie Perkins, Tara Larrue, Sam Pecoraro, and Bahareh Sanaie (Department of Earth and Environment, Boston University). Foundational contributors include Zhiqiang Yang and Justin Braaten in the Laboratory for Applications of Remote Sensing in Ecology located at Oregon State University and the USDA Forest Service's Pacific Northwest Research Station.
+LandTrendr (LT) has similar functionality to TimeSync, but runs in GEE. It was created by `Dr. Robert Kennedy <https://ceoas.oregonstate.edu/people/robert-kennedy>`_'s lab with funding from the US Forest Service Landscape Change Monitoring System, the NASA Carbon Monitoring System, a Google Foundation grant, and the US National Park Service Cooperative Agreement. Recent contributors include David Miller, Jamie Perkins, Tara Larrue, Sam Pecoraro and Bahareh Sanaie (Department of Earth and Environment, Boston University). Foundational contributors include Zhiqiang Yang and Justin Braaten in the Laboratory for Applications of Remote Sensing in Ecology located at Oregon State University and the USDA Forest Service's Pacific Northwest Research Station.
 
-From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, W.B., Healey, S. (2018). Implementation of the LandTrendr Algorithm on Google Earth Engine. Remote Sensing. 10, 691.:
+From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, W.B., Healey, S. (2018). Implementation of the LandTrendr Algorithm on Google Earth Engine. Remote Sensing, 10: 691:
 
     "LandTrendr (LT) is a set of spectral-temporal segmentation algorithms that are useful for change detection in a time series of moderate resolution satellite imagery (primarily Landsat) and for generating trajectory-based spectral time series data largely absent of inter-annual signal noise. LT was originally implemented in IDL (Interactive Data Language), but with the help of engineers at Google, it has been ported to the GEE platform. The GEE framework nearly eliminates the onerous data management and image-pre-processing aspects of the IDL implementation. It is also light-years faster than the IDL implementation, where computing time is measured in minutes instead of days."
 
-From LandTrendr's documentation, here's an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: https://emapr.GitHub.io/LT-GEE/landtrendr.html.
+From LandTrendr's documentation, the following figure shows an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities (for a comprehensive guide to running LT in GEE, see https://emapr.GitHub.io/LT-GEE/landtrendr.html).
 
 .. figure:: ../_images/workflows/area_estimation/LandTrendr.png
    :alt: The LandTrendr interface
@@ -1501,50 +1501,46 @@ Sample-based estimation of area and accuracy
 
 Once you have either a land use/land cover (LULC) map (`Module 2`_) or a change detection map (`Module 3`_), the next step is to estimate the area within each LULC type or change type and the error associated with your map (the current module). All maps have errors (e.g. model output errors from pixels mixing or input data noise). Our objective is to create unbiased estimates of the area for each mapped category.
 
-To do this, we will use sample-based estimations of area and error instead of ‘pixel counting' approaches. Pixel counting approaches simply sum the area belonging to each different class. However, this doesn't account for classification errors (e.g. the probability that a pixel classified as wetland should be open water). Therefore, the pixel counting approach provides no quantification of sampling errors and no assurance that estimates are unbiased or that uncertainties are reduced (Stehman, 2005; GFOI, 2016).
+To do this, we will use sample-based estimations of area and error instead of *pixel-counting* approaches, which simply sum the area belonging to each different class. However, this doesn't account for classification errors (e.g. the probability that a pixel classified as wetland should be open water). Therefore, the pixel-counting approach provides no quantification of sampling errors and no assurance that estimates are unbiased or that uncertainties are reduced (Stehman, 2005; GFOI, 2016).
 
-Sample-based estimations of area and error create estimations of errors in pixel classification and use this to inform estimations of area. Therefore, sample-based estimations abide by the IPCC General Guidelines (2006) that estimates should not be over- or under- estimates, and that uncertainty should be reduced as much as practically possible. For more information on the theory behind choosing sample-based estimations of area and error over pixel counting approaches, see:
+Sample-based estimations of area and error create estimations of errors in pixel classification and use this to inform estimations of area. Therefore, sample-based estimations abide by the IPCC General Guidelines (2006) that estimates should not be over- or under- estimates, and that uncertainty should be reduced as much as practically possible. For more information on the theory behind choosing sample-based estimations of area and error over pixel-counting approaches, see the following resources:
 
-* GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
-* GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
-* Gallego, FJ. 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15): 3019-3047, DOI: 10.1080/01431160310001619607
-* IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
-* REDD Compass: https://www.reddcompass.org/
+* Gallego, FJ. 2004. Remote sensing and land cover area estimation. *International Journal of Remote Sensing*, 25(15): 3019-3047, DOI: 10.1080/01431160310001619607
+* GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0. Rome, FAO.
+* GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1. The Netherlands, GOFC-GOLD Land Cover Project Office, Wageningen University.
+* IPCC. 2006. Guidelines for national greenhouse gas inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
+* REDD Compass: https://www.reddcompass.org
 
-There are four steps to sample-based estimation of area and accuracy. First, you will use the different classes in your LULC or change detection map to create a stratified sampling design in SEPAL using the Stratified Area Estimator (SAE) - Design tool (Exercise 4.1). Then you will revisit your response design and labeling protocols to use with data collection in CEO (Exercise 4.2). Finally, you will use data generated in CEO (Exercise 4.3) to calculate the sample-based estimates in SEPAL, using the Stratified Area Estimator-Analysis tool (Exercise 4.4). This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted by the Random forest classifier.
+There are four steps to sample-based estimation of area and accuracy. First, you will use the different classes in your LULC or change detection map to create a stratified sampling design in SEPAL using the **Stratified Area Estimator (SAE) - Design** tool (Exercise 4.1). Then you will revisit your response design and labelling protocols to use with data collection in CEO (Exercise 4.2). Finally, you will use data generated in CEO (Exercise 4.3) to calculate the sample-based estimates in SEPAL, using the **Stratified Area Estimator-Analysis** tool (Exercise 4.4). This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted by the **Random forest** classifier.
 
 This process will provide two important outputs. First, you will have estimates of the area for each LULC or change type. Second, you will have a table that describes the accuracy for each LUC or change type. This is often called a confusion matrix. These may be final products for your projects. However, if you decide that your map is not accurate enough, this information can be fed back into the classification or change detection algorithms to improve your model.
 
-This Module takes approximately 3 hours to complete.
+This module takes approximately three hours to complete.
 
 .. _Section 4.1:
 
 Sample design and stratification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Stratified random sampling is an easy to use, easy to understand, and well supported sampling design (for more information, see Olofsson et al. 2014. Good practices for assessing accuracy and estimating area of land change, Remote Sensing of Environment 148, 42-57). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each sample, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
+Stratified random sampling is an easy-to-use, easy-to-understand, and well-supported sampling design (for more information, see Olofsson *et al.* 2014. Good practices for assessing accuracy and estimating area of land change. *Remote Sensing of Environment*, 148: 42-57). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each sample, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
 
-We will use the SEPAL SAE-Design tool. You will upload your classified map and set some basic parameters, then the SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map, will depend on your expected overall accuracy. Be sure to log these choices as part of your documentation (`Module 5`_).
-
-.. note::
+We will use the SEPAL **SAE-Design** tool. You will upload your classified map and set some basic parameters, then the **SAE-Design** tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size – the number of points used to validate the map – will depend on your expected overall accuracy. Be sure to log these choices as part of your documentation (`Module 5`_).
 
     **Objectives**:
 
-    -   Generate a stratified random sample based on your image classification.
-    -   Upload your stratification to SEPAL.
-
-.. note::
+    -   generate a stratified random sample based on your image classification; and
+    -   upload your stratification to SEPAL.
 
     **Prerequisites**:
 
-    -   Classification from `Module 2`_.
-    -   Advanced users can use the classification from `Module 3`_.
+    -   classification from `Module 2`_; and
+    -   advanced users can use the classification from `Module 3`_.
 
 .. _Section 4.1.1:
 
 Uploading files to SEPAL
 """"""""""""""""""""""""
-If your classification is not stored in SEPAL (e.g. a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL's stratified random sample tool. Several options are described in :doc:`../setup/filezilla`.
+If your classification is not stored in SEPAL (e.g. a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL's **Stratified random sample** tool. Several options are described in :doc:`../setup/filezilla`.
 
 .. _Section 4.1.2:
 
@@ -1553,44 +1549,51 @@ Creating a stratified random sample
 
 We will use SEPAL to create a stratified random sample. To begin, you can use the test dataset available in SEPAL or you can use a raster of your classification loaded into SEPAL.
 
-If you have a large area you are stratifying, please first increase the size of your instance (see `Introduction to SEPAL <../setup/presentation.html#terminal-tab>`_).
+If you have a large area that you are stratifying, first increase the size of your instance (see `Introduction to SEPAL <../setup/presentation.html#terminal-tab>`_).
 
-A well-prepared sample can provide a robust estimate of the parameters of interest for the population (e.g. percent forest cover). The goal of a sample is to provide an unbiased estimate of some population measure (e.g. proportion of area), with the smallest variance possible, given constraints including resource availability. Two things to think about for sample design are: do you have a probability-based sample design? That is, does every sample location have some probability of being sampled? And second, is it geographically balanced? That is, are all regions in the study area represented. These factors are required for the standard operating procedures when reporting for REDD+.
+A well-prepared sample can provide a robust estimate of the parameters of interest for the population (e.g. percent forest cover). The goal of a sample is to provide an unbiased estimate of some population measure (e.g. proportion of area), with the smallest variance possible, given constraints including resource availability. Two things to think about for sample design are: do you have a probability-based sample design? That is, does every sample location have some probability of being sampled? And second, is it geographically balanced? That is, are all regions in the study area represented? These factors are required for the standard operating procedures when reporting for REDD+.
 
 These directions will provide a stratified random sample of the proper sampling size.
 
-First, go to https://sepal.io/ and sign in. Select the :code:`Apps` button (purple wrench). Enter "stratified" into the search bar or scroll through the different process apps to find “Stratified Area Estimator - Design”. Select **Stratified Area Estimator - Design.** Note that loading the tool takes a few minutes.
+First, go to https://sepal.io and sign in. 
+
+Select the :code:`Apps` button (purple wrench). Enter **stratified** into the search bar or scroll through the different process apps to find **Stratified Area Estimator - Design**. 
+
+Select **Stratified Area Estimator - Design.** Note that loading the tool takes a few minutes.
 
 .. figure:: ../_images/workflows/area_estimation/stratified_area_estimator_design.png
-    :alt: Stratified Area Estimator-Design tool.
+    :alt: Stratified Area Estimator-Design tool
     :align: center
 
 .. tip::
 
-    Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
+    Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the steps presented above.
 
     .. figure:: ../_images/workflows/area_estimation/fail_stratified_estimator_tool.png
-        :alt: Failure of the stratified area estimator tool.
+        :alt: Failure of the stratified area estimator tool
         :align: center
 
 When the tool loads properly, it will look like the image below. Read some of the information on the **Introduction** page to acquaint yourself with the tool.
 
 On the **Introduction** page, you can change the language from English to French or Spanish.
-The Description, Background, and "How to use the tool" panels provide more information about the tool.
-The Reference and Documents pane provides links to other information about stratified sampling, such as REDD Compass.
+
+The **Description**, **Background**, and **How to use the tool** panes provide more information about the tool.
+
+The **Reference and Documents** pane provides links to other information about stratified sampling, such as REDD Compass.
 
 .. figure:: ../_images/workflows/area_estimation/stratified_estimator_interface.png
-   :alt: The stratified estimator interface.
+   :alt: The stratified estimator interface
    :align: center
 
 The steps necessary to design the stratified area estimator are located on the left side of the screen and they need to be completed sequentially from top to bottom.
+
 Select :code:`Map input` on the left side of the screen.
 
 For this exercise, we'll use the classification from `Module 2`_.
 
 .. note::
 
-    You can substitute another classification, such as the change detection classification created in `Module 3`_, if you would like.
+    You can substitute another classification, such as the change detection classification created in `Module 3`_, if desired.
 
 In the **Data type** section, select :code:`Input`.
 
@@ -1598,66 +1601,71 @@ In the **Browse** window that opens, go to the `Module 2`_ dataset and select it
 
 .. tip::
 
-    Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this exercise will be saved.
+    Note that the **Output folder** section shows you where in your SEPAL workspace all files generated from this exercise will be saved.
 
 .. see also::
 
-    Optionally, you can use a csv with your raster areas instead; however, we won't discuss that here.
+    You can also use a .csv with your raster areas instead, if desired; however, we won't discuss that option here.
 
-Next, select :code:`Strata areas` on the left side of the screen. In the **Area calculation** section, select :code:`OFT`. **OFT** stands for the Open Foris Geospatial Toolkit. R is slower but avoids some errors that arise with OFT.
+Next, select :code:`Strata areas` on the left side of the screen. In the **Area calculation** section, select :code:`OFT` (**OFT** refers to the Open Foris Geospatial Toolkit). R is slower but avoids some errors that arise with OFT.
 
 .. attention::
 
-    If you choose to use OFT, it will return values for the map that are incorrect, if your map was stored in certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
+    If you choose to use OFT, it will return values for the map that are incorrect in the event that your map was stored in certain formats (e.g. signed 8 bit). If this is the case, use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
 .. figure:: ../_images/workflows/area_estimation/stratified_estimator_map_legend.png
-   :alt: Stratified estimator tool showing the display map and legend and areas filled out.
+   :alt: Stratified estimator tool showing the display map and legend and areas filled out
    :align: center
 
-The **“Do you want to display the map”** checkbox allows you to display your geotiff under “Display map”.
+The **Do you want to display the map** checkbox allows you to display your geotiff under “Display map”.
 
 .. note::
 
-    The colors displayed in the SAE-Design tool in this section may be different than what you see elsewhere. Additionally, if your ‘no data' class is 0, the tool will color this as well.
+    The colors displayed in the **SAE-Design** tool in this section may be different than what you see elsewhere. Additionally, if your ‘no data' class is 0, the tool will color this as well.
 
-Click the **Area calculation and legend generation** button. This will take a few minutes to run. After it finishes, notice that it has updated the **Legend labeling** section of the page.
+Select the **Area calculation and legend generation** button. This will take a few minutes to run. After it finishes, notice that it has updated the **Legend labeling** section of the page.
 
 Next, you will need to adjust the class names in the **Legend labeling** section. Type in the following class names in place of the numeric codes for your Amazon:
+
 -   0 = No Data
 -   1 = Forest
--   2 = Non-Forest
+-   2 = Non-forest
 
-Now select :code:`Submit Legend`. The **Legend and Areas** section will now be populated with the map code, map area, and edited class name.
+Now select :code:`Submit Legend`. The **Legend and Areas** section will now be populated with the map code, map area and edited class name.
 
-You can now **Rename** and **Download** the area file if you would like. However, it will save automatically to your SEPAL workspace.
-When you're done, click on **Strata selection** in the left panel.
+You can now **Rename** and **Download** the area file if you would like; it will save automatically to your SEPAL workspace.
 
-Now you need to specify the expected accuracies. You will do this for each class. Get more information by clicking the **plus** button to the right of the box that says **What are the expected accuracies?**.
+When you're done, click on **Strata selection** in the left pane.
 
--   Specify the expected user accuracy helps the program determine which classes might need more points relative to their area.
--   Some classes are easier to identify--including common classes and classes with clear identifiers like buildings.
+Now you need to specify the expected accuracies. You will do this for each class. Get more information by selecting the plus button to the right of the box that says **What are the expected accuracies?**.
+
+-   Specifying the expected user accuracy helps the program determine which classes might need more points relative to their area.
+-   Some classes are easier to identify, including common classes and classes with clear identifiers like buildings.
 -   Classes that are hard to identify include rare classes and classes that look very similar to one another. Having more classes with low confidence will increase the sample size.
-    -   Select the value for classes with high expected user accuracy with **the first slider**. This is set to 0.9 by default, and we'll leave it there.
-    -   Then, select the value for classes with low expected user accuracy with **the second slider**. This is set to 0.7 by default, and we'll leave it there as well.
+    -   Select the value for classes with high expected user accuracy with the first slider. This is set to 0.9 by default, and we'll leave it there.
+    -   Then, select the value for classes with low expected user accuracy with the second slider. This is set to 0.7 by default, and we'll leave it there as well.
 
-Now we need to assign each class to the high or the low expected user accuracy group. Think about your forest and non-forest classes. Which do you think should be high confidence? Which should be low confidence? Why?
-Select the box under **“high confidence”** and assign your high confidence class(es). Then, select the box under **“low confidence”** that appears and assign the corresponding class(es). If you make a mistake, there's no way to remove the classes. However, just change one of the sliders slightly, move it back, and the class assignments will have been reset.
+Now we need to assign each class to the high or low expected user accuracy group. Think about your forest and non-forest classes. Which do you think should be high confidence? Which should be low confidence? Why?
+
+Select the box under **high confidence** and assign your high confidence class(es). 
+
+Then, select the box under **low confidence** that appears and assign the corresponding class(es). If you make a mistake, there's no way to remove the classes. However, just change one of the sliders slightly, move it back, and the class assignments will have been reset.
 
 .. attention::
 
-    For this exercise, please assign both Forest & Non-forest to the high confidence class. If you assign either to the low confidence class, you will not be able to use the CEO-SEPAL bridge in `Section 4.2`_.
+    For this exercise, please assign both **Forest** & **Non-forest** to the high confidence class. If you assign either to the low confidence class, you will not be able to use the CEO-SEPAL bridge in `Section 4.2`_.
 
-     DO NOT assign your No Data class to either high or low confidence.
+     DO NOT assign your No data class to either high or low confidence.
 
 .. figure:: ../_images/workflows/area_estimation/high_low_expected_user_accuracy.png
-   :alt: High and low expected user accuracy.
+   :alt: High and low expected user accuracy
    :align: center
 
-When you're satisfied, select **Sampling Size** on the left panel.
+When you're satisfied, select **Sampling size** in the left pane.
 
 Now we will calculate the required sample size for each strata. You can select the “+” button to get more information.
 
--   First we need to set the **standard error of the expected overall accuracy.** It is 0.01 by default, however for this exercise we will set it to 0.05.
+-   First we need to set the **standard error of the expected overall accuracy**. It is 0.01 by default, however for this exercise we will set it to 0.05.
 
     .. see also::
 
@@ -1667,21 +1675,21 @@ Now we will calculate the required sample size for each strata. You can select t
 
         Note that you can adjust this incrementally with the up/down arrows on the right side of the parameter.
 
--   Then determine the **minimum sample size per strata**. By default, it is 100. For the purposes of this test we will set it to 20, **but in practice this should be higher.**
+-   Then determine the **Minimum sample size per strata**. By default, it is 100. For the purposes of this test we will set it to 20, but in practice this should be higher.
 
     .. note::
 
-        You can also check the “Do you want to modify the sampling size” box.
+        You can also check the **Do you want to modify the sampling size** box.
 
--   While SEPAL automatically saves this file, you can edit the name of the file and download a CSV file with the sample design. The file will contain the table shown above with some additional calculations.
+-   While SEPAL automatically saves this file, you can edit the name of the file and download a .csv file with the sample design. The file will contain the table shown above with some additional calculations.
 
 .. figure:: ../_images/workflows/area_estimation/stratified_estimator_sampling.png
-    :alt: The stratified estimator sampling size and distribution of samples screen.
+    :alt: The stratified estimator sampling size and distribution of samples screen
     :align: center
 
-When you're ready, click on **Sample allocation** to the left. The final step will select the random points to sample.
+When you're ready, select **Sample allocation** on the left. The final step will select the random points to sample.
 
-Select **Generate sampling points** and wait until the progress bar in the lower-right finishes. Depending on your map, this may take some time. A map will pop up showing the sample points. You can pan around or zoom in/out within the sample points map. The resulting **distribution of samples** should look similar to the below image.
+Select **Generate sampling points** and wait until the **Progress** bar in the lower-right finishes. Depending on your map, this may take some time. A map will pop up showing the sample points. You can pan around or zoom in/out within the sample points map. The resulting **distribution of samples** should look similar to the below image.
 
 .. note::
 
@@ -1695,200 +1703,194 @@ Select **Generate sampling points** and wait until the progress bar in the lower
    :alt: The stratified estimator tool's sample allocation screen.
    :align: center
 
-Now fill out the four fields to the right. You can add additional data by specifying which country the map is in. Here, Leave the **Choose your country name…** section blank. Specify the **number of operators,** or people who will be doing the classification. Here, leave it set to 1. For CEO, this might be the number of users you think your project will have. The **size of the interpretation box** depends on your data and corresponds to CEO's sample plot. This value should be set to the spatial resolution of the imagery you classified (Landsat= 30 m). Here, leave it at 30 m.
+Now fill out the four fields to the right. You can add additional data by specifying which country the map is in. Here, leave the **Choose your country name…** section blank. Specify the **number of operators**, or people who will be doing the classification. Here, leave it set to 1. For CEO, this might be the number of users you think your project will have. The **size of the interpretation box** depends on your data and corresponds to CEO's sample plot. This value should be set to the spatial resolution of the imagery you classified (Landsat = 30 m). Here, leave it at 30 m.
 
 .. note::
 
     When should you use CEO, and when should you use the CEO-SEPAL bridge? In general, **the CEO-SEPAL bridge should only be used for fairly simple use cases**. More specifically, CEO-SEPAL is a great option when you have only high-confidence categories, have a relatively small number of points, when you will collect the data yourself, and when the built-in questions about your data points suffice. For other situations, you will want to create a CEO project. Creating a CEO project through the collect.earth website is a better option when you have low-confidence categories, a larger number of points in your sample, when you want to use specific validation imagery, when multiple people will collect data and you need to track who is collecting data, and when you need more complex or custom questions about your data points.
 
-If you would like to create a project via CEO, click on **Download .csv** and follow the steps in `Section 4.1.3`_ below. After following the directions in this, you will proceed to `Section 4.2`_.
+If you would like to create a project via CEO, select **Download .csv** and follow the steps in `Section 4.1.3`_ below. After following these directions, proceed to `Section 4.2`_.
 
 .. attention::
 
     We highly recommend using this approach, and we will demonstrate it in this manual.
 
-To create a project via the CEO-SEPAL bridge, click on **Create CEO project**. This will create a CEO project via the CEO-SEPAL bridge. This process will take a few minutes and you should see text and completion bars in the lower right as calculations happen. Copy and paste the link into your browser window when it appears.
+To create a project via the CEO-SEPAL bridge, select **Create CEO project**. This will create a CEO project via the CEO-SEPAL bridge. This process will take a few minutes and you should see text and completion bars in the lower right as calculations happen. Copy and paste the link into your browser window when it appears.
 
 .. tip::
 
     Be sure to save this link somewhere so you can reference it later.
 
 .. attention::
-   You MUST be logged out of CEO for this pathway to work.
+   You must be logged out of CEO for this pathway to work.
 
 .. figure:: ../_images/workflows/area_estimation/ceo_project_sepal.png
-   :alt: Creating a CEO project through SEPAL.
+   :alt: Creating a CEO project through SEPAL
    :align: center
 
-When the project has been created, you can skip to `Section 4.2`_.
+When the project has been created, skip to `Section 4.2`_.
 
-You can download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this manual. Directions can be found in the Institutional manual here: https://collect.earth/support.
+You can download a .shp file to examine your points in QGIS, ArcGIS or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this article. Directions can be found in the institutional manual at https://collect.earth/support.
 
 .. _Section 4.1.3:
 
-Creating a CEO project via CSV
-""""""""""""""""""""""""""""""
+Creating a CEO project via .csv
+"""""""""""""""""""""""""""""""
 
-For projects with large sample sizes, where you want to have multiple people collecting validation data, or where you want to use specific validation imagery, you will want to create a project through CEO rather than through the CEO-SEPAL bridge. Note that the total number of plots you want to sample using a CSV file must be 50000 or less. If you have more plots, break it into multiple projects.
+For projects with large sample sizes, where you want to have multiple people collecting validation data or where you want to use specific validation imagery, you will want to create a project through CEO rather than through the CEO-SEPAL bridge. (Note that the total number of plots you want to sample using a .csv file must be 50000 or less. If you have more plots, break it into multiple projects.)
 
-Make sure you have downloaded the .CSV file of your stratified random sample plots (`Section 4.1.2`_). Open your downloaded CSV file in Excel or the spreadsheet program of your choice. First, make sure that your data doesn't contain a strata of ‘no data'. This can occur if your classification isn't a perfect rectangle, as seen in this example of Nepal (the red circles are samples that the tool created in the ‘no data' area).
+Make sure you have downloaded the .csv file of your stratified random sample plots (`Section 4.1.2`_). Open your downloaded .csv file in Excel or the spreadsheet programme of your choice. First, make sure that your data doesn't contain a strata of "no data". This can occur if your classification isn't a perfect rectangle, as seen in this example of Nepal (the red circles are samples that the tool created in the "no data" area).
 
 .. tip::
 
-    If you have ‘no data' rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.
+    If you have "no data" rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.
 
 .. figure:: ../_images/workflows/area_estimation/example_data_sepal_classification.png
-   :alt: Example data from the SEPAL classification.
+   :alt: Example data from the SEPAL classification
    :align: center
 
-Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (i.e. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if that is correct), we suggest first randomizing the order of the rows. To do this, click the :code:`Sort & Filter` button in Excel.
+Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (e.g. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if that is correct), we suggest first randomizing the order of the rows. To do this, select the :code:`Sort & Filter` button in Excel.
 
 .. figure:: ../_images/workflows/area_estimation/sort_filter_excel.png
-   :alt: Using the Sort and Filter features in Excel.
+   :alt: Using the Sort and Filter features in Excel
    :align: center
 
-Next, Sort on the ‘id' field by value, either smallest to largest or largest to smallest.
+Next, Sort on the **id** field by value, either smallest to largest or largest to smallest.
 
 .. figure:: ../_images/workflows/area_estimation/custom_filter_excel.png
-   :alt: A custom sort in Excel.
+   :alt: A custom sort in Excel
    :width: 450
    :align: center
 
-Now we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
+Now we need to add the correct columns for CEO. Remember that latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
 
 -   Rename "id" to PLOTID. You can also add a new PLOTID field by creating a new column labeled PLOTID, and fill it with values 1-(number of rows).
 -   Rename the ‘XCoordinate' column to ‘LONG' or ‘LONGITUDE'.
 -   Rename the ‘YCoordinate' column to ‘LAT' or ‘LATITUDE'.
--   Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
+-   Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns (in that order).
 
-Save your updated CSV file, making sure you save it as a CSV and not as an XLSX file.
+Save your updated .csv file, making sure you save it as a .csv and not as an .xlsk file.
 
-Go to collect.earth. Sign in to your CEO account. If you're already the administrator of an institution, go to your institution's landing page by typing in the institution's name and then selecting the Visit button.
+Go to collect.earth. Sign in to your CEO account. If you're already the administrator of an institution, go to your institution's landing page by typing in the institution's name and then selecting the **Visit** button.
 
 .. tip::
 
-    Creating a project in CEO requires you to be the administrator of an institution. If you're not an admin, you can create a new institution. Select Create new institution from the homepage, then fill out the form & select Create institution.
+    Creating a project in CEO requires you to be the administrator of an institution. If you're not an admin, you can create a new institution. Select **Create new institution** from the homepage, then fill out the form & select **Create institution**.
 
-When you're on the institution's page, select the “Create New Project” button. This will go to the Create Project interface. We'll now talk about what each of the sections on this page does. For more information, please see the Institutional Manual available on the collect.earth Support page https://collect.earth/support.
+When you're on the institution's page, select the **Create new project** button. This will go to the **Create project** interface. We'll now talk about what each of the sections on this page does. For more information, please see the institutional manual available on the collect.earth support page at https://collect.earth/support.
 
--   **TEMPLATE**: This section is used to copy all of the information — including project info, area, and sampling design — from an existing published project to a new project.
+-   **TEMPLATE**: This section is used to copy all of the information — including project info, area and sampling design — from an existing published project to a new project.
 
     -   This is useful if you have an existing project you want to duplicate for another year or location, or if you're iterating through project design. You can use a published or closed project from your institution or another institutions' public project.
 
     -   The project id is found in the URL when you're on the data collection page for the project.
 
--   **PROJECT INFO**: Under Project Info, enter the project's **Name** and **Description.**
+-   **PROJECT INFO**: Under **Project info**, enter the project's **Name** and **Description**.
 
     -   The **Name** should be short and will be displayed on the Home page as well as the project's Data Collection page.
     -   You should keep the **Description** short but informative.
     -   The **Privacy Level** radio button changes who can view your project, contribute to data collection, and whether admins from your institution or others creating new projects can use your project as a template.
 
--   **AOI**: Determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design.
+-   **AOI**: Determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design:
 
     -   First, using CEO's built in system.
-    -   Second, creating a sample in another program and importing it into CEO. **This is what we have done.** You will specify the AOI in the Sample Design step instead.
+    -   Second, creating a sample in another program and importing it into CEO, which what we have done. You will specify the AOI in the sample design step instead.
     -   You should choose your Basemap source, which will be the default imagery that the user sees.
     -   If needed, check the box for any additional imagery you would like to add (optional).
 
 -   **Sample Plot Design**: Here, select the radio button next to .csv.
 
-    -   Select **Upload** and upload the CSV file of your stratified random sample. Note that the number of plots you want to sample must be 5000 or less.
+    -   Select **Upload** and upload the .csv file of your stratified random sample. Note that the number of plots you want to sample must be 5000 or less.
 
     -   Select if you would like round or square plots, and specify the size. For example, you might specify square plots of 30 m width in order to match Landsat grid size.
 
--   **Sample Point Design**: Under the Sample Design header is really determining the sample point design within each sample plot.
+-   **Sample Point Design**: Under the **Sample Design** header, it is really determining the sample point design within each sample plot.
 
-    -   You can choose Random or Gridded, as well as how many samples per plot or the sample resolution respectively. You can also choose to have one central point.
+    -   You can choose **Random** or **Gridded**, as well as how many samples per plot or the sample resolution respectively. You can also choose to have one central point.
 
     -   Using CEO's built-in system, the maximum number of sample points per plot is 200. The maximum total number of sample points for the project across all plots is 50000.
 
 -   **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.
 
-    -   **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the Data Collection interface.
+    -   **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the **Data Collection** interface.
     -   The basic workflow is: Create a new top-level question (new survey card), then populate answers. Create any child questions and answers, then move to the next top-level question (new survey card). Repeat until all questions have been asked.
-    -   You can ask multiple types of questions (including the button—text questions from the Simple interface). You can also add survey rules in the Survey Rules Design panel.
-    -   Broadly, there are four question types and three data types. They are combined into 10 different component types.
+    -   You can ask multiple types of questions (including the button—text questions from the simple interface). You can also add survey rules in the **Survey Rules Design** pane.
+    -   Broadly, there are four question types and three data types. They are combined into ten different component types.
     -   The four question types are:
 
-        -   Button: This creates clickable buttons, allowing users to select one out of many answers for each sample point.
-        -   Input: Allows users to enter answers in the box provided. The answer text provided by the project creator becomes the default answer.
-        -   Radio button: This creates radio buttons, allowing users to select one out of many answers for each sample point.
-        -   Dropdown: Allows users to select from a list of answers.
+        -   **Button**: This creates clickable buttons, allowing users to select one out of many answers for each sample point.
+        -   **Input**: Allows users to enter answers in the box provided. The answer text provided by the project creator becomes the default answer.
+        -   **Radio button**: This creates radio buttons, allowing users to select one out of many answers for each sample point.
+        -   **Dropdown**: Allows users to select from a list of answers.
 
     -   The three data types allowed are:
 
-        -   Boolean: Use this when you have two options for a question (yes/no).
-        -   Text: Use this when you have multiple options which are text strings. They may include letters, numbers or symbols.
-        -   Number: Use this when you have multiple options that are numbers, which do not contain letters or symbols.
+        -   **Boolean**: Use this when you have two options for a question (yes/no).
+        -   **Text**: Use this when you have multiple options that are text strings. They may include letters, numbers or symbols.
+        -   **Number**: Use this when you have multiple options that are numbers, which do not contain letters or symbols.
 
-    -   First, type in your question in the New question box, such as “Is this forest or non-forest?"
-    -   Then select Add survey question.
+    -   First, type in your question in the **New question** box, such as **Is this forest or non-forest?**
+    -   Then select **Add survey question**.
     -   A new survey card (Survey Card Number 1) will pop up with your question in it.
     -   You can now add answers.
-    -   Create one answer for each of your land use types. Here we will use 1 and 2 to match “Forest” and “Non-forest” in our classification. Be sure to include all of your land use types.
-    -   Note that the Stratified Area Estimator--Analysis only accepts numeric values for the land use types. If you would like to use human-readable text values (e.g. Forest instead of 1)
-
-        .. attention::
-
-            You MUST follow the directions in `Section 4.3.2`_.
+    -   Create one answer for each of your land use types. Here we will use **1 and **2** to match **Forest** and **Non-forest** in our classification. Be sure to include all of your land use types.
+    -   Note that the **Stratified Area Estimator--Analysis** only accepts numeric values for the land use types. If you would like to use human-readable text values (e.g. Forest instead of 1), you must follow the directions in `Section 4.3.2`_.
 
     -   You can add additional survey questions, if you'd like to experiment. An example of two survey cards is shown below.
 
 .. figure:: ../_images/workflows/area_estimation/example_survey_card.png
-   :alt: An example survey card setup.
+   :alt: An example survey card setup
    :width: 450
    :align: center
 
-When you're done, click Create Project. If you're successful, you'll see the review project pane. The Project AOI will now show the location of a subset of your plots (a maximum number can be displayed).
+When you're done, select **Create Project**. If you're successful, you'll see the **Review project** pane. The Project AOI will now show the location of a subset of your plots (a maximum number can be displayed).
 
-Not shown are the Plot Review and Sample Design, which show a summary of the choices you made, or the CSV and SHP files you uploaded. Survey Review shows all the Survey Cards you created, along with the corresponding Component Type, Rules, and Answers. At this point, your project has been created, but it has not been published so that other users can see it.
+Not shown are the **Plot Review** and **Sample Design**, which show a summary of the choices you made, or the .csv and .shp files you uploaded. **Survey Review** shows all the **Survey Cards** you created, along with the corresponding **Component Type, Rules,** and **Answers**. At this point, your project has been created, but it has not been published so that other users can see it.
 
 .. see also::
 
-    There is also a review project functionality. As an administrator, you review your unpublished project and make suggestions to the questions, etc., before it is published for data collection.
+    There is also **Review project functionality**. As an administrator, you review your unpublished project and make suggestions to the questions, for instance, before it is published for data collection.
 
-You can either select [Publish Project] or [Configure Geo-Dash]. The option to Configure Geo-Dash will be available after you publish your project, as well. For now, let's click on Configure Geo-Dash. A new window or tab will open and you'll now see the blank Geo-Dash configuration page.
+You can either select **Publish Project** or **Configure Geo-Dash**. The option to **Configure Geo-Dash** will be available after you publish your project as well. For now, let's select **Configure Geo-Dash**. A new window or tab will open and you'll now see the blank **Geo-Dash configuration page**.
 
-Geo-Dash is a dashboard that opens in a second window when users begin to analyze sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery, and digital elevation data. If you click on Geo-Dash Help, You'll access information about all of the Geo-Dash widgets. This information is also in the CEO user manual. Add any widgets that you would like for your project. For example, add a NDVI widget following these steps:
+**Geo-Dash** is a dashboard that opens in a second window when users begin to analyse sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery and digital elevation data. If you select **Geo-Dash Help**, you'll access information about all of the **Geo-Dash widgets**. This information is also in the **CEO user manual**. Add any widgets that you would like for your project. 
 
--   Click on Add Widget, then select the Image Collection type.
--   Select your basemap imagery.
--   Now you'll see the data dropdown menu. Select NDVI in this menu.
--   Now you'll see the Title
+For example, you can add a **NDVI widget** by following these steps:
+
+-   Click on **Add Widget**, then select the **Image Collection** type.
+-   Select your **Basemap imagery**.
+-   Now you'll see the **Data** dropdown menu. Select **NDVI** in this menu.
+-   Now you'll see the **Title**.
 -   Give your widget a title that describes the data.
--   Select the date range using the calendar widgets or by typing it in.
--   Select Create.
+-   Select the date range using the calendar widgets or by entering it.
+-   Select **Create**.
 
-You can now move the widget by clicking and dragging from the center and resize it by clicking and dragging the lower-right corner. When you're done adding widgets, close the Geo-Dash window.
+You can now move the widget by clicking and dragging from the centre and resizing it by clicking and dragging the lower-right corner. When you're done adding widgets, close the **Geo-Dash** window.
 
-On the project review page, click publish project. Collect Earth will ask you to confirm; select OK. You can now visit your project from your institution's page and start collecting data!
+On the **Project review** page, select **Publish project**. Collect Earth will ask you to confirm; select **OK**. You can now visit your project from your institution's page and start collecting data!
 
-More detailed instructions, including descriptions of many useful options, can be found in the manuals for CEO: https://collect.earth/support.
+More detailed instructions, including descriptions of useful options, can be found in the manuals for CEO: https://collect.earth/support.
 
 .. _Section 4.2:
 
 Data collection with data quality management approaches
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have created a stratified random sample, you will use CEO (or optionally the CEO-SEPAL tool) to visually interpret the land cover at the sample locations using a suitable source of reference data, often remote sensing data. These visual interpretations will then inform the area and error estimation (`Section 4.3`_). However, to ensure accurate human interpretation of land cover, you will need to adopt data quality management approaches. In this exercise, you will check your classification design (`Section 4.2.1`_), plan your data collection (`Section 4.2.2`_), collect your data (`Section 4.2.3`_) and set up quality management (`Section 4.2.4`_ & `Section 4.2.5`_).
+Once you have created a stratified random sample, you will use CEO (or the CEO-SEPAL tool) to visually interpret the land cover at the sample locations using a suitable source of reference data (often remote sensing data). These visual interpretations will then inform the area and error estimation (`Section 4.3`_). However, to ensure accurate human interpretation of land cover, you will need to adopt data quality management approaches. In this exercise, you will check your classification design (`Section 4.2.1`_), plan your data collection (`Section 4.2.2`_), collect your data (`Section 4.2.3`_) and set up quality management (`Section 4.2.4`_ and `Section 4.2.5`_).
 
 The reason for this focus on data quality is simple: area and error estimates are based on the human interpreter's labeling of the sample; therefore, it is important that the labels are correct. Some recommend that three interpreters examine each unit independently, while other projects just have a sub-sample of the data points cross-checked by another interpreter. In `Section 4.2.4`_ and `Section 4.2.5`_, you will consider this and design a quality assurance plan that meets the needs and budgets of your specific mapping projects and management needs.
 
-Much of this information is based on Standard Operating Procedures (SOPs) developed by Till Neeff at FAO for global application. Following these exercises will help you abide by these guidelines and meet these standards of quality for the data collected.
-
-.. note::
+Much of this information is based on SOPs developed by Till Neeff at FAO for global application. Following these exercises will help you abide by these guidelines and meet these standards of quality for the data collected.
 
     **Objectives**:
 
-    -   Understand how to set up a successful verification project.
-    -   Collect land cover verification data about each of your sample points.
-    -   Create quality management protocols for your verification project.
-
-.. note::
+    -   understand how to set up a successful verification project;
+    -   collect land cover verification data about each of your sample points; and
+    -   create quality management protocols for your verification project.
 
     **Prerequisites**:
 
-    -   Stratified random sample based on your image classification from `Section 4.1`_.
+    -   stratified random sample based on your image classification from `Section 4.1`_; and
     -   CEO-SEPAL project initiated in `Section 4.1`_.
 
 
@@ -1897,7 +1899,7 @@ Much of this information is based on Standard Operating Procedures (SOPs) develo
 Specify a classification scheme
 """""""""""""""""""""""""""""""
 
-“Classification scheme” is the name used to describe the land cover / land use classes adopted. It should cover all the possible classes that occur in interest. Just as when you are creating training data for your classification, you will need to have a response design with consistent labeling protocols when collecting data for your area and error estimates.
+*Classification scheme* is the name used to describe the land cover/land use classes adopted. It should cover all the possible classes that occur in interest. Just as when you are creating training data for your classification, you will need to have a response design with consistent labeling protocols when collecting data for your area and error estimates.
 
 If you have already created a response design in `Module 2`_, you should use that.
 
@@ -1915,7 +1917,7 @@ As a reminder, our classification used to classify our Forest/Non-forest land co
            lc -> nf;
         }
 
-We defined Forest as an area with over 70% tree cover. We defined Non-forest as areas with less than 70% tree cover. This captured land covers including urban areas, water, and agricultural fields.
+We defined Forest as an area with over 70 percent tree cover. We defined Non-forest as areas with less than 70 percent tree cover. This captured land covers including urban areas, water and agricultural fields.
 
 .. _Section 4.2.2:
 
@@ -1924,22 +1926,23 @@ Planning data collection
 
 Now that we have the framework for the procedure for data collection with quality in mind, we can work through what it would be like setting up the process for a team. Data collection efforts require planning, particularly for large efforts with many interpreters involved. We will discuss these planning aspects here.
 
-In this part, you will assume the role of a **coordinator** and an **interpreter** for a small team working to validate the land cover classification from `Module 2`_. A **coordinator** is responsible for organizing the team and tracking compliance information; An **interpreter** is responsible for collecting data.
+In this part, you will assume the role of a *coordinator* and an *interpreter* for a small team working to validate the land cover classification from `Module 2`_. A *coordinator* is responsible for organizing the team and tracking compliance information; an *interpreter* is responsible for collecting data.
 
-Identify the reference data sources.
+Identify the reference data sources
++++++++++++++++++++++++++++++++++++
 
-Ideally, you would have plots revisited in the field. However, this is rarely attainable given limited resources. An alternative is to collect reference observations through careful examination of the sample units using high resolution satellite data, or moderate resolution if high resolution is not available. The more data you have at your disposal the better.
+Ideally, you would have plots revisited in the field. However, this is rarely attainable given limited resources. An alternative is to collect reference observations through careful examination of the sample units using high-resolution satellite data (or moderate-resolution if high-resolution is not available). The more data you have at your disposal, the better.
 
 If you have no additional data, you can use remote sensing data, such as Landsat data, for collecting reference observations, as long as the process to collect the reference data is more accurate than the process used to create the map being evaluated. Careful manual examination can be regarded as being a more accurate process than automated classification.
 
-Consider what additional data you might be able to include in your verification. Do you have access to satellite data at a finer resolution than Landsat? Could you incorporate additional data sets such as stump data or on-the-ground verifications? You might try searching databases, such as https://developers.google.com/earth-engine/dataset/.
+Consider what additional data you might be able to include in your verification. Do you have access to satellite data at a finer resolution than Landsat? Could you incorporate additional data sets such as stump data or on-the-ground verifications? You might try searching databases, such as https://developers.google.com/earth-engine/dataset.
 
 In CEO, these are the additional data sources that you have added to your CEO project. The CEO-SEPAL bridge uses only the default imagery, which is currently Mapbox Satellite.
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see `Module 5`_).
 
 .. figure:: ../_images/workflows/area_estimation/data_source_recording.png
-   :alt: A data source recording document.
+   :alt: A data source recording document
    :align: center
 
 Determine level of effort
@@ -1956,13 +1959,13 @@ For this exercise, consider how long it took you to create your training data in
 Identify data collection participants
 +++++++++++++++++++++++++++++++++++++
 
-As coordinator, you will identify the persons who may be involved in the data collection. You should set up minimum qualifications for participating in the data collection, such as familiarity with the landscape, previous experience, etc.
+As coordinator, you will identify the persons who may be involved in the data collection. You should set up minimum qualifications for participating in the data collection, such as familiarity with the landscape and previous experience.
 
 -   What qualifications do you think are important?
 -   What qualifications are essential, and which would be nice to have?
 -   How can you build capacity within your organization for data collection?
 
-As coordinator, you will record names and contact information of all the participants in the data collection and training.
+As coordinator, you will record names and contact information of all participants in data collection and training.
 
 Here's a template:
 
@@ -1985,9 +1988,9 @@ And a worked example:
     Rodolfo Vela, example@example.org, Institute for Collecting Data, Sample interpretation
     Yuri Gagarin, example@example.org, Institute for Collecting Data, Sample interpretation
 
-Based on this information, you will decide on the format and modality for the data collection and on a timeline. For example, the format of the data collection can be a mapathon set-up where a large group collects the data over a short amount of time or a smaller team that collects the data over long periods. The modality for the data collection concerns where the team collects the data, either in the same location or disparate locations (e.g. in a mapathon, the interpreters could be in the same room interpreting the data). If the data collection is set up in disparate locations, modes of communication should be specified to help improve the consistency in the data interpretation. Multiple re-measurements for all samples is another option.
+Based on this information, you will decide on the format and modality for the data collection and on a timeline. For example, the format of the data collection can be a mapathon setup where a large group collects the data over a short amount of time or a smaller team that collects the data over long periods. The modality for the data collection concerns where the team collects the data, either in the same location or disparate locations (e.g. in a mapathon, the interpreters could be in the same room interpreting the data). If the data collection is set up in disparate locations, modes of communication should be specified to help improve the consistency in the data interpretation. Multiple remeasurements for all samples is another option.
 
-The logistics manager (if different from the coordinator) will arrange logistics, including space for data collection, sufficient time for data collection, and salary arrangements.
+The logistics manager (if different from the coordinator) will arrange logistics, including space for data collection, sufficient time for data collection and salary arrangements.
 
 With your fictional team (above) and your timeline laid out in the scenario, decide on the format and modality for the data collection and create a timeline.
 
@@ -1999,20 +2002,21 @@ Organize training and calibration sessions
 
 As a first step in the data collection, the coordinator and the trainer organize and prepare a training event for the interpreters who have confirmed their participation. The training should cover the following topics as a minimum:
 
--   the response design and the interpretation key (detailing location-specific examples from all the classes in the classification system with visualization from multiple data sources available),
--   The software used for the data collection and how to ensure the data management and storage,
--   The data sources available, and
--   Quality management practices.
+-   the response design and the interpretation key (detailing location-specific examples from all classes in the classification system with visualization from multiple data sources available);
+-   the software used for the data collection and how to ensure the data management and storage;
+-   the data sources available; and
+-   quality management practices.
 
-Knowing what you do now, consider list items above and briefly fill in details for each topic in another document. Write this as if you were planning a training event before collecting verification data for your forest/non-forest classification. What other topics do you think should be in the training?
+Now knowing what to do, consider list items above and briefly fill in details for each topic in another document. Write this as if you were planning a training event before collecting verification data for your forest/non-forest classification. What other topics do you think should be in the training?
 
 The trainer should then implement the training event following these basic principles:
 
--   Create an environment for active participation, where participants can share questions and opinions;
+-   create an environment for active participation, where participants can share questions and opinions;
 -   encourage communication between the interpreters;
 -   record attendance of the interpreters; and
 -   assess the capacity of the interpreters at the end of the training and record the results.
--   Thinking about the basic principles for a training (a-d above) briefly write out how you might achieve these goals.
+
+Thinking about these basic principles for a training, briefly write out how you might achieve these goals.
 
 Following the training, the coordinator and the trainer should prepare a report summarizing:
 
@@ -2020,7 +2024,7 @@ Following the training, the coordinator and the trainer should prepare a report 
 -   the attendance (example below); and
 -   the results of the assessment of capacity.
 
-This information should be documented as part of the decision making process for the verification (see `Module 5`_).
+This information should be documented as part of the decision-making process for the verification (see `Module 5`_).
 
 .. csv-table::
     :header: Name, Day 1, Day N
@@ -2031,13 +2035,13 @@ This information should be documented as part of the decision making process for
 Distribute and assign sample units to interpreters
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
-As coordinator, you will decide on a fraction of sample units to be assessed multiple times by all interpreters for cross-checking. Using approximately 2.5% of plots for cross-checks is a good starting point. The samples that are duplicated should have a unique identification, and/or be recorded in some way.
+As coordinator, you will decide on a fraction of sample units to be assessed multiple times by all interpreters for cross-checking. Using approximately 2.5 percent of plots for cross-checks is a good starting point. The samples that are duplicated should have a unique identification and/or be recorded in some way.
 
 .. note::
 
-    Note that we'll discuss this aspect of quality management in Part 4, so don't worry about that at this time.
+    We will discuss this aspect of quality management in Part 4.
 
-The coordinator should then allocate sample units to interpreters based on some system. Allocation modalities are the modalities by which sample units are allocated to each interpreter e.g. randomly, following experience in a specific area.
+The coordinator should then allocate sample units to interpreters based on some system. Allocation modalities are the modalities by which sample units are allocated to each interpreter (e.g. randomly), following experience in a specific area.
 
 .. tip::
 
@@ -2050,14 +2054,14 @@ The coordinator should use a standardized naming structure to distribute the sam
 
     X sample units, Interpreter 1, e.g. collection_data_date \n[year/month/day] \n_version_number.csv, Link to cloud storage or folder path to repository
 
-In CEO, multiple interpreters can work on the same project at the same time. This makes it very easy to collect data collaboratively. When you later download the data, each interpreter's email address will be attached to the point they collected. If you use CEO-SEPAL, you cannot collect this information at the time of writing.
+In CEO, multiple interpreters can work on the same project at the same time. This makes it very easy to collect data collaboratively. When you later download the data, each interpreter's email address will be attached to the point they collected. If you use CEO-SEPAL, you cannot collect this information (as of the date of writing this article).
 
 .. _Section 4.2.3:
 
 Collecting data
 """""""""""""""
 
-After training and sample allocation, it is time to collect data. This can occur in the CEO-SEPAL interface (for smaller projects) or via CEO for larger or multi-user projects. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect, however the directions are largely the same for the CEO-SEPAL bridge.  How to set up a CEO project is discussed in Exercise 4.1 Part 2. How to set up a CEO-SEPAL project is discussed at the end of `Section 4.1.1`_.
+After training and sample allocation, it is time to collect data. This can occur in the **CEO-SEPAL** interface (for smaller projects) or via CEO for larger or multiuser projects. Here, we will demonstrate collecting data in CEO to ensure compliance with SOPs and oversight requiring interpreter names be collected for the points they collect; however, the directions are largely the same for the CEO-SEPAL bridge. How to set up a CEO project is discussed in Part 2 of Exercise 4.1. How to set up a CEO-SEPAL project is discussed at the end of `Section 4.1.1`_.
 
 Data collection by interpreters
 +++++++++++++++++++++++++++++++
@@ -2075,23 +2079,23 @@ Data collection in CEO
 To collect data in CEO, navigate to the project you created in `Section 4.1.2`_. Your screen should look like this:
 
 .. figure:: ../_images/workflows/area_estimation/data_collection_CEO.png
-    :alt: The data collection interface in CEO.
+    :alt: The data collection interface in CEO
     :align: center
 
-Select **Go to first plot.** This will take you to your first plot. Answer all of the questions for your first plot by selecting the appropriate answers. If you created multiple questions, you can navigate between questions using the numbers above your question text. Select :code:`Save` to save your answers and move on to the next plot.
+Select **Go to first plot**. This will take you to your first plot. Answer all questions for your first plot by selecting the appropriate answers. If you created multiple questions, you can navigate between questions using the numbers above your question text. Select :code:`Save` to save your answers and move on to the next plot.
 
 .. figure:: ../_images/workflows/area_estimation/data_collection_process.png
-   :alt: The data collection process in CEO.
+   :alt: The data collection process in CEO
    :align: center
 
-Continue answering questions until you reach the last plot. When you have finished answering all of the questions, go to your Institution's page.
+Continue answering questions until you reach the last plot. When you have finished answering all questions, go to your institution's page.
 
 .. note::
 
     Your project name should now be green, indicating that all plots have been completed. If it is yellow, select the project name and answer the remaining questions.
 
 .. figure:: ../_images/workflows/area_estimation/ceo_sepal_manual.png
-   :alt: A partly completed project.
+   :alt: A partially completed project
    :align: center
 
 Select the :code:`S` next to the project. This will download your project's sample data. Save it to your hard drive.
@@ -2099,9 +2103,9 @@ Select the :code:`S` next to the project. This will download your project's samp
 Data collection in CEO-SEPAL bridge
 +++++++++++++++++++++++++++++++++++
 
-For this example, go to the web address associated with your CEO-SEPAL bridge project. It should look something like this: https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf. You must be signed out of CEO for this link to work.
+For this example, go to the web address associated with your CEO-SEPAL bridge project (e.g. https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf). You must be signed out of CEO for this link to work.
 
-Select :code:`Go to first plot`. This will take you to your first plot. With the CEO-SEPAL bridge, there is only one question. It is “CLASS”, where you must assign the appropriate value to your point. The CEO-SEPAL bridge uses the names you entered during the legend labeling stage of the Sample Design.
+Select :code:`Go to first plot`. This will take you to your first plot. With the CEO-SEPAL bridge, there is only one question, **CLASS**, where you must assign the appropriate value to your point. The CEO-SEPAL bridge uses the names you entered during the legend labeling stage of the sample design.
 
 Select :code:`Save` to save your answers and move on to the next plot.
 
@@ -2110,9 +2114,9 @@ Continue answering questions until you reach the last plot.
 Data assembly
 +++++++++++++
 
-Data assembly is required ONLY when you have multiple data interpreters, each working on their own project. If you have used the CEO pathway above with multiple interpreters contributing to the same project, this step is not needed.
+Data assembly is required only when you have multiple data interpreters – each working on their own project. If you have used the CEO pathway above with multiple interpreters contributing to the same project, this step is not needed.
 
-If you have multiple interpreters, after the data collection is completed, the coordinator should create a consolidated database with all the collected sample data.
+If you have multiple interpreters, after the data collection is completed, the coordinator should create a consolidated database with all collected sample data.
 
 -   The coordinator should check that all necessary metadata and sample information is archived and included in the final database.
 -   A description of the column names from the database should be archived with the database.
@@ -2122,7 +2126,7 @@ Each sample in the consolidated database notes the round of data collection. The
 
 .. tip::
 
-    In CEO, this is handled through the Institution's Project interface.
+    In CEO, this is handled through the institution's **Project** interface.
 
 .. _Section 4.2.4:
 
@@ -2137,13 +2141,13 @@ Also be sure to document all impossible transitions. These should be included in
 
 Conduct ongoing hot, cold and auxiliary data checks during data collection and conduct regular review meetings among all interpreters. We'll go through each of these now.
 
--   **Auxiliary data checks**: use an external data source, such as externally created maps, to compare to the sample unit classification. Discrepancies between the two data sets can be flagged for rechecking. Confirmed differences between the two data sets can be documented to showcase why sample-based area estimation may give different results than other data sources.
+-   **Auxiliary data checks**: use an external data source, such as externally created maps, to compare to the sample unit classification. Discrepancies between the two datasets can be flagged for rechecking. Confirmed differences between the two data sets can be documented to showcase why sample-based area estimation may give different results than other data sources.
 
-    The Copernicus Global Land Cover Layers: CGLS-LC100 collection 2, available via GEE, can be used as a comparison layer https://developers.google.com/earth-engine/dataset/catalog/COPERNICUS_Landcover_100m_Proba-V_Global.
+    The Copernicus Global Land Cover Layers: CGLS-LC100 collection 2, available via GEE, can be used as a comparison layer (see https://developers.google.com/earth-engine/dataset/catalog/COPERNICUS_Landcover_100m_Proba-V_Global).
 
     .. tip::
 
-        Ask questions when comparing your map and auxiliary maps:
+        Ask the following questions when comparing your map and auxiliary maps:
 
         -   Where do you notice agreement between the two maps?
         -   Where do you notice disagreement between the two maps?
@@ -2151,7 +2155,7 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
 
 -   **Cold checks**: sample units that are randomly selected from the data produced by interpreters. The decisions made by the interpreters are reviewed by the coordinator or group of interpreters meeting together. If the error by the interpreter reflects a systematic error in their interpretation, it is discussed directly with the interpreter and the affected sample units are corrected.
 
-    Review the table below that was a result of a cold check you conducted on the plots analyzed by the interpreters.
+    Review the table below that was a result of a cold check you conducted on the plots analysed by the interpreters.
 
     .. note::
 
@@ -2189,7 +2193,7 @@ Quality control refers to the quality of interpretation through cross-validation
 
 Establish a reference interpretation for each of the cross-validation sample units.
 
-Choose a reference interpretation (this should be one of the interpreter's class assignments. This reference interpretation will be the basis for establishing the performance of individual interpreters.
+Choose a reference interpretation (this should be one of the interpreter's class assignments; it will be the basis for establishing the performance of individual interpreters).
 
 Calculate agreement for each interpreter based on the reference interpretation. For each pair of interpreters, create a confusion matrix and include it in your project documentation.
 
@@ -2256,11 +2260,11 @@ Using the table below, calculate the agreement between interpreters:
 .. csv-table::
     :header: Interpreter, Overall agreement
 
-    Sally Ride, Sum of counts in all of the diagonal cells/ Sum of all counts
-    Rodolfo Vela, Sum of counts in all of the diagonal cells/ Sum of all counts
-    Yuri Gagarin, Sum of counts in all of the diagonal cells/ Sum of all counts
+    Sally Ride, Sum of counts in all of the diagonal cells/Sum of all counts
+    Rodolfo Vela, Sum of counts in all of the diagonal cells/Sum of all counts
+    Yuri Gagarin, Sum of counts in all of the diagonal cells/Sum of all counts
 
-Per-class agreement among interpreters should be analyzed and reported as follows:
+Per-class agreement among interpreters should be analysed and reported as follows:
 
 ..csv-table
     :header: , All interpreters agreeing, One interpreter disagreeing, Two interpreters disagreeing, etc.
@@ -2303,22 +2307,19 @@ Area and uncertainty estimation
 
 The final step of calculating the sample-based estimates of error and area involves taking the map areas (generated in `Section 4.1`_) and your verification data points from our data collection (`Section 4.2`_), conducted according to the response design rules (`Section 4.1`_), and using statistics to output the final estimates of area and uncertainty.
 
-In `Section 4.3.1`_, we provide an optional description of error matrices, also called confusion matrices. This provides the underlying theory for using the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
-Please note that you will need to upload your collected data from CEO to Sepal using the directions found in `section 4.1.1`_. If you used the CEO-SEPAL bridge, you must log out of CEO for the “Import CEO Project” link to work.
+In `Section 4.3.1`_, we provide an optional description of error matrices, also called confusion matrices. This provides the underlying theory for using the SEPAL **Stratified estimator--Analysis** tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
 
-.. note::
+Please note that you will need to upload your collected data from CEO to SEPAL using the directions found in `Section 4.1.1`_. If you used the CEO-SEPAL bridge, you must log out of CEO for the **Import CEO Project** link to work.
 
-    **objectives**:
+    **Objectives**:
 
-    -   Create area estimate for your classification.
-    -   Create uncertainty/error estimate for your classification.
-
-.. note::
+    -   create area estimate for your classification; and
+    -   create uncertainty/error estimate for your classification.
 
     **Prerequisites**:
 
-    -   Completed verification data, or reference data (`Section 4.2`_).
-    -   Map areas generated by your sampling design (`Section 4.1`_).
+    -   completed verification data, or reference data (`Section 4.2`_); and
+    -   map areas generated by your sampling design (`Section 4.1`_).
 
 .. _Section 4.3.1:
 
@@ -2329,125 +2330,124 @@ Understanding the error matrix
 
     This step is optional.
 
-A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
+A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm-assigned) map category labels to the (human-assigned) reference category labels (your validation classification). The count for each pair-wise combination are included in the blue and yellow cells in the following example.
 
 .. figure:: ../_images/workflows/area_estimation/confusion_matrix_example.png
-   :alt: A confusion matrix example.
+   :alt: A confusion matrix example
    :align: center
 
 -   The main diagonal of the error matrix (blue cells) includes the count of the number of correct classifications.
 -   The off-diagonal elements (yellow cells) show map classification errors.
--   The user's accuracy can be quantified by dividing the number of correctly classified plots by the sum of the plots classified as the mapped class. For the forest class in the example above, this is 17 correctly identified points divided by 19 total forest plots. User's accuracies for each class are shown in the orange cells. User's accuracy is the complement of errors of commission (sites that are classified as forest in the map, but are not actually forest).
+-   The user's accuracy can be quantified by dividing the number of correctly classified plots by the sum of the plots classified as the mapped class. For the forest class in the example above, this is 17 correctly identified points divided by 19 total forest plots. User's accuracies for each class are shown in the orange cells (user's accuracy is the complement of errors of commission – sites that are classified as forest in the map but are not actually forest).
 -   The producer's accuracy can be quantified by dividing the number of correctly classified plots by the sum of the plots classified as the mapped class in the validation reference sample. For the forest class in the example above, this is 17 correctly identified points divided by 20 samples that were classified as forest from the reference data. Producer's accuracies for each class are shown in the pink cells. Producer's accuracy is the complement of errors of omission (sites that are not classified as forest in the map that are actually forest).
-
 
 For your own data, calculate an error matrix following the above guidelines.
 
 .. figure:: ../_images/workflows/area_estimation/example_error_matrix.png
-   :alt: An example error matrix.
+   :alt: An example error matrix
    :align: center
 
 Here's a completed example for a project using 4 classes:
 
 .. figure:: ../_images/workflows/area_estimation/example_error_matrix_4class.png
-   :alt: Example error matrix for a 4 class project.
+   :alt: Example error matrix for a four-class project
    :align: center
 
-In this example, the user's accuracy for Forest is 94.7%; so the error of commission is 5.3%. The user's accuracy for water is 90%, which means the error of commission is 10%. What this means is that according to the reference data, the map creator mapped 5.3% of Forest land cover in the wrong class and 10% of water in the wrong class. The producer's accuracy for Forest is 75%, meaning the error of omission is 25%. The producer's accuracy for water is 90%, so the error of omission is 10%. This means that 25% of the forest reference samples were mapped in the wrong land cover class, while only 10% of water was mapped in the wrong class. Calculate the errors of omission and commission for Other and Cloud land cover classes.
+In this example, the user's accuracy for Forest is 94.7 percent; the error of commission is 5.3 percent. The user's accuracy for water is 90 percent, which means the error of commission is 10 percent. What this means is that according to the reference data, the map creator mapped 5.3 percent of Forest land cover in the wrong class and 10 percent of water in the wrong class. The producer's accuracy for Forest is 75 percent, meaning the error of omission is 25 percent. The producer's accuracy for water is 90 percent, so the error of omission is 10 percent. This means that 25 percent of the forest reference samples were mapped in the wrong land cover class, while only 10 percent of water was mapped in the wrong class. Calculate the errors of omission and commission for Other and Cloud land cover classes.
 
 Once the error matrix is created, the area estimation becomes straightforward. Essentially, we use the frequency of these errors of omission and commission for each map class to calculate updated map areas based on our knowledge of how likely each class is to be classified as something else. We can also calculate the uncertainties for the total area of each class.
 
-At the heart of the analysis is the implementation of an unbiased area estimator. Different estimators can be implemented to assess accuracy. In the next part, you will use a stratified estimation since you have a sample stratified by the discrete map classes.
+At the heart of the analysis is the implementation of an unbiased area estimator. Different estimators can be implemented to assess accuracy. In the next part, you will use stratified estimation since you have a sample stratified by the discrete map classes.
 
 .. _Section 4.3.2:
 
-Preparing your CEO collected data for analysis in SEPAL
+Preparing your CEO-collected data for analysis in SEPAL
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. note::
 
     This step is optional.
 
-Open the CSV file you downloaded from CEO in `Section 4.2.3`_. It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”. Inspect the column data.
+Open the .csv file you downloaded from CEO in `Section 4.2.3`_. It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”. Inspect the column data.
 
 You should have:
 
 -   A column named “PL_MAP_CLASS” that consists of numeric values. These are the classes assigned by the classification.
--   A column with your question about the correct map class as the column header. In this example, it is: “IS THIS FOREST OR NON-FOREST”.
+-   A column with your question about the correct map class as the column header. In this example, it is: **IS THIS FOREST OR NON-FOREST**.
 
 These are the classes you assigned manually in CEO based on map imagery. This will either be numeric (1 or 2) or text (Forest and Non-forest) depending on how you set up your CEO project.
 
 .. note::
 
-    If your column for the correct map class is numeric, you can directly save your CSV file and upload it to SEPAL.
+    If your column for the correct map class is numeric, you can directly save your .csv file and upload it to SEPAL.
 
 If your column for the correct map class is text, you will need to either:
 
--   Check that your text column matches exactly the Legend Labels you added during sample design (Exercise 4.1).
--   Check that capitalization is the same, e.g. Non-forest and Non-forest not Non-forest and non-forest.
--   OR Create another column with the associated numeric value. In this very case:
+-   check that your text column matches exactly the legend labels you added during sample design (Exercise 4.1);
+-   check that capitalization is the same (e.g. Non-forest and Non-forest not Non-forest and non-forest); or
+-   create another column with the associated numeric value. In this case:
 
-    -   First, create a new column and name it COLLECTED_CLASS.
+    -   First, create a new column and name it **COLLECTED_CLASS**.
     -   In the formula cell, type: =IF([text column letter]2="Forest",1,2). For this example, the text column letter is U.
 
         .. note::
 
-            This will use an "if statement" to assign the number 1 to sample plots you assigned the value “Forest” to, and the number 2 to other plots (here, plots labeled Non-forest). If you have more than two classes, you will need to use nested if statements.
+            This will use an *if statement* to assign the number 1 to sample plots you assigned the value “Forest” to, and the number 2 to other plots (here, plots labeled Non-forest). If you have more than two classes, you will need to use nested if statements.
 
-    -   Press enter. You should now see either a 1 or a 2 populate the column. Double check that it is the correct value.
+    -   Press enter. You should now see either a 1 or a 2 populate the column. Double-check that it is the correct value.
     -   Fill the entire column.
 
 .. figure:: ../_images/workflows/area_estimation/example_dataset.png
-   :alt: An example dataset.
+   :alt: An example dataset
    :width: 400
    :align: center
 
-Save your CSV file and upload it to SEPAL.
+Save your .csv file and upload it to SEPAL.
 
 .. _Section 4.3.3:
 
 Using the stratified estimator in SEPAL
 """""""""""""""""""""""""""""""""""""""
 
-The aim of this stratified sampling design tool is to analyze results from a stratified sampling design that can be used for area estimates. The idea is to combine a map (used as a stratification of the landscape of interest) with a visual map interpretation of samples to produce an area estimation.
+The aim of this stratified sampling design tool is to analyse results from a stratified sampling design that can be used for area estimates. The idea is to combine a map (used as a stratification of the landscape of interest) with a visual map interpretation of samples to produce an area estimation.
 
 The concept is derived from map accuracy assessment principles: characterized frequency of errors (omission and commission) for each map class may be used to compute area estimates and also to estimate the uncertainties (confidence intervals) for the areas for each class.
 
-First, open the Stratified Area Estimator-Analysis Tool. In the Apps SEPAL window, select Stratified Area Estimator - Analysis. This tool is very similar to the Design tool that you used to create your stratified sample.
+First, open the **Stratified Area Estimator-Analysis** tool. In the SEPAL **Apps** window, select **Stratified Area Estimator - Analysis**. This tool is very similar to the **Design** tool that you used to create your stratified sample.
 
-You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
+You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that **Reference** and **Documents** are in the same place as the **Design** tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
 .. figure:: ../_images/workflows/area_estimation/stratified_estimator_analysis_tool.png
-   :alt: The stratified estimator analysis tool.
+   :alt: The stratified estimator analysis tool
    :align: center
 
 Select the **Inputs** page on the left side of the screen. You will see two data requirements under the **Select input files** section.
 
--   **Reference Data**:  this refers to the table that you classified and exported in the previous section. It will contain a column that identifies the map output class for each point as well as a column for the value from the image interpreter (validation classification).
+-   **Reference Data**: This refers to the table that you classified and exported in the previous section. It will contain a column that identifies the map output class for each point as well as a column for the value from the image interpreter (validation classification).
 
-    -   For projects completed in CEO: Select the **Reference data** button and navigate to the CSV file you downloaded from CEO and then uploaded to SEPAL in `Section 4.3.2`_.
+    -   For projects completed in CEO: Select the **Reference data** button and navigate to the .csv file you downloaded from CEO and then uploaded to SEPAL in `Section 4.3.2`_.
     -   For projects completed in the CEO-SEPAL bridge:
         -   Check that you are signed out of the CEO website.
-        -   Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO url**. You can also click the **Paste CEO url from clipboard** button.
-        -   Click :code:`Import CEO project`. This will populate the input file for the Reference data as well as the column names.
+        -   Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO URL**. You can also click the **Paste CEO URL from clipboard** button.
+        -   Select :code:`Import CEO project`. This will populate the input file for the reference data as well as the column names.
 
--   **Area data**:  This is a CSV file that was automatically created during the Stratified Area Estimator--Design workflow. It contains area values for each mapped land cover class.
+-   **Area data**:  This is a .csv file that was automatically created during the **Stratified Area Estimator – Design** workflow. It contains area values for each mapped land cover class.
 
     -   Select the **Area data** button.
-    -   Open the **sae_design_AmazonClassification** folder, or the folder labeled :code:`sae_design_your-name-here`, if you did not call your classification **AmazonClassification**. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification). Within this folder, select **area_rast.csv** (see image below).
+    -   Open the **sae_design_AmazonClassification** folder, or the folder labeled :code:`sae_design_your-name-here` (if you did not call your classification **AmazonClassification**). As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL **Downloads** folder. (downloads > classification folder > sae_design_AmazonClassification). Within this folder, select **area_rast.csv** (see image below).
 
 .. figure:: ../_images/workflows/area_estimation/add_classification.png
-   :alt: Adding the classification.
+   :alt: Adding the classification
    :width: 450
    :align: center
 
-Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** panel on the right side of the screen.
+Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** pane on the right side of the screen.
 
 Choose the column with the reference data information.
 
 .. note::
 
-    -   For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in `Section 4.3.2`_.
+    -   For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here, it is COLLECTED_CLASS (following the directions in `Section 4.3.2`_).
     -   For projects completed in CEO-SEPAL: ref_code
 
 Choose the column with the map data information.
@@ -2463,42 +2463,42 @@ Choose the class column from the area file—map_code or map_edited_class. The m
 
 .. note::
 
-    -   For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization.
+    -   For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class, you must make sure that capitalization is consistent.
     -   For projects completed in CEO-SEPAL, use map_code.
 
 You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column). This example uses a CEO project.
 
 .. figure:: ../_images/workflows/area_estimation/required_input_fields.png
-   :alt: The required input fields.
+   :alt: The required input fields
    :width: 450
    :align: center
 
-Once you have set these input parameters, select :code:`Check` on the left side of the window. This page will simply plot your samples on a world map. Fix the locations of your plots by specifying the correct columns to use as the X and Y coordinates in the map. Select the drop down menus and choose the appropriate coordinate columns for X and Y coordinates. X coordinate should be LON; Y coordinate should be LAT.
+Once you have set these input parameters, select :code:`Check` on the left side of the window. This page will simply plot your samples on a world map. Fix the locations of your plots by specifying the correct columns to use as the X and Y coordinates in the map. Select the dropdown menus and choose the appropriate coordinate columns for the X and Y coordinates. The X coordinate should be LON; the Y coordinate should be LAT.
 
 Next, select the :code:`Results` page on the left side of the screen.
 
-The **Results** page will display a few different accuracy statistics, including a **Confusion Matrix, Area Estimates,** and a **Graph** of area estimates with confidence intervals. The Confusion Matrix enables you to assess the agreement of the map and validation data sets.
+The **Results** page will display a few different accuracy statistics, including a **Confusion Matrix, Area Estimates,** and a **Graph** of area estimates with confidence intervals. The Confusion Matrix enables you to assess the agreement of the map and validation datasets.
 
-The rows represent your assignments, while the columns represent the map classifier's. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
+The rows represent your assignments, while the columns represent the map classifiers. The diagonal represents the number of samples that are in agreement, while the off-diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
 .. figure:: ../_images/workflows/area_estimation/confusion_matrix_output_sepal.png
-   :alt: The confusion matrix output by SEPAL.
+   :alt: The confusion matrix output by SEPAL
    :width: 450
    :align: center
 
-Typically, you would have to create the confusion table yourself and calculate the accuracies; however, the SAE-Analysis tool does this for you.
+Typically, you would have to create the confusion table yourself and calculate the accuracies; however, the **SAE-Analysis** tool does this for you.
 
 .. seealso::
 
-    -   If you completed `Section 4.3.1`_, how does the SAE-Analysis tool's calculations compare with your own?
-    -   You can download the confusion matrix as tabular data (a CSV file) using the button.
+    -   If you completed `Section 4.3.1`_, how does the **SAE-Analysis** tool's calculations compare with your own?
+    -   You can download the confusion matrix as tabular data (a .csv file) using the button.
 
-Under **Area estimates**, the table shows you the area estimates, and producer's and user's accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
+Under **Area estimates**, the table shows you the area estimates, as well as producer's and user's accuracies – all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
 
-Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** by using the slider at the top of the panel. You can Download area estimates as tabular data (a CSV file) using the button.
+Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values. Note that all area estimates are in map units. You can change your desired **confidence interval** by using the slider at the top of the pane. You can **Download area estimates** as tabular data (a .csv file) using the button.
 
 .. figure:: ../_images/workflows/area_estimation/area_estimate.png
-   :alt: The Area estimates screen in SEPAL.
+   :alt: The Area estimates screen in SEPAL
    :align: center
 
 The **Graph** plots area estimates based on: map pixel count, stratified random sample, simple random sample, unbiased stratified random and direct estimate stratified random.
@@ -2507,10 +2507,10 @@ In this exercise, we collected validation data using a stratified sample, so the
 
 .. note::
 
-    The Map pixel count value differs from these stratified random sample estimates. This shows how using a Map pixel count is a poor estimation of actual area.
+    The map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
 .. figure:: ../_images/workflows/area_estimation/area_estimate_graph.png
-   :alt: A graph of the area estimates based on different sample design.
+   :alt: A graph of the area estimates based on different sample design
    :width: 450
    :align: center
 
@@ -2521,7 +2521,7 @@ Documentation and archiving
 
 Documentation of your area estimate and archiving this information for future reference are critical in order to replicate your estimation process. Examples where you would want to repeat your analysis include different areas (states, provinces, ecological regions) or time periods (months, years).
 
-We have built in documentation steps into other modules of this guide; however here we bring this information together. We discuss key documentation steps, including logging decision points (`Section 5.1`_), Reporting (`Section 5.2`_), Commenting in code (`Section 5.3`_), and Version control (`Section 5.4`_), as well as archiving steps (`Section 5.5`_).
+We have built in documentation steps into other modules of this guide; however here we bring this information together. We discuss key documentation steps, including logging decision points (`Section 5.1`_), Reporting (`Section 5.2`_), Commenting in code (`Section 5.3`_), and Version control (`Section 5.4`_), as well as Archiving steps (`Section 5.5`_).
 
 This module should take approximately 1 hour to read. The time taken to complete this module for your specific situation will vary depending on the size and scope of your project.
 
@@ -2532,26 +2532,26 @@ Logging decision points
 
 Logging decision points is a critical part of documenting your area estimation process and being able to recreate your estimation process.
 
-A decision point is anywhere where you make a decision about your project that can change the outcome (e.g. “We decided that pixels with over 75% tree cover should be classified as Forest cover” is a decision point).
+A decision point is anywhere where you make a decision about your project that can change the outcome (e.g. “We decided that pixels with over 75 percent tree cover should be classified as Forest cover” is a decision point).
 
 In the previous modules, we have suggested that you document these types of decision points as you go along. This includes:
 
 * `Module 2`_:
 
-  * Logging your land use decision tree (`Section 2.1`_).
-  * Logging your land use classification definitions (`Section 2.1`_).
-  * Settings used for classification, along with any refinements (`Section 2.4`_).
+  * logging your land use decision tree (`Section 2.1`_);
+  * logging your land use classification definitions (`Section 2.1`_); and
+  * settings used for classification, along with any refinements (`Section 2.4`_).
 
 * `Module 3`_:
 
-  * Logging two date change detection decisions, including what classes can change and imagery and processes used in the classification (`Section 3.1`_)
+  * logging two-date change detection decisions, including what classes can change and imagery and processes used in the classification (`Section 3.1`_).
 
 * `Module 4`_:
 
-  * Stratification choices (`Section 4.1`_).
-  * Data collection procedures (`Section 4.2`_).
+  * stratification choices (`Section 4.1`_); and
+  * data collection procedures (`Section 4.2`_).
 
-You may also choose to follow your organization's Standard Operating Procedures (e.g. https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing).
+You may also choose to follow your organization's SOPs (e.g. https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing).
 
 .. _Section 5.2:
 
@@ -2564,56 +2564,56 @@ Here we provide a rough outline of what you should include in your reporting.
 
 In your report, you should include:
 
--   An introduction, describing why the project was completed and any goals of the project.
--   Your project's methods (how your project was completed), including:
+-   an introduction, describing why the project was completed and any goals of the project
+-   your project's methods (how your project was completed), including:
 
-    -   All tools used in your analysis.
-    -   All decision points (`Section 5.1`_).
-    -   Any other information needed to recreate your project.
+    -   all tools used in your analysis
+    -   all decision points (`Section 5.1`_)
+    -   any other information needed to recreate your project
 
--   Your project results:
+-   your project results:
 
-    -   Your area estimation (`Section 4.3`_).
-    -   The error associated with your classification (`Section 4.3`_).
-    -   A comparison of any self checks (one interpreter) and cross checks (between interpreters) with the main sets of plots.
+    -   your area estimation (`Section 4.3`_).
+    -   the error associated with your classification (`Section 4.3`_)
+    -   a comparison of any self-checks (one interpreter) and cross-checks (between interpreters) with the main sets of plots.
 
--   Any actions or next steps arising from your analysis.
+-   any actions or next steps arising from your analysis.
 
 Writing your report will take time and attention. Documenting your steps along the way, as discussed in Modules 1-4 and Exercise 5.1 will help you write your report more efficiently.
 
 .. attention::
 
-    **Always follow your organization's reporting guidelines** (e.g. if your estimation is developed to support a National Forest Monitoring System, you will need to comply with UN reporting standards).
+    **Always follow your organization's reporting guidelines** (e.g. if your estimation is developed to support a NFMS, you will need to comply with UN reporting standards).
 
-FAO's Standard Operating Procedure requires reports include at least the following information about the data collection process:
+FAO's SOP requires reports to include at least the following information about the data collection process:
 
--   A brief narrative on the modalities for data collection.
--   The interpreters, their contact information, institutions and roles.
--   Overview of sample unit allocation to interpreters and any subsequent revisions made to the allocation.
--   A summary of the training conducted that details the topics covered.
--   A list of attendees for the training and their attendance record.
--   Challenges and limitations during the data collection.
--   Potential sources of bias during the data collection.
--   Impossible transitions excluded from data collection.
--   The results of the assessment of interpretation quality.
--   External appraisal of interpretation quality contact information and narrative report from the appraiser
+-   a brief narrative on the modalities for data collection;
+-   the interpreters, their contact information, institutions and roles;
+-   overview of sample unit allocation to interpreters and any subsequent revisions made to the allocation;
+-   a summary of the training conducted that details the topics covered;
+-   a list of attendees for the training and their attendance record;
+-   challenges and limitations during the data collection;
+-   potential sources of bias during the data collection;
+-   impossible transitions excluded from data collection;
+-   the results of the assessment of interpretation quality; and
+-   external appraisal of interpretation quality contact information and narrative report from the appraiser.
 
 .. _Section 5.3:
 
-Commenting in Scripts
+Commenting in scripts
 ^^^^^^^^^^^^^^^^^^^^^
 
 While none of the steps involved in this manual require writing code, more complex classification projects may use programming environments such as GEE. This exercise discusses best practices for commenting your code if you use tools such as GEE.
 
 Leaving comments in your code can be a helpful way to describe information of what a particular function does, leave warnings or considerations to other programmers (including your future self!), provide key information on licensing, or save information on what you still want to complete while coding. In this section, we will briefly demonstrate both good and bad commenting techniques.
 
-When commenting your code you should take into account your target audience. Is your code going to be used for a workshop? Will it be read by other scientists or programmers? Will you lose access to it after submitting it to a publication or project partner? Answering these questions will help you determine what approach to take when commenting your code.
+When commenting your code, you should take into account your target audience. Is your code going to be used for a workshop? Will it be read by other scientists or programmers? Will you lose access to it after submitting it to a publication or project partner? Answering these questions will help you determine what approach to take when commenting.
 
 Many of these tips are derived from the suggestions laid out in Robert C. Martins' book *Clean Code*, which would be a good reference if you would like to learn more about coding cleanly and commenting:
 
 -   **Keep comments short**. Keeping your comments short is helpful to both the writer of the comment and the reader. Having multiple long comments in your code can lead to readers skipping over them and thus making them inefficient. Long comments can start to clutter your code.
 
-- It is best to use comments **sparingly**; when possible, **rename variables** or use functions to reflect what you would like to have commented. Comments can quickly become outdated and are less of a priority to update. Comments are a representation of what your code does, but can sometimes be misleading.
+-   It is best to use comments **sparingly**; when possible, **rename variables** or use functions to reflect what you would like to have commented. Comments can quickly become outdated and are less of a priority to update. Comments are a representation of what your code does, but can sometimes be misleading.
 
 -   Using comments to add some informative content or explain the intent behind your code, but **don't be redundant**. Informative comments are little snippets of information that aid in reading through your code. A comment explaining your intent can be useful where the processing you have done is slightly complicated to read through.
 
@@ -2703,7 +2703,7 @@ In this exercise we will touch upon how to be transparent with your code and sav
 Version Control and Git
 """""""""""""""""""""""
 
-Version control is “a system that records changes to a file or set of files over time so that you can recall specific versions later” (Git 2020; Online at: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). Version control can be applied to many different file types, but is most commonly used with text based code, such as Python and R scripts.
+Version control is “a system that records changes to a file or set of files over time so that you can recall specific versions later” (Git, 2020; see https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). Version control can be applied to many different file types, but is most commonly used with text-based code, such as Python and R scripts.
 
 .. note::
 
@@ -2711,19 +2711,19 @@ Version control is “a system that records changes to a file or set of files ov
 
 We'll start by exploring how version control can be used to keep track of what one person did and when.
 
-We've all been in this situation before: it seems ridiculous to have multiple nearly-identical versions of the same document. Some word processors let us deal with this a little better, such as Microsoft Word's Track Changes, Google Docs' version history, or LibreOffice's Recording and Displaying Changes.
+We've all been in this situation before: it seems ridiculous to have multiple, nearly identical versions of the same document. Some word processors let us deal with this a little better, such as Microsoft Word's Track Changes, Google Docs' Version History, or LibreOffice's Recording and Displaying Changes.
 
 Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your most recent version.
 
 .. figure:: ../_images/workflows/area_estimation/version_control_system.png
-   :alt: Figure showing how version control systems work.
+   :alt: Figure showing how version control systems work
 
 Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document (e.g. two users can make independent sets of changes on the same document).
 
 .. figure:: ../_images/workflows/area_estimation/version_control_multiple_contributors.png
    :alt: Version control with multiple contributors.
 
-A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.GitHub.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.GitHub.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
+A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.GitHub.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.GitHub.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.
 
 Of version control systems, Git (and implementation GitHub that includes a GUI Desktop version) is perhaps the most widely used. Here we provide a very basic overview of Git and links to additional resources.
 
@@ -2733,18 +2733,18 @@ This is also a great way to share or collaborate on code. You can easily send a 
 
 .. seealso::
 
-    If you would like to learn more about Git or version control, you can work through the Software Carpentry workshop at your own pace here: http://swcarpentry.GitHub.io/git-novice/.
+    If you would like to learn more about Git or version control, you can work through the Software Carpentry workshop at your own pace here: http://swcarpentry.GitHub.io/git-novice.
 
 You can work through how to set up a Git repository system for yourself or your organization (unpaid but must run locally or on your own servers).
 
 .. note::
 
-    -   Information on Git can be found here: https://git-scm.com/.
-    -   Information on GitHub, including how to sign up, can be found here: https://github.com/ (GitHub has free and paid service tiers).
+    -   Information on Git can be found here: https://git-scm.com.
+    -   Information on GitHub, including how to sign up, can be found here: https://github.com (GitHub has free and paid service tiers).
 
 .. tip::
 
-    With https://zenodo.org/ and GitHub together, you can create DOI numbers for versions of your code for publication.
+    With https://zenodo.org and GitHub together, you can create DOI numbers for versions of your code for publication.
 
 GEE version control
 """""""""""""""""""
@@ -2752,14 +2752,14 @@ GEE version control
 GEE has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, Select the history icon next to a script in order to compare or revert it to an older version.
 
 .. figure:: ../_images/workflows/area_estimation/gee_scripts.png
-   :alt: The GEE scripts tab.
+   :alt: The GEE scripts tab
    :width: 450
    :align: center
 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
 .. figure:: ../_images/workflows/area_estimation/earth_engine_code_editor.png
-   :alt: GEE code editor.
+   :alt: GEE code editor
    :align: center
 
 .. _Section 5.5:
@@ -2774,25 +2774,25 @@ Data archiving
 
 For data archiving, the following information needs to be compiled:
 
--   A database of the sample data collected by the interpreters, including:
+-   a database of the sample data collected by the interpreters, including:
 
-    -   The geographical coordinates in define coordinate or projection system.
-    -   The unique identification code for each sample unit.
-    -   The interpretation of all sample units including the previous interpretation(s) of the sample unit in the case this was revised or corrected.
+    -   the geographical coordinates in defined coordinates or projection system;
+    -   the unique identification code for each sample unit; and
+    -   the interpretation of all sample units including the previous interpretation(s) of the sample unit in the case this was revised or corrected.
 
--   The interpretation of sample units conducted by the coordinator.
--   Metadata regarding the interpreter that collected the sample data, when the data was collected, which data sources were used.
+-   the interpretation of sample units conducted by the coordinator
+-   metadata regarding the interpreter that collected the sample data, when the data was collected, and which data sources were used.
 
-Think about the work you did in completing Modules 1-4. What other data do you think should be archived? What would be helpful to your colleagues or yourself in the future looking to replicate your work?
+Think about the work you did in completing Module 1, Module 2, Module 3 and Module 4. What other data do you think should be archived? What would be helpful to your colleagues or yourself in the future looking to replicate your work?
 
 You should store the data collection report, your data tables, any metadata, etc. in a standard format. When naming files, you should follow a naming convention, such as Data collection_data_date[year/month/day]_version number (FAO SOP). When writing your documentation report, you should include links to your data storage locations.
 
 Creating metadata
 """""""""""""""""
 
-This worksheet is designed to assist you in becoming more efficient and informed about documenting and archiving information related to the planning, preparation, and management of remote sensing dataset and analysis, such as analyses conducted for forest inventory monitoring (e.g. REDD+ activities).
+This worksheet is designed to assist you in becoming more efficient and informed about documenting and archiving information related to the planning, preparation and management of remote sensing datasets and analysis, such as analyses conducted for forest inventory monitoring (e.g. REDD+ activities).
 
-Documentation and archiving remote sensing analysis methods ensures that there is transparency and makes it easier to replicate or improve methods as programs increase in complexity and robustness. For more information on the good practice recommendations for documentation, archiving and reporting, please refer to the 2006 IPCC Guidelines (Vol. 1, Chp. 6, Section 11).
+Documentation and archiving remote sensing analysis methods ensures that there is transparency and makes it easier to replicate or improve methods as programs increase in complexity and robustness. For more information on the good practice recommendations for documentation, archiving and reporting, please refer to the 2006 IPCC Guidelines (Volume 1, Chapter 6, Section 11).
 
 Below, we have provided you with headings and some questions for each step in the metadata creation process, including where you should provide information about your workflow in order to ensure transparency about your data and processing steps, and to comply with best practices. The information you provide below should be sufficient and clear enough so that someone else can understand how the analysis was conducted and would be able to replicate it.
 
@@ -2813,7 +2813,7 @@ When completing this exercise, think about the work you have completed in the fi
 .. line-break::
 
 .. csv-table::
-    :header: "Creating Band Ratios, Indices and Image \Transformation for use in Classification and Change Detection Analysis",
+    :header: "Creating Band Ratios, Indices and Image Transformation for use in Classification and Change Detection Analysis",
     :widths: 50, 50
 
     Software used,
@@ -2827,8 +2827,8 @@ When completing this exercise, think about the work you have completed in the fi
     :header: Image Classification Scheme,
     :widths: 50, 50
 
-    "Document Clear definitions for classes or categories (i.e., land-use categories defined by the IPCC as: Forest Land, Cropland, Grassland, Wetlands, Settlements, and Other Land)",
-    "Have you identified any categories as \“Key Categories\”? How is the analysis different?  Please refer to Volume 1, Chapter 4 of the 2006 IPCC Guidelines on what defines a \“Key Category\”.",
+    "Document Clear definitions for classes or categories (i.e. land-use categories defined by the IPCC as: Forest Land, Cropland, Grassland, Wetlands, Settlements and Other Land)",
+    "Have you identified any categories as “Key Categories”? How is the analysis different?  Please refer to Volume 1, Chapter 4 of the 2006 IPCC Guidelines on what defines a “Key Category”.",
     Assess RS results,
     Assumptions (Note: Need to archive outputs before proceeding with analysis),
 
@@ -2872,7 +2872,7 @@ Conclusion
 
 .. note::
 
-    **Congratulations! You have completed the SEPAL-CEO Area Estimation cookbook!**
+    **Congratulations! You have completed the SEPAL-CEO Area Estimation recipe!**
 
 Now you know:
 
