@@ -17,7 +17,7 @@ Navigate to other subsections of each article by selecting links in the **On thi
 
 Make contributions to the documentation by selecting :icon:`fa-solid fa-pencil` **Edit on GitHub** in the **On this page** pane on the right.
 
-If the left pane or right pane is not visible, use your browser's **Zoom out** feature or the triple bar buttons (☰) in the upper-left and upper-right corners.  
+If the left pane or right pane is not visible, use your browser's **Zoom out** feature or the triple bar buttons (☰) in the upper-left and upper-right corners.
 
 For general support, ask the `Google Group community <https://groups.google.com/g/sepal-users>`__.
 
