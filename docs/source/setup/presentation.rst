@@ -1,6 +1,6 @@
 Introduction to SEPAL
 =====================
-*Become familiar with the platform and learn how to access features to facilitate remote sensing exercises*
+*Learn the basics of the platform and how to access features*
 
 In this article, learn to:
 
@@ -10,7 +10,7 @@ In this article, learn to:
 Prequisities include:
 
 -   internet access
--   SEPAL account (see **Register to SEPAL and other key platforms** section)
+-   SEPAL account (see `Register <https://docs.sepal.io/en/latest/setup/register.html>`_)
 
 Access SEPAL
 ------------
@@ -21,7 +21,7 @@ Access SEPAL
 4.  Select :btn:`Login`.
 
 .. thumbnail:: ../_images/setup/presentation/sepal_login.png
-   :title: SEPAL log-in page
+   :title: SEPAL login page
    :width: 70%
    :align: center
 
@@ -37,7 +37,7 @@ Choose a language for your SEPAL environment by following the instructions in th
 
 .. note::
 
-   Language preferences can always be changed from the platform's launch page (http://sepal.io).
+   Language preferences can always be changed from the platform's `launch page <https://sepal.io/>`_
 
 The default language in SEPAL is English; however, other languages are available (currently French and Spanish).
 
@@ -45,7 +45,7 @@ To change the language to either French or Spanish:
 
 1.  Go to http://sepal.io.
 2.  Select :code:`Launch`.
-3.  In the upper-right corner, select **en**, **es** or **fr** (English, Spanish and French, respectively).
+3.  In the upper-right corner, select **EN**, **ES** or **FR** (English, Spanish and French, respectively).
 
 SEPAL interface
 ---------------
@@ -60,6 +60,7 @@ After logging in, you will see the following screen.
     :align: center
     :width: 70%
 
+
 On the left, there are four main navigation buttons in the vertical **Tabs** bar (from top to bottom):
 
 -   **Process**: Select imagery and create mosaics.
@@ -73,9 +74,9 @@ Below the vertical **Tabs** bar – on the left – is another button:
 
 In the lower-right corner there are four buttons (from right to left):
 
--   **Log-out from SEPAL** (displayed as a door with an arrow)
+-   **Log out from SEPAL** (displayed as a door with an arrow)
 -   **User details** (displayed as your username)
--   **User report** (displayed as "$ 0/h")
+-   **User report** (displayed as **$ 0/h**)
 -   **User messages** (displayed as a bell)
 
 In the **User details** pop-up window, you can:
@@ -103,7 +104,7 @@ In the **User report** pop-up window, you can view the status (used/available) o
 -   **Sessions** refers to any processes in your current session, if you are running any.
 
 .. thumbnail:: ../_images/setup/presentation/user_report_panel.png
-   :title: **User report** panel
+   :title: User report panel
    :width: 350px
    :align: center
 
@@ -122,7 +123,7 @@ In the vertical **Tabs** bar on the left, select the :code:`Process` button.
    :align: center
    :width: 70%
 
-You should now see many options in the center of the screen:
+You should now see many options in the centre of the screen:
 
 -   **Optical mosaic**: Create a mosaic using Landsat and/or Sentinel-2 data (for guidance, see **Exercise 1.2**).
 -   **Radar mosaic**: Create a mosaic using Sentinel-1 data.
@@ -145,13 +146,13 @@ In the vertical **Tabs** bar on the left, select the :code:`Files` button to dis
 For example, select the :code:`Downloads` folder to display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, this folder will be empty.
 
 .. thumbnail:: ../_images/setup/presentation/files_menu.png
-    :title: The **Files** menu
+    :title: The Files menu
     :align: center
     :width: 50%
 
 In the upper right, there are four buttons (the three right-most buttons will be inactive until you select a file). From left to right:
 
--   The first button will show hidden files (files and folder names starting with ".").
+-   The first button will show hidden files (files and folder names starting with **.**).
 -   The second button will download selected data to your local computer.
 -   The third button will delete the selected folder or file.
 -   The last button will clear your selection.
@@ -177,14 +178,15 @@ To start an instance:
 To stop an instance:
 
 -   enter **exit** into the command line (you can then refresh the terminal page to start a new instance; or
--   open your **User report** by selecting the "$ 0/h" icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
+-   open your **User report** by selecting the **$ 0/h** icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
 
 Once an instance has stopped, you can follow the instance start-up steps again to select a larger instance, if necessary.
 
 .. thumbnail:: ../_images/setup/presentation/terminal.png
-   :title: The **Terminal** page, including an example of changing the instance
+   :title: The Terminal page, including an example of changing the instance
    :align: center
    :width: 450
+
 
 Apps
 ^^^^
@@ -196,9 +198,10 @@ Applications are preprogrammed (typically using R or Python) to perform specific
 Applications make use of instances; running them will use your SEPAL computing resources.
 
 .. thumbnail:: ../_images/setup/presentation/apps_interface.png
-    :title: The **Apps** interface
+    :title: The Apps interface
     :align: center
     :width: 70%
+
 
 Some of the apps include:
 
@@ -206,7 +209,7 @@ Some of the apps include:
 -   **JupyterLab**: Provides access to the Python environment where you can run complex data workflows.
 -   **BFAST GPU**: Graphics processing unit (GPU) implementation of the Breaks for Additive Season and Trend (BFAST) algorithm to analyse time series.
 -   **Deforestation alert analysis**: Retrieve any type of alert on a selected area of interest (AOI).
--   **Mountain Green Cover Index**: Calculates Sustainable Development Goal (SDG) 15.4.2: Mountain Green Cover Index at national/subregional scale.
+-   **MGCI**: Calculates Sustainable Development Goal (SDG) 15.4.2: Mountain Green Cover Index (MGCI) at national/subregional scale.
 -   **SMFM Biota**: Calculate biomass change over time using ALOS PALSAR data (SMFM refers to Satellite Monitoring for Forest Management).
 
-For more information on available apps, see the :doc:`../modules/index` section of the documentation.
+For more information on available apps, see :doc:`../modules/index`.
