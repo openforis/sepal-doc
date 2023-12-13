@@ -9,8 +9,8 @@ In this article, learn how to:
 -  upload files to GEE
 -  use GEE assets in SEPAL
 
-GEE and SEPAL
--------------
+Introduction
+------------
 
 SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform.
 
@@ -67,7 +67,7 @@ Once you have a GEE account, access the **Earth Engine Code Editor** by going to
 
 .. tip::
 
-    If you experience trouble while linking your Google account to GEE, `ask the community <https://groups.google.com/g/sepal-users>`__.
+    If you experience trouble while linking your Google account to GEE, `ask the Google Group community <https://groups.google.com/g/sepal-users>`__.
 
 Initialize the **Home** folder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -86,17 +86,17 @@ The page is subdivided into three zones and a map:
 
     -   **Assets**: Displays all of assets in your account.
     -   **Scripts**: Displays all scripts available with your account (shared and written).
-    -   **Doc**: Displays documentation of the GEE JavaScript API (GEE JS API), if you need to code in this editor.
+    -   **Doc**: Displays documentation of the **GEE JavaScript API (GEE JS API)**, if you need to code in this editor.
 
-**Zone 2**: Allows advanced users to code their own scripts using the GEE JS API.
+**Zone 2**: Allows advanced users to code their own scripts using the **GEE JS API**.
 
 **Zone 3**: Displays information about current processes, divided into three panes:
 
     -   **Inspector**: Transforms the arrow of the mouse into a pointer, allowing you to click anywhere on the map to view information about what you are displaying.
     -   **Tasks**: Displays all of the tasks of your account, as well as their statuses (i.e. **Running**, **Finished** or **Failed**).
-    -   **Console**: Displays the console panel of running scripts.
+    -   **Console**: Displays the console pane of running scripts.
 
-2. Go to **Zone 1** > Select **Assets** > Select **Create** Home **folder**.
+2. Go to **Zone 1** > Select **Assets** > Select **Create home folder**.
 
 .. thumbnail:: ../_images/setup/gee/create_home.png
     :title: GEE asset creation
@@ -106,11 +106,11 @@ The page is subdivided into three zones and a map:
 3. Select the name of the folder (this can only be set once and never changed; if you're not satisfied with the suggested name, you can create your own as long as there are no spaces or special characters).
 
 .. thumbnail:: ../_images/setup/gee/home_pop_up.png
-    :title: GEE pop-up window for **Home** folder creation
+    :title: GEE pop-up window for Home folder creation
     :align: center
     :width: 50%
 
-4. When you return to your list of **Assets** (located in the **Zone 1** panel), you should see the name you provided as the first folder at the root of the **Asset** tree.
+4. When you return to your list of **Assets** (located in the **Zone 1** pane), you should see the name you provided as the first folder at the root of the **Asset** tree.
 
 In our example, we used **galatheetest**:
 
@@ -123,8 +123,8 @@ In our example, we used **galatheetest**:
 
     After initializing your GEE account, start the connection process between GEE and SEPAL.
 
-Connection between GEE and SEPAL
---------------------------------
+Connect GEE and SEPAL
+---------------------
 
 SEPAL can work without being connected to your GEE account, but you will miss numerous opportunities to leverage the platform's potential.
 
@@ -135,7 +135,7 @@ Connection
 
 1. Go to `sepal.io <https://sepal.io>`__ and sign in.
 
-2. Select your **Username** in the lower-right side of the window (e.g. (:code:`prambaud`) in red in the image below).
+2. Select your **Username** in the lower-right side of the window (e.g. prambaud in red in the image below).
 
 .. thumbnail:: ../_images/setup/gee/sepal_landing.png
     :title: SEPAL landing
@@ -198,7 +198,7 @@ These assets can be either:
 
     For vector files, SEPAL provides an interface to upload them from your computer to the platform and eventually to GEE. This process allows you to deal with the full process directly from SEPAL without going to the **Earth Engine Code Editor** (for more information, see :doc:`../modules/dwn/vector_manager`).
 
-1. Go to **Assets** in the **Zone 1** panel in the **Earth Engine Code Editor**.
+1. Go to **Assets** in the **Zone 1** pane in the **Earth Engine Code Editor**.
 
 .. thumbnail:: ../_images/setup/gee/gee_asset_list.png
     :title: GEE asset list
@@ -242,7 +242,7 @@ Table
 
 If you need to upload a table as a :code:`ee.FeatureCollection`:
 
-1. Select **csv file upload**.
+1. Select **.csv file upload**.
 2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`).
 
 .. thumbnail:: ../_images/setup/gee/upload_csv.png
@@ -250,8 +250,8 @@ If you need to upload a table as a :code:`ee.FeatureCollection`:
     :align: center
     :width: 50%
 
-Use your GEE assets in SEPAL
-----------------------------
+Use GEE assets in SEPAL
+-----------------------
 
 Once you've uploaded your assets, you can use them in SEPAL by copying and pasting the name of each whenever an asset name is requested from the interface.
 
