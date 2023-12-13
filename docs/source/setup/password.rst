@@ -20,8 +20,8 @@ The password reset process can be performed in three steps:
 2.  Complete email verification.
 3.  Create a new password.
 
-Tell us who you are
--------------------
+Provide email address
+---------------------
 
 Select **Forgot password** on the SEPAL landing page.
 
@@ -45,8 +45,8 @@ Once your email address is validated, a confirmation email will be sent from SEP
    :title: Notification confirming that an email to reset your password was sent to your associated email address.
    :group: setup_password
 
-Email confirmation
-------------------
+Complete email verification
+---------------------------
 
 To reset your password, SEPAL uses an email confirmation system because:
 
@@ -63,8 +63,8 @@ For all of these reasons, SEPAL will send you the following email.
 
 Follow the instructions to reset your password on a new browser page.
 
-Change password
----------------
+Create new password
+-------------------
 
 In the **Reset password** form, three fields are available:
 
