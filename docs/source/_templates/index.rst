@@ -1,8 +1,6 @@
-SEPAL applications
-==================
+Modules
+=======
 *Access complex workflows without the need of digital programming skills with SEPAL applications*
-
-.. custom-edit:: https://raw.githubusercontent.com/openforis/sepal-doc/main/docs/source/_templates/index.rst
 
 Overview
 --------
@@ -25,7 +23,7 @@ Note that the following apps are code editors, not apps (**2**):
 -   **JupyterLab**: A web-based interactive development environment for Jupyter notebooks, code and data.
 
 .. thumbnail:: ../_images/module/index/dashboard.png
-    :title: The landing page of the **Apps** dashboard
+    :title: The landing page of the Apps dashboard
 
 To find the application you're looking for, navigate through the different app pages (**3**), use tags (**4**), or utilize the search bar (**5**).
 
@@ -62,10 +60,12 @@ If a particular app's documentation requires the user to start a specific instan
 3.  Wait for the instance to finish loading.
 
     .. thumbnail:: ../_images/module/index/m4_started.png
-        :title: Start an **m4** instance
+        :title: Start an m4 instance
 
 4.  Go back to the dashboard of the application to launch your app. It will automatically use the instance you opened and won't restart a :code:`t1`.
 
 .. toctree::
     :hidden:
     :maxdepth: 1
+
+.. custom-edit:: https://raw.githubusercontent.com/openforis/sepal-doc/main/docs/source/_templates/index.rst
