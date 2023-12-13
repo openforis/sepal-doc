@@ -13,10 +13,12 @@ The **Workflows** section of SEPAL documentation presents some workflows that in
 
 .. note::
 
-    If your workflow is not described here and you would like for it to be included in SEPAL documentation, let the SEPAL team know via the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__.
+    If your workflow is not described here and you would like for it to be included in SEPAL documentation, let the SEPAL team know via the `GitHub Issue Tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__.
 
-Table of contents
------------------
+Workflows
+---------
+
+SEPAL workflows include:
 
 .. toctree::
     :maxdepth: 1
