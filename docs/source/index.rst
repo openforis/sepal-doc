@@ -33,13 +33,13 @@ Documentation
 
 .. rst-class:: font-weight-bold big-font
 
-        SEPAL (System for Earth Observation Data Access, Processing and Analysis for Land Monitoring) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge.
+        The System for Earth Observation Data Access, Processing and Analysis for Land Monitoring (**SEPAL**) is an open-source project and platform empowering people around the world to gain a better understanding of land cover dynamics by facilitating the efficient access and use of Earth observation data – without the need of coding knowledge.
 
 .. line-break::
 
 .. youtube:: niOUVE8N7wo
     :align: center
-    :width: 60%
+    :width: 80%
 
 .. line-break::
 
@@ -66,7 +66,7 @@ Getting started
 
         Register with Google Earth Engine (GEE) and connect your account to SEPAL.
 
-    .. grid-item-card:: :fas:`plug` Connect to NICFI PlanetLab imagery
+    .. grid-item-card:: :fas:`plug` Connect to NICFI–PlanetLab imagery
         :link: setup/nicfi.html
 
         Sign up to use Norway’s International Climate and Forests Initiative (NICFI) – PlanetLab data and connect your account to GEE.
@@ -79,17 +79,17 @@ Recipes and modules
 .. grid:: 1 3 3 3
     :gutter: 2
 
-    .. grid-item-card:: :fas:`book-open` Start a recipe.
+    .. grid-item-card:: :fas:`book-open` Start a recipe
         :link: cookbook/index.html
 
-        Run analysis with recipes, the foundation of SEPAL processes.
+        Run analysis with recipes – the foundation of SEPAL processes.
 
-    .. grid-item-card:: :fas:`cogs` Start a module.
+    .. grid-item-card:: :fas:`cogs` Start a module
         :link: modules/index.html
 
         Run integrated workflows with modules – no need of coding experience required.
 
-    .. grid-item-card:: :fas:`map` Use the se.plan module.
+    .. grid-item-card:: :fas:`map` Use the se.plan module
         :link: modules/dwn/seplan.html
 
         Compute your restoration index with se.plan, a spatially explicit online tool designed to support forest restoration planning decisions by restoration stakeholders.
@@ -119,26 +119,26 @@ Other resources
 
 .. line-break::
 
-SEPAL is always improving.
---------------------------
+SEPAL is always improving
+-------------------------
 
-Encounter a problem? See an issue? Need help? Take one of the following actions to help our team members enhance user experience by improving the platform and its documentation.
+Encounter a problem? See an issue? Need help? Help our team members enhance user experience by improving the platform and its documentation.
 
 .. line-break::
 
 .. grid:: 1 2 2 4
     :gutter: 2
 
-    .. grid-item-card:: :fas:`comments` For general support, ask the Google Group community.
+    .. grid-item-card:: :fas:`comments` For general support, ask the Google Group community
         :link: https://groups.google.com/g/sepal-users
 
-    .. grid-item-card:: :fab:`github` For documentation improvement, use the GitHub Issue Tracker.
+    .. grid-item-card:: :fab:`github` For documentation improvement, use the GitHub Issue Tracker
         :link: https://github.com/openforis/sepal/issues
 
-    .. grid-item-card:: :fab:`stack-exchange` For usage questions, ask the GIS StackExchange community.
+    .. grid-item-card:: :fab:`stack-exchange` For usage questions, ask the GIS StackExchange community
         :link: https://gis.stackexchange.com/questions/tagged/sepal
 
-    .. grid-item-card:: :fas:`book-open` For training, register for the SEPAL Forest and Land Monitoring for Climate Action e-learning course.
+    .. grid-item-card:: :fas:`book-open` For training, register for the SEPAL Forest and Land Monitoring for Climate Action e-learning course
         :link: https://www.fao.org/in-action/sepal/resources/certified-course/en
 
 .. line-break::
@@ -146,9 +146,9 @@ Encounter a problem? See an issue? Need help? Take one of the following actions 
 About the platform
 ------------------
 
-SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
+SEPAL is part of the `Open Foris <http://www.openforis.org>`__ Suite of Tools. The platform allows users to query and process satellite data quickly and efficiently, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses. Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables users to access and process historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus programme.
 
-SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for creating advanced analyses.
+SEPAL is a cloud computing-based platform for autonomous land monitoring using remotely sensed data. It is a combination of GEE and open-source software such as GDAL, Jupyter, the Open Foris Geospatial Toolkit, ORFEO Toolbox, Python, R, R Shiny Server, R Studio Server, and the SNAP Toolkit. The platform allows users to access powerful cloud-computing resources to query, access and process satellite data quickly and efficiently for conducting advanced analyses.
 
 .. line-break::
 
