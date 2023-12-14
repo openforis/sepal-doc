@@ -2,7 +2,7 @@
 
 Contribute
 ==========
-**
+*Learn how to make contributions to SEPAL documentation*
 
 The SEPAL team values user feedback and contributions to SEPAL documentation.
 
