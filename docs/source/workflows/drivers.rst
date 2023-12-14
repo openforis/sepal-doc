@@ -332,7 +332,7 @@ The project's technical committee agreed upon nine unique direct drivers and the
 In order to identify direct drivers, a survey form is used in the CEO web platform to enable visual interpretation and identification of the presence or absence of forest, the land cover type in 2015, the type of change (deforestation or degradation) and the year of change (2015–2022), along with one or more observed direct drivers within a 2 km wide square plot around the sample point.
 
 References
-==========
+----------
 
 Curtis, P.G., Slay, C.M., Harris, N.L., Tyukavina, A. & Hansen, M.C. 2018. Classifying drivers of global forest loss. *Science*, 361(6407): 1108–1111. https://doi.org/10.1126/science.aau3445
 
