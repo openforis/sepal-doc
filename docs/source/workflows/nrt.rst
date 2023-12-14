@@ -1,5 +1,6 @@
 CCDC NRT-FDM
 ============
+*Customize implementation of the CCDC algorithm to generate NRT alerts*
 
 Background
 ----------
@@ -65,4 +66,4 @@ Requirements
 2. Forest mask (optional, but recommended)
 3. Planet application programming interface (API) key (optional, only for Planet daily imagery)
 
-For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download this presentation <https://docs.google.com/presentation/d/1gVb8Ewevp_fQNChSQT-wGRdSIM79x0II/edit?usp=sharing&ouid=107111160061452891127&rtpof=true&sd=true>`_. To understand the underlying logic of the workflow, read further.
+For a step-by-step guide of the use of a combination of Landsat and Sentinel-2 imagery over an area in Bolivia, download `this presentation <https://docs.google.com/presentation/d/1gVb8Ewevp_fQNChSQT-wGRdSIM79x0II/edit?usp=sharing&ouid=107111160061452891127&rtpof=true&sd=true>`_. To understand the underlying logic of the workflow, read further.
