@@ -2,6 +2,7 @@
 
 Contribute
 ==========
+**
 
 The SEPAL team values user feedback and contributions to SEPAL documentation.
 
@@ -33,7 +34,7 @@ The :code:`sepal-doc` repository creates and organizes .rst files by leveraging:
 -    the Python `Sphinx <https://www.sphinx-doc.org/en/master/>`_ library to create the build; and
 -    the `ReadTheDoc <https://readthedocs.org>`_ website to distribute the build.
 
-.. attention::
+.. important::
 
     To contribute to SEPAL documentation, you will need:
 
@@ -48,7 +49,7 @@ Guidelines
 There are only two guidelines to follow that are not directly specified in the .rst documentation or template:
 
 -    **Indentation**: Insert :code:`4 spaces` for directives (options and content) and bullet points; and
--    **Headings**: Use the appropriate symbols for section heading formatting (:code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, and :code:`+`).
+-    **Headings**: Use the appropriate symbols for section heading formatting (:code:`=`, :code:`-`, :code:`^`, :code:`"`, :code:`#`, and :code:`+`, as seen below).
 
 .. code-block:: rst
 
@@ -160,13 +161,13 @@ You can find the icon you're looking for in the Font Awesome `library <https://f
 
 .. code-block:: rst
 
-    Apply button: :btn:`<fa-solid fa-check> Apply`
+    **Apply** button: :btn:`<fa-solid fa-check> Apply`
 
-    App button: :btn:`<fa-solid fa-wrench>`
+    **App** button: :btn:`<fa-solid fa-wrench>`
 
-Apply button: :btn:`<fa-solid fa-check> Apply`
+**Apply** button: :btn:`<fa-solid fa-check> Apply`
 
-App button: :btn:`<fa-solid fa-wrench>`
+**App** button: :btn:`<fa-solid fa-wrench>`
 
 Minor change
 ------------
@@ -174,7 +175,7 @@ Minor change
 Page edit
 ^^^^^^^^^
 
-If you would like to make modifications to an existing article in the documentation because you've seen a typo or would like to improve an explanation, select the :code:`Edit on GitHub` button in the pane on the right side of your browser window (if the button isn't available, use your browser's **Zoom out** function or open the pane using the hamburger button [the button in the upper-right corner with three lines]).
+If you would like to make modifications to an existing article in the documentation because you've seen a typo or would like to improve an explanation, select the :code:`Edit on GitHub` button in the pane on the right side of your browser window (if the button isn't available, use your browser's **Zoom out** function or open the pane using the triple bar button [☰] in the upper-right corner).
 
 .. figure:: ../_images/team/contribute/edit_page.png
     :alt: Edit page button
