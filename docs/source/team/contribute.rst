@@ -541,8 +541,8 @@ You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale
 -   replace **<title>** by the title of the classroom; and
 -   add the latest **<modification date>** in **YYYY-MM-DD** format.
 
-Create a pull request (PR)
---------------------------
+Create a pull request
+---------------------
 
 .. note::
 
@@ -555,7 +555,7 @@ First, select the :code:`Pull requests` button:
 .. figure:: ../_images/team/contribute/start_pr.png
     :alt: Pull requests button
 
-    Open the **Pull request** interface.
+    Open the **Pull request (PR)** interface.
 
 In the **Pull request** interface, select the :code:`New pull request` button:
 
