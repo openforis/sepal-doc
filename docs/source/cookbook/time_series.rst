@@ -1,7 +1,7 @@
 Time series
 ===========
 
-*Create and retrieve Satellite Image Time Series to study patterns and key changes in landscape evolution over time*
+*Create and retrieve SITS to study patterns and key changes in landscape evolution over time*
 
 Overview
 --------
