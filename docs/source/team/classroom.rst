@@ -2,6 +2,7 @@
 
 Google Classroom
 ================
+*Learn how to use SEPAL's Google Classroom*
 
 Usage
 -----
