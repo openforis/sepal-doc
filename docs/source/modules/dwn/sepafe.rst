@@ -1,5 +1,6 @@
 SEPAFE
 ======
+*Receive and validate fire alerts from the FIRMS programme by using daily Planet imagery*
 
 The SEPAL Planet Active Fires Explorer (SEPAFE) is a module developed on the SEPAL platform based on the `Fire Information for Resource Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms>`_ and using Planet Scope imagery from Planet Labs.
 
