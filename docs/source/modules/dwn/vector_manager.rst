@@ -1,5 +1,6 @@
 Vector file manager
 ===================
+*Upload and transform files into assets in GEE*
 
 This module has been designed on top of the interactive framework, `sepal_ui <https://github.com/12rambau/sepal_ui>`_, allowing users to upload files from their local computers and transform them into assets in Google Earth Engine (GEE). The module can also be used to produce a grid on top of any area of interest (AOI), coresponding to our best product (NICFI 2.5 metre resolution 10 kilometre x 10 kilometre grid).
 
