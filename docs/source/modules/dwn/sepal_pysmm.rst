@@ -1,5 +1,6 @@
 Soil moisture mapping
 =====================
+*Map surface soil moisture based on Copernicus Sentinel-1 intensity data*
 
 Open SEPAL
 ----------
