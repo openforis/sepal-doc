@@ -1,5 +1,5 @@
-GuidosToolbox Workbench (GWB)
-=============================
+GWB
+===
 *Suite of various geospatial image analysis tools*
 
 This article of SEPAL documentation provides usage instructions for the image analysis module **GWB** (`GuidosToolbox Workbench <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) implemented as a Jupyter dashboard on the SEPAL platform.
