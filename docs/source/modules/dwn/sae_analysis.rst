@@ -1,8 +1,6 @@
-Stratified Area Estimation (SAE) – Analysis
-===========================================
-
-Analyse results from a stratified sampling design for area estimates
---------------------------------------------------------------------
+SAE Analysis
+============
+*Analyse results from a stratified sampling design for area estimates*
 
 The aim of this stratified sampling design tool is to analyse results from a stratified sampling design that can be used for area estimates by combining a map (used as a stratification of the landscape of interest) with a visual map interpretation of samples to produce an area estimation.
 
