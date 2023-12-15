@@ -1,5 +1,6 @@
 BFAST GPU
 =========
+*GPU implementation of the BFAST algorithm to analyse time series*
 
 This document provides usage instructions for the GPU implementation of BFAST, implemented here as a Jupyter dashboard on SEPAL.
 
