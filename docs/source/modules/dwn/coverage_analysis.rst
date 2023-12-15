@@ -1,5 +1,6 @@
 Coverage analysis tool for optical data
 =======================================
+*Check per-pixel data availability*
 
 This module uses the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ framework and interactive **Voila** dashboard to create maps of cloud-free observations for major optical satellites available on the Google Earth Engine (GEE) platform.
 
