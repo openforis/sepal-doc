@@ -1,6 +1,6 @@
 Forest change mask
 ==================
-*Combine GFC layers to produce forest change maps*
+*Base forest mask and fragmentation tool*
 
 This application allows users to:
 
