@@ -99,9 +99,10 @@ Linking your GEE and SEPAL accounts will allow you to read and write from your G
    Link your SEPAL and GEE accounts in order to read and write to GEE assets from SEPAL.
 
 In the **User report** pop-up window, you can view the status (used/available) of your processing and storage resources:
--   **Instance spending** refers to the resources used/available to start and run cloud computers.
--   **Storage spending** and **Storage space** refer to the resources used/available for storage in your SEPAL workspace.
--   **Sessions** refers to any processes in your current session, if you are running any.
+
+-    **Instance spending** refers to the resources used/available to start and run cloud computers;
+-    **Storage spending** and **Storage space** refer to the resources used/available for storage in your SEPAL workspace; and
+-    **Sessions** refers to any processes in your current session, if you are running any.
 
 .. thumbnail:: ../_images/setup/presentation/user_report_panel.png
    :title: User report panel
@@ -129,14 +130,14 @@ You should now see many options in the centre of the screen:
 -   **Radar mosaic**: Create a mosaic using Sentinel-1 data.
 -   **Planet mosaic**: Create a mosaic using NICFI–Planet basemaps (if you have permission from NICFI-Planet).
 -   **Classification**: Use a random forest model to classify images from SEPAL or GEE (for guidance, see **Module 2**).
--   **Time series**: Download time-series information to your SEPAL storage.
--   **CCDC**: Create a Continuous Change Detection and Classicfication (CCDC) asset from a time series.
+-   **Time series**: Download time series information to your SEPAL storage.
+-   **CCDC**: Create a Continuous Change Detection and Classification (CCDC) asset from a time series.
 -   **CCDC slice**: Create a slice of a CCDC asset for a specific date or date range.
 -   **Class change**: Create a class change map from two categorical images (either SEPAL recipes or GEE assets).
 -   **Index change**: Create an index change map from two single-band images (either SEPAL recipes or GEE assets).
 -   **Remapping**: Remap categorical or continuous image bands into new categories.
 
-When you select one of these options, a new tab will open with the graphical user interface (GUI) interface that allows you to specify your desired options.
+When you select one of these options, a new tab will open with the graphical user interface (GUI) that allows you to specify your desired options.
 
 Files
 ^^^^^
@@ -150,7 +151,7 @@ For example, select the :code:`Downloads` folder to display the folders containi
     :align: center
     :width: 50%
 
-In the upper right, there are four buttons (the three right-most buttons will be inactive until you select a file). From left to right:
+In the upper right, there are four buttons (from left to right; the three right-most buttons will be inactive until you select a file):
 
 -   The first button will show hidden files (files and folder names starting with **.**).
 -   The second button will download selected data to your local computer.
@@ -172,12 +173,12 @@ To start an instance:
 
 1.  Examine the **Available instance types** table (updated periodically; see example from September 2020 below).
 2.  Choose an **Instance type** that fits your needs (normally, a **t2** instance or **m2** instance is sufficient and cost-effective).
-3.  Next to **Select (t1):**, enter **t2** (or your chosen instance type).
+3.  Next to **Select (t1)**, enter **t2** (or your chosen instance type).
 4.  Press **Enter** on your keyboard and wait for the instance to start, which will take several minutes.
 
 To stop an instance:
 
--   enter **exit** into the command line (you can then refresh the terminal page to start a new instance; or
+-   enter **exit** into the command line (you can then refresh the terminal page to start a new instance); or
 -   open your **User report** by selecting the **$ 0/h** icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
 
 Once an instance has stopped, you can follow the instance start-up steps again to select a larger instance, if necessary.
@@ -193,9 +194,7 @@ Apps
 
 In the vertical **Tabs** bar on the left, select the **Apps** button to display applications accessible through SEPAL (for more information about each app, select the rightmost **i** button).
 
-Applications are preprogrammed (typically using R or Python) to perform specific useful tasks.
-
-Applications make use of instances; running them will use your SEPAL computing resources.
+Applications are preprogrammed (typically using R or Python) to perform specific useful tasks, making use of instances (running them will use your SEPAL computing resources).
 
 .. thumbnail:: ../_images/setup/presentation/apps_interface.png
     :title: The Apps interface
