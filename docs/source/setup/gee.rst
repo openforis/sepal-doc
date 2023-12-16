@@ -26,7 +26,7 @@ All SEPAL recipes are based on GEE and run scripts written by SEPAL team members
 
 In the SEPAL **Apps** list, the applications tagged with the Google logo (:icon:`fa-brands fa-google`) are also running with the Python GEE API and don't require you to use big instances to run complex operations.
 
-SEPAL recipes can be run from the main SEPAL interface using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked.
+**SEPAL recipes** can be run from the main **SEPAL interface** using default SEPAL credentials or your personal GEE access credentials; however, to run the SEPAL applications that employ GEE, you will need to link your SEPAL and GEE accounts. SEPAL applications that make use of GEE will not run (i.e. authentication will not work) if your GEE and SEPAL accounts are unlinked.
 
 Set up your GEE account
 -----------------------
@@ -67,7 +67,7 @@ Once you have a GEE account, access the **Earth Engine Code Editor** by going to
 
 .. tip::
 
-    If you experience trouble while linking your Google account to GEE, `ask the Google Group community <https://groups.google.com/g/sepal-users>`__.
+    If you experience trouble while linking your Google account to GEE, `ask the Google Group  <https://groups.google.com/g/sepal-users>`__.
 
 Initialize the **Home** folder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,7 +84,7 @@ The page is subdivided into three zones and a map:
 
 **Zone 1**: Provides you with access to your GEE account information, subdivided into three panes:
 
-    -   **Assets**: Displays all of assets in your account.
+    -   **Assets**: Displays all assets in your account.
     -   **Scripts**: Displays all scripts available with your account (shared and written).
     -   **Doc**: Displays documentation of the **GEE JavaScript API (GEE JS API)**, if you need to code in this editor.
 
@@ -94,7 +94,7 @@ The page is subdivided into three zones and a map:
 
     -   **Inspector**: Transforms the arrow of the mouse into a pointer, allowing you to click anywhere on the map to view information about what you are displaying.
     -   **Tasks**: Displays all of the tasks of your account, as well as their statuses (i.e. **Running**, **Finished** or **Failed**).
-    -   **Console**: Displays the console pane of running scripts.
+    -   **Console**: Displays the **Console** pane of running scripts.
 
 2. Go to **Zone 1** > Select **Assets** > Select **Create home folder**.
 
@@ -243,7 +243,7 @@ Table
 If you need to upload a table as a :code:`ee.FeatureCollection`:
 
 1. Select **.csv file upload**.
-2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`).
+2. In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv` and :code:`.json`).
 
 .. thumbnail:: ../_images/setup/gee/upload_csv.png
     :title: Upload .csv
