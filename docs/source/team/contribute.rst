@@ -53,8 +53,6 @@ There are only two guidelines to follow that are not directly specified in the .
 
 .. code-block:: rst
 
-    **Headings**
-
     Heading 1
     =========
 
@@ -144,7 +142,7 @@ Icons
 
 There is a ReST role to include in-line icons in documentation, usually when referencing a button (**btn**).
 
-You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
+Use icons from the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
 .. code-block:: rst
 
@@ -157,7 +155,7 @@ Buttons
 
 There is a ReST role to include a button in the documentation (with or without text).
 
-You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
+Use buttons from the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
 .. code-block:: rst
 
@@ -221,7 +219,7 @@ Once you've finished, notify the SEPAL team, who will need to rebuild the docume
 
 .. note::
 
-    If you want to add a new module to the documentation, see the section, **Major changes**.
+    If you want to add a new module to the documentation, see the subsection, **Major changes**.
 
 Major changes
 -------------
@@ -236,14 +234,14 @@ Major changes include:
 
 For these major changes, the simple GitHub edit process does not work. Rather, you need to follow another workflow that allows you to modify multiple files at the same time and use the **PR** system to avoid publishing new pages without validation.
 
-In this section, we will present the full process to make major changes to the documentation.
+In this subsection, we will present the full process to make major changes to the documentation.
 
 Fork project
 ^^^^^^^^^^^^
 
 To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source.
 
-To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into their own accounts by selecting the :code:`fork` button on the upper-right side of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
+To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into your own account by selecting the :code:`fork` button on the upper-right corner of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
 
 .. figure:: ../_images/team/contribute/fork.png
     :alt: GitHub fork button
@@ -273,7 +271,7 @@ On your computer, go to a terminal and run the following command.
 
 .. important::
 
-    Don't forget to change :code:`<your account>` to the account name where you forked the project.
+    Don't forget to change :code:`your account` to the account name where you forked the project.
 
 .. code-block:: console
 
@@ -285,7 +283,7 @@ Once the code is installed on your computer, install the packages that are requi
 
     pip install -U -r sepal-doc/requirements.txt
 
-To check that the doc can be built without error, go to the **doc folder** and run the following command:
+To check that the documentation can be built without error, go to the **doc folder** and run the following command:
 
 .. code-block:: console
 
@@ -294,13 +292,13 @@ To check that the doc can be built without error, go to the **doc folder** and r
 
 .. note::
 
-    We try our best to avoid warnings in the master branch; however, if some are displayed, ignore them – the SEPAL team will eventually address these warnings.
+    We try our best to avoid warnings in the master branch; however, if some are displayed, ignore them, as they will be eventually addressed by the SEPAL team.
 
 A new folder, :code:`build`, has been created in your **sepal-doc** folder.
 
 Double-click on :code:`sepal-doc/docs/build/html/index.html`.
 
-Your browser should open and lead to the landing page of SEPAL documentation (Note that it's a local .html page. The URL at the top of the browser should start with **file://** rather than **https://**. There should be no advertisements in the side bar.)
+Your browser should open and lead to the landing page of SEPAL documentation (Note: It will be a local .html page. The URL at the top of the browser should start with **file://** rather than **https://** and there should be no advertisements in the side bar.)
 
 .. figure:: ../_images/team/contribute/local_landing.png
     :alt: Local build landing page
@@ -309,14 +307,14 @@ We can now start to code our modifications.
 
 .. tip::
 
-    This procedure can also be performed in the SEPAL platform by starting a :code:`t1` instance and executing the exact same process.
+    This procedure can also be performed in the SEPAL platform by starting a :code:`t1` instance and executing the same process.
 
     To open the .html page, use JupyterLab, since it is able to load .html content (JupyterLab is also an excellent integrated development environment [IDE] to make modifications, since it recognizes .rst format).
 
 Modify the doc
 ^^^^^^^^^^^^^^
 
-Each type of modification will be treated separately, since they don't imply the same code structure. While doing local modifications, don't hesitate to regularly run the following command in the :code:`sepal-doc/doc/` folder to check the page that you're modifying, as it will help you see typos and mistakes with directives:
+Each type of modification will be treated separately, since they don't imply the same code structure. While doing local modifications, don't hesitate to run the following command in the :code:`sepal-doc/doc/` folder to check the page that you're modifying, as it will help you see typos and mistakes with directives:
 
 .. code-block:: console
 
@@ -331,7 +329,7 @@ When making modifications, always include clear, concise commit messages (if you
     git add ../
     git commit -m "<your message>"
 
-Once you are done with your modifications, push the repository to GitHub and jump to the next section:
+Once you are done with your modifications, push the repository to GitHub and continue to the next section:
 
 .. code-block:: console
 
@@ -368,6 +366,14 @@ The following sections are currently available:
 
     Located in the :code:`sepal-doc/docs/source/cli/` folder.
 
+-   **Workflows** – Different combinations of SEPAL tools and recipes to perform complex data analyses.
+
+    Located in the :code:`sepal-doc/docs/source/workflows/` folder.
+
+-   **Features** – Features that are available across various recipes and modules to analyse, combine and visualize different types of data.
+
+    Located in the :code:`sepal-doc/docs/source/feature/` folder.
+
 -   **Team** – A hidden section only available to team members, which helps them contribute to the platform.
 
     Located in the :code:`sepal-doc/docs/source/team/` folder.
@@ -384,11 +390,11 @@ The following sections are currently available:
 
         .. include:: disclaimer.rst
 
-Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this article.
+Now that you have selected a section, you can create a new documentation page :code:`<my_page>.rst` using all the available `.rst directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ that are available in Sphinx, as well as the directives presented in the first section of this article.
 
 To maintain consistency across folders and help with image maintenance, the images you use should be stored in the following folder: :code:`sepal-doc/docs/source/_images/<section>/<page>/`.
 
-Add the page you've created to the :code:`toctree` (Table of contents) directive in the :code:`<section>/index.rst` file by adding your filename, without the extension, respecting the following indentation:
+Add the page you've created to the :code:`toctree` (**Table of contents**) directive in the :code:`<section>/index.rst` file by adding your filename, without the extension, respecting the following indentation:
 
 .. code-block:: rst
 
