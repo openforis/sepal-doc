@@ -44,7 +44,7 @@ These tools can be called directly from the terminal or via any programming lang
 
         nohup gdalinfo example.tif
 
-    All console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. Thus, you will be able to safely close the terminal or even the browser window without killing your process (for more information about :code:`nohup`, see `this article <https://en.wikipedia.org/wiki/Nohup>`__.
+    All console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. You will be able to safely close the terminal or even the browser window without interrupting the process (for more information about :code:`nohup`, see `this article <https://en.wikipedia.org/wiki/Nohup>`__).
 
 Coding tools
 ------------
@@ -52,13 +52,13 @@ Coding tools
 In the **Apps** section, there are three coding tools at the top of the list:
 
 -   JupyterLab
--   JupyterNotebook
+-   Jupyter Notebook
 -   RStudio
 
 .. thumbnail:: ../_images/cli/index/code_editor.png
     :title: The three code editors in the SEPAL environment
 
-They will allow the user to code wokflows in any of the available languages using the corresponding environment in SEPAL. These environments are fully customizable (select the :code:`Python` or :code:`R` section to know more).
+They will allow the user to code wokflows in any of the available languages using the corresponding environment in SEPAL. These environments are fully customizable (view the :code:`Python` or :code:`R` section to know more).
 
 .. thumbnail:: ../_images/cli/index/jupyter_example.png
     :title: Example of **rasterio** code running in SEPAL JupyterLab (code extracted from **rasterio** documentation: https://rasterio.readthedocs.io/en/latest/topics/plotting.html)
