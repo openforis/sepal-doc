@@ -129,5 +129,9 @@
   "basin-river": {
     "description": "Get Forest Cover Change by upstream sub-catchment",
     "url": "https://raw.githubusercontent.com/sepal-contrib/basin-rivers/master/doc/en.rst"
+  },
+  "geemap": {
+    "description": "Provide access to the power of geemap as a SEPAL application",
+    "url": "https://raw.githubusercontent.com/sepal-contrib/sepal-geemap/release/doc/en.rst"
   }
 }
