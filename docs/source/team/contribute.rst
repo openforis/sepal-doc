@@ -53,7 +53,7 @@ There are only two guidelines to follow that are not directly specified in the .
 
 .. code-block:: rst
 
-    Headings
+    **Headings**
 
     Heading 1
     =========
@@ -142,7 +142,7 @@ Here is an example:
 Icons
 """""
 
-There is a ReST role to include in-line icons in documentation (usually when referencing a button [btn]).
+There is a ReST role to include in-line icons in documentation, usually when referencing a button (**btn**).
 
 You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
@@ -157,7 +157,7 @@ Buttons
 
 There is a ReST role to include a button in the documentation (with or without text).
 
-You can find the icon you're looking for in the Font Awesome `library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
+You can find the icon you're looking for in the `Font Awesome library <https://fontawesome.com/v5.15/icons?d=gallery&p=2>`__.
 
 .. code-block:: rst
 
@@ -180,16 +180,12 @@ If you would like to make modifications to an existing article in the documentat
 .. figure:: ../_images/team/contribute/edit_page.png
     :alt: Edit page button
 
-    The **Edit on GitHub** button on the landing page.
-
 When you are finished modifying the file in the **GitHub editor**, select :code:`propose change` at the bottom of the page.
 
 This will create a **Pull request (PR)** that includes your modifications, which will be reviewed and evaluated by the SEPAL team before being published.
 
 .. figure:: ../_images/team/contribute/edit_github.png
-    :alt: Edit a page directly in GitHub
-
-    Edit a page directly in GitHub.
+    :alt: Edit a page directly on GitHub
 
 .. tip::
 
@@ -198,16 +194,16 @@ This will create a **Pull request (PR)** that includes your modifications, which
     .. figure:: ../_images/team/contribute/create_branch.png
         :alt: Create a branch
 
-        When correcting anything, create a **Branch**.
+When correcting anything, create a **Branch**.
 
-Once you've finished, a **PR** will automatically be created in the OpenForis repository. Remove all comments, as you're not making a real **PR**, but an adjustment (normally the title will automatically be set with the name of your **Commit**).
+Once you've finished, a **PR** will automatically be created in the **Open Foris** repository. Remove all comments, as you're not making a real **PR**, but an adjustment (normally the title will automatically be set with the name of your **Commit**).
 
 Select :code:`Create pull request`.
 
 .. figure:: ../_images/team/contribute/typo_pr.png
     :alt: typo pr
 
-    For minor modifications, create an **Automatic PR**.
+For minor modifications, create an **Automatic PR**.
 
 .. note::
 
@@ -215,8 +211,6 @@ Select :code:`Create pull request`.
 
     .. figure:: ../_images/team/contribute/delete_branch.png
         :alt: Delete branch
-
-        Once the **PR** is accepted by the SEPAL team, delete the **Branch**.
 
 Module edit
 ^^^^^^^^^^^
@@ -249,30 +243,24 @@ Fork project
 
 To work on multiple files at the same time, you cannot work directly from GitHub. Rather, you need to install a local version of the source.
 
-To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into their own accounts by selecting the :code:`fork` button in the upper-right side of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
+To avoid the publication of low-quality documentation, SEPAL users don't have the rights to directly push edits to master files. Instead, you must fork the project into their own accounts by selecting the :code:`fork` button on the upper-right side of the `GitHub page of the documentation <https://github.com/openforis/sepal-doc>`_:
 
 .. figure:: ../_images/team/contribute/fork.png
-    :alt: GitHub fork
+    :alt: GitHub fork button
 
-    The **Fork** button on GitHub.
-
-In the fork pop-up window, select the account you want to use:
+In the **Fork** pop-up window, select the account you want to use:
 
 .. figure:: ../_images/team/contribute/fork_select.png
     :alt: Fork pop-up window.
-
-    Select the account to fork.
 
 In the upper-left side of the following page, you can see your location. This repository is stored in your account, but it's a fork of the original :code:`openforis/sepal-doc` file.
 
 .. note::
 
-    To learn more about the forking system in GitHub, see `this article <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_
+    To learn more about the forking system in GitHub, see `this article <https://docs.github.com/en/github/getting-started-with-github/fork-a-repo>`_.
 
 .. figure:: ../_images/team/contribute/fork_landing.png
     :alt: Landing page of the forked project
-
-    Landing page of the forked project.
 
 We are now ready for local installation.
 
@@ -283,7 +271,7 @@ Install the forked project locally to make your modifications.
 
 On your computer, go to a terminal and run the following command.
 
-.. attention::
+.. important::
 
     Don't forget to change :code:`<your account>` to the account name where you forked the project.
 
@@ -315,9 +303,7 @@ Double-click on :code:`sepal-doc/docs/build/html/index.html`.
 Your browser should open and lead to the landing page of SEPAL documentation (Note that it's a local .html page. The URL at the top of the browser should start with **file://** rather than **https://**. There should be no advertisements in the side bar.)
 
 .. figure:: ../_images/team/contribute/local_landing.png
-    :alt: local landing
-
-    The landing page of the local build of SEPAL documentation.
+    :alt: Local build landing page
 
 We can now start to code our modifications.
 
@@ -426,7 +412,7 @@ If you forget to link your page, you will see the following message:
 
 .. tip::
 
-    If you are struggling with .rst, get support by `asking the community <https://groups.google.com/g/sepal-users>`__.
+    If you are struggling with .rst, get support by `asking the Google Group community <https://groups.google.com/g/sepal-users>`__.
 
 Modify images
 """""""""""""
@@ -442,9 +428,7 @@ If you think an image is missing, you can add one to any page by placing the ima
     .. code-block:: rst
 
         .. figure:: ../_images/<section>/<page>/<image>.png
-            :alt: <the image callback text>
-
-            <A caption>
+            :alt: <The image callback text>
 
 -   The :code:`image` directive is easier to manipulate, but has fewer functionalities.
 
@@ -523,9 +507,7 @@ Go to your **Google Classroom** page and select the **Share** link. On the next 
 -   the invitation link for the class
 
 .. figure:: ../_images/team/contribute/class_share.png
-    :alt: The share links
-
-    Google Classroom sharing links.
+    :alt: Google Classroom sharing links
 
 You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale>.csv`:
 
@@ -542,8 +524,8 @@ You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale
 -   replace **<title>** by the title of the classroom; and
 -   add the latest **<modification date>** in **YYYY-MM-DD** format.
 
-Create a pull request (PR)
---------------------------
+Create a pull request
+---------------------
 
 .. note::
 
@@ -551,19 +533,15 @@ Create a pull request (PR)
 
 Now that you have finished your modifications and pushed them to GitHub, we can go back to the web interface of our forked repository (:code:`https://github.com/<your account>/sepal-doc`).
 
-First, select the :code:`Pull requests` button:
+First, select the :code:`Pull requests` button to open the **PR** interface:
 
 .. figure:: ../_images/team/contribute/start_pr.png
     :alt: Pull requests button
 
-    Open the **Pull request** interface.
-
-In the **Pull request** interface, select the :code:`New pull request` button:
+In the **PR** interface, select the :code:`New pull request` button:
 
 .. figure:: ../_images/team/contribute/new_pr.png
     :alt: New pull request
-
-    Create a new pull request.
 
 Select what is going to be pushed and where.
 
@@ -588,19 +566,15 @@ As explained at the beginning of this article, you started your modifications to
 
 The :code:`Allow edits by maintainers` checkbox needs to always be checked (default behavior) (**2**). This will allow the SEPAL team to make modifications to your PR files (e.g. if you made a mistake in a .rst directive).
 
-When everything is complete, select :code:`Create pull request` (**3**).
+When everything is complete, select :code:`Create pull request` (**3**) and validate the creation of the PR.
 
 .. figure:: ../_images/team/contribute/valid_pr.png
     :alt: Valid PR
-
-    Validate the creation of the PR.
 
 An automatic check will be performed to see if your PR can be built with ReadTheDoc and distributed in https://docs.sepal.io
 
 .. figure:: ../_images/team/contribute/ci_pr.png
     :alt: Continuous integration (CI) in PR
-
-    Continuous integration will run in Github.
 
 Once submitted, the SEPAL team will review your PR and make the appropriate modifications, if needed. The PR will then be accepted and the new page will be available in the main documentation.
 
@@ -611,13 +585,9 @@ Once submitted, the SEPAL team will review your PR and make the appropriate modi
     .. figure:: ../_images/team/contribute/delete_fork.png
         :alt: Delete fork
 
-        Click here and follow the instructions to delete your repository.
-
     .. figure:: ../_images/team/contribute/delete_popup.png
-        :alt: Delete popup
+        :alt: Delete pop-up window
 
-        The pop-up window to delete the fork used in the closed PR.
-
-.. important::
+.. attention::
 
     If you are the owner of :code:`openforis`, do not delete :code:`openforis/sepal-doc`.
