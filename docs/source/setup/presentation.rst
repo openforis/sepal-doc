@@ -207,8 +207,8 @@ Some of the apps include:
 -   **R Studio**: Provides access to the R environment, where you can run processing scripts and upload data to your SEPAL folder.
 -   **JupyterLab**: Provides access to the Python environment where you can run complex data workflows.
 -   **BFAST GPU**: Graphics processing unit (GPU) implementation of the Breaks for Additive Season and Trend (BFAST) algorithm to analyse time series.
--   **Deforestation alert analysis**: Retrieve any type of alert on a selected area of interest (AOI).
+-   **Deforestation alert analysis**: Retrieves any type of alert on a selected area of interest (AOI).
 -   **MGCI**: Calculates Sustainable Development Goal (SDG) 15.4.2: Mountain Green Cover Index (MGCI) at national/subregional scale.
--   **SMFM Biota**: Calculate biomass change over time using ALOS PALSAR data (SMFM refers to Satellite Monitoring for Forest Management).
+-   **SMFM Biota**: Calculates biomass change over time using ALOS PALSAR data (SMFM refers to Satellite Monitoring for Forest Management).
 
 For more information on available apps, see :doc:`../modules/index`.
