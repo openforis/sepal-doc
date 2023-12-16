@@ -8,7 +8,7 @@ In this article, learn how to:
 
 If you have forgotten the password for your SEPAL account, you can reset it by proving you have access to the email address associated with your account.
 
-A password may be recovered by submitting a request after following the directions located at one of the website's sign-in forms.
+A password may be recovered by submitting a request after following the directions located at one of the website's signin forms.
 
 .. note::
 
