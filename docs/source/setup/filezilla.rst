@@ -19,7 +19,7 @@ To exchange files with SEPAL, there are several built-in tools you can use.
 Jupyter Notebook
 ^^^^^^^^^^^^^^^^
 
-In the SEPAL **Apps** dashboard, open a new **Jupyter Notebook app**. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared.
+In the SEPAL **Apps** dashboard, open a new **Jupyter Notebook** app. The **Notebook** dashboard enables you to access files and directories on your system, which can be opened, created, deleted, renamed, downloaded, copied and shared.
 
 Select **Upload** to upload a file from your computer to the platform.
 
@@ -94,7 +94,7 @@ FileZilla®
 
 FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
-The FileZilla® Client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL.
+The FileZilla® client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL.
 
 .. tip::
 
@@ -105,11 +105,11 @@ Connect your FTP client to SEPAL
 
 Accessing files in SEPAL is easy using FileZilla®.
 
-To use FileZilla®, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** > **New Site**. Use the screenshot below as a guide for filling out the form.
+To use FileZilla®, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** > **New Site**. Use the following as a guide for filling out the form.
 
 -   **Host:** ssh.sepal.io
 -   **Port:** 443
--   **Protocol:** SFTP – SSH File Transfer Protocol
+-   **Protocol:** SFTP–SSH File Transfer Protocol
 -   **Logon Type:** Normal
 -   **User:** <your SEPAL username>
 -   **Password:** <your SEPAL password>
