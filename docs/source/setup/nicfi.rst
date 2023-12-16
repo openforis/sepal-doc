@@ -1,4 +1,4 @@
-Use NICFI-PlanetLab data
+Use NICFI–PlanetLab data
 ========================
 *Sign up for NICFI and connect with GEE*
 
@@ -49,7 +49,7 @@ Select the **Sign up** button and fill in the form.
    :group: setup_nicfi
 
 After submitting the form, an email will be sent with a link to activate your account.
-Check your email for an invitation to complete the sign-up process.
+Check your email for an invitation to complete the signup process.
 
 Select the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account.
 
@@ -63,7 +63,7 @@ Select the link and a new form will appear. Complete the form and you will recei
 
 .. note::
 
-    Approval for accessing NICFI-Planet Basemaps in GEE can take up to one week.
+    Approval for accessing NICFI–Planet Basemaps in GEE can take up to one week.
 
 Access NICFI through GEE
 ------------------------
@@ -78,17 +78,17 @@ To authorize your GEE account to access PlanetLab data:
     :title: The platform explorer of the PlanetLab website; the **My account** dropdown menu appears when hovering
     :group: setup_nicfi
 
-2.  Select **All plans** (see **2** in figure below), which should activate NICFI level 1 data access (see **1** in figure below). If it does, select **My settings** (see **3** in figure below) and scroll down to the bottom of the page.
+2.  Select **All plans** (see **2** in figure below), which should activate NICFI level 1 data access (**1** in figure below). If it does, select **My settings** (**3** in figure below) and scroll down to the bottom of the page.
 
 .. thumbnail:: ../_images/setup/nicfi/plans.png
     :title: The plans that are linked to your NICFI account
     :group: setup_nicfi
 
-3.  Select **Edit access** (see **1** in figure below) in the lower right.
+3.  Select **Edit access** (**1**) in the lower right.
 
-4.  Select all checkboxes (see **2** in figure below) and enter the email address (see **3** in the figure below) associated with your GEE account.
+4.  Select all checkboxes (**2**) and enter the email address (**3**) associated with your GEE account.
 
-5.  Select **Connect to Earth Engine** (4) to finalize registration.
+5.  Select **Connect to Earth Engine** (**4**) to finalize registration.
 
 .. note::
 
@@ -98,16 +98,16 @@ To authorize your GEE account to access PlanetLab data:
     :title: The registration form to authorize a GEE account to access your Planet product
     :group: setup_nicfi
 
-The next step is to make sure SEPAL is connected to the same email address that has access to NICFI-Planet Basemaps in GEE using the same process as in GEE.
+The next step is to make sure SEPAL is connected to the same email address that has access to NICFI–Planet Basemaps in GEE using the same process as in GEE.
 
-Note: If you are already connected to a Google account with access to NICFI-Planet Basemaps in GEE, you can skip this step.
+Note: If you are already connected to a Google account with access to NICFI–Planet Basemaps in GEE, you can skip this step.
 
 .. figure:: ../_images/setup/gee/user_interface_connected.png
     :alt: SEPAL and GEE connected
     :align: center
     :width: 50%
 
-If you are either not connected to your Google account or connected via a different email address that does not have access to NICFI-Planet Basemaps, select **Google account** and choose the email address that has access to NICFI-Planet Basemaps in GEE.
+If you are either not connected to your Google account or connected via a different email address that does not have access to NICFI–Planet Basemaps, select **Google account** and choose the email address that has access to NICFI–Planet Basemaps in GEE.
 
 .. note::
 
