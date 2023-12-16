@@ -5,7 +5,11 @@ Modules
 Overview
 --------
 
-SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers. These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming. These applications are served in SEPAL with attractive user interfaces to ensure the best possible user experience.
+SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers. 
+
+These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming. 
+
+The applications are served in SEPAL with attractive user interfaces to ensure the best possible user experience.
 
 They run on various shells – from pure HTML and Shiny-based R apps to Jupyter-powered Python kernels. This flexibility and variety of tools allows developers to integrate workflows and make them available for SEPAL users.
 
@@ -14,9 +18,9 @@ Review the following subsections to learn more about SEPAL applications.
 Start applications
 ------------------
 
-To start a SEPAL application, go to the **Apps** dashboard by selecting the wrench icon on the left side of the window (see **1** in the following image). This will display a list of apps you can run in the interface. More information about each app is found by selecting the **i** on the right side.
+To start a SEPAL application, go to the **Apps** dashboard by selecting the wrench icon on the left side of the window (see **1** in the following image). This will display a list of apps you can run in the interface. More information about each app is found by selecting the **More information** (**i**) icon on the right side.
 
-Note that the following apps are code editors, not apps (**2**):
+Note that the following are code editors, not apps (**2**):
 
 -   **RStudio**: Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder.
 -   **Jupyter Notebook**: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text (supports kernels in many different languages, including R, Python and NodesJS).
@@ -29,7 +33,7 @@ To find the application you're looking for, navigate through the different app p
 
 Once the desired application is found, select it to initiate the process. This will start the smallest instance to run the SEPAL sandbox (:code:`t1`).
 
-Refer to the next section to start a specific instance manually.
+Refer to the next subsection to start a specific instance manually.
 
 .. note::
 
