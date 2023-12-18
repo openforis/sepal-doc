@@ -103,11 +103,11 @@ Seasonal mosaic
 
 Select :guilabel:`More` in the :guilabel:`DAT` panel to expand the date selection tool. Rather than selecting a year, you can select a season of interest.
 
-Select the :icon:`fa-solid fa-calendar` (1) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from).
+Select the :icon:`fa-solid fa-calendar` (**1**) to open the **Date selection** pop-up window. The selected date will be the target of the mosaic (i.e. the date from which pixels in the mosaic should ideally come from).
 
-Using the main slider (2), define a season around the target date by identifying a start date and end date. SEPAL will then retrieve the mosaic images between those dates.
+Using the main slider (**2**), define a season around the target date by identifying a start date and end date. SEPAL will then retrieve the mosaic images between those dates.
 
-The number of images in a single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - [3]) and in the future (:code:`Future season` - [4]).
+The number of images in a single season of one year may not be enough to produce a correct mosaic. SEPAL provides two secondary sliders to increase the pool of images to create the mosaic. Both count the number of seasons SEPAL can retrieve in the past (:code:`Past season` - [**3**]) and in the future (:code:`Future season` - [**4**]).
 
 When the selection is done, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
 
@@ -338,10 +338,10 @@ Select :guilabel:`Clear scenes` to remove all manually and automatically selecte
 Manual selection
 """"""""""""""""
 
-To open the **Scene selection** menu, hover over a tile circled-number and select it (1). The window will be divided into two sections:
+To open the **Scene selection** menu, hover over a tile circled-number and select it (**1**). The window will be divided into two sections:
 
--   Available scene (2): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in the :guilabel:`SCN` tab.
--   Selected scenes (3): The scenes that are currently selected.
+-   **Available scene** (**2**): All the available scenes according to the parameters you selected. These scenes are ordered using the :code:`priority` parameter you set in the :guilabel:`SCN` tab.
+-   **Selected scenes** (**3**): The scenes that are currently selected.
 
 .. thumbnail:: ../_images/cookbook/optical_mosaic/select_scenes.png
     :title: The pop-up window used to select individual scenes for one single tile
