@@ -1,9 +1,8 @@
-GuidosToolbox Workbench (GWB)
-=============================
+GWB
+===
+*Suite of various geospatial image analysis tools*
 
 This article of SEPAL documentation provides usage instructions for the image analysis module **GWB** (`GuidosToolbox Workbench <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_) implemented as a Jupyter dashboard on the SEPAL platform.
-
-Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_.
 
 Introduction
 ------------
@@ -1255,5 +1254,10 @@ Here is the result of the computation using SPA2 (two classes) on the :code:`exa
 .. thumbnail:: https://raw.githubusercontent.com/openforis/sepal-doc/master/docs/source/img/cli/gwb/example_spa2.png
     :width: 50%
     :group: gwb-module
+
+References
+----------
+
+`GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_
 
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/gwb/release/doc/en.rst
