@@ -1,7 +1,9 @@
 SMFM
 ====
+SMFM
+====
 
-Modules with the Satellite monitoring for forest management (SMFM) tag include:
+Modules with the **Satellite monitoring for forest management (SMFM)** tag include:
 
 .. toctree::
     :maxdepth: 1
