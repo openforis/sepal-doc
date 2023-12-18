@@ -1,5 +1,6 @@
 GEE app reader
 ==============
+*Display the source code of any GEE-based application*
 
 This application allows users to display the source code of any GEE-based application. 
 
