@@ -1,5 +1,6 @@
 SMFM deforest
 =============
+*Detect deforestation using a time-series of forest probabilities*
 
 .. include:: ../_templates/no_module.rst
 
