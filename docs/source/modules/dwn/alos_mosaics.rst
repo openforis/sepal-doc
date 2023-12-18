@@ -1,5 +1,6 @@
 ALOS Kyoto & Carbon Mosaics by JAXA
 ===================================
+*Create and manipulate ALOS K&C mosaics*
 
 This module was adapted to the SEPAL environment from `this script by Vollrath <https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_.
 
