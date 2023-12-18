@@ -1,7 +1,6 @@
 WePlan - Forests
 ================
-
-*Forest restoration planning tool*
+*Explore restoration planning solutions provided by WePlan - Forests*
 
 Overview
 --------
