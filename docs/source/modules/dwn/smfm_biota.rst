@@ -1,5 +1,6 @@
-Satellite Monitoring for Forest Management – Biomass Tool for ALOS tool (SMFM BIOTA)
-====================================================================================
+SMFM BIOTA
+==========
+*Calculate biomass change over time using ALOS PALSAR data*
 
 The Biomass Tool for ALOS (BIOTA tool) is part of the World Bank's project, `Satellite Monitoring for Forest Management (SMFM) project <https://www.smfm-project.com>`_. It was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team. 
 
