@@ -1,6 +1,6 @@
 CCDC asset creation
 ===================
-*Facilitate the workflow for applying the Continuous Change Detection and Classification approach with SEPAL*
+*Facilitate the workflow for applying the CCDC approach with SEPAL*
 
 
 Background
