@@ -1,5 +1,6 @@
 se.plan
 =======
+*Restoration planning tool using a weighted-sum approach*
 
 Introduction
 ------------
