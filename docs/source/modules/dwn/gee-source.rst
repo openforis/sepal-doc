@@ -20,3 +20,5 @@ Here is an example computing the `GLAD_S2 application <https://glad.earthengine.
     :group: module-gee-source 
     
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/gee_source/release/doc/en.rst
+
+.. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/gee_source/release/doc/en.rst

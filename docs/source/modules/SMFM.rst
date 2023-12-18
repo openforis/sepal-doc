@@ -1,9 +1,7 @@
-SMFM
-====
-SMFM
+Smfm
 ====
 
-Modules with the **Satellite monitoring for forest management (SMFM)** tag include:
+Modules with the **Smfm** tag include:
 
 .. toctree::
     :maxdepth: 1
@@ -14,5 +12,6 @@ Modules with the **Satellite monitoring for forest management (SMFM)** tag inclu
 
 .. csv-table::
 
-    :doc:`dwn/smfm_biota`,"Calculate biomass change over time using ALOS PALSAR data"
-    :doc:`dwn/smfm_deforest`,"Detect deforestation using a time series of forest probabilities"
+    :doc:`dwn/smfm_biota`,"Calculate biomass change over time using ALOS Palsar data"
+    :doc:`dwn/smfm_deforest`,"Detect deforestation using a time-series of forest probabilities"
+

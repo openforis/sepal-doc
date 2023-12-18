@@ -1,7 +1,7 @@
-Planet Lab
-==========
+Planetlab
+=========
 
-Modules gathered under the **Planet Lab**** tag include:
+Modules with the **Planetlab** tag include:
 
 .. toctree::
     :maxdepth: 1
@@ -12,5 +12,6 @@ Modules gathered under the **Planet Lab**** tag include:
 
 .. csv-table::
 
-    :doc:`dwn/planet_order`,"Order imagery from Planet Lab mosaics"
-    :doc:`dwn/sepafe`,"Receive and validate fire alerts from the FIRMS programme by using daily Planet imagery"
+    :doc:`dwn/planet_order`,"Order imagery from PlanetLab mosaics"
+    :doc:`dwn/sepafe`,"..."
+

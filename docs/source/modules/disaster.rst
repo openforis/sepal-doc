@@ -12,3 +12,4 @@ Modules with the **Disaster** tag include:
 .. csv-table::
 
     :doc:`dwn/damage_proxy_map`,"Damage estimation from Sentinel-1"
+

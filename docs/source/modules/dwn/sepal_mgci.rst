@@ -375,5 +375,4 @@ After the calculation is done, the **Export** button will become available. To g
    :alt: Export report
 
 Once the process is done, the alert message will display the storage location of the report files, which can be downloaded by using any of the options presented in `Exchange files in SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`__.
-
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst

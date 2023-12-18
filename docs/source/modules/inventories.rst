@@ -14,3 +14,4 @@ Modules with the **Inventories** tag include:
 
     :doc:`dwn/bootstrap_sampling_simulator`,"..."
     :doc:`dwn/plot_generator`,"..."
+

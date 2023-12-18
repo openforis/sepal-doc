@@ -1,8 +1,7 @@
-Time series
+Time-series
 ===========
 
-Modules with the **Time series** tag include:
-Modules with the **Time series** tag include:
+Modules with the **Time-series** tag include:
 
 .. toctree::
     :maxdepth: 1
@@ -16,8 +15,9 @@ Modules with the **Time series** tag include:
 
 .. csv-table::
 
-    :doc:`dwn/bfast_explorer`,"Performs analysis of Landsat SR time-series pixel data using the BFAST algorithm"
+    :doc:`dwn/bfast_explorer`,"Performs analysis of Landsat Surface Reflectance time series pixel data using the BFAST algorithm."
     :doc:`dwn/bfast_gpu`,"GPU implementation of the BFAST algorithm to analyse time series"
-    :doc:`dwn/bfast_r`,"Analyse the dynamics of satellite dense time series"
-    :doc:`dwn/cusum`,"Spatially cumulative sum algorithm for change detection within univariate time series (GPU-powered)"
-    :doc:`dwn/sar_time_series`
+    :doc:`dwn/bfast_r`,"..."
+    :doc:`dwn/cusum`,"Spatially cumulative sum algorithm for change detection within univariate time-series (GPU powered)"
+    :doc:`dwn/sar_time_series`,"..."
+
