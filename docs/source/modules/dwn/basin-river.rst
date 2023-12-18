@@ -1,8 +1,7 @@
 Resilient rivers and basins
 ===========================
+*Understand forest cover and forest cover change from a watershed perspective*
 
-Understand forest cover and forest cover change from a watershed perspective
-----------------------------------------------------------------------------
 
 Overview 
 ________
