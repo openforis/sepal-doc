@@ -9,10 +9,10 @@ Forest Canopy Disturbance Monitoring (FCDM)
 FCDM tool
 ---------
 
-Overview 
+Overview
 ^^^^^^^^
 
-The **FCDM** tool supports the detection of forest canopy disturbance from remote sensing satellites, providing indications of forest degradation processes. 
+The **FCDM** tool supports the detection of forest canopy disturbance from remote sensing satellites, providing indications of forest degradation processes.
 
 Reporting on forest degradation is required by many tropical countries participating in the programme, Reducing Emissions from Deforestation and Forest Degradation and the role of conservation, sustainable management of forests and enhancement of forest carbon stocks in developing countries (REDD+). However, compared to deforestation, the mapping of forest degradation has proven to be much more challenging technically. In particular, signs of a forest canopy disturbance is less prominent, as it does not result in a change of land cover.
 
@@ -39,12 +39,12 @@ Publications, models and data products that make use of this tool must include p
 Contact
 ^^^^^^^
 
-> **Original algorithm**  
-> Author: Andreas Langner (SvBuF)  
+> **Original algorithm**
+> Author: Andreas Langner (SvBuF)
 > Email: andi.langner@gmail.com, andreas-johannes.langner@ec.europa.eu
 
-> **SEPAL adaptation**  
-> Author: Pierrick Rambaud (FAO)  
+> **SEPAL adaptation**
+> Author: Pierrick Rambaud (FAO)
 > Email: Pierrick.rambaud@fao.org
 
 Usage
@@ -72,7 +72,7 @@ After choosing the desired area, select the :code:`Select these inputs` button; 
 .. note::
 
     You can only select one AOI. In some cases, depending on the input data, you could run out of resources in GEE.
-    
+
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/aoi_selector.png
     :title: AOI selection of the Sandan province in Cambodia
     :group: fcdm
@@ -99,10 +99,10 @@ Use the :code:`datepicker` to select the start date and end date of these time p
 
     -   Reference period: :code:`2019-01-01 2019-12-31`
     -   Analysis period: :code:`2020-01-01 2020-12-31`
-    
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/time_period.png 
+
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/time_period.png
     :title: Selection of two time periods covering the entire year of 2020 as analysis and 2019 as reference
-    :group: fcdm    
+    :group: fcdm
 
 Sensor parameters
 *****************
@@ -119,8 +119,8 @@ Sensors can be selected in the dropdown menu. This list is only showing satellit
 .. note::
 
     Data from Sentinel and Landsat programme cannot be mixed.
-    
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/sensor.png 
+
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/sensor.png
     :title: Select the Landsat family (L7 and L8) without thresholding L7 data
     :group: fcdm
 
@@ -137,22 +137,22 @@ Value of the cloud buffering used in the cloud masking operation of the FCDM pro
 Basemap
 *******
 
-The FCDM process needs to create a forest/non-forest mask to produce results, which is derived from data provided by the user. 
+The FCDM process needs to create a forest/non-forest mask to produce results, which is derived from data provided by the user.
 
-Three default datasets can be selected: 
+Three default datasets can be selected:
 
 -   **Global forest cover**: This mask will be based on the `global forest cover product from University of Maryland <https://earthenginepartners.appspot.com/science-2013-global-forest>`_. The user will also need to provide the year to use and the tree cover level to differentiate forest from the rest.
 
     .. tip::
 
         The year is automatically set to the start year of the **Reference** period.
-    
+
 -   **TMF**: This mask will be based on the `Tropical Moist Forest product from the JRC<https://forobs.jrc.ec.europa.eu/TMF/gee_tutorial/>`. The user will also need to provide the year of analysis.
 
     .. tip::
 
         The year is automatically set to the start year of the **Reference** period.
-    
+
 -   **No forest map**: There will be no forest masking.
 
 The user can also use any GEE asset by setting it's value in the :code:`textfield` or selecting an image in the raster list. The image needs to be a mask with values of the first band set to:
@@ -160,7 +160,7 @@ The user can also use any GEE asset by setting it's value in the :code:`textfiel
 -   0 for non-forest
 -   1 for forest
 
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/basemap.png 
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/basemap.png
     :title: Use the built-in GFC dataset to build a forest mask with 70% tree cover based on the 2019 version
     :group: fcdm
 
@@ -187,10 +187,10 @@ Three parameters need to be set:
 -   **Radius of circular kernel for filtering**: The radius of the buffer (in metres; by default, to: code:`80`).
 -   **Min number of intermediate disturbance events per cleaning kernel**: the threshold number of intermediate disturbance events within a kernel to consider the kernel centre pixel to be kept or discarded (irrespective of pixel value; by default, set to :code:`3`).
 
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/advanced_params.png 
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/advanced_params.png
     :title: The default set of advanced parameters
     :group: fcdm
-    
+
 Compute
 *******
 
@@ -200,7 +200,7 @@ Select :guilabel:`Run FCDM Computation` to launch the process in GEE. The layers
 
     This operation takes very little time since the actual computation is done when the map refreshes itself.
 
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/run_fcdm.png 
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/run_fcdm.png
     :title: The run panel
     :group: fcdm
 
@@ -221,7 +221,7 @@ In this map, different layers of the computation will be displayed:
 
     Every time the user zooms in, GEE will recompute all values on the fly. This operation is time consuming, so be patient. The forest mask is a simple image; when the delta-rNBR finishes refreshing, it will be perfectly aligned with the image. If it's blurry, GEE is still computing.
 
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/result_map.png 
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/result_map.png
     :title: Vizualization of the Sandan province with all default parameters with the reference period of 2019 and 2020 analysis
     :group: fcdm
 
@@ -230,20 +230,20 @@ Download images
 
 Select the **cloud** in the upper-left corner of the map to open the following pop-up window, where you will be able to customize exportation parameters.
 
-.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/export_panel.png 
+.. thumbnail:: https://raw.githubusercontent.com/12rambau/fcdm/master/doc/img/export_panel.png
     :title: The downloading pop-up window
     :width: 50%
     :align: center
     :group: fcdm
-    
+
 -   **Filename prefix**: The prefix used to describe the file (in SEPAL) or asset (in GEE) (by default, :code:`<aoi_anme>_<referenced perdiod year>_<analysis_period_year`); it can be customized to anything, but every non-UTF8 character will automatically be changed to "_".
 -   **Select dataset**: The user can export any of the following datasets: :code:`Delta-rNBR`, :code:`Delta-rNBR wihthout DDR`, :code:`anaysis rNBR`, :code:`reference rNBR`, and :code:`forest mask` (by default, :code:`Delta-rNBR`).
 -   **Scale**: The user can select any exportation scale (from 10 metres to 300 metres).
 -   **Select export method**: as a SEPAL file or GEE asset
 
     .. attention::
-    
-        If you select :code:`as a SEPAL file`, the application cannot be closed before the end of the exportation. 
+
+        If you select :code:`as a SEPAL file`, the application cannot be closed before the end of the exportation.
 
         If you choose to export to GEE, the process can be monitored from the GEE **Task manager**.
 

@@ -18,7 +18,7 @@ The current version (2.0) considers two objectives:
 -    **climate change mitigation benefit** (estimated as the change in carbon sequestration that would arise from forest restoration), and
 -    **biodiversity conservation benefit** (estimated as the average reduction in local [national] extinction risk among all forest-associated species).
 
-The analysis also considers (as constraints) the opportunity and implementation costs of forest restoration, accounting for the potential for natural regeneration to reduce implementation costs. 
+The analysis also considers (as constraints) the opportunity and implementation costs of forest restoration, accounting for the potential for natural regeneration to reduce implementation costs.
 
 Analyses occur at a 1 km^2 resolution on a national basis, for countries containing tropical and subtropical forests within +/- 25 degrees latitude. Scenarios are offered in five levels of restoration targets, ranging from 10 percent to 50 percent of the areas available for restoration.
 

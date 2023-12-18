@@ -6,7 +6,7 @@ The aim of this stratified sampling design tool is to analyse results from a str
 
 The concept is derived from map accuracy assessment principles. Characterized frequency of errors (i.e. omission and commission) for each map class may be used to compute area estimates and estimate the uncertainties (i.e. confidence intervals) for the areas on each class.
 
-First, open the tool by selecting **Stratified Area Estimator - Analysis** in the **Apps** window. 
+First, open the tool by selecting **Stratified Area Estimator - Analysis** in the **Apps** window.
 
 You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that **Reference and Documents** are in the same place as the **Design** tool. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 

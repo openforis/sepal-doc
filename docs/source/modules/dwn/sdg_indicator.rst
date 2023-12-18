@@ -8,7 +8,7 @@ Target 15.3 of SDG 15: Life on Land aims to "combat desertification by 2030, res
 
 To help achieve Target 15.3 of the SDGs, governments, international organizations, and civil society must take action to combat desertification and restore degraded land. Sustainable land management can be a significant measure that has a positive impact on degraded land. By taking such actions, we can ensure the preservation of biodiversity, promote sustainable land use, and create a sustainable future for generations to come. These actions can help improve the health of the environment and boost agricultural production in these areas, which will in turn ensure food security, reduce poverty and promote social welfare.
 
-This module provides guidance for generating data for reporting on SDG Indicator 15.3.1. It follows `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_. 
+This module provides guidance for generating data for reporting on SDG Indicator 15.3.1. It follows `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_.
 
 The methodology for the module (`Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area [Version 1.0] <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_) was implemented in consultation with the `Trends.Earth <https://trends.earth/docs/en/index.html>`_ team and `Conservation International <https://www.conservation.org>`_.
 
@@ -25,7 +25,7 @@ UNCCD Good practice guidelines
 
 In 2017, the UNCCD released `the first version of their guidance <https://prais.unccd.int/sites/default/files/helper_documents/4-GPG_15.3.1_EN.pdf>`_.
 
-In 2021, `a revised version <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_ was published. 
+In 2021, `a revised version <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_ was published.
 
 The module is based on the most recent version of their guidance (Version 2), which outlines a comprehensive approach to land degradation and suggests methods for restoring degraded land by providing guidance for governments, businesses, local communities, and other stakeholders.
 
@@ -106,7 +106,7 @@ The five-level stats are as follows:
 The area of the lowest negative Z score level (< -1.96) is considered **degraded**, the area between Z score -1.96 to 1.96 is considered **stable**, and the area above 1.96 is considered **improved** for calculating the sub-indicator.
 
 **Productivity performance**
-           
+
 *Productivity performance* indicates the level of local land productivity relative to other regions with similar productivity potential.
 
 The maximum productivity index, :math:`NPP_{max}` value (90 :sup:`th` percentile) observed within the similar eco-region is compared to the observed productivity value (observed *NPP*). It is given as:
@@ -166,8 +166,8 @@ Either of the following "look-up" tables can be used to calculate the sub-indica
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/look-up-table.svg
     :alt: Look-up table
 
-Available Dataset: 
-                  
+Available Dataset:
+
 Sensors: MODIS; Landsat 4, 5, 7 and 8; Sentinel 2
 
 NPP metric: NDVI; EVI and MSVI; Terra NPP
@@ -185,9 +185,9 @@ A custom transition matrix can be used in combination with the custom land cover
 
 The first two columns, excluding the first two cells (:math:`a_{31}...a_{n1} \text{and } a_{32}...a_{n2}`), must contain class labels and pixel values for the initial land cover, respectively.
 
-The first two rows, excluding the first two cells (:math:`a_{13}...a_{1n} \text{and } a_{23}...a_{2n}`), must contain class labels and pixel values for the final land cover, respectively. 
+The first two rows, excluding the first two cells (:math:`a_{13}...a_{1n} \text{and } a_{23}...a_{2n}`), must contain class labels and pixel values for the final land cover, respectively.
 
-The rest of the higher indexed cells :math:`\left(\left[\begin{matrix}a_{33}&\cdots&a_{3n}\\\vdots&\ddots&\vdots\\2_{n3}&\cdots&3_{nn}\end{matrix} \right]\right)` must contain the transition matrix. 
+The rest of the higher indexed cells :math:`\left(\left[\begin{matrix}a_{33}&\cdots&a_{3n}\\\vdots&\ddots&\vdots\\2_{n3}&\cdots&3_{nn}\end{matrix} \right]\right)` must contain the transition matrix.
 
 Cells :math:`a_{11},a_{12},a_{21}, \text{and } a_{22}` can be used to store some metadata. Use 1 to denote **improved transitions**, 0 for **stable**, and -1 for **degraded transitions**.
 
@@ -241,14 +241,14 @@ After choosing the desired area, select :guilabel:`Select these inputs` for the 
 .. note::
 
     You can only select one AOI. In some cases, depending on input data, you could run out of resources in GEE.
-    
+
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/aoi_selection.png
     :alt: AOI selection
-    
+
 Parameters
 """"""""""
 
-To run the computation of SDG Indicator 15.3.1, several parameters need to be set. 
+To run the computation of SDG Indicator 15.3.1, several parameters need to be set.
 
 To better understand the parameters required to calculate the SDG 15.3.1 Indicator and its sub-indicators, see `Good practice guidance: SDG Indicator 15.3.1 – Proportion of land that is degraded over total land area (Version 2.0) <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_.
 
@@ -266,9 +266,9 @@ Mandatory parameters
 -   **Sensors**: After selecting the dates, all available sensors within the timeframe will be available. You can deselect or reselect any sensor you want. The default value is set to all Landsat satellites available within the selected timeframe.
 
 .. note::
-   
+
         Some of the sensors are incompatible with others. Thus selecting **Landsat**, **MODIS** or **Sentinel** datasets in the **Sensors** dropdown menu will deselect the others.
-        
+
 -   **Vegetation index**: The vegetation index will be used to compute the trend trajectory (by default: **NDVI**).
 
 -   **Trajectory**: There are three options available to calculate the productivity trend that describe the trajectory of change (by default, **productivity (VI) trend**).
@@ -296,7 +296,7 @@ Productivity parameters
 Assessment periods for all metrics can be specified individually. Keep them blank to use the start and end dates for the respective metric.
 
 .. note::
-    
+
      If the start and end years you've chosen for your assessment period aren't at least four years apart, you'll need to choose an assessment period for the productivity state that's longer. The module will disregard the value of a particular metric if you only specify the start or end year.
 
 The default productivity "look-up" table is set to the second version of the good practice guidance, but you can also select the first version (to learn more about the "look-up" table, see the approach section for the tables and Section 4.2.5 of the `the second version of the good practice guidance <https://www.unccd.int/sites/default/files/documents/2021-09/UNCCD_GPG_SDG-Indicator-15.3.1_version2_2021.pdf>`_).
@@ -314,19 +314,19 @@ The default water body data is set to **JRC water body seasonality data** with a
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/water_body.png
     :alt: Water body
 
-The default land cover is set to **ESA CCI land cover data**. The tool will use the CCI land cover system of the **start date** and **end date**. These land cover images will be reclassified into the UNCCD land cover categories and used to compute the land cover sub-indicator. However, you can specify your own data for the start and end land cover data. Provide the :code:`ee.Image` asset name and the band that needs to be used, and the default dataset will be replaced in the computation with the specified land cover data. 
+The default land cover is set to **ESA CCI land cover data**. The tool will use the CCI land cover system of the **start date** and **end date**. These land cover images will be reclassified into the UNCCD land cover categories and used to compute the land cover sub-indicator. However, you can specify your own data for the start and end land cover data. Provide the :code:`ee.Image` asset name and the band that needs to be used, and the default dataset will be replaced in the computation with the specified land cover data.
 
 .. note::
 
      If you would like to use the default land cover transition matrix, the custom dataset needs to be classified in the UNCCD land cover categories. Please refer to :ref:`sdg-reclassify` to know how to reclassify the local dataset into different classification systems.
-    
+
 To compute the land cover sub-indicator with the UNCCD land cover categories, the user can modify the default transition matrix. Based on the user's local knowledge of the conditions in the study area and the land degradation process occurring there, use the table below to identify which transitions correspond to **degradation (D)**, **improvement (I)**, or **no change in terms of land condition (S)**.
 
 The rows stand for the initial classes and the columns for the final classes.
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/default_matrix.png
     :alt: Water body
-    
+
 **Custom land cover transition matrix**
 
 If you would like to use a custom land cover transition matrix, select the :guilabel:`Yes` radio button and the .csv file. Use `this matrix <https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/utils/ipccsx_matrix.csv>`_ as a template to prepare a matrix for your land cover map.
@@ -337,7 +337,7 @@ If you would like to use a custom land cover transition matrix, select the :guil
 
 SOC parameters
 +++++++++++++++
-    
+
 Launch the computation
 ######################
 
@@ -363,14 +363,14 @@ The results are gathered in the :code:`module_results/sdg_indicators/` folder. W
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/results.png
     :alt: Validate data
-    
-.. note:: 
+
+.. note::
 
     The results are interactive. Interact with charts and map layers using the widgets.
-    
+
     .. image:: https://raw.githubusercontent.com/sepal-contrib/sdg_15.3.1/master/doc/img/results_interaction.gif
         :alt: Result interaction
-        
+
 Transition graph
 ^^^^^^^^^^^^^^^^
 
@@ -381,7 +381,7 @@ This chart is the `Sankey diagram <https://en.wikipedia.org/wiki/Sankey_diagram>
     :width: 40%
     :align: center
 
-Distribution graph 
+Distribution graph
 ^^^^^^^^^^^^^^^^^^
 
 This chart displays the distribution of SDG Indicator 15.3.1 by land cover classes.
@@ -415,7 +415,7 @@ The following layers are available on the interactive map:
 Reclassify
 """"""""""
 
-.. attention:: 
+.. attention::
 
     To reclassify land cover data, it needs to be available to the user as an :code:`ee.Image` in GEE.
 
@@ -469,7 +469,7 @@ These categories are specified in the default UNCCD classification system. For a
 .. note::
 
     This band needs to be a categorical band; the reclassification system won't work with continuous values.
-    
+
 Select :guilabel:`get table` to generate a table with all categorical values of the asset. In the second column, set the destination value.
 
 .. tip::
@@ -477,7 +477,7 @@ Select :guilabel:`get table` to generate a table with all categorical values of 
     - If the destination class is not set, the class will be interpreted as "no_ata" (i.e. 0).
     - Select :guilabel:`save` to save the reclassification matrix. It's useful when the baseline and target map are in the same classification system.
     - Select :guilabel:`import` to import a previously saved reclassification matrix.
-    
+
 Select :guilabel:`reclassify` to export the map in GEE using the IPCC classification system. The export can be monitored in GEE.
 
 The following .gif will show you the full reclassification process with a simple example.

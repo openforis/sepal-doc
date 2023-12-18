@@ -2,7 +2,7 @@ SMFM BIOTA
 ==========
 *Calculate biomass change over time using ALOS PALSAR data*
 
-The Biomass Tool for ALOS (BIOTA tool) is part of the World Bank's project, `Satellite Monitoring for Forest Management (SMFM) project <https://www.smfm-project.com>`_. It was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team. 
+The Biomass Tool for ALOS (BIOTA tool) is part of the World Bank's project, `Satellite Monitoring for Forest Management (SMFM) project <https://www.smfm-project.com>`_. It was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_ with an integration in the SEPAL platform developed by the SEPAL developer team.
 
 The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics, allowing users to produce outputs of:
 
@@ -18,11 +18,11 @@ In this exercise, you will learn how to use the BIOTA tool to calculate AGB in d
 
     **Objectives**:
 
-    -   Generate maps of AGB, Gamma0 backscatter, forest cover, AGB change, deforestation risk, and change type. 
+    -   Generate maps of AGB, Gamma0 backscatter, forest cover, AGB change, deforestation risk, and change type.
 
 .. attention::
 
-    **Prerequisites**: 
+    **Prerequisites**:
 
     -   SEPAL account
 
@@ -36,7 +36,7 @@ Navigate to the **Apps** menu by selecting the wrench icon and entering **SMFM**
         :alt: Failure of the BIOTA tool
         :align: center
         :width: 600
-        
+
     If none of these steps work, you might need to start another instance. Please see `Introduction to SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html#terminal-tab>`_ for steps on how to use the terminal to start a higher instance (an **m4** instance should be enough). (You should see an interface like the one in the following figure.)
 
 .. figure:: https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/_img/biota_interface.png
@@ -54,7 +54,7 @@ Navigate to the **Apps** menu by selecting the wrench icon and entering **SMFM**
         :width: 600
 
     If this is the case, you can either:
-    
+
     -   Adjust your browser zoom level, or
 
     .. figure:: https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/_img/biota_chrome.png
@@ -106,7 +106,7 @@ Different parameters can be changed here. These include the parameters that shou
     Downsample factor, Applies downsampling to inputs by specifying an integer factor to downsample by. Defaults to 1 (i.e. no downsampling).
     Forest threshold, A forest AGB threshold (in tonnes per hectare) to separate forest from non-forest (specific to your location). Defaults to 10 tC/ha.
     Area threshold, A minimum area threshold (in hectares) to be counted as forest (e.g. a forest patch must be greater than 1 ha in size). Defaults to 0 ha.
-    Change area threshold, A threshold for a minimum change in forest area required to be flagged as a change. Defaults to 2 ha. This is for users who aim to produce change maps. 
+    Change area threshold, A threshold for a minimum change in forest area required to be flagged as a change. Defaults to 2 ha. This is for users who aim to produce change maps.
     Change magnitude threshold, The minimum absolute change in biomass (in tonnes per hectare) to be flagged as a change. Defaults to 15 tC/ha. This is for users who aim to produce change maps.
     Contiguity, The criterion of contiguity between two spatial units. The **rook** criterion defines neighbors by the existence of a common edge between two spatial units. The **queen** criterion is somewhat more encompassing and defines neighbours as spatial units sharing a common edge or a common vertex.
     Polarization, Which SAR polarization to use. Defaults to HV.
@@ -156,7 +156,7 @@ Select the :code:`Process` tab on the left side.
     :align: center
     :width: 600
 
-For Year 1, we will choose **Forest property**, which will automatically check all outputs available ("Gamma0", "Biomass", "Forest Cover"). For Year 2, we will choose **Forest change** (changes between 2016 and 2017), which will also select all available outputs ("Biomass change", "Change type", "Deforestation risk"). These will be explained later. 
+For Year 1, we will choose **Forest property**, which will automatically check all outputs available ("Gamma0", "Biomass", "Forest Cover"). For Year 2, we will choose **Forest change** (changes between 2016 and 2017), which will also select all available outputs ("Biomass change", "Change type", "Deforestation risk"). These will be explained later.
 
 Select :code:`Get outputs` to start the processes.
 
@@ -176,7 +176,7 @@ Similarly to before, the tool will show the process status at the bottom. You wi
     :align: center
     :width: 600
 
-Once complete, you will see a message similar to the one below, and all outputs will have a green "light". 
+Once complete, you will see a message similar to the one below, and all outputs will have a green "light".
 
 .. figure:: https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/_img/biota_output_done.png
     :alt: Process finalized
@@ -205,7 +205,7 @@ Select **Biomass**. Then, press :code:`Display`. You will see the map appear on 
 
 This is showing AGB in tonnes per hectare (tC/ha) for the 1 x 1 degree tile in Tanzania. To go back to the interface and select the other outputs, you can click anywhere on the screen outside of the map and do the same for the other results.
 
-If you followed these exact steps, your outputs should look similar to the ones in the figure below. 
+If you followed these exact steps, your outputs should look similar to the ones in the figure below.
 
 .. figure:: https://raw.githubusercontent.com/dfguerrerom/sepal_smfm_biota/main/doc/_img/biota_all.png
     :alt: BIOTA outputs for Tanzania
@@ -222,8 +222,8 @@ A summary of each output is described in the table below.
     Forest/woody cover, Binary classification of forested (1) and non-forested (0) areas
     Change type, Change described in seven different types (specified below)
     Biomass change, Change in biomass in tonnes per hectare
-    Deforestation risk, Risk of deforestation from Low (1) to High (3) 
-    
+    Deforestation risk, Risk of deforestation from Low (1) to High (3)
+
 There are seven change types described in the BIOTA tool, each of which is defined as a number (0 to 6) and color-coded on the map. Change types include:
 
 .. csv-table::

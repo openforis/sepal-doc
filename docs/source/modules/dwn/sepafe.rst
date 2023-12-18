@@ -18,7 +18,7 @@ The **Settings** panel is composed of three tabs: :code:`Planet Imagery`, :code:
 Connect your Planet API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: This step is optional but highly recommended. While you can receive fire alerts from different satellite sources by simply going through the next tabs, a Planet API Key with access to daily imagery will allow you to fully leverage the module. 
+.. note:: This step is optional but highly recommended. While you can receive fire alerts from different satellite sources by simply going through the next tabs, a Planet API Key with access to daily imagery will allow you to fully leverage the module.
 
 - Validate your Planet API Key: Provide a valid API Key in the input box and select the validation button. The module will check whether the key is valid and messages related to its connection will be displayed within the alerts widget. Once your validation is done, you can open the **Advanced settings** expansion panel and modify its inputs.
 
@@ -41,9 +41,9 @@ The module has two options for selecting an AOI to filter alerts.
 
 - Draw a shape: When selected, three drawing tools will be displayed in the upper-left corner of the map; you can select a `square`, `circle`, or a `polygon`, and draw them on the map.
 - Select a country: Enter the name of the country into the search box (or navigate through it by using the scroll bar) and select the desired country. Once the country is selected, it will be displayed in the map view.
-  
+
 .. image:: https://raw.githubusercontent.com/dfguerrerom/planet_active_fires_explorer/main/doc/gif/aoi.gif
-   
+
 Receive fire alerts
 ^^^^^^^^^^^^^^^^^^^
 

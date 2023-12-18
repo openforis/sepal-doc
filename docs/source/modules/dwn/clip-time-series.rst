@@ -8,7 +8,7 @@ Clip time series
 
 This module allows users to download an automatically generated time series from customizable dates as a :code:`.pdf`. Each mosaic will be represented as a custom square around the point of interest using the band combination selected by the user (ranging in size from 500 m x 500 m to 1000 km x 10000 km).
 
-Select file 
+Select file
 -----------
 
 First the user needs to select a file, which will be the main input of the module; each page of the final :code:`.pdf` will match a geometric shape of the input. The user can use two types of inputs:
@@ -26,7 +26,7 @@ The table file can be a :code:`.csv` or :code:`.txt` file. It needs to have at l
 .. attention::
 
     The table coordinates need to remain unprojected (i.e. in EPSG:4326)
-    
+
 Select :guilabel:`Table file`. Only the matching file type will be displayed. Navigate through your **SEPAL folders** to find the appropriate table.
 
 Once a file is selected, the widget will try to autopopulate the ID, latitude, and longitude columns. If columns are incorrectly set or if data are missing, select one of the file columns to completely describe the points (x, y, ID).
@@ -36,7 +36,7 @@ Once a file is selected, the widget will try to autopopulate the ID, latitude, a
     :title: Input selector using a table dataset
     :group: clip-time-serie
 
-Select :guilabel:`load your pts file` to load the points as a geodataframe in the app model and display them on a map. 
+Select :guilabel:`load your pts file` to load the points as a geodataframe in the app model and display them on a map.
 
 The points will be represented as marker clusters and the map will automatically zoom in on them; click on any cluster to zoom in.
 
@@ -84,7 +84,7 @@ Drivers
 
 Two drivers are available in this module. You can select either:
 
--    a GEE-based computation (images will be retreived from GEE), or 
+-    a GEE-based computation (images will be retreived from GEE), or
 -    Planet (images will be retrieved from Planet servers using the user API key).
 
 If the user selects :guilabel:`gee`, the panel will ask you to select the satellites to use for thumbnails. Select any satellite imagery from the Landsat family and Sentinel programme.
@@ -112,11 +112,11 @@ Multiple band combinations can be selected:
 
     -   Red, Green, Blue
     -   Nir, Red, Green
-    -   Nir, Swir1, Red 
-    -   Swir2, Nir, Red 
+    -   Nir, Swir1, Red
+    -   Swir2, Nir, Red
     -   Swir2, Swir1, Red
     -   Swir2, Nir, Green
-    
+
 -   Using the :code:`planet` driver:
 
     -   rgb
@@ -125,12 +125,12 @@ Multiple band combinations can be selected:
 Mosaics
 *******
 
-Each selected mosaic will be represented by a thumbnail in the final :code:`pdf`. 
+Each selected mosaic will be represented by a thumbnail in the final :code:`pdf`.
 
 .. attention::
 
     Users can select as many mosaics as they want, but please note:
-    
+
     -   The page will remain in A4 format, so thumbnails will become smaller and smaller, proportional to the number of mosaics.
     -   Each image needs to be downloaded to SEPAL, so many images result in a longer computation time.
 
@@ -173,13 +173,13 @@ Select the only available button to send your images to GEE or Planet.
 .. attention::
 
     The build of the :code:`.pdf` file can consume lots of computation resources (e.g. RAM). If your module freezes more than two or three times, you've run out of memory and the Python kernel has died. Restart the process with a larger instance.
-    
+
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/process_loading.png
     :alt: process_loading
     :group: clip-time-series
     :title: The progress bar of a downloading process
 
-.. note:: 
+.. note::
 
     To save space, the images will be removed from your Google Drive after the creation of the .pdf file.
 
@@ -190,13 +190,13 @@ Then, the module will present an active link in the green button to a preview of
     :width: 49%
     :group: clip-time-series
     :title: The output preview of a shape input using Planet mosaics
-    
+
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_planet.png
     :alt: results
     :width: 49%
     :group: clip-time-series
     :title: The output preview of a table input using Planet mosaics
-    
+
 .. thumbnail:: https://raw.githubusercontent.com/openforis/clip-time-series/master/doc/img/output_table_landsat.png
     :alt: results
     :group: clip-time-series

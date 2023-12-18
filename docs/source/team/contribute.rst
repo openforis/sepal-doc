@@ -187,7 +187,7 @@ This will create a **Pull request (PR)** that includes your modifications, which
 
 .. tip::
 
-    To ensure that your modifications are clear, change the title of the **Commit** by completing the first field (i.e. inserting an explanation such as **Typo**, **Change image**, **Code-block error* – anything that concisely describes your modifications).
+    To ensure that your modifications are clear, change the title of the **Commit** by completing the first field (i.e. inserting an explanation such as **Typo**, **Change image**, **Code-block error** – anything that concisely describes your modifications).
 
     .. figure:: ../_images/team/contribute/create_branch.png
         :alt: Create a branch
@@ -211,7 +211,7 @@ Select :code:`Create pull request`.
 Module edit
 ^^^^^^^^^^^
 
-The **Edit on GitHub** button will not work for articles in the **Modules** section, as the files are retrieved from each module's repository. 
+The **Edit on GitHub** button will not work for articles in the **Modules** section, as the files are retrieved from each module's repository.
 
 Their should be a link at the very bottom of the page to make modifications to the source file in the module repository following the same procedure mentioned above.
 

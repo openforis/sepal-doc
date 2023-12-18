@@ -20,7 +20,7 @@ Tutorial
 
 Follow this short tutorial to learn how to properly use the tool.
 
-Map tab 
+Map tab
 *******
 
 The **Map** tab is the starting tab that is initially displayed when running the tool. It is composed of an interactive map (rendered using the Google Maps engine) and a navigation toolbar. Explore the map by zooming in and panning around.
@@ -50,8 +50,8 @@ By selecting a marker, you can now choose a combination of which satellites to d
 Then, press the blue |download-icon| :guilabel:`Get data` button, located on the right side of the toolbar, which will initiate the download of all historical data available. The download progress is displayed in the lower-right corner; it should take less than ten seconds for the three selected products.
 
 .. note::
-    
-    At the time of writing this documentation page, all surface reflectance data were not available from GEE. Depending on where you place your markers, you may receive the following message: "No data available for the chosen satellite(s) and/or region...Please change your query and try again." Since the SEPAL platform relies on GEE to download data, the SEPAL team can not help with this issue. 
+
+    At the time of writing this documentation page, all surface reflectance data were not available from GEE. Depending on where you place your markers, you may receive the following message: "No data available for the chosen satellite(s) and/or region...Please change your query and try again." Since the SEPAL platform relies on GEE to download data, the SEPAL team can not help with this issue.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-05.jpg
   :group: bfast-explorer
@@ -71,7 +71,7 @@ First, choose which satellite time series date to visualize. Even though data wa
 The time series of the first spectral band (:code:`b1`) is plotted for all satellites. A legend distinguishes the different sources.
 
 .. note::
-    
+
     Use caution when comparing **Spectral bands** data from different satellites, as they may not correspond to the same wavelength range (see `here <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__).
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-07.jpg
@@ -113,13 +113,13 @@ Here, the maximum value of the :code:`harmonic order` is set dynamically, depend
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-13.jpg
   :group: bfast-explorer
 
-Finally, by selecting **bfast**, you can tweak two parameters: :code:`h` (minimal segment size) and :code:`season type`. 
+Finally, by selecting **bfast**, you can tweak two parameters: :code:`h` (minimal segment size) and :code:`season type`.
 
 Since **bfast** can detect multiple breakpoints, it may take a couple of seconds to process, in comparison to the previous two algorithms.
 
 .. thumbnail:: https://raw.githubusercontent.com/almeidaxan/bfast-explorer/master/md/images/tutorial-14.jpg
   :group: bfast-explorer
-  
+
 .. |chart-icon| raw:: html
 
     <i class="fa fa-chart-bar"></i>
@@ -127,8 +127,8 @@ Since **bfast** can detect multiple breakpoints, it may take a couple of seconds
 .. |trash-icon| raw:: html
 
     <i class="fa fa-trash"></i>
-    
-.. |download-icon| raw:: html 
+
+.. |download-icon| raw:: html
 
     <i class="fa fa-download"></i>
 

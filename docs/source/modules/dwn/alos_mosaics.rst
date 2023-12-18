@@ -14,7 +14,7 @@ Necessary inputs include:
 
 The user will be able to display the mosaic in an interactive map and export it as a Google Earth Engine (GEE) asset and/or SEPAL .tif file.
 
-The three-step process is described in the sections below, as well as presented in the following video tutorial. 
+The three-step process is described in the sections below, as well as presented in the following video tutorial.
 
 .. youtube:: Asc8Nz0B1DI
 
@@ -24,20 +24,20 @@ Select an AOI
 Using the provided **AOI selector**, select an AOI of your choice between the different methods available in the tool. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile).
 
 .. figure:: https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/img/aoi_select.png
-    
+
     AOI selector
-    
+
 .. note::
 
     If a custom AOI from a shape or drawing is selected, you will be able to use it directly. The upload to GEE will be launched in the background.
 
-Process mosaic 
+Process mosaic
 --------------
 
-In the **Process** tile, set the different parameters of your mosaic: 
+In the **Process** tile, set the different parameters of your mosaic:
 
--   **Year**: the year of interest 
--   **Speckle filter**: the speckle filter to use during the process    
+-   **Year**: the year of interest
+-   **Speckle filter**: the speckle filter to use during the process
     -   no filter
     -   refined lee: speckle noise removal technique based on the Lee Filter (for more information, see `A.S. Yommy et al. <https://doi.org/10.1109/IHMSC.2015.236>`_).
     -   Quegan filter: See `Quegan et al. <https://doi.org/10.1109/36.964973>`_
@@ -48,7 +48,7 @@ After setting your parameters, select the button. The dataset will be automatica
 
 .. figure:: https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/img/parameters.png
 
-    Dataset parameters 
+    Dataset parameters
 
 Display dataset
 ---------------
@@ -79,14 +79,14 @@ Both use the GEE export system and share the same set of parameters:
 -   Export K&C forest/non-forest map (separate file)
 -   Set the resolution as an integer number
 
-.. note:: 
+.. note::
 
     The default export parameters include: 25 metre resolution with backscatter and RFDI.
-    
+
 .. figure:: https://raw.githubusercontent.com/lecrabe/alos_mosaics/main/doc/img/export.png
 
     Export
-    
+
 .. attention::
 
     When exporting images to SEPAL, do not quit the application until the downloading process is complete.

@@ -13,14 +13,14 @@ Select an area of interest (AOI)
 
 Using the provided **AOI** selector, select an AOI from the available methods. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile).
 
-.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/aoi_select.png 
-    
-    AOI selector 
-    
+.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/aoi_select.png
+
+    AOI selector
+
 .. note::
 
     If a custom AOI from a shape or drawing is selected, you will be able to use it directly. The upload to GEE will be launched in the background.
-    
+
 Select dataset parameters
 -------------------------
 
@@ -33,7 +33,7 @@ To perform BFAST pre-analysis, provide the tool with key parameters:
 
 Once all parameters have been chosen, select the button.
 
-.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/parameters.png 
+.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/parameters.png
 
 Display dataset
 ---------------
@@ -49,7 +49,7 @@ Select one of the statistical measures to display in the following list:
 
 You can also produce stats on a yearly basis using the provided switch.
 
-.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/display.png 
+.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/display.png
 
 .. note::
 
@@ -62,21 +62,21 @@ When you're satisifed with the displayed information, it can be exported for fur
 
 Both use the GEE export system and share the same set of parameters:
 
--   statistical measures to export 
-    
+-   statistical measures to export
+
     -   count of cloud-free observation per pixel
     -   NDVI's median of cloud-free observations
     -   NDVI's std. dev. of cloud-free observations
     -   count for all observations per pixel
 
 -   time-period
-    
+
     -   full timespan calculation(s)
     -   annual calculation(s)
 
 -   scale: the resolution (in metres) to use in the exported GEE file
 
-.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/export.png 
+.. figure:: https://raw.githubusercontent.com/BuddyVolly/coverage_analysis/main/doc/img/export.png
 
 .. attention::
 

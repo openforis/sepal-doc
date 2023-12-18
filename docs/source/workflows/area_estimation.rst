@@ -64,7 +64,7 @@ CEO is a free, open-source image viewing and interpretation tool, suitable for p
 GEE
 """
 
-GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called **Code editor**) is a web-based IDE for the GEE JavaScript API; its features are designed to make developing complex geospatial workflows fast and easy. 
+GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers and developers to detect changes, map trends and quantify differences on the Earth's surface. The code portion of GEE (called **Code editor**) is a web-based IDE for the GEE JavaScript API; its features are designed to make developing complex geospatial workflows fast and easy.
 
 The **Code editor** has the following elements:
 
@@ -92,17 +92,17 @@ The **Code editor** has the following elements:
 Project planning
 ^^^^^^^^^^^^^^^^
 
-Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future. 
+Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this article, you may use these techniques for your own projects in the future.
 
 We encourage you to think about the following items to ensure that your resulting products will be relevant and that your chosen methods are well documented and transparent:
 
--   Descriptions and objectives of the project (issues and information needs). 
+-   Descriptions and objectives of the project (issues and information needs).
 
     -   Are you trying to conform to an Intergovernmental Panel on Climate Change (IPCC) Tier?
 
--   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  
+-   Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).
 
-    -   What type of information do you need (e.g. map, inventory, change product)? 
+    -   What type of information do you need (e.g. map, inventory, change product)?
     -   Do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 
 -   How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
@@ -383,7 +383,7 @@ To download this imagery mosaic to your SEPAL account, select the :code:`Retriev
     :align: center
 
 .. figure:: ../_images/workflows/area_estimation/retrieve_menu.png
-    :alt: The **Retriev**e menu
+    :alt: The **Retrieve** menu
     :align: center
 
 A window will appear with the following options:
@@ -413,7 +413,7 @@ You will notice the :code:`Tasks` icon is now spinning. If you select it, you wi
 Image classification
 --------------------
 
-The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or an impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness). 
+The main goal of Module 2 is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water and/or an impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities and/or wilderness).
 
 Learning to do image classification well is extremely important and requires experience. This module was designed to help you acquire some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class. There are both supervised (using human guidance, including training data) and unsupervised (not using human guidance) classification methods. The "random forest approach" demonstrated here uses training data and is thus a supervised classification method.
 
@@ -441,7 +441,7 @@ Creating consistent labeling protocols is necessary for creating accurate traini
 
 In this exercise, you will build a decision tree for your classification, as well as a significant amount of the other documentation and decision points (for more information about decision points, see `Section 5.1`_).
 
-    **Objective**: 
+    **Objective**:
 
     -   Learn how to create a classification scheme for land cover/land use classification mapping.
 
@@ -585,7 +585,7 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
 
 In this assignment, you will create training data points using high-resolution imagery, including Planet NICFI data. These will be used to train the classifier in a supervised classification using SEPAL's random forests algorithm. The goal of training the classifier is to provide examples of the variety of spectral signatures associated with each class in the map.
 
-    **Objective**: 
+    **Objective**:
 
     -   Create training data for your classes that can be used to train a machine learning algorithm.
 
@@ -781,7 +781,7 @@ To complete the classification of our mosaicked image, you are going to use a ra
 
 After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object-based approaches, opposed to pixel-based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last, but certainly not least, is to improve the quality of your training data. Be sure to log all of these decision points in order to recreate your analysis in the future.
 
-    **Objective**: 
+    **Objective**:
 
     -   Run SEPAL's classification tool.
 
@@ -897,13 +897,13 @@ Image change detection
 
 Image change detection allows us to understand differences in the landscape as they appear in satellite images over time. There are many questions that change detection methods can help answer, including: “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past five years?”
 
-Most methods for change detection use algorithms supported by statistical methods to extract and compare information in the satellite images. To conduct change detection, we need multiple mosaics or images, each one representing a point in time. 
+Most methods for change detection use algorithms supported by statistical methods to extract and compare information in the satellite images. To conduct change detection, we need multiple mosaics or images, each one representing a point in time.
 
 In this section of SEPAL documentation, we will describe how to detect change between two dates using a simple model (note: this theory can be expanded to include more dates as well). In addition, we'll describe time series analysis, which generally looks at longer periods of time.
 
-The objective of this module is to become associated with methods of detecting change for an AOI using the SEPAL platform. We will build upon and incorporate what we have covered in the previous modules, including: creating mosaics, creating training samples, and classifying imagery. 
+The objective of this module is to become associated with methods of detecting change for an AOI using the SEPAL platform. We will build upon and incorporate what we have covered in the previous modules, including: creating mosaics, creating training samples, and classifying imagery.
 
-This module is split into two exercises: the first addresses change detection using two dates; the second demonstrates more advanced methods using time series analysis with the BFAST algorithm and LandTrendr. 
+This module is split into two exercises: the first addresses change detection using two dates; the second demonstrates more advanced methods using time series analysis with the BFAST algorithm and LandTrendr.
 
 At the end of this module, you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSync and LandTrendr.
 
@@ -1007,7 +1007,7 @@ Repeat the previous steps for your 2020 optical mosaic.
 Collect change classification training data
 """""""""""""""""""""""""""""""""""""""""""
 
-Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: **forest** and **non-forest**. Thinking about change detection, we will use three options: **stable forest, stable non-forest,** and **change**. That is, between 2015 and 2020, there are four pathways: a pixel can be forest in 2015 and in 2020 (**stable forest); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
+Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: **forest** and **non-forest**. Thinking about change detection, we will use three options: **stable forest, stable non-forest,** and **change**. That is, between 2015 and 2020, there are four pathways: a pixel can be forest in 2015 and in 2020 (**stable forest**); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
 .. graphviz::
 
@@ -1407,7 +1407,7 @@ BFAST Explorer
 
 Breaks For Additive Seasonal and Trend (BFAST) is a change detection algorithm for time series which detects and characterizes changes. BFAST integrates the decomposition of time series into trend, seasonal, and remainder components with methods for detecting change within time series. BFAST iteratively estimates the time and number of changes, and characterizes change by its magnitude and direction (Verbesselt *et al.*, 2009).
 
-BFAST Explorer is a Shiny app, developed using R and Python, designed for the analysis of Landsat surface reflectance (SR) time series pixel data. Three change detection algorithms - bfastmonitor, bfast01 and bfast - are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection. 
+BFAST Explorer is a Shiny app, developed using R and Python, designed for the analysis of Landsat surface reflectance (SR) time series pixel data. Three change detection algorithms - bfastmonitor, bfast01 and bfast - are used in order to investigate temporal changes in trend and seasonal components via breakpoint detection.
 
 More information can be found online at http://bfast.r-forge.r-project.org. If you encounter any bugs, please send a message to :email:`almeida.xan@gmail.com` or create an issue on the GitHub page.
 
@@ -1555,9 +1555,9 @@ A well-prepared sample can provide a robust estimate of the parameters of intere
 
 These directions will provide a stratified random sample of the proper sampling size.
 
-First, go to https://sepal.io and sign in. 
+First, go to https://sepal.io and sign in.
 
-Select the :code:`Apps` button (purple wrench). Enter **stratified** into the search bar or scroll through the different process apps to find **Stratified Area Estimator - Design**. 
+Select the :code:`Apps` button (purple wrench). Enter **stratified** into the search bar or scroll through the different process apps to find **Stratified Area Estimator - Design**.
 
 Select **Stratified Area Estimator - Design.** Note that loading the tool takes a few minutes.
 
@@ -1647,7 +1647,7 @@ Now you need to specify the expected accuracies. You will do this for each class
 
 Now we need to assign each class to the high or low expected user accuracy group. Think about your forest and non-forest classes. Which do you think should be high confidence? Which should be low confidence? Why?
 
-Select the box under **high confidence** and assign your high confidence class(es). 
+Select the box under **high confidence** and assign your high confidence class(es).
 
 Then, select the box under **low confidence** that appears and assign the corresponding class(es). If you make a mistake, there's no way to remove the classes. However, just change one of the sliders slightly, move it back, and the class assignments will have been reset.
 
@@ -1853,7 +1853,7 @@ Not shown are the **Plot Review** and **Sample Design**, which show a summary of
 
 You can either select **Publish Project** or **Configure Geo-Dash**. The option to **Configure Geo-Dash** will be available after you publish your project as well. For now, let's select **Configure Geo-Dash**. A new window or tab will open and you'll now see the blank **Geo-Dash configuration page**.
 
-**Geo-Dash** is a dashboard that opens in a second window when users begin to analyse sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery and digital elevation data. If you select **Geo-Dash Help**, you'll access information about all of the **Geo-Dash widgets**. This information is also in the **CEO user manual**. Add any widgets that you would like for your project. 
+**Geo-Dash** is a dashboard that opens in a second window when users begin to analyse sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery and digital elevation data. If you select **Geo-Dash Help**, you'll access information about all of the **Geo-Dash widgets**. This information is also in the **CEO user manual**. Add any widgets that you would like for your project.
 
 For example, you can add a **NDVI widget** by following these steps:
 

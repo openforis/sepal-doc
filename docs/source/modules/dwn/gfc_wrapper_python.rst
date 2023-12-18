@@ -28,7 +28,7 @@ For more information please refer to:
 Usage
 -----
 
-.. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/gfc_app.gif 
+.. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/gfc_app.gif
     :group: gfc_wrapper
 
 Select an AOI
@@ -36,10 +36,10 @@ Select an AOI
 
 Using the provided **AOI selector**, choose an AOI of your choice between different methods available in the tool. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile).
 
-.. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/select_aoi.png 
+.. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/select_aoi.png
     :group: gfc_wrapper
-    :title: AOI selector 
-    
+    :title: AOI selector
+
 .. note::
 
     If a custom AOI from a shape or drawing is selected, you can use it directly; the upload to GEE will be launched in the background. Check your `GEE code editor <https://code.earthengine.google.com>`_ to use it elsewhere.
@@ -47,7 +47,7 @@ Using the provided **AOI selector**, choose an AOI of your choice between differ
 GFC visualization
 ^^^^^^^^^^^^^^^^^
 
-Two parameters are available to select the data: 
+Two parameters are available to select the data:
 
 -   Use the slider to change the threshold to consider between forest and non-forest areas. Once you've chosen a value, select :code:`update map` to update the interactive map layers.
 -   Use the range slider to move the dates to consider in the analysis.
@@ -56,14 +56,14 @@ The new layer is a combination of GFC layers to produce a forest change map for 
 
 When changing the value of the threshold or the dates, a new layer will be added to the map, so you can compare and select the most appropriate parameters for your analysis.
 
-.. attention:: 
+.. attention::
 
     The parameters that will be used for the next step are the final values requested of the threshold. To return to a previous value, move the slider back and select :code:`update map` again.
-  
+
 .. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/viz.png
     :group: gfc_wrapper
 
-Export selected data 
+Export selected data
 ^^^^^^^^^^^^^^^^^^^^
 
 Considering the AOI selected in **Step 1** and the parameters selected in **Step 2**, the module will generate a combination of GFC layers to produce a forest change map for a given canopy cover threshold between specific dates. It will be stored in a :code:`~/gfc_wrapper_results/<aoi_name>` folder in your SEPAL environment.
