@@ -1,11 +1,7 @@
 SEPALSTYLE
 ==========
 
-The SEPAL documentation style guide
------------------------------------
-
-
-*Learn the basics of* SEPALSTYLE *to help maintain writing that is useful, clear, concise, consistent and fluid*
+*Learn the basics of* SEPALSTYLE *– the SEPAL documentation style guide – to keep writing useful, clear, concise, consistent and fluid*
 
 
 Goals and principles
@@ -48,7 +44,7 @@ Keep language clear, concise, consistent and fluid. Prefer bulleted and numbered
 
     **Reset password**
 
-    If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign-in forms.
+    If you have forgotten your password and you have access to the email address associated with your SEPAL account, you can reset it by submitting a request. Simply follow the instructions located on one of the website’s sign in forms.
 
     The password reset process can be performed in three steps:
 
@@ -134,7 +130,7 @@ The authors of the documentation should be referred to as **the SEPAL team**.
 
     The SEPAL team maintains the documentation to guide users through the **SEPAL interface**.
 
-If the term, **the SEPAL team** has been overused, use "the authors of the documentation", or **we** or **us** instead.
+If the term, **the SEPAL team**, has been overused, use **the authors of the documentation**, or **we** or **us** instead.
 
 **Contributors to SEPAL documentation** can be used for external contributors to the documentation.
 
@@ -189,7 +185,7 @@ A subsection within an article of the documentation should be referred to as **a
 
     For more information, see the **Set up your GEE account** subsection of this article.
 
-However, when formatting titles of subsections, the appropriate symbols should be used (i.e. from Heading 1 to Heading 6: =, -, ^, ", #, +). For further guidance, see the `Guidelines subsection of the Contribute article <https://docs.sepal.io/en/latest/team/contribute.html#guidelines>`_.
+Note: When formatting titles of subsections, the appropriate symbols should be used (i.e. from Heading 1 to Heading 6: =, -, ^, ", #, +). For further guidance, see the `Guidelines subsection of the Contribute article <https://docs.sepal.io/en/latest/team/contribute.html#guidelines>`_.
 
 Describing interactions with the SEPAL interface
 ------------------------------------------------
@@ -256,14 +252,14 @@ Common words used to describe elements in the **SEPAL interface** include:
 -    icon
 -    interface
 -    map
--    module
 -    menu
+-    module
 -    option
 -    pane
 -    parameter
 -    pointer
--    pop-up window
 -    pop-up menu
+-    pop-up window
 -    recipe
 -    settings
 -    status bar
@@ -287,7 +283,7 @@ Common words used to describe **elements** *and* **actions** in the **SEPAL inte
     "bar","go to, view, select, monitor","View the **Status bar** to monitor the download progress."
     "button","select","Select the **Terminal** button."
     "checkbox","select","Select the **Display map** checkbox."
-    "dashboard", "go to", "Open the **Apps** dashboard."
+    "dashboard", "go to", "Go to the **Apps** dashboard."
     "dialog", "view, select", "Select **Confirm** in the dialog."
     "dock","select","Select the **Files** tab in the dock."
     "drawer","open, close","Open the **Navigation** drawer."
@@ -341,7 +337,7 @@ Other basic guidelines to follow when writing **SEPAL documentation** include:
 -    format numbers with neither spaces nor punctuation, except for a full stop for decimals;
 -    use the author–date system for referencing;
 -    introduce lists with an opening phrase ending with a colon, and use consistent capitalization and punctuation; and
--    use the `International System of Units <https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__.
+-    use the `International System of Units (SI) <https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__.
 
 Abbreviations
 ^^^^^^^^^^^^^
@@ -352,11 +348,13 @@ At first mention, acronyms should be written out, followed by the abbreviation i
 
    The project is from the Food and Agriculture Organization of the United Nations (FAO).
 
+Exceptions can be made where justifiable (e.g. when an acronym appears in a name and the written-out version is long). In these instances, introduce the acronym in a way that is reader-friendly.
+
 Abbreviations such as e.g., i.e. and etc. should be avoided; however, when necessary, use them in parentheses (e.g. means "for example"; i.e. means "that is").
 
    **Example**
 
-   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus program.
+   Harnessing cloud-based supercomputers and modern geospatial data infrastructures (e.g. GEE), the interface enables access and processing of historical satellite data as well as newer data from Landsat and higher-resolution data from Europe’s Copernicus programme.
 
 Font
 ^^^^
@@ -403,7 +401,7 @@ Use colons to introduce lists, definitions, explanations or quotations.
 
     -    register to SEPAL
     -    use GEE with SEPAL
-    -    use NICFI - Planet Lab data
+    -    use NICFI–Planet Lab data
     -    exchange files with SEPAL
     -    manage your resources
     -    reset your password
