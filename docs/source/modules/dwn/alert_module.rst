@@ -1,5 +1,6 @@
 Deforestation alert analysis
 ============================
+*Retrieve any type of alert on a selected AOI*
 
 .. attention::
 
