@@ -1,7 +1,6 @@
-SEPAL - Mountain Green Cover Index (MGCI) :sub:`beta`
-=====================================================
-
-*A tool to support the computation of Sustainable Development Goal (SDG) Indicator 15.4.2 – Mountain Green Cover Index*
+SEPAL - MGCI :sub:`beta`
+========================
+*Compute and report against SDG Indicator 15.4.2, as well as track the progress of efforts to monitor ecosystem restoration*
 
 General information
 -------------------
@@ -9,7 +8,7 @@ General information
 About SEPAL–MGCI :sub:`beta`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**SEPAL-MGCI :sub:`beta`** was developed to help member countries compute and report against SDG Indicator 15.4.2, as well as track the progress of efforts to monitor ecosystem restoration. 
+SEPAL-MGCI :sub:`beta` was developed to help member countries compute and report against SDG Indicator 15.4.2, as well as track the progress of efforts to monitor ecosystem restoration (MGCI refers to Mountain Green Cover Index).
 
 It is available on the SEPAL platform in a beta stage (i.e. still in development).
 
@@ -20,9 +19,9 @@ Please contact the **SEPAL-MGCI :sub:`beta` team** with any comments or suggesti
 Authors 
 ^^^^^^^
 
-**SEPAL-MGCI :sub:`beta`** was developed by the Food and Agriculture Organization of the United Nations (FAO). 
+SEPAL-MGCI :sub:`beta` was developed by the Food and Agriculture Organization of the United Nations (FAO). 
 
-Specific contributors to **SEPAL-MGCI :sub:`beta`** and its documentation include:
+Specific contributors to SEPAL-MGCI :sub:`beta` and its documentation include:
 
 -    Daniel Guerrero
 -    Pierrick Rambaud 
@@ -31,7 +30,7 @@ Specific contributors to **SEPAL-MGCI :sub:`beta`** and its documentation includ
 
 License
 ^^^^^^^
-**SEPAL-MGCI :sub:`beta`** is free and open-source. It is licensed under an `MIT license <https://opensource.org/licenses/MIT>`__. 
+SEPAL-MGCI :sub:`beta` is free and open-source. It is licensed under an `MIT license <https://opensource.org/licenses/MIT>`__. 
 
 The documentation is made available under the terms of the `Creative Commons Attribution 4.0 International License (CC BY 4.0) <https://creativecommons.org/licenses/by/4.0>`__. The boundaries, names and designations used do not imply official endorsement or acceptance by the United Nations.
 
@@ -98,7 +97,7 @@ Where:
      "5","Elevation 1.000–1.500 m and slope > 5 or local elevation range (LER 7 km radius) > 300 m"
      "6","Elevation 300–1.000 m and local elevation range (7 km radius) > 300 m"
 
-**SEPAL-MGCI :sub:`beta`** allows the user to compute each of these descriptive layers to then calculate MGCI values for any given area using both global and user-provided data. The results of this analysis can then be exported to a set of standardized reporting tables where MGCI values are disaggregated by mountain class and IPCC land category, as specified in the `metadata of SDG Indicator 15.4.2 <https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf>`_.
+SEPAL-MGCI :sub:`beta` allows the user to compute each of these descriptive layers to then calculate MGCI values for any given area using both global and user-provided data. The results of this analysis can then be exported to a set of standardized reporting tables where MGCI values are disaggregated by mountain class and IPCC land category, as specified in the `metadata of SDG Indicator 15.4.2 <https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf>`_.
 
 References
 ^^^^^^^^^^
