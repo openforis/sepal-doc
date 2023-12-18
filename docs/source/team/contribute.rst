@@ -516,6 +516,8 @@ You now have one single file to modify :code:`sepal-doc/docs/data/<type>/<locale
 
 Create a pull request
 ---------------------
+Create a pull request
+---------------------
 
 .. note::
 
@@ -528,7 +530,9 @@ First, select the :code:`Pull requests` button to open the **PR** interface:
 .. figure:: ../_images/team/contribute/start_pr.png
     :alt: Pull requests button
 
-In the **PR** interface, select the :code:`New pull request` button:
+    Open the **Pull request (PR)** interface.
+
+In the **Pull request** interface, select the :code:`New pull request` button:
 
 .. figure:: ../_images/team/contribute/new_pr.png
     :alt: New pull request
