@@ -1,7 +1,6 @@
 Damage proxy maps
 =================
-
-**Damage proxy maps based on coherence change detection**
+*Create damage proxy maps based on the CCD method with Sentinel-1 SLC data*
 
 This module provides a fully-automated workflow for the creation of damage proxy maps based on the method of coherent change detection (CCD) with Sentinel-1 SLC data, as described by `Tay *et al.* (2020) <https://www.nature.com/articles/s41597-020-0443-5>`_. 
 
