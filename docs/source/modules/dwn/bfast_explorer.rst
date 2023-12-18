@@ -1,5 +1,6 @@
 BFAST Explorer
 ==============
+*Analyse Landsat SR time-series pixel data*
 
 .. note::
 
