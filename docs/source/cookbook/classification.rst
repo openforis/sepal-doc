@@ -346,7 +346,7 @@ The following table is compatible with SEPAL:
     32.77189961605467,-11.616264558754402,80,Shrublands,Pierrick rambaud
     ...
 
-The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fa-solid fa-chevron-left> Next` once every column is filled.
+The columns used to define the X (longitude) and Y (latitude) coordinates are manually set up in the pop-up window. Select :btn:`<fa-solid fa-chevron-right> Next` once every column is filled.
 
 .. thumbnail:: ../_images/cookbook/classification/import-training-csv-coords.png
     :group: classification-recipe
@@ -366,7 +366,7 @@ Now that you have set up the coordinates of your points, SEPAL will request the 
     :group: classification-recipe
     :title: Import a .csv file in SEPAL as training data.
 
-Select :btn:`<fa-solid fa-chevron-left> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file.
+Select :btn:`<fa-solid fa-chevron-right> next` to add the data to the model. SEPAL will provide a summary of the classes in the legend of the classification and the number of training points added by your file.
 
 Selecting the :btn:`<fa-solid fa-check> Done` button will complete the uploading procedure.
 
