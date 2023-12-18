@@ -129,15 +129,15 @@ Use the FTP client to interact with SEPAL
 
 Familiarize yourself with FileZilla®'s window layout by following this overview.
 
-Below the **Toolbar** (**1**) and **Quick connect bar** (**2**), the **Message log** (**3**) displays messages related to transfers and connection. Below, you can find the file listings. 
+Below the **Toolbar** (**1**) and **Quick connect bar** (**2**), the **Message log** (**3**) displays messages related to transfers and connection. Below, you can find the file listings.
 
-The left column (**Local pane**, **4**) displays the local files and directories (e.g. content on the PC you're using FileZilla® on). 
+The left column (**Local pane**, **4**) displays the local files and directories (e.g. content on the PC you're using FileZilla® on).
 
-The right column (**Remote pane**, **5**) displays the files and directories on the server you are connected to. 
+The right column (**Remote pane**, **5**) displays the files and directories on the server you are connected to.
 
-Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom. 
+Both columns have a directory tree at the top and a detailed listing of the currently selected directory's contents at the bottom.
 
-You can easily navigate either of the trees and lists by clicking around, like you would in any other file manager. 
+You can easily navigate either of the trees and lists by clicking around, like you would in any other file manager.
 
 In the lower section of the window, the **Transfer queue** (**6**) lists the status of to-be-tranferred or already transferred files.
 

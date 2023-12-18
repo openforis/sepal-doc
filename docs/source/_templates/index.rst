@@ -5,9 +5,9 @@ Modules
 Overview
 --------
 
-SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers. 
+SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers.
 
-These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming. 
+These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming.
 
 The applications are served in SEPAL with attractive user interfaces to ensure the best possible user experience.
 
