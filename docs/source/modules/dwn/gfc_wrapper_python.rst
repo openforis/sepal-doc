@@ -1,6 +1,5 @@
 Forest change mask
 ==================
-
 *Base forest mask and fragmentation tool*
 
 This application allows users to:
