@@ -1,5 +1,6 @@
 Direct drivers assessment
 =========================
+*Map disturbances and quantify the contribution of associated direct drivers to assess deforestation and forest degradation trends, and their associated current and historical direct drivers*
 
 .. note::
 
