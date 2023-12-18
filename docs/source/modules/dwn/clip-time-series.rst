@@ -1,13 +1,12 @@
 Clip time series
 ================
+*Download an automatically generated time series from customizable dates as a .pdf file*
 
 .. tip::
 
     This article should explain every step to execute the module. However, if you encounter a problem, please `report it <https://github.com/openforis/clip-time-series/issues/new>`_.
 
-This module allows users to download an automatically generated time series from customizable dates as a :code:`.pdf`.
-
-Each mosaic will be represented as a custom square around the point of interest using the band combination selected by the user (ranging in size from 500 m x 500 m to 1000 km x 10000 km).
+This module allows users to download an automatically generated time series from customizable dates as a :code:`.pdf`. Each mosaic will be represented as a custom square around the point of interest using the band combination selected by the user (ranging in size from 500 m x 500 m to 1000 km x 10000 km).
 
 Select file 
 -----------
