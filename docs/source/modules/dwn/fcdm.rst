@@ -1,5 +1,6 @@
 Forest Canopy Disturbance Monitoring (FCDM)
 ===========================================
+*Map canopy disturbances (natural- or human-induced) within (semi-)evergreen forests*
 
 .. note::
 
