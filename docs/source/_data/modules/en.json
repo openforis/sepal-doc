@@ -74,7 +74,7 @@
   },
   "sepafe": {
     "tag": ["PlanetLab"],
-    "description" : "Display active and past fire events from the Fire Information for Resource Management System (FIRMS) using Planet Lab data.",
+    "description": "Display active and past fire events from the Fire Information for Resource Management System (FIRMS) using Planet Lab data.",
     "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst"
   },
   "sepal_mgci": {
@@ -104,7 +104,7 @@
   "tmf": {
     "description": "Tropical Moist Forest by EC-JRC",
     "tag": ["other"],
-    "url" : "https://raw.githubusercontent.com/sepal-contrib/tmf_sepal/release/doc/en.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/tmf_sepal/release/doc/en.rst"
   },
   "gee-source": {
     "description": "Extract source code from any GEE app URL",
