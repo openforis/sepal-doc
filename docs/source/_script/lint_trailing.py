@@ -1,6 +1,6 @@
 import os
 import sys
-from docutils.core import publish_string
+
 from docutils import ApplicationError
 
 
