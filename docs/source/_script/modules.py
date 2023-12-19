@@ -44,7 +44,6 @@ def get_modules():
     module_list = json.loads(module_json.read_text())
 
     for name in module_list:
-
         dst = dwn_dir / f"{name}.rst"
 
         file = module_list[name].get("url", no_module_url)
@@ -60,9 +59,10 @@ def get_modules():
         if file == no_module_url:
             txt = txt.replace("Module_name", name).replace("=", "=" * len(name))
 
-        # add the custom edit directive to the file to ensure the "edit this page"
-        # point to the correct file.
-        txt += f"\n.. custom-edit:: {file}\n"
+        if file != no_module_url:
+            # add the custom edit directive to the file to ensure the "edit this page"
+            # point to the correct file.
+            txt += f"\n.. custom-edit:: {file}\n"
 
         dst.write_text(txt)
 
@@ -83,7 +83,6 @@ def get_tags():
     tags = list(dict.fromkeys(tags))
 
     for tag in tags:
-
         # create a stub file
         tag_file = module_dir / f"{tag}.rst"
         copy(tag_template, tag_file)
@@ -130,7 +129,6 @@ def get_translation():
 
     # loop in the modules
     for name in module_list:
-
         locale_folder = module_list[name].get("locale")
         doc_url = module_list[name].get("url")
 
