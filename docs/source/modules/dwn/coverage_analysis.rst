@@ -86,4 +86,5 @@ Both use the GEE export system and share the same set of parameters:
 .. attention::
 
     When exporting the image to SEPAL, you cannot quit the application until the download is finished.
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/coverage_analysis/release/doc/en.rst

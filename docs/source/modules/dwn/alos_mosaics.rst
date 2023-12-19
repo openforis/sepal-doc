@@ -96,4 +96,5 @@ Both use the GEE export system and share the same set of parameters:
 .. attention::
 
     When exporting images to SEPAL, do not quit the application until the downloading process is complete.
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/alos_mosaics/release/doc/en.rst

@@ -129,4 +129,5 @@ The images will be stored in the following folder: :code:`~/module_results/plane
     If the requested image is not available (e.g. the grid points to water area, the image was too cloudy and filtered by Planet, you don't have the rights to download it, etc.) the image will fail.
 
     If the image already exists in your folder, it will be skipped. This behaviour allows you to restart a process if your SEPAL connection crashes without needing to restart all downloads.
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/planet-order/release/doc/en.rst

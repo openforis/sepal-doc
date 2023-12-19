@@ -89,4 +89,5 @@ The files are named after your parameters, following this convention: :code:`<th
 
 .. thumbnail:: https://raw.githubusercontent.com/openforis/gfc_wrapper_python/master/doc/img/results.png
     :group: gfc_wrapper
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/gfc_wrapper_python/release/doc/en.rst

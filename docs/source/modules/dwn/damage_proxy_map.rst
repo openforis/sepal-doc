@@ -39,4 +39,5 @@ Selecting this button will trigger the full workflow (Note: Some of the steps ma
 Once the computation has finished, the result files will be stored in the :code:`module_results/Damage_proxy_map/<aoi name>_<event date>/` folder. 
 
 .. figure:: https://raw.githubusercontent.com/sepal-contrib/damage_proxy_maps/main/doc/img/complete.png 
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/damage_proxy_maps/release/doc/en.rst

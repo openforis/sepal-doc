@@ -178,4 +178,5 @@ Finally, you will find an additional layer called **Threshold**. The thresholded
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/bfastspatial/master/www/tutorial/img/result_sigma.png
     :group: bfastspatial
 
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/bfastspatial/main/www/tutorial/tutorial.rst

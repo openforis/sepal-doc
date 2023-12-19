@@ -407,4 +407,5 @@ Navigate through the images using the buttons in the **Planet navigator**. Use :
 .. thumbnail:: https://raw.githubusercontent.com/sepal-contrib/alert_module/master/doc/img/planet_daily.png
     :title: Planet daily mosaic displayed in CIR
     :group: alert-module
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/alert_module/release/doc/en.rst

@@ -610,4 +610,5 @@ The results, shown as transitions in land cover types for a given belt will be d
    :align: center
    :width: 700
    :alt: Reclassify table
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/sepal_mgci/release/doc/en.rst

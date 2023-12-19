@@ -143,4 +143,5 @@ On the right, the **Bar chart** displays the absolute values.
     In the GFC product dataset (Hansen *et al.*, 2013), only forest loss has a temporal dimension. When a new time period is selected, a new graph representing the trend of forest loss will be displayed at the bottom of the screen.
 
 .. image:: https://raw.githubusercontent.com/sepal-contrib/basin-rivers/master/doc/img/interactive_stats.gif
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/basin-rivers/release/doc/en.rst

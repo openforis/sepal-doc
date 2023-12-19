@@ -250,4 +250,5 @@ Select the cloud in the upper-left corner of the map to open the following pop-u
         If you choose to export to GEE, the process can be monitored from the GEE **Task manager**.
 
 Select :guilabel:`Apply` to start the exportation process.
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/fcdm/release/doc/en.rst

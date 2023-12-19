@@ -43,4 +43,5 @@ The second drawer will allow you to create a grid on top of any AOI. The grid co
 An extra column is added to the grid: **Batch**. You can select the size of the batch by changing the width of the batch using the initial grid cell as a unit (e.g. by setting :guilabel:`grid size` to 10, you'll create a grid batch of 10 x 10 cells). The naming will be automatically set according to your AOI name and batch size.
 
 By validating, you will create a GeoJSON file that will be stored in :code:`module_results/aoi/<asset_name>.geojson`, launching the creation of the same grid in your GEE assets.
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/vector_manager/release/doc/en.rst

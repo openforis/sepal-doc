@@ -1265,4 +1265,5 @@ References
 ----------
 
 `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_
+
 .. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/gwb/release/doc/en.rst
