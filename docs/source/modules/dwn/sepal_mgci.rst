@@ -1,7 +1,7 @@
 SEPAL-SDG 15.4.2 :sub:`beta`
 ============================
 
-*A tool to support the computation of SDG Indicator 15.4.2 Indicator 15.4.2: (a) Mountain Green Cover Index and (b) Proportion of degraded mountain land using SEPAL (System for Earth Observation Data Access, Processing, and Analysis for Land Monitoring). *
+*A tool to support the computation of SDG Indicator 15.4.2 Indicator 15.4.2: (a) Mountain Green Cover Index and (b) Proportion of degraded mountain land using SEPAL (System for Earth Observation Data Access, Processing, and Analysis for Land Monitoring).*
 
 This guide will introduce you to SEPAL-SDG 15.4.2 :sub:`beta` and will provide you detailed instructions on how the set it up and carry out the computation of both sub-indicators in a step-by-step manner. Screenshots are included to make it easier for the user to know what each description refers to.
 
