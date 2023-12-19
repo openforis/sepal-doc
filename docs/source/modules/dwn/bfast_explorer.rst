@@ -134,4 +134,4 @@ Since **bfast** can detect multiple breakpoints, it may take a couple of seconds
 
     <i class="fa fa-download"></i>
 
-.. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/bfast-explorer/master/md/tutorial.rst
+.. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/bfast-explorer/main/md/tutorial.rst

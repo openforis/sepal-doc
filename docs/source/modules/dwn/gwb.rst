@@ -1157,9 +1157,9 @@ The resulting files are stored in the folder :code:`module_results/gwb/rss/`. Fo
 Here is the result of the computation using the default parameters on the :code:`example.tif` file:
 
 .. csv-table::
-    :header: FNAME, AREA, RAC[%], NR_OBJ, LARG_OBJ, APS, CNOA, ECA, COH[%], REST_POT[%]
-    
-example_bin_map.tif,428490.00,42.860572,2850,214811,150.34737,311712,221292.76,51.644789,48.355211
+   :header: FNAME, AREA, RAC[%], NR_OBJ, LARG_OBJ, APS, CNOA, ECA, COH[%], REST_POT[%]
+
+   example_bin_map.tif,428490.00,42.860572,2850,214811,150.34737,311712,221292.76,51.644789,48.355211
 
 Simplified pattern analysis (SPA)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -71,5 +71,3 @@ If a particular app's documentation requires the user to start a specific instan
 .. toctree::
     :hidden:
     :maxdepth: 1
-
-.. custom-edit:: https://raw.githubusercontent.com/openforis/sepal-doc/main/docs/source/_templates/index.rst

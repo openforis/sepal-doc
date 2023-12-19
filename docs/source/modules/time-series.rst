@@ -11,7 +11,6 @@ Modules with the **Time-series** tag include:
     dwn/bfast_gpu
     dwn/bfast_r
     dwn/cusum
-    dwn/sar_time_series
 
 .. csv-table::
 
@@ -19,5 +18,4 @@ Modules with the **Time-series** tag include:
     :doc:`dwn/bfast_gpu`,"GPU implementation of the BFAST algorithm to analyse time series"
     :doc:`dwn/bfast_r`,"..."
     :doc:`dwn/cusum`,"Spatially cumulative sum algorithm for change detection within univariate time-series (GPU powered)"
-    :doc:`dwn/sar_time_series`,"..."
 

@@ -11,5 +11,5 @@ ignore = ["D001"] # we follow a 1 line = 1 paragraph style
 ignore-path = ["docs/source/modules/*"]
 
 [tool.codespell]
-skip = 'docs/source/_data/modules/*.json,*.po,docs/source/modules/dwn/*,docs/build/*,docs/source/_bib/workflows/drivers.bib'
+skip = 'docs/source/_data/modules/*.json,*.po,docs/source/modules/dwn/*,docs/build/*,docs/source/_bib/workflows/drivers.bib,docs/source/_data/*'
 ignore-words-list='alos,cywgin,toi,aoi'

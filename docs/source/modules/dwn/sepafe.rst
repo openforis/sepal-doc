@@ -78,4 +78,4 @@ Select any point on the map and use the **Refresh** icon (:btn:`<fa-solid fa-rot
 
 .. attention:: This option requires a valid Planet Level 2 key; otherwise, you will receive an error message in the **Status** bar.
 
-.. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/master/doc/en.rst
+.. custom-edit:: https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst
