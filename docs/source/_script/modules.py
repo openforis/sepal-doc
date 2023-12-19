@@ -62,7 +62,7 @@ def get_modules():
         if file != no_module_url:
             # add the custom edit directive to the file to ensure the "edit this page"
             # point to the correct file.
-            txt += f"\n.. custom-edit:: {file}\n"
+            txt += f"\n\n.. custom-edit:: {file}\n"
 
         dst.write_text(txt)
 
