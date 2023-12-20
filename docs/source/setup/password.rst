@@ -8,7 +8,7 @@ In this article, learn how to:
 
 If you have forgotten the password for your SEPAL account, you can reset it by proving you have access to the email address associated with your account.
 
-A password may be recovered by submitting a request after following the directions located at one of the website's sign-in forms.
+A password may be recovered by submitting a request after following the directions located at one of the website's signin forms.
 
 .. note::
 
@@ -20,8 +20,8 @@ The password reset process can be performed in three steps:
 2.  Complete email verification.
 3.  Create a new password.
 
-Tell us who you are
--------------------
+Provide email address
+---------------------
 
 Select **Forgot password** on the SEPAL landing page.
 
@@ -45,8 +45,8 @@ Once your email address is validated, a confirmation email will be sent from SEP
    :title: Notification confirming that an email to reset your password was sent to your associated email address.
    :group: setup_password
 
-Email confirmation
-------------------
+Complete email verification
+---------------------------
 
 To reset your password, SEPAL uses an email confirmation system because:
 
@@ -63,8 +63,8 @@ For all of these reasons, SEPAL will send you the following email.
 
 Follow the instructions to reset your password on a new browser page.
 
-Change password
----------------
+Create new password
+-------------------
 
 In the **Reset password** form, three fields are available:
 

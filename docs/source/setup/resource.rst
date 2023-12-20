@@ -4,7 +4,7 @@ Manage your resources
 
 In this article, learn how to:
 
--   understand your **User report**
+-   understand your user report
 -   manage instances
 -   request resources
 
@@ -14,15 +14,15 @@ SEPAL provides free access to computation resources that are shared among regist
 
     The **SEPAL user starter pack** includes:
 
-    - 0 USD/month of instance spending
-    - 0 USD/month of storage spending
+    - USD 0/month of instance spending
+    - USD 0/month of storage spending
     - 0 GB of storage
 
 Some actions or projects may require more storage to perform analysis at the province or country level; other actions or projects may require more instances to perform heavier computation processes. If you need more storage or instances, you can submit a quota request to the SEPAL team by following the instructions below.
 
 .. important::
 
-    Since quota requests are reviewed on a case-by-case basis, response time may vary.
+    Since quota requests are reviewed on a case-by-case basis, response times may vary.
 
 User report
 -----------
@@ -30,26 +30,26 @@ User report
 In **Terminal**, **Apps** or **Process**, select **User report** in the lower-right corner to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`.
 
 .. thumbnail:: ../_images/setup/resource/button_from_recipe.png
-   :title: The **User report** button from a **Recipe**
+   :title: The User report button from a Recipe
    :width: 30%
    :group: setup_resource
 
 .. thumbnail:: ../_images/setup/resource/button_from_app.png
-   :title: The **User report** button from an **App**
+   :title: The User report button from an App
    :width: 30%
    :group: setup_resource
 
 .. thumbnail:: ../_images/setup/resource/button_from_terminal.png
-   :title: The **User report** button from a **Terminal**
+   :title: The User report button from a Terminal
    :width: 30%
    :group: setup_resource
 
-After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all your **Resources** – expressed in percentages (see **1** in figure below) (a full bar indicates that you have reached one of your monthly quotas) – as well as **Instances** that are currently running (see **2** in figure below).
+After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all your **Resources** – expressed in percentages (see **1** in figure below) (a full bar indicates that you have reached one of your monthly quotas) – as well as **Instances** that are currently running (**2**).
 
 You can request additional resources by selecting the green button.
 
 .. thumbnail:: ../_images/setup/resource/resource_management.png
-   :title: The **User report** pop-up window
+   :title: The User report pop-up window
    :group: setup_resource
 
 Manage instances
@@ -84,15 +84,15 @@ From the **Resource manager**, select **Request additional resources**.
 
 In order for your request to be considered, you must:
 
-- change the quota to values that meet your needs (e.g. more storage and fewer instances); the values entered are suggestions that the administrator will be able to change, if needed (**1**); and
+- change the quota to values that meet your needs (e.g. more storage and fewer instances; the values entered are suggestions that the administrator will be able to change, if needed [**1**]); and
 - provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI) (**2**).
 
 .. thumbnail:: ../_images/setup/resource/request.png
-   :title: The **Resource management** request form
+   :title: The Resource management request form
    :group: setup_resource
 
 Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details.
 
 .. thumbnail:: ../_images/setup/resource/notification.png
-   :title: The **Resource management** notification communicating that your resource request is being processed
+   :title: The Resource management notification communicating that your resource request is being processed
    :group: setup_resource

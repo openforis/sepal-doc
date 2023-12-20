@@ -1,5 +1,6 @@
 Planet order
 ============
+*Order imagery from Planet Lab mosaics*
 
 This dasboard application, based on the `SEPAL-UI <https://sepal-ui.readthedocs.io/en/latest/>`_ framework, provides users with an interface to explore and download Planet Lab images.
 
@@ -8,13 +9,13 @@ This dasboard application, based on the `SEPAL-UI <https://sepal-ui.readthedocs.
 
 .. attention::
 
-    To start this module, you need to (`sign up for NICFI <https://docs.sepal.io/en/latest/setup/nicfi.html#access-nicfi-through-gee>`_) and (`connect your GEE account to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_).
+    To start this module, `sign up for NICFI <https://docs.sepal.io/en/latest/setup/nicfi.html#access-nicfi-through-gee>`_ and `connect your GEE account to SEPAL <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_.
 
 On the landing page of our module, in the lower left of the window, you will find three buttons:
 
--   :btn:`<fa-solid fa-file-code>`: Opens the GitHub repository that is used to create this module in a new tab (our code is open-source and distributed under the MIT license).
--   :btn:`<fa-solid fa-book-open>`: Leads to the wiki page.
--   :btn:`<fa-solid fa-bug>`: Opens the issue tracker of our GitHub repository in a new tab (you can write here if you experience bugs or if you have any feature requests; the SEPAL team will answer as quickly as possible).
+-   :btn:`<fa-solid fa-file-code>`: Opens the **GitHub repository** that is used to create this module in a new tab (our code is open-source and distributed under the MIT license).
+-   :btn:`<fa-solid fa-book-open>`: Leads to the **Wiki page**.
+-   :btn:`<fa-solid fa-bug>`: Opens the **Issue tracker** of our GitHub repository in a new tab (you can write here if you experience bugs or if you have any feature requests; the SEPAL team will answer as quickly as possible).
 
 Parameters
 ----------
@@ -26,19 +27,19 @@ In the lower-right corner, two tabs are available:
 
 In the upper-left corner, three other tabs will allow you to interact with data:
 
--   :btn:`<fa-solid fa-magnifying-glass>`: the Planet order manager
--   :btn:`<fa-solid fa-palette>`: color management
--   :btn:`<fa-solid fa-cloud-arrow-down>`: download panel
+-   :btn:`<fa-solid fa-magnifying-glass>`: the **Planet order manager**
+-   :btn:`<fa-solid fa-palette>`: **Colour management**
+-   :btn:`<fa-solid fa-cloud-arrow-down>`: **Download** pane
 
 Select an AOI
 -------------
 
-The application uses the same AOI selector that you will find in many other SEPAL applications (see the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__ for more information).
+The application uses the same **AOI selector** that you will find in many other SEPAL applications (for more information, see the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__).
 
 Planet Lab authentication
 -------------------------
 
-To authenticate the user, complete the form in the second tab with either your credentials or a Planet API key, which you can find in the settings section in your Planet profile page. Once the values are set, select :btn:`Validate`. If your Planet credentials are valid, the :btn:`NICFI` button should turn green. You can now select a mosaic from the provided list.
+To authenticate the user, complete the form in the second tab with either your credentials or a Planet API key, which you can find in the **Settings** section in your **Planet profile page**. Once the values are set, select :btn:`Validate`. If your Planet credentials are valid, the :btn:`NICFI` button should turn green. You can now select a mosaic from the provided list.
 
 .. thumbnail:: https://raw.githubusercontent.com/12rambau/planet-order/master/doc/img/planet_auth.png
     :group: planet-order
@@ -60,16 +61,16 @@ Once a mosaic is selected, the module will display basemaps on the map.
 Manage color combination
 ------------------------
 
-Select :btn:`<fa-solid fa-palette>` on the upper-left side of the map, which will show the different color combinations available, including:
+Select :btn:`<fa-solid fa-palette>` on the upper-left side of the map, which will show the different colour combinations available, including:
 
--   Red-green-blue (RGB)
--   Color-infrared (CIR)
--   Normalized difference vegetation index (NDVI)
--   Normalized difference water index (NDWI)
--   Visual atmosphere resistance index (VARI)
--   Modified soil-adjusted vegetation index (MSAVI2)
--   Modified triangular vegetation index (MTVI2)
--   Triangular greenness index (TGI)
+-   Red-green-blue (**RGB**)
+-   Color-infrared (**CIR**)
+-   Normalized difference vegetation index (**NDVI**)
+-   Normalized difference water index (**NDWI**)
+-   Visual atmosphere resistance index (**VARI**)
+-   Modified soil-adjusted vegetation index (**MSAVI2**)
+-   Modified triangular vegetation index (**MTVI2**)
+-   Triangular greenness index (**TGI**)
 
 Selecting one will update the displayed basemap.
 

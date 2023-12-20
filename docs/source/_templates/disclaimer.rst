@@ -1,3 +1,3 @@
-.. danger::
+.. attention::
 
-    This section is intended for the Sepal team members only. If you ended up here there is no need to read this documentation, You'll not have access to the referred tools
+    The **SEPAL team documentation** section was developed for SEPAL team members only. While contributors and collaborators are encouraged to review these articles, they are not mandatory for general SEPAL users.

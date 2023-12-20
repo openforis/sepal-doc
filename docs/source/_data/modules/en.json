@@ -10,7 +10,7 @@
   "bfast_explorer": {
     "description": "Performs analysis of Landsat Surface Reflectance time series pixel data using the BFAST algorithm.",
     "tag": ["time-series"],
-    "url": "https://raw.githubusercontent.com/sepal-contrib/bfast-explorer/master/md/tutorial.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/bfast-explorer/main/md/tutorial.rst"
   },
   "bfast_gpu": {
     "description": "GPU implementation of the BFAST algorithm to analyse time series",
@@ -19,10 +19,7 @@
   },
   "bfast_r": {
     "tag": ["time-series"],
-    "url": "https://raw.githubusercontent.com/sepal-contrib/bfastspatial/master/www/tutorial/tutorial.rst"
-  },
-  "bootstrap_sampling_simulator": {
-    "tag": ["inventories"]
+    "url": "https://raw.githubusercontent.com/sepal-contrib/bfastspatial/main/www/tutorial/tutorial.rst"
   },
   "clip-time-series": {
     "description": "Generate a .pdf file containing time series clip on a given set of points",
@@ -46,7 +43,6 @@
     "description": "Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests",
     "url": "https://raw.githubusercontent.com/sepal-contrib/fcdm/release/doc/en.rst"
   },
-  "geo_processing": {},
   "gfc_wrapper_python": {
     "description": "Combine the GFC layers to produce a forest change map",
     "url": "https://raw.githubusercontent.com/sepal-contrib/gfc_wrapper_python/release/doc/en.rst"
@@ -59,7 +55,6 @@
     "tag": ["restoration"],
     "url": "https://raw.githubusercontent.com/sepal-contrib/gwb/release/doc/en.rst"
   },
-  "gwl_analysis": {},
   "vector_manager": {
     "description": "Tool to manage vector files in SEPAL (upload, download, export to GEE and grid generation)",
     "url": "https://raw.githubusercontent.com/sepal-contrib/vector_manager/release/doc/en.rst"
@@ -69,15 +64,8 @@
     "tag": ["PlanetLab"],
     "url": "https://raw.githubusercontent.com/sepal-contrib/planet-order/release/doc/en.rst"
   },
-  "plot_generator": {
-    "tag": ["inventories"]
-  },
   "sae_analysis": {
     "url": "https://raw.githubusercontent.com/openforis/accuracy-assessment/master/aa_analysis/doc.rst"
-  },
-  "sae_design": {},
-  "sar_time_series": {
-    "tag": ["time-series"]
   },
   "sdg_indicator": {
     "description": "Monitor SDG indicators at plot level",
@@ -86,7 +74,8 @@
   },
   "sepafe": {
     "tag": ["PlanetLab"],
-    "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/master/doc/en.rst"
+    "description": "Display active and past fire events from the Fire Information for Resource Management System (FIRMS) using Planet Lab data.",
+    "url": "https://raw.githubusercontent.com/sepal-contrib/planet_active_fires_explorer/release/doc/en.rst"
   },
   "sepal_mgci": {
     "description": "Calculates the SDG 15.4.2: Mountain Green Cover Index at national/sub-regional scale",
@@ -113,10 +102,9 @@
     "tag": ["SMFM"]
   },
   "tmf": {
-    "description": "Wrapper for TMF"
-  },
-  "zonal-analysis": {
-    "url": "https://raw.githubusercontent.com/sepal-contrib/zonal-analysis/release/doc/en.rst"
+    "description": "Tropical Moist Forest by EC-JRC",
+    "tag": ["other"],
+    "url": "https://raw.githubusercontent.com/sepal-contrib/tmf_sepal/release/doc/en.rst"
   },
   "gee-source": {
     "description": "Extract source code from any GEE app URL",
@@ -128,6 +116,6 @@
   },
   "basin-river": {
     "description": "Get Forest Cover Change by upstream sub-catchment",
-    "url": "https://raw.githubusercontent.com/sepal-contrib/basin-rivers/master/doc/en.rst"
+    "url": "https://raw.githubusercontent.com/sepal-contrib/basin-rivers/release/doc/en.rst"
   }
 }

@@ -1,19 +1,35 @@
-SEPAL recipes
-=============
-*Harness high-performance cloud-based computing and modern geospatial data infrastructures with SEPAL recipes*
+Cookbook
+========
+*Harness high-performance cloud-based computing and modern geospatial data infrastructures with recipes from the SEPAL cookbook*
 
 Overview
 --------
 
 SEPAL recipes are the main feature of the platform, offering users the ability to quickly and efficiently query and process satellite data, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses.
 
-A SEPAL recipe is a record of the steps and parameters used to make a dataset (e.g. optical mosaic, radar mosaic, classification). The recipe can be saved, with the same data recreated on-the-fly whenever needed or used in further analyses. A recipe is not, in itself, data. Using SEPAL recipes enables documentation of the parameters and steps used to create mosaics, composites, classifications, time series and other datasets or information products. SEPAL recipes, once saved, are available in the SEPAL interface after you sign in to the platform. Recipes can be run, deleted or copied (e.g. to change the sensor used, while leaving all other parameters the same).
+A SEPAL recipe is a record of the steps and parameters used to make a dataset (e.g. optical mosaic, radar mosaic, classification). The recipe can be saved, with the same data recreated on the fly whenever needed or used in further analyses. A recipe is not, in itself, data. Using SEPAL recipes enables documentation of the parameters and steps used to create mosaics, composites, classifications, time series and other datasets or information products. SEPAL recipes, once saved, are available in the SEPAL interface after you sign in to the platform. Recipes can be run, deleted or copied (e.g. to change the sensor used, while leaving all other parameters the same).
 
 With recipes, you can access the Google Earth Engine (GEE) multi-petabyte catalog of satellite imagery and utilize their planetary-scale analysis capabilities without writing a single line of code, simply by linking your Google and SEPAL accounts.
 
 .. important::
 
     You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user, see :doc:`../setup/resource`.
+
+Recipes
+-------
+Recipes in the SEPAL cookbook include:
+
+.. toctree::
+    :maxdepth: 1
+
+    optical_mosaic
+    radar_mosaic
+    planet_mosaic
+    classification
+    time_series
+    ccdc
+    ccdc_slice
+    class_change
 
 Gallery
 -------
@@ -75,7 +91,7 @@ Start a recipe
 
     Connect your SEPAL account to your GEE account to read and write GEE assets. If your accounts are not linked, you will only be able to download data to your SEPAL workspace.
 
-To start a recipe, go to the **Process** tab :icon:`fa-solid fa-globe`, where you'll see the list of all saved recipes in your SEPAL account.
+To start a recipe, go to the **Process** tab (:icon:`fa-solid fa-globe`), where you'll see the list of all saved recipes in your SEPAL account.
 
 .. thumbnail:: https://user-images.githubusercontent.com/149204/132474880-12333a36-dee0-4bdc-a0b4-0e9aab24b601.png
     :title: Recipe list displayed in the interface
@@ -100,18 +116,3 @@ The file will be downloaded to your computer using the following name: :code:`<n
 
 .. thumbnail:: ../_images/cookbook/index/export_recipe.png
     :title: Export the recipe to your local computer
-
-Recipes
--------
-
-.. toctree::
-    :maxdepth: 1
-
-    optical_mosaic
-    radar_mosaic
-    planet_mosaic
-    classification
-    time_series
-    ccdc
-    ccdc_slice
-    class_change

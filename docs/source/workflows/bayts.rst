@@ -1,5 +1,6 @@
 BayTS NRT-FDM
 =============
+*Implement the BayTS algorithm to generate NRT alerts using Sentinel-1 radar data*
 
 Background
 ----------
