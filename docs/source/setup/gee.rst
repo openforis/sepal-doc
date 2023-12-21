@@ -36,34 +36,55 @@ Sign up
 
 A GEE account is required to properly export images and data products as GEE assets or SEPAL applications using GEE from the SEPAL interface. A Google account is required to sign up for GEE.
 
-To sign up for a Google account, go to https://accounts.google.com/servicelogin.
+To sign up for a Google account, go to https://code.earthengine.google.com and select **I want to register a new project**.
 
-To request a GEE account, go to https://earthengine.google.com/new_signup.
 
-.. thumbnail:: ../_images/setup/register/gee_landing.png
+.. thumbnail:: ../_images/setup/register/new_gee_landing.png
     :title: Request access to GEE.
     :align: center
 
-For first-time users of SEPAL, select **Use without a cloud project** (for non-commercial users of GEE; the link between GEE and Google Cloud Projects [GCPs] is evolving and SEPAL will continue to develop in order to make use of GCPs correctly – but for now, use SEPAL without a GCP).
+.. _create-gcp:
+
+Create a Google Cloud Project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GEE now requires connect to a Google Cloud Projec (GCP) and it is available for paid commercial use and it remains free for academic and research purposes. 
+
+1. Select **Register a Noncomercial or Commercial Cloud Project** and follow the instructions to create your account.
 
 .. thumbnail:: ../_images/setup/register/gee_gcp_declaration.png
-    :title: Use GEE without a cloud project.
+    :title: Get started using Earth Engne.
+    :align: center
+    :width: 75%
+
+2. Select **Unpaid usage** and select the specific type of your project (i.e. Academia & Research, Goverment, Non-profit, etc.) and click on **Next**.
+
+.. thumbnail:: ../_images/setup/register/gee_gcp_type2.png
+    :title: Select the type of your project.
+    :align: center
+    :width: 60%
+
+3. Create or choose an existing GCP to register your project, select an **project-id** and optionally a **project name** and click on **Continue to summary**.
+
+4. A red alert will appear at the bottom of the page, saying that you must "accept the terms of service" to continue, click on the link.
+
+.. thumbnail:: ../_images/setup/register/create_gcp_to_register.png
+    :title: Create or choose a Cloud Project to register.
+    :align: center
+    :width: 60%
+
+5. You will be redirected to the `Google Cloud <https://console.cloud.google.com/>`_ page, and you will see a welcome form, read and accept the terms of reference (1) and **optionaly** (2) check the box to receive emails. Click on **Agree and continue**.
+
+.. thumbnail:: ../_images/setup/register/gcp_terms_of_service.png
+    :title: Create or choose a Cloud Project to register.
     :align: center
 
-Once you have a GEE account, access the **Earth Engine Code Editor** by going to https://code.earthengine.google.com.
+6. Finally, review the summary of your project and click on **Confirm**, you project is now registered and you can start using GEE.
 
-.. thumbnail:: ../_images/setup/register/gee_code.png
-    :title: GEE Code Editor
+.. thumbnail:: ../_images/setup/register/confirm_gcp_info.png
+    :title: Confirm GCP information.
     :align: center
-
-.. tip::
-
-    When you first connect to **Earth Engine Code Editor**, the SEPAL team recommends taking the tour of its features provided in the interface.
-
-    .. thumbnail:: ../_images/setup/gee/editor_tour.png
-        :title: GEE Code Editor tour
-        :align: center
-        :width: 40%
+    :width: 60%
 
 .. tip::
 
@@ -163,7 +184,14 @@ Connection
 
     You will see a message requesting your permission to authorize SEPAL's access to your Google Drive, as well as your **Assets** folder and **Home** folder to export recipes and module results.
 
-6. After the connection process is complete, you will be redirected to the SEPAL website. If you open **User details** again, the pop-up window will display *Connected* in green in the upper-right corner.
+6. Once the connection process is complete, you will be redirected to the SEPAL website, and now you can select which **Google Cloud Project** you want to use with SEPAL (check :ref:`create-gcp`), click on **apply**.
+
+.. thumbnail:: ../_images/setup/gee/sepal_select_gcp.png
+    :title: SEPAL and GEE connected
+    :align: center
+    :width: 40%
+
+7. Open **User details** again, if all the process went good, the pop-up window will display *Connected* in green in the upper-right corner.
 
 .. thumbnail:: ../_images/setup/gee/user_interface_connected.png
     :title: SEPAL and GEE connected
