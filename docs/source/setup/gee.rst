@@ -39,7 +39,7 @@ A GEE account is required to properly export images and data products as GEE ass
 To sign up for a Google account, go to https://code.earthengine.google.com and select **I want to register a new project**.
 
 
-.. thumbnail:: ../_images/setup/register/new_gee_landing.png
+.. thumbnail:: ../_images/setup/register/gee_landing.png
     :title: Request access to GEE.
     :align: center
 
@@ -48,7 +48,7 @@ To sign up for a Google account, go to https://code.earthengine.google.com and s
 Create a Google Cloud Project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GEE now requires connect to a Google Cloud Projec (GCP) and it is available for paid commercial use and it remains free for academic and research purposes. 
+GEE now requires connect to a Google Cloud Project (GCP) and it is available for paid commercial use and it remains free for academic and research purposes.
 
 1. Select **Register a Noncomercial or Commercial Cloud Project** and follow the instructions to create your account.
 
@@ -57,7 +57,7 @@ GEE now requires connect to a Google Cloud Projec (GCP) and it is available for 
     :align: center
     :width: 75%
 
-2. Select **Unpaid usage** and select the specific type of your project (i.e. Academia & Research, Goverment, Non-profit, etc.) and click on **Next**.
+2. Select **Unpaid usage** and select the specific type of your project (i.e. Academia & Research, Government, Non-profit, etc.) and click on **Next**.
 
 .. thumbnail:: ../_images/setup/register/gee_gcp_type2.png
     :title: Select the type of your project.
@@ -73,7 +73,7 @@ GEE now requires connect to a Google Cloud Projec (GCP) and it is available for 
     :align: center
     :width: 60%
 
-5. You will be redirected to the `Google Cloud <https://console.cloud.google.com/>`_ page, and you will see a welcome form, read and accept the terms of reference (1) and **optionaly** (2) check the box to receive emails. Click on **Agree and continue**.
+5. You will be redirected to the `Google Cloud <https://console.cloud.google.com/>`_ page, and you will see a welcome form, read and accept the terms of reference (1) and **optionally** (2) check the box to receive emails. Click on **Agree and continue**.
 
 .. thumbnail:: ../_images/setup/register/gcp_terms_of_service.png
     :title: Create or choose a Cloud Project to register.
