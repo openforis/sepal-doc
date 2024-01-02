@@ -40,55 +40,55 @@ To sign up for a Google account, go to https://code.earthengine.google.com and s
 
 
 .. thumbnail:: ../_images/setup/register/gee_landing.png
-    :title: Request access to GEE.
+    :title: Request access to GEE
     :align: center
 
 .. _create-gcp:
 
-Create a Google Cloud Project
+Create a Google Cloud project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GEE now requires connect to a Google Cloud Project (GCP) and it is available for paid commercial use and it remains free for academic and research purposes.
+GEE now requires connecting to a Google Cloud project (GCP), available for paid commercial use or free for academic and research purposes.
 
-1. Select **Register a Noncomercial or Commercial Cloud Project** and follow the instructions to create your account.
+1. Select **Register a Noncomercial or Commercial Cloud project** and follow the instructions to create your account.
 
 .. thumbnail:: ../_images/setup/register/gee_gcp_declaration.png
-    :title: Get started using Earth Engne.
+    :title: Get started using Earth Engine
     :align: center
     :width: 75%
 
-2. Select **Unpaid usage** and select the specific type of your project (i.e. Academia & Research, Government, Non-profit, etc.) and click on **Next**.
+2. Select **Unpaid usage** and choose your project type (e.g. Academia & Research, Government, Non-profit). Select **Next**.
 
 .. thumbnail:: ../_images/setup/register/gee_gcp_type2.png
-    :title: Select the type of your project.
+    :title: Select type of project
     :align: center
     :width: 60%
 
-3. Create or choose an existing GCP to register your project, select an **project-id** and optionally a **project name** and click on **Continue to summary**.
+3. Create or choose an existing GCP to register your project, then select a **Project-id** and optionally a **Project name**. Select **Continue to summary**.
 
-4. A red alert will appear at the bottom of the page, saying that you must "accept the terms of service" to continue, click on the link.
+4. A red alert will appear at the bottom of the page, requesting that you accept the **Cloud Terms of Service** to continue. Select the link.
 
 .. thumbnail:: ../_images/setup/register/create_gcp_to_register.png
-    :title: Create or choose a Cloud Project to register.
+    :title: Create or choose a Cloud project to register
     :align: center
     :width: 60%
 
-5. You will be redirected to the `Google Cloud <https://console.cloud.google.com/>`_ page, and you will see a welcome form, read and accept the terms of reference (1) and **optionally** (2) check the box to receive emails. Click on **Agree and continue**.
+5. You will be redirected to the `Google Cloud <https://console.cloud.google.com/>`_ page, where you will see a welcome form. Read and accept the **Terms of Service** (**1**) and *optionally* (**2**) check the box for **Email updates**. Select **Agree and continue** (**3**).
 
 .. thumbnail:: ../_images/setup/register/gcp_terms_of_service.png
-    :title: Create or choose a Cloud Project to register.
+    :title: Create or choose a Cloud project to register
     :align: center
 
-6. Finally, review the summary of your project and click on **Confirm**, you project is now registered and you can start using GEE.
+6. Finally, review the summary of your project and select **Confirm**. Your project is now registered and you can start using GEE.
 
 .. thumbnail:: ../_images/setup/register/confirm_gcp_info.png
-    :title: Confirm GCP information.
+    :title: Confirm GCP information
     :align: center
     :width: 60%
 
 .. tip::
 
-    If you experience trouble while linking your Google account to GEE, `ask the Google Group  <https://groups.google.com/g/sepal-users>`__.
+    If you experience trouble while linking your Google account to GEE, `ask the Google Group community for support <https://groups.google.com/g/sepal-users>`__.
 
 Initialize the **Home** folder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,14 +184,14 @@ Connection
 
     You will see a message requesting your permission to authorize SEPAL's access to your Google Drive, as well as your **Assets** folder and **Home** folder to export recipes and module results.
 
-6. Once the connection process is complete, you will be redirected to the SEPAL website, and now you can select which **Google Cloud Project** you want to use with SEPAL (check :ref:`create-gcp`), click on **apply**.
+6. Once the connection process is complete, you will be redirected to the SEPAL website, where you can select the **Google Cloud project** you want to use with SEPAL (check :ref:`create-gcp`). Select **Apply**.
 
 .. thumbnail:: ../_images/setup/gee/sepal_select_gcp.png
     :title: SEPAL and GEE connected
     :align: center
     :width: 40%
 
-7. Open **User details** again, if all the process went good, the pop-up window will display *Connected* in green in the upper-right corner.
+7. Open **User details** again. The pop-up window should display **Connected** in green in the upper-right corner.
 
 .. thumbnail:: ../_images/setup/gee/user_interface_connected.png
     :title: SEPAL and GEE connected
