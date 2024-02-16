@@ -139,7 +139,7 @@ Now you are ready to start the analysis.
 Click on the Apps menu in SEPAL and double click to open Jupyter Lab:
 
 .. thumbnail:: ../_images/workflows/esbae/jupyter.png
-   :width: 50%
+   :width: 60%
    :title: open Juypter Lab
    :align: center
    :group: workflows-eSBAE
@@ -148,7 +148,7 @@ You can then navigate to the eSBAE_notebooks directly and open the
 scripts
 
 .. thumbnail:: ../_images/workflows/esbae/jupyter_open.png
-   :width: 50%
+   :width: 70%
    :title: opening Jupyter Lab
    :align: center
    :group: workflows-eSBAE
@@ -160,7 +160,7 @@ python. To execute a cell and continue to the next one, hit Shift +
 Enter on your keyboard.
 
 .. thumbnail:: ../_images/workflows/esbae/keyboard.png
-   :width: 50%
+   :width: 60%
    :title: execute a cell using shift + enter
    :align: center
    :group: workflows-eSBAE
@@ -244,8 +244,7 @@ simplified boundary of Cameroun from the CAFI database:
 
 ..
 
-   For the CAFI project we will extract all data from 2010 to the
-   present:
+For the CAFI project we will extract all data from 2010 to the present:
 
 .. code-block:: bash
 
@@ -255,9 +254,9 @@ simplified boundary of Cameroun from the CAFI database:
 
 ..
 
-   4. Tree cover and mmu determine by which thresholds the GFC product
-   will be filtered in order to consider a (set of) pixels as forest.
-   Values are set in percentage and hectare.
+4. Tree cover and mmu determine by which thresholds the GFC product
+will be filtered in order to consider a (set of) pixels as forest.
+Values are set in percentage and hectare.
 
    You can set the parameters according to the forest definitions for
    the CAFI countries described
@@ -274,7 +273,7 @@ spacing and sample size for your area of interest to reach an expected
 margin of error.
 
 .. thumbnail:: ../_images/workflows/esbae/grid_spacing.png
-   :width: 50%
+   :width: 70%
    :title: estimating the optimal grid size
    :align: center
    :group: workflows-eSBAE
@@ -372,7 +371,7 @@ manual <https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__ for
 further projections options.
 
 .. thumbnail:: ../_images/workflows/esbae/dggs.png
-   :width: 50%
+   :width: 80%
    :title: hexagonal grid projections and size
    :align: center
    :group: workflows-eSBAE
@@ -644,7 +643,7 @@ Here the example for CAFI processing for Cameroun
 
 
 .. thumbnail:: ../_images/workflows/esbae/data_augmentation_finished.png
-   :width: 50%
+   :width: 60%
    :title: data augmentation is complete
    :align: center
    :group: workflows-eSBAE
