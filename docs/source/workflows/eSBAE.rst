@@ -513,23 +513,28 @@ Cameroun:
 
    esbae = TimeSeriesExtraction(
      # your project name that you use fo all of the notebooks
+
     project_name  = 'CMR',
     
     # your start and end date. 
     # NOTE that this should go further back to the past than the 
     # envisaged monitoing period for calibration purposes
+
     ts_start      = '2010-01-01',      # YYYY-MM-DD format
     ts_end        = '2024-01-01',        # YYYY-MM-DD format
     
     # satellite platform (for now only Landsat is supported)
+
     satellite     = 'Landsat',
     
     # at what resolution in metres you want to extract (shall conform with forest definition MMU)
+
     scale         = 70, # pixel size in metres
     
     # wether the TS will be extracted on a bounding box with diameter scale with original scale (e.g 30m for Landsat) of the underlying data (True), 
     # or if the underlying data is rescaled to the scale (False)
     # setting it to True might be more accurate, but tends to be slower
+    
     bounds_reduce = False,
     
     # bands
