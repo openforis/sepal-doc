@@ -113,19 +113,14 @@ Installing eSBAE_notebooks and CAFI_DDD in your SEPAL workspace.
 
 1. Activate an m2 instance in the SEPAL terminal
 
-..
-
-.. thumbnail:: ../_images/workflows/esbae/instances.png
+.. figure:: ../_images/workflows/esbae/instances.png
     :title: activating an instance
     :align: center
     :group: workflows-eSBAE
 
 2. Once the instance is started type the following command:
-
-+-----------------------------------------------------------------------+
-| Git clone https://github.com/sepal-contrib/eSBAE_notebooks            |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+ Git clone https://github.com/sepal-contrib/eSBAE_notebooks
 
 You will see a new folder created in your SEPAL workspace
 
