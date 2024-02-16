@@ -113,15 +113,6 @@ Installing eSBAE_notebooks and CAFI_DDD in your SEPAL workspace.
 
 1. Activate an m2 instance in the SEPAL terminal
 
-.. thumbnail:: ../_images/workflows/drivers/deforestation_example.png
-    :title: Example of deforestation
-    :align: center
-    :group: workflows-drivers
-
-
-
-
-
 .. thumbnail:: ../_images/workflows/esbae/instances.png
     :title: activating an instance
     :align: center
@@ -229,20 +220,16 @@ forest statistics.
    If you want to select a province, enter a province name in the
    country line and change the aoi line to the following:
 
-+-----------------------------------------------------------------------+
-| :mark:`aoi = gaul.filter(ee.Filter.eq("ADM1_NAME", country)).union()` |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+aoi = gaul.filter(ee.Filter.eq("ADM1_NAME", country)).union()
 
 Otherwise you can use an existing GEE asset for example, the buffered
 simplified boundary of Cameroun from the CAFI database:
 
-+-----------------------------------------------------------------------+
-| :mark:`aoi=ee.FeatureCollection('projects/cafi_fa                     |
-| o_congo/aoi/cafi_countries_buffer_simple').filter(ee.Filter.eq('ISO', |
-| 'CMR'));`                                                             |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+aoi=ee.FeatureCollection('projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple').filter(ee.Filter.eq('ISO','CMR'));                                                             |
 
 3. Start and end year will define the temporal extent, for which
    deforestation areas are extracted from the GFC product. This area
@@ -254,13 +241,11 @@ simplified boundary of Cameroun from the CAFI database:
    For the CAFI project we will extract all data from 2010 to the
    present:
 
-+-----------------------------------------------------------------------+
-| :mark:`# envisaged FREL/change assessment period (years are           |
-| inclusive)                                                            |
-| start_year = 2010 # YYYY format                                       |
-| end_year = 2024 # YYYY format`                                        |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+# envisaged FREL/change assessment period (years are inclusive)
+start_year = 2010 # YYYY format
+end_year = 2024 # YYYY format
 
 ..
 
@@ -272,9 +257,11 @@ simplified boundary of Cameroun from the CAFI database:
    the CAFI countries described
    `here <https://lookerstudio.google.com/u/0/reporting/c19ee6c9-04ff-4522-9f38-fe15bc04e9d3>`__
 
-:mark:`# forest definition
+.. code-block:: bash
+
+# forest definition
 tree_cover = 10 # in percentage
-mmu = 0.5 # in hectare`
+mmu = 0.5 # in hectare
 
 The final component of this script will evaluate the optimal grid
 spacing and sample size for your area of interest to reach an expected
@@ -409,32 +396,33 @@ In the below cell we initialize the SampleDesign Class
 ----------------------------------------------------------------
 
 In this example we create a hexagonal grid for Cameroun
+.. code-block:: bash
 
-+-----------------------------------------------------------------------+
-| :mark:`esbae = SampleDesign(                                          |
-| # set your project's name (NEEDS to be the same as in notebook 1 and  |
-| 2)                                                                    |
-| # no space allowed, use \_ instead                                    |
-| project_name='CMR',                                                   |
-| # defines the underlying grid,                                        |
-| # choices: 'squared', 'hexagonal'                                     |
-| shape='hexagonal',                                                    |
-| # defines where the sample is placed within the grid,                 |
-| # choices: 'random', 'centroid'                                       |
-| strategy='centroid',                                                  |
-| # defines the projection in which the grid is generated,              |
-| # for hexagonal it applies to the centroid calculation only, as       |
-| dggrid uses its own projection                                        |
-| grid_crs="ESRI:54008",                                                |
-| # defines the projection in which the grid is saved                   |
-| out_crs='EPSG:4326',                                                  |
-| # This is in case you haven't run notebook 1 and want to directly     |
-| start from here                                                       |
-| # aoi = ee.FeatureCollection('my_ee_feature_collection')              |
-| )                                                                     |
-| `                                                                     |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+esbae = SampleDesign(
+    
+    # set your project's name (NEEDS to be the same as in notebook 1 and 2)
+    # no space allowed, use _ instead
+    project_name='CMR',
+    
+    # defines the underlying grid, 
+    # choices: 'squared', 'hexagonal'
+    shape='hexagonal',              
+    
+    # defines where the sample is placed within the grid, 
+    # choices: 'random', 'centroid'
+    strategy='centroid',          
+    
+    # defines the projection in which the grid is generated,
+    # for hexagonal it applies to the centroid calculation only, as dggrid uses its own projection
+    grid_crs="ESRI:54008",
+    
+     # defines the projection in which the grid is saved
+    out_crs='EPSG:4326',
+    
+    # This is in case you haven't run notebook 1 and want to directly start from here
+    # aoi = ee.FeatureCollection('my_ee_feature_collection')
+)
+
 
 **2 - Create Grid**
 ===================
@@ -451,18 +439,17 @@ projections using hexagons.
 
 For CAFI DDD we use a resolution of 1000m or resolution 16 hexagons
 
-+-----------------------------------------------------------------------+
-| :mark:`# Those parameters apply to squared grid only (otherwise       |
-| ignored)                                                              |
-| esbae.squared_grid_size = 1000                                        |
-| # Those parameters apply to hexagonal grid only                       |
-| esbae.dggrid_resolution = 16 # this relates to the res column from    |
-| the table above                                                       |
-| esbae.dggrid_projection = 'ISEA3H'                                    |
-| # generation of grid                                                  |
-| c, p = esbae.generate_samples(upload_to_ee=True, save_as_ceo=True)`   |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+# Those parameters apply to squared grid only (otherwise ignored)
+esbae.squared_grid_size = 1000
+
+# Those parameters apply to hexagonal grid only
+esbae.dggrid_resolution = 16     # this relates to the res column from the table above
+esbae.dggrid_projection = 'ISEA3H'
+
+# generation of grid
+c, p = esbae.generate_samples(upload_to_ee=True, save_as_ceo=True)
 
 This script will produce an ee asset feature collection of your gridded
 points.
@@ -522,43 +509,38 @@ efficiently extract the information from the platform.
 Here are the parameters for executing the time series extraction for
 Cameroun:
 
-+-----------------------------------------------------------------------+
-| :mark:`esbae = TimeSeriesExtraction(                                  |
-| # your project name that you use fo all of the notebooks              |
-| project_name = 'CMR',                                                 |
-| # your start and end date.                                            |
-| # NOTE that this should go further back to the past than the          |
-| # envisaged monitoing period for calibration purposes                 |
-| ts_start = '2010-01-01', # YYYY-MM-DD format                          |
-| ts_end = '2024-01-01', # YYYY-MM-DD format                            |
-| # satellite platform (for now only Landsat is supported)              |
-| satellite = 'Landsat',                                                |
-| # at what resolution in metres you want to extract (shall conform     |
-| with forest definition MMU)                                           |
-| scale = 70, # pixel size in metres                                    |
-| # wether the TS will be extracted on a bounding box with diameter     |
-| scale with original scale (e.g 30m for Landsat) of the underlying     |
-| data (True),                                                          |
-| # or if the underlying data is rescaled to the scale (False)          |
-| # setting it to True might be more accurate, but tends to be slower   |
-| bounds_reduce = False,                                                |
-| # bands                                                               |
-| bands = [                                                             |
-| 'green', 'red', 'nir', 'swir1', 'swir2', # reflectance bands          |
-| 'ndfi', #'ndmi', 'ndvi', # indices                                    |
-| 'brightness', 'greenness', 'wetness' # Tasseled Cap                   |
-| ],                                                                    |
-| # This is in case you haven't run notebook 1 and 2, and want to       |
-| directly start from here                                              |
-| #aoi =                                                                |
-| ee.FeatureCollection(ee.FeatureCollection('projects/cafi_fao_con      |
-| go/modeling/all_ceo_validation_TMF_2023').geometry().convexHull(100)) |
-| aoi =                                                                 |
-| ee.FeatureCollection(ee.FeatureCollect                                |
-| ion('users/faocongo/sbae/sbae_hex16_cmr').geometry().convexHull(100)) |
-| )`                                                                    |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+   esbae = TimeSeriesExtraction(
+     # your project name that you use fo all of the notebooks
+    project_name  = 'CMR',
+    
+    # your start and end date. 
+    # NOTE that this should go further back to the past than the 
+    # envisaged monitoing period for calibration purposes
+    ts_start      = '2010-01-01',      # YYYY-MM-DD format
+    ts_end        = '2024-01-01',        # YYYY-MM-DD format
+    
+    # satellite platform (for now only Landsat is supported)
+    satellite     = 'Landsat',
+    
+    # at what resolution in metres you want to extract (shall conform with forest definition MMU)
+    scale         = 70, # pixel size in metres
+    
+    # wether the TS will be extracted on a bounding box with diameter scale with original scale (e.g 30m for Landsat) of the underlying data (True), 
+    # or if the underlying data is rescaled to the scale (False)
+    # setting it to True might be more accurate, but tends to be slower
+    bounds_reduce = False,
+    
+    # bands
+    bands         =  [
+        'green', 'red', 'nir', 'swir1', 'swir2',   # reflectance bands
+        'ndfi', #'ndmi', 'ndvi',                    # indices
+        'brightness', 'greenness', 'wetness'       # Tasseled Cap 
+    ], 
+    # This is in case you haven't run notebook 1 and 2, and want to directly start from here
+       aoi = ee.FeatureCollection(ee.FeatureCollection('users/faocongo/sbae/sbae_hex16_cmr').geometry().convexHull(100))
+)
 
 **5 - Set a custom grid**
 -------------------------
@@ -570,11 +552,9 @@ identifier. Uncomment the lines by removing the #
 Here is the code for extracting time series on the CAFI DDD grid for
 Cameroun:
 
-+-----------------------------------------------------------------------+
-| :mark:`esbae.sample_asset = 'users/faocongo/sbae/sbae_hex16_cmr'      |
-| esbae.pid = 'point_id'`                                               |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+   esbae.sample_asset = 'users/faocongo/sbae/sbae_hex16_cmr'
+   esbae.pid = 'point_id'
 
 This process can take a long time and might need to be restarted several
 times.
@@ -590,16 +570,11 @@ following line of code.
 
 This line will tell you when to proceed to the next notebook:
 
-+-----------------------------------------------------------------------+
-| :mark:`esbae.check_if_completed()`                                    |
-|                                                                       |
-| :mark:`INFO: Verifying the number of points for which the time-series |
-| have already been extracted...`                                       |
-|                                                                       |
-| :mark:`INFO: Time-series data has been extracted completely. Time to  |
-| move on with the dataset augmentation notebook.`                      |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+   esbae.check_if_completed()
+INFO: Verifying the number of points for which the time-series have already been extracted...
+INFO: Time-series data has been extracted completely. Time to move on with the dataset augmentation notebook.
+
 
 **IV - eSBAE Dataset Augmentation**
 ===================================
@@ -635,27 +610,24 @@ script 3.
 
 Here the example for CAFI processing for Cameroun
 
-+-----------------------------------------------------------------------+
-| :mark:`esbae = DatasetAugmentation(                                   |
-| # your project name, as set in previous notebooks                     |
-| project_name = CMR,                                                   |
-| # start of calibration period (mainly for bfast)                      |
-| calibration_start = '2010-01-01', # YYYY-MM-DD format                 |
-| # Actual period of interest, i.e. monitoring period                   |
-| monitor_start = '2016-01-01', # YYYY-MM-DD format                     |
-| monitor_end = '2023-12-31', # YYYY-MM-DD format                       |
-| # select the band for univariate ts-analysis (has to be inside bands  |
-| list)                                                                 |
-| ts_band = 'ndfi'                                                      |
-| )`                                                                    |
-|                                                                       |
-| You may have many different files to process, you will need to keep   |
-| your instance alive to continue processing. If the instance has       |
-| stopped or you have been disconnected, you may simply restart the     |
-| script again. The script will indicate when processing has completed, |
-| for example for Cameroun:                                             |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+.. code-block:: bash
+
+esbae = DatasetAugmentation(
+    
+    # your project name, as set in previous notebooks
+    project_name = CMR,
+
+    # start of calibration period (mainly for bfast)
+    calibration_start = '2010-01-01',  # YYYY-MM-DD format
+
+    # Actual period of interest, i.e. monitoring period
+    monitor_start =  '2016-01-01',  # YYYY-MM-DD format
+    monitor_end   =  '2023-12-31',  # YYYY-MM-DD format
+
+    # select the band for univariate ts-analysis (has to be inside bands list)
+    ts_band = 'ndfi'
+)
+
 
 .. thumbnail:: ../_images/workflows/esbae/data_augmentation_finished.png
     :title: data augmentation is complete
