@@ -113,7 +113,16 @@ Installing eSBAE_notebooks and CAFI_DDD in your SEPAL workspace.
 
 1. Activate an m2 instance in the SEPAL terminal
 
-.. figure:: ../_images/workflows/esbae/instances.png
+.. thumbnail:: ../_images/workflows/drivers/deforestation_example.png
+    :title: Example of deforestation
+    :align: center
+    :group: workflows-drivers
+
+
+
+
+
+.. thumbnail:: ../_images/workflows/esbae/instances.png
     :title: activating an instance
     :align: center
     :group: workflows-eSBAE
