@@ -1,5 +1,5 @@
 eSBAE - ensemble Sample Based Area Estimation
-================================
+=============================================
 *accurate forest change estimates and uncertainty using multi-source remote sensing, change detection algorithms over a dense sampling grid*
 
 The ensemble Sample Based Area Estimation workflow aims to produce
@@ -114,22 +114,24 @@ Installing eSBAE_notebooks and CAFI_DDD in your SEPAL workspace.
 1. Activate an m2 instance in the SEPAL terminal
 
 .. thumbnail:: ../_images/workflows/esbae/instances.png
-    :title: activating an instance
-    :align: center
-    :group: workflows-eSBAE
+   :width: 30%
+   :title: activating an instance
+   :align: center
+   :group: workflows-eSBAE
 
 2. Once the instance is started type the following command:
 
 .. code-block:: bash
 
- Git clone https://github.com/sepal-contrib/eSBAE_notebooks
+ git clone https://github.com/sepal-contrib/eSBAE_notebooks
 
 You will see a new folder created in your SEPAL workspace
 
 .. thumbnail:: ../_images/workflows/esbae/notebook_folder.png
-    :title: notebooks installed in your SEPAL workspace
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: notebooks installed in your SEPAL workspace
+   :align: center
+   :group: workflows-eSBAE
 
 Now you are ready to start the analysis.
 
@@ -137,17 +139,19 @@ Now you are ready to start the analysis.
 Click on the Apps menu in SEPAL and double click to open Jupyter Lab:
 
 .. thumbnail:: ../_images/workflows/esbae/jupyter.png
-    :title: open Juypter Lab
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: open Juypter Lab
+   :align: center
+   :group: workflows-eSBAE
 
 You can then navigate to the eSBAE_notebooks directly and open the
 scripts
 
 .. thumbnail:: ../_images/workflows/esbae/jupyter_open.png
-    :title: opening Jupyter Lab
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: opening Jupyter Lab
+   :align: center
+   :group: workflows-eSBAE
 
 **Script 0 - Introduction to Jupyter Notebooks and Python**
 
@@ -156,9 +160,10 @@ python. To execute a cell and continue to the next one, hit Shift +
 Enter on your keyboard.
 
 .. thumbnail:: ../_images/workflows/esbae/keyboard.png
-    :title: execute a cell using shift + enter
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: execute a cell using shift + enter
+   :align: center
+   :group: workflows-eSBAE
 
 A cell that has not been executed is indicated by [ ]. When it is
 running you will see [ \* ] and when it has executed you will see a
@@ -203,7 +208,7 @@ forest statistics.
 1. Project Name: This will not only give your work a name, but it also
    defines the output folder within the module_results/esbae (if you are
    on SEPAL), as well as a directory within your Earth Engine assets.
-   **NOTE** that it shall not contain any space. 
+   **NOTE** that it shall not contain any space.
    **NOTE** all outputs from eSBAE will be written to your module_results/esbae/<projectname>
 
 2. Area of Interest (AOI): Your AOI defines the spatial extent for which
@@ -221,6 +226,7 @@ forest statistics.
 ..
 
 .. code-block:: bash
+
    aoi = gaul.filter(ee.Filter.eq("ADM1_NAME", country)).union()
 
 
@@ -228,6 +234,7 @@ Otherwise you can use an existing GEE asset for example, the buffered
 simplified boundary of Cameroun from the CAFI database:
 
 .. code-block:: bash
+
    aoi=ee.FeatureCollection('projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple').filter(ee.Filter.eq('ISO','CMR'));                                                             |
 
 3. Start and end year will define the temporal extent, for which
@@ -241,13 +248,14 @@ simplified boundary of Cameroun from the CAFI database:
    present:
 
 .. code-block:: bash
+
    # envisaged FREL/change assessment period (years are inclusive)
    start_year = 2010 # YYYY format
    end_year = 2024 # YYYY format
 
 ..
 
-   4. Tree cover and mmu determine by which threshholds the GFC product
+   4. Tree cover and mmu determine by which thresholds the GFC product
    will be filtered in order to consider a (set of) pixels as forest.
    Values are set in percentage and hectare.
 
@@ -256,6 +264,7 @@ simplified boundary of Cameroun from the CAFI database:
    `here <https://lookerstudio.google.com/u/0/reporting/c19ee6c9-04ff-4522-9f38-fe15bc04e9d3>`__
 
 .. code-block:: bash
+
    # forest definition
    tree_cover = 10 # in percentage
    mmu = 0.5 # in hectare
@@ -265,9 +274,10 @@ spacing and sample size for your area of interest to reach an expected
 margin of error.
 
 .. thumbnail:: ../_images/workflows/esbae/grid_spacing.png
-    :title: estimating the optimal grid size
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: estimating the optimal grid size
+   :align: center
+   :group: workflows-eSBAE
 
 **II - Sample Design**
 
@@ -299,7 +309,7 @@ selected in metres, defining the single border length of each grid cell.
 **Hexagonal grid**
 ------------------
 
-Lately, hexagonal grids are adapted in National Forest Monitoring Sytems
+Lately, hexagonal grids are adapted in National Forest Monitoring Systems
 as they possess some particular characteristics. Foremost, they reduce
 the error on area, but they also do assure that each point within the
 grid cell is mre or less at the same distance to the centre. Indeed, the
@@ -350,9 +360,10 @@ from Yildrim & Kaya 2008 and can be found
 contain distortions that shall be avoided.
 
 .. thumbnail:: ../_images/workflows/esbae/projections.png
-    :title: projection codes
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: projection codes
+   :align: center
+   :group: workflows-eSBAE
 
 **Hexagonal grid projections and grid size**
 
@@ -361,9 +372,10 @@ manual <https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__ for
 further projections options.
 
 .. thumbnail:: ../_images/workflows/esbae/dggs.png
-    :title: hexagonal grid projections and size
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: hexagonal grid projections and size
+   :align: center
+   :group: workflows-eSBAE
 
 **2 - Initialize SampleDesign Class**
 -------------------------------------
@@ -395,30 +407,31 @@ In the below cell we initialize the SampleDesign Class
 In this example we create a hexagonal grid for Cameroun
 
 .. code-block:: bash
+
    esbae = SampleDesign(
-    
+
     # set your project's name (NEEDS to be the same as in notebook 1 and 2)
     # no space allowed, use _ instead
     project_name='CMR',
-    
-    # defines the underlying grid, 
+
+    # defines the underlying grid,
     # choices: 'squared', 'hexagonal'
-    shape='hexagonal',              
-    
-    # defines where the sample is placed within the grid, 
+    shape='hexagonal',
+
+    # defines where the sample is placed within the grid,
     # choices: 'random', 'centroid'
-    strategy='centroid',          
-    
+    strategy='centroid',
+
     # defines the projection in which the grid is generated,
     # for hexagonal it applies to the centroid calculation only, as dggrid uses its own projection
     grid_crs="ESRI:54008",
-    
+
      # defines the projection in which the grid is saved
     out_crs='EPSG:4326',
-    
+
     # This is in case you haven't run notebook 1 and want to directly start from here
     # aoi = ee.FeatureCollection('my_ee_feature_collection')
-)
+   )
 
 
 **2 - Create Grid**
@@ -437,13 +450,14 @@ projections using hexagons.
 For CAFI DDD we use a resolution of 1000m or resolution 16 hexagons
 
 .. code-block:: bash
+
    # Those parameters apply to squared grid only (otherwise ignored)
    esbae.squared_grid_size = 1000
-   
+
    # Those parameters apply to hexagonal grid only
    esbae.dggrid_resolution = 16     # this relates to the res column from the table above
    esbae.dggrid_projection = 'ISEA3H'
-   
+
    # generation of grid
    c, p = esbae.generate_samples(upload_to_ee=True, save_as_ceo=True)
 
@@ -454,6 +468,7 @@ The CAFI DDD point assets of 1km hexagonal grids produced for each
 country are as follows (select the appropriate one for your country):
 
 .. code-block:: bash
+
    users/faocongo/sbae/sbae_hex16_car
    users/faocongo/sbae/sbae_hex16_cmr
    users/faocongo/sbae/sbae_hex16_cog
@@ -504,40 +519,40 @@ Cameroun:
 .. code-block:: bash
 
    esbae = TimeSeriesExtraction(
-     # your project name that you use fo all of the notebooks
+     # your project name that you use of all of the notebooks
 
     project_name  = 'CMR',
-    
-    # your start and end date. 
-    # NOTE that this should go further back to the past than the 
-    # envisaged monitoing period for calibration purposes
+
+    # your start and end date.
+    # NOTE that this should go further back to the past than the
+    # envisaged monitoring period for calibration purposes
 
     ts_start      = '2010-01-01',      # YYYY-MM-DD format
     ts_end        = '2024-01-01',        # YYYY-MM-DD format
-    
+
     # satellite platform (for now only Landsat is supported)
 
     satellite     = 'Landsat',
-    
+
     # at what resolution in metres you want to extract (shall conform with forest definition MMU)
 
     scale         = 70, # pixel size in metres
-    
-    # wether the TS will be extracted on a bounding box with diameter scale with original scale (e.g 30m for Landsat) of the underlying data (True), 
+
+    # whether the TS will be extracted on a bounding box with diameter scale with original scale (e.g 30m for Landsat) of the underlying data (True),
     # or if the underlying data is rescaled to the scale (False)
     # setting it to True might be more accurate, but tends to be slower
 
     bounds_reduce = False,
-    
+
     # bands
     bands         =  [
         'green', 'red', 'nir', 'swir1', 'swir2',   # reflectance bands
         'ndfi', #'ndmi', 'ndvi',                    # indices
-        'brightness', 'greenness', 'wetness'       # Tasseled Cap 
-    ], 
+        'brightness', 'greenness', 'wetness'       # Tasseled Cap
+    ],
     # This is in case you haven't run notebook 1 and 2, and want to directly start from here
        aoi = ee.FeatureCollection(ee.FeatureCollection('users/faocongo/sbae/sbae_hex16_cmr').geometry().convexHull(100))
-)
+   )
 
 **5 - Set a custom grid**
 -------------------------
@@ -550,6 +565,7 @@ Here is the code for extracting time series on the CAFI DDD grid for
 Cameroun:
 
 .. code-block:: bash
+
    esbae.sample_asset = 'users/faocongo/sbae/sbae_hex16_cmr'
    esbae.pid = 'point_id'
 
@@ -568,6 +584,7 @@ following line of code.
 This line will tell you when to proceed to the next notebook:
 
 .. code-block:: bash
+
    esbae.check_if_completed()
    INFO: Verifying the number of points for which the time-series have already been extracted...
    INFO: Time-series data has been extracted completely. Time to move on with the dataset augmentation notebook.
@@ -608,8 +625,9 @@ script 3.
 Here the example for CAFI processing for Cameroun
 
 .. code-block:: bash
+
    esbae = DatasetAugmentation(
-    
+
     # your project name, as set in previous notebooks
     project_name = CMR,
 
@@ -622,11 +640,12 @@ Here the example for CAFI processing for Cameroun
 
     # select the band for univariate ts-analysis (has to be inside bands list)
     ts_band = 'ndfi'
-)
+   )
 
 
 .. thumbnail:: ../_images/workflows/esbae/data_augmentation_finished.png
-    :title: data augmentation is complete
-    :align: center
-    :group: workflows-eSBAE
+   :width: 50%
+   :title: data augmentation is complete
+   :align: center
+   :group: workflows-eSBAE
 
