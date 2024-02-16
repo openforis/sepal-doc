@@ -119,7 +119,9 @@ Installing eSBAE_notebooks and CAFI_DDD in your SEPAL workspace.
     :group: workflows-eSBAE
 
 2. Once the instance is started type the following command:
+
 .. code-block:: bash
+
  Git clone https://github.com/sepal-contrib/eSBAE_notebooks
 
 You will see a new folder created in your SEPAL workspace
