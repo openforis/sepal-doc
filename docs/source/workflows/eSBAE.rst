@@ -136,6 +136,7 @@ You will see a new folder created in your SEPAL workspace
 
 Now you are ready to start the analysis.
 
+
 Click on the Apps menu in SEPAL and double click to open Jupyter Lab:
 
 .. thumbnail:: ../_images/workflows/esbae/jupyter.png
@@ -205,7 +206,8 @@ forest statistics.
 1. Project Name: This will not only give your work a name, but it also
    defines the output folder within the module_results/esbae (if you are
    on SEPAL), as well as a directory within your Earth Engine assets.
-   **NOTE** that it shall not contain any space.
+   **NOTE** that it shall not contain any space. 
+   **NOTE** all outputs from eSBAE will be written to your module_results/esbae/<projectname>
 
 2. Area of Interest (AOI): Your AOI defines the spatial extent for which
    the data will be generated and analyzed. It can come in different
