@@ -215,21 +215,20 @@ forest statistics.
    names here:
    https://data.apps.fao.org/catalog/dataset/gaul-code-list-global-admin-1
 
-..
-
    If you want to select a province, enter a province name in the
    country line and change the aoi line to the following:
 
-.. code-block:: bash
+..
 
-aoi = gaul.filter(ee.Filter.eq("ADM1_NAME", country)).union()
+.. code-block:: bash
+   aoi = gaul.filter(ee.Filter.eq("ADM1_NAME", country)).union()
+
 
 Otherwise you can use an existing GEE asset for example, the buffered
 simplified boundary of Cameroun from the CAFI database:
 
 .. code-block:: bash
-
-aoi=ee.FeatureCollection('projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple').filter(ee.Filter.eq('ISO','CMR'));                                                             |
+   aoi=ee.FeatureCollection('projects/cafi_fao_congo/aoi/cafi_countries_buffer_simple').filter(ee.Filter.eq('ISO','CMR'));                                                             |
 
 3. Start and end year will define the temporal extent, for which
    deforestation areas are extracted from the GFC product. This area
@@ -242,10 +241,9 @@ aoi=ee.FeatureCollection('projects/cafi_fao_congo/aoi/cafi_countries_buffer_simp
    present:
 
 .. code-block:: bash
-
-# envisaged FREL/change assessment period (years are inclusive)
-start_year = 2010 # YYYY format
-end_year = 2024 # YYYY format
+   # envisaged FREL/change assessment period (years are inclusive)
+   start_year = 2010 # YYYY format
+   end_year = 2024 # YYYY format
 
 ..
 
@@ -258,10 +256,9 @@ end_year = 2024 # YYYY format
    `here <https://lookerstudio.google.com/u/0/reporting/c19ee6c9-04ff-4522-9f38-fe15bc04e9d3>`__
 
 .. code-block:: bash
-
-# forest definition
-tree_cover = 10 # in percentage
-mmu = 0.5 # in hectare
+   # forest definition
+   tree_cover = 10 # in percentage
+   mmu = 0.5 # in hectare
 
 The final component of this script will evaluate the optimal grid
 spacing and sample size for your area of interest to reach an expected
@@ -396,9 +393,9 @@ In the below cell we initialize the SampleDesign Class
 ----------------------------------------------------------------
 
 In this example we create a hexagonal grid for Cameroun
-.. code-block:: bash
 
-esbae = SampleDesign(
+.. code-block:: bash
+   esbae = SampleDesign(
     
     # set your project's name (NEEDS to be the same as in notebook 1 and 2)
     # no space allowed, use _ instead
@@ -440,34 +437,29 @@ projections using hexagons.
 For CAFI DDD we use a resolution of 1000m or resolution 16 hexagons
 
 .. code-block:: bash
-
-# Those parameters apply to squared grid only (otherwise ignored)
-esbae.squared_grid_size = 1000
-
-# Those parameters apply to hexagonal grid only
-esbae.dggrid_resolution = 16     # this relates to the res column from the table above
-esbae.dggrid_projection = 'ISEA3H'
-
-# generation of grid
-c, p = esbae.generate_samples(upload_to_ee=True, save_as_ceo=True)
+   # Those parameters apply to squared grid only (otherwise ignored)
+   esbae.squared_grid_size = 1000
+   
+   # Those parameters apply to hexagonal grid only
+   esbae.dggrid_resolution = 16     # this relates to the res column from the table above
+   esbae.dggrid_projection = 'ISEA3H'
+   
+   # generation of grid
+   c, p = esbae.generate_samples(upload_to_ee=True, save_as_ceo=True)
 
 This script will produce an ee asset feature collection of your gridded
 points.
 
 The CAFI DDD point assets of 1km hexagonal grids produced for each
-country are as follows:
+country are as follows (select the appropriate one for your country):
 
-users/faocongo/sbae/sbae_hex16_car
-
-users/faocongo/sbae/sbae_hex16_cmr
-
-users/faocongo/sbae/sbae_hex16_cog
-
-users/faocongo/sbae/sbae_hex16_drc
-
-users/faocongo/sbae/sbae_hex16_eqg
-
-users/faocongo/sbae/sbae_hex16_gab
+.. code-block:: bash
+   users/faocongo/sbae/sbae_hex16_car
+   users/faocongo/sbae/sbae_hex16_cmr
+   users/faocongo/sbae/sbae_hex16_cog
+   users/faocongo/sbae/sbae_hex16_drc
+   users/faocongo/sbae/sbae_hex16_eqg
+   users/faocongo/sbae/sbae_hex16_gab
 
 **III - eSBAE Time-Series Extraction**
 ======================================
@@ -534,7 +526,7 @@ Cameroun:
     # wether the TS will be extracted on a bounding box with diameter scale with original scale (e.g 30m for Landsat) of the underlying data (True), 
     # or if the underlying data is rescaled to the scale (False)
     # setting it to True might be more accurate, but tends to be slower
-    
+
     bounds_reduce = False,
     
     # bands
@@ -577,8 +569,8 @@ This line will tell you when to proceed to the next notebook:
 
 .. code-block:: bash
    esbae.check_if_completed()
-INFO: Verifying the number of points for which the time-series have already been extracted...
-INFO: Time-series data has been extracted completely. Time to move on with the dataset augmentation notebook.
+   INFO: Verifying the number of points for which the time-series have already been extracted...
+   INFO: Time-series data has been extracted completely. Time to move on with the dataset augmentation notebook.
 
 
 **IV - eSBAE Dataset Augmentation**
@@ -616,8 +608,7 @@ script 3.
 Here the example for CAFI processing for Cameroun
 
 .. code-block:: bash
-
-esbae = DatasetAugmentation(
+   esbae = DatasetAugmentation(
     
     # your project name, as set in previous notebooks
     project_name = CMR,
