@@ -40,6 +40,11 @@ Navigating :code:`ncdu`
 - Use the arrow keys (:btn:`<fa-solid fa-square-caret-left>`, :btn:`<fa-solid fa-square-caret-up>`, :btn:`<fa-solid fa-square-caret-right>`, :btn:`<fa-solid fa-square-caret-down>` )  to navigate through the files and directories.
 - Press :code:`Enter` to enter a directory.
 
+.. thumbnail:: ../_images/setup/storage/preview.png
+    :title: NCDU preview
+    :width: 70%
+    :align: center
+
 Understanding the Interface
 ----------------------------
 
