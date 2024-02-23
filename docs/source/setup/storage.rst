@@ -1,7 +1,7 @@
 Manage Disk Usage
 =================
 
-In SEPAL, efficient storage management is crucial due to the limited storage capacity. We highly recommended to regularly audit and clean your storage space to maintain optimal system functionality and your resources under the limits. 
+In SEPAL, efficient storage management is crucial due to the limited storage capacity. We highly recommended to regularly audit and clean your storage space to maintain optimal system functionality and your resources under the limits.
 
 For non-expert users, initiating storage cleanup can seem daunting. It's important to start with directories known for accumulating large files, such as :code:`/var/log` (system logs), :code:`/tmp` (temporary files), and personal directories like :code:`~/Downloads` or :code:`~/module_results`. A conservative estimate for high storage usage in these areas can vary depending on individual use cases and system configurations. However, as a general guideline, any single folder occupying more than 1GB of space warrants a closer look, especially if it's not actively used for current projects.
 
