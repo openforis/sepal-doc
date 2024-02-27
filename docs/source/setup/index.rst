@@ -37,5 +37,6 @@ For usage questions, ask the `GIS StackExchange community <https://gis.stackexch
     gee
     nicfi
     resource
+    storage
     filezilla
     password
