@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,188 +17,375 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/alos_mosaics.rst:2
-msgid "ALOS Kyoto & Carbon Mosaics by JAXA"
+msgid "ALOS K&C mosaics"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:4
-msgid ""
-"This module have been designed on top of the interactive framework "
-"`sepal_ui <https://github.com/12rambau/sepal_ui>`_. it allows the user to"
-" extract ALOS K&C mosaics. The input are as simple as: an AOI, a year, "
-"and some filters. The user will be able to display the mosaic in an "
-"interactive map and export it as a GEE asset and/or a sepal Tif file."
+#: ../../source/modules/dwn/alos_mosaics.rst:3
+msgid "*Create and manipulate ALOS K&C mosaics*"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:7
-msgid ""
-"This module is a sepalization of the follwing `script "
-"<https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_ "
-"by A. Vollrath."
+#: ../../source/modules/dwn/alos_mosaics.rst:6
+msgid "This module allows users to:"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:8
+msgid "extract ALOS Kyoto & Carbon (ALOS K&C) mosaics by JAXA;"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:9
+msgid "display the mosaics in interactive maps; and"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:10
 msgid ""
-"The process is done in 3 steps described in the bellow sections and "
-"presented in the bellow video tutorial:"
+"export the mosaics as Google Earth Engine (GEE) assets and/or SEPAL .tif "
+"files."
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:12
+msgid ""
+"Designed on top of the interactive framework `sepal_ui "
+"<https://github.com/12rambau/sepal_ui>`_, it was adapted to the SEPAL "
+"environment from `this script by Vollrath "
+"<https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:14
-msgid "Select an AOI"
+msgid "Necessary inputs include:"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:16
-msgid ""
-"Using the provided AOI selector, select an AOI of your choice between the"
-" different methods available in the tool. We provide 3 administration "
-"descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on "
-"the map, asset or shapefile)."
+msgid "an area of interest (AOI)"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:17
+msgid "a year"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:18
+msgid "select filters"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:20
-msgid "aoi selector"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:24
 msgid ""
-"If a custom aoi from shape or drawing is selected, you will be able to "
-"use it directly and the upload to GEE will be launched in the background"
+"The three-step process is described in the subsections below, as well as "
+"presented in the following video tutorial."
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:28
-msgid "Process mosaic"
+#: ../../source/modules/dwn/alos_mosaics.rst:25
+msgid "Select an AOI"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:30
+#: ../../source/modules/dwn/alos_mosaics.rst:27
 msgid ""
-"Then in the process tile, you need to set the different parameters of "
-"your mosaic:"
+"Using the provided **AOI selector**, select an AOI of your choice between"
+" the different methods available in the tool. We provide three "
+"administrative descriptors (from level 0 to 2) and three custom shapes "
+"(drawn directly on the map, asset or shapefile)."
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:32
-msgid "**year**: The year of interest"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:33
-msgid "**speckle filter**: the speckle filter to use during the process"
+#: ../../source/modules/dwn/alos_mosaics.rst:31
+msgid "AOI selector"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:35
-msgid "no filter"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:36
 msgid ""
-"refined lee: speckle noise removal technique based on the well-knwown Lee"
-" Filter. More information in `A. S. Yommy et. Al "
-"<https://doi.org/10.1109/IHMSC.2015.236>`_."
+"If a custom AOI from a shape or drawing is selected, you will be able to "
+"use it directly (the upload to GEE will be launched in the background)."
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:37
-msgid "Quegan filter: `S. Quegan et. Al <https://doi.org/10.1109/36.964973>`_"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:39
-msgid "**shadow masking**: activate or deactivate the shadow masking"
+#: ../../source/modules/dwn/alos_mosaics.rst:38
+msgid "Process mosaic"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:40
-msgid "**Db**: wether or not to scale the output to Db"
+msgid "In the **Process** tile, set the different parameters of your mosaic:"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:42
+msgid "**Year**: the year of interest"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:43
 msgid ""
-"Once you are happy with your parameters, you can click on the button. The"
-" dataset will be automatically send to the vizualization tile."
+"**Speckle filter**: the speckle filter to use during the process -   no "
+"filter -   refined lee: speckle noise removal technique based on the Lee "
+"Filter (for more information, see `A.S. Yommy et al. "
+"<https://doi.org/10.1109/IHMSC.2015.236>`_). -   Quegan filter: See "
+"`Quegan et al. <https://doi.org/10.1109/36.964973>`_"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:46
-msgid "dataset parameters"
+#: ../../source/modules/dwn/alos_mosaics.rst:47
+msgid "**Shadow masking**: activate or deactivate shadow masking"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:49
-msgid "Display dataset"
+#: ../../source/modules/dwn/alos_mosaics.rst:48
+msgid "**Db**: whether or not to scale the output to Db"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:51
+#: ../../source/modules/dwn/alos_mosaics.rst:50
 msgid ""
-"As mentioned in the above section, the dataset is automatically displayed"
-" on the map. THis map is interactive allowing you to zoom in and out. "
-"Note that you can select betwee 3 diplay options:"
+"After setting your parameters, select the button (the dataset will be "
+"automatically sent to the **Vizualization** tile)."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:54
-msgid "Backscatter RGB (HH, HV, HH/HV power ratio)"
+msgid "Dataset parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:55
-msgid "Radar Forest Degradation Index (RFDI, Mitchard et al. 2012)"
+#: ../../source/modules/dwn/alos_mosaics.rst:57
+msgid "Display dataset"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:56
-msgid "Forest/Non-Forest"
+#: ../../source/modules/dwn/alos_mosaics.rst:59
+msgid ""
+"The dataset is automatically displayed on the interactive map, allowing "
+"you to zoom in and out."
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:60
-msgid "display informations"
+#: ../../source/modules/dwn/alos_mosaics.rst:61
+msgid "Choose from three diplay options:"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:63
-msgid "Export dataset"
+msgid "Backscatter RGB (HH, HV, HH/HV power ratio)"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:64
+msgid "Radar Forest Degradation Index (RFDI, Mitchard *et al.*, 2012)"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:65
-msgid ""
-"Once you're happy with the information displayed then can be exported to "
-"be further used in a GIS software or in a GEE process. The tool provide 2"
-" main exportation options, as an asset(in GEE) or as a Tif file in SEPAL."
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:67
-msgid "Both use the GEE export system and share the same set of parameter:"
+msgid "Forest/Non-Forest"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:69
-msgid "Export Backscatter (HH, HV, HH/HV power ratio)"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:70
-msgid "Export/Add Radar Forest Degradation Index (RFDI, Mitchard et al. 2012)"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:71
-msgid ""
-"Export/Add GLCM texture layers for HH and HV polarizations (Variance,  "
-"Homogeneity, Dissimilarity)"
+msgid "Display information"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:72
-msgid "Export/Add auxiliary metadata layers (Acq. Date, LIA, QA layer)"
-msgstr ""
-
-#: ../../source/modules/dwn/alos_mosaics.rst:73
-msgid "Export K&C Forest/Non-Forest map (separate file)"
+msgid "Export dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:74
-msgid "set the resolution as an integer number"
+msgid ""
+"When you're satified with the information displayed, it can be exported "
+"for further use in GIS software or in a GEE process. The tool provides "
+"two main exportation options:"
 msgstr ""
 
-#: ../../source/modules/dwn/alos_mosaics.rst:78
-msgid ""
-"The default export parameter are 25 meters resolution with backscatter "
-"and RFDI"
+#: ../../source/modules/dwn/alos_mosaics.rst:76
+msgid "an asset (in GEE), or"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:77
+msgid "a .tif file (in SEPAL)."
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:79
+msgid "Both use the GEE export system and share the same set of parameters:"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:81
+msgid "Export backscatter (HH, HV, HH/HV power ratio)"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:82
-msgid "export"
+msgid "Export/add Radar Forest Degradation Index (RFDI, Mitchard *et al.*, 2012)"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:83
+msgid ""
+"Export/add GLCM texture layers for HH and HV polarizations (Variance, "
+"Homogeneity, Dissimilarity)"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:84
+msgid "Export/add auxiliary metadata layers (Acq. Date, LIA, QA layer)"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:85
+msgid "Export K&C forest/non-forest map (separate file)"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:86
-msgid ""
-"When the image is exported to SEPAL, you cannot quit the application "
-"until the downloading is finished."
+msgid "Set the resolution as an integer number"
 msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:90
+msgid ""
+"The default export parameters include: 25 m resolution with backscatter "
+"and RFDI."
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:94
+msgid "Export"
+msgstr ""
+
+#: ../../source/modules/dwn/alos_mosaics.rst:98
+msgid ""
+"When exporting images to SEPAL, do not quit the application until the "
+"downloading process is complete."
+msgstr ""
+
+#~ msgid "ALOS Kyoto & Carbon Mosaics by JAXA"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module have been designed on "
+#~ "top of the interactive framework "
+#~ "`sepal_ui <https://github.com/12rambau/sepal_ui>`_. it "
+#~ "allows the user to extract ALOS "
+#~ "K&C mosaics. The input are as "
+#~ "simple as: an AOI, a year, and "
+#~ "some filters. The user will be "
+#~ "able to display the mosaic in an"
+#~ " interactive map and export it as "
+#~ "a GEE asset and/or a sepal Tif "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is a sepalization of "
+#~ "the follwing `script "
+#~ "<https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_"
+#~ " by A. Vollrath."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The process is done in 3 steps "
+#~ "described in the bellow sections and "
+#~ "presented in the bellow video tutorial:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Using the provided AOI selector, select"
+#~ " an AOI of your choice between "
+#~ "the different methods available in the"
+#~ " tool. We provide 3 administration "
+#~ "descriptions (from level 0 to 2) "
+#~ "and 3 custom shapes (drawn directly "
+#~ "on the map, asset or shapefile)."
+#~ msgstr ""
+
+#~ msgid "aoi selector"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If a custom aoi from shape or "
+#~ "drawing is selected, you will be "
+#~ "able to use it directly and the"
+#~ " upload to GEE will be launched "
+#~ "in the background"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then in the process tile, you need"
+#~ " to set the different parameters of"
+#~ " your mosaic:"
+#~ msgstr ""
+
+#~ msgid "**year**: The year of interest"
+#~ msgstr ""
+
+#~ msgid "**speckle filter**: the speckle filter to use during the process"
+#~ msgstr ""
+
+#~ msgid "no filter"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "refined lee: speckle noise removal "
+#~ "technique based on the well-knwown "
+#~ "Lee Filter. More information in `A. "
+#~ "S. Yommy et. Al "
+#~ "<https://doi.org/10.1109/IHMSC.2015.236>`_."
+#~ msgstr ""
+
+#~ msgid "Quegan filter: `S. Quegan et. Al <https://doi.org/10.1109/36.964973>`_"
+#~ msgstr ""
+
+#~ msgid "**shadow masking**: activate or deactivate the shadow masking"
+#~ msgstr ""
+
+#~ msgid "**Db**: wether or not to scale the output to Db"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you are happy with your "
+#~ "parameters, you can click on the "
+#~ "button. The dataset will be "
+#~ "automatically send to the vizualization "
+#~ "tile."
+#~ msgstr ""
+
+#~ msgid "dataset parameters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As mentioned in the above section, "
+#~ "the dataset is automatically displayed "
+#~ "on the map. THis map is "
+#~ "interactive allowing you to zoom in "
+#~ "and out. Note that you can select"
+#~ " betwee 3 diplay options:"
+#~ msgstr ""
+
+#~ msgid "Radar Forest Degradation Index (RFDI, Mitchard et al. 2012)"
+#~ msgstr ""
+
+#~ msgid "display informations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you're happy with the information"
+#~ " displayed then can be exported to"
+#~ " be further used in a GIS "
+#~ "software or in a GEE process. The"
+#~ " tool provide 2 main exportation "
+#~ "options, as an asset(in GEE) or as"
+#~ " a Tif file in SEPAL."
+#~ msgstr ""
+
+#~ msgid "Both use the GEE export system and share the same set of parameter:"
+#~ msgstr ""
+
+#~ msgid "Export Backscatter (HH, HV, HH/HV power ratio)"
+#~ msgstr ""
+
+#~ msgid "Export/Add Radar Forest Degradation Index (RFDI, Mitchard et al. 2012)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Export/Add GLCM texture layers for HH"
+#~ " and HV polarizations (Variance,  "
+#~ "Homogeneity, Dissimilarity)"
+#~ msgstr ""
+
+#~ msgid "Export/Add auxiliary metadata layers (Acq. Date, LIA, QA layer)"
+#~ msgstr ""
+
+#~ msgid "Export K&C Forest/Non-Forest map (separate file)"
+#~ msgstr ""
+
+#~ msgid "set the resolution as an integer number"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The default export parameter are 25 "
+#~ "meters resolution with backscatter and "
+#~ "RFDI"
+#~ msgstr ""
+
+#~ msgid "export"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the image is exported to "
+#~ "SEPAL, you cannot quit the application"
+#~ " until the downloading is finished."
+#~ msgstr ""
 

@@ -1,29 +1,26 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:03\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:03+0000\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: fr\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/time-series.po\n"
-"X-Crowdin-File-ID: 213\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/time-series.rst:2
 msgid "Time-series"
 msgstr "Séries temporelles"
 
 #: ../../source/modules/time-series.rst:4
-msgid "List of the modules gathered under the Time-series tag:"
+#, fuzzy
+msgid "Modules with the **Time-series** tag include:"
 msgstr "Liste des modules rassemblés sous la balise Série Temporelles :"
 
 #: ../../source/modules/time-series.rst:1
@@ -31,8 +28,12 @@ msgid ":doc:`dwn/bfast_explorer`"
 msgstr ":doc:`dwn/bfast_explorer`"
 
 #: ../../source/modules/time-series.rst:1
-msgid "Performs analysis of Landsat Surface Reflectance time series pixel data using the BFAST algorithm."
-msgstr "Effectue l'analyse des données de la série temporelle de la surface Landsat à l'aide de l'algorithme BFAST."
+msgid ""
+"Performs analysis of Landsat Surface Reflectance time series pixel data "
+"using the BFAST algorithm."
+msgstr ""
+"Effectue l'analyse des données de la série temporelle de la surface "
+"Landsat à l'aide de l'algorithme BFAST."
 
 #: ../../source/modules/time-series.rst:1
 msgid ":doc:`dwn/bfast_gpu`"
@@ -55,10 +56,13 @@ msgid ":doc:`dwn/cusum`"
 msgstr ":doc:`dwn/cusum`"
 
 #: ../../source/modules/time-series.rst:1
-msgid "Spatially cumulative sum algorithm for change detection within univariate time-series (GPU powered)"
-msgstr "Algorithme de somme cumulative spatiale pour la détection des changements dans les séries chronologiques univariées (GPU)"
+msgid ""
+"Spatially cumulative sum algorithm for change detection within univariate"
+" time-series (GPU powered)"
+msgstr ""
+"Algorithme de somme cumulative spatiale pour la détection des changements"
+" dans les séries chronologiques univariées (GPU)"
 
-#: ../../source/modules/time-series.rst:1
-msgid ":doc:`dwn/sar_time_series`"
-msgstr ":doc:`dwn/sar_time_series`"
+#~ msgid ":doc:`dwn/sar_time_series`"
+#~ msgstr ":doc:`dwn/sar_time_series`"
 

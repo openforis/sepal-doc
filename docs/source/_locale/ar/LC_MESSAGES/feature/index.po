@@ -1,33 +1,38 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-07-31 07:18\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-31 07:18+0000\n"
 "Last-Translator: \n"
-"Language-Team: Arabic\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/feature/index.po\n"
-"X-Crowdin-File-ID: 81\n"
 "Language: ar_SA\n"
+"Language-Team: Arabic\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/feature/index.rst:2
 msgid "Features"
 msgstr ""
 
-#: ../../source/feature/index.rst:4
-msgid "The SEPAL platform provides useful features to analyse, combine and visualize different types of data."
+#: ../../source/feature/index.rst:3
+msgid ""
+"*Analyse, combine and visualize different types of data with SEPAL "
+"features*"
 msgstr ""
 
-#: ../../source/feature/index.rst:6
-msgid "Since these features can be accessed across various recipes and modules, they are described extensively in this section of the documentation."
+#: ../../source/feature/index.rst:5
+msgid ""
+"Since these features can be accessed across various recipes and modules, "
+"they are described extensively in this section of the documentation."
+msgstr ""
+
+#: ../../source/feature/index.rst:7
+msgid "SEPAL features include:"
 msgstr ""
 
 #~ msgid ""
@@ -38,5 +43,11 @@ msgstr ""
 #~ " module, they are described exausthively"
 #~ " in this section of the "
 #~ "documentation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SEPAL platform provides useful "
+#~ "features to analyse, combine and "
+#~ "visualize different types of data."
 #~ msgstr ""
 

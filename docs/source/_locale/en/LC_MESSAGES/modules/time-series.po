@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,14 +17,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/time-series.rst:2
 msgid "Time-series"
 msgstr ""
 
 #: ../../source/modules/time-series.rst:4
-msgid "List of the modules gathered under the Time-series tag:"
+msgid "Modules with the **Time-series** tag include:"
 msgstr ""
 
 #: ../../source/modules/time-series.rst:1
@@ -63,7 +63,9 @@ msgid ""
 " time-series (GPU powered)"
 msgstr ""
 
-#: ../../source/modules/time-series.rst:1
-msgid ":doc:`dwn/sar_time_series`"
-msgstr ""
+#~ msgid "List of the modules gathered under the Time-series tag:"
+#~ msgstr ""
+
+#~ msgid ":doc:`dwn/sar_time_series`"
+#~ msgstr ""
 

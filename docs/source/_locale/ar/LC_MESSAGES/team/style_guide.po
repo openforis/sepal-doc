@@ -1,296 +1,1862 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-30 01:00+0000\n"
-"PO-Revision-Date: 2023-03-30 01:14\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-03-30 01:14+0000\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/team/style_guide.po\n"
-"X-Crowdin-File-ID: 123\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/team/style_guide.rst:2
-msgid "documentation style guide"
+msgid "SEPALSTYLE"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:4
-msgid "Help us maintain useful, clear, concise, consistent and fluid writing across the documentation by following the SEPAL documentation style guide."
+msgid ""
+"*Learn the basics of* SEPALSTYLE *– the SEPAL documentation style guide –"
+" to keep writing useful, clear, concise, consistent and fluid*"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:6
-msgid "Learn the basics of SEPAL documentation style and ensure that your contributions are as useful as possible for the community."
-msgstr ""
-
-#: ../../source/team/style_guide.rst:9
+#: ../../source/team/style_guide.rst:8
 msgid "Goals and principles"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:11
-msgid "The goal of SEPAL documentation is to guide users through the SEPAL interface. As an external contributor or a member of the SEPAL team, think of yourself as a tour guide for users. To achieve this goal, the SEPAL team ensures that writing is:"
+#: ../../source/team/style_guide.rst:10
+msgid ""
+"The goal of **SEPAL documentation** is to guide users through the **SEPAL"
+" interface** and help users achieve their goals."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:12
+msgid ""
+"When contributing to **SEPAL documentation**, think of yourself as a tour"
+" guide for SEPAL users."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:14
-msgid "useful"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:15 ../../source/team/style_guide.rst:90
-msgid "clear"
+msgid "To help users achieve their goals, writing should be:"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:16
-msgid "concise"
+msgid "useful"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:17
-msgid "consistent"
+#: ../../source/team/style_guide.rst:17 ../../source/team/style_guide.rst:199
+msgid "clear"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:18
+msgid "concise"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:19
+msgid "consistent"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:20
 msgid "fluid"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:21
+#: ../../source/team/style_guide.rst:23
 msgid "Style tips"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:23
-msgid "Here are some basic guidelines for following SEPAL documentation style."
+#: ../../source/team/style_guide.rst:25
+msgid "Basic guidelines for following *SEPALSTYLE* include:"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:26
-msgid "Focus on user needs"
+#: ../../source/team/style_guide.rst:27
+msgid "focus on user needs"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:28
-msgid "Consider users’ questions and goals when writing SEPAL documentation. For every article, make sure users’ questions have been addressed and answered, allowing them to achieve their goals."
+msgid "be simple and direct"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:31
-msgid "Be simple and direct"
+#: ../../source/team/style_guide.rst:29
+msgid "use a direct tone"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:33
-msgid "Keep language clear, concise and fluid. Use numbered and bulleted lists, instead of long paragraphs, whenever possible."
+#: ../../source/team/style_guide.rst:32
+msgid "Focus on user needs"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:34
+msgid ""
+"Consider user goals and questions when contributing to **SEPAL "
+"documentation**. Define these goals and identify these questions before, "
+"during and after making contributions, so that articles can be useful and"
+" clear for users."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:36
-msgid "Use direct tone"
+msgid ""
+"Ensure user goals are kept in mind when planning, drafting, and "
+"finalizing content. Ensure user questions are addressed and answered in "
+"the documentation, minimizing confusion and allowing users to achieve "
+"their goals."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:38
-msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood."
+#: ../../source/team/style_guide.rst:39
+msgid "Be simple and direct"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:40
-msgid "In simpler terms: Tell the user what to do in the moment they are reading the documentation (e.g. Open the SEPAL interface and enter your email address.). Avoid addressing the audience directly, when possible. In other words, limit the use of the words “you” and “your” (e.g. To sign up for a Google account, go to accounts.google.com/servicelogin.). When addressing the audience is necessary, use the word “you” or “your” (e.g. To reset your password, go to docs.sepal.io/en/latest/setup/password.html.)."
+#: ../../source/team/style_guide.rst:41
+msgid ""
+"Keep language clear, concise, consistent and fluid. Prefer bulleted and "
+"numbered lists to sentences and paragraphs. When sentences or paragraphs "
+"are necessary, prefer short sentences and paragraphs to long sentences "
+"and paragraphs. Use section headings to organize articles."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:43 ../../source/team/style_guide.rst:57
+#: ../../source/team/style_guide.rst:63 ../../source/team/style_guide.rst:74
+#: ../../source/team/style_guide.rst:95 ../../source/team/style_guide.rst:101
+#: ../../source/team/style_guide.rst:107 ../../source/team/style_guide.rst:129
+#: ../../source/team/style_guide.rst:142 ../../source/team/style_guide.rst:148
+#: ../../source/team/style_guide.rst:157 ../../source/team/style_guide.rst:166
+#: ../../source/team/style_guide.rst:175 ../../source/team/style_guide.rst:184
+#: ../../source/team/style_guide.rst:347 ../../source/team/style_guide.rst:355
+#: ../../source/team/style_guide.rst:367 ../../source/team/style_guide.rst:376
+#: ../../source/team/style_guide.rst:387 ../../source/team/style_guide.rst:398
+#: ../../source/team/style_guide.rst:414 ../../source/team/style_guide.rst:423
+#: ../../source/team/style_guide.rst:432 ../../source/team/style_guide.rst:443
+#: ../../source/team/style_guide.rst:454 ../../source/team/style_guide.rst:460
+#: ../../source/team/style_guide.rst:469 ../../source/team/style_guide.rst:478
+#: ../../source/team/style_guide.rst:492 ../../source/team/style_guide.rst:513
+#: ../../source/team/style_guide.rst:517 ../../source/team/style_guide.rst:533
+#: ../../source/team/style_guide.rst:543 ../../source/team/style_guide.rst:553
+#: ../../source/team/style_guide.rst:566 ../../source/team/style_guide.rst:570
+#: ../../source/team/style_guide.rst:581
+msgid "**Example**"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:45
-msgid "Word list"
+msgid "**Reset password**"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:47
-msgid "Here is a list of common words used in SEPAL documentation."
+msgid ""
+"If you have forgotten your password and you have access to the email "
+"address associated with your SEPAL account, you can reset it by "
+"submitting a request. Simply follow the instructions located on one of "
+"the website’s sign in forms."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:50
-msgid "Key terminology"
+#: ../../source/team/style_guide.rst:49
+msgid "The password reset process can be performed in three steps:"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:52
-msgid "Use the following terms, when possible."
+#: ../../source/team/style_guide.rst:51
+msgid "Provide your email address."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:52 ../../source/team/style_guide.rst:71
+msgid "Complete email verification."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:53
+msgid "Create a new password."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:55
-msgid "The SEPAL team"
+msgid "For simple step-by-step instructions, use right angle brackets."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:57
-msgid "The authors of the documentation should be referred to as “the SEPAL team” (e.g. The SEPAL team maintains the documentation to guide users through the SEPAL interface.). If the term, “the SEPAL team” has been overused, use the words “we” or “us” instead."
+#: ../../source/team/style_guide.rst:59 ../../source/team/style_guide.rst:68
+msgid "Select **Launch** > **Sign up**."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:61
-msgid "The SEPAL interface"
+msgid ""
+"For step-by-step instructions for complex procedures, use numbered and "
+"bulleted lists, instead of paragraphs, when possible."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:63
-msgid "The interface should be referred to as the “SEPAL interface” (e.g. Open the SEPAL interface and enter your email address.)."
+#: ../../source/team/style_guide.rst:65
+msgid "**To create an account**"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:66
-msgid "SEPAL documentation"
+#: ../../source/team/style_guide.rst:67
+msgid "Go to https://sepal.io"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:68
-msgid "The website where SEPAL documentation is located should be referred to as either “SEPAL documentation” or simply, “the documentation” (e.g. Learn more about SEPAL documentation by reading this article.)."
+#: ../../source/team/style_guide.rst:69
+msgid "Fill out the form."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:71
-msgid "A section of SEPAL documentation"
+#: ../../source/team/style_guide.rst:70
+msgid "Select **Sign up**."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:73
-msgid "A section of the documentation should be referred to as a “section of SEPAL documentation” or a “section of the documentation”, as necessary (e.g. Discover how to register for SEPAL in the “Getting started” section of the documentation.)."
+#: ../../source/team/style_guide.rst:72
+msgid "Create password."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:76
-msgid "An article within SEPAL documentation"
+msgid "**To start an instance**"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:78
-msgid "A page within the documentation should be referred to as an “article” (e.g. Learn more about the SEPAL interface in the article, “Introduction to SEPAL” in the “Getting started with SEPAL” section.)."
+msgid "Examine the **Available instance types** table to choose an instance type."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:79
+msgid "Enter your chosen instance type."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:80
+msgid "Press **Enter**."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:81
-msgid "Describing interactions with the interface"
+msgid "Wait for the instance to start."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:83
-msgid "Here is a list of common words used to describe actions in the SEPAL interface."
-msgstr ""
-
-#: ../../source/team/style_guide.rst:85
-msgid "open"
+#: ../../source/team/style_guide.rst:84
+msgid "Use a direct tone"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:86
-msgid "close"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:87
-msgid "leave"
+msgid "When writing an article, use:"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:88
-msgid "go to"
+msgid "an active voice"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:89
-msgid "select"
+msgid "the present tense"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:90
+msgid "the second-person point of view"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:91
-msgid "choose"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:92
-msgid "enter"
+msgid "the imperative mood"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:93
-msgid "sign in, sign out"
+msgid ""
+"In other words, tell the user what to do in the moment they are reading "
+"the documentation."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:94
-msgid "switch, turn on, turn off"
+#: ../../source/team/style_guide.rst:97 ../../source/team/style_guide.rst:144
+msgid "Open the **SEPAL interface** and enter your email address."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:95
-msgid "zoom, zoom in, zoom out"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:98
-msgid "Directional terminology"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:100
-msgid "Here is a list of common words to describe location in the SEPAL interface. Indicate location in relation to objects within the interface, whenever possible."
-msgstr ""
-
-#: ../../source/team/style_guide.rst:102
-msgid "upper left (noun), upper-left (adjective), leftmost (adjective), on the left side of"
+#: ../../source/team/style_guide.rst:99
+msgid ""
+"Avoid addressing the audience directly, when possible (i.e. limit the use"
+" of the words **you** and **your**)."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:103
-msgid "lower right (noun), lower-right (adjective), rightmost (adjectives), on the right side of"
+msgid ""
+"To sign up for a Google account, go to "
+"`<https://accounts.google.com/servicelogin>`__"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:104
-msgid "pane (instead of panel)"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:107
-msgid "Other things to consider"
+#: ../../source/team/style_guide.rst:105
+msgid ""
+"When addressing the audience is necessary, use the word **you** or "
+"**your**."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:109
-msgid "Here are some other basic guidelines to follow when writing SEPAL documentation."
+msgid ""
+"To reset your password, go to "
+"`<https://docs.sepal.io/en/latest/setup/password.html>`__"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:112
-msgid "Sentence structure"
+#: ../../source/team/style_guide.rst:113
+msgid "Key terminology"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:114
-msgid "Use an active voice, the present tense, the second-person point of view, and the imperative mood, whenever possible (e.g. Open the SEPAL interface and enter your email address.)."
+#: ../../source/team/style_guide.rst:115
+msgid "Common terms used in **SEPAL documentation** include:"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:117
-msgid "Capitalization"
+msgid "the SEPAL team"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:118
+msgid "the SEPAL interface"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:119
-msgid "Use sentence case (i.e. capitals only for the initial letter of the phrase and any proper names), except when mirroring appearance of text in the SEPAL interface.)."
+msgid "SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:120
+msgid "a section of SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:121
+msgid "an article within SEPAL documentation"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:122
-msgid "Quotation marks"
+msgid "a subsection of an article within SEPAL documentation"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:124
-msgid "Use double quotation marks for titles of articles and sections (e.g. The “Getting started” section.). Use double quotation marks for direct quotes (e.g. for the text displayed in an error message.)."
+#: ../../source/team/style_guide.rst:125
+msgid "The SEPAL team"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:127
-msgid "Bold"
-msgstr ""
-
-#: ../../source/team/style_guide.rst:128
-msgid "Use bold formatting for the names of buttons, checkboxes, panes, drop-down menus, and other options (e.g. Select Export.)."
+msgid ""
+"The authors of the documentation should be referred to as **the SEPAL "
+"team**."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:131
-msgid "Italic"
+msgid ""
+"The SEPAL team maintains the documentation to guide users through the "
+"**SEPAL interface**."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:133
-msgid "Use italicized text for introducing key terminology (only italics only at first mention) (e.g. There is formal QA/QC and informal QA/QC.)."
+msgid ""
+"If the term, **the SEPAL team**, has been overused, use **the authors of "
+"the documentation**, or **we** or **us** instead."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:136
-msgid "Further reading"
+#: ../../source/team/style_guide.rst:135
+msgid ""
+"**Contributors to SEPAL documentation** can be used for external "
+"contributors to the documentation."
 msgstr ""
 
 #: ../../source/team/style_guide.rst:138
-msgid "To find answers to questions not available in the SEPAL documentation style guide, go to the following links:"
+msgid "The SEPAL interface"
 msgstr ""
 
 #: ../../source/team/style_guide.rst:140
-msgid "`FAOSTYLE (2022) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (for general style guidelines according to FAO)"
+msgid "The interface should be referred to as the **SEPAL interface**."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:141
-msgid "`GitHub documentation <https://docs.github.com/en>`__ (for exemplary documentation)"
+#: ../../source/team/style_guide.rst:146
+msgid "Elements of the interface should be formatted in bold and sentence case."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:142
-msgid "`Microsoft style guide <https://learn.microsoft.com/en-us/docs/>`__ (for an exemplary style guide, specifically for documentation)"
+#: ../../source/team/style_guide.rst:150
+msgid "Select the **Area of interest** button."
 msgstr ""
 
-#: ../../source/team/style_guide.rst:144
-msgid "`“Procedures and instructions” <https://docs.microsoft.com/en-us/style-guide/procedures-instructions/>`__ (for a guide on writing these elements)"
+#: ../../source/team/style_guide.rst:153
+msgid "The SEPAL documentation"
 msgstr ""
 
-#: ../../source/team/style_guide.rst:145
-msgid "`“Describing interactions with UI” <https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui>`__ (for a guide on writing these elements)"
+#: ../../source/team/style_guide.rst:155
+msgid ""
+"The website where SEPAL documentation is located should be referred to as"
+" either **SEPAL documentation** or simply, **the documentation**."
 msgstr ""
+
+#: ../../source/team/style_guide.rst:159
+msgid "Learn more about **SEPAL documentation** by reading this article."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:162
+msgid "A section of SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:164
+msgid ""
+"A section of the documentation should be referred to as **a section of "
+"SEPAL documentation** or **a section of the documentation**. The titles "
+"of sections should appear in sentence case."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:168
+msgid ""
+"Discover how to register for SEPAL in the section, `Getting started "
+"<https://docs.sepal.io/en/latest/setup/index.html>`__."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:171
+msgid "An article within SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:173
+msgid ""
+"A page within the documentation should be referred to as **an article**. "
+"The titles of articles should appear in sentence case."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:177
+msgid ""
+"Learn more about the **SEPAL interface** in the article, `Introduction to"
+" SEPAL <https://docs.sepal.io/en/latest/setup/presentation.html>`__."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:180
+msgid "A subsection of an article within SEPAL documentation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:182
+msgid ""
+"A subsection within an article of the documentation should be referred to"
+" as **a subsection of an article**. When referring to subsections, their "
+"titles should appear in sentence case."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:186
+msgid ""
+"For more information, see the **Set up your GEE account** subsection of "
+"this article."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:188
+msgid ""
+"Note: When formatting titles of subsections, the appropriate symbols "
+"should be used (i.e. from Heading 1 to Heading 6: =, -, ^, \", #, +). For"
+" further guidance, see the `Guidelines subsection of the Contribute "
+"article "
+"<https://docs.sepal.io/en/latest/team/contribute.html#guidelines>`_."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:191
+msgid "Describing interactions with the SEPAL interface"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:194
+msgid "Actions"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:196
+msgid "Common words used to describe actions in the **SEPAL interface** include:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:198
+msgid "choose"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:200
+msgid "click (prefer **select**, except when not appropriate)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:201
+msgid "click and hold"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:202
+msgid "close"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:203
+msgid "copy"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:204
+msgid "copy and paste"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:205
+msgid "double-click"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:206
+msgid "enter"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:207
+msgid "fill out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:208
+msgid "go to"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:209
+msgid "hover"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:210
+msgid "leave"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:211
+msgid "log in, log out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:212
+msgid "open"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:213
+msgid "monitor"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:214
+msgid "pan"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:215
+msgid "press"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:216
+msgid "register"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:217
+msgid "save"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:218
+msgid "select (use instead of *click*, except when not appropriate)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:219
+msgid "select and hold"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:220
+msgid "sign in, sign out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:221
+msgid "sign up"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:222
+msgid "submit"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:223
+msgid "swipe"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:224
+msgid "switch"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:225
+msgid "turn on, turn off"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:226
+msgid "use"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:227
+msgid "view"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:228
+msgid "zoom, zoom in, zoom out"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:231
+msgid "Elements"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:233
+msgid "Common words used to describe elements in the **SEPAL interface** include:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:235
+msgid "app"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:236
+msgid "band"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:237
+msgid "bar"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:238
+msgid "button"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:239
+msgid "checkbox"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:240
+msgid "dash"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:241
+msgid "dashboard"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:242
+msgid "dialog"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:243
+msgid "dock"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:244
+msgid "drawer"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:245
+msgid "dropdown menu"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:246
+msgid "feature"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:247
+msgid "field"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:248
+msgid "files"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:249
+msgid "filter"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:250
+msgid "folder"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:251
+msgid "form"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:252
+msgid "icon"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:253
+msgid "interface"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:254
+msgid "map"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:255
+msgid "menu"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:256
+msgid "module"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:257
+msgid "option"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:258
+msgid "pane"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:259
+msgid "parameter"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:260
+msgid "pointer"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:261
+msgid "pop-up menu"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:262
+msgid "pop-up window"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:263
+msgid "recipe"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:264
+msgid "settings"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:265
+msgid "status bar"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:266
+msgid "tab"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:267
+msgid "terminal"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:268
+msgid "tile"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:269
+msgid "tutorial"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1 ../../source/team/style_guide.rst:270
+msgid "window"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:271
+msgid "workflow"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:274
+msgid "Elements and actions"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:276
+msgid ""
+"Common words used to describe **elements** *and* **actions** in the "
+"**SEPAL interface** include:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Element"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Action"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Example"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "select, open"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Apps** icon."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "select, choose, apply"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Break analysis** band."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "go to, view, select, monitor"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "View the **Status bar** to monitor the download progress."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "select"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Terminal** button."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Display map** checkbox."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Go to the **Apps** dashboard."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "view, select"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select **Confirm** in the dialog."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Files** tab in the dock."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, close"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Open the **Navigation** drawer."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, select, choose"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select **Vector file** from the dropdown menu."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Enter your credentials into the **Username** and **Password** fields."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "go to, search, navigate through, save to"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Files** icon to open your SEPAL folders."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "apply, turn on, turn off"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Apply the **Cloud detection** filter."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, save to"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Save to your **SEPAL folders**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "fill out, submit"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Fill out the **Reset password** form."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Log in to the **SEPAL interface**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "click, click and hold, hover, zoom in, zoom out, pan"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Click on the map to select a point."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Open the **Recipe** menu."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "choose, select, use"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Daily imagery** option."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "go to, view"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "View the **Recipe** pane."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Exportation** parameters."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "use, click, click and hold, hover, move"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Move the pointer to the map."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "view, select, choose, close"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the checkboxes in the pop-up menu."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "View your options in the **User report** pop-up window."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, go to, select, save, export, edit"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Time series** recipe."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, go to, select, turn on, turn off"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Open **Settings**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "view, monitor"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Monitor the download progress in the **Status bar**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "select, view"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Select the **Process** tab in the dock on the left side of the screen."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, go to, select"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Go to the **SEPAL terminal**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, go to, select, view"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "View the **Visualization** tile."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "open, close, view, select"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:1
+msgid "Open your browser window."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:316
+msgid "Directional terminology"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:318
+msgid ""
+"Common words to describe location in the **SEPAL interface** (indicate "
+"location in relation to objects within the interface, if possible):"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:320
+msgid ""
+"upper left (noun), upper-left (adjective), leftmost (adjective), on the "
+"left side of"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:321
+msgid ""
+"lower right (noun), lower-right (adjective), rightmost (adjective), on "
+"the right side of"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:322
+msgid "beside, next to"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:323
+msgid "corner"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:326
+msgid "Other things to consider"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:328
+msgid ""
+"Other basic guidelines to follow when writing **SEPAL documentation** "
+"include:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:330
+msgid "prefer sentence case over lowercase or all caps;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:331
+msgid "use bold for elements of the **SEPAL interface**, or emphasis (sparingly);"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:332
+msgid "use italics for introducing new terminology, or emphasis (sparingly);"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:333
+msgid "use punctuation to improve clarity and fluidity;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:334
+msgid "introduce acronyms at first use;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:335
+msgid "present highlighted information strategically and accurately;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:336
+msgid "format file names with lowercase letters and a full stop;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:337
+msgid ""
+"format numbers with neither spaces nor punctuation, except for a full "
+"stop for decimals;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:338
+msgid "use the author–date system for referencing;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:339
+msgid ""
+"introduce lists with an opening phrase ending with a colon, and use "
+"consistent capitalization and punctuation; and"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:340
+msgid ""
+"use the `International System of Units (SI) "
+"<https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"
+"/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:343
+msgid "Abbreviations"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:345
+msgid ""
+"At first mention, acronyms should be written out, followed by the "
+"abbreviation in parentheses. It may then be used alone."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:349
+msgid ""
+"The project is from the Food and Agriculture Organization of the United "
+"Nations (FAO)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:351
+msgid ""
+"Exceptions can be made where justifiable (e.g. when an acronym appears in"
+" a name and the written-out version is long). In these instances, "
+"introduce the acronym in a way that is reader-friendly."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:353
+msgid ""
+"Abbreviations such as e.g., i.e. and etc. should be avoided; however, "
+"when necessary, use them in parentheses (e.g. means \"for example\"; i.e."
+" means \"that is\")."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:357
+msgid ""
+"Harnessing cloud-based supercomputers and modern geospatial data "
+"infrastructures (e.g. GEE), the interface enables access and processing "
+"of historical satellite data as well as newer data from Landsat and "
+"higher-resolution data from Europe’s Copernicus programme."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:360
+msgid "Font"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:363
+msgid "Bold"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:365
+msgid ""
+"Use bold formatting for the names of elements in the **SEPAL interface**,"
+" or emphasis."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:369
+msgid "Select **Export**."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:372
+msgid "Capitalization"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:374
+msgid ""
+"Use sentence case (i.e. capitals only for the initial letter of the "
+"phrase and any proper nouns), except when mirroring appearance of text in"
+" the **SEPAL interface**. For proper nouns, follow initial "
+"capitalization."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:378
+msgid "**Area of interest selection**"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:380
+msgid ""
+"The area of interest (AOI) is the first mandatory input in the majority "
+"of SEPAL modules."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:383
+msgid "Italics"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:385
+msgid ""
+"Use italicized text for introducing key terminology at first mention, or "
+"emphasis."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:389
+msgid ""
+"There is *formal QA/QC* and *informal QA/QC*. Formal QA/QC refers to ...,"
+" while informal QA/QC refers to ..."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:392
+msgid "Punctuation"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:395
+msgid "Colons"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:396
+msgid "Use colons to introduce lists, definitions, explanations or quotations."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:400
+msgid "In this section of **SEPAL documentation**, you can learn how to:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:402
+msgid "register to SEPAL"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:403
+msgid "use GEE with SEPAL"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:404
+msgid "use NICFI–Planet Lab data"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:405
+msgid "exchange files with SEPAL"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:406
+msgid "manage your resources"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:407
+msgid "reset your password"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:410
+msgid "Commas"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:412
+msgid ""
+"A comma may separate two independent clauses before a conjunction, set "
+"off complementary information, be used before the final \"and\" in a list"
+" to avoid ambiguity, or be used where a sentence comprises a complex "
+"series of phrases."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:416
+msgid ""
+"By default, SEPAL is in English, but is also available in other "
+"languages, such as French and Spanish."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:419
+msgid "En-dashes"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:421
+msgid ""
+"En-dashes (–) are longer than hyphens (-). They can be used in pairs – "
+"leaving a space on either side – to set off an element that is not part "
+"of the main sentence. Ideally, they should not be used more than once per"
+" paragraph. An en-dash can be used alone to add a phrase elaborating what"
+" has gone before – leaving a space on either side. En-dashes are used for"
+" relationships, ranges of values and ranges of dates."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:425
+msgid "2016–2020"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:428
+msgid "Full stops"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:430
+msgid "Use full stops at the end of sentences, but not in headings."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:434
+msgid "**Set up your accounts and request additional resources**"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:436
+msgid "In this article, you can learn how to create a SEPAL account."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:439
+msgid "Hyphens"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:441
+msgid ""
+"Hyphens can be used: for compound adjectives, when describing ages, "
+"amounts or lengths of time, separating a prefix from a date, etc."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:445
+msgid "High-quality data for 15 year-old forests."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:448
+msgid "Parentheses and brackets"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:450
+msgid ""
+"Parentheses are used to include less important text in a sentence or to "
+"enclose descriptive information."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:452
+msgid ""
+"When only part of a sentence is enclosed in parentheses, punctuation is "
+"placed outside."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:456
+msgid ""
+"Open the **Optical mosaics** recipe (for more information, see figure "
+"below and https://docs.sepal.io/en/latest/cookbook/optical_mosaic.html)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:458
+msgid ""
+"When a complete sentence is enclosed in parentheses, its punctuation is "
+"also enclosed."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:462
+msgid "(You should see an interface like in the following figure.)"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:465
+msgid "Quotation marks"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:467
+msgid ""
+"Use double quotation marks for direct quotes (e.g. for the text displayed"
+" in an error message)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:471
+msgid ""
+"If the following error message is displayed, continue to Step 2: \"Can't "
+"open file. No such file or directory.\""
+msgstr ""
+
+#: ../../source/team/style_guide.rst:474
+msgid "Semicolons"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:476
+msgid ""
+"Use semicolons to separate independent clauses that have different "
+"subjects and are not connected by a conjunction; in long sentences "
+"comprising a series of complex clauses, at least one of which contains a "
+"comma, semicolons may replace commas."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:480
+msgid ""
+"These overlay areas can be managed in various ways. For example, you can "
+"choose to:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:482
+msgid "keep only the raster data from the first or last dataset;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:483
+msgid "combine the values of the overlay cells using a weighting algorithm;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:484
+msgid "average the values of the overlay cells; or"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:485
+msgid "take the maximum or minimum value."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:488
+msgid "File names"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:490
+msgid "Format file names with a full stop and lowercase file type."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:494
+msgid ".tiff"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:497
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:499
+msgid "Common terms for showcasing information include:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:501
+msgid "**Attention**: To be used to showcase *extremely important* information."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:502
+msgid "**Important**: To be used to showcase *moderately important* information."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:503
+msgid "**Note**: To be used to showcase *important* information."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:504
+msgid "**Tip**: To be used to showcase *helpful* information."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:506
+msgid "Avoid \"Warning\" and \"Danger\"."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:509
+msgid "Numbers"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:511
+msgid ""
+"To avoid confusion, format numbers with neither spaces nor punctuation, "
+"except for a full stop for decimals."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:515
+msgid "10000 hectares"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:519
+msgid "0.175 m"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:521
+msgid ""
+"Generally, numbers from one to ten are written in text as words; numbers "
+"from 11 upward are written as numerals. Use arabic numerals for dates, "
+"percentages, money, measurements, ages, ratios and scales. Write out any "
+"number that begins a sentence. Use numerals where a number accompanies a "
+"unit."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:524
+msgid "Paragraph"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:527
+msgid "Lists"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:529
+msgid ""
+"When presenting bulleted and numbered lists, introduce them with an "
+"opening phrase ending with a colon."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:531
+msgid "For very short entries, the list items are lowercase with no punctuation."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:535
+msgid "Select one of the following categories:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:537
+msgid "background"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:538
+msgid "foreground"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:539
+msgid "special background 1"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:541
+msgid ""
+"For longer entries, the list items are lower case and end with a semi-"
+"colon; the final entry should end with a semicolon and the word \"and\"."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:545
+msgid ""
+"A variety of audiovisual equipment is available to staff members, "
+"including:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:547
+msgid "radios, for communicating between locations;"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:548
+msgid "televisions, for screening content; and"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:549
+msgid "cameras, for recording events."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:551
+msgid ""
+"For entries that are complete sentences, the list items are sentence case"
+" and end with a full stop."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:555
+msgid "Keep the following in mind:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:557
+msgid ""
+"The transition of land cover over time provides important insights into "
+"how land characteristics have changed."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:558
+msgid ""
+"Trends in land productivity measure important changes in productivity "
+"over time."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:559
+msgid ""
+"Changes in above ground and below ground carbon stocks are currently "
+"shown by soil organic carbon (SOC) stocks."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:562
+msgid "Referencing"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:564
+msgid ""
+"When referencing source material, use the author–date system, which "
+"includes in-text citations and a reference list with all sources at the "
+"end of the article. Use `FAOSTYLE "
+"<https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ and `Zotero "
+"<https://www.zotero.org/>`__ to format reference list entries."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:568
+msgid ""
+"In 2008, GuidosToolbox was developed as a graphical user interface (GUI) "
+"to Morphological Spatial Pattern Analysis (MSPA) of raster data (Soille "
+"and Vogt, 2009)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:572
+msgid "**References**"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:574
+msgid ""
+"Soille, P. and Vogt, P. 2009. Morphological segmentation of binary "
+"patterns. *Pattern Recognition Letters*, 30(4): 456–459. "
+"https://doi.org/10.1016/j.patrec.2008.10.015"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:577
+msgid "Units"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:579
+msgid ""
+"Use the `International System of Units "
+"<https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"
+"/2d2b50bf-f2b4-9661-f402-5f9d66e4b507>`__. Do not use punctuation or "
+"letter spacing; however, always insert a space between the unit and the "
+"number. If using symbols, introduce at first use in parentheses."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:583
+msgid ""
+"Information is gathered every 5 metres (m). Every 50 m, a report is "
+"generated."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:588
+msgid "A note on *SEPALSTYLE*"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:590
+msgid ""
+"*SEPALSTYLE* was developed during copy-editing to improve the "
+"presentation of information in the documentation and enhance user "
+"experience."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:592
+msgid ""
+"This style guide can be considered exemplary documentation (i.e. a model "
+"text for writing articles and presenting information)."
+msgstr ""
+
+#: ../../source/team/style_guide.rst:594
+msgid ""
+"For style-related questions or concerns not addressed in *SEPALSTYLE*, "
+"see:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:596
+msgid "`FAOSTYLE (2023) <https://www.fao.org/3/cb8081en/cb8081en.pdf>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:597
+msgid "`FAO Term Portal <https://www.fao.org/faoterm>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:598
+msgid "`Names of Countries and Territories <https://www.fao.org/nocs/en/?>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:600
+msgid ""
+"For GitHub-related questions or concerns related to making contributions "
+"to SEPAL documentation, see"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:602
+msgid ""
+"`SEPAL team documentation "
+"<https://docs.sepal.io/en/latest/team/index.html>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:603
+msgid ""
+"`Writing on GitHub <https://docs.github.com/en/get-started/writing-on-"
+"github>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:605
+msgid "For further guidance, see:"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:609
+msgid "`Microsoft Documentation <https://learn.microsoft.com/en-us/docs/>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:608
+msgid ""
+"`Procedures and instructions <https://learn.microsoft.com/en-us/style-"
+"guide/procedures-instructions/>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:609
+msgid ""
+"`Writing step-by-step instructions <https://learn.microsoft.com/en-us"
+"/style-guide/procedures-instructions/writing-step-by-step-instructions>`_"
+msgstr ""
+
+#: ../../source/team/style_guide.rst:610
+msgid ""
+"`Describing interactions with UI <https://learn.microsoft.com/en-us"
+"/style-guide/procedures-instructions/describing-interactions-with-ui>`_"
+msgstr ""
+
+#~ msgid "documentation style guide"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Help us maintain useful, clear, concise,"
+#~ " consistent and fluid writing across "
+#~ "the documentation by following the SEPAL"
+#~ " documentation style guide."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Learn the basics of SEPAL documentation"
+#~ " style and ensure that your "
+#~ "contributions are as useful as possible"
+#~ " for the community."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The goal of SEPAL documentation is "
+#~ "to guide users through the SEPAL "
+#~ "interface. As an external contributor or"
+#~ " a member of the SEPAL team, "
+#~ "think of yourself as a tour guide"
+#~ " for users. To achieve this goal, "
+#~ "the SEPAL team ensures that writing "
+#~ "is:"
+#~ msgstr ""
+
+#~ msgid "Here are some basic guidelines for following SEPAL documentation style."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Consider users’ questions and goals when"
+#~ " writing SEPAL documentation. For every "
+#~ "article, make sure users’ questions have"
+#~ " been addressed and answered, allowing "
+#~ "them to achieve their goals."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Keep language clear, concise and fluid."
+#~ " Use numbered and bulleted lists, "
+#~ "instead of long paragraphs, whenever "
+#~ "possible."
+#~ msgstr ""
+
+#~ msgid "Use direct tone"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use an active voice, the present "
+#~ "tense, the second-person point of "
+#~ "view, and the imperative mood."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In simpler terms: Tell the user "
+#~ "what to do in the moment they "
+#~ "are reading the documentation (e.g. Open"
+#~ " the SEPAL interface and enter your"
+#~ " email address.). Avoid addressing the "
+#~ "audience directly, when possible. In "
+#~ "other words, limit the use of the"
+#~ " words “you” and “your” (e.g. To "
+#~ "sign up for a Google account, go"
+#~ " to accounts.google.com/servicelogin.). When "
+#~ "addressing the audience is necessary, "
+#~ "use the word “you” or “your” (e.g."
+#~ " To reset your password, go to "
+#~ "docs.sepal.io/en/latest/setup/password.html.)."
+#~ msgstr ""
+
+#~ msgid "Word list"
+#~ msgstr ""
+
+#~ msgid "Here is a list of common words used in SEPAL documentation."
+#~ msgstr ""
+
+#~ msgid "Use the following terms, when possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The authors of the documentation should"
+#~ " be referred to as “the SEPAL "
+#~ "team” (e.g. The SEPAL team maintains "
+#~ "the documentation to guide users through"
+#~ " the SEPAL interface.). If the term,"
+#~ " “the SEPAL team” has been overused,"
+#~ " use the words “we” or “us” "
+#~ "instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The interface should be referred to "
+#~ "as the “SEPAL interface” (e.g. Open "
+#~ "the SEPAL interface and enter your "
+#~ "email address.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The website where SEPAL documentation is"
+#~ " located should be referred to as "
+#~ "either “SEPAL documentation” or simply, "
+#~ "“the documentation” (e.g. Learn more "
+#~ "about SEPAL documentation by reading "
+#~ "this article.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A section of the documentation should"
+#~ " be referred to as a “section "
+#~ "of SEPAL documentation” or a “section"
+#~ " of the documentation”, as necessary "
+#~ "(e.g. Discover how to register for "
+#~ "SEPAL in the “Getting started” section"
+#~ " of the documentation.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A page within the documentation should"
+#~ " be referred to as an “article” "
+#~ "(e.g. Learn more about the SEPAL "
+#~ "interface in the article, “Introduction "
+#~ "to SEPAL” in the “Getting started "
+#~ "with SEPAL” section.)."
+#~ msgstr ""
+
+#~ msgid "Describing interactions with the interface"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here is a list of common words "
+#~ "used to describe actions in the "
+#~ "SEPAL interface."
+#~ msgstr ""
+
+#~ msgid "switch, turn on, turn off"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here is a list of common words "
+#~ "to describe location in the SEPAL "
+#~ "interface. Indicate location in relation "
+#~ "to objects within the interface, "
+#~ "whenever possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lower right (noun), lower-right "
+#~ "(adjective), rightmost (adjectives), on the"
+#~ " right side of"
+#~ msgstr ""
+
+#~ msgid "pane (instead of panel)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here are some other basic guidelines "
+#~ "to follow when writing SEPAL "
+#~ "documentation."
+#~ msgstr ""
+
+#~ msgid "Sentence structure"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use an active voice, the present "
+#~ "tense, the second-person point of "
+#~ "view, and the imperative mood, whenever"
+#~ " possible (e.g. Open the SEPAL "
+#~ "interface and enter your email "
+#~ "address.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use sentence case (i.e. capitals only"
+#~ " for the initial letter of the "
+#~ "phrase and any proper names), except "
+#~ "when mirroring appearance of text in "
+#~ "the SEPAL interface.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use double quotation marks for titles"
+#~ " of articles and sections (e.g. The"
+#~ " “Getting started” section.). Use double"
+#~ " quotation marks for direct quotes "
+#~ "(e.g. for the text displayed in an"
+#~ " error message.)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use bold formatting for the names "
+#~ "of buttons, checkboxes, panes, drop-down"
+#~ " menus, and other options (e.g. "
+#~ "Select Export.)."
+#~ msgstr ""
+
+#~ msgid "Italic"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use italicized text for introducing key"
+#~ " terminology (only italics only at "
+#~ "first mention) (e.g. There is formal "
+#~ "QA/QC and informal QA/QC.)."
+#~ msgstr ""
+
+#~ msgid "Further reading"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To find answers to questions not "
+#~ "available in the SEPAL documentation "
+#~ "style guide, go to the following "
+#~ "links:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`FAOSTYLE (2022) "
+#~ "<https://www.fao.org/3/cb8081en/cb8081en.pdf>`__ (for "
+#~ "general style guidelines according to "
+#~ "FAO)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`GitHub documentation <https://docs.github.com/en>`__ "
+#~ "(for exemplary documentation)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Microsoft style guide <https://learn.microsoft.com"
+#~ "/en-us/docs/>`__ (for an exemplary style"
+#~ " guide, specifically for documentation)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`“Procedures and instructions” "
+#~ "<https://docs.microsoft.com/en-us/style-guide"
+#~ "/procedures-instructions/>`__ (for a guide "
+#~ "on writing these elements)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`“Describing interactions with UI” "
+#~ "<https://learn.microsoft.com/en-us/style-guide"
+#~ "/procedures-instructions/describing-interactions-"
+#~ "with-ui>`__ (for a guide on writing"
+#~ " these elements)"
+#~ msgstr ""
 

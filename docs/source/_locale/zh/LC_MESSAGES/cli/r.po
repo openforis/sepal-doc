@@ -1,22 +1,18 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-07-31 07:20\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-31 07:20+0000\n"
 "Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/r.po\n"
-"X-Crowdin-File-ID: 57\n"
 "Language: zh_CN\n"
+"Language-Team: Chinese Simplified\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/cli/r.rst:2
 msgid "R code"
@@ -27,7 +23,10 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/cli/r.rst:7
-msgid "SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully functional :code:`R 4.1.2` environment that is accessible in RStudio, Jupyterlab or the terminal."
+msgid ""
+"SEPAL instances run on :code:`focal` Ubuntu machines, providing a fully "
+"functional :code:`R 4.1.2` environment that is accessible in RStudio, "
+"JupyterLab or the terminal."
 msgstr ""
 
 #: ../../source/cli/r.rst:25
@@ -35,7 +34,9 @@ msgid "Description"
 msgstr ""
 
 #: ../../source/cli/r.rst:27
-msgid "The SEPAL :code:`R` environment is not empty; there are numerous embedded packages."
+msgid ""
+"The SEPAL :code:`R` environment is not empty; there are numerous embedded"
+" packages."
 msgstr ""
 
 #: ../../source/cli/r.rst:33
@@ -43,31 +44,26 @@ msgid "To check the availability of a specific package:"
 msgstr ""
 
 #: ../../source/cli/r.rst:35
-msgid "Open RStudio."
+msgid ""
+"#   Open RStudio. #   Go to :guilabel:`Help` > :guilabel:`R Help`. #   In"
+" the open **Help** pane, select :code:`Reference` > :code:`Packages`."
 msgstr ""
 
-#: ../../source/cli/r.rst:36
-msgid "Go to :guilabel:`Help` > :guilabel:`R Help` (from the menu above)."
-msgstr ""
-
-#: ../../source/cli/r.rst:37
-msgid "You will see the **Help** panel opened."
-msgstr ""
-
-#: ../../source/cli/r.rst:38
-msgid "Select :code:`Reference` > :code:`Packages`"
-msgstr ""
-
-#: ../../source/cli/r.rst:45
+#: ../../source/cli/r.rst:44
 msgid "Customization"
 msgstr ""
 
-#: ../../source/cli/r.rst:47
-msgid "The SEPAL environment can be customized to user needs by utilizing third-party packages and CRAN in **RStudio**."
+#: ../../source/cli/r.rst:46
+msgid ""
+"The SEPAL environment can be customized to user needs by utilizing third-"
+"party packages and CRAN in RStudio."
 msgstr ""
 
-#: ../../source/cli/r.rst:55
-msgid "If you face compatibility issues when customizing your SEPAL environment, contact the SEPAL team in the `Github issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+#: ../../source/cli/r.rst:54
+msgid ""
+"If you face compatibility issues when customizing your SEPAL environment,"
+" contact the SEPAL team in the `Github issue tracker "
+"<https://github.com/openforis/sepal/issues/new/choose>`__."
 msgstr ""
 
 #~ msgid ""
@@ -109,5 +105,31 @@ msgstr ""
 #~ " let us know in the `Github "
 #~ "issue tracker "
 #~ "<https://github.com/openforis/sepal/issues/new/choose>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL instances run on :code:`focal` "
+#~ "Ubuntu machines, providing a fully "
+#~ "functional :code:`R 4.1.2` environment that"
+#~ " is accessible in RStudio, Jupyterlab "
+#~ "or the terminal."
+#~ msgstr ""
+
+#~ msgid "Open RStudio."
+#~ msgstr ""
+
+#~ msgid "Go to :guilabel:`Help` > :guilabel:`R Help` (from the menu above)."
+#~ msgstr ""
+
+#~ msgid "You will see the **Help** panel opened."
+#~ msgstr ""
+
+#~ msgid "Select :code:`Reference` > :code:`Packages`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SEPAL environment can be customized"
+#~ " to user needs by utilizing third-"
+#~ "party packages and CRAN in **RStudio**."
 #~ msgstr ""
 

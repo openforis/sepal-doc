@@ -1,133 +1,181 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-13 00:55+0000\n"
-"PO-Revision-Date: 2023-04-13 00:58\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-04-13 00:58+0000\n"
 "Last-Translator: \n"
-"Language-Team: Spanish\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/resource.po\n"
-"X-Crowdin-File-ID: 103\n"
 "Language: es_ES\n"
+"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/setup/resource.rst:2
 msgid "Manage your resources"
 msgstr ""
 
+#: ../../source/setup/resource.rst:3
+msgid "*Monitor usage and request resources*"
+msgstr ""
+
 #: ../../source/setup/resource.rst:5
-msgid "Monitor usage and request resources"
+msgid "In this article, learn how to:"
 msgstr ""
 
 #: ../../source/setup/resource.rst:7
-msgid "In this article, you can learn how to:"
+msgid "understand your user report"
+msgstr ""
+
+#: ../../source/setup/resource.rst:8
+msgid "manage instances"
 msgstr ""
 
 #: ../../source/setup/resource.rst:9
-msgid "-Understand your **User report** -Manage instances -Request resources"
+msgid "request resources"
 msgstr ""
 
-#: ../../source/setup/resource.rst:13
-msgid "SEPAL provides free access to computation resources that are shared among registered users. To prevent exportation mistakes, new users are granted few resources that are sufficient for discovering the functionalities and running sub-regional analysis. By default, instances are closed automatically when they are not being used."
+#: ../../source/setup/resource.rst:11
+msgid ""
+"SEPAL provides free access to computation resources that are shared among"
+" registered users. To prevent exportation mistakes, new users are granted"
+" few resources that are sufficient for discovering the functionalities "
+"and running subregional analyses. By default, instances are closed "
+"automatically when they are not being used."
+msgstr ""
+
+#: ../../source/setup/resource.rst:15
+msgid "The **SEPAL user starter pack** includes:"
 msgstr ""
 
 #: ../../source/setup/resource.rst:17
-msgid "The SEPAL user starter pack includes:"
+msgid "USD 0/month of instance spending"
+msgstr ""
+
+#: ../../source/setup/resource.rst:18
+msgid "USD 0/month of storage spending"
 msgstr ""
 
 #: ../../source/setup/resource.rst:19
-msgid "0 USD/month of instance spending"
-msgstr ""
-
-#: ../../source/setup/resource.rst:20
-msgid "0 USD/month of storage spending"
+msgid "0 GB of storage"
 msgstr ""
 
 #: ../../source/setup/resource.rst:21
-msgid "0 Gb of storage"
+msgid ""
+"Some actions or projects may require more storage to perform analysis at "
+"the province or country level; other actions or projects may require more"
+" instances to perform heavier computation processes. If you need more "
+"storage or instances, you can submit a quota request to the SEPAL team by"
+" following the instructions below."
 msgstr ""
 
-#: ../../source/setup/resource.rst:23
-msgid "Some actions or projects may require more storage to perform analysis at the province or country level; other actions or projects may require more instances to perform heavier computation processes. If you need more storage or instances, you can submit a quota request to the SEPAL team by following the instructions below."
+#: ../../source/setup/resource.rst:25
+msgid ""
+"Since quota requests are reviewed on a case-by-case basis, response times"
+" may vary."
 msgstr ""
 
-#: ../../source/setup/resource.rst:27
-msgid "Since quota requests are reviewed on a case-by-case basis, response time may vary."
-msgstr ""
-
-#: ../../source/setup/resource.rst:30
+#: ../../source/setup/resource.rst:28
 msgid "User report"
 msgstr ""
 
-#: ../../source/setup/resource.rst:32
-msgid "In **Terminal**, **Applications** or **Recipes**, select **User report** on the lower-right side of the window to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
+#: ../../source/setup/resource.rst:30
+msgid ""
+"In **Terminal**, **Apps** or **Process**, select **User report** in the "
+"lower-right corner to see your current instance consumption: :btn:`<fa-"
+"solid fa-dollar-sign> x.xx/h`."
+msgstr ""
+
+#: ../../source/setup/resource.rst:47
+msgid ""
+"After selecting this button, the **Resource management** pop-up window "
+"will appear, displaying the current consumption of all your **Resources**"
+" – expressed in percentages (see **1** in figure below) (a full bar "
+"indicates that you have reached one of your monthly quotas) – as well as "
+"**Instances** that are currently running (**2**)."
 msgstr ""
 
 #: ../../source/setup/resource.rst:49
-msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all of your resources expressed in percentages (1) (Note: a full bar indicates that you have reached one of your monthly quotas) and instances that are currently running (2)."
-msgstr ""
-
-#: ../../source/setup/resource.rst:51
 msgid "You can request additional resources by selecting the green button."
 msgstr ""
 
-#: ../../source/setup/resource.rst:58
+#: ../../source/setup/resource.rst:56
 msgid "Manage instances"
 msgstr ""
 
+#: ../../source/setup/resource.rst:58
+msgid ""
+"Amazon Web Services (AWS) instances can be managed from this interface as"
+" well."
+msgstr ""
+
 #: ../../source/setup/resource.rst:60
-msgid "Amazon Web Services (AWS) instances can be managed from this interface as well."
+msgid ""
+"In the **User report** pop-up window, each line represents a different "
+"instance, where you can see their technical features and hourly quota "
+"consumption."
 msgstr ""
 
 #: ../../source/setup/resource.rst:62
-msgid "In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and the hourly quota consumption."
-msgstr ""
-
-#: ../../source/setup/resource.rst:64
 msgid "You can select the **Trashcan** icon to stop an instance."
 msgstr ""
 
+#: ../../source/setup/resource.rst:68
+msgid ""
+"If the process you launched is a long computation (e.g. the **BFAST "
+"application** or any **Change detection algorithm**) and you want to "
+"close the SEPAL window, you can run the process in the background."
+msgstr ""
+
 #: ../../source/setup/resource.rst:70
-msgid "If the process you launched is a long computation (e.g. the **BFAST application** or any **Change detection algorithm**) and you want to close the SEPAL window, you can run the process in the background."
+msgid ""
+"Select **Edit** to open the **Instance** pop-up window, where the slider "
+"bar displays the amount of time remaining before your instance will be "
+"shut down. Increase this value for the estimated duration of your process"
+" and you can then safely close the SEPAL browser tab."
 msgstr ""
 
-#: ../../source/setup/resource.rst:72
-msgid "Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab."
+#: ../../source/setup/resource.rst:74
+msgid ""
+"If you increase the lifespan of your instance, it will continue to "
+"consume your quota. Check regularly that your process is running "
+"effectively to avoid losing resources."
 msgstr ""
 
-#: ../../source/setup/resource.rst:76
-msgid "If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources."
-msgstr ""
-
-#: ../../source/setup/resource.rst:83
+#: ../../source/setup/resource.rst:81
 msgid "Request resources"
 msgstr ""
 
-#: ../../source/setup/resource.rst:85
+#: ../../source/setup/resource.rst:83
 msgid "From the **Resource manager**, select **Request additional resources**."
 msgstr ""
 
-#: ../../source/setup/resource.rst:87
+#: ../../source/setup/resource.rst:85
 msgid "In order for your request to be considered, you must:"
 msgstr ""
 
-#: ../../source/setup/resource.rst:89
-msgid "Change the quota to values that meet your needs (e.g. more storage and fewer instances). The values entered are suggestions that the administrator will be able to change, if needed. (1)"
+#: ../../source/setup/resource.rst:87
+msgid ""
+"change the quota to values that meet your needs (e.g. more storage and "
+"fewer instances; the values entered are suggestions that the "
+"administrator will be able to change, if needed [**1**]); and"
 msgstr ""
 
-#: ../../source/setup/resource.rst:90
-msgid "Provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI). (2)"
+#: ../../source/setup/resource.rst:88
+msgid ""
+"provide an extensive explanation for why you need these resources, as "
+"well as the project name, the type of analysis and the area of interest "
+"(AOI) (**2**)."
 msgstr ""
 
-#: ../../source/setup/resource.rst:96
-msgid "Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details."
+#: ../../source/setup/resource.rst:94
+msgid ""
+"Once validated, the request is sent to the SEPAL team, who will take "
+"measures in the coming days to update your profile, which may include "
+"contacting you directly if they need any extra details."
 msgstr ""
 
 #~ msgid ""
@@ -153,5 +201,91 @@ msgstr ""
 #~ msgid ""
 #~ "For support, `ask the community "
 #~ "<https://groups.google.com/g/sepal-users>`__."
+#~ msgstr ""
+
+#~ msgid "Monitor usage and request resources"
+#~ msgstr ""
+
+#~ msgid "In this article, you can learn how to:"
+#~ msgstr ""
+
+#~ msgid "-Understand your **User report** -Manage instances -Request resources"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEPAL provides free access to "
+#~ "computation resources that are shared "
+#~ "among registered users. To prevent "
+#~ "exportation mistakes, new users are "
+#~ "granted few resources that are "
+#~ "sufficient for discovering the functionalities"
+#~ " and running sub-regional analysis. "
+#~ "By default, instances are closed "
+#~ "automatically when they are not being"
+#~ " used."
+#~ msgstr ""
+
+#~ msgid "The SEPAL user starter pack includes:"
+#~ msgstr ""
+
+#~ msgid "0 USD/month of instance spending"
+#~ msgstr ""
+
+#~ msgid "0 USD/month of storage spending"
+#~ msgstr ""
+
+#~ msgid "0 Gb of storage"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since quota requests are reviewed on "
+#~ "a case-by-case basis, response "
+#~ "time may vary."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In **Terminal**, **Applications** or "
+#~ "**Recipes**, select **User report** on "
+#~ "the lower-right side of the window"
+#~ " to see your current instance "
+#~ "consumption: :btn:`<fa-solid fa-dollar-"
+#~ "sign> x.xx/h`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After selecting this button, the "
+#~ "**Resource management** pop-up window "
+#~ "will appear, displaying the current "
+#~ "consumption of all of your resources "
+#~ "expressed in percentages (1) (Note: a"
+#~ " full bar indicates that you have "
+#~ "reached one of your monthly quotas) "
+#~ "and instances that are currently running"
+#~ " (2)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the **User report** pop-up "
+#~ "window, each line represents a different"
+#~ " instance, where you can see their"
+#~ " technical features and the hourly "
+#~ "quota consumption."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change the quota to values that "
+#~ "meet your needs (e.g. more storage "
+#~ "and fewer instances). The values entered"
+#~ " are suggestions that the administrator "
+#~ "will be able to change, if needed."
+#~ " (1)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Provide an extensive explanation for why"
+#~ " you need these resources, as well"
+#~ " as the project name, the type "
+#~ "of analysis and the area of "
+#~ "interest (AOI). (2)"
 #~ msgstr ""
 

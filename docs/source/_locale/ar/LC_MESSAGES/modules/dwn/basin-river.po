@@ -1,228 +1,599 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:05\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:05+0000\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/basin-river.po\n"
-"X-Crowdin-File-ID: 141\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/basin-river.rst:2
 msgid "Resilient rivers and basins"
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:5
-msgid "Understand forest cover and forest cover change from a watershed perspective"
+#: ../../source/modules/dwn/basin-river.rst:3
+msgid ""
+"*Understand forest cover and forest cover change from a watershed "
+"perspective*"
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:8
+#: ../../source/modules/dwn/basin-river.rst:6
 msgid "Overview"
 msgstr ""
 
+#: ../../source/modules/dwn/basin-river.rst:7
+msgid ""
+"The **Resilient rivers and basins** beta app is a tool that describes "
+"forest cover and forest cover change from a watershed perspective by "
+"calculating statistics across subwatersheds over time; watersheds of "
+"interest will be defined by the upstream basin draining to any given "
+"point. These processes can be conducted directly in your **SEPAL "
+"instance** without requiring additional resources."
+msgstr ""
+
 #: ../../source/modules/dwn/basin-river.rst:9
-msgid "The **Resilient rivers and basins** beta app is a tool that describes forest cover and forest cover change from a watershed perspective by calculating statistics across subwatersheds over time; watersheds of interest will be defined by the upstream basin draining to any given point. These processes can be conducted directly in your SEPAL instance without requiring additional resources."
+msgid ""
+"To run this module, we recommend initializing a machine with at least 4 "
+"GB RAM (a **t2** or **m2** instance). For more detailed instructions,  "
+"see `Start instance manually "
+"<https://docs.sepal.io/en/latest/modules/index.html#start-instance-"
+"manually>`__."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:11
-msgid "To run this module, we recommend initializing a machine with at least 4 GB RAM (a t2 or m2 instance). For more detailed instructions,  see `Start instance manually <https://docs.sepal.io/en/latest/modules/index.html#start-instance-manually>`__."
-msgstr ""
-
-#: ../../source/modules/dwn/basin-river.rst:14
+#: ../../source/modules/dwn/basin-river.rst:12
 msgid "Inputs"
 msgstr ""
 
+#: ../../source/modules/dwn/basin-river.rst:14
+msgid ""
+"Once you have started an instance, `search in the Apps tab "
+"<https://docs.sepal.io/en/latest/modules/index.html#start-applications>`_"
+" for the **Resilient rivers and basins** app, which is composed of two "
+"main sections:"
+msgstr ""
+
 #: ../../source/modules/dwn/basin-river.rst:16
-msgid "Once you have started an instance,  `search in the apps tab <https://docs.sepal.io/en/latest/modules/index.html#start-applications>`_ for the **Resilient rivers and basins** app, which is composed of two main sections:"
+msgid ""
+"**Left pane**, which displays all processes (i.e. inputs and results) at "
+"the top, and some helpful links (e.g. bug report, wiki, source code) at "
+"the bottom; and"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:18
-msgid "**the left pane**, which displays all of the processes (i.e. inputs and results) at the top, and some helpful links (e.g. bug report, wiki, source code) at the bottom; and"
+msgid "**Right pane**, which displays process and inputs."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:20
-msgid "**the right pane**, which displays process and inputs."
+msgid ""
+"By default, the **Input drawer** will be active. It is divided into two "
+"main panes:"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:22
-msgid "By default, the **input drawer** will be active. It is divided into two main panes:"
+msgid ""
+"**Left pane**, which displays all of the input parameters to derive "
+"statistics."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:24
-msgid "**the left pane**, which displays all of the input parameters to derive statistics."
+msgid ""
+"**Right pane**, which displays the map view where calculated layers will "
+"be loaded."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:26
-msgid "**the right pane**, which displays the map view where calculated layers will be loaded."
+#: ../../source/modules/dwn/basin-river.rst:31
+msgid ""
+"The first input needed is a **Coordinate pair**, which will be used to "
+"calculate and retrieve all of the upstream sub-basins that drain to that "
+"point for any given **HydroBASIN level**."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:33
-msgid "The first input needed is a **coordinate pair**, which will be used to calculate and retrieve all of the upstream sub-basins that drain to that point for any given **hydroBASIN level**."
+msgid ""
+"To input coordinates, the module has two options: **Manual** and "
+"**Automatic**."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:35
-msgid "To input coordinates, the module has two options: **manual** and **automatic**."
+msgid ""
+"To use **Manual selection**, enter the latitude and longitude "
+"coordinates, then select :code:`Next`. The map will set a blue marker at "
+"that point and zoom into the area of interest (AOI)."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:37
-msgid "To use **manual selection**, enter the latitude and longitude coordinates, then select :code:`Next`. The map will set a blue marker at that point and zoom into the area of interest."
+msgid ""
+"To use **Automatic selection**, turn off the **Manual** switch and "
+"navigate through the map to find your desired area. Select the exact spot"
+" (usually a river confluence or a bridge, but terrestrial areas work as "
+"well); a blue marker will be displayed."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:39
-msgid "To use **automatic selection**, turn off the manual switch and navigate through the map to find your desired area. Select the exact spot (usually a river confluence or a bridge, but terrestrial areas work as well); a blue marker will be displayed."
+#: ../../source/modules/dwn/basin-river.rst:46
+msgid ""
+"When using the **Automatic selection** method, the latitude and longitude"
+" input text fields will be deactivated. Notice that the coordinates will "
+"be automatically synchronized as you move the cursor over the map."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:48
-msgid "When using the **automatic selection** method, the latitude and longitude input text fields will be deactivated. Notice that the coordinates will be automatically synchronized as you move the cursor over the map."
+msgid ""
+"The next step is to select the **HydroBASIN target level** by using the "
+"dropdown list."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:50
-msgid "The next step is to select the **HydroBASIN target level** by using the dropdown list. **HydroBASINs** are delineated basins in the HydroATLAS database. Their levels range from 5 to 12, where higher numbers indicate smaller basins nested inside larger sub-basins. For more information about how these data are obtained, see `HydroSHEDS documentation <https://www.hydrosheds.org/products/hydrobasins>`_."
+msgid ""
+"**HydroBASINs** are delineated basins in the HydroATLAS database. Their "
+"levels range from 5 to 12, where higher numbers indicate smaller basins "
+"nested inside larger sub-basins."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:52
-msgid "The forest cover change map is based on the  `Global Forest Change product <https://www.science.org/doi/10.1126/science.1244693>`_ (Hansen *et al.*, 2013), retrieved from `Google Earth Engine <https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2021_v1_9>`_. Created to show forest cover change on a global-scale based on Landsat imagery, the product has forest change data from 2000 to 2001."
+msgid ""
+"For more information about how these data are obtained, see the "
+"`HydroSHEDS documentation "
+"<https://www.hydrosheds.org/products/hydrobasins>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:54
-msgid "The **Resilient rivers and basins** app will crop and summarize forest cover statistics for each of the forest cover classes at the selected basin scale (i.e. the HydroBASIN level)."
+msgid ""
+"The forest cover change map is based on the `Global Forest Change product"
+" <https://www.science.org/doi/10.1126/science.1244693>`_ (Hansen *et "
+"al.*, 2013), retrieved from `Google Earth Engine (GEE) "
+"<https://developers.google.com/earth-"
+"engine/datasets/catalog/UMD_hansen_global_forest_change_2021_v1_9>`_. "
+"Created to show forest cover change on a global-scale based on Landsat "
+"imagery, the product has forest change data from 2000 to 2001."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:56
-msgid "To begin, use the sliders to select the **start and end year**."
+msgid ""
+"The **Resilient rivers and basins** app will crop and summarize forest "
+"cover statistics for each of the forest cover classes at the selected "
+"basin scale (i.e. the HydroBASIN level)."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:58
-msgid "Next, select the **forest threshold**, which determines the level of tree cover required for a pixel in the Global Forest Change product to be classified as **forest**. Changing the value will alter the amount of forest cover or forest cover change observed."
+msgid "To begin, use the sliders to select the **Start and end year**."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:65
-msgid "Select the :btn:`Get upstream basins` button to run the process. The results will be displayed as a map of forest cover change by sub-basin."
+#: ../../source/modules/dwn/basin-river.rst:60
+msgid ""
+"Next, select the **Forest threshold**, which determines the level of tree"
+" cover required for a pixel in the Global Forest Change (GFC) product to "
+"be classified as **Forest**. Changing the value will alter the amount of "
+"forest cover or forest cover change observed."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:68
-msgid "The amount of time required for calculation depends on the selected **HydroBASIN level** and the **location of the downstream point**."
+#: ../../source/modules/dwn/basin-river.rst:67
+msgid ""
+"Select the :btn:`Get upstream basins` button to run the process. The "
+"results will be displayed as a map of forest cover change by sub-basin."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:70
-msgid "Also, the number of **sub-basins** displayed will vary depending on the **downstream point** (e.g. a watershed draining to a point at the mouth of a fairly mountainous area will include more upstream sub-basins than a watershed draining to a higher-level point in the same orography)."
+msgid ""
+"The amount of time required for calculation depends on the selected "
+"**HydroBASIN level** and the **Location of the downstream point**."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:72
-msgid "To start a new process, you can use the **trash bin** button in the upper-left of the map to remove the **downstream point** or remove the **sub-basins** selection (for more information, see the next section, which explains how to constrain the analysis to a given set of sub-basins)."
+msgid ""
+"Also, the number of **Sub-basins** displayed will vary depending on the "
+"**Downstream point** (e.g. a watershed draining to a point at the mouth "
+"of a fairly mountainous area will include more upstream sub-basins than a"
+" watershed draining to a higher-level point in the same orography)."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:79
-msgid "To calculate and display statistical results in the **Results** dashboard, use the **Statistics** tile. There are two selection methods:"
+#: ../../source/modules/dwn/basin-river.rst:74
+msgid ""
+"To start a new process, you can use the **Trash bin** button in the upper"
+" left of the map to remove the **Downstream point** or remove the **Sub-"
+"basins** selection (for more information, see the next subsection, which "
+"explains how to constrain the analysis to a given set of sub-basins)."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:81
-msgid "**no filter** (i.e. use all basins);"
+msgid ""
+"To calculate and display statistical results in the **Results** "
+"dashboard, use the **Statistics** tile. There are two selection methods:"
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:82
-msgid "**filter**."
+#: ../../source/modules/dwn/basin-river.rst:83
+msgid "**No filter** (i.e. use all basins)"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:84
-msgid "When using the **Filter** option, a new dropdown menu will appear at the bottom of the tile with all of the sub-basin IDs."
+msgid "**Filter**"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:86
-msgid "Manually select or remove **sub-basins** by selecting each row. Notice that the map will automatically sync the selected basins by displaying a black boundary and zooming in."
+msgid ""
+"When using the **Filter** option, a new dropdown menu will appear at the "
+"bottom of the tile with all of the sub-basin IDs."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:88
-msgid "Select the **Calculate statistics** button."
+msgid ""
+"Manually select or remove **Sub-basins** by selecting each row. Notice "
+"that the map will automatically sync the selected basins by displaying a "
+"black boundary and zooming in."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:90
-msgid "Once the dashboard is calculated, a red dot will be displayed in the **Results** drawer, as seen in the image below:"
+msgid "Select the **Calculate statistics** button."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:98
-msgid "Dashboard"
+#: ../../source/modules/dwn/basin-river.rst:92
+msgid ""
+"Once the dashboard is calculated, a red dot will be displayed in the "
+"**Results** drawer, as seen in the image below:"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:100
-msgid "The **Dashboard** panel is divided into three main sections:"
+msgid "Dashboard"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:102
-msgid "the **Settings** tile in the upper-left;"
-msgstr ""
-
-#: ../../source/modules/dwn/basin-river.rst:103
-msgid "the **Pie chart** in the upper-right; and"
+msgid "The **Dashboard** pane is divided into three main sections:"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:104
-msgid "**detailed charts** at the bottom."
+msgid "the **Settings** tile in the upper left;"
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:108
-msgid "All graphs have an option for independent download directly to your browser. Simply hover the cursor in the upper-right corner and select the  :icon:`fa-solid fa-camera`  icon."
+#: ../../source/modules/dwn/basin-river.rst:105
+msgid "the **Pie chart** in the upper right; and"
+msgstr ""
+
+#: ../../source/modules/dwn/basin-river.rst:106
+msgid "**Detailed charts** at the bottom."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:110
-msgid "In the **Settings** tile, you can choose the variable to display:"
+msgid ""
+"All graphs have an option for independent download directly to your "
+"browser. Simply hover the cursor in the upper-right corner and select the"
+"  :icon:`fa-solid fa-camera` icon."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:112
-msgid "**all**,"
-msgstr ""
-
-#: ../../source/modules/dwn/basin-river.rst:113
-msgid "**gain and loss**,"
+msgid "In the **Settings** tile, you can choose the variable to display:"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:114
-msgid "**loss**,"
+msgid "**All**"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:115
-msgid "**non-forest**,"
+msgid "**Gain and loss**"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:116
-msgid "**forest**, and"
+msgid "**Loss**"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:117
-msgid "**gain**."
+msgid "**Non-forest**"
+msgstr ""
+
+#: ../../source/modules/dwn/basin-river.rst:118
+msgid "**Forest**"
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:119
-msgid "By choosing one of these options, all graphs will display the selected statistics. From this menu, you can also filter the data by one or more sub-basins, allowing the possibility of generating dynamic comparisons between areas."
+msgid "**Gain**"
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:126
-msgid "The **Overall ratio** is an interactive pie chart that displays the output variable of each subcategory by proportion. It also allows you to directly select one subcategory to be used in the detailed charts. Simply select any subcategory and the corresponding slice will be showcased."
+#: ../../source/modules/dwn/basin-river.rst:121
+msgid ""
+"By choosing one of these options, all graphs will display the selected "
+"statistics. From this menu, you can also filter the data by one or more "
+"sub-basins, allowing the possibility of generating dynamic comparisons "
+"between areas."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:133
-msgid "The detailed, interactive charts at the bottom display both the **ratio** and the **total area** of the selected variable."
+#: ../../source/modules/dwn/basin-river.rst:128
+msgid ""
+"The **Overall ratio** is an interactive pie chart that displays the "
+"output variable of each subcategory by proportion. It also allows you to "
+"directly select one subcategory to be used in the detailed charts. Simply"
+" select any subcategory and the corresponding slice will be showcased."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:135
-msgid "On the left, the **pie chart** shows the proportion of the area for each of the selected sub-basins."
+msgid ""
+"The detailed, interactive charts at the bottom display both the **Ratio**"
+" and the **Total area** of the selected variable."
 msgstr ""
 
 #: ../../source/modules/dwn/basin-river.rst:137
-msgid "On the right, the **bar chart** displays the absolute values."
+msgid ""
+"On the left, the **Pie chart** shows the proportion of the area for each "
+"of the selected sub-basins."
 msgstr ""
 
-#: ../../source/modules/dwn/basin-river.rst:141
-msgid "In the Global Forest Change product dataset (Hansen *et al.*, 2013), only forest loss has a temporal dimension. When a new time period is selected, a new graph representing the trend of forest loss will be displayed at the bottom of the screen."
+#: ../../source/modules/dwn/basin-river.rst:139
+msgid "On the right, the **Bar chart** displays the absolute values."
 msgstr ""
+
+#: ../../source/modules/dwn/basin-river.rst:143
+msgid ""
+"In the GFC product dataset (Hansen *et al.*, 2013), only forest loss has "
+"a temporal dimension. When a new time period is selected, a new graph "
+"representing the trend of forest loss will be displayed at the bottom of "
+"the screen."
+msgstr ""
+
+#~ msgid ""
+#~ "Understand forest cover and forest cover"
+#~ " change from a watershed perspective"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The **Resilient rivers and basins** beta"
+#~ " app is a tool that describes "
+#~ "forest cover and forest cover change "
+#~ "from a watershed perspective by "
+#~ "calculating statistics across subwatersheds "
+#~ "over time; watersheds of interest will"
+#~ " be defined by the upstream basin "
+#~ "draining to any given point. These "
+#~ "processes can be conducted directly in"
+#~ " your SEPAL instance without requiring "
+#~ "additional resources."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To run this module, we recommend "
+#~ "initializing a machine with at least "
+#~ "4 GB RAM (a t2 or m2 "
+#~ "instance). For more detailed instructions,"
+#~ "  see `Start instance manually "
+#~ "<https://docs.sepal.io/en/latest/modules/index.html#start-"
+#~ "instance-manually>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have started an instance,  "
+#~ "`search in the apps tab "
+#~ "<https://docs.sepal.io/en/latest/modules/index.html#start-"
+#~ "applications>`_ for the **Resilient rivers "
+#~ "and basins** app, which is composed "
+#~ "of two main sections:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**the left pane**, which displays all"
+#~ " of the processes (i.e. inputs and"
+#~ " results) at the top, and some "
+#~ "helpful links (e.g. bug report, wiki,"
+#~ " source code) at the bottom; and"
+#~ msgstr ""
+
+#~ msgid "**the right pane**, which displays process and inputs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, the **input drawer** will"
+#~ " be active. It is divided into "
+#~ "two main panes:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**the left pane**, which displays all"
+#~ " of the input parameters to derive"
+#~ " statistics."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**the right pane**, which displays the"
+#~ " map view where calculated layers "
+#~ "will be loaded."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first input needed is a "
+#~ "**coordinate pair**, which will be used"
+#~ " to calculate and retrieve all of "
+#~ "the upstream sub-basins that drain "
+#~ "to that point for any given "
+#~ "**hydroBASIN level**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To input coordinates, the module has "
+#~ "two options: **manual** and **automatic**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To use **manual selection**, enter the"
+#~ " latitude and longitude coordinates, then"
+#~ " select :code:`Next`. The map will "
+#~ "set a blue marker at that point"
+#~ " and zoom into the area of "
+#~ "interest."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To use **automatic selection**, turn off"
+#~ " the manual switch and navigate "
+#~ "through the map to find your "
+#~ "desired area. Select the exact spot "
+#~ "(usually a river confluence or a "
+#~ "bridge, but terrestrial areas work as"
+#~ " well); a blue marker will be "
+#~ "displayed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When using the **automatic selection** "
+#~ "method, the latitude and longitude input"
+#~ " text fields will be deactivated. "
+#~ "Notice that the coordinates will be "
+#~ "automatically synchronized as you move "
+#~ "the cursor over the map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next step is to select the "
+#~ "**HydroBASIN target level** by using the"
+#~ " dropdown list. **HydroBASINs** are "
+#~ "delineated basins in the HydroATLAS "
+#~ "database. Their levels range from 5 "
+#~ "to 12, where higher numbers indicate "
+#~ "smaller basins nested inside larger "
+#~ "sub-basins. For more information about "
+#~ "how these data are obtained, see "
+#~ "`HydroSHEDS documentation "
+#~ "<https://www.hydrosheds.org/products/hydrobasins>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The forest cover change map is "
+#~ "based on the  `Global Forest Change "
+#~ "product <https://www.science.org/doi/10.1126/science.1244693>`_"
+#~ " (Hansen *et al.*, 2013), retrieved "
+#~ "from `Google Earth Engine "
+#~ "<https://developers.google.com/earth-"
+#~ "engine/datasets/catalog/UMD_hansen_global_forest_change_2021_v1_9>`_."
+#~ " Created to show forest cover change"
+#~ " on a global-scale based on "
+#~ "Landsat imagery, the product has forest"
+#~ " change data from 2000 to 2001."
+#~ msgstr ""
+
+#~ msgid "To begin, use the sliders to select the **start and end year**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next, select the **forest threshold**, "
+#~ "which determines the level of tree "
+#~ "cover required for a pixel in the"
+#~ " Global Forest Change product to be"
+#~ " classified as **forest**. Changing the "
+#~ "value will alter the amount of "
+#~ "forest cover or forest cover change "
+#~ "observed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The amount of time required for "
+#~ "calculation depends on the selected "
+#~ "**HydroBASIN level** and the **location "
+#~ "of the downstream point**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Also, the number of **sub-basins** "
+#~ "displayed will vary depending on the "
+#~ "**downstream point** (e.g. a watershed "
+#~ "draining to a point at the mouth"
+#~ " of a fairly mountainous area will"
+#~ " include more upstream sub-basins "
+#~ "than a watershed draining to a "
+#~ "higher-level point in the same "
+#~ "orography)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start a new process, you can"
+#~ " use the **trash bin** button in "
+#~ "the upper-left of the map to "
+#~ "remove the **downstream point** or "
+#~ "remove the **sub-basins** selection (for"
+#~ " more information, see the next "
+#~ "section, which explains how to constrain"
+#~ " the analysis to a given set of"
+#~ " sub-basins)."
+#~ msgstr ""
+
+#~ msgid "**no filter** (i.e. use all basins);"
+#~ msgstr ""
+
+#~ msgid "**filter**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Manually select or remove **sub-basins**"
+#~ " by selecting each row. Notice that"
+#~ " the map will automatically sync the"
+#~ " selected basins by displaying a "
+#~ "black boundary and zooming in."
+#~ msgstr ""
+
+#~ msgid "The **Dashboard** panel is divided into three main sections:"
+#~ msgstr ""
+
+#~ msgid "the **Settings** tile in the upper-left;"
+#~ msgstr ""
+
+#~ msgid "the **Pie chart** in the upper-right; and"
+#~ msgstr ""
+
+#~ msgid "**detailed charts** at the bottom."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All graphs have an option for "
+#~ "independent download directly to your "
+#~ "browser. Simply hover the cursor in "
+#~ "the upper-right corner and select "
+#~ "the  :icon:`fa-solid fa-camera`  icon."
+#~ msgstr ""
+
+#~ msgid "**all**,"
+#~ msgstr ""
+
+#~ msgid "**gain and loss**,"
+#~ msgstr ""
+
+#~ msgid "**loss**,"
+#~ msgstr ""
+
+#~ msgid "**non-forest**,"
+#~ msgstr ""
+
+#~ msgid "**forest**, and"
+#~ msgstr ""
+
+#~ msgid "**gain**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The detailed, interactive charts at the"
+#~ " bottom display both the **ratio** "
+#~ "and the **total area** of the "
+#~ "selected variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On the left, the **pie chart** "
+#~ "shows the proportion of the area "
+#~ "for each of the selected sub-"
+#~ "basins."
+#~ msgstr ""
+
+#~ msgid "On the right, the **bar chart** displays the absolute values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the Global Forest Change product "
+#~ "dataset (Hansen *et al.*, 2013), only"
+#~ " forest loss has a temporal "
+#~ "dimension. When a new time period "
+#~ "is selected, a new graph representing"
+#~ " the trend of forest loss will "
+#~ "be displayed at the bottom of the"
+#~ " screen."
+#~ msgstr ""
 

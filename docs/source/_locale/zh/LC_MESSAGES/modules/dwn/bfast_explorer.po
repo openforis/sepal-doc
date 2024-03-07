@@ -1,152 +1,519 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:10\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:10+0000\n"
 "Last-Translator: \n"
 "Language: zh\n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/bfast_explorer.po\n"
-"X-Crowdin-File-ID: 143\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/bfast_explorer.rst:2
 msgid "BFAST Explorer"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:6
-msgid "This tutorial comprehends the BFAST Explorer v0.0.1. Notice that if you are using a newer version, some features might be different."
+#: ../../source/modules/dwn/bfast_explorer.rst:3
+msgid "*Analyse Landsat SR time-series pixel data*"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:9
+#: ../../source/modules/dwn/bfast_explorer.rst:7
+msgid ""
+"This tutorial was created using **BFAST Explorer v0.0.1**. If you are "
+"using a newer version, some features might differ."
+msgstr ""
+
+#: ../../source/modules/dwn/bfast_explorer.rst:10
 msgid "Description"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:11
-msgid "**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, developed using R and Python, designed for the analysis of *Landsat Surface Reflectance* time series pixel data."
+#: ../../source/modules/dwn/bfast_explorer.rst:12
+msgid ""
+"**BFAST Explorer** is a `Shiny <https://shiny.rstudio.com/>`__ app, "
+"developed using R and Python, designed for the analysis of Landsat "
+"surface reflectance time series pixel data (BFAST refers to Breaks for "
+"Additive Seasonal and Trend)."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:13
-msgid "Three change detection algorithms - **bfastmonitor**, **bfast01** and **bfast** - are used in order to investigate temporal changes in trend and seasonal components, via breakpoint detection."
+#: ../../source/modules/dwn/bfast_explorer.rst:14
+msgid ""
+"Three change detection algorithms – **bfastmonitor**, **bfast01** and "
+"**bfast** – are used to investigate temporal changes in trend and "
+"seasonal components via breakpoint detection."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:15
-msgid "If you encounter any bugs, please send a message to almeida.xan@gmail.com, or create an issue on the `GitHub page <https://github.com/almeidaxan/bfast-explorer/>`__."
+#: ../../source/modules/dwn/bfast_explorer.rst:16
+msgid ""
+"If you encounter any problems, please send a message to "
+"almeida.xan@gmail.com or `create an issue on GitHub "
+"<https://github.com/almeidaxan/bfast-explorer/>`__."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:18
+#: ../../source/modules/dwn/bfast_explorer.rst:19
 msgid "Tutorial"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:20
-msgid "Albeit very simple, please follow this short usage guide to learn how to properly use the tool."
+#: ../../source/modules/dwn/bfast_explorer.rst:21
+msgid "Follow this short tutorial to learn how to properly use the tool."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:23
-msgid "Map Tab"
+#: ../../source/modules/dwn/bfast_explorer.rst:24
+msgid "Map tab"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:25
-msgid "This is the starting tab, which we first see when we run the tool. The tab is composed of an interactive map (rendered using Google Maps engine) and a navigation toolbar. Feel free to zoom and pan the map."
+#: ../../source/modules/dwn/bfast_explorer.rst:26
+msgid ""
+"The **Map** tab is the starting tab that is initially displayed when "
+"running the tool. It is composed of an interactive map (rendered using "
+"the Google Maps engine) and a navigation toolbar. Explore the map by "
+"zooming in and panning around."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:30
-msgid "If we wish, we can also use the *search field* located on the top of the toolbar to search for a location. Then, the map automatically zooms to the desired location, similar to how Google Maps works. In the example, we searched for :code:`unicamp campinas`, which is the University of Campinas."
+#: ../../source/modules/dwn/bfast_explorer.rst:31
+msgid ""
+"Users can also use the **Search** field located at the top of the toolbar"
+" to search for a location. The map automatically zooms in on the desired "
+"location, similar to Google Maps."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:35
-msgid "Now, let's zoom out all the way back and place a marker at the north of Brazil, as shown. To *place* a marker, simply click on the map. If we want to, we can also place multiple markers."
+#: ../../source/modules/dwn/bfast_explorer.rst:33
+msgid ""
+"In this example, we searched for :code:`unicamp campinas` (the University"
+" of Campinas)."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:37
-msgid "We may also wish to clear all the placed markers. To do that, click on the |trash-icon| red button on the left side of the toolbar."
+#: ../../source/modules/dwn/bfast_explorer.rst:38
+msgid ""
+"Now, let's zoom out all the way and place a marker in the north of "
+"Brazil, as shown in the example. To place a marker, simply click on the "
+"map. Multiple markers can be placed, if desired."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:42
-msgid "After that, we need to *select* one of the markers in order download its Landsat pixel data. To do that, simply click on an already placer marker, and it will be highlighted. Only one marker may be selected at a time."
+#: ../../source/modules/dwn/bfast_explorer.rst:40
+msgid ""
+"To clear all placed markers, select the red |trash-icon| button on the "
+"left side of the toolbar."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:44
-msgid "By selecting a marker, we can now choose a combination of which satellites to download from using the drop-down menu, located on the bottom of the toolbar. For instance, let's choose all the available satellites products: Landsat 5, 7 and 8 SR."
+#: ../../source/modules/dwn/bfast_explorer.rst:45
+msgid ""
+"Next, select one of the markers to download its Landsat pixel data by "
+"selecting an already placed marker (it will be highlighted; only one "
+"marker may be selected at a time)."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:49
-msgid "Then, we press the |download-icon| :guilabel:`Get Data` blue button, located on the right side of the toolbar. By pressing that button, the download will start. We can keep track of the download progress by looking to the lower right corner. All the historical data available are downloaded, which should take less than 10 seconds for the three productsselected."
+#: ../../source/modules/dwn/bfast_explorer.rst:47
+msgid ""
+"By selecting a marker, you can now choose a combination of which "
+"satellites to download from using the dropdown menu, located on the "
+"bottom of the toolbar. In the example, we have choosen all of the "
+"available satellite products: Landsat 5, 7 and 8 SR."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:53
-msgid "As of the writing of this guide, not all Surface Reflectance data are availble from GEE. So, depending on where we place our markers, we may face a message indicating that *'No data available for the chosen satellite(s) and/or region... Please change your query and try again.'*. Since we rely heavily on GEE to download the data, there's nothing we can do yet. We're sorry for that."
+#: ../../source/modules/dwn/bfast_explorer.rst:52
+msgid ""
+"Then, press the blue |download-icon| :guilabel:`Get data` button, located"
+" on the right side of the toolbar, which will initiate the download of "
+"all historical data available. The download progress is displayed in the "
+"lower-right corner; it should take less than ten seconds for the three "
+"selected products."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:59
-msgid "If the download is successful, we'll receive a message directing to the |chart-icon| :guilabel:`Analysis` tab."
+#: ../../source/modules/dwn/bfast_explorer.rst:56
+msgid ""
+"At the time of writing this article, all surface reflectance data were "
+"not available from GEE. Depending on where you place your markers, you "
+"may receive the following message: \"No data available for the chosen "
+"satellite(s) and/or region...Please change your query and try again.\" "
+"Since the SEPAL platform relies on GEE to download data, the SEPAL team "
+"can not help with this issue."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:62
-msgid "Analysis Tab"
+#: ../../source/modules/dwn/bfast_explorer.rst:61
+msgid ""
+"If the download is successful, you'll receive a message directing you to "
+"the |chart-icon| :guilabel:`Analysis` tab."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_explorer.rst:64
-msgid "In this tab, we can analyze the downloaded data and, then, locally save the results as files."
+msgid "Analysis tab"
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:69
-msgid "First, let's choose which satellite time series date to visualize. Note that, even though we downloaded data from Landsat 5, 7 and 8 SR, we're can still analyze them separately. However, let's proceed by choosing all of them."
+#: ../../source/modules/dwn/bfast_explorer.rst:66
+msgid ""
+"In the **Analysis** tab, we can analyse the downloaded data and save the "
+"results locally as files."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_explorer.rst:71
-msgid "As we can see, the time series of the first spectral band (:code:`b1`) is plotted for all satellites. A colored legend distinguishes the different sources."
+msgid ""
+"First, choose which **Satellite time series date** to visualize. Even "
+"though data was downloaded from Landsat 5, 7 and 8 SR, they can't be "
+"analysed separately. However, let's proceed by choosing all of them."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:76
-msgid "be careful when comparing *spectral bands* data from different satellites, as they may not correspond to the same wavelength range! Read more about this `here <https://landsat.usgs.gov/what-are-band-designations-landsat-satellites>`__."
+#: ../../source/modules/dwn/bfast_explorer.rst:73
+msgid ""
+"The time series of the first spectral band (:code:`b1`) is plotted for "
+"all satellites. A legend distinguishes the different sources."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:81
-msgid "Apart from the spectral bands, there are also four spectral-bands-derived indexes available: NDVI, NDMI, EVI and EVI2. Let's check, for example, the NDVI time series."
+#: ../../source/modules/dwn/bfast_explorer.rst:77
+msgid ""
+"Use caution when comparing **Spectral bands** data from different "
+"satellites, as they may not correspond to the same wavelength range (for "
+"more information, see `this page <https://landsat.usgs.gov/what-are-band-"
+"designations-landsat-satellites>`__)."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:86
-msgid "If we want to, we can also download *all* the time series data as a file. To do that, press the |download-icon| :guilabel:`Data` blue button. All the data will be downloaded as a .CSV, ordered by the acquisiton date. Also, an additional column is included, in order to distinguish the satellite sources."
+#: ../../source/modules/dwn/bfast_explorer.rst:82
+msgid ""
+"Apart from the spectral bands, there are also four spectral-bands-derived"
+" indexes available: **NDVI**, **NDMI**, **EVI** and **EVI2**. As an "
+"example, let's check the **NDVI time series**."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:91
-msgid "We may download the time series plot as an image, by pressing the |download-icon| :guilabel:`Plot` blue button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats."
+#: ../../source/modules/dwn/bfast_explorer.rst:87
+msgid ""
+"All time series data can be downloaded as a file by selecting the blue "
+"|download-icon| :guilabel:`Data` button. All data will be downloaded as a"
+" .csv file, ordered by the acquisiton date. An additional column is "
+"included in order to distinguish satellite sources."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:96
-msgid "Next, we select the *change detection algorithm*. Three options are available: **bfastmonitor**, **bfast01** and **bfast**. More information about these algorithms can be found `here <http://bfast.r-forge.r-project.org/>`__."
+#: ../../source/modules/dwn/bfast_explorer.rst:92
+msgid ""
+"The time series plot can be downloaded as an image by selecting the blue "
+"|download-icon| :guilabel:`Plot` button. A window will appear offering "
+"some raster (.jpeg, .png) and a vectorial (.svg) image output formats."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:101
-msgid "By selecting **bfastmonitor**, we are able to tweak four parameters on the left side-bar: :code:`formula`, :code:`history period type`, :code:`harmonic order`, and :code:`start of monitoring`. These parameters have different impacts on the results, which can be verified on the right side plot. Here, we set the maximum value of the :code:`harmonic order` to 9 to avoid some problems."
+#: ../../source/modules/dwn/bfast_explorer.rst:97
+msgid ""
+"Next, select the **Change detection algorithm**. Three options are "
+"available: **bfastmonitor**, **bfast01** and **bfast** (for more "
+"information, see `this page <http://bfast.r-forge.r-project.org/>`__)."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:103
-msgid "Similar to the time series, we can also download the *results* of the change detection algorithms as .RDS data files, by clicking on the |download-icon| :guilabel:`Results` blue button. If we wish to download the plot, we can press the |download-icon| :guilabel:`Plot` blue button."
+#: ../../source/modules/dwn/bfast_explorer.rst:102
+msgid ""
+"By selecting **bfastmonitor**, you can tweak four parameters in the left "
+"sidebar: :code:`formula`, :code:`history period type`, :code:`harmonic "
+"order`, and :code:`start of monitoring`. These parameters have different "
+"impacts on results, which can be verified on the right side plot. Here, "
+"we set the maximum value of the :code:`harmonic order` to **9** to avoid "
+"problems."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:105
-msgid "For more information on how to load .RDS files on R, please check this `link <http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/>`__."
+#: ../../source/modules/dwn/bfast_explorer.rst:104
+msgid ""
+"Similar to the time series, the results of the change detection "
+"algorithms as .rds data files can also be downloaded by selecting the "
+"blue |download-icon| :guilabel:`Results` button. To download the plot, "
+"select the blue |download-icon| :guilabel:`Plot` button."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:110
-msgid "By selecting **bfast01**, we can tweak two parameters: :code:`formula`, and :code:`harmonic order`."
+#: ../../source/modules/dwn/bfast_explorer.rst:106
+msgid ""
+"For more information on how to load .rds files on R, see `this page "
+"<http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-"
+"loading-r-objects/>`__."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:112
-msgid "Here, the maximum value of the :code:`harmonic order` is dynamically set depending on the time series data length and the choice of the :code:`formula` parameter."
+#: ../../source/modules/dwn/bfast_explorer.rst:111
+msgid ""
+"By selecting **bfast01**, you can tweak two parameters: :code:`formula` "
+"and :code:`harmonic order`."
 msgstr ""
 
-#: ../../source/modules/dwn/bfast_explorer.rst:117
-msgid "Finally, by selecting **bfast**, we may tweak two parameters: :code:`h` (minimal segment size), and :code:`season type`. Please note that, since **bfast** can detect multiple breakpoints, it may take a couple of seconds to process, in comparison to the previous two algorithms."
+#: ../../source/modules/dwn/bfast_explorer.rst:113
+msgid ""
+"Here, the maximum value of the :code:`harmonic order` is set dynamically,"
+" depending on the time series data length and the choice of the "
+":code:`formula` parameter."
 msgstr ""
+
+#: ../../source/modules/dwn/bfast_explorer.rst:118
+msgid ""
+"Finally, by selecting **bfast**, you can tweak two parameters: :code:`h` "
+"(minimal segment size) and :code:`season type`."
+msgstr ""
+
+#: ../../source/modules/dwn/bfast_explorer.rst:120
+msgid ""
+"Since **bfast** can detect multiple breakpoints, it may take a couple of "
+"seconds to process in comparison to the previous two algorithms."
+msgstr ""
+
+#~ msgid ""
+#~ "This tutorial comprehends the BFAST "
+#~ "Explorer v0.0.1. Notice that if you "
+#~ "are using a newer version, some "
+#~ "features might be different."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**BFAST Explorer** is a `Shiny "
+#~ "<https://shiny.rstudio.com/>`__ app, developed using"
+#~ " R and Python, designed for the "
+#~ "analysis of *Landsat Surface Reflectance* "
+#~ "time series pixel data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Three change detection algorithms - "
+#~ "**bfastmonitor**, **bfast01** and **bfast** -"
+#~ " are used in order to investigate "
+#~ "temporal changes in trend and seasonal"
+#~ " components, via breakpoint detection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you encounter any bugs, please "
+#~ "send a message to almeida.xan@gmail.com, "
+#~ "or create an issue on the `GitHub"
+#~ " page <https://github.com/almeidaxan/bfast-"
+#~ "explorer/>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Albeit very simple, please follow this"
+#~ " short usage guide to learn how "
+#~ "to properly use the tool."
+#~ msgstr ""
+
+#~ msgid "Map Tab"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is the starting tab, which we"
+#~ " first see when we run the "
+#~ "tool. The tab is composed of an"
+#~ " interactive map (rendered using Google "
+#~ "Maps engine) and a navigation toolbar."
+#~ " Feel free to zoom and pan the"
+#~ " map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If we wish, we can also use "
+#~ "the *search field* located on the "
+#~ "top of the toolbar to search for"
+#~ " a location. Then, the map "
+#~ "automatically zooms to the desired "
+#~ "location, similar to how Google Maps "
+#~ "works. In the example, we searched "
+#~ "for :code:`unicamp campinas`, which is "
+#~ "the University of Campinas."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Now, let's zoom out all the way"
+#~ " back and place a marker at the"
+#~ " north of Brazil, as shown. To "
+#~ "*place* a marker, simply click on "
+#~ "the map. If we want to, we "
+#~ "can also place multiple markers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We may also wish to clear all "
+#~ "the placed markers. To do that, "
+#~ "click on the |trash-icon| red "
+#~ "button on the left side of the "
+#~ "toolbar."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After that, we need to *select* "
+#~ "one of the markers in order "
+#~ "download its Landsat pixel data. To "
+#~ "do that, simply click on an "
+#~ "already placer marker, and it will "
+#~ "be highlighted. Only one marker may "
+#~ "be selected at a time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By selecting a marker, we can now"
+#~ " choose a combination of which "
+#~ "satellites to download from using the"
+#~ " drop-down menu, located on the "
+#~ "bottom of the toolbar. For instance, "
+#~ "let's choose all the available "
+#~ "satellites products: Landsat 5, 7 and"
+#~ " 8 SR."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then, we press the |download-icon| "
+#~ ":guilabel:`Get Data` blue button, located "
+#~ "on the right side of the toolbar."
+#~ " By pressing that button, the "
+#~ "download will start. We can keep "
+#~ "track of the download progress by "
+#~ "looking to the lower right corner. "
+#~ "All the historical data available are"
+#~ " downloaded, which should take less "
+#~ "than 10 seconds for the three "
+#~ "productsselected."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As of the writing of this guide,"
+#~ " not all Surface Reflectance data are"
+#~ " availble from GEE. So, depending on"
+#~ " where we place our markers, we "
+#~ "may face a message indicating that "
+#~ "*'No data available for the chosen "
+#~ "satellite(s) and/or region... Please change"
+#~ " your query and try again.'*. Since"
+#~ " we rely heavily on GEE to "
+#~ "download the data, there's nothing we"
+#~ " can do yet. We're sorry for "
+#~ "that."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the download is successful, we'll "
+#~ "receive a message directing to the "
+#~ "|chart-icon| :guilabel:`Analysis` tab."
+#~ msgstr ""
+
+#~ msgid "Analysis Tab"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this tab, we can analyze the"
+#~ " downloaded data and, then, locally "
+#~ "save the results as files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First, let's choose which satellite time"
+#~ " series date to visualize. Note that,"
+#~ " even though we downloaded data from"
+#~ " Landsat 5, 7 and 8 SR, we're"
+#~ " can still analyze them separately. "
+#~ "However, let's proceed by choosing all"
+#~ " of them."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As we can see, the time series "
+#~ "of the first spectral band (:code:`b1`)"
+#~ " is plotted for all satellites. A "
+#~ "colored legend distinguishes the different "
+#~ "sources."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "be careful when comparing *spectral "
+#~ "bands* data from different satellites, "
+#~ "as they may not correspond to the"
+#~ " same wavelength range! Read more "
+#~ "about this `here <https://landsat.usgs.gov/what-"
+#~ "are-band-designations-landsat-satellites>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Apart from the spectral bands, there "
+#~ "are also four spectral-bands-derived "
+#~ "indexes available: NDVI, NDMI, EVI and"
+#~ " EVI2. Let's check, for example, the"
+#~ " NDVI time series."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If we want to, we can also "
+#~ "download *all* the time series data "
+#~ "as a file. To do that, press "
+#~ "the |download-icon| :guilabel:`Data` blue "
+#~ "button. All the data will be "
+#~ "downloaded as a .CSV, ordered by "
+#~ "the acquisiton date. Also, an additional"
+#~ " column is included, in order to "
+#~ "distinguish the satellite sources."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We may download the time series "
+#~ "plot as an image, by pressing the"
+#~ " |download-icon| :guilabel:`Plot` blue "
+#~ "button. A window will appear offering"
+#~ " some raster (.JPEG, .PNG) and a "
+#~ "vectorial (.SVG) image output formats."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next, we select the *change detection"
+#~ " algorithm*. Three options are available:"
+#~ " **bfastmonitor**, **bfast01** and **bfast**. "
+#~ "More information about these algorithms "
+#~ "can be found `here "
+#~ "<http://bfast.r-forge.r-project.org/>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By selecting **bfastmonitor**, we are "
+#~ "able to tweak four parameters on "
+#~ "the left side-bar: :code:`formula`, "
+#~ ":code:`history period type`, :code:`harmonic "
+#~ "order`, and :code:`start of monitoring`. "
+#~ "These parameters have different impacts "
+#~ "on the results, which can be "
+#~ "verified on the right side plot. "
+#~ "Here, we set the maximum value of"
+#~ " the :code:`harmonic order` to 9 to"
+#~ " avoid some problems."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Similar to the time series, we can"
+#~ " also download the *results* of the"
+#~ " change detection algorithms as .RDS "
+#~ "data files, by clicking on the "
+#~ "|download-icon| :guilabel:`Results` blue button."
+#~ " If we wish to download the "
+#~ "plot, we can press the |download-"
+#~ "icon| :guilabel:`Plot` blue button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information on how to "
+#~ "load .RDS files on R, please check"
+#~ " this `link "
+#~ "<http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-"
+#~ "loading-r-objects/>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By selecting **bfast01**, we can tweak"
+#~ " two parameters: :code:`formula`, and "
+#~ ":code:`harmonic order`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here, the maximum value of the "
+#~ ":code:`harmonic order` is dynamically set "
+#~ "depending on the time series data "
+#~ "length and the choice of the "
+#~ ":code:`formula` parameter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Finally, by selecting **bfast**, we may"
+#~ " tweak two parameters: :code:`h` (minimal"
+#~ " segment size), and :code:`season type`."
+#~ " Please note that, since **bfast** "
+#~ "can detect multiple breakpoints, it may"
+#~ " take a couple of seconds to "
+#~ "process, in comparison to the previous"
+#~ " two algorithms."
+#~ msgstr ""
 

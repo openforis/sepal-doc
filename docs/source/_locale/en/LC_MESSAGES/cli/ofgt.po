@@ -8,81 +8,90 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:56+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/cli/ofgt.rst:2
-msgid "Open Foris Geospatial Toolkit"
+msgid "OFGT"
 msgstr ""
 
 #: ../../source/cli/ofgt.rst:4
 msgid ""
-"The Open Foris Geospatial Toolkit (OFGT) is a collection of prototype "
-"command-line utilities for the processing of geographical data. The tools"
-" can be divided into stand-alone programmes and scripts. They have been "
-"tested mainly in the Ubuntu Linux environment, although they can be used "
-"with other Linux distros, macOS, and MS Windows (Cywgin) as well. Most of"
-" the stand-alone programmes use GDAL libraries and many of the scripts "
-"rely heavily on GDAL command-line utilities."
+"The **Open Foris Geospatial Toolkit (OFGT)** is a collection of prototype"
+" command-line utilities for processing geographical data. The tools can "
+"be divided into stand-alone programmes and scripts. They have been tested"
+" mainly in the Ubuntu Linux environment, although they can be used with "
+"other Linux distros, macOS, and Microsoft Windows (Cywgin) as well. Most "
+"of the stand-alone programmes use **GDAL libraries** and many of the "
+"scripts rely heavily on **GDAL command-line utilities**."
 msgstr ""
 
 #: ../../source/cli/ofgt.rst:6
 msgid ""
-"The OFGT project started under the Open Foris initiative in an effort to "
-"develop, share and support software tools and methods for multipurpose "
-"forest assessment, monitoring and reporting (see `Open Foris "
-"<http://openforis.org>`__. The initiative develops and supports "
-"innovative, easy-to-use tools needed to produce reliable, up-to-date "
-"information on the state of forest resources and their uses. The command-"
-"line tools aim to simplify the complex process of transforming raw "
-"satellite imagery for automatic image processing to produce valuable "
-"information. These tools contain radiometric harmonization, image "
-"segmentation and image arithmetic, as well as image statistics, feature "
-"extraction, and other image processing analysis."
+"The **OFGT** project started under the Open Foris initiative in an effort"
+" to develop, share and support software tools and methods for "
+"multipurpose forest assessment, monitoring and reporting (see `Open Foris"
+" <http://openforis.org>`__)."
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:8
+msgid ""
+"The Open Foris initiative develops and supports innovative, easy-to-use "
+"tools needed to produce reliable, up-to-date information on the state of "
+"forest resources and their uses."
 msgstr ""
 
 #: ../../source/cli/ofgt.rst:10
+msgid ""
+"The command-line tools aim to simplify the complex process of "
+"transforming raw satellite imagery for automatic image processing to "
+"produce valuable information. These tools contain radiometric "
+"harmonization, image segmentation and image arithmetic, as well as image "
+"statistics, feature extraction and other image processing analysis."
+msgstr ""
+
+#: ../../source/cli/ofgt.rst:14
 msgid "The current version available in SEPAL is :code:`1.25.4`"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:13
+#: ../../source/cli/ofgt.rst:17
 msgid "Available commands"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:15
+#: ../../source/cli/ofgt.rst:19
 msgid ""
-"The complete documentation of the OFGT commands can be found in the `OFGT"
-" manual "
+"The complete documentation of the **OFGT** commands can be found in the "
+"`OFGT manual "
 "<https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:19
+#: ../../source/cli/ofgt.rst:23
 msgid "General tools"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:47
+#: ../../source/cli/ofgt.rst:51
 msgid "Image manipulation"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:66
+#: ../../source/cli/ofgt.rst:70
 msgid "Statistics"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:81
+#: ../../source/cli/ofgt.rst:85
 msgid "Classification"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:94
+#: ../../source/cli/ofgt.rst:98
 msgid "Segmentation"
 msgstr ""
 
-#: ../../source/cli/ofgt.rst:102
+#: ../../source/cli/ofgt.rst:106
 msgid "Projection"
 msgstr ""
 
@@ -7026,5 +7035,55 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Image Manipulation"
+#~ msgstr ""
+
+#~ msgid "Open Foris Geospatial Toolkit"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Open Foris Geospatial Toolkit (OFGT)"
+#~ " is a collection of prototype "
+#~ "command-line utilities for the processing"
+#~ " of geographical data. The tools can"
+#~ " be divided into stand-alone "
+#~ "programmes and scripts. They have been"
+#~ " tested mainly in the Ubuntu Linux"
+#~ " environment, although they can be "
+#~ "used with other Linux distros, macOS,"
+#~ " and MS Windows (Cywgin) as well. "
+#~ "Most of the stand-alone programmes "
+#~ "use GDAL libraries and many of the"
+#~ " scripts rely heavily on GDAL "
+#~ "command-line utilities."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The OFGT project started under the "
+#~ "Open Foris initiative in an effort "
+#~ "to develop, share and support software"
+#~ " tools and methods for multipurpose "
+#~ "forest assessment, monitoring and reporting"
+#~ " (see `Open Foris <http://openforis.org>`__. "
+#~ "The initiative develops and supports "
+#~ "innovative, easy-to-use tools needed "
+#~ "to produce reliable, up-to-date "
+#~ "information on the state of forest "
+#~ "resources and their uses. The "
+#~ "command-line tools aim to simplify "
+#~ "the complex process of transforming raw"
+#~ " satellite imagery for automatic image "
+#~ "processing to produce valuable information."
+#~ " These tools contain radiometric "
+#~ "harmonization, image segmentation and image"
+#~ " arithmetic, as well as image "
+#~ "statistics, feature extraction, and other "
+#~ "image processing analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The complete documentation of the OFGT"
+#~ " commands can be found in the "
+#~ "`OFGT manual "
+#~ "<https://www.openforis.org/fileadmin/user_upload/Geospatial_Toolkit/OFGT_usermanual.pdf>`__."
 #~ msgstr ""
 

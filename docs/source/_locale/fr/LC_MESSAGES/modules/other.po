@@ -1,30 +1,26 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:03\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:03+0000\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: fr\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/other.po\n"
-"X-Crowdin-File-ID: 209\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/other.rst:2
 msgid "Other"
 msgstr "Autre"
 
 #: ../../source/modules/other.rst:4
-msgid "List of the modules gathered under the Other tag:"
-msgstr "Liste des modules rassemblés sous la balise Autre :"
+msgid "Modules with the **Other** tag include:"
+msgstr ""
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/alert_module`"
@@ -55,16 +51,12 @@ msgid ":doc:`dwn/fcdm`"
 msgstr ":doc:`dwn/fcdm`"
 
 #: ../../source/modules/other.rst:1
-msgid "Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests"
-msgstr "Cartographier tous les types de perturbations de la canopie (induites par des humains ou naturels) dans les forêts (semi-)vertes"
-
-#: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/geo_processing`"
-msgstr ":doc:`dwn/geo_processing`"
-
-#: ../../source/modules/other.rst:1
-msgid "..."
-msgstr "..."
+msgid ""
+"Mapping all kind of canopy disturbances (natural or human induced) within"
+" (semi-)evergreen forests"
+msgstr ""
+"Cartographier tous les types de perturbations de la canopie (induites par"
+" des humains ou naturels) dans les forêts (semi-)vertes"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gfc_wrapper_python`"
@@ -79,36 +71,32 @@ msgid ":doc:`dwn/gfc_wrapper_R`"
 msgstr ":doc:`dwn/gfc_wrapper_R`"
 
 #: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/gwl_analysis`"
-msgstr ":doc:`dwn/gwl_analyis`"
-
-#: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/vector_manager`"
 msgstr ":doc:`dwn/vector_manager`"
 
 #: ../../source/modules/other.rst:1
-msgid "Tool to manage vector files in SEPAL (upload, download, export to GEE and grid generation)"
-msgstr "Outil pour gérer les fichiers vectoriels dans SEPAL (téléchargement, exportation vers GEE et génération de grille)"
+msgid ""
+"Tool to manage vector files in SEPAL (upload, download, export to GEE and"
+" grid generation)"
+msgstr ""
+"Outil pour gérer les fichiers vectoriels dans SEPAL (téléchargement, "
+"exportation vers GEE et génération de grille)"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/sae_analysis`"
 msgstr ":doc:`dwn/sae_analyis`"
 
 #: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/sae_design`"
-msgstr ":doc:`dwn/sae_design`"
+msgid "..."
+msgstr "..."
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/tmf`"
 msgstr ":doc:`dwn/tmf`"
 
 #: ../../source/modules/other.rst:1
-msgid "Wrapper for TMF"
-msgstr "Explorateur pour TMF"
-
-#: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/zonal-analysis`"
-msgstr ":doc:`dwn/zonal-analyis`"
+msgid "Tropical Moist Forest by EC-JRC"
+msgstr ""
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/gee-source`"
@@ -124,7 +112,9 @@ msgstr ":doc:`dwn/weplan`"
 
 #: ../../source/modules/other.rst:1
 msgid "Explore restoration planning solution provided by WePlan - Forests"
-msgstr "Explorez la solution de planification de restauration offerte par WePlan - Forêts"
+msgstr ""
+"Explorez la solution de planification de restauration offerte par WePlan "
+"- Forêts"
 
 #: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/basin-river`"
@@ -133,4 +123,22 @@ msgstr ":doc:`dwn/basin-river`"
 #: ../../source/modules/other.rst:1
 msgid "Get Forest Cover Change by upstream sub-catchment"
 msgstr ""
+
+#~ msgid "List of the modules gathered under the Other tag:"
+#~ msgstr "Liste des modules rassemblés sous la balise Autre :"
+
+#~ msgid ":doc:`dwn/geo_processing`"
+#~ msgstr ":doc:`dwn/geo_processing`"
+
+#~ msgid ":doc:`dwn/gwl_analysis`"
+#~ msgstr ":doc:`dwn/gwl_analyis`"
+
+#~ msgid ":doc:`dwn/sae_design`"
+#~ msgstr ":doc:`dwn/sae_design`"
+
+#~ msgid "Wrapper for TMF"
+#~ msgstr "Explorateur pour TMF"
+
+#~ msgid ":doc:`dwn/zonal-analysis`"
+#~ msgstr ":doc:`dwn/zonal-analyis`"
 

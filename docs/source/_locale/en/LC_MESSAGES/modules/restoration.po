@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,14 +17,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/restoration.rst:2
 msgid "Restoration"
 msgstr ""
 
 #: ../../source/modules/restoration.rst:4
-msgid "List of the modules gathered under the Restoration tag:"
+msgid "Modules with the **Restoration** tag include:"
 msgstr ""
 
 #: ../../source/modules/restoration.rst:1
@@ -96,4 +96,7 @@ msgstr ""
 #: ../../source/modules/restoration.rst:1
 msgid "Restoration planning tool using a weighted-sum approach"
 msgstr ""
+
+#~ msgid "List of the modules gathered under the Restoration tag:"
+#~ msgstr ""
 

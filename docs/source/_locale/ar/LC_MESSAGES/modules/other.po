@@ -1,29 +1,26 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:05\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:05+0000\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/other.po\n"
-"X-Crowdin-File-ID: 209\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/other.rst:2
 msgid "Other"
 msgstr ""
 
 #: ../../source/modules/other.rst:4
-msgid "List of the modules gathered under the Other tag:"
+msgid "Modules with the **Other** tag include:"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
@@ -55,15 +52,9 @@ msgid ":doc:`dwn/fcdm`"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
-msgid "Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests"
-msgstr ""
-
-#: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/geo_processing`"
-msgstr ""
-
-#: ../../source/modules/other.rst:1
-msgid "..."
+msgid ""
+"Mapping all kind of canopy disturbances (natural or human induced) within"
+" (semi-)evergreen forests"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
@@ -79,15 +70,13 @@ msgid ":doc:`dwn/gfc_wrapper_R`"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/gwl_analysis`"
-msgstr ""
-
-#: ../../source/modules/other.rst:1
 msgid ":doc:`dwn/vector_manager`"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
-msgid "Tool to manage vector files in SEPAL (upload, download, export to GEE and grid generation)"
+msgid ""
+"Tool to manage vector files in SEPAL (upload, download, export to GEE and"
+" grid generation)"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
@@ -95,7 +84,7 @@ msgid ":doc:`dwn/sae_analysis`"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/sae_design`"
+msgid "..."
 msgstr ""
 
 #: ../../source/modules/other.rst:1
@@ -103,11 +92,7 @@ msgid ":doc:`dwn/tmf`"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
-msgid "Wrapper for TMF"
-msgstr ""
-
-#: ../../source/modules/other.rst:1
-msgid ":doc:`dwn/zonal-analysis`"
+msgid "Tropical Moist Forest by EC-JRC"
 msgstr ""
 
 #: ../../source/modules/other.rst:1
@@ -133,4 +118,22 @@ msgstr ""
 #: ../../source/modules/other.rst:1
 msgid "Get Forest Cover Change by upstream sub-catchment"
 msgstr ""
+
+#~ msgid "List of the modules gathered under the Other tag:"
+#~ msgstr ""
+
+#~ msgid ":doc:`dwn/geo_processing`"
+#~ msgstr ""
+
+#~ msgid ":doc:`dwn/gwl_analysis`"
+#~ msgstr ""
+
+#~ msgid ":doc:`dwn/sae_design`"
+#~ msgstr ""
+
+#~ msgid "Wrapper for TMF"
+#~ msgstr ""
+
+#~ msgid ":doc:`dwn/zonal-analysis`"
+#~ msgstr ""
 

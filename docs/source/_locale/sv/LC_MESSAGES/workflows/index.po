@@ -1,73 +1,87 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:56+0000\n"
-"PO-Revision-Date: 2023-07-31 07:20\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-31 07:20+0000\n"
 "Last-Translator: \n"
-"Language-Team: Swedish\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: sv-SE\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/workflows/index.po\n"
-"X-Crowdin-File-ID: 115\n"
 "Language: sv_SE\n"
+"Language-Team: Swedish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
+msgid "ensemble Sample-based area estimation"
+msgstr ""
+
+#: ../../source/workflows/index.rst:23
 msgid "Sample-based area estimation"
 msgstr ""
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
 msgid "Standard operating procedures"
 msgstr ""
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
 msgid "Continuous degradation detection"
 msgstr ""
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
 msgid "Near real-time forest disturbance mapping (CCDC-based)"
 msgstr ""
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
 msgid "BayTS NRT Monitoring"
 msgstr ""
 
-#: ../../source/workflows/index.rst:20
+#: ../../source/workflows/index.rst:23
 msgid "Direct drivers assessment"
 msgstr ""
 
-#: ../../source/workflows/index.rst:2
+#: ../../source/workflows/index.rst:2 ../../source/workflows/index.rst:19
 msgid "Workflows"
 msgstr ""
 
-#: ../../source/workflows/index.rst:5
+#: ../../source/workflows/index.rst:3
+msgid "*Combine various SEPAL tools and recipes to perform complex data analyses*"
+msgstr ""
+
+#: ../../source/workflows/index.rst:6
 msgid "Overview"
 msgstr ""
 
-#: ../../source/workflows/index.rst:7
-msgid "SEPAL leverages numerous tools and recipes to help users perform data analysis."
+#: ../../source/workflows/index.rst:8
+msgid ""
+"SEPAL leverages numerous tools and recipes to help users perform data "
+"analysis."
 msgstr ""
 
-#: ../../source/workflows/index.rst:9
-msgid "These tools can even be combined in a modular way to execute more complex workflows."
+#: ../../source/workflows/index.rst:10
+msgid ""
+"These tools can even be combined in a modular way to execute more complex"
+" workflows."
 msgstr ""
 
-#: ../../source/workflows/index.rst:11
-msgid "This section presents some workflows that involve using multiple SEPAL tools (modules and/or recipes)."
+#: ../../source/workflows/index.rst:12
+msgid ""
+"The **Workflows** section of SEPAL documentation presents some workflows "
+"that involve using multiple SEPAL tools (modules and/or recipes)."
 msgstr ""
 
-#: ../../source/workflows/index.rst:15
-msgid "If your workflow is not described here and you would like for it to be included in SEPAL documentation, contact the SEPAL team in the `GitHub issue tracker <https://github.com/openforis/sepal-doc/issues/new/choose>`__."
+#: ../../source/workflows/index.rst:16
+msgid ""
+"If your workflow is not described here and you would like for it to be "
+"included in SEPAL documentation, let the SEPAL team know via the `GitHub "
+"Issue Tracker <https://github.com/openforis/sepal-"
+"doc/issues/new/choose>`__."
 msgstr ""
 
-#: ../../source/workflows/index.rst:18
-msgid "Table of contents"
+#: ../../source/workflows/index.rst:21
+msgid "SEPAL workflows include:"
 msgstr ""
 
 #~ msgid "Sample Based Area estimation"
@@ -102,5 +116,23 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Table of content"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section presents some workflows "
+#~ "that involve using multiple SEPAL tools"
+#~ " (modules and/or recipes)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your workflow is not described "
+#~ "here and you would like for it "
+#~ "to be included in SEPAL documentation,"
+#~ " contact the SEPAL team in the "
+#~ "`GitHub issue tracker <https://github.com/openforis"
+#~ "/sepal-doc/issues/new/choose>`__."
+#~ msgstr ""
+
+#~ msgid "Table of contents"
 #~ msgstr ""
 

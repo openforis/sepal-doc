@@ -1,65 +1,87 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:09\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:09+0000\n"
 "Last-Translator: \n"
 "Language: sv\n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: sv-SE\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/gfc_wrapper_python.po\n"
-"X-Crowdin-File-ID: 167\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:2
 msgid "Forest change mask"
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:4
-msgid "Base Forest mask and Fragmentation tool"
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:3
+msgid "*Base forest mask and fragmentation tool*"
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:6
-msgid "This application allows the user to: -   define an area of interest -   retrieve tree cover change data from the `Hansen et al, (2013) <https://science.sciencemag.org/content/342/6160/850>`_ dataset -   combine the layers to produce a forest change map, for a given canopy cover threshold"
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:5
+msgid ""
+"As a base forest mask and fragmentation tool, this application allows "
+"users to:"
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:7
+msgid "define an area of interest (AOI);"
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:8
+msgid ""
+"retrieve tree cover change data from the `Hansen et al. (2013) dataset "
+"<https://science.sciencemag.org/content/342/6160/850>`_; and"
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:9
+msgid ""
+"combine layers to produce a forest change map for a given canopy cover "
+"threshold."
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:12
-msgid "Background info on Global Forest Change (GFC)"
+msgid "Background information on Global Forest Change"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:14
-msgid "GFC provides global layers of information on tree cover and tree cover change since 2000, at 30m spatial resolution and consists of:"
+msgid ""
+"Global forest change (GFC) provides global layers of information on tree "
+"cover and tree cover change since 2000 (at 30 m spatial resolution), "
+"consisting of:"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:16
-msgid "Tree canopy cover for the year 2000 (treecover2000)"
+msgid "tree canopy cover for the year 2000 (**treecover2000**);"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:17
-msgid "Global forest cover gain 2000–2012 (gain)"
+msgid "global forest cover gain for 2000–2012 (**gain**); and"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:18
-msgid "Year of gross forest cover loss event (lossyear)"
+msgid "year of gross forest cover loss event (**lossyear**)."
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:20
-msgid "For more information please refer to:"
+msgid "For more information, please refer to:"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:22
-msgid "`Hansen, M. C. et Al. 2013. “High-Resolution Global Maps of 21st-Century Forest Cover Change.” Science 342 (15 November): 850–53. <https://science.sciencemag.org/content/342/6160/850>`_"
+msgid ""
+"Hansen, M.C. *et al.* 2013. High-Resolution Global Maps of 21st-Century "
+"Forest Cover Change. *Science*, 342: 850–53. "
+"https://science.sciencemag.org/content/342/6160/850"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:23
-msgid "University of Maryland, GFC `dataset <http://earthenginepartners.appspot.com/science-2013-global-forest>`_"
+msgid ""
+"University of Maryland, `Global forest change dataset "
+"<http://earthenginepartners.appspot.com/science-2013-global-forest>`_"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:29
@@ -71,70 +93,279 @@ msgid "Select an AOI"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:37
-msgid "Using the provided AOI selector, select an AOI of your choice between the different methods available in the tool. We provide 3 administration descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on the map, asset or shapefile)."
+msgid ""
+"Using the provided **AOI selector**, choose an AOI of your choice between"
+" different methods available in the tool."
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:45
-msgid "If a custom aoi from shape or drawing is selected, you will be able to use it directly and the upload to GEE will be launched in the background. Check your `GEE code editor <https://code.earthengine.google.com>`_ to use it elsewhere."
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:39
+msgid ""
+"We provide three administrative descriptors (from level 0 to 2) and three"
+" custom shapes (drawn directly on the map, asset, or shapefile)."
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:48
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:47
+msgid ""
+"If a custom AOI from a shape or drawing is selected, you can use it "
+"directly; the upload to GEE will be launched in the background. Check "
+"your `GEE code editor <https://code.earthengine.google.com>`_ to use it "
+"elsewhere."
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:50
 msgid "GFC visualization"
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:49
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:52
 msgid "Two parameters are available to select the data:"
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:51
-msgid "Use the slider to change the threshold to consider between forest and non-forest areas. Once you've selected a value, click on :code:`update map` to update the interactive map layers."
-msgstr ""
-
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:52
-msgid "Use the Range slider to move the dates to consider in the analysis."
-msgstr ""
-
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:54
-msgid "The new layer is a combination of the GFC layers to produce a forest change map, for a given canopy cover threshold. Only pixels that have a treecover above the threshold will be considered as forest. Every treecovered pixel prior to the start date will be considered as \"non forest\" and every changed that occurs after the end date will be considered as \"stable forest\". The legend is displayed in the map. You're allowed to zoom in-out, the data will be dynamically recomputed in GEE."
+msgid ""
+"Use the slider to change the threshold to consider (between forest and "
+"non-forest areas). Once you've chosen a value, select :code:`update map` "
+"to update the interactive map layers."
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:56
-msgid "When changing the value of the threshold or the dates, a new layer will be added to the map so you can compare and select the more appropriate value of parameters for your analysis."
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:55
+msgid "Use the range slider to move the dates to consider in the analysis."
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:60
-msgid "The parameters that will be used for the next step is the last asked value of threshold. If you want to come back to a previous value, move the slider back and click on :code:`update map` again."
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:57
+msgid ""
+"The new layer is a combination of GFC layers to produce a forest change "
+"map for a given canopy cover threshold. Only pixels that have tree cover "
+"above the threshold will be considered forest. Every tree-covered pixel "
+"prior to the start date will be considered as **non-forest** and every "
+"changed that occurs after the end date will be considered **stable "
+"forest**. The legend is displayed in the map. You're allowed to zoom in "
+"and out; the data will be recomputed dynamically in GEE."
 msgstr ""
 
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:67
-msgid "Export selected data"
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:59
+msgid ""
+"When changing the value of the threshold or the dates, a new layer will "
+"be added to the map, so you can compare and select the most appropriate "
+"parameters for your analysis."
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:63
+msgid ""
+"The parameters that will be used for the next step are the final values "
+"requested of the threshold. To return to a previous value, move the "
+"slider back and select :code:`update map` again."
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:69
-msgid "Considering the Aoi selected in **step 1** and the parameters selected in **step 2**, the module will generate a combination of the GFC layers to produce a forest change map, for a given canopy cover threshold and between specific dates. It will live in a :code:`~/gfc_wrapper_results/<aoi_name>` folder of your sepal environment."
+msgid "Export selected data"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:71
-msgid "3 results will be produced:"
+msgid ""
+"Considering the AOI selected in **Step 1** and the parameters selected in"
+" **Step 2**, the module will generate a combination of GFC layers to "
+"produce a forest change map for a given canopy cover threshold between "
+"specific dates. It will be stored in a "
+":code:`~/gfc_wrapper_results/<aoi_name>` folder in your SEPAL "
+"environment."
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:73
-msgid "The map of the forest change mask using the color tab presented in the interactive maps (:code:`..._gfc_map.tif``)"
-msgstr ""
-
-#: ../../source/modules/dwn/gfc_wrapper_python.rst:74
-msgid "The distribution of each defined zone (:code:`..._gfc_stat.csv`)"
+msgid "Three results will be produced:"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:75
-msgid "The legend of the raster (:code:`..._gfc_legend.pd```"
+msgid ""
+"the map of the forest change mask using the color tab presented in the "
+"interactive maps (:code:`..._gfc_map.tif``);"
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:76
+msgid "the distribution of each defined zone (:code:`..._gfc_stat.csv`); and"
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:77
-msgid "You can download these 3 files directly from the interface using the green buttons. These files are name after your parameters following this convention: :code:`<threshold>_<start_date>_<end_date>_<file>.<suffix>`"
+msgid "the legend of the raster (:code:`..._gfc_legend.pd```)."
+msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:79
+msgid ""
+"Download these three files directly from the interface using the green "
+"buttons."
 msgstr ""
 
 #: ../../source/modules/dwn/gfc_wrapper_python.rst:81
-msgid "The statistic computations are run in the `World Mollweide (ESRI:54009) <https://epsg.io/54009>`_ projection. The results may differs if you want to get them in a local projection."
+msgid ""
+"The files are named after your parameters, following this convention: "
+":code:`<threshold>_<start_date>_<end_date>_<file>.<suffix>`"
 msgstr ""
+
+#: ../../source/modules/dwn/gfc_wrapper_python.rst:85
+msgid ""
+"The statistic computations are run in the `World Mollweide (ESRI:54009) "
+"projection <https://epsg.io/54009>`_. The results may differ if you want "
+"to get them in a local projection."
+msgstr ""
+
+#~ msgid "Base Forest mask and Fragmentation tool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This application allows the user to: "
+#~ "-   define an area of interest -"
+#~ "   retrieve tree cover change data "
+#~ "from the `Hansen et al, (2013) "
+#~ "<https://science.sciencemag.org/content/342/6160/850>`_ dataset"
+#~ " -   combine the layers to produce"
+#~ " a forest change map, for a "
+#~ "given canopy cover threshold"
+#~ msgstr ""
+
+#~ msgid "Background info on Global Forest Change (GFC)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GFC provides global layers of "
+#~ "information on tree cover and tree "
+#~ "cover change since 2000, at 30m "
+#~ "spatial resolution and consists of:"
+#~ msgstr ""
+
+#~ msgid "Tree canopy cover for the year 2000 (treecover2000)"
+#~ msgstr ""
+
+#~ msgid "Global forest cover gain 2000–2012 (gain)"
+#~ msgstr ""
+
+#~ msgid "Year of gross forest cover loss event (lossyear)"
+#~ msgstr ""
+
+#~ msgid "For more information please refer to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Hansen, M. C. et Al. 2013. "
+#~ "“High-Resolution Global Maps of 21st-"
+#~ "Century Forest Cover Change.” Science "
+#~ "342 (15 November): 850–53. "
+#~ "<https://science.sciencemag.org/content/342/6160/850>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "University of Maryland, GFC `dataset "
+#~ "<http://earthenginepartners.appspot.com/science-2013-global-"
+#~ "forest>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Using the provided AOI selector, select"
+#~ " an AOI of your choice between "
+#~ "the different methods available in the"
+#~ " tool. We provide 3 administration "
+#~ "descriptions (from level 0 to 2) "
+#~ "and 3 custom shapes (drawn directly "
+#~ "on the map, asset or shapefile)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If a custom aoi from shape or "
+#~ "drawing is selected, you will be "
+#~ "able to use it directly and the"
+#~ " upload to GEE will be launched "
+#~ "in the background. Check your `GEE "
+#~ "code editor <https://code.earthengine.google.com>`_ "
+#~ "to use it elsewhere."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use the slider to change the "
+#~ "threshold to consider between forest and"
+#~ " non-forest areas. Once you've "
+#~ "selected a value, click on :code:`update"
+#~ " map` to update the interactive map"
+#~ " layers."
+#~ msgstr ""
+
+#~ msgid "Use the Range slider to move the dates to consider in the analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The new layer is a combination of"
+#~ " the GFC layers to produce a "
+#~ "forest change map, for a given "
+#~ "canopy cover threshold. Only pixels that"
+#~ " have a treecover above the threshold"
+#~ " will be considered as forest. Every"
+#~ " treecovered pixel prior to the start"
+#~ " date will be considered as \"non "
+#~ "forest\" and every changed that occurs"
+#~ " after the end date will be "
+#~ "considered as \"stable forest\". The "
+#~ "legend is displayed in the map. "
+#~ "You're allowed to zoom in-out, the"
+#~ " data will be dynamically recomputed "
+#~ "in GEE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When changing the value of the "
+#~ "threshold or the dates, a new "
+#~ "layer will be added to the map "
+#~ "so you can compare and select the"
+#~ " more appropriate value of parameters "
+#~ "for your analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The parameters that will be used "
+#~ "for the next step is the last "
+#~ "asked value of threshold. If you "
+#~ "want to come back to a previous"
+#~ " value, move the slider back and "
+#~ "click on :code:`update map` again."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Considering the Aoi selected in **step"
+#~ " 1** and the parameters selected in"
+#~ " **step 2**, the module will generate"
+#~ " a combination of the GFC layers "
+#~ "to produce a forest change map, "
+#~ "for a given canopy cover threshold "
+#~ "and between specific dates. It will "
+#~ "live in a :code:`~/gfc_wrapper_results/<aoi_name>`"
+#~ " folder of your sepal environment."
+#~ msgstr ""
+
+#~ msgid "3 results will be produced:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The map of the forest change mask"
+#~ " using the color tab presented in "
+#~ "the interactive maps (:code:`..._gfc_map.tif``)"
+#~ msgstr ""
+
+#~ msgid "The distribution of each defined zone (:code:`..._gfc_stat.csv`)"
+#~ msgstr ""
+
+#~ msgid "The legend of the raster (:code:`..._gfc_legend.pd```"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can download these 3 files "
+#~ "directly from the interface using the"
+#~ " green buttons. These files are name"
+#~ " after your parameters following this "
+#~ "convention: "
+#~ ":code:`<threshold>_<start_date>_<end_date>_<file>.<suffix>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The statistic computations are run in"
+#~ " the `World Mollweide (ESRI:54009) "
+#~ "<https://epsg.io/54009>`_ projection. The results"
+#~ " may differs if you want to get"
+#~ " them in a local projection."
+#~ msgstr ""
 

@@ -1,168 +1,353 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:07\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:07+0000\n"
 "Last-Translator: \n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: pt-PT\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/coverage_analysis.po\n"
-"X-Crowdin-File-ID: 153\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/coverage_analysis.rst:2
 msgid "Coverage analysis tool for optical data"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:4
-msgid "Module using the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ framework and an interactive **Voila** dashboard to create maps of cloud-free observations for major optical satellites as available on Google's Earth Engine Platform."
+#: ../../source/modules/dwn/coverage_analysis.rst:3
+msgid "*Check per-pixel data availability*"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:6
-msgid "The framework follows the logic of bfasts' countObs and summaryBrick functions as described `here <http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_."
+#: ../../source/modules/dwn/coverage_analysis.rst:5
+msgid ""
+"This module uses the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ "
+"framework and interactive **Voila** dashboard to create maps of cloud-"
+"free observations for major optical satellites available on the Google "
+"Earth Engine (GEE) platform."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:8
-msgid "For bfast specific requirements check `Schultz et al. 2013 <http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_ for further background."
+#: ../../source/modules/dwn/coverage_analysis.rst:7
+msgid ""
+"The framework follows the logic of BFAST's countObs and summaryBrick "
+"functions, as described `here "
+"<http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_ (BFAST "
+"refers to Breaks For Additive Season and Trend)."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:10
-msgid "The process is done in 3 steps described in the below sections:"
+#: ../../source/modules/dwn/coverage_analysis.rst:9
+msgid ""
+"For more information about BFAST, see `Schultz et al. (2013) "
+"<http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:13
-msgid "Select an AOI"
+#: ../../source/modules/dwn/coverage_analysis.rst:11
+msgid "The three-step process is described in the following sections."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:15
-msgid "Using the provided AOI selector, select an AOI of your choice between the different methods available in the tool. We provide 3 administration descriptions (from level 0 to 2) and 3 custom shapes (drawn directly on the map, asset or shapefile)."
+#: ../../source/modules/dwn/coverage_analysis.rst:14
+msgid "Select an area of interest (AOI)"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:19
-msgid "aoi selector"
+#: ../../source/modules/dwn/coverage_analysis.rst:16
+msgid ""
+"Using the provided **AOI** selector, select an AOI from the available "
+"methods. We provide three administrative descriptors (from level 0 to 2) "
+"and three custom shapes (drawn directly on the map, asset or shapefile)."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:23
-msgid "If a custom aoi from shape or drawing is selected, you will be able to use it directly and the upload to GEE will be launched in the background"
+#: ../../source/modules/dwn/coverage_analysis.rst:20
+msgid "AOI selector"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:26
+#: ../../source/modules/dwn/coverage_analysis.rst:24
+msgid ""
+"If a custom AOI from a shape or drawing is selected, you will be able to "
+"use it directly (the upload to GEE will be launched in the background)."
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:27
 msgid "Select dataset parameters"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:28
-msgid "To perform the bfast preanalysis you need to provide the tool with key parameters:"
-msgstr ""
-
-#: ../../source/modules/dwn/coverage_analysis.rst:30
-msgid "**date range**: The start and end date of your analysis"
+#: ../../source/modules/dwn/coverage_analysis.rst:29
+msgid "To perform BFAST pre-analysis, provide the tool with key parameters:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:31
-msgid "**sensors**: The list of sensors you want to use (Landsat missions & Sentinel-2)"
+msgid "**Date range**: the start and end dates of your analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:32
-msgid "**Tier 2**: Tier 2 images of the Landsat missions (this might lead to wrong results)"
+msgid ""
+"**Sensors**: the list of sensors you want to use (Landsat missions and "
+"Sentinel-2)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:33
-msgid "**SR**: whether to use Surface Reflectance images (SR). default to Top of atmosphere (TOA)"
+msgid ""
+"**Tier 2**: Tier 2 images of the Landsat missions (note: this might lead "
+"to incorrect results)"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:35
-msgid "Once all your parameters are selected you need to click on the button to make your selection effective"
+#: ../../source/modules/dwn/coverage_analysis.rst:34
+msgid ""
+"**SR**: whether to use surface reflectance (SR) images (by default, TOA, "
+"referring to top of atmosphere)"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:40
+#: ../../source/modules/dwn/coverage_analysis.rst:36
+msgid "Once all parameters have been chosen, select the button."
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:41
 msgid "Display dataset"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:42
-msgid "After having selected your parameters you can move to the Visualization tile. Select one of the statistical measures to display in the following list:"
+#: ../../source/modules/dwn/coverage_analysis.rst:43
+msgid "After selecting your parameters, move to the **Visualization** tile."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:45
-msgid "Cloud-free pixel count"
-msgstr ""
-
-#: ../../source/modules/dwn/coverage_analysis.rst:46
-msgid "Total pixel count (i.e. scene coverage)"
+msgid "Select one of the statistical measures to display in the following list:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:47
-msgid "NDVI Median"
+msgid "cloud-free pixel count"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:48
-msgid "NDVI Std. Dev."
+msgid "total pixel count (i.e. scene coverage)"
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:49
+msgid "NDVI Median (normalized difference vegetation index median)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:50
-msgid "You can also decide to produce stats on yearly basis using the provided switch"
+msgid "NDVI Std. Dev. (normalized difference vegetation index standard deviation)"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:56
-msgid "The image will be dynamically re-evaluated and re-centered on every change"
+#: ../../source/modules/dwn/coverage_analysis.rst:52
+msgid "You can also produce stats on a yearly basis using the provided switch."
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:59
-msgid "Export dataset"
+#: ../../source/modules/dwn/coverage_analysis.rst:58
+msgid "The image will be dynamically re-evaluated and recentred upon each change."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:61
-msgid "Once you're happy with the information displayed then can be exported to be further used in a GIS software or in a GEE process. The tool provides 2 main exportation options, as an asset(in GEE) or as a Tif file in SEPAL."
+msgid "Export dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:63
-msgid "Both use the GEE export system and share the same set of parameter:"
+msgid ""
+"When you're satisifed with the displayed information, it can be exported "
+"for further use in GIS software or a GEE process. The tool provides two "
+"main exportation options:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:65
-msgid "statistical measures to export"
+msgid "as an asset (in GEE), or"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:67
-msgid "count of cloud-free observation per pixel"
+#: ../../source/modules/dwn/coverage_analysis.rst:66
+msgid "a .tif file (in SEPAL)."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:68
-msgid "NDVI's median of cloud-free observations"
-msgstr ""
-
-#: ../../source/modules/dwn/coverage_analysis.rst:69
-msgid "NDVI\\'s std. dev. of cloud-free observations"
+msgid "Both use the GEE export system and share the same set of parameters:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:70
-msgid "count for all observations per pixel"
+msgid "**Statistical measures to export**"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:72
-msgid "time-period"
+msgid "count of cloud-free observation per pixel"
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:73
+msgid "NDVI's median of cloud-free observations"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:74
-msgid "full timespan calculation(s)"
+msgid "NDVI's std. dev. of cloud-free observations"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:75
-msgid "annual calculation(s)"
+msgid "count for all observations per pixel"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:77
-msgid "scale: the resolution (in meters) to us in GEE exported file"
+msgid "**Time period**"
 msgstr ""
 
-#: ../../source/modules/dwn/coverage_analysis.rst:83
-msgid "When the image is exported to SEPAL, you cannot quit the application until the downloading is finished."
+#: ../../source/modules/dwn/coverage_analysis.rst:79
+msgid "full timespan calculation(s)"
 msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:80
+msgid "annual calculation(s)"
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:82
+msgid "**Scale**: the resolution (in metres) to use in the exported GEE file"
+msgstr ""
+
+#: ../../source/modules/dwn/coverage_analysis.rst:88
+msgid ""
+"When exporting the image to SEPAL, you cannot quit the application until "
+"the download is finished."
+msgstr ""
+
+#~ msgid ""
+#~ "Module using the `sepal_ui "
+#~ "<https://github.com/12rambau/sepal_ui>`_ framework and "
+#~ "an interactive **Voila** dashboard to "
+#~ "create maps of cloud-free observations"
+#~ " for major optical satellites as "
+#~ "available on Google's Earth Engine "
+#~ "Platform."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The framework follows the logic of "
+#~ "bfasts' countObs and summaryBrick functions"
+#~ " as described `here "
+#~ "<http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For bfast specific requirements check "
+#~ "`Schultz et al. 2013 "
+#~ "<http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_ for "
+#~ "further background."
+#~ msgstr ""
+
+#~ msgid "The process is done in 3 steps described in the below sections:"
+#~ msgstr ""
+
+#~ msgid "Select an AOI"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Using the provided AOI selector, select"
+#~ " an AOI of your choice between "
+#~ "the different methods available in the"
+#~ " tool. We provide 3 administration "
+#~ "descriptions (from level 0 to 2) "
+#~ "and 3 custom shapes (drawn directly "
+#~ "on the map, asset or shapefile)."
+#~ msgstr ""
+
+#~ msgid "aoi selector"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If a custom aoi from shape or "
+#~ "drawing is selected, you will be "
+#~ "able to use it directly and the"
+#~ " upload to GEE will be launched "
+#~ "in the background"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To perform the bfast preanalysis you "
+#~ "need to provide the tool with key"
+#~ " parameters:"
+#~ msgstr ""
+
+#~ msgid "**date range**: The start and end date of your analysis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**sensors**: The list of sensors you "
+#~ "want to use (Landsat missions & "
+#~ "Sentinel-2)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Tier 2**: Tier 2 images of the"
+#~ " Landsat missions (this might lead to"
+#~ " wrong results)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**SR**: whether to use Surface "
+#~ "Reflectance images (SR). default to Top"
+#~ " of atmosphere (TOA)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all your parameters are selected"
+#~ " you need to click on the "
+#~ "button to make your selection effective"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After having selected your parameters "
+#~ "you can move to the Visualization "
+#~ "tile. Select one of the statistical "
+#~ "measures to display in the following "
+#~ "list:"
+#~ msgstr ""
+
+#~ msgid "Cloud-free pixel count"
+#~ msgstr ""
+
+#~ msgid "Total pixel count (i.e. scene coverage)"
+#~ msgstr ""
+
+#~ msgid "NDVI Median"
+#~ msgstr ""
+
+#~ msgid "NDVI Std. Dev."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can also decide to produce "
+#~ "stats on yearly basis using the "
+#~ "provided switch"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The image will be dynamically re-"
+#~ "evaluated and re-centered on every "
+#~ "change"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you're happy with the information"
+#~ " displayed then can be exported to"
+#~ " be further used in a GIS "
+#~ "software or in a GEE process. The"
+#~ " tool provides 2 main exportation "
+#~ "options, as an asset(in GEE) or as"
+#~ " a Tif file in SEPAL."
+#~ msgstr ""
+
+#~ msgid "Both use the GEE export system and share the same set of parameter:"
+#~ msgstr ""
+
+#~ msgid "statistical measures to export"
+#~ msgstr ""
+
+#~ msgid "NDVI\\'s std. dev. of cloud-free observations"
+#~ msgstr ""
+
+#~ msgid "time-period"
+#~ msgstr ""
+
+#~ msgid "scale: the resolution (in meters) to us in GEE exported file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the image is exported to "
+#~ "SEPAL, you cannot quit the application"
+#~ " until the downloading is finished."
+#~ msgstr ""
 

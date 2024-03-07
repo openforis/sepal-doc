@@ -8,160 +8,159 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 01:02+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/_templates/disclaimer.rst:3
 msgid ""
-"This section is intended for the Sepal team members only. If you ended up"
-" here there is no need to read this documentation, You'll not have access"
-" to the referred tools"
+"The **SEPAL team documentation** section was developed for SEPAL team "
+"members only. While contributors and collaborators are encouraged to "
+"review these articles, they are not mandatory for general SEPAL users."
 msgstr ""
 
-#: ../../source/team/classroom.rst:4 ../../source/team/classroom.rst:10
-msgid "Google classroom"
+#: ../../source/team/classroom.rst:4
+msgid "Google Classroom"
 msgstr ""
 
-#: ../../source/team/classroom.rst:7
+#: ../../source/team/classroom.rst:5
+msgid "*Learn how to use SEPAL's Google Classroom*"
+msgstr ""
+
+#: ../../source/team/classroom.rst:8
 msgid "Usage"
+msgstr ""
+
+#: ../../source/team/classroom.rst:10
+msgid ""
+"To provide consistent, up-to-date training materials, the SEPAL team uses"
+" Google Classroom."
 msgstr ""
 
 #: ../../source/team/classroom.rst:12
 msgid ""
-"To provide the team with consistent and up to date formation material, we"
-" decided to use the Google classroom platform. It will allow everyone to "
-"share and update the presentations and material that will be used by the "
-"whole team."
-msgstr ""
-
-#: ../../source/team/classroom.rst:14
-msgid ""
-"First open your professional Google account and go to the `Google "
-"Classroom page <https://classroom.google.com/u/0/h>`_:"
+"To access SEPAL's Google Classroom, open your professional Google account"
+" and go to `the SEPAL project's Google Classroom page "
+"<https://classroom.google.com/u/0/h>`_ (you should see something like the"
+" following image, except for the classes)."
 msgstr ""
 
 #: ../../source/team/classroom.rst:16
-msgid "You should see something like the following image, minus the classes :"
+msgid "Each class is composed of several :code:`Topics`."
 msgstr ""
 
-#: ../../source/team/classroom.rst:20
+#: ../../source/team/classroom.rst:18
 msgid ""
-"each class is composed by several :code:`topics` and each topic can embed"
-" different kind of material including : :code:`exercices`, :code:`exams` "
-"and :code:`material` as presented in the image below:"
+"Each **Topic** can include different types of content, including: "
+":code:`exercises`, :code:`exams`, and :code:`material`."
 msgstr ""
 
-#: ../../source/team/classroom.rst:26
+#: ../../source/team/classroom.rst:24
 msgid ""
-"If you have any question about the classrooms of the team and how to use "
-"them don't hesitate to contact the maintainer of the gmail account "
-"(:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick "
-"Rambaud <pierrick.rambaud@fao.org>`) they will answer as soon as "
-"possible."
+"If you need support with SEPAL's Google Classroom, contact "
+":email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick "
+"Rambaud <pierrick.rambaud@fao.org>`."
 msgstr ""
 
-#: ../../source/team/classroom.rst:29
+#: ../../source/team/classroom.rst:27
 msgid "Creating a classroom"
 msgstr ""
 
-#: ../../source/team/classroom.rst:31
+#: ../../source/team/classroom.rst:29
 msgid ""
-"If you need material for a webinar you can either directly reuse one of "
-"the general classroom or create your own. You can follow the steps "
-"presented in the following tutorial to create a class of your own."
+"If you need material for a webinar, you can either reuse one of the "
+"general classrooms or create your own by following the steps presented in"
+" the following tutorial."
+msgstr ""
+
+#: ../../source/team/classroom.rst:35
+msgid ""
+"If you create your own course as a combination of different modules, "
+"invite :email:`sepal.classroom@gmail.com` as a teacher and make this "
+"account the owner of the classroom. You will still be able to do "
+"everything as a teacher, but the content will be stored in a communal "
+"account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:37
 msgid ""
-"If you create your own course as a combination of different modules, "
-"invite :email:`sepal.classrom@gmail.com` as a teacher, and then make this"
-" account owner of the classroom. As a teacher you will still be able to "
-"do everything but the content will resides in a communal account."
+"When creating basic content, you can reuse posts from other classes that "
+"you are teaching."
 msgstr ""
 
-#: ../../source/team/classroom.rst:39
+#: ../../source/team/classroom.rst:43
 msgid ""
-"When creating basic content, you can re-use posts from classes were you "
-"are teaching as shown in the following image:"
+"If you want to reuse material from other classes, you will need to be "
+"added as a teacher for these classes by contacting :email:`Aurelie "
+"Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud "
+"<pierrick.rambaud@fao.org>`."
 msgstr ""
 
-#: ../../source/team/classroom.rst:45
+#: ../../source/team/classroom.rst:47
 msgid ""
-"Don't forget to be add as teacher on any class you want to reuse. ask it "
-"via mail to the maintainer of the gmail account (:email:`Aurelie shapiro "
-"<aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud "
-"<pierrick.rambaud@fao.org>`)."
+"To avoid duplicate copies of content, please *do not* select the option "
+"to **Create new copies of all attachments**."
 msgstr ""
 
-#: ../../source/team/classroom.rst:49
-msgid ""
-"To avoid duplicate copies of content, do NOT click the option to copy all"
-" attachments"
+#: ../../source/team/classroom.rst:52
+msgid "Use general content"
 msgstr ""
 
 #: ../../source/team/classroom.rst:54
-msgid "Use the general content"
+msgid ""
+"To use general content in your classrooms, add the **General class "
+"content** folder to your Google Drive account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:56
-msgid ""
-"To use the general content in your classrooms you need to add the general"
-" content folder to your drive. The command has disappeared in 2018 from "
-"Google drive. Now Google only offer the opportunity to create shortcut to"
-" other drives which is not sufficient in our case. As there were too many"
-" complains the reintegrated the feature."
+msgid "Open **Google Drive** and go to the **Share with me** section."
 msgstr ""
 
 #: ../../source/team/classroom.rst:58
-msgid ""
-"In your drive got to the “share with me\" section and click on the "
-"“General Class Content” folder."
+msgid "Select the **General class content** folder."
 msgstr ""
 
 #: ../../source/team/classroom.rst:62
 msgid ""
-"If the content has not been shared with you ask for it to any of your "
-"colleague"
+"If the content has not yet been shared with you, ask your colleagues to "
+"do so."
 msgstr ""
 
-#: ../../source/team/classroom.rst:67
-msgid ""
-"Then press :code:`maj+Z`. You should see the following pop-up window. By "
-"clicking on add the folder will be wired to your own google drive."
+#: ../../source/team/classroom.rst:66
+msgid "Enter :code:`maj+Z`."
 msgstr ""
 
-#: ../../source/team/classroom.rst:71
-msgid ""
-"In a classroom to reuse a file from this folder, edit the classroom "
-"content:"
+#: ../../source/team/classroom.rst:68
+msgid "Select **Add** to connect the folder to your own Google Drive account."
 msgstr ""
 
-#: ../../source/team/classroom.rst:75
-msgid ""
-"Then add a file from Gdrive (to make sure that you're reusing an already "
-"existing file):"
+#: ../../source/team/classroom.rst:72
+msgid "To reuse a file from this folder, use the **Edit** function."
 msgstr ""
 
-#: ../../source/team/classroom.rst:81
-msgid ""
-"The file you're using is made for general purpose and it's not supposed "
-"to be adapted to the specific needs of your formation. If the "
-"modification you're making are improving the quality of the presentation "
-"it's perfect but if you adapt it to your formation specific need, you "
-"should consider copy it to you drive."
+#: ../../source/team/classroom.rst:76
+msgid "Then, add a file from Google Drive:"
 msgstr ""
 
-#: ../../source/team/classroom.rst:85
+#: ../../source/team/classroom.rst:82
 msgid ""
-"All the team members have the right to edit this file, mistakes will "
-"impact all of us and all the already existing classrooms that use this "
-"file."
+"The file you're using is made for general purposes and should not be "
+"adapted to your specific needs. If you're improving the quality of the "
+"presentation, making modifications to the original is permitted; however,"
+" any other modifications should be made in another version, which you can"
+" create by copying the original to your Google Drive account."
+msgstr ""
+
+#: ../../source/team/classroom.rst:86
+msgid ""
+"Since everyone on the SEPAL team can edit these files, mistakes could "
+"impact all members and existing classrooms that use this file. Please "
+"exercise caution."
 msgstr ""
 
 #~ msgid ""
@@ -205,5 +204,167 @@ msgstr ""
 #~ "<aurelie.shapiro@fao.org>`_ and :email:`Pierrick "
 #~ "Rambaud <pierrick.rambaud@fao.org>`_) they will "
 #~ "answer as soon as possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section is intended for the "
+#~ "Sepal team members only. If you "
+#~ "ended up here there is no need "
+#~ "to read this documentation, You'll not"
+#~ " have access to the referred tools"
+#~ msgstr ""
+
+#~ msgid "Google classroom"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To provide the team with consistent "
+#~ "and up to date formation material, "
+#~ "we decided to use the Google "
+#~ "classroom platform. It will allow "
+#~ "everyone to share and update the "
+#~ "presentations and material that will be"
+#~ " used by the whole team."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First open your professional Google "
+#~ "account and go to the `Google "
+#~ "Classroom page <https://classroom.google.com/u/0/h>`_:"
+#~ msgstr ""
+
+#~ msgid "You should see something like the following image, minus the classes :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "each class is composed by several "
+#~ ":code:`topics` and each topic can embed"
+#~ " different kind of material including "
+#~ ": :code:`exercices`, :code:`exams` and "
+#~ ":code:`material` as presented in the "
+#~ "image below:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have any question about the"
+#~ " classrooms of the team and how "
+#~ "to use them don't hesitate to "
+#~ "contact the maintainer of the gmail "
+#~ "account (:email:`Aurelie shapiro "
+#~ "<aurelie.shapiro@fao.org>` and :email:`Pierrick "
+#~ "Rambaud <pierrick.rambaud@fao.org>`) they will "
+#~ "answer as soon as possible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you need material for a webinar"
+#~ " you can either directly reuse one"
+#~ " of the general classroom or create"
+#~ " your own. You can follow the "
+#~ "steps presented in the following "
+#~ "tutorial to create a class of your"
+#~ " own."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you create your own course as"
+#~ " a combination of different modules, "
+#~ "invite :email:`sepal.classrom@gmail.com` as a "
+#~ "teacher, and then make this account "
+#~ "owner of the classroom. As a "
+#~ "teacher you will still be able to"
+#~ " do everything but the content will"
+#~ " resides in a communal account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When creating basic content, you can "
+#~ "re-use posts from classes were you"
+#~ " are teaching as shown in the "
+#~ "following image:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Don't forget to be add as teacher"
+#~ " on any class you want to "
+#~ "reuse. ask it via mail to the "
+#~ "maintainer of the gmail account "
+#~ "(:email:`Aurelie shapiro <aurelie.shapiro@fao.org>` "
+#~ "and :email:`Pierrick Rambaud "
+#~ "<pierrick.rambaud@fao.org>`)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To avoid duplicate copies of content,"
+#~ " do NOT click the option to "
+#~ "copy all attachments"
+#~ msgstr ""
+
+#~ msgid "Use the general content"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To use the general content in your"
+#~ " classrooms you need to add the "
+#~ "general content folder to your drive."
+#~ " The command has disappeared in 2018"
+#~ " from Google drive. Now Google only"
+#~ " offer the opportunity to create "
+#~ "shortcut to other drives which is "
+#~ "not sufficient in our case. As "
+#~ "there were too many complains the "
+#~ "reintegrated the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In your drive got to the “share"
+#~ " with me\" section and click on "
+#~ "the “General Class Content” folder."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the content has not been shared"
+#~ " with you ask for it to any "
+#~ "of your colleague"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then press :code:`maj+Z`. You should see"
+#~ " the following pop-up window. By "
+#~ "clicking on add the folder will be"
+#~ " wired to your own google drive."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In a classroom to reuse a file "
+#~ "from this folder, edit the classroom "
+#~ "content:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then add a file from Gdrive (to"
+#~ " make sure that you're reusing an "
+#~ "already existing file):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The file you're using is made for"
+#~ " general purpose and it's not "
+#~ "supposed to be adapted to the "
+#~ "specific needs of your formation. If "
+#~ "the modification you're making are "
+#~ "improving the quality of the "
+#~ "presentation it's perfect but if you "
+#~ "adapt it to your formation specific "
+#~ "need, you should consider copy it "
+#~ "to you drive."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All the team members have the "
+#~ "right to edit this file, mistakes "
+#~ "will impact all of us and all "
+#~ "the already existing classrooms that use"
+#~ " this file."
 #~ msgstr ""
 

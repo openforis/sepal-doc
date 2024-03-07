@@ -1,29 +1,27 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:08\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:08+0000\n"
 "Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
+"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
+">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ru\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/disaster.po\n"
-"X-Crowdin-File-ID: 135\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/disaster.rst:2
 msgid "Disaster"
 msgstr ""
 
 #: ../../source/modules/disaster.rst:4
-msgid "List of the modules gathered under the Disaster tag:"
+msgid "Modules with the **Disaster** tag include:"
 msgstr ""
 
 #: ../../source/modules/disaster.rst:1
@@ -33,4 +31,7 @@ msgstr ""
 #: ../../source/modules/disaster.rst:1
 msgid "Damage estimation from Sentinel-1"
 msgstr ""
+
+#~ msgid "List of the modules gathered under the Disaster tag:"
+#~ msgstr ""
 

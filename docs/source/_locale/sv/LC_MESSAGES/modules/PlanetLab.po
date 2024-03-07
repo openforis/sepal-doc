@@ -1,29 +1,25 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
-"PO-Revision-Date: 2023-07-21 08:09\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"PO-Revision-Date: 2023-07-21 08:09+0000\n"
 "Last-Translator: \n"
 "Language: sv\n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: sv-SE\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/PlanetLab.po\n"
-"X-Crowdin-File-ID: 131\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/PlanetLab.rst:2
 msgid "Planetlab"
 msgstr ""
 
 #: ../../source/modules/PlanetLab.rst:4
-msgid "List of the modules gathered under the Planetlab tag:"
+msgid "Modules with the **Planetlab** tag include:"
 msgstr ""
 
 #: ../../source/modules/PlanetLab.rst:1
@@ -39,6 +35,14 @@ msgid ":doc:`dwn/sepafe`"
 msgstr ""
 
 #: ../../source/modules/PlanetLab.rst:1
-msgid "..."
+msgid ""
+"Display active and past fire events from the Fire Information for "
+"Resource Management System (FIRMS) using Planet Lab data."
 msgstr ""
+
+#~ msgid "List of the modules gathered under the Planetlab tag:"
+#~ msgstr ""
+
+#~ msgid "..."
+#~ msgstr ""
 

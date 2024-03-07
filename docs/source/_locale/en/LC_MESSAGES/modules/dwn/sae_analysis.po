@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 13:38+0000\n"
+"POT-Creation-Date: 2024-03-07 09:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,10 +17,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../source/modules/dwn/sae_analysis.rst:2
-msgid "Stratified Area Estimation (SAE) – Analysis"
+msgid "SAE analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:5
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:11
 msgid ""
-"First, open the tool by selecting **Stratified Area Estimator - "
+"First, open the tool by selecting **Stratified Area Estimator (SAE) - "
 "Analysis** in the **Apps** window."
 msgstr ""
 
@@ -54,13 +54,13 @@ msgstr ""
 msgid ""
 "You will land on the **Introduction** page which allows you to choose "
 "your language and provides background information on the tool. Note that "
-"**Reference and Documents** are in the same place as the **Design** tool."
+"**Reference and documents** are in the same place as the **Design** tool."
 " The pages that contain the necessary steps for the workflow are on the "
 "left side of the screen and need to be completed sequentially."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
-msgid "The stratified estimator analysis tool."
+msgid "The SAE tool"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:19
@@ -88,8 +88,8 @@ msgstr ""
 msgid ""
 "For projects completed in the CEO-SEPAL bridge: -   Check that you are "
 "logged out of the CEO website. -   Paste the URL from your CEO-SEPAL "
-"bridge project into the field marked **CEO url**, or simply select the "
-"**Paste CEO url from clipboard** button. -   Select :code:`Import CEO "
+"bridge project into the field marked **CEO URL**, or simply select the "
+"**Paste CEO URL from clipboard** button. -   Select :code:`Import CEO "
 "project`, which will populate the input file for the **Reference data** "
 "as well as the column names."
 msgstr ""
@@ -97,8 +97,8 @@ msgstr ""
 #: ../../source/modules/dwn/sae_analysis.rst:29
 msgid ""
 "**Area data**:  This is a .csv file that was automatically created during"
-" the Stratified Area Estimator – Design workflow. It contains area values"
-" for each mapped land cover class."
+" the SAE – Design workflow. It contains area values for each mapped land "
+"cover class."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:31
@@ -122,7 +122,7 @@ msgid ""
 "Next, you will need to adjust some parameters so that the tool recognizes"
 " the column names for your reference data and area data that contain the "
 "necessary information for your accuracy assessment. You should now see a "
-"populated **Required input** panel on the right side of the screen."
+"populated **Required input** pane on the right side of the screen."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:41
@@ -131,13 +131,13 @@ msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:45
 msgid ""
-"For projects completed in CEO: This will either be your question name or "
-"the new column name you created in Part 2 above. Here, it is "
-"COLLECTED_CLASS following the directions."
+"**For projects completed in CEO**: This will either be your question name"
+" or the new column name you created in **Part 2** above. Here, it is "
+"**COLLECTED_CLASS**, following the directions."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:46
-msgid "For projects completed in CEO-SEPAL: ref_code"
+msgid "**For projects completed in CEO-SEPAL**: **ref_code**"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:48
@@ -145,11 +145,11 @@ msgid "Choose the column with the map data information."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:52
-msgid "For projects completed in CEO: PL_MAP_CLASS"
+msgid "**For projects completed in CEO**: **PL_MAP_CLASS**"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:53
-msgid "For projects completed in CEO-SEPAL: map_code"
+msgid "**For projects completed in CEO-SEPAL**: **map_code**"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:55
@@ -166,18 +166,18 @@ msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:61
 msgid ""
-"For projects completed in CEO: Use **map_code** if you have a column in "
-"your reference data. If you use **map_edited_class** you must make sure "
-"that capitalization is correct."
+"**For projects completed in CEO**: Use **map_code** if you have a column "
+"in your reference data. If you use **map_edited_class** you must make "
+"sure that capitalization is correct."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:62
-msgid "For projects completed in CEO-SEPAL, use **map_code**."
+msgid "**For projects completed in CEO-SEPAL**: Use **map_code**."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:64
 msgid ""
-"You can add a **Display data** column to enable validation on-the-fly. "
+"You can add a **Display data** column to enable validation on the fly. "
 "You can choose any column from your CEO or CEO-SEPAL project. We "
 "recommend either your map class (e.g. PL_MAP_CLASS) or your reference "
 "data class (e.g. question name column). This example uses a CEO project."
@@ -194,7 +194,7 @@ msgid ""
 " Fix the location of your plots by specifying the correct columns to use "
 "as the X and Y coordinates in the map. Select the dropdown menus and "
 "choose the appropriate coordinate columns for X and Y coordinates (the X "
-"coordinate should be LON; the Y coordinate should be LAT)."
+"coordinate should be **LON**; the Y coordinate should be **LAT**)."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:73
@@ -218,19 +218,19 @@ msgid ""
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
-msgid "The Confusion matrix output by SEPAL."
+msgid "The **Confusion matrix** output by SEPAL"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:84
 msgid ""
 "Typically you would have to create the confusion table yourself and "
-"calculate the accuracies; however, the SAE-Analysis tool does this for "
-"you."
+"calculate the accuracies; however, the **SAE analysis** tool does this "
+"for you."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:88
 msgid ""
-"If you completed previous sections, how does the SAE-Analysis tool's "
+"If you completed previous sections, how does the **SAE analysis** tool's "
 "calculations compare with your own?"
 msgstr ""
 
@@ -254,19 +254,19 @@ msgid ""
 "which has its own confidence interval. In this exercise, we collected "
 "validation data using a stratified sample, so the values we need to use "
 "are the stratified random values. Note that all area estimates are in map"
-" units. You can change your desired **confidence interval** using the "
+" units. You can change your desired **Confidence interval** using the "
 "slider at the top of the panel. You can download area estimates as "
 "tabular data (.csv) using the button."
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
-msgid "The Area estimates screen in SEPAL."
+msgid "The **Area estimates** screen in SEPAL"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:99
 msgid ""
 "The **Graph** plots area estimates based on map pixel count, stratified "
-"random sample, simple random sample, unbiased stratified random, and "
+"random sample, simple random sample, unbiased stratified random and "
 "direct estimate stratified random."
 msgstr ""
 
@@ -286,7 +286,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:-1
-msgid "A graph of the area estimates based on different sample designs."
+msgid "A graph of the area estimates based on different sample designs"
 msgstr ""
 
 #: ../../source/modules/dwn/sae_analysis.rst:112
@@ -294,4 +294,168 @@ msgid ""
 "For support, `ask the community <https://groups.google.com/g/sepal-"
 "users>`__."
 msgstr ""
+
+#~ msgid "Stratified Area Estimation (SAE) – Analysis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First, open the tool by selecting "
+#~ "**Stratified Area Estimator - Analysis** "
+#~ "in the **Apps** window."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You will land on the **Introduction**"
+#~ " page which allows you to choose "
+#~ "your language and provides background "
+#~ "information on the tool. Note that "
+#~ "**Reference and Documents** are in the"
+#~ " same place as the **Design** tool."
+#~ " The pages that contain the necessary"
+#~ " steps for the workflow are on "
+#~ "the left side of the screen and"
+#~ " need to be completed sequentially."
+#~ msgstr ""
+
+#~ msgid "The stratified estimator analysis tool."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For projects completed in the CEO-"
+#~ "SEPAL bridge: -   Check that you "
+#~ "are logged out of the CEO website."
+#~ " -   Paste the URL from your "
+#~ "CEO-SEPAL bridge project into the "
+#~ "field marked **CEO url**, or simply "
+#~ "select the **Paste CEO url from "
+#~ "clipboard** button. -   Select :code:`Import"
+#~ " CEO project`, which will populate "
+#~ "the input file for the **Reference "
+#~ "data** as well as the column "
+#~ "names."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Area data**:  This is a .csv "
+#~ "file that was automatically created "
+#~ "during the Stratified Area Estimator –"
+#~ " Design workflow. It contains area "
+#~ "values for each mapped land cover "
+#~ "class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next, you will need to adjust some"
+#~ " parameters so that the tool "
+#~ "recognizes the column names for your "
+#~ "reference data and area data that "
+#~ "contain the necessary information for "
+#~ "your accuracy assessment. You should now"
+#~ " see a populated **Required input** "
+#~ "panel on the right side of the "
+#~ "screen."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For projects completed in CEO: This "
+#~ "will either be your question name "
+#~ "or the new column name you created"
+#~ " in Part 2 above. Here, it is"
+#~ " COLLECTED_CLASS following the directions."
+#~ msgstr ""
+
+#~ msgid "For projects completed in CEO-SEPAL: ref_code"
+#~ msgstr ""
+
+#~ msgid "For projects completed in CEO: PL_MAP_CLASS"
+#~ msgstr ""
+
+#~ msgid "For projects completed in CEO-SEPAL: map_code"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For projects completed in CEO: Use "
+#~ "**map_code** if you have a column "
+#~ "in your reference data. If you use"
+#~ " **map_edited_class** you must make sure"
+#~ " that capitalization is correct."
+#~ msgstr ""
+
+#~ msgid "For projects completed in CEO-SEPAL, use **map_code**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can add a **Display data** "
+#~ "column to enable validation on-the-"
+#~ "fly. You can choose any column "
+#~ "from your CEO or CEO-SEPAL "
+#~ "project. We recommend either your map"
+#~ " class (e.g. PL_MAP_CLASS) or your "
+#~ "reference data class (e.g. question name"
+#~ " column). This example uses a CEO "
+#~ "project."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have set these input "
+#~ "parameters, select :code:`Check` on the "
+#~ "left side of the window. This page"
+#~ " will plot your samples on a "
+#~ "world map. Fix the location of "
+#~ "your plots by specifying the correct "
+#~ "columns to use as the X and "
+#~ "Y coordinates in the map. Select "
+#~ "the dropdown menus and choose the "
+#~ "appropriate coordinate columns for X and"
+#~ " Y coordinates (the X coordinate "
+#~ "should be LON; the Y coordinate "
+#~ "should be LAT)."
+#~ msgstr ""
+
+#~ msgid "The Confusion matrix output by SEPAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Typically you would have to create "
+#~ "the confusion table yourself and "
+#~ "calculate the accuracies; however, the "
+#~ "SAE-Analysis tool does this for you."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you completed previous sections, how"
+#~ " does the SAE-Analysis tool's "
+#~ "calculations compare with your own?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Estimations are broken up into simple"
+#~ " and stratified estimates, each of "
+#~ "which has its own confidence interval."
+#~ " In this exercise, we collected "
+#~ "validation data using a stratified "
+#~ "sample, so the values we need to"
+#~ " use are the stratified random "
+#~ "values. Note that all area estimates "
+#~ "are in map units. You can change"
+#~ " your desired **confidence interval** using"
+#~ " the slider at the top of the"
+#~ " panel. You can download area "
+#~ "estimates as tabular data (.csv) using"
+#~ " the button."
+#~ msgstr ""
+
+#~ msgid "The Area estimates screen in SEPAL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The **Graph** plots area estimates based"
+#~ " on map pixel count, stratified "
+#~ "random sample, simple random sample, "
+#~ "unbiased stratified random, and direct "
+#~ "estimate stratified random."
+#~ msgstr ""
+
+#~ msgid "A graph of the area estimates based on different sample designs."
+#~ msgstr ""
 
