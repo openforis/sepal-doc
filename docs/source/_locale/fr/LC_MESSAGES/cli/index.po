@@ -1,22 +1,26 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-31 07:17+0000\n"
+"PO-Revision-Date: 2024-03-07 08:53\n"
 "Last-Translator: \n"
-"Language: fr_FR\n"
 "Language-Team: French\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/index.po\n"
+"X-Crowdin-File-ID: 49\n"
+"Language: fr_FR\n"
 
 #: ../../source/cli/index.rst:2
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 #: ../../source/cli/index.rst:3
 msgid "*Use CLI utilities and coding tools in SEPAL*"
@@ -27,43 +31,27 @@ msgid "CLI tools"
 msgstr "Outils CLI"
 
 #: ../../source/cli/index.rst:8
-msgid ""
-"To help resolve specific problems, the SEPAL platform includes a variety "
-"of useful command-line interface (CLI) utilities, including:"
+msgid "To help resolve specific problems, the SEPAL platform includes a variety of useful command-line interface (CLI) utilities, including:"
 msgstr ""
 
 #: ../../source/cli/index.rst:22
-msgid ""
-"These tools can be called directly from the terminal or via any "
-"programming language sending commands to the kernel, including R and "
-"Python (installed by default on any SEPAL account)."
+msgid "These tools can be called directly from the terminal or via any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account)."
 msgstr ""
 
 #: ../../source/cli/index.rst:29
-#, fuzzy
 msgid "The code executed previously on an existing :code:`example.tif` file:"
-msgstr "Le code exécuté précédemment sur un fichier :code:`example.tif`."
+msgstr ""
 
 #: ../../source/cli/index.rst:37
-msgid ""
-"If you're running actions from multiple directories or instances, you can"
-" open multiple **Terminal** tabs and name them as you see fit."
+msgid "If you're running actions from multiple directories or instances, you can open multiple **Terminal** tabs and name them as you see fit."
 msgstr ""
 
 #: ../../source/cli/index.rst:41
-msgid ""
-"If the code you want to execute is taking time, consider running it in "
-"the background using :code:`nohup`:"
+msgid "If the code you want to execute is taking time, consider running it in the background using :code:`nohup`:"
 msgstr ""
 
 #: ../../source/cli/index.rst:47
-msgid ""
-"All console outputs will be redirected to a :code:`nohup.out` in your "
-"home directory, but the execution will be running in the background. You "
-"will be able to safely close the terminal or even the browser window "
-"without interrupting the process (for more information about "
-":code:`nohup`, see `this article "
-"<https://en.wikipedia.org/wiki/Nohup>`__)."
+msgid "All console outputs will be redirected to a :code:`nohup.out` in your home directory, but the execution will be running in the background. You will be able to safely close the terminal or even the browser window without interrupting the process (for more information about :code:`nohup`, see `this article <https://en.wikipedia.org/wiki/Nohup>`__)."
 msgstr ""
 
 #: ../../source/cli/index.rst:50
@@ -71,9 +59,7 @@ msgid "Coding tools"
 msgstr ""
 
 #: ../../source/cli/index.rst:52
-msgid ""
-"In the **Apps** section, there are three coding tools at the top of the "
-"list:"
+msgid "In the **Apps** section, there are three coding tools at the top of the list:"
 msgstr ""
 
 #: ../../source/cli/index.rst:54
@@ -81,20 +67,15 @@ msgid "JupyterLab"
 msgstr "JupyterLab"
 
 #: ../../source/cli/index.rst:55
-#, fuzzy
 msgid "Jupyter Notebook"
-msgstr "JupyterNotebook"
+msgstr "Jupyter Notebook"
 
 #: ../../source/cli/index.rst:56
 msgid "RStudio"
 msgstr ""
 
 #: ../../source/cli/index.rst:61
-msgid ""
-"They will allow the user to code wokflows in any of the available "
-"languages using the corresponding environment in SEPAL. These "
-"environments are fully customizable (view the :code:`Python` or :code:`R`"
-" section to know more)."
+msgid "They will allow the user to code wokflows in any of the available languages using the corresponding environment in SEPAL. These environments are fully customizable (view the :code:`Python` or :code:`R` section to know more)."
 msgstr ""
 
 #~ msgid ""
@@ -177,7 +158,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "SEPAL environment"
-#~ msgstr "Environnement SEPAL"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The SEPAL platform includes a variety"
@@ -212,6 +193,9 @@ msgstr ""
 #~ " default on any SEPAL account)."
 #~ msgstr ""
 
+#~ msgid "The code executed previously on an existing :code:`example.tif` file."
+#~ msgstr ""
+
 #~ msgid ""
 #~ "If the code you want to execute"
 #~ " is taking time, consider running it"
@@ -235,6 +219,9 @@ msgstr ""
 #~ "In the **App** section, you'll find "
 #~ "three coding tools at the top of"
 #~ " the list:"
+#~ msgstr ""
+
+#~ msgid "JupyterNotebook"
 #~ msgstr ""
 
 #~ msgid ""
