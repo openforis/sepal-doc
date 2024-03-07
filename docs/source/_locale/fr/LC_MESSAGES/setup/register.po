@@ -1,56 +1,50 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-04-13 00:58+0000\n"
+"PO-Revision-Date: 2024-03-07 08:53\n"
 "Last-Translator: \n"
-"Language: fr_FR\n"
 "Language-Team: French\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/register.po\n"
+"X-Crowdin-File-ID: 101\n"
+"Language: fr_FR\n"
 
 #: ../../source/setup/register.rst:2
 msgid "Register"
 msgstr ""
 
 #: ../../source/setup/register.rst:3
-#, fuzzy
-msgid ""
-"*Create accounts with SEPAL, GEE and CEO, and request additional SEPAL "
-"resources*"
-msgstr "Configurez vos comptes et demandez des ressources supplémentaires"
+msgid "*Create accounts with SEPAL, GEE and CEO, and request additional SEPAL resources*"
+msgstr ""
 
 #: ../../source/setup/register.rst:5
-#, fuzzy
 msgid "In this article, learn how to:"
-msgstr "Dans cet article, vous pouvez apprendre à :"
+msgstr ""
 
 #: ../../source/setup/register.rst:7
-#, fuzzy
 msgid ":ref:`create a SEPAL account <create>` (mandatory)"
-msgstr ":ref:`Créer un compte SEPAL <create>` (Mandatory)"
+msgstr ""
 
 #: ../../source/setup/register.rst:8
-#, fuzzy
 msgid ":ref:`request additional SEPAL resources <request>` (recommended)"
-msgstr ":ref:`Demande de ressources SEPAL supplémentaires <request>` (Recommandé)"
+msgstr ""
 
 #: ../../source/setup/register.rst:9
-#, fuzzy
 msgid ":ref:`register and connect with GEE <GEE>` (recommended)"
 msgstr ""
-":ref:`S'inscrire et se connecter avec Google Earth Engine "
-"<GEE>(Recommandé)"
 
 #: ../../source/setup/register.rst:10
-#, fuzzy
 msgid ":ref:`register to CEO <ceo>` (optional)"
-msgstr ":ref:`Enregistrez-vous à Collect Earth Online (CEO) <ceo>` (facultatif)"
+msgstr ""
 
 #: ../../source/setup/register.rst:15
 msgid "Create a SEPAL account"
@@ -69,9 +63,8 @@ msgid "Select :guilabel:`Launch` > :guilabel:`Sign up`."
 msgstr "Sélectionnez :guilabel:`Lancement` > :guilabel:`Inscription`."
 
 #: ../../source/setup/register.rst:32
-#, fuzzy
 msgid "Create a username and enter your information into the form."
-msgstr "Entrez vos informations dans le formulaire."
+msgstr ""
 
 #: ../../source/setup/register.rst:40
 msgid "Select :btn:`<fa-solid fa-envelope> Sign up`."
@@ -86,152 +79,79 @@ msgid "Create a password."
 msgstr "Créer un mot de passe."
 
 #: ../../source/setup/register.rst:60
-msgid ""
-"After completing registration, ask to join the `Google Group community "
-"<https://groups.google.com/g/sepal-users>`__, where you can receive "
-"general support."
+msgid "After completing registration, ask to join the `Google Group community <https://groups.google.com/g/sepal-users>`__, where you can receive general support."
 msgstr ""
 
 #: ../../source/setup/register.rst:62
-#, fuzzy
-msgid ""
-"For usage questions, ask the `GIS StackExchange community "
-"<https://gis.stackexchange.com/questions/tagged/sepal>`__, using the "
-"**SEPAL** tag."
+msgid "For usage questions, ask the `GIS StackExchange community <https://gis.stackexchange.com/questions/tagged/sepal>`__, using the **SEPAL** tag."
 msgstr ""
-"Pour obtenir de l’aide, allez sur `Geographic Information Systems "
-"StackExchange <https://gis.stackexchange.com/questions/tagged/sepal>`__  "
-"(seulement en anglais) et posez une question à la communauté en utilisant"
-" le tag **SEPAL**."
 
 #: ../../source/setup/register.rst:64
-#, fuzzy
-msgid ""
-"With your new account, you can perform basic operations, such as "
-"visualizing and processing satellite imagery, saving recipes, and "
-"navigating through the platform. However, some SEPAL features are not "
-"fully available. For example, the **Terminal** and **Tools** buttons – "
-"located in the vertical **Tabs** bar on the left – are deactivated "
-"because these functions require an **instance** and a **quota**. To "
-"receive full access, go to the :ref:`Request access <request>` section."
+msgid "With your new account, you can perform basic operations, such as visualizing and processing satellite imagery, saving recipes, and navigating through the platform. However, some SEPAL features are not fully available. For example, the **Terminal** and **Tools** buttons – located in the vertical **Tabs** bar on the left – are deactivated because these functions require an **instance** and a **quota**. To receive full access, go to the :ref:`Request access <request>` section."
 msgstr ""
-"Avec votre nouveau compte, vous pouvez effectuer des opérations de base, "
-"telles que la visualisation et le traitement des images satellites, la "
-"sauvegarde des recettes et la navigation à travers la plateforme ; "
-"Cependant, certaines fonctionnalités SEPAL ne sont pas entièrement "
-"disponibles (e. . dans la barre **Tabs** à gauche, **Terminal** et "
-"**Outils** sont désactivés car ces fonctions nécessitent une instance et "
-"un quota). Pour obtenir un accès complet, allez à la :ref:`section "
-"demande d'accès <request>`."
 
 #: ../../source/setup/register.rst:75
 msgid "Request additional SEPAL resources"
 msgstr "Demander des ressources SEPAL supplémentaires"
 
 #: ../../source/setup/register.rst:76 ../../source/setup/register.rst:102
-#, fuzzy
 msgid "*(Recommended)*"
-msgstr "(Recommandé)"
+msgstr ""
 
 #: ../../source/setup/register.rst:78
-msgid ""
-"To use SEPAL modules and acesss the command line terminal and development"
-" tools like Jupyter or RStudio, you will need to request processing "
-"resources."
-msgstr ""
-"Pour utiliser les modules SEPAL et accéder au terminal en ligne de "
-"commande et aux outils de développement comme Jupyter ou RStudio, vous "
-"devrez demander des ressources de traitement."
+msgid "To use SEPAL modules and acesss the command line terminal and development tools like Jupyter or RStudio, you will need to request processing resources."
+msgstr "Pour utiliser les modules SEPAL et accéder au terminal en ligne de commande et aux outils de développement comme Jupyter ou RStudio, vous devrez demander des ressources de traitement."
 
 #: ../../source/setup/register.rst:80
 msgid "Select the **User report** button (**$ 0/h**) in the lower-right corner."
 msgstr ""
 
 #: ../../source/setup/register.rst:81
-#, fuzzy
 msgid "Select :btn:`<fa-solid fa-pencil> Request additional resources`."
 msgstr ""
-"Sélectionnez **Quota** > :btn:`<fa-solid fa-pencil> Demandez des "
-"ressources supplémentaires`."
 
 #: ../../source/setup/register.rst:82
 msgid "Complete the form and select :btn:`<fa-solid fa-check> Apply`."
-msgstr ""
-"Remplissez le formulaire et sélectionnez :btn:`<fa-solid fa-check> "
-"Appliquer`."
+msgstr "Remplissez le formulaire et sélectionnez :btn:`<fa-solid fa-check> Appliquer`."
 
 #: ../../source/setup/register.rst:84
-#, fuzzy
-msgid ""
-"If you do not know how many resources you will use, see `Manage your "
-"resources <https://docs.sepal.io/en/latest/setup/resource.html>`__."
+msgid "If you do not know how many resources you will use, see `Manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>`__."
 msgstr ""
-"Si vous ne savez pas combien de ressources vous utiliserez, allez à la "
-"section `gestion des ressources <resource>` pour plus d'informations."
 
 #: ../../source/setup/register.rst:96
-msgid ""
-"Applications are evaluated by the SEPAL team to prevent bots and "
-"malicious users from accessing the platform."
-msgstr ""
-"Les demandes sont évaluées par l'équipe SEPAL pour empêcher les bots et "
-"les utilisateurs malveillants d'accéder à la plate-forme."
+msgid "Applications are evaluated by the SEPAL team to prevent bots and malicious users from accessing the platform."
+msgstr "Les demandes sont évaluées par l'équipe SEPAL pour empêcher les bots et les utilisateurs malveillants d'accéder à la plate-forme."
 
 #: ../../source/setup/register.rst:101
 msgid "Sign up for GEE"
 msgstr ""
 
 #: ../../source/setup/register.rst:106
-#, fuzzy
-msgid ""
-"While SEPAL can run computation on its own Google Earth Engine (GEE) "
-"account on your behalf, the SEPAL team highly recommends signing up to "
-"GEE to improve your experience."
+msgid "While SEPAL can run computation on its own Google Earth Engine (GEE) account on your behalf, the SEPAL team highly recommends signing up to GEE to improve your experience."
 msgstr ""
-"Alors que SEPAL peut exécuter le calcul sur son propre compte GEE en "
-"votre nom, l'équipe SEPAL vous recommande vivement de vous inscrire à GEE"
-" pour améliorer votre expérience."
 
 #: ../../source/setup/register.rst:108
-#, fuzzy
-msgid ""
-"If you already have a Google email address, sign up for a GEE account by "
-"going to https://earthengine.google.com/new_signup."
+msgid "If you already have a Google email address, sign up for a GEE account by going to https://earthengine.google.com/new_signup."
 msgstr ""
-"Si vous avez déjà une adresse e-mail Google, allez sur "
-"https://earthengine.google.com/new_signup/ pour créer un compte GEE."
 
 #: ../../source/setup/register.rst:-1
-#, fuzzy
 msgid "Request access to GEE"
-msgstr "Demander l'accès à Google Earth Engine (GEE)."
+msgstr ""
 
 #: ../../source/setup/register.rst:114
-#, fuzzy
-msgid ""
-"If you don't have a Google email address, sign up by going to "
-"http://mail.google.com/mail/sign-up."
+msgid "If you don't have a Google email address, sign up by going to http://mail.google.com/mail/sign-up."
 msgstr ""
-"Si vous n'avez pas d'adresse e-mail Google, allez sur "
-"http://mail.google.com/mail/sign up pour vous inscrire."
 
 #: ../../source/setup/register.rst:116
-#, fuzzy
-msgid ""
-"Once you have a GEE account, access the interface by going to "
-"https://code.earthengine.google.com."
+msgid "Once you have a GEE account, access the interface by going to https://code.earthengine.google.com."
 msgstr ""
-"Une fois que vous avez un compte GEE, allez sur "
-"https://code.earthengine.google.com/ pour accéder à l'interface."
 
 #: ../../source/setup/register.rst:-1
 msgid "GEE code editor"
 msgstr ""
 
 #: ../../source/setup/register.rst:124
-msgid ""
-"If you experience problems registering with GEE, `ask the community "
-"<https://groups.google.com/g/sepal-users>`__."
+msgid "If you experience problems registering with GEE, `ask the community <https://groups.google.com/g/sepal-users>`__."
 msgstr ""
 
 #: ../../source/setup/register.rst:129
@@ -239,32 +159,20 @@ msgid "Sign up for CEO"
 msgstr ""
 
 #: ../../source/setup/register.rst:130
-#, fuzzy
 msgid "*(Optional)*"
-msgstr "(Facultatif)"
+msgstr ""
 
 #: ../../source/setup/register.rst:134
-#, fuzzy
-msgid ""
-"To get the most out of the SEPAL platform's **Classification** and "
-"**Validation** tools, the SEPAL team highly suggests using Collect Earth "
-"Online (CEO) for collecting point-based training and validation data."
+msgid "To get the most out of the SEPAL platform's **Classification** and **Validation** tools, the SEPAL team highly suggests using Collect Earth Online (CEO) for collecting point-based training and validation data."
 msgstr ""
-"Pour tirer le meilleur parti des outils de **Classification** et de "
-"**Validation** de la plateforme SEPAL l'équipe SEPAL propose fortement "
-"d'utiliser CEO pour la collecte de données de formation et de validation "
-"basées sur des points."
 
 #: ../../source/setup/register.rst:136
 msgid "To create a new account:"
 msgstr "Pour créer un nouveau compte :"
 
 #: ../../source/setup/register.rst:138
-#, fuzzy
 msgid "Open your browser (Google Chrome, Microsoft Edge or Mozilla Firefox)."
 msgstr ""
-"Ouvrez votre navigateur (Google Chrome, Microsoft Edge ou Mozilla "
-"Firefox)."
 
 #: ../../source/setup/register.rst:139
 msgid "Go to https://collect.earth."
@@ -275,26 +183,20 @@ msgid "Select **Register**."
 msgstr "Sélectionnez **S'inscrire**."
 
 #: ../../source/setup/register.rst:141
-#, fuzzy
 msgid "Complete the form and select **Register**."
-msgstr "Remplissez le formulaire et sélectionnez **S'inscrire**."
+msgstr ""
 
 #: ../../source/setup/register.rst:142
-#, fuzzy
 msgid "Log in with your email address and password."
-msgstr "Connectez-vous avec votre **email** et votre **mot de passe**."
+msgstr ""
 
 #: ../../source/setup/register.rst:-1
 msgid "CEO landing page"
 msgstr "Page d'accueil de CEO"
 
 #: ../../source/setup/register.rst:150
-msgid ""
-"If you forget your password, select **Forgot your password?** and follow "
-"the instructions."
-msgstr ""
-"Si vous oubliez votre mot de passe, sélectionnez **Mot de passe oublié?**"
-" et suivez les instructions."
+msgid "If you forget your password, select **Forgot your password?** and follow the instructions."
+msgstr "Si vous oubliez votre mot de passe, sélectionnez **Mot de passe oublié?** et suivez les instructions."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
@@ -319,41 +221,143 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Register to SEPAL and other key platforms"
-#~ msgstr "S'inscrire à SEPAL et à d'autres plateformes clés"
+#~ msgstr ""
+
+#~ msgid "Set up your accounts and request additional resources"
+#~ msgstr ""
+
+#~ msgid "In this article, you can learn how to:"
+#~ msgstr ""
+
+#~ msgid ":ref:`Create a SEPAL account <create>` (Mandatory)"
+#~ msgstr ""
+
+#~ msgid ":ref:`Request additional SEPAL resources <request>` (Recommended)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Register and connect with Google "
+#~ "Earth Engine <GEE>` (Recommended)"
+#~ msgstr ""
+
+#~ msgid ":ref:`Register to Collect Earth Online (CEO) <ceo>` (Optional)"
+#~ msgstr ""
+
+#~ msgid "Enter your information into the form."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "After completing registration, you can "
 #~ "request access to the **SEPAL Users "
 #~ "Google Group**."
 #~ msgstr ""
-#~ "Une fois l'inscription terminée, vous "
-#~ "pouvez demander l'accès au **Groupe "
-#~ "Google Utilisateurs SEPAL**."
 
 #~ msgid ""
 #~ "Go to https://groups.google.com/g/sepal-users "
 #~ "and select **Ask to join group**."
 #~ msgstr ""
-#~ "Allez sur https://groups.google.com/g/sepal-users"
-#~ " et sélectionnez **Demandez à rejoindre "
-#~ "le groupe**."
+
+#~ msgid ""
+#~ "For support, go to the `Geographic "
+#~ "Information Systems StackExchange "
+#~ "<https://gis.stackexchange.com/questions/tagged/sepal>`__ and"
+#~ " ask a question to the community "
+#~ "using the **SEPAL** tag."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With your new account, you can "
+#~ "perform basic operations, such as "
+#~ "visualizing and processing satellite imagery,"
+#~ " saving recipes, and navigating through "
+#~ "the platform; however, some SEPAL "
+#~ "features are not fully available (e.g."
+#~ " in the **Tabs** bar on the "
+#~ "left, **Terminal** and **Tools** are "
+#~ "deactivated because these functions require"
+#~ " an instance and a quota). To "
+#~ "get full access, go to the "
+#~ ":ref:`request access section <request>`."
+#~ msgstr ""
+
+#~ msgid "(Recommended)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select **Quota** > :btn:`<fa-solid "
+#~ "fa-pencil> Request additional resources`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you do not know how many "
+#~ "resources you will use, go to the"
+#~ " `resource management <resource>` section "
+#~ "for more information."
+#~ msgstr ""
 
 #~ msgid "Sign up for Google Earth Engine (GEE)"
-#~ msgstr "S'inscrire à Google Earth Engine (GEE)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While SEPAL can run computation on "
+#~ "its own GEE account on your "
+#~ "behalf, the SEPAL team highly recommends"
+#~ " signing up for GEE to improve "
+#~ "your experience."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you already have a Google email"
+#~ " address, go to "
+#~ "https://earthengine.google.com/new_signup/ to sign "
+#~ "up for a GEE account."
+#~ msgstr ""
+
+#~ msgid "Request access to Google Earth Engine (GEE)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you don't have a Google email"
+#~ " address, go to http://mail.google.com/mail"
+#~ "/sign-up to sign up."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have a GEE account, go"
+#~ " to https://code.earthengine.google.com/ to "
+#~ "access the interface."
+#~ msgstr ""
 
 #~ msgid "Google Earth Enging (GEE) code editor."
-#~ msgstr "Éditeur de code Google Earth Enging (GEE)."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "If you experience problems registering "
 #~ "with GEE, contact the SEPAL team "
 #~ "at :email:`sepal@fao.org`."
 #~ msgstr ""
-#~ "Si vous rencontrez des problèmes lors"
-#~ " de votre inscription à GEE, "
-#~ "contactez l'équipe SEPAL à "
-#~ ":email:`sepal@fao.org`."
 
 #~ msgid "Sign up for Collect Earth Online (CEO)"
-#~ msgstr "Inscrivez-vous à Collect Earth Online (CEO)"
+#~ msgstr ""
+
+#~ msgid "(Optional)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To get the most out of the "
+#~ "SEPAL platform's **Classification** and "
+#~ "**Validation** tools, the SEPAL team "
+#~ "highly suggests using CEO for collecting"
+#~ " point-based training and validation "
+#~ "data."
+#~ msgstr ""
+
+#~ msgid "Open your browser (Google Chrome, Microsoft Edge, or Mozilla Firefox)."
+#~ msgstr ""
+
+#~ msgid "Complete the form and Select **Register**."
+#~ msgstr ""
+
+#~ msgid "Log in with your **Email** and **Password**."
+#~ msgstr ""
 
