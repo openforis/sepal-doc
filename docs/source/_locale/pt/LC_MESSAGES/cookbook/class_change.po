@@ -1,27 +1,29 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-31 07:19+0000\n"
+"PO-Revision-Date: 2024-03-07 08:58\n"
 "Last-Translator: \n"
-"Language: pt_PT\n"
 "Language-Team: Portuguese\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/class_change.po\n"
+"X-Crowdin-File-ID: 63\n"
+"Language: pt_PT\n"
 
 #: ../../source/cookbook/class_change.rst:2
 msgid "Class change"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:3
-msgid ""
-"*Build a class change map between two categorical maps that share the "
-"same legend with the Class change recipe*"
+msgid "*Build a class change map between two categorical maps that share the same legend with the Class change recipe*"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:6
@@ -29,22 +31,11 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:8
-msgid ""
-"Often, we want to build the class change map between two categorical maps"
-" that share the same legend. If the two images are taken at different "
-"times, this can help us understand how the vegetation classification has "
-"evolved between two dates. It can be tedious to build the new legend "
-"(forest -> forest, forest -> urban, etc.) and manually write the rules to"
-" identify each class. SEPAL will automatically build the legend of the "
-"resulting categorical map from the initial legend and compute all pixels "
-"automatically."
+msgid "Often, we want to build the class change map between two categorical maps that share the same legend. If the two images are taken at different times, this can help us understand how the vegetation classification has evolved between two dates. It can be tedious to build the new legend (forest -> forest, forest -> urban, etc.) and manually write the rules to identify each class. SEPAL will automatically build the legend of the resulting categorical map from the initial legend and compute all pixels automatically."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:12
-msgid ""
-"This recipe is not computationally demanding; you can safely reuse the "
-"recipe without exporting other recipes. It will not slow down downstream "
-"processes."
+msgid "This recipe is not computationally demanding; you can safely reuse the recipe without exporting other recipes. It will not slow down downstream processes."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:15
@@ -52,9 +43,7 @@ msgid "Start"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:17
-msgid ""
-"Once the **Class change** recipe is selected, SEPAL will present the "
-"**Process** in a new tab (see **1** in figure below)."
+msgid "Once the **Class change** recipe is selected, SEPAL will present the **Process** in a new tab (see **1** in figure below)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:19
@@ -62,11 +51,7 @@ msgid "**Parameters** will open in the lower-right side of your screen (2)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:25
-msgid ""
-"The first step is to change the name of the recipe. This name will be "
-"used to name your files and recipes in **SEPAL folders**. Use the best-"
-"suited convention for your need. Simply double-click the tab and enter a "
-"new name (it will default to :code:`Class_change_<now>`)."
+msgid "The first step is to change the name of the recipe. This name will be used to name your files and recipes in **SEPAL folders**. Use the best-suited convention for your need. Simply double-click the tab and enter a new name (it will default to :code:`Class_change_<now>`)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:36
@@ -74,9 +59,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:38
-msgid ""
-"In the lower-right corner, the following four tabs are available, "
-"allowing users to customize the class change to their needs:"
+msgid "In the lower-right corner, the following four tabs are available, allowing users to customize the class change to their needs:"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:40
@@ -100,32 +83,19 @@ msgid "Select images"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:52
-msgid ""
-"The first step is to select the two images to compare. Since "
-":guilabel:`FRM` and :guilabel:`TO` have the same interface, they will be "
-"described together."
+msgid "The first step is to select the two images to compare. Since :guilabel:`FRM` and :guilabel:`TO` have the same interface, they will be described together."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:54
-msgid ""
-"Select a categorical image, which can be a classification recipe or any "
-"categorical asset from your Google Earth Engine (GEE) account. In both "
-"cases, you'll need to select the band to use for the transition and the "
-"legend."
+msgid "Select a categorical image, which can be a classification recipe or any categorical asset from your Google Earth Engine (GEE) account. In both cases, you'll need to select the band to use for the transition and the legend."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:56
-msgid ""
-"If the selected asset/recipe is a **Classification** recipe (or its "
-"export), the legend will be automatically generated with the metadata of "
-"the file. If it's not, you'll need to upload it manually."
+msgid "If the selected asset/recipe is a **Classification** recipe (or its export), the legend will be automatically generated with the metadata of the file. If it's not, you'll need to upload it manually."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:58
-msgid ""
-"Select :btn:`fa-solid fa-pen-to-square` to open the **Legend editing** "
-"tool. It's the same as the one described in the **Classification** recipe"
-" (see :doc:`classification`)."
+msgid "Select :btn:`fa-solid fa-pen-to-square` to open the **Legend editing** tool. It's the same as the one described in the **Classification** recipe (see :doc:`classification`)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:71
@@ -133,10 +103,7 @@ msgid "Customize legend"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:73
-msgid ""
-"Once both **from** and **to** images are selected, SEPAL will build a "
-"transition classification legend based on the registered legend in the "
-"two parameter images. The color and the values can be modified."
+msgid "Once both **from** and **to** images are selected, SEPAL will build a transition classification legend based on the registered legend in the two parameter images. The color and the values can be modified."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:84
@@ -144,24 +111,15 @@ msgid "Options"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:86
-msgid ""
-"If the selected asset is from a SEPAL classification, it will embed a "
-"probability value for each classified pixel. SEPAL will propose clever "
-"map transitioning based on these values."
+msgid "If the selected asset is from a SEPAL classification, it will embed a probability value for each classified pixel. SEPAL will propose clever map transitioning based on these values."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:88
-msgid ""
-"For example, a high-confidence forest pixel changes into a low-confidence"
-" non-forest pixel. The change will be taken into account only if the "
-"minimum confidence is reached by the **to** pixel. By default, no "
-"filtering is performed and the slider is set to 0."
+msgid "For example, a high-confidence forest pixel changes into a low-confidence non-forest pixel. The change will be taken into account only if the minimum confidence is reached by the **to** pixel. By default, no filtering is performed and the slider is set to 0."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:92
-msgid ""
-"If the classified images are from other sources, the probability won't be"
-" available and the transition will be applied without verification."
+msgid "If the classified images are from other sources, the probability won't be available and the transition will be applied without verification."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:99
@@ -173,16 +131,11 @@ msgid "Export"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:106
-msgid ""
-"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
-"small computation quota (if you are a new user, see "
-":doc:`../setup/resource`)."
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota (if you are a new user, see :doc:`../setup/resource`)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:108
-msgid ""
-"Select the :icon:`fa-solid fa-cloud-arrow-down` tab to open the "
-"**Retrieve** pane, where you can select the **Exportation parameters**."
+msgid "Select the :icon:`fa-solid fa-cloud-arrow-down` tab to open the **Retrieve** pane, where you can select the **Exportation parameters**."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:116
@@ -190,10 +143,7 @@ msgid "Bands"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:118
-msgid ""
-"Select the band to export in the recipe. You will have access to "
-":guilabel:`transition` (the new class change values) and "
-":guilabel:`confidence`, if you selected **Classification recipe assets**."
+msgid "Select the band to export in the recipe. You will have access to :guilabel:`transition` (the new class change values) and :guilabel:`confidence`, if you selected **Classification recipe assets**."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:121
@@ -201,12 +151,7 @@ msgid "Scale"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:123
-msgid ""
-"You can set a custom scale for exportation by changing the value of the "
-"slider (m). Requesting a smaller resolution than an image's native "
-"resolution will not improve the quality of the output, just its size, so "
-"keep in mind that the native resolution of Sentinel data is 10 m and "
-"Landsat is 30 m."
+msgid "You can set a custom scale for exportation by changing the value of the slider (m). Requesting a smaller resolution than an image's native resolution will not improve the quality of the output, just its size, so keep in mind that the native resolution of Sentinel data is 10 m and Landsat is 30 m."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:126
@@ -214,18 +159,11 @@ msgid "Destination"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:128
-msgid ""
-"You can export the image to :guilabel:`SEPAL workspace` or to "
-":guilabel:`GEE asset`. The same image will be exported, but in the first "
-"case, you will find it in :code:`.tif` format in the :code:`Downloads` "
-"folder; in the second case, the image will be exported to your GEE "
-"account **Asset** list."
+msgid "You can export the image to :guilabel:`SEPAL workspace` or to :guilabel:`GEE asset`. The same image will be exported, but in the first case, you will find it in :code:`.tif` format in the :code:`Downloads` folder; in the second case, the image will be exported to your GEE account **Asset** list."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:132
-msgid ""
-"If :guilabel:`GEE asset` is not displayed, your GEE account is not "
-"connected to your SEPAL account (see :doc:`../setup/gee`)."
+msgid "If :guilabel:`GEE asset` is not displayed, your GEE account is not connected to your SEPAL account (see :doc:`../setup/gee`)."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:134
@@ -237,31 +175,19 @@ msgid "Exportation status"
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:139
-msgid ""
-"In the **Tasks** tab (lower-left corner using the :icon:`fa-solid fa-"
-"list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the "
-"loading status), you will see the list of different loading tasks. The "
-"interface will provide you with information about the task progress and "
-"display an error if the exportation has failed."
+msgid "In the **Tasks** tab (lower-left corner using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress and display an error if the exportation has failed."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:141
-msgid ""
-"If you are unsatisfied with the way we present information, the task can "
-"also be monitored using the `GEE task manager "
-"<https://code.earthengine.google.com/tasks>`__."
+msgid "If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:145
-msgid ""
-"This operation is running in the background between GEE and SEPAL "
-"servers, so you can close the SEPAL page without stopping the process."
+msgid "This operation is running in the background between GEE and SEPAL servers, so you can close the SEPAL page without stopping the process."
 msgstr ""
 
 #: ../../source/cookbook/class_change.rst:147
-msgid ""
-"When the task is finished, the frame will be displayed in green (see the "
-"second image below)."
+msgid "When the task is finished, the frame will be displayed in green (see the second image below)."
 msgstr ""
 
 #~ msgid ""
