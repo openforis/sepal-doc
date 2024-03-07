@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:07+0000\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
 "Last-Translator: \n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/weplan.po\n"
+"X-Crowdin-File-ID: 201\n"
 
 #: ../../source/modules/dwn/weplan.rst:2
 msgid "WePlan - Forests"
@@ -27,34 +31,19 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:8
-msgid ""
-"WePlan - Forests is a decision-support platform for tropical and "
-"subtropical forest ecosystem restoration planning that aims to optimize "
-"the benefits arising from forest restoration."
+msgid "WePlan - Forests is a decision-support platform for tropical and subtropical forest ecosystem restoration planning that aims to optimize the benefits arising from forest restoration."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:10
-msgid ""
-"It is an initiative of the International Institute for Sustainability "
-"Australia, in partnership with the International Institute for "
-"Sustainability Rio and the Convention on Biological Diversity (CBD), with"
-" the support of the Korea Forest Service via the Forest Ecosystem "
-"Restoration Initiative (FERI)."
+msgid "It is an initiative of the International Institute for Sustainability Australia, in partnership with the International Institute for Sustainability Rio and the Convention on Biological Diversity (CBD), with the support of the Korea Forest Service via the Forest Ecosystem Restoration Initiative (FERI)."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:12
-msgid ""
-"The project provides quantitative, spatial, evidence-based planning "
-"support to developing countries that are parties to the CBD in order to "
-"facilitate the realization of forest restoration pledges and targets."
+msgid "The project provides quantitative, spatial, evidence-based planning support to developing countries that are parties to the CBD in order to facilitate the realization of forest restoration pledges and targets."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:14
-msgid ""
-"**WePlan - Forests** is a spatially explicit, forest restoration planning"
-" tool that uses linear programming to evaluate a range of alternative "
-"scenarios for restoration, reporting the benefits, costs and spatial "
-"distribution of national restoration priorities for each."
+msgid "**WePlan - Forests** is a spatially explicit, forest restoration planning tool that uses linear programming to evaluate a range of alternative scenarios for restoration, reporting the benefits, costs and spatial distribution of national restoration priorities for each."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:16
@@ -62,46 +51,27 @@ msgid "The current version (2.0) considers two objectives:"
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:18
-msgid ""
-"**climate change mitigation benefit** (estimated as the change in carbon "
-"sequestration that would arise from forest restoration), and"
+msgid "**climate change mitigation benefit** (estimated as the change in carbon sequestration that would arise from forest restoration), and"
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:19
-msgid ""
-"**biodiversity conservation benefit** (estimated as the average reduction"
-" in local [national] extinction risk among all forest-associated "
-"species)."
+msgid "**biodiversity conservation benefit** (estimated as the average reduction in local [national] extinction risk among all forest-associated species)."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:21
-msgid ""
-"The analysis also considers (as constraints) the opportunity and "
-"implementation costs of forest restoration, accounting for the potential "
-"for natural regeneration to reduce implementation costs."
+msgid "The analysis also considers (as constraints) the opportunity and implementation costs of forest restoration, accounting for the potential for natural regeneration to reduce implementation costs."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:23
-msgid ""
-"Analyses occur at a 1 km^2 resolution on a national basis for countries "
-"containing tropical and subtropical forests within +/- 25 degrees "
-"latitude. Scenarios are offered in five levels of restoration targets, "
-"ranging from 10 percent to 50 percent of the areas available for "
-"restoration."
+msgid "Analyses occur at a 1 km^2 resolution on a national basis for countries containing tropical and subtropical forests within +/- 25 degrees latitude. Scenarios are offered in five levels of restoration targets, ranging from 10 percent to 50 percent of the areas available for restoration."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:25
-msgid ""
-"Results for **WePĺan - Forests**, as well as more information about the "
-"project, input data and methodology, can be found on the `platform's "
-"website <http://weplan-forests.org>`."
+msgid "Results for **WePĺan - Forests**, as well as more information about the project, input data and methodology, can be found on the `platform's website <http://weplan-forests.org>`."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:27
-msgid ""
-"The platform in SEPAL consists of a user-friendly SEPAL-based interface "
-"to retrieve and manipulate the geospatial data resulting from **WePlan - "
-"Forests** optimization for each pre-computed scenario."
+msgid "The platform in SEPAL consists of a user-friendly SEPAL-based interface to retrieve and manipulate the geospatial data resulting from **WePlan - Forests** optimization for each pre-computed scenario."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:30
@@ -117,73 +87,39 @@ msgid "Output"
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:39
-msgid ""
-"The output will be found in your **SEPAL files** under "
-":code:`module_results/weplan/<iso_code>` with :code:`iso_code` being the "
-"`ISO 3166-1 alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__"
-" code of the downloaded country (e.g. \"UGA\" for Uganda)."
+msgid "The output will be found in your **SEPAL files** under :code:`module_results/weplan/<iso_code>` with :code:`iso_code` being the `ISO 3166-1 alpha-3 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3>`__ code of the downloaded country (e.g. \"UGA\" for Uganda)."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:41
-msgid ""
-"Every file is in :code:`.tif` format with one single band expressing the "
-"variable described. It will display the version of the **WePlan - "
-"Forests** computation (here \"v002\", called :code:`<version>` from now "
-"on)."
+msgid "Every file is in :code:`.tif` format with one single band expressing the variable described. It will display the version of the **WePlan - Forests** computation (here \"v002\", called :code:`<version>` from now on)."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:43
-msgid ""
-"Planning solutions were developed for five area targets, representing 10 "
-"percent, 20 percent, 30 percent, 40 percent and 50 percent of the area "
-"available for forest restoration in the country."
+msgid "Planning solutions were developed for five area targets, representing 10 percent, 20 percent, 30 percent, 40 percent and 50 percent of the area available for forest restoration in the country."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:45
-msgid ""
-"The application will retrieve four types of analysis from the WePlan - "
-"Forests project:"
+msgid "The application will retrieve four types of analysis from the WePlan - Forests project:"
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:47
-msgid ""
-":code:`available_<version>.tif`: The raster of the proportion of each "
-"cell deemed available for forest restoration within the selected country."
+msgid ":code:`available_<version>.tif`: The raster of the proportion of each cell deemed available for forest restoration within the selected country."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:48
-msgid ""
-":code:`scen_mincost_target_<X>_<version>.tif`: The minimum cost "
-"scenarios; these rasters are the optimal reference solutions that "
-"minimize total costs, ignoring benefits where :code:`<X>` is an integer "
-"referring to the target category."
+msgid ":code:`scen_mincost_target_<X>_<version>.tif`: The minimum cost scenarios; these rasters are the optimal reference solutions that minimize total costs, ignoring benefits where :code:`<X>` is an integer referring to the target category."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:49
-msgid ""
-":code:`scen_tradeoffs_ce_target_<X>_weight_<Y>_<version>.tif`: Cost-"
-"effective scenarios; these rasters are the optimal solutions that "
-"maximize cost-effectiveness (benefit/cost) (i.e. provide the maximum "
-"benefit at the minimum possible cost, where :code:`X` is an integer "
-"referring to the target category and :code:`Y` is an integer referring to"
-" the order of relative weights between carbon and biodiversity "
-"objectives)."
+msgid ":code:`scen_tradeoffs_ce_target_<X>_weight_<Y>_<version>.tif`: Cost-effective scenarios; these rasters are the optimal solutions that maximize cost-effectiveness (benefit/cost) (i.e. provide the maximum benefit at the minimum possible cost, where :code:`X` is an integer referring to the target category and :code:`Y` is an integer referring to the order of relative weights between carbon and biodiversity objectives)."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:50
-msgid ""
-":code:`scen_tradeoffs_mb_target_<X>_weight_<Y>_<version>.tif`: Max-"
-"benefit scenarios; these rasters are the optimal solutions that maximize "
-"benefit, ignoring costs where :code:`X` is an integer referring to the "
-"target category and :code:`Y` is an integer referring to the order of "
-"relative weights between carbon and biodiversity objectives."
+msgid ":code:`scen_tradeoffs_mb_target_<X>_weight_<Y>_<version>.tif`: Max-benefit scenarios; these rasters are the optimal solutions that maximize benefit, ignoring costs where :code:`X` is an integer referring to the target category and :code:`Y` is an integer referring to the order of relative weights between carbon and biodiversity objectives."
 msgstr ""
 
 #: ../../source/modules/dwn/weplan.rst:52
-msgid ""
-"For more information about the computation methodology and scenarios, "
-"refer to the `WePlan - Forests website <http://www.weplan-"
-"forests.org/flrp/choose.php>`__."
+msgid "For more information about the computation methodology and scenarios, refer to the `WePlan - Forests website <http://www.weplan-forests.org/flrp/choose.php>`__."
 msgstr ""
 
 #~ msgid "Forest Restoration Planning Tool"
