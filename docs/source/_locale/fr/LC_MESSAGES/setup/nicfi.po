@@ -1,334 +1,182 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-04-13 00:57+0000\n"
+"PO-Revision-Date: 2024-03-07 08:53\n"
 "Last-Translator: \n"
-"Language: fr_FR\n"
 "Language-Team: French\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/nicfi.po\n"
+"X-Crowdin-File-ID: 95\n"
+"Language: fr_FR\n"
 
 #: ../../source/setup/nicfi.rst:2
 msgid "Use NICFI–PlanetLab data"
 msgstr ""
 
 #: ../../source/setup/nicfi.rst:3
-#, fuzzy
 msgid "*Sign up for NICFI and connect with GEE*"
-msgstr "Inscrivez-vous à NICFI et connectez-vous avec Google Earth Engine (GEE)"
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:5
-#, fuzzy
 msgid "In this article, learn how to:"
-msgstr "Dans cet article, vous pouvez apprendre à :"
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:7
-#, fuzzy
 msgid "sign up for NICFI imagery"
-msgstr "S'inscrire aux imageries NICFI"
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:8
-#, fuzzy
 msgid "access NICFI through GEE"
-msgstr "Accéder à NICFI via GEE"
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:12
-#, fuzzy
-msgid ""
-"Adapted from "
-"`<https://developers.planet.com/docs/integrations/gee/nicfi>`_."
-msgstr "Adapté de `<https://developers.planet.com/docs/integrations/gee/nicfi/>`_."
+msgid "Adapted from `<https://developers.planet.com/docs/integrations/gee/nicfi>`_."
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:15
 msgid "Overview"
 msgstr "Aperçu"
 
 #: ../../source/setup/nicfi.rst:17
-#, fuzzy
-msgid ""
-"Through Norway’s International Climate and Forests Initiative (NICFI), "
-"anyone can access Planet’s high-resolution, analysis-ready mosaics of the"
-" world’s tropics to help reduce and reverse the loss of tropical forests,"
-" combat climate change, conserve biodiversity and facilitate sustainable "
-"development."
+msgid "Through Norway’s International Climate and Forests Initiative (NICFI), anyone can access Planet’s high-resolution, analysis-ready mosaics of the world’s tropics to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity and facilitate sustainable development."
 msgstr ""
-"Grâce à NICFI, tout le monde peut désormais accéder aux mosaïques de "
-"haute résolution des tropiques du monde entier prêtes à être analysées "
-"pour aider à réduire et à inverser la perte de forêts tropicales, lutter "
-"contre le changement climatique, conserver la biodiversité et faciliter "
-"le développement durable."
 
 #: ../../source/setup/nicfi.rst:19
-#, fuzzy
-msgid ""
-"In support of NICFI’s mission, you can use this data for a number of "
-"purposes, such as:"
+msgid "In support of NICFI’s mission, you can use this data for a number of purposes, such as:"
 msgstr ""
-"Pour soutenir la mission de NICFI, vous pouvez utiliser ces données à "
-"plusieurs fins, y compris, mais sans s’y limiter :"
 
 #: ../../source/setup/nicfi.rst:21
-msgid ""
-"advancing scientific research about the world’s tropical forests and the "
-"critical services they provide;"
-msgstr ""
-"faire progresser la recherche scientifique sur les forêts tropicales du "
-"monde et les services essentiels qu’elles fournissent ;"
+msgid "advancing scientific research about the world’s tropical forests and the critical services they provide;"
+msgstr "faire progresser la recherche scientifique sur les forêts tropicales du monde et les services essentiels qu’elles fournissent ;"
 
 #: ../../source/setup/nicfi.rst:22
-msgid ""
-"implementing and improving policies for sustainable forest management and"
-" land use in developing tropical forest countries and jurisdictions;"
-msgstr ""
-"mettre en œuvre et améliorer les politiques d'aménagement forestier "
-"durable et d'aménagement du territoire dans les pays et juridictions des "
-"forêts tropicales en développement ;"
+msgid "implementing and improving policies for sustainable forest management and land use in developing tropical forest countries and jurisdictions;"
+msgstr "mettre en œuvre et améliorer les politiques d'aménagement forestier durable et d'aménagement du territoire dans les pays et juridictions des forêts tropicales en développement ;"
 
 #: ../../source/setup/nicfi.rst:23
 msgid "increasing transparency and accountability in the tropics;"
 msgstr "accroître la transparence et la responsabilité dans les tropiques ;"
 
 #: ../../source/setup/nicfi.rst:24
-msgid ""
-"protecting and improving the rights of Indigenous Peoples and local "
-"communities in tropical forest countries; and"
-msgstr ""
-"protéger et améliorer les droits des peuples autochtones et des "
-"communautés locales dans les pays des forêts tropicales ; et"
+msgid "protecting and improving the rights of Indigenous Peoples and local communities in tropical forest countries; and"
+msgstr "protéger et améliorer les droits des peuples autochtones et des communautés locales dans les pays des forêts tropicales ; et"
 
 #: ../../source/setup/nicfi.rst:25
-msgid ""
-"innovating solutions towards reducing pressure on forests from global "
-"commodities and financial markets."
-msgstr ""
-"des solutions innovantes pour réduire la pression sur les forêts "
-"provenant des marchés financiers et des produits de base mondiaux."
+msgid "innovating solutions towards reducing pressure on forests from global commodities and financial markets."
+msgstr "des solutions innovantes pour réduire la pression sur les forêts provenant des marchés financiers et des produits de base mondiaux."
 
 #: ../../source/setup/nicfi.rst:27
-#, fuzzy
-msgid ""
-"The NICFI and Planet Basemaps for Tropical Forest Monitoring are now "
-"available in Google Earth Engine (GEE) and SEPAL for easy processing. In "
-"a few simple steps, you can create your own custom mosaics using Planet "
-"basemaps."
+msgid "The NICFI and Planet Basemaps for Tropical Forest Monitoring are now available in Google Earth Engine (GEE) and SEPAL for easy processing. In a few simple steps, you can create your own custom mosaics using Planet basemaps."
 msgstr ""
-"Les basemaps NICFI & Planet pour la surveillance des forêts tropicales "
-"sont maintenant disponibles dans Google Earth Engine (GEE) et SEPAL pour "
-"un traitement facile. En quelques étapes simples, vous pouvez créer vos "
-"propres mosaïques personnalisées en utilisant les basemaps de Planète."
 
 #: ../../source/setup/nicfi.rst:29
 msgid "The first step is to make sure you have a GEE account."
 msgstr ""
 
 #: ../../source/setup/nicfi.rst:31
-#, fuzzy
-msgid ""
-"If you don’t have a GEE account, register by following `this tutorial "
-"<setup/register.html#sign-up-to-gee>`__."
+msgid "If you don’t have a GEE account, register by following `this tutorial <setup/register.html#sign-up-to-gee>`__."
 msgstr ""
-"La première étape consiste à vous assurer que vous avez un compte GEE. "
-"Vous pouvez suivre `ce tutoriel <setup/register.html#sign-up-to-gee>`__ "
-"pour vous inscrire à un compte GEE si vous n'en avez pas déjà un."
 
 #: ../../source/setup/nicfi.rst:34
 msgid "Sign up for NICFI imagery"
 msgstr "S'inscrire aux imageries NICFI"
 
 #: ../../source/setup/nicfi.rst:36
-#, fuzzy
-msgid ""
-"Sign up for NICFI–PlanetLab data access using the same email address "
-"associated with your GEE account."
+msgid "Sign up for NICFI–PlanetLab data access using the same email address associated with your GEE account."
 msgstr ""
-"Inscrivez-vous pour accéder aux données de NICFI Planet en utilisant la "
-"même adresse e-mail associée à votre compte GEE. Pour vous inscrire pour "
-"accéder au programme de données NICFI, allez à "
-"`<https://www.planet.com/nicfi/>`_."
 
 #: ../../source/setup/nicfi.rst:38
-msgid ""
-"To get access to the NICFI data programme, go to "
-"`<https://www.planet.com/nicfi>`_."
+msgid "To get access to the NICFI data programme, go to `<https://www.planet.com/nicfi>`_."
 msgstr ""
 
 #: ../../source/setup/nicfi.rst:45
-#, fuzzy
 msgid "Select the **Sign up** button and fill in the form."
-msgstr "Cliquez sur le bouton **Sign up** et remplissez le formulaire."
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:51
-#, fuzzy
-msgid ""
-"After submitting the form, an email will be sent with a link to activate "
-"your account. Check your email for an invitation to complete the signup "
-"process."
+msgid "After submitting the form, an email will be sent with a link to activate your account. Check your email for an invitation to complete the signup process."
 msgstr ""
-"Après avoir envoyé le formulaire, un e-mail sera envoyé avec un lien pour"
-" activer votre compte. Veuillez consulter votre e-mail pour une "
-"invitation à compléter le processus d'inscription."
 
 #: ../../source/setup/nicfi.rst:54
-#, fuzzy
-msgid ""
-"Select the link and a new form will appear. Complete the form and you "
-"will receive a success message with a new page to sign in to your "
-"account."
+msgid "Select the link and a new form will appear. Complete the form and you will receive a success message with a new page to sign in to your account."
 msgstr ""
-"Cliquez sur le lien et un nouveau formulaire apparaîtra. Remplissez le "
-"formulaire et vous recevrez un message de succès avec une nouvelle page "
-"pour vous connecter à votre compte."
 
 #: ../../source/setup/nicfi.rst:62
-#, fuzzy
-msgid ""
-"If you are already a NICFI user and would like to access the basemaps in "
-"GEE, apply for access by going to `<www.planet.com/nicfi/?gee=show>`_."
+msgid "If you are already a NICFI user and would like to access the basemaps in GEE, apply for access by going to `<www.planet.com/nicfi/?gee=show>`_."
 msgstr ""
-"Si vous êtes déjà un utilisateur NICFI et que vous souhaitez accéder aux "
-"basemaps dans GEE, allez à `<www.planet.com/nicfi/?gee=show>`_ pour "
-"demander l'accès."
 
 #: ../../source/setup/nicfi.rst:66
-#, fuzzy
-msgid ""
-"Approval for accessing NICFI–Planet Basemaps in GEE can take up to one "
-"week."
+msgid "Approval for accessing NICFI–Planet Basemaps in GEE can take up to one week."
 msgstr ""
-"L'autorisation d'accéder aux Basemaps NICFI-Planet dans GEE peut prendre "
-"jusqu'à une semaine."
 
 #: ../../source/setup/nicfi.rst:69
 msgid "Access NICFI through GEE"
 msgstr "Accéder à NICFI via GEE"
 
 #: ../../source/setup/nicfi.rst:71
-#, fuzzy
-msgid ""
-"NICFI–PlanetLab data can also be accessed from GEE, allowing you to use "
-"PlanetLab imagery in SEPAL recipes, such as **Classification** or **Time "
-"series**."
+msgid "NICFI–PlanetLab data can also be accessed from GEE, allowing you to use PlanetLab imagery in SEPAL recipes, such as **Classification** or **Time series**."
 msgstr ""
-"Les données NICFI Planet sont également accessibles à partir de GEE, vous"
-" permettant d'utiliser l'imagerie PlanetLab dans les recettes SEPAL, "
-"comme la **Classification** ou la **Série temporelle**, en autorisant "
-"votre compte GEE à accéder aux données de PlanetLab."
 
 #: ../../source/setup/nicfi.rst:73
 msgid "To authorize your GEE account to access PlanetLab data:"
 msgstr ""
 
 #: ../../source/setup/nicfi.rst:75
-#, fuzzy
-msgid ""
-"Go to the `Planet Platform Explorer <www.planet.com/explorer>`__. In the "
-"upper-right corner, select **My Account**."
+msgid "Go to the `Planet Platform Explorer <www.planet.com/explorer>`__. In the upper-right corner, select **My Account**."
 msgstr ""
-"Allez dans le `Planet Platform Explorer <www.planet.com/explorer>`__ et "
-"sélectionnez **Mon Compte** dans le coin supérieur droit."
 
 #: ../../source/setup/nicfi.rst:81
-#, fuzzy
-msgid ""
-"Select **All plans** (see **2** in figure below), which should activate "
-"NICFI level 1 data access (**1** in figure below). If it does, select "
-"**My settings** (**3** in figure below) and scroll down to the bottom of "
-"the page."
+msgid "Select **All plans** (see **2** in figure below), which should activate NICFI level 1 data access (**1** in figure below). If it does, select **My settings** (**3** in figure below) and scroll down to the bottom of the page."
 msgstr ""
-"Sélectionnez **All Plans** (2), qui devrait activer l'accès aux données "
-"NICFI niveau 1 (1). Si c'est le cas, sélectionnez **My settings** (3) et "
-"descendez vers le bas de la page."
 
 #: ../../source/setup/nicfi.rst:87
-#, fuzzy
 msgid "Select **Edit access** (**1**) in the lower right."
-msgstr "Sélectionnez **Edit access** (1) en bas à droite."
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:89
-#, fuzzy
-msgid ""
-"Select all checkboxes (**2**) and enter the email address (**3**) "
-"associated with your GEE account."
+msgid "Select all checkboxes (**2**) and enter the email address (**3**) associated with your GEE account."
 msgstr ""
-"Sélectionnez toutes les cases à cocher (2) et saisissez l'adresse e-mail "
-"(3) associée à votre compte GEE."
 
 #: ../../source/setup/nicfi.rst:91
-#, fuzzy
 msgid "Select **Connect to Earth Engine** (**4**) to finalize registration."
-msgstr "Sélectionnez **Connect to Earth Engine** (4) pour finaliser l'inscription."
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:95
-msgid ""
-"To connect to GEE, your GEE email address must be the same as the email "
-"address used for SEPAL."
-msgstr ""
-"Pour vous connecter à GEE, votre adresse e-mail GEE doit être la même que"
-" celle utilisée pour SEPAL."
+msgid "To connect to GEE, your GEE email address must be the same as the email address used for SEPAL."
+msgstr "Pour vous connecter à GEE, votre adresse e-mail GEE doit être la même que celle utilisée pour SEPAL."
 
 #: ../../source/setup/nicfi.rst:101
-#, fuzzy
-msgid ""
-"The next step is to make sure SEPAL is connected to the same email "
-"address that has access to NICFI–Planet Basemaps in GEE using the same "
-"process as in GEE."
+msgid "The next step is to make sure SEPAL is connected to the same email address that has access to NICFI–Planet Basemaps in GEE using the same process as in GEE."
 msgstr ""
-"L'étape suivante est de s'assurer que SEPAL est connecté à la même "
-"adresse e-mail qui a accès aux Basemaps NICFI-Planet dans GEE en "
-"utilisant le même processus que dans GEE."
 
 #: ../../source/setup/nicfi.rst:103
-#, fuzzy
-msgid ""
-"Note: If you are already connected to a Google account with access to "
-"NICFI–Planet Basemaps in GEE, you can skip this step."
+msgid "Note: If you are already connected to a Google account with access to NICFI–Planet Basemaps in GEE, you can skip this step."
 msgstr ""
-"Remarque : Si vous êtes déjà connecté à un compte Google avec accès aux "
-"Basemaps NICFI-Planet dans GEE, vous pouvez passer l'étape suivante."
 
 #: ../../source/setup/nicfi.rst:-1
-#, fuzzy
 msgid "SEPAL and GEE connected"
-msgstr "SEPAL et GEE connectés."
+msgstr ""
 
 #: ../../source/setup/nicfi.rst:110
-#, fuzzy
-msgid ""
-"If you are either not connected to your Google account or connected via a"
-" different email address that does not have access to NICFI–Planet "
-"Basemaps, select **Google account** and choose the email address that has"
-" access to NICFI–Planet Basemaps in GEE."
+msgid "If you are either not connected to your Google account or connected via a different email address that does not have access to NICFI–Planet Basemaps, select **Google account** and choose the email address that has access to NICFI–Planet Basemaps in GEE."
 msgstr ""
-"Si vous n'êtes pas connecté à votre compte Google ou connecté via une "
-"adresse e-mail différente qui n'a pas accès aux Basemaps NICFI-Planet, "
-"sélectionnez **compte Google** et choisissez l'adresse e-mail qui a accès"
-" aux Basemaps NICFI-Planet dans GEE."
 
 #: ../../source/setup/nicfi.rst:114
-msgid ""
-"Allow SEPAL to access your GEE data and Google Drive account, which are "
-"required components for processing."
-msgstr ""
-"Autoriser SEPAL à accéder à vos données GEE et à votre compte Google "
-"Drive, qui sont des composants requis pour le traitement."
+msgid "Allow SEPAL to access your GEE data and Google Drive account, which are required components for processing."
+msgstr "Autoriser SEPAL à accéder à vos données GEE et à votre compte Google Drive, qui sont des composants requis pour le traitement."
 
 #: ../../source/setup/nicfi.rst:118
-#, fuzzy
-msgid ""
-"For additional information that may help when processing high-resolution "
-"NICFI–Planet imagery in SEPAL, refer to `Planet Academy's section "
-"dedicated to NICFI imagery <https://university.planet.com/path/nicfi>`__."
+msgid "For additional information that may help when processing high-resolution NICFI–Planet imagery in SEPAL, refer to `Planet Academy's section dedicated to NICFI imagery <https://university.planet.com/path/nicfi>`__."
 msgstr ""
-"Pour des informations supplémentaires qui peuvent aider lors du "
-"traitement de l'imagerie haute résolution NICFI/Planet dans SEPAL, "
-"veuillez vous référer à `la section de la Planet Academy "
-"<https://university.planet.com/path/nicfi>`__ dédiée à l'imagerie NICFI."
 
 #~ msgid ""
 #~ "For support, :doc:`ask the community <>`"
@@ -363,7 +211,166 @@ msgstr ""
 #~ "Forests Initiative (NICFI) - Planet Lab"
 #~ " data"
 #~ msgstr ""
-#~ "Utiliser l’Initiative internationale sur le"
-#~ " climat et les forêts de Norvège "
-#~ "(NICFI) - Données Planet Lab"
+
+#~ msgid "Sign up for NICFI and connect with Google Earth Engine (GEE)"
+#~ msgstr ""
+
+#~ msgid "In this article, you can learn how to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Adapted from "
+#~ "`<https://developers.planet.com/docs/integrations/gee/nicfi/>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Through NICFI, anyone can now access "
+#~ "Planet’s high-resolution, analysis-ready "
+#~ "mosaics of the world’s tropics to "
+#~ "help reduce and reverse the loss "
+#~ "of tropical forests, combat climate "
+#~ "change, conserve biodiversity, and facilitate"
+#~ " sustainable development."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In support of NICFI’s mission, you "
+#~ "can use this data for a number "
+#~ "of purposes, including, but not limited"
+#~ " to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The NICFI & Planet Basemaps for "
+#~ "Tropical Forest Monitoring are now "
+#~ "available in Google Earth Engine (GEE)"
+#~ " and SEPAL for easy processing. In"
+#~ " a few simple steps, you can "
+#~ "create your own custom mosaics using "
+#~ "the Planet basemaps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first step is to make sure "
+#~ "you have a GEE account. You can"
+#~ " follow `this tutorial <setup/register.html"
+#~ "#sign-up-to-gee>`__ to register for"
+#~ " a GEE account if you don’t "
+#~ "already have one."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sign up for NICFI Planet data "
+#~ "access using the same email address "
+#~ "associated with your GEE account. To "
+#~ "sign up for access to the NICFI"
+#~ " data program, go to "
+#~ "`<https://www.planet.com/nicfi/>`_."
+#~ msgstr ""
+
+#~ msgid "Click on the **Sign up** button and fill in the form."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After submitting the form, an email "
+#~ "will be sent with a link to "
+#~ "activate your account. Please check your"
+#~ " email for an invitation to complete"
+#~ " the sign up process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click on the link and a new "
+#~ "form will appear. Complete the form "
+#~ "and you will receive a success "
+#~ "message with a new page to sign"
+#~ " in to your account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are already a NICFI user"
+#~ " and would like to access the "
+#~ "basemaps in GEE, go to "
+#~ "`<www.planet.com/nicfi/?gee=show>`_ to apply for "
+#~ "access."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Approval for accessing NICFI-Planet "
+#~ "Basemaps in GEE can take up to "
+#~ "one week."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The NICFI Planet data can also be"
+#~ " accessed from GEE, allowing you to"
+#~ " use the PlanetLab imagery in SEPAL"
+#~ " recipes, such as **Classification** or "
+#~ "**Time series**, by authorizing your GEE"
+#~ " account to access PlanetLab data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Go to the `Planet Platform Explorer "
+#~ "<www.planet.com/explorer>`__ and select **My "
+#~ "Account** in the upper-right corner."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select **All Plans** (2), which should"
+#~ " activate NICFI level 1 data access"
+#~ " (1). If it does, select **My "
+#~ "settings** (3) and scroll down to "
+#~ "the bottom of the page."
+#~ msgstr ""
+
+#~ msgid "Select **Edit access** (1) in the lower-right."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select all of the checkboxes (2) "
+#~ "and enter the email address (3) "
+#~ "associated with your GEE account."
+#~ msgstr ""
+
+#~ msgid "Select **Connect to Earth Engine** (4) to finalize the registration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next step is to make sure "
+#~ "SEPAL is connected to the same "
+#~ "email address that has access to "
+#~ "NICFI-Planet Basemaps in GEE using "
+#~ "the same process as in GEE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: If you are already connected "
+#~ "to a Google account with access to"
+#~ " NICFI-Planet Basemaps in GEE, you"
+#~ " can skip the next step."
+#~ msgstr ""
+
+#~ msgid "SEPAL and GEE connected."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are either not connected to"
+#~ " your Google account or connected via"
+#~ " a different email address that does"
+#~ " not have access to the NICFI-"
+#~ "Planet Basemaps, select **Google account** "
+#~ "and choose the email address that "
+#~ "has access to NICFI-Planet Basemaps "
+#~ "in GEE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For additional information that may help"
+#~ " when processing the NICFI/Planet high-"
+#~ "resolution imagery in SEPAL, please "
+#~ "refer to `the section of Planet "
+#~ "Academy <https://university.planet.com/path/nicfi>`__ "
+#~ "dedicated to NICFI imagery."
+#~ msgstr ""
 
