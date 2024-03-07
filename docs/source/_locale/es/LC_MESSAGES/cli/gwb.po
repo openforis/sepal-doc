@@ -1,36 +1,33 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-31 07:18+0000\n"
+"PO-Revision-Date: 2024-03-07 08:54\n"
 "Last-Translator: \n"
-"Language: es_ES\n"
 "Language-Team: Spanish\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/gwb.po\n"
+"X-Crowdin-File-ID: 47\n"
+"Language: es_ES\n"
 
 #: ../../source/cli/gwb.rst:2
 msgid "GWB"
 msgstr ""
 
 #: ../../source/cli/gwb.rst:4
-msgid ""
-"**GuidosToolbox Workbench (GWB)** is a subset of the desktop software "
-"package GuidosToolbox (GTB), designed as a command-line application for "
-"Linux 64bit servers (see `GWB "
-"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_ or `GTB "
-"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_)."
+msgid "**GuidosToolbox Workbench (GWB)** is a subset of the desktop software package GuidosToolbox (GTB), designed as a command-line application for Linux 64bit servers (see `GWB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_ or `GTB <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_)."
 msgstr ""
 
 #: ../../source/cli/gwb.rst:6
-msgid ""
-"Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster "
-"maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_."
+msgid "Citation reference: `GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_."
 msgstr ""
 
 #: ../../source/cli/gwb.rst:10
@@ -42,9 +39,7 @@ msgid "Available commands"
 msgstr ""
 
 #: ../../source/cli/gwb.rst:15
-msgid ""
-"The complete documentation of GWB commands can be found in the `GWB "
-"manual <https://gwbdoc.readthedocs.io>`__."
+msgid "The complete documentation of GWB commands can be found in the `GWB manual <https://gwbdoc.readthedocs.io>`__."
 msgstr ""
 
 #~ msgid ""
