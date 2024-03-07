@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:07+0000\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
 "Last-Translator: \n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/alos_mosaics.po\n"
+"X-Crowdin-File-ID: 139\n"
 
 #: ../../source/modules/dwn/alos_mosaics.rst:2
 msgid "ALOS K&C mosaics"
@@ -35,17 +39,11 @@ msgid "display the mosaics in interactive maps; and"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:10
-msgid ""
-"export the mosaics as Google Earth Engine (GEE) assets and/or SEPAL .tif "
-"files."
+msgid "export the mosaics as Google Earth Engine (GEE) assets and/or SEPAL .tif files."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:12
-msgid ""
-"Designed on top of the interactive framework `sepal_ui "
-"<https://github.com/12rambau/sepal_ui>`_, it was adapted to the SEPAL "
-"environment from `this script by Vollrath "
-"<https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_."
+msgid "Designed on top of the interactive framework `sepal_ui <https://github.com/12rambau/sepal_ui>`_, it was adapted to the SEPAL environment from `this script by Vollrath <https://code.earthengine.google.com/3784ea8db0b93bcaa41d1a3ada0c055e>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:14
@@ -65,9 +63,7 @@ msgid "select filters"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:20
-msgid ""
-"The three-step process is described in the subsections below, as well as "
-"presented in the following video tutorial."
+msgid "The three-step process is described in the subsections below, as well as presented in the following video tutorial."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:25
@@ -75,11 +71,7 @@ msgid "Select an AOI"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:27
-msgid ""
-"Using the provided **AOI selector**, select an AOI of your choice between"
-" the different methods available in the tool. We provide three "
-"administrative descriptors (from level 0 to 2) and three custom shapes "
-"(drawn directly on the map, asset or shapefile)."
+msgid "Using the provided **AOI selector**, select an AOI of your choice between the different methods available in the tool. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile)."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:31
@@ -87,9 +79,7 @@ msgid "AOI selector"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:35
-msgid ""
-"If a custom AOI from a shape or drawing is selected, you will be able to "
-"use it directly (the upload to GEE will be launched in the background)."
+msgid "If a custom AOI from a shape or drawing is selected, you will be able to use it directly (the upload to GEE will be launched in the background)."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:38
@@ -105,12 +95,7 @@ msgid "**Year**: the year of interest"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:43
-msgid ""
-"**Speckle filter**: the speckle filter to use during the process -   no "
-"filter -   refined lee: speckle noise removal technique based on the Lee "
-"Filter (for more information, see `A.S. Yommy et al. "
-"<https://doi.org/10.1109/IHMSC.2015.236>`_). -   Quegan filter: See "
-"`Quegan et al. <https://doi.org/10.1109/36.964973>`_"
+msgid "**Speckle filter**: the speckle filter to use during the process -   no filter -   refined lee: speckle noise removal technique based on the Lee Filter (for more information, see `A.S. Yommy et al. <https://doi.org/10.1109/IHMSC.2015.236>`_). -   Quegan filter: See `Quegan et al. <https://doi.org/10.1109/36.964973>`_"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:47
@@ -122,9 +107,7 @@ msgid "**Db**: whether or not to scale the output to Db"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:50
-msgid ""
-"After setting your parameters, select the button (the dataset will be "
-"automatically sent to the **Vizualization** tile)."
+msgid "After setting your parameters, select the button (the dataset will be automatically sent to the **Vizualization** tile)."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:54
@@ -136,9 +119,7 @@ msgid "Display dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:59
-msgid ""
-"The dataset is automatically displayed on the interactive map, allowing "
-"you to zoom in and out."
+msgid "The dataset is automatically displayed on the interactive map, allowing you to zoom in and out."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:61
@@ -166,10 +147,7 @@ msgid "Export dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:74
-msgid ""
-"When you're satified with the information displayed, it can be exported "
-"for further use in GIS software or in a GEE process. The tool provides "
-"two main exportation options:"
+msgid "When you're satified with the information displayed, it can be exported for further use in GIS software or in a GEE process. The tool provides two main exportation options:"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:76
@@ -193,9 +171,7 @@ msgid "Export/add Radar Forest Degradation Index (RFDI, Mitchard *et al.*, 2012)
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:83
-msgid ""
-"Export/add GLCM texture layers for HH and HV polarizations (Variance, "
-"Homogeneity, Dissimilarity)"
+msgid "Export/add GLCM texture layers for HH and HV polarizations (Variance, Homogeneity, Dissimilarity)"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:84
@@ -211,9 +187,7 @@ msgid "Set the resolution as an integer number"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:90
-msgid ""
-"The default export parameters include: 25 m resolution with backscatter "
-"and RFDI."
+msgid "The default export parameters include: 25 m resolution with backscatter and RFDI."
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:94
@@ -221,9 +195,7 @@ msgid "Export"
 msgstr ""
 
 #: ../../source/modules/dwn/alos_mosaics.rst:98
-msgid ""
-"When exporting images to SEPAL, do not quit the application until the "
-"downloading process is complete."
+msgid "When exporting images to SEPAL, do not quit the application until the downloading process is complete."
 msgstr ""
 
 #~ msgid "ALOS Kyoto & Carbon Mosaics by JAXA"

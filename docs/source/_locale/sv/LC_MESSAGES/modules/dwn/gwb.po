@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:09+0000\n"
+"PO-Revision-Date: 2024-03-07 09:05\n"
 "Last-Translator: \n"
 "Language: sv\n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/gwb.po\n"
+"X-Crowdin-File-ID: 169\n"
 
 #: ../../source/modules/dwn/gwb.rst:2
 msgid "GWB"
@@ -23,11 +27,7 @@ msgid "*Suite of various geospatial image analysis tools*"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:5
-msgid ""
-"This article provides usage instructions for the image analysis module "
-"**GuidosToolbox Workbench (GWB)**, implemented as a Jupyter dashboard on "
-"the SEPAL platform (for more information on GWB), see "
-"`<https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_)."
+msgid "This article provides usage instructions for the image analysis module **GuidosToolbox Workbench (GWB)**, implemented as a Jupyter dashboard on the SEPAL platform (for more information on GWB), see `<https://forest.jrc.ec.europa.eu/en/activities/lpa/gwb/>`_)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:8
@@ -35,33 +35,19 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:10
-msgid ""
-"In 2008, `GuidosToolbox (GTB) "
-"<https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) (Vogt and "
-"Riitters, 2017) was developed as a graphical user interface (GUI) to the "
-"`Morphological Spatial Pattern Analysis (MSPA) "
-"<https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ of raster "
-"data (Soille and Vogt, 2009)."
+msgid "In 2008, `GuidosToolbox (GTB) <https://forest.jrc.ec.europa.eu/en/activities/lpa/gtb/>`_) (Vogt and Riitters, 2017) was developed as a graphical user interface (GUI) to the `Morphological Spatial Pattern Analysis (MSPA) <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ of raster data (Soille and Vogt, 2009)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:12
-msgid ""
-"GTB has since been enhanced with numerous modules for analysis of "
-"landscape objects, patterns and networks, as well as specialized modules "
-"for assessing fragmentation and restoration."
+msgid "GTB has since been enhanced with numerous modules for analysis of landscape objects, patterns and networks, as well as specialized modules for assessing fragmentation and restoration."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:14
-msgid ""
-"**GWB** provides the most popular GTB modules as a set of command-line "
-"applications for 64bit Linux systems."
+msgid "**GWB** provides the most popular GTB modules as a set of command-line applications for 64bit Linux systems."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:16
-msgid ""
-"In this article, we describe the implementation of **GWB** on the SEPAL "
-"platform as a Jupyter dashboard based on the `GWB CLI tool "
-"<https://docs.sepal.io/en/latest/cli/gwb.html>`_."
+msgid "In this article, we describe the implementation of **GWB** on the SEPAL platform as a Jupyter dashboard based on the `GWB CLI tool <https://docs.sepal.io/en/latest/cli/gwb.html>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:19
@@ -69,15 +55,11 @@ msgid "Presentation"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:21
-msgid ""
-"To launch the app, `register to SEPAL "
-"<https://docs.sepal.io/en/latest/setup/register.html>`_."
+msgid "To launch the app, `register to SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:23
-msgid ""
-"Then, navigate to the SEPAL **Apps** dashboard (purple wrench icon in the"
-" left pane)."
+msgid "Then, navigate to the SEPAL **Apps** dashboard (purple wrench icon in the left pane)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:25
@@ -93,16 +75,11 @@ msgid "Select the tool you want to use."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:37
-msgid ""
-"If this is the first time you have used the app, you will see the "
-"following pop-up window:"
+msgid "If this is the first time you have used the app, you will see the following pop-up window:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:43
-msgid ""
-"This licence needs to be accepted to use the **GWB** modules. It is also "
-"available in the :code:`Licence` section of the app. If you don't want to"
-" accept the licence, close the app tab."
+msgid "This licence needs to be accepted to use the **GWB** modules. It is also available in the :code:`Licence` section of the app. If you don't want to accept the licence, close the app tab."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:47
@@ -118,31 +95,19 @@ msgid "The application is structured as follows:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:54
-msgid ""
-"On the left, there is a navigation drawer that you can open and close "
-"using the :btn:`<fa-solid fa-ellipsis-vertical>` (upper-left side of the "
-"window)."
+msgid "On the left, there is a navigation drawer that you can open and close using the :btn:`<fa-solid fa-ellipsis-vertical>` (upper-left side of the window)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:58
-msgid ""
-"On small devices such as tablets or phones, the navigation drawer will be"
-" hidden by default. Select the :btn:`<fa-solid fa-ellipsis-vertical>` "
-"(upper-left side) to display the full extent of the app."
+msgid "On small devices such as tablets or phones, the navigation drawer will be hidden by default. Select the :btn:`<fa-solid fa-ellipsis-vertical>` (upper-left side) to display the full extent of the app."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:70
-msgid ""
-"Each name in the list corresponds to one **GWB** module, presented "
-"separately in the following sections. By selecting a name, the panes "
-"relative to the function will be displayed."
+msgid "Each name in the list corresponds to one **GWB** module, presented separately in the following sections. By selecting a name, the panes relative to the function will be displayed."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:78
-msgid ""
-"All **GWB** modules require categorical raster input maps in data type "
-"unsigned bytes (8bit), with discrete integer values within [0, 255] "
-"bytes. Any other data format will cause an error."
+msgid "All **GWB** modules require categorical raster input maps in data type unsigned bytes (8bit), with discrete integer values within [0, 255] bytes. Any other data format will cause an error."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:81
@@ -150,15 +115,11 @@ msgid "Launch a module"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:83
-msgid ""
-"For all modules, the first step is sanitizing the image provided by the "
-"user and changing the band values according to module requirements."
+msgid "For all modules, the first step is sanitizing the image provided by the user and changing the band values according to module requirements."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:85
-msgid ""
-"Then, select the parameters associated with the selected module and run "
-"it by selecting the final button."
+msgid "Then, select the parameters associated with the selected module and run it by selecting the final button."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:87
@@ -166,13 +127,7 @@ msgid "In the next section, each module and its specificities will be described.
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:91
-msgid ""
-"The :code:`module_results` folder is dedicated to producing data, not "
-"saving them. Once created, no binary image using the same name can be "
-"produced. If you're running the same analysis with different parameters, "
-"you can safely reuse the same one; if not, please delete or move the "
-"previous image before running. A warning message will be displayed in the"
-" application."
+msgid "The :code:`module_results` folder is dedicated to producing data, not saving them. Once created, no binary image using the same name can be produced. If you're running the same analysis with different parameters, you can safely reuse the same one; if not, please delete or move the previous image before running. A warning message will be displayed in the application."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:94
@@ -180,11 +135,7 @@ msgid "Modules"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:96
-msgid ""
-"Each module is presented individually in this article. You can directly "
-"jump to the module of interest by selecting the related link under the "
-"**Modules** section in the right pane of this page – the documentation "
-"will guide you through the respective processing steps."
+msgid "Each module is presented individually in this article. You can directly jump to the module of interest by selecting the related link under the **Modules** section in the right pane of this page – the documentation will guide you through the respective processing steps."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:99
@@ -192,13 +143,7 @@ msgid "Accounting (ACC)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:101
-msgid ""
-"This module will conduct the **Accounting** analysis. Accounting will "
-"label and calculate the area of all foreground objects. The results are "
-"spatially explicit maps and tabular summary statistics. Details on the "
-"methodology and input/output options can be found in the `Accounting "
-"product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-"
-"Objects-Accounting.pdf>`_."
+msgid "This module will conduct the **Accounting** analysis. Accounting will label and calculate the area of all foreground objects. The results are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Accounting product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Accounting.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:104 ../../source/modules/dwn/gwb.rst:236
@@ -210,19 +155,14 @@ msgid "Set up the input image"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:108 ../../source/modules/dwn/gwb.rst:240
-msgid ""
-"You can use the default dataset to test the module. Select the "
-":code:`Download test dataset` button on the top of the second pane to add"
-" the following files to your :code:`downloads` folder:"
+msgid "You can use the default dataset to test the module. Select the :code:`Download test dataset` button on the top of the second pane to add the following files to your :code:`downloads` folder:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:110 ../../source/modules/dwn/gwb.rst:242
 #: ../../source/modules/dwn/gwb.rst:357 ../../source/modules/dwn/gwb.rst:483
 #: ../../source/modules/dwn/gwb.rst:614 ../../source/modules/dwn/gwb.rst:990
 #: ../../source/modules/dwn/gwb.rst:1182
-msgid ""
-":code:`example.tif`: 0 bytes - Missing, 1 byte - Background, 2 bytes - "
-"Foreground"
+msgid ":code:`example.tif`: 0 bytes - Missing, 1 byte - Background, 2 bytes - Foreground"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:111 ../../source/modules/dwn/gwb.rst:243
@@ -230,46 +170,33 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:615 ../../source/modules/dwn/gwb.rst:722
 #: ../../source/modules/dwn/gwb.rst:854 ../../source/modules/dwn/gwb.rst:991
 #: ../../source/modules/dwn/gwb.rst:1082 ../../source/modules/dwn/gwb.rst:1183
-msgid ""
-":code:`clc3class.tif`: 1 byte - Agriculture, 2 bytes - Natural, 3 bytes -"
-" Developed"
+msgid ":code:`clc3class.tif`: 1 byte - Agriculture, 2 bytes - Natural, 3 bytes - Developed"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:117 ../../source/modules/dwn/gwb.rst:249
 #: ../../source/modules/dwn/gwb.rst:364 ../../source/modules/dwn/gwb.rst:490
 #: ../../source/modules/dwn/gwb.rst:728 ../../source/modules/dwn/gwb.rst:860
 #: ../../source/modules/dwn/gwb.rst:1088 ../../source/modules/dwn/gwb.rst:1189
-msgid ""
-"Once the files are downloaded, follow the normal process using the "
-":code:`downloads/example.tif` file (two classes)."
+msgid "Once the files are downloaded, follow the normal process using the :code:`downloads/example.tif` file (two classes)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:119
-msgid ""
-"The first step requires reclassifying your image. Using the "
-"**Reclassifying** pane, select your image in your **SEPAL folders**."
+msgid "The first step requires reclassifying your image. Using the **Reclassifying** pane, select your image in your **SEPAL folders**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:123 ../../source/modules/dwn/gwb.rst:255
 #: ../../source/modules/dwn/gwb.rst:627 ../../source/modules/dwn/gwb.rst:734
 #: ../../source/modules/dwn/gwb.rst:1003 ../../source/modules/dwn/gwb.rst:1094
 #: ../../source/modules/dwn/gwb.rst:1195
-msgid ""
-"If the image is on your local computer and not in your **SEPAL folders**,"
-" see `Exchange files with SEPAL "
-"<https://docs.sepal.io/en/latest/setup/filezilla.html>`_."
+msgid "If the image is on your local computer and not in your **SEPAL folders**, see `Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:125
-msgid ""
-"The dropdown menus will list the discrete values of your raster input "
-"image."
+msgid "The dropdown menus will list the discrete values of your raster input image."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:127
-msgid ""
-"Select each class in your image and place them in one of the following "
-"categories:"
+msgid "Select each class in your image and place them in one of the following categories:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:129 ../../source/modules/dwn/gwb.rst:259
@@ -289,17 +216,12 @@ msgid "**special background 2** (optional)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:134 ../../source/modules/dwn/gwb.rst:505
-msgid ""
-"Every class that is not set to a reclassifying category will be "
-"considered \"missing data\" (0 byte)."
+msgid "Every class that is not set to a reclassifying category will be considered \"missing data\" (0 byte)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:142 ../../source/modules/dwn/gwb.rst:387
 #: ../../source/modules/dwn/gwb.rst:513
-msgid ""
-"For forest analysis, set **Forest** as foreground and all other classes "
-"as background. If you specify a special background, it will be treated "
-"separately in the analysis (e.g. water, buildings)."
+msgid "For forest analysis, set **Forest** as foreground and all other classes as background. If you specify a special background, it will be treated separately in the analysis (e.g. water, buildings)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:145 ../../source/modules/dwn/gwb.rst:273
@@ -359,9 +281,7 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:167 ../../source/modules/dwn/gwb.rst:414
 #: ../../source/modules/dwn/gwb.rst:543 ../../source/modules/dwn/gwb.rst:775
 #: ../../source/modules/dwn/gwb.rst:1028 ../../source/modules/dwn/gwb.rst:1130
-msgid ""
-"8 neighbours (default) will use every pixel in the vicinity (including "
-"diagonals)"
+msgid "8 neighbours (default) will use every pixel in the vicinity (including diagonals)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:168
@@ -373,9 +293,7 @@ msgid "Spatial pixel resolution"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:178
-msgid ""
-"Set the spatial pixel resolution of your image (in metres). It is only "
-"used for the summary."
+msgid "Set the spatial pixel resolution of your image (in metres). It is only used for the summary."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:181
@@ -428,16 +346,11 @@ msgid "Run the analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:204 ../../source/modules/dwn/gwb.rst:311
-msgid ""
-"Once your parameters are set, launch the analysis. The blue rectangle "
-"will display information about the computation. Upon completion, it will "
-"turn green and display the **Computation log**."
+msgid "Once your parameters are set, launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the **Computation log**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:210
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/acc/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/acc/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:212 ../../source/modules/dwn/gwb.rst:319
@@ -465,18 +378,12 @@ msgstr ""
 #: ../../source/modules/dwn/gwb.rst:825 ../../source/modules/dwn/gwb.rst:968
 #: ../../source/modules/dwn/gwb.rst:1053 ../../source/modules/dwn/gwb.rst:1155
 #: ../../source/modules/dwn/gwb.rst:1254
-msgid ""
-"If the rectangle turns red, carefully read the information in the log. "
-"For example, your current instance may be too small to handle the file "
-"you want to analyse. In this case, close the app, open a bigger instance "
-"and run your analysis again."
+msgid "If the rectangle turns red, carefully read the information in the log. For example, your current instance may be too small to handle the file you want to analyse. In this case, close the app, open a bigger instance and run your analysis again."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:221 ../../source/modules/dwn/gwb.rst:329
 #: ../../source/modules/dwn/gwb.rst:459 ../../source/modules/dwn/gwb.rst:827
-msgid ""
-"Here is the result of the computation using the default parameters on the"
-" :code:`example.tif` file."
+msgid "Here is the result of the computation using the default parameters on the :code:`example.tif` file."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:229
@@ -484,50 +391,33 @@ msgid "Euclidean Distance (DIST)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:231
-msgid ""
-"This module will conduct the **Euclidean Distance** analysis. Each pixel "
-"will show the shortest distance to the foreground boundary. Pixels inside"
-" a foreground object have a positive distance value while background "
-"pixels have a negative distance value. The results are spatially explicit"
-" maps and tabular summary statistics."
+msgid "This module will conduct the **Euclidean Distance** analysis. Each pixel will show the shortest distance to the foreground boundary. Pixels inside a foreground object have a positive distance value while background pixels have a negative distance value. The results are spatially explicit maps and tabular summary statistics."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:233
-msgid ""
-"Details on the methodology and input/output options can be found in the "
-"`Distance product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets"
-"/GTB-Distance-Euclidean.pdf>`_."
+msgid "Details on the methodology and input/output options can be found in the `Distance product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Distance-Euclidean.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:251
-msgid ""
-"The first step requires reclassifying your image. Using the "
-"**Reclassifying** pane, select the image in your **SEPAL folder**."
+msgid "The first step requires reclassifying your image. Using the **Reclassifying** pane, select the image in your **SEPAL folder**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:257 ../../source/modules/dwn/gwb.rst:372
 #: ../../source/modules/dwn/gwb.rst:498 ../../source/modules/dwn/gwb.rst:629
 #: ../../source/modules/dwn/gwb.rst:736 ../../source/modules/dwn/gwb.rst:868
 #: ../../source/modules/dwn/gwb.rst:1096 ../../source/modules/dwn/gwb.rst:1197
-msgid ""
-"The dropdown menus will list the discrete values of your raster input "
-"image. Select each class in your image and place them in one of the "
-"following categories:"
+msgid "The dropdown menus will list the discrete values of your raster input image. Select each class in your image and place them in one of the following categories:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:262 ../../source/modules/dwn/gwb.rst:379
 #: ../../source/modules/dwn/gwb.rst:635 ../../source/modules/dwn/gwb.rst:741
 #: ../../source/modules/dwn/gwb.rst:1101 ../../source/modules/dwn/gwb.rst:1202
-msgid ""
-"Every class that is not set to a reclassifying category will be "
-"considered \"missing data\" (0 bytes)."
+msgid "Every class that is not set to a reclassifying category will be considered \"missing data\" (0 bytes)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:270 ../../source/modules/dwn/gwb.rst:749
 #: ../../source/modules/dwn/gwb.rst:1109 ../../source/modules/dwn/gwb.rst:1210
-msgid ""
-"For forest analysis, set **Forest** as foreground and all other classes "
-"as background."
+msgid "For forest analysis, set **Forest** as foreground and all other classes as background."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:284 ../../source/modules/dwn/gwb.rst:405
@@ -541,9 +431,7 @@ msgid "Options: Euclidian Distance only"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:292
-msgid ""
-"8 neighbors (default) will use every pixel in the vicinity (including "
-"diagonals)"
+msgid "8 neighbors (default) will use every pixel in the vicinity (including diagonals)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:293
@@ -559,9 +447,7 @@ msgid "compute the Euclidian Distance and the Hysometric Curve"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:317
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/dist/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/dist/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:320
@@ -585,59 +471,38 @@ msgid "Forest area density (FAD)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:342
-msgid ""
-"This module will conduct the **Fragmentation** analysis at **five fixed "
-"observation scales**."
+msgid "This module will conduct the **Fragmentation** analysis at **five fixed observation scales**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:344
-msgid ""
-"Since forest fragmentation is scale-dependent, fragmentation is reported "
-"at five observation scales, allowing different observers to make their "
-"own choice about scales and threshold of concern."
+msgid "Since forest fragmentation is scale-dependent, fragmentation is reported at five observation scales, allowing different observers to make their own choice about scales and threshold of concern."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:346
-msgid ""
-"The change of fragmentation across different observation scales provides "
-"additional information of interest."
+msgid "The change of fragmentation across different observation scales provides additional information of interest."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:348
-msgid ""
-"Fragmentation is measured by determining forest area density (**FAD**) "
-"within a shifting, local neighbourhood. It can be measured at pixel or "
-"patch level. The results are spatially explicit maps and tabular summary "
-"statistics (details on the methodology and input/output options can be "
-"found in the `Fragmentation product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_)."
+msgid "Fragmentation is measured by determining forest area density (**FAD**) within a shifting, local neighbourhood. It can be measured at pixel or patch level. The results are spatially explicit maps and tabular summary statistics (details on the methodology and input/output options can be found in the `Fragmentation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:355 ../../source/modules/dwn/gwb.rst:481
 #: ../../source/modules/dwn/gwb.rst:612 ../../source/modules/dwn/gwb.rst:719
 #: ../../source/modules/dwn/gwb.rst:851 ../../source/modules/dwn/gwb.rst:988
 #: ../../source/modules/dwn/gwb.rst:1079 ../../source/modules/dwn/gwb.rst:1180
-msgid ""
-"You can use the default dataset to test the module. Select the "
-":code:`Download test dataset` button on the top of the second pane, which"
-" will add the following files to your :code:`downloads` folder:"
+msgid "You can use the default dataset to test the module. Select the :code:`Download test dataset` button on the top of the second pane, which will add the following files to your :code:`downloads` folder:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:366 ../../source/modules/dwn/gwb.rst:492
 #: ../../source/modules/dwn/gwb.rst:623 ../../source/modules/dwn/gwb.rst:730
 #: ../../source/modules/dwn/gwb.rst:862 ../../source/modules/dwn/gwb.rst:1090
 #: ../../source/modules/dwn/gwb.rst:1191
-msgid ""
-"The first step requires reclassifying your image. Using the "
-"**Reclassifying** pane, select the image in your **SEPAL folders**."
+msgid "The first step requires reclassifying your image. Using the **Reclassifying** pane, select the image in your **SEPAL folders**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:370 ../../source/modules/dwn/gwb.rst:496
 #: ../../source/modules/dwn/gwb.rst:866
-msgid ""
-"If the image is on your local computer but not in your **SEPAL folders**,"
-" see `Exchange files with SEPAL "
-"<https://docs.sepal.io/en/latest/setup/filezilla.html>`_."
+msgid "If the image is on your local computer but not in your **SEPAL folders**, see `Exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:374 ../../source/modules/dwn/gwb.rst:500
@@ -661,10 +526,7 @@ msgid "special background 2 (optional)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:391 ../../source/modules/dwn/gwb.rst:517
-msgid ""
-"**Special background 2** is the non-fragmenting background (optional). "
-"For details, see the `Fragmentation product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_."
+msgid "**Special background 2** is the non-fragmenting background (optional). For details, see the `Fragmentation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:406 ../../source/modules/dwn/gwb.rst:534
@@ -690,10 +552,7 @@ msgid "Computation precision"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:425
-msgid ""
-"Set the precision used to compute your image. **Float precision** "
-"(default) will give more accurate results compared to **Rounded byte**, "
-"but requires more computing resources and disk space."
+msgid "Set the precision used to compute your image. **Float precision** (default) will give more accurate results compared to **Rounded byte**, but requires more computing resources and disk space."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:430
@@ -714,16 +573,11 @@ msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:439 ../../source/modules/dwn/gwb.rst:574
 #: ../../source/modules/dwn/gwb.rst:1039
-msgid ""
-"Once your parameters are all set, you can launch the analysis. The blue "
-"rectangle will display information about the computation. Upon "
-"completion, it will turn green and display the **Computation** log."
+msgid "Once your parameters are all set, you can launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the **Computation** log."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:445
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/fad/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/fad/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:448
@@ -751,11 +605,7 @@ msgid ":code:`<raster_name>_bin_map_fad_mscale.sav`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:457
-msgid ""
-"If the rectangle turns red, carefully read the information in the log. "
-"For example, your current instance may be too small to handle the file "
-"you want to analyse. In this case, close the app, open a bigger instance,"
-" and run your analysis again."
+msgid "If the rectangle turns red, carefully read the information in the log. For example, your current instance may be too small to handle the file you want to analyse. In this case, close the app, open a bigger instance, and run your analysis again."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:470
@@ -763,19 +613,11 @@ msgid "Fragmentation (FRAG)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:472
-msgid ""
-"This module will conduct the **Fragmentation** analysis at a **user-"
-"selected observation scale**."
+msgid "This module will conduct the **Fragmentation** analysis at a **user-selected observation scale**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:474
-msgid ""
-"This module and its option are similar to :code:`fad`, but allow the user"
-" to specify a single (or multiple) specific observation scale. The "
-"results are spatially explicit maps and tabular summary statistics. "
-"Details on the methodology and input/output options can be found in the "
-"`Fragmentation product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_."
+msgid "This module and its option are similar to :code:`fad`, but allow the user to specify a single (or multiple) specific observation scale. The results are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Fragmentation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Fragmentation-FADFOS.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:533
@@ -787,9 +629,7 @@ msgid "Window size: 23"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:536
-msgid ""
-"Options: fragmentation at pixel- or patch- level with various number of "
-"color-coded classes"
+msgid "Options: fragmentation at pixel- or patch- level with various number of color-coded classes"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:544 ../../source/modules/dwn/gwb.rst:776
@@ -798,9 +638,7 @@ msgid "4 neighbours will only use the vertical and horizontal one"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:554
-msgid ""
-"Set the spatial pixel resolution of your image in metres. This is only "
-"used for the summary."
+msgid "Set the spatial pixel resolution of your image in metres. This is only used for the summary."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:557 ../../source/modules/dwn/gwb.rst:657
@@ -833,9 +671,7 @@ msgid "FOS-APP5: average per-patch density, color-coded into 5 classes"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:580
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/frag/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/frag/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:583
@@ -855,9 +691,7 @@ msgid ":code:`<raster_name>_bin_map_frag.tif`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:592
-msgid ""
-"Here is the result of the computation using the **FAD-APP2** option on "
-"the :code:`example.tif` file:"
+msgid "Here is the result of the computation using the **FAD-APP2** option on the :code:`example.tif` file:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:599
@@ -865,31 +699,19 @@ msgid "Landscape mosaic (LM)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:601
-msgid ""
-"This module will conduct the **Landscape mosaic** analysis at a **user-"
-"selected observation scale**."
+msgid "This module will conduct the **Landscape mosaic** analysis at a **user-selected observation scale**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:603
-msgid ""
-"The **Landscape mosaic** measures land cover heterogeneity, or human "
-"influence, in a tri-polar classification of a location accounting for the"
-" relative contributions of the three land cover types (**Agriculture**, "
-"**Natural**, **Developed**) in the area surrounding that location."
+msgid "The **Landscape mosaic** measures land cover heterogeneity, or human influence, in a tri-polar classification of a location accounting for the relative contributions of the three land cover types (**Agriculture**, **Natural**, **Developed**) in the area surrounding that location."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:605
-msgid ""
-"The results are spatially explicit maps and tabular summary statistics. "
-"Details on the methodology and input/output options can be found in the "
-"`Landscape mosaic product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf>`_."
+msgid "The results are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Landscape mosaic product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-LM.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:621
-msgid ""
-"Once the files are downloaded, follow the normal process using the "
-":code:`downloads/clc3class.tif` file (three classes)."
+msgid "Once the files are downloaded, follow the normal process using the :code:`downloads/clc3class.tif` file (three classes)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:631
@@ -914,10 +736,7 @@ msgid "window size: 23"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:659
-msgid ""
-"Set the square window size (in pixels). It should be an odd number in [3,"
-" 5, ...501], with :math:`kdim` being the window size, which is related to"
-" the observation scale by the following formula:"
+msgid "Set the square window size (in pixels). It should be an odd number in [3, 5, ...501], with :math:`kdim` being the window size, which is related to the observation scale by the following formula:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:661 ../../source/modules/dwn/gwb.rst:906
@@ -941,16 +760,11 @@ msgid ":math:`kdim` in pixels"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:674
-msgid ""
-"Once your parameters are all set, you can launch the analysis. The blue "
-"rectangle will display information about the computation. Upon "
-"completion, it will turn green and display the **Computation log**."
+msgid "Once your parameters are all set, you can launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the **Computation log**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:680
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/lm/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/lm/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:683
@@ -982,9 +796,7 @@ msgid ":code:`lm103class_legend.png`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:695 ../../source/modules/dwn/gwb.rst:1055
-msgid ""
-"Here is the result of the computation using the default parameters on the"
-" :code:`clc3classes.tif` file:"
+msgid "Here is the result of the computation using the default parameters on the :code:`clc3classes.tif` file:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:706
@@ -992,34 +804,16 @@ msgid "Morphological Spatial Pattern Analysis (MSPA)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:710
-msgid ""
-"If you are considering using the **MSPA** module, keep in mind that the "
-"result provides a lot of information (up to 25 classes). The alternative "
-"module :code:`GWB_SPA` provides a similar, yet simplified assessment with"
-" up to six classes only. Both modules describe morphological features of "
-"foreground objects. While **MSPA** may address certain features of "
-"fragmentation, a more comprehensive assessment of fragmentation is "
-"obtained with the dedicated fragmentation modules: :code:`GWB_FRAG` or "
-":code:`GWB_FAD`."
+msgid "If you are considering using the **MSPA** module, keep in mind that the result provides a lot of information (up to 25 classes). The alternative module :code:`GWB_SPA` provides a similar, yet simplified assessment with up to six classes only. Both modules describe morphological features of foreground objects. While **MSPA** may address certain features of fragmentation, a more comprehensive assessment of fragmentation is obtained with the dedicated fragmentation modules: :code:`GWB_FRAG` or :code:`GWB_FAD`."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:712
-msgid ""
-"This module will conduct `MSPA "
-"<https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ analysis "
-"shape and connectivity, as well as conduct a segmentation of foreground "
-"patches in up to 25 feature classes. The results are spatially explicit "
-"maps and tabular summary statistics. Details on the methodology and "
-"input/output options can be found in the `Morphology product sheet <https"
-"://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-"
-"Morphology.pdf>`_."
+msgid "This module will conduct `MSPA <https://forest.jrc.ec.europa.eu/en/activities/lpa/mspa/>`_ analysis shape and connectivity, as well as conduct a segmentation of foreground patches in up to 25 feature classes. The results are spatially explicit maps and tabular summary statistics. Details on the methodology and input/output options can be found in the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:721 ../../source/modules/dwn/gwb.rst:853
 #: ../../source/modules/dwn/gwb.rst:1081
-msgid ""
-":code:`example.tif`: 0 byte - Missing, 1 byte - Background, 2 bytes - "
-"Foreground"
+msgid ":code:`example.tif`: 0 byte - Missing, 1 byte - Background, 2 bytes - Foreground"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:763
@@ -1051,9 +845,7 @@ msgid "Edge width"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:786
-msgid ""
-"Define the width (measured in pixels) of the core-boundaries (edges and "
-"perforations)."
+msgid "Define the width (measured in pixels) of the core-boundaries (edges and perforations)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:789
@@ -1061,10 +853,7 @@ msgid "Transition"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:791
-msgid ""
-"Select if you want to show transition pixels, where connecting pathways "
-"go through edges/perforations (transition=1 (true), default) or not "
-"(transition=0)."
+msgid "Select if you want to show transition pixels, where connecting pathways go through edges/perforations (transition=1 (true), default) or not (transition=0)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:794
@@ -1072,9 +861,7 @@ msgid "Intext"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:796
-msgid ""
-"Select if you want to distinguish **MSPA** classes and holes laying "
-"within core objects (intext=1 (true), default) or not (intext=0)."
+msgid "Select if you want to distinguish **MSPA** classes and holes laying within core objects (intext=1 (true), default) or not (intext=0)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:799
@@ -1083,10 +870,7 @@ msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:801
 #, python-format
-msgid ""
-"Select if you want to process with minimum RAM usage (disk=0 (false), "
-"default) or not (disk=1 (true) requires 20% less RAM but +40% processing "
-"time)."
+msgid "Select if you want to process with minimum RAM usage (disk=0 (false), default) or not (disk=1 (true) requires 20% less RAM but +40% processing time)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:804
@@ -1094,22 +878,15 @@ msgid "Statistics"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:806
-msgid ""
-"Select if you want to calculate summary statistics (statistics=0 (false),"
-" default) or (statistics=1 (true) +10% processing time)"
+msgid "Select if you want to calculate summary statistics (statistics=0 (false), default) or (statistics=1 (true) +10% processing time)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:811 ../../source/modules/dwn/gwb.rst:1141
-msgid ""
-"Once your parameters are set, you can launch the analysis. The blue "
-"rectangle will display information about the computation. Upon "
-"completion, it will turn green and display the computation log."
+msgid "Once your parameters are set, you can launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the computation log."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:817
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/mspa/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/mspa/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:820
@@ -1125,10 +902,7 @@ msgid "Density, Contagion or Adjacency Analysis (P223)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:840
-msgid ""
-"This module will conduct the **Density** (P2), **Contagion** (P22) or "
-"**Adjacency** (P23) analysis of foreground (**FG**) objects at a user-"
-"selected observation scale (Riitters *et al.*, 2000)."
+msgid "This module will conduct the **Density** (P2), **Contagion** (P22) or **Adjacency** (P23) analysis of foreground (**FG**) objects at a user-selected observation scale (Riitters *et al.*, 2000)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:842 ../../source/modules/dwn/gwb.rst:1169
@@ -1136,12 +910,7 @@ msgid "The results are spatially explicit maps and tabular summary statistics."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:844
-msgid ""
-"The classification is determined by measurements of forest amount (P2) "
-"and connectivity (P22) within the neighbourhood that is centred on a "
-"subject forest pixel. P2 is the probability that a pixel in the "
-"neighbourhood is forest; P22 is the probability that a pixel next to a "
-"forest pixel is also forest."
+msgid "The classification is determined by measurements of forest amount (P2) and connectivity (P22) within the neighbourhood that is centred on a subject forest pixel. P2 is the probability that a pixel in the neighbourhood is forest; P22 is the probability that a pixel next to a forest pixel is also forest."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:872
@@ -1149,16 +918,11 @@ msgid "special background (for P23 only)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:874
-msgid ""
-"Every class that is not set to a reclassifying category will be "
-"considered as \"missing data\" (0 bytes)."
+msgid "Every class that is not set to a reclassifying category will be considered as \"missing data\" (0 bytes)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:882
-msgid ""
-"For forest analysis, set **Forest** as foreground and all the other "
-"classes as background. If you specify a special background, it will be "
-"treated separately in the analysis (e.g. water, buildings)."
+msgid "For forest analysis, set **Forest** as foreground and all the other classes as background. If you specify a special background, it will be treated separately in the analysis (e.g. water, buildings)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:897
@@ -1174,10 +938,7 @@ msgid "Algorithm: FG-Density"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:904
-msgid ""
-"Set the square window size (in pixels). It should be an odd number in [3,"
-" 5, ...501] with :math:`kdim` being related to the observation scale by "
-"the following formula:"
+msgid "Set the square window size (in pixels). It should be an odd number in [3, 5, ...501] with :math:`kdim` being related to the observation scale by the following formula:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:910
@@ -1185,10 +946,7 @@ msgid "Also note that:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:919
-msgid ""
-"Set the precision used to compute your image. **Float precision** "
-"(default) will give more accurate results compared to **rounded byte**, "
-"but will also take more computing resources and disk space."
+msgid "Set the precision used to compute your image. **Float precision** (default) will give more accurate results compared to **rounded byte**, but will also take more computing resources and disk space."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:922
@@ -1196,32 +954,20 @@ msgid "Algorithm"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:924
-msgid ""
-"The **P223** module can run: **FG-Density** (P2), **FG-Contagion** (P22),"
-" or **FG-Adjacency** (P23)."
+msgid "The **P223** module can run: **FG-Density** (P2), **FG-Contagion** (P22), or **FG-Adjacency** (P23)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:926
 #, python-format
-msgid ""
-"**P223** will provide a color-coded image showing [0,100]% for either "
-"**FG-Density**, **FG-Contagion**, or **FG-Adjacency** masked for the "
-"foreground cover. Use the alternative options to obtain the original "
-"spatcon output without normalization, masking or color-coding."
+msgid "**P223** will provide a color-coded image showing [0,100]% for either **FG-Density**, **FG-Contagion**, or **FG-Adjacency** masked for the foreground cover. Use the alternative options to obtain the original spatcon output without normalization, masking or color-coding."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:930
-msgid ""
-"For original spatcon output **ONLY**: Missing values are coded as 0 "
-"(rounded byte), or -0.01 (float precision). For all output types, missing"
-" indicates that the input window contained only missing pixels."
+msgid "For original spatcon output **ONLY**: Missing values are coded as 0 (rounded byte), or -0.01 (float precision). For all output types, missing indicates that the input window contained only missing pixels."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:935
-msgid ""
-"For FG-Contagion and FG-Adjacency output **ONLY**: Missing also indicates"
-" that the input window contained no foreground pixels (there was no "
-"information about foreground edge)."
+msgid "For FG-Contagion and FG-Adjacency output **ONLY**: Missing also indicates that the input window contained no foreground pixels (there was no information about foreground edge)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:938
@@ -1265,16 +1011,11 @@ msgid "FG-SumD      (original spatcon output)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:954
-msgid ""
-"Once your parameters are set, you can launch the analysis. The blue "
-"rectangle will display information about the computation. Upon "
-"completion, it will turn green and display the **Computation log**."
+msgid "Once your parameters are set, you can launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the **Computation log**."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:960
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/p223/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/p223/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:963
@@ -1286,9 +1027,7 @@ msgid ":code:`<raster_name>_bin_map_p<option>_<window>.txt`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:970
-msgid ""
-"Here is the result of the computation using the P2 (Foreground-Density) "
-"option on the :code:`example.tif` file."
+msgid "Here is the result of the computation using the P2 (Foreground-Density) option on the :code:`example.tif` file."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:977
@@ -1296,36 +1035,23 @@ msgid "Parcellation (PARC)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:979
-msgid ""
-"This module will conduct the **Parcellation** analysis, providing a "
-"statistical summary file (.txt/.csv format) with details for each unique "
-"class found in the image, as well as the full image content: class value,"
-" total number of objects, total area and degree of parcellation."
+msgid "This module will conduct the **Parcellation** analysis, providing a statistical summary file (.txt/.csv format) with details for each unique class found in the image, as well as the full image content: class value, total number of objects, total area and degree of parcellation."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:981
-msgid ""
-"Details on the methodology and input/output options can be found in the "
-"`Parcellation product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_."
+msgid "Details on the methodology and input/output options can be found in the `Parcellation product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Objects-Parcellation.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:997
-msgid ""
-"Once the files are downloaded, follow the normal process using the "
-":code:`downloads/clc3classes.tif` file (three classes)."
+msgid "Once the files are downloaded, follow the normal process using the :code:`downloads/clc3classes.tif` file (three classes)."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:999
-msgid ""
-"The first step requires selecting your image in your **SEPAL folders**. "
-"The image must be a categorical .tif raster."
+msgid "The first step requires selecting your image in your **SEPAL folders**. The image must be a categorical .tif raster."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1045
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/parc/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/parc/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1048
@@ -1489,11 +1215,7 @@ msgid "Restoration status summary (RSS)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1068
-msgid ""
-"This module will conduct the **Restoration status summary** analysis, "
-"which will calculate key attributes of the current network status, "
-"composed of foreground (forest) patches, as well as provide the "
-"normalized degree of network coherence."
+msgid "This module will conduct the **Restoration status summary** analysis, which will calculate key attributes of the current network status, composed of foreground (forest) patches, as well as provide the normalized degree of network coherence."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1070
@@ -1501,16 +1223,11 @@ msgid "The results are tabular summary statistics."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1072
-msgid ""
-"Details on the methodology and input/output options can be found in the "
-"`Restoration Planner product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_."
+msgid "Details on the methodology and input/output options can be found in the `Restoration Planner product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-RestorationPlanner.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1147
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/rss/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/rss/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1150
@@ -1522,9 +1239,7 @@ msgid ":code:`rss<connectivity>.csv`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1157
-msgid ""
-"Here is the result of the computation using the default parameters on the"
-" :code:`example.tif` file:"
+msgid "Here is the result of the computation using the default parameters on the :code:`example.tif` file:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1
@@ -1608,10 +1323,7 @@ msgid "Simplified pattern analysis (SPA)"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1167
-msgid ""
-"This module will conduct the **Simplified pattern analysis**, which "
-"shapes and conducts a segmentation of foreground patches into two, three,"
-" five or six feature classes."
+msgid "This module will conduct the **Simplified pattern analysis**, which shapes and conducts a segmentation of foreground patches into two, three, five or six feature classes."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1171
@@ -1619,10 +1331,7 @@ msgid ":code:`GWB_SPA` is a simpler version of :code:`GWB_MSPA`."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1173
-msgid ""
-"Details on the methodology and input/output options can be found in the "
-"`Morphology product sheet <https://ies-"
-"ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_."
+msgid "Details on the methodology and input/output options can be found in the `Morphology product sheet <https://ies-ows.jrc.ec.europa.eu/gtb/GTB/psheets/GTB-Pattern-Morphology.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1225
@@ -1654,16 +1363,11 @@ msgid "6: Core, Core-Openings, Edge, Perforation, Islet, Margin"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1240
-msgid ""
-"Once your parameters are set, you can launch the analysis. The blue "
-"rectangle will display information about the computation. Upon "
-"completion, it will turn green and display the **Computation** log."
+msgid "Once your parameters are set, you can launch the analysis. The blue rectangle will display information about the computation. Upon completion, it will turn green and display the **Computation** log."
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1246
-msgid ""
-"The resulting files are stored in the folder "
-":code:`module_results/gwb/spa/`. For example:"
+msgid "The resulting files are stored in the folder :code:`module_results/gwb/spa/`. For example:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1249
@@ -1675,9 +1379,7 @@ msgid ":code:`<raster_name>_bin_map_spa<number of classes>.txt`"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1256
-msgid ""
-"Here is the result of the computation using SPA2 (two classes) on the "
-":code:`example.tif` file:"
+msgid "Here is the result of the computation using SPA2 (two classes) on the :code:`example.tif` file:"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1265
@@ -1685,9 +1387,7 @@ msgid "References"
 msgstr ""
 
 #: ../../source/modules/dwn/gwb.rst:1267
-msgid ""
-"`GuidosToolbox Workbench: Spatial analysis of raster maps for ecological "
-"applications <https://doi.org/10.1111/ecog.05864>`_"
+msgid "`GuidosToolbox Workbench: Spatial analysis of raster maps for ecological applications <https://doi.org/10.1111/ecog.05864>`_"
 msgstr ""
 
 #~ msgid "GuidosToolbox Workbench"

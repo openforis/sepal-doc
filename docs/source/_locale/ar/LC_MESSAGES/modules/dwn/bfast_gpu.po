@@ -1,19 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:05+0000\n"
+"PO-Revision-Date: 2024-03-07 08:56\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/bfast_gpu.po\n"
+"X-Crowdin-File-ID: 145\n"
 
 #: ../../source/modules/dwn/bfast_gpu.rst:2
 msgid "BFAST GPU"
@@ -24,10 +27,7 @@ msgid "*GPU implementation of the BFAST algorithm to analyse time series*"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:5
-msgid ""
-"This article provides usage instructions for the GPU implementation of "
-"Breaks for Additive Seasonal and Trend (BFAST), implemented here as a "
-"Jupyter dashboard on SEPAL."
+msgid "This article provides usage instructions for the GPU implementation of Breaks for Additive Seasonal and Trend (BFAST), implemented here as a Jupyter dashboard on SEPAL."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:8
@@ -35,26 +35,15 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:10
-msgid ""
-"Large amounts of satellite data are now becoming available, which, in "
-"combination with appropriate change detection methods, offer the "
-"opportunity to derive accurate information on timing and location of "
-"disturbances (e.g. deforestation events across the Earth's surface)."
+msgid "Large amounts of satellite data are now becoming available, which, in combination with appropriate change detection methods, offer the opportunity to derive accurate information on timing and location of disturbances (e.g. deforestation events across the Earth's surface)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:12
-msgid ""
-"Typical scenarios require the analysis of billions of image "
-"patches/pixels, which can become very expensive from a computational "
-"point of view."
+msgid "Typical scenarios require the analysis of billions of image patches/pixels, which can become very expensive from a computational point of view."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:14
-msgid ""
-"The `BFAST package <https://pypi.org/project/bfast/>`_ provides "
-"efficient, massively parallel implementation for one of the state-of-the-"
-"art change detection methods called `BFASTmonitor "
-"<http://bfast.r-forge.r-project.org>`, as proposed by Verbesselt *et al.*"
+msgid "The `BFAST package <https://pypi.org/project/bfast/>`_ provides efficient, massively parallel implementation for one of the state-of-the-art change detection methods called `BFASTmonitor <http://bfast.r-forge.r-project.org>`, as proposed by Verbesselt *et al.*"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:18
@@ -62,18 +51,11 @@ msgid "The analysis perfomed pixel-wise"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:20
-msgid ""
-"The implementation is based on `OpenCL "
-"<https://www.khronos.org/opencl/>`_. It allows the processing of large-"
-"scale change detection scenarios given satellite time series data. The "
-"optimizations made are tailored to the specific requirements of modern, "
-"massively parallel devices, such as graphics processing units (GPUs)."
+msgid "The implementation is based on `OpenCL <https://www.khronos.org/opencl/>`_. It allows the processing of large-scale change detection scenarios given satellite time series data. The optimizations made are tailored to the specific requirements of modern, massively parallel devices, such as graphics processing units (GPUs)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:22
-msgid ""
-"The full documentation of the :code:`bfast` package can be found `on this"
-" page <https://bfast.readthedocs.io/en/latest/>`_."
+msgid "The full documentation of the :code:`bfast` package can be found `on this page <https://bfast.readthedocs.io/en/latest/>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:25
@@ -81,17 +63,11 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:29
-msgid ""
-"Before launching the **BFAST** module, you need to have at least one time"
-" series in your **SEPAL folders**."
+msgid "Before launching the **BFAST** module, you need to have at least one time series in your **SEPAL folders**."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:33
-msgid ""
-"If, while using the app, a user comes across an error starting with "
-"\"Unable to allocate ...\", it means that the instance used to run the "
-"application is too small. You'll need to start a larger instance and "
-"restart the application."
+msgid "If, while using the app, a user comes across an error starting with \"Unable to allocate ...\", it means that the instance used to run the application is too small. You'll need to start a larger instance and restart the application."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:36
@@ -99,9 +75,7 @@ msgid "Set up"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:38
-msgid ""
-"To launch the app, follow the `steps to register for SEPAL "
-"<https://docs.sepal.io/en/latest/setup/register.html>`_."
+msgid "To launch the app, follow the `steps to register for SEPAL <https://docs.sepal.io/en/latest/setup/register.html>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:40
@@ -109,9 +83,7 @@ msgid "Open a **GPU instance** in your terminal (:code:`g4` or :code:`g8`)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:42
-msgid ""
-"Then move to the SEPAL **Apps** dashboard (purple wrench icon on the left"
-" side pane)."
+msgid "Then move to the SEPAL **Apps** dashboard (purple wrench icon on the left side pane)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:44
@@ -119,12 +91,7 @@ msgid "Finally, search for and select **bfast GPU**."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:46
-msgid ""
-"The application should launch itself in the **BFAST process** section. On"
-" the left side, the **navdrawer** will help you navigate between the "
-"different pages of the app. If you select :code:`wiki`, :code:`bug "
-"report` or :code:`code source`, you will be redirected to the "
-"corresponding webpage."
+msgid "The application should launch itself in the **BFAST process** section. On the left side, the **navdrawer** will help you navigate between the different pages of the app. If you select :code:`wiki`, :code:`bug report` or :code:`code source`, you will be redirected to the corresponding webpage."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:50
@@ -144,23 +111,15 @@ msgid "Select a folder in the first widget."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:61
-msgid ""
-"Navigate through your folders to find the time series folder you want to "
-"analyse. Click outside the pop-up window to exit the selection. Your "
-"folder should only contain folders with numbered names (corresponding to "
-"each tile of the TS)."
+msgid "Navigate through your folders to find the time series folder you want to analyse. Click outside the pop-up window to exit the selection. Your folder should only contain folders with numbered names (corresponding to each tile of the TS)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:63
-msgid ""
-"By selecting an appropriate folder, a widget will be automatically "
-"completed and enabled, as described below:"
+msgid "By selecting an appropriate folder, a widget will be automatically completed and enabled, as described below:"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:65
-msgid ""
-":code:`output directory name`: Completed with the basename of your TS "
-"folder."
+msgid ":code:`output directory name`: Completed with the basename of your TS folder."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:66
@@ -168,17 +127,11 @@ msgid ":code:`select tiles to use`: Preselect all available tiles."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:67
-msgid ""
-":code:`monitoring dates`: The slider is enabled and completed with the "
-"date list included in the TS folder (the values default to the full range"
-" of dates)."
+msgid ":code:`monitoring dates`: The slider is enabled and completed with the date list included in the TS folder (the values default to the full range of dates)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:68
-msgid ""
-":code:`historical period`: The slider is enabled and completed with the "
-"date list included in the TS folder (the value defaults to the first date"
-" of the TS)."
+msgid ":code:`historical period`: The slider is enabled and completed with the date list included in the TS folder (the value defaults to the first date of the TS)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:72
@@ -186,12 +139,7 @@ msgid "Select a folder and preload all information."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:76
-msgid ""
-"If your selected folder does not meet the requirements of a SEPAL TS "
-"folder, the prefilled inputs will be emptied and disabled, and you will "
-"be notified twice that the folder is not set (in the input and in the "
-"warning banner). Select an appropriate folder to see these messages "
-"disappear."
+msgid "If your selected folder does not meet the requirements of a SEPAL TS folder, the prefilled inputs will be emptied and disabled, and you will be notified twice that the folder is not set (in the input and in the warning banner). Select an appropriate folder to see these messages disappear."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:80
@@ -203,42 +151,27 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:85
-msgid ""
-"Now you can change the parameters to fit the requirements of your "
-"analysis:"
+msgid "Now you can change the parameters to fit the requirements of your analysis:"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:87
-msgid ""
-":code:`output directory name`: This name will be used to store all of "
-"your analysis. While it is completed automatically with the base name of "
-"your TS folder, you can change it."
+msgid ":code:`output directory name`: This name will be used to store all of your analysis. While it is completed automatically with the base name of your TS folder, you can change it."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:91
-msgid ""
-"The name of your folder can only contain alphanumeric characters and no "
-"special characters (e.g. :code:`space`). If you try to use them, the name"
-" will be automatically sanitized."
+msgid "The name of your folder can only contain alphanumeric characters and no special characters (e.g. :code:`space`). If you try to use them, the name will be automatically sanitized."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:93
-msgid ""
-":code:`Select tiles to use`: These are the tiles that you want to use in "
-"your analysis. They default to :code:`all` but you can deselect any that "
-"you don't need."
+msgid ":code:`Select tiles to use`: These are the tiles that you want to use in your analysis. They default to :code:`all` but you can deselect any that you don't need."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:94
-msgid ""
-":code:`Number of harmonic`: Specifies the order of the harmonic term, "
-"defaulting to 3."
+msgid ":code:`Number of harmonic`: Specifies the order of the harmonic term, defaulting to 3."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:95
-msgid ""
-":code:`Frequency of seasonal model`: The frequency for the seasonal "
-"model, set here in months."
+msgid ":code:`Frequency of seasonal model`: The frequency for the seasonal model, set here in months."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:96
@@ -246,25 +179,15 @@ msgid ":code:`Add trend`: Whether a trend offset term shall be used or not."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:97
-msgid ""
-":code:`Monitoring dates`: The year that marks the end of the historical "
-"period and the start of the monitoring period. The default value does not"
-" allow sufficient images in the historical stable period."
+msgid ":code:`Monitoring dates`: The year that marks the end of the historical period and the start of the monitoring period. The default value does not allow sufficient images in the historical stable period."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:101
-msgid ""
-"If you allow less than 40 images between the start of the historical "
-"stable period and the start of monitoring, the programme will display a "
-"warning. You will still be able to launch the process, but the result "
-"will be very uncertain, as not enough images were provided to build an "
-"accurate model."
+msgid "If you allow less than 40 images between the start of the historical stable period and the start of monitoring, the programme will display a warning. You will still be able to launch the process, but the result will be very uncertain, as not enough images were provided to build an accurate model."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:105
-msgid ""
-":code:`History start date`: Specifies the start of the stable historical "
-"period"
+msgid ":code:`History start date`: Specifies the start of the stable historical period"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:108
@@ -272,45 +195,27 @@ msgid "Advanced parameters"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:112
-msgid ""
-"These parameters are for advanced users only. The default value provides "
-"accurate results in many situations."
+msgid "These parameters are for advanced users only. The default value provides accurate results in many situations."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:114
-msgid ""
-"Select :code:`Advanced parameters` and a new pane of options will be "
-"available:"
+msgid "Select :code:`Advanced parameters` and a new pane of options will be available:"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:116
-msgid ""
-":code:`bandwith relative to sample size`: Float in the interval (0,1), "
-"specifying the bandwidth relative to the sample size in the MOSUM/ME "
-"monitoring processes."
+msgid ":code:`bandwith relative to sample size`: Float in the interval (0,1), specifying the bandwidth relative to the sample size in the MOSUM/ME monitoring processes."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:117
-msgid ""
-":code:`Significance level of the monitoring`: Significance level of the "
-"monitoring procedure and ROC, if selected (i.e. probability of Type I "
-"error)."
+msgid ":code:`Significance level of the monitoring`: Significance level of the monitoring procedure and ROC, if selected (i.e. probability of Type I error)."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:118
-msgid ""
-":code:`backend`: Specifies the implementation that shall be used: "
-"**Python** resorts to the non-optimized Python version; **OpenCL** "
-"resorts to the optimized, massively parallel OpenCL implementation."
+msgid ":code:`backend`: Specifies the implementation that shall be used: **Python** resorts to the non-optimized Python version; **OpenCL** resorts to the optimized, massively parallel OpenCL implementation."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:122
-msgid ""
-"If you didn't initiate a GPU instance before starting the application, "
-"the **OpenCL** backend will be disabled, as no GPU is available on your "
-"machine. Please close the app and your previous instance, and start a "
-":code:`g4` or :code:`g8`. If you run the application on a GPU machine, "
-"the default backend is **OpenCL**."
+msgid "If you didn't initiate a GPU instance before starting the application, the **OpenCL** backend will be disabled, as no GPU is available on your machine. Please close the app and your previous instance, and start a :code:`g4` or :code:`g8`. If you run the application on a GPU machine, the default backend is **OpenCL**."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:126
@@ -326,9 +231,7 @@ msgid "You can now select :code:`LAUNCH BFAST ANALYSIS` to start the process."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:133
-msgid ""
-"The process will start shortly, notifying you of it's advancement tile by"
-" tile in the **Info banner**, as shown in the following figure."
+msgid "The process will start shortly, notifying you of it's advancement tile by tile in the **Info banner**, as shown in the following figure."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:137
@@ -336,18 +239,11 @@ msgid "Process currently runnning"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:141
-msgid ""
-"Closing the app will shut down the Python kernel that runs underneath, "
-"thus stopping your process. In it's current implementation, the app "
-"should stay open to run."
+msgid "Closing the app will shut down the Python kernel that runs underneath, thus stopping your process. In it's current implementation, the app should stay open to run."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:145
-msgid ""
-"If your connection to SEPAL is lost and the application stops, use the "
-"exact same parameters as your previous analysis. The application will "
-"find the already computed tiles and images, and start from where it "
-"stopped instead of restarting from scratch."
+msgid "If your connection to SEPAL is lost and the application stops, use the exact same parameters as your previous analysis. The application will find the already computed tiles and images, and start from where it stopped instead of restarting from scratch."
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:149
@@ -355,9 +251,7 @@ msgid "End of computation screen"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:151
-msgid ""
-"The module provided the following :code:`.vrt` outputs: -   "
-":code:`~/module_results/bfast/[name_of_input]/[bfast_params]/bfast_outputs.vrt`"
+msgid "The module provided the following :code:`.vrt` outputs: -   :code:`~/module_results/bfast/[name_of_input]/[bfast_params]/bfast_outputs.vrt`"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:154
@@ -385,9 +279,7 @@ msgid "Example"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:165
-msgid ""
-"Here you'll find an example of two bands over the Juaboso Region in Ghana"
-" with a monitoring period between 2017 and 2019:"
+msgid "Here you'll find an example of two bands over the Juaboso Region in Ghana with a monitoring period between 2017 and 2019:"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:169
@@ -395,9 +287,7 @@ msgid "Magnitude display with the magma colormap, values in [-624, 417]"
 msgstr ""
 
 #: ../../source/modules/dwn/bfast_gpu.rst:173
-msgid ""
-"Breaks masked in the centre of the region, displayed with a viridis "
-"colormap, values in [2017.26, 2019.98]"
+msgid "Breaks masked in the centre of the region, displayed with a viridis colormap, values in [2017.26, 2019.98]"
 msgstr ""
 
 #~ msgid ""

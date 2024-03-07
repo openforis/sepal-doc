@@ -1,39 +1,33 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:05+0000\n"
+"PO-Revision-Date: 2024-03-07 08:56\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/sepal_mgci.po\n"
+"X-Crowdin-File-ID: 187\n"
 
 #: ../../source/modules/dwn/sepal_mgci.rst:2
 msgid "SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:4
-msgid ""
-"*A tool to support the computation of SDG Indicator 15.4.2 Indicator "
-"15.4.2: (a) Mountain Green Cover Index and (b) Proportion of degraded "
-"mountain land using SEPAL (System for Earth Observation Data Access, "
-"Processing, and Analysis for Land Monitoring).*"
+msgid "*A tool to support the computation of SDG Indicator 15.4.2 Indicator 15.4.2: (a) Mountain Green Cover Index and (b) Proportion of degraded mountain land using SEPAL (System for Earth Observation Data Access, Processing, and Analysis for Land Monitoring).*"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:6
-msgid ""
-"This guide will introduce you to SEPAL-SDG 15.4.2 :sub:`beta` and will "
-"provide you detailed instructions on how the set it up and carry out the "
-"computation of both sub-indicators in a step-by-step manner. Screenshots "
-"are included to make it easier for the user to know what each description"
-" refers to."
+msgid "This guide will introduce you to SEPAL-SDG 15.4.2 :sub:`beta` and will provide you detailed instructions on how the set it up and carry out the computation of both sub-indicators in a step-by-step manner. Screenshots are included to make it easier for the user to know what each description refers to."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:10
@@ -45,26 +39,11 @@ msgid "About SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:15
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` has been developed by the Food and "
-"Agriculture Organization (FAO) of the United Nations to support  national"
-" authorities to compute and report against SDG Indicator 15.4.2. SEPAL-"
-"SDG 15.4.2 :sub:`beta` is built on SEPAL, an open-source cloud-based "
-"platform that allows users to query and process satellite data quickly "
-"and efficiently, tailor products for local needs, and produce "
-"sophisticated and relevant geospatial analyses quickly. To know more "
-"about SEPAL visit the `SEPAL website "
-"<https://docs.sepal.io/en/latest/>`_."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` has been developed by the Food and Agriculture Organization (FAO) of the United Nations to support  national authorities to compute and report against SDG Indicator 15.4.2. SEPAL-SDG 15.4.2 :sub:`beta` is built on SEPAL, an open-source cloud-based platform that allows users to query and process satellite data quickly and efficiently, tailor products for local needs, and produce sophisticated and relevant geospatial analyses quickly. To know more about SEPAL visit the `SEPAL website <https://docs.sepal.io/en/latest/>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:17
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` is in a beta stage and therefore it is still"
-" under development. If you have specific bugs to report or improvements "
-"to the tool that you would like to suggest, please use the `GitHub’s "
-"issue tracker <https://github.com/dfguerrerom/sepal_mgci/issues>`_ of "
-"SEPAL-SDG 15.4.2 :sub:`beta` and do follow the `contribution guidelines "
-"<https://github.com/dfguerrerom/sepal_mgci/blob/master/CONTRIBUTE.md>`_."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` is in a beta stage and therefore it is still under development. If you have specific bugs to report or improvements to the tool that you would like to suggest, please use the `GitHub’s issue tracker <https://github.com/dfguerrerom/sepal_mgci/issues>`_ of SEPAL-SDG 15.4.2 :sub:`beta` and do follow the `contribution guidelines <https://github.com/dfguerrerom/sepal_mgci/blob/master/CONTRIBUTE.md>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:20
@@ -72,17 +51,11 @@ msgid "Authors"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:22
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` has been developed by the Food and "
-"Agriculture Organization (FAO) of the United Nations, and has been funded"
-" by Norway's International Climate and Forest Iniciative (NICFI)."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` has been developed by the Food and Agriculture Organization (FAO) of the United Nations, and has been funded by Norway's International Climate and Forest Iniciative (NICFI)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:24
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` has been developed by Daniel Guerrero. Ann "
-"Cheptoo Rotich developed the technical documentation. Xavier de Lamo led "
-"and supervised the development of both products."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` has been developed by Daniel Guerrero. Ann Cheptoo Rotich developed the technical documentation. Xavier de Lamo led and supervised the development of both products."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:27
@@ -90,12 +63,7 @@ msgid "License"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:28
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` is free and open source. It is licensed "
-"under `MIT license <https://opensource.org/licenses/MIT>`_. The "
-"documentation is made available under the terms of the `Creative Commons "
-"Attribution 4.0 International License (CC BY 4.0) "
-"<https://creativecommons.org/licenses/by/4.0/>`_."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` is free and open source. It is licensed under `MIT license <https://opensource.org/licenses/MIT>`_. The documentation is made available under the terms of the `Creative Commons Attribution 4.0 International License (CC BY 4.0) <https://creativecommons.org/licenses/by/4.0/>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:31
@@ -103,48 +71,23 @@ msgid "Data sources"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:33
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` draws on a number of global data sources to "
-"allow the computation of the SDG 15.4.2 indicator when similar national "
-"data is not available. The datasets described below have been made "
-"available by the following organizations under separate terms as "
-"indicated in their respective metadata."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` draws on a number of global data sources to allow the computation of the SDG 15.4.2 indicator when similar national data is not available. The datasets described below have been made available by the following organizations under separate terms as indicated in their respective metadata."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:35
-msgid ""
-"**Land cover**: European Space Agency (ESA) Climate Change Initiative "
-"(CCI) Land cover, available at `ESA-CCI land cover website "
-"<https://maps.elie.ucl.ac.be/CCI/viewer/index.php>`_."
+msgid "**Land cover**: European Space Agency (ESA) Climate Change Initiative (CCI) Land cover, available at `ESA-CCI land cover website <https://maps.elie.ucl.ac.be/CCI/viewer/index.php>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:36
-msgid ""
-"**Digital Elevation Model**: The Shuttle Radar Topography Mission (SRTM),"
-" available at `Google Earth Engine Data SRTM "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/CGIAR_SRTM90_V4>`_."
+msgid "**Digital Elevation Model**: The Shuttle Radar Topography Mission (SRTM), available at `Google Earth Engine Data SRTM <https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:37
-msgid ""
-"**Administrative Boundaries**: FAO GAUL: Global Administrative Unit "
-"Layers 2015, available at `Google Earth Engine Data FAO GAUL "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level1>`_."
+msgid "**Administrative Boundaries**: FAO GAUL: Global Administrative Unit Layers 2015, available at `Google Earth Engine Data FAO GAUL <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:39
-msgid ""
-"**Note:** The  Administrative Boundaries provided in this tool are in the"
-" public domain. The designations employed and the presentation of "
-"material on this map do not imply the expression of any opinion "
-"whatsoever on the part of the Secretariat of the United Nations "
-"concerning the legal status of any country, territory, city or area or "
-"its authorities, or concerning the delimitation of its frontiers or "
-"boundaries. If using SEPAL-SDG 15.4.2 :sub:`beta` for official purposes, "
-"it is recommended that users use an official boundary provided by the "
-"designated office of their country."
+msgid "**Note:** The  Administrative Boundaries provided in this tool are in the public domain. The designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or area or its authorities, or concerning the delimitation of its frontiers or boundaries. If using SEPAL-SDG 15.4.2 :sub:`beta` for official purposes, it is recommended that users use an official boundary provided by the designated office of their country."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:42
@@ -156,35 +99,19 @@ msgid "Initial setup"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:46
-msgid ""
-"SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered "
-"Earth-observation cloud-computing platform, as it builds in many of its "
-"functionalities. This means that to run SEPAL-SDG 15.4.2 :sub:`beta` you "
-"will need to have **connected SEPAL and GEE accounts**."
+msgid "SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform, as it builds in many of its functionalities. This means that to run SEPAL-SDG 15.4.2 :sub:`beta` you will need to have **connected SEPAL and GEE accounts**."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:48
-msgid ""
-"To **Create a SEPAL account** please follow the `registration steps "
-"described here <https://docs.sepal.io/en/latest/setup/register.html#sign-"
-"up-to-sepal>`_ and then familiarize yourself with the tool by exploring "
-"its interface."
+msgid "To **Create a SEPAL account** please follow the `registration steps described here <https://docs.sepal.io/en/latest/setup/register.html#sign-up-to-sepal>`_ and then familiarize yourself with the tool by exploring its interface."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:49
-msgid ""
-"To **Create a Google Earth Engine (GEE) account** please follow these "
-"`steps <https://docs.sepal.io/en/latest/setup/gee.html#create-a-gee-"
-"account>`_ and don't forget to `initialize the home folder "
-"<https://docs.sepal.io/en/latest/setup/gee.html#initialize-the-home-"
-"folder>`_."
+msgid "To **Create a Google Earth Engine (GEE) account** please follow these `steps <https://docs.sepal.io/en/latest/setup/gee.html#create-a-gee-account>`_ and don't forget to `initialize the home folder <https://docs.sepal.io/en/latest/setup/gee.html#initialize-the-home-folder>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:50
-msgid ""
-"To **Connect your SEPAL and GEE accounts** follow the `instructions "
-"described here <https://docs.sepal.io/en/latest/setup/gee.html"
-"#connection-between-gee-and-sepal>`_."
+msgid "To **Connect your SEPAL and GEE accounts** follow the `instructions described here <https://docs.sepal.io/en/latest/setup/gee.html#connection-between-gee-and-sepal>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:53
@@ -192,59 +119,19 @@ msgid "Data Requirements"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:54
-msgid ""
-"SDG Indicator 15.4.2 requires several spatial data inputs to be computed."
-" These include:"
+msgid "SDG Indicator 15.4.2 requires several spatial data inputs to be computed. These include:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:56
-msgid ""
-"**A Mountain Area Map:** For the purposes of standardization and "
-"international comparability of indicators values, SDG Indicator 15.4.2 "
-"adheres to the UNEP-WCMC mountain definition (UNEP-WCMC, 2002). The UNEP-"
-"WCMC method defines total global mountain area as the sum of seven "
-"classes (commonly known as ‘Kapos mountain classes’), based on elevation,"
-" slope and local elevation ranges parameters. This mountain area is "
-"subdivided into bioclimatic belts (Nival, Alpine, Montane, and Remaining "
-"Mountain Area) based on average temperatures as defined by Körner et al. "
-"(2011). A global mountain area map based on these definitions and "
-"methodologies has been developed by FAO and is used by default by SEPAL-"
-"SDG 15.4.2 :sub:`beta` as part of the computations."
+msgid "**A Mountain Area Map:** For the purposes of standardization and international comparability of indicators values, SDG Indicator 15.4.2 adheres to the UNEP-WCMC mountain definition (UNEP-WCMC, 2002). The UNEP-WCMC method defines total global mountain area as the sum of seven classes (commonly known as ‘Kapos mountain classes’), based on elevation, slope and local elevation ranges parameters. This mountain area is subdivided into bioclimatic belts (Nival, Alpine, Montane, and Remaining Mountain Area) based on average temperatures as defined by Körner et al. (2011). A global mountain area map based on these definitions and methodologies has been developed by FAO and is used by default by SEPAL-SDG 15.4.2 :sub:`beta` as part of the computations."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:58
-msgid ""
-"**A National Administrative Boundary for the country of interest:** "
-"SEPAL-SDG 15.4.2 :sub:`beta` has been conceived to facilitate the "
-"computation of of SDG Indicator 15.4.2 at country level. To facilitate "
-"access to this , SEPAL-SDG 15.4.2 :sub:`beta` uses as a default global "
-"data source for national boundaries: the FAO GAUL Global Administrative "
-"Unit Layers 2015 data set. However, the tool also allows national "
-"agencies to use their own national country boundary layer if available."
+msgid "**A National Administrative Boundary for the country of interest:** SEPAL-SDG 15.4.2 :sub:`beta` has been conceived to facilitate the computation of of SDG Indicator 15.4.2 at country level. To facilitate access to this , SEPAL-SDG 15.4.2 :sub:`beta` uses as a default global data source for national boundaries: the FAO GAUL Global Administrative Unit Layers 2015 data set. However, the tool also allows national agencies to use their own national country boundary layer if available."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:60
-msgid ""
-"**A collection of Land Cover Maps for the country of interest:** Land "
-"cover maps represent spatial information on different types (classes) of "
-"physical coverage of the Earth's surface, e.g. forests, grasslands, "
-"croplands, lakes, wetlands. This data serves different functions for SDG "
-"Indicator 15.4.2: In Sub-Indicator 15.4.2a, land cover is used to "
-"categorize land into green and non-green cover areas. In Sub-Indicator "
-"15.4.2b, land cover is used to identify areas where changes in the type "
-"of land cover may indicate a decline or loss of biodiversity, mountain "
-"ecosystem functions or services that are considered desirable in a local "
-"or national context. The collection of land cover maps to compute this "
-"indicator should be available from the year 2000. Simlarly, to the "
-"national administrative boundary dataset, SEPAL-SDG 15.4.2 :sub:`beta` "
-"provides access to the default land cover maps selected by FAO to compute"
-" the indicator (see Data Sources section). However, it also facilitates "
-"national authorities to use relevant national or regional land cover "
-"datasets. These datasets should also be available as GEE assets as an "
-"`image collection <https://developers.google.com/earth-"
-"engine/guides/ic_creating>`_ in order to allow SEPAL-SDG 15.4.2 "
-":sub:`beta` to access it. The next section of the tutorial will explain "
-"you how to do this."
+msgid "**A collection of Land Cover Maps for the country of interest:** Land cover maps represent spatial information on different types (classes) of physical coverage of the Earth's surface, e.g. forests, grasslands, croplands, lakes, wetlands. This data serves different functions for SDG Indicator 15.4.2: In Sub-Indicator 15.4.2a, land cover is used to categorize land into green and non-green cover areas. In Sub-Indicator 15.4.2b, land cover is used to identify areas where changes in the type of land cover may indicate a decline or loss of biodiversity, mountain ecosystem functions or services that are considered desirable in a local or national context. The collection of land cover maps to compute this indicator should be available from the year 2000. Simlarly, to the national administrative boundary dataset, SEPAL-SDG 15.4.2 :sub:`beta` provides access to the default land cover maps selected by FAO to compute the indicator (see Data Sources section). However, it also facilitates national authorities to use relevant national or regional land cover datasets. These datasets should also be available as GEE assets as an `image collection <https://developers.google.com/earth-engine/guides/ic_creating>`_ in order to allow SEPAL-SDG 15.4.2 :sub:`beta` to access it. The next section of the tutorial will explain you how to do this."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:63
@@ -252,16 +139,11 @@ msgid "Uploading files into Google Earth Engine"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:64
-msgid ""
-"GEE allows the uploading of different types of data formats: shapefiles, "
-"raster images, image collection and CSV tables. This section will show "
-"how to upload different data types into the platform."
+msgid "GEE allows the uploading of different types of data formats: shapefiles, raster images, image collection and CSV tables. This section will show how to upload different data types into the platform."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:66
-msgid ""
-"Go to **Assets** in the top left panel in the **Earth Engine Code "
-"Editor** page. Clicking on it will open the **Asset Manager**"
+msgid "Go to **Assets** in the top left panel in the **Earth Engine Code Editor** page. Clicking on it will open the **Asset Manager**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -269,10 +151,7 @@ msgid "GEE_Interface"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:73
-msgid ""
-"Select **New**. You will have several choices, including **Raster** "
-"(Geotiffs or TFRecords), **Vector* (Shapefiles) and **Data tables** (csv "
-"files), which will be described in the following subsections."
+msgid "Select **New**. You will have several choices, including **Raster** (Geotiffs or TFRecords), **Vector* (Shapefiles) and **Data tables** (csv files), which will be described in the following subsections."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:76
@@ -280,19 +159,11 @@ msgid "2.3.1 Uploading a vector file"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:77
-msgid ""
-"In SEPAL-SDG 15.4.2 :sub:`beta` custom country boundaries need to be "
-"uploaded in vector format. To do so, choose **Shapefiles**. A pop-up "
-"window will appear. Navigate to the location of your data."
+msgid "In SEPAL-SDG 15.4.2 :sub:`beta` custom country boundaries need to be uploaded in vector format. To do so, choose **Shapefiles**. A pop-up window will appear. Navigate to the location of your data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:78
-msgid ""
-"In the pop-up window, select the file you want to upload from your "
-"computer. You can upload the vector data in a compressed mode as a "
-":code:`.zip` file. If not, remember that the a :code:`.shp` file alone is"
-" not sufficient and must be accompanied with other files describing the "
-"vector data."
+msgid "In the pop-up window, select the file you want to upload from your computer. You can upload the vector data in a compressed mode as a :code:`.zip` file. If not, remember that the a :code:`.shp` file alone is not sufficient and must be accompanied with other files describing the vector data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -300,9 +171,7 @@ msgid "Vector_File"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:85
-msgid ""
-"Any file errors will be highlighted by the uploader, as in the example "
-"below:"
+msgid "Any file errors will be highlighted by the uploader, as in the example below:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -310,11 +179,7 @@ msgid "Vector_Error"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:92
-msgid ""
-"Once all files are loaded correctly, they are displayed in the task "
-"manager. Typically this process takes a couple of minutes depending on "
-"the size of the dataset. The progress of the upload is displayed in the "
-"task manager as shown below:"
+msgid "Once all files are loaded correctly, they are displayed in the task manager. Typically this process takes a couple of minutes depending on the size of the dataset. The progress of the upload is displayed in the task manager as shown below:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -322,9 +187,7 @@ msgid "vector_uploading_process"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:99
-msgid ""
-"The uploaded assets will be listed in the Assets List under the Assets "
-"tab. If not displayed, click on the Refresh button."
+msgid "The uploaded assets will be listed in the Assets List under the Assets tab. If not displayed, click on the Refresh button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -332,9 +195,7 @@ msgid "Assets_listed"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:106
-msgid ""
-"Clicking on the asset will open a pop-window. The asset is ready for use."
-" You can now visualize, share or delete it accordingly it entirely:"
+msgid "Clicking on the asset will open a pop-window. The asset is ready for use. You can now visualize, share or delete it accordingly it entirely:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -346,21 +207,11 @@ msgid "Uploading a raster file"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:116
-msgid ""
-"In SEPAL-SDG 15.4.2 :sub:`beta`, land cover maps need to be uploaded as "
-"raster files and made available as an `image collection "
-"<https://developers.google.com/earth-engine/guides/ic_creating>`_. To do "
-"so, select **Image**."
+msgid "In SEPAL-SDG 15.4.2 :sub:`beta`, land cover maps need to be uploaded as raster files and made available as an `image collection <https://developers.google.com/earth-engine/guides/ic_creating>`_. To do so, select **Image**."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:118
-msgid ""
-"In the pop-up window, select the file you want to upload from your "
-"computer (compatible formats include :code:`.tiff`, :code:`.tif`, "
-":code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`; the name of "
-"your asset can be changed in the next text field). By default, the asset "
-"will be named after the basename. Please ensure that the name includes "
-"the reference year of the land cover map."
+msgid "In the pop-up window, select the file you want to upload from your computer (compatible formats include :code:`.tiff`, :code:`.tif`, :code:`.json`, :code:`.tfrecord` or :code:`.tfrecord.gz`; the name of your asset can be changed in the next text field). By default, the asset will be named after the basename. Please ensure that the name includes the reference year of the land cover map."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -372,10 +223,7 @@ msgid "Repeat step 2 for each of the land cover maps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:127
-msgid ""
-"Once all the land cover maps have been uploaded, you can create an image "
-"collection following `Google Earth Engine good practice guidelines on the"
-" topic <https://developers.google.com/earth-engine/guides/ic_creating>`_."
+msgid "Once all the land cover maps have been uploaded, you can create an image collection following `Google Earth Engine good practice guidelines on the topic <https://developers.google.com/earth-engine/guides/ic_creating>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:130
@@ -383,9 +231,7 @@ msgid "Uploading a table file"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:131
-msgid ""
-"Google Earth Engine allows the upload of tabular data in CSV format. To "
-"upload a table file do the following:"
+msgid "Google Earth Engine allows the upload of tabular data in CSV format. To upload a table file do the following:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:133
@@ -393,19 +239,11 @@ msgid "Select New > **csv file upload**."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:134
-msgid ""
-"In the pop-up window that appears, select the file you want to upload "
-"from your computer (note: compatible formats include :code:`.csv`, "
-":code:`.json`)."
+msgid "In the pop-up window that appears, select the file you want to upload from your computer (note: compatible formats include :code:`.csv`, :code:`.json`)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:143
-msgid ""
-"Now you can access and use your assets in SEPAL. As you have already "
-"established a connection between your GEE and SEPAL accounts, all your "
-"assets are synced and available for you in SEPAL. You will be able to "
-"select them from the dropdown or copy/paste them directly from GEE when "
-"prompted in SEPAL-SDG 15.4.2 :sub:`beta`"
+msgid "Now you can access and use your assets in SEPAL. As you have already established a connection between your GEE and SEPAL accounts, all your assets are synced and available for you in SEPAL. You will be able to select them from the dropdown or copy/paste them directly from GEE when prompted in SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:146
@@ -413,12 +251,7 @@ msgid "The SEPAL interface and the SEPAL-SDG 15.4.2 :sub:`beta` module"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:148
-msgid ""
-"If you are new to SEPAL, it is recommended to take a look over the "
-"interface and familiarize yourself with the main tools. A detailed "
-"description of the features can be consulted in the `interface "
-"documentation <https://docs.sepal.io/en/latest/setup/presentation.html"
-"#sepal-interface>`_."
+msgid "If you are new to SEPAL, it is recommended to take a look over the interface and familiarize yourself with the main tools. A detailed description of the features can be consulted in the `interface documentation <https://docs.sepal.io/en/latest/setup/presentation.html#sepal-interface>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:152
@@ -426,29 +259,15 @@ msgid "Setting up a SEPAL instance"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:153
-msgid ""
-"Applications such as the SEPAL-SDG 15.4.2 :sub:`beta` make use of SEPAL "
-"instances; running them will use your SEPAL computing resources. "
-"Selecting an app automatically initiates the process and starts the "
-"smallest instance to run the SEPAL sandbox. However, in some cases, "
-"especially where more powerful processing is required, you might need "
-"larger instances. For this reason, in some cases you may need manually "
-"set up a larger SEPAL instance before running SEPAL-SDG 15.4.2 "
-":sub:`beta`. To do that do the following:"
+msgid "Applications such as the SEPAL-SDG 15.4.2 :sub:`beta` make use of SEPAL instances; running them will use your SEPAL computing resources. Selecting an app automatically initiates the process and starts the smallest instance to run the SEPAL sandbox. However, in some cases, especially where more powerful processing is required, you might need larger instances. For this reason, in some cases you may need manually set up a larger SEPAL instance before running SEPAL-SDG 15.4.2 :sub:`beta`. To do that do the following:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:155
-msgid ""
-"Go to the `SEPAL terminal "
-"<https://docs.sepal.io/en/latest/setup/presentation.html#terminal>`_ "
-"(blue icon in the left panel in the image below) and wait for the "
-"instance selector to start."
+msgid "Go to the `SEPAL terminal <https://docs.sepal.io/en/latest/setup/presentation.html#terminal>`_ (blue icon in the left panel in the image below) and wait for the instance selector to start."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:162
-msgid ""
-"Type the instance name. In our case m2 or m4 should suffice, then press "
-"ENTER."
+msgid "Type the instance name. In our case m2 or m4 should suffice, then press ENTER."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:163
@@ -456,9 +275,7 @@ msgid "Wait for the instance to finish loading."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:164
-msgid ""
-"Once completed, go back to the dashboard of the application to launch "
-"your app. It will automatically use the instance you have set."
+msgid "Once completed, go back to the dashboard of the application to launch your app. It will automatically use the instance you have set."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:167
@@ -466,13 +283,7 @@ msgid "Opening SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:169
-msgid ""
-"To open the the SEPAL-SDG 15.4.2 :sub:`beta` module use the `apps tab "
-"<https://docs.sepal.io/en/latest/setup/presentation.html#apps-tab>`_ and "
-"navigate through the list of apps until you find the module "
-"(alternatively, you can type in the search box \"SDG 15.4.2\"). Once you "
-"have find it, click over the app drawer and wait patiently until SEPAL-"
-"SDG 15.4.2 :sub:`beta` module is displayed (it may take a few minutes)."
+msgid "To open the the SEPAL-SDG 15.4.2 :sub:`beta` module use the `apps tab <https://docs.sepal.io/en/latest/setup/presentation.html#apps-tab>`_ and navigate through the list of apps until you find the module (alternatively, you can type in the search box \"SDG 15.4.2\"). Once you have find it, click over the app drawer and wait patiently until SEPAL-SDG 15.4.2 :sub:`beta` module is displayed (it may take a few minutes)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -480,30 +291,15 @@ msgid "MGCI module"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:176
-msgid ""
-"The module should look like the image below. As any other SEPAL module, "
-"SEPAL-SDG 15.4.2 :sub:`beta` is divided into two main sections:"
+msgid "The module should look like the image below. As any other SEPAL module, SEPAL-SDG 15.4.2 :sub:`beta` is divided into two main sections:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:178
-msgid ""
-"**Process drawers**: Located on the top left of the interface. This is "
-"where you can find the processing steps to accomplish the goal of the "
-"module. In SEPAL-SDG 15.4.2 beta, this is composed by 4 processing steps:"
-" Area of interest; Land cover settings; Indicator settings and Results."
+msgid "**Process drawers**: Located on the top left of the interface. This is where you can find the processing steps to accomplish the goal of the module. In SEPAL-SDG 15.4.2 beta, this is composed by 4 processing steps: Area of interest; Land cover settings; Indicator settings and Results."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:180
-msgid ""
-"**Help drawers**: Located just below the process drawers. This is used to"
-" describe the tool, the objectives and give a background about how it was"
-" developed. This is composed by the source code (the module was developed"
-" under a MIT license, which means that the development is freely "
-"accessible, and the code is public in GitHub); the Wiki (the latest "
-"documentation on tool) and the Bug report (use this section to report any"
-" unexpected result or behavior. To do so, please follow the `contribution"
-" guidelines "
-"<https://github.com/dfguerrerom/sepal_mgci/blob/master/CONTRIBUTE.md>`_.)"
+msgid "**Help drawers**: Located just below the process drawers. This is used to describe the tool, the objectives and give a background about how it was developed. This is composed by the source code (the module was developed under a MIT license, which means that the development is freely accessible, and the code is public in GitHub); the Wiki (the latest documentation on tool) and the Bug report (use this section to report any unexpected result or behavior. To do so, please follow the `contribution guidelines <https://github.com/dfguerrerom/sepal_mgci/blob/master/CONTRIBUTE.md>`_.)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:188
@@ -511,23 +307,15 @@ msgid "Personalising SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:190
-msgid ""
-"SEPAL includes functionalities to personalize the appearance of SEPAL-SDG"
-" 15.4.2 :sub:`beta`"
+msgid "SEPAL includes functionalities to personalize the appearance of SEPAL-SDG 15.4.2 :sub:`beta`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:192
-msgid ""
-"**Theme customization:** You can choose between a dark or light theme. To"
-" change the theme, click the light mode icon (highlighted) at the top "
-"ribbon of the interface. The application will need to be restarted to "
-"apply the changes."
+msgid "**Theme customization:** You can choose between a dark or light theme. To change the theme, click the light mode icon (highlighted) at the top ribbon of the interface. The application will need to be restarted to apply the changes."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:200
-msgid ""
-"**Language selection:** SEPAL-SDG 15.4.2 :sub:`beta` is currently only "
-"available in English. New language versions will be made available soon."
+msgid "**Language selection:** SEPAL-SDG 15.4.2 :sub:`beta` is currently only available in English. New language versions will be made available soon."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:204
@@ -539,12 +327,7 @@ msgid "Conceptual framework"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:208
-msgid ""
-"This section will guide you through the sequence of processing steps to "
-"calculate SDG indicator 15.4.2. The main goal is to assess the changes in"
-" land cover in mountain areas by bioclimatic belts. The algorithm works "
-"using land cover data, a digital elevation model, a mountain area map and"
-" a national administrative boundary layer."
+msgid "This section will guide you through the sequence of processing steps to calculate SDG indicator 15.4.2. The main goal is to assess the changes in land cover in mountain areas by bioclimatic belts. The algorithm works using land cover data, a digital elevation model, a mountain area map and a national administrative boundary layer."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:211
@@ -552,14 +335,7 @@ msgid "Overview of Sub-Indicator 15.4.2a (Mountain Green Cover Index)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:213
-msgid ""
-"**Sub-indicator 15.4.2a**, Mountain Green Cover Index (MGCI), is designed"
-" to measure the extent and changes of green cover - i.e. forest, shrubs, "
-"trees, pasture land, cropland, etc. – in mountain areas. MGCI is defined "
-"as the percentage of green cover over the total surface of the mountain "
-"area of a given country and for given reporting year. The aim of the "
-"index is to monitor the evolution of the green cover and thus assess the "
-"status of conservation of mountain ecosystems."
+msgid "**Sub-indicator 15.4.2a**, Mountain Green Cover Index (MGCI), is designed to measure the extent and changes of green cover - i.e. forest, shrubs, trees, pasture land, cropland, etc. – in mountain areas. MGCI is defined as the percentage of green cover over the total surface of the mountain area of a given country and for given reporting year. The aim of the index is to monitor the evolution of the green cover and thus assess the status of conservation of mountain ecosystems."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:215
@@ -572,19 +348,12 @@ msgid "Where:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:221
-msgid ""
-"**Mountain Green Cover Area n** = Sum of areas (in km2) covered by (1) "
-"tree-covered areas, (2) croplands,(3) grasslands, (4) shrub-covered areas"
-" and (5) shrubs and/or herbaceous vegetation, aquatic or regularly "
-"flooded classes in the reporting period n"
+msgid "**Mountain Green Cover Area n** = Sum of areas (in km2) covered by (1) tree-covered areas, (2) croplands,(3) grasslands, (4) shrub-covered areas and (5) shrubs and/or herbaceous vegetation, aquatic or regularly flooded classes in the reporting period n"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:222
 #: ../../source/modules/dwn/sepal_mgci.rst:236
-msgid ""
-"**Total mountain area** = Total area of mountains (in km2). In both the "
-"numerator and denominator, mountain area is defined according to UNEP-"
-"WCMC (2002)."
+msgid "**Total mountain area** = Total area of mountains (in km2). In both the numerator and denominator, mountain area is defined according to UNEP-WCMC (2002)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:225
@@ -592,32 +361,15 @@ msgid "Overview of Sub-Indicator 15.4.2b (Proportion of degraded mountain land)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:227
-msgid ""
-"**Sub-indicator 15.4.2b**, Proportion of degraded mountain land, is "
-"designed to monitor the extent of degraded mountain land as a result of "
-"land cover change of a given country and for given reporting year. "
-"Similarly to sub-indicator ‘’trends in land cover” under SDG Indicator "
-"15.3.1 (Sims et al. 2021), mountain ecosystem degradation and recovery is"
-" assessed based on the definition of land cover type transitions that "
-"constitute degradation, as either improving, stable or degraded. The "
-"definition of degradation adopted for the computation of this indicator "
-"is the one established Intergovernmental Science-Policy Platform on "
-"Biodiversity and Ecosystem Services (IPBES)."
+msgid "**Sub-indicator 15.4.2b**, Proportion of degraded mountain land, is designed to monitor the extent of degraded mountain land as a result of land cover change of a given country and for given reporting year. Similarly to sub-indicator ‘’trends in land cover” under SDG Indicator 15.3.1 (Sims et al. 2021), mountain ecosystem degradation and recovery is assessed based on the definition of land cover type transitions that constitute degradation, as either improving, stable or degraded. The definition of degradation adopted for the computation of this indicator is the one established Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:229
-msgid ""
-"Proportion Of Degraded Mountain Land = (Degraded Mountain Area n) / "
-"(Total Mountain Area) * 100"
+msgid "Proportion Of Degraded Mountain Land = (Degraded Mountain Area n) / (Total Mountain Area) * 100"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:235
-msgid ""
-"**Degraded mountain area n** = Total degraded mountain area (in km2) in "
-"the reporting period n. This is, the sum of the areas where land cover "
-"change is considered to constitute degradation from the baseline period. "
-"Degraded mountain land will be assessed based on the land cover "
-"transition matrix in Annex 1."
+msgid "**Degraded mountain area n** = Total degraded mountain area (in km2) in the reporting period n. This is, the sum of the areas where land cover change is considered to constitute degradation from the baseline period. Degraded mountain land will be assessed based on the land cover transition matrix in Annex 1."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:238
@@ -625,19 +377,11 @@ msgid "**Disaggregation:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:240
-msgid ""
-"Both of these sub-indicators are disaggregated by mountain bioclimatic "
-"belts as defined by Körner et al. (2011). In addition, sub-indicator "
-"15.4.2a is disaggregated by the 10 SEEA classes based on UN Statistical "
-"Division (2014).  Those values are reported both as proportions (percent)"
-" and area (in square kilometres)"
+msgid "Both of these sub-indicators are disaggregated by mountain bioclimatic belts as defined by Körner et al. (2011). In addition, sub-indicator 15.4.2a is disaggregated by the 10 SEEA classes based on UN Statistical Division (2014).  Those values are reported both as proportions (percent) and area (in square kilometres)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:243
-msgid ""
-"More detailed information on the overall conceptual framework of the "
-"indicator is available in the `indicator's metadata "
-"<https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf>`_."
+msgid "More detailed information on the overall conceptual framework of the indicator is available in the `indicator's metadata <https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:245
@@ -649,11 +393,7 @@ msgid "Defining the area of interest (AoI)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:251
-msgid ""
-"The calculation of the SDG 15.4.2 will be restricted to a specific area "
-"of interest defined by the user. In this first step, you will have the "
-"option to choose between a predefined list of administrative layers or to"
-" use a custom dataset."
+msgid "The calculation of the SDG 15.4.2 will be restricted to a specific area of interest defined by the user. In this first step, you will have the option to choose between a predefined list of administrative layers or to use a custom dataset."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:253
@@ -673,10 +413,7 @@ msgid "Custom layers"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:265
-msgid ""
-"**2. The Administrative definitions option uses the predifined "
-"administrative boundary layers available by default in the module. To "
-"define the Area of Interest using this option, do the following:**"
+msgid "**2. The Administrative definitions option uses the predifined administrative boundary layers available by default in the module. To define the Area of Interest using this option, do the following:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:267
@@ -684,10 +421,7 @@ msgid "Select **Country** under Administrative definitions."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:268
-msgid ""
-"In the dropdown list that will appear, select the country or territory in"
-" which you want to calculate SDG Indicator 15.4.2. In this example, we "
-"will select Nepal, as shown below."
+msgid "In the dropdown list that will appear, select the country or territory in which you want to calculate SDG Indicator 15.4.2. In this example, we will select Nepal, as shown below."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -695,12 +429,7 @@ msgid "selecting_nepal"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:275
-msgid ""
-"Click on **Select Area of Interest (AOI)** and the map will display your "
-"selection. A corresponding legend is also displayed. The algorithm "
-"automatically generates a legend based on the mountain bioclimatic belt "
-"classes and the area for each of them as defined in the global mountain "
-"map developed by FAO to compute this indicator."
+msgid "Click on **Select Area of Interest (AOI)** and the map will display your selection. A corresponding legend is also displayed. The algorithm automatically generates a legend based on the mountain bioclimatic belt classes and the area for each of them as defined in the global mountain map developed by FAO to compute this indicator."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -708,25 +437,11 @@ msgid "displaying_nepal"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:282
-msgid ""
-"The  administrative boundaries available SEPAL-SDG 15.4.2 :sub:`beta` are"
-" extracted from FAO GAUL (Global Administrative Unit Layers) 2015 data "
-"set. The designations employed and the presentation of material on this "
-"map do not imply the expression of any opinion whatsoever on the part of "
-"the Secretariat of the United Nations concerning the legal status of any "
-"country, territory, city or area or of its authorities, or concerning the"
-" delimitation of its frontiers or boundaries."
+msgid "The  administrative boundaries available SEPAL-SDG 15.4.2 :sub:`beta` are extracted from FAO GAUL (Global Administrative Unit Layers) 2015 data set. The designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:284
-msgid ""
-"**3. The Custom layers option allow users to use their own national "
-"administrative boundary layers. To define the Area of Interest using your"
-" own custom administrative boundary layer you have two options: use a "
-"vector file that you have previously uploaded in GEE as an asset (GEE "
-"asset name option), or use a vector file that you have previously "
-"uploaded in your SEPAL environment (Vector file option). To use a GEE "
-"asset, do the following:**"
+msgid "**3. The Custom layers option allow users to use their own national administrative boundary layers. To define the Area of Interest using your own custom administrative boundary layer you have two options: use a vector file that you have previously uploaded in GEE as an asset (GEE asset name option), or use a vector file that you have previously uploaded in your SEPAL environment (Vector file option). To use a GEE asset, do the following:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:286
@@ -738,9 +453,7 @@ msgid "Copy the **Asset ID** in GEE and paste under \"Select an asset\""
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:288
-msgid ""
-"Specify the column or leave the \"Use all features\" option to leave the "
-"default settings."
+msgid "Specify the column or leave the \"Use all features\" option to leave the default settings."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:296
@@ -748,12 +461,7 @@ msgid "Land cover dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:298
-msgid ""
-"In this section of the module, you have to indicate which land cover data"
-" you want to used in the analysis. If using land cover maps different "
-"from the default ones, you will also be requested to set up the land "
-"cover legend reclassification rules for Sub-indicator A and B, as well as"
-" the land cover transition matrix for computing Sub-Indicator B."
+msgid "In this section of the module, you have to indicate which land cover data you want to used in the analysis. If using land cover maps different from the default ones, you will also be requested to set up the land cover legend reclassification rules for Sub-indicator A and B, as well as the land cover transition matrix for computing Sub-Indicator B."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:301
@@ -761,9 +469,7 @@ msgid "Defining your land cover dataset to be used in the analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:303
-msgid ""
-"**1.    Click on the Land cover dataset in the left panel menu.** A pop-"
-"up will ask you to indicate the land cover map you wish to use."
+msgid "**1.    Click on the Land cover dataset in the left panel menu.** A pop-up will ask you to indicate the land cover map you wish to use."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -771,31 +477,15 @@ msgid "land cover module"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:310
-msgid ""
-"**2. In the first question of the questionnaire, you have to indicate the"
-" land cover maps that you wish to use to compute the indicator. If you "
-"want to use your own custom land cover datasets and select "
-":guilabel:`yes` to this question, a new button (Open Parameters Settings)"
-" will appear. If you select :guilabel:`no`, the module will automatically"
-" use the default global land cover datasets for calculating this "
-"indicator (see section Data Sources above). Let's assume that you whish "
-"to your own land cover maps**."
+msgid "**2. In the first question of the questionnaire, you have to indicate the land cover maps that you wish to use to compute the indicator. If you want to use your own custom land cover datasets and select :guilabel:`yes` to this question, a new button (Open Parameters Settings) will appear. If you select :guilabel:`no`, the module will automatically use the default global land cover datasets for calculating this indicator (see section Data Sources above). Let's assume that you whish to your own land cover maps**."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:312
-msgid ""
-"Select :guilabel:`yes` to the first question. Then click on "
-":guilabel:`Open Parameters Settings`"
+msgid "Select :guilabel:`yes` to the first question. Then click on :guilabel:`Open Parameters Settings`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:319
-msgid ""
-"A new pop-up window will open to allow you to select your the collection "
-"of land cover maps as a GEE asset (remember that they must be stored as a"
-" `GEE image collection <https://developers.google.com/earth-"
-"engine/guides/ic_creating>`_ to be able to be imported. Use the bottom "
-"arrow to choose your asset or copy/paste it directly from GEE. Then click"
-" on :guilabel:`Get classes`"
+msgid "A new pop-up window will open to allow you to select your the collection of land cover maps as a GEE asset (remember that they must be stored as a `GEE image collection <https://developers.google.com/earth-engine/guides/ic_creating>`_ to be able to be imported. Use the bottom arrow to choose your asset or copy/paste it directly from GEE. Then click on :guilabel:`Get classes`"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:327
@@ -803,11 +493,7 @@ msgid "Reclassify the legend of your land cover map to compute sub-Indicator A"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:329
-msgid ""
-"Once you have specified your custom land cover maps, you will be required"
-" to reclassify the legend of your land cover maps into the 10 landcover "
-"classes as defined by the UN-SEEA land cover classification, which is the"
-" default land cover legend for this sub-indicator."
+msgid "Once you have specified your custom land cover maps, you will be required to reclassify the legend of your land cover maps into the 10 landcover classes as defined by the UN-SEEA land cover classification, which is the default land cover legend for this sub-indicator."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -819,27 +505,11 @@ msgid "You can do this in two different ways:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:338
-msgid ""
-"Upload a reclassification matrix table in a csv format, indicating the "
-"SEEA land cover equivalent of the classes of your land cover map. To "
-"provide the information in this way, click on the arrow icon in the top "
-"right corner of the pop-up window. The table must already be uploaded in "
-"your SEPAL environment. To learn how to do that, please see the `how to "
-"exchange files in SEPAL "
-"<https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-"
-"with-sepal>`_. Note that the target values must match with the UN-SEAA "
-"classes codes for sub-indicator A (click on the info button at the top of"
-" the table for information on how the SEEA classes are codified into "
-"numbers)."
+msgid "Upload a reclassification matrix table in a csv format, indicating the SEEA land cover equivalent of the classes of your land cover map. To provide the information in this way, click on the arrow icon in the top right corner of the pop-up window. The table must already be uploaded in your SEPAL environment. To learn how to do that, please see the `how to exchange files in SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_. Note that the target values must match with the UN-SEAA classes codes for sub-indicator A (click on the info button at the top of the table for information on how the SEEA classes are codified into numbers)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:343
-msgid ""
-"A reclassification matrix is a comma-separated values (CSV) file used to "
-"reclassify old pixel values into new ones. The CSV file only has to "
-"contain two values per line, the first one refers to the `from` value, "
-"while the second is the `target` value, just as it is described in the "
-"following table:"
+msgid "A reclassification matrix is a comma-separated values (CSV) file used to reclassify old pixel values into new ones. The CSV file only has to contain two values per line, the first one refers to the `from` value, while the second is the `target` value, just as it is described in the following table:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:345
@@ -883,13 +553,7 @@ msgid "4"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:355
-msgid ""
-"Directly specify the reclassification rules by manually indicating the "
-"SEEA land cover equivalent (in the destination class column) of each of "
-"the land cover classes of your land cover map (in the original class "
-"column). After manually reclassifying your legend, you can use the save "
-"button at the top of the table to store the table as a CSV file, and use "
-"it in a future calculation instead of manually filling up the table."
+msgid "Directly specify the reclassification rules by manually indicating the SEEA land cover equivalent (in the destination class column) of each of the land cover classes of your land cover map (in the original class column). After manually reclassifying your legend, you can use the save button at the top of the table to store the table as a CSV file, and use it in a future calculation instead of manually filling up the table."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:-1
@@ -897,15 +561,11 @@ msgid "Reclassify table"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:362
-msgid ""
-"In our example, we will reclassify Nepal’s national land cover class "
-"using the following guide:"
+msgid "In our example, we will reclassify Nepal’s national land cover class using the following guide:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:369
-msgid ""
-"Once you have reclassified all the land classes for Sub-Indicator A, "
-"click on \"Reclassify Land Cover for Sub-Indicator B\""
+msgid "Once you have reclassified all the land classes for Sub-Indicator A, click on \"Reclassify Land Cover for Sub-Indicator B\""
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:372
@@ -913,29 +573,15 @@ msgid "Reclassify the legend of your land cover map to compute Sub-Indicator B"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:373
-msgid ""
-"This step allows you to reclassify the legend of your land cover map for "
-"computing Sub-Indicator B."
+msgid "This step allows you to reclassify the legend of your land cover map for computing Sub-Indicator B."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:375
-msgid ""
-"In contrast to Sub-Indicator A, the land cover legend used for the "
-"calculation of Sub-Indicator B does not necessarily have to be the 10 UN-"
-"SEEA classes mentioned earlier. In this sub-indicator, the UN-SEEA legend"
-" can be adapted to the national context to ensure that it adequately "
-"captures the key degradation and improvement transitions identified in "
-"the prior step. For instance, a given country may decide to differentiate"
-" \"natural forests\" from \"tree plantations\" in sub-indicator B."
+msgid "In contrast to Sub-Indicator A, the land cover legend used for the calculation of Sub-Indicator B does not necessarily have to be the 10 UN-SEEA classes mentioned earlier. In this sub-indicator, the UN-SEEA legend can be adapted to the national context to ensure that it adequately captures the key degradation and improvement transitions identified in the prior step. For instance, a given country may decide to differentiate \"natural forests\" from \"tree plantations\" in sub-indicator B."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:377
-msgid ""
-"For this reason, this step allows users to apply a new reclassification, "
-"or alternatively, used the same reclassification rules as in Sub-"
-"Indicator A. In the latter case. In any of both cases, users will need to"
-" upload the land cover reclassification rules in a csv file, following "
-"the same method as in the prior step."
+msgid "For this reason, this step allows users to apply a new reclassification, or alternatively, used the same reclassification rules as in Sub-Indicator A. In the latter case. In any of both cases, users will need to upload the land cover reclassification rules in a csv file, following the same method as in the prior step."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:380
@@ -943,76 +589,35 @@ msgid "Upload a transition matrix for computing Sub-Indicator B"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:381
-msgid ""
-"This step should only be completed if you have prodivded different land "
-"cover reclassification rules for Sub-Indicator B in the prior step. In "
-"such a case, in this step you will need to upload a land cover transition"
-" matrix, defining which land cover transitions are considered to be "
-"“degradation” and “improvement”, consistent to the legend you have "
-"provided in the prior step. This will allow SEPAL-SDG 15.4.2 :sub:`beta` "
-"to compute this sub-indicator in the next processing steps."
+msgid "This step should only be completed if you have prodivded different land cover reclassification rules for Sub-Indicator B in the prior step. In such a case, in this step you will need to upload a land cover transition matrix, defining which land cover transitions are considered to be “degradation” and “improvement”, consistent to the legend you have provided in the prior step. This will allow SEPAL-SDG 15.4.2 :sub:`beta` to compute this sub-indicator in the next processing steps."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:383
-msgid ""
-"Here again the transition matrix should have been previously uploaded in "
-"your SEPAL environment as a csv file, containing the following columns: "
-"from_code, to_code, impact_code, columns names have to be exactly the "
-"same."
+msgid "Here again the transition matrix should have been previously uploaded in your SEPAL environment as a csv file, containing the following columns: from_code, to_code, impact_code, columns names have to be exactly the same."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:391
-msgid ""
-"Changing the default land cover transition matrix for computing Sub-"
-"Indicator B using the default global land cover data"
+msgid "Changing the default land cover transition matrix for computing Sub-Indicator B using the default global land cover data"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:393
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` allows the user to modify the default land "
-"cover transition matrix without needing to provide a custom land cover "
-"map. This allow national authorities to adapt the transition matrix to to"
-" the local context and in this way better capture the main land "
-"degradation processes occurring in the country without needing to provide"
-" alternative land cover data."
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` allows the user to modify the default land cover transition matrix without needing to provide a custom land cover map. This allow national authorities to adapt the transition matrix to to the local context and in this way better capture the main land degradation processes occurring in the country without needing to provide alternative land cover data."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:395
-msgid ""
-"This can be done selecting :guilabel:`Yes` in the second question of the "
-"land cover dataset questionnaire, and then clicking on \"Open Parameter "
-"Settings\"."
+msgid "This can be done selecting :guilabel:`Yes` in the second question of the land cover dataset questionnaire, and then clicking on \"Open Parameter Settings\"."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:402
-msgid ""
-"This will open a pop-up window including the default land cover "
-"transitions matrix, showing positive land cover transitions in green, "
-"negative in red, and stable/neutral transitions in blue. The matrix can "
-"be directly modified by clicking on each cell and changing the sign of "
-"the transition."
+msgid "This will open a pop-up window including the default land cover transitions matrix, showing positive land cover transitions in green, negative in red, and stable/neutral transitions in blue. The matrix can be directly modified by clicking on each cell and changing the sign of the transition."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:410
-msgid ""
-"Once finished, just click outside the window and move to the next "
-"processing step: Indicators Settings."
+msgid "Once finished, just click outside the window and move to the next processing step: Indicators Settings."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:414
-msgid ""
-"Adapting the default land cover transition matrix using the default "
-"global land cover data should be carefully considered. Decisions about "
-"which land cover transitions are linked to a degradation or an "
-"improvement process in the context of sub-indicator B should be made "
-"taking into account the expected change in biodiversity and the mountain "
-"ecosystem functions or services that are considered desirable in a local "
-"or national context. For these reasons, FAO recommends to consider as "
-"degradation all land cover transitions that involve changes from natural "
-"land cover types (such as forests, shrublands, grasslands, wetlands) to "
-"anthropogenic land cover types (artificial surfaces, cropland, pastures, "
-"plantation forests, etc.) as a general rule, given that land use change "
-"is known to be the primary driver of biodiversity loss (IPBES, 2019)."
+msgid "Adapting the default land cover transition matrix using the default global land cover data should be carefully considered. Decisions about which land cover transitions are linked to a degradation or an improvement process in the context of sub-indicator B should be made taking into account the expected change in biodiversity and the mountain ecosystem functions or services that are considered desirable in a local or national context. For these reasons, FAO recommends to consider as degradation all land cover transitions that involve changes from natural land cover types (such as forests, shrublands, grasslands, wetlands) to anthropogenic land cover types (artificial surfaces, cropland, pastures, plantation forests, etc.) as a general rule, given that land use change is known to be the primary driver of biodiversity loss (IPBES, 2019)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:417
@@ -1020,12 +625,7 @@ msgid "Indicators settings"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:419
-msgid ""
-"Now that we have defined our area of interest and the land cover data to "
-"be used in the analysis, together with the land cover legend "
-"reclassification rules and associated transitions matrix, click on the "
-"**Indicator Settings drawer** to start setting the parameters that the "
-"tool will need in the computation of the sub-indicators."
+msgid "Now that we have defined our area of interest and the land cover data to be used in the analysis, together with the land cover legend reclassification rules and associated transitions matrix, click on the **Indicator Settings drawer** to start setting the parameters that the tool will need in the computation of the sub-indicators."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:426
@@ -1037,70 +637,35 @@ msgid "Defining parameters for Sub-indicator A: Mountain Green Cover Index"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:431
-msgid ""
-"**1. Click on the add layer icon (highlighted below) to define the years "
-"for which the indicator will be calculated**"
+msgid "**1. Click on the add layer icon (highlighted below) to define the years for which the indicator will be calculated**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:438
-msgid ""
-"**2. In the pop-up window that will appear you need to link each of the "
-"land maps (either the default ones or the custom ones that you may have "
-"uploaded in the prior steps) to the corresponding reference year of each "
-"map. You can report one or multiple years. To increase the number of "
-"years to be reported, just click on the + sign to define additional years"
-" that you need to report.**"
+msgid "**2. In the pop-up window that will appear you need to link each of the land maps (either the default ones or the custom ones that you may have uploaded in the prior steps) to the corresponding reference year of each map. You can report one or multiple years. To increase the number of years to be reported, just click on the + sign to define additional years that you need to report.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:447
-msgid ""
-"Remember that reporting years for Sub-indicator A are 2000, 2005, 2010, "
-"2015 and subsequently every 3 years (2018, 2021, 2024,...). If you are "
-"using custom national land cover maps that are not annually updated and "
-"does not exactely match reporting years (for example, you may have a land"
-" cover map for 2004 instead of 2005), the tool will automatically "
-"interpolates values for the reporting years based on the years for which "
-"land cover data is available."
+msgid "Remember that reporting years for Sub-indicator A are 2000, 2005, 2010, 2015 and subsequently every 3 years (2018, 2021, 2024,...). If you are using custom national land cover maps that are not annually updated and does not exactely match reporting years (for example, you may have a land cover map for 2004 instead of 2005), the tool will automatically interpolates values for the reporting years based on the years for which land cover data is available."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:454
-msgid ""
-"**3.    When finished, press OK. The list of reporting years will now be "
-"listed at the bottom of the Sub-Indicator A box.**"
+msgid "**3.    When finished, press OK. The list of reporting years will now be listed at the bottom of the Sub-Indicator A box.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:462
-msgid ""
-"Defining parameters for Sub-Indicator B: Proportion of Degraded Mountain "
-"Land."
+msgid "Defining parameters for Sub-Indicator B: Proportion of Degraded Mountain Land."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:463
-msgid ""
-"In contrast to Sub-Indicator A, in Sub-Indicator B the extent of degraded"
-" mountain land is calculated first in the baseline period 2000 - 2015. "
-"This baseline sets the benchmark ​from which the extent of land "
-"degradation is measured and monitored​ every 3 years after 2015. Put "
-"simply, new land cover degradation in the reporting periods (2018, 2021, "
-"2024, ...) is added to the baseline to estimate the current extent of "
-"land cover degradation.  This is why in this instance the tool "
-"automatically uses the 2000-2015 as baseline."
+msgid "In contrast to Sub-Indicator A, in Sub-Indicator B the extent of degraded mountain land is calculated first in the baseline period 2000 - 2015. This baseline sets the benchmark ​from which the extent of land degradation is measured and monitored​ every 3 years after 2015. Put simply, new land cover degradation in the reporting periods (2018, 2021, 2024, ...) is added to the baseline to estimate the current extent of land cover degradation.  This is why in this instance the tool automatically uses the 2000-2015 as baseline."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:465
-msgid ""
-"**1. Define your landcover maps for the baseline years (2000 and 2015) by"
-" linking each of the land maps to the corresponding reference year of "
-"each map. If you are using custom national land cover maps that does not "
-"exactely match reporting years of the baseline, select the map whose "
-"reference year is closest to the reporting year (For example, you could "
-"select a land cover map for 1998 for the reporting year 2000).**"
+msgid "**1. Define your landcover maps for the baseline years (2000 and 2015) by linking each of the land maps to the corresponding reference year of each map. If you are using custom national land cover maps that does not exactely match reporting years of the baseline, select the map whose reference year is closest to the reporting year (For example, you could select a land cover map for 1998 for the reporting year 2000).**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:472
-msgid ""
-"**2. Then define the land cover maps for each of the reporting years and "
-"click OK**"
+msgid "**2. Then define the land cover maps for each of the reporting years and click OK**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:480
@@ -1108,9 +673,7 @@ msgid "Calculation of SDG Indicator 15.4.2"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:481
-msgid ""
-"Once you have set the parameters of each sub-indicator, the tool is now "
-"ready to run as shows below:"
+msgid "Once you have set the parameters of each sub-indicator, the tool is now ready to run as shows below:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:488
@@ -1122,21 +685,11 @@ msgid "**2. Once is completed, you should see something like the image below:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:499
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` calculates the indicator values assuming a "
-"planimetric area methods by default. To calculate indicator values using "
-"a real surface area method (a method that takes into account the third "
-"dimension of mountain surfaces through the use of digital elevation "
-"models and is known to derive closer estimates of the real surface area "
-"of mountain regions), click on \"Use Real Surface Area\""
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` calculates the indicator values assuming a planimetric area methods by default. To calculate indicator values using a real surface area method (a method that takes into account the third dimension of mountain surfaces through the use of digital elevation models and is known to derive closer estimates of the real surface area of mountain regions), click on \"Use Real Surface Area\""
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:501
-msgid ""
-"The entire process is done \"on the fly” and thus you need to export your"
-" reporting tables to visualize and use them when required. To do that, "
-"click on  the \"Export Reporting Tables\". When completed, a message will"
-" appear indicating where the tables have been exported."
+msgid "The entire process is done \"on the fly” and thus you need to export your reporting tables to visualize and use them when required. To do that, click on  the \"Export Reporting Tables\". When completed, a message will appear indicating where the tables have been exported."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:509
@@ -1144,50 +697,23 @@ msgid "Calculation from Task"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:510
-msgid ""
-"As explained in the previous sections, SEPAL runs on GEE. This means that"
-" the computation is restricted by the GEE available resources. One of "
-"these limitations is the time to get the results on the fly (see "
-"`computation time out <https://developers.google.com/earth-"
-"engine/guides/debugging#timed-out>`_). So any computation that takes more"
-" than five minutes will throw an exception. To overcome this limitation, "
-"the process will be executed as a task —which are operations that are "
-"capable of running much longer than the standard timeout. If the "
-"computation is created as a task, you will see a similar message as the "
-"shown in the below image."
+msgid "As explained in the previous sections, SEPAL runs on GEE. This means that the computation is restricted by the GEE available resources. One of these limitations is the time to get the results on the fly (see `computation time out <https://developers.google.com/earth-engine/guides/debugging#timed-out>`_). So any computation that takes more than five minutes will throw an exception. To overcome this limitation, the process will be executed as a task —which are operations that are capable of running much longer than the standard timeout. If the computation is created as a task, you will see a similar message as the shown in the below image."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:517
-msgid ""
-"When computation can’t be done on the fly, a new file containing the id "
-"of the task is created and stored in the "
-"../module_results/sdg_indicators/mgci/tasks folder. This file will help "
-"you to track the status of the task at any moment. An alternative way to "
-"track the progress of the task is by using the GEE task tracker, there "
-"you can find the tasks that are running on the server."
+msgid "When computation can’t be done on the fly, a new file containing the id of the task is created and stored in the ../module_results/sdg_indicators/mgci/tasks folder. This file will help you to track the status of the task at any moment. An alternative way to track the progress of the task is by using the GEE task tracker, there you can find the tasks that are running on the server."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:519
-msgid ""
-"**1. To enable a computation from task; first we need to locate the tasks"
-" file within SEPAL.**"
+msgid "**1. To enable a computation from task; first we need to locate the tasks file within SEPAL.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:521
-msgid ""
-"To do so, you only have to search this file in your SEPAL environment "
-"using the navigator by clicking on the search file button, and then "
-"clicking over the Calculate MGCI button and the result will be displayed "
-"if the process status is completed. To locate the tasks manually, "
-"alternatively to locate the tasks navigate to the File Layer > Downloads "
-"> Module results>Tasks on SEPAL as shown below."
+msgid "To do so, you only have to search this file in your SEPAL environment using the navigator by clicking on the search file button, and then clicking over the Calculate MGCI button and the result will be displayed if the process status is completed. To locate the tasks manually, alternatively to locate the tasks navigate to the File Layer > Downloads > Module results>Tasks on SEPAL as shown below."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:528
-msgid ""
-"**2. Once that’s done in GEE, you will need to bring it back to SEPAL for"
-" the tool to finish computation. Click on the \"Calculation from Task\" "
-"tab to initiate this process.**"
+msgid "**2. Once that’s done in GEE, you will need to bring it back to SEPAL for the tool to finish computation. Click on the \"Calculation from Task\" tab to initiate this process.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:535
@@ -1203,15 +729,11 @@ msgid "We can visualize the results in the following two ways:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:547
-msgid ""
-"The exported tables: These provide the full results of the computation in"
-" a tabular format."
+msgid "The exported tables: These provide the full results of the computation in a tabular format."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:549
-msgid ""
-"Using the MGCI results drawer provides a simplified and visual "
-"representation of the results."
+msgid "Using the MGCI results drawer provides a simplified and visual representation of the results."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:551
@@ -1223,34 +745,23 @@ msgid "Exporting tables"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:556
-msgid ""
-"As explained earlier, once computation is completed, users can export the"
-" reporting tables to their SEPAL environment"
+msgid "As explained earlier, once computation is completed, users can export the reporting tables to their SEPAL environment"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:558
-msgid ""
-"**1. To locate the tables, navigate to the Files Tab > Under the "
-"Downloads, you should see your table under MGCI reports as shown below:**"
+msgid "**1. To locate the tables, navigate to the Files Tab > Under the Downloads, you should see your table under MGCI reports as shown below:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:565
-msgid ""
-"**2. To download the report from SEPAL, click on the report and this "
-"activates the download icon in the top right side of the screen.**"
+msgid "**2. To download the report from SEPAL, click on the report and this activates the download icon in the top right side of the screen.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:572
-msgid ""
-"**3. Once the report is downloaded, you can visualize the results of the "
-"computation as seen below for all the reporting years defined earlier "
-"on.**"
+msgid "**3. Once the report is downloaded, you can visualize the results of the computation as seen below for all the reporting years defined earlier on.**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:579
-msgid ""
-"The tables follow the standard format for SDG reporting and therefore can"
-" be used to report SDG Indicator 15.4.2 values to FAO"
+msgid "The tables follow the standard format for SDG reporting and therefore can be used to report SDG Indicator 15.4.2 values to FAO"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:582
@@ -1258,39 +769,23 @@ msgid "Visualizing the results through the MGCI Results Drawer"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:584
-msgid ""
-"SEPAL-SDG 15.4.2 :sub:`beta` also allows to explore the results of the "
-"computation visually. The module generates dashboards that show the "
-"changes that have occurred in the area of interest. To generate these "
-"dashboards do the following;"
+msgid "SEPAL-SDG 15.4.2 :sub:`beta` also allows to explore the results of the computation visually. The module generates dashboards that show the changes that have occurred in the area of interest. To generate these dashboards do the following;"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:586
-msgid ""
-"**1.    Click on the **MGCI results drawer** in the left panel. To see "
-"the results from the computation for Sub-Indicator A, choose which year "
-"you want to visualize and click on the Calculate button."
+msgid "**1.    Click on the **MGCI results drawer** in the left panel. To see the results from the computation for Sub-Indicator A, choose which year you want to visualize and click on the Calculate button."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:593
-msgid ""
-"This generates dashboards to visualize the results of the computation. As"
-" seen below, the tool will generate an Overall MGCI for your study area. "
-"Additionally, a dashboard will be generated for each of the bioclimatic "
-"classes."
+msgid "This generates dashboards to visualize the results of the computation. As seen below, the tool will generate an Overall MGCI for your study area. Additionally, a dashboard will be generated for each of the bioclimatic classes."
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:600
-msgid ""
-"**2. To see the results for Sub-Indicator B, choose a target year "
-"(baseline or one of the reporting years) using the drop-down arrow and a "
-"bioclimatic belt. Then click on Calculate:**"
+msgid "**2. To see the results for Sub-Indicator B, choose a target year (baseline or one of the reporting years) using the drop-down arrow and a bioclimatic belt. Then click on Calculate:**"
 msgstr ""
 
 #: ../../source/modules/dwn/sepal_mgci.rst:607
-msgid ""
-"The results, shown as transitions in land cover types for a given belt "
-"will be displayed using a Sankey Plot, as shown below:"
+msgid "The results, shown as transitions in land cover types for a given belt will be displayed using a Sankey Plot, as shown below:"
 msgstr ""
 
 #~ msgid "SEPAL-MGCI :sub:`beta`"

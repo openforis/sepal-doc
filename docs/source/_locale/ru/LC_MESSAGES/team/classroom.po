@@ -1,26 +1,25 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-03-15 01:08+0000\n"
+"PO-Revision-Date: 2024-03-07 09:00\n"
 "Last-Translator: \n"
-"Language: ru_RU\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
-"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
-">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/team/classroom.po\n"
+"X-Crowdin-File-ID: 105\n"
+"Language: ru_RU\n"
 
 #: ../../source/_templates/disclaimer.rst:3
-msgid ""
-"The **SEPAL team documentation** section was developed for SEPAL team "
-"members only. While contributors and collaborators are encouraged to "
-"review these articles, they are not mandatory for general SEPAL users."
+msgid "The **SEPAL team documentation** section was developed for SEPAL team members only. While contributors and collaborators are encouraged to review these articles, they are not mandatory for general SEPAL users."
 msgstr ""
 
 #: ../../source/team/classroom.rst:4
@@ -36,17 +35,11 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/team/classroom.rst:10
-msgid ""
-"To provide consistent, up-to-date training materials, the SEPAL team uses"
-" Google Classroom."
+msgid "To provide consistent, up-to-date training materials, the SEPAL team uses Google Classroom."
 msgstr ""
 
 #: ../../source/team/classroom.rst:12
-msgid ""
-"To access SEPAL's Google Classroom, open your professional Google account"
-" and go to `the SEPAL project's Google Classroom page "
-"<https://classroom.google.com/u/0/h>`_ (you should see something like the"
-" following image, except for the classes)."
+msgid "To access SEPAL's Google Classroom, open your professional Google account and go to `the SEPAL project's Google Classroom page <https://classroom.google.com/u/0/h>`_ (you should see something like the following image, except for the classes)."
 msgstr ""
 
 #: ../../source/team/classroom.rst:16
@@ -54,16 +47,11 @@ msgid "Each class is composed of several :code:`Topics`."
 msgstr ""
 
 #: ../../source/team/classroom.rst:18
-msgid ""
-"Each **Topic** can include different types of content, including: "
-":code:`exercises`, :code:`exams`, and :code:`material`."
+msgid "Each **Topic** can include different types of content, including: :code:`exercises`, :code:`exams`, and :code:`material`."
 msgstr ""
 
 #: ../../source/team/classroom.rst:24
-msgid ""
-"If you need support with SEPAL's Google Classroom, contact "
-":email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick "
-"Rambaud <pierrick.rambaud@fao.org>`."
+msgid "If you need support with SEPAL's Google Classroom, contact :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`."
 msgstr ""
 
 #: ../../source/team/classroom.rst:27
@@ -71,39 +59,23 @@ msgid "Creating a classroom"
 msgstr ""
 
 #: ../../source/team/classroom.rst:29
-msgid ""
-"If you need material for a webinar, you can either reuse one of the "
-"general classrooms or create your own by following the steps presented in"
-" the following tutorial."
+msgid "If you need material for a webinar, you can either reuse one of the general classrooms or create your own by following the steps presented in the following tutorial."
 msgstr ""
 
 #: ../../source/team/classroom.rst:35
-msgid ""
-"If you create your own course as a combination of different modules, "
-"invite :email:`sepal.classroom@gmail.com` as a teacher and make this "
-"account the owner of the classroom. You will still be able to do "
-"everything as a teacher, but the content will be stored in a communal "
-"account."
+msgid "If you create your own course as a combination of different modules, invite :email:`sepal.classroom@gmail.com` as a teacher and make this account the owner of the classroom. You will still be able to do everything as a teacher, but the content will be stored in a communal account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:37
-msgid ""
-"When creating basic content, you can reuse posts from other classes that "
-"you are teaching."
+msgid "When creating basic content, you can reuse posts from other classes that you are teaching."
 msgstr ""
 
 #: ../../source/team/classroom.rst:43
-msgid ""
-"If you want to reuse material from other classes, you will need to be "
-"added as a teacher for these classes by contacting :email:`Aurelie "
-"Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud "
-"<pierrick.rambaud@fao.org>`."
+msgid "If you want to reuse material from other classes, you will need to be added as a teacher for these classes by contacting :email:`Aurelie Shapiro <aurelie.shapiro@fao.org>` and :email:`Pierrick Rambaud <pierrick.rambaud@fao.org>`."
 msgstr ""
 
 #: ../../source/team/classroom.rst:47
-msgid ""
-"To avoid duplicate copies of content, please *do not* select the option "
-"to **Create new copies of all attachments**."
+msgid "To avoid duplicate copies of content, please *do not* select the option to **Create new copies of all attachments**."
 msgstr ""
 
 #: ../../source/team/classroom.rst:52
@@ -111,9 +83,7 @@ msgid "Use general content"
 msgstr ""
 
 #: ../../source/team/classroom.rst:54
-msgid ""
-"To use general content in your classrooms, add the **General class "
-"content** folder to your Google Drive account."
+msgid "To use general content in your classrooms, add the **General class content** folder to your Google Drive account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:56
@@ -125,9 +95,7 @@ msgid "Select the **General class content** folder."
 msgstr ""
 
 #: ../../source/team/classroom.rst:62
-msgid ""
-"If the content has not yet been shared with you, ask your colleagues to "
-"do so."
+msgid "If the content has not yet been shared with you, ask your colleagues to do so."
 msgstr ""
 
 #: ../../source/team/classroom.rst:66
@@ -147,19 +115,11 @@ msgid "Then, add a file from Google Drive:"
 msgstr ""
 
 #: ../../source/team/classroom.rst:82
-msgid ""
-"The file you're using is made for general purposes and should not be "
-"adapted to your specific needs. If you're improving the quality of the "
-"presentation, making modifications to the original is permitted; however,"
-" any other modifications should be made in another version, which you can"
-" create by copying the original to your Google Drive account."
+msgid "The file you're using is made for general purposes and should not be adapted to your specific needs. If you're improving the quality of the presentation, making modifications to the original is permitted; however, any other modifications should be made in another version, which you can create by copying the original to your Google Drive account."
 msgstr ""
 
 #: ../../source/team/classroom.rst:86
-msgid ""
-"Since everyone on the SEPAL team can edit these files, mistakes could "
-"impact all members and existing classrooms that use this file. Please "
-"exercise caution."
+msgid "Since everyone on the SEPAL team can edit these files, mistakes could impact all members and existing classrooms that use this file. Please exercise caution."
 msgstr ""
 
 #~ msgid ""

@@ -1,29 +1,29 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-04-25 01:23+0000\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
 "Last-Translator: \n"
-"Language: ru_RU\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
-"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
-">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/index.po\n"
+"X-Crowdin-File-ID: 67\n"
+"Language: ru_RU\n"
 
 #: ../../source/cookbook/index.rst:2
 msgid "Cookbook"
 msgstr ""
 
 #: ../../source/cookbook/index.rst:3
-msgid ""
-"*Harness high-performance cloud-based computing and modern geospatial "
-"data infrastructures with recipes from the SEPAL cookbook*"
+msgid "*Harness high-performance cloud-based computing and modern geospatial data infrastructures with recipes from the SEPAL cookbook*"
 msgstr ""
 
 #: ../../source/cookbook/index.rst:6
@@ -31,40 +31,19 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/cookbook/index.rst:8
-msgid ""
-"SEPAL recipes are the main feature of the platform, offering users the "
-"ability to quickly and efficiently query and process satellite data, "
-"tailor their products for local needs, and produce sophisticated and "
-"relevant geospatial analyses."
+msgid "SEPAL recipes are the main feature of the platform, offering users the ability to quickly and efficiently query and process satellite data, tailor their products for local needs, and produce sophisticated and relevant geospatial analyses."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:10
-msgid ""
-"A SEPAL recipe is a record of the steps and parameters used to make a "
-"dataset (e.g. optical mosaic, radar mosaic, classification). The recipe "
-"can be saved, with the same data recreated on the fly whenever needed or "
-"used in further analyses. A recipe is not, in itself, data. Using SEPAL "
-"recipes enables documentation of the parameters and steps used to create "
-"mosaics, composites, classifications, time series and other datasets or "
-"information products. SEPAL recipes, once saved, are available in the "
-"SEPAL interface after you sign in to the platform. Recipes can be run, "
-"deleted or copied (e.g. to change the sensor used, while leaving all "
-"other parameters the same)."
+msgid "A SEPAL recipe is a record of the steps and parameters used to make a dataset (e.g. optical mosaic, radar mosaic, classification). The recipe can be saved, with the same data recreated on the fly whenever needed or used in further analyses. A recipe is not, in itself, data. Using SEPAL recipes enables documentation of the parameters and steps used to create mosaics, composites, classifications, time series and other datasets or information products. SEPAL recipes, once saved, are available in the SEPAL interface after you sign in to the platform. Recipes can be run, deleted or copied (e.g. to change the sensor used, while leaving all other parameters the same)."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:12
-msgid ""
-"With recipes, you can access the Google Earth Engine (GEE) multi-petabyte"
-" catalog of satellite imagery and utilize their planetary-scale analysis "
-"capabilities without writing a single line of code, simply by linking "
-"your Google and SEPAL accounts."
+msgid "With recipes, you can access the Google Earth Engine (GEE) multi-petabyte catalog of satellite imagery and utilize their planetary-scale analysis capabilities without writing a single line of code, simply by linking your Google and SEPAL accounts."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:16
-msgid ""
-"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
-"small computation quota. If you are a new user, see "
-":doc:`../setup/resource`."
+msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user, see :doc:`../setup/resource`."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:19
@@ -84,24 +63,15 @@ msgid "Start a recipe"
 msgstr ""
 
 #: ../../source/cookbook/index.rst:92
-msgid ""
-"Connect your SEPAL account to your GEE account to read and write GEE "
-"assets. If your accounts are not linked, you will only be able to "
-"download data to your SEPAL workspace."
+msgid "Connect your SEPAL account to your GEE account to read and write GEE assets. If your accounts are not linked, you will only be able to download data to your SEPAL workspace."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:94
-msgid ""
-"To start a recipe, go to the **Process** tab (:icon:`fa-solid fa-globe`),"
-" where you'll see the list of all saved recipes in your SEPAL account."
+msgid "To start a recipe, go to the **Process** tab (:icon:`fa-solid fa-globe`), where you'll see the list of all saved recipes in your SEPAL account."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:99
-msgid ""
-"Select the green :icon:`fa-solid fa-circle-plus` button in the lower-"
-"right corner to open the **Recipe type selector** pop-up window. Select "
-"any of the available recipe types and follow our tutorials to learn more "
-"about each type's usage."
+msgid "Select the green :icon:`fa-solid fa-circle-plus` button in the lower-right corner to open the **Recipe type selector** pop-up window. Select any of the available recipe types and follow our tutorials to learn more about each type's usage."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:105
@@ -109,9 +79,7 @@ msgid "Save a recipe"
 msgstr ""
 
 #: ../../source/cookbook/index.rst:109
-msgid ""
-"Using saved recipes is the recommended method for sharing parameters to "
-"developers when debugging."
+msgid "Using saved recipes is the recommended method for sharing parameters to developers when debugging."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:111
@@ -119,15 +87,11 @@ msgid "Select a recipe in the main menu to display it in a tab."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:113
-msgid ""
-"Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and "
-"select :btn:`Export recipe`."
+msgid "Then select :btn:`<fa-solid fa-bars>` in the upper-right corner and select :btn:`Export recipe`."
 msgstr ""
 
 #: ../../source/cookbook/index.rst:115
-msgid ""
-"The file will be downloaded to your computer using the following name: "
-":code:`<name_of_the_recipe>.json.zip`."
+msgid "The file will be downloaded to your computer using the following name: :code:`<name_of_the_recipe>.json.zip`."
 msgstr ""
 
 #~ msgid ""

@@ -1,36 +1,33 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-03-15 01:06+0000\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
 "Last-Translator: \n"
-"Language: ru_RU\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
-"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
-">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/feature/aoi_selector.po\n"
+"X-Crowdin-File-ID: 77\n"
+"Language: ru_RU\n"
 
 #: ../../source/feature/aoi_selector.rst:2
 msgid "AOI selection"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:4
-msgid ""
-"In most SEPAL modules, the first mandatory input is the area of interest "
-"(AOI), which is used as a boundary to cut the processes and its outputs."
+msgid "In most SEPAL modules, the first mandatory input is the area of interest (AOI), which is used as a boundary to cut the processes and its outputs."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:6
-msgid ""
-"If you are using the default :btn:`<fa-solid fa-globe>` **Process "
-"recipes** or :btn:`<fa-solid fa-wrench>` custom **Applications**, you "
-"will find different user interfaces."
+msgid "If you are using the default :btn:`<fa-solid fa-globe>` **Process recipes** or :btn:`<fa-solid fa-wrench>` custom **Applications**, you will find different user interfaces."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:11
@@ -38,9 +35,7 @@ msgid "Recipe AOI"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:13
-msgid ""
-"Recipes are accessible through the orange :btn:`<fa-solid fa-globe>` "
-"globe icon located on the left side of the SEPAL interface."
+msgid "Recipes are accessible through the orange :btn:`<fa-solid fa-globe>` globe icon located on the left side of the SEPAL interface."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:15
@@ -72,11 +67,7 @@ msgid "Drawn polygons"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:41
-msgid ""
-"The selected method at this step is not definitive. You can change it at "
-"any stage by selecting the :btn:`<fa-solid fa-globe> selected method` "
-"dropdown list in the upper part of the AOI window. A list with the "
-"available methods will be displayed."
+msgid "The selected method at this step is not definitive. You can change it at any stage by selecting the :btn:`<fa-solid fa-globe> selected method` dropdown list in the upper part of the AOI window. A list with the available methods will be displayed."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:44
@@ -88,41 +79,23 @@ msgid "You can select administrative layers as AOIs."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:48
-msgid ""
-"These geometries are extracted from the `FAO GAUL Level 0 "
-"<https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8"
-"-bdfc-eb78e9e65654>`__ dataset available on `GEE "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level0>`__."
+msgid "These geometries are extracted from the `FAO GAUL Level 0 <https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?id=12691#/metadata/9c35ba10-5649-41c8-bdfc-eb78e9e65654>`__ dataset available on `GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:50
-msgid ""
-"To use them, select the :guilabel:`Select country/province` method in the"
-" dropdown list."
+msgid "To use them, select the :guilabel:`Select country/province` method in the dropdown list."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:54
-msgid ""
-"Since GEE does not support non-Latin characters, accents and special "
-"characters have been removed from country and province names."
+msgid "Since GEE does not support non-Latin characters, accents and special characters have been removed from country and province names."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:56
-msgid ""
-"In the first dropdown menu, you will be able to select a country "
-"(**Administrative layer 0**) from the country list. Optionally, you can "
-"select a province (**Administrative level 1**) within the country "
-"selected. The dropdown list is updated on the fly with the first "
-"administrative level boundaries being based on the country selection. If "
-"nothing is selected, the whole country will be considered."
+msgid "In the first dropdown menu, you will be able to select a country (**Administrative layer 0**) from the country list. Optionally, you can select a province (**Administrative level 1**) within the country selected. The dropdown list is updated on the fly with the first administrative level boundaries being based on the country selection. If nothing is selected, the whole country will be considered."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:58
-msgid ""
-"A buffer can be applied to AOI boundaries by defining its size (km) using"
-" the provided slider. By default, it is set to 0 and is therefore "
-"disabled."
+msgid "A buffer can be applied to AOI boundaries by defining its size (km) using the provided slider. By default, it is set to 0 and is therefore disabled."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:62
@@ -130,9 +103,7 @@ msgid "The AOI and preview will take longer to display when buffering is enabled
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:64
-msgid ""
-"Once all parameters are selected, the AOI will be previewed in the small "
-"map at the bottom of the frame."
+msgid "Once all parameters are selected, the AOI will be previewed in the small map at the bottom of the frame."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:66
@@ -142,9 +113,7 @@ msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:68
 #: ../../source/feature/aoi_selector.rst:104
-msgid ""
-"Once validated, the map will zoom in on the AOI and draw it in grey on "
-"the map."
+msgid "Once validated, the map will zoom in on the AOI and draw it in grey on the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:77
@@ -156,10 +125,7 @@ msgid "You can use custom AOI defined by shapes."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:81
-msgid ""
-"These shapes need to be ingested in GEE as a :code:`ee.FeatureCollection`"
-" (see `How to upload custom assets to GEE <../setup/gee.html#upload-"
-"files-to-gee>`__)."
+msgid "These shapes need to be ingested in GEE as a :code:`ee.FeatureCollection` (see `How to upload custom assets to GEE <../setup/gee.html#upload-files-to-gee>`__)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:83
@@ -167,48 +133,31 @@ msgid "To use this method, select :guilabel:`EE table`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:85
-msgid ""
-"In the first dropdown list, provide a completely qualified GEE asset name"
-" (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`)."
+msgid "In the first dropdown list, provide a completely qualified GEE asset name (e.g. :code:`projects/gtfp-fao/assets/aoi_ecowas`)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:89
-msgid ""
-"Make sure you have access to this asset. If you do not have access, ask "
-"the owner of the source to modify sharing permissions; otherwise, you "
-"won't be able to use the dataset."
+msgid "Make sure you have access to this asset. If you do not have access, ask the owner of the source to modify sharing permissions; otherwise, you won't be able to use the dataset."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:91
-msgid ""
-"Select :guilabel:`Include all` and all geometries associated with the "
-"features will be used as an AOI."
+msgid "Select :guilabel:`Include all` and all geometries associated with the features will be used as an AOI."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:92
-msgid ""
-"Select :guilabel:`Filter` and you will be able to provide a column name "
-"and a value to filter the table; the AOI will then be reduced to the "
-"filtered features in the input asset."
+msgid "Select :guilabel:`Filter` and you will be able to provide a column name and a value to filter the table; the AOI will then be reduced to the filtered features in the input asset."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:94
-msgid ""
-"A buffer can be applied to these boundaries by defining its size (km) "
-"using the provided slider. By default, it is set to :code:`0` and is "
-"therefore disabled."
+msgid "A buffer can be applied to these boundaries by defining its size (km) using the provided slider. By default, it is set to :code:`0` and is therefore disabled."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:98
-msgid ""
-"The AOI and the preview will take longer to display when buffering is "
-"enabled."
+msgid "The AOI and the preview will take longer to display when buffering is enabled."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:100
-msgid ""
-"Once all of the parameters are selected, the AOI will be previewed in the"
-" small map at the bottom of the frame."
+msgid "Once all of the parameters are selected, the AOI will be previewed in the small map at the bottom of the frame."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:113
@@ -216,9 +165,7 @@ msgid "Draw polygon"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:115
-msgid ""
-"You can use a custom AOI defined by a drawn shape, which will be "
-"converted into a :code:`ee.FeatureCollection` on the fly."
+msgid "You can use a custom AOI defined by a drawn shape, which will be converted into a :code:`ee.FeatureCollection` on the fly."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:117
@@ -234,16 +181,11 @@ msgid "Click successively on the map to draw a polygon."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:123
-msgid ""
-"Once the geometric shape is closed, the AOI will be previewed in the "
-"small map at the bottom of the frame."
+msgid "Once the geometric shape is closed, the AOI will be previewed in the small map at the bottom of the frame."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:125
-msgid ""
-"To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once "
-"validated, the map will zoom in on the AOI and draw it in grey on the "
-"map."
+msgid "To validate it, select the :btn:`<fa-solid fa-check> Apply` button. Once validated, the map will zoom in on the AOI and draw it in grey on the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:134
@@ -255,9 +197,7 @@ msgid "The **Module AOI selector** is available in some contributor modules."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:138
-msgid ""
-"To access an app, select the purple wrench :btn:`<fa-solid fa-wrench>`, "
-"located on the left side of the SEPAL platform."
+msgid "To access an app, select the purple wrench :btn:`<fa-solid fa-wrench>`, located on the left side of the SEPAL platform."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:140
@@ -277,9 +217,7 @@ msgid "the map."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:147
-msgid ""
-"Although we will mention all features and methods available, some might "
-"not be available in the context of the module you are working on."
+msgid "Although we will mention all features and methods available, some might not be available in the context of the module you are working on."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:155
@@ -287,16 +225,11 @@ msgid "Available methods"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:157
-msgid ""
-"There are two types of processes that require different AOI inputs, "
-"depending on the way the module is created and where the core processes "
-"are done:"
+msgid "There are two types of processes that require different AOI inputs, depending on the way the module is created and where the core processes are done:"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:159
-msgid ""
-"directly in a `SEPAL instance <../modules/index.html#start-instance-"
-"manually>`__; or"
+msgid "directly in a `SEPAL instance <../modules/index.html#start-instance-manually>`__; or"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:160
@@ -304,9 +237,7 @@ msgid "in GEE."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:162
-msgid ""
-"Although both interfaces appear to be the same, the methods and internal "
-"data sources may vary, such as administrative definitions."
+msgid "Although both interfaces appear to be the same, the methods and internal data sources may vary, such as administrative definitions."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:165
@@ -314,18 +245,11 @@ msgid "Administrative definitions"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:167
-msgid ""
-"Similar to the previously mentioned :ref:`Recipe AOI selector "
-"<recipe_aoi>`, the module AOI uses `FAO GAUL GEE "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level0>`__ boundaries for GEE and "
-"`GADM 3.6 <https://gadm.org/data.html>`__ features for local processes."
+msgid "Similar to the previously mentioned :ref:`Recipe AOI selector <recipe_aoi>`, the module AOI uses `FAO GAUL GEE <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ boundaries for GEE and `GADM 3.6 <https://gadm.org/data.html>`__ features for local processes."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:169
-msgid ""
-"However, in this case, the tool allows you to recurse at a maximum second"
-" administrative level. The available sources are the following:"
+msgid "However, in this case, the tool allows you to recurse at a maximum second administrative level. The available sources are the following:"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:172
@@ -333,24 +257,15 @@ msgid "GEE"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:174
-msgid ""
-"Country/province (level 0): Countries or provinces at level 0, available "
-"at `FAO GAUL GEE level 0 <https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level0>`__;"
+msgid "Country/province (level 0): Countries or provinces at level 0, available at `FAO GAUL GEE level 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__;"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:175
-msgid ""
-"Admin level 1: First administrative level, `FAO GAUL GEE level 1 "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level1>`__; and"
+msgid "Admin level 1: First administrative level, `FAO GAUL GEE level 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__; and"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:176
-msgid ""
-"Admin level 2: Second administrative level, `FAO GAUL GEE level 2 "
-"<https://developers.google.com/earth-"
-"engine/datasets/catalog/FAO_GAUL_2015_level2>`__."
+msgid "Admin level 2: Second administrative level, `FAO GAUL GEE level 2 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level2>`__."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:179
@@ -358,28 +273,19 @@ msgid "Local"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:181
-msgid ""
-"All administrative levels are accessible from the `GADM website "
-"<https://gadm.org/data.html>`__."
+msgid "All administrative levels are accessible from the `GADM website <https://gadm.org/data.html>`__."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:183
-msgid ""
-"Use the :guilabel:`AOI selection method` dropdown list to select the "
-"target administrative level."
+msgid "Use the :guilabel:`AOI selection method` dropdown list to select the target administrative level."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:185
-msgid ""
-"A new dropdown list will load with all corresponding boundaries to the "
-"next administrative level that is linked with the base level."
+msgid "A new dropdown list will load with all corresponding boundaries to the next administrative level that is linked with the base level."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:187
-msgid ""
-"For example, select :code:`Admin level 2` as the method, choose "
-":code:`Colombia` as the country, select the :code:`Amazonas` department "
-"as the next level, and finally select the :code:`Leticia` municipality."
+msgid "For example, select :code:`Admin level 2` as the method, choose :code:`Colombia` as the country, select the :code:`Amazonas` department as the next level, and finally select the :code:`Leticia` municipality."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:195
@@ -387,9 +293,7 @@ msgid "Custom geometries"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:197
-msgid ""
-"When you are looking for a more specific AOI, the **Module AOI selector**"
-" has the following options:"
+msgid "When you are looking for a more specific AOI, the **Module AOI selector** has the following options:"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:199
@@ -421,41 +325,23 @@ msgid "Select the :guilabel:`Vector file` method in the dropdown list."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:211
-msgid ""
-"A file manager widget (see **1** in the following figure) will be "
-"displayed below, allowing you to search and select a vector file stored "
-"in your SEPAL environment (see `How to exchange files with SEPAL "
-"<https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-"
-"with-sepal>`_)."
+msgid "A file manager widget (see **1** in the following figure) will be displayed below, allowing you to search and select a vector file stored in your SEPAL environment (see `How to exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html#exchange-files-with-sepal>`_)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:213
-msgid ""
-"The dropdown list, :guilabel:`Column` (**2**), is useful to filter "
-"features of the vector file. The default option is :guilabel:`Use all "
-"features`, meaning any filter is used."
+msgid "The dropdown list, :guilabel:`Column` (**2**), is useful to filter features of the vector file. The default option is :guilabel:`Use all features`, meaning any filter is used."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:215
-msgid ""
-"To filter the collection, select a column and a :guilabel:`Value` (**3**)"
-" in the corresponding dropdown list, then select the :guilabel:`Select "
-"AOI` button."
+msgid "To filter the collection, select a column and a :guilabel:`Value` (**3**) in the corresponding dropdown list, then select the :guilabel:`Select AOI` button."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:224
-msgid ""
-"Available vector formats include: [:code:`.shp`, :code:`.geojson`, "
-":code:`.gpkg`, :code:`.kml`]. Once selected, the module will transform "
-"its original coordinate system into :code:`EPSG:4326`."
+msgid "Available vector formats include: [:code:`.shp`, :code:`.geojson`, :code:`.gpkg`, :code:`.kml`]. Once selected, the module will transform its original coordinate system into :code:`EPSG:4326`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:226
-msgid ""
-"Remember that if the module you are using is doing the computation in "
-"GEE, a new :code:`feature collection` asset will be created and stored in"
-" you GEE root folder using the name of the provided file prefixed by "
-":code:`aoi_`."
+msgid "Remember that if the module you are using is doing the computation in GEE, a new :code:`feature collection` asset will be created and stored in you GEE root folder using the name of the provided file prefixed by :code:`aoi_`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:231
@@ -467,9 +353,7 @@ msgid "Select the :guilabel:`Drawn shapes` method in the dropdown list."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:235
-msgid ""
-"Then, create a name for your drawing, if desired. If not provided, the "
-"tool will assign a unique name containing the following structure:"
+msgid "Then, create a name for your drawing, if desired. If not provided, the tool will assign a unique name containing the following structure:"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:237
@@ -477,69 +361,35 @@ msgid ":code:`Manual_aoi_YYYY-MM-DD_HH-MM-SS`"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:239
-msgid ""
-"If the module you are using is completing the process in GEE, a new asset"
-" will be created and stored in the root of your GEE account with the "
-"given name prefixed by :code:`aoi_`."
+msgid "If the module you are using is completing the process in GEE, a new asset will be created and stored in the root of your GEE account with the given name prefixed by :code:`aoi_`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:241
-msgid ""
-"Three geometric shapes will appear in the upper-left corner of the map: "
-":btn:`<fa-solid fa-draw-polygon>` a polygon, :btn:`<fa-solid fa-square>` "
-"a square, and :btn:`<fa-solid fa-circle>` a circle."
+msgid "Three geometric shapes will appear in the upper-left corner of the map: :btn:`<fa-solid fa-draw-polygon>` a polygon, :btn:`<fa-solid fa-square>` a square, and :btn:`<fa-solid fa-circle>` a circle."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:250
-msgid ""
-"To draw, zoom in on your AOI by using the mouse wheel button, or the :btn"
-":`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` "
-"buttons located in the upper-right corner."
+msgid "To draw, zoom in on your AOI by using the mouse wheel button, or the :btn:`<fa-solid fa-square-plus>` and :btn:`<fa-solid fa-square-minus>` buttons located in the upper-right corner."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:252
-msgid ""
-":btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by "
-"clicking the vertices of the geometry on the map. To close and finish "
-"your geometry, click the first vertex or select the :guilabel:`finish` "
-"button. Note that once you select the polygon geometric shape, three new "
-"buttons will be available at the top of the map: :guilabel:`Finish`, "
-":guilabel:`Delete last point` and :guilabel:`Cancel`."
+msgid ":btn:`<fa-solid fa-draw-polygon>` (polygon): Draw your custom polygon by clicking the vertices of the geometry on the map. To close and finish your geometry, click the first vertex or select the :guilabel:`finish` button. Note that once you select the polygon geometric shape, three new buttons will be available at the top of the map: :guilabel:`Finish`, :guilabel:`Delete last point` and :guilabel:`Cancel`."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:254
-msgid ""
-":btn:`<fa-solid fa-square>` (rectangle): Click the upper-left corner of "
-"the rectangle in the map (it will be the first vertex of the geometric "
-"shape). Then — **without clicking** — move the mouse to the opposite "
-"corner (lower left) and click the map (this will close the geometric "
-"shape; the rectangle will be teal in color)."
+msgid ":btn:`<fa-solid fa-square>` (rectangle): Click the upper-left corner of the rectangle in the map (it will be the first vertex of the geometric shape). Then — **without clicking** — move the mouse to the opposite corner (lower left) and click the map (this will close the geometric shape; the rectangle will be teal in color)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:256
-msgid ""
-":btn:`<fa-solid fa-circle>` (circle): Click and hold the center of the "
-"circle, and then — **while still holding** — draw the distance (radius). "
-"A new blue marker will appear on the map, showing the center of the "
-"circle. (The geometrical shape won't be drawn on the map until you select"
-" the :guilabel:`Select AOI` button, so do not worry if you can't see the "
-"circle at this time; the module will save the geometry in the "
-"background.)"
+msgid ":btn:`<fa-solid fa-circle>` (circle): Click and hold the center of the circle, and then — **while still holding** — draw the distance (radius). A new blue marker will appear on the map, showing the center of the circle. (The geometrical shape won't be drawn on the map until you select the :guilabel:`Select AOI` button, so do not worry if you can't see the circle at this time; the module will save the geometry in the background.)"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:261
-msgid ""
-"Use this method to load a single point or multipoint datasets. Select "
-":guilabel:`Point file` in the **Method** dropdown list. Four new widgets "
-"will appear, including a File selector (**1**), and three dropdown lists:"
-" ID (**2**), Longitude (**3**), and Latitude (**4**)."
+msgid "Use this method to load a single point or multipoint datasets. Select :guilabel:`Point file` in the **Method** dropdown list. Four new widgets will appear, including a File selector (**1**), and three dropdown lists: ID (**2**), Longitude (**3**), and Latitude (**4**)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:268
-msgid ""
-"Use the file selector widget to navigate through your SEPAL environment "
-"and search for a table file (:code:`.csv` or :code:`.txt`) containing the"
-" coordinates of your points."
+msgid "Use the file selector widget to navigate through your SEPAL environment and search for a table file (:code:`.csv` or :code:`.txt`) containing the coordinates of your points."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:270
@@ -607,24 +457,15 @@ msgid "5.0"
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:293
-msgid ""
-"Once the table is loaded, the system will try to automatically identify "
-"the :guilabel:`Id`, :guilabel:`Longitude` and :guilabel:`Latitude` "
-"columns. When this is not possible, the fields will remain empty and you "
-"will have to manually match them."
+msgid "Once the table is loaded, the system will try to automatically identify the :guilabel:`Id`, :guilabel:`Longitude` and :guilabel:`Latitude` columns. When this is not possible, the fields will remain empty and you will have to manually match them."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:295
-msgid ""
-"The columns don't have to be named with any specific structure; the only "
-"requirement is that your dataset has to be composed of columns for ID, "
-"longitude and latitude."
+msgid "The columns don't have to be named with any specific structure; the only requirement is that your dataset has to be composed of columns for ID, longitude and latitude."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:300
-msgid ""
-"Use this method to load a custom feature collection available as an asset"
-" in GEE."
+msgid "Use this method to load a custom feature collection available as an asset in GEE."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:302
@@ -648,46 +489,23 @@ msgid "unique column fields, which are optional (**3**)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:315
-msgid ""
-"The file selector widget will search for all :code:`Table` assets (i.e. "
-"Feature collection) stored in your GEE account. You can also copy and "
-"paste a custom third-party asset into the text field; however, be sure "
-"that you have access permission – otherwise, the module won't be able to "
-"use that source and an error message will be displayed."
+msgid "The file selector widget will search for all :code:`Table` assets (i.e. Feature collection) stored in your GEE account. You can also copy and paste a custom third-party asset into the text field; however, be sure that you have access permission – otherwise, the module won't be able to use that source and an error message will be displayed."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:317
-msgid ""
-"Once you have selected a valid asset, the module will query all available"
-" columns in your provided asset and display them in the **Column** "
-"dropdown widget. By default, all features in the dataset will be selected"
-" (:guilabel:`Use all features`); however, if you are interested in using "
-"a specific geometry, select a column to filter your dataset; a new "
-"dropdown list will load all of the unique values for that specific column"
-" – select one."
+msgid "Once you have selected a valid asset, the module will query all available columns in your provided asset and display them in the **Column** dropdown widget. By default, all features in the dataset will be selected (:guilabel:`Use all features`); however, if you are interested in using a specific geometry, select a column to filter your dataset; a new dropdown list will load all of the unique values for that specific column – select one."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:319
-msgid ""
-"This method will only be available when you are using a module that "
-"requires a connection to your GEE account. You can check this by "
-"navigating through the app's dashboard and noticing the :icon:`fa-solid "
-"fa-google` icon at the right side of the shapes."
+msgid "This method will only be available when you are using a module that requires a connection to your GEE account. You can check this by navigating through the app's dashboard and noticing the :icon:`fa-solid fa-google` icon at the right side of the shapes."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:321
-msgid ""
-"All of the modules do not have all of the mentioned methods. Their "
-"availability will depend on the module context (e.g. some apps require "
-"polygons, while others require points)."
+msgid "All of the modules do not have all of the mentioned methods. Their availability will depend on the module context (e.g. some apps require polygons, while others require points)."
 msgstr ""
 
 #: ../../source/feature/aoi_selector.rst:323
-msgid ""
-"Finally, select the :guilabel:`Select AOI` button. If all inputs are "
-"correct, you will see a success message and your AOI will be displayed in"
-" green on the map. Otherwise, an indicative error message will be "
-"displayed."
+msgid "Finally, select the :guilabel:`Select AOI` button. If all inputs are correct, you will see a success message and your AOI will be displayed in green on the map. Otherwise, an indicative error message will be displayed."
 msgstr ""
 
 #~ msgid ""

@@ -1,103 +1,65 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2024, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-03-07 09:03\n"
+"Last-Translator: \n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/workflows/eSBAE.po\n"
+"X-Crowdin-File-ID: 220\n"
 
 #: ../../source/workflows/eSBAE.rst:2
 msgid "eSBAE - ensemble Sample Based Area Estimation"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:3
-msgid ""
-"*accurate forest change estimates and uncertainty using multi-source "
-"remote sensing, change detection algorithms over a dense sampling grid*"
+msgid "*accurate forest change estimates and uncertainty using multi-source remote sensing, change detection algorithms over a dense sampling grid*"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:5
-msgid ""
-"The ensemble Sample Based Area Estimation workflow aims to produce "
-"reliable estimates of forest change, including uncertainty using dense "
-"sampling and a multi-algorithmic approach."
+msgid "The ensemble Sample Based Area Estimation workflow aims to produce reliable estimates of forest change, including uncertainty using dense sampling and a multi-algorithmic approach."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:9
-msgid ""
-"This workflow is provided as a set of notebooks allowing users to follow "
-"an optimized workflow for creating Sample Based Area Estimates resulting "
-"from an ensemble classification of various time-series and remote sensing"
-" products over a very dense set of points. This is further enhanced "
-"through an optimized stratification strategy based on the Kozak-Neyman "
-"stratification."
+msgid "This workflow is provided as a set of notebooks allowing users to follow an optimized workflow for creating Sample Based Area Estimates resulting from an ensemble classification of various time-series and remote sensing products over a very dense set of points. This is further enhanced through an optimized stratification strategy based on the Kozak-Neyman stratification."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:16
-msgid ""
-"The eSBAE notebook repository contains standard scripts for conducting "
-"the workflow using generic global data, without a priori training data."
+msgid "The eSBAE notebook repository contains standard scripts for conducting the workflow using generic global data, without a priori training data."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:19
-msgid ""
-"These scripts can be cloned from https://github.com/sepal-"
-"contrib/eSBAE_notebooks"
+msgid "These scripts can be cloned from https://github.com/sepal-contrib/eSBAE_notebooks"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:22
-msgid ""
-"Most of the data and functionality is coming from Google Earth Engine, "
-"for which you will need a valid account. It is possible to freely sign up"
-" here: https://code.earthengine.google.com/register"
+msgid "Most of the data and functionality is coming from Google Earth Engine, for which you will need a valid account. It is possible to freely sign up here: https://code.earthengine.google.com/register"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:26
-msgid ""
-"The eSBAE notebooks are a series of Jupyter notebooks intended to "
-"streamline the process of creating activity data for measurement, "
-"reporting, and verification of REDD+ and other carbon standards."
+msgid "The eSBAE notebooks are a series of Jupyter notebooks intended to streamline the process of creating activity data for measurement, reporting, and verification of REDD+ and other carbon standards."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:30
-msgid ""
-"eSBAE is mainly based on the sampling-handler python library that "
-"provides all the necessary underlying functionality. While the notebooks "
-"take away the heavy burden of coding each single element, you will only "
-"need to declare some basic input variables that define your custom needs."
-" This means you do not need to be an experienced python programmer, but "
-"basic understanding does help."
+msgid "eSBAE is mainly based on the sampling-handler python library that provides all the necessary underlying functionality. While the notebooks take away the heavy burden of coding each single element, you will only need to declare some basic input variables that define your custom needs. This means you do not need to be an experienced python programmer, but basic understanding does help."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:37
-msgid ""
-"You will notice that the structure of each notebook is fairly similar, "
-"with only the parameter settings adapting for the current step. You can "
-"also use individual parts for specific purposes, but going through each "
-"of the notebooks consecutively ensures the best way for a smooth "
-"execution of the entire process."
+msgid "You will notice that the structure of each notebook is fairly similar, with only the parameter settings adapting for the current step. You can also use individual parts for specific purposes, but going through each of the notebooks consecutively ensures the best way for a smooth execution of the entire process."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:43
-msgid ""
-"There are two elements that tie the outputs of each notebook together - "
-"the *Project Name* and an underlying configuration file. This not only "
-"eases the interaction but also ensures transparency, reproducibility, and"
-" interaction between different steps/notebooks."
+msgid "There are two elements that tie the outputs of each notebook together - the *Project Name* and an underlying configuration file. This not only eases the interaction but also ensures transparency, reproducibility, and interaction between different steps/notebooks."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:48
@@ -105,61 +67,35 @@ msgid "Description of scripts in the eSBAE_notebooks repository:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:50
-msgid ""
-"*00-Introduction-to-Jupyter and Python.ipynb* is an introductory script "
-"that explains the basic usage of Python and the different kinds of "
-"datatypes."
+msgid "*00-Introduction-to-Jupyter and Python.ipynb* is an introductory script that explains the basic usage of Python and the different kinds of datatypes."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:54
-msgid ""
-"*01_pre-analysis* provides code and functions for the extraction of some "
-"basic information on forest statistics for a given area of interest as "
-"well as sample size and error calculations."
+msgid "*01_pre-analysis* provides code and functions for the extraction of some basic information on forest statistics for a given area of interest as well as sample size and error calculations."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:58
-msgid ""
-"*02_sample_design.ipynb* creates the grid of points based on squares or "
-"hexagons for your area of interest, using the spacing estimated in the "
-"previous script."
+msgid "*02_sample_design.ipynb* creates the grid of points based on squares or hexagons for your area of interest, using the spacing estimated in the previous script."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:62
-msgid ""
-"*03_time_series_extract* is the process for extracting satellite time "
-"series for the sampling design you produced in script 02."
+msgid "*03_time_series_extract* is the process for extracting satellite time series for the sampling design you produced in script 02."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:65
-msgid ""
-"*04_dataset_augmentation.ipynb* executes various change detection "
-"algorithms (BFAST, CUSUM, CCDC among others) based on the previously "
-"extracted time series."
+msgid "*04_dataset_augmentation.ipynb* executes various change detection algorithms (BFAST, CUSUM, CCDC among others) based on the previously extracted time series."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:69
-msgid ""
-"*05_unsupervised_subsampling.ipynb* runs a KMeans unsupervised clustering"
-" algorithm to extract “statistically balanced” training data in order to "
-"sample all classes of change and no change, while over proportionally "
-"capturing rare classes. This script is recommended when you do not have "
-"an prior training data"
+msgid "*05_unsupervised_subsampling.ipynb* runs a KMeans unsupervised clustering algorithm to extract “statistically balanced” training data in order to sample all classes of change and no change, while over proportionally capturing rare classes. This script is recommended when you do not have an prior training data"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:75
-msgid ""
-"For the CAFI drivers project, we developed customized scripts for all "
-"steps after step 4 dataset augmentation, as we have visually interpreted "
-"data available to use as training to estimate probabilities of change and"
-" subsequently stratify the entire grid of points to select samples for "
-"further visual interpretation."
+msgid "For the CAFI drivers project, we developed customized scripts for all steps after step 4 dataset augmentation, as we have visually interpreted data available to use as training to estimate probabilities of change and subsequently stratify the entire grid of points to select samples for further visual interpretation."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:81
-msgid ""
-"The CAFI DDD eSBAE scripts can be cloned from this repository: "
-"https://github.com/aurelgrooves/CAFI_DDD"
+msgid "The CAFI DDD eSBAE scripts can be cloned from this repository: https://github.com/aurelgrooves/CAFI_DDD"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:84
@@ -167,47 +103,27 @@ msgid "These scripts perform the following tasks:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:86
-msgid ""
-"*esbae_05a_merge_esbae_ceo_str_random.ipynb*: This workflow combines the "
-"validated stratified random data from phase I of the project with the "
-"eSBAE variables from the dataset augmentation step."
+msgid "*esbae_05a_merge_esbae_ceo_str_random.ipynb*: This workflow combines the validated stratified random data from phase I of the project with the eSBAE variables from the dataset augmentation step."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:90
-msgid ""
-"*esbae_05b_supervised_w_CAFI_data.ipynb*: performs a supervised "
-"classification of change types (deforestation, degradation, stable and "
-"non-forest) on the systematic eSBAE variables using the stratified random"
-" data from phase I as training. This outputs a probability of forest "
-"change for all points and 3 strata: high probability of no change, medium"
-" probability of change and high probability of change."
+msgid "*esbae_05b_supervised_w_CAFI_data.ipynb*: performs a supervised classification of change types (deforestation, degradation, stable and non-forest) on the systematic eSBAE variables using the stratified random data from phase I as training. This outputs a probability of forest change for all points and 3 strata: high probability of no change, medium probability of change and high probability of change."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:97
-msgid ""
-"*esbae_05c_CAFI_sampling_for_CEO.ipynb*: uses the supervised model and "
-"strata created in the previous step to extract the desired number "
-"proportional samples for validation with CEO."
+msgid "*esbae_05c_CAFI_sampling_for_CEO.ipynb*: uses the supervised model and strata created in the previous step to extract the desired number proportional samples for validation with CEO."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:101
-msgid ""
-"*esbae_05d_merge_sbae_ceo_systematic.ipynb*: the data validated in CEO "
-"are merged with the eSBAE points for country of interest"
+msgid "*esbae_05d_merge_sbae_ceo_systematic.ipynb*: the data validated in CEO are merged with the eSBAE points for country of interest"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:104
-msgid ""
-"*esbae_05e_supervised_CAFI_all_points.ipynb*: performs a supervised "
-"classification of change types on all points using the validated data. "
-"The years of change are applied using CUSUM dates."
+msgid "*esbae_05e_supervised_CAFI_all_points.ipynb*: performs a supervised classification of change types on all points using the validated data. The years of change are applied using CUSUM dates."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:108
-msgid ""
-"*esbae_06_calculate_areas.ipynb*: calculate areas and margin of error for"
-" deforestation and degradation annually or for all years as well as "
-"stable, non-forested areas."
+msgid "*esbae_06_calculate_areas.ipynb*: calculate areas and margin of error for deforestation and degradation annually or for all years as well as stable, non-forested areas."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:112
@@ -243,37 +159,23 @@ msgid "**Script 0 - Introduction to Jupyter Notebooks and Python**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:158
-msgid ""
-"This script takes you through the basic interface and datatypes of "
-"python. To execute a cell and continue to the next one, hit Shift + Enter"
-" on your keyboard."
+msgid "This script takes you through the basic interface and datatypes of python. To execute a cell and continue to the next one, hit Shift + Enter on your keyboard."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:168
-msgid ""
-"A cell that has not been executed is indicated by [ ]. When it is running"
-" you will see [ \\* ] and when it has executed you will see a number in "
-"the brackets in the order of execution. For example [ 5 ] means this cell"
-" was executed 5th in the series."
+msgid "A cell that has not been executed is indicated by [ ]. When it is running you will see [ \\* ] and when it has executed you will see a number in the brackets in the order of execution. For example [ 5 ] means this cell was executed 5th in the series."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:173
-msgid ""
-"To de-active a line enter # at the beginning of the line. This will "
-"effectively tell SEPAL to skip whatever follows."
+msgid "To de-active a line enter # at the beginning of the line. This will effectively tell SEPAL to skip whatever follows."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:176
-msgid ""
-"Use this notebook to practice executing cells and change some of the "
-"contents to understand what the script does."
+msgid "Use this notebook to practice executing cells and change some of the contents to understand what the script does."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:179
-msgid ""
-"*Important:* for each script, always execute all the cells in order, do "
-"not skip any, particularly the first cell which imports libraries and "
-"installs needed tools and functions."
+msgid "*Important:* for each script, always execute all the cells in order, do not skip any, particularly the first cell which imports libraries and installs needed tools and functions."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:183
@@ -281,30 +183,19 @@ msgid "**Script I - Pre-analysis**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:186
-msgid ""
-"Forest and Deforestation statistics, sample size and error calculation & "
-"simulation"
+msgid "Forest and Deforestation statistics, sample size and error calculation & simulation"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:188
-msgid ""
-"This notebook provides code and functions for the extraction of some "
-"basic information on forest statistics for a give area of interest as "
-"well as sample size and error calculations. It is structured in the "
-"following parts:"
+msgid "This notebook provides code and functions for the extraction of some basic information on forest statistics for a give area of interest as well as sample size and error calculations. It is structured in the following parts:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:193
-msgid ""
-"Forest area and deforestation statistics according to Global Forest "
-"Change product (`Hansen et al 2013 "
-"<https://10.0.4.102/science.1244693>`__)"
+msgid "Forest area and deforestation statistics according to Global Forest Change product (`Hansen et al 2013 <https://10.0.4.102/science.1244693>`__)"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:197
-msgid ""
-"Theoretical sample size and error calculation according to Cochran for "
-"capturing deforestation events"
+msgid "Theoretical sample size and error calculation according to Cochran for capturing deforestation events"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:200
@@ -316,49 +207,27 @@ msgid "**1 - Basic Parameter Settings**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:205
-msgid ""
-"Here you will define some of the key parameters to create the subsequent "
-"forest statistics."
+msgid "Here you will define some of the key parameters to create the subsequent forest statistics."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:208
-msgid ""
-"Project Name: This will not only give your work a name, but it also "
-"defines the output folder within the module_results/esbae (if you are on "
-"SEPAL), as well as a directory within your Earth Engine assets. **NOTE** "
-"that it shall not contain any space. **NOTE** all outputs from eSBAE will"
-" be written to your module_results/esbae/<projectname>"
+msgid "Project Name: This will not only give your work a name, but it also defines the output folder within the module_results/esbae (if you are on SEPAL), as well as a directory within your Earth Engine assets. **NOTE** that it shall not contain any space. **NOTE** all outputs from eSBAE will be written to your module_results/esbae/<projectname>"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:214
-msgid ""
-"Area of Interest (AOI): Your AOI defines the spatial extent for which the"
-" data will be generated and analyzed. It can come in different formats, "
-"such as a (filtered) Earth Engine feature collection, an OGR compatible "
-"geospatial data format (e.g. Shapefile, Geopackage, KML, GeoJSON), or a "
-"geopandas GeoDataFrame object. You can enter a country name to use the "
-"boundaries from FAO GAUL, you can find the country names here: "
-"https://data.apps.fao.org/catalog/dataset/gaul-code-list-global-admin-1"
+msgid "Area of Interest (AOI): Your AOI defines the spatial extent for which the data will be generated and analyzed. It can come in different formats, such as a (filtered) Earth Engine feature collection, an OGR compatible geospatial data format (e.g. Shapefile, Geopackage, KML, GeoJSON), or a geopandas GeoDataFrame object. You can enter a country name to use the boundaries from FAO GAUL, you can find the country names here: https://data.apps.fao.org/catalog/dataset/gaul-code-list-global-admin-1"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:223
-msgid ""
-"If you want to select a province, enter a province name in the country "
-"line and change the aoi line to the following:"
+msgid "If you want to select a province, enter a province name in the country line and change the aoi line to the following:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:233
-msgid ""
-"Otherwise you can use an existing GEE asset for example, the buffered "
-"simplified boundary of Cameroun from the CAFI database:"
+msgid "Otherwise you can use an existing GEE asset for example, the buffered simplified boundary of Cameroun from the CAFI database:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:240
-msgid ""
-"Start and end year will define the temporal extent, for which "
-"deforestation areas are extracted from the GFC product. This area will "
-"ultimately be used to determine the sampling size based on Cochran's "
-"equation."
+msgid "Start and end year will define the temporal extent, for which deforestation areas are extracted from the GFC product. This area will ultimately be used to determine the sampling size based on Cochran's equation."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:247
@@ -366,24 +235,15 @@ msgid "For the CAFI project we will extract all data from 2010 to the present:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:257
-msgid ""
-"4. Tree cover and mmu determine by which thresholds the GFC product will "
-"be filtered in order to consider a (set of) pixels as forest. Values are "
-"set in percentage and hectare."
+msgid "4. Tree cover and mmu determine by which thresholds the GFC product will be filtered in order to consider a (set of) pixels as forest. Values are set in percentage and hectare."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:261
-msgid ""
-"You can set the parameters according to the forest definitions for the "
-"CAFI countries described `here "
-"<https://lookerstudio.google.com/u/0/reporting/c19ee6c9-04ff-4522-9f38-fe15bc04e9d3>`__"
+msgid "You can set the parameters according to the forest definitions for the CAFI countries described `here <https://lookerstudio.google.com/u/0/reporting/c19ee6c9-04ff-4522-9f38-fe15bc04e9d3>`__"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:271
-msgid ""
-"The final component of this script will evaluate the optimal grid spacing"
-" and sample size for your area of interest to reach an expected margin of"
-" error."
+msgid "The final component of this script will evaluate the optimal grid spacing and sample size for your area of interest to reach an expected margin of error."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:281
@@ -391,15 +251,11 @@ msgid "**II - Sample Design**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:283
-msgid ""
-"This script creates the point samples for time series extraction and "
-"analysis."
+msgid "This script creates the point samples for time series extraction and analysis."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:286
-msgid ""
-"This script requires an m2 instance, but for larger areas such as DRC, a "
-"c8 instance is needed.."
+msgid "This script requires an m2 instance, but for larger areas such as DRC, a c8 instance is needed.."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:290
@@ -407,18 +263,11 @@ msgid "**Introduction**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:292
-msgid ""
-"The base for the eSBAE approach is a dense grid that captures change at a"
-" sufficient level of confidence. A systematic sampling design shall be be"
-" employed. This notebook provides the functionality to create such a grid"
-" over the given AOI (defined in Notebook 1)."
+msgid "The base for the eSBAE approach is a dense grid that captures change at a sufficient level of confidence. A systematic sampling design shall be be employed. This notebook provides the functionality to create such a grid over the given AOI (defined in Notebook 1)."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:297
-msgid ""
-"Two grid shapes are available, i.e. squared or hexagonal grid. In "
-"addition, it is necessary to determine the size of each grid cell as well"
-" as the projection."
+msgid "Two grid shapes are available, i.e. squared or hexagonal grid. In addition, it is necessary to determine the size of each grid cell as well as the projection."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:302
@@ -426,10 +275,7 @@ msgid "**Squared grid**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:304
-msgid ""
-"Squared grids are a simple way of creating a grid. They are in use for "
-"various geospatial applications. The grid size of the squared grid is "
-"selected in metres, defining the single border length of each grid cell."
+msgid "Squared grids are a simple way of creating a grid. They are in use for various geospatial applications. The grid size of the squared grid is selected in metres, defining the single border length of each grid cell."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:309
@@ -437,39 +283,19 @@ msgid "**Hexagonal grid**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:311
-msgid ""
-"Lately, hexagonal grids are adapted in National Forest Monitoring Systems"
-" as they possess some particular characteristics. Foremost, they reduce "
-"the error on area, but they also do assure that each point within the "
-"grid cell is mre or less at the same distance to the centre. Indeed, the "
-"ideal shape under that criteria would be a circle. It is however not "
-"possible to create a consistent grid of circles. The hexagon is the shape"
-" of polygon that comes closest to this criteria, while being able to "
-"provide a consistent grid."
+msgid "Lately, hexagonal grids are adapted in National Forest Monitoring Systems as they possess some particular characteristics. Foremost, they reduce the error on area, but they also do assure that each point within the grid cell is mre or less at the same distance to the centre. Indeed, the ideal shape under that criteria would be a circle. It is however not possible to create a consistent grid of circles. The hexagon is the shape of polygon that comes closest to this criteria, while being able to provide a consistent grid."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:320
-msgid ""
-"The notebook provides a simplified interface to the dggrid software "
-"library from `Southern Oregon University "
-"<https://www.discreteglobalgrids.org/software/>`__. DGGRID holds code to "
-"generetate standardized hexagonal grids based on a *Discrete Global Grid "
-"System (DGGS)* with a set of predefined resolutions for specific "
-"projections optimized for equal area."
+msgid "The notebook provides a simplified interface to the dggrid software library from `Southern Oregon University <https://www.discreteglobalgrids.org/software/>`__. DGGRID holds code to generetate standardized hexagonal grids based on a *Discrete Global Grid System (DGGS)* with a set of predefined resolutions for specific projections optimized for equal area."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:327
-msgid ""
-"It is important to understand that DGGRID has a **fixed set of "
-"resolutions** that should be selected from column *res* in the below "
-"table (You need to check the manual for other resolutions if you select a"
-" different projection than the ISEA3H)"
+msgid "It is important to understand that DGGRID has a **fixed set of resolutions** that should be selected from column *res* in the below table (You need to check the manual for other resolutions if you select a different projection than the ISEA3H)"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:332
-msgid ""
-"For advanced usage it is recommended to consult the `manual "
-"<https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__."
+msgid "For advanced usage it is recommended to consult the `manual <https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:336
@@ -477,10 +303,7 @@ msgid "**Sampling strategies**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:338
-msgid ""
-"The notebook allows to select from 2 sampling strategies within each grid"
-" cell, *centroid* and *random*. The centroid will take the centre point "
-"according to the projection selected, while the random option"
+msgid "The notebook allows to select from 2 sampling strategies within each grid cell, *centroid* and *random*. The centroid will take the centre point according to the projection selected, while the random option"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:343
@@ -488,12 +311,7 @@ msgid "**Projections**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:345
-msgid ""
-"When creating samples, an important consideration is the projection used."
-" Projections always exhibit distortions with regard to the actual sphere-"
-"like shape of the Earth. As our aim is to give each sample the same "
-"weight in terms of area representativeness, we shall select a projection "
-"that is optimised for **equal area**."
+msgid "When creating samples, an important consideration is the projection used. Projections always exhibit distortions with regard to the actual sphere-like shape of the Earth. As our aim is to give each sample the same weight in terms of area representativeness, we shall select a projection that is optimised for **equal area**."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:352
@@ -502,13 +320,7 @@ msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:354
 #, python-format
-msgid ""
-"In the table below you can find some examples of global equal area "
-"projections to select from. The information is taken from an article from"
-" Yildrim & Kaya 2008 and can be found `here "
-"<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790990/#:~:text=The%20level%20of%20distortion%20can,compared%20to%20equal%2Darea%20maps>`__."
-" **Note** that the commonly used Lat/Lon projection (EPSG:4326) **does** "
-"contain distortions that shall be avoided."
+msgid "In the table below you can find some examples of global equal area projections to select from. The information is taken from an article from Yildrim & Kaya 2008 and can be found `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790990/#:~:text=The%20level%20of%20distortion%20can,compared%20to%20equal%2Darea%20maps>`__. **Note** that the commonly used Lat/Lon projection (EPSG:4326) **does** contain distortions that shall be avoided."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:367
@@ -516,10 +328,7 @@ msgid "**Hexagonal grid projections and grid size**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:369
-msgid ""
-"By default, the ISEA3H projection is used. Consult the `dggrid manual "
-"<https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__ for further"
-" projections options."
+msgid "By default, the ISEA3H projection is used. Consult the `dggrid manual <https://webpages.sou.edu/~sahrk/docs/dggridManualV70.pdf>`__ for further projections options."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:380
@@ -531,33 +340,19 @@ msgid "In the below cell we initialize the SampleDesign Class"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:384
-msgid ""
-"Grid shape: This defines which shape the underlying systematic grid shall"
-" have. Choices are squared or hexagonal."
+msgid "Grid shape: This defines which shape the underlying systematic grid shall have. Choices are squared or hexagonal."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:387
-msgid ""
-"Sampling strategy: Here it is set if the samplng point is set in the "
-"centre or at a random point within each grid cell."
+msgid "Sampling strategy: Here it is set if the samplng point is set in the centre or at a random point within each grid cell."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:390
-msgid ""
-"Grid projection (as epsg/esri code): As described above, projection is an"
-" important part when creating the grid. However, equal area projections "
-"are not the most commonly used projections. The routine is able to use a "
-"different grid system internally for creating the grid and/or placing the"
-" centroid. Note that when having selected a hexagonal grid, this "
-"projection is only being used for the placement of the centroid."
+msgid "Grid projection (as epsg/esri code): As described above, projection is an important part when creating the grid. However, equal area projections are not the most commonly used projections. The routine is able to use a different grid system internally for creating the grid and/or placing the centroid. Note that when having selected a hexagonal grid, this projection is only being used for the placement of the centroid."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:398
-msgid ""
-"Output projection: this will define the projection of the final output "
-"file, independent of the projection the grid was defined. For this, it "
-"can also be a projection that is not ideal for the creation of sampling "
-"grids such as Lat/Long."
+msgid "Output projection: this will define the projection of the final output file, independent of the projection the grid was defined. For this, it can also be a projection that is not ideal for the creation of sampling grids such as Lat/Long."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:404
@@ -573,19 +368,11 @@ msgid "**2 - Create Grid**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:439
-msgid ""
-"Another important aspect is the grid size. **NOTE** that the grid size is"
-" selected differently for squared and hexagonal grids. A squared grid is "
-"simply defined by the distance between each point (which is the same as a"
-" single border length of the underlying grid)."
+msgid "Another important aspect is the grid size. **NOTE** that the grid size is selected differently for squared and hexagonal grids. A squared grid is simply defined by the distance between each point (which is the same as a single border length of the underlying grid)."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:444
-msgid ""
-"The hexagonal grid, instead, relies on a hierarchical system and has "
-"fixed resolutions (see Internode spacing in the above table). In "
-"addition, it uses a very specific projection optimized for equal area "
-"projections using hexagons."
+msgid "The hexagonal grid, instead, relies on a hierarchical system and has fixed resolutions (see Internode spacing in the above table). In addition, it uses a very specific projection optimized for equal area projections using hexagons."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:449
@@ -593,15 +380,11 @@ msgid "For CAFI DDD we use a resolution of 1000m or resolution 16 hexagons"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:463
-msgid ""
-"This script will produce an ee asset feature collection of your gridded "
-"points."
+msgid "This script will produce an ee asset feature collection of your gridded points."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:466
-msgid ""
-"The CAFI DDD point assets of 1km hexagonal grids produced for each "
-"country are as follows (select the appropriate one for your country):"
+msgid "The CAFI DDD point assets of 1km hexagonal grids produced for each country are as follows (select the appropriate one for your country):"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:479
@@ -609,18 +392,11 @@ msgid "**III - eSBAE Time-Series Extraction**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:482
-msgid ""
-"**Extract various time-series data for large sets of points from Google "
-"Earth Engine**"
+msgid "**Extract various time-series data for large sets of points from Google Earth Engine**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:484
-msgid ""
-"This notebook takes you through the process of extracting time-series for"
-" a set of points using `Google's Earth Engine "
-"<https://earthengine.google.com/>`__. The script is optimized to deal "
-"with thousands of points and will use parallelization to efficiently "
-"extract the information from the platform."
+msgid "This notebook takes you through the process of extracting time-series for a set of points using `Google's Earth Engine <https://earthengine.google.com/>`__. The script is optimized to deal with thousands of points and will use parallelization to efficiently extract the information from the platform."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:490 ../../source/workflows/eSBAE.rst:605
@@ -640,38 +416,23 @@ msgid "**You should be aware, that:**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:498
-msgid ""
-"As a SEPAL user: this notebook does **not need huge resources**, as "
-"processing is done on the platform. A **m2 instance** is best suited."
+msgid "As a SEPAL user: this notebook does **not need huge resources**, as processing is done on the platform. A **m2 instance** is best suited."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:501
-msgid ""
-"The extraction can take up to days (>100000 points). If you are on SEPAL,"
-" make use of the **\"keep instance running\"** option within the user "
-"report dashboard. However, **do not forget** to shut down your machine "
-"once processing finished."
+msgid "The extraction can take up to days (>100000 points). If you are on SEPAL, make use of the **\"keep instance running\"** option within the user report dashboard. However, **do not forget** to shut down your machine once processing finished."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:506
-msgid ""
-"A logfile is created within your tmp-folder. Interruption of connectivity"
-" to the SEPAL server may lead to block the output of the Jupyter "
-"notebook. **This does not mean the processing stopped.** You can see in "
-"esbae_log\\_(time) if the processing is still on going."
+msgid "A logfile is created within your tmp-folder. Interruption of connectivity to the SEPAL server may lead to block the output of the Jupyter notebook. **This does not mean the processing stopped.** You can see in esbae_log\\_(time) if the processing is still on going."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:511
-msgid ""
-"You can restart the kernel and execute all cells, and extraction will "
-"**start where it stopped**. This is also valid, if your instance has been"
-" shut down before processing was completely finished."
+msgid "You can restart the kernel and execute all cells, and extraction will **start where it stopped**. This is also valid, if your instance has been shut down before processing was completely finished."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:515
-msgid ""
-"Here are the parameters for executing the time series extraction for "
-"Cameroun:"
+msgid "Here are the parameters for executing the time series extraction for Cameroun:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:557
@@ -679,22 +440,15 @@ msgid "**5 - Set a custom grid**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:559
-msgid ""
-"This step is only necessary if you skipped notebook 2. You then need to "
-"define an Earth Engine feature collection as well as the unique point "
-"identifier. Uncomment the lines by removing the #"
+msgid "This step is only necessary if you skipped notebook 2. You then need to define an Earth Engine feature collection as well as the unique point identifier. Uncomment the lines by removing the #"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:563
-msgid ""
-"Here is the code for extracting time series on the CAFI DDD grid for "
-"Cameroun:"
+msgid "Here is the code for extracting time series on the CAFI DDD grid for Cameroun:"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:571
-msgid ""
-"This process can take a long time and might need to be restarted several "
-"times."
+msgid "This process can take a long time and might need to be restarted several times."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:575
@@ -702,12 +456,7 @@ msgid "**4 - Check for already processed data (optional)**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:577
-msgid ""
-"This is useful for large points sizes and when the connection to Sepal "
-"gets interrupted. Usually processing will continue, but it is not "
-"straightforward to track progress. You can instead restart the kernel, "
-"execute all cells and see if processing has been finished with the "
-"following line of code."
+msgid "This is useful for large points sizes and when the connection to Sepal gets interrupted. Usually processing will continue, but it is not straightforward to track progress. You can instead restart the kernel, execute all cells and see if processing has been finished with the following line of code."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:583
@@ -719,19 +468,11 @@ msgid "**IV - eSBAE Dataset Augmentation**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:596
-msgid ""
-"**Run various change detection algorithms on previously extracted time-"
-"series data**"
+msgid "**Run various change detection algorithms on previously extracted time-series data**"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:598
-msgid ""
-"This notebook takes you through the process of running various change "
-"detection algorithms for the time series extracted from your set of "
-"points using `Google's Earth Engine <https://earthengine.google.com/>`__ "
-"as well as python routines. The script is optimized to deal with "
-"thousands of points and will use parallelization to efficiently extract "
-"the information from the platform."
+msgid "This notebook takes you through the process of running various change detection algorithms for the time series extracted from your set of points using `Google's Earth Engine <https://earthengine.google.com/>`__ as well as python routines. The script is optimized to deal with thousands of points and will use parallelization to efficiently extract the information from the platform."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:607
@@ -755,16 +496,11 @@ msgid "The start of the calibration period (specifically for BFAST)"
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:617
-msgid ""
-"And the time you want to analyze. This time period should be encompassed "
-"in the time series you extracted in the previous step - otherwise the "
-"data augmentation will not work."
+msgid "And the time you want to analyze. This time period should be encompassed in the time series you extracted in the previous step - otherwise the data augmentation will not work."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:621
-msgid ""
-"The band which must be included in your band list and identified in "
-"script 3."
+msgid "The band which must be included in your band list and identified in script 3."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:624

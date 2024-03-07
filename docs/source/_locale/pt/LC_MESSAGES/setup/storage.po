@@ -1,57 +1,37 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2024, the SEPAL development team
-# This file is distributed under the same license as the SEPAL package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SEPAL \n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
+"Last-Translator: \n"
 "Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
+"Language-Team: Portuguese\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/setup/storage.po\n"
+"X-Crowdin-File-ID: 218\n"
 
 #: ../../source/setup/storage.rst:2
 msgid "Manage Disk Usage"
 msgstr ""
 
 #: ../../source/setup/storage.rst:4
-msgid ""
-"In SEPAL, efficient storage management is crucial due to the limited "
-"storage capacity. We highly recommended to regularly audit and clean your"
-" storage space to maintain optimal system functionality and your "
-"resources under the limits."
+msgid "In SEPAL, efficient storage management is crucial due to the limited storage capacity. We highly recommended to regularly audit and clean your storage space to maintain optimal system functionality and your resources under the limits."
 msgstr ""
 
 #: ../../source/setup/storage.rst:6
-msgid ""
-"For non-expert users, initiating storage cleanup can seem daunting. It's "
-"important to start with directories known for accumulating large files, "
-"such as :code:`/var/log` (system logs), :code:`/tmp` (temporary files), "
-"and personal directories like :code:`~/Downloads` or "
-":code:`~/module_results`. A conservative estimate for high storage usage "
-"in these areas can vary depending on individual use cases and system "
-"configurations. However, as a general guideline, any single folder "
-"occupying more than 1GB of space warrants a closer look, especially if "
-"it's not actively used for current projects."
+msgid "For non-expert users, initiating storage cleanup can seem daunting. It's important to start with directories known for accumulating large files, such as :code:`/var/log` (system logs), :code:`/tmp` (temporary files), and personal directories like :code:`~/Downloads` or :code:`~/module_results`. A conservative estimate for high storage usage in these areas can vary depending on individual use cases and system configurations. However, as a general guideline, any single folder occupying more than 1GB of space warrants a closer look, especially if it's not actively used for current projects."
 msgstr ""
 
 #: ../../source/setup/storage.rst:8
-msgid ""
-"To make things easier, SEPAL has integrated the command line tool called "
-":code:`ncdu` (NCurses Disk Usage), this is a command-line utility that "
-"provides a convenient and efficient way to analyze disk usage on the "
-"SEPAL environment. It uses a text-based user interface to navigate "
-"through directories and view which files and folders are consuming disk "
-"space."
+msgid "To make things easier, SEPAL has integrated the command line tool called :code:`ncdu` (NCurses Disk Usage), this is a command-line utility that provides a convenient and efficient way to analyze disk usage on the SEPAL environment. It uses a text-based user interface to navigate through directories and view which files and folders are consuming disk space."
 msgstr ""
 
 #: ../../source/setup/storage.rst:11
@@ -71,15 +51,11 @@ msgid "Usage"
 msgstr ""
 
 #: ../../source/setup/storage.rst:19
-msgid ""
-"After starting a session, you can start analyzing disk usage by simply "
-"typing :code:`ncdu` in your terminal:"
+msgid "After starting a session, you can start analyzing disk usage by simply typing :code:`ncdu` in your terminal:"
 msgstr ""
 
 #: ../../source/setup/storage.rst:25
-msgid ""
-"If you want to analyze a specific directory, you can specify the "
-"directory path as an argument to the command:"
+msgid "If you want to analyze a specific directory, you can specify the directory path as an argument to the command:"
 msgstr ""
 
 #: ../../source/setup/storage.rst:38
@@ -87,11 +63,7 @@ msgid "Navigating :code:`ncdu`"
 msgstr ""
 
 #: ../../source/setup/storage.rst:40
-msgid ""
-"Use the arrow keys (:btn:`<fa-solid fa-square-caret-left>`, :btn:`<fa-"
-"solid fa-square-caret-up>`, :btn:`<fa-solid fa-square-caret-right>`, :btn"
-":`<fa-solid fa-square-caret-down>` )  to navigate through the files and "
-"directories."
+msgid "Use the arrow keys (:btn:`<fa-solid fa-square-caret-left>`, :btn:`<fa-solid fa-square-caret-up>`, :btn:`<fa-solid fa-square-caret-right>`, :btn:`<fa-solid fa-square-caret-down>` )  to navigate through the files and directories."
 msgstr ""
 
 #: ../../source/setup/storage.rst:41
@@ -111,9 +83,7 @@ msgid "The graphical representation of disk usage is displayed next to the size.
 msgstr ""
 
 #: ../../source/setup/storage.rst:53
-msgid ""
-"The percentage of disk space used by each file or directory relative to "
-"the parent directory is shown at the beginning of each line."
+msgid "The percentage of disk space used by each file or directory relative to the parent directory is shown at the beginning of each line."
 msgstr ""
 
 #: ../../source/setup/storage.rst:56
@@ -121,15 +91,11 @@ msgid "Advanced Usage"
 msgstr ""
 
 #: ../../source/setup/storage.rst:60
-msgid ""
-"Be cautious when deleting files or directories. Deleting system files or "
-"directories can cause system instability or data loss."
+msgid "Be cautious when deleting files or directories. Deleting system files or directories can cause system instability or data loss."
 msgstr ""
 
 #: ../../source/setup/storage.rst:62
-msgid ""
-"Press ``d`` to delete a file or directory (be cautious with this "
-"operation)."
+msgid "Press ``d`` to delete a file or directory (be cautious with this operation)."
 msgstr ""
 
 #: ../../source/setup/storage.rst:63
@@ -137,9 +103,7 @@ msgid "Press ``q`` to quit :code:`ncdu`."
 msgstr ""
 
 #: ../../source/setup/storage.rst:75
-msgid ""
-"To see a list of all available options and features, you can use the "
-"``--help`` option:"
+msgid "To see a list of all available options and features, you can use the ``--help`` option:"
 msgstr ""
 
 #: ../../source/setup/storage.rst:81

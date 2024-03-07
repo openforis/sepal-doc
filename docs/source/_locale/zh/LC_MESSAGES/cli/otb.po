@@ -1,39 +1,33 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 15:37+0000\n"
+"PO-Revision-Date: 2024-03-07 09:05\n"
 "Last-Translator: \n"
-"Language: zh_CN\n"
 "Language-Team: Chinese Simplified\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/otb.po\n"
+"X-Crowdin-File-ID: 53\n"
+"Language: zh_CN\n"
 
 #: ../../source/cli/otb.rst:2
 msgid "OTB"
 msgstr ""
 
 #: ../../source/cli/otb.rst:4
-msgid ""
-"**Orfeo ToolBox (OTB)** is an open-source project for state-of-the-art "
-"remote sensing. Built upon the foundation of the open-source geospatial "
-"community, it can process high-resolution optical, multispectral and "
-"radar images on the terabyte scale. A wide variety of applications are "
-"available, such as ortho-rectification, pansharpening, classification and"
-" synthetic-aperture radar (SAR) processing."
+msgid "**Orfeo ToolBox (OTB)** is an open-source project for state-of-the-art remote sensing. Built upon the foundation of the open-source geospatial community, it can process high-resolution optical, multispectral and radar images on the terabyte scale. A wide variety of applications are available, such as ortho-rectification, pansharpening, classification and synthetic-aperture radar (SAR) processing."
 msgstr ""
 
 #: ../../source/cli/otb.rst:6
-msgid ""
-"**OTB** is equipped with more than 100 ready-to-use applications for "
-"remote sensing tasks. They usually expose existing processing functions "
-"from the underlying **C++ library**, or integrate them into high-level "
-"pipelines."
+msgid "**OTB** is equipped with more than 100 ready-to-use applications for remote sensing tasks. They usually expose existing processing functions from the underlying **C++ library**, or integrate them into high-level pipelines."
 msgstr ""
 
 #: ../../source/cli/otb.rst:8
@@ -45,23 +39,15 @@ msgid "combine two or more functions from the OTB; and"
 msgstr ""
 
 #: ../../source/cli/otb.rst:11
-msgid ""
-"provide a high-level interface to handle input and output data, "
-"definition of parameters and communication with the user."
+msgid "provide a high-level interface to handle input and output data, definition of parameters and communication with the user."
 msgstr ""
 
 #: ../../source/cli/otb.rst:13
-msgid ""
-"For a complete list of applications, see `All applications <https://www"
-".orfeo-toolbox.org/CookBook/Applications.html#apprefdoc>`__."
+msgid "For a complete list of applications, see `All applications <https://www.orfeo-toolbox.org/CookBook/Applications.html#apprefdoc>`__."
 msgstr ""
 
 #: ../../source/cli/otb.rst:15
-msgid ""
-"All standard applications share the same implementation and automatically"
-" expose generated interfaces. However, they are accessed in a slightly "
-"different way (the command-line interface is prefixed by "
-":code:`otbcli\\_`)."
+msgid "All standard applications share the same implementation and automatically expose generated interfaces. However, they are accessed in a slightly different way (the command-line interface is prefixed by :code:`otbcli\\_`)."
 msgstr ""
 
 #~ msgid ""

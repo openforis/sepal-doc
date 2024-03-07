@@ -1,43 +1,37 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:05+0000\n"
+"PO-Revision-Date: 2024-03-07 08:56\n"
 "Last-Translator: \n"
 "Language: ar\n"
 "Language-Team: Arabic\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/sepafe.po\n"
+"X-Crowdin-File-ID: 185\n"
 
 #: ../../source/modules/dwn/sepafe.rst:2
 msgid "SEPAFE"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:3
-msgid ""
-"*Receive and validate fire alerts from the FIRMS programme by using daily"
-" Planet imagery*"
+msgid "*Receive and validate fire alerts from the FIRMS programme by using daily Planet imagery*"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:5
-msgid ""
-"The **SEPAL Planet Active Fires Explorer (SEPAFE)** is a module developed"
-" on the SEPAL platform based on the `Fire Information for Resource "
-"Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-"
-"data/near-real-time/firms/about-firms>`_ and using Planet Scope imagery "
-"from Planet Labs."
+msgid "The **SEPAL Planet Active Fires Explorer (SEPAFE)** is a module developed on the SEPAL platform based on the `Fire Information for Resource Management System (FIRMS) <https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms>`_ and using Planet Scope imagery from Planet Labs."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:7
-msgid ""
-"**SEPAFE** aims to provide users with a quick way to receive and validate"
-" fire alerts from the FIRMS programme by using daily Planet imagery."
+msgid "**SEPAFE** aims to provide users with a quick way to receive and validate fire alerts from the FIRMS programme by using daily Planet imagery."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:12
@@ -45,16 +39,11 @@ msgid "Settings pane"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:14
-msgid ""
-"The **Settings** pane is composed of three tabs: :code:`Planet Imagery`, "
-":code:`Area of Interest` and :code:`Alerts` (all necessary to receive "
-"fire alerts)."
+msgid "The **Settings** pane is composed of three tabs: :code:`Planet Imagery`, :code:`Area of Interest` and :code:`Alerts` (all necessary to receive fire alerts)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:16
-msgid ""
-"The **Settings** pane can be open and closed by selecting the "
-"**Settings** button (:btn:`<fa-solid fa-bars>`)."
+msgid "The **Settings** pane can be open and closed by selecting the **Settings** button (:btn:`<fa-solid fa-bars>`)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:19
@@ -62,27 +51,15 @@ msgid "Connect your Planet API key"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:21
-msgid ""
-"This step is optional but highly recommended. While you can receive fire "
-"alerts from different satellite sources by simply going through the next "
-"tabs, a Planet API key with access to daily imagery will allow you to "
-"fully leverage the module."
+msgid "This step is optional but highly recommended. While you can receive fire alerts from different satellite sources by simply going through the next tabs, a Planet API key with access to daily imagery will allow you to fully leverage the module."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:23
-msgid ""
-"Validate your Planet API key: Provide a valid API key in the input box "
-"and select the **Validation** button. The module will check whether the "
-"key is valid and messages related to its connection will be displayed "
-"within the **Alerts** widget. Once your validation is done, you can open "
-"the **Advanced settings** expansion panel and modify its inputs."
+msgid "Validate your Planet API key: Provide a valid API key in the input box and select the **Validation** button. The module will check whether the key is valid and messages related to its connection will be displayed within the **Alerts** widget. Once your validation is done, you can open the **Advanced settings** expansion panel and modify its inputs."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:25
-msgid ""
-"Use the **Planet state** bar located in the upper-left corner to receive "
-"informative messages about Planet imagery (e.g. problems with the key, "
-"number of images loaded)."
+msgid "Use the **Planet state** bar located in the upper-left corner to receive informative messages about Planet imagery (e.g. problems with the key, number of images loaded)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:27
@@ -90,27 +67,19 @@ msgid "Open the **Advanced settings** pane:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:29
-msgid ""
-":code:`Max number of images`: Maximum number of planet images to be "
-"displayed at once in each alert."
+msgid ":code:`Max number of images`: Maximum number of planet images to be displayed at once in each alert."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:30
-msgid ""
-":code:`Search up to 'x' days before`: Number of days before the fire "
-"alert date to search for the best image available."
+msgid ":code:`Search up to 'x' days before`: Number of days before the fire alert date to search for the best image available."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:31
-msgid ""
-":code:`Search up to 'x' days after`: Number of days after the fire alert "
-"date to search for the best image available."
+msgid ":code:`Search up to 'x' days after`: Number of days after the fire alert date to search for the best image available."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:32
-msgid ""
-":code:`Cloud cover threshold`: Maximum cloud cover threshold accepted in "
-"the images (based on Planet metadata)."
+msgid ":code:`Cloud cover threshold`: Maximum cloud cover threshold accepted in the images (based on Planet metadata)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:38
@@ -122,18 +91,11 @@ msgid "The module has two options for selecting an AOI to filter alerts."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:42
-msgid ""
-"**Draw a shape**: When selected, three drawing tools will be displayed in"
-" the upper-left corner of the map; you can select a `square`, `circle`, "
-"or a `polygon`, and draw them on the map."
+msgid "**Draw a shape**: When selected, three drawing tools will be displayed in the upper-left corner of the map; you can select a `square`, `circle`, or a `polygon`, and draw them on the map."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:43
-msgid ""
-"**Select a country**: Enter the name of the country into the search box "
-"(or navigate through it by using the scroll bar) and select the desired "
-"country. Once the country is selected, it will be displayed in the map "
-"view."
+msgid "**Select a country**: Enter the name of the country into the search box (or navigate through it by using the scroll bar) and select the desired country. Once the country is selected, it will be displayed in the map view."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:48
@@ -141,26 +103,15 @@ msgid "Receive fire alerts"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:50
-msgid ""
-"**Recent**: Products to be downloaded are coming from the Moderate "
-"Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared "
-"Imaging Radiometer Suite (VIIRS) for the last 24 hours, 28 hours, and the"
-" last 7 days."
+msgid "**Recent**: Products to be downloaded are coming from the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) for the last 24 hours, 28 hours, and the last 7 days."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:52
-msgid ""
-"**Historical**: For historical products, you will be able to download "
-"alerts from 2000 until the last finished year from the MODIS satellite. "
-"Select the **Historical** button and filter by the dates."
+msgid "**Historical**: For historical products, you will be able to download alerts from 2000 until the last finished year from the MODIS satellite. Select the **Historical** button and filter by the dates."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:54
-msgid ""
-"After selecting the **Get alerts** button, the module will start the "
-"download process and clip the alerts to the given AOI. The alerts will be"
-" displayed on the map according to a color map for alert confidence – "
-"ranging from green to orange to red for the following confidence values:"
+msgid "After selecting the **Get alerts** button, the module will start the download process and clip the alerts to the given AOI. The alerts will be displayed on the map according to a color map for alert confidence – ranging from green to orange to red for the following confidence values:"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:56
@@ -172,14 +123,7 @@ msgid "**>80, >70 < 80, <50** (for MODIS)"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:59
-msgid ""
-"Depending on the sensor source and whether your alert request is recent "
-"or historical, the download/clip process could take more time. This "
-"module is intended to get a quick validation of fire alerts. If you are "
-"requesting an area with more than 10000 fire alerts, you will be asked if"
-" you want to display all the alerts on the map — which could "
-"significantly affect the performance of the tool — or if you want to "
-"download them to your desktop/SEPAL environment."
+msgid "Depending on the sensor source and whether your alert request is recent or historical, the download/clip process could take more time. This module is intended to get a quick validation of fire alerts. If you are requesting an area with more than 10000 fire alerts, you will be asked if you want to display all the alerts on the map — which could significantly affect the performance of the tool — or if you want to download them to your desktop/SEPAL environment."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:62
@@ -187,36 +131,19 @@ msgid "Navigate through alerts"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:64
-msgid ""
-"Once the alerts are displayed on the map, you will be able to navigate "
-"through each of them by using the :code:`navigation widget`. Use the "
-":code:`next` and :code:`prev` buttons to navigate through the fire "
-"alerts; use the :code:`confidence` dropdown list to filter the alerts by "
-"confidence (see `What is the detection confidence? "
-"<https://earthdata.nasa.gov/faq/firms-faq>`_)."
+msgid "Once the alerts are displayed on the map, you will be able to navigate through each of them by using the :code:`navigation widget`. Use the :code:`next` and :code:`prev` buttons to navigate through the fire alerts; use the :code:`confidence` dropdown list to filter the alerts by confidence (see `What is the detection confidence? <https://earthdata.nasa.gov/faq/firms-faq>`_)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:66
-msgid ""
-"The confidence value was added to help users gauge the quality of "
-"individual fire pixels included in the Level 2 fire product. The "
-"confidence field should be used with caution; in different parts of the "
-"world, it will likely vary in meaning. Nevertheless, some of our end "
-"users have found such a field to be useful in excluding false-positive "
-"occurrences of fire. They are different for MODIS and VIIRS."
+msgid "The confidence value was added to help users gauge the quality of individual fire pixels included in the Level 2 fire product. The confidence field should be used with caution; in different parts of the world, it will likely vary in meaning. Nevertheless, some of our end users have found such a field to be useful in excluding false-positive occurrences of fire. They are different for MODIS and VIIRS."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:70
-msgid ""
-"You can activate and deactivate the fire navigation widget by selecting "
-"the **Fires** button (:btn:`<fa-solid fa-fire>`)."
+msgid "You can activate and deactivate the fire navigation widget by selecting the **Fires** button (:btn:`<fa-solid fa-fire>`)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:72
-msgid ""
-"Planet parameters can be changed at any time. To refresh results from the"
-" current alert, select the **Refresh** button (:btn:`<fa-solid fa-"
-"rotate>`)."
+msgid "Planet parameters can be changed at any time. To refresh results from the current alert, select the **Refresh** button (:btn:`<fa-solid fa-rotate>`)."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:75
@@ -224,19 +151,11 @@ msgid "Manually load planet imagery"
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:77
-msgid ""
-"Select any point on the map and use the **Refresh** icon (:btn:`<fa-solid"
-" fa-rotate>`) to retrieve Planet imagery using the parameters set in "
-"**Step 1**; the module will use the current acquisition alert date to "
-"search the images. This option is useful when you want to explore "
-"surrounding areas close to the alert point, but without alerts to "
-"display."
+msgid "Select any point on the map and use the **Refresh** icon (:btn:`<fa-solid fa-rotate>`) to retrieve Planet imagery using the parameters set in **Step 1**; the module will use the current acquisition alert date to search the images. This option is useful when you want to explore surrounding areas close to the alert point, but without alerts to display."
 msgstr ""
 
 #: ../../source/modules/dwn/sepafe.rst:79
-msgid ""
-"This option requires a valid Planet Level 2 key; otherwise, you will "
-"receive an error message in the **Status** bar."
+msgid "This option requires a valid Planet Level 2 key; otherwise, you will receive an error message in the **Status** bar."
 msgstr ""
 
 #~ msgid ""
