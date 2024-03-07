@@ -1,45 +1,37 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-31 07:19+0000\n"
+"PO-Revision-Date: 2024-03-07 08:59\n"
 "Last-Translator: \n"
-"Language: ru_RU\n"
 "Language-Team: Russian\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= "
-"2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 "
-">= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cli/gdal.po\n"
+"X-Crowdin-File-ID: 41\n"
+"Language: ru_RU\n"
 
 #: ../../source/cli/gdal.rst:2
 msgid "GDAL"
 msgstr ""
 
 #: ../../source/cli/gdal.rst:4
-msgid ""
-"**Geospatial Data Abstraction Library (GDAL)** is a translator library "
-"for raster and vector geospatial data formats that is released under an "
-"`MIT style license <https://gdal.org/license.html#license>`__ by the "
-"`Open Source Geospatial Foundation <http://www.osgeo.org/>`__."
+msgid "**Geospatial Data Abstraction Library (GDAL)** is a translator library for raster and vector geospatial data formats that is released under an `MIT style license <https://gdal.org/license.html#license>`__ by the `Open Source Geospatial Foundation <http://www.osgeo.org/>`__."
 msgstr ""
 
 #: ../../source/cli/gdal.rst:6
-msgid ""
-"As a library, **GDAL** presents a single raster abstract data model and "
-"single vector abstract data model to the calling application for all "
-"supported formats. It also comes with a variety of useful command-line "
-"utilities for data translation and processing."
+msgid "As a library, **GDAL** presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats. It also comes with a variety of useful command-line utilities for data translation and processing."
 msgstr ""
 
 #: ../../source/cli/gdal.rst:8
-msgid ""
-"For information on the newest release of **GDAL**, see `News "
-"<https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__."
+msgid "For information on the newest release of **GDAL**, see `News <https://github.com/OSGeo/gdal/blob/v3.4.0/gdal/NEWS.md>`__."
 msgstr ""
 
 #: ../../source/cli/gdal.rst:12
@@ -51,9 +43,7 @@ msgid "Available commands"
 msgstr ""
 
 #: ../../source/cli/gdal.rst:17
-msgid ""
-"The complete documentation of **GDAL** commands can be found on the `GDAL"
-" website <https://gdal.org/programs/index.html>`__."
+msgid "The complete documentation of **GDAL** commands can be found on the `GDAL website <https://gdal.org/programs/index.html>`__."
 msgstr ""
 
 #: ../../source/cli/gdal.rst:20
