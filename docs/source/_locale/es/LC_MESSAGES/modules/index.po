@@ -1,27 +1,29 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:04+0000\n"
+"PO-Revision-Date: 2024-03-07 08:55\n"
 "Last-Translator: \n"
 "Language: es\n"
 "Language-Team: Spanish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/index.po\n"
+"X-Crowdin-File-ID: 205\n"
 
 #: ../../source/modules/index.rst:2
 msgid "Modules"
 msgstr ""
 
 #: ../../source/modules/index.rst:3
-msgid ""
-"*Access complex workflows without the need of digital programming skills "
-"with SEPAL applications*"
+msgid "*Access complex workflows without the need of digital programming skills with SEPAL applications*"
 msgstr ""
 
 #: ../../source/modules/index.rst:6
@@ -29,32 +31,19 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/modules/index.rst:8
-msgid ""
-"SEPAL applications are tools provided by the SEPAL team from the Food and"
-" Agriculture Organization of the United Nations (FAO) or other "
-"developers."
+msgid "SEPAL applications are tools provided by the SEPAL team from the Food and Agriculture Organization of the United Nations (FAO) or other developers."
 msgstr ""
 
 #: ../../source/modules/index.rst:10
-msgid ""
-"These tools are based on advanced geographic information system (GIS) "
-"libraries and complement the functionalities of SEPAL recipes, providing "
-"the end user with access to complex workflows without requiring knowledge"
-" of digital programming."
+msgid "These tools are based on advanced geographic information system (GIS) libraries and complement the functionalities of SEPAL recipes, providing the end user with access to complex workflows without requiring knowledge of digital programming."
 msgstr ""
 
 #: ../../source/modules/index.rst:12
-msgid ""
-"The applications are served in SEPAL with attractive user interfaces to "
-"ensure the best possible user experience."
+msgid "The applications are served in SEPAL with attractive user interfaces to ensure the best possible user experience."
 msgstr ""
 
 #: ../../source/modules/index.rst:14
-msgid ""
-"They run on various shells – from pure HTML and Shiny-based R apps to "
-"Jupyter-powered Python kernels. This flexibility and variety of tools "
-"allows developers to integrate workflows and make them available for "
-"SEPAL users."
+msgid "They run on various shells – from pure HTML and Shiny-based R apps to Jupyter-powered Python kernels. This flexibility and variety of tools allows developers to integrate workflows and make them available for SEPAL users."
 msgstr ""
 
 #: ../../source/modules/index.rst:16
@@ -66,12 +55,7 @@ msgid "Start applications"
 msgstr ""
 
 #: ../../source/modules/index.rst:21
-msgid ""
-"To start a SEPAL application, go to the **Apps** dashboard by selecting "
-"the wrench icon on the left side of the window (see **1** in the "
-"following image). This will display a list of apps you can run in the "
-"interface. More information about each app is found by selecting the "
-"**More information** (**i**) icon on the right side."
+msgid "To start a SEPAL application, go to the **Apps** dashboard by selecting the wrench icon on the left side of the window (see **1** in the following image). This will display a list of apps you can run in the interface. More information about each app is found by selecting the **More information** (**i**) icon on the right side."
 msgstr ""
 
 #: ../../source/modules/index.rst:23
@@ -79,37 +63,23 @@ msgid "Note that the following are code editors, not apps (**2**):"
 msgstr ""
 
 #: ../../source/modules/index.rst:25
-msgid ""
-"**RStudio**: Provides access to the R environment where you can run "
-"processing scripts and upload data to your SEPAL folder."
+msgid "**RStudio**: Provides access to the R environment where you can run processing scripts and upload data to your SEPAL folder."
 msgstr ""
 
 #: ../../source/modules/index.rst:26
-msgid ""
-"**Jupyter Notebook**: An open-source web application that allows you to "
-"create and share documents that contain live code, equations, "
-"visualizations and narrative text (supports kernels in many different "
-"languages, including R, Python and NodesJS)."
+msgid "**Jupyter Notebook**: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text (supports kernels in many different languages, including R, Python and NodesJS)."
 msgstr ""
 
 #: ../../source/modules/index.rst:27
-msgid ""
-"**JupyterLab**: A web-based interactive development environment for "
-"Jupyter notebooks, code and data."
+msgid "**JupyterLab**: A web-based interactive development environment for Jupyter notebooks, code and data."
 msgstr ""
 
 #: ../../source/modules/index.rst:32
-msgid ""
-"To find the application you're looking for, navigate through the "
-"different app pages (**3**), use tags (**4**), or utilize the search bar "
-"(**5**)."
+msgid "To find the application you're looking for, navigate through the different app pages (**3**), use tags (**4**), or utilize the search bar (**5**)."
 msgstr ""
 
 #: ../../source/modules/index.rst:34
-msgid ""
-"Once the desired application is found, select it to initiate the process."
-" This will start the smallest instance to run the SEPAL sandbox "
-"(:code:`t1`)."
+msgid "Once the desired application is found, select it to initiate the process. This will start the smallest instance to run the SEPAL sandbox (:code:`t1`)."
 msgstr ""
 
 #: ../../source/modules/index.rst:36
@@ -117,28 +87,15 @@ msgid "Refer to the next subsection to start a specific instance manually."
 msgstr ""
 
 #: ../../source/modules/index.rst:40
-msgid ""
-"Applications that include a :icon:`fa-solid fa-google` in their "
-"descriptor require a connection to Google Earth Engine (GEE) to run. For "
-"more information, see :doc:`../setup/gee`."
+msgid "Applications that include a :icon:`fa-solid fa-google` in their descriptor require a connection to Google Earth Engine (GEE) to run. For more information, see :doc:`../setup/gee`."
 msgstr ""
 
 #: ../../source/modules/index.rst:44
-msgid ""
-"An application relies on numerous tools and systems to run. Since it can "
-"take up to five minutes to start, stay patient and avoid rushing. If the "
-"application doesn't start after five minutes, it could simply be an issue"
-" with the Amazon cloud connection; we recommend closing the tab and "
-"starting again. In the event of a major bug or crash, please report the "
-"issue in the specific app's **Issue tracker** or directly in SEPAL."
+msgid "An application relies on numerous tools and systems to run. Since it can take up to five minutes to start, stay patient and avoid rushing. If the application doesn't start after five minutes, it could simply be an issue with the Amazon cloud connection; we recommend closing the tab and starting again. In the event of a major bug or crash, please report the issue in the specific app's **Issue tracker** or directly in SEPAL."
 msgstr ""
 
 #: ../../source/modules/index.rst:48
-msgid ""
-"To avoid disturbances in the application workflow, avoid stopping "
-"instances manually and disconnecting from SEPAL. While completed work "
-"will be available in SEPAL folders, you will need to restart the process "
-"in order to finish."
+msgid "To avoid disturbances in the application workflow, avoid stopping instances manually and disconnecting from SEPAL. While completed work will be available in SEPAL folders, you will need to restart the process in order to finish."
 msgstr ""
 
 #: ../../source/modules/index.rst:51
@@ -146,28 +103,19 @@ msgid "Start instance manually"
 msgstr ""
 
 #: ../../source/modules/index.rst:53
-msgid ""
-"Some applications require more powerful instances than the default "
-":code:`t1`."
+msgid "Some applications require more powerful instances than the default :code:`t1`."
 msgstr ""
 
 #: ../../source/modules/index.rst:55
-msgid ""
-"If a particular app's documentation requires the user to start a specific"
-" instance type (e.g. a GPU machine :code:`g4` or :code:`g8`), follow "
-"these steps prior to initiating the application:"
+msgid "If a particular app's documentation requires the user to start a specific instance type (e.g. a GPU machine :code:`g4` or :code:`g8`), follow these steps prior to initiating the application:"
 msgstr ""
 
 #: ../../source/modules/index.rst:57
-msgid ""
-"Go to the **SEPAL terminal** and wait for the **Instance selector** to "
-"start."
+msgid "Go to the **SEPAL terminal** and wait for the **Instance selector** to start."
 msgstr ""
 
 #: ../../source/modules/index.rst:62
-msgid ""
-"Enter the instance name suggested in the documentation of your app and "
-"press :kbd:`Enter`."
+msgid "Enter the instance name suggested in the documentation of your app and press :kbd:`Enter`."
 msgstr ""
 
 #: ../../source/modules/index.rst:64
@@ -175,9 +123,7 @@ msgid "Wait for the instance to finish loading."
 msgstr ""
 
 #: ../../source/modules/index.rst:69
-msgid ""
-"Go back to the dashboard of the application to launch your app. It will "
-"automatically use the instance you opened and won't restart a :code:`t1`."
+msgid "Go back to the dashboard of the application to launch your app. It will automatically use the instance you opened and won't restart a :code:`t1`."
 msgstr ""
 
 #~ msgid "SEPAL applications"
