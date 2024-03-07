@@ -1,18 +1,22 @@
-
 msgid ""
 msgstr ""
-"Project-Id-Version:  sepal-doc\n"
+"Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2023-07-21 08:03+0000\n"
+"PO-Revision-Date: 2024-03-07 08:54\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Crowdin-Project: sepal-doc\n"
+"X-Crowdin-Project-ID: 562097\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/modules/dwn/coverage_analysis.po\n"
+"X-Crowdin-File-ID: 153\n"
 
 #: ../../source/modules/dwn/coverage_analysis.rst:2
 msgid "Coverage analysis tool for optical data"
@@ -23,25 +27,15 @@ msgid "*Check per-pixel data availability*"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:5
-msgid ""
-"This module uses the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ "
-"framework and interactive **Voila** dashboard to create maps of cloud-"
-"free observations for major optical satellites available on the Google "
-"Earth Engine (GEE) platform."
+msgid "This module uses the `sepal_ui <https://github.com/12rambau/sepal_ui>`_ framework and interactive **Voila** dashboard to create maps of cloud-free observations for major optical satellites available on the Google Earth Engine (GEE) platform."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:7
-msgid ""
-"The framework follows the logic of BFAST's countObs and summaryBrick "
-"functions, as described `here "
-"<http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_ (BFAST "
-"refers to Breaks For Additive Season and Trend)."
+msgid "The framework follows the logic of BFAST's countObs and summaryBrick functions, as described `here <http://www.loicdutrieux.net/bfastSpatial/#Data_Inventory>`_ (BFAST refers to Breaks For Additive Season and Trend)."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:9
-msgid ""
-"For more information about BFAST, see `Schultz et al. (2013) "
-"<http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_."
+msgid "For more information about BFAST, see `Schultz et al. (2013) <http://dx.doi.org/10.1109/JSTARS.2015.2477473>`_."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:11
@@ -53,10 +47,7 @@ msgid "Select an area of interest (AOI)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:16
-msgid ""
-"Using the provided **AOI** selector, select an AOI from the available "
-"methods. We provide three administrative descriptors (from level 0 to 2) "
-"and three custom shapes (drawn directly on the map, asset or shapefile)."
+msgid "Using the provided **AOI** selector, select an AOI from the available methods. We provide three administrative descriptors (from level 0 to 2) and three custom shapes (drawn directly on the map, asset or shapefile)."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:20
@@ -64,9 +55,7 @@ msgid "AOI selector"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:24
-msgid ""
-"If a custom AOI from a shape or drawing is selected, you will be able to "
-"use it directly (the upload to GEE will be launched in the background)."
+msgid "If a custom AOI from a shape or drawing is selected, you will be able to use it directly (the upload to GEE will be launched in the background)."
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:27
@@ -82,21 +71,15 @@ msgid "**Date range**: the start and end dates of your analysis"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:32
-msgid ""
-"**Sensors**: the list of sensors you want to use (Landsat missions and "
-"Sentinel-2)"
+msgid "**Sensors**: the list of sensors you want to use (Landsat missions and Sentinel-2)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:33
-msgid ""
-"**Tier 2**: Tier 2 images of the Landsat missions (note: this might lead "
-"to incorrect results)"
+msgid "**Tier 2**: Tier 2 images of the Landsat missions (note: this might lead to incorrect results)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:34
-msgid ""
-"**SR**: whether to use surface reflectance (SR) images (by default, TOA, "
-"referring to top of atmosphere)"
+msgid "**SR**: whether to use surface reflectance (SR) images (by default, TOA, referring to top of atmosphere)"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:36
@@ -144,10 +127,7 @@ msgid "Export dataset"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:63
-msgid ""
-"When you're satisifed with the displayed information, it can be exported "
-"for further use in GIS software or a GEE process. The tool provides two "
-"main exportation options:"
+msgid "When you're satisifed with the displayed information, it can be exported for further use in GIS software or a GEE process. The tool provides two main exportation options:"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:65
@@ -199,9 +179,7 @@ msgid "**Scale**: the resolution (in metres) to use in the exported GEE file"
 msgstr ""
 
 #: ../../source/modules/dwn/coverage_analysis.rst:88
-msgid ""
-"When exporting the image to SEPAL, you cannot quit the application until "
-"the download is finished."
+msgid "When exporting the image to SEPAL, you cannot quit the application until the download is finished."
 msgstr ""
 
 #~ msgid ""
