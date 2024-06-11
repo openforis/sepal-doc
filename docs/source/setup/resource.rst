@@ -24,6 +24,8 @@ Some actions or projects may require more storage to perform analysis at the pro
 
     Since quota requests are reviewed on a case-by-case basis, response times may vary.
 
+.. _user-report:
+
 User report
 -----------
 
@@ -69,13 +71,24 @@ If the process you launched is a long computation (e.g. the **BFAST application*
 
 Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab.
 
-.. attention::
+Extending Your Instance Duration
+--------------------------------
 
-    If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources.
+To optimize your resources, your instance may shut down depending on its type. To extend the duration of your instance in a single session, follow these steps:
+
+- Access the Instance Management Panel: Click the :ref:`user-report` button :btn:`<fa-solid fa-dollar-sign> x.xx/h`.
+- Modify Instance Settings: Click the Edit button :btn:`<fa-solid fa-pen-to-square>` in the panel to open the Instance configuration pop-up.
+- Adjust the Lifespan: Use the slider in the pop-up to set the desired duration for your instance.
+
+By adjusting the slider, you can extend the active time of your instance to suit your session needs.
 
 .. thumbnail:: ../_images/setup/resource/change_duration.png
    :title: Increase the lifespan of a specific instance
    :group: setup_resource
+
+.. attention::
+
+   Do not forget to close the instance when you are done with your analysis to avoid unnecessary consumption of resources.
 
 Request resources
 -----------------
