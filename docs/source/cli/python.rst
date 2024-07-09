@@ -4,7 +4,7 @@ Python
 Usage
 -----
 
-SEPAL instances run on :code:`focal` Ubuntu machines and thus provide a fully functional :code:`Python 3.8` environment, which is accessible through Jupyter Notebook, JupyterLab or the terminal:
+SEPAL instances run on :code:`focal` Ubuntu machines and thus provide a fully functional :code:`Python 3.10.12` environment, which is accessible through Jupyter Notebook, JupyterLab or the terminal:
 
 .. thumbnail:: ../_images/cli/python/jupyter_example.png
     :title: A code run in JupyterLab
