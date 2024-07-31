@@ -72,7 +72,7 @@ in order to sample all classes of change and no change, while over
 proportionally capturing rare classes. This script is recommended when
 you do not have an prior training data
 
-For the CAFI drivers project, we developed customized scripts for all
+For the CAFI (The Central African Forest Initiative) drivers project, we developed customized scripts for all
 steps after step 4 dataset augmentation, as we have visually interpreted
 data available to use as training to estimate probabilities of change
 and subsequently stratify the entire grid of points to select samples
