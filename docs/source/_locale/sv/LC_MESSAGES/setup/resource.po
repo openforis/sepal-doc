@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2024-03-07 09:04\n"
+"POT-Creation-Date: 2024-08-07 09:29+0200\n"
+"PO-Revision-Date: 2024-08-07 09:20\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -70,71 +70,95 @@ msgstr ""
 msgid "Since quota requests are reviewed on a case-by-case basis, response times may vary."
 msgstr ""
 
-#: ../../source/setup/resource.rst:28
+#: ../../source/setup/resource.rst:30
 msgid "User report"
 msgstr ""
 
-#: ../../source/setup/resource.rst:30
+#: ../../source/setup/resource.rst:32
 msgid "In **Terminal**, **Apps** or **Process**, select **User report** in the lower-right corner to see your current instance consumption: :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
 msgstr ""
 
-#: ../../source/setup/resource.rst:47
+#: ../../source/setup/resource.rst:49
 msgid "After selecting this button, the **Resource management** pop-up window will appear, displaying the current consumption of all your **Resources** – expressed in percentages (see **1** in figure below) (a full bar indicates that you have reached one of your monthly quotas) – as well as **Instances** that are currently running (**2**)."
 msgstr ""
 
-#: ../../source/setup/resource.rst:49
+#: ../../source/setup/resource.rst:51
 msgid "You can request additional resources by selecting the green button."
 msgstr ""
 
-#: ../../source/setup/resource.rst:56
+#: ../../source/setup/resource.rst:58
 msgid "Manage instances"
 msgstr ""
 
-#: ../../source/setup/resource.rst:58
+#: ../../source/setup/resource.rst:60
 msgid "Amazon Web Services (AWS) instances can be managed from this interface as well."
 msgstr ""
 
-#: ../../source/setup/resource.rst:60
+#: ../../source/setup/resource.rst:62
 msgid "In the **User report** pop-up window, each line represents a different instance, where you can see their technical features and hourly quota consumption."
 msgstr ""
 
-#: ../../source/setup/resource.rst:62
+#: ../../source/setup/resource.rst:64
 msgid "You can select the **Trashcan** icon to stop an instance."
 msgstr ""
 
-#: ../../source/setup/resource.rst:68
+#: ../../source/setup/resource.rst:70
 msgid "If the process you launched is a long computation (e.g. the **BFAST application** or any **Change detection algorithm**) and you want to close the SEPAL window, you can run the process in the background."
 msgstr ""
 
-#: ../../source/setup/resource.rst:70
+#: ../../source/setup/resource.rst:72
 msgid "Select **Edit** to open the **Instance** pop-up window, where the slider bar displays the amount of time remaining before your instance will be shut down. Increase this value for the estimated duration of your process and you can then safely close the SEPAL browser tab."
 msgstr ""
 
-#: ../../source/setup/resource.rst:74
-msgid "If you increase the lifespan of your instance, it will continue to consume your quota. Check regularly that your process is running effectively to avoid losing resources."
+#: ../../source/setup/resource.rst:75
+msgid "Extending Your Instance Duration"
+msgstr ""
+
+#: ../../source/setup/resource.rst:77
+msgid "To optimize your resources, your instance may shut down depending on its type. To extend the duration of your instance in a single session, follow these steps:"
+msgstr ""
+
+#: ../../source/setup/resource.rst:79
+msgid "Access the Instance Management Panel: Click the :ref:`user-report` button :btn:`<fa-solid fa-dollar-sign> x.xx/h`."
+msgstr ""
+
+#: ../../source/setup/resource.rst:80
+msgid "Modify Instance Settings: Click the Edit button :btn:`<fa-solid fa-pen-to-square>` in the panel to open the Instance configuration pop-up."
 msgstr ""
 
 #: ../../source/setup/resource.rst:81
-msgid "Request resources"
+msgid "Adjust the Lifespan: Use the slider in the pop-up to set the desired duration for your instance."
 msgstr ""
 
 #: ../../source/setup/resource.rst:83
-msgid "From the **Resource manager**, select **Request additional resources**."
+msgid "By adjusting the slider, you can extend the active time of your instance to suit your session needs."
 msgstr ""
 
-#: ../../source/setup/resource.rst:85
-msgid "In order for your request to be considered, you must:"
-msgstr ""
-
-#: ../../source/setup/resource.rst:87
-msgid "change the quota to values that meet your needs (e.g. more storage and fewer instances; the values entered are suggestions that the administrator will be able to change, if needed [**1**]); and"
-msgstr ""
-
-#: ../../source/setup/resource.rst:88
-msgid "provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI) (**2**)."
+#: ../../source/setup/resource.rst:91
+msgid "Do not forget to close the instance when you are done with your analysis to avoid unnecessary consumption of resources."
 msgstr ""
 
 #: ../../source/setup/resource.rst:94
+msgid "Request resources"
+msgstr ""
+
+#: ../../source/setup/resource.rst:96
+msgid "From the **Resource manager**, select **Request additional resources**."
+msgstr ""
+
+#: ../../source/setup/resource.rst:98
+msgid "In order for your request to be considered, you must:"
+msgstr ""
+
+#: ../../source/setup/resource.rst:100
+msgid "change the quota to values that meet your needs (e.g. more storage and fewer instances; the values entered are suggestions that the administrator will be able to change, if needed [**1**]); and"
+msgstr ""
+
+#: ../../source/setup/resource.rst:101
+msgid "provide an extensive explanation for why you need these resources, as well as the project name, the type of analysis and the area of interest (AOI) (**2**)."
+msgstr ""
+
+#: ../../source/setup/resource.rst:107
 msgid "Once validated, the request is sent to the SEPAL team, who will take measures in the coming days to update your profile, which may include contacting you directly if they need any extra details."
 msgstr ""
 
@@ -247,5 +271,13 @@ msgstr ""
 #~ " as the project name, the type "
 #~ "of analysis and the area of "
 #~ "interest (AOI). (2)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you increase the lifespan of "
+#~ "your instance, it will continue to "
+#~ "consume your quota. Check regularly that"
+#~ " your process is running effectively "
+#~ "to avoid losing resources."
 #~ msgstr ""
 
