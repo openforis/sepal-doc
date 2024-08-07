@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2024-03-07 09:10\n"
+"POT-Creation-Date: 2024-08-07 09:29+0200\n"
+"PO-Revision-Date: 2024-08-07 09:20\n"
 "Last-Translator: \n"
 "Language: zh\n"
 "Language-Team: Chinese Simplified\n"
@@ -91,7 +91,7 @@ msgid "*05_unsupervised_subsampling.ipynb* runs a KMeans unsupervised clustering
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:75
-msgid "For the CAFI drivers project, we developed customized scripts for all steps after step 4 dataset augmentation, as we have visually interpreted data available to use as training to estimate probabilities of change and subsequently stratify the entire grid of points to select samples for further visual interpretation."
+msgid "For the CAFI (The Central African Forest Initiative) drivers project, we developed customized scripts for all steps after step 4 dataset augmentation, as we have visually interpreted data available to use as training to estimate probabilities of change and subsequently stratify the entire grid of points to select samples for further visual interpretation."
 msgstr ""
 
 #: ../../source/workflows/eSBAE.rst:81
@@ -506,4 +506,16 @@ msgstr ""
 #: ../../source/workflows/eSBAE.rst:624
 msgid "Here the example for CAFI processing for Cameroun"
 msgstr ""
+
+#~ msgid ""
+#~ "For the CAFI drivers project, we "
+#~ "developed customized scripts for all "
+#~ "steps after step 4 dataset augmentation,"
+#~ " as we have visually interpreted data"
+#~ " available to use as training to "
+#~ "estimate probabilities of change and "
+#~ "subsequently stratify the entire grid of"
+#~ " points to select samples for further"
+#~ " visual interpretation."
+#~ msgstr ""
 
