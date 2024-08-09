@@ -10,6 +10,9 @@ export JAVA_HOME=/usr/local/lib/sdkman/candidates/java/current
 export JAVA_CPPFLAGS="-I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux"
 export JAVA_LD_LIBRARY_PATH=${JAVA_HOME}/lib/server:${JAVA_HOME}/lib
 
+apt-get update && apt-get install -y \
+	 libglpk-dev # required by igraph
+
 R CMD javareconf
 
 R -e "install.packages(c(\
@@ -292,17 +295,17 @@ R -e "install.packages(c(\
         'zoo'
     ), repos='http://r-proxy:8180/')"
 
-# Install archived packages - this doesn't work through r-proxy
-R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/rgdal/rgdal_1.6-7.tar.gz')"
-R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/rgeos/rgeos_0.6-4.tar.gz')"
-
 R -e "install.packages('remotes', dependencies=TRUE, repos='http://r-proxy:8180/')"
 
 R -e "remotes::install_url(c(\
+        'http://r-proxy:8180/github/cran/rgdal/archive/refs/heads/master.tar.gz',\
+        'http://r-proxy:8180/github/cran/gdalUtils/archive/refs/heads/master.tar.gz',\
         'http://r-proxy:8180/github/r-barnes/dggridR/archive/refs/heads/master.tar.gz',\
         'http://r-proxy:8180/github/bfast2/bfast/archive/refs/heads/master.tar.gz',\
         'http://r-proxy:8180/github/azvoleff/gfcanalysis/archive/refs/heads/master.tar.gz',\
         'http://r-proxy:8180/github/loicdtx/bfastSpatial/archive/refs/heads/master.tar.gz',\
-        'http://r-proxy:8180/github/jreiche/bayts/archive/refs/heads/master.tar.gz',\
-        'http://r-proxy:8180/github/cran/gdalUtils/archive/refs/heads/master.tar.gz'\
+        'http://r-proxy:8180/github/jreiche/bayts/archive/refs/heads/master.tar.gz'\
     ), repos='http://r-proxy:8180/', build = FALSE)"
+
+# Removed 'rgeos' R package as it fails to build
+# 'http://r-proxy:8180/github/cran/rgeos/archive/refs/heads/master.tar.gz',\
