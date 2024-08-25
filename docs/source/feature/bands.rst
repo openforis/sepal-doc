@@ -1,6 +1,14 @@
 Optical Satellite bands, transformations, and indices
 =====================================================
 
+When exporting an optical satellite image in SEPAL, you can choose from a variety of bands, transformations, and indices to enhance your analysis and visualization. Understanding the characteristics and applications of different bands can help you optimize your image processing workflow and extract valuable insights from satellite data.
+
+.. thumbnail:: ../_images/feature/bands/optical_bands.png
+    :title: SEPAL Optical Bands to export
+    :width: 50%
+    :align: center
+
+
 Bands
 -----
 

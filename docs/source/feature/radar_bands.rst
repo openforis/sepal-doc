@@ -2,6 +2,15 @@
 Sentinel-1 Radar Bands
 ======================
 
+When exporting a radar mosaic from the SEPAL platform, the following radar bands are available for analysis:
+
+.. thumbnail:: ../_images/feature/bands/radar_export.png
+    :title: SEPAL Optical Bands to export
+    :align: center
+    :width: 50%
+
+
+
 Basic Radar Metrics (VV and VH Polarizations)
 ---------------------------------------------
 
