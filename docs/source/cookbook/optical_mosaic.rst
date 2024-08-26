@@ -399,7 +399,7 @@ Selecting the :icon:`fa-solid fa-cloud-arrow-down` tab will open the **Retrieve*
 Bands
 """""
 
-You need to select the band(s) to export with the mosaic. There is no maximum number of bands, but exporting useless bands will only increase the size and time of the output. To discover the full list of available bands with SEPAL, see :doc:`../feature/bands`.
+You need to select the band(s) to export with the mosaic. There is no maximum number of bands, but exporting useless bands will only increase the size and time of the output. To discover the full list of available bands with SEPAL, see :doc:`../feature/optical_bands`.
 
 .. tip::
 

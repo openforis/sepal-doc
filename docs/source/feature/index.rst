@@ -8,6 +8,9 @@ SEPAL features include:
 
 .. toctree::
     :maxdepth: 1
-    :glob:
 
-    *
+    Organize recipes<project>
+    AOI selection<aoi_selector>
+    Optical bands<optical_bands>
+    Radar bands<radar_bands>
+    Visualization<visualization>

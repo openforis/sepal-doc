@@ -1,5 +1,5 @@
-Visualization
-=============
+Visualization in SEPAL
+======================
 
 **Natural color: red, green, blue**
     - **Description**: Represents the true color of the terrain as human eyes would see it, using the red, green, and blue bands.

@@ -1,5 +1,5 @@
-Recipe projects
-===============
+Organize Recipes by projects
+============================
 
 When interacting with SEPAL processes, a user creates **Recipes**, which can work together and be interconnected inside a single project (e.g. :code:`Mosaics` used in a :code:`Classification`).
 

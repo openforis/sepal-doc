@@ -12,51 +12,138 @@ When exporting an optical satellite image in SEPAL, you can choose from a variet
 Bands
 -----
 
-Satellite imagery is composed of multiple bands, each capturing light in specific wavelengths. These bands are essential for various remote sensing applications, including land cover classification, vegetation monitoring, and environmental assessment. Understanding the characteristics and uses of different bands can help optimize image analysis and interpretation.
+Satellite imagery is composed of multiple bands, each capturing light in specific wavelengths. Depending on the satellite sensor and mission, SEPAL offers a range of bands that can be used for export and analysis.
 
-**Aerosol**
-    - **Description**: Used for detecting aerosols (tiny particles) in the atmosphere, which can be crucial for air quality monitoring and climate studies.
-    - **Usage**: Air pollution assessment, wildfire smoke tracking.
++------------+------------+-----------+-----------+-----------+------------+
+|    Band    | Sentinel 2 | Landsat 9 | Landsat 8 | Landsat 7 | Landsat TM |
++============+============+===========+===========+===========+============+
+|    pan     |     ❌     |     ✅    |     ✅    |     ✅    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|  aerosol   |     ✅     |     ✅    |     ✅    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|    blue    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   green    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|    red     |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|    nir     |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|  redEdge1  |     ✅     |     ❌    |     ❌    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|  redEdge2  |     ✅     |     ❌    |     ❌    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|  redEdge3  |     ✅     |     ❌    |     ❌    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|  redEdge4  |     ✅     |     ❌    |     ❌    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|   swir1    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   swir2    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   cirrus   |     ✅     |     ✅    |     ✅    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+|  thermal   |     ❌     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|  thermal2  |     ❌     |     ✅    |     ✅    |     ✅    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+| waterVapor |     ✅     |     ❌    |     ❌    |     ❌    |     ❌     |
++------------+------------+-----------+-----------+-----------+------------+
+| brightness |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+| greenness  |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|  wetness   |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   fourth   |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   fifth    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
+|   sixth    |     ✅     |     ✅    |     ✅    |     ✅    |     ✅     |
++------------+------------+-----------+-----------+-----------+------------+
 
-**Blue**
-    - **Description**: Captures light in the blue wavelength (approximately 450-520 nm).
-    - **Usage**: Coastal water mapping, vegetation health monitoring, and identification of shallow water bodies.
-
-**Cirrus**
-    - **Description**: A band designed to detect high-altitude cirrus clouds (often around 1.38 μm).
-    - **Usage**: Cloud screening in high-altitude regions to improve atmospheric correction.
-
-**Green**
-    - **Description**: Captures light in the green wavelength (approximately 520-600 nm).
-    - **Usage**: Mapping vegetation, water bodies, and urban areas.
-
-**NIR (Near-Infrared)**
-    - **Description**: Captures light in the near-infrared spectrum (approximately 800-900 nm).
-    - **Usage**: Differentiating between vegetation and water, and monitoring vegetation health.
+Description
+-----------
 
 **Pan (Panchromatic)**
     - **Description**: Captures data in a single broad wavelength band, offering higher spatial resolution.
+    - **Wavelengths**:
+        - 0.500-0.680 µm, only for Landsat.
     - **Usage**: High-resolution imaging for mapping and urban planning.
 
+**Aerosol**
+    - **Description**: Used for detecting aerosols (tiny particles) in the atmosphere, which can be crucial for air quality monitoring and climate studies.
+    - **Wavelengths**:
+        - 0.433-0.453 µm for Landsat 8 and 9.
+        - 0.443-0.463 µm for Sentinel-2.
+    - **Usage**: Air pollution assessment, wildfire smoke tracking.
+
+**Blue**
+    - **Description**: Captures light in the blue wavelength.
+    - **Wavelengths**:
+        - 0.450-0.510 µm for Landsat 8 and 9.
+        - 0.490-0.555 µm for Sentinel-2.
+    - **Usage**: Coastal water mapping, vegetation health monitoring, and identification of shallow water bodies.
+
+**Green**
+    - **Description**: Captures light in the green wavelength.
+    - **Wavelengths**:
+        - 0.530-0.590 µm for Landsat 8 and 9.
+        - 0.560-0.595 µm for Sentinel-2.
+    - **Usage**: Mapping vegetation, water bodies, and urban areas.
+
 **Red**
-    - **Description**: Captures light in the red wavelength (approximately 600-700 nm).
+    - **Description**: Captures light in the red wavelength.
+    - **Wavelengths**:
+        - 0.640-0.670 µm for Landsat 8 and 9.
+        - 0.665-0.695 µm for Sentinel-2.
     - **Usage**: Vegetation analysis, especially in calculating vegetation indices like NDVI.
 
-**Red Edge**
-    - **Description**: Captures light in the red-edge spectrum (around 700-750 nm), sensitive to chlorophyll content in plants.
+**NIR (Near-Infrared)**
+    - **Description**: Captures light in the near-infrared spectrum.
+    - **Wavelengths**:
+        - 0.850-0.880 µm for Landsat 8 and 9.
+        - 0.780-0.900 µm for Sentinel-2.
+    - **Usage**: Differentiating between vegetation and water, and monitoring vegetation health.
+
+**Red Edge (4)**
+    - **Description**: 4 narrow Bands in the VNIR vegetation red edge spectral domain: Red edge 1, Red edge 2, Red edge 3, Red edge 4, is a region of the electromagnetic spectrum where the spectral reflectance of green vegetation changes rapidly
+    - **Wavelengths**:
+        - ~704nm,~740nm, ~783nm and ~865nm, only for Sentinel-2.
     - **Usage**: Detailed vegetation health monitoring, particularly for precision agriculture.
 
 **SWIR 1 (Shortwave Infrared 1)**
-    - **Description**: Captures light in the shortwave infrared spectrum (approximately 1500-1750 nm).
+    - **Description**: Captures light in the shortwave infrared spectrum.
+    - **Wavelengths**:
+        - 1.570-1.650 µm for Landsat 8 and 9.
+        - 1.560-1.660 µm for Sentinel-2.
     - **Usage**: Detecting moisture content in soil and vegetation, mapping burned areas.
 
 **SWIR 2 (Shortwave Infrared 2)**
-    - **Description**: Captures light in the shortwave infrared spectrum (approximately 2000-2300 nm).
+    - **Description**: Captures light in the shortwave infrared spectrum.
+    - **Wavelengths**:
+        - 2.110-2.290 µm for Landsat 8 and 9.
+        - 2.100-2.280 µm for Sentinel-2.
     - **Usage**: Distinguishing snow from clouds, mapping geological features, and burn scars.
 
-**Thermal**
-    - **Description**: Measures thermal radiation emitted by the Earth's surface (usually around 10.4-12.5 µm).
-    - **Usage**: Monitoring land surface temperature, heat islands, and volcanic activity.
+**Cirrus**
+    - **Description**: A band designed to detect high-altitude cirrus clouds.
+    - **Wavelengths**:
+        - 1.360-1.380 µm for Landsat 8 and 9.
+        - 1.360-1.390 µm for Sentinel-2.
+    - **Usage**: Cloud screening in high-altitude regions to improve atmospheric correction.
+
+**Thermal 1**
+    - **Description**: Measures thermal radiation emitted by the Earth's surface.
+    - **Wavelengths**:
+        - 10.60-11.19 µm for Landsat 8 and 9.
+    - **Usage**: Monitoring land surface temperature, detecting fires, and assessing volcanic activity.
+
+**Thermal 2**
+    - **Description**: Measures thermal radiation emitted by the Earth's surface.
+    - **Wavelengths**:
+        - 11.50-12.51 µm for Landsat 8 and 9.
+    - **Usage**: Monitoring land surface temperature, detecting fires, and assessing volcanic activity.
 
 **Water Vapor**
     - **Description**: Sensitive to atmospheric water vapor absorption, commonly used for weather and climate studies.
