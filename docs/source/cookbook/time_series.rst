@@ -141,7 +141,7 @@ Available bands
 
     The wavelength of each band is dependent on the satellite used.
 
-The time series will use a single observation for each pixel. This observation can be one of the available bands in SEPAL. To discover the full list of available bands, see :doc:`../feature/bands`.
+The time series will use a single observation for each pixel. This observation can be one of the available bands in SEPAL. To discover the full list of available bands, see :doc:`../feature/optical_bands` and `../feature/radar_bands`.
 
 Analysis
 --------
