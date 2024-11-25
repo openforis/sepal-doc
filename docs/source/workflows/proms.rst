@@ -184,7 +184,7 @@ Sampling Scale: 70 meters.
 Apply to Forest Areas Only:
 &&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-The stratification should be applied exclusively to areas identified as forest (both stable and changing) during the period of interest.
+The stratification could be applied exclusively to areas identified as forest (both stable and changing) during the period of interest by using the masked Forest change probability map.
 
 
 .. thumbnail:: ../_images/workflows/proms/UnsupervisedClassificationForestMask.gif
