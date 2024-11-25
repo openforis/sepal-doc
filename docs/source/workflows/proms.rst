@@ -163,6 +163,7 @@ Step 6: Stratification
 Convert the continuous forest change probability map into a categorical map using the `Unsupervised Classification tool <https://docs.sepal.io/en/latest/modules/Unsupervised_classification.html>`__ to create a stratification layer.
 
 Configuration:
+&&&&&&&&&&&&&&
 
 Sampling:
 Number of Samples: Use a high number (e.g., 100,000) for better representation, especially when high-change areas are small.
@@ -181,5 +182,11 @@ Sampling Scale: 70 meters.
 
 
 Apply to Forest Areas Only:
+&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 The stratification should be applied exclusively to areas identified as forest (both stable and changing) during the period of interest.
+
+
+.. thumbnail:: ../_images/workflows/proms/UnsupervisedClassificationForestMask.gif
+    :title: Workflow
+    :align: center
