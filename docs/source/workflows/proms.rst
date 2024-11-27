@@ -195,12 +195,12 @@ The stratification could be applied exclusively to areas identified as forest (b
 Step 7: Sample allocation
 *************************
 
-Select the sample points for interpretation on the stratification layer using Neyman's method. The samples are optimally distributed according to the variability and area of each stratum: 
+Select the sample points for interpretation on the stratification layer using Neyman's method. The samples are optimally distributed according to the variability and area of each stratum:
 
 :math:`n_h = \left( \frac{\text{sd} \cdot \text{área del estrato}}{\sum (\text{sd} \cdot \text{área})} \right) \cdot \text{targetSampleSize}`
 
-Using Google Earth Engine 
-&&&&&&&&&&&&&&&&&&&&&&&&&&
+Using Google Earth Engine
+&&&&&&&&&&&&&&&&&&&&&&&&&
 
 
 .. thumbnail:: ../_images/workflows/proms/SampleaAllocationForestMask.gif
@@ -216,6 +216,6 @@ Using Google Earth Engine
 Step 8: Sample interpretation and analysis
 ******************************************
 
-Estimate the forest change area. 
+Estimate the forest change area.
 
 
