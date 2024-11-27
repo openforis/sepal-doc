@@ -24,6 +24,7 @@ SEPAL workflows include:
     :maxdepth: 1
     :glob:
 
+    proms
     ensemble Sample-based area estimation<eSBAE>
     Sample-based area estimation<area_estimation>
     Standard operating procedures<sop_template>
