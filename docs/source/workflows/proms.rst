@@ -190,3 +190,27 @@ The stratification could be applied exclusively to areas identified as forest (b
 .. thumbnail:: ../_images/workflows/proms/UnsupervisedClassificationForestMask.gif
     :title: Workflow
     :align: center
+
+
+Step 7: Sample allocation
+*************************
+
+Select the sample points for interpretation on the stratification layer using Neyman's method. The samples are optimally distributed according to the variability and area of each stratum: 
+
+
+Using Google Earth Engine 
+&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+.. thumbnail:: ../_images/workflows/proms/SampleaAllocationForestMask.gif
+    :title: Workflow
+    :align: center
+
+
+.. thumbnail:: ../_images/workflows/proms/SampleaAllocationNoForestMask.gif
+    :title: Workflow
+    :align: center
+
+
+
+
