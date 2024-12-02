@@ -15,11 +15,12 @@ dask[complete]
 planet
 tensorflow-probability
 geeadd
+pyotb
 
 ########  Google Earthengine  ########
 oauth2client
 google-api-python-client==1.12.8
-git+https://github.com/openforis/earthengine-api.git@v0.1.384#egg=earthengine-api&subdirectory=python
+git+https://github.com/openforis/earthengine-api.git@v1.1.5rc0#egg=earthengine-api&subdirectory=python
 oeel
 
 ########  BFAST dependencies ########
@@ -36,7 +37,7 @@ python-dateutil
 pytesmo
 Wand
 PyPDF2 # more recent version are avaiable (PyPDF4)
-rasterio
+rasterio==1.3.10 # https://github.com/openforis/sepal/issues/328
 openpyxl
 pre-commit
 
@@ -44,7 +45,6 @@ pre-commit
 ########  web api  ########
 falcon
 gunicorn
-pyCrypto
 awscli==1.11.18 # Pinned to prevent backtracking
 
 ########  other deps  ########
@@ -60,8 +60,6 @@ geeadd
 geeup
 cogee
 xee
-torch
-torchvision
 
 ########  OSK requirements  ########
 descartes
