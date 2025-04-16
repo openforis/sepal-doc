@@ -2,6 +2,8 @@ Use NICFI–PlanetLab data
 ========================
 *Sign up for NICFI and connect with GEE*
 
+.. warning:: Discontinuation of SEPAL-Planet NICFI Connection: We would like to inform you that the connection between SEPAL and Planet NICFI is no longer available because the NICFI Satellite Data Program has ended as of April 1, 2025. This termination means that any prior instructions or configurations for connecting to Planet NICFI are now obsolete. We appreciate your understanding and support during this transition. For any further inquiries or assistance, please visit: https://www.planet.com/tropical-forest-observatory/ for more information on the NICFI Satellite Data Program and its discontinuation.
+
 In this article, learn how to:
 
 -   sign up for NICFI imagery

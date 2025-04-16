@@ -112,6 +112,7 @@ html_theme_options = {
     "footer_start": ["copyright", "sphinx-version", "licence"],
     "footer_center": ["community", "issue-tracker"],
     "footer_end": ["e-learning", "stackexchange"],
+    "announcement": "Connection between SEPAL and Planet NICFI is no longer available because the NICFI Satellite Data Program ended on April 1, 2025. Previous connection instructions are now obsolete. We will update the documentation once the new NICFI data program begins. Thank you for your understanding.",
 }
 
 # -- option for the favicon extension ------------------------------------------
