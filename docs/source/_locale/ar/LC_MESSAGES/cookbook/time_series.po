@@ -1,29 +1,28 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: sepal-doc\n"
+"Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
-"PO-Revision-Date: 2024-03-07 08:56\n"
+"POT-Creation-Date: 2025-04-19 01:11+0000\n"
+"PO-Revision-Date: 2024-03-07 08:56+0000\n"
 "Last-Translator: \n"
-"Language-Team: Arabic\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Crowdin-Project: sepal-doc\n"
-"X-Crowdin-Project-ID: 562097\n"
-"X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /main/docs/source/_locale/en/LC_MESSAGES/cookbook/time_series.po\n"
-"X-Crowdin-File-ID: 75\n"
 "Language: ar_SA\n"
+"Language-Team: Arabic\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/cookbook/time_series.rst:2
 msgid "Time series"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:4
-msgid "*Create and retrieve SITS to study patterns and key changes in landscape evolution over time*"
+msgid ""
+"*Create and retrieve SITS to study patterns and key changes in landscape "
+"evolution over time*"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:7
@@ -31,23 +30,48 @@ msgid "Overview"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:9
-msgid "A Satellite Image Time Series (SITS) is a set of satellite images taken of the same scene at different times. A SITS makes use of different satellite sources to obtain a larger data series with a short time interval between two images. In this case, it is fundamental to observe the spatial resolution and registration constraints."
+msgid ""
+"A Satellite Image Time Series (SITS) is a set of satellite images taken "
+"of the same scene at different times. A SITS makes use of different "
+"satellite sources to obtain a larger data series with a short time "
+"interval between two images. In this case, it is fundamental to observe "
+"the spatial resolution and registration constraints."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:11
-msgid "Satellite observations offer opportunities for understanding how the Earth is changing, determining the causes of these changes and predicting future changes. Remotely sensed data, combined with information from ecosystem models, offer an opportunity for predicting and understanding the behaviour of Earth's ecosystems. Sensors with high spatial and temporal resolutions make the observation of precise spatio-temporal structures in dynamic scenes more accessible. Temporal components integrated with spectral and spatial dimensions allow the identification of complex patterns concerning applications connected with environmental monitoring and analysis of land cover dynamics."
+msgid ""
+"Satellite observations offer opportunities for understanding how the "
+"Earth is changing, determining the causes of these changes and predicting"
+" future changes. Remotely sensed data, combined with information from "
+"ecosystem models, offer an opportunity for predicting and understanding "
+"the behaviour of Earth's ecosystems. Sensors with high spatial and "
+"temporal resolutions make the observation of precise spatio-temporal "
+"structures in dynamic scenes more accessible. Temporal components "
+"integrated with spectral and spatial dimensions allow the identification "
+"of complex patterns concerning applications connected with environmental "
+"monitoring and analysis of land cover dynamics."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:13
-msgid "Change detection can only provide a \"before and after\" scenario; a time-series analysis provides an opportunity to study patterns and key changes in the landscape evolution over time."
+msgid ""
+"Change detection can only provide a \"before and after\" scenario; a "
+"time-series analysis provides an opportunity to study patterns and key "
+"changes in the landscape evolution over time."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:15
-msgid "This SEPAL recipe allows users to create and retrieve SITS based on `Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-tools>`__ and `Copernicus <https://www.copernicus.eu/>`__ programmes' imagery using the Google Earth Engine (GEE) datacube."
+msgid ""
+"This SEPAL recipe allows users to create and retrieve SITS based on "
+"`Landsat <https://www.usgs.gov/core-science-systems/nli/landsat/data-"
+"tools>`__ and `Copernicus <https://www.copernicus.eu/>`__ programmes' "
+"imagery using the Google Earth Engine (GEE) datacube."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:19
-msgid "You won't be able to download images if your SEPAL and GEE account aren't connected. To learn more, go to `Connect SEPAL to GEE <../setup/gee.html>`__."
+msgid ""
+"You won't be able to download images if your SEPAL and GEE account aren't"
+" connected. To learn more, go to `Connect SEPAL to GEE "
+"<../setup/gee.html>`__."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:22
@@ -55,15 +79,27 @@ msgid "Start"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:24
-msgid "Once the **Time series** recipe is selected, SEPAL will open the recipe process in a new tab (see **1** in the following figure). The base map will change to Google high-resolution imagery and the **Area of interest (AOI)** selection window will appear in the lower right (**2**)."
+msgid ""
+"Once the **Time series** recipe is selected, SEPAL will open the recipe "
+"process in a new tab (see **1** in the following figure). The base map "
+"will change to Google high-resolution imagery and the **Area of interest "
+"(AOI)** selection window will appear in the lower right (**2**)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:30
-msgid "The first step is to change the name of the recipe. This name will be used to identify your files and recipes in the SEPAL folders. Use the best-suited convention for your needs. Simply double-click the tab and enter a new name. It will default to :code:`Time_series_<start_date>_<end_date>_<band name>`."
+msgid ""
+"The first step is to change the name of the recipe. This name will be "
+"used to identify your files and recipes in the SEPAL folders. Use the "
+"best-suited convention for your needs. Simply double-click the tab and "
+"enter a new name. It will default to "
+":code:`Time_series_<start_date>_<end_date>_<band name>`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:42
-msgid "The SEPAL team recommends using the following naming convention: :code:`<aoi name>_<start-<end>_<measure>_<sensors>` (e.g. :code:`sgp_2012-2018_ndfi_l78`)."
+msgid ""
+"The SEPAL team recommends using the following naming convention: "
+":code:`<aoi name>_<start-<end>_<measure>_<sensors>` (e.g. "
+":code:`sgp_2012-2018_ndfi_l78`)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:45
@@ -72,7 +108,9 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:47
-msgid "In the lower-right corner, four tabs are available, allowing you to customize the time series to your needs:"
+msgid ""
+"In the lower-right corner, four tabs are available, allowing you to "
+"customize the time series to your needs:"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:49
@@ -96,7 +134,9 @@ msgid "AOI selection"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:61
-msgid "The data exported by the recipe will be confined to the bounds of the AOI. There are multiple ways to select the AOI in SEPAL:"
+msgid ""
+"The data exported by the recipe will be confined to the bounds of the "
+"AOI. There are multiple ways to select the AOI in SEPAL:"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:63
@@ -120,7 +160,12 @@ msgid "Dates"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:76
-msgid "In the :guilabel:`DAT` tab, you will be asked to select the start date and end date of the time series. Select the **Date** text field to open a pop-up window. Choose the :btn:`<fa-solid fa-check> Select` button to choose a date. When both dates have been chosen, select the :btn:`<fa-solid fa-check> Apply` button."
+msgid ""
+"In the :guilabel:`DAT` tab, you will be asked to select the start date "
+"and end date of the time series. Select the **Date** text field to open a"
+" pop-up window. Choose the :btn:`<fa-solid fa-check> Select` button to "
+"choose a date. When both dates have been chosen, select the :btn:`<fa-"
+"solid fa-check> Apply` button."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:89
@@ -128,11 +173,18 @@ msgid "Sources"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:91
-msgid "As mentioned in the introduction, a SITS makes use of different satellite sources to obtain a larger data series with a shorter time interval between the images. To meet this objective, SEPAL allows you to select data from multiple entry points. You can select multiple sources from :btn:`Radar`, :btn:`Optical` or :btn:`Planet` datasets."
+msgid ""
+"As mentioned in the introduction, a SITS makes use of different satellite"
+" sources to obtain a larger data series with a shorter time interval "
+"between the images. To meet this objective, SEPAL allows you to select "
+"data from multiple entry points. You can select multiple sources from "
+":btn:`Radar`, :btn:`Optical` or :btn:`Planet` datasets."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:93
-msgid "When all of the data has been selected, select :btn:`<fa-solid fa-check> Apply`."
+msgid ""
+"When all of the data has been selected, select :btn:`<fa-solid fa-check> "
+"Apply`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:100
@@ -160,7 +212,12 @@ msgid "Snow masking: :guilabel:`on`"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:111
-msgid "Multiple pre-processing parameters can be set to improve the quality of the provided images. SEPAL has gathered four of them in the form of these interactive buttons. If you think others should be added, tell us in the `issue tracker <https://github.com/openforis/sepal/issues/new/choose>`__."
+msgid ""
+"Multiple pre-processing parameters can be set to improve the quality of "
+"the provided images. SEPAL has gathered four of them in the form of these"
+" interactive buttons. If you think others should be added, tell us in the"
+" `issue tracker "
+"<https://github.com/openforis/sepal/issues/new/choose>`__."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:113
@@ -168,11 +225,15 @@ msgid "**Correction**"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:115
-msgid ":guilabel:`Surface reflectance`: Use scenes' atmospherically corrected surface reflectance."
+msgid ""
+":guilabel:`Surface reflectance`: Use scenes' atmospherically corrected "
+"surface reflectance."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:116
-msgid ":guilabel:`BRDF correction`: Correct for bidirectional reflectance distribution function (BRDF) effects."
+msgid ""
+":guilabel:`BRDF correction`: Correct for bidirectional reflectance "
+"distribution function (BRDF) effects."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:118
@@ -180,7 +241,9 @@ msgid "**Cloud detection**"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:120
-msgid ":guilabel:`QA bands`: Use previously created quality assessment (QA) bands from datasets."
+msgid ""
+":guilabel:`QA bands`: Use previously created quality assessment (QA) "
+"bands from datasets."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:121
@@ -192,11 +255,16 @@ msgid "**Cloud masking**"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:125
-msgid ":guilabel:`Moderate`: Rely only on image source QA bands for cloud masking."
+msgid ""
+":guilabel:`Moderate`: Rely only on image source QA bands for cloud "
+"masking."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:126
-msgid ":guilabel:`Aggressive`: Rely on image source QA bands and a cloud-scoring algorithm for cloud masking (this will probably \"mask\" some built-up areas and other bright features)."
+msgid ""
+":guilabel:`Aggressive`: Rely on image source QA bands and a cloud-scoring"
+" algorithm for cloud masking (this will probably \"mask\" some built-up "
+"areas and other bright features)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:128
@@ -204,11 +272,16 @@ msgid "**Snow masking**"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:130
-msgid ":guilabel:`On`: Mask snow (this tends to leave some pixels with shadowy snow)."
+msgid ""
+":guilabel:`On`: Mask snow (this tends to leave some pixels with shadowy "
+"snow)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:131
-msgid ":guilabel:`Off`: Don't mask snow (some clouds might get misclassified as snow, and because of this, disabling snow masking might lead to cloud artefacts)."
+msgid ""
+":guilabel:`Off`: Don't mask snow (some clouds might get misclassified as "
+"snow, and because of this, disabling snow masking might lead to cloud "
+"artefacts)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:138
@@ -220,7 +293,11 @@ msgid "The wavelength of each band is dependent on the satellite used."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:144
-msgid "The time series will use a single observation for each pixel. This observation can be one of the available bands in SEPAL. To discover the full list of available bands, see :doc:`../feature/bands`."
+msgid ""
+"The time series will use a single observation for each pixel. This "
+"observation can be one of the available bands in SEPAL. To discover the "
+"full list of available bands, see :doc:`../feature/optical_bands` and "
+"`../feature/radar_bands`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:147
@@ -228,11 +305,16 @@ msgid "Analysis"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:149
-msgid "Once all parameters are set, you can generate data from the recipe. Some can be directly generated on the fly from the interface; the rest require retrieving the data from SEPAL folders."
+msgid ""
+"Once all parameters are set, you can generate data from the recipe. Some "
+"can be directly generated on the fly from the interface; the rest require"
+" retrieving the data from SEPAL folders."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:151
-msgid "The analysis icons can be found in the upper-right corner of the SEPAL interface:"
+msgid ""
+"The analysis icons can be found in the upper-right corner of the SEPAL "
+"interface:"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:153
@@ -244,7 +326,10 @@ msgid ":btn:`<fa-solid fa-cloud-arrow-down>`: Retrieve data."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:162
-msgid "The **Download** icon is only enabled when the data parameters are complete. If the button is disabled, check your parameters, as some might be missing."
+msgid ""
+"The **Download** icon is only enabled when the data parameters are "
+"complete. If the button is disabled, check your parameters, as some might"
+" be missing."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:165
@@ -252,7 +337,11 @@ msgid "Plot"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:167
-msgid "Select :btn:`<fa-solid fa-chart-area>` to start the plotting tool. Move the pointer to the main map; the pointer will be transformed into a :icon:`fa-solid fa-plus`. Click anywhere in the AOI to plot data for this specific location in the following pop-up window."
+msgid ""
+"Select :btn:`<fa-solid fa-chart-area>` to start the plotting tool. Move "
+"the pointer to the main map; the pointer will be transformed into a :icon"
+":`fa-solid fa-plus`. Click anywhere in the AOI to plot data for this "
+"specific location in the following pop-up window."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:169
@@ -260,15 +349,23 @@ msgid "The plotting area is dynamic and can be customized by the user."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:171
-msgid "Using the slider (1), the temporal width displayed can be changed. It cannot exceed the start and/or end date of the time series."
+msgid ""
+"Using the slider (1), the temporal width displayed can be changed. It "
+"cannot exceed the start and/or end date of the time series."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:173
-msgid "You can also select the observation feature by selecting one of the available measures in the dropdown selector in the upper-left corner (2). The available bands are the same as those described previously."
+msgid ""
+"You can also select the observation feature by selecting one of the "
+"available measures in the dropdown selector in the upper-left corner (2)."
+" The available bands are the same as those described previously."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:175
-msgid "On the main graph, each point represents one valid observation (based on the pre-processing filters). Hover over the point to let the tooltip describe the value and date of the observation (3)."
+msgid ""
+"On the main graph, each point represents one valid observation (based on "
+"the pre-processing filters). Hover over the point to let the tooltip "
+"describe the value and date of the observation (3)."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:179
@@ -276,7 +373,13 @@ msgid "The coordinates of the point are displayed at the top of the chart window
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:187
-msgid "Since the plot feature is retrieving information from GEE on the fly and presenting it in an interactive window, this operation can take time, depending on the number of available observations and the complexity of the selected pre-processing parameters. If a spinning wheel appears in the pop-up window, you may have to wait up to two minutes to see the data displayed."
+msgid ""
+"Since the plot feature is retrieving information from GEE on the fly and "
+"presenting it in an interactive window, this operation can take time, "
+"depending on the number of available observations and the complexity of "
+"the selected pre-processing parameters. If a spinning wheel appears in "
+"the pop-up window, you may have to wait up to two minutes to see the data"
+" displayed."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:194
@@ -284,27 +387,47 @@ msgid "Export"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:196
-msgid "In order for the data generated by the recipe to be used in other workflows, it needs to be retrieved from GEE and uploaded to SEPAL."
+msgid ""
+"In order for the data generated by the recipe to be used in other "
+"workflows, it needs to be retrieved from GEE and uploaded to SEPAL."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:200
-msgid "You cannot export a recipe as an asset or a :code:`.tiff` file without a small computation quota. If you are a new user, see :doc:`../setup/resource`."
+msgid ""
+"You cannot export a recipe as an asset or a :code:`.tiff` file without a "
+"small computation quota. If you are a new user, see "
+":doc:`../setup/resource`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:204
-msgid "Select :btn:`<fa-solid fa-cloud-arrow-down>` to open the **Download parameters** window. You will be able to select the measure to use on each observation of the time series. This measure can be selected in the list of available bands presented above in a previous section."
+msgid ""
+"Select :btn:`<fa-solid fa-cloud-arrow-down>` to open the **Download "
+"parameters** window. You will be able to select the measure to use on "
+"each observation of the time series. This measure can be selected in the "
+"list of available bands presented above in a previous section."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:208
-msgid "There is no fixed rule to the measure selection. Each index is more adapted to a set of analyses in a defined biome. The knowledge of the study area, the evolution expected and the careful selection of an adapted measure will improve the quality of  downstream analysis."
+msgid ""
+"There is no fixed rule to the measure selection. Each index is more "
+"adapted to a set of analyses in a defined biome. The knowledge of the "
+"study area, the evolution expected and the careful selection of an "
+"adapted measure will improve the quality of  downstream analysis."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:210
-msgid "You can set a custom scale for exportation by changing the value of the slider in metres (m). Keep in mind that Sentinel data native resolution is 10 m and Landsat is 30 m."
+msgid ""
+"You can set a custom scale for exportation by changing the value of the "
+"slider in metres (m). Keep in mind that Sentinel data native resolution "
+"is 10 m and Landsat is 30 m."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:212
-msgid "When all the data is selected, select the :btn:`<fa-solid fa-check> apply` button. Notice that the task tab in the lower-left corner of the screen (1) will change from :btn:`<fa-solid fa-list-check>` to :btn:`<fa-solid fa-spinner>`, meaning that the tasks are loading."
+msgid ""
+"When all the data is selected, select the :btn:`<fa-solid fa-check> "
+"apply` button. Notice that the task tab in the lower-left corner of the "
+"screen (1) will change from :btn:`<fa-solid fa-list-check>` to :btn:`<fa-"
+"solid fa-spinner>`, meaning that the tasks are loading."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:220
@@ -312,15 +435,27 @@ msgid "Exportation status"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:222
-msgid "By selecting the **Tasks** tab (lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different tasks loading. The interface will provide you with information about the task progress and display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__."
+msgid ""
+"By selecting the **Tasks** tab (lower-left corner using the :btn:`<fa-"
+"solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending "
+"on the loading status), you will see the list of different tasks loading."
+" The interface will provide you with information about the task progress "
+"and display an error if the exportation has failed. If you are "
+"unsatisfied with the way we present information, the task can also be "
+"monitored using the `GEE task manager "
+"<https://code.earthengine.google.com/tasks>`__."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:226
-msgid "This operation is running between GEE and SEPAL servers in the background, so you can close the SEPAL page without ending the process."
+msgid ""
+"This operation is running between GEE and SEPAL servers in the "
+"background, so you can close the SEPAL page without ending the process."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:228
-msgid "When the task is finished, the frame will be displayed in green, as shown in the second image below."
+msgid ""
+"When the task is finished, the frame will be displayed in green, as shown"
+" in the second image below."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:241
@@ -328,43 +463,82 @@ msgid "Access"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:243
-msgid "Once the download process is done, you can access the data in your **SEPAL folders** in :code:`Downloads`, using the following format:"
+msgid ""
+"Once the download process is done, you can access the data in your "
+"**SEPAL folders** in :code:`Downloads`, using the following format:"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:268
-msgid "Understanding how images are stored in a time series is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest this information for you."
+msgid ""
+"Understanding how images are stored in a time series is only required if "
+"you want to manually use them. The SEPAL applications are bound to this "
+"tiling system and can digest this information for you."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:270
-msgid "The data are stored in a folder using the name of the time series as it was labeled in the first section of this document. The SEPAL team was forced to use this folder structure as GEE is unable to export an :code:`ee.ImageCollection`. As the data is spatially too big to be exported at once, they are divided into smaller pieces and reassembled in a :code:`stack.vrt` file."
+msgid ""
+"The data are stored in a folder using the name of the time series as it "
+"was labeled in the first section of this document. The SEPAL team was "
+"forced to use this folder structure as GEE is unable to export an "
+":code:`ee.ImageCollection`. As the data is spatially too big to be "
+"exported at once, they are divided into smaller pieces and reassembled in"
+" a :code:`stack.vrt` file."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:272
-msgid "The AOI provided by the user will be divided into multiple SEPAL tiles. The AOI is a :code:`ee.FeatureCollection`; each feature is downloaded in a different tile. If the tile is bigger than 2° x 2° (EPSG:4326), then the feature is divided again until all of the tiles are smaller than the maximum 2° size. The tiles are identified by their :code:`<tile_number>`."
+msgid ""
+"The AOI provided by the user will be divided into multiple SEPAL tiles. "
+"The AOI is a :code:`ee.FeatureCollection`; each feature is downloaded in "
+"a different tile. If the tile is bigger than 2° x 2° (EPSG:4326), then "
+"the feature is divided again until all of the tiles are smaller than the "
+"maximum 2° size. The tiles are identified by their :code:`<tile_number>`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:274
-msgid "To limit the size of the downloaded images, in each SEPAL tile, the time period is divided into **Chunks** of 3 months. They are identified by their :code:`<chunk-<start>_<end>`. **Chunks** are image folders. As a SEPAL tile is still bigger than what GEE can download at once, the images are divided into GEE tiles. This tiling process uses its own identification system (000000xxxx-000000xxxx). Consequently, **Chunks** contain tile raster images. Each one of these images is composed of one band per observation date, with the value of the measure for each pixel. The bands are named with the date."
+msgid ""
+"To limit the size of the downloaded images, in each SEPAL tile, the time "
+"period is divided into **Chunks** of 3 months. They are identified by "
+"their :code:`<chunk-<start>_<end>`. **Chunks** are image folders. As a "
+"SEPAL tile is still bigger than what GEE can download at once, the images"
+" are divided into GEE tiles. This tiling process uses its own "
+"identification system (000000xxxx-000000xxxx). Consequently, **Chunks** "
+"contain tile raster images. Each one of these images is composed of one "
+"band per observation date, with the value of the measure for each pixel. "
+"The bands are named with the date."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:276
-msgid "To gather all these rasters together, a first aggregation on time is performed. One :code:`stack.vrt` is created per GEE tile, meaning that each :code:`stack.vrt` file contains all the :code:`*<gee tiling id>.tif` contained in each **Chunk**, reconstituting the full time period on the smallest spatial unit: the GEE tile. Each file is stored in a folder called :code:`tile-<gee tiling id>`."
+msgid ""
+"To gather all these rasters together, a first aggregation on time is "
+"performed. One :code:`stack.vrt` is created per GEE tile, meaning that "
+"each :code:`stack.vrt` file contains all the :code:`*<gee tiling id>.tif`"
+" contained in each **Chunk**, reconstituting the full time period on the "
+"smallest spatial unit: the GEE tile. Each file is stored in a folder "
+"called :code:`tile-<gee tiling id>`."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:278
-msgid "Finally, information is gathered spatially at the SEPAL tile level in the main :code:`stack.vrt` file."
+msgid ""
+"Finally, information is gathered spatially at the SEPAL tile level in the"
+" main :code:`stack.vrt` file."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:280
-msgid "The last file, :code:`date.csv`, gathers all the observation dates in chronological order."
+msgid ""
+"The last file, :code:`date.csv`, gathers all the observation dates in "
+"chronological order."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:284
-msgid "The dates contained in :code:`date.csv` can differ from one SEPAL tile to another, due to data availability and pre-processing filters."
+msgid ""
+"The dates contained in :code:`date.csv` can differ from one SEPAL tile to"
+" another, due to data availability and pre-processing filters."
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:288
-msgid "The full folder with a consistent treefolder is required to read the `.vrt`"
+msgid ""
+"The full folder with a consistent treefolder is required to read the "
+"`.vrt`"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:290
@@ -372,7 +546,11 @@ msgid "Here is an example of a real TS folder:"
 msgstr ""
 
 #: ../../source/cookbook/time_series.rst:315
-msgid "Now that you have downloaded the TS to your SEPAL account, it can be downloaded to your computer using `FileZilla <../setup.filezilla.html>`__ or used in one of our `Time-series analysis modules <../modules/time-series.html>`__."
+msgid ""
+"Now that you have downloaded the TS to your SEPAL account, it can be "
+"downloaded to your computer using `FileZilla <../setup.filezilla.html>`__"
+" or used in one of our `Time-series analysis modules <../modules/time-"
+"series.html>`__."
 msgstr ""
 
 #~ msgid ""
@@ -959,5 +1137,14 @@ msgstr ""
 #~ " `FileZilla <../setup.filezilla.html>`__ or used"
 #~ " in one of our `time-series "
 #~ "analysis modules <../modules/time-series.html>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The time series will use a single"
+#~ " observation for each pixel. This "
+#~ "observation can be one of the "
+#~ "available bands in SEPAL. To discover"
+#~ " the full list of available bands,"
+#~ " see :doc:`../feature/bands`."
 #~ msgstr ""
 

@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2025, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-19 01:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/workflows/proms.rst:2
+msgid "Probability Map Subtraction (PROMS)"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:5
+msgid "Overview"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:7
+msgid ""
+"This tutorial provides a step-by-step guide to estimate forest change "
+"areas between two dates using an improved area estimation technique. The "
+"method leverages a statistically optimized stratification of forest and "
+"forest change areas using continuous probability layers and sample "
+"allocation."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:17
+msgid "In lighter green optional data and steps."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:21
+msgid "Workflow Steps"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:24
+msgid "Input Data Collection for Time 1 and Time 2"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:25
+msgid ""
+"Training data on Stable Forest and Stable Non-Forest between Time 1 And "
+"Time 2"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:26
+msgid "Forest Probability Classification at Time 1 and Time 2"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:27
+msgid "Forest Change Probability Calculation"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:28
+msgid "Inclusive Forest Mask Application (Optional)"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:29
+msgid "Stratification"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:30
+msgid "Sample Allocation"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:31
+msgid "Sample Interpretation and analysis"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:35
+msgid "Summary Approach"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:37
+msgid ""
+"In this tutorial, we will demonstrate the methodology applied to the "
+"region of Alto Paraguay, aiming to estimate the forest change area "
+"between the years 2018 (Time 1) and 2020 (Time 2)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:40
+msgid "Step 1: Input Data"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:42
+msgid ""
+"The first step is to select the input imagery for classification. A "
+"minimum of one type of data source is required; however, for optimal "
+"classification results, a combination of sensors is recommended. The "
+"selection depends on data availability and quality for your study area. "
+"To capture changes occurring between Time 1 and Time 2, it is recommended"
+" to create annual composites for one year before and one year after each "
+"respective time point. This approach includes all possible changes that "
+"occurred during Time 1 and Time 2."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:45
+msgid "SEPAL Tools for Image Combination:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:47
+msgid ""
+"SEPAL offers several tools to combine images from several sensors into "
+"single raster:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:49
+msgid ""
+"**Optical Mosaics**: For creating optical mosaics, refer to the `Optical "
+"Mosaics tool "
+"<https://docs.sepal.io/en/latest/modules/Optical_mosaics.html>`__."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:50
+msgid ""
+"**Radar Mosaics**: For creating radar mosaics, use the  `Radar Mosaics "
+"tool <https://docs.sepal.io/en/latest/modules/Radar_mosaics.html>`__."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:51
+msgid ""
+"**Planet Mosaic**: For creating optical mosaics with high-resolution "
+"imagery, see the `Planet Mosaic tool "
+"<https://docs.sepal.io/en/latest/modules/Planet_mosaic.html>`__."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:53
+msgid ""
+"For areas with seasonal vegetation variations (e.g., dry forests), "
+"consider using Continuous Change Detection and Classification (CCDC). "
+"Refer to `CCDC Asset Creation "
+"<https://docs.sepal.io/en/latest/modules/CCDC_asset_creation.html>`__ for"
+" more information."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:56
+msgid "Case Study Data Preparation:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:58
+msgid "In our case study, we created:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:60
+msgid "Planet Mosaics, Sentinel-1 Time Scans, Sentinel-2 Mosaics in SEPAL."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:61
+msgid ""
+"ALOS-2 Time Scans in Google Earth Engine (`Link to Script "
+"<https://code.earthengine.google.com/168e52df4131e4ccff013f248cbc6cc6>`__)"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:63
+msgid ""
+"These datasets were prepared for both years 2017 and 2021 (one year "
+"before and one year after Time 1 and Time 2, respectively)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:71
+msgid "Step 2: Training Data"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:73
+msgid ""
+"Create training data on the presence and absence of forest for your "
+"period of interest. Depending on availability, training data can be "
+"sourced from:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:75
+msgid "**Existing Maps**: Extract samples from global or regional forest maps."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:76
+msgid "**Field Data**: Use ground-truth data collected from field surveys."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:77
+msgid "**Other Sources**: Extract samples from datasets like GEDI or GLANCE."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:80
+msgid "Step 3: Forest Probability Classification"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:82
+msgid ""
+"Obtain forest probability maps for Time 1 and Time 2 through supervised "
+"classification of your input data, using training data on forest and non-"
+"forest classes. It is preferable to use stable samples from the period "
+"between Time 1 and Time 2."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:85
+msgid "Using SEPAL's Classification Tool:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:87
+msgid ""
+"SEPAL offers a user-friendly `Classification tool "
+"<https://docs.sepal.io/en/latest/modules/Classification.html>`__ for "
+"building supervised classifications."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:90 ../../source/workflows/proms.rst:215
+#: ../../source/workflows/proms.rst:256
+msgid "Case Study Implementation:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:92
+msgid ""
+"Auxiliary Data: Added terrain data from the `MERIT Digital Elevation "
+"Model <http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/>`__ to the "
+"mosaic stack for both years. Classifier: Used a Random Forest Classifier "
+"in probability output mode. Output: Generated forest probability maps for"
+" 2017 and 2021."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:96
+msgid ""
+"If the number of samples that changed class between Time 1 and Time 2 is "
+"small relative to the total number, it won’t significantly affect Random "
+"Forest results due to its multiple decision trees and bootstrapping "
+"method."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:103
+msgid "Step 4: Forest Change Probability Calculation"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:105
+msgid ""
+"Calculate the forest change probability map by finding the difference "
+"between the forest probability maps of Time 1 and Time 2."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:108
+msgid "Using SEPAL's Band Math Tool:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:110
+msgid ""
+"The `Band Math tool "
+"<https://docs.sepal.io/en/latest/modules/Band_math.html>`__ allows for "
+"mathematical operations on images from SEPAL or Google Earth Engine."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:113
+msgid "Case Study Calculation:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:115
+msgid ""
+"Operation: Subtracted the forest probability band (probability_1) of the "
+"2021 image from the 2017 image as an absolute value."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:116
+msgid ""
+"Result: High values indicate a high probability of forest change, both "
+"possible ‘forest losses’ and ‘forest gains’; low values indicate "
+"stability."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:124
+msgid "For Multiple Monitoring Dates:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:126
+msgid ""
+"When intermediate dates are available, calculate the maximum forest "
+"change probability:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:140
+#, python-brace-format
+msgid ""
+"\\text{Max Change Probability} = \\max(\\text{probabilities over all "
+"dates}) - \\min(\\text{probabilities over all dates})\n"
+"\n"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:147
+msgid "With only two dates:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:149
+#, python-brace-format
+msgid ""
+"\\text{Change Probability} = |\\text{Probability at Time 1} - "
+"\\text{Probability at Time 2}|\n"
+"\n"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:157
+msgid "Step 5: Inclusive Forest Mask Application (optional)"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:159
+msgid ""
+"Apply a ‘forest mask’ to exclude areas with very low forest probability, "
+"focusing the stratification on relevant areas."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:163
+msgid ""
+"This mask should not be regarded as a commonly used forest mask but "
+"rather as a highly conservative one, designed to include all areas where "
+"forest could potentially exist at both Time 1 and Time 2, while excluding"
+" areas where forest is definitively absent, such as deserts, croplands, "
+"or built-up areas, especially when these categories constitute a "
+"significant portion of the total area)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:166
+msgid "Using SEPAL’s Band Math Tool:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:168
+msgid ""
+"Calculate Maximum Forest Probability: Use the Band Math tool to find the "
+"maximum probability across all dates (Time 1 and Time 2 in the case "
+"study)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:172
+msgid "Using SEPAL’s Remapping Tool:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:174
+msgid ""
+"Remap Values: With the Remapping tool, classify areas as 'forest' where "
+"the maximum forest probability exceeds a specified threshold, and mask "
+"out areas that fall below this threshold."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:182
+msgid "Case study implementation:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:184
+msgid ""
+"In our case study we used a 10% maximum forest probability threshold that"
+" masked out cropland areas."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:188
+msgid "Using SEPAL’s Masking Tool:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:190
+msgid ""
+"Apply Mask: Use the Masking tool to apply the ‘forest mask’ to the forest"
+" change probability layer."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:200
+msgid "Step 6: Stratification"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:203
+msgid ""
+"Convert the continuous forest change probability map into a categorical "
+"map using the SEPAL's `Unsupervised Classification tool "
+"<https://docs.sepal.io/en/latest/modules/Unsupervised_classification.html>`__"
+" tool to create a stratification layer."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:207
+msgid "Using SEPAL’s Unsupervised Classification tool"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:210
+msgid ""
+"**Sampling**: Number of Samples: Use a high number (e.g., 100,000) for "
+"better representation, especially when areas with high forest change "
+"probability are small. Sampling Scale: Consider the forest definition "
+"(e.g., 70 meters aligning with a 0.5-hectare MMU)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:211
+msgid ""
+"**Clusterer**: Algorithm: Use the k-means algorithm. Number of Clusters: "
+"Five classes are recommended (Kozak, 2011)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:217
+msgid ""
+"Samples: 100,000 samples to train the clusterer. Sampling Scale: 70 "
+"meters."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:225
+msgid "Apply to Forest Areas Only:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:227
+msgid ""
+"The stratification could be applied exclusively to areas where forest "
+"could potentially exist during the period of interest (both stable and "
+"changing) using the masked forest change probability map as input image."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:235
+msgid "Step 7: Sample allocation"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:237
+msgid ""
+"Select the sample points for interpretation on the stratification layer "
+"using Neyman's method. The samples are optimally distributed according to"
+" the variability and area of each stratum:"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:239
+msgid ""
+":math:`n_h = \\left( \\frac{\\text{sd} \\cdot \\text{área del "
+"estrato}}{\\sum (\\text{sd} \\cdot \\text{área})} \\right) \\cdot "
+"\\text{targetSampleSize}`"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:242
+msgid "Using Google Earth Engine"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:244
+msgid ""
+"The sample allocation can be applied either to the unmasked "
+"stratification layer (as shown in the image above) or to the masked "
+"stratification layer (as depicted in the image below)."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:258
+msgid "Total number of samples to select: 3000.  Spatial resolution: 70m."
+msgstr ""
+
+#: ../../source/workflows/proms.rst:261
+msgid "Step 8: Sample interpretation and analysis"
+msgstr ""
+
+#: ../../source/workflows/proms.rst:263
+msgid "Estimate the forest change area."
+msgstr ""
+

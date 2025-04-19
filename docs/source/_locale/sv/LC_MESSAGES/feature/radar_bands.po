@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2025, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-19 01:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/feature/radar_bands.rst:2
+msgid "Sentinel-1 Radar Bands"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:4
+msgid ""
+"When exporting a radar mosaic from the SEPAL platform, the following "
+"radar band metrics are available for analysis:"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:13
+msgid "Basic Radar Metrics (VV and VH Polarizations)"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:21
+msgid "**Metrics Included**:"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:16
+msgid ""
+"*VV_min, VV_max, VV_mean, VV_std, VV_med*: Statistics of the VV "
+"polarization signal, covering minimum, maximum, mean, standard deviation,"
+" and median."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:17
+msgid ""
+"*VH_min, VH_max, VH_mean, VH_std, VH_med*: Similar statistics for the VH "
+"polarization."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:18
+msgid ""
+"*ratio_VV_med_VH_med*: The ratio of the median values of VV to VH "
+"polarizations, indicating surface roughness and moisture."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:19
+msgid ""
+"*VV_cv, VH_cv*: Coefficient of variation for VV and VH, showing the "
+"variability relative to the mean."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:20
+msgid ""
+"*NDCV (Normalized Difference Coefficient of Variation)*: A normalized "
+"measure that highlights differences in texture or moisture content "
+"between VV and VH returns."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:21
+msgid ""
+"*orbit*: The orbit direction (ascending or descending), which can affect "
+"the radar's observation angle and thus the backscatter properties."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:23
+msgid ""
+"**Description**: These metrics are essential for analyzing surface "
+"features, moisture content, vegetation, and other land cover "
+"characteristics using radar backscatter properties."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:24
+msgid ""
+"**Usage**: Widely used in agricultural monitoring, flood mapping, forest "
+"monitoring, and urban expansion studies."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:27
+msgid "Harmonic Analysis Metrics (Conditional on Data Availability)"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:30
+msgid "**Metrics Included** (Only if harmonic dependents are available):"
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:30
+msgid ""
+"*VV_phase, VV_amp, VV_res*: Phase, amplitude, and residuals of the VV "
+"signal following harmonic analysis."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:31
+msgid "*VH_phase, VH_amp, VH_res*: Similar metrics for the VH signal."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:32
+msgid ""
+"**Description**: Harmonic analysis metrics help in understanding seasonal"
+" variations and temporal patterns in the radar signal, useful for long-"
+"term monitoring."
+msgstr ""
+
+#: ../../source/feature/radar_bands.rst:33
+msgid ""
+"**Usage**: Ideal for studying seasonal changes in vegetation, detecting "
+"changes in water bodies over time, and monitoring environmental changes."
+msgstr ""
+

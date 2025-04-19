@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2025, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-19 01:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/feature/visualization.rst:2
+msgid "Visualization in SEPAL"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:6
+msgid "**Natural color: red, green, blue**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:5
+msgid ""
+"**Description**: Represents the true color of the terrain as human eyes "
+"would see it, using the red, green, and blue bands."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:6
+msgid ""
+"**Usage**: Used for general mapping and visual inspections where true "
+"color representation is necessary."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:10
+msgid "**False color: nir, red, green**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:9
+msgid ""
+"**Description**: Uses near-infrared, red, and green bands. Vegetation "
+"appears red due to the high reflection of NIR by healthy vegetation, "
+"helpful for distinguishing vegetative areas."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:10
+msgid ""
+"**Usage**: Commonly used in vegetation studies to easily distinguish live"
+" green vegetation, which reflects NIR strongly."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:14
+msgid "**False color: nir, swir1, red**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:13
+msgid ""
+"**Description**: Combines near-infrared, short-wave infrared, and red "
+"bands. This combination is effective in highlighting vegetation and "
+"differentiating moisture levels and geological features."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:14
+msgid ""
+"**Usage**: Useful in geological mapping, vegetation health assessment, "
+"and moisture content analysis."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:18
+msgid "**False color: swir2, nir, red**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:17
+msgid ""
+"**Description**: Utilizes short-wave infrared, near-infrared, and red "
+"bands. It enhances the differentiation between mineral types and can "
+"indicate burn severity in post-fire assessments."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:18
+msgid ""
+"**Usage**: Often used in mineralogical mapping, soil and rock "
+"differentiation, and detecting burned areas."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:22
+msgid "**False color: swir2, swir1, red**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:21
+msgid ""
+"**Description**: Involves short-wave infrared bands and red band. This "
+"setup enhances geological features and is sensitive to water content and "
+"urban areas."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:22
+msgid ""
+"**Usage**: Ideal for enhanced geological mapping, urban sprawl studies, "
+"and discriminating between different water bodies."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:26
+msgid "**False color: swir2, nir, green**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:25
+msgid ""
+"**Description**: Features short-wave infrared, near-infrared, and green "
+"bands. This visualization aids in the analysis of vegetation health and "
+"soil/water interactions."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:26
+msgid ""
+"**Usage**: Useful for detailed vegetation health monitoring and "
+"differentiating water stress in plants."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:30
+msgid "**Tasseled cap: brightness, greenness, wetness**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:29
+msgid ""
+"**Description**: Applies the Tasseled Cap transformation to highlight "
+"physical properties of the land surface such as brightness "
+"(reflectivity), greenness (vegetation), and wetness (moisture content)."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:30
+msgid ""
+"**Usage**: Extensively used in environmental monitoring, land cover "
+"classification, and assessing vegetation and water content dynamics."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:33
+msgid "**Tasseled cap: fifth, sixth, fourth**"
+msgstr ""
+
+#: ../../source/feature/visualization.rst:33
+msgid ""
+"**Description**: Another Tasseled Cap visualization focusing on the "
+"additional components that might reflect other surface properties not "
+"captured by the primary three bands."
+msgstr ""
+
+#: ../../source/feature/visualization.rst:34
+msgid ""
+"**Usage**: Useful for specialized studies in vegetation dynamics, soil "
+"properties, and other environmental monitoring where standard Tasseled "
+"Cap indices might need supplementation."
+msgstr ""
+

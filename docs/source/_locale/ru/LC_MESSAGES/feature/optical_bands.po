@@ -1,0 +1,954 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2025, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-19 01:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/feature/optical_bands.rst:2
+msgid "Optical Satellite bands, transformations, and indices"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:4
+msgid ""
+"When exporting an optical satellite image in SEPAL, you can choose from a"
+" variety of bands, transformations, and indices to enhance your analysis "
+"and visualization. Understanding the characteristics and applications of "
+"different bands can help you optimize your image processing workflow and "
+"extract valuable insights from satellite data."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:13
+msgid "Bands"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:15
+msgid ""
+"Satellite imagery is composed of multiple bands, each capturing light in "
+"specific wavelengths. Depending on the satellite sensor and mission, "
+"SEPAL offers a range of bands that can be used for export and analysis."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Band"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Sentinel 2"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Landsat 9"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Landsat 8"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Landsat 7"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:18
+msgid "Landsat TM"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:20
+msgid "pan"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:20
+#: ../../source/feature/optical_bands.rst:22
+#: ../../source/feature/optical_bands.rst:32
+#: ../../source/feature/optical_bands.rst:34
+#: ../../source/feature/optical_bands.rst:36
+#: ../../source/feature/optical_bands.rst:38
+#: ../../source/feature/optical_bands.rst:44
+#: ../../source/feature/optical_bands.rst:46
+#: ../../source/feature/optical_bands.rst:48
+#: ../../source/feature/optical_bands.rst:50
+msgid "❌"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:20
+#: ../../source/feature/optical_bands.rst:22
+#: ../../source/feature/optical_bands.rst:24
+#: ../../source/feature/optical_bands.rst:26
+#: ../../source/feature/optical_bands.rst:28
+#: ../../source/feature/optical_bands.rst:30
+#: ../../source/feature/optical_bands.rst:32
+#: ../../source/feature/optical_bands.rst:34
+#: ../../source/feature/optical_bands.rst:36
+#: ../../source/feature/optical_bands.rst:38
+#: ../../source/feature/optical_bands.rst:40
+#: ../../source/feature/optical_bands.rst:42
+#: ../../source/feature/optical_bands.rst:44
+#: ../../source/feature/optical_bands.rst:46
+#: ../../source/feature/optical_bands.rst:48
+#: ../../source/feature/optical_bands.rst:50
+#: ../../source/feature/optical_bands.rst:52
+#: ../../source/feature/optical_bands.rst:54
+#: ../../source/feature/optical_bands.rst:56
+#: ../../source/feature/optical_bands.rst:58
+#: ../../source/feature/optical_bands.rst:60
+#: ../../source/feature/optical_bands.rst:62
+msgid "✅"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:22
+msgid "aerosol"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:24
+msgid "blue"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:26
+msgid "green"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:28
+msgid "red"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:30
+msgid "nir"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:32
+msgid "redEdge1"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:34
+msgid "redEdge2"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:36
+msgid "redEdge3"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:38
+msgid "redEdge4"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:40
+msgid "swir1"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:42
+msgid "swir2"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:44
+msgid "cirrus"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:46
+msgid "thermal"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:48
+msgid "thermal2"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:50
+msgid "waterVapor"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:52
+msgid "brightness"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:54
+msgid "greenness"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:56
+msgid "wetness"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:58
+msgid "fourth"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:60
+msgid "fifth"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:62
+msgid "sixth"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:66
+msgid "Description"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:72
+msgid "**Pan (Panchromatic)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:69
+msgid ""
+"**Description**: Captures data in a single broad wavelength band, "
+"offering higher spatial resolution."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:70
+#: ../../source/feature/optical_bands.rst:77
+#: ../../source/feature/optical_bands.rst:84
+#: ../../source/feature/optical_bands.rst:91
+#: ../../source/feature/optical_bands.rst:98
+#: ../../source/feature/optical_bands.rst:105
+#: ../../source/feature/optical_bands.rst:111
+#: ../../source/feature/optical_bands.rst:118
+#: ../../source/feature/optical_bands.rst:125
+#: ../../source/feature/optical_bands.rst:132
+#: ../../source/feature/optical_bands.rst:138
+#: ../../source/feature/optical_bands.rst:144
+msgid "**Wavelengths**:"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:71
+msgid "0.500-0.680 µm, only for Landsat."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:72
+msgid "**Usage**: High-resolution imaging for mapping and urban planning."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:79
+msgid "**Aerosol**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:75
+msgid ""
+"**Description**: Used for detecting aerosols (tiny particles) in the "
+"atmosphere, which can be crucial for air quality monitoring and climate "
+"studies."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:77
+msgid "0.433-0.453 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:78
+msgid "0.443-0.463 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:79
+msgid "**Usage**: Air pollution assessment, wildfire smoke tracking."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:86
+msgid "**Blue**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:82
+msgid "**Description**: Captures light in the blue wavelength."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:84
+msgid "0.450-0.510 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:85
+msgid "0.490-0.555 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:86
+msgid ""
+"**Usage**: Coastal water mapping, vegetation health monitoring, and "
+"identification of shallow water bodies."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:93
+msgid "**Green**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:89
+msgid "**Description**: Captures light in the green wavelength."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:91
+msgid "0.530-0.590 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:92
+msgid "0.560-0.595 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:93
+msgid "**Usage**: Mapping vegetation, water bodies, and urban areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:100
+msgid "**Red**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:96
+msgid "**Description**: Captures light in the red wavelength."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:98
+msgid "0.640-0.670 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:99
+msgid "0.665-0.695 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:100
+msgid ""
+"**Usage**: Vegetation analysis, especially in calculating vegetation "
+"indices like NDVI."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:107
+msgid "**NIR (Near-Infrared)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:103
+msgid "**Description**: Captures light in the near-infrared spectrum."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:105
+msgid "0.850-0.880 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:106
+msgid "0.780-0.900 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:107
+msgid ""
+"**Usage**: Differentiating between vegetation and water, and monitoring "
+"vegetation health."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:113
+msgid "**Red Edge (4)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:110
+msgid ""
+"**Description**: 4 narrow Bands in the VNIR vegetation red edge spectral "
+"domain: Red edge 1, Red edge 2, Red edge 3, Red edge 4, is a region of "
+"the electromagnetic spectrum where the spectral reflectance of green "
+"vegetation changes rapidly"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:112
+msgid "~704nm,~740nm, ~783nm and ~865nm, only for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:113
+msgid ""
+"**Usage**: Detailed vegetation health monitoring, particularly for "
+"precision agriculture."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:120
+msgid "**SWIR 1 (Shortwave Infrared 1)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:116
+#: ../../source/feature/optical_bands.rst:123
+msgid "**Description**: Captures light in the shortwave infrared spectrum."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:118
+msgid "1.570-1.650 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:119
+msgid "1.560-1.660 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:120
+msgid ""
+"**Usage**: Detecting moisture content in soil and vegetation, mapping "
+"burned areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:127
+msgid "**SWIR 2 (Shortwave Infrared 2)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:125
+msgid "2.110-2.290 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:126
+msgid "2.100-2.280 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:127
+msgid ""
+"**Usage**: Distinguishing snow from clouds, mapping geological features, "
+"and burn scars."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:134
+msgid "**Cirrus**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:130
+msgid "**Description**: A band designed to detect high-altitude cirrus clouds."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:132
+msgid "1.360-1.380 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:133
+msgid "1.360-1.390 µm for Sentinel-2."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:134
+msgid ""
+"**Usage**: Cloud screening in high-altitude regions to improve "
+"atmospheric correction."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:140
+msgid "**Thermal 1**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:137
+#: ../../source/feature/optical_bands.rst:143
+msgid ""
+"**Description**: Measures thermal radiation emitted by the Earth's "
+"surface."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:139
+msgid "10.60-11.19 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:140
+#: ../../source/feature/optical_bands.rst:146
+msgid ""
+"**Usage**: Monitoring land surface temperature, detecting fires, and "
+"assessing volcanic activity."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:146
+msgid "**Thermal 2**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:145
+msgid "11.50-12.51 µm for Landsat 8 and 9."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:151
+msgid "**Water Vapor**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:149
+msgid ""
+"**Description**: Sensitive to atmospheric water vapor absorption, "
+"commonly used for weather and climate studies."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:150
+msgid "**Usage**: Studying cloud formation, precipitation, and humidity levels."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:154
+msgid "Tasseled Cap Transformation"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:156
+msgid ""
+"The Tasseled Cap Transformation is a method to transform satellite "
+"imagery into three brightness components (Brightness, Greenness, and "
+"Wetness) and three color components (Red, Green, and Blue). This "
+"transformation is particularly useful for analyzing land cover changes, "
+"vegetation health, and urban development over time."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:160
+msgid "**Brightness**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:159
+msgid ""
+"**Description**: Measures the brightness band measures the overall "
+"brightness of the image, specifically the soil."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:160
+msgid ""
+"**Usage**: this band is often used to identify bare or partially covered "
+"soil, man-made features, and natural features like asphalt, concrete, "
+"gravel, and rock outcrops."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:164
+msgid "**Greenness**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:163
+msgid ""
+"**Description**: Measures the density and health of vegetation by "
+"capitalizing on the chlorophyll absorption in the red band and the high "
+"reflectance in the near-infrared band. It enhances the contrast between "
+"vegetated areas and non-vegetated areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:164
+msgid ""
+"**Usage**: Widely used in assessing plant health, monitoring crop "
+"conditions, tracking forest cover changes, and managing natural "
+"resources."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:168
+msgid "**Wetness**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:167
+msgid ""
+"**Description**: Captures moisture content in both soil and vegetation. "
+"This band is sensitive to the moisture continuum from dry to wet "
+"surfaces, helping to differentiate moist soils and saturated vegetation "
+"from dry areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:168
+msgid ""
+"**Usage**: Important for identifying wetlands, managing irrigation in "
+"agriculture, detecting flood-prone areas, and conducting soil moisture "
+"studies."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:172
+msgid "**Fourth Component**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:171
+msgid ""
+"**Description**: Often calibrated to highlight additional properties of "
+"vegetation or soil, such as senescence or specific soil types. The exact "
+"nature of this band can vary depending on the coefficients and sensor "
+"used."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:172
+msgid ""
+"**Usage**: Can be used to differentiate between types of vegetation or "
+"stages of crop maturity, and to detect stressed vegetation in forestry "
+"and agriculture."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:176
+msgid "**Fifth Component**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:175
+msgid ""
+"**Description**: Typically emphasizes land disturbance or variability in "
+"land cover types, providing a finer distinction between different types "
+"of ground cover and land use."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:176
+msgid ""
+"**Usage**: Useful in monitoring land cover changes over time, detecting "
+"disturbances like deforestation or urban expansion, and enhancing land "
+"cover classification schemes."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:181
+msgid "**Sixth Component**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:179
+msgid ""
+"**Description**: This band often captures more subtle or residual "
+"information that the other bands do not emphasize. It can be less "
+"directly interpretable and might be seen as highlighting noise or "
+"anomalies in the data."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:180
+msgid ""
+"**Usage**: Potentially useful for detecting subtle ecological changes, "
+"analyzing noise in the data for improved image processing, and refining "
+"classifications by providing additional context."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:184
+msgid "Vegetation Indices"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:186
+msgid ""
+"Vegetation indices are mathematical transformations of satellite data "
+"that highlight specific vegetation properties, such as chlorophyll "
+"content, leaf area, or vegetation health. These indices are widely used "
+"in agriculture, forestry, and environmental monitoring to assess plant "
+"growth, detect stress, and monitor land cover changes."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:191
+msgid "**NDVI (Normalized Difference Vegetation Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:189
+msgid ""
+"**Description**: Measures the density and health of vegetation by "
+"calculating the difference between the near-infrared (NIR) and red light "
+"reflected by vegetation. Healthy vegetation absorbs most of the visible "
+"light and reflects a large portion of the NIR."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:190
+msgid ""
+"**Usage**: Used to assess vegetation health, monitor drought, and manage "
+"agricultural operations."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:191
+msgid "**Formula**: (NIR - Red) / (NIR + Red)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:196
+msgid "**NDMI (Normalized Difference Moisture Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:194
+msgid ""
+"**Description**: Highlights moisture content in vegetation by utilizing "
+"the NIR and short-wave infrared (SWIR1) bands. It is sensitive to "
+"moisture content in vegetation."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:195
+msgid ""
+"**Usage**: Useful in monitoring vegetation hydration and managing "
+"irrigation in agricultural contexts."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:196
+msgid "**Formula**: (NIR - SWIR1) / (NIR + SWIR1)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:201
+msgid "**NDWI (Normalized Difference Water Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:199
+msgid ""
+"**Description**: Designed to identify and monitor changes in water "
+"content in vegetation, leveraging the green and NIR bands to maximize the"
+" reflection differences."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:200
+msgid ""
+"**Usage**: Employed in monitoring water stress in crops, detecting water "
+"bodies, and managing wetland areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:201
+msgid "**Formula**: (Green - NIR) / (Green + NIR)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:206
+msgid "**MNDWI (Modified Normalized Difference Water Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:204
+msgid ""
+"**Description**: Enhances the detection of surface water by using the "
+"green and SWIR1 bands, reducing the influence of built-up land that can "
+"be confused with water in traditional NDWI."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:205
+msgid ""
+"**Usage**: Used to map and monitor surface water bodies, crucial for "
+"flood mapping and water resource management."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:206
+msgid "**Formula**: (Green - SWIR1) / (Green + SWIR1)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:211
+msgid "**NDFI (Normalized Difference Fraction Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:209
+msgid ""
+"**Description**: Typically used to distinguish between different types of"
+" vegetation and non-vegetation elements, providing a measure of "
+"vegetation cover fraction."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:210
+msgid ""
+"**Usage**: Utilized in forest management and land cover classification "
+"tasks."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:211
+msgid "**Formula**: Index-specific, varies based on application."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:216
+msgid "**EVI (Enhanced Vegetation Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:214
+msgid ""
+"**Description**: Improves the NDVI by optimizing the vegetation signal "
+"with improved sensitivity in high biomass regions and reducing background"
+" and atmospheric noise."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:215
+msgid ""
+"**Usage**: Frequently used in areas where vegetation monitoring requires "
+"greater sensitivity to biomass."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:216
+msgid "**Formula**: 2.5 * (NIR - Red) / (NIR + 6 * Red - 7.5 * Blue + 1)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:221
+msgid "**EVI2 (Enhanced Vegetation Index 2)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:219
+msgid ""
+"**Description**: A refinement of EVI that uses only red and NIR bands, "
+"designed for areas where blue band data may not be reliable."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:220
+msgid ""
+"**Usage**: Ideal for vegetation monitoring through dense atmosphere or "
+"where the blue band is unavailable."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:221
+msgid "**Formula**: 2.5 * (NIR - Red) / (NIR + 2.4 * Red + 1)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:226
+msgid "**SAVI (Soil-Adjusted Vegetation Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:224
+msgid ""
+"**Description**: Adjusts the NDVI for the influence of soil brightness, "
+"particularly useful in areas with sparse vegetation where soil is "
+"visible."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:225
+msgid ""
+"**Usage**: Applied in semi-arid regions to improve the accuracy of "
+"vegetation assessments."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:226
+msgid "**Formula**: (1.5 * (NIR - Red) / (NIR + Red + 0.5))"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:231
+msgid "**NBR (Normalized Burn Ratio)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:229
+msgid ""
+"**Description**: Utilizes NIR and SWIR2 bands to assess the severity of "
+"burn damage and the delineation of burned areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:230
+msgid ""
+"**Usage**: Key for assessing post-fire recovery in forested areas and "
+"mapping burn severity."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:231
+msgid "**Formula**: (NIR - SWIR2) / (NIR + SWIR2)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:236
+msgid "**MVI (Mangrove Vegetation Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:234
+msgid ""
+"**Description**: Specifically designed to enhance the detection and "
+"monitoring of mangrove forests by using NIR and green bands."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:235
+msgid ""
+"**Usage**: Used in coastal management and conservation of mangrove "
+"ecosystems."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:236
+msgid "**Formula**: 0.1 * (NIR - Green) / abs(SWIR1 - Green)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:241
+msgid "**UI (Urban Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:239
+msgid ""
+"**Description**: Highlights urban areas by exploiting the differences in "
+"reflection between SWIR2 and NIR bands."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:240
+msgid ""
+"**Usage**: Useful for urban mapping and monitoring changes in urban land "
+"use."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:241
+msgid "**Formula**: (SWIR2 - NIR) / (SWIR2 + NIR)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:246
+msgid "**NDBI (Normalized Difference Built-up Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:244
+msgid ""
+"**Description**: Differentiates urban and built-up areas from natural "
+"land cover by using NIR and SWIR1 bands."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:245
+msgid "**Usage**: Employed in urban planning and studying urban heat islands."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:246
+msgid "**Formula**: (SWIR1 - NIR) / (SWIR1 + NIR)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:251
+msgid "**IBI (Index-based Built-up Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:249
+msgid ""
+"**Description**: Combines NDBI with SAVI and MNDWI to provide a more "
+"comprehensive measure of built-up areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:250
+msgid "**Usage**: Useful in detailed urban analysis and land use classification."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:251
+msgid "**Formula**: (NDBI - (SAVI + MNDWI) / 2) / (NDBI + (SAVI + MNDWI) / 2)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:256
+msgid "**NBI (New Built-up Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:254
+msgid ""
+"**Description**: Employs red, NIR, and SWIR1 bands to enhance the "
+"detection of built-up areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:255
+msgid "**Usage**: Applied in urban growth monitoring and land use planning."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:256
+msgid "**Formula**: Red * SWIR1 / NIR"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:261
+msgid "**EBBI (Enhanced Built-Up and Bareness Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:259
+msgid ""
+"**Description**: Focuses on urban areas and bare land by incorporating "
+"thermal and SWIR1 bands to detect built-up regions."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:260
+msgid ""
+"**Usage**: Crucial for urban mapping and identifying heat-stressed areas "
+"in cities."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:261
+msgid "**Formula**: (SWIR1 - NIR) / (10 * sqrt(SWIR1 + Thermal))"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:266
+msgid "**BUI (Built-Up Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:264
+msgid ""
+"**Description**: Combines multiple SWIR bands to enhance the detection "
+"and differentiation of built-up areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:265
+msgid ""
+"**Usage**: Employed in urban and regional planning to delineate built-up "
+"from natural areas."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:266
+msgid ""
+"**Formula**: (Red - SWIR1) / (Red + SWIR1) + (SWIR2 - SWIR1) / (SWIR2 + "
+"SWIR1)"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:270
+msgid "**KNDVI (Kernel Normalized Difference Vegetation Index)**"
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:269
+msgid ""
+"**Description**: Applies a kernel function to traditional NDVI to improve"
+" sensitivity and accuracy in vegetation monitoring."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:270
+msgid ""
+"**Usage**: Used in precision agriculture and detailed vegetation studies "
+"where standard NDVI is not sufficient."
+msgstr ""
+
+#: ../../source/feature/optical_bands.rst:271
+msgid ""
+"**Formula**: Kernel-function applied to NDVI, specific implementation "
+"details vary."
+msgstr ""
+
