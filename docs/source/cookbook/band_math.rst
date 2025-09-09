@@ -15,28 +15,33 @@ Creating a Band Math recipe
 Click :btn:`<fa-solid fa-plus> Add recipe` in the recipe list and choose **Band Math**. SEPAL opens a new tab for your recipe. On the right‑hand side you will see three vertically stacked tabs labelled :guilabel:`IMG`, :guilabel:`CAL` and :guilabel:`OUT` corresponding to *Input imagery*, *Calculations* and *Outputs*.
 
 .. thumbnail:: ../_images/cookbook/band_math/1_select_recipe.png
-    :width: 48%
-    :title: Recipe selection menu
-    :align: center
+   :width: 48%
+   :group: creating-a-band-math-recipe
+   :title: Recipe selection menu
 
 .. thumbnail:: ../_images/cookbook/band_math/2_recipe_options.png
-    :width: 48%
-    :title: Band Math recipe interface
-    :align: center
+   :group: creating-a-band-math-recipe
+   :width: 48%
+   :title: Band Math recipe interface
 
-Select the :guilabel:`IMG` tab. Click :btn:`<fa-solid fa-plus> Add` and then **Earth Engine Asset**. An entry form appears where you can provide a Google Earth Engine image. Paste a valid asset ID into the **Earth Engine asset ID** field (for example the Landsat 8 Level‑2 scene ``LANDSAT/LC08/C02/T1_L2/LC08_232064_20200119``). Leave the **Image name** as the default (``i1``) unless you intend to add multiple images. Use the tick icon to validate the ID; if the field turns red the asset is not available. Once it loads successfully you will see a section labelled **CONTINUOUS** listing the available bands.
+Select the :guilabel:`IMG` button. Click :btn:`<fa-solid fa-plus> Add` and then **Earth Engine Asset**. An entry form appears where you can provide a Google Earth Engine image. Paste a valid asset ID into the **Earth Engine asset ID** field (for example the Landsat 8 Level‑2 scene ``LANDSAT/LC08/C02/T1_L2/LC08_232064_20200119``). Leave the **Image name** as the default (``i1``) unless you intend to add multiple images. Use the tick icon to validate the ID; if the field turns red the asset is not available. Once it loads successfully you will see a section labelled **CONTINUOUS** listing the available bands.
 
 .. thumbnail:: ../_images/cookbook/band_math/3_band_selection.png
     :width: 70%
     :title: Band selection interface
     :align: center
 
-Specify which bands you need. Click the green :btn:`<fa-solid fa-plus> Add` button to insert a row, select the band name from the drop‑down list and leave the :guilabel:`TYPE` as **CONTINUOUS**. Repeat this step for every band referenced in your expression. For a vegetation index select the red band ``SR_B4`` and the near‑infrared band ``SR_B5``. When you have added all your bands, click :btn:`<fa-solid fa-check> Apply` to confirm and then :btn:`<fa-solid fa-check> Done` to return to the map. The :guilabel:`IMG` tab now lists your Earth Engine asset and the chosen bands.
+Specify which bands you need. Click the green :btn:`<fa-solid fa-plus> Add` button to insert a row, select the band name from the drop‑down list and leave the :guilabel:`TYPE` as **CONTINUOUS**. Repeat this step for every band referenced in your expression. For a vegetation index select the red band ``SR_B4`` and the near‑infrared band ``SR_B5``. When you have added all your bands, click :btn:`<fa-solid fa-check> Apply` to confirm. The :guilabel:`IMG` tab now lists your Earth Engine asset and the chosen name.
+
+.. thumbnail:: ../_images/cookbook/band_math/9_band_type.png
+    :width: 70%
+    :title: Band selection interface
+    :align: center
 
 Defining a calculation
 ----------------------
 
-Switch to the :guilabel:`CAL` tab and click :btn:`<fa-solid fa-plus> Add`. A dialog appears offering two paths: **Function** and **Expression**. Choose **Function** when you want SEPAL to compute built‑in statistics (sum, mean, min, max, product) on your bands. Choose **Expression** when you need to write a custom formula. For indices you will almost always select **Expression**.
+Switch to the :guilabel:`CAL` tab and click :btn:`<fa-solid fa-plus> Add`. A dialog appears offering two paths: **Function** and **Expression**. Choose **Function** when you want to compute built‑in statistics (sum, mean, min, max, product) on your bands. Choose **Expression** when you need to write a custom formula. For indices you will almost always select **Expression**.
 
 .. thumbnail:: ../_images/cookbook/band_math/4_expression_or_function.png
     :width: 70%
@@ -49,13 +54,18 @@ In the expression editor type your formula. Refer to each band using its image n
 
       (i1.SR_B5 - i1.SR_B4) / (i1.SR_B5 + i1.SR_B4)
 
-   You could just as easily substitute other bands or constants, for example the Normalised Difference Water Index (NDWI) ``(i1.SR_B3 - i1.SR_B5) / (i1.SR_B3 + i1.SR_B5)`` or a simple ratio like ``i1.SR_B5 / i1.SR_B4``.
+You could just as easily substitute other bands or constants, for example the Normalised Difference Water Index (NDWI) ``(i1.SR_B3 - i1.SR_B5) / (i1.SR_B3 + i1.SR_B5)`` or a simple ratio like ``i1.SR_B5 / i1.SR_B4``.
 
 Enter a short Band name beneath the editor. This will be the label of the resulting layer – for example ``ndvi`` for a vegetation index.
 
+.. thumbnail:: ../_images/cookbook/band_math/5_expression.png
+    :width: 70%
+    :title: Expression editor with NDVI formula
+    :align: center
+
 Click :btn:`<fa-solid fa-check> Apply`. Your calculation appears in the list with an identifier such as ``c1``. You can add additional calculations by repeating this process; each one becomes a separate output band.
 
-.. thumbnail:: ../_images/cookbook/band_math/5_expression.png
+.. thumbnail:: ../_images/cookbook/band_math/10_calculation_snippet.png
     :width: 70%
     :title: Expression editor with NDVI formula
     :align: center
@@ -63,7 +73,7 @@ Click :btn:`<fa-solid fa-check> Apply`. Your calculation appears in the list wit
 Managing outputs and naming
 ---------------------------
 
-The :guilabel:`OUT` tab displays the bands produced by your expressions. Check that the band names are correct. You can delete or reorder them using the icons on the right of each row. Above the map the recipe tab uses a default timestamp; rename it by double‑clicking the label, entering a descriptive name (for example ``Amazon_BandMath``) and pressing **Enter**. When everything looks correct close the :guilabel:`OUT` tab.
+The :guilabel:`OUT` tab displays the bands produced by your expressions. Check that the band names are correct. You can delete or add them using the icons on the right of each row. Above the map the recipe tab uses a default timestamp; rename it by double‑clicking the label, entering a descriptive name (for example ``Amazon_BandMath``) and pressing **Enter**. When everything looks correct close the :guilabel:`OUT` tab.
 
 .. thumbnail:: ../_images/cookbook/band_math/6_output_band.png
     :width: 70%
