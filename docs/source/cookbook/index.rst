@@ -30,6 +30,7 @@ Recipes in the SEPAL cookbook include:
     ccdc
     ccdc_slice
     class_change
+    band_math
 
 Gallery
 -------
