@@ -84,7 +84,7 @@ Obtain forest probability maps for Time 1 and Time 2 through supervised classifi
 Using SEPAL's Classification Tool:
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-SEPAL offers a user-friendly `Classification tool <https://docs.sepal.io/en/latest/modules/Classification.html>`__ for building supervised classifications.
+SEPAL offers a user-friendly `Classification tool <https://docs.sepal.io/en/latest/cookbook/classification.html>`__ for building supervised classifications.
 
 Case Study Implementation:
 &&&&&&&&&&&&&&&&&&&&&&&&&&
