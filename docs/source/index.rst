@@ -27,6 +27,7 @@ Documentation
    CLI<cli/index>
    Workflows<workflows/index>
    Features<feature/index>
+   Troubleshooting<troubleshooting/index>
     <team/index>
 
 .. line-break::

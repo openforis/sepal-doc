@@ -32,6 +32,7 @@ extensions = [
     "sphinxcontrib.bibtex",
     "sphinx_design",
     "sphinx_togglebutton",
+    "sphinx_copybutton",
     "sphinx_favicon",
     "sphinx_last_updated_by_git",
     "notfound.extension",

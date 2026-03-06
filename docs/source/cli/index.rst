@@ -18,6 +18,7 @@ To help resolve specific problems, the SEPAL platform includes a variety of usef
     otb
     python
     r
+    env_management
 
 These tools can be called directly from the terminal or via any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account).
 
