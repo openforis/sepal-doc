@@ -63,8 +63,35 @@ Why use uv
 - **Manages multiple Python versions.** ``uv python install 3.10`` lets you run any Python version without touching the system.
 - **Single lightweight binary.** No base environment, no shell hooks, no overhead.
 
-Creating a uv environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating a uv project (recommended)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``uv init`` creates a project with a ``pyproject.toml`` and a lockfile, giving you reproducible installs and clean dependency tracking:
+
+.. code-block:: bash
+
+   # Create a new project directory with Python 3.12
+   mkdir ~/myproject && cd ~/myproject
+   uv init --python 3.12
+
+   # Add packages
+   uv add numpy pandas matplotlib
+
+   # Run a script inside the environment
+   uv run python myscript.py
+
+uv automatically creates a ``.venv`` inside the project directory, generates a ``uv.lock`` lockfile, and tracks all dependencies in ``pyproject.toml``. You do not need to activate anything — ``uv run`` handles it.
+
+To reproduce the environment elsewhere (or after a fresh clone):
+
+.. code-block:: bash
+
+   uv sync
+
+Creating a standalone uv environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you do not need a full project structure — for example, when working with an existing ``requirements.txt`` — you can create a standalone environment:
 
 .. code-block:: bash
 
@@ -85,18 +112,26 @@ Adding a Jupyter kernel
 
 Register your environment as a named kernel so it appears in JupyterLab:
 
+**For uv projects:**
+
 .. code-block:: bash
 
-   # Activate the environment first
+   cd ~/myproject
+   uv add ipykernel
+   uv run python -m ipykernel install --user --name myproject --display-name "My Project (3.12)"
+
+**For standalone uv environments:**
+
+.. code-block:: bash
+
    source ~/envs/myproject/bin/activate
-
-   # Install ipykernel inside the environment
    uv pip install ipykernel
-
-   # Register as a Jupyter kernel
    python -m ipykernel install --user --name myproject --display-name "My Project (3.12)"
 
-   # Verify it appears
+Verify it appears:
+
+.. code-block:: bash
+
    jupyter kernelspec list
 
 To remove a kernel:
