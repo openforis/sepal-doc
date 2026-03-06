@@ -10,14 +10,15 @@ To help resolve specific problems, the SEPAL platform includes a variety of usef
 .. toctree::
     :maxdepth: 1
 
-    gdal
-    gdrive
-    gee
-    gwb
-    ofgt
-    otb
-    python
-    r
+    GDAL — Geospatial Data Abstraction Library<gdal>
+    Google Drive<gdrive>
+    Google Earth Engine<gee>
+    GuidosToolbox Workbench<gwb>
+    Open Foris Geospatial Toolkit<ofgt>
+    Orfeo ToolBox<otb>
+    Python<python>
+    R<r>
+    Python environment management<env_management>
 
 These tools can be called directly from the terminal or via any programming language sending commands to the kernel, including R and Python (installed by default on any SEPAL account).
 
