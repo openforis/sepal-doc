@@ -8,14 +8,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"POT-Creation-Date: 2026-03-08 01:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/index.rst:10
+msgid "GDAL — Geospatial Data Abstraction Library"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Google Drive"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Google Earth Engine"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "GuidosToolbox Workbench"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Open Foris Geospatial Toolkit"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Orfeo ToolBox"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Python"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "R"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Python environment management"
+msgstr ""
 
 #: ../../source/cli/index.rst:2
 msgid "CLI"
@@ -35,30 +71,30 @@ msgid ""
 "of useful command-line interface (CLI) utilities, including:"
 msgstr ""
 
-#: ../../source/cli/index.rst:22
+#: ../../source/cli/index.rst:23
 msgid ""
 "These tools can be called directly from the terminal or via any "
 "programming language sending commands to the kernel, including R and "
 "Python (installed by default on any SEPAL account)."
 msgstr ""
 
-#: ../../source/cli/index.rst:29
+#: ../../source/cli/index.rst:30
 msgid "The code executed previously on an existing :code:`example.tif` file:"
 msgstr ""
 
-#: ../../source/cli/index.rst:37
+#: ../../source/cli/index.rst:38
 msgid ""
 "If you're running actions from multiple directories or instances, you can"
 " open multiple **Terminal** tabs and name them as you see fit."
 msgstr ""
 
-#: ../../source/cli/index.rst:41
+#: ../../source/cli/index.rst:42
 msgid ""
 "If the code you want to execute is taking time, consider running it in "
 "the background using :code:`nohup`:"
 msgstr ""
 
-#: ../../source/cli/index.rst:47
+#: ../../source/cli/index.rst:48
 msgid ""
 "All console outputs will be redirected to a :code:`nohup.out` in your "
 "home directory, but the execution will be running in the background. You "
@@ -68,29 +104,29 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Nohup>`__)."
 msgstr ""
 
-#: ../../source/cli/index.rst:50
+#: ../../source/cli/index.rst:51
 msgid "Coding tools"
 msgstr ""
 
-#: ../../source/cli/index.rst:52
+#: ../../source/cli/index.rst:53
 msgid ""
 "In the **Apps** section, there are three coding tools at the top of the "
 "list:"
 msgstr ""
 
-#: ../../source/cli/index.rst:54
+#: ../../source/cli/index.rst:55
 msgid "JupyterLab"
 msgstr ""
 
-#: ../../source/cli/index.rst:55
+#: ../../source/cli/index.rst:56
 msgid "Jupyter Notebook"
 msgstr ""
 
-#: ../../source/cli/index.rst:56
+#: ../../source/cli/index.rst:57
 msgid "RStudio"
 msgstr ""
 
-#: ../../source/cli/index.rst:61
+#: ../../source/cli/index.rst:62
 msgid ""
 "They will allow the user to code wokflows in any of the available "
 "languages using the corresponding environment in SEPAL. These "

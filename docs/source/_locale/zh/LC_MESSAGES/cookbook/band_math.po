@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-08 01:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cookbook/band_math.rst:2
+msgid "Band Math"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:4
+msgid ""
+"The **Band Math** recipe in SEPAL allows you to derive new raster layers "
+"from existing ones by evaluating mathematical expressions.  You can "
+"combine, scale or subtract spectral bands, build indices or apply logical"
+" masks.  This guide walks through the Band Math workflow from start to "
+"finish and uses a vegetation index as an example.  The same steps apply "
+"whether you are creating a simple ratio or a complex index."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:7
+msgid "Getting started"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:9
+msgid "Open `sepal.io <https://sepal.io>`_ in your web browser and sign in."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:10
+msgid ""
+"Go to the **Process** page where SEPAL lists your recipes.  If you have "
+"not created any recipes yet this list will be empty."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:13
+msgid "Creating a Band Math recipe"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:15
+msgid ""
+"Click :btn:`<fa-solid fa-plus> Add recipe` in the recipe list and choose "
+"**Band Math**. SEPAL opens a new tab for your recipe. On the right‑hand "
+"side you will see three vertically stacked tabs labelled :guilabel:`IMG`,"
+" :guilabel:`CAL` and :guilabel:`OUT` corresponding to *Input imagery*, "
+"*Calculations* and *Outputs*."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:27
+msgid ""
+"Select the :guilabel:`IMG` button. Click :btn:`<fa-solid fa-plus> Add` "
+"and then **Earth Engine Asset**. An entry form appears where you can "
+"provide a Google Earth Engine image. Paste a valid asset ID into the "
+"**Earth Engine asset ID** field (for example the Landsat 8 Level‑2 scene "
+"``LANDSAT/LC08/C02/T1_L2/LC08_232064_20200119``). Leave the **Image "
+"name** as the default (``i1``) unless you intend to add multiple images. "
+"Use the tick icon to validate the ID; if the field turns red the asset is"
+" not available. Once it loads successfully you will see a section "
+"labelled **CONTINUOUS** listing the available bands."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:34
+msgid ""
+"Specify which bands you need. Click the green :btn:`<fa-solid fa-plus> "
+"Add` button to insert a row, select the band name from the drop‑down list"
+" and leave the :guilabel:`TYPE` as **CONTINUOUS**. Repeat this step for "
+"every band referenced in your expression. For a vegetation index select "
+"the red band ``SR_B4`` and the near‑infrared band ``SR_B5``. When you "
+"have added all your bands, click :btn:`<fa-solid fa-check> Apply` to "
+"confirm. The :guilabel:`IMG` tab now lists your Earth Engine asset and "
+"the chosen name."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:42
+msgid "Defining a calculation"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:44
+msgid ""
+"Switch to the :guilabel:`CAL` tab and click :btn:`<fa-solid fa-plus> "
+"Add`. A dialog appears offering two paths: **Function** and "
+"**Expression**. Choose **Function** when you want to compute built‑in "
+"statistics (sum, mean, min, max, product) on your bands. Choose "
+"**Expression** when you need to write a custom formula. For indices you "
+"will almost always select **Expression**."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:51
+msgid ""
+"In the expression editor type your formula. Refer to each band using its "
+"image name and band name, for example ``i1.SR_B5`` for the near‑infrared "
+"band of the first image. Parentheses control the order of operations. To "
+"compute a vegetation index you can use:"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:57
+msgid ""
+"You could just as easily substitute other bands or constants, for example"
+" the Normalised Difference Water Index (NDWI) ``(i1.SR_B3 - i1.SR_B5) / "
+"(i1.SR_B3 + i1.SR_B5)`` or a simple ratio like ``i1.SR_B5 / i1.SR_B4``."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:59
+msgid ""
+"Enter a short Band name beneath the editor. This will be the label of the"
+" resulting layer – for example ``ndvi`` for a vegetation index."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:66
+msgid ""
+"Click :btn:`<fa-solid fa-check> Apply`. Your calculation appears in the "
+"list with an identifier such as ``c1``. You can add additional "
+"calculations by repeating this process; each one becomes a separate "
+"output band."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:74
+msgid "Managing outputs and naming"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:76
+msgid ""
+"The :guilabel:`OUT` tab displays the bands produced by your expressions. "
+"Check that the band names are correct. You can delete or add them using "
+"the icons on the right of each row. Above the map the recipe tab uses a "
+"default timestamp; rename it by double‑clicking the label, entering a "
+"descriptive name (for example ``Amazon_BandMath``) and pressing "
+"**Enter**. When everything looks correct close the :guilabel:`OUT` tab."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:84
+msgid "Visualising the results"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:86
+msgid ""
+"By default your calculation is not drawn on the map. To create a "
+"visualisation:"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:88
+msgid ""
+"Locate the small :btn:`<fa-solid fa-bars>` icon near the bottom centre of"
+" the map and click it. This opens the **This recipe** panel. If your "
+"derived bands appear here they are ready for visualisation; if not, click"
+" the :btn:`<fa-solid fa-plus>` button in that panel to create one."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:95
+msgid ""
+"A **Visualisation** dialog opens. Choose the band you want to display "
+"from the **Band** drop‑down (for example ``ndvi``). Set **Min** and "
+"**Max** values to define the stretch – for indices spanning –1 to 1, "
+"values such as –0.2 and 0.8 often provide good contrast."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:97
+msgid ""
+"Select a colour palette. You can load a preset palette from the drop‑down"
+" or define your own. To enter custom colours click the :guilabel:`HEX` "
+"button; a text box appears containing a comma‑separated list of colour "
+"codes. Replace it with your own codes (e.g. ``#ffffcc, #c2e699, #78c679, "
+"#31a354, #006837`` for a light‑to‑dark green gradient). Multiple colours "
+"create a smooth ramp."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:104
+msgid ""
+"Click :btn:`<fa-solid fa-check> Apply`. SEPAL renders the band using your"
+" settings and adds a legend bar at the bottom of the map. If the map "
+"stays blank for more than a few seconds, ensure you added the correct "
+"bands and that the area of interest is not outside the footprint of your "
+"image."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:113
+msgid "What else can you do with Band Math?"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:115
+msgid ""
+"Band Math is a general‑purpose calculator for raster bands.  Beyond "
+"vegetation indices you can:"
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:117
+msgid ""
+"Highlight water bodies by computing the Normalised Difference Water Index"
+" (NDWI): ``(i1.SR_B3 - i1.SR_B5) / (i1.SR_B3 + i1.SR_B5)``."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:118
+msgid ""
+"Assess burn severity with the Normalised Burn Ratio (NBR) using "
+"near‑infrared and short‑wave infrared bands: ``(i1.SR_B5 - i1.SR_B7) / "
+"(i1.SR_B5 + i1.SR_B7)``."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:119
+msgid ""
+"Perform arithmetic between bands (for example ``i1.SR_B5 - i1.SR_B4``), "
+"multiply by constants to convert digital numbers to reflectance or add "
+"bands to create composites."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:120
+msgid ""
+"Create masks based on conditions – for instance ``i1.SR_B5 > 0.3`` to "
+"select highly vegetated pixels – and combine them with logical operators "
+"(`and`, `or`)."
+msgstr ""
+
+#: ../../source/cookbook/band_math.rst:122
+msgid ""
+"Every expression you add becomes a new band that can be visualised or "
+"used in subsequent calculations.  By chaining calculations together you "
+"can build complex workflows in SEPAL without writing any external code."
+msgstr ""
+

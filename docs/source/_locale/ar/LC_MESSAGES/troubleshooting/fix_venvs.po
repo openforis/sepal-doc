@@ -1,0 +1,382 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-08 01:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/troubleshooting/fix_venvs.rst:4
+msgid "Recovering broken Python environments"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:6
+msgid ""
+"On 5 March 2026, SEPAL sandboxes upgraded from Ubuntu Jammy to Ubuntu "
+"Noble. As part of this upgrade, the system Python changed from version "
+"3.10 to 3.12. This was a deliberate and necessary change: Python 3.10 "
+"reaches end of life in October 2026, meaning it will no longer receive "
+"security patches, and an increasing number of libraries are dropping "
+"support for it and requiring Python 3.11 or newer. Staying on 3.10 would "
+"eventually mean being locked out of updated packages and exposed to "
+"unpatched security issues."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:8
+msgid ""
+"If you created Python virtual environments using ``python -m venv`` on "
+"SEPAL before this upgrade, those environments are now broken. This page "
+"explains why, and how to recover."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:12
+msgid ""
+"This only affects environments created with ``python -m venv``. "
+"Environments created with :guilabel:`uv` or :guilabel:`micromamba` are "
+"not affected."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:14
+msgid ""
+"See :ref:`env_management` for full guidance on using :guilabel:`uv` and "
+":guilabel:`micromamba` — better alternatives that will not break when "
+"SEPAL upgrades Python in the future."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:18
+msgid ""
+"Python 3.10 reaches end of life on 4 October 2026. Rather than putting "
+"effort into restoring environments on the old version, consider migrating"
+" to Python 3.12 at the same time."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:23
+msgid "Why venvs break after a Python upgrade"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:25
+msgid ""
+"A venv is not a fully self-contained copy of Python. It is a lightweight "
+"directory structure that relies on the system Python being present at a "
+"specific path. When you run ``python -m venv myenv``, it records the "
+"exact path to the Python binary (e.g. ``/usr/bin/python3.10``) and "
+"creates symbolic links inside the environment's ``bin/`` directory "
+"pointing back to it. Installed packages land in a versioned subdirectory,"
+" for example ``lib/python3.10/site-packages/``."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:27
+msgid ""
+"When the system Python changes from 3.10 to 3.12, two things go wrong "
+"simultaneously:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:29
+msgid ""
+"The symlinks inside ``bin/`` now point to a Python binary that no longer "
+"exists at the recorded path, so the environment cannot start correctly."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:30
+msgid ""
+"Any packages with compiled C extensions (numpy, scipy, cryptography, "
+"etc.) were built against the Python 3.10 ABI. Python 3.12 has a different"
+" ABI, so those compiled ``.so`` files are no longer valid and will crash "
+"or fail to load."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:32
+msgid ""
+"The package files themselves — the pure Python code and the package "
+"metadata — are still intact on disk. Only the wiring is broken, which is "
+"why it is possible to extract a list of what was installed without "
+"activating the environment."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:37
+msgid "Why Jupyter kernels disappear"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:39
+msgid ""
+"When you register a venv as a Jupyter kernel using ``ipykernel``, Jupyter"
+" saves a small ``kernel.json`` file under "
+"``~/.local/share/jupyter/kernels/<name>/``. This file contains the "
+"absolute path to the Python binary inside the environment."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:41
+msgid ""
+"After the upgrade, Jupyter still finds the ``kernel.json`` file and may "
+"still show the kernel in the launcher — but when you try to start it, it "
+"attempts to launch the Python binary at the recorded path. Because that "
+"binary no longer works, the kernel either fails to start or starts and "
+"immediately crashes, which JupyterLab reports as the kernel repeatedly "
+"dying."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:43
+msgid ""
+"In some cases the kernel disappears from the launcher entirely. In others"
+" it appears but cannot be used. Either way, notebooks that relied on it "
+"cannot run."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:48
+msgid "Symptoms of a broken environment"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:50
+msgid "You may see any of the following:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:52
+msgid ""
+"A Jupyter kernel that was previously available has disappeared from the "
+"launcher, or starts and immediately dies"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:53
+msgid "``ModuleNotFoundError: No module named 'pip'`` when running pip commands"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:54
+msgid "Packages that were previously installed fail to import"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:55
+msgid "Compiled packages (numpy, scipy, etc.) segfault or raise ``ImportError``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:56
+msgid ""
+"``python --version`` inside the activated environment shows 3.12 even "
+"though it was created with 3.10"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:58
+msgid ""
+"All of these have the same root cause: the environment's internal "
+"symlinks and compiled extensions were built against Python 3.10 and are "
+"no longer valid."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:63
+msgid "Recovery"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:68
+msgid "Extract your requirements"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:70
+msgid ""
+"You cannot activate the broken environment, but the package metadata is "
+"still readable on disk. SEPAL provides a script that extracts the list of"
+" installed packages from a broken environment. Run it from the terminal:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:76
+msgid ""
+"This scans the package metadata inside the broken environment and writes "
+"a ``requirements.txt`` with pinned versions. Verify the output:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:85
+msgid "Recreate the environment with uv"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:87
+msgid ""
+":guilabel:`uv` is a fast, modern Python package manager already installed"
+" on SEPAL. Unlike venv, it manages its own Python versions independently "
+"of the system, so future upgrades will not break your environments."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:91
+msgid ""
+"See :ref:`env_management` for full guidance on :guilabel:`uv` and other "
+"environment tools available on SEPAL."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:93
+msgid "You have two options:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:98
+msgid "Option A — Recreate on Python 3.10"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:100
+msgid ""
+"*Fewer compatibility issues — use this if you need to get back up and "
+"running quickly and cannot yet deal with package compatibility on 3.12.*"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:110
+msgid ""
+"The ``requirements.txt`` referenced here is the file you extracted in the"
+" previous step."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:115
+msgid "Option B — Migrate to Python 3.12"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:117
+msgid ""
+"*Better long-term choice — most pure-Python packages work on 3.12 without"
+" any changes.*"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:127
+msgid ""
+"The ``requirements.txt`` referenced here is the file you extracted in the"
+" first step."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:132
+msgid "Handling package version conflicts (Option B)"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:134
+msgid ""
+"When migrating to Python 3.12, the ``requirements.txt`` from the first "
+"step contains fully pinned versions (e.g. ``numpy==1.23.4``). Some of "
+"these may not have wheels available for Python 3.12. If installation "
+"fails, try removing the version pins:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:142
+msgid ""
+"The following packages are known to cause issues when moving from 3.10 to"
+" 3.12:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:148
+msgid "Package"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:149
+msgid "Issue"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:150
+msgid "Fix"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:151
+msgid "``numpy < 1.24``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:152
+#: ../../source/troubleshooting/fix_venvs.rst:155
+msgid "No Python 3.12 wheels available"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:153
+msgid "Unpin: ``numpy``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:154
+msgid "``scipy < 1.11``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:156
+msgid "Unpin: ``scipy``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:157
+msgid "Packages using ``distutils``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:158
+msgid "``distutils`` was removed in Python 3.12"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:159
+msgid "Upgrade or replace the package"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:160
+msgid "Old Cython extensions"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:161
+msgid "ABI mismatch, segfaults at import"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:162
+msgid "``uv pip install --force-reinstall <package>``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:163
+msgid "``cryptography`` (old versions)"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:164
+msgid "Needs a recent version for the 3.12 ABI"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:165
+msgid "Unpin: ``cryptography``"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:170
+msgid "Re-register your Jupyter kernel"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:172
+msgid ""
+"JupyterLab discovers environments through kernel specifications — small "
+"JSON files that point to a specific Python binary. When you recreate an "
+"environment, the old kernel specification still points to the broken "
+"binary, so JupyterLab cannot find or use the new environment. You need to"
+" remove the old specification and register a new one."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:174
+msgid "First, list existing kernels and remove the broken one:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:184
+msgid "Then register the new environment as a kernel:"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:192
+msgid ""
+"After restarting JupyterLab, the new kernel will appear in the launcher "
+"and notebooks that reference it by name will work again."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:197
+msgid "Going forward"
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:199
+msgid ""
+"To avoid this problem in the future, stop using venv. :guilabel:`uv` "
+"manages Python versions independently of the system and will not break "
+"when SEPAL upgrades Python."
+msgstr ""
+
+#: ../../source/troubleshooting/fix_venvs.rst:201
+msgid ""
+"See :ref:`env_management` for full guidance on creating and managing "
+"environments, including how to add Jupyter kernels."
+msgstr ""
+
