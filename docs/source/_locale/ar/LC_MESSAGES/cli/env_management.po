@@ -1,0 +1,338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-15 02:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/env_management.rst:4
+msgid "Python environment management"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:6
+msgid ""
+"SEPAL provides two tools for managing Python environments: :guilabel:`uv`"
+" and :guilabel:`micromamba`. Both are already installed and both are "
+"better choices than the built-in :guilabel:`venv` for work on SEPAL."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:8
+msgid ""
+"The core problem with :guilabel:`venv` on a shared platform is that it "
+"creates environments tightly coupled to the system Python. When SEPAL "
+"upgrades Python — as happened with the Ubuntu Noble upgrade from 3.10 to "
+"3.12 — every venv breaks. The tools described on this page do not have "
+"this problem."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:12
+msgid ""
+"Do not use :guilabel:`venv` for new work on SEPAL. Use :guilabel:`uv` or "
+":guilabel:`micromamba` instead."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:17
+msgid "Which tool should I use?"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:19
+msgid "The right choice depends on what your project needs."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:25
+msgid "Your stack includes..."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:26
+msgid "Use"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:27
+msgid "Why"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:28
+msgid "Web frameworks, APIs, pure Python tools"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:29
+#: ../../source/cli/env_management.rst:32
+msgid ":guilabel:`uv`"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:30
+msgid "Fast, lightweight, no overhead"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:31
+msgid "Data science: pandas, scikit-learn, statsmodels"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:33
+msgid "Good PyPI wheel coverage for Python 3.12"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:34
+msgid "Geospatial: GDAL, rasterio, fiona, GEOS"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:35
+#: ../../source/cli/env_management.rst:38
+msgid ":guilabel:`micromamba`"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:36
+msgid "Bundles native libraries inside the environment"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:37
+msgid "GPU / ML: CUDA, cuDNN, PyTorch with CUDA"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:39
+msgid "Pins CUDA runtime inside the environment"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:40
+msgid "Mixed: some native libraries, some pure Python"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:41
+msgid ":guilabel:`micromamba` + pip"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:42
+msgid "micromamba for native libraries, pip for the rest"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:46
+msgid ""
+":guilabel:`uv` environments can still break if SEPAL upgrades a system-"
+"level native library such as GDAL or CUDA. This is because :guilabel:`uv`"
+" installs Python packages from PyPI but cannot bundle the underlying "
+"``.so`` files they depend on. If your project uses geospatial or GPU "
+"packages, use :guilabel:`micromamba`."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:51
+msgid "uv"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:53
+msgid ""
+":guilabel:`uv` is a fast, modern Python and package manager. It manages "
+"its own Python versions independently of the system, so a system Python "
+"upgrade will not affect your environments."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:56
+msgid "Why use uv"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:58
+msgid ""
+"**Survives system Python upgrades.** uv pins the Python version inside "
+"the project. If you create an environment with Python 3.12.2, it stays on"
+" 3.12.2 regardless of what the system does."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:59
+msgid ""
+"**Much faster than pip and venv.** Dependency resolution and installation"
+" are typically 10–100× faster due to parallel downloads and a compiled "
+"resolver."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:60
+msgid ""
+"**Lockfiles for reproducibility.** ``uv lock`` generates a precise, "
+"cross-platform lockfile — more reliable than ``pip freeze`` for sharing "
+"environments with colleagues."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:61
+msgid ""
+"**Drop-in pip compatibility.** ``uv pip install`` works exactly like "
+"``pip install``. Any package on PyPI works with uv. No new formats to "
+"learn."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:62
+msgid ""
+"**Works with standard project files.** Reads ``pyproject.toml`` and "
+"``requirements.txt`` natively."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:63
+msgid ""
+"**Manages multiple Python versions.** ``uv python install 3.10`` lets you"
+" run any Python version without touching the system."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:64
+msgid ""
+"**Single lightweight binary.** No base environment, no shell hooks, no "
+"overhead."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:67
+msgid "Creating a uv project (recommended)"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:69
+msgid ""
+"``uv init`` creates a project with a ``pyproject.toml`` and a lockfile, "
+"giving you reproducible installs and clean dependency tracking:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:83
+msgid ""
+"uv automatically creates a ``.venv`` inside the project directory, "
+"generates a ``uv.lock`` lockfile, and tracks all dependencies in "
+"``pyproject.toml``. You do not need to activate anything — ``uv run`` "
+"handles it."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:85
+msgid "To reproduce the environment elsewhere (or after a fresh clone):"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:92
+msgid "Creating a standalone uv environment"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:94
+msgid ""
+"If you do not need a full project structure — for example, when working "
+"with an existing ``requirements.txt`` — you can create a standalone "
+"environment:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:111
+#: ../../source/cli/env_management.rst:208
+msgid "Adding a Jupyter kernel"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:113
+msgid "Register your environment as a named kernel so it appears in JupyterLab:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:115
+msgid "**For uv projects:**"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:123
+msgid "**For standalone uv environments:**"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:131
+msgid "Verify it appears:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:137
+#: ../../source/cli/env_management.rst:224
+msgid "To remove a kernel:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:146
+msgid "micromamba"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:148
+msgid ""
+":guilabel:`micromamba` works like conda (if you have used conda before, "
+"you already know how to use micromamba). Unlike :guilabel:`uv`, it "
+"bundles native system libraries — GDAL, CUDA, HDF5, and others — inside "
+"the environment itself, completely isolated from the system. This makes "
+"it the right choice for geospatial and GPU workloads."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:151
+msgid "Why use micromamba"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:153
+msgid ""
+"**Complete isolation including native libraries.** GDAL, CUDA, HDF5, "
+"GEOS, and other system libraries are installed inside the environment. "
+"Upgrading system libraries on SEPAL will not break your environment."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:154
+msgid ""
+"**conda-forge provides excellent binary coverage.** conda-forge provides "
+"pre-compiled, compatible builds of complex packages across all platforms "
+"— often better than what is available on PyPI."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:155
+msgid ""
+"**Environment files capture the full stack.** ``environment.yml`` files "
+"describe both Python packages and native libraries in one place, making "
+"environments fully reproducible by colleagues."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:156
+msgid ""
+"**Pins native library versions.** You can pin ``cudatoolkit=11.8`` or "
+"``gdal=3.6`` and those exact versions live inside the environment, "
+"regardless of what is installed system-wide."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:157
+msgid ""
+"**Faster than conda.** Written in C++, micromamba solves and installs "
+"dependencies significantly faster than the original conda tool."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:158
+msgid ""
+"**No base environment.** micromamba has no base environment that needs "
+"updating — cleaner and lighter on disk."
+msgstr ""
+
+#: ../../source/cli/env_management.rst:161
+msgid "Creating a micromamba environment"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:178
+msgid "Using an environment.yml file (recommended)"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:180
+msgid ""
+"An ``environment.yml`` file captures the full environment — Python "
+"version, native libraries, and Python packages — in one place:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:197
+msgid "Create or update an environment from the file:"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:233
+msgid "Recovering a broken venv"
+msgstr ""
+
+#: ../../source/cli/env_management.rst:235
+msgid ""
+"If you have an existing venv that broke due to the Python upgrade, see "
+":ref:`fix_venvs` for step-by-step recovery instructions, including a "
+"script to extract your requirements without activating the broken "
+"environment."
+msgstr ""
+
