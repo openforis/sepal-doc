@@ -1088,11 +1088,6 @@ This tool has been developed by FAO in close collaboration with the Spatial Info
     :alt: sig-gis_logo
     :height: 130
 
-.. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/utils/light/SilvaCarbon.png
-    :target: https://www.silvacarbon.com
-    :class: ma-1
-    :alt: silvacarbon_logo
-    :height: 100
 
 .. image:: https://raw.githubusercontent.com/12rambau/restoration_planning_module/master/utils/light/MAFF.png
     :target: https://www.maff.go.jp/e/
