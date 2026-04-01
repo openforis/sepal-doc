@@ -113,7 +113,6 @@ html_theme_options = {
     "footer_start": ["copyright", "sphinx-version", "licence"],
     "footer_center": ["community", "issue-tracker"],
     "footer_end": ["e-learning", "stackexchange"],
-    "announcement": "https://raw.githubusercontent.com/openforis/sepal-doc/refs/heads/main/docs/source/_templates/announcement.html",
 }
 
 # -- option for the favicon extension ------------------------------------------
