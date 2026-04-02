@@ -82,7 +82,7 @@ html_theme_options = {
         "image_light": "_static/sepal_light.png",
         "image_dark": "_static/sepal_dark.png",
     },
-    "header_links_before_dropdown": 7,
+    "header_links_before_dropdown": 8,
     "navigation_with_keys": False,
     "show_nav_level": 1,
     "show_prev_next": True,
@@ -113,7 +113,6 @@ html_theme_options = {
     "footer_start": ["copyright", "sphinx-version", "licence"],
     "footer_center": ["community", "issue-tracker"],
     "footer_end": ["e-learning", "stackexchange"],
-    "announcement": "https://raw.githubusercontent.com/openforis/sepal-doc/refs/heads/main/docs/source/_templates/announcement.html",
 }
 
 # -- option for the favicon extension ------------------------------------------

@@ -1,5 +1,5 @@
 pydata-sphinx-theme
-Sphinx<=7.1.2
+Sphinx
 sphinx-notfound-page>=0.6
 graphviz>=0.16
 sphinxcontrib-images
