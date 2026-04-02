@@ -23,6 +23,14 @@
 }
 
 /*******************************************************************************
+*   prevent navbar items from wrapping
+*
+**/
+.pst-header-nav-item > .nav-link {
+  white-space: nowrap;
+}
+
+/*******************************************************************************
 *   prevent pydata from adding extra background colors to my images
 *   to be removed when https://github.com/pydata/pydata-sphinx-theme/issues/879
 *   will be solved
