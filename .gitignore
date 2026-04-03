@@ -138,3 +138,6 @@ dmypy.json
 
 # mac os files
 .DS_Store
+
+# Claude Code
+CLAUDE.md
