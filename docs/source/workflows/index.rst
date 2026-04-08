@@ -33,3 +33,4 @@ SEPAL workflows include:
     BayTS NRT Monitoring<bayts>
     Direct drivers assessment<drivers>
     peatland_mapping
+    mangrove_mapping
