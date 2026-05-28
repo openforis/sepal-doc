@@ -87,7 +87,7 @@ geospatial stack.
         node [shape=box, fontname="sans-serif"];
 
         catalog [label="Catalog entry\n(endpoint)"];
-        docker  [label="Docker app\nown container + port\npinned commit"];
+        docker  [label="Docker app\nprivate container + port\npinned commit"];
         jupyter [label="Jupyter app\nshared sandbox\nVoila + kernel"];
 
         catalog -> docker  [label="docker"];
