@@ -24,10 +24,10 @@ Documentation
    Getting started<setup/index>
    Cookbook<cookbook/index>
    Modules<modules/index>
-   CLI<cli/index>
    Workflows<workflows/index>
    Features<feature/index>
    Troubleshooting<troubleshooting/index>
+   Developers<developers/index>
     <team/index>
 
 .. line-break::
