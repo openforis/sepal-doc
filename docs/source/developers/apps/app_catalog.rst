@@ -70,7 +70,9 @@ Identification and routing
         the notebook (e.g.
         ``/sandbox/jupyter/voila/render/shared/apps/<app>/ui.ipynb``); for
         shiny, the sandbox path of the Shiny project; for docker, **must
-        match** ``/api/app-launcher/<id>`` (schema-enforced).
+        equal** ``/api/app-launcher/<id>`` exactly — the schema enforces the
+        prefix and ``check-docker-rules.js`` enforces that ``<id>`` matches
+        the entry's ``id``.
 
 Docker-only fields
 ~~~~~~~~~~~~~~~~~~~
@@ -90,8 +92,10 @@ Docker-only fields
     * - ``port``
       - docker only (schema)
       - Container port the docker app listens on. Integer 1–65535. Must be
-        unique across the catalog — see
-        `dfguerrerom/sepal-apps-catalog#41 <https://github.com/dfguerrerom/sepal-apps-catalog/issues/41>`__.
+        unique across ``apps.test.json`` and ``apps.prod.json``;
+        ``check-docker-rules.js`` enforces this and prints
+        ``Next free port: N`` on a violation. New apps take the next free
+        port — ``max(existing_ports) + 1``.
 
 Presentation
 ~~~~~~~~~~~~~
@@ -228,23 +232,39 @@ Promoting to production
 -----------------------
 
 Promotion copies the *exact same pinned reference* (commit for docker, branch
-for the others) from ``apps.test.json`` into ``apps.prod.json``. There are two
-mechanical ways to do it:
+for the others) from ``apps.test.json`` into ``apps.prod.json``. Two paths,
+either of which produces the same promotion PR for a maintainer to merge:
 
--   Open a follow-up PR copying the entry into ``apps.prod.json``, or
--   Trigger the ``Promote app to production`` workflow
-    (``workflow_dispatch``, pick an app), which opens that PR for you.
+Self-service ``/promote`` comment (recommended)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Either way the same validation and review checks run, a maintainer merges, and
-the app goes live on sepal.io.
+The catalog has a single pinned issue titled *"Promotion requests — comment
+``/promote <app-id>`` here"*, labeled ``promote-request``. Find it in the
+catalog's `issues tab
+<https://github.com/dfguerrerom/sepal-apps-catalog/issues?q=is%3Aissue+is%3Aopen+label%3Apromote-request>`__
+(there is only ever one) and comment:
 
-.. note::
+.. code-block:: text
 
-    **Promotion is currently restricted to the catalog owner.** The
-    ``workflow_dispatch`` trigger and the merge step both require write access
-    to the catalog repository, so contributors cannot promote their own apps
-    today — they have to ask the catalog owner to do it. Tracked in
-    `dfguerrerom/sepal-apps-catalog#40 <https://github.com/dfguerrerom/sepal-apps-catalog/issues/40>`__.
+    /promote my-app-id
+
+The ``Promote app on /promote comment`` workflow then verifies the commenter is
+authorized for the app's source repository and, if so, opens the promotion PR.
+Authorization uses public GitHub data only:
+
+-   If the source repo is owned by a User, the commenter must equal that user.
+-   If it is owned by an Organization, the commenter must be a **public**
+    member of that org. If your membership is private, make it public at
+    ``https://github.com/orgs/<org>/people`` or use the manual-PR path below.
+
+A maintainer still merges the PR.
+
+Manual PR
+~~~~~~~~~
+
+Open a pull request copying the entry's ``commit`` (or whole object) from
+``apps.test.json`` into ``apps.prod.json``. The same validation and review
+checks run; a maintainer merges.
 
 Working on the catalog locally
 ------------------------------
