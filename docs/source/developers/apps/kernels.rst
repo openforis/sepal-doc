@@ -5,10 +5,11 @@ Request a new kernel
 *Package an environment once and share it with every SEPAL user as a named Jupyter kernel*
 
 A "kernel" in the SEPAL catalog is really just a special-purpose jupyter app:
-the same catalog entry, the same PR flow, the same release lifecycle. The only
-difference is *intent* — the deliverable is the environment, not a notebook UI.
-If you have read :ref:`developers_apps_catalog`, you already know 90% of how to
-ship one.
+the same catalog entry, the same :ref:`PR flow <developers_apps_catalog>`,
+the same :ref:`release lifecycle <developers_apps_releases_jupyter>`. The only
+difference is *intent* — the deliverable is the environment (and, often,
+training notebooks and data alongside it), not an app UI. If you have read
+:ref:`developers_apps_catalog`, you already know 90% of how to ship one.
 
 Why request a kernel
 --------------------
@@ -73,6 +74,39 @@ A packaged kernel usually has no dashboard UI of its own — it exists to back
 *other* notebooks. Set ``"hidden": true`` on its catalog entry so SEPAL builds
 the environment and registers the kernel without showing a tile in the apps
 dashboard.
+
+.. _developers_apps_kernels_content:
+
+Ship notebooks and data alongside the kernel
+---------------------------------------------
+
+The same clone the app-manager uses to build the kernel lands at
+``/home/sepal-user/shared/apps/<app>/`` **inside every user's sandbox**.
+Anything you put in the repository is therefore reachable from every user's
+JupyterLab — not just the ``sepal_environment.yml``.
+
+This makes the same mechanism useful for a second job: shipping **training
+notebooks and supporting data** to a cohort of users. For a workshop or a
+training, you can put the curriculum in the repo alongside the environment
+file. Each participant gets the notebooks already on their instance under
+``shared/apps/<your-training>/``, with the matching ``(venv) <your-training>``
+kernel pre-built and ready to select — no per-user clone, no per-user pip
+install, no "it works on my machine".
+
+Practical conventions for that case:
+
+-   Keep notebook files at the top level (or in a clearly named subdirectory)
+    so participants can find them via ``shared/apps/<your-training>/``.
+-   Keep sample inputs in the repo only if they are small. For larger
+    datasets, point notebooks at a shared SEPAL location or an external URL
+    so the clone stays light.
+-   Tag a ``release`` branch for each cohort you run, so an in-flight push to
+    ``main`` does not surprise a session that is already underway. See
+    :ref:`developers_apps_releases_branch`.
+
+The catalog entry itself stays the same — ``"hidden": true``, ``"endpoint":
+"jupyter"``, ``sepal_environment.yml`` in the repo. The notebooks just ride
+along in the same clone.
 
 Worked example: ``sepal-sam``
 ------------------------------

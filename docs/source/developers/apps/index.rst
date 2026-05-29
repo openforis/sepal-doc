@@ -15,7 +15,7 @@ workflow.
     `dfguerrerom/sepal-apps-catalog <https://github.com/dfguerrerom/sepal-apps-catalog>`__
     repository. Getting an app onto SEPAL — or updating one — means opening a
     pull request there. For docker apps, the catalog also pins the *exact
-    commit* SEPAL will run; for jupyter and shiny apps, the catalog records the
+    commit* SEPAL will run; for jupyter apps, the catalog records the
     ``branch`` and SEPAL still runs the tip of that branch. The pages below
     walk through both flows.
 
