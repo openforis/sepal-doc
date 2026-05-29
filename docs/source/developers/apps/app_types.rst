@@ -30,9 +30,9 @@ At a glance
     * - Where it runs
       - Its own container, on its own port, on the shared SEPAL server
       - Inside the user's own SEPAL instance (sandbox), served through Voila
-    * - Who pays for compute
-      - The shared SEPAL server — all users hit the same instance
-      - The user, on the instance size they have selected
+    * - Where compute happens
+      - On the shared SEPAL server — all users hit the same instance
+      - On the user's own SEPAL instance, at the size they have provisioned
     * - Versioning
       - Pinned to a commit SHA (required)
       - Tracks the catalog's ``branch``; no commit pin
@@ -45,7 +45,8 @@ At a glance
       - Own micromamba kernel built from ``sepal_environment.yml``
         (see :ref:`developers_apps_kernels`)
     * - Update trigger
-      - Catalog PR bumps ``commit`` → app-manager redeploys
+      - Catalog PR bumps ``commit`` → app-launcher checks out that commit on
+        the next launch
       - app-manager refreshes the clone to the branch tip and rebuilds the
         kernel if the env file changed
 
