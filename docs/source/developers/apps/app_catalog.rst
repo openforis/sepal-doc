@@ -10,9 +10,9 @@ The catalog
 The list of apps SEPAL runs lives in a dedicated repository,
 `dfguerrerom/sepal-apps-catalog <https://github.com/dfguerrerom/sepal-apps-catalog>`__.
 For docker apps the catalog pins the exact commit SEPAL will run; for jupyter
-and shiny apps it records the ``branch`` and SEPAL runs its tip. Either way,
-adding or updating an app means opening a pull request against this catalog,
-where a maintainer reviews the change before it goes live.
+apps it records the ``branch`` and SEPAL runs its tip. Either way, adding or
+updating an app means opening a pull request against this catalog, where a
+maintainer reviews the change before it goes live.
 
 The catalog ships two files:
 
@@ -55,8 +55,9 @@ Identification and routing
       - Display name shown on the apps dashboard.
     * - ``endpoint``
       - always
-      - How SEPAL runs the app: ``jupyter``, ``shiny``, ``rstudio`` or
-        ``docker``. See :ref:`developers_apps_types`.
+      - How SEPAL runs the app: ``jupyter`` or ``docker`` for new apps —
+        ``shiny`` is legacy and ``rstudio`` is reserved for the built-in
+        tool. See :ref:`developers_apps_types`.
     * - ``repository``
       - always
       - ``https://github.com/<owner>/<repo>`` of the app source. SEPAL clones
@@ -69,10 +70,9 @@ Identification and routing
       - Entry point the app-launcher routes to. For jupyter, the Voila URL of
         the notebook (e.g.
         ``/sandbox/jupyter/voila/render/shared/apps/<app>/ui.ipynb``); for
-        shiny, the sandbox path of the Shiny project; for docker, **must
-        equal** ``/api/app-launcher/<id>`` exactly — the schema enforces the
-        prefix and ``check-docker-rules.js`` enforces that ``<id>`` matches
-        the entry's ``id``.
+        docker, **must equal** ``/api/app-launcher/<id>`` exactly — the
+        schema enforces the prefix and ``check-docker-rules.js`` enforces
+        that ``<id>`` matches the entry's ``id``.
 
 Docker-only fields
 ~~~~~~~~~~~~~~~~~~~

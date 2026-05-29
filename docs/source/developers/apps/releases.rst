@@ -6,15 +6,13 @@ Create a release
 
 Once your app is in the catalog (see :ref:`developers_apps_catalog`), the way
 you ship a new version depends on the app's ``endpoint`` (see
-:ref:`developers_apps_types`). Docker apps and jupyter/shiny apps (including
-kernels) use different release mechanisms:
+:ref:`developers_apps_types`):
 
--   **Jupyter and Shiny apps** (and :ref:`kernels <developers_apps_kernels>`,
-    which are just hidden jupyter apps) are not pinned to a commit. The
-    app-manager checks out the tip of the catalog's ``branch`` (defaulting to
-    ``HEAD``) every time the sandbox refreshes the app, so a release is just a
-    push to that branch in your source repository — no catalog change is
-    needed.
+-   **Jupyter apps** (and :ref:`kernels <developers_apps_kernels>`, which are
+    just hidden jupyter apps) are not pinned to a commit. The app-manager
+    checks out the tip of the catalog's ``branch`` (defaulting to ``HEAD``)
+    every time the sandbox refreshes the app, so a release is just a push to
+    that branch in your source repository — no catalog change is needed.
 -   **Docker apps** are pinned in the catalog to an exact commit SHA. SEPAL
     keeps running the old commit until that ``commit`` field is advanced, so a
     release is, in practice, a pull request against the catalog.
@@ -23,8 +21,8 @@ The rest of this page describes each flow in turn.
 
 .. _developers_apps_releases_jupyter:
 
-Jupyter, Shiny and kernel apps
-------------------------------
+Jupyter and kernel apps
+-----------------------
 
 These endpoints don't take a ``commit`` field in the catalog — only
 ``branch`` (which defaults to ``HEAD``). On every sandbox refresh the
@@ -37,6 +35,8 @@ Releasing a new version
 Push the change to the branch the catalog tracks for your app. The next time
 the user's sandbox refreshes the app, the new tip is picked up automatically.
 No catalog PR is required.
+
+.. _developers_apps_releases_branch:
 
 The release branch convention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
