@@ -14,7 +14,7 @@ To exchange files with SEPAL, there are several built-in tools you can use.
 
 .. note::
 
-    Since SEPAL's built-in tools for uploading and downloading are limited, large amounts of data should be uploaded or downloaded using an FTP solution, such as FileZilla® (for more information, see **FTP solution** below).
+    Since SEPAL's -in tools for uploading and downloading are limited, large amounts of data should be uploaded or downloaded using an FTP solution, such as FileZilla® (for more information, see **FTP solution** below).
 
 Jupyter Notebook
 ^^^^^^^^^^^^^^^^

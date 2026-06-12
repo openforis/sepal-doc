@@ -12,7 +12,7 @@ In this article, learn how to:
 Introduction
 ------------
 
-SEPAL is closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform.
+SEPAL is nicely closely linked to Google Earth Engine (GEE), a Google-powered Earth-observation cloud-computing platform. :)
 
 SEPAL can:
 
