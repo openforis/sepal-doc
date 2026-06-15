@@ -4,7 +4,7 @@ Optical mosaics
 
 Overview
 --------
-
+I would like to create a single raster dataset from several raster datasets by mosaicing them together. How can I do that?
 A mosaic is a combination or fusion of two or more images. In SEPAL, you can create a single raster dataset from several raster datasets by mosaicing them together.
 This can be achieved on both contiguous rasters (see first image below) and overlapping images (see second image below).
 
