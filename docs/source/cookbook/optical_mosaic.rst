@@ -122,7 +122,7 @@ As mentioned in the introduction, a mosaic combines raster datasets that can com
 
 **Landsat** scenes are distributed in two quality tiers:
 
--   **Tier 1** holds the scenes with the highest data quality. They are processed to Level-1 Precision Terrain (L1TP), have well-characterized radiometry, are intercalibrated across the different Landsat sensors and are geo-registered within prescribed tolerances (≤ 12 m root mean square error [RMSE]). Tier 1 scenes are consistent across the full collection and suitable for time-series analysis.
+-   **Tier 1** holds the scenes with the highest data quality. They are processed to Level-1 Precision Terrain (L1TP), have well-characterized radiometry, are intercalibrated across the different Landsat sensors and are geo-registered within prescribed tolerances (12 m root mean square error [RMSE] or less). Tier 1 scenes are consistent across the full collection and suitable for time-series analysis.
 -   **Tier 2** (marked :guilabel:`T2`) holds scenes that do not meet the Tier 1 criteria, for example because of significant cloud cover, insufficient ground control or systematic-only terrain correction (L1GT/L1GS). They can still be useful; analyze the RMSE and other properties to determine their suitability for your study.
 
 The following optical sources are available (select a link to open the corresponding Google Earth Engine dataset):
