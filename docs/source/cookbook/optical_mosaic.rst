@@ -144,7 +144,7 @@ The following optical sources are available (select a link to open the correspon
 
 You can also restrict the imagery with the :code:`Max cloud cover %` slider: scenes whose cloud cover is higher than this threshold are excluded before the mosaic is built.
 
-To validate your selection, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button.
+To validate your selection, select the :icon:`fa-solid fa-check` :guilabel:`Apply` button (labelled :guilabel:`Done` when you first create the recipe through the setup wizard).
 
 Scenes
 ^^^^^^
