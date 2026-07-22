@@ -123,3 +123,16 @@ footer.bd-footer-article {
   color: var(--pst-color-text-muted);
   text-align: right;
 }
+
+/*******************************************************************************
+*   CEO connection status labels
+*
+**/
+.ceo-connected {
+  color: #34a853;
+  font-weight: 600;
+}
+.ceo-disconnected {
+  color: #e0a800;
+  font-weight: 600;
+}
