@@ -55,9 +55,10 @@ Build
 -----
 
 To build the documentation from the files:
+
 1. Clone the repository to your local machine
-1. install nox
-1. run the nox build
+2. install nox
+3. run the nox build
 
 .. code-block:: console
 
@@ -71,4 +72,4 @@ Contribute
 
 If you want to contribute you can fork the project in you own repository and then use it.
 Please follow the `contributing guidelines <https://docs.sepal.io/en/latest/team/contribute.html>`_ if you consider working with us.
-Meet our `contributor <https://github.com/openforis/sepal-doc/blob/master/AUTHORS.rst>`_.
+Meet our `contributors <https://github.com/openforis/sepal-doc/blob/master/AUTHORS.rst>`_.
