@@ -126,7 +126,7 @@ For a stratified design:
 1.  Select **Asset** to use a GEE image asset, or **Recipe** to use the image output of another SEPAL recipe.
 2.  Select a categorical image.
 3.  Select the band containing the stratum values.
-4.  Enter the processing **Scale** in metres.
+4.  Leave **Scale** blank to let SEPAL choose a suitable value. Enter a value in metres only when the design needs a different resolution.
 
 .. note::
 
@@ -158,9 +158,11 @@ The sampling frame is the geographic area eligible for sample selection. For an 
 Scale
 ^^^^^
 
-Choose a scale that matches the useful resolution of the stratification. The approximate number of pixels processed depends on the AOI area divided by the square of the scale. For the same AOI, halving the scale processes approximately four times as many pixels; doubling it processes approximately one quarter as many.
+Scale sets the resolution at which the stratification is read, and with it how much processing the calculations require. For a GEE image asset it starts from the image's own pixel size; see `Grids and projections`_. The approximate number of pixels processed depends on the AOI area divided by the square of the scale. For the same AOI, halving the scale processes approximately four times as many pixels; doubling it processes approximately one quarter as many.
 
 A smaller scale can preserve more spatial detail when the source image supports that resolution, but it increases processing time and memory use. Choosing a scale finer than the source's useful resolution mostly resamples the same information and adds work. A larger scale is faster, but it can remove small or narrow strata, shift class boundaries and change the calculated area and weight of each stratum.
+
+The class recorded for each sample is the one found at the sample location at the resolution in use.
 
 Direct and Queued calculations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -481,6 +483,10 @@ After the GEE table export is complete:
 
 Open **Layer options** to adjust the styling or filter the displayed features.
 
+A sample near a class boundary can appear to sit in the neighbouring class. Maps are drawn in the Web Mercator projection, which is rarely the projection a stratification is stored in, so the classes are redrawn onto the map's own grid before they are displayed. Near a boundary the class drawn under a point can differ from the one recorded for it. The sample location itself is exact, and the stratum recorded for it is the class found at that location when the design was created.
+
+Zooming in reduces the effect but does not remove it. If samples appear clearly misplaced rather than marginally, the Scale may be coarser than the detail in the source image. See `Grids and projections`_.
+
 SEPAL workspace file
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -512,3 +518,43 @@ Workspace exports repeat design information on each row. Important fields includ
 The :code:`sampleExpansionArea` and :code:`sampleWeight` fields are convenience values derived from the mapped stratum area or weight and the actual exported count: :code:`sampleExpansionArea` is :code:`stratumArea` divided by :code:`actualSampleSize`, and :code:`sampleWeight` is :code:`stratumWeight` divided by :code:`actualSampleSize`. These fields do not prescribe how final results should be calculated.
 
 Retain :code:`actualSampleSize` as the final exported count when it differs from the requested count.
+
+Grids and projections
+---------------------
+
+These settings are advanced. The defaults suit most designs, and a sampling design can be completed without changing them.
+
+SEPAL performs its calculations on a grid of pixels. A grid is defined by a projection, which describes how the curved Earth is represented on a flat map, and a pixel size in metres.
+
+Sampling Design uses two grids for different purposes:
+
+-   The **stratification grid** determines how the stratification is read. It decides which stratum each location belongs to, the area and weight of each stratum, and the anticipated proportions. Set it with the **CRS** and **Scale** fields in the **Stratification** panel.
+-   The **sample placement grid** determines where samples can be placed. Set its **CRS** in the **Sample Arrangement** panel.
+
+The stratification grid
+^^^^^^^^^^^^^^^^^^^^^^^
+
+When the stratification is a single GEE image asset, SEPAL reads the image on its own grid. **CRS** shows the image's projection, and **Scale** is left empty with the image's pixel size shown in its place. Nothing is redrawn, so each sample records the class that the source image holds at that location.
+
+Enter a **Scale** to read the stratification at a different resolution. A coarser value processes fewer pixels and calculates faster, but the strata are redrawn onto a grid at that resolution: boundaries between strata can shift slightly, and a location near a boundary may be assigned to a neighbouring stratum. Clear the field to return to the image's own grid.
+
+Changing **CRS** also redraws the strata, because the image's own grid applies only in its own projection. Leave **Scale** blank to keep the detected pixel size, or enter a value to change the resolution too.
+
+SEPAL also tries to detect a grid for image collections and **Recipe** sources. When a grid can be detected, blank fields use it. When it cannot, blank fields use the defaults shown in the form. Enter a **CRS** or **Scale** only when the design needs a different grid.
+
+Stratum areas are measured in true square metres whichever grid is used, so areas and weights remain correct.
+
+The sample placement grid
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The available projections are equal-area, where every pixel covers the same amount of ground. This prevents some parts of the area of interest from containing more possible sample locations per square kilometre than others. The chosen arrangement and grid start still determine how locations are selected.
+
+-   **EPSG:6933 — EASE-Grid 2.0 Global**: the default, suitable for most areas.
+-   **EPSG:6931 — EASE-Grid 2.0 North**: for areas above roughly 60° north.
+-   **EPSG:6932 — EASE-Grid 2.0 South**: for areas below roughly 60° south.
+
+The global grid gives every pixel the same area at any latitude, but shapes and spacing become increasingly distorted towards the poles. The polar grids reduce this distortion and provide more even spacing there. What matters is how far north or south the area lies, not how large it is.
+
+Changing this projection moves the sample locations. It does not change the calculated stratum areas or weights.
+
+An unstratified random design places samples directly within the area of interest and does not use this grid.
