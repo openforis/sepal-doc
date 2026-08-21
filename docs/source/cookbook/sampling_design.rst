@@ -192,20 +192,10 @@ SEPAL also uses anticipated proportions to estimate how precise the result may b
 
 These calculations focus on one target reporting category. Choose the category that matches the main objective. Other categories can still be recorded. Inaccurate anticipated proportions can make the design less efficient, but they do not invalidate the observations collected later. The final precision is calculated from those observations and may differ from the planning result.
 
-How stratification and proportions interact
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Unstratified** and **No proportions** control different parts of the design:
-
--   **Unstratified** means that the AOI is sampled as one stratum instead of being divided by a categorical image.
--   **No proportions** means that no prior estimate is supplied for a target reporting category. It does not mean that the proportion is zero or change which locations are eligible.
-
-An unstratified or stratified design can therefore be used with or without anticipated proportions.
-
 Choose how to anticipate proportions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Select **No proportions** when reliable prior information is unavailable. Otherwise, select one of the following methods:
+Select **No proportions** when reliable prior information is unavailable. This does not set the proportion to zero or change whether the design is stratified. Otherwise, select one of the following methods:
 
 Probability image
 """""""""""""""""
