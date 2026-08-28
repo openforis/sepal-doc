@@ -136,3 +136,24 @@ footer.bd-footer-article {
   color: #e0a800;
   font-weight: 600;
 }
+
+/*******************************************************************************
+*   PyEO-FAS classification legend colours
+*
+**/
+.forest {
+  color: #00520F;
+  font-weight: 600;
+}
+.soil {
+  color: #C19111;
+  font-weight: 600;
+}
+.water {
+  color: #00A8FF;
+  font-weight: 600;
+}
+.grassland {
+  color: #6BC680;
+  font-weight: 600;
+}
