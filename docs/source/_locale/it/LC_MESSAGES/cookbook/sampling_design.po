@@ -1,0 +1,1621 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cookbook/sampling_design.rst:2
+msgid "Sampling design"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:3
+msgid ""
+"*Plan and export random or systematic sample locations, with optional "
+"stratification*"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:6
+msgid "Overview"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:8
+msgid ""
+"The **Sampling design** recipe creates point locations for collecting "
+"reference observations. Use it to:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:10
+msgid "define the area where samples may be placed;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:11
+msgid "divide the area into strata, when needed;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:12
+msgid "plan how many samples to collect;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:13
+msgid "distribute the samples among the strata;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:14
+msgid "choose random or systematic sample placement; and"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:15
+msgid ""
+"export the sample locations to a Google Earth Engine (GEE) table asset or"
+" the SEPAL workspace."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:17
+msgid ""
+"The recipe creates the sampling design only. It does not label the sample"
+" locations, assess map accuracy or calculate final area estimates."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:19
+msgid ""
+"Sampling Design does not show an interactive preview because generating "
+"and validating the sample locations can exceed interactive-map limits. "
+"The locations are created through an export. A completed GEE table asset "
+"can later be added to the map from the **Layers** panel."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:23
+msgid ""
+"A sampling design can be valid but still be a poor fit for the study. "
+"Consider what must be estimated, how much uncertainty is acceptable, how "
+"many locations can be assessed reliably with the available time and "
+"resources, and how the results will be calculated. Consult a sampling "
+"specialist when the results will support official statistics or other "
+"high-impact decisions."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:26
+msgid "Terms used in this recipe"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:28
+msgid ""
+"**Area of interest (AOI)**: the outer geographic boundary within which "
+"samples may be selected."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:29
+msgid ""
+"**Stratum**: a non-overlapping part of the eligible sampling area, "
+"commonly defined by a map class."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:30
+msgid ""
+"**Target reporting category**: the category the design is mainly intended"
+" to estimate, such as forest or forest loss. It can differ from the "
+"strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:31
+msgid ""
+"**Reference observation**: information recorded for a sample, such as "
+"whether forest or forest loss is present. It may come from visual "
+"interpretation of high-resolution satellite imagery, a field inventory or"
+" another suitable source."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:32
+msgid ""
+"**Anticipated proportion**: a planning estimate of how common the target "
+"reporting category is across the AOI and, when stratified, within each "
+"stratum. It is prior information, not a result measured from the sample."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:33
+msgid "**Sample allocation**: the number of samples assigned to each stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:34
+msgid ""
+"**Sample arrangement**: the method used to place the samples within each "
+"stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:37
+msgid "Sampling theory in brief"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:39
+msgid ""
+"Sampling means observing selected locations to learn about a larger area "
+"or population without visiting every place. How those locations are "
+"chosen affects what conclusions the sample can support."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:41
+msgid ""
+"This recipe covers one part of a study: it decides how many locations to "
+"select and where to place them. Exporting the points does not finish the "
+"study. Reference observations must still be collected or interpreted at "
+"those locations and analysed in a way that accounts for how the locations"
+" were selected and allocated."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:43
+msgid ""
+"Anticipated proportions, calculated sample sizes and displayed "
+"uncertainty estimates are planning values, not results measured from the "
+"collected observations."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:46
+msgid "Workflow"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:48
+msgid "Create a sampling design in the following order:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:50
+msgid "Select the AOI."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:51
+msgid "Choose an unstratified or stratified design."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:52
+msgid ""
+"Anticipate the target proportion, when useful prior information is "
+"available."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:53
+msgid "Plan the sample count and its allocation."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:54
+msgid "Choose random or systematic sample placement."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:55
+msgid "Export the sample locations and review the result."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:57
+msgid ""
+"Changing an earlier step may invalidate a later step. An orange error "
+"indicator means that the affected panel must be reviewed again before "
+"continuing."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:60
+msgid "Start"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:62
+msgid ""
+"Go to the **Process** tab and select :btn:`<fa-solid fa-circle-plus> Add "
+"recipe` > **Sampling design**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:64
+msgid ""
+"The setup wizard opens the **Area of interest** and **Stratification** "
+"panels. Complete both panels to initialize the recipe. The following "
+"parameter buttons then become available in the lower-right corner:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:66
+msgid ":guilabel:`STR`: Stratification"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:67
+msgid ":guilabel:`PRO`: Anticipate proportion"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:68
+msgid ":guilabel:`ALO`: Sample Allocation"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:69
+msgid ":guilabel:`ARR`: Sample Arrangement"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:71
+msgid ""
+"Select the :btn:`<fa-solid fa-cloud-arrow-down>` button in the upper-"
+"right corner to export a complete design."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:78
+msgid "Area of interest"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:80
+msgid ""
+"Use the **Area of interest** panel to define the outer boundary within "
+"which sample locations may be selected. The AOI may come from a country "
+"or administrative boundary, a drawn geometry, a GEE table, or another "
+"source supported by the standard SEPAL AOI selector."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:82
+msgid ""
+"Choose an AOI that covers the area from which sample locations should be "
+"selected."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:84
+msgid "Check the AOI before continuing:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:86
+msgid "Include every location that belongs to the population of interest."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:87
+msgid ""
+"Avoid unnecessary geometric detail. Very complex boundaries can increase "
+"processing time."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:90
+msgid "Stratification"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:92
+msgid ""
+"Use the **Stratification** panel to choose whether the sample is divided "
+"among map classes."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:95
+msgid "Why stratify"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:97
+msgid ""
+"Stratification divides the eligible sampling area into non-overlapping "
+"strata before samples are selected. Its main statistical purpose is to "
+"improve sampling efficiency. A useful stratification may:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:99
+msgid "reduce the expected uncertainty for the same total number of samples; or"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:100
+msgid "require fewer samples to reach the same target uncertainty."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:102
+msgid ""
+"These gains are not guaranteed. They are most likely when the strata "
+"separate areas with meaningfully different occurrences of the target "
+"reporting category and the samples are allocated appropriately. A poor "
+"stratification or allocation may provide no gain and can make the result "
+"less precise."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:104
+msgid ""
+"The stratification map does not need to show the target reporting "
+"category itself. For example, ecological zones can define strata in a "
+"design intended to estimate forest area."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:107
+msgid "Choose the design type"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:109
+msgid "Use one of the following designs:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:111
+msgid ""
+"**Unstratified**: sample the eligible area inside the AOI without "
+"dividing it into strata. Use this option when no useful stratification is"
+" available or separate allocation among map classes is unnecessary."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:112
+msgid ""
+"**Stratified**: use a categorical image to divide the AOI into strata and"
+" allocate samples separately to each."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:115
+msgid "Create an unstratified design"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:117
+msgid ""
+"Turn on **Unstratified** to select sample locations across the eligible "
+"area inside the AOI without a stratification image or band."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:120
+msgid "Create a stratified design"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:122
+msgid ""
+"A categorical image assigns each pixel to a discrete class, such as a "
+"land-cover type or ecological zone. An image can contain one or more "
+"bands; select the band containing the class values to use as strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:124
+msgid "For a stratified design:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:126
+msgid ""
+"Select **Asset** to use a GEE image asset, or **Recipe** to use the image"
+" output of another SEPAL recipe."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:127
+msgid "Select a categorical image."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:128
+msgid "Select the band containing the stratum values."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:129
+msgid ""
+"Leave **Scale** blank to let SEPAL choose a suitable value. Enter a value"
+" in metres only when the design needs a different resolution."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:133
+msgid ""
+"When **Recipe** is selected, SEPAL evaluates that recipe as part of the "
+"stratification calculations and sample export. A processing-intensive "
+"recipe can make these operations slow or cause an Earth Engine timeout or"
+" memory error. If this happens repeatedly, export the recipe output as a "
+"GEE image asset and select it with **Asset**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:135
+msgid ""
+"Once the required inputs are available, SEPAL automatically starts "
+"calculating the area and weight of each stratum within the AOI. Wait for "
+"the calculation to finish before continuing. The table displays:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:137
+msgid "**Value**: the numeric pixel value identifying the stratum;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:138
+msgid "**Area (ha)**: the mapped stratum area in hectares;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:139
+msgid "**Weight**: the stratum area divided by the total mapped area; and"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:140
+msgid "**Total**: the total mapped area and a weight of 100 percent."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:147
+msgid ""
+"Review the calculated strata. Edit a label or colour when the image does "
+"not provide suitable class metadata. The labels and colours are included "
+"with the exported design."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:151
+msgid ""
+"A masked pixel has no usable value in the selected band and is not part "
+"of any stratum. Review the calculated total area and class list before "
+"allocating samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:154
+msgid "Sampling frame"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:156
+msgid ""
+"The sampling frame is the geographic area eligible for sample selection. "
+"For an unstratified design, it is the eligible area inside the AOI. For a"
+" stratified design, it is the eligible, unmasked pixels belonging to "
+"included strata inside the AOI. Locations outside the sampling frame "
+"cannot be selected."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:159
+msgid "Scale"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:161
+msgid ""
+"Scale sets the resolution at which the stratification is read, and with "
+"it how much processing the calculations require. For a GEE image asset it"
+" starts from the image's own pixel size; see `Grids and projections`_. "
+"The approximate number of pixels processed depends on the AOI area "
+"divided by the square of the scale. For the same AOI, halving the scale "
+"processes approximately four times as many pixels; doubling it processes "
+"approximately one quarter as many."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:163
+msgid ""
+"A smaller scale can preserve more spatial detail when the source image "
+"supports that resolution, but it increases processing time and memory "
+"use. Choosing a scale finer than the source's useful resolution mostly "
+"resamples the same information and adds work. A larger scale is faster, "
+"but it can remove small or narrow strata, shift class boundaries and "
+"change the calculated area and weight of each stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:165
+msgid ""
+"The class recorded for each sample is the one found at the sample "
+"location at the resolution in use."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:168
+msgid "Direct and Queued calculations"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:170
+msgid ""
+"Choose how SEPAL calculates stratum areas. Workload depends on the number"
+" of pixels and the computation required for each pixel. AOI area and "
+"Scale determine the pixel count; a stored asset adds little processing, "
+"while a source **Recipe** may add little or a lot."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:172
+msgid "Select one of the following options:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:174
+msgid ""
+"**Direct**: start the calculation immediately in GEE's interactive "
+"environment."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:175
+msgid ""
+"**Queued**: place the calculation in GEE's batch queue. Batch tasks can "
+"run longer and may have more memory than Direct calculations, making them"
+" better suited to demanding work. GEE usually runs only a few batch tasks"
+" at once, so the calculation may wait for capacity."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:177
+msgid "Demanding calculations can still be slow or fail with either option."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:180
+msgid "Anticipate proportion"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:182
+msgid ""
+"Use the **Anticipate proportion** panel to choose the one target "
+"reporting category that the design should plan for and describe how "
+"common it is expected to be within each stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:184
+msgid ""
+"The target reporting category is the category whose area or proportion "
+"the design is mainly intended to estimate. It does not have to be one of "
+"the strata or originate from the stratification map. For example, "
+"ecological zones can be the strata while forest is the target reporting "
+"category."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:187
+msgid "Why anticipate a proportion"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:189
+msgid ""
+"Anticipated proportions help SEPAL plan where samples are expected to "
+"reduce uncertainty most. With an appropriate allocation strategy and "
+"credible anticipated proportions, the design may achieve similar expected"
+" precision with fewer observations, or better expected precision with the"
+" same number of observations."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:191
+msgid ""
+"SEPAL also uses anticipated proportions to estimate how precise the "
+"result may be. For a stratified design, you can set a precision target "
+"and let SEPAL calculate the total sample size, or set the number of "
+"samples you can assess and see the expected precision. For an "
+"unstratified design, you enter the number of samples directly and SEPAL "
+"can estimate the expected precision. This helps balance the desired "
+"precision against the available assessment capacity."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:193
+msgid ""
+"These calculations focus on one target reporting category. Choose the "
+"category that matches the main objective. Other categories can still be "
+"recorded. Inaccurate anticipated proportions can make the design less "
+"efficient, but they do not invalidate the observations collected later. "
+"The final precision is calculated from those observations and may differ "
+"from the planning result."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:196
+msgid "Choose how to anticipate proportions"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:198
+msgid ""
+"Select **No proportions** when reliable prior information is unavailable."
+" This does not set the proportion to zero or change whether the design is"
+" stratified. Otherwise, select one of the following methods:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:201
+msgid "Probability image"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:203
+msgid ""
+"Choose **Probability image** when you have an estimated probability of "
+"the target reporting category at each location. SEPAL averages these "
+"probabilities within each stratum to approximate the expected proportion."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:205
+msgid ""
+"For example, suppose **Tree** is the target reporting category and a "
+"SEPAL classification provides a **Class** band and a **Tree %** "
+"probability band. The **Class** band can define land-cover strata, while "
+"**Tree %** anticipates the proportion of Tree within each stratum. "
+"Alternatively, ecological zones could define the strata while the same "
+"**Tree %** band anticipates Tree within each zone."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:207
+msgid ""
+"Select the probability band for the target category — **Tree %** in this "
+"example — not **Class probability**, which describes the confidence of "
+"whichever class was assigned at each location."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:210
+msgid "Categorical image"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:212
+msgid ""
+"Choose **Categorical image** when a map other than the stratification "
+"contains a class corresponding to the target reporting category. Within "
+"each stratum, SEPAL calculates the share of the area mapped as that class"
+" and uses it as the anticipated proportion."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:214
+msgid ""
+"For example, suppose **Tree** is the target reporting category. "
+"Ecological zones can define the strata, while the **Class** band of a "
+"land-cover map supplies the anticipated proportions by selecting **Tree**"
+" as the target class: each zone is anticipated to contain the share of "
+"trees that map shows in it. Alternatively, a forest map can define the "
+"strata while a second forest map, from another source, supplies the "
+"proportions: where the two diverge, the stratum is less certain and needs"
+" more samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:216
+msgid ""
+"The stratification itself cannot supply this information: every stratum "
+"would be mapped as either entirely the target category or none of it, so "
+"no stratum would appear uncertain. The map's class should also mean the "
+"same thing as the target reporting category, over about the same period; "
+"otherwise the proportions reflect differences between the two maps rather"
+" than the uncertainty within each stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:219
+msgid "Manual"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:221
+msgid ""
+"Select **Manual** to enter the anticipated percentage separately for each"
+" stratum. Base the values on prior studies, pilot observations or "
+"documented expert judgement."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:224
+msgid "Configure the panel"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:226
+msgid "For **Probability image** or **Categorical image**:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:228
+msgid "Select an **Asset** or **Recipe**, then select the source image and band."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:229
+msgid ""
+"For a probability image, indicate whether values range from 0 to 100 "
+"instead of 0 to 1. For a categorical image, select the target **Class**. "
+"When class metadata is unavailable, load the distinct values or enter the"
+" numeric class value."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:230
+msgid "Enter the processing **Scale** and select **Direct** or **Queued**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:232
+msgid ""
+"The **Direct** and **Queued** options behave as described under `Direct "
+"and Queued calculations`_. The Scale in this panel controls the "
+"anticipated-proportion calculation's pixel workload independently of the "
+"stratification Scale."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:234
+msgid ""
+"Once the required inputs are available, SEPAL automatically calculates "
+"the anticipated proportion for each stratum. Wait for the calculation to "
+"finish and review the values before continuing."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:236
+msgid ""
+"For an image-based method, SEPAL combines the calculated stratum "
+"proportions using their area weights. If reliable prior information is "
+"available for the AOI as a whole, enter **Anticipated overall "
+"proportion** to apply that value. SEPAL adjusts the stratum values to "
+"match it while keeping every stratum between 0 and 100 percent."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:238
+msgid ""
+"For example, suppose **Tree** is the target reporting category and the "
+"probability image produces an anticipated overall proportion of 5 "
+"percent. A previous assessment for the same area suggests that the "
+"proportion is closer to 10 percent. Enter **10** as the **Anticipated "
+"overall proportion**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:240
+msgid ""
+"SEPAL doubles every calculated stratum proportion. A stratum calculated "
+"at 10 percent becomes 20 percent, while one calculated at 2 percent "
+"becomes 4 percent. The relative differences among strata are preserved, "
+"but their area-weighted overall proportion becomes 10 percent."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:242
+msgid ""
+"Review the calculated or manually entered proportions and any overall "
+"adjustment before continuing."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:250
+msgid "Sample allocation"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:252
+msgid ""
+"Use the **Sample Allocation** panel to plan how many samples the design "
+"should contain and, for a stratified design, how they are distributed "
+"among the strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:254
+msgid ""
+"Anticipated proportions allow SEPAL to estimate precision for an entered "
+"sample size. For a stratified design, they also allow SEPAL to calculate "
+"the sample size needed for a precision target and use **Optimal** or "
+"**Power** allocation. Without anticipated proportions, enter the sample "
+"size directly; SEPAL cannot estimate precision for the target reporting "
+"category. **Proportional**, **Equal** and **Balanced** allocation remain "
+"available for a stratified design."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:257
+msgid "Why allocation matters"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:259
+msgid ""
+"The total sample size controls the overall assessment effort. When the "
+"total is fixed, assigning more samples to one stratum leaves fewer for "
+"the others. Two designs with the same total sample size can therefore "
+"have different expected precision."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:262
+msgid "Set the target"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:264
+msgid ""
+"With anticipated proportions, a stratified design can use one of two "
+"targets:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:266
+msgid ""
+"**Samples**: enter the total number of samples you can assess or have "
+"otherwise decided to collect. SEPAL estimates the expected precision for "
+"that sample size."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:267
+msgid ""
+"**Error**: enter a target relative margin of error. SEPAL calculates the "
+"total sample size expected to meet that target."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:269
+msgid ""
+"For an unstratified design, enter the sample count directly in the "
+"allocation table. When an anticipated proportion is available, SEPAL "
+"displays the expected margin of error for that count."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:271
+msgid ""
+"The **Error** target is a relative margin of error: it expresses the "
+"planned uncertainty as a percentage of the anticipated overall "
+"proportion, not as percentage points. It is a planning result and depends"
+" on the anticipated proportions being reasonable."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:273
+msgid ""
+"The **Confidence level** describes how often the calculated margin-of-"
+"error range would be expected to contain the true proportion if the "
+"sampling process were repeated many times. **95 percent** is the standard"
+" choice. Use **90 percent** when somewhat less confidence is acceptable "
+"in return for a smaller required sample, or **99 percent** when stronger "
+"confidence justifies a larger required sample."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:277
+msgid ""
+"SEPAL uses the total sample size, whether entered directly or calculated "
+"from an **Error** target, to allocate samples among strata. The margin of"
+" error, whether entered as the target or estimated from the sample size, "
+"is only a planning estimate. How closely it matches the final uncertainty"
+" depends largely on how closely the proportions found in the reference "
+"observations match the anticipated proportions. Calculate the final "
+"uncertainty from the collected observations using a method appropriate "
+"for the sampling design."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:280
+msgid "Choose an allocation strategy"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:282
+msgid ""
+"The allocation strategy controls how the total sample size is divided "
+"among strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:284
+msgid ""
+"When comparing strategies, watch the value that SEPAL recalculates. With "
+"**Error** selected, a lower sample size indicates greater planned "
+"efficiency for the same uncertainty target. With **Samples** selected, a "
+"lower margin of error indicates greater planned efficiency for the same "
+"sample size. These comparisons depend on the anticipated proportions "
+"being credible."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:286
+msgid "Allocation strategies"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:290
+#: ../../source/cookbook/sampling_design.rst:382
+msgid "Strategy"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:291
+msgid "How it allocates samples"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:292
+msgid "When it may be useful"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:293
+msgid "**Proportional**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:294
+msgid "Assigns samples in proportion to mapped stratum area."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:295
+msgid "When similar sampling effort per unit area is appropriate."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:296
+msgid "**Equal**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:297
+msgid ""
+"Assigns sample counts as evenly as possible among strata. Counts can "
+"differ by one when the total does not divide evenly."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:298
+msgid ""
+"When small strata need strong representation. It can assign many samples "
+"to very small strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:299
+msgid "**Balanced**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:300
+msgid "Uses the midpoint between equal and proportional allocation."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:301
+msgid "When a compromise between area and representation is needed."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:302
+msgid "**Optimal**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:303
+msgid ""
+"Uses anticipated proportions to place more samples in strata expected to "
+"contribute more uncertainty."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:304
+msgid ""
+"When the anticipated proportions are credible and the main goal is "
+"efficient estimation of the target reporting category."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:305
+msgid "**Power**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:306
+msgid ""
+"Modifies Optimal by reducing the influence of each stratum's expected "
+"target amount. A value of 1 matches Optimal; lower values shift "
+"relatively more samples toward smaller non-zero expected amounts."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:307
+msgid ""
+"When you want to give more representation than Optimal to strata expected"
+" to contain smaller amounts of the target reporting category."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:309
+msgid ""
+"Automatic allocations are rounded to whole samples and then adjusted to "
+"preserve the requested total and the minimum per stratum. The resulting "
+"allocated per-stratum counts can therefore differ slightly from the ideal"
+" mathematical proportions."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:317
+msgid "Set the minimum per stratum"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:319
+msgid ""
+"Use **Min samples/stratum** to require automatic allocation to assign at "
+"least this many samples to each stratum. The recipe requires at least two"
+" samples in every stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:321
+msgid ""
+"This setting applies to Proportional, Balanced, Optimal and Power "
+"allocation. Equal and Manual use the hard minimum of two directly."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:325
+msgid ""
+"SEPAL requires at least two samples per stratum, but this is usually too "
+"few to describe a stratum reliably. If results will be reported by "
+"stratum, choose a higher minimum based on the required precision and the "
+"number of locations that can be assessed."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:327
+msgid ""
+"The total sample size must be large enough to satisfy the minimum for "
+"every stratum. Rare strata may not contain enough usable locations to "
+"meet the allocated count, even when the arithmetic allocation is valid."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:330
+msgid "Allocate manually"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:332
+msgid ""
+"Select **Manual** to enter the sample size for every stratum. Each value "
+"must be an integer of at least two."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:335
+msgid "Review the allocation"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:337
+msgid "Review the allocation table. Confirm that:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:339
+msgid ""
+"the total sample size can be assessed reliably within the available time "
+"and resources;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:340
+msgid "important and rare strata receive enough samples; and"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:341
+msgid "any displayed margin of error is acceptable as a planning estimate."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:343
+msgid ""
+"The allocation sets the requested counts. Whether the export can place "
+"them is checked later; see `When too few sample locations are found`_."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:346
+msgid "Sample arrangement"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:348
+msgid ""
+"Use the **Sample Arrangement** panel to place the allocated samples "
+"within the AOI or within each stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:351
+msgid "Why arrangement matters"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:353
+msgid ""
+"Arrangement controls spatial coverage and the randomization used to "
+"select locations. It does not change the allocation among strata. Choose "
+"it based on the intended analysis, spatial pattern of the population, "
+"operational constraints and need for reproducibility."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:355
+msgid "Random and systematic arrangements make different trade-offs:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:357
+msgid ""
+"Randomly placed locations can cluster or leave spatial gaps. No minimum "
+"separation is enforced."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:358
+msgid ""
+"Systematic placement spreads locations regularly across space. Reusing "
+"the same grid provides stable sample locations for estimates over time "
+"and may allow previously collected observations to be retained when the "
+"stratification is corrected."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:361
+msgid "Random arrangement"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:363
+msgid "Select **Random** to place locations randomly."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:366
+msgid "Systematic arrangement"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:368
+msgid "Select **Systematic** to place samples on a regularly spaced grid."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:370
+msgid ""
+"SEPAL places locations in a hexagonally spaced pattern and organizes them"
+" into a fixed set of nested **grid levels**. Each level represents an "
+"available sampling density. Moving one level coarser removes alternating "
+"locations in a fixed pattern, leaving roughly half within each stratum. "
+"Moving to a denser level adds those locations back while retaining the "
+"locations from coarser levels."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:372
+msgid ""
+"When the same grid is reused, this allows sampling intensity to be "
+"increased or reduced without replacing all existing locations."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:374
+msgid ""
+"Because sample counts change in steps between grid levels, a level will "
+"not usually match the requested count exactly. Within a stratified "
+"design, SEPAL selects a level separately for each stratum to approach its"
+" allocated count. The result combines stratification with systematic "
+"placement; it is not the same as applying one uniform grid across the "
+"AOI."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:376
+msgid "Choose a **Sample size strategy**:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:378
+msgid "Systematic sample size strategies"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:383
+msgid "Result"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:384
+msgid "Statistical consideration"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:385
+msgid "**Oversample**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:386
+msgid "Selects a grid level intended to produce at least the requested count."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:387
+msgid ""
+"A successful export can exceed the requested count. If the densest "
+"permitted grid still cannot reach the request, the export stops with an "
+"error rather than returning fewer samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:388
+msgid "**Closest**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:389
+msgid "Selects the available grid level closest to the requested count."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:390
+msgid ""
+"The final count may be above or below the request, but it must meet the "
+"minimum requirement per stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:391
+msgid "**Exact**"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:392
+msgid ""
+"For each stratum, selects the least dense grid level that meets or "
+"exceeds the allocated count, then randomly removes excess locations in "
+"that stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:393
+msgid ""
+"The result is not a purely systematic sample. If enough systematic "
+"locations cannot be found, the export stops with an error rather than "
+"returning fewer samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:395
+msgid "Choose a **Grid start**:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:397
+msgid ""
+"**Random**: derive the global grid start from the seed. Use this when the"
+" systematic design requires a randomized start."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:398
+msgid ""
+"**Fixed**: use the same fixed global start. This is useful for "
+"operational consistency, but it does not randomize the grid start."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:400
+msgid ""
+"Nearby locations are often more alike than locations farther apart. This "
+"is called spatial autocorrelation. Samples placed too close together may "
+"repeat much of the same information and improve precision less than "
+"samples spread farther apart. Use **Min distance** to keep systematic "
+"samples at least the chosen distance apart:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:402
+msgid ""
+"For a stratified design, leave the field empty to use twice the "
+"stratification pixel size. An entered value must be at least this large."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:403
+msgid ""
+"For an unstratified design, leave the field empty to apply no additional "
+"minimum-distance constraint."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:410
+msgid ""
+"A larger minimum distance can reduce the number of locations available in"
+" small or fragmented strata."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:413
+msgid "Export"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:417
+msgid ""
+"Some sampling designs use temporary Earth Engine table assets before "
+"producing the final output. When temporary assets are required, the "
+"design needs a linked Earth Engine account with an asset root and "
+"sufficient asset quota, even when the final result is exported to the "
+"SEPAL workspace. Without a linked account, SEPAL can use its service "
+"account only for designs that do not require temporary assets, and the "
+"result can be exported only to the SEPAL workspace. See "
+":doc:`../setup/gee` for information about linking an Earth Engine account"
+" and configuring an asset root."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:419
+msgid ""
+"The retrieve button remains disabled until the design is ready to export,"
+" including any linked-account and asset-root requirements. Hover over it "
+"to view the first unresolved problem."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:421
+msgid ""
+"Select :btn:`<fa-solid fa-cloud-arrow-down>` to open the **Retrieve** "
+"panel."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:424
+msgid "Choose a destination"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:426
+msgid ""
+"**GEE asset**: available when an Earth Engine account is linked. Export "
+"an Earth Engine table asset and enter the asset ID and sharing or "
+"overwrite settings."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:427
+msgid ""
+"**SEPAL workspace**: available with a linked account or, for designs that"
+" do not require temporary assets, with the SEPAL service account. Export "
+"a file in CSV, GeoJSON, KML, KMZ or Shapefile format."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:429
+msgid "Select **Retrieve** to start the export task."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:432
+msgid "When too few sample locations are found"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:434
+msgid ""
+"An allocation can pass the panel checks but still request more eligible "
+"locations than a stratum can supply. A stratum may be very small, "
+"fragmented or mostly masked, or systematic spacing may leave too few grid"
+" locations."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:436
+msgid ""
+"During export, SEPAL checks whether it can produce the count allocated to"
+" each stratum. If it cannot, the task stops and no output is published. "
+"**Closest** is the exception: it may accept the nearest available count "
+"above or below the allocation when the minimum requirement is met."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:438
+msgid "To inspect a sampling shortage:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:440
+msgid "Open **Tasks** in the lower-left corner."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:441
+msgid "Select the failed task to open **Task Details**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:442
+msgid "Read the **Progress** section."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:443
+msgid ""
+"Review the affected strata, the number of locations found, the missed "
+"requirement and the suggestions for the current configuration."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:445
+msgid ""
+"Use the configuration-aware suggestions in **Progress** to revise the "
+"sample allocation, arrangement, stratification or AOI. Every stratum must"
+" still receive at least two locations, or the higher minimum set with "
+"**Min samples/stratum**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:447
+msgid ""
+"If Earth Engine times out or runs out of memory, the failure is not a "
+"sampling shortage. To reduce the workload, use a stored GEE image asset "
+"instead of processing a source **Recipe**. If a stratification or "
+"anticipated-proportion calculation failed, use a coarser (larger) "
+"**Scale** in that panel. If the sample export failed, reducing the "
+"allocated sample counts may help. After any change, confirm that the "
+"sampling design still supports the study objective."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:450
+msgid "Output"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:452
+msgid ""
+"Every output feature is a point with a sample identifier and stratum "
+"value."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:455
+msgid "GEE table asset"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:457
+msgid "Each sample point in a GEE table asset includes these core properties:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:459
+msgid ":code:`id`: sample identifier;"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:460
+msgid ":code:`stratum`: numeric stratum value."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:462
+msgid ""
+"The table asset stores the allocation, final counts, labels and colours "
+"as collection-level metadata. When you add an exported Sampling Design "
+"GEE table asset to a recipe map, SEPAL reads the "
+":code:`stratum_class_values`, :code:`stratum_class_palette` and "
+":code:`stratum_class_names` properties and uses them to style the points "
+"by stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:465
+msgid "View the exported points"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:467
+msgid "After the GEE table export is complete:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:469
+msgid ""
+"Open the :btn:`<fa-solid fa-layer-group>` **Layers** panel from the map "
+"toolbar."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:470
+msgid "Select **Add** > **Add an Earth Engine asset**."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:471
+msgid "Select the exported table asset."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:472
+msgid "Add the asset and enable its feature layer for the required map area."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:474
+msgid ""
+"Open **Layer options** to adjust the styling or filter the displayed "
+"features."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:476
+msgid ""
+"A sample near a class boundary can appear to sit in the neighbouring "
+"class. Maps are drawn in the Web Mercator projection, which is rarely the"
+" projection a stratification is stored in, so the classes are redrawn "
+"onto the map's own grid before they are displayed. Near a boundary the "
+"class drawn under a point can differ from the one recorded for it. The "
+"sample location itself is exact, and the stratum recorded for it is the "
+"class found at that location when the design was created."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:478
+msgid ""
+"Zooming in reduces the effect but does not remove it. If samples appear "
+"clearly misplaced rather than marginally, the Scale may be coarser than "
+"the detail in the source image. See `Grids and projections`_."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:481
+msgid "SEPAL workspace file"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:483
+msgid ""
+"Workspace exports repeat design information on each row. Important fields"
+" include:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:485
+msgid "Workspace output fields"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:489
+msgid "Field"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:490
+msgid "Description"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:491
+msgid ":code:`id`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:492
+msgid "Sample identifier."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:493
+msgid ":code:`stratum`, :code:`label`, :code:`color`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:494
+msgid "Stratum value and display information."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:495
+msgid ":code:`stratumArea`, :code:`totalArea`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:496
+msgid "Mapped areas in square metres."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:497
+msgid ":code:`stratumWeight`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:498
+msgid "Stratum area divided by total mapped area."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:499
+msgid ":code:`requestedSampleSize`, :code:`actualSampleSize`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:500
+msgid "Planned and exported counts for the stratum."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:501
+msgid ":code:`sampleExpansionArea`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:502
+msgid "Stratum area divided by the actual number of exported samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:503
+msgid ":code:`sampleWeight`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:504
+msgid "Stratum weight divided by the actual number of exported samples."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:505
+msgid ":code:`.geo`"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:506
+msgid "Point geometry in formats that support this Earth Engine export field."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:508
+msgid ""
+"The :code:`sampleExpansionArea` and :code:`sampleWeight` fields are "
+"convenience values derived from the mapped stratum area or weight and the"
+" actual exported count: :code:`sampleExpansionArea` is "
+":code:`stratumArea` divided by :code:`actualSampleSize`, and "
+":code:`sampleWeight` is :code:`stratumWeight` divided by "
+":code:`actualSampleSize`. These fields do not prescribe how final results"
+" should be calculated."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:510
+msgid ""
+"Retain :code:`actualSampleSize` as the final exported count when it "
+"differs from the requested count."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:513
+msgid "Grids and projections"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:515
+msgid ""
+"These settings are advanced. The defaults suit most designs, and a "
+"sampling design can be completed without changing them."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:517
+msgid ""
+"SEPAL performs its calculations on a grid of pixels. A grid is defined by"
+" a projection, which describes how the curved Earth is represented on a "
+"flat map, and a pixel size in metres."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:519
+msgid "Sampling Design uses two grids for different purposes:"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:521
+msgid ""
+"The **stratification grid** determines how the stratification is read. It"
+" decides which stratum each location belongs to, the area and weight of "
+"each stratum, and the anticipated proportions. Set it with the **CRS** "
+"and **Scale** fields in the **Stratification** panel."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:522
+msgid ""
+"The **sample placement grid** determines where samples can be placed. Set"
+" its **CRS** in the **Sample Arrangement** panel."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:525
+msgid "The stratification grid"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:527
+msgid ""
+"When the stratification is a single GEE image asset, SEPAL reads the "
+"image on its own grid. **CRS** shows the image's projection, and "
+"**Scale** is left empty with the image's pixel size shown in its place. "
+"Nothing is redrawn, so each sample records the class that the source "
+"image holds at that location."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:529
+msgid ""
+"Enter a **Scale** to read the stratification at a different resolution. A"
+" coarser value processes fewer pixels and calculates faster, but the "
+"strata are redrawn onto a grid at that resolution: boundaries between "
+"strata can shift slightly, and a location near a boundary may be assigned"
+" to a neighbouring stratum. Clear the field to return to the image's own "
+"grid."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:531
+msgid ""
+"Changing **CRS** also redraws the strata, because the image's own grid "
+"applies only in its own projection. Leave **Scale** blank to keep the "
+"detected pixel size, or enter a value to change the resolution too."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:533
+msgid ""
+"SEPAL also tries to detect a grid for image collections and **Recipe** "
+"sources. When a grid can be detected, blank fields use it. When it "
+"cannot, blank fields use the defaults shown in the form. Enter a **CRS** "
+"or **Scale** only when the design needs a different grid."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:535
+msgid ""
+"Stratum areas are measured in true square metres whichever grid is used, "
+"so areas and weights remain correct."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:538
+msgid "The sample placement grid"
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:540
+msgid ""
+"The available projections are equal-area, where every pixel covers the "
+"same amount of ground. This prevents some parts of the area of interest "
+"from containing more possible sample locations per square kilometre than "
+"others. The chosen arrangement and grid start still determine how "
+"locations are selected."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:542
+msgid ""
+"**EPSG:6933 — EASE-Grid 2.0 Global**: the default, suitable for most "
+"areas."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:543
+msgid "**EPSG:6931 — EASE-Grid 2.0 North**: for areas above roughly 60° north."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:544
+msgid "**EPSG:6932 — EASE-Grid 2.0 South**: for areas below roughly 60° south."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:546
+msgid ""
+"The global grid gives every pixel the same area at any latitude, but "
+"shapes and spacing become increasingly distorted towards the poles. The "
+"polar grids reduce this distortion and provide more even spacing there. "
+"What matters is how far north or south the area lies, not how large it "
+"is."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:548
+msgid ""
+"Changing this projection moves the sample locations. It does not change "
+"the calculated stratum areas or weights."
+msgstr ""
+
+#: ../../source/cookbook/sampling_design.rst:550
+msgid ""
+"An unstratified random design places samples directly within the area of "
+"interest and does not use this grid."
+msgstr ""
+

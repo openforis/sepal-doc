@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/apps/app_types.rst:4
+msgid "Docker vs. Jupyter apps"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:5
+msgid "*The two endpoints you'll choose between, and where each one fits*"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:7
+msgid ""
+"Every catalog entry declares an ``endpoint`` that tells SEPAL how to run "
+"the app. For new apps the practical choice is between ``docker`` and "
+"``jupyter``."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:12
+msgid ""
+"``shiny`` is a legacy endpoint and is no longer recommended for new apps "
+"— package the same UX as a Jupyter/Voila app instead. ``rstudio`` is "
+"reserved for the built-in RStudio tool. Both still work, but neither "
+"should be picked for anything new."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:18
+msgid "At a glance"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:25
+msgid "Docker app"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:26
+msgid "Jupyter app"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:27
+msgid "``endpoint``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:28
+msgid "``docker``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:29
+msgid "``jupyter``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:30
+msgid "Where it runs"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:31
+msgid "Its own container, on its own port, on the shared SEPAL server"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:32
+msgid "Inside the user's own SEPAL instance (sandbox), served through Voila"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:33
+msgid "Where compute happens"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:34
+msgid "On the shared SEPAL server — all users hit the same instance"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:35
+msgid "On the user's own SEPAL instance, at the size they have provisioned"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:36
+msgid "Versioning"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:37
+msgid "Pinned to a commit SHA (required)"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:38
+msgid "Tracks the catalog's ``branch``; no commit pin"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:39
+msgid "Code location"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:40
+msgid "Cloned from ``repository`` into the container"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:41
+msgid ""
+"Cloned from ``repository`` into the shared sandbox at ``/home/sepal-"
+"user/shared/apps/<app>/``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:43
+msgid "Isolation"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:44
+msgid "Strong — separate container and dependencies"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:45
+msgid ""
+"Own micromamba kernel built from ``sepal_environment.yml`` (see "
+":ref:`developers_apps_kernels`)"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:47
+msgid "Update trigger"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:48
+msgid ""
+"Catalog PR bumps ``commit`` → app-launcher checks out that commit on the "
+"next launch"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:50
+msgid ""
+"app-manager refreshes the clone to the branch tip and rebuilds the kernel"
+" if the env file changed"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:54
+msgid "Docker apps"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:56
+msgid ""
+"A docker app lives in its own repository and runs in its own container "
+"with a dedicated ``port`` on the shared SEPAL server. Because it is fully"
+" isolated, the catalog schema requires ``repository``, ``branch``, "
+"``commit``, ``port`` and ``path`` for every ``endpoint: docker`` entry."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:61
+msgid "When SEPAL launches the app it runs the equivalent of:"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:68
+msgid ""
+"That is why the pinned ``commit`` must be reachable from ``branch`` (see "
+":ref:`developers_apps_releases`). The app's dependencies are baked into "
+"its container, so its update cycle is independent of the rest of the "
+"platform — it changes only when you bump its commit in the catalog."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:73
+msgid ""
+"Because the docker app runs on the shared SEPAL server, every user hits "
+"the same instance. That makes docker a good fit for **lightweight, low-"
+"compute apps that act as a single service for many users** — interfaces "
+"over a small API, lookups, light visualizations, dashboards. It is *not* "
+"a good fit for heavy per-user compute: there is only one container "
+"backing all users."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:80
+msgid "Jupyter apps"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:82
+msgid ""
+"A jupyter app does not get its own container. Its code is cloned from the"
+" ``repository`` into the shared sandbox under ``/home/sepal-"
+"user/shared/apps/<app>/``, and its ``ui.ipynb`` notebook is rendered with"
+" `Voila <https://voila.readthedocs.io>`__ (hence catalog paths such as "
+"``/sandbox/jupyter/voila/render/shared/apps/<app>/ui.ipynb``). Crucially,"
+" it runs **inside each user's own SEPAL instance** — so the compute "
+"budget is whatever the user has provisioned for themselves."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:90
+msgid ""
+"Versioning is by branch, not by commit: the app-manager keeps the cloned "
+"``shared/apps/<app>/`` working tree on the tip of the catalog's "
+"``branch`` and rebuilds the app's kernel whenever "
+"``sepal_environment.yml`` (or ``requirements.txt``) changes — see "
+":ref:`developers_apps_kernels`. Pushing to that branch is enough to ship "
+"a new version; no catalog PR is required (the catalog PR is only needed "
+"to *list* the app in the first place)."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:97
+msgid ""
+"Because compute lives on the user's instance, a jupyter app is the right "
+"choice for **heavy, scalable, per-user workloads**: anything where the "
+"user needs to be able to size their machine to the job — training "
+"pipelines, large geospatial analyses, model inference, parallel "
+"processing."
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:103
+msgid "When to use which"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:105
+msgid "A simple rule of thumb:"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:112
+msgid "Use ``docker``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:113
+msgid "Use ``jupyter``"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:114
+msgid "Compute profile"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:115
+msgid "Light; same load no matter who is using it"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:116
+msgid "Heavy or variable; each user should be able to scale their own instance"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:118
+msgid "Usage pattern"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:119
+msgid "Single backend service serving many users"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:120
+msgid "Per-user notebook session, isolated per user"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:121
+msgid "Versioning needs"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:122
+msgid "You want strict, audited control of *exactly* which commit is live"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:123
+msgid "Push-to-branch is a fine release model"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:124
+msgid "Runtime needs"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:125
+msgid "Custom system stack, services, ports, or a non-Python runtime"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:126
+msgid ""
+"Standard SEPAL geospatial / scientific Python stack (extended via "
+"``sepal_environment.yml``)"
+msgstr ""
+
+#: ../../source/developers/apps/app_types.rst:129
+msgid ""
+"If the answer to most of these points the same way, that's your endpoint."
+" If the app is genuinely a notebook UI doing heavy compute, jupyter is "
+"almost always the right pick — that is the most common pattern on SEPAL."
+msgstr ""
+

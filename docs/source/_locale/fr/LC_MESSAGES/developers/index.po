@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/index.rst:11
+msgid "Command-line tools"
+msgstr ""
+
+#: ../../source/developers/index.rst:11
+msgid "Develop apps"
+msgstr ""
+
+#: ../../source/developers/index.rst:4
+msgid "For developers"
+msgstr ""
+
+#: ../../source/developers/index.rst:5
+msgid "*Tools, conventions and workflows for building on the SEPAL platform*"
+msgstr ""
+
+#: ../../source/developers/index.rst:7
+msgid ""
+"This section is for developers and trainers working on SEPAL rather than "
+"just using it: scripting against the sandbox from the command line, "
+"packaging environments for shared use, and publishing apps that other "
+"users can run."
+msgstr ""
+

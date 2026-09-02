@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/apps/app_catalog.rst:4
+msgid "Request a new app"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:5
+msgid "*Add your app to the SEPAL apps catalog so it appears on the platform*"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:8
+msgid "The catalog"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:10
+msgid ""
+"The list of apps SEPAL runs lives in a dedicated repository, `dfguerrerom"
+"/sepal-apps-catalog <https://github.com/dfguerrerom/sepal-apps-"
+"catalog>`__. For docker apps the catalog pins the exact commit SEPAL will"
+" run; for jupyter apps it records the ``branch`` and SEPAL runs its tip. "
+"Either way, adding or updating an app means opening a pull request "
+"against this catalog, where a maintainer reviews the change before it "
+"goes live."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:17
+msgid "The catalog ships two files:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:19
+msgid ""
+"``apps.test.json`` — apps available on test.sepal.io (the staging "
+"environment used to validate changes before they reach end users)"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:21
+msgid ""
+"``apps.prod.json`` — apps available on sepal.io (the production "
+"environment)"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:23
+msgid ""
+"New apps always land in ``apps.test.json`` first and are promoted to "
+"``apps.prod.json`` only once they behave correctly on test.sepal.io."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:27
+msgid "Anatomy of a catalog entry"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:29
+msgid ""
+"An app is a JSON object in the ``apps`` array. The schema only enforces "
+"``id`` and ``label`` as universally required, plus a docker-specific "
+"block — but the catalog convention is to **fill every field** so each "
+"entry carries a complete dashboard listing. The only practical "
+"exceptions:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:34
+msgid "``port`` applies only to docker apps (and is required there)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:35
+msgid ""
+"For hidden kernel-only apps (see :ref:`developers_apps_kernels`) the "
+"user-facing presentation fields (``description``, ``tagline``, "
+"``logoRef``, ``projectLink``, ``author``, ``tags``) can be omitted, since"
+" they are never shown."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:41
+msgid "Identification and routing"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:47
+#: ../../source/developers/apps/app_catalog.rst:84
+#: ../../source/developers/apps/app_catalog.rst:110
+#: ../../source/developers/apps/app_catalog.rst:144
+msgid "Field"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:48
+#: ../../source/developers/apps/app_catalog.rst:85
+#: ../../source/developers/apps/app_catalog.rst:111
+#: ../../source/developers/apps/app_catalog.rst:145
+msgid "When"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:49
+#: ../../source/developers/apps/app_catalog.rst:86
+#: ../../source/developers/apps/app_catalog.rst:112
+#: ../../source/developers/apps/app_catalog.rst:146
+msgid "Meaning"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:50
+msgid "``id``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:51
+#: ../../source/developers/apps/app_catalog.rst:54
+msgid "always (schema)"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:52
+msgid "Unique identifier across the catalog (``[A-Za-z0-9_.-]+``)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:53
+msgid "``label``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:55
+msgid "Display name shown on the apps dashboard."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:56
+msgid "``endpoint``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:57
+#: ../../source/developers/apps/app_catalog.rst:62
+#: ../../source/developers/apps/app_catalog.rst:66
+#: ../../source/developers/apps/app_catalog.rst:69
+msgid "always"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:58
+msgid ""
+"How SEPAL runs the app: ``jupyter`` or ``docker`` for new apps — "
+"``shiny`` is legacy and ``rstudio`` is reserved for the built-in tool. "
+"See :ref:`developers_apps_types`."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:61
+msgid "``repository``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:63
+msgid ""
+"``https://github.com/<owner>/<repo>`` of the app source. SEPAL clones it "
+"to run the app."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:65
+msgid "``branch``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:67
+msgid "Branch the app tracks (commonly ``release``)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:68
+msgid "``path``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:70
+msgid ""
+"Entry point the app-launcher routes to. For jupyter, the Voila URL of the"
+" notebook (e.g. "
+"``/sandbox/jupyter/voila/render/shared/apps/<app>/ui.ipynb``); for "
+"docker, **must equal** ``/api/app-launcher/<id>`` exactly — the schema "
+"enforces the prefix and ``check-docker-rules.js`` enforces that ``<id>`` "
+"matches the entry's ``id``."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:78
+msgid "Docker-only fields"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:87
+msgid "``commit``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:88
+#: ../../source/developers/apps/app_catalog.rst:93
+msgid "docker only (schema)"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:89
+msgid ""
+"Full 40-character lowercase commit SHA. Required for ``endpoint: "
+"docker``; not allowed for other endpoints, which track the branch tip."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:92
+msgid "``port``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:94
+msgid ""
+"Container port the docker app listens on. Integer 1–65535. Must be unique"
+" across ``apps.test.json`` and ``apps.prod.json``; ``check-docker-"
+"rules.js`` enforces this and prints ``Next free port: N`` on a violation."
+" New apps take the next free port — ``max(existing_ports) + 1``."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:101
+msgid "Presentation"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:103
+msgid ""
+"These fields populate the dashboard tile and the app's detail page. Skip "
+"them *only* on hidden kernel-only entries."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:113
+msgid "``author``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:114
+#: ../../source/developers/apps/app_catalog.rst:117
+#: ../../source/developers/apps/app_catalog.rst:120
+#: ../../source/developers/apps/app_catalog.rst:123
+#: ../../source/developers/apps/app_catalog.rst:127
+#: ../../source/developers/apps/app_catalog.rst:130
+msgid "visible apps"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:115
+msgid "Who maintains the app (free-form string)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:116
+msgid "``description``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:118
+msgid "Long-form description shown on the app's detail page."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:119
+msgid "``tagline``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:121
+msgid "One-line summary shown on the dashboard tile."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:122
+msgid "``logoRef``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:124
+msgid "Filename of the logo asset bundled with the catalog (e.g. ``my-app.svg``)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:126
+msgid "``projectLink``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:128
+msgid "URL to the project's home page, docs, or upstream repository."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:129
+msgid "``tags``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:131
+msgid ""
+"Array of tag values defined in the catalog's top-level ``tags`` block "
+"(e.g. ``[\"TOOLS\", \"TIME_SERIES\"]``)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:135
+msgid "Behaviour flags"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:137
+msgid ""
+"Optional booleans that alter how the app is listed or launched. Defaults "
+"are all ``false``."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:147
+msgid "``hidden``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:148
+#: ../../source/developers/apps/app_catalog.rst:152
+#: ../../source/developers/apps/app_catalog.rst:155
+#: ../../source/developers/apps/app_catalog.rst:158
+#: ../../source/developers/apps/app_catalog.rst:162
+msgid "optional"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:149
+msgid ""
+"If ``true``, the app builds but does not show a dashboard tile. Used for "
+"packaged kernels — see :ref:`developers_apps_kernels`."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:151
+msgid "``pinned``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:153
+msgid "Pin the app to the top of the dashboard."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:154
+msgid "``googleAccountRequired``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:156
+msgid "The app needs a connected Google account (e.g. for GEE)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:157
+msgid "``single``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:159
+msgid ""
+"Only one instance of this app can run at a time per user (used by the "
+"built-in ``jupyter-notebook``, ``jupyter-lab`` and ``rstudio`` tools)."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:161
+msgid "``skip``"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:163
+msgid "Temporarily skip building/serving this app without removing the entry."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:165
+msgid ""
+"A typical jupyter entry — every field a user sees on the dashboard is "
+"filled in:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:187
+msgid ""
+"A docker entry adds the docker-only ``commit``, ``port`` and the schema-"
+"enforced ``/api/app-launcher/<id>`` path; the presentation fields are the"
+" same:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:213
+msgid "Adding the app"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:215
+msgid ""
+"Open a pull request adding your entry to ``apps.test.json``. The fastest "
+"way is to edit the file directly on GitHub: `edit apps.test.json "
+"<https://github.com/dfguerrerom/sepal-apps-"
+"catalog/edit/main/apps.test.json>`__. For a docker app, ``commit`` must "
+"be a full 40-character SHA that exists on the declared ``branch``."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:220
+msgid ""
+"The ``Validate catalog`` and ``Review helper`` workflows run "
+"automatically. Validation is a blocking gate (schema, canonical "
+"formatting, and — for docker apps — a check that the commit is reachable "
+"from its branch). The review helper posts a single PR comment with a per-"
+"app diff and *risk flags* (new dependencies, network calls, shell-outs) "
+"to help maintainers review safely."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:226
+msgid ""
+"A SEPAL maintainer reviews and merges. Once merged, the app appears on "
+"test.sepal.io within minutes."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:228
+msgid ""
+"When you are happy with its behaviour on test.sepal.io, promote it to "
+"production — see `Promoting to production`_."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:232
+msgid "Promoting to production"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:234
+msgid ""
+"Promotion copies the *exact same pinned reference* (commit for docker, "
+"branch for the others) from ``apps.test.json`` into ``apps.prod.json``. "
+"Two paths, either of which produces the same promotion PR for a "
+"maintainer to merge:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:239
+msgid "Self-service ``/promote`` comment (recommended)"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:241
+msgid ""
+"The catalog has a single pinned issue titled *\"Promotion requests — "
+"comment ``/promote <app-id>`` here\"*, labeled ``promote-request``. Find "
+"it in the catalog's `issues tab <https://github.com/dfguerrerom/sepal-"
+"apps-catalog/issues?q=is%3Aissue+is%3Aopen+label%3Apromote-request>`__ "
+"(there is only ever one) and comment:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:251
+msgid ""
+"The ``Promote app on /promote comment`` workflow then verifies the "
+"commenter is authorized for the app's source repository and, if so, opens"
+" the promotion PR. Authorization uses public GitHub data only:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:255
+msgid "If the source repo is owned by a User, the commenter must equal that user."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:256
+msgid ""
+"If it is owned by an Organization, the commenter must be a **public** "
+"member of that org. If your membership is private, make it public at "
+"``https://github.com/orgs/<org>/people`` or use the manual-PR path below."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:260
+msgid "A maintainer still merges the PR."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:263
+msgid "Manual PR"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:265
+msgid ""
+"Open a pull request copying the entry's ``commit`` (or whole object) from"
+" ``apps.test.json`` into ``apps.prod.json``. The same validation and "
+"review checks run; a maintainer merges."
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:270
+msgid "Working on the catalog locally"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:272
+msgid ""
+"The catalog files use canonical ``JSON.stringify(parsed, null, 2)`` "
+"formatting (2-space indent, one-element arrays expanded, trailing "
+"newline). A ``.prettierignore`` keeps editor formatters off them, and CI "
+"rejects PRs that don't match. Install the pre-commit hooks once so "
+"problems are caught before they fail CI:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:284
+msgid "To re-canonicalize a file before pushing:"
+msgstr ""
+
+#: ../../source/developers/apps/app_catalog.rst:292
+msgid ""
+"The catalog's own ``docs/contributing.md`` and ``docs/ci.md`` document "
+"every workflow, check, and script in detail."
+msgstr ""
+

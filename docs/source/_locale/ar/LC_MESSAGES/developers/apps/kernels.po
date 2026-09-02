@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/apps/kernels.rst:4
+msgid "Request a new kernel"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:5
+msgid ""
+"*Package an environment once and share it with every SEPAL user as a "
+"named Jupyter kernel*"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:7
+#, python-format
+msgid ""
+"A \"kernel\" in the SEPAL catalog is really just a special-purpose "
+"jupyter app: the same catalog entry, the same :ref:`PR flow "
+"<developers_apps_catalog>`, the same :ref:`release lifecycle "
+"<developers_apps_releases_jupyter>`. The only difference is *intent* — "
+"the deliverable is the environment (and, often, training notebooks and "
+"data alongside it), not an app UI. If you have read "
+":ref:`developers_apps_catalog`, you already know 90% of how to ship one."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:15
+msgid "Why request a kernel"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:17
+msgid ""
+"Some notebooks need a large or unusual environment: a deep-learning "
+"stack, a pinned GDAL build, a model with awkward native dependencies. "
+"Asking every user — or every training participant — to build that "
+"environment by hand is slow, fragile, and easy to get subtly wrong."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:22
+msgid ""
+"A shared kernel solves that. You package the environment once, in a "
+"repository; SEPAL builds it centrally and exposes it as a named Jupyter "
+"kernel that lives in the shared sandbox. Every user then simply *selects*"
+" that kernel for the relevant notebook — no per-user installation, and "
+"everyone runs the same, reproducible environment."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:28
+msgid "This is the right approach when:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:30
+msgid ""
+"You are preparing a notebook or workflow for a training and want every "
+"participant on an identical environment."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:32
+msgid ""
+"A notebook needs heavy dependencies (GPU/ML, large geospatial stacks) "
+"that are wasteful to rebuild per user."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:34
+msgid "You want a stable, named environment that several notebooks can share."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:36
+msgid ""
+"It is *not* the right approach for quick, personal experiments. For an "
+"environment only you need, build it yourself with :guilabel:`uv` or "
+":guilabel:`micromamba` — see :ref:`env_management`."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:41
+msgid "It's the same flow as a jupyter app"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:43
+msgid "A kernel-only entry in the catalog is just a jupyter app that:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:45
+msgid "has ``\"hidden\": true`` (no dashboard tile — see below), and"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:46
+msgid "ships a ``sepal_environment.yml`` at the root of its repository."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:48
+msgid ""
+"Everything else — the PR against ``apps.test.json``, the validation and "
+"review-helper workflows, the promotion to ``apps.prod.json`` — works "
+"exactly as described in :ref:`developers_apps_catalog`."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:52
+msgid ""
+"The one extra behaviour, which fires automatically whenever the app-"
+"manager updates a jupyter app, is the kernel build itself: if the cloned "
+"repository contains a ``sepal_environment.yml`` (or a legacy "
+"``requirements.txt``), SEPAL builds an isolated environment from it and "
+"registers it as a named Jupyter kernel. For a ``sepal_environment.yml`` "
+"the build is, in essence:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:63
+msgid ""
+"The script then writes a ``kernel.json`` so the environment shows up in "
+"JupyterLab as ``(venv) <app label>``, and wires the geospatial "
+"environment variables (``PROJ_LIB``, ``PROJ_DATA``, ``GDAL_DATA``) to the"
+" environment's own data directories. The kernel is rebuilt only when the "
+"environment file changes (the script compares timestamps against an "
+"``.installed`` marker), so unchanged apps don't pay a rebuild cost on "
+"every update."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:71
+msgid "Hiding the app"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:73
+msgid ""
+"A packaged kernel usually has no dashboard UI of its own — it exists to "
+"back *other* notebooks. Set ``\"hidden\": true`` on its catalog entry so "
+"SEPAL builds the environment and registers the kernel without showing a "
+"tile in the apps dashboard."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:81
+msgid "Ship notebooks and data alongside the kernel"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:83
+msgid ""
+"The same clone the app-manager uses to build the kernel lands at ``/home"
+"/sepal-user/shared/apps/<app>/`` **inside every user's sandbox**. "
+"Anything you put in the repository is therefore reachable from every "
+"user's JupyterLab — not just the ``sepal_environment.yml``."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:88
+msgid ""
+"This makes the same mechanism useful for a second job: shipping "
+"**training notebooks and supporting data** to a cohort of users. For a "
+"workshop or a training, you can put the curriculum in the repo alongside "
+"the environment file. Each participant gets the notebooks already on "
+"their instance under ``shared/apps/<your-training>/``, with the matching "
+"``(venv) <your-training>`` kernel pre-built and ready to select — no per-"
+"user clone, no per-user pip install, no \"it works on my machine\"."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:96
+msgid "Practical conventions for that case:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:98
+msgid ""
+"Keep notebook files at the top level (or in a clearly named subdirectory)"
+" so participants can find them via ``shared/apps/<your-training>/``."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:100
+msgid ""
+"Keep sample inputs in the repo only if they are small. For larger "
+"datasets, point notebooks at a shared SEPAL location or an external URL "
+"so the clone stays light."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:103
+msgid ""
+"Tag a ``release`` branch for each cohort you run, so an in-flight push to"
+" ``main`` does not surprise a session that is already underway. See "
+":ref:`developers_apps_releases_branch`."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:107
+msgid ""
+"The catalog entry itself stays the same — ``\"hidden\": true``, "
+"``\"endpoint\": \"jupyter\"``, ``sepal_environment.yml`` in the repo. The"
+" notebooks just ride along in the same clone."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:112
+msgid "Worked example: ``sepal-sam``"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:114
+msgid ""
+"The catalog entry below is a real, hidden kernel app. Its description is "
+"simply *\"SAM environment\"* — it ships the environment for SAM-based "
+"notebooks and never appears in the dashboard:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:130
+msgid ""
+"Because the ``sepal-sam`` repository contains a "
+"``sepal_environment.yml``, SEPAL builds its micromamba environment and "
+"registers a ``(venv) Sepal SAM`` kernel. Any notebook a user opens can "
+"then select that kernel and run against the SAM stack immediately."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:138
+msgid "Recommended: ``sepal_environment.yml``"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:140
+msgid ""
+"Declare your kernel with a ``sepal_environment.yml`` at the root of the "
+"app repository. It is a standard conda/micromamba environment file, and "
+"it is the preferred way to define a SEPAL kernel because micromamba "
+"bundles native libraries (GDAL, GEOS, CUDA, HDF5, …) inside the "
+"environment — so it keeps working when SEPAL upgrades system-level "
+"libraries. A plain ``requirements.txt`` is still supported for backward "
+"compatibility, but it installs into a system-Python venv and can break on"
+" platform upgrades."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:148
+msgid "A minimal example:"
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:164
+msgid ""
+"You do not need to add ``ipykernel`` yourself — SEPAL installs it into "
+"the environment when it builds the kernel."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:167
+msgid ""
+"Once the file is in your repository and the app is in the catalog (see "
+":ref:`developers_apps_catalog`), every release that changes "
+"``sepal_environment.yml`` triggers a rebuild of the shared kernel on the "
+"next update."
+msgstr ""
+
+#: ../../source/developers/apps/kernels.rst:174
+msgid ""
+":ref:`env_management` — managing your *own* environments and kernels "
+"interactively, when you don't need a shared, centrally built one."
+msgstr ""
+
