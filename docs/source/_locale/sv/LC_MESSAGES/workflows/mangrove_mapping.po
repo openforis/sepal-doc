@@ -1,0 +1,1850 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/workflows/mangrove_mapping.rst:4
+msgid "Mangrove mapping with SEPAL"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:6
+msgid ""
+"This article describes a complete workflow for mapping mangroves using "
+"SEPAL — FAO's free, open-source, web-based cloud platform for satellite "
+"data analysis. The approach combines multi-sensor satellite data, global "
+"mangrove reference datasets, and machine learning classification to "
+"produce locally relevant mangrove maps and detect change over time. An "
+"optional extension covers above-ground biomass (AGB) mapping."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:10
+msgid ""
+"**Author:** Erik Lindquist, Forestry Officer, Food and Agriculture "
+"Organization of the United Nations (FAO)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:13
+msgid "Overview"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:15
+msgid "The workflow consists of the following stages:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:17
+msgid ":ref:`Registration and setup <mangrove-setup>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:18
+msgid ":ref:`Request SEPAL resources <mangrove-resources>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:19
+msgid ":ref:`Define the area of interest <mangrove-aoi>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:20
+msgid ":ref:`Build an optical mosaic (optional) <mangrove-optical>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:21
+msgid ":ref:`Build a radar mosaic (optional) <mangrove-radar>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:22
+msgid ":ref:`Load global mangrove reference datasets <mangrove-global-datasets>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:23
+msgid ""
+":ref:`Create the high-confidence mangrove reference map <mangrove-"
+"remapping>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:24
+msgid ":ref:`Generate training data <mangrove-training>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:25
+msgid ":ref:`Incorporate Google Satellite Embeddings <mangrove-embeddings>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:26
+msgid ":ref:`Classify mangroves <mangrove-classification>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:27
+msgid ":ref:`Map above-ground biomass (optional) <mangrove-biomass>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:28
+msgid ":ref:`Detect change using CCDC <mangrove-ccdc>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:29
+msgid ":ref:`Download and export results <mangrove-export>`"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:32
+msgid "Why use SEPAL for mangrove mapping?"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:34
+msgid ""
+"SEPAL democratises access to satellite data and analysis tools, enabling "
+"autonomous land monitoring without the need for local compute "
+"infrastructure. For mangrove mapping specifically, SEPAL provides:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:36
+msgid ""
+"**Multi-sensor data access** – seamless integration of optical "
+"(Sentinel-2, Landsat, NICFI/Planet) and synthetic aperture radar (SAR) "
+"(Sentinel-1 C-band, ALOS L-band) imagery"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:37
+msgid ""
+"**Multi-temporal analysis** – time-series processing and change detection"
+" using the Continuous Change Detection and Classification (CCDC) "
+"algorithm"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:38
+msgid ""
+"**Cloud-based classification** – machine learning classification recipes "
+"powered by Google Earth Engine (GEE)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:39
+msgid ""
+"**Global reference data** – integration with existing global mangrove "
+"products to generate locally relevant training data automatically"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:40
+msgid ""
+"**Team collaboration** – data saved as GEE assets can be shared across a "
+"team, allowing one person to build a composite that all team members can "
+"access and classify"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:45
+msgid "1. Registration and setup"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:47
+msgid "Before starting, create accounts on two platforms."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:50
+msgid "1.1 Google Earth Engine"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:52
+msgid "SEPAL's processing recipes run on GEE. A free GEE account is required."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:54
+msgid "Go to `earthengine.google.com <https://earthengine.google.com>`__."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:55
+msgid "Sign up using a Gmail account."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:56
+msgid "Wait for approval (usually within a few hours to a few days)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:59
+msgid "1.2 SEPAL"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:61
+msgid "Go to `sepal.io <https://sepal.io>`__ and register for a free account."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:62
+msgid "Connect the GEE account within SEPAL settings."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:66
+msgid ""
+"For a step-by-step walkthrough of SEPAL setup, see "
+":doc:`../setup/register`."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:71
+msgid "2. Request SEPAL resources"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:73
+msgid ""
+"SEPAL is always free to use; however, downloading data and running high-"
+"performance computing in the cloud requires resources to be allocated to "
+"an account. Resources are requested via the **User report** button "
+"(displayed as **$ 0/h**) in the lower-right corner of the **SEPAL "
+"interface**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:75
+msgid "To request resources:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:77
+msgid ""
+"Select the **User report** button in the lower-right corner of the "
+"**SEPAL interface**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:78
+msgid "Select **Request additional resources**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:79
+msgid ""
+"Enter the requested amounts. For most mapping work, the following is a "
+"reasonable starting point:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:81
+msgid "**Processing:** $10 USD/month of cloud compute time"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:82
+msgid "**Storage:** $10 USD/month"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:83
+msgid "**Workspace:** 10 gigabytes (GB) of personal SEPAL workspace storage"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:85
+msgid "Enter a short message describing the work (e.g. \"Mangrove mapping\")."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:86
+msgid "Select **Apply**. The SEPAL team will review and approve the request."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:88
+msgid ""
+"Once resources are approved, the **Download** button (displayed as a "
+"cloud with an arrow icon) will become active in all recipes. Even $1 of "
+"resources is sufficient to activate downloading to GEE or Google Drive."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:92
+msgid ""
+"SEPAL supports requests for larger amounts of resources for intensive "
+"work, such as training machine learning models. Describe the use case in "
+"the request message if needed."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:97
+msgid "3. Define the area of interest"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:99
+msgid ""
+"Use the same area of interest (AOI) for all downstream recipes to ensure "
+"composites, reference layers, and classification outputs are spatially "
+"aligned."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:101
+msgid "Open **Process** in the **SEPAL interface**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:102
+msgid ""
+"Set the AOI using an administrative boundary, an uploaded geometry, or a "
+"drawn polygon."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:107
+msgid "4. Build an optical mosaic (optional)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:111
+msgid ""
+"This step is only required if Google Satellite Embeddings are **not** "
+"used as the classification input (see :ref:`Section 9 <mangrove-"
+"embeddings>`). If using embeddings, proceed directly to :ref:`Section 6 "
+"<mangrove-global-datasets>`."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:113
+msgid ""
+"A cloud-free optical mosaic provides the spectral bands used for "
+"classification. In SEPAL, all processing starts with a *recipe*. Open a "
+"new recipe from the recipe book by selecting the **+** button, then the "
+"green **Add recipe** button."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:116
+msgid "Recommended data sources"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:122
+msgid "Source"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:123
+msgid "Spatial resolution"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:124
+msgid "Temporal resolution"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:125
+msgid "Bands"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:126
+#: ../../source/workflows/mangrove_mapping.rst:361
+msgid "Sentinel-2"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:127
+msgid "10 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:128
+msgid "5 days"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:129
+msgid "12"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:130
+msgid "Landsat (8/9)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:131
+msgid "30 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:132
+msgid "16 days"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:133
+msgid "8"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:134
+msgid "NICFI/Planet"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:135
+msgid "4.5 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:136
+msgid "Monthly"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:137
+msgid "4"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:140
+msgid "Recommended bands and indices"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:142
+msgid ""
+"For Sentinel-2, include bands: **B2, B3, B4, B5, B6, B7, B8, B8A, B11, "
+"B12**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:144
+msgid "Suggested derived indices:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:146
+msgid "normalized difference vegetation index (NDVI)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:147
+msgid "normalized difference moisture index (NDMI)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:148
+msgid "normalized difference water index (NDWI)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:149
+msgid "modified normalized difference water index (MNDWI)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:150
+msgid "red-edge NDVI variants"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:151
+msgid "Tasseled Cap Brightness, Greenness and Wetness"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:152
+msgid "short-wave infrared (SWIR) ratios (B11/B8, B12/B11)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:153
+msgid "enhanced vegetation index (EVI)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:157
+msgid ""
+"Avoid the **Aerosol** band for vegetation mapping — it captures "
+"atmospheric rather than surface conditions. The near-infrared (NIR) and "
+"SWIR bands are particularly important for mangroves: NIR is sensitive to "
+"chlorophyll and vegetation health; SWIR helps distinguish inundated "
+"vegetation from upland forest and open water."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:160
+msgid "Composite method"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:162
+msgid ""
+"Use the **Medoid** composite method, which selects actual observed pixel "
+"values rather than statistical summaries, preserving spectral integrity. "
+"Save the recipe with a meaningful name (e.g. ``Optical_Medoid_2023``) so "
+"it can be referenced in the classification recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:166
+msgid ""
+"See :doc:`../cookbook/optical_mosaic` for full instructions on the SEPAL "
+"optical mosaic recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:171
+msgid "5. Build a radar mosaic (optional)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:175
+msgid ""
+"This step is only required if Google Satellite Embeddings are **not** "
+"used as the classification input."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:177
+msgid ""
+"SAR data penetrates cloud cover and is sensitive to canopy structure and "
+"soil moisture — making it a valuable complement to optical data in "
+"tropical coastal environments where persistent cloud cover limits optical"
+" data availability."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:180
+msgid "Recommended data source"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:182
+msgid ""
+"The primary radar source used in this workflow is **Sentinel-1 C-band "
+"SAR**:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:184
+msgid "spatial resolution: 10 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:185
+msgid "temporal resolution: 12 days"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:186
+msgid "bands: VV and VH polarisations"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:188
+msgid ""
+"ALOS PALSAR L-band mosaics (25 m, yearly) can be added where available "
+"for additional structural information."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:191
+msgid "Recommended statistics to include"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:197
+msgid "Band"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:198
+#: ../../source/workflows/mangrove_mapping.rst:448
+msgid "Description"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:199
+msgid "VV mean"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:200
+msgid "Average VV backscatter across the year"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:201
+msgid "VH mean"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:202
+msgid "Average VH backscatter across the year"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:203
+msgid "VV/VH ratio"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:204
+msgid "Structural differentiation"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:205
+msgid "VH standard deviation"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:206
+msgid "Seasonal variability; helps distinguish vegetation types"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:208
+msgid "Save the recipe as ``Radar_Mosaic_YYYY``."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:212
+msgid ""
+"See :doc:`../cookbook/radar_mosaic` for full instructions on the SEPAL "
+"radar mosaic recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:217
+msgid "6. Load global mangrove reference datasets"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:219
+msgid ""
+"Load three global datasets as **EE Asset** recipes in SEPAL to build the "
+"high-confidence reference map in :ref:`Section 7 <mangrove-remapping>`. "
+"Each dataset is available in the GEE catalog or the Awesome GEE Community"
+" Catalog."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:221
+msgid "To add an **EE Asset** recipe:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:223
+#: ../../source/workflows/mangrove_mapping.rst:391
+msgid "Add a new recipe and select **EE Asset**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:224
+#: ../../source/workflows/mangrove_mapping.rst:392
+msgid "Set the AOI."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:225
+msgid "Search for the asset by name or paste the asset path."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:226
+#: ../../source/workflows/mangrove_mapping.rst:394
+msgid "Select **Done**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:227
+msgid ""
+"To visualise, open the **Menu** (☰) → select **+** → select the band → "
+"set min/max values → select **Apply**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:228
+msgid "Save the recipe with the name indicated below."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:231
+msgid "6.1 Global Mangrove Watch (GMW) v3 — 2020 extent"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:236
+#: ../../source/workflows/mangrove_mapping.rst:251
+#: ../../source/workflows/mangrove_mapping.rst:266
+#: ../../source/workflows/mangrove_mapping.rst:382
+msgid "**Asset path**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:237
+#: ../../source/workflows/mangrove_mapping.rst:683
+msgid "``projects/sat-io/open-datasets/GMW/extent/GMW_V3``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:238
+#: ../../source/workflows/mangrove_mapping.rst:253
+#: ../../source/workflows/mangrove_mapping.rst:268
+#: ../../source/workflows/mangrove_mapping.rst:530
+msgid "**Band**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:239
+msgid "``b1`` (1 = mangrove, 0 = non-mangrove)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:240
+msgid "**Date filter**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:241
+msgid "2020-01-01 to 2020-12-31; select first image"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:242
+#: ../../source/workflows/mangrove_mapping.rst:257
+#: ../../source/workflows/mangrove_mapping.rst:270
+#: ../../source/workflows/mangrove_mapping.rst:388
+#: ../../source/workflows/mangrove_mapping.rst:534
+msgid "**Save as**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:243
+msgid "``GMW_2020_EEAsset``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:246
+msgid "6.2 ESA WorldCover land cover — 2021"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:252
+#: ../../source/workflows/mangrove_mapping.rst:686
+msgid "``ESA/WorldCover/v200``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:254
+msgid "``Map``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:255
+msgid "**Mangrove class value**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:256
+msgid "95"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:258
+msgid "``WorldCover_2021_EEAsset``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:261
+msgid "6.3 Digital elevation model (MERIT DEM)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:267
+#: ../../source/workflows/mangrove_mapping.rst:689
+msgid "``MERIT/DEM/v1_0_3``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:269
+msgid "``dem``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:271
+msgid "``MERIT_DEM_EEAsset``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:273
+msgid ""
+"The digital elevation model (DEM) provides an elevation constraint — "
+"mangroves occupy low-lying intertidal zones, so pixels above 40 m "
+"elevation are excluded from the high-confidence product in :ref:`Section "
+"7 <mangrove-remapping>`."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:278
+msgid "7. Create the high-confidence mangrove reference map"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:280
+msgid ""
+"This step converts the three global datasets into a single high-"
+"confidence binary map of mangrove and non-mangrove, which is then used to"
+" automatically generate training data for the local classification."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:282
+msgid ""
+"If multiple independent global datasets agree that a pixel is mangrove "
+"(or non-mangrove), confidence in that label is much higher than if only "
+"one dataset indicates this. The elevation constraint further removes "
+"unlikely mangrove locations."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:285
+msgid "Remapping rules"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:287
+msgid "In SEPAL, use the **Remapping** recipe with the following logic:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:293
+msgid "Output class"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:294
+msgid "Condition"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:295
+msgid "**Class 1 – Mangrove**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:296
+msgid "GMW ``b1`` = 1 **AND** WorldCover ``Map`` = 95 **AND** DEM ``dem`` < 40 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:297
+msgid "**Class 2 – Non-mangrove**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:298
+msgid "GMW ``b1`` = 0 **AND** WorldCover ``Map`` ≠ 95 **AND** DEM ``dem`` < 40 m"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:299
+msgid "*(No data)*"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:300
+msgid "Pixels that do not meet either condition are excluded"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:302
+msgid "**Output band:** ``class`` (1 = mangrove, 2 = non-mangrove)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:304
+msgid "**Save as:** ``Mangrove_HighConfidence_Remapping``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:308
+msgid ""
+"The DEM < 40 m filter restricts both mangrove and non-mangrove samples to"
+" the intertidal zone, improving the relevance of the non-mangrove class "
+"and avoiding confusion with upland forest."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:312
+msgid ""
+"Use the divided interface (multi-view panel) to inspect the high-"
+"confidence product against the optical and radar mosaics before "
+"proceeding. Confirm that the mangrove extent looks reasonable for the "
+"area."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:317
+msgid "8. Generate training data"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:319
+msgid ""
+"With the high-confidence reference map produced, generate training data "
+"automatically by stratified sampling — more efficiently and at greater "
+"scale than manual digitising."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:321
+msgid ""
+"In SEPAL, training data is generated within the **Classification** recipe"
+" using the **Sample classification** option:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:323
+msgid "Open a new **Classification** recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:324
+msgid "In the training data tab, select **Add** > **Sample classification**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:325
+msgid ""
+"Set the sampling source to ``Mangrove_HighConfidence_Remapping`` (recipe "
+"reference) or an exported GEE asset of the same (band: ``class``)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:326
+msgid "Use balanced (stratified) sampling — equal numbers of samples per class."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:327
+msgid "Set a random seed for reproducibility."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:330
+msgid "Recommended sample sizes"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:336
+msgid "Area of interest"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:337
+msgid "Samples per class"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:338
+msgid "Small AOI"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:339
+msgid "300–800"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:340
+msgid "Subnational/national AOI"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:341
+msgid "1000–2000"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:342
+msgid "Very large or heterogeneous AOI"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:343
+msgid "5000–10000"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:345
+msgid ""
+"After sampling, inspect the training points visually against the imagery "
+"in the multi-view panel. If contaminated points are observed (e.g. "
+"mangrove samples landing on water), resample or remove them before "
+"running the classification."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:350
+msgid "9. Incorporate Google Satellite Embeddings (AlphaEarth Foundations)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:354
+msgid ""
+"These are referred to as \"Alpha Earth Embeddings\" in some training "
+"materials. They are now publicly available as the **Google Satellite "
+"Embedding dataset**, powered by `AlphaEarth Foundations "
+"<https://deepmind.google/blog/alphaearth-foundations-helps-map-our-"
+"planet-in-unprecedented-detail/>`__ — a geospatial artificial "
+"intelligence (AI) model developed by Google and Google DeepMind."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:357
+msgid "What are satellite embeddings?"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:359
+msgid ""
+"Satellite embeddings are pre-computed, AI-generated feature vectors that "
+"summarise multi-sensor, multi-temporal Earth observation data into a "
+"compact representation. Each 10 m pixel is described by a 64-dimensional "
+"embedding vector encoding a full year of observations from:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:362
+msgid "Landsat"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:363
+msgid "Sentinel-1 SAR"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:364
+msgid "Copernicus DEM (elevation)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:365
+msgid "ERA5 (climate)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:366
+msgid "GEDI LiDAR (vegetation structure)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:368
+msgid "Key advantages for mangrove mapping:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:370
+msgid ""
+"**Fewer training samples needed** – embeddings encode rich spatial and "
+"temporal context, reducing the labelled points required for accurate "
+"classification;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:371
+msgid ""
+"**Cloud-robust** – embeddings summarise an entire year of acquisitions, "
+"making them more robust to cloud contamination than single-date "
+"composites;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:372
+msgid ""
+"**No deep learning infrastructure required** – pre-computed and analysis-"
+"ready; compatible with SEPAL's built-in classifiers;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:373
+msgid ""
+"**Faster classification** – typically faster than classifying equivalent "
+"optical and radar inputs separately; and"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:374
+msgid "**Temporal coverage** – annual embeddings available from 2017 onwards."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:377
+msgid "Loading embeddings as an EE Asset recipe"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:383
+#: ../../source/workflows/mangrove_mapping.rst:680
+msgid "``GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:384
+msgid "**Asset type**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:385
+msgid "ImageCollection — mosaic or select target year"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:386
+msgid "**Bands**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:387
+msgid "All 64 embedding bands"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:389
+msgid "``AlphaEarth_Embeddings_EEAsset``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:393
+msgid ""
+"Search for ``embeddings`` and select **Satellite Embeddings V1**, or "
+"paste the asset path above."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:395
+msgid ""
+"To confirm data is loading: open the **Menu** (☰) → select **+** → select"
+" any band (e.g. ``Z00``) → select **Apply**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:396
+msgid "Save the recipe as ``AlphaEarth_Embeddings_EEAsset``."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:399
+msgid "When to use embeddings vs. optical/radar mosaics"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:401
+msgid ""
+"Use **embeddings** when an annual classification is needed and good "
+"results are required with limited training data or compute time. When "
+"embeddings are used, optical and radar mosaics are **not** needed as "
+"classifier inputs."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:402
+msgid ""
+"Use **optical and radar mosaics** when classification at a specific sub-"
+"annual time point is needed, or when within-year temporal detail is "
+"important."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:403
+msgid "Both approaches can be combined if desired."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:407
+msgid ""
+"`GEE Data Catalog: Satellite Embedding V1 <https://developers.google.com"
+"/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:408
+msgid ""
+"`GEE tutorial series: Introduction to Satellite Embeddings "
+"<https://developers.google.com/earth-engine/tutorials/community"
+"/satellite-embedding-01-introduction>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:409
+msgid "Brown et al. (2025)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:414
+msgid "10. Classify mangroves"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:416
+msgid ""
+"With training data and image inputs prepared, run the SEPAL "
+"**Classification** recipe to produce a mangrove/non-mangrove map."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:419
+msgid "10.1 Set up the classification recipe"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:421
+msgid "Add a new recipe and select **Classification**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:422
+msgid "When asked which image to classify, choose one of the following:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:424
+msgid ""
+"**Embeddings approach:** ``AlphaEarth_Embeddings_EEAsset`` only (do "
+"**not** add optical or radar mosaics)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:425
+msgid ""
+"**Optical/radar approach:** the optical mosaic recipe plus the radar "
+"mosaic recipe"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:426
+msgid "**Combined approach:** embeddings plus optical and/or radar mosaics"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:429
+msgid "10.2 Select input bands"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:431
+msgid "For the **embeddings approach**, add all 64 embedding bands."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:433
+msgid "For the **optical/radar approach**, recommended bands are:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:435
+msgid ""
+"Sentinel-2: B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12, plus derived "
+"indices (NDVI, NDMI, NDWI, Tasseled Cap)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:436
+msgid "Sentinel-1: VV mean, VH mean, VH standard deviation"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:439
+msgid "10.3 Define classification classes"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:441
+msgid "For mangrove mapping, a three-class legend is recommended:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:447
+msgid "Class"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:449
+msgid "Mangrove"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:450
+msgid "Mangrove forest"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:451
+msgid "Non-mangrove"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:452
+msgid "All other land cover"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:453
+msgid "Water"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:454
+msgid "Open water"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:456
+msgid ""
+"Keep classes distinct — overlapping or ambiguous classes reduce "
+"classification accuracy. Assign recognisable colours (e.g. green for "
+"mangrove, blue for water)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:459
+msgid "10.4 Add training data"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:461
+msgid ""
+"Reference the ``Mangrove_HighConfidence_Remapping`` recipe (or exported "
+"asset) generated in :ref:`Section 7 <mangrove-remapping>` and sampled in "
+":ref:`Section 8 <mangrove-training>`. In the training data tab, select "
+"**Add** > **Sample classification**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:463
+msgid ""
+"Add manual training points using the **Marker** icon if local knowledge "
+"suggests corrections are needed."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:467
+msgid ""
+"The classification updates in real time as training points are added or "
+"modified, allowing the impact of each change to be seen immediately."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:470
+msgid "10.5 Configure the classifier"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:472
+msgid "SEPAL uses **Random Forest** by default. Recommended settings:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:478
+msgid "Parameter"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:479
+msgid "Recommended value"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:480
+msgid "Number of trees"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:481
+msgid "~300 (use 25 for exploration; increase for production)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:482
+msgid "Variables per split (mTry)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:483
+msgid "Default/auto"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:484
+msgid "Probability outputs"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:485
+msgid "Enable if available"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:488
+msgid "10.6 Interpret and refine results"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:490
+msgid "Use the **Menu** (☰) to switch between display bands:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:492
+msgid "**Class** – the final classified map (one class per pixel)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:493
+msgid ""
+"**Mangrove percent** – the probability that each pixel belongs to the "
+"mangrove class; more informative than the binary class map for "
+"understanding model uncertainty"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:495
+msgid "To improve results, iterate by:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:497
+msgid ""
+"tightening the high-confidence mask criteria in the **Remapping** recipe "
+"(:ref:`Section 7 <mangrove-remapping>`) and resampling (:ref:`Section 8 "
+"<mangrove-training>`);"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:498
+msgid "adding more training samples;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:499
+msgid "increasing the number of Random Forest trees; or"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:500
+msgid "adjusting the input data stack."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:504
+msgid ""
+"See :doc:`../cookbook/classification` for full instructions on the SEPAL "
+"classification recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:509
+msgid "11. Map above-ground biomass (optional)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:511
+msgid ""
+"In addition to mangrove extent, SEPAL can produce wall-to-wall maps of "
+"above-ground biomass (AGB) by combining point-based biomass measurements "
+"with satellite embeddings using a **Regression** recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:514
+msgid "11.1 Approach"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:516
+msgid ""
+"Where biomass measurements are available (from field plots or GEDI "
+"LiDAR), and where the 64 embedding bands are available, the known biomass"
+" values can be statistically related to the embedding values and applied "
+"to every pixel across the AOI — producing a continuous biomass estimate "
+"map."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:519
+msgid "11.2 Option A – Using GEDI LiDAR data"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:521
+msgid ""
+"The Global Ecosystem Dynamics Investigation (GEDI) is a full-waveform "
+"LiDAR instrument on the International Space Station, capturing vegetation"
+" height, canopy structure, and above-ground biomass density. GEDI data "
+"are point samples rather than wall-to-wall, but can be used as training "
+"data to produce a continuous biomass map."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:523
+msgid "To load GEDI L4A as an EE Asset recipe:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:528
+msgid "**Asset**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:529
+msgid "GEDI L4A Above Ground Biomass Density v2.1"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:531
+msgid "``AGBD`` (above-ground biomass density, Mg/ha)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:532
+msgid "**Visualisation**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:533
+msgid "Thermal colour palette, min = 0, max = ~194"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:535
+msgid "``GEDI_L4A_EEAsset``"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:537
+msgid "To run the biomass regression:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:539
+#: ../../source/workflows/mangrove_mapping.rst:564
+msgid "Add a new recipe and select **Regression**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:540
+#: ../../source/workflows/mangrove_mapping.rst:565
+msgid "Select ``AlphaEarth_Embeddings_EEAsset`` as the image (all 64 bands)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:541
+msgid "In the training data tab, select **Add** > **Sample image**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:542
+msgid ""
+"Select ``GEDI_L4A_EEAsset`` as the source, with ``AGBD`` as the target "
+"band."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:543
+msgid "Set the number of samples (increase for production results)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:544
+#: ../../source/workflows/mangrove_mapping.rst:569
+msgid "Select **Apply** and run."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:548
+msgid ""
+"If the study area is changing rapidly, match the GEDI acquisition year to"
+" the target image year. For more stable mangrove areas, using all "
+"available GEDI data is acceptable."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:551
+msgid "11.3 Option B – Using field-collected AGB data"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:553
+msgid ""
+"Field-collected plot data with geographic coordinates can be uploaded to "
+"GEE as an asset table and used as training data in the **Regression** "
+"recipe."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:555
+msgid "To upload field data to GEE:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:557
+msgid "In the GEE Code Editor, go to the **Assets** tab."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:558
+msgid "Select **New** > **CSV file**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:559
+msgid "Upload the data file — GEE handles reprojection automatically."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:560
+msgid "Note the asset ID from the asset details panel."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:562
+msgid "To run the regression using field data:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:566
+msgid "In the training data tab, select **Add** > **Earth Engine table**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:567
+msgid "Paste the field data table asset ID."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:568
+msgid "Select the AGB column as the target value band."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:572
+msgid "11.4 Interpreting biomass results"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:574
+#, python-format
+msgid ""
+"The regression produces a continuous map of estimated above-ground "
+"biomass (Mg/ha). Results improve significantly with more training samples"
+" and more trees in the Random Forest model. Consider reserving 20–30% of "
+"samples for independent validation."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:579
+msgid "12. Detect change using CCDC"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:581
+msgid ""
+"To map mangrove loss or gain over time, this workflow uses the Continuous"
+" Change Detection and Classification (CCDC) algorithm (Zhu and Woodcock, "
+"2014). CCDC fits a time-series model to each pixel using all available "
+"satellite observations and detects structural breaks — making it well "
+"suited to detecting mangrove conversion events."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:584
+msgid "12.1 Create a CCDC asset"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:586
+msgid "Add a new recipe and select **CCDC Asset**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:587
+msgid "Define the AOI and date range."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:588
+msgid "Select input imagery (Sentinel-2 and/or Landsat recommended)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:589
+msgid "Run the recipe and save the result as a GEE asset."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:593
+msgid ""
+"Pre-built CCDC assets for specific study areas may be shared by the SEPAL"
+" team or colleagues as GEE asset links, avoiding the need to run this "
+"computationally intensive step independently."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:597
+msgid ""
+"See :doc:`../cookbook/ccdc_slice` for full instructions on creating a "
+"CCDC asset."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:600
+msgid "12.2 Extract CCDC slices"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:602
+msgid ""
+"A *CCDC slice* is a snapshot of the fitted time-series model at a "
+"specific date — providing harmonised, cloud-free spectral values "
+"consistent across dates. CCDC slices can be used:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:604
+msgid ""
+"as additional input bands in the **Classification** recipe (:ref:`Section"
+" 10 <mangrove-classification>`) for improved accuracy using spatio-"
+"temporal descriptors; or"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:605
+msgid "from two different dates to detect change between them."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:609
+msgid ""
+"See :doc:`../cookbook/ccdc_slice` for full instructions on using CCDC "
+"slices."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:612
+msgid "12.3 Run change detection"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:614
+msgid "**Option A – Index Change recipe (two-date comparison):**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:616
+msgid "Add a new recipe and select **Index Change**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:617
+msgid "Load CCDC slices from two target dates (e.g. 2015 and 2023)."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:618
+msgid "Run the recipe to produce a map of positive and negative spectral change."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:619
+msgid "Interpret positive and negative values as mangrove gain or loss."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:621
+msgid "**Option B – Near-real-time alert recipe:**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:623
+msgid ""
+"SEPAL includes an alert recipe based on CCDC that compares the time-"
+"series model to very recent observations (last few days to weeks), "
+"enabling near-real-time detection of mangrove disturbance events for "
+"operational monitoring."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:628
+msgid "13. Download and export results"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:631
+msgid "13.1 Export destinations"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:633
+msgid ""
+"Select the **Download** button (cloud with arrow icon) in any recipe to "
+"open the export dialog. Choose:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:635
+msgid ""
+"**Bands to export** – e.g. ``class`` for a classified map, or "
+"``mangrove_percent`` for a probability map;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:636
+msgid ""
+"**Scale** – spatial resolution in metres (e.g. 10 m for Sentinel-2 or "
+"embeddings-based results); and"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:637
+msgid "**Destination:**"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:639
+msgid ""
+"**Google Earth Engine asset** – exports to the GEE asset folder; "
+"recommended for further analysis or sharing;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:640
+msgid "**Google Drive** – exports to Google Drive for local download; or"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:641
+msgid ""
+"**SEPAL workspace** – exports to the SEPAL workspace; use if running "
+"further analysis inside SEPAL."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:644
+msgid "13.2 Monitor export tasks"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:646
+msgid ""
+"After selecting **Retrieve**, a spinning icon appears on the purple task "
+"button. A green check mark indicates completion. Monitor tasks in the GEE"
+" Code Editor under the **Tasks** tab."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:649
+msgid "13.3 Upload data to GEE"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:651
+msgid ""
+"To use local raster or vector data in SEPAL (e.g. field plots, "
+"administrative boundaries, existing maps):"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:653
+msgid "In the GEE Code Editor, go to the **Assets** tab and select **New**."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:654
+msgid "Select the file type:"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:656
+msgid "**GeoTIFF** for raster data;"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:657
+msgid ""
+"**Shapefile** – upload ``.shp``, ``.shx``, ``.dbf``, and ``.prj`` files "
+"together; or"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:658
+msgid "**CSV** for tabular data with geographic coordinates."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:660
+msgid "GEE handles reprojection automatically."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:661
+msgid ""
+"Copy the asset ID and use it in any SEPAL **EE Asset** recipe or training"
+" data input."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:664
+msgid "Summary: recommended input data stack"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:670
+msgid "Layer"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:671
+msgid "Asset/source"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:672
+msgid "Purpose"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:673
+msgid "Optical mosaic (Medoid)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:674
+msgid "Sentinel-2 (B2–B12 + indices)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:675
+msgid "Spectral features (if not using embeddings)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:676
+msgid "Radar mosaic"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:677
+msgid "Sentinel-1 (VV mean, VH mean, VH STD)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:678
+msgid "Structural features (if not using embeddings)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:679
+msgid "Google Satellite Embeddings"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:681
+msgid "AI-derived multi-sensor features (64 bands)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:682
+msgid "Global Mangrove Watch v3"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:684
+msgid "Reference mangrove mask"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:685
+msgid "ESA WorldCover v2"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:687
+msgid "Reference land cover (mangrove class = 95)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:688
+msgid "MERIT DEM"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:690
+msgid "Elevation constraint (< 40 m)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:691
+msgid "High-confidence reference map"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:692
+msgid "Remapping recipe output"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:693
+msgid "Training data source"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:694
+msgid "GEDI L4A"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:695
+msgid "GEE catalog"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:696
+#: ../../source/workflows/mangrove_mapping.rst:699
+msgid "Biomass regression training (optional)"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:697
+msgid "Field AGB plots"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:698
+msgid "User-uploaded GEE table"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:700
+msgid "CCDC asset"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:701
+msgid "SEPAL CCDC Asset recipe"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:702
+msgid "Change detection"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:705
+msgid "Additional resources"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:711
+msgid "Resource"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:712
+msgid "Link"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:713
+msgid "SEPAL platform"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:714
+msgid "`sepal.io <https://sepal.io>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:715
+msgid "SEPAL documentation"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:716
+msgid "`docs.sepal.io <https://docs.sepal.io>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:717
+msgid "SEPAL certified online course"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:718
+msgid ""
+"`FAO SEPAL course <https://www.fao.org/in-action/sepal/resources"
+"/certified-course/en>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:719
+msgid "FAO SEPAL brochure"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:720
+msgid "`fao.org/in-action/sepal <https://www.fao.org/in-action/sepal/en>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:721
+msgid "Global Mangrove Watch v3.0"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:722
+msgid ""
+"`JAXA GMW "
+"<https://www.eorc.jaxa.jp/ALOS/en/dataset/gmw/area/gmw_map_e.htm>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:723
+msgid "ESA WorldCover"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:724
+msgid "`ESA WorldCover <https://esa-worldcover.org>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:725
+msgid "GEDI L4A AGB dataset"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:726
+msgid ""
+"`GEDI L4A on GEE <https://developers.google.com/earth-"
+"engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:727
+msgid "GEE Satellite Embeddings catalog"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:728
+msgid ""
+"`GEE Data Catalog <https://developers.google.com/earth-"
+"engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:729
+msgid "AlphaEarth Foundations"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:730
+msgid ""
+"`Google DeepMind blog <https://deepmind.google/blog/alphaearth-"
+"foundations-helps-map-our-planet-in-unprecedented-detail/>`__"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:731
+msgid "Contact"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:732
+msgid "sepal@fao.org"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:735
+msgid "References"
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:737
+msgid ""
+"Brown, C.F., Kazmierski, M.R., Pasquarella, V.J., et al. 2025. AlphaEarth"
+" Foundations: An embedding field model for accurate and efficient global "
+"mapping from sparse label data. *arXiv preprint* arXiv:2507.22291."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:739
+msgid ""
+"Simard, M., Fatoyinbo, L., Smetanka, C., Rivera-Monroy, V.H., Castañeda-"
+"Moya, E., Thomas, N. and Van der Stocken, T. 2019. Mangrove canopy height"
+" globally related to precipitation, temperature and cyclone frequency. "
+"*Nature Geoscience*, 12: 40–45."
+msgstr ""
+
+#: ../../source/workflows/mangrove_mapping.rst:741
+msgid ""
+"Zhu, Z. and Woodcock, C.E. 2014. Continuous change detection and "
+"classification of land cover using all available Landsat data. *Remote "
+"Sensing of Environment*, 144: 152–171."
+msgstr ""
+

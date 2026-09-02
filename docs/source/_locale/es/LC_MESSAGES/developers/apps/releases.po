@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/apps/releases.rst:4
+msgid "Create a release"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:5
+msgid "*Ship a new version of an app already in the SEPAL catalog*"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:7
+msgid ""
+"Once your app is in the catalog (see :ref:`developers_apps_catalog`), the"
+" way you ship a new version depends on the app's ``endpoint`` (see "
+":ref:`developers_apps_types`):"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:11
+msgid ""
+"**Jupyter apps** (and :ref:`kernels <developers_apps_kernels>`, which are"
+" just hidden jupyter apps) are not pinned to a commit. The app-manager "
+"checks out the tip of the catalog's ``branch`` (defaulting to ``HEAD``) "
+"every time the sandbox refreshes the app, so a release is just a push to "
+"that branch in your source repository — no catalog change is needed."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:16
+msgid ""
+"**Docker apps** are pinned in the catalog to an exact commit SHA. SEPAL "
+"keeps running the old commit until that ``commit`` field is advanced, so "
+"a release is, in practice, a pull request against the catalog."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:20
+msgid "The rest of this page describes each flow in turn."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:25
+msgid "Jupyter and kernel apps"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:27
+msgid ""
+"These endpoints don't take a ``commit`` field in the catalog — only "
+"``branch`` (which defaults to ``HEAD``). On every sandbox refresh the "
+"app-manager runs the equivalent of ``git fetch`` + checkout of that "
+"branch's tip, so whatever is at the head of the tracked branch is what "
+"users get."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:33
+msgid "Releasing a new version"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:35
+msgid ""
+"Push the change to the branch the catalog tracks for your app. The next "
+"time the user's sandbox refreshes the app, the new tip is picked up "
+"automatically. No catalog PR is required."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:42
+#: ../../source/developers/apps/releases.rst:68
+msgid "The release branch convention"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:44
+msgid ""
+"Because every push to the tracked branch is effectively a release, most "
+"contributors keep a dedicated ``release`` branch and pin ``\"branch\": "
+"\"release\"`` in the catalog rather than ``main``. You develop on "
+"``main`` and merge into ``release`` only when you intend to publish — "
+"that way unreviewed work on ``main`` doesn't go live the moment it is "
+"pushed."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:50
+msgid ""
+"This is a convention, not a requirement. Any branch works; if you pin "
+"``main``, every push to ``main`` is a release."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:56
+msgid "Docker apps"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:58
+msgid ""
+"Docker apps carry a required ``commit`` SHA in the catalog. The app-"
+"launcher runs ``git fetch origin <branch>`` followed by ``git checkout "
+"--detach <commit>``, so SEPAL only ever runs that exact commit — "
+"regardless of what is at the tip of ``branch``. Shipping a new version "
+"therefore means advancing the ``commit`` field in the catalog."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:64
+msgid ""
+"There are two ways to do that: a manual pull request, or an automated "
+"bump triggered when your source repository publishes a release."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:70
+msgid ""
+"Many docker apps pin ``\"branch\": \"release\"`` rather than ``main``. "
+"Since the catalog validation requires the pinned ``commit`` to be "
+"reachable from ``branch``, keeping a dedicated ``release`` branch lets "
+"you continue developing on ``main`` while controlling exactly which "
+"commits are eligible to be pinned: you merge into ``release`` only when "
+"you intend to publish, and that merge commit is the one you pin."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:77
+msgid ""
+"This is a convention, not a requirement — any branch works as long as the"
+" pinned commit is reachable from it."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:81
+msgid "Manual release"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:83
+msgid ""
+"Push the code you want to ship and note the commit SHA on your release "
+"branch."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:85
+msgid ""
+"Open a PR against ``apps.test.json`` changing the ``commit`` field of "
+"your app's entry (and ``branch`` if it moved)."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:87
+msgid ""
+"The ``Review helper`` bot posts a compare link showing exactly what "
+"changed upstream between the old and new commit, with risk flags. A "
+"maintainer reviews and merges; the change goes live on test.sepal.io."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:90
+msgid ""
+"Promote to sepal.io with a second PR against ``apps.prod.json`` (or the "
+"``Promote app to production`` workflow)."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:95
+msgid ""
+"Validation requires the new commit to be an *ancestor of* (or equal to) "
+"the branch tip — exactly what the app-launcher needs, since it runs ``git"
+" fetch origin <branch>`` then ``git checkout --detach <commit>``. You can"
+" spot-check this before opening the PR:"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:106
+msgid "Automated release from your source repo"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:108
+msgid ""
+"The catalog can bump a docker app automatically when your repository "
+"publishes a GitHub release. The catalog's ``update-from-release.yml`` "
+"workflow listens for a ``repository_dispatch`` event of type ``bump-"
+"app``; on receipt it updates the app's ``commit`` in ``apps.test.json`` "
+"and opens a pull request for a maintainer to review."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:114
+msgid ""
+"To wire this up, add a workflow to your app's repository that sends the "
+"dispatch on release. The snippet below is a starting point — adjust the "
+"app ``id`` and the catalog repository to match your setup:"
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:139
+msgid ""
+"The token must have permission to dispatch to the catalog repository. The"
+" bump only updates ``commit`` — never ``branch`` — and still goes through"
+" the normal validation, risk-flag review, and maintainer merge before "
+"reaching test."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:145
+msgid ""
+"The exact ``client_payload`` fields the catalog expects may evolve. "
+"Confirm against the catalog's ``update-from-release.yml`` and "
+"``docs/ci.md`` before relying on this in production."
+msgstr ""
+
+#: ../../source/developers/apps/releases.rst:151
+msgid ""
+"The end-to-end lifecycle diagram lives on the section landing page — "
+":ref:`developers_apps`."
+msgstr ""
+

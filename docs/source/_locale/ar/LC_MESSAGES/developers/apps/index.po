@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/apps/index.rst:48
+msgid "Docker vs. Jupyter apps"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:48
+msgid "Request a new app"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:48
+msgid "Request a new kernel"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:48
+msgid "Create a release"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:4
+msgid "Develop apps"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:5
+msgid "*Build, release and publish your own apps on the SEPAL platform*"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:7
+msgid ""
+"These pages explain how SEPAL decides which app code to run and how that "
+"code reaches the platform — useful when you want to add an app, ship a "
+"new version of an existing one, or package a reusable environment for a "
+"notebook or workflow."
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:14
+msgid ""
+"The set of apps SEPAL runs is curated in the `dfguerrerom/sepal-apps-"
+"catalog <https://github.com/dfguerrerom/sepal-apps-catalog>`__ "
+"repository. Getting an app onto SEPAL — or updating one — means opening a"
+" pull request there. For docker apps, the catalog also pins the *exact "
+"commit* SEPAL will run; for jupyter apps, the catalog records the "
+"``branch`` and SEPAL still runs the tip of that branch. The pages below "
+"walk through both flows."
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:23
+msgid "How an app reaches SEPAL"
+msgstr ""
+
+#: ../../source/developers/apps/index.rst:46
+msgid "Contents"
+msgstr ""
+
