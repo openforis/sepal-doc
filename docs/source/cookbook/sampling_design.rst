@@ -207,13 +207,13 @@ For example, suppose **Tree** is the target reporting category and a SEPAL class
 Select the probability band for the target category — **Tree %** in this example — not **Class probability**, which describes the confidence of whichever class was assigned at each location.
 
 Categorical image
-""""""""""""""""""
+"""""""""""""""""
 
-Choose **Categorical image** when a categorical map provides useful prior information about the target reporting category within each stratum. SEPAL calculates the fraction mapped as the selected target class and uses that fraction as the anticipated proportion.
+Choose **Categorical image** when a map other than the stratification contains a class corresponding to the target reporting category. Within each stratum, SEPAL calculates the share of the area mapped as that class and uses it as the anticipated proportion.
 
-For example, suppose **Tree** is the target reporting category. Ecological zones can define the strata, while the **Class** band of a land-cover map supplies the anticipated proportions by selecting **Tree** as the target class.
+For example, suppose **Tree** is the target reporting category. Ecological zones can define the strata, while the **Class** band of a land-cover map supplies the anticipated proportions by selecting **Tree** as the target class: each zone is anticipated to contain the share of trees that map shows in it. Alternatively, a forest map can define the strata while a second forest map, from another source, supplies the proportions: where the two diverge, the stratum is less certain and needs more samples.
 
-Do not reuse the categorical band that defines the strata. It would return 100 percent for the selected stratum and 0 percent for the others. A separate classification containing the same classes can be used when it is a credible source of prior information, but its results describe agreement between the two maps and should not be treated as evidence that either map is correct.
+The stratification itself cannot supply this information: every stratum would be mapped as either entirely the target category or none of it, so no stratum would appear uncertain. The map's class should also mean the same thing as the target reporting category, over about the same period; otherwise the proportions reflect differences between the two maps rather than the uncertainty within each stratum.
 
 Manual
 """"""
