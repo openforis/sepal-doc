@@ -1,7 +1,8 @@
 {
   "alert_module": {
-    "description": "Retrieve any type of alert on a selected AOI",
-    "url": "https://raw.githubusercontent.com/sepal-contrib/alert_module/release/doc/en.rst"
+    "description": "Monitor forest cover loss alerts in an area of interest, period after period",
+    "url": "https://raw.githubusercontent.com/sepal-contrib/deforestation-alerts-module/release/doc/en.rst",
+    "locale": "https://raw.githubusercontent.com/sepal-contrib/deforestation-alerts-module/release/doc/_locale"
   },
   "alos_mosaics": {
     "description": "Create and manipulate ALOS K&C Mosaics",
