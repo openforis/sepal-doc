@@ -475,15 +475,21 @@ To maintain consistency across modules, we store the documentation in the module
 
 To create the actual documentation page, follow the instructions provided in the `sepal_ui doc <https://sepal-ui.readthedocs.io/en/latest/tutorials/send-to-sepal.html#add-documentation>`_.
 
-Then, modify the :code:`sepal-doc/docs/source/data/modules/en.json` file in **sepal-doc** to make your documentation available by adding a new line with the following shape:
+Then, modify the :code:`sepal-doc/docs/source/_data/modules/en.json` file in **sepal-doc** to make your documentation available by adding an entry with the following shape:
 
     .. code-block:: json
 
         {
-            "module_name": "https://raw.githubusercontent.com/<account>/<repository>/master/doc/en.rst"
+            "module_name": {
+                "description": "One line describing the module",
+                "url": "https://raw.githubusercontent.com/<account>/<repository>/release/doc/en.rst",
+                "locale": "https://raw.githubusercontent.com/<account>/<repository>/release/doc/_locale"
+            }
         }
 
     This file will be pulled at each build of the documentation in the :code:`sepal-doc/docs/source/modules/dwn` folder.
+
+    The optional :code:`locale` entry points to the module's own translations of this file, as gettext catalogues stored at :code:`<locale>/<language>/LC_MESSAGES/en.po` (named after the documentation file). They are copied to :code:`sepal-doc/docs/source/_locale/<language>/LC_MESSAGES/modules/dwn/module_name.po` at each build.
 
 New class on Google Classroom
 """""""""""""""""""""""""""""

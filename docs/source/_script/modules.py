@@ -4,6 +4,7 @@ copy the module documentation from the corresponding repositories and link it to
 import json
 from pathlib import Path
 from shutil import copy
+from urllib.parse import urlparse
 from urllib.request import urlretrieve
 
 # dirs
@@ -137,8 +138,9 @@ def get_translation():
             continue
 
         for loc in locale_list:
-            filename = Path(doc_url).stem
-            src_file = Path(locale_folder) / loc / "LC_MESSAGES" / f"{filename}.po"
+            # build the URL as a string: Path would collapse "https://" into "https:/"
+            filename = Path(urlparse(doc_url).path).stem
+            src_file = f"{locale_folder.rstrip('/')}/{loc}/LC_MESSAGES/{filename}.po"
             dst_file = (
                 locale_dir / loc / "LC_MESSAGES" / "modules" / "dwn" / f"{name}.po"
             )
