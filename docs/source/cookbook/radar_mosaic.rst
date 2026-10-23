@@ -105,8 +105,8 @@ The :guilabel:`OPT` tab controls which acquisitions are used and how they are co
     -   Multitemporal speckle filter: **None**
     -   Outlier removal: **Moderate**
     -   Orbit overlap: **All**
-
-    The advanced view additionally defaults to both border noise corrections (**Sides** and **First/Last**) and a minimum of one observation per pixel.
+    -   Border noise correction: **Sides** and **First/Last** (set in the advanced view)
+    -   Min observations: **1** (set in the advanced view)
 
 .. thumbnail:: ../_images/cookbook/radar_mosaics/options.png
     :title: The **Options** panel (simple view)
@@ -143,7 +143,7 @@ The backscatter recorded by the sensor depends on the angle at which the signal 
 
 -   :guilabel:`None`: No geometric correction is applied (the backscatter is used as **sigma0**).
 -   :guilabel:`Ellipsoid`: Ellipsoid correction (**gamma0** correction) is applied, normalizing the backscatter by the incidence angle over a smooth Earth model. Topography is not taken into account.
--   :guilabel:`Terrain`: Terrain correction is applied. In addition to the incidence angle, SEPAL uses the `Copernicus GLO-30 <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30_2024_1>`__ digital elevation model to compensate for the effect of slopes facing towards or away from the sensor, and masks areas affected by **layover** and **shadow**. Recommended in any area with significant relief.
+-   :guilabel:`Terrain`: Terrain correction is applied. In addition to the incidence angle, SEPAL uses the `Copernicus GLO-30 <https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30>`__ digital elevation model to compensate for the effect of slopes facing towards or away from the sensor, and masks areas affected by **layover** and **shadow**. Recommended in any area with significant relief.
 
 Spatial speckle filter
 """"""""""""""""""""""
@@ -349,13 +349,13 @@ Once the export to the SEPAL workspace is complete, you can access the data in y
             ├── <recipe name>_<gee tile id>.tif
             ├── ...
             ├── <recipe name>_<gee tile id>.tif
-            └── <recipe name>_<gee tile id>.vrt
+            └── <recipe name>.vrt
 
 .. note::
 
     Understanding how images are stored in a radar mosaic is only required if you want to manually use them. The SEPAL applications are bound to this tiling system and can digest the information for you.
 
-The data are stored in a folder named after the recipe (see `Start`_). Large images are too big to be exported as a single file, so they are divided into smaller tiles (:code:`.tif` files), which are brought back together by a :code:`.vrt` file.
+The data are stored in a folder named after the recipe (see `Start`_). Large images are too big to be exported as a single file, so they are divided into smaller tiles (:code:`.tif` files), which are brought back together by a :code:`<recipe name>.vrt` file.
 
 .. tip::
 
