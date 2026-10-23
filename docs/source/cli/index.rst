@@ -11,7 +11,6 @@ To help resolve specific problems, the SEPAL platform includes a variety of usef
     :maxdepth: 1
 
     GDAL — Geospatial Data Abstraction Library<gdal>
-    Google Drive<gdrive>
     Google Earth Engine<gee>
     GuidosToolbox Workbench<gwb>
     Open Foris Geospatial Toolkit<ofgt>
