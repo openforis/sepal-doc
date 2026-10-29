@@ -9,6 +9,7 @@ In this section of the documentation, learn how to:
 -   `use NICFI-PlanetLab data <https://docs.sepal.io/en/latest/setup/nicfi.html>`__
 -   `exchange files with SEPAL <https://docs.sepal.io/en/latest/setup/filezilla.html>`__
 -   `manage your resources <https://docs.sepal.io/en/latest/setup/resource.html>`__
+-   :doc:`set up SSH keys <ssh_keys>`
 -   `reset your password <https://docs.sepal.io/en/latest/setup/password.html>`__
 
 Navigate to other articles in each section by selecting links in the **Section navigation** pane on the left.
@@ -40,3 +41,4 @@ For usage questions, ask the `GIS StackExchange community <https://gis.stackexch
     storage
     filezilla
     password
+    ssh_keys
