@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-30 11:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/setup/session_storage.rst:4
+msgid "Session storage"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:5
+msgid "*Choose where to keep your files and where to run temporary work*"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:7
+msgid ""
+"Every SEPAL session gives you access to two kinds of storage: your **home"
+" folder**, which is kept between sessions, and a **temporary disk**, "
+"which belongs to the session and is emptied when it stops. Choosing the "
+"right one makes your work faster and keeps your storage quota for the "
+"files you need."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:13
+msgid "Overview"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:20
+msgid "Home folder"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:21
+msgid "Temporary disk"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:22
+msgid "Location"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:23
+msgid "``/home/sepal-user`` (also ``~``)"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:24
+msgid "``/tmp`` — ``/var/tmp`` and ``~/tmp`` point to the same disk"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:25
+msgid "Type of storage"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:26
+msgid "Network storage, shared by all your sessions and apps"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:27
+msgid "Local disk attached to the session's instance"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:28
+msgid "Lifetime"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:29
+msgid "Kept until you delete the files"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:30
+msgid "**Emptied when the session stops or expires**"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:31
+msgid "Shared between sessions"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:32
+msgid "Yes — every session sees the same files"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:33
+msgid "No — each session has its own, empty disk"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:34
+msgid "Storage quota"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:35
+msgid "Counts toward your storage quota and storage spending"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:36
+msgid "Does not count toward your storage quota"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:37
+msgid "Size"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:38
+msgid "Limited by your storage quota"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:39
+msgid ""
+"100 GB on standard instance types; from 118 GB to 3,800 GB on instance "
+"types with SSD"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:41
+msgid "Speed"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:42
+msgid "Good for large files; slow when reading or writing many small files"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:43
+msgid "Fast for all types of file access"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:46
+msgid "Your home folder"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:48
+msgid ""
+"Your home folder, ``/home/sepal-user``, is your permanent storage in "
+"SEPAL. It is the same folder in every session, in the **Files** section "
+"and in the apps you run, so files you save there are always available."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:52
+msgid "Use it for:"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:54
+msgid "code, scripts and notebooks;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:55
+msgid "input data you use repeatedly;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:56
+msgid "final results, exports and anything else you want to keep."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:58
+msgid ""
+"Because your home folder is network storage, each file operation takes "
+"longer than on a local disk. This is not noticeable for large files, but "
+"tasks that create or read thousands of small files — such as installing "
+"Python or R packages, creating a virtual environment or unpacking an "
+"archive — can be several times slower there than on the temporary disk."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:64
+msgid ""
+"Your home folder counts toward your storage quota. You can see how much "
+"you use in the **Usage** panel of the hourly cost button, :btn:`<fa-solid"
+" fa-dollar-sign> x.xx/h`, in the lower-right corner, and in the **Storage"
+" used** line of the **Terminal**. To find large folders, see "
+":doc:`storage`."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:70
+msgid "The temporary disk"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:72
+msgid ""
+"Each session has its own temporary disk, mounted at ``/tmp``. The folders"
+" ``/var/tmp`` and ``~/tmp`` (``/home/sepal-user/tmp``) point to the same "
+"disk, so files written to any of them use the temporary disk and not your"
+" home folder."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:76
+msgid "The temporary disk:"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:78
+msgid "is **empty when the session starts**;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:79
+msgid "is **deleted when the session stops**, whether you stop it or it expires;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:80
+msgid "is only visible from the session that created it;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:81
+msgid "does not count toward your storage quota."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:83
+msgid "Use it for files you can recreate:"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:85
+msgid "Python virtual environments, Conda environments and package caches;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:86
+msgid "intermediate rasters, tiles and other files produced while processing;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:87
+msgid "downloaded archives before extracting the files you need;"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:88
+msgid "build folders and other temporary output of tools."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:92
+msgid ""
+"Everything in the temporary disk is lost when the session stops. Copy the"
+" results you want to keep to your home folder before stopping the "
+"session, and keep the files you need to recreate your environment (for "
+"example, a ``requirements.txt`` file) in your home folder."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:98
+msgid "Instance types with SSD"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:100
+msgid "The size of the temporary disk depends on the instance type you start:"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:102
+msgid ""
+"**Standard instance types** (for example, ``t1``, ``m2`` or ``c4``) get a"
+" 100 GB temporary disk."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:104
+msgid ""
+"**Instance types with SSD** (those ending in ``d``, such as ``m2d`` or "
+"``c4d``, and the ``x`` and ``g`` types) use the SSD drives of the "
+"instance as their temporary disk. Its size is shown in the **GB SSD** "
+"column of the **Available instance types with SSD** table in the "
+"**Terminal**, from 118 GB on the smallest types to 3,800 GB on the "
+"largest ones."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:110
+msgid ""
+"Choose an instance type with SSD when your temporary files do not fit in "
+"100 GB, for example when processing large image stacks. These types cost "
+"slightly more per hour than the standard type with the same CPU and RAM, "
+"so a standard type is usually enough for smaller jobs. To compare "
+"instance types, see :ref:`the Terminal section <terminal-instances>` of "
+"the SEPAL interface presentation."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:118
+msgid "Example: work in the temporary disk"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:120
+msgid ""
+"The following commands create a Python virtual environment in the "
+"temporary disk, run a script, and copy its results to the home folder:"
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:131
+msgid ""
+"The environment is deleted with the session, but because "
+"``requirements.txt`` is in your home folder, you can recreate it in a new"
+" session with the same commands."
+msgstr ""
+
+#: ../../source/setup/session_storage.rst:135
+msgid "To check the free space on each disk, run:"
+msgstr ""
+
