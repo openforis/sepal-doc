@@ -3,7 +3,8 @@ Set up SSH keys
 *Connect to SEPAL without entering your account password*
 
 Create an SSH key on your computer and register its public part in SEPAL.
-You can then use it with an SSH client, including VS Code.
+You can then use it with any SSH client, including the tools described in
+:doc:`../developers/ssh_session`.
 If you already have a key on your computer, skip the first step.
 
 1. In a **local** terminal (PowerShell on Windows, Terminal on macOS or Linux),

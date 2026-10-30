@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 
 from docutils import nodes
 
-DOCNAMES = {"developers/vscode", "setup/ssh_keys", "setup/session_storage"}
+DOCNAMES = {"developers/ssh_session", "setup/ssh_keys", "setup/session_storage"}
 
 # Absolute links to this documentation are internal links, even with a scheme.
 INTERNAL_HOSTS = {"docs.sepal.io"}
