@@ -8,14 +8,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"POT-Creation-Date: 2026-10-30 11:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/index.rst:10
+msgid "GDAL — Geospatial Data Abstraction Library"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Google Earth Engine"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "GuidosToolbox Workbench"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Open Foris Geospatial Toolkit"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Orfeo ToolBox"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Python"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "R"
+msgstr ""
+
+#: ../../source/cli/index.rst:10
+msgid "Python environment management"
+msgstr ""
 
 #: ../../source/cli/index.rst:2
 msgid "CLI"

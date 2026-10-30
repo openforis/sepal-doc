@@ -1,0 +1,365 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-30 11:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/developers/ssh_session.rst:4
+msgid "Connect to a session over SSH"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:5
+msgid ""
+"*Use a terminal, file transfer tools, local web apps and code editors "
+"with a SEPAL session*"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:7
+msgid ""
+"Every running SEPAL session has its own **SSH login**. With it, tools on "
+"your computer can connect directly to that session: you work with your "
+"local programs, while your files and computations stay on SEPAL."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:11
+msgid "With the SSH login you can:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:13
+msgid "open a terminal on the session from your computer;"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:14
+msgid "copy files between your computer and the session;"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:15
+msgid ""
+"open web apps running in the session, such as JupyterLab, in your local "
+"browser;"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:17
+msgid "edit and run code on the session from a code editor, such as VS Code."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:20
+msgid "Get the SSH login of a session"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:22
+msgid ""
+"In SEPAL, start a session (for example, by opening **Terminal**). Then "
+"select the hourly cost button, :btn:`<fa-solid fa-dollar-sign> x.xx/h`, "
+"in the lower-right corner of the footer and choose **Sessions**."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:22
+msgid ""
+"Hourly cost menu with the Usage and Sessions options, Sessions "
+"highlighted."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:33
+msgid ""
+"On the session you want to use, select **Copy SSH login**. The copied "
+"login includes your username and the session name, for example ``alice"
+"+humble-robin@ssh.sepal.io``."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:33
+msgid ""
+"SEPAL Sessions panel with the Copy SSH login button highlighted and its "
+"tooltip visible."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:43
+msgid ""
+"The examples on this page use ``alice+humble-robin@ssh.sepal.io``. "
+"Replace it with the login you copied."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:46
+msgid "When you connect:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:48
+msgid ""
+"**Password or key:** enter your **SEPAL password** when prompted, or "
+"register an SSH key to connect without it (see :doc:`../setup/ssh_keys`)."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:50
+msgid ""
+"**Port:** SEPAL accepts SSH connections on port **22** (the default) and "
+"port **443**. If your network blocks port 22, add ``-p 443`` to ``ssh`` "
+"and ``sftp`` commands, or ``-P 443`` to ``scp`` commands."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:53
+msgid ""
+"**First connection:** your SSH client shows the fingerprint of SEPAL's "
+"host key and asks you to confirm it. Before confirming, compare it with "
+"the published fingerprints (see :ref:`ssh_host_fingerprints`)."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:59
+msgid ""
+"The ``+session-name`` part of the login directs the connection to that "
+"session. When the session stops, the connection closes and the login "
+"stops working. For a new session, copy its login again."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:66
+msgid "Verify the host fingerprint"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:68
+msgid ""
+"The fingerprint proves that you are connecting to SEPAL and not to "
+"another server pretending to be it. On your first connection, your SSH "
+"client shows a message like this one:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:78
+msgid ""
+"Type ``yes`` only if the fingerprint matches one of the following, for "
+"the key type your client shows. They are the same on ports 22 and 443:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:85
+msgid "Key type"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:86
+msgid "Fingerprint"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:87
+msgid "ED25519"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:88
+msgid "``SHA256:kpQFoQFHnlXRBzZNU8zrUaG7dPpuI3z3zGhe8laHx4E``"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:89
+msgid "ECDSA"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:90
+msgid "``SHA256:bgpAw63RUUdrg08L8Br9/OnILqXbWt51URergjeTgtk``"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:91
+msgid "RSA"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:92
+msgid "``SHA256:JA24YKvHYv1MXKGu2TatVQk9sxSbpMNUfgLNojuli6k``"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:94
+msgid ""
+"Your client then remembers the key and does not ask again. If it later "
+"warns that the host key has **changed**, do not connect, and report it on"
+" the `SEPAL user group <https://groups.google.com/g/sepal-users>`__."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:99
+msgid "Open a terminal"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:101
+msgid ""
+"In a terminal on your computer (PowerShell on Windows, Terminal on macOS "
+"or Linux), run:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:108
+msgid ""
+"You get a shell on the session, in your home folder ``/home/sepal-user``."
+" Type ``exit`` to close the connection; the session keeps running."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:112
+msgid "Transfer files"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:114
+msgid ""
+"Use ``scp`` to copy files and folders between your computer and the "
+"session. Run these commands on your computer:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:125
+msgid ""
+"``sftp`` and ``rsync`` work with the same login. For a graphical client, "
+"see :doc:`../setup/filezilla`."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:128
+msgid ""
+"Files copied to your home folder are kept between sessions. Files copied "
+"to ``/tmp`` are deleted when the session stops (see "
+":doc:`../setup/session_storage`)."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:132
+msgid "Open web apps in your local browser"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:134
+msgid ""
+"A web app running in the session, such as JupyterLab, Solara or "
+"Streamlit, is only reachable from inside the session. To open it in your "
+"local browser, forward its port through the SSH connection."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:138
+msgid "For example, to use JupyterLab:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:140
+msgid ""
+"Connect with port forwarding. ``-L 8888:localhost:8888`` forwards port "
+"8888 of your computer to port 8888 of the session:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:147
+msgid "In that connection, start JupyterLab without opening a browser:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:153
+msgid ""
+"JupyterLab prints a link that starts with "
+"``http://127.0.0.1:8888/lab?token=``. Open it in your local browser."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:156
+msgid ""
+"The app runs until you stop it with :kbd:`Control-c` or close the "
+"connection. To forward another app, replace ``8888`` with its port in "
+"both commands."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:161
+msgid ""
+"SEPAL also runs JupyterLab, Jupyter Notebook and RStudio directly in your"
+" browser from the **Apps** section, without any setup on your computer."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:165
+msgid "Connect a code editor"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:167
+msgid ""
+"Code editors with SSH remote development open files and run terminals, "
+"debuggers and notebooks directly on the session. This section describes "
+"VS Code; other editors with SSH support, such as editors based on VS Code"
+" or `JetBrains Gateway <https://www.jetbrains.com/remote-"
+"development/gateway/>`__, use the same SSH login."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:174
+msgid "VS Code"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:176
+msgid ""
+"Before starting, install `VS Code <https://code.visualstudio.com/>`__ and"
+" the `Remote - SSH extension "
+"<https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote"
+".remote-ssh>`__ on your computer, as well as an `SSH client "
+"<https://code.visualstudio.com/docs/remote/ssh#_getting-started>`__."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:181
+msgid ""
+"Open the Command Palette (**F1**) and select **Remote-SSH: Add New SSH "
+"Host...**. Paste the copied login, or enter it as a full command, for "
+"example:"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:189
+msgid ""
+"Select the SSH configuration file offered by VS Code, then run **Remote-"
+"SSH: Connect to Host...** and select the host you just added."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:191
+msgid ""
+"Select **Linux** if asked for the remote platform. Enter your **SEPAL "
+"password** when prompted, unless you have registered an SSH key. VS Code "
+"may ask for the password more than once during setup."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:197
+msgid ""
+"The first connection can take several minutes. VS Code installs its "
+"server, and later the extensions you use remotely, in ``~/.vscode-"
+"server`` in your home folder. Your home folder is network storage, which "
+"is slow when writing many small files (see "
+":doc:`../setup/session_storage`). Later connections reuse this "
+"installation and start faster, until VS Code is updated and installs a "
+"new version of its server."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:205
+msgid ""
+"Once connected, select **File > Open Folder...** and open your project "
+"under ``/home/sepal-user``. The status bar shows the SSH connection; "
+"terminals opened in this window run on SEPAL."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:209
+msgid ""
+"To open Jupyter notebooks (``.ipynb`` files) in this window, install the "
+"`Jupyter extension <https://marketplace.visualstudio.com/items?itemName"
+"=ms-toolsai.jupyter>`__ when VS Code suggests it; notebooks then run on "
+"the session."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:213
+msgid ""
+"For a new session, copy its login again and update the saved host using "
+"**Remote-SSH: Open SSH Configuration File...**, or add a new host. When "
+"finished, select **File > Close Remote Connection**."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:217
+msgid ""
+"For connection problems, check **View > Output > Remote - SSH** and the "
+"`VS Code SSH troubleshooting guide "
+"<https://code.visualstudio.com/docs/remote/troubleshooting>`__."
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:221
+msgid "Stop the session"
+msgstr ""
+
+#: ../../source/developers/ssh_session.rst:223
+msgid ""
+"Closing an SSH connection does not stop the session, which keeps "
+"consuming your instance budget until it stops or expires. When you no "
+"longer need it, stop it from **Sessions** in the hourly cost menu, or "
+"from the **Terminal** (see :ref:`the Terminal section <terminal-"
+"instances>`)."
+msgstr ""
+

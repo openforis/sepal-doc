@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"POT-Creation-Date: 2026-10-30 11:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/cookbook/radar_mosaic.rst:2
 msgid "Radar mosaics"
@@ -25,7 +25,11 @@ msgstr ""
 msgid "*Generate analysis-ready data from the SAR mission with radar mosaics*"
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:5
+#: ../../source/cookbook/radar_mosaic.rst:6
+msgid "Overview"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:8
 msgid ""
 "The SEPAL recipe for radar mosaics allows users to generate analysis-"
 "ready data (ARD) from the Sentinel-1 C-Band synthetic aperture radar "
@@ -33,75 +37,923 @@ msgid ""
 "cover classification."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:8
-msgid "Quick guide: timescans"
-msgstr ""
-
 #: ../../source/cookbook/radar_mosaic.rst:10
 msgid ""
-"The following steps demonstrate the default procedure for creating a "
-"yearly timescan, which is useful for tasks such as land cover mapping."
+"Unlike optical sensors, a SAR sensor emits its own microwave signal and "
+"records what is scattered back to it (the **backscatter**). It therefore "
+"acquires images day and night and through clouds, which makes it "
+"particularly valuable in persistently cloudy regions such as the tropics."
 msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:12
-msgid "Select **Radar mosaic** within SEPAL **Recipes**."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:13
-msgid "Select your area of interest (AOI) and the year."
+msgid ""
+"SEPAL builds the mosaic from the `Sentinel-1 GRD "
+"<https://developers.google.com/earth-"
+"engine/datasets/catalog/COPERNICUS_S1_GRD>`__ collection available in "
+"Google Earth Engine (GEE). Only scenes acquired in **Interferometric Wide"
+" swath** (IW) mode with both **VV** and **VH** polarizations are used:"
 msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:14
-msgid "Check for orbit coverage."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:16
-msgid "3.1 Deselect all processing parameters."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:18
-msgid "3.2 Select **Ascending orbit** and let the mosaic render."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:20
 msgid ""
-"3.3 Deselect **Ascending orbit** and select **Descending orbit**. Let the"
-" mosaic render."
+"**VV**: vertically transmitted, vertically received. Sensitive to surface"
+" scattering (e.g. bare soil, water, rough surfaces)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:15
+msgid ""
+"**VH**: vertically transmitted, horizontally received. Sensitive to "
+"volume scattering (e.g. vegetation canopies)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:17
+msgid ""
+"All backscatter values are expressed in decibels (dB). Sentinel-1 data "
+"are available from 2014 onward."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:19
+msgid "The recipe can produce two kinds of outputs:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:21
+msgid ""
+"**Time scan**: for every pixel, statistics (e.g. median, minimum, "
+"maximum, standard deviation) are computed from all the acquisitions "
+"within a period. Time scans capture both the typical backscatter and its "
+"variation over time, and are well suited to land cover mapping."
 msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:22
 msgid ""
-"3.4 See if both orbits cover the entire AOI. If they do not, select the "
-"orbit that covers the entire AOI. If they do, select both and let the "
-"mosaic render; then, check for artefacts that may originate from using "
-"both orbits."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:24
-msgid "Select **Terrain** under **Geometric operations**."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:25
-msgid "Select **Moderate** under **Outlier removal**."
+"**Point-in-time mosaic**: every pixel comes from the acquisition closest "
+"to a target date, giving a snapshot of the surface around that date."
 msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:26
 msgid ""
-"Export **Median**, **Min**, **Max** and **STD** layers for both "
-"polarization bands **VV** and **VH**."
+"You won't be able to retrieve the images if your SEPAL and Google Earth "
+"Engine (GEE) accounts are not connected. For more information, go to "
+":doc:`../setup/gee`."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:28
-msgid ""
-"The following video tutorial demonstrates these steps in a reproducible "
-"way:"
+#: ../../source/cookbook/radar_mosaic.rst:29
+msgid "Start"
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:34
+#: ../../source/cookbook/radar_mosaic.rst:31
 msgid ""
-"More detailed explanations of what a timescan is, how it relates to the "
-"concept of ARD, and what influences the processing parameters have will "
-"be added to this article at a later date."
+"To create a new radar mosaic, go to the :btn:`<fa-solid fa-globe>` "
+"**Process** section and select :btn:`<fa-solid fa-plus> Add recipe` "
+"(first image below). In the **Create recipe** list that opens, select "
+"**Radar mosaic** (second image)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:43
+msgid ""
+"Once the **Radar mosaic** recipe is selected, SEPAL will display the "
+"recipe process in a new tab. The first step is to change the name of the "
+"recipe. This name will be used to identify your files and recipes in "
+"SEPAL folders. Use the best-suited convention for your needs. Simply "
+"double-click the tab (see **1** in the image below) and write a new name."
+" It defaults to :code:`Radar_mosaic_<creation date>_<creation time>` "
+"(e.g. :code:`Radar_mosaic_2026-10-09_14-18-05`)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:47
+msgid ""
+"The SEPAL team recommends using the following naming convention: "
+":code:`<aoi name>_<dates>_<measure>`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:54
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:56
+msgid ""
+"When a new recipe opens, the **Area of interest** window is displayed in "
+"the lower-right corner (see **2** in the image above). To its right, "
+"three tabs are available, which allow you to customize the mosaic "
+"creation to your needs:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:58
+msgid ":guilabel:`AOI`: area of interest"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:59
+msgid ":guilabel:`DAT`: dates of the mosaic (time scan or point in time)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:60
+msgid ":guilabel:`OPT`: processing options (orbits, corrections, filters)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:62
+msgid ""
+"Select a tab to open the corresponding panel. Each panel is described in "
+"the following sections."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:65
+msgid "AOI selection"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:67
+msgid ""
+"The data exported by the recipe will be generated from within the bounds "
+"of the AOI. There are multiple ways to select the AOI in SEPAL:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:69
+msgid "Administrative boundaries"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:70
+msgid "EE Tables"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:71
+msgid "Drawn polygons"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:72
+msgid "Assets or recipes"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:74
+msgid ""
+"They are extensively described in our documentation. For more "
+"information, read :doc:`../feature/aoi_selector`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:77
+msgid "Dates"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:79
+msgid ""
+"In the :guilabel:`DAT` tab, you can define the dates or time frame of the"
+" mosaic. There are three ways of specifying the dates; select one of the "
+"following options under :guilabel:`Type`:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:81
+msgid ""
+":guilabel:`Year`: builds a **time scan** from all acquisitions of a "
+"calendar year (1 January to 31 December). Select the **Year** in the "
+"picker. This is the default, and the recommended option for land cover "
+"mapping."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:82
+msgid ""
+":guilabel:`Date range`: builds a **time scan** from all acquisitions "
+"between a **From date** and a **To date** of your choice (e.g. a single "
+"season, or several years)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:83
+msgid ""
+":guilabel:`Date`: builds a **point-in-time mosaic**. Select a **Target "
+"date**; each pixel will come from the acquisition closest to that date "
+"(SEPAL searches up to about six months before and after it)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:91
+msgid ""
+"The type you choose determines which bands can be exported. Time scans "
+"provide statistical bands (e.g. :code:`VV_med`), while point-in-time "
+"mosaics provide the backscatter of a single acquisition (e.g. "
+":code:`VV`)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:94
+msgid "Options"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:96
+msgid ""
+"The :guilabel:`OPT` tab controls which acquisitions are used and how they"
+" are corrected and filtered. The panel opens in a **simple** view showing"
+" the most common options; select :guilabel:`More` to reveal the "
+"**advanced** options (and :guilabel:`Less` to hide them again)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:100
+msgid "This step is optional. By default, SEPAL applies:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:102
+msgid "Orbits: **Ascending** and **Descending**"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:103
+msgid "Geometric correction: **Terrain**"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:104
+msgid ""
+"Spatial speckle filter: **Lee Sigma** (kernel size 9, sigma 0.9, strong "
+"scatterers retained)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:105
+msgid "Multitemporal speckle filter: **None**"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:106
+msgid "Outlier removal: **Moderate**"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:107
+msgid "Orbit overlap: **All**"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:108
+msgid ""
+"Border noise correction: **Sides** and **First/Last** (set in the "
+"advanced view)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:109
+msgid "Min observations: **1** (set in the advanced view)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst
+msgid "Show the advanced view (opened with **More**)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:125
+msgid "Orbits"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:127
+msgid ""
+"Sentinel-1 acquires images while travelling north (**Ascending**) and "
+"south (**Descending**). The two orbit directions look at the surface from"
+" opposite sides, so slopes facing the sensor in one direction face away "
+"from it in the other. Select one or both directions (at least one is "
+"required)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:129
+msgid ""
+"Combining both directions increases the number of observations and "
+"coverage, but differences in viewing geometry can create visible "
+"artefacts, especially in mountainous areas."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:133
+msgid "Check the orbit coverage of your AOI before deciding which orbits to use:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:135
+msgid "Select only :guilabel:`Ascending` and let the mosaic render."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:136
+msgid ""
+"Deselect :guilabel:`Ascending`, select :guilabel:`Descending` and let the"
+" mosaic render."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:137
+msgid ""
+"If only one orbit direction covers the entire AOI, use that one. If both "
+"do, select both, let the mosaic render and check for artefacts caused by "
+"combining them."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:140
+msgid "Geometric correction"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:142
+msgid ""
+"The backscatter recorded by the sensor depends on the angle at which the "
+"signal hits the ground. Geometric correction reduces this effect, so that"
+" values become comparable across the image and between orbits:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:144
+msgid ""
+":guilabel:`None`: No geometric correction is applied (the backscatter is "
+"used as **sigma0**)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:145
+msgid ""
+":guilabel:`Ellipsoid`: Ellipsoid correction (**gamma0** correction) is "
+"applied, normalizing the backscatter by the incidence angle over a smooth"
+" Earth model. Topography is not taken into account."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:146
+msgid ""
+":guilabel:`Terrain`: Terrain correction is applied. In addition to the "
+"incidence angle, SEPAL uses the `Copernicus GLO-30 "
+"<https://developers.google.com/earth-"
+"engine/datasets/catalog/COPERNICUS_DEM_GLO30>`__ digital elevation model "
+"to compensate for the effect of slopes facing towards or away from the "
+"sensor, and masks areas affected by **layover** and **shadow**. "
+"Recommended in any area with significant relief."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:149
+msgid "Spatial speckle filter"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:151
+msgid ""
+"All SAR images contain **speckle**: a grainy, \"salt-and-pepper\" noise "
+"caused by the interference of the signals scattered back within each "
+"pixel. Spatial speckle filters reduce it by taking neighbouring pixels "
+"into account, at the cost of some spatial detail:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:153
+msgid ":guilabel:`None`: Doesn't apply any speckle filter."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:154
+msgid ""
+":guilabel:`Gamma Map`: A statistical (Bayesian) filter that assumes the "
+"backscatter of the surface follows a gamma distribution, and estimates "
+"the most likely value of each pixel from its neighbours. It smooths "
+"homogeneous areas well while preserving edges and texture."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:155
+msgid ""
+":guilabel:`Lee`: An adaptive filter based on the mean and variance of the"
+" pixels within the kernel. It smooths strongly in homogeneous areas (e.g."
+" water, fields) and less around edges and bright features, where the "
+"local variance is high."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:156
+msgid ""
+":guilabel:`Refined Lee`: An improved version of the Lee filter that "
+"detects edges and filters along them, using differently oriented windows "
+"instead of a square one. It preserves edges and linear features (e.g. "
+"roads, field boundaries) better, but can be very slow. It uses a fixed "
+"window, so it has no **Kernel size** setting."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:157
+msgid ""
+":guilabel:`Lee Sigma`: An improved version of the Lee filter that only "
+"averages the neighbouring pixels whose values are close to the expected "
+"value of the centre pixel (within a range set by **Sigma**). This avoids "
+"blurring edges and bright point targets, and gives a good balance between"
+" speckle reduction and detail. It is the default."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:158
+msgid ""
+":guilabel:`SNIC`: Simple Non-Iterative Clustering is used to group pixels"
+" into small, homogeneous clusters (superpixels), which filters out "
+"speckle."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:162
+msgid ""
+"Time scans combine many acquisitions, which already averages out much of "
+"the speckle. Speckle filtering has a stronger effect on point-in-time "
+"mosaics, which rely on a single acquisition per pixel."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:165
+msgid "Spatial speckle filter options (advanced view)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:167
+msgid ""
+"When a filter other than :guilabel:`None` is selected, a summary of its "
+"settings appears below the filter buttons. Select it to open the "
+"**Spatial speckle filter options** window. The settings available depend "
+"on the filter:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:175
+msgid ""
+"**Kernel size**: the size, in pixels, of the moving window used by the "
+"filter (from 3 to 25; default **9**). Larger windows remove more speckle "
+"but blur more detail. Applies to :guilabel:`Gamma Map`, :guilabel:`Lee` "
+"and :guilabel:`Lee Sigma`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:176
+msgid ""
+"**Sigma**: the range of values considered similar to the centre pixel "
+"(from 0.5 to 0.95; default **0.9**). Larger values include more "
+"neighbouring pixels in the average, giving stronger smoothing. Applies to"
+" :guilabel:`Lee Sigma`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:177
+msgid ""
+"**Seed spacing**: the spacing, in pixels, of the cluster seeds (from 3 to"
+" 15; default **5**). Larger values create larger clusters. Applies to "
+":guilabel:`SNIC`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:178
+msgid ""
+"**Compactness**: how compact (square) the clusters are (from 0 to 2; "
+"default **0.15**). Larger values create more regular clusters; 0 disables"
+" spatial distance weighting. Applies to :guilabel:`SNIC`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:179
+msgid ""
+"**Strong scatterers**: bright, strong scatterers such as buildings don't "
+"tend to include much speckle, and some filters tend to blur them. Choose "
+":code:`Retain` (default) to keep their original values, or :code:`Filter`"
+" to apply the filter to them as well. Applies to all filters."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:180
+msgid ""
+"**VV threshold** and **VH threshold**: the backscatter values (in dB; "
+"defaults **0** and **-5**) above which a pixel is considered a strong "
+"scatterer. Shown only when :code:`Retain` is selected."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:183
+msgid "Multitemporal speckle filter"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:185
+msgid ""
+"(Shown only when a spatial speckle filter is selected.) Multitemporal "
+"filters reduce speckle further by using a series of acquisitions of the "
+"same track, preserving more spatial detail than a spatial filter alone:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:187
+msgid ":guilabel:`None`: Doesn't apply any multitemporal speckle filter."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:188
+msgid ""
+":guilabel:`Quegan`: First applies the selected spatial filter to each "
+"acquisition, then restores the detail lost by that filter using the other"
+" acquisitions of the same track. Detail that is consistent over time "
+"(e.g. edges, small features) is kept, while random speckle is averaged "
+"out. For more information, see `S. Quegan et al. [2000] "
+"<https://ieeexplore.ieee.org/document/842003>`__."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:189
+msgid ""
+":guilabel:`RABASAR`: (Ratio-based multitemporal SAR despeckling.) "
+"Averages the acquisitions of the same track into a nearly speckle-free "
+"reference image, then applies the selected spatial filter only to the "
+"ratio between each acquisition and that reference. This keeps the spatial"
+" detail of the reference while preserving the changes specific to each "
+"acquisition."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:191
+msgid ""
+"In the advanced view, select the settings summary below the filter "
+"buttons to open the **Multitemporal speckle filter options** window, "
+"where you can set the **Number of images** (from 2 to 100; default "
+"**10**): how many acquisitions of the same track, taken around the middle"
+" of the selected period, are used by the filter. More images reduce "
+"speckle further but increase processing time."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:195
+msgid ""
+"Multitemporal filtering is computationally intensive and significantly "
+"increases the processing time of the mosaic."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:198
+msgid "Outlier removal"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:200
+msgid ""
+"Individual acquisitions can contain unusually high or low values (e.g. "
+"caused by heavy rain, flooding or processing artefacts). Outlier removal "
+"compares, for each pixel, every acquisition with the median of all "
+"acquisitions, and removes those that deviate too much:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:202
+msgid ":guilabel:`None`: Doesn't remove outliers."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:203
+msgid ""
+":guilabel:`Moderate`: Removes outliers (values more than **3** standard "
+"deviations from the median)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:204
+msgid ""
+":guilabel:`Aggressive`: Removes more outliers (values more than **2.6** "
+"standard deviations from the median)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:208
+msgid ""
+"Outlier removal relies on the temporal statistics of each pixel, so it is"
+" most effective with time scans built from many acquisitions."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:211
+msgid "Orbit overlap"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:213
+msgid ""
+"Neighbouring Sentinel-1 tracks (identified by their **relative orbit "
+"number**) overlap, so some pixels are observed from several tracks with "
+"slightly different viewing angles. This option defines which tracks "
+"contribute to each pixel:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:215
+msgid ":guilabel:`All`: Includes values from all orbit numbers for a pixel."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:216
+msgid ""
+":guilabel:`Dominant`: Only includes values from the dominant orbit number"
+" (the one with the most acquisitions) for a pixel. This produces a more "
+"consistent viewing geometry, at the cost of fewer observations."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:217
+msgid ""
+":guilabel:`Adjacent`: Includes values from the dominant orbit of both the"
+" ascending and the descending orbits. When only one orbit direction is "
+"selected, this behaves like :guilabel:`Dominant`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:220
+msgid "Border noise correction (advanced view)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:222
+msgid ""
+"Sentinel-1 scenes can contain low-quality, noisy pixels along their "
+"borders. Select one or both corrections:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:224
+msgid ""
+":guilabel:`Sides`: Masks the sides of slices, by removing pixels whose "
+"incidence angle falls outside a given range. When selected, a settings "
+"summary appears; select it to open the **Border noise correction "
+"options** window and set the **Min angle** and **Max angle** in degrees "
+"(defaults: **30.88** and **45.35**)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:225
+msgid ""
+":guilabel:`First/Last`: Masks the beginning of the first slice and the "
+"end of the last slice of an acquisition."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:228
+msgid "Min observations (advanced view)"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:230
+msgid ""
+"Use the **Min observations** slider (from 1 to 50) to mask pixels that "
+"have fewer valid acquisitions than the selected value. Statistics "
+"computed from only a few observations are less reliable, so increasing "
+"this value removes them from the mosaic (leaving gaps where data are "
+"scarce)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:232
+msgid ""
+"To validate your selection, select the :btn:`<fa-solid fa-check> Apply` "
+"button."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:235
+msgid "Retrieve"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:239
+msgid ""
+"You cannot export a recipe as an asset or a :code:`.tif` file without a "
+"small computation quota. If you are a new user, see "
+":doc:`../setup/resource`."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:241
+msgid ""
+"In the upper-right corner, select the :btn:`<fa-solid fa-cloud-arrow-"
+"down>` button to open the **Retrieve** panel, where you can select the "
+"exportation parameters."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:248
+msgid "Bands to retrieve"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:250
+msgid ""
+"Select the band(s) to export with the mosaic in **Bands to retrieve**. "
+"There is no maximum number of bands, but exporting useless bands will "
+"only increase the size and time of the output. The available bands depend"
+" on the **Type** selected in the :guilabel:`DAT` tab: a **time scan** or "
+"a **point-in-time** mosaic."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:253
+msgid "Time scan"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:255
+msgid ""
+"Available when the type is :guilabel:`Year` or :guilabel:`Date range`. "
+"The statistics are computed per pixel from all the acquisitions that "
+"remain after filtering:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:257
+msgid ":guilabel:`VV_min`, :guilabel:`VH_min`: minimum backscatter."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:258
+msgid ":guilabel:`VV_mean`, :guilabel:`VH_mean`: mean backscatter."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:259
+msgid ""
+":guilabel:`VV_med`, :guilabel:`VH_med`: median backscatter. Less "
+"sensitive to extreme values than the mean."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:260
+msgid ":guilabel:`VV_max`, :guilabel:`VH_max`: maximum backscatter."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:261
+msgid ""
+":guilabel:`VV_std`, :guilabel:`VH_std`: standard deviation of the "
+"backscatter, a measure of how much the surface changes over time."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:262
+msgid ""
+":guilabel:`VV_cv`, :guilabel:`VH_cv`: coefficient of variation of the "
+"backscatter (in dB)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:263
+msgid ":guilabel:`orbit`: the most frequent relative orbit number of the pixel."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:265
+msgid ""
+"SEPAL can also fit a harmonic model (a linear trend plus a yearly cycle) "
+"to the acquisitions of each pixel. The following bands describe that "
+"model:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:267
+msgid ""
+":guilabel:`VV_t`, :guilabel:`VH_t`: the slope of the linear trend over "
+"time."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:268
+msgid ""
+":guilabel:`VV_phase`, :guilabel:`VH_phase`: the phase of the yearly "
+"cycle, i.e. the time of year when the backscatter peaks."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:269
+msgid ""
+":guilabel:`VV_amp`, :guilabel:`VH_amp`: the amplitude of the yearly "
+"cycle, i.e. the strength of the seasonal variation."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:270
+msgid ""
+":guilabel:`VV_res`, :guilabel:`VH_res`: the residuals of the fit, i.e. "
+"how well the model describes the data."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:274
+msgid ""
+"The harmonic model is only computed when at least one of its bands is "
+"selected, and it increases the processing time. It requires enough "
+"acquisitions spread over the period to give meaningful results; it is "
+"best suited to periods of a year or more."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:277
+msgid "Point in time"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:279
+msgid "Available when the type is :guilabel:`Date`:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:281
+msgid ""
+":guilabel:`VV`, :guilabel:`VH`: the backscatter of the selected "
+"acquisition."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:282
+msgid ""
+":guilabel:`ratio_VV_VH`: the difference :code:`VV - VH` in dB (equivalent"
+" to the VV/VH ratio in linear units)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:283
+msgid ":guilabel:`dayOfYear`: the day of the year of the selected acquisition."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:284
+msgid ""
+":guilabel:`daysFromTarget`: the number of days between the selected "
+"acquisition and the target date."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:285
+msgid ":guilabel:`orbit`: the relative orbit number of the selected acquisition."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:289
+msgid ""
+"For land cover mapping, the median, minimum, maximum and standard "
+"deviation bands of both polarizations (:code:`VV_med`, :code:`VV_min`, "
+":code:`VV_max`, :code:`VV_std` and their :code:`VH_` equivalents) of a "
+"yearly time scan are a good starting point. They can be combined with "
+"optical bands in the :doc:`classification` recipe."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:292
+msgid "Scale"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:294
+msgid ""
+"You can set a custom scale for exportation by selecting a value in metres"
+" (m). The default is **20 m**. Note that requesting a smaller resolution "
+"than the native resolution of the data (10 m pixel spacing for Sentinel-1"
+" GRD) will not improve the quality of the output, just its size."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:297
+msgid "Destination"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:299
+msgid "Choose a single destination for the export:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:301
+msgid ""
+":guilabel:`Google Earth Engine asset`: the image is exported to your GEE "
+"account as an asset. You can export it either as a single **Image** or as"
+" an **Image collection** (tiled, which is better suited to large "
+"exports), and set its sharing to **Private** or **Public**. The **Asset "
+"ID** field defines where the asset is saved in your GEE account."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:302
+msgid ""
+":guilabel:`Google Drive`: the image is exported to the Google Drive of "
+"the connected Google account."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:303
+msgid ""
+":guilabel:`SEPAL workspace`: the image is written to your SEPAL files in "
+":code:`.tif` format. The **Workspace path** defines the destination "
+"folder (by default :code:`downloads/<recipe name>`, or "
+":code:`downloads/<project name>/<recipe name>` if the recipe belongs to a"
+" project), and the **Filename prefix** is added to the name of every "
+"exported file (by default, the recipe name)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:307
+msgid ""
+"The **Google Earth Engine asset** and **Google Drive** destinations are "
+"only displayed when a Google account is connected to SEPAL. If they are "
+"missing, please refer to `Connect SEPAL to GEE <../setup/gee.html>`__."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:309
+msgid ""
+"Select :guilabel:`More` to show additional export settings (e.g. **Shard "
+"size**, **Tile size**, **CRS** and **CRS transform**). The default values"
+" are suitable in most cases; reduce the shard or tile size if the export "
+"runs out of memory."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:311
+msgid "Select :guilabel:`Retrieve` to start the export process."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:314
+msgid "Exportation status"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:316
+msgid ""
+"Open the **Tasks** tab (lower-left corner, using the :icon:`fa-solid fa-"
+"list-check` or :icon:`fa-solid fa-spinner` button, depending on the "
+"loading status) to follow the export. Each task shows the recipe type, "
+"the destination and the name of the recipe (e.g. a **Radar mosaic** "
+"exported to the **SEPAL workspace**), together with its current status "
+"(e.g. :code:`Google Earth Engine is exporting`). A running task displays "
+"a spinner, and a green check mark appears once it has completed."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:318
+msgid ""
+"You can filter the list with :guilabel:`All`, :guilabel:`Active`, "
+":guilabel:`Completed` and :guilabel:`Failed / Canceled`, or find a task "
+"by name with the **Search tasks** field. Select :btn:`<fa-solid fa-"
+"xmark>` to stop a running task and :btn:`<fa-solid fa-trash>` to remove a"
+" task from the list."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:330
+msgid ""
+"Select a task to open its details: the duration and submission time "
+"(**Status**), the recipe type and origin (**Recipe configuration**), the "
+"destination, output path and access (**Location**), and the export "
+"progress or error message (**Progress**)."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:332
+msgid ""
+"The task can also be monitored using the `GEE task manager "
+"<https://code.earthengine.google.com/tasks>`__."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:336
+msgid ""
+"This operation is running between GEE and SEPAL servers in the "
+"background. You can close the SEPAL page without stopping the process."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:339
+msgid "Access"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:341
+msgid ""
+"Once the export to the SEPAL workspace is complete, you can access the "
+"data in your SEPAL folders. By default, the data are stored in the "
+":code:`downloads` folder using the following format:"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:356
+msgid ""
+"Understanding how images are stored in a radar mosaic is only required if"
+" you want to manually use them. The SEPAL applications are bound to this "
+"tiling system and can digest the information for you."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:358
+msgid ""
+"The data are stored in a folder named after the recipe (see `Start`_). "
+"Large images are too big to be exported as a single file, so they are "
+"divided into smaller tiles (:code:`.tif` files), which are brought back "
+"together by a :code:`<recipe name>.vrt` file."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:362
+msgid ""
+"The full folder, with all its files, is required to read the :code:`.vrt`"
+" file."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:366
+msgid ""
+"Now that you have exported the radar mosaic to your SEPAL workspace, it "
+"can be downloaded to your computer using `file exchange options "
+"<../setup/filezilla.html>`__ or used in other SEPAL workflows."
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:369
+msgid "Video tutorial"
+msgstr ""
+
+#: ../../source/cookbook/radar_mosaic.rst:371
+msgid ""
+"The following video tutorial demonstrates how to create a yearly time "
+"scan for land cover mapping in a reproducible way:"
 msgstr ""
 
 #~ msgid ""
@@ -195,5 +1047,72 @@ msgstr ""
 #~ " the processing parameters have will "
 #~ "be added to this documentation at "
 #~ "a later date."
+#~ msgstr ""
+
+#~ msgid "Quick guide: timescans"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following steps demonstrate the "
+#~ "default procedure for creating a yearly"
+#~ " timescan, which is useful for tasks"
+#~ " such as land cover mapping."
+#~ msgstr ""
+
+#~ msgid "Select **Radar mosaic** within SEPAL **Recipes**."
+#~ msgstr ""
+
+#~ msgid "Select your area of interest (AOI) and the year."
+#~ msgstr ""
+
+#~ msgid "Check for orbit coverage."
+#~ msgstr ""
+
+#~ msgid "3.1 Deselect all processing parameters."
+#~ msgstr ""
+
+#~ msgid "3.2 Select **Ascending orbit** and let the mosaic render."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "3.3 Deselect **Ascending orbit** and "
+#~ "select **Descending orbit**. Let the "
+#~ "mosaic render."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "3.4 See if both orbits cover the"
+#~ " entire AOI. If they do not, "
+#~ "select the orbit that covers the "
+#~ "entire AOI. If they do, select "
+#~ "both and let the mosaic render; "
+#~ "then, check for artefacts that may "
+#~ "originate from using both orbits."
+#~ msgstr ""
+
+#~ msgid "Select **Terrain** under **Geometric operations**."
+#~ msgstr ""
+
+#~ msgid "Select **Moderate** under **Outlier removal**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Export **Median**, **Min**, **Max** and "
+#~ "**STD** layers for both polarization "
+#~ "bands **VV** and **VH**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following video tutorial demonstrates "
+#~ "these steps in a reproducible way:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More detailed explanations of what a "
+#~ "timescan is, how it relates to the"
+#~ " concept of ARD, and what influences"
+#~ " the processing parameters have will "
+#~ "be added to this article at a "
+#~ "later date."
 #~ msgstr ""
 

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-30 11:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/setup/ssh_keys.rst:2
+msgid "Set up SSH keys"
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:3
+msgid "*Connect to SEPAL without entering your account password*"
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:5
+msgid ""
+"Create an SSH key on your computer and register its public part in SEPAL."
+" You can then use it with any SSH client, including the tools described "
+"in :doc:`../developers/ssh_session`. If you already have a key on your "
+"computer, skip the first step."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:10
+msgid ""
+"In a **local** terminal (PowerShell on Windows, Terminal on macOS or "
+"Linux), create a key:"
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:17
+msgid ""
+"Accept the default location and choose a passphrase. Do not overwrite an "
+"existing key. This creates a private key, ``id_ed25519``, and a public "
+"key, ``id_ed25519.pub``, in your user's ``.ssh`` folder."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:20
+msgid ""
+"In SEPAL, open your user menu, select **SSH keys**, then **Add**. Select "
+"or drop the ``id_ed25519.pub`` file, or paste its contents into **Public "
+"key**. Give it a recognizable **Name**, then select **Add**."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:20
+msgid "SEPAL SSH keys panel with the Add button at the lower left."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:20
+msgid "Add SSH key dialog with public key file, public key and name fields."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:36
+msgid ""
+"Connect to your SEPAL session using your SSH client. SSH uses the default"
+" key automatically; you may be prompted for its passphrase. If you saved "
+"the key elsewhere, add ``IdentityFile /path/to/your/private/key`` to the "
+"host's SSH configuration."
+msgstr ""
+
+#: ../../source/setup/ssh_keys.rst:43
+msgid ""
+"Upload only the public ``.pub`` file. Keep the private key on your "
+"computer. On Windows, use the key and configuration belonging to the SSH "
+"client used by VS Code; keys created inside WSL are stored separately "
+"from Windows keys."
+msgstr ""
+
