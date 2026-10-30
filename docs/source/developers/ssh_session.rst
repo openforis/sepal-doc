@@ -155,6 +155,17 @@ on your computer, as well as an
 3. Select **Linux** if asked for the remote platform. Enter your
    **SEPAL password** when prompted, unless you have registered an SSH key.
    VS Code may ask for the password more than once during setup.
+
+   .. note::
+
+       The first connection can take several minutes. VS Code installs its
+       server, and later the extensions you use remotely, in
+       ``~/.vscode-server`` in your home folder. Your home folder is network
+       storage, which is slow when writing many small files (see
+       :doc:`../setup/session_storage`). Later connections reuse this
+       installation and start faster, until VS Code is updated and installs a
+       new version of its server.
+
 4. Once connected, select **File > Open Folder...** and open your project
    under ``/home/sepal-user``. The status bar shows the SSH connection;
    terminals opened in this window run on SEPAL.
