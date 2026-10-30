@@ -12,4 +12,5 @@ environments for shared use, and publishing apps that other users can run.
     :maxdepth: 2
 
     Command-line tools<../cli/index>
+    ssh_session
     Develop apps<apps/index>

@@ -94,7 +94,7 @@ FileZilla®
 
 FileZilla® is a free, open-source FTP solution distributed free of charge under the terms of the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
-The FileZilla® client not only supports FTP, but also FTP over Transport Layer Security (TLS) – FTPS – and Secure File Transfer Protocol (SFTP), both used in SEPAL.
+The FileZilla® client supports FTP, FTP over Transport Layer Security (TLS) – FTPS – and SSH File Transfer Protocol (SFTP). SEPAL uses SFTP.
 
 .. tip::
 
@@ -103,20 +103,24 @@ The FileZilla® client not only supports FTP, but also FTP over Transport Layer 
 Connect your FTP client to SEPAL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Accessing files in SEPAL is easy using FileZilla®.
+FileZilla® connects to a running SEPAL session using SFTP. We recommend connecting with the **SSH login** of the session you want to use, which you can copy from **Sessions** in the hourly cost menu (see :ref:`ssh_session`). For example, if the copied login is ``alice+humble-robin@ssh.sepal.io``, the user is ``alice+humble-robin``.
 
 To use FileZilla®, open the application and connect to the SEPAL server by selecting **Menu** > **File** > **Site Manager** > **New Site**. Use the following as a guide for filling out the form.
 
 -   **Host:** ssh.sepal.io
--   **Port:** 443
+-   **Port:** 443 (or 22)
 -   **Protocol:** SFTP–SSH File Transfer Protocol
 -   **Logon Type:** Normal
--   **User:** <your SEPAL username>
+-   **User:** the SSH login of your session, without ``@ssh.sepal.io`` (for example, ``alice+humble-robin``)
 -   **Password:** <your SEPAL password>
 
 .. note::
 
-    For **User** and **Password**, enter the credentials you use to connect to the platform.
+    The session login connects FileZilla® directly to that session, so you know where your files go. It works only while the session is running; for a new session, copy its login again and update the **User** field.
+
+    You can also enter only your SEPAL username as **User**. In that case, FileZilla® connects to one of your running sessions, and **if no session is running, SEPAL starts a new t1 session**, which takes a few minutes and consumes your instance budget until it stops.
+
+To connect without your password, register an SSH key (see :doc:`ssh_keys`), set **Logon Type** to **Key file** and select your private key.
 
 .. image:: ../_images/setup/filezilla/register_new_site.png
 
