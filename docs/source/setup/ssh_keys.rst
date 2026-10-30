@@ -23,11 +23,13 @@ If you already have a key on your computer, skip the first step.
    .. thumbnail:: ../_images/setup/ssh_keys/ssh-keys.png
        :title: Open SSH keys from your user menu and select Add.
        :alt: SEPAL SSH keys panel with the Add button at the lower left.
+       :align: center
        :group: setup_ssh_keys
 
    .. thumbnail:: ../_images/setup/ssh_keys/add-ssh-key.png
        :title: Select your public key file or paste its contents, then name the key.
        :alt: Add SSH key dialog with public key file, public key and name fields.
+       :align: center
        :group: setup_ssh_keys
 
 3. Connect to your SEPAL session using your SSH client. SSH uses the default

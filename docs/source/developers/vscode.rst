@@ -17,14 +17,11 @@ on your computer.
    the hourly cost button, :btn:`<fa-solid fa-dollar-sign> x.xx/h`, in the
    lower-right corner of the footer and choose **Sessions**.
 
-   .. thumbnail:: ../_images/developers/vscode/cost-button.png
-       :title: The hourly cost button in the lower-right corner of the footer.
-       :alt: SEPAL Apps section with the hourly cost button highlighted in the footer.
-       :group: developers_vscode
-
    .. thumbnail:: ../_images/developers/vscode/sessions-menu.png
        :title: Select Sessions in the menu opened by the hourly cost button.
        :alt: Hourly cost menu with the Usage and Sessions options, Sessions highlighted.
+       :align: center
+       :width: 50%
        :group: developers_vscode
 
 2. On the session you want to use, select **Copy SSH login**. The copied login
@@ -34,6 +31,7 @@ on your computer.
    .. thumbnail:: ../_images/developers/vscode/sessions.png
        :title: Select the copy icon to copy the session's SSH login.
        :alt: SEPAL Sessions panel with the Copy SSH login button highlighted and its tooltip visible.
+       :align: center
        :group: developers_vscode
 
 3. In VS Code, open the Command Palette (**F1**) and select
@@ -54,6 +52,8 @@ on your computer.
 6. Once connected, select **File > Open Folder...** and open your project
    under ``/home/sepal-user``. The status bar shows the SSH connection;
    terminals opened in this window run on SEPAL.
+   For fast temporary storage outside your home folder, see
+   :doc:`../setup/session_storage`.
 
 .. important::
 

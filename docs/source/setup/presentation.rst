@@ -165,28 +165,58 @@ In the vertical **Tabs** bar on the left, select the :code:`Terminal` button.
 
 This links you to the Linux command line that you can use in a variety of ways to manage data, load data from an outside location or process data using a series of commands.
 
-When you initially load the **Terminal**, you will see information about your usage and the available types of instances you can initialize.
+.. _terminal-instances:
 
-One of the most important features of the **Terminal** is the ability to start and stop instances.
-
-To start an instance:
-
-1.  Examine the **Available instance types** table (updated periodically; see example from September 2020 below).
-2.  Choose an **Instance type** that fits your needs (normally, a **t2** instance or **m2** instance is sufficient and cost-effective).
-3.  Next to **Select (t1)**, enter **t2** (or your chosen instance type).
-4.  Press **Enter** on your keyboard and wait for the instance to start, which will take several minutes.
-
-To stop an instance:
-
--   enter **exit** into the command line (you can then refresh the terminal page to start a new instance); or
--   open your **User report** by selecting the **$ 0/h** icon in the lower-right corner, then selecting the trashcan icon under **Sessions**.
-
-Once an instance has stopped, you can follow the instance start-up steps again to select a larger instance, if necessary.
+When you open the **Terminal**, it shows a menu to start, join or stop sessions. A session runs on an **instance**, a cloud computer whose type sets the number of CPUs, the amount of RAM, the temporary disk and the hourly cost.
 
 .. thumbnail:: ../_images/setup/presentation/terminal.png
-   :title: The Terminal page, including an example of changing the instance
-   :align: center
-   :width: 450
+    :title: The Terminal menu: (1) spending, (2) instance types without SSD, (3) instance types with SSD, (4) active sessions and (5) the selection prompt
+    :alt: SEPAL Terminal menu with the spending summary, the instance type tables, the active sessions table and the selection prompt.
+    :align: center
+    :width: 50%
+
+The menu contains:
+
+1.  Your **Instance spending**, **Storage spending** and **Storage used** for the month, as a percentage of your quotas.
+2.  The **Available instance types without SSD** table.
+3.  The **Available instance types with SSD** table.
+4.  The **Active sessions** table, if you have sessions running, with an **ID** for each session.
+5.  The **Select** prompt, where you enter your choice. The value in parentheses is used if you press **Enter** without typing anything.
+
+Both instance type tables have the same columns:
+
+-   **Type**: the name to enter in the prompt (for example, **m2**).
+-   **CPU**: the number of virtual CPUs.
+-   **GB RAM**: the memory, in GB.
+-   **GB SSD**: the size of the SSD storage available under ``/tmp``. Instance types without SSD show **-** and get a 100 GB temporary disk instead.
+-   **Perf.**: the CPU performance compared with a **t1** instance (**1.0x**). For example, an instance with **7.0x** processes roughly seven times faster than a **t1**.
+-   **USD/h**: the cost per hour, charged to your instance spending while the session runs.
+
+The first letter of the type indicates the balance between CPU and memory: **t** types are the smallest and cheapest, **m** types are general purpose, **c** types have more CPU for the same memory, **r** types have more memory for the same CPU, **x** types have very large amounts of memory, and **g** types include a GPU. Types ending in **d** are the SSD versions of the corresponding type (for example, **m2d** is an **m2** with 118 GB of SSD storage).
+
+To choose an instance type:
+
+-   Start with a small instance, such as **t1** or **m2**; they are enough for most tasks and cost-effective.
+-   Choose a type with more **GB RAM** if your processing runs out of memory, or a type with a higher **Perf.** value if it is too slow.
+-   Choose a type with SSD (**GB SSD**) if your temporary files do not fit in 100 GB. To learn how to use this storage, see :doc:`session_storage`.
+
+To start a session:
+
+1.  In the **Select** prompt, enter the **Type** of instance you want (for example, **m2**).
+2.  Press **Enter** on your keyboard and wait for the instance to start, which can take a few minutes.
+
+To join a running session, enter its **ID** from the **Active sessions** table (for example, **1**) and press **Enter**.
+
+To stop a session:
+
+-   in the **Terminal** menu, enter its **ID** followed by **s** (for example, **1s**) and press **Enter**; or
+-   select the hourly cost button, :btn:`<fa-solid fa-dollar-sign> x.xx/h`, in the lower-right corner, choose **Sessions**, then select the trashcan icon of the session.
+
+Once a session has stopped, you can start a new one with a larger or smaller instance type if necessary.
+
+.. note::
+
+    Stopping a session deletes everything stored in its temporary disk (``/tmp``). Files in your home folder are kept. For more information, see :doc:`session_storage`.
 
 
 Apps
