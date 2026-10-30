@@ -120,6 +120,8 @@ To use FileZilla®, open the application and connect to the SEPAL server by sele
 
     You can also enter only your SEPAL username as **User**. In that case, FileZilla® connects to one of your running sessions, and **if no session is running, SEPAL starts a new t1 session**, which takes a few minutes and consumes your instance budget until it stops.
 
+On your first connection, FileZilla® shows an **Unknown host key** window with the server's fingerprint. Before selecting **OK**, check that it matches one of the fingerprints in :ref:`ssh_host_fingerprints`.
+
 To connect without your password, register an SSH key (see :doc:`ssh_keys`), set **Logon Type** to **Key file** and select your private key.
 
 .. image:: ../_images/setup/filezilla/register_new_site.png

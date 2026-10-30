@@ -50,14 +50,50 @@ When you connect:
 -   **Port:** SEPAL accepts SSH connections on port **22** (the default) and port
     **443**. If your network blocks port 22, add ``-p 443`` to ``ssh`` and
     ``sftp`` commands, or ``-P 443`` to ``scp`` commands.
--   **First connection:** your SSH client asks you to confirm the host's
-    fingerprint. Confirm it to continue.
+-   **First connection:** your SSH client shows the fingerprint of SEPAL's
+    host key and asks you to confirm it. Before confirming, compare it with
+    the published fingerprints (see :ref:`ssh_host_fingerprints`).
 
 .. important::
 
     The ``+session-name`` part of the login directs the connection to that
     session. When the session stops, the connection closes and the login stops
     working. For a new session, copy its login again.
+
+.. _ssh_host_fingerprints:
+
+Verify the host fingerprint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The fingerprint proves that you are connecting to SEPAL and not to another
+server pretending to be it. On your first connection, your SSH client shows a
+message like this one:
+
+.. code-block:: console
+
+    The authenticity of host '[ssh.sepal.io]:443' can't be established.
+    ED25519 key fingerprint is SHA256:kpQFoQFHnlXRBzZNU8zrUaG7dPpuI3z3zGhe8laHx4E.
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+
+Type ``yes`` only if the fingerprint matches one of the following, for the
+key type your client shows. They are the same on ports 22 and 443:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 20 80
+
+    * - Key type
+      - Fingerprint
+    * - ED25519
+      - ``SHA256:kpQFoQFHnlXRBzZNU8zrUaG7dPpuI3z3zGhe8laHx4E``
+    * - ECDSA
+      - ``SHA256:bgpAw63RUUdrg08L8Br9/OnILqXbWt51URergjeTgtk``
+    * - RSA
+      - ``SHA256:JA24YKvHYv1MXKGu2TatVQk9sxSbpMNUfgLNojuli6k``
+
+Your client then remembers the key and does not ask again. If it later warns
+that the host key has **changed**, do not connect, and report it on the
+`SEPAL user group <https://groups.google.com/g/sepal-users>`__.
 
 Open a terminal
 ---------------
