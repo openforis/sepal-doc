@@ -13,7 +13,7 @@ sepal_url = "https://raw.githubusercontent.com/openforis/sepal/master/"
 def get_R():
 
     print("copy R packages from to data folder")
-    url = sepal_url + "modules/geospatial-toolkit/script/init_r_packages.sh"
+    url = sepal_url + "modules/sandbox/script/init_r_packages.sh"
     urlretrieve(url, data_dir / "r_packages.sh")
 
     return
@@ -23,7 +23,7 @@ def get_R():
 def get_python():
 
     print("copy Python libs from to data folder")
-    url = sepal_url + "modules/geospatial-toolkit/config/requirements.txt"
+    url = sepal_url + "modules/sandbox/config/requirements.txt"
     urlretrieve(url, data_dir / "python_lib.txt")
 
     return
