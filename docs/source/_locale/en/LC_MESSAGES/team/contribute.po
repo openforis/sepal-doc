@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"POT-Creation-Date: 2026-11-13 11:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../source/_templates/disclaimer.rst:3
 msgid ""
@@ -293,7 +293,7 @@ msgid ""
 "button [☰] in the upper-right corner)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:178
 msgid "Edit page button"
 msgstr ""
 
@@ -310,7 +310,7 @@ msgid ""
 "before being published."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:185
 msgid "Edit a page directly on GitHub"
 msgstr ""
 
@@ -322,7 +322,7 @@ msgid ""
 "concisely describes your modifications)."
 msgstr ""
 
-#: ../../source/team/contribute.rst
+#: ../../source/team/contribute.rst:192
 msgid "Create a branch"
 msgstr ""
 
@@ -342,7 +342,7 @@ msgstr ""
 msgid "Select :code:`Create pull request`."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:201
 msgid "PR for a typo"
 msgstr ""
 
@@ -352,7 +352,7 @@ msgid ""
 "deleting your **Branch**."
 msgstr ""
 
-#: ../../source/team/contribute.rst
+#: ../../source/team/contribute.rst:208
 msgid "Delete branch"
 msgstr ""
 
@@ -448,7 +448,7 @@ msgid ""
 " <https://github.com/openforis/sepal-doc>`_:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:246
 msgid "GitHub fork button"
 msgstr ""
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid "In the **Fork** pop-up window, select the account you want to use:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:251
 msgid "Fork pop-up window"
 msgstr ""
 
@@ -474,7 +474,7 @@ msgid ""
 "github/fork-a-repo>`_."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:260
 msgid "Landing page of the forked project"
 msgstr ""
 
@@ -537,7 +537,7 @@ msgid ""
 " there should be no advertisements in the side bar.)"
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:303
 msgid "Local build landing page"
 msgstr ""
 
@@ -821,93 +821,104 @@ msgstr ""
 
 #: ../../source/team/contribute.rst:478
 msgid ""
-"Then, modify the :code:`sepal-doc/docs/source/data/modules/en.json` file "
-"in **sepal-doc** to make your documentation available by adding a new "
-"line with the following shape:"
+"Then, modify the :code:`sepal-doc/docs/source/_data/modules/en.json` file"
+" in **sepal-doc** to make your documentation available by adding an entry"
+" with the following shape:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:486
+#: ../../source/team/contribute.rst:490
 msgid ""
 "This file will be pulled at each build of the documentation in the :code"
 ":`sepal-doc/docs/source/modules/dwn` folder."
 msgstr ""
 
-#: ../../source/team/contribute.rst:489
+#: ../../source/team/contribute.rst:492
+msgid ""
+"The optional :code:`locale` entry points to the module's own translations"
+" of this file, as gettext catalogues stored at "
+":code:`<locale>/<language>/LC_MESSAGES/en.po` (named after the "
+"documentation file). They are copied to :code:`sepal-"
+"doc/docs/source/_locale/<language>/LC_MESSAGES/modules/dwn/module_name.po`"
+" at each build, where they replace the Crowdin translations of the "
+"module's page for every language the module provides."
+msgstr ""
+
+#: ../../source/team/contribute.rst:495
 msgid "New class on Google Classroom"
 msgstr ""
 
-#: ../../source/team/contribute.rst:491
+#: ../../source/team/contribute.rst:497
 msgid ""
 "Have you have created a new class under the Google Classroom repository, "
 "following the :doc:`classroom` doc? Would you like to add this class to "
 "the appropriate class table?"
 msgstr ""
 
-#: ../../source/team/contribute.rst:493
+#: ../../source/team/contribute.rst:499
 msgid ""
 "Go to your **Google Classroom** page and select the **Share** link. On "
 "the next page, copy and paste the following information for the course:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:495
+#: ../../source/team/contribute.rst:501
 msgid "the number"
 msgstr ""
 
-#: ../../source/team/contribute.rst:496
+#: ../../source/team/contribute.rst:502
 msgid "the title"
 msgstr ""
 
-#: ../../source/team/contribute.rst:497
+#: ../../source/team/contribute.rst:503
 msgid "the invitation link"
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:505
 msgid "Google Classroom sharing links"
 msgstr ""
 
-#: ../../source/team/contribute.rst:502
+#: ../../source/team/contribute.rst:508
 msgid ""
 "You now have one single file to modify :code:`sepal-"
 "doc/docs/data/<type>/<locale>.csv`:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:504
+#: ../../source/team/contribute.rst:510
 msgid ""
 "replace **<type>** with your class type (**general** for a reusable piece"
 " of documentation and **project** if linked to a FAO activity)"
 msgstr ""
 
-#: ../../source/team/contribute.rst:505
+#: ../../source/team/contribute.rst:511
 msgid ""
 "replace **<local>** with your class language (only English [en], French "
 "[fr] and Spanish [es] are available)"
 msgstr ""
 
-#: ../../source/team/contribute.rst:506
+#: ../../source/team/contribute.rst:512
 msgid "add one extra line at the bottom, as follows:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:512
+#: ../../source/team/contribute.rst:518
 msgid "replace **<ID>** with the class number;"
 msgstr ""
 
-#: ../../source/team/contribute.rst:513
+#: ../../source/team/contribute.rst:519
 msgid "replace **<link>** with the invitation link;"
 msgstr ""
 
-#: ../../source/team/contribute.rst:514
+#: ../../source/team/contribute.rst:520
 msgid "replace **<title>** with the class title; and"
 msgstr ""
 
-#: ../../source/team/contribute.rst:515
+#: ../../source/team/contribute.rst:521
 msgid "add the latest **<modification date>** in **YYYY-MM-DD** format."
 msgstr ""
 
-#: ../../source/team/contribute.rst:518 ../../source/team/contribute.rst:520
+#: ../../source/team/contribute.rst:524 ../../source/team/contribute.rst:526
 msgid "Create a pull request"
 msgstr ""
 
-#: ../../source/team/contribute.rst:524
+#: ../../source/team/contribute.rst:530
 msgid ""
 "This article of SEPAL documentation, **Contribute**, was requested in the"
 " GitHub Issue Tracker (`Issue #19 <https://github.com/openforis/sepal-"
@@ -915,71 +926,71 @@ msgid ""
 "<https://github.com/openforis/sepal-doc/pull/24>`_)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:526
+#: ../../source/team/contribute.rst:532
 msgid ""
 "Now that you have finished your modifications and pushed them to GitHub, "
 "go back to the web interface of the forked repository "
 "(:code:`https://github.com/<your account>/sepal-doc`)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:528
+#: ../../source/team/contribute.rst:534
 msgid ""
 "First, select the :code:`Pull requests` button to open the **PR** "
 "interface:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:533
+#: ../../source/team/contribute.rst:536
 msgid "Pull requests button"
 msgstr ""
 
-#: ../../source/team/contribute.rst:533
+#: ../../source/team/contribute.rst:539
 msgid "Open the **Pull request (PR)** interface."
 msgstr ""
 
-#: ../../source/team/contribute.rst:535
+#: ../../source/team/contribute.rst:541
 msgid ""
 "In the **Pull request** interface, select the :code:`New pull request` "
 "button:"
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:543
 msgid "New pull request"
 msgstr ""
 
-#: ../../source/team/contribute.rst:540
+#: ../../source/team/contribute.rst:546
 msgid ""
 "Select what is going to be pushed and where. (If you've followed this "
 "article correctly, you have not created any branch in your fork.)"
 msgstr ""
 
-#: ../../source/team/contribute.rst:542
+#: ../../source/team/contribute.rst:548
 msgid "On the left side, leave :code:`openforis/sepal-doc/master`."
 msgstr ""
 
-#: ../../source/team/contribute.rst:544
+#: ../../source/team/contribute.rst:550
 msgid ""
 "On the right side, leave :code:`<account>/sepal-doc/master` (see **1** in"
 " the following image; some extra information on the commit that will be "
 "added to the master is displayed in **2**)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:546
+#: ../../source/team/contribute.rst:552
 msgid ""
 "If everything is set properly (normally you don't have to change "
 "anything), select the :code:`Create pull request` button."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:554
 msgid "Compare branches"
 msgstr ""
 
-#: ../../source/team/contribute.rst:551
+#: ../../source/team/contribute.rst:557
 msgid ""
 "Finally, enter the **title** and **description** of the PR (**1**) "
 "(please respect the template provided, as shown in the following image)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:553
+#: ../../source/team/contribute.rst:559
 msgid ""
 "As explained at the beginning of this article, you started your "
 "modifications to address an issue reported in the **GitHub Issue "
@@ -989,13 +1000,13 @@ msgid ""
 " to the documentation."
 msgstr ""
 
-#: ../../source/team/contribute.rst:557
+#: ../../source/team/contribute.rst:563
 msgid ""
 "You can select the preview button to see what your PR looks like with "
 "links."
 msgstr ""
 
-#: ../../source/team/contribute.rst:559
+#: ../../source/team/contribute.rst:565
 msgid ""
 "The :code:`Allow edits by maintainers` checkbox needs to always be "
 "checked (default behavior) (**2**). This will allow the SEPAL team to "
@@ -1003,48 +1014,48 @@ msgid ""
 " directive)."
 msgstr ""
 
-#: ../../source/team/contribute.rst:561
+#: ../../source/team/contribute.rst:567
 msgid ""
 "When everything is complete, select :code:`Create pull request` (**3**) "
 "and validate the creation of the PR."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:569
 msgid "Valid PR"
 msgstr ""
 
-#: ../../source/team/contribute.rst:566
+#: ../../source/team/contribute.rst:572
 msgid ""
 "An automatic check will be performed to see if your PR can be built with "
 "ReadTheDoc and distributed in https://docs.sepal.io."
 msgstr ""
 
-#: ../../source/team/contribute.rst:-1
+#: ../../source/team/contribute.rst:574
 msgid "Continuous integration (CI) in PR"
 msgstr ""
 
-#: ../../source/team/contribute.rst:571
+#: ../../source/team/contribute.rst:577
 msgid ""
 "Once submitted, the SEPAL team will review your PR and make the "
 "appropriate modifications, if needed. The PR will then be accepted and "
 "the new page will be available in the main documentation."
 msgstr ""
 
-#: ../../source/team/contribute.rst:575
+#: ../../source/team/contribute.rst:581
 msgid ""
 "Once the PR has been validated, please delete your fork in order to avoid"
 " merging previous issues when making later modifications."
 msgstr ""
 
-#: ../../source/team/contribute.rst
+#: ../../source/team/contribute.rst:583
 msgid "Delete fork"
 msgstr ""
 
-#: ../../source/team/contribute.rst
+#: ../../source/team/contribute.rst:586
 msgid "Delete pop-up window"
 msgstr ""
 
-#: ../../source/team/contribute.rst:585
+#: ../../source/team/contribute.rst:591
 msgid ""
 "If you are the owner of :code:`openforis`, do not delete :code:`openforis"
 "/sepal-doc`."
@@ -2747,5 +2758,13 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The pop-up window to delete the fork used in the closed PR."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then, modify the :code:`sepal-"
+#~ "doc/docs/source/data/modules/en.json` file in "
+#~ "**sepal-doc** to make your documentation"
+#~ " available by adding a new line "
+#~ "with the following shape:"
 #~ msgstr ""
 
