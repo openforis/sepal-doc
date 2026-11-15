@@ -34,3 +34,4 @@ SEPAL workflows include:
     Direct drivers assessment<drivers>
     peatland_mapping
     mangrove_mapping
+    PyEO forest disturbance alerts<pyeo_alert_documentation>
