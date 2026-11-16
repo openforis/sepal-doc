@@ -22,7 +22,7 @@ Modules with the **Other** tag include:
 
 .. csv-table::
 
-    :doc:`dwn/alert_module`,"Retrieve any type of alert on a selected AOI"
+    :doc:`dwn/alert_module`,"Monitor forest cover loss alerts in an area of interest, period after period"
     :doc:`dwn/alos_mosaics`,"Create and manipulate ALOS K&C Mosaics"
     :doc:`dwn/coverage_analysis`,"Check per-pixel data availability"
     :doc:`dwn/fcdm`,"Mapping all kind of canopy disturbances (natural or human induced) within (semi-)evergreen forests"

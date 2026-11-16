@@ -1,11 +1,12 @@
 # version 2022-11-24
 ########  geospatial data analysis  ########
 scikit-image
+packaging==24.0 # scikit-image tries to override the system package. Pinning to prevent
 scipy
 shapely
 shapely-geojson
 tqdm
-GDAL==$GDAL_VERSION
+GDAL[numpy]==$GDAL_VERSION
 bqplot
 numpy
 geopandas
@@ -13,14 +14,9 @@ matplotlib
 pandas
 dask[complete]
 planet
-tensorflow-probability
 geeadd
-
-########  Google Earthengine  ########
-oauth2client
-google-api-python-client==1.12.8
-git+https://github.com/openforis/earthengine-api.git@v0.1.384#egg=earthengine-api&subdirectory=python
-oeel
+pyotb
+uv
 
 ########  BFAST dependencies ########
 wget
@@ -44,7 +40,6 @@ pre-commit
 ########  web api  ########
 falcon
 gunicorn
-pyCrypto
 awscli==1.11.18 # Pinned to prevent backtracking
 
 ########  other deps  ########
@@ -60,8 +55,8 @@ geeadd
 geeup
 cogee
 xee
-torch
-torchvision
+pystac-client
+contextily
 
 ########  OSK requirements  ########
 descartes
