@@ -14,3 +14,4 @@ SEPAL features include:
     Optical bands<optical_bands>
     Radar bands<radar_bands>
     Visualization<visualization>
+    Tasks<tasks>
