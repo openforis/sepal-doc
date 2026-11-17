@@ -7,7 +7,13 @@ When you export or retrieve a recipe, SEPAL starts a task that runs in the backg
 Tasks list
 ----------
 
-Open the **Tasks** tab (lower-left corner) to follow your exports. Its button shows :icon:`fa-solid fa-spinner` while tasks are running, and :icon:`fa-solid fa-list-check` otherwise. Each task shows the recipe type and destination (e.g. **Radar Mosaic → SEPAL workspace**), and the project and name of the recipe. A running task displays a spinner and its current status (e.g. :code:`Google Earth Engine is exporting`); once it has completed, a green check mark and the duration of the task are displayed.
+Open the **Tasks** tab with the button in the lower-left corner of the SEPAL interface to follow your exports. The button shows :icon:`fa-solid fa-spinner` while tasks are running, and :icon:`fa-solid fa-list-check` otherwise.
+
+.. thumbnail:: ../_images/feature/tasks/tasks_button.png
+    :title: The **Tasks** button in the lower-left corner
+    :group: tasks
+
+Each task shows the recipe type and destination (e.g. **Radar Mosaic → SEPAL workspace**), and the project and name of the recipe. A running task displays a spinner and its current status (e.g. :code:`Google Earth Engine is exporting`); once it has completed, a green check mark and the duration of the task are displayed.
 
 You can filter the list with :guilabel:`All`, :guilabel:`Active`, :guilabel:`Completed` and :guilabel:`Failed / Canceled`, or find a task with the **Search tasks** field. Select :btn:`<fa-solid fa-xmark>` to stop a running task (you are asked to confirm), and :btn:`<fa-solid fa-trash>` to remove a finished task from the list.
 
@@ -31,7 +37,7 @@ Select a task to open its details:
 -   **Location**: the destination and output path of the exported data and, for exports to an Earth Engine asset, its access.
 -   **Progress**: the export progress, or the error message if the export has failed.
 
-The task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
+The task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__ or the `Tasks page in the Google Cloud console <https://console.cloud.google.com/earth-engine/tasks>`__ (select your Google Cloud project).
 
 .. tip::
 
