@@ -42,6 +42,22 @@ html[data-theme="dark"] .bd-content img:not(.only-dark):not(.dark-light) {
 }
 
 /*******************************************************************************
+*   rounded corners and a soft shadow on screenshots (thumbnail directive),
+*   matching the older macOS window captures. drop-shadow follows the image
+*   outline, so captures that already have a built-in shadow are not boxed in.
+*
+**/
+html[data-theme] .bd-content a[data-lightbox] > img:not(.only-dark):not(.dark-light) {
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+  /* paragraph spacing (1rem) plus the part of the shadow below the image (4px offset + 12px blur) */
+  margin-bottom: calc(1rem + 16px);
+}
+.lightbox .lb-image {
+  border-radius: 10px;
+}
+
+/*******************************************************************************
 *   custom colors
 *
 **/
