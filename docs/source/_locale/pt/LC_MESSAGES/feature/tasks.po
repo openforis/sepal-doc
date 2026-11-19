@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020-2026, the SEPAL development team
+# This file is distributed under the same license as the SEPAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEPAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 15:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/feature/tasks.rst:2
+msgid "Tasks"
+msgstr ""
+
+#: ../../source/feature/tasks.rst:3
+msgid "*Follow the exports of your recipes*"
+msgstr ""
+
+#: ../../source/feature/tasks.rst:5
+msgid ""
+"When you export or retrieve a recipe, SEPAL starts a task that runs in "
+"the background. The **Tasks** tab works the same way for all recipes; "
+"only the recipe type and name differ."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:8
+msgid "Tasks list"
+msgstr ""
+
+#: ../../source/feature/tasks.rst:10
+msgid ""
+"Open the **Tasks** tab with the button in the lower-left corner of the "
+"SEPAL interface to follow your exports. The button shows :icon:`fa-solid "
+"fa-spinner` while tasks are running, and :icon:`fa-solid fa-list-check` "
+"otherwise."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:16
+msgid ""
+"Each task shows the recipe type and destination (e.g. **Radar Mosaic → "
+"SEPAL workspace**), and the project and name of the recipe. A running "
+"task displays a spinner and its current status (e.g. :code:`Google Earth "
+"Engine is exporting`); once it has completed, a green check mark and the "
+"duration of the task are displayed."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:18
+msgid ""
+"You can filter the list with :guilabel:`All`, :guilabel:`Active`, "
+":guilabel:`Completed` and :guilabel:`Failed / Canceled`, or find a task "
+"with the **Search tasks** field. Select :btn:`<fa-solid fa-xmark>` to "
+"stop a running task (you are asked to confirm), and :btn:`<fa-solid fa-"
+"trash>` to remove a finished task from the list."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:31
+msgid "Task details"
+msgstr ""
+
+#: ../../source/feature/tasks.rst:33
+msgid "Select a task to open its details:"
+msgstr ""
+
+#: ../../source/feature/tasks.rst:35
+msgid ""
+"**Status**: the duration, submission time and completion (or last update)"
+" time of the task."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:36
+msgid ""
+"**Recipe configuration**: the recipe type and origin (project and recipe "
+"name)."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:37
+msgid ""
+"**Location**: the destination and output path of the exported data and, "
+"for exports to an Earth Engine asset, its access."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:38
+msgid ""
+"**Progress**: the export progress, or the error message if the export has"
+" failed."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:40
+msgid ""
+"The task can also be monitored using the `GEE task manager "
+"<https://code.earthengine.google.com/tasks>`__ or the `Tasks page in the "
+"Google Cloud console <https://console.cloud.google.com/earth-"
+"engine/tasks>`__ (select your Google Cloud project)."
+msgstr ""
+
+#: ../../source/feature/tasks.rst:44
+msgid ""
+"Tasks run between GEE and SEPAL servers in the background. You can close "
+"the SEPAL page without stopping them."
+msgstr ""
+
