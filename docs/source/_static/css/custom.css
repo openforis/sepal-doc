@@ -47,7 +47,10 @@ html[data-theme="dark"] .bd-content img:not(.only-dark):not(.dark-light) {
 *   outline, so captures that already have a built-in shadow are not boxed in.
 *
 **/
-html[data-theme] .bd-content a[data-lightbox] > img:not(.only-dark):not(.dark-light) {
+html[data-theme]
+  .bd-content
+  a[data-lightbox]
+  > img:not(.only-dark):not(.dark-light) {
   border-radius: 10px;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
   /* paragraph spacing (1rem) plus the part of the shadow below the image (4px offset + 12px blur) */
