@@ -10,6 +10,7 @@ DOCNAMES = {
     "setup/session_storage",
     "cookbook/time_series",
     "feature/tasks",
+    "feature/aoi_selector",
 }
 
 # Absolute links to this documentation are internal links, even with a scheme.
