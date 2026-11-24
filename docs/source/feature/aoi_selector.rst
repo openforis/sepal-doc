@@ -18,6 +18,7 @@ The AOI panel, in the lower-right corner of the map, lists the available methods
 -   :guilabel:`From asset or recipe` (the area covered by a GEE image asset or another SEPAL recipe)
 -   :guilabel:`From GeoID` (a location registered with the Open Foris GeoID service)
 -   :guilabel:`Draw a polygon` (drawn polygons)
+-   :guilabel:`EE asset bounds` (the bounds of the selected GEE asset; **EE Asset** recipe only)
 
 Once you select :btn:`<fa-solid fa-chevron-right> Next`, the map zooms in on the AOI and draws it in grey.
 
@@ -32,7 +33,7 @@ You can use a country or a province as an AOI.
 
 These boundaries come from the FAO Global Administrative Unit Layers (GAUL), levels 0 (countries) and 1 (provinces), available on GEE (`level 0 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level0>`__ and `level 1 <https://developers.google.com/earth-engine/datasets/catalog/FAO_GAUL_2015_level1>`__).
 
-.. note::
+.. warning::
 
     -   SEPAL uses its own copy of the GAUL boundaries, in which some country boundaries have been modified. They may therefore differ from the original GAUL dataset.
     -   Country and province names are written without accents or special characters.
@@ -128,6 +129,22 @@ To use this method, select :guilabel:`From GeoID`.
 
 In the **GeoID** field, paste a GeoID or a link containing one. SEPAL extracts the GeoID from the text and checks it with the GeoID service.
 
+A GeoID is a code of 32 characters (digits and the letters a to f), usually written in five groups separated by hyphens. You can paste either of the following:
+
+-   A GeoID on its own, for example:
+
+    .. code-block:: text
+
+        40df4325-744f-8fae-8e46-049080be5554
+
+-   A link containing a GeoID, for example:
+
+    .. code-block:: text
+
+        https://data.apps.fao.org/geoid/40df4325-744f-8fae-8e46-049080be5554
+
+The hyphens are optional, and uppercase and lowercase letters are both accepted.
+
 .. note::
 
     -   An AOI uses a single GeoID. If the text contains more than one GeoID, an error message will be displayed.
@@ -143,8 +160,8 @@ Leave the field empty to use the default buffer.
 
 When the GeoID service confirms the GeoID, its area is displayed in the preview map at the bottom of the panel. Select :btn:`<fa-solid fa-chevron-right> Next` to validate it.
 
-Polygon
-"""""""
+Drawn polygon
+"""""""""""""
 
 You can draw a polygon on the map and use it as an AOI.
 
@@ -158,11 +175,31 @@ To use this method, select :guilabel:`Draw a polygon`.
 
 The pointer on the map will be converted into a :icon:`fa-solid fa-plus`, and a **Drawing mode: polygon** label will be displayed in the upper-left corner of the map.
 
-Click successively on the map to draw a polygon. To close the polygon, click its first point. Press :kbd:`Esc` to cancel.
+Click successively on the map to draw a polygon. To close the polygon, click its first point. To cancel the polygon you are drawing, press :kbd:`Esc`.
 
 When you close the polygon, it is displayed in the preview map at the bottom of the panel. Select :btn:`<fa-solid fa-chevron-right> Next` to validate it.
+
+To edit the polygon, click and hold a vertex, then drag it to a new position.
+
+.. note::
+
+    An AOI uses a single polygon. If you draw a new polygon, it replaces the previous one.
 
 EE asset bounds
 """""""""""""""
 
-In the **EE Asset** recipe, an additional method is available: :guilabel:`EE asset bounds`, which uses the bounds of the selected GEE asset as the AOI.
+In the **EE Asset** recipe, you can use the area covered by the selected GEE asset as an AOI. This method is only available in this recipe.
+
+To use this method, create an **EE Asset** recipe, then select :guilabel:`EE asset bounds` in the AOI panel.
+
+.. thumbnail:: ../_images/feature/aoi_selector/ee_asset_recipe.png
+    :title: Create an EE Asset recipe
+    :group: feature_aoi
+    :width: 49%
+
+.. thumbnail:: ../_images/feature/aoi_selector/aoi_asset_bounds.png
+    :title: Select AOI based on the bounds of the EE asset (EE Asset recipe)
+    :group: feature_aoi
+    :width: 49%
+
+The AOI is the area covered by the asset, so the asset is not clipped. Select :btn:`<fa-solid fa-chevron-right> Next` to validate it.
