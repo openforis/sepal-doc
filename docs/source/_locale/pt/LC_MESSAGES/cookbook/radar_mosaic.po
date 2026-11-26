@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  sepal-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-13 11:34+0000\n"
+"POT-Creation-Date: 2026-11-26 15:53+0000\n"
 "PO-Revision-Date: 2024-03-07 08:58+0000\n"
 "Last-Translator: \n"
 "Language: pt_PT\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Generated-By: Babel 2.19.0\n"
 
 #: ../../source/cookbook/radar_mosaic.rst:2
 msgid "Radar mosaics"
@@ -866,63 +866,29 @@ msgstr ""
 
 #: ../../source/cookbook/radar_mosaic.rst:316
 msgid ""
-"Open the **Tasks** tab (lower-left corner, using the :icon:`fa-solid fa-"
-"list-check` or :icon:`fa-solid fa-spinner` button, depending on the "
-"loading status) to follow the export. Each task shows the recipe type, "
-"the destination and the name of the recipe (e.g. a **Radar mosaic** "
-"exported to the **SEPAL workspace**), together with its current status "
-"(e.g. :code:`Google Earth Engine is exporting`). A running task displays "
-"a spinner, and a green check mark appears once it has completed."
+"Follow the export in the **Tasks** tab (lower-left corner). For more "
+"information, see :doc:`../feature/tasks`."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:318
-msgid ""
-"You can filter the list with :guilabel:`All`, :guilabel:`Active`, "
-":guilabel:`Completed` and :guilabel:`Failed / Canceled`, or find a task "
-"by name with the **Search tasks** field. Select :btn:`<fa-solid fa-"
-"xmark>` to stop a running task and :btn:`<fa-solid fa-trash>` to remove a"
-" task from the list."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:330
-msgid ""
-"Select a task to open its details: the duration and submission time "
-"(**Status**), the recipe type and origin (**Recipe configuration**), the "
-"destination, output path and access (**Location**), and the export "
-"progress or error message (**Progress**)."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:332
-msgid ""
-"The task can also be monitored using the `GEE task manager "
-"<https://code.earthengine.google.com/tasks>`__."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:336
-msgid ""
-"This operation is running between GEE and SEPAL servers in the "
-"background. You can close the SEPAL page without stopping the process."
-msgstr ""
-
-#: ../../source/cookbook/radar_mosaic.rst:339
+#: ../../source/cookbook/radar_mosaic.rst:319
 msgid "Access"
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:341
+#: ../../source/cookbook/radar_mosaic.rst:321
 msgid ""
 "Once the export to the SEPAL workspace is complete, you can access the "
 "data in your SEPAL folders. By default, the data are stored in the "
 ":code:`downloads` folder using the following format:"
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:356
+#: ../../source/cookbook/radar_mosaic.rst:336
 msgid ""
 "Understanding how images are stored in a radar mosaic is only required if"
 " you want to manually use them. The SEPAL applications are bound to this "
 "tiling system and can digest the information for you."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:358
+#: ../../source/cookbook/radar_mosaic.rst:338
 msgid ""
 "The data are stored in a folder named after the recipe (see `Start`_). "
 "Large images are too big to be exported as a single file, so they are "
@@ -930,24 +896,24 @@ msgid ""
 "together by a :code:`<recipe name>.vrt` file."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:362
+#: ../../source/cookbook/radar_mosaic.rst:342
 msgid ""
 "The full folder, with all its files, is required to read the :code:`.vrt`"
 " file."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:366
+#: ../../source/cookbook/radar_mosaic.rst:346
 msgid ""
 "Now that you have exported the radar mosaic to your SEPAL workspace, it "
 "can be downloaded to your computer using `file exchange options "
 "<../setup/filezilla.html>`__ or used in other SEPAL workflows."
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:369
+#: ../../source/cookbook/radar_mosaic.rst:349
 msgid "Video tutorial"
 msgstr ""
 
-#: ../../source/cookbook/radar_mosaic.rst:371
+#: ../../source/cookbook/radar_mosaic.rst:351
 msgid ""
 "The following video tutorial demonstrates how to create a yearly time "
 "scan for land cover mapping in a reproducible way:"
@@ -1111,5 +1077,57 @@ msgstr ""
 #~ " the processing parameters have will "
 #~ "be added to this article at a "
 #~ "later date."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open the **Tasks** tab (lower-left "
+#~ "corner, using the :icon:`fa-solid fa-"
+#~ "list-check` or :icon:`fa-solid fa-"
+#~ "spinner` button, depending on the "
+#~ "loading status) to follow the export."
+#~ " Each task shows the recipe type, "
+#~ "the destination and the name of "
+#~ "the recipe (e.g. a **Radar mosaic** "
+#~ "exported to the **SEPAL workspace**), "
+#~ "together with its current status (e.g."
+#~ " :code:`Google Earth Engine is exporting`)."
+#~ " A running task displays a spinner,"
+#~ " and a green check mark appears "
+#~ "once it has completed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can filter the list with "
+#~ ":guilabel:`All`, :guilabel:`Active`, :guilabel:`Completed`"
+#~ " and :guilabel:`Failed / Canceled`, or "
+#~ "find a task by name with the "
+#~ "**Search tasks** field. Select :btn:`<fa-"
+#~ "solid fa-xmark>` to stop a running"
+#~ " task and :btn:`<fa-solid fa-trash>`"
+#~ " to remove a task from the "
+#~ "list."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select a task to open its details:"
+#~ " the duration and submission time "
+#~ "(**Status**), the recipe type and origin"
+#~ " (**Recipe configuration**), the destination, "
+#~ "output path and access (**Location**), "
+#~ "and the export progress or error "
+#~ "message (**Progress**)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The task can also be monitored "
+#~ "using the `GEE task manager "
+#~ "<https://code.earthengine.google.com/tasks>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This operation is running between GEE"
+#~ " and SEPAL servers in the background."
+#~ " You can close the SEPAL page "
+#~ "without stopping the process."
 #~ msgstr ""
 

@@ -34,7 +34,7 @@ In the upper-left corner, three other tabs will allow you to interact with data:
 Select an AOI
 -------------
 
-The application uses the same **AOI selector** that you will find in many other SEPAL applications.
+The application uses the same **AOI selector** that you will find in many other SEPAL applications (for more information, see the `Module AOI section <https://docs.sepal.io/en/latest/feature/aoi_selector.html#module-aoi>`__).
 
 Planet Lab authentication
 -------------------------

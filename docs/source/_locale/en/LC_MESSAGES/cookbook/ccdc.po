@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEPAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 09:39+0100\n"
+"POT-Creation-Date: 2026-11-26 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.19.0\n"
 
 #: ../../source/cookbook/ccdc.rst:2
 msgid "CCDC asset creation"
@@ -503,7 +503,7 @@ msgid ""
 "determine which orbit direction your AOI is covered by)."
 msgstr ""
 
-#: ../../source/cookbook/ccdc.rst:-1
+#: ../../source/cookbook/ccdc.rst:256
 msgid "Sentinel-1 observation scenario"
 msgstr ""
 
@@ -835,30 +835,8 @@ msgstr ""
 
 #: ../../source/cookbook/ccdc.rst:414
 msgid ""
-"Going to the **Tasks** tab (lower-left corner using :btn:`<fa-solid fa-"
-"list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the "
-"loading status), you will see the list of different loading tasks. The "
-"interface will provide you with information about the task progress; it "
-"will display an error if the exportation has failed."
-msgstr ""
-
-#: ../../source/cookbook/ccdc.rst:416
-msgid ""
-"If you are unsatisfied with the way we present information, the task can "
-"also be monitored using `GEE task manager "
-"<https://code.earthengine.google.com/tasks>`__."
-msgstr ""
-
-#: ../../source/cookbook/ccdc.rst:420
-msgid ""
-"This operation is running between GEE and SEPAL servers in the "
-"background; you can close the SEPAL page without stopping the process."
-msgstr ""
-
-#: ../../source/cookbook/ccdc.rst:422
-msgid ""
-"When the task is finished, the frame will be displayed in green (see "
-"second image below)."
+"Follow the export in the **Tasks** tab (lower-left corner). For more "
+"information, see :doc:`../feature/tasks`."
 msgstr ""
 
 #~ msgid ""
@@ -2159,5 +2137,39 @@ msgstr ""
 #~ " and SEPAL servers in the background;"
 #~ " you can thus close the SEPAL "
 #~ "page without stopping the process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Going to the **Tasks** tab (lower-"
+#~ "left corner using :btn:`<fa-solid fa-"
+#~ "list-check>` or :btn:`<fa-solid fa-"
+#~ "spinner>` buttons, depending on the "
+#~ "loading status), you will see the "
+#~ "list of different loading tasks. The "
+#~ "interface will provide you with "
+#~ "information about the task progress; it"
+#~ " will display an error if the "
+#~ "exportation has failed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are unsatisfied with the "
+#~ "way we present information, the task "
+#~ "can also be monitored using `GEE "
+#~ "task manager "
+#~ "<https://code.earthengine.google.com/tasks>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This operation is running between GEE"
+#~ " and SEPAL servers in the background;"
+#~ " you can close the SEPAL page "
+#~ "without stopping the process."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the task is finished, the "
+#~ "frame will be displayed in green "
+#~ "(see second image below)."
 #~ msgstr ""
 
