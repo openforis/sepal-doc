@@ -677,25 +677,7 @@ Select :guilabel:`Retrieve` to start the export process.
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-By going to the **Tasks** tab (in the lower-left corner using the :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks.
-
-The interface will provide you with information about the task progress and display an error if the exportation has failed. If you are unsatisfied with the way we present information, the task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
-
-.. tip::
-
-    This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without ending the process.
-
-When the task is finished, the frame will be displayed in green, as shown in the second image below.
-
-.. thumbnail:: ../_images/cookbook/time_series/download.png
-    :width: 49%
-    :title: Evolution of the downloading process of the recipe displayed in the **Task manager** of SEPAL
-    :group: classification-recipe
-
-.. thumbnail:: ../_images/cookbook/time_series/download_complete.png
-    :width: 49%
-    :title: Completed downloading process of the recipe displayed in the **Task manager** of SEPAL
-    :group: classification-recipe
+Follow the export in the **Tasks** tab (lower-left corner). For more information, see :doc:`../feature/tasks`.
 
 Access
 ^^^^^^

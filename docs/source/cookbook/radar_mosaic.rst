@@ -313,27 +313,7 @@ Select :guilabel:`Retrieve` to start the export process.
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Open the **Tasks** tab (lower-left corner, using the :icon:`fa-solid fa-list-check` or :icon:`fa-solid fa-spinner` button, depending on the loading status) to follow the export. Each task shows the recipe type, the destination and the name of the recipe (e.g. a **Radar mosaic** exported to the **SEPAL workspace**), together with its current status (e.g. :code:`Google Earth Engine is exporting`). A running task displays a spinner, and a green check mark appears once it has completed.
-
-You can filter the list with :guilabel:`All`, :guilabel:`Active`, :guilabel:`Completed` and :guilabel:`Failed / Canceled`, or find a task by name with the **Search tasks** field. Select :btn:`<fa-solid fa-xmark>` to stop a running task and :btn:`<fa-solid fa-trash>` to remove a task from the list.
-
-.. thumbnail:: ../_images/cookbook/radar_mosaics/download.png
-    :width: 49%
-    :title: Radar mosaic exports in SEPAL's **Tasks** tab: one completed, one in progress
-    :group: radar-mosaic-recipe
-
-.. thumbnail:: ../_images/cookbook/radar_mosaics/download_complete.png
-    :width: 49%
-    :title: The details of a completed export
-    :group: radar-mosaic-recipe
-
-Select a task to open its details: the duration and submission time (**Status**), the recipe type and origin (**Recipe configuration**), the destination, output path and access (**Location**), and the export progress or error message (**Progress**).
-
-The task can also be monitored using the `GEE task manager <https://code.earthengine.google.com/tasks>`__.
-
-.. tip::
-
-    This operation is running between GEE and SEPAL servers in the background. You can close the SEPAL page without stopping the process.
+Follow the export in the **Tasks** tab (lower-left corner). For more information, see :doc:`../feature/tasks`.
 
 Access
 ^^^^^^

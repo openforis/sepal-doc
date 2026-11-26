@@ -411,22 +411,5 @@ The scale parameter depends on the data selected and the level of detail you wil
 Exportation status
 ^^^^^^^^^^^^^^^^^^
 
-Going to the **Tasks** tab (lower-left corner using :btn:`<fa-solid fa-list-check>` or :btn:`<fa-solid fa-spinner>` buttons, depending on the loading status), you will see the list of different loading tasks. The interface will provide you with information about the task progress; it will display an error if the exportation has failed.
+Follow the export in the **Tasks** tab (lower-left corner). For more information, see :doc:`../feature/tasks`.
 
-If you are unsatisfied with the way we present information, the task can also be monitored using `GEE task manager <https://code.earthengine.google.com/tasks>`__.
-
-.. tip::
-
-    This operation is running between GEE and SEPAL servers in the background; you can close the SEPAL page without stopping the process.
-
-When the task is finished, the frame will be displayed in green (see second image below).
-
-.. thumbnail:: ../_images/cookbook/ccdc_asset/download.png
-    :width: 49%
-    :title: Evolution of the downloading process of the recipe displayed in the **Task manager** of SEPAL
-    :group: ccdc-asset-recipe
-
-.. thumbnail:: ../_images/cookbook/ccdc_asset/download_complete.png
-    :width: 49%
-    :title: Completed downloading process of the recipe displayed in the **Task manager** of SEPAL
-    :group: ccdc-asset-recipe
